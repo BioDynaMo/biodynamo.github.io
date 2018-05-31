@@ -1,0 +1,214 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to BioDynaMo!\n\n\nA very warm welcome to BioDynaMo and thank you for your interest! This guide will help you get started. It introduces you to the project and our software development approach. It was inspired by the \nOpenMRS Developers Guide\n as well as  conventions and best practices used in the software industry.\n\n\nWho Should Read This Guide?\n\n\nThe target audience for this document is anyone who wants to build, contribute or learn more about BioDynaMo. Everyone has a different background, you might be new to C++ programming, simulation software or software development in general. This doesn't mean you cannot be a valuable contributor! This guide will help you fill in the blanks.\n\n\n\n\nInfo\n\n\nIf you are a user who wants to build simulations, please head over to our \nuser guide\n\n\n\n\nFeedback\n\n\nThis guide is an evolving resource. If you have difficulties in some steps and feel that parts could be described better or any other kind of comment please reach out to \nlukas.johannes.breitwieser _at_ cern.ch\n.  Thank you for your feedback!", 
+            "title": "Welcome"
+        }, 
+        {
+            "location": "/#welcome-to-biodynamo", 
+            "text": "A very warm welcome to BioDynaMo and thank you for your interest! This guide will help you get started. It introduces you to the project and our software development approach. It was inspired by the  OpenMRS Developers Guide  as well as  conventions and best practices used in the software industry.", 
+            "title": "Welcome to BioDynaMo!"
+        }, 
+        {
+            "location": "/#who-should-read-this-guide", 
+            "text": "The target audience for this document is anyone who wants to build, contribute or learn more about BioDynaMo. Everyone has a different background, you might be new to C++ programming, simulation software or software development in general. This doesn't mean you cannot be a valuable contributor! This guide will help you fill in the blanks.   Info  If you are a user who wants to build simulations, please head over to our  user guide", 
+            "title": "Who Should Read This Guide?"
+        }, 
+        {
+            "location": "/#feedback", 
+            "text": "This guide is an evolving resource. If you have difficulties in some steps and feel that parts could be described better or any other kind of comment please reach out to  lukas.johannes.breitwieser _at_ cern.ch .  Thank you for your feedback!", 
+            "title": "Feedback"
+        }, 
+        {
+            "location": "/build/", 
+            "text": "Building BioDynaMo\n\n\nTo build BioDynaMo from source execute the following commands:\n\n\n\n\nInfo\n\n\nIf you are a user please follow the installation instructions in our \nuser guide\n\n\n\n\ngit clone https://github.com/BioDynaMo/biodynamo\ncd biodynamo\n\n./prerequesites.sh .\n\n# restart your terminal and continue with:\n$use_biodynamo\n\nmkdir build \n cd build\ncmake .. \n make -j4\nsudo make install\n\n\n\nCMake Build Options\n\n\nOur CMake build script uses a few options to influence the build process. They can be set as follows:\n\ncmake -Doption=value ..\n\nThe value for binary options is \non\n or \noff\n.\nIf you change the value of these switches, you might have to delete \nCMakeCache.txt\n beforehand.\n\n\n\n\n\n\n\n\nOption\n\n\nDefault Value\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\ntest\n\n\non\n\n\nbuild the test executables; precondition for e.g. \nvalgrind\n and \ncoverage\n\n\n\n\n\n\ndemo\n\n\non\n\n\nbuild demos\n\n\n\n\n\n\nvalgrind\n\n\non\n\n\nenable memory leak checks\n\n\n\n\n\n\ncoverage\n\n\noff\n\n\ncreates a make target to generate a html report indicating which parts of the code are tested by automatic tests\n\n\n\n\n\n\n\n\nFurther CMake command line parameters:\n\n\n\n\n\n\n\n\nOption\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nCMAKE_CXX_FLAGS\n\n\nspecify additional compiler flags - e.g. \n-mavx\n\n\n\n\n\n\nCMAKE_BUILD_TYPE\n\n\nspecify the build type. Possible values are \nDebug, Release, RelWithDebInfo, MinSizeRel\n\n\n\n\n\n\n\n\nBuild Targets\n\n\n\n\n\n\n\n\nTarget\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\ntest\n\n\nexecutes all tests\n\n\n\n\n\n\ncheck\n\n\nexecutes all tests and shows test output on failure\n\n\n\n\n\n\nclean\n\n\nwill clean all targets, also the external projects\n\n\n\n\n\n\nbdmclean\n\n\nwill only clean the \nbiodynamo\n and \nrunBiodynamoTests*\n targets\n\n\n\n\n\n\ntestbdmclean\n\n\nwill only clean the \nrunBiodynamoTests*\n target\n\n\n\n\n\n\ndoc\n\n\nwill generate the API, user and developer documentation in directory \nbuild/doc\n.\n\n\n\n\n\n\ncoverage\n\n\nwill execute the test target and generate a coverage report in \nbuild/coverage\n. Make sure that \ngcov\n and \nlcov\n are installed and configure cmake with \ncmake -Dcoverage=on ..\n\n\n\n\n\n\ncoverage-build\n\n\nsame as \nmake coverage\n, but builds it in a separate directory (\nbuild/coverage\n). Since building the coverage report requires different compiler flags, building it in a separate directory keeps the current build directory in good order.\n\n\n\n\n\n\n\n\nC++ Code Style Related Build Targets\n\n\nThe following targets are only available if \nclang-format\n, \nclang-tidy\n and \ngit\n are installed.\n\n\nBuild targets indicated with \n*\n always come in three different flavors.\n\n\n\n\nno-suffix\n: executes the target on source files that changed compared to origin/master -- e.g. \nmake check-format\n\n\n-staged\n: executes the target on source files that have been staged -- e.g. \nmake check-format-staged\n\n\n-all\n: executes the target on all source files in the project -- e.g. \nmake check-format-all\n\n\n\n\n\n\n\n\n\n\nTarget\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\ncheck-format*\n\n\nrun clang-format on selected files. Fails if any file needs to be reformatted\n\n\n\n\n\n\nshow-format*\n\n\nrun clang-format on selected files and display differences\n\n\n\n\n\n\nformat*\n\n\nrun clang-format on selected files and update them in-place\n\n\n\n\n\n\ncheck-tidy*\n\n\nrun clang-tidy on selected files. Fails if errors are found\n\n\n\n\n\n\nshow-tidy*\n\n\nrun clang-tidy on selected files and display errors.\n\n\n\n\n\n\ntidy*\n\n\nrun clang-tidy on selected files and attempt to fix any warning automatically\n\n\n\n\n\n\ncheck-cpplint*\n\n\nrun cpplint on selected files. Fails if errors are found and displays them.\n\n\n\n\n\n\ncheck-submission\n\n\nwill build, run all tests, check formatting, code style, and generate documentation and coverage report\n\n\n\n\n\n\nfix-submission\n\n\nwill attempt to fix the reported issues using \nclang-format\n and \nclang-tidy\n. Failing build, tests, compiler warnings, issues from cpplint and warnings from doxygen must be fixed manually. Also some \nclang-tidy\n issues cannot be resolved automatically\n\n\n\n\n\n\n\n\nDocumentation Related Build Targets\n\n\n\n\n\n\n\n\nTarget\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\ndoc\n\n\nwill generate the API, user and developer documentation in directory \nbuild/doc\n\n\n\n\n\n\nlive-dev-guide\n and \nlive-user-guide\n\n\nstarts a local web server so you can immediately view the documentation in the browser. The website is automatically reloaded if you change a source file.\n\n\n\n\n\n\n\n\nSpeed Up Installation Tests with a Local CERNBox Copy\n\n\nThe installation scripts fetch large precompiled dependencies like paraview\nor root from CERNBox. To enable faster builds you can download the whole\nCERNBox and tell BioDynaMo to access the local version instead. This is done with the\nenvironmental flag \nBDM_LOCAL_CERNBOX\n. Use an absolute path to the directory\nthat contains the local copy.\n\n\nexport BDM_LOCAL_CERNBOX=/path/to/local/cernbox\n\n\n\nIf you want to download the files from \ncernbox.cern.ch\n again execute:\n\n\nunset BDM_LOCAL_CERNBOX\n\n\n\n\n\nWarning\n\n\nAt the moment there is no check if the local copy is in synch with\nCERNBox. You have to ensure that yourself!", 
+            "title": "Build BioDynaMo"
+        }, 
+        {
+            "location": "/build/#building-biodynamo", 
+            "text": "To build BioDynaMo from source execute the following commands:   Info  If you are a user please follow the installation instructions in our  user guide   git clone https://github.com/BioDynaMo/biodynamo\ncd biodynamo\n\n./prerequesites.sh .\n\n# restart your terminal and continue with:\n$use_biodynamo\n\nmkdir build   cd build\ncmake ..   make -j4\nsudo make install", 
+            "title": "Building BioDynaMo"
+        }, 
+        {
+            "location": "/build/#cmake-build-options", 
+            "text": "Our CMake build script uses a few options to influence the build process. They can be set as follows: cmake -Doption=value .. \nThe value for binary options is  on  or  off .\nIf you change the value of these switches, you might have to delete  CMakeCache.txt  beforehand.     Option  Default Value  Description      test  on  build the test executables; precondition for e.g.  valgrind  and  coverage    demo  on  build demos    valgrind  on  enable memory leak checks    coverage  off  creates a make target to generate a html report indicating which parts of the code are tested by automatic tests", 
+            "title": "CMake Build Options"
+        }, 
+        {
+            "location": "/build/#further-cmake-command-line-parameters", 
+            "text": "Option  Description      CMAKE_CXX_FLAGS  specify additional compiler flags - e.g.  -mavx    CMAKE_BUILD_TYPE  specify the build type. Possible values are  Debug, Release, RelWithDebInfo, MinSizeRel", 
+            "title": "Further CMake command line parameters:"
+        }, 
+        {
+            "location": "/build/#build-targets", 
+            "text": "Target  Description      test  executes all tests    check  executes all tests and shows test output on failure    clean  will clean all targets, also the external projects    bdmclean  will only clean the  biodynamo  and  runBiodynamoTests*  targets    testbdmclean  will only clean the  runBiodynamoTests*  target    doc  will generate the API, user and developer documentation in directory  build/doc .    coverage  will execute the test target and generate a coverage report in  build/coverage . Make sure that  gcov  and  lcov  are installed and configure cmake with  cmake -Dcoverage=on ..    coverage-build  same as  make coverage , but builds it in a separate directory ( build/coverage ). Since building the coverage report requires different compiler flags, building it in a separate directory keeps the current build directory in good order.", 
+            "title": "Build Targets"
+        }, 
+        {
+            "location": "/build/#c-code-style-related-build-targets", 
+            "text": "The following targets are only available if  clang-format ,  clang-tidy  and  git  are installed.  Build targets indicated with  *  always come in three different flavors.   no-suffix : executes the target on source files that changed compared to origin/master -- e.g.  make check-format  -staged : executes the target on source files that have been staged -- e.g.  make check-format-staged  -all : executes the target on all source files in the project -- e.g.  make check-format-all      Target  Description      check-format*  run clang-format on selected files. Fails if any file needs to be reformatted    show-format*  run clang-format on selected files and display differences    format*  run clang-format on selected files and update them in-place    check-tidy*  run clang-tidy on selected files. Fails if errors are found    show-tidy*  run clang-tidy on selected files and display errors.    tidy*  run clang-tidy on selected files and attempt to fix any warning automatically    check-cpplint*  run cpplint on selected files. Fails if errors are found and displays them.    check-submission  will build, run all tests, check formatting, code style, and generate documentation and coverage report    fix-submission  will attempt to fix the reported issues using  clang-format  and  clang-tidy . Failing build, tests, compiler warnings, issues from cpplint and warnings from doxygen must be fixed manually. Also some  clang-tidy  issues cannot be resolved automatically", 
+            "title": "C++ Code Style Related Build Targets"
+        }, 
+        {
+            "location": "/build/#documentation-related-build-targets", 
+            "text": "Target  Description      doc  will generate the API, user and developer documentation in directory  build/doc    live-dev-guide  and  live-user-guide  starts a local web server so you can immediately view the documentation in the browser. The website is automatically reloaded if you change a source file.", 
+            "title": "Documentation Related Build Targets"
+        }, 
+        {
+            "location": "/build/#speed-up-installation-tests-with-a-local-cernbox-copy", 
+            "text": "The installation scripts fetch large precompiled dependencies like paraview\nor root from CERNBox. To enable faster builds you can download the whole\nCERNBox and tell BioDynaMo to access the local version instead. This is done with the\nenvironmental flag  BDM_LOCAL_CERNBOX . Use an absolute path to the directory\nthat contains the local copy.  export BDM_LOCAL_CERNBOX=/path/to/local/cernbox  If you want to download the files from  cernbox.cern.ch  again execute:  unset BDM_LOCAL_CERNBOX   Warning  At the moment there is no check if the local copy is in synch with\nCERNBox. You have to ensure that yourself!", 
+            "title": "Speed Up Installation Tests with a Local CERNBox Copy"
+        }, 
+        {
+            "location": "/code_quality/", 
+            "text": "Code Quality\n\n\nAt BioDynaMo we are aiming to develop a high quality software product. The following practices help us to achieve this goal:\n\n\n\n\nC++ Style Guide\n\n\nDocumentation (User guide, Developer guide, API)\n\n\nGit Conventions\n\n\nTest driven development (TDD)\n\n\nContinues integration (CI)\n\n\n\n\nCode Styleguide\n\n\nA coding styleguide is a set of guidelines and best practices which improve readability and maintainability of a code base. Code is more often read than rewritten. Therefore it is important that a developer quickly understands a piece of code even if it was written by someone else. A coding standard helps to achieve that. We are using the \nGoogle C++ Style Guide\n\n\nTest Driven Development (TDD) and Continues Integration (CI)\n\n\nTDD and CI are two practices from agile development. Test Driven Development is a special way of using unit tests. A unit test is a piece of code that tests a certain functionality of our application. If we make some changes in the code and at the end all unit tests pass, we most likely did not break something. This increases confidence in the code and reduces the fear to \"touch\" others code.\nContinues Integration takes all this automated tests and executes them on every change to the code repository. We are using \nTravis-CI\n\n\nMore information:\n\n\n\n\nIntro to TDD\n\n\nBeck, Kent. Extreme programming explained: embrace change. addison-wesley professional, 2000.\n\n\n\n\nGit Conventions\n\n\nGit Workflow\n\n\nWe are following the Git workflow proposed by Vincent Driessen in his blog post: \nA successful Git branching model\n with the modification that his \ndevelop\n branch is our \nmaster\n branch.\n\n\nGit Commit Message\n\n\nTaken from a great blog post from \nChris Beams\n\n\n\n\nSeparate subject from body with a blank line\n\n\nCapitalize the subject line\n\n\nDo not end the subject line with a period\n\n\nUse the imperative mood in the subject line\n\n\nUse the body to explain what and why vs. how\n\n\nLimit the subject line to 50 characters\n\n\nWrap the body at 72 characters\n\n\n\n\nSummarize changes in around 50 characters or less\n\nMore detailed explanatory text, if necessary. Wrap it to about 72\ncharacters or so. In some contexts, the first line is treated as the\nsubject of the commit and the rest of the text as the body. The\nblank line separating the summary from the body is critical (unless\nyou omit the body entirely); various tools like `log`, `shortlog`\nand `rebase` can get confused if you run the two together.\n\nExplain the problem that this commit is solving. Focus on why you\nare making this change as opposed to how (the code explains that).\nAre there side effects or other unintuitive consequenses of this\nchange? Here's the place to explain them.\n\nFurther paragraphs come after blank lines.\n\n - Bullet points are okay, too\n\n - Typically a hyphen or asterisk is used for the bullet, preceded\n   by a single space, with blank lines in between, but conventions\n   vary here\n\nIf you use an issue tracker, put references to them at the bottom,\nlike this:\n\nResolves: #123\nSee also: #456, #789\n\n\n\nUse \ngit commit\n without the \n-m\n switch to write a commit body.\n\n\nMaster Branch\n\n\nEach commit in the master branch should pass the CI build. Therefore all development should be carried out in a feature/hotfix branch. Once development has been finished and the build passes, it can be merged back into \nmaster\n.", 
+            "title": "Code Quality"
+        }, 
+        {
+            "location": "/code_quality/#code-quality", 
+            "text": "At BioDynaMo we are aiming to develop a high quality software product. The following practices help us to achieve this goal:   C++ Style Guide  Documentation (User guide, Developer guide, API)  Git Conventions  Test driven development (TDD)  Continues integration (CI)", 
+            "title": "Code Quality"
+        }, 
+        {
+            "location": "/code_quality/#code-styleguide", 
+            "text": "A coding styleguide is a set of guidelines and best practices which improve readability and maintainability of a code base. Code is more often read than rewritten. Therefore it is important that a developer quickly understands a piece of code even if it was written by someone else. A coding standard helps to achieve that. We are using the  Google C++ Style Guide", 
+            "title": "Code Styleguide"
+        }, 
+        {
+            "location": "/code_quality/#test-driven-development-tdd-and-continues-integration-ci", 
+            "text": "TDD and CI are two practices from agile development. Test Driven Development is a special way of using unit tests. A unit test is a piece of code that tests a certain functionality of our application. If we make some changes in the code and at the end all unit tests pass, we most likely did not break something. This increases confidence in the code and reduces the fear to \"touch\" others code.\nContinues Integration takes all this automated tests and executes them on every change to the code repository. We are using  Travis-CI  More information:   Intro to TDD  Beck, Kent. Extreme programming explained: embrace change. addison-wesley professional, 2000.", 
+            "title": "Test Driven Development (TDD) and Continues Integration (CI)"
+        }, 
+        {
+            "location": "/code_quality/#git-conventions", 
+            "text": "", 
+            "title": "Git Conventions"
+        }, 
+        {
+            "location": "/code_quality/#git-workflow", 
+            "text": "We are following the Git workflow proposed by Vincent Driessen in his blog post:  A successful Git branching model  with the modification that his  develop  branch is our  master  branch.", 
+            "title": "Git Workflow"
+        }, 
+        {
+            "location": "/code_quality/#git-commit-message", 
+            "text": "Taken from a great blog post from  Chris Beams   Separate subject from body with a blank line  Capitalize the subject line  Do not end the subject line with a period  Use the imperative mood in the subject line  Use the body to explain what and why vs. how  Limit the subject line to 50 characters  Wrap the body at 72 characters   Summarize changes in around 50 characters or less\n\nMore detailed explanatory text, if necessary. Wrap it to about 72\ncharacters or so. In some contexts, the first line is treated as the\nsubject of the commit and the rest of the text as the body. The\nblank line separating the summary from the body is critical (unless\nyou omit the body entirely); various tools like `log`, `shortlog`\nand `rebase` can get confused if you run the two together.\n\nExplain the problem that this commit is solving. Focus on why you\nare making this change as opposed to how (the code explains that).\nAre there side effects or other unintuitive consequenses of this\nchange? Here's the place to explain them.\n\nFurther paragraphs come after blank lines.\n\n - Bullet points are okay, too\n\n - Typically a hyphen or asterisk is used for the bullet, preceded\n   by a single space, with blank lines in between, but conventions\n   vary here\n\nIf you use an issue tracker, put references to them at the bottom,\nlike this:\n\nResolves: #123\nSee also: #456, #789  Use  git commit  without the  -m  switch to write a commit body.", 
+            "title": "Git Commit Message"
+        }, 
+        {
+            "location": "/code_quality/#master-branch", 
+            "text": "Each commit in the master branch should pass the CI build. Therefore all development should be carried out in a feature/hotfix branch. Once development has been finished and the build passes, it can be merged back into  master .", 
+            "title": "Master Branch"
+        }, 
+        {
+            "location": "/contribute/", 
+            "text": "Contributing Code\n\n\nFrom Cloning BioDynaMo to Your First Contribution\n\n\nThe following process describes steps to contribute code changes to the \nmaster\n branch.\nIt follows best practices from industry to ensure a maintainable, high quality code base.\n\n\nThe shown commands assume that \nbiodynamo/build\n is the current directory.\n\n\nIf you follow these steps it will make life of the code reviewer a lot easier!\nConsequently, it will ensure that your code is accepted sooner :)\n\n\n1. Get familiar with our coding convention\n\n\nCarefully read the \nC++ style guide\n\nand our page about \nCode Quality\n\n\n2. Clone the repository\n\n\ngit clone https://github.com/BioDynaMo/biodynamo.git\n\n\n\n3. Checkout the \nmaster\n branch\n\n\ngit checkout master\n\n\n\n4. Get latest version of \nmaster\n\n\ngit pull origin master\n\n\n\n5. Create the feature branch\n\n\ngit checkout -b my-feature-branch\n\n\n\n6. Make your changes and write tests\n\n\nYou can make intermediate commits without performing all subsequent steps.\nHowever, for your final submission these steps are essential.\n\n\nAlso for intermediate commit messages: have a look at\n\nhow to write good commit messages\n!\n\n\n7. Compile and run tests\n\n\nmake \n make check\n\nPlease make sure that there are no compiler warnings\n\n\n8. Code coverage\n\n\nCheck if code is sufficiently covered by tests.\n\nmake coverage-build\n# open it in browser - e.g.\nchromium-browser coverage/coverage/index.html\n\n\n9. Performance\n\n\nCheck if code changes affected performance\n\n\n10. Documentation\n\n\nWrite documentation and check result in browser\n\nmake doc\nchromium-browser doc/html/index.html\n\nCheck if\n\n\n\n\nAPI documentation has been generated correctly\n\n\nit is consistent with code (copy-paste errors)\n\n\nit sufficiently describes the functionality\n\n\n\n\nPlease pay attention to warnings from doxygen generation. Here an example of an inconsistent documentation:\n\n# make doc ouput:\n...\nkd_tree_node.h:132: warning: argument 'axis' of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode\n T \n::GetSAHSplitPoint()\nkd_tree_node.h:132: warning: argument 'num' of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode\n T \n::GetSAHSplitPoint()\n\n\nThe corresponding code snippet shows a mismatch between code and documentation\nwhich needs to be fixed.\n\n/// Gets point, which we use for surface area heuristics\n/// @param axis - on what axis are we separating: x=0,y=1,z=2\n/// @param num - what parttion are we on (1;N)\n/// @return sah rating\nPoint GetSAHSplitPoint();\n\n\n11. Perform final checks on your machine\n\n\nmake check-submission\n\nThis command will execute all tests, check code formatting, styleguide rules, build the documentation and coverage report (\nmore info\n).\n\n\nFalse positives from \nclang-tidy\n can be silenced by adding \n// NOLINT\n at the end of the line.\nDisabling \nclang-format\n for a certain part can be done by encapsulating it with the following comments:\n\n// clang-format off\ncode here is not changed by clang-format\n// clang-format on\n\n\nIf there are no false positives and you are fine with the changes suggested by \nclang-format\n and \nclang-tidy\n run: \nmake fix-submission\n. However, failing build, tests, compiler warnings, issues from cpplint and warnings from doxygen must be fixed manually. Also some \nclang-tidy\n issues cannot be resolved automatically. After running \nmake fix-submission\n please execute \nmake check-submission\n to see if all issues have been resolved.\n\n\nPlease verify that:\n\n\n\n\n code compiles without warnings\n\n\n all tests pass\n\n\n all valgrind tests pass\n\n\n code complies with our coding styleguide -- no errors from \nclang-format\n, \nclang-tidy\n or \ncpplint\n\n\n documentation is in good order -- see point 10\n\n\n code is sufficiently covered by test cases\n\n\n performance did not degrade due to the code changes\n\n\n\n\n12. Commit\n\n\nOnce \nmake check-submission\n does not report any issues, the final commit can be done.\nHave a look at \nhow to write good commit messages\n!\n\ngit add -i\ngit commit\n\n\n13. Create pull request\n\n\nPlease create a \npull request\n\n\n14. Verify if Travis-CI builds are OK\n\n\nOpen the Travis-CI build for Linux and OSX and go through the checklist from point 11 for each of them.\nUnlike compilation and test suite execution, problems caused by formatting, code style and documentation will not fail the build. However, they need to be fixed!\n\n\n15. If everything is OK contact one of the code reviewers on Slack\n\n\n16. Discuss suggested changes with the code reviewer\n\n\nIf code changes are necessary, go back to step 6\n\n\n17. Congratulations, your code has been merged into the \nmaster\n branch\n\n\nMany thanks for your contribution, rigor and patience!\n\n\n98% Finished Projects\n\n\nIn the open source world sometimes it happens that people work on a feature for weeks or month and leave after it has been finished for 98%. Although this 2% don't look like a big issue, usually that means that all your work doesn't make it into the production code. Normally, other developers are busy and don't have the time to dive into your work and find the pieces that are missing or not working yet. This situation would be a waste of your precious time. We bet that it is way more satisfying if your contribution makes it into production and will be used by scientists around the world.\n\n\nFor a contribution to be considered 100% complete, it must (be)\n* comply to our coding guidelines,\n* unit tested,\n* well documented\n* include a demo / screencast in certain cases.\n\n\nTherefore, we want to encourage you to reserve enough time in the end where you don't code. We do our best to support you!\n\n\nmake check-submission\n explained\n\n\nThe command \nmake check-submission\n is our central automatic tool to validate if code changes are ready to be merged into master. It performs a series of checks and reports errors or warnings.\n\n\nTherefore, it makes the code review process easier. Since developers can execute it on their local machine, the feedback loop is much tighter, resulting in a faster submission process.\nAlthough, many issues are caught, it has its limitations. Thus, it cannot fully replace manual code reviews.\n\n\nSince it possibly outputs a lot of information, this page explains how to interpret the results.\n\n\nHere\n an example how the output should look like if all checks are OK\n\n\n\n\nSuccessful build without compiler warnings\n\n\nAll tests pass\n\n\nclang-format\n does not report issues\n\n\nclang-tidy\n does not report issues\n\n\ncpplint\n does not report issues\n\n\ndoxygen does not report issues\n\n\n\n\nHere\n an example of a \npassing build\n, but with issues in many categories -- these issues must be fixed as well:\n\n\n\n\nCompiler warning\n\n\nclang-format\n reports issues\n\n\nSince there were issues, they are displayed\n\n\nclang-tidy\n reports issues\n\n\nSince there were issues, they are displayed\n\n\ncpplint\n reports issues\n\n\ndoxygen reports issues", 
+            "title": "Contribute"
+        }, 
+        {
+            "location": "/contribute/#contributing-code", 
+            "text": "", 
+            "title": "Contributing Code"
+        }, 
+        {
+            "location": "/contribute/#from-cloning-biodynamo-to-your-first-contribution", 
+            "text": "The following process describes steps to contribute code changes to the  master  branch.\nIt follows best practices from industry to ensure a maintainable, high quality code base.  The shown commands assume that  biodynamo/build  is the current directory.  If you follow these steps it will make life of the code reviewer a lot easier!\nConsequently, it will ensure that your code is accepted sooner :)", 
+            "title": "From Cloning BioDynaMo to Your First Contribution"
+        }, 
+        {
+            "location": "/contribute/#1-get-familiar-with-our-coding-convention", 
+            "text": "Carefully read the  C++ style guide \nand our page about  Code Quality", 
+            "title": "1. Get familiar with our coding convention"
+        }, 
+        {
+            "location": "/contribute/#2-clone-the-repository", 
+            "text": "git clone https://github.com/BioDynaMo/biodynamo.git", 
+            "title": "2. Clone the repository"
+        }, 
+        {
+            "location": "/contribute/#3-checkout-the-master-branch", 
+            "text": "git checkout master", 
+            "title": "3. Checkout the master branch"
+        }, 
+        {
+            "location": "/contribute/#4-get-latest-version-of-master", 
+            "text": "git pull origin master", 
+            "title": "4. Get latest version of master"
+        }, 
+        {
+            "location": "/contribute/#5-create-the-feature-branch", 
+            "text": "git checkout -b my-feature-branch", 
+            "title": "5. Create the feature branch"
+        }, 
+        {
+            "location": "/contribute/#6-make-your-changes-and-write-tests", 
+            "text": "You can make intermediate commits without performing all subsequent steps.\nHowever, for your final submission these steps are essential.  Also for intermediate commit messages: have a look at how to write good commit messages !", 
+            "title": "6. Make your changes and write tests"
+        }, 
+        {
+            "location": "/contribute/#7-compile-and-run-tests", 
+            "text": "make   make check \nPlease make sure that there are no compiler warnings", 
+            "title": "7. Compile and run tests"
+        }, 
+        {
+            "location": "/contribute/#8-code-coverage", 
+            "text": "Check if code is sufficiently covered by tests. make coverage-build\n# open it in browser - e.g.\nchromium-browser coverage/coverage/index.html", 
+            "title": "8. Code coverage"
+        }, 
+        {
+            "location": "/contribute/#9-performance", 
+            "text": "Check if code changes affected performance", 
+            "title": "9. Performance"
+        }, 
+        {
+            "location": "/contribute/#10-documentation", 
+            "text": "Write documentation and check result in browser make doc\nchromium-browser doc/html/index.html \nCheck if   API documentation has been generated correctly  it is consistent with code (copy-paste errors)  it sufficiently describes the functionality   Please pay attention to warnings from doxygen generation. Here an example of an inconsistent documentation: # make doc ouput:\n...\nkd_tree_node.h:132: warning: argument 'axis' of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode  T  ::GetSAHSplitPoint()\nkd_tree_node.h:132: warning: argument 'num' of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode  T  ::GetSAHSplitPoint()  The corresponding code snippet shows a mismatch between code and documentation\nwhich needs to be fixed. /// Gets point, which we use for surface area heuristics\n/// @param axis - on what axis are we separating: x=0,y=1,z=2\n/// @param num - what parttion are we on (1;N)\n/// @return sah rating\nPoint GetSAHSplitPoint();", 
+            "title": "10. Documentation"
+        }, 
+        {
+            "location": "/contribute/#11-perform-final-checks-on-your-machine", 
+            "text": "make check-submission \nThis command will execute all tests, check code formatting, styleguide rules, build the documentation and coverage report ( more info ).  False positives from  clang-tidy  can be silenced by adding  // NOLINT  at the end of the line.\nDisabling  clang-format  for a certain part can be done by encapsulating it with the following comments: // clang-format off\ncode here is not changed by clang-format\n// clang-format on  If there are no false positives and you are fine with the changes suggested by  clang-format  and  clang-tidy  run:  make fix-submission . However, failing build, tests, compiler warnings, issues from cpplint and warnings from doxygen must be fixed manually. Also some  clang-tidy  issues cannot be resolved automatically. After running  make fix-submission  please execute  make check-submission  to see if all issues have been resolved.  Please verify that:    code compiles without warnings   all tests pass   all valgrind tests pass   code complies with our coding styleguide -- no errors from  clang-format ,  clang-tidy  or  cpplint   documentation is in good order -- see point 10   code is sufficiently covered by test cases   performance did not degrade due to the code changes", 
+            "title": "11. Perform final checks on your machine"
+        }, 
+        {
+            "location": "/contribute/#12-commit", 
+            "text": "Once  make check-submission  does not report any issues, the final commit can be done.\nHave a look at  how to write good commit messages ! git add -i\ngit commit", 
+            "title": "12. Commit"
+        }, 
+        {
+            "location": "/contribute/#13-create-pull-request", 
+            "text": "Please create a  pull request", 
+            "title": "13. Create pull request"
+        }, 
+        {
+            "location": "/contribute/#14-verify-if-travis-ci-builds-are-ok", 
+            "text": "Open the Travis-CI build for Linux and OSX and go through the checklist from point 11 for each of them.\nUnlike compilation and test suite execution, problems caused by formatting, code style and documentation will not fail the build. However, they need to be fixed!", 
+            "title": "14. Verify if Travis-CI builds are OK"
+        }, 
+        {
+            "location": "/contribute/#15-if-everything-is-ok-contact-one-of-the-code-reviewers-on-slack", 
+            "text": "", 
+            "title": "15. If everything is OK contact one of the code reviewers on Slack"
+        }, 
+        {
+            "location": "/contribute/#16-discuss-suggested-changes-with-the-code-reviewer", 
+            "text": "If code changes are necessary, go back to step 6", 
+            "title": "16. Discuss suggested changes with the code reviewer"
+        }, 
+        {
+            "location": "/contribute/#17-congratulations-your-code-has-been-merged-into-the-master-branch", 
+            "text": "Many thanks for your contribution, rigor and patience!", 
+            "title": "17. Congratulations, your code has been merged into the master branch"
+        }, 
+        {
+            "location": "/contribute/#98-finished-projects", 
+            "text": "In the open source world sometimes it happens that people work on a feature for weeks or month and leave after it has been finished for 98%. Although this 2% don't look like a big issue, usually that means that all your work doesn't make it into the production code. Normally, other developers are busy and don't have the time to dive into your work and find the pieces that are missing or not working yet. This situation would be a waste of your precious time. We bet that it is way more satisfying if your contribution makes it into production and will be used by scientists around the world.  For a contribution to be considered 100% complete, it must (be)\n* comply to our coding guidelines,\n* unit tested,\n* well documented\n* include a demo / screencast in certain cases.  Therefore, we want to encourage you to reserve enough time in the end where you don't code. We do our best to support you!", 
+            "title": "98% Finished Projects"
+        }, 
+        {
+            "location": "/contribute/#make-check-submission-explained", 
+            "text": "The command  make check-submission  is our central automatic tool to validate if code changes are ready to be merged into master. It performs a series of checks and reports errors or warnings.  Therefore, it makes the code review process easier. Since developers can execute it on their local machine, the feedback loop is much tighter, resulting in a faster submission process.\nAlthough, many issues are caught, it has its limitations. Thus, it cannot fully replace manual code reviews.  Since it possibly outputs a lot of information, this page explains how to interpret the results.  Here  an example how the output should look like if all checks are OK   Successful build without compiler warnings  All tests pass  clang-format  does not report issues  clang-tidy  does not report issues  cpplint  does not report issues  doxygen does not report issues   Here  an example of a  passing build , but with issues in many categories -- these issues must be fixed as well:   Compiler warning  clang-format  reports issues  Since there were issues, they are displayed  clang-tidy  reports issues  Since there were issues, they are displayed  cpplint  reports issues  doxygen reports issues", 
+            "title": "make check-submission explained"
+        }
+    ]
+}

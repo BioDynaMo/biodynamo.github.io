@@ -1,0 +1,27 @@
+var classbdm_1_1ResourceManager =
+[
+    [ "Backend", "classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210", null ],
+    [ "ToBackend", "classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f", null ],
+    [ "TypeContainer", "classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644", null ],
+    [ "Types", "classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74", null ],
+    [ "ResourceManager", "classbdm_1_1ResourceManager.html#ae78208481c35292dca6581c754fc006c", null ],
+    [ "~ResourceManager", "classbdm_1_1ResourceManager.html#a0b909716f905dcbcb3340a5c656c6921", null ],
+    [ "ApplyOnAllElements", "classbdm_1_1ResourceManager.html#a830c32338145b48c97e4e7bc64ad19f3", null ],
+    [ "ApplyOnAllElementsParallel", "classbdm_1_1ResourceManager.html#aec867d8e6f3c47defd50a9b508729525", null ],
+    [ "ApplyOnAllTypes", "classbdm_1_1ResourceManager.html#a7a8d6e674e70b39ec38b3ae726d912f5", null ],
+    [ "ApplyOnAllTypesParallel", "classbdm_1_1ResourceManager.html#abfae576a005f5cca9d8e1b7f0ec11e26", null ],
+    [ "ApplyOnElement", "classbdm_1_1ResourceManager.html#a4255c44092eb446798812ad0bb367b8e", null ],
+    [ "ClassDefNV", "classbdm_1_1ResourceManager.html#acf9d0196ac4e75bdadb7fef9ec463897", null ],
+    [ "Clear", "classbdm_1_1ResourceManager.html#a5dfd8dcbb9650edd4bfc1b1d9e28ceea", null ],
+    [ "Get", "classbdm_1_1ResourceManager.html#a6e62b97b78fb5da1beeb6833257b3510", null ],
+    [ "GetDiffusionGrid", "classbdm_1_1ResourceManager.html#a98fd07a6fc627b68dc59ea23abf2dc13", null ],
+    [ "GetDiffusionGrid", "classbdm_1_1ResourceManager.html#a0dd74d3c9574398bf4fc142be12a024d", null ],
+    [ "GetDiffusionGrids", "classbdm_1_1ResourceManager.html#a9df906309ee1480a9a4d04393d79baa2", null ],
+    [ "GetNumSimObjects", "classbdm_1_1ResourceManager.html#a753fc0f5c4c6a19ae1b1c6a55ad2770e", null ],
+    [ "New", "classbdm_1_1ResourceManager.html#a918128f277cddece9a29e791d6b780f8", null ],
+    [ "New", "classbdm_1_1ResourceManager.html#a7318d032f98fa0b2a4fef085e1046960", null ],
+    [ "push_back", "classbdm_1_1ResourceManager.html#afba76c080e2db0a5359e219f9da31a71", null ],
+    [ "SimulationBackup", "classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b", null ],
+    [ "data_", "classbdm_1_1ResourceManager.html#a88ff27650f7c81ffff25e2ef5c3f8587", null ],
+    [ "diffusion_grids_", "classbdm_1_1ResourceManager.html#a9d351fcccfba77cd80ca7f4ef18db368", null ]
+];
