@@ -649,16 +649,20 @@ Consequently, it will ensure that your code is accepted sooner :)</p>
 <p>Carefully read the <a href="https://google.github.io/styleguide/cppguide.html">C++ style guide</a>
 and our page about <a href="../code_quality">Code Quality</a></p>
 <h3 id="2-clone-the-repository">2. Clone the repository</h3>
-<pre class="codehilite"><code>git clone https://github.com/BioDynaMo/biodynamo.git</code></pre>
+<div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo.git
+</pre></div>
 
 <h3 id="3-checkout-the-master-branch">3. Checkout the <code class="codehilite">master</code> branch</h3>
-<pre class="codehilite"><code>git checkout master</code></pre>
+<div class="codehilite"><pre><span></span>git checkout master
+</pre></div>
 
 <h3 id="4-get-latest-version-of-master">4. Get latest version of <code class="codehilite">master</code></h3>
-<pre class="codehilite"><code>git pull origin master</code></pre>
+<div class="codehilite"><pre><span></span>git pull origin master
+</pre></div>
 
 <h3 id="5-create-the-feature-branch">5. Create the feature branch</h3>
-<pre class="codehilite"><code>git checkout -b my-feature-branch</code></pre>
+<div class="codehilite"><pre><span></span>git checkout -b my-feature-branch
+</pre></div>
 
 <h3 id="6-make-your-changes-and-write-tests">6. Make your changes and write tests</h3>
 <p>You can make intermediate commits without performing all subsequent steps.
@@ -666,19 +670,22 @@ However, for your final submission these steps are essential.</p>
 <p>Also for intermediate commit messages: have a look at
 <a href="../code_quality/#git-commit-message">how to write good commit messages</a>!</p>
 <h3 id="7-compile-and-run-tests">7. Compile and run tests</h3>
-<p><pre class="codehilite"><code>make &amp;&amp; make check</code></pre>
+<p><div class="codehilite"><pre><span></span>make <span class="o">&amp;&amp;</span> make check
+</pre></div>
 Please make sure that there are no compiler warnings</p>
 <h3 id="8-code-coverage">8. Code coverage</h3>
 <p>Check if code is sufficiently covered by tests.
-<pre class="codehilite"><code>make coverage-build
-# open it in browser - e.g.
-chromium-browser coverage/coverage/index.html</code></pre></p>
+<div class="codehilite"><pre><span></span>make coverage-build
+<span class="c1"># open it in browser - e.g.</span>
+chromium-browser coverage/coverage/index.html
+</pre></div></p>
 <h3 id="9-performance">9. Performance</h3>
 <p>Check if code changes affected performance</p>
 <h3 id="10-documentation">10. Documentation</h3>
 <p>Write documentation and check result in browser
-<pre class="codehilite"><code>make doc
-chromium-browser doc/html/index.html</code></pre>
+<div class="codehilite"><pre><span></span>make doc
+chromium-browser doc/html/index.html
+</pre></div>
 Check if</p>
 <ul>
 <li>API documentation has been generated correctly</li>
@@ -686,25 +693,29 @@ Check if</p>
 <li>it sufficiently describes the functionality</li>
 </ul>
 <p>Please pay attention to warnings from doxygen generation. Here an example of an inconsistent documentation:
-<pre class="codehilite"><code># make doc ouput:
+<div class="codehilite"><pre><span></span># make doc ouput:
 ...
-kd_tree_node.h:132: warning: argument 'axis' of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode&lt; T &gt;::GetSAHSplitPoint()
-kd_tree_node.h:132: warning: argument 'num' of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode&lt; T &gt;::GetSAHSplitPoint()</code></pre></p>
+kd_tree_node.h:132: warning: argument &#39;axis&#39; of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode&lt; T &gt;::GetSAHSplitPoint()
+kd_tree_node.h:132: warning: argument &#39;num&#39; of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode&lt; T &gt;::GetSAHSplitPoint()
+</pre></div></p>
 <p>The corresponding code snippet shows a mismatch between code and documentation
 which needs to be fixed.
-<pre class="codehilite"><code>/// Gets point, which we use for surface area heuristics
+<div class="codehilite"><pre><span></span>/// Gets point, which we use for surface area heuristics
 /// @param axis - on what axis are we separating: x=0,y=1,z=2
 /// @param num - what parttion are we on (1;N)
 /// @return sah rating
-Point GetSAHSplitPoint();</code></pre></p>
+Point GetSAHSplitPoint();
+</pre></div></p>
 <h3 id="11-perform-final-checks-on-your-machine">11. Perform final checks on your machine</h3>
-<p><pre class="codehilite"><code>make check-submission</code></pre>
+<p><div class="codehilite"><pre><span></span>make check-submission
+</pre></div>
 This command will execute all tests, check code formatting, styleguide rules, build the documentation and coverage report (<a href="../contribute/#make-check-submission-explained">more info</a>).</p>
 <p>False positives from <code class="codehilite">clang-tidy</code> can be silenced by adding <code class="codehilite">// NOLINT</code> at the end of the line.
 Disabling <code class="codehilite">clang-format</code> for a certain part can be done by encapsulating it with the following comments:
-<pre class="codehilite"><code>// clang-format off
+<div class="codehilite"><pre><span></span>// clang-format off
 code here is not changed by clang-format
-// clang-format on</code></pre></p>
+// clang-format on
+</pre></div></p>
 <p>If there are no false positives and you are fine with the changes suggested by <code class="codehilite">clang-format</code> and <code class="codehilite">clang-tidy</code> run: <code class="codehilite">make fix-submission</code>. However, failing build, tests, compiler warnings, issues from cpplint and warnings from doxygen must be fixed manually. Also some <code class="codehilite">clang-tidy</code> issues cannot be resolved automatically. After running <code class="codehilite">make fix-submission</code> please execute <code class="codehilite">make check-submission</code> to see if all issues have been resolved.</p>
 <p>Please verify that:</p>
 <ul class="task-list">
@@ -719,8 +730,9 @@ code here is not changed by clang-format
 <h3 id="12-commit">12. Commit</h3>
 <p>Once <code class="codehilite">make check-submission</code> does not report any issues, the final commit can be done.
 Have a look at <a href="https://github.com/BioDynaMo/biodynamo/wiki/BioDynaMo-Developers-Guide">how to write good commit messages</a>!
-<pre class="codehilite"><code>git add -i
-git commit</code></pre></p>
+<div class="codehilite"><pre><span></span>git add -i
+git commit
+</pre></div></p>
 <h3 id="13-create-pull-request">13. Create pull request</h3>
 <p>Please create a <a href="https://help.github.com/articles/creating-a-pull-request/">pull request</a></p>
 <h3 id="14-verify-if-travis-ci-builds-are-ok">14. Verify if Travis-CI builds are OK</h3>

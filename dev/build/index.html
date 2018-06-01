@@ -460,21 +460,23 @@
 <p class="admonition-title">Info</p>
 <p>If you are a user please follow the installation instructions in our <a href="https://biodynamo.github.io/user/">user guide</a></p>
 </div>
-<pre class="codehilite"><code class="language-sh">git clone https://github.com/BioDynaMo/biodynamo
-cd biodynamo
+<div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo
+<span class="nb">cd</span> biodynamo
 
 ./prerequesites.sh .
 
-# restart your terminal and continue with:
-$use_biodynamo
+<span class="c1"># restart your terminal and continue with:</span>
+<span class="nv">$use_biodynamo</span>
 
-mkdir build &amp;&amp; cd build
-cmake .. &amp;&amp; make -j4
-sudo make install</code></pre>
+mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
+cmake .. <span class="o">&amp;&amp;</span> make -j4
+sudo make install
+</pre></div>
 
 <h2 id="cmake-build-options">CMake Build Options</h2>
 <p>Our CMake build script uses a few options to influence the build process. They can be set as follows:
-<pre class="codehilite"><code>cmake -Doption=value ..</code></pre>
+<div class="codehilite"><pre><span></span>cmake -Doption<span class="o">=</span>value ..
+</pre></div>
 The value for binary options is <code class="codehilite">on</code> or <code class="codehilite">off</code>.
 If you change the value of these switches, you might have to delete <code class="codehilite">CMakeCache.txt</code> beforehand.</p>
 <table>
@@ -649,10 +651,12 @@ or root from CERNBox. To enable faster builds you can download the whole
 CERNBox and tell BioDynaMo to access the local version instead. This is done with the
 environmental flag <code class="codehilite">BDM_LOCAL_CERNBOX</code>. Use an absolute path to the directory
 that contains the local copy.</p>
-<pre class="codehilite"><code>export BDM_LOCAL_CERNBOX=/path/to/local/cernbox</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">export</span> <span class="nv">BDM_LOCAL_CERNBOX</span><span class="o">=</span>/path/to/local/cernbox
+</pre></div>
 
 <p>If you want to download the files from <code class="codehilite">cernbox.cern.ch</code> again execute:</p>
-<pre class="codehilite"><code>unset BDM_LOCAL_CERNBOX</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">unset</span> BDM_LOCAL_CERNBOX
+</pre></div>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>

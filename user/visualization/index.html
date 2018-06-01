@@ -539,19 +539,20 @@ example from the previous exercise.</p>
 <h2 id="create-the-configuration-file">Create the configuration file</h2>
 <p>In your simulation directory <code class="codehilite">hello_world</code> create a new file called <code class="codehilite">bdm.toml</code>.
 You can also do this from the command line with the following command:</p>
-<pre class="codehilite"><code class="language-sh">touch bdm.toml</code></pre>
+<div class="codehilite"><pre><span></span>touch bdm.toml
+</pre></div>
 
 <h2 id="export-visualization-files">Export visualization files</h2>
 <p>One way to enable visualization is to export a visualization file every time step
 (or every N time steps). In the <code class="codehilite">bmd.toml</code> file add the following lines:</p>
-<pre class="codehilite"><code>[visualization]
-export = true
-export_interval = 1
+<div class="codehilite"><pre><span></span><span class="k">[visualization]</span>
+<span class="na">export</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">export_interval</span> <span class="o">=</span> <span class="s">1</span>
 
-    [[visualize_sim_object]]
-    name = &quot;Cell&quot;
-    additional_data_members = [ &quot;diameter_&quot; ]
-</code></pre>
+    <span class="k">[[visualize_sim_object]]</span>
+    <span class="na">name</span> <span class="o">=</span> <span class="s">&quot;Cell&quot;</span>
+<span class="s">    additional_data_members = [ &quot;diameter_&quot; ]</span>
+</pre></div>
 
 <p>This will export a visualization file every time step. You can set the frequency
 by setting the <code class="codehilite">export_interval</code>. Make sure that you run a good number of steps
@@ -564,10 +565,12 @@ Run your simulation with <code class="codehilite">biodynamo run</code>.</p>
 <p>Make sure you start ParaView from the project directory. Otherwise, ParaView might not find the exported files.</p>
 </div>
 <h4 id="on-linux">On Linux:</h4>
-<pre class="codehilite"><code class="language-sh">biodynamo.paraview</code></pre>
+<div class="codehilite"><pre><span></span>biodynamo.paraview
+</pre></div>
 
 <h4 id="on-mac-os">On Mac OS:</h4>
-<pre class="codehilite"><code class="language-sh">paraview</code></pre>
+<div class="codehilite"><pre><span></span>paraview
+</pre></div>
 
 <p>Select "File-&gt;Load State" as shown below:</p>
 <p><img alt="ParaView Load State" src="../images/pv_load_state.png" /></p>

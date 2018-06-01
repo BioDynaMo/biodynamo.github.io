@@ -622,35 +622,40 @@ in your simulation. In this tutorial we shal take a look on how to do so.</p>
 <h4 id="1-list-the-substances">1. List the substance(s)</h4>
 <p>We start the code of by listing the s we will use in our simulation in an enum
 data structure. In this example we just create one substance.</p>
-<pre class="codehilite"><code class="language-C++">enum Substances { kSubstance };</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">enum</span> <span class="n">Substances</span> <span class="p">{</span> <span class="n">kSubstance</span> <span class="p">};</span>
+</pre></div>
 
 <h4 id="2-specify-the-space-dimensions">2. Specify the space dimensions</h4>
 <p>We bound our space to keep things simple.</p>
-<pre class="codehilite"><code class="language-C++">Param::bound_space_ = true;
-Param::min_bound_ = 0;
-Param::max_bound_ = 250;</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">Param</span><span class="o">::</span><span class="n">bound_space_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+</pre></div>
 
 <h4 id="3-create-a-cell">3. Create a cell</h4>
 <p>We create one cell with diameter 10, at a random location</p>
-<pre class="codehilite"><code class="language-C++">auto construct = [](const std::array&lt;double, 3&gt;&amp; position) {
-  Cell cell(position);
-  cell.SetDiameter(10);
-  return cell;
-};
-ModelInitializer::CreateCellsRandom(Param::min_bound_, Param::max_bound_,
-                                      1, construct);</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">auto</span> <span class="n">construct</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">Cell</span> <span class="n">cell</span><span class="p">(</span><span class="n">position</span><span class="p">);</span>
+  <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="n">ModelInitializer</span><span class="o">::</span><span class="n">CreateCellsRandom</span><span class="p">(</span><span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span><span class="p">,</span>
+                                      <span class="mi">1</span><span class="p">,</span> <span class="n">construct</span><span class="p">);</span>
+</pre></div>
 
 <h4 id="4-define-the-substances">4. Define the substance(s)</h4>
 <p>We define the diffusion parameters of the substance(s) in our simulation. We
 choose a diffusion coefficient of 0.5, a decay constant 0f 0.1 and a resolution
 of 1.</p>
-<pre class="codehilite"><code class="language-C++">ModelInitializer::DefineSubstance(kSubstance, &quot;Substance&quot;, 0.5, 0.1, 1);</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">ModelInitializer</span><span class="o">::</span><span class="n">DefineSubstance</span><span class="p">(</span><span class="n">kSubstance</span><span class="p">,</span> <span class="s">&quot;Substance&quot;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</pre></div>
 
 <h4 id="5-initialize-the-substances">5. Initialize the substance(s)</h4>
 <p>Now comes the most important part of the tutorial: initializing our substance(s)
 concentration values throught the space. We will use the function
 <code class="codehilite">ModelInitializer::InitializeSubstance</code> for this purpose.</p>
-<pre class="codehilite"><code class="language-C++">ModelInitializer::InitializeSubstance(kSubstance, &quot;Substance&quot;, GaussianBand(120, 5, Axis::kXAxis));</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">ModelInitializer</span><span class="o">::</span><span class="n">InitializeSubstance</span><span class="p">(</span><span class="n">kSubstance</span><span class="p">,</span> <span class="s">&quot;Substance&quot;</span><span class="p">,</span> <span class="n">GaussianBand</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">Axis</span><span class="o">::</span><span class="n">kXAxis</span><span class="p">));</span>
+</pre></div>
 
 <p>Let's break this down. We first pass the substance enum id and name in the
 function in order to specify which substance we want to initialize. Then we
@@ -666,26 +671,27 @@ model to initialize a substance with. We have several predefined initializers
 available in BioDynaMo, and you can create your own.</p>
 <p>Let's take a look at an existing substance initializer.</p>
 <h4 id="option-1-functors">Option 1: Functors</h4>
-<pre class="codehilite"><code class="language-C++">struct GaussianBand {
-  double mean_;
-  double sigma_;
-  uint8_t axis_;
+<div class="codehilite"><pre><span></span><span class="k">struct</span> <span class="n">GaussianBand</span> <span class="p">{</span>
+  <span class="kt">double</span> <span class="n">mean_</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">sigma_</span><span class="p">;</span>
+  <span class="kt">uint8_t</span> <span class="n">axis_</span><span class="p">;</span>
 
-  GaussianBand(double mean, double sigma, uint8_t axis) {
-    mean_ = mean;
-    sigma_ = sigma;
-    axis_ = axis;
-  }
+  <span class="n">GaussianBand</span><span class="p">(</span><span class="kt">double</span> <span class="n">mean</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sigma</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">axis</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">mean_</span> <span class="o">=</span> <span class="n">mean</span><span class="p">;</span>
+    <span class="n">sigma_</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">;</span>
+    <span class="n">axis_</span> <span class="o">=</span> <span class="n">axis</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  double operator()(double x, double y, double z) {
-    switch(axis_) {
-      case Axis::kXAxis: return ROOT::Math::normal_pdf(x, sigma_, mean_);
-      case Axis::kYAxis: return ROOT::Math::normal_pdf(y, sigma_, mean_);
-      case Axis::kZAxis: return ROOT::Math::normal_pdf(z, sigma_, mean_);
-      default: throw std::logic_error(&quot;You have chosen an non-existing axis!&quot;); 
-    }
-  }
-};</code></pre>
+  <span class="kt">double</span> <span class="k">operator</span><span class="p">()(</span><span class="kt">double</span> <span class="n">x</span><span class="p">,</span> <span class="kt">double</span> <span class="n">y</span><span class="p">,</span> <span class="kt">double</span> <span class="n">z</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">switch</span><span class="p">(</span><span class="n">axis_</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="n">Axis</span><span class="o">::</span><span class="nl">kXAxis</span><span class="p">:</span> <span class="k">return</span> <span class="n">ROOT</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">normal_pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sigma_</span><span class="p">,</span> <span class="n">mean_</span><span class="p">);</span>
+      <span class="k">case</span> <span class="n">Axis</span><span class="o">::</span><span class="nl">kYAxis</span><span class="p">:</span> <span class="k">return</span> <span class="n">ROOT</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">normal_pdf</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">sigma_</span><span class="p">,</span> <span class="n">mean_</span><span class="p">);</span>
+      <span class="k">case</span> <span class="n">Axis</span><span class="o">::</span><span class="nl">kZAxis</span><span class="p">:</span> <span class="k">return</span> <span class="n">ROOT</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">normal_pdf</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">sigma_</span><span class="p">,</span> <span class="n">mean_</span><span class="p">);</span>
+      <span class="k">default</span><span class="o">:</span> <span class="k">throw</span> <span class="n">std</span><span class="o">::</span><span class="n">logic_error</span><span class="p">(</span><span class="s">&quot;You have chosen an non-existing axis!&quot;</span><span class="p">);</span> 
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
 
 <p>The above code is what is called a 'functor' in C++. Here it basically describes
 the model or operation that you want to perform on the entire diffusion space.
@@ -700,9 +706,10 @@ several input variables (e.g. different means, sigmas in the above example).
 But you might want to just keep it short and simple; in which case lambdas are
 nice to use. We can accomplish exactly the same result as the above example with
 the following lambda:</p>
-<pre class="codehilite"><code class="language-C+++">auto gaussian_band = [](double x, double y, double z) {
-  return ROOT::Math::normal_pdf(x, 5, 120);
-};</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">auto</span> <span class="nt">gaussian_band</span> <span class="o">=</span> <span class="cp">[]</span><span class="o">(</span><span class="nt">double</span> <span class="nt">x</span><span class="o">,</span> <span class="nt">double</span> <span class="nt">y</span><span class="o">,</span> <span class="nt">double</span> <span class="nt">z</span><span class="o">)</span> <span class="p">{</span>
+  <span class="err">return</span> <span class="n">ROOT</span><span class="p">:</span><span class="o">:</span><span class="n">Math</span><span class="o">::</span><span class="nf">normal_pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">120</span><span class="p">);</span>
+<span class="p">}</span><span class="o">;</span>
+</pre></div>
 
 <p>Much simpler right? As you can see we have hard-coded some of the variables that
 we had generalized in our functor. So depending on your use case or preference,

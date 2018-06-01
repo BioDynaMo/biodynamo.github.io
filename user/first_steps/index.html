@@ -551,7 +551,8 @@
                 <h1 id="first-steps">First Steps</h1>
 <p>Setting up a simulation and running it is done with the BioDynaMo command line
 interface (CLI). Open a new terminal and execute:</p>
-<pre class="codehilite"><code class="language-sh">$use_biodynamo</code></pre>
+<div class="codehilite"><pre><span></span><span class="nv">$use_biodynamo</span>
+</pre></div>
 
 <p>This command must be executed whenever you want to use BioDynaMo in a new
 terminal!</p>
@@ -559,7 +560,8 @@ terminal!</p>
 <p>A basic BioDynaMo workflow looks as follows:</p>
 <h4 id="1-create-a-new-project">1. Create a new project</h4>
 <p>To create a new project run the following command:</p>
-<pre class="codehilite"><code class="language-sh">biodynamo new &lt;enter_name&gt;</code></pre>
+<div class="codehilite"><pre><span></span>biodynamo new &lt;enter_name&gt;
+</pre></div>
 
 <p>This command creates a new Git repository for you with the name specified
 in the <code class="codehilite">&lt;enter_name&gt;</code> placeholder. It will ask you to login with your Github
@@ -576,11 +578,10 @@ to use the <code class="codehilite">biodynamo assist</code> command as explained
 starting point for your simulation. The <code class="codehilite">src</code> directory contains the files with
 the source code that defines the simulation. You can edit and add the code that
 describes your model in this folder.</p>
-<p>To find out about the features that BioDynaMo offers, please check out the <a href="documentation.md">Documentation</a>.
-For example projects, see the <a href="../hello_world/">Exercises</a></p>
 <h4 id="3-run-the-simulation">3. Run the simulation</h4>
 <p>Building the simulation and running it can be done with the command:</p>
-<pre class="codehilite"><code class="language-sh">biodynamo run</code></pre>
+<div class="codehilite"><pre><span></span>biodynamo run
+</pre></div>
 
 <p>All your source code will be compiled and linked against the BioDynaMo libraries, and an executable file
 will be created and run. It is at this point you might encounter compilation errors.
@@ -589,7 +590,8 @@ You will need to fix them before the simulation can actually run.</p>
 <p>It can happen that you encounter an error or issue that you cannot solve on your own.
 Or you might be convinced that there is a bug in BioDynaMo.
 For such occasions we have provided you with BioDynaMo assistance:</p>
-<pre class="codehilite"><code class="language-sh">biodynamo assist</code></pre>
+<div class="codehilite"><pre><span></span>biodynamo assist
+</pre></div>
 
 <p>This command will create a folder called <code class="codehilite">debug</code> in which debug information will be collected.
 A git branch will be created and uploaded to Github. Send the link to this branch to us,

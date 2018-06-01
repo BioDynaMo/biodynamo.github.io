@@ -635,32 +635,36 @@ example where diffusion plays a role.</p>
 <h3 id="download-the-code-from-github">Download the code from Github</h3>
 <p>If you are still in the <code class="codehilite">hello_world</code> directory.</p>
 <h4 id="on-linux">On Linux:</h4>
-<pre class="codehilite"><code class="language-sh">biodynamo.git clone https://github.com/BioDynaMo/simulation-templates.git
-cd simulation-templates
-biodynamo.git checkout newcastle</code></pre>
+<div class="codehilite"><pre><span></span>biodynamo.git clone https://github.com/BioDynaMo/simulation-templates.git
+<span class="nb">cd</span> simulation-templates
+biodynamo.git checkout newcastle
+</pre></div>
 
 <h4 id="on-mac-os">On Mac OS:</h4>
-<pre class="codehilite"><code class="language-sh">git clone https://github.com/BioDynaMo/simulation-templates.git
-cd simulation-templates
-git checkout newcastle</code></pre>
+<div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/simulation-templates.git
+<span class="nb">cd</span> simulation-templates
+git checkout newcastle
+</pre></div>
 
 <h3 id="inspect-the-code">Inspect the code</h3>
 <p>Go into the <code class="codehilite">diffusion</code> directory and open the source file <code class="codehilite">src/diffusion_biology_modules.h</code> in your favorite editor.
 We can note the following things from its content:</p>
 <h4 id="1-list-the-substances">1. List the substances</h4>
-<pre class="codehilite"><code class="language-C++">enum Substances { kKalium };</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">enum</span> <span class="n">Substances</span> <span class="p">{</span> <span class="n">kKalium</span> <span class="p">};</span>
+</pre></div>
 
 <p>The extracellular substances that will be used in the simulation are listed in
-an <code class="codehilite">enum</code> data structure. In this case it is just a single substance. According to our C++
+an <code class="codehilite"><span class="k">enum</span></code> data structure. In this case it is just a single substance. According to our C++
 coding style we will prepend the substance's name with the letter "k".</p>
 <h4 id="2-set-up-the-biology-modules">2. Set up the biology modules</h4>
 <p>Open the <code class="codehilite">src/diffusion.h</code> source file.</p>
 <p>In order for BioDynaMo to anticipate the biology modules that you want to use in
 the simulation, we need to declare them in our <code class="codehilite">CompileTimeParameters</code> as such:</p>
-<pre class="codehilite"><code class="language-C++">template &lt;typename Backend&gt;
-struct CompileTimeParam : public DefaultCompileTimeParam&lt;Backend&gt; {
-  using BiologyModules = Variant&lt;Chemotaxis, KaliumSecretion&gt;;
-};</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Backend</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="nl">CompileTimeParam</span> <span class="p">:</span> <span class="k">public</span> <span class="n">DefaultCompileTimeParam</span><span class="o">&lt;</span><span class="n">Backend</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">Chemotaxis</span><span class="p">,</span> <span class="n">KaliumSecretion</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></div>
 
 <p>The important part here is the <code class="codehilite">Chemotaxis</code> and
 <code class="codehilite">KaliumSecretion</code> biology modules. These are the modules that will govern the
@@ -668,29 +672,30 @@ behavior of the simulation objects (i.e. cells). We import them at the top of th
 source code with <code class="codehilite">#include diffusion_biology_modules</code>.</p>
 <h4 id="3-set-up-the-simulation-objects">3. Set up the simulation objects</h4>
 <p>Next up is creating simulation objects:</p>
-<pre class="codehilite"><code class="language-C++">  auto construct = [](const std::array&lt;double, 3&gt;&amp; position) {
-    Cell cell(position);
-    cell.SetDiameter(30);
-    cell.SetMass(1.0);
-    cell.AddBiologyModule(Chemotaxis());
-    std::array&lt;double, 3&gt; secretion_position = {{50, 50, 50}};
-    if (position == secretion_position) {
-      cell.AddBiologyModule(KaliumSecretion());
-    }
-    return cell;
-  };
-  std::vector&lt;std::array&lt;double, 3&gt;&gt; positions;
-  positions.push_back({0, 0, 0});
-  positions.push_back({100, 0, 0});
-  positions.push_back({0, 100, 0});
-  positions.push_back({0, 0, 100});
-  positions.push_back({0, 100, 100});
-  positions.push_back({100, 0, 100});
-  positions.push_back({100, 100, 0});
-  positions.push_back({100, 100, 100});
-  // the cell responsible for secretion
-  positions.push_back({50, 50, 50});
-  ModelInitializer::CreateCells(positions, construct);</code></pre>
+<div class="codehilite"><pre><span></span>  <span class="k">auto</span> <span class="n">construct</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Cell</span> <span class="n">cell</span><span class="p">(</span><span class="n">position</span><span class="p">);</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">SetMass</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">Chemotaxis</span><span class="p">());</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">secretion_position</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">}};</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">position</span> <span class="o">==</span> <span class="n">secretion_position</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">KaliumSecretion</span><span class="p">());</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&gt;</span> <span class="n">positions</span><span class="p">;</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="c1">// the cell responsible for secretion</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">});</span>
+  <span class="n">ModelInitializer</span><span class="o">::</span><span class="n">CreateCells</span><span class="p">(</span><span class="n">positions</span><span class="p">,</span> <span class="n">construct</span><span class="p">);</span>
+</pre></div>
 
 <p>The <code class="codehilite">construct</code> lambda defines the properties of each cell that we create. These can be
 physical properties (diameter, mass), but also biological properties and behaviors
@@ -706,18 +711,18 @@ of cells.</p>
 <h3 id="configure-the-simulation">Configure the simulation</h3>
 <p>Create a <code class="codehilite">bdm.toml</code> file in the <code class="codehilite">diffusion</code> directory, and copy the following lines
 into it:</p>
-<pre class="codehilite"><code>[visualization]
-export = true
-export_interval = 10
+<div class="codehilite"><pre><span></span><span class="k">[visualization]</span>
+<span class="na">export</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">export_interval</span> <span class="o">=</span> <span class="s">10</span>
 
-    [[visualize_sim_object]]
-    name = &quot;Cell&quot;
-    additional_data_members = [ &quot;diameter_&quot; ]
+    <span class="k">[[visualize_sim_object]]</span>
+    <span class="na">name</span> <span class="o">=</span> <span class="s">&quot;Cell&quot;</span>
+<span class="s">    additional_data_members = [ &quot;diameter_&quot; ]</span>
 
-    [[visualize_diffusion]]
-    name = &quot;Kalium&quot;
-    gradient = true
-</code></pre>
+    <span class="k">[[visualize_diffusion]]</span>
+    <span class="na">name</span> <span class="o">=</span> <span class="s">&quot;Kalium&quot;</span>
+<span class="s">    gradient = true</span>
+</pre></div>
 
 <p>This will enable exporting visualization files, so that we can visualize the
 simulation after it has finished. Furthermore, we enable the output of the diameter
@@ -725,7 +730,8 @@ of our simulation objects (by default named "Cell"), and the gradient data of th
 extracellular diffusion</p>
 <h3 id="build-and-run-the-simulation">Build and run the simulation</h3>
 <p>Run the following commands to build and run the simulation.</p>
-<pre class="codehilite"><code class="language-sh">biodynamo run</code></pre>
+<div class="codehilite"><pre><span></span>biodynamo run
+</pre></div>
 
 <h3 id="visualize-the-simulation">Visualize the simulation</h3>
 <p>Load the generated ParaView state file as described in <a href="../visualization/#export-visualization-files">Section Visualization</a>.</p>
