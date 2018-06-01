@@ -106,578 +106,592 @@ $(document).ready(function(){initNavTree('catalyst__adaptor_8h_source.html','');
 <div class="title">catalyst_adaptor.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="catalyst__adaptor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="param_8h.html">param.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">resource_manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// check for ROOTCLING was necessary, due to ambigous reference to namespace</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// detail when using ROOT I/O</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#if defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vtkCPDataDescription.h&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;vtkCPInputDataDescription.h&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vtkCPProcessor.h&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vtkCPPythonScriptPipeline.h&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;vtkDoubleArray.h&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;vtkFieldData.h&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;vtkIdTypeArray.h&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;vtkImageData.h&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;vtkIntArray.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;vtkNew.h&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;vtkPointData.h&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;vtkPoints.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;vtkStringArray.h&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;vtkUnstructuredGrid.h&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;vtkXMLPImageDataWriter.h&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;vtkXMLPUnstructuredGridWriter.h&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="insitu__pipeline_8h.html">visualization/insitu_pipeline.h</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif  // defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>bdm {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TResourceManager = ResourceManager&lt;&gt;&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span>CatalystAdaptor {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> CatalystAdaptor* <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">GetInstance</a>() {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> CatalystAdaptor kInstance;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> &amp;kInstance;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> ConstructDiffusionGrid(DiffusionGrid* dg, uint16_t idx) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">auto</span> num_boxes = dg-&gt;GetNumBoxesArray();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">auto</span> grid_dimensions = dg-&gt;GetDimensions();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">auto</span> box_length = dg-&gt;GetBoxLength();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">double</span> origin_x = grid_dimensions[0];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">double</span> origin_y = grid_dimensions[2];</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">double</span> origin_z = grid_dimensions[4];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    vtk_dgrids_[idx]-&gt;SetOrigin(origin_x, origin_y, origin_z);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    vtk_dgrids_[idx]-&gt;SetDimensions(num_boxes[0], num_boxes[1], num_boxes[2]);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    vtk_dgrids_[idx]-&gt;SetSpacing(box_length, box_length, box_length);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">struct </span>AddCellAttributeData {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    AddCellAttributeData(<span class="keywordtype">size_t</span> ti, <span class="keywordtype">size_t</span> nc,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                         std::vector&lt;vtkUnstructuredGrid*&gt;* vd)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        : type_idx(ti), num_cells(nc), vtk_data(vd) {}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;double&gt;* dm, <span class="keyword">const</span> std::string&amp; name) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      vtk_array-&gt;SetName(name.c_str());</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">auto</span> ptr = dm-&gt;data();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(num_cells), 1);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;int&gt;* dm, <span class="keyword">const</span> std::string&amp; name) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      vtkNew&lt;vtkIntArray&gt; vtk_array;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      vtk_array-&gt;SetName(name.c_str());</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">auto</span> ptr = dm-&gt;data();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(num_cells), 1);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;std::array&lt;double, 3&gt;&gt;* dm,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <span class="keyword">const</span> std::string&amp; name) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;position_&quot;</span>) {  <span class="comment">// TODO(lukas) performance</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        vtk_array-&gt;SetName(name.c_str());</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        vtk_array-&gt;SetNumberOfComponents(3);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        vtkNew&lt;vtkPoints&gt; points;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        points-&gt;SetData(vtk_array.GetPointer());</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        (*vtk_data)[type_idx]-&gt;SetPoints(points.GetPointer());</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;mass_location_&quot;</span>) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">// create points with position {0, 0, 0}</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// BDMGlyph will rotate and translate</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        vtkNew&lt;vtkPoints&gt; points;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        points-&gt;SetNumberOfPoints(num_cells);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        (*vtk_data)[type_idx]-&gt;SetPoints(points.GetPointer());</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        vtk_array-&gt;SetName(name.c_str());</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        vtk_array-&gt;SetNumberOfComponents(3);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        vtk_array-&gt;SetName(name.c_str());</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        vtk_array-&gt;SetNumberOfComponents(3);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;std::array&lt;int, 3&gt;&gt;* dm,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    <span class="keyword">const</span> std::string&amp; name) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      vtkNew&lt;vtkIntArray&gt; vtk_array;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      vtk_array-&gt;SetName(name.c_str());</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      vtk_array-&gt;SetNumberOfComponents(3);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> operator()(...) {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::AddCellAttributeData&quot;</span>,</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                 <span class="stringliteral">&quot;This data member is not supported for visualization&quot;</span>);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">size_t</span> type_idx;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">size_t</span> num_cells;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::vector&lt;vtkUnstructuredGrid*&gt;* vtk_data;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  };</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TContainer&gt;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">void</span> BuildCellsVTKStructures(TContainer* sim_objects, uint16_t type_idx) {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">auto</span>&amp; scalar_name = TContainer::GetScalarTypeName();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (so_is_initialized_[type_idx] == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      vtk_so_grids_.push_back(vtkUnstructuredGrid::New());</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      so_is_initialized_[type_idx] = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      shapes_[scalar_name] = sim_objects-&gt;GetShape();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      so_scalar_names_.push_back(scalar_name);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">auto</span> num_cells = sim_objects-&gt;size();</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">auto</span> required_dm = TContainer::GetRequiredVisDataMembers();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    sim_objects-&gt;ForEachDataMemberIn(</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        required_dm, AddCellAttributeData(type_idx, num_cells, &amp;vtk_so_grids_));</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">auto</span>&amp; additional_dm = <a class="code" href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">Param::visualize_sim_objects_</a>[scalar_name];</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (!additional_dm.empty()) {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      sim_objects-&gt;ForEachDataMemberIn(</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          additional_dm,</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;          AddCellAttributeData(type_idx, num_cells, &amp;vtk_so_grids_));</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
+<a href="catalyst__adaptor_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (C) The BioDynaMo Project.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All Rights Reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// See the LICENSE file distributed with this work for details.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// See the NOTICE file distributed with this work for additional information</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// regarding copyright ownership.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="param_8h.html">param.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">resource_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// check for ROOTCLING was necessary, due to ambigous reference to namespace</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// detail when using ROOT I/O</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#if defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;vtkCPDataDescription.h&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;vtkCPInputDataDescription.h&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;vtkCPProcessor.h&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;vtkCPPythonScriptPipeline.h&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;vtkDoubleArray.h&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;vtkFieldData.h&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;vtkIdTypeArray.h&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;vtkImageData.h&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;vtkIntArray.h&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;vtkNew.h&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;vtkPointData.h&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;vtkPoints.h&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;vtkStringArray.h&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;vtkUnstructuredGrid.h&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;vtkXMLPImageDataWriter.h&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;vtkXMLPUnstructuredGridWriter.h&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="insitu__pipeline_8h.html">visualization/insitu_pipeline.h</a>&quot;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif  // defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">namespace </span>bdm {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TResourceManager = ResourceManager&lt;&gt;&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">class </span>CatalystAdaptor {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">static</span> CatalystAdaptor* <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">GetInstance</a>() {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> CatalystAdaptor kInstance;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> &amp;kInstance;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> ConstructDiffusionGrid(DiffusionGrid* dg, uint16_t idx) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">auto</span> num_boxes = dg-&gt;GetNumBoxesArray();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">auto</span> grid_dimensions = dg-&gt;GetDimensions();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> box_length = dg-&gt;GetBoxLength();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span> origin_x = grid_dimensions[0];</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">double</span> origin_y = grid_dimensions[2];</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">double</span> origin_z = grid_dimensions[4];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    vtk_dgrids_[idx]-&gt;SetOrigin(origin_x, origin_y, origin_z);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    vtk_dgrids_[idx]-&gt;SetDimensions(num_boxes[0], num_boxes[1], num_boxes[2]);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    vtk_dgrids_[idx]-&gt;SetSpacing(box_length, box_length, box_length);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">struct </span>AddCellAttributeData {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    AddCellAttributeData(<span class="keywordtype">size_t</span> ti, <span class="keywordtype">size_t</span> nc,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                         std::vector&lt;vtkUnstructuredGrid*&gt;* vd)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        : type_idx(ti), num_cells(nc), vtk_data(vd) {}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;double&gt;* dm, <span class="keyword">const</span> std::string&amp; name) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      vtk_array-&gt;SetName(name.c_str());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">auto</span> ptr = dm-&gt;data();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(num_cells), 1);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;int&gt;* dm, <span class="keyword">const</span> std::string&amp; name) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      vtkNew&lt;vtkIntArray&gt; vtk_array;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      vtk_array-&gt;SetName(name.c_str());</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keyword">auto</span> ptr = dm-&gt;data();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(num_cells), 1);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;std::array&lt;double, 3&gt;&gt;* dm,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    <span class="keyword">const</span> std::string&amp; name) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;position_&quot;</span>) {  <span class="comment">// TODO(lukas) performance</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        vtk_array-&gt;SetName(name.c_str());</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        vtk_array-&gt;SetNumberOfComponents(3);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        vtkNew&lt;vtkPoints&gt; points;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        points-&gt;SetData(vtk_array.GetPointer());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        (*vtk_data)[type_idx]-&gt;SetPoints(points.GetPointer());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;mass_location_&quot;</span>) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">// create points with position {0, 0, 0}</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// BDMGlyph will rotate and translate</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        vtkNew&lt;vtkPoints&gt; points;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        points-&gt;SetNumberOfPoints(num_cells);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        (*vtk_data)[type_idx]-&gt;SetPoints(points.GetPointer());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        vtk_array-&gt;SetName(name.c_str());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        vtk_array-&gt;SetNumberOfComponents(3);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        vtkNew&lt;vtkDoubleArray&gt; vtk_array;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        vtk_array-&gt;SetName(name.c_str());</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        vtk_array-&gt;SetNumberOfComponents(3);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> operator()(std::vector&lt;std::array&lt;int, 3&gt;&gt;* dm,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    <span class="keyword">const</span> std::string&amp; name) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      vtkNew&lt;vtkIntArray&gt; vtk_array;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      vtk_array-&gt;SetName(name.c_str());</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keyword">auto</span> ptr = dm-&gt;data()-&gt;data();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      vtk_array-&gt;SetNumberOfComponents(3);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      vtk_array-&gt;SetArray(ptr, static_cast&lt;vtkIdType&gt;(3 * num_cells), 1);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      (*vtk_data)[type_idx]-&gt;GetPointData()-&gt;AddArray(vtk_array.GetPointer());</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> operator()(...) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::AddCellAttributeData&quot;</span>,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                 <span class="stringliteral">&quot;This data member is not supported for visualization&quot;</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">size_t</span> type_idx;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">size_t</span> num_cells;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::vector&lt;vtkUnstructuredGrid*&gt;* vtk_data;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  };</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TContainer&gt;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">void</span> BuildCellsVTKStructures(TContainer* sim_objects, uint16_t type_idx) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">auto</span>&amp; scalar_name = TContainer::GetScalarTypeName();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (so_is_initialized_[type_idx] == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      vtk_so_grids_.push_back(vtkUnstructuredGrid::New());</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      so_is_initialized_[type_idx] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      shapes_[scalar_name] = sim_objects-&gt;GetShape();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      so_scalar_names_.push_back(scalar_name);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">void</span> BuildDiffusionGridVTKStructures(DiffusionGrid* dg, uint16_t idx,</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                       <span class="keyword">const</span> Param::VisualizeDiffusion&amp; vd) {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (dg_is_initialized_[idx] == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      vtk_dgrids_.push_back(vtkImageData::New());</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      dg_is_initialized_[idx] = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// Create the diffusion grid</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    ConstructDiffusionGrid(dg, idx);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">auto</span> total_boxes = dg-&gt;GetNumBoxes();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// Add attribute data</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> (vd.concentration_) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      vtkNew&lt;vtkDoubleArray&gt; concentration_array;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      concentration_array-&gt;SetName(<span class="stringliteral">&quot;Substance Concentration&quot;</span>);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keyword">auto</span> co_ptr = dg-&gt;GetAllConcentrations();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      concentration_array-&gt;SetArray(co_ptr, static_cast&lt;vtkIdType&gt;(total_boxes),</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                    1);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      vtk_dgrids_[idx]-&gt;GetPointData()-&gt;AddArray(</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;          concentration_array.GetPointer());</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">if</span> (vd.gradient_) {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      vtkNew&lt;vtkDoubleArray&gt; gradient_array;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      gradient_array-&gt;SetName(<span class="stringliteral">&quot;Diffusion Gradient&quot;</span>);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      gradient_array-&gt;SetNumberOfComponents(3);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <span class="keyword">auto</span> gr_ptr = dg-&gt;GetAllGradients();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      gradient_array-&gt;SetArray(gr_ptr, static_cast&lt;vtkIdType&gt;(total_boxes * 3),</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                               1);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      vtk_dgrids_[idx]-&gt;GetPointData()-&gt;AddArray(gradient_array.GetPointer());</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">Initialize</a>(<span class="keyword">const</span> std::string&amp; script) {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="keywordflow">if</span> (g_processor_ == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        g_processor_ = vtkCPProcessor::New();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        g_processor_-&gt;Initialize();</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">auto</span> rm = TResourceManager::Get();</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        so_is_initialized_.resize(rm-&gt;NumberOfTypes());</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        dg_is_initialized_.resize(rm-&gt;GetDiffusionGrids().size());</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        g_processor_-&gt;RemoveAllPipelines();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#ac7e02189f045a9b327897ba5a9f1aba5">Param::python_catalyst_pipeline_</a>) {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        vtkNew&lt;vtkCPPythonScriptPipeline&gt; pipeline;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        pipeline-&gt;Initialize(script.c_str());</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        g_processor_-&gt;AddPipeline(pipeline.GetPointer());</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        pipeline_ = <span class="keyword">new</span> InSituPipeline();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        g_processor_-&gt;AddPipeline(pipeline_);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">Finalize</a>() {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">if</span> (g_processor_) {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        g_processor_-&gt;Delete();</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        g_processor_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> sog : vtk_so_grids_) {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        sog-&gt;Delete();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        sog = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keyword">auto</span> num_cells = sim_objects-&gt;size();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">auto</span> required_dm = TContainer::GetRequiredVisDataMembers();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    sim_objects-&gt;ForEachDataMemberIn(</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        required_dm, AddCellAttributeData(type_idx, num_cells, &amp;vtk_so_grids_));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">auto</span>&amp; additional_dm = <a class="code" href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">Param::visualize_sim_objects_</a>[scalar_name];</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (!additional_dm.empty()) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      sim_objects-&gt;ForEachDataMemberIn(</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          additional_dm,</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;          AddCellAttributeData(type_idx, num_cells, &amp;vtk_so_grids_));</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">void</span> BuildDiffusionGridVTKStructures(DiffusionGrid* dg, uint16_t idx,</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                       <span class="keyword">const</span> Param::VisualizeDiffusion&amp; vd) {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span> (dg_is_initialized_[idx] == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      vtk_dgrids_.push_back(vtkImageData::New());</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      dg_is_initialized_[idx] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">// Create the diffusion grid</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    ConstructDiffusionGrid(dg, idx);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">auto</span> total_boxes = dg-&gt;GetNumBoxes();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">// Add attribute data</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span> (vd.concentration_) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      vtkNew&lt;vtkDoubleArray&gt; concentration_array;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      concentration_array-&gt;SetName(<span class="stringliteral">&quot;Substance Concentration&quot;</span>);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="keyword">auto</span> co_ptr = dg-&gt;GetAllConcentrations();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      concentration_array-&gt;SetArray(co_ptr, static_cast&lt;vtkIdType&gt;(total_boxes),</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                                    1);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      vtk_dgrids_[idx]-&gt;GetPointData()-&gt;AddArray(</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;          concentration_array.GetPointer());</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">if</span> (vd.gradient_) {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      vtkNew&lt;vtkDoubleArray&gt; gradient_array;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      gradient_array-&gt;SetName(<span class="stringliteral">&quot;Diffusion Gradient&quot;</span>);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      gradient_array-&gt;SetNumberOfComponents(3);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="keyword">auto</span> gr_ptr = dg-&gt;GetAllGradients();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      gradient_array-&gt;SetArray(gr_ptr, static_cast&lt;vtkIdType&gt;(total_boxes * 3),</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                               1);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      vtk_dgrids_[idx]-&gt;GetPointData()-&gt;AddArray(gradient_array.GetPointer());</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">Initialize</a>(<span class="keyword">const</span> std::string&amp; script) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <span class="keywordflow">if</span> (g_processor_ == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        g_processor_ = vtkCPProcessor::New();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        g_processor_-&gt;Initialize();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keyword">auto</span> rm = TResourceManager::Get();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        so_is_initialized_.resize(rm-&gt;NumberOfTypes());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        dg_is_initialized_.resize(rm-&gt;GetDiffusionGrids().size());</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        g_processor_-&gt;RemoveAllPipelines();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#ac7e02189f045a9b327897ba5a9f1aba5">Param::python_catalyst_pipeline_</a>) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        vtkNew&lt;vtkCPPythonScriptPipeline&gt; pipeline;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        pipeline-&gt;Initialize(script.c_str());</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        g_processor_-&gt;AddPipeline(pipeline.GetPointer());</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        pipeline_ = <span class="keyword">new</span> InSituPipeline();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        g_processor_-&gt;AddPipeline(pipeline_);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> dg : vtk_dgrids_) {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        dg-&gt;Delete();</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        dg = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <a class="code" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">GenerateParaviewState</a>();</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordtype">void</span> WriteToFile(<span class="keywordtype">size_t</span> step) {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    uint64_t counter = 0;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> vtk_so : vtk_so_grids_) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      vtkNew&lt;vtkXMLPUnstructuredGridWriter&gt; cells_writer;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      std::string filename =</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          so_scalar_names_[counter] + <span class="stringliteral">&quot;_data_&quot;</span> + std::to_string(step) + <span class="stringliteral">&quot;.pvtu&quot;</span>;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      cells_writer-&gt;SetFileName(filename.c_str());</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      cells_writer-&gt;SetInputData(vtk_so);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      cells_writer-&gt;Update();</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      counter++;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keyword">auto</span>&amp; dgrids = TResourceManager::Get()-&gt;GetDiffusionGrids();</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">size_t</span> idx = 0;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> vtk_dg : vtk_dgrids_) {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      vtkNew&lt;vtkXMLPImageDataWriter&gt; dgrid_writer;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      std::string dgrid_filename = dgrids[idx]-&gt;GetSubstanceName() + <span class="stringliteral">&quot;_&quot;</span> +</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                   std::to_string(step) + <span class="stringliteral">&quot;.pvti&quot;</span>;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      dgrid_writer-&gt;SetFileName(dgrid_filename.c_str());</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      dgrid_writer-&gt;SetInputData(vtk_dg);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      dgrid_writer-&gt;Update();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      idx++;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">Finalize</a>() {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <span class="keywordflow">if</span> (g_processor_) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        g_processor_-&gt;Delete();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        g_processor_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> sog : vtk_so_grids_) {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        sog-&gt;Delete();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        sog = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> dg : vtk_dgrids_) {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        dg-&gt;Delete();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        dg = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <a class="code" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">GenerateParaviewState</a>();</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordtype">void</span> WriteToFile(<span class="keywordtype">size_t</span> step) {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    uint64_t counter = 0;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> vtk_so : vtk_so_grids_) {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      vtkNew&lt;vtkXMLPUnstructuredGridWriter&gt; cells_writer;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      std::string filename =</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          so_scalar_names_[counter] + <span class="stringliteral">&quot;_data_&quot;</span> + std::to_string(step) + <span class="stringliteral">&quot;.pvtu&quot;</span>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      cells_writer-&gt;SetFileName(filename.c_str());</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      cells_writer-&gt;SetInputData(vtk_so);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      cells_writer-&gt;Update();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      counter++;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">auto</span>&amp; dgrids = TResourceManager::Get()-&gt;GetDiffusionGrids();</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">void</span> CreateVtkObjects(</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      vtkNew&lt;vtkCPDataDescription&gt;&amp; data_description) {  <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// Add simulation objects to the visualization if requested</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">auto</span> rm = TResourceManager::Get();</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    rm-&gt;ApplyOnAllTypes([&amp;, <span class="keyword">this</span>](<span class="keyword">auto</span>* sim_objects, uint16_t type_idx) {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <span class="keyword">auto</span> so_name =</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          std::decay&lt;decltype(*sim_objects)&gt;::type::GetScalarTypeName().c_str();</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      data_description-&gt;AddInput(so_name);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">size_t</span> idx = 0;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> vtk_dg : vtk_dgrids_) {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      vtkNew&lt;vtkXMLPImageDataWriter&gt; dgrid_writer;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      std::string dgrid_filename = dgrids[idx]-&gt;GetSubstanceName() + <span class="stringliteral">&quot;_&quot;</span> +</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                   std::to_string(step) + <span class="stringliteral">&quot;.pvti&quot;</span>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      dgrid_writer-&gt;SetFileName(dgrid_filename.c_str());</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      dgrid_writer-&gt;SetInputData(vtk_dg);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      dgrid_writer-&gt;Update();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      idx++;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="comment">// If we segfault at here it probably means that the pipeline was not</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="comment">// initialized (with a python script)</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keywordflow">if</span> ((g_processor_-&gt;RequestDataDescription(</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;              data_description.GetPointer())) != 0) {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        this-&gt;BuildCellsVTKStructures(sim_objects, type_idx);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        data_description-&gt;GetInputDescriptionByName(so_name)-&gt;SetGrid(</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            vtk_so_grids_[type_idx]);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      }</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    });</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// Add all diffusion grids to the visualization if requested</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="structbdm_1_1Param.html#a74472c035cbb19b54275bf7ac0b12028">Param::visualize_diffusion_</a>.empty()) {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      uint16_t idx = 0;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; vd : <a class="code" href="structbdm_1_1Param.html#a74472c035cbb19b54275bf7ac0b12028">Param::visualize_diffusion_</a>) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keyword">auto</span> dg = rm-&gt;GetDiffusionGrid(vd.name_);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">if</span> (dg == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          <a class="code" href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">Log::Warning</a>(<span class="stringliteral">&quot;Visualize Diffusion&quot;</span>, <span class="stringliteral">&quot;The substance with the name &quot;</span>,</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                       vd.name_,</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                       <span class="stringliteral">&quot; was not found in the list of defined substances. &quot;</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                       <span class="stringliteral">&quot;Did you spell the name correctly during &quot;</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                       <span class="stringliteral">&quot;configuration?&quot;</span>);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        data_description-&gt;AddInput(dg-&gt;GetSubstanceName().c_str());</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">if</span> (g_processor_-&gt;RequestDataDescription(</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                data_description.GetPointer()) != 0) {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;          this-&gt;BuildDiffusionGridVTKStructures(dg, idx, vd);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          data_description</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;              -&gt;GetInputDescriptionByName(dg-&gt;GetSubstanceName().c_str())</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;              -&gt;SetGrid(vtk_dgrids_[idx]);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        idx++;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">Visualize</a>(<span class="keywordtype">bool</span> last_iteration) {</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a>) {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      <span class="keywordtype">double</span> time = <a class="code" href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">Param::simulation_time_step_</a> * <a class="code" href="structbdm_1_1Param.html#abf9e2ef76b202d4cda42643dfdfcdd8f">Param::total_steps_</a>;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      <a class="code" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">CoProcess</a>(time, Param::total_steps_, last_iteration);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordtype">double</span> time = <a class="code" href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">Param::simulation_time_step_</a> * <a class="code" href="structbdm_1_1Param.html#abf9e2ef76b202d4cda42643dfdfcdd8f">Param::total_steps_</a>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <a class="code" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">ExportVisualization</a>(time, Param::total_steps_, last_iteration);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">CoProcess</a>(<span class="keywordtype">double</span> time, <span class="keywordtype">size_t</span> step, <span class="keywordtype">bool</span> last_time_step) {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    vtkNew&lt;vtkCPDataDescription&gt; data_description;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    data_description-&gt;SetTimeData(time, step);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    CreateVtkObjects(data_description);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">if</span> (last_time_step == <span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      data_description-&gt;ForceOutputOn();</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    }</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">if</span> (pipeline_ != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      <span class="keywordflow">if</span> (!(pipeline_-&gt;IsInitialized())) {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        pipeline_-&gt;Initialize(shapes_);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      }</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    g_processor_-&gt;CoProcess(data_description.GetPointer());</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  }</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">ExportVisualization</a>(<span class="keywordtype">double</span> time, <span class="keywordtype">size_t</span> step,</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                                  <span class="keywordtype">bool</span> last_time_step) {</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    vtkNew&lt;vtkCPDataDescription&gt; data_description;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    data_description-&gt;SetTimeData(time, step);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    CreateVtkObjects(data_description);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">if</span> (!sim_info_json_generated_) {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">GenerateSimulationInfoJson</a>(shapes_);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      sim_info_json_generated_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">if</span> (last_time_step == <span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      data_description-&gt;ForceOutputOn();</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    }</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">if</span> (step % <a class="code" href="structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2">Param::visualization_export_interval_</a> == 0) {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      WriteToFile(step);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  }</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  vtkCPProcessor* g_processor_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  InSituPipeline* pipeline_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  std::vector&lt;vtkImageData*&gt; vtk_dgrids_;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  std::vector&lt;vtkUnstructuredGrid*&gt; vtk_so_grids_;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  std::vector&lt;bool&gt; so_is_initialized_;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  std::vector&lt;bool&gt; dg_is_initialized_;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  std::unordered_map&lt;std::string, Shape&gt; shapes_;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  std::vector&lt;std::string&gt; so_scalar_names_;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordtype">bool</span> sim_info_json_generated_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">char</span> <span class="keyword">const</span>* kSimulationInfoJson = <span class="stringliteral">&quot;simulation_info.json&quot;</span>;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">CatalystAdaptorTest_GenerateSimulationInfoJson_Test</a>;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">CatalystAdaptorTest_GenerateParaviewState_Test</a>;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">GenerateSimulationInfoJson</a>(</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      <span class="keyword">const</span> std::unordered_map&lt;std::string, Shape&gt;&amp; shapes) {</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="comment">// simulation objects</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    std::stringstream sim_objects;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    uint64_t num_sim_objects = <a class="code" href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">Param::visualize_sim_objects_</a>.size();</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    uint64_t counter = 0;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry : <a class="code" href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">Param::visualize_sim_objects_</a>) {</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      std::string so_name = entry.first;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      sim_objects &lt;&lt; <span class="stringliteral">&quot;    {&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;      \&quot;name\&quot;:\&quot;&quot;</span> &lt;&lt; so_name &lt;&lt; <span class="stringliteral">&quot;\&quot;,&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      <span class="keywordflow">if</span> (shapes.at(so_name) == <a class="code" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">Shape::kSphere</a>) {</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        sim_objects &lt;&lt; <span class="stringliteral">&quot;      \&quot;glyph\&quot;:\&quot;Glyph\&quot;,&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;shape\&quot;:\&quot;Sphere\&quot;,&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;scaling_attribute\&quot;:\&quot;diameter_\&quot;&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (shapes.at(so_name) == <a class="code" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055">kCylinder</a>) {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        sim_objects &lt;&lt; <span class="stringliteral">&quot;      \&quot;glyph\&quot;:\&quot;BDMGlyph\&quot;,&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;shape\&quot;:\&quot;Cylinder\&quot;,&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;x_scaling_attribute\&quot;:\&quot;diameter_\&quot;,&quot;</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                    &lt;&lt; std::endl</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;y_scaling_attribute\&quot;:\&quot;actual_length_\&quot;,&quot;</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                    &lt;&lt; std::endl</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;z_scaling_attribute\&quot;:\&quot;diameter_\&quot;,&quot;</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                    &lt;&lt; std::endl</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;Vectors\&quot;:\&quot;spring_axis_\&quot;,&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;MassLocation\&quot;:\&quot;mass_location_\&quot;&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;      }</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      sim_objects &lt;&lt; <span class="stringliteral">&quot;    }&quot;</span>;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      <span class="keywordflow">if</span> (counter != num_sim_objects - 1) {</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        sim_objects &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;      }</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;      sim_objects &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      counter++;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    }</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="comment">// extracellular substances</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    std::stringstream substances;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    uint64_t num_substances = Param::visualize_diffusion_.size();</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; num_substances; i++) {</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;      substances &lt;&lt; <span class="stringliteral">&quot;    { \&quot;name\&quot;:\&quot;&quot;</span> &lt;&lt; Param::visualize_diffusion_[i].name_</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;\&quot;, &quot;</span>;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      std::string has_gradient =</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;          Param::visualize_diffusion_[i].gradient_ ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;      substances &lt;&lt; <span class="stringliteral">&quot;\&quot;has_gradient\&quot;:\&quot;&quot;</span> &lt;&lt; has_gradient &lt;&lt; <span class="stringliteral">&quot;\&quot; }&quot;</span>;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;      <span class="keywordflow">if</span> (i != num_substances - 1) {</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        substances &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;      }</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    }</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="comment">// write to file</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    std::ofstream ofstr;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    ofstr.open(kSimulationInfoJson);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    ofstr &lt;&lt; <span class="stringliteral">&quot;{&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  \&quot;simulation\&quot;: {&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;    \&quot;name\&quot;:\&quot;&quot;</span> &lt;&lt; <a class="code" href="structbdm_1_1Param.html#abcd13f04480fa20bed92dad5e3f5b56c">Param::executable_name_</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;,&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;    \&quot;result_dir\&quot;:\&quot;&quot;</span></div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;.&quot;</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  },&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  \&quot;sim_objects\&quot;: [&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;          &lt;&lt; sim_objects.str() &lt;&lt; <span class="stringliteral">&quot;  ],&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  \&quot;extracellular_substances\&quot;: [&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;          &lt;&lt; substances.str() &lt;&lt; std::endl</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  ]&quot;</span> &lt;&lt; std::endl</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;}&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    ofstr.close();</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  }</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">GenerateParaviewState</a>() {</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    std::stringstream python_cmd;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    python_cmd &lt;&lt; <span class="stringliteral">&quot;pvpython &quot;</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;               &lt;&lt; BDM_SRC_DIR <span class="stringliteral">&quot;/visualization/generate_pv_state.py &quot;</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;               &lt;&lt; kSimulationInfoJson;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordtype">int</span> ret_code = system(python_cmd.str().c_str());</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordflow">if</span> (ret_code) {</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::GenerateParaviewState&quot;</span>,</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                 <span class="stringliteral">&quot;Error during generation of ParaView state\n&quot;</span>, <span class="stringliteral">&quot;Command\n&quot;</span>,</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                 python_cmd.str());</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    }</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  }</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;};</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TResourceManager = ResourceManager&lt;&gt;&gt;</div>
-<div class="line"><a name="l00525"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html">  525</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html">CatalystAdaptor</a> {</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00527"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">  527</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html">CatalystAdaptor</a>* <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">GetInstance</a>() {</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keyword">static</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html">CatalystAdaptor</a> kInstance;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordflow">return</span> &amp;kInstance;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  }</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00532"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">  532</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">Initialize</a>(<span class="keyword">const</span> std::string&amp; script) {</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::Initialize&quot;</span>,</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    }</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  }</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
-<div class="line"><a name="l00540"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">  540</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">Finalize</a>() {</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::Finalize&quot;</span>,</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    }</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  }</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
-<div class="line"><a name="l00548"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">  548</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">Visualize</a>(<span class="keywordtype">bool</span> last_iteration) {</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::Visualize&quot;</span>,</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    }</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  }</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;</div>
-<div class="line"><a name="l00556"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">  556</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">CoProcess</a>(<span class="keywordtype">double</span> time, <span class="keywordtype">size_t</span> time_step, <span class="keywordtype">bool</span> last_time_step) {</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::CoProcess&quot;</span>,</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    }</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  }</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
-<div class="line"><a name="l00564"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">  564</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">ExportVisualization</a>(<span class="keywordtype">double</span> step, <span class="keywordtype">size_t</span> time_step, <span class="keywordtype">bool</span> last_time_step) {</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::ExportVisualization&quot;</span>,</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    }</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  }</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00573"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">  573</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">CatalystAdaptorTest_GenerateSimulationInfoJson_Test</a>;</div>
-<div class="line"><a name="l00574"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">  574</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">CatalystAdaptorTest_GenerateParaviewState_Test</a>;</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
-<div class="line"><a name="l00576"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">  576</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">GenerateSimulationInfoJson</a>(</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;      <span class="keyword">const</span> std::unordered_map&lt;std::string, Shape&gt;&amp; shapes) {</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::GenerateSimulationInfoJson&quot;</span>,</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;               <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;               <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  }</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
-<div class="line"><a name="l00583"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">  583</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">GenerateParaviewState</a>() {</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::GenerateParaviewState&quot;</span>,</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;               <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;               <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  }</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;};</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordtype">void</span> CreateVtkObjects(</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      vtkNew&lt;vtkCPDataDescription&gt;&amp; data_description) {  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="comment">// Add simulation objects to the visualization if requested</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keyword">auto</span> rm = TResourceManager::Get();</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    rm-&gt;ApplyOnAllTypes([&amp;, <span class="keyword">this</span>](<span class="keyword">auto</span>* sim_objects, uint16_t type_idx) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="keyword">auto</span> so_name =</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;          std::decay&lt;decltype(*sim_objects)&gt;::type::GetScalarTypeName().c_str();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      data_description-&gt;AddInput(so_name);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="comment">// If we segfault at here it probably means that the pipeline was not</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      <span class="comment">// initialized (with a python script)</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="keywordflow">if</span> ((g_processor_-&gt;RequestDataDescription(</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;              data_description.GetPointer())) != 0) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        this-&gt;BuildCellsVTKStructures(sim_objects, type_idx);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        data_description-&gt;GetInputDescriptionByName(so_name)-&gt;SetGrid(</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            vtk_so_grids_[type_idx]);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    });</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">// Add all diffusion grids to the visualization if requested</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="structbdm_1_1Param.html#a74472c035cbb19b54275bf7ac0b12028">Param::visualize_diffusion_</a>.empty()) {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      uint16_t idx = 0;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; vd : <a class="code" href="structbdm_1_1Param.html#a74472c035cbb19b54275bf7ac0b12028">Param::visualize_diffusion_</a>) {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keyword">auto</span> dg = rm-&gt;GetDiffusionGrid(vd.name_);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (dg == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;          <a class="code" href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">Log::Warning</a>(<span class="stringliteral">&quot;Visualize Diffusion&quot;</span>, <span class="stringliteral">&quot;The substance with the name &quot;</span>,</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                       vd.name_,</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                       <span class="stringliteral">&quot; was not found in the list of defined substances. &quot;</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                       <span class="stringliteral">&quot;Did you spell the name correctly during &quot;</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                       <span class="stringliteral">&quot;configuration?&quot;</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        data_description-&gt;AddInput(dg-&gt;GetSubstanceName().c_str());</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">if</span> (g_processor_-&gt;RequestDataDescription(</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                data_description.GetPointer()) != 0) {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;          this-&gt;BuildDiffusionGridVTKStructures(dg, idx, vd);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;          data_description</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;              -&gt;GetInputDescriptionByName(dg-&gt;GetSubstanceName().c_str())</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;              -&gt;SetGrid(vtk_dgrids_[idx]);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        idx++;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">Visualize</a>(<span class="keywordtype">bool</span> last_iteration) {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a>) {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <span class="keywordtype">double</span> time = <a class="code" href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">Param::simulation_time_step_</a> * <a class="code" href="structbdm_1_1Param.html#abf9e2ef76b202d4cda42643dfdfcdd8f">Param::total_steps_</a>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <a class="code" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">CoProcess</a>(time, Param::total_steps_, last_iteration);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <span class="keywordtype">double</span> time = <a class="code" href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">Param::simulation_time_step_</a> * <a class="code" href="structbdm_1_1Param.html#abf9e2ef76b202d4cda42643dfdfcdd8f">Param::total_steps_</a>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      <a class="code" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">ExportVisualization</a>(time, Param::total_steps_, last_iteration);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">CoProcess</a>(<span class="keywordtype">double</span> time, <span class="keywordtype">size_t</span> step, <span class="keywordtype">bool</span> last_time_step) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    vtkNew&lt;vtkCPDataDescription&gt; data_description;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    data_description-&gt;SetTimeData(time, step);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    CreateVtkObjects(data_description);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span> (last_time_step == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      data_description-&gt;ForceOutputOn();</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordflow">if</span> (pipeline_ != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      <span class="keywordflow">if</span> (!(pipeline_-&gt;IsInitialized())) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        pipeline_-&gt;Initialize(shapes_);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    }</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    g_processor_-&gt;CoProcess(data_description.GetPointer());</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  }</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">ExportVisualization</a>(<span class="keywordtype">double</span> time, <span class="keywordtype">size_t</span> step,</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                  <span class="keywordtype">bool</span> last_time_step) {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    vtkNew&lt;vtkCPDataDescription&gt; data_description;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    data_description-&gt;SetTimeData(time, step);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    CreateVtkObjects(data_description);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">if</span> (!sim_info_json_generated_) {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">GenerateSimulationInfoJson</a>(shapes_);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      sim_info_json_generated_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">if</span> (last_time_step == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      data_description-&gt;ForceOutputOn();</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">if</span> (step % <a class="code" href="structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2">Param::visualization_export_interval_</a> == 0) {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      WriteToFile(step);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  vtkCPProcessor* g_processor_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  InSituPipeline* pipeline_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  std::vector&lt;vtkImageData*&gt; vtk_dgrids_;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  std::vector&lt;vtkUnstructuredGrid*&gt; vtk_so_grids_;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  std::vector&lt;bool&gt; so_is_initialized_;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  std::vector&lt;bool&gt; dg_is_initialized_;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  std::unordered_map&lt;std::string, Shape&gt; shapes_;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  std::vector&lt;std::string&gt; so_scalar_names_;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordtype">bool</span> sim_info_json_generated_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">char</span> <span class="keyword">const</span>* kSimulationInfoJson = <span class="stringliteral">&quot;simulation_info.json&quot;</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">CatalystAdaptorTest_GenerateSimulationInfoJson_Test</a>;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">CatalystAdaptorTest_GenerateParaviewState_Test</a>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">GenerateSimulationInfoJson</a>(</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;      <span class="keyword">const</span> std::unordered_map&lt;std::string, Shape&gt;&amp; shapes) {</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="comment">// simulation objects</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    std::stringstream sim_objects;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    uint64_t num_sim_objects = <a class="code" href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">Param::visualize_sim_objects_</a>.size();</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    uint64_t counter = 0;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; entry : <a class="code" href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">Param::visualize_sim_objects_</a>) {</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      std::string so_name = entry.first;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;      sim_objects &lt;&lt; <span class="stringliteral">&quot;    {&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;      \&quot;name\&quot;:\&quot;&quot;</span> &lt;&lt; so_name &lt;&lt; <span class="stringliteral">&quot;\&quot;,&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;      <span class="keywordflow">if</span> (shapes.at(so_name) == <a class="code" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">Shape::kSphere</a>) {</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        sim_objects &lt;&lt; <span class="stringliteral">&quot;      \&quot;glyph\&quot;:\&quot;Glyph\&quot;,&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;shape\&quot;:\&quot;Sphere\&quot;,&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;scaling_attribute\&quot;:\&quot;diameter_\&quot;&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (shapes.at(so_name) == <a class="code" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055">kCylinder</a>) {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        sim_objects &lt;&lt; <span class="stringliteral">&quot;      \&quot;glyph\&quot;:\&quot;BDMGlyph\&quot;,&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;shape\&quot;:\&quot;Cylinder\&quot;,&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;x_scaling_attribute\&quot;:\&quot;diameter_\&quot;,&quot;</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                    &lt;&lt; std::endl</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;y_scaling_attribute\&quot;:\&quot;actual_length_\&quot;,&quot;</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                    &lt;&lt; std::endl</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;z_scaling_attribute\&quot;:\&quot;diameter_\&quot;,&quot;</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                    &lt;&lt; std::endl</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;Vectors\&quot;:\&quot;spring_axis_\&quot;,&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot;      \&quot;MassLocation\&quot;:\&quot;mass_location_\&quot;&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;      }</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      sim_objects &lt;&lt; <span class="stringliteral">&quot;    }&quot;</span>;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      <span class="keywordflow">if</span> (counter != num_sim_objects - 1) {</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        sim_objects &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      }</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;      sim_objects &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;      counter++;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    }</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="comment">// extracellular substances</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    std::stringstream substances;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    uint64_t num_substances = Param::visualize_diffusion_.size();</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; num_substances; i++) {</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      substances &lt;&lt; <span class="stringliteral">&quot;    { \&quot;name\&quot;:\&quot;&quot;</span> &lt;&lt; Param::visualize_diffusion_[i].name_</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;\&quot;, &quot;</span>;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;      std::string has_gradient =</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;          Param::visualize_diffusion_[i].gradient_ ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;      substances &lt;&lt; <span class="stringliteral">&quot;\&quot;has_gradient\&quot;:\&quot;&quot;</span> &lt;&lt; has_gradient &lt;&lt; <span class="stringliteral">&quot;\&quot; }&quot;</span>;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;      <span class="keywordflow">if</span> (i != num_substances - 1) {</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        substances &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      }</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    }</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="comment">// write to file</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    std::ofstream ofstr;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    ofstr.open(kSimulationInfoJson);</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    ofstr &lt;&lt; <span class="stringliteral">&quot;{&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  \&quot;simulation\&quot;: {&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;    \&quot;name\&quot;:\&quot;&quot;</span> &lt;&lt; <a class="code" href="structbdm_1_1Param.html#abcd13f04480fa20bed92dad5e3f5b56c">Param::executable_name_</a> &lt;&lt; <span class="stringliteral">&quot;\&quot;,&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;    \&quot;result_dir\&quot;:\&quot;&quot;</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;.&quot;</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  },&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  \&quot;sim_objects\&quot;: [&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;          &lt;&lt; sim_objects.str() &lt;&lt; <span class="stringliteral">&quot;  ],&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  \&quot;extracellular_substances\&quot;: [&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;          &lt;&lt; substances.str() &lt;&lt; std::endl</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;  ]&quot;</span> &lt;&lt; std::endl</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;}&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    ofstr.close();</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">GenerateParaviewState</a>() {</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    std::stringstream python_cmd;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    python_cmd &lt;&lt; <span class="stringliteral">&quot;pvpython &quot;</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;               &lt;&lt; BDM_SRC_DIR <span class="stringliteral">&quot;/visualization/generate_pv_state.py &quot;</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;               &lt;&lt; kSimulationInfoJson;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keywordtype">int</span> ret_code = system(python_cmd.str().c_str());</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="keywordflow">if</span> (ret_code) {</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::GenerateParaviewState&quot;</span>,</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                 <span class="stringliteral">&quot;Error during generation of ParaView state\n&quot;</span>, <span class="stringliteral">&quot;Command\n&quot;</span>,</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;                 python_cmd.str());</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    }</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  }</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;};</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TResourceManager = ResourceManager&lt;&gt;&gt;</div>
+<div class="line"><a name="l00539"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html">  539</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html">CatalystAdaptor</a> {</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00541"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">  541</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html">CatalystAdaptor</a>* <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">GetInstance</a>() {</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keyword">static</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html">CatalystAdaptor</a> kInstance;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keywordflow">return</span> &amp;kInstance;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  }</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">  546</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">Initialize</a>(<span class="keyword">const</span> std::string&amp; script) {</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::Initialize&quot;</span>,</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    }</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  }</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">  554</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">Finalize</a>() {</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::Finalize&quot;</span>,</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    }</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  }</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
+<div class="line"><a name="l00562"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">  562</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">Visualize</a>(<span class="keywordtype">bool</span> last_iteration) {</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::Visualize&quot;</span>,</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    }</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  }</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
+<div class="line"><a name="l00570"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">  570</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">CoProcess</a>(<span class="keywordtype">double</span> time, <span class="keywordtype">size_t</span> time_step, <span class="keywordtype">bool</span> last_time_step) {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::CoProcess&quot;</span>,</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    }</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  }</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
+<div class="line"><a name="l00578"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">  578</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">ExportVisualization</a>(<span class="keywordtype">double</span> step, <span class="keywordtype">size_t</span> time_step, <span class="keywordtype">bool</span> last_time_step) {</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">Param::live_visualization_</a> || <a class="code" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">Param::export_visualization_</a>) {</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::ExportVisualization&quot;</span>,</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    }</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  }</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00587"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">  587</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">CatalystAdaptorTest_GenerateSimulationInfoJson_Test</a>;</div>
+<div class="line"><a name="l00588"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">  588</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">CatalystAdaptorTest_GenerateParaviewState_Test</a>;</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">#endif  // defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="preprocessor">#endif  // VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
-<div class="ttc" id="structbdm_1_1Param_html_a74472c035cbb19b54275bf7ac0b12028"><div class="ttname"><a href="structbdm_1_1Param.html#a74472c035cbb19b54275bf7ac0b12028">bdm::Param::visualize_diffusion_</a></div><div class="ttdeci">static std::vector&lt; VisualizeDiffusion &gt; visualize_diffusion_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00222">param.h:222</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a9e22fd40f048fef30f94ed7017386b10"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">bdm::CatalystAdaptor::GetInstance</a></div><div class="ttdeci">static CatalystAdaptor * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00527">catalyst_adaptor.h:527</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_ac7e02189f045a9b327897ba5a9f1aba5"><div class="ttname"><a href="structbdm_1_1Param.html#ac7e02189f045a9b327897ba5a9f1aba5">bdm::Param::python_catalyst_pipeline_</a></div><div class="ttdeci">static bool python_catalyst_pipeline_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00240">param.h:240</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a3ad556811263673a5348659e4075b79f"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">bdm::CatalystAdaptor::Visualize</a></div><div class="ttdeci">void Visualize(bool last_iteration)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00548">catalyst_adaptor.h:548</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a0bcf31ea114d5aecb8a5f6b878da1d69"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">bdm::CatalystAdaptor::ExportVisualization</a></div><div class="ttdeci">void ExportVisualization(double step, size_t time_step, bool last_time_step)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00564">catalyst_adaptor.h:564</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a045d2d8a4ec23e79f3250efe3baf8ea6"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">bdm::CatalystAdaptor::CatalystAdaptorTest_GenerateSimulationInfoJson_Test</a></div><div class="ttdeci">friend class CatalystAdaptorTest_GenerateSimulationInfoJson_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00573">catalyst_adaptor.h:573</a></div></div>
-<div class="ttc" id="classbdm_1_1Log_html_a30fb7f6a405338c9bddba3d7cbb07f16"><div class="ttname"><a href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">bdm::Log::Warning</a></div><div class="ttdeci">static void Warning(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints warning message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00050">log.h:50</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_ad9e07ec7e600b7462833a6ddd07850f2"><div class="ttname"><a href="structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2">bdm::Param::visualization_export_interval_</a></div><div class="ttdeci">static uint32_t visualization_export_interval_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00169">param.h:169</a></div></div>
+<div class="line"><a name="l00590"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">  590</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">GenerateSimulationInfoJson</a>(</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;      <span class="keyword">const</span> std::unordered_map&lt;std::string, Shape&gt;&amp; shapes) {</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::GenerateSimulationInfoJson&quot;</span>,</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;               <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;               <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  }</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;</div>
+<div class="line"><a name="l00597"></a><span class="lineno"><a class="line" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">  597</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">GenerateParaviewState</a>() {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;CatalystAdaptor::GenerateParaviewState&quot;</span>,</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;               <span class="stringliteral">&quot;Simulation was compiled without ParaView support, but you are &quot;</span></div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;               <span class="stringliteral">&quot;trying to use it.&quot;</span>);</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  }</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;};</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="preprocessor">#endif  // defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="preprocessor">#endif  // VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
+<div class="ttc" id="structbdm_1_1Param_html_a74472c035cbb19b54275bf7ac0b12028"><div class="ttname"><a href="structbdm_1_1Param.html#a74472c035cbb19b54275bf7ac0b12028">bdm::Param::visualize_diffusion_</a></div><div class="ttdeci">static std::vector&lt; VisualizeDiffusion &gt; visualize_diffusion_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00236">param.h:236</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a9e22fd40f048fef30f94ed7017386b10"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a9e22fd40f048fef30f94ed7017386b10">bdm::CatalystAdaptor::GetInstance</a></div><div class="ttdeci">static CatalystAdaptor * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00541">catalyst_adaptor.h:541</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_ac7e02189f045a9b327897ba5a9f1aba5"><div class="ttname"><a href="structbdm_1_1Param.html#ac7e02189f045a9b327897ba5a9f1aba5">bdm::Param::python_catalyst_pipeline_</a></div><div class="ttdeci">static bool python_catalyst_pipeline_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00254">param.h:254</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a3ad556811263673a5348659e4075b79f"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f">bdm::CatalystAdaptor::Visualize</a></div><div class="ttdeci">void Visualize(bool last_iteration)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00562">catalyst_adaptor.h:562</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a0bcf31ea114d5aecb8a5f6b878da1d69"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69">bdm::CatalystAdaptor::ExportVisualization</a></div><div class="ttdeci">void ExportVisualization(double step, size_t time_step, bool last_time_step)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00578">catalyst_adaptor.h:578</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a045d2d8a4ec23e79f3250efe3baf8ea6"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">bdm::CatalystAdaptor::CatalystAdaptorTest_GenerateSimulationInfoJson_Test</a></div><div class="ttdeci">friend class CatalystAdaptorTest_GenerateSimulationInfoJson_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00587">catalyst_adaptor.h:587</a></div></div>
+<div class="ttc" id="classbdm_1_1Log_html_a30fb7f6a405338c9bddba3d7cbb07f16"><div class="ttname"><a href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">bdm::Log::Warning</a></div><div class="ttdeci">static void Warning(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints warning message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00064">log.h:64</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_ad9e07ec7e600b7462833a6ddd07850f2"><div class="ttname"><a href="structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2">bdm::Param::visualization_export_interval_</a></div><div class="ttdeci">static uint32_t visualization_export_interval_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00183">param.h:183</a></div></div>
 <div class="ttc" id="param_8h_html"><div class="ttname"><a href="param_8h.html">param.h</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a422324623f37d7b762d9969604f0b0fe"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">bdm::CatalystAdaptor::Finalize</a></div><div class="ttdeci">void Finalize()</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00540">catalyst_adaptor.h:540</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a8f557f1b4e89c2c58c5c46419c25bfbc"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">bdm::CatalystAdaptor::CoProcess</a></div><div class="ttdeci">void CoProcess(double time, size_t time_step, bool last_time_step)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00556">catalyst_adaptor.h:556</a></div></div>
-<div class="ttc" id="classbdm_1_1Log_html_ad80c15ca7fb87dc59f68477f5e8166d6"><div class="ttname"><a href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints fatal error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00098">log.h:98</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_a995108975c9077f1c95da4a9e12d3b66"><div class="ttname"><a href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">bdm::Param::visualize_sim_objects_</a></div><div class="ttdeci">static std::unordered_map&lt; std::string, std::set&lt; std::string &gt; &gt; visualize_sim_objects_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00192">param.h:192</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_a3cc70d57ed2965f5551e03b36a4a7219"><div class="ttname"><a href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">bdm::Param::simulation_time_step_</a></div><div class="ttdeci">static double simulation_time_step_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00080">param.h:80</a></div></div>
-<div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">bdm::kSphere</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00006">shape.h:6</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_aa3597fb59aa304a4003cbec43040644e"><div class="ttname"><a href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">bdm::Param::export_visualization_</a></div><div class="ttdeci">static bool export_visualization_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00159">param.h:159</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html">bdm::CatalystAdaptor</a></div><div class="ttdoc">False front (to ignore Catalyst in gtests) </div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00525">catalyst_adaptor.h:525</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a20551b0ab1df1b17546fb7f6f42bfe4c"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">bdm::CatalystAdaptor::CatalystAdaptorTest_GenerateParaviewState_Test</a></div><div class="ttdeci">friend class CatalystAdaptorTest_GenerateParaviewState_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00574">catalyst_adaptor.h:574</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_a9a1287ac6f95eeb59027d51dfa49e861"><div class="ttname"><a href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">bdm::Param::live_visualization_</a></div><div class="ttdeci">static bool live_visualization_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00151">param.h:151</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a422324623f37d7b762d9969604f0b0fe"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe">bdm::CatalystAdaptor::Finalize</a></div><div class="ttdeci">void Finalize()</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00554">catalyst_adaptor.h:554</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a8f557f1b4e89c2c58c5c46419c25bfbc"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">bdm::CatalystAdaptor::CoProcess</a></div><div class="ttdeci">void CoProcess(double time, size_t time_step, bool last_time_step)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00570">catalyst_adaptor.h:570</a></div></div>
+<div class="ttc" id="classbdm_1_1Log_html_ad80c15ca7fb87dc59f68477f5e8166d6"><div class="ttname"><a href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints fatal error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00112">log.h:112</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_a995108975c9077f1c95da4a9e12d3b66"><div class="ttname"><a href="structbdm_1_1Param.html#a995108975c9077f1c95da4a9e12d3b66">bdm::Param::visualize_sim_objects_</a></div><div class="ttdeci">static std::unordered_map&lt; std::string, std::set&lt; std::string &gt; &gt; visualize_sim_objects_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00206">param.h:206</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_a3cc70d57ed2965f5551e03b36a4a7219"><div class="ttname"><a href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">bdm::Param::simulation_time_step_</a></div><div class="ttdeci">static double simulation_time_step_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00094">param.h:94</a></div></div>
+<div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">bdm::kSphere</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_aa3597fb59aa304a4003cbec43040644e"><div class="ttname"><a href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">bdm::Param::export_visualization_</a></div><div class="ttdeci">static bool export_visualization_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00173">param.h:173</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html">bdm::CatalystAdaptor</a></div><div class="ttdoc">False front (to ignore Catalyst in gtests) </div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00539">catalyst_adaptor.h:539</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a20551b0ab1df1b17546fb7f6f42bfe4c"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">bdm::CatalystAdaptor::CatalystAdaptorTest_GenerateParaviewState_Test</a></div><div class="ttdeci">friend class CatalystAdaptorTest_GenerateParaviewState_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00588">catalyst_adaptor.h:588</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_a9a1287ac6f95eeb59027d51dfa49e861"><div class="ttname"><a href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">bdm::Param::live_visualization_</a></div><div class="ttdeci">static bool live_visualization_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00165">param.h:165</a></div></div>
 <div class="ttc" id="resource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_abf9e2ef76b202d4cda42643dfdfcdd8f"><div class="ttname"><a href="structbdm_1_1Param.html#abf9e2ef76b202d4cda42643dfdfcdd8f">bdm::Param::total_steps_</a></div><div class="ttdeci">static uint64_t total_steps_</div><div class="ttdoc">Variable which is tracking current step of simulation. </div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00041">param.h:41</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_abf9e2ef76b202d4cda42643dfdfcdd8f"><div class="ttname"><a href="structbdm_1_1Param.html#abf9e2ef76b202d4cda42643dfdfcdd8f">bdm::Param::total_steps_</a></div><div class="ttdeci">static uint64_t total_steps_</div><div class="ttdoc">Variable which is tracking current step of simulation. </div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00055">param.h:55</a></div></div>
 <div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
 <div class="ttc" id="insitu__pipeline_8h_html"><div class="ttname"><a href="insitu__pipeline_8h.html">insitu_pipeline.h</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a804e9d7eaa10a98949eac56cc8081d77"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">bdm::CatalystAdaptor::GenerateParaviewState</a></div><div class="ttdeci">static void GenerateParaviewState()</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00583">catalyst_adaptor.h:583</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_ae1ba9361c8aaffba7c72f4d326a34192"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">bdm::CatalystAdaptor::Initialize</a></div><div class="ttdeci">void Initialize(const std::string &amp;script)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00532">catalyst_adaptor.h:532</a></div></div>
-<div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055">bdm::kCylinder</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00006">shape.h:6</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_abcd13f04480fa20bed92dad5e3f5b56c"><div class="ttname"><a href="structbdm_1_1Param.html#abcd13f04480fa20bed92dad5e3f5b56c">bdm::Param::executable_name_</a></div><div class="ttdeci">static std::string executable_name_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00038">param.h:38</a></div></div>
-<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a9ea59d39db2bab57e08134cf60ec5d4e"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">bdm::CatalystAdaptor::GenerateSimulationInfoJson</a></div><div class="ttdeci">static void GenerateSimulationInfoJson(const std::unordered_map&lt; std::string, Shape &gt; &amp;shapes)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00576">catalyst_adaptor.h:576</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a804e9d7eaa10a98949eac56cc8081d77"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a804e9d7eaa10a98949eac56cc8081d77">bdm::CatalystAdaptor::GenerateParaviewState</a></div><div class="ttdeci">static void GenerateParaviewState()</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00597">catalyst_adaptor.h:597</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_ae1ba9361c8aaffba7c72f4d326a34192"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192">bdm::CatalystAdaptor::Initialize</a></div><div class="ttdeci">void Initialize(const std::string &amp;script)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00546">catalyst_adaptor.h:546</a></div></div>
+<div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055">bdm::kCylinder</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
+<div class="ttc" id="structbdm_1_1Param_html_abcd13f04480fa20bed92dad5e3f5b56c"><div class="ttname"><a href="structbdm_1_1Param.html#abcd13f04480fa20bed92dad5e3f5b56c">bdm::Param::executable_name_</a></div><div class="ttdeci">static std::string executable_name_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00052">param.h:52</a></div></div>
+<div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a9ea59d39db2bab57e08134cf60ec5d4e"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a9ea59d39db2bab57e08134cf60ec5d4e">bdm::CatalystAdaptor::GenerateSimulationInfoJson</a></div><div class="ttdeci">static void GenerateSimulationInfoJson(const std::unordered_map&lt; std::string, Shape &gt; &amp;shapes)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00590">catalyst_adaptor.h:590</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2ac5e416e20d6963657ce30aa6dbcd0f.html">visualization</a></li><li class="navelem"><a class="el" href="catalyst__adaptor_8h.html">catalyst_adaptor.h</a></li>
-    <li class="footer">Generated on Fri Jun 1 2018 11:14:16 for BioDynaMo by
+    <li class="footer">Generated on Fri Jun 1 2018 13:50:20 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

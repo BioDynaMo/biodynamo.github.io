@@ -106,45 +106,59 @@ $(document).ready(function(){initNavTree('macros_8h_source.html','');});
 <div class="title">macros.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="macros_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MACROS_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MACROS_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;cpp_magic.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// clang-format off</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="macros_8h.html#a15177597b5c1274368f7187210d814eb">   13</a></span>&#160;<span class="preprocessor">#define LOOP(operation, first, ...)                          \</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">  operation(first)                                           \</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">  IF(HAS_ARGS(__VA_ARGS__))(                                 \</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    DEFER2(_LOOP)()(operation, __VA_ARGS__))</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="macros_8h.html#a21626a433017b96470624329fc59cbcb">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LOOP() LOOP</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="comment">// clang-format on</span></div>
+<a href="macros_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (C) The BioDynaMo Project.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All Rights Reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// See the LICENSE file distributed with this work for details.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// See the NOTICE file distributed with this work for additional information</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// regarding copyright ownership.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef MACROS_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MACROS_H_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;cpp_magic.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// clang-format off</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="macros_8h.html#aa79e2de16527d5d7ccdbf4f2e36b11cb">   28</a></span>&#160;<span class="preprocessor">#define LOOP_2_1(operation, first, second, ...)           \</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">  operation(first, second)                                \</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">  IF(HAS_ARGS(__VA_ARGS__))(                              \</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    DEFER2(_LOOP_2_1)()(operation, first, __VA_ARGS__))</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="macros_8h.html#ae70bcca0590aa28f5736fa683657e9ea">   32</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LOOP_2_1() LOOP_2_1</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="comment">// clang-format on</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// clang-format off</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="macros_8h.html#a232a0cadc5cec5ea919a75f9e9037b4f">   43</a></span>&#160;<span class="preprocessor">#define LOOP_3_1(operation, first, second, third, ...)       \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">  operation(first, second, third)                            \</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  IF(HAS_ARGS(__VA_ARGS__))(                                 \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    DEFER2(_LOOP_3_1)()(operation, first, __VA_ARGS__))</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="macros_8h.html#a894131dab471f064580e6f76f125e518">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LOOP_3_1() LOOP_3_1</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="comment">// clang-format on</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="macros_8h.html#aa716ca54fa5b2822124b2130962f16f0">   51</a></span>&#160;<span class="preprocessor">#define BDM_FORCE_INLINE inline __attribute__((always_inline))</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif  // MACROS_H_</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="macros_8h.html#a15177597b5c1274368f7187210d814eb">   27</a></span>&#160;<span class="preprocessor">#define LOOP(operation, first, ...)                          \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">  operation(first)                                           \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">  IF(HAS_ARGS(__VA_ARGS__))(                                 \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    DEFER2(_LOOP)()(operation, __VA_ARGS__))</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="macros_8h.html#a21626a433017b96470624329fc59cbcb">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LOOP() LOOP</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="macros_8h.html#aa79e2de16527d5d7ccdbf4f2e36b11cb">   42</a></span>&#160;<span class="preprocessor">#define LOOP_2_1(operation, first, second, ...)           \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">  operation(first, second)                                \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">  IF(HAS_ARGS(__VA_ARGS__))(                              \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    DEFER2(_LOOP_2_1)()(operation, first, __VA_ARGS__))</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="macros_8h.html#ae70bcca0590aa28f5736fa683657e9ea">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LOOP_2_1() LOOP_2_1</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="macros_8h.html#a232a0cadc5cec5ea919a75f9e9037b4f">   57</a></span>&#160;<span class="preprocessor">#define LOOP_3_1(operation, first, second, third, ...)       \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">  operation(first, second, third)                            \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  IF(HAS_ARGS(__VA_ARGS__))(                                 \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    DEFER2(_LOOP_3_1)()(operation, first, __VA_ARGS__))</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="macros_8h.html#a894131dab471f064580e6f76f125e518">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LOOP_3_1() LOOP_3_1</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="macros_8h.html#aa716ca54fa5b2822124b2130962f16f0">   65</a></span>&#160;<span class="preprocessor">#define BDM_FORCE_INLINE inline __attribute__((always_inline))</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif  // MACROS_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="macros_8h.html">macros.h</a></li>
-    <li class="footer">Generated on Fri Jun 1 2018 11:14:16 for BioDynaMo by
+    <li class="footer">Generated on Fri Jun 1 2018 13:50:20 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

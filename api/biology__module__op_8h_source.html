@@ -106,47 +106,61 @@ $(document).ready(function(){initNavTree('biology__module__op_8h_source.html',''
 <div class="title">biology_module_op.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="biology__module__op_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BIOLOGY_MODULE_OP_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BIOLOGY_MODULE_OP_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span>  <span class="comment">// std::size_t</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span>  <span class="comment">// uint16_t</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="debug_8h.html">debug.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>bdm {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> std::size_t;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structbdm_1_1BiologyModuleOp.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1BiologyModuleOp.html">BiologyModuleOp</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TContainer&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structbdm_1_1BiologyModuleOp.html#a17fdb6ef707a7208bb72ce3844260bec">   15</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1BiologyModuleOp.html#a17fdb6ef707a7208bb72ce3844260bec">operator()</a>(TContainer* cells, uint16_t type_idx)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma omp parallel</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span>    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Iterations are data independent, so threads don&#39;t need to</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// wait for each other, which can improve performance when</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// biology modules are not equal in workload</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#pragma omp for nowait</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; cells-&gt;size(); i++) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        (*cells)[i].RunBiologyModules();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif  // BIOLOGY_MODULE_OP_H_</span></div>
+<a href="biology__module__op_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (C) The BioDynaMo Project.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All Rights Reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// See the LICENSE file distributed with this work for details.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// See the NOTICE file distributed with this work for additional information</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// regarding copyright ownership.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef BIOLOGY_MODULE_OP_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BIOLOGY_MODULE_OP_H_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span>  <span class="comment">// std::size_t</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span>  <span class="comment">// uint16_t</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="debug_8h.html">debug.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>bdm {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">using</span> std::size_t;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structbdm_1_1BiologyModuleOp.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1BiologyModuleOp.html">BiologyModuleOp</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TContainer&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structbdm_1_1BiologyModuleOp.html#a17fdb6ef707a7208bb72ce3844260bec">   29</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1BiologyModuleOp.html#a17fdb6ef707a7208bb72ce3844260bec">operator()</a>(TContainer* cells, uint16_t type_idx)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#pragma omp parallel</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span>    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Iterations are data independent, so threads don&#39;t need to</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// wait for each other, which can improve performance when</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// biology modules are not equal in workload</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#pragma omp for nowait</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; cells-&gt;size(); i++) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        (*cells)[i].RunBiologyModules();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif  // BIOLOGY_MODULE_OP_H_</span></div>
 <div class="ttc" id="debug_8h_html"><div class="ttname"><a href="debug_8h.html">debug.h</a></div></div>
-<div class="ttc" id="structbdm_1_1BiologyModuleOp_html"><div class="ttname"><a href="structbdm_1_1BiologyModuleOp.html">bdm::BiologyModuleOp</a></div><div class="ttdef"><b>Definition:</b> <a href="biology__module__op_8h_source.html#l00013">biology_module_op.h:13</a></div></div>
-<div class="ttc" id="structbdm_1_1BiologyModuleOp_html_a17fdb6ef707a7208bb72ce3844260bec"><div class="ttname"><a href="structbdm_1_1BiologyModuleOp.html#a17fdb6ef707a7208bb72ce3844260bec">bdm::BiologyModuleOp::operator()</a></div><div class="ttdeci">void operator()(TContainer *cells, uint16_t type_idx) const </div><div class="ttdef"><b>Definition:</b> <a href="biology__module__op_8h_source.html#l00015">biology_module_op.h:15</a></div></div>
+<div class="ttc" id="structbdm_1_1BiologyModuleOp_html"><div class="ttname"><a href="structbdm_1_1BiologyModuleOp.html">bdm::BiologyModuleOp</a></div><div class="ttdef"><b>Definition:</b> <a href="biology__module__op_8h_source.html#l00027">biology_module_op.h:27</a></div></div>
+<div class="ttc" id="structbdm_1_1BiologyModuleOp_html_a17fdb6ef707a7208bb72ce3844260bec"><div class="ttname"><a href="structbdm_1_1BiologyModuleOp.html#a17fdb6ef707a7208bb72ce3844260bec">bdm::BiologyModuleOp::operator()</a></div><div class="ttdeci">void operator()(TContainer *cells, uint16_t type_idx) const </div><div class="ttdef"><b>Definition:</b> <a href="biology__module__op_8h_source.html#l00029">biology_module_op.h:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="biology__module__op_8h.html">biology_module_op.h</a></li>
-    <li class="footer">Generated on Fri Jun 1 2018 11:14:16 for BioDynaMo by
+    <li class="footer">Generated on Fri Jun 1 2018 13:50:20 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

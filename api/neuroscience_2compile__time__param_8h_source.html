@@ -106,41 +106,55 @@ $(document).ready(function(){initNavTree('neuroscience_2compile__time__param_8h_
 <div class="title">compile_time_param.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="neuroscience_2compile__time__param_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NEUROSCIENCE_COMPILE_TIME_PARAM_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NEUROSCIENCE_COMPILE_TIME_PARAM_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="neurite__element_8h.html">neuroscience/neurite_element.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="neuron__soma_8h.html">neuroscience/neuron_soma.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>bdm {</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespacebdm_1_1experimental.html">    8</a></span>&#160;<span class="keyword">namespace </span>experimental {</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacebdm_1_1experimental_1_1neuroscience.html">    9</a></span>&#160;<span class="keyword">namespace </span>neuroscience {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TBackend = Soa&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html">   15</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html">DefaultCompileTimeParam</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html#aee847d0bd963d439945398dca27f73e9">   16</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html">NeuronSoma</a> = <a class="code" href="namespacebdm_1_1experimental_1_1neuroscience.html#a19a8647c1380b168f90512da31ce4754">::bdm::experimental::neuroscience::NeuronSoma</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html#a20098aee1c3bb6d43afa102b0f141764">   17</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html">NeuriteElement</a> = <a class="code" href="namespacebdm_1_1experimental_1_1neuroscience.html#add6cbd0e11bc40c3e7508d0c6ff67ef2">::bdm::experimental::neuroscience::NeuriteElement</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}  <span class="comment">// namespace neuroscience</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}  <span class="comment">// namespace experimental</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif  // NEUROSCIENCE_COMPILE_TIME_PARAM_H_</span></div>
+<a href="neuroscience_2compile__time__param_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (C) The BioDynaMo Project.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All Rights Reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// See the LICENSE file distributed with this work for details.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// See the NOTICE file distributed with this work for additional information</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// regarding copyright ownership.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef NEUROSCIENCE_COMPILE_TIME_PARAM_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NEUROSCIENCE_COMPILE_TIME_PARAM_H_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="neurite__element_8h.html">neuroscience/neurite_element.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="neuron__soma_8h.html">neuroscience/neuron_soma.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>bdm {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacebdm_1_1experimental.html">   22</a></span>&#160;<span class="keyword">namespace </span>experimental {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacebdm_1_1experimental_1_1neuroscience.html">   23</a></span>&#160;<span class="keyword">namespace </span>neuroscience {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TBackend = Soa&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html">DefaultCompileTimeParam</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html#aee847d0bd963d439945398dca27f73e9">   30</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html">NeuronSoma</a> = <a class="code" href="namespacebdm_1_1experimental_1_1neuroscience.html#a19a8647c1380b168f90512da31ce4754">::bdm::experimental::neuroscience::NeuronSoma</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html#a20098aee1c3bb6d43afa102b0f141764">   31</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html">NeuriteElement</a> = <a class="code" href="namespacebdm_1_1experimental_1_1neuroscience.html#add6cbd0e11bc40c3e7508d0c6ff67ef2">::bdm::experimental::neuroscience::NeuriteElement</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace neuroscience</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}  <span class="comment">// namespace experimental</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif  // NEUROSCIENCE_COMPILE_TIME_PARAM_H_</span></div>
 <div class="ttc" id="neurite__element_8h_html"><div class="ttname"><a href="neurite__element_8h.html">neurite_element.h</a></div></div>
-<div class="ttc" id="namespacebdm_1_1experimental_1_1neuroscience_html_add6cbd0e11bc40c3e7508d0c6ff67ef2"><div class="ttname"><a href="namespacebdm_1_1experimental_1_1neuroscience.html#add6cbd0e11bc40c3e7508d0c6ff67ef2">bdm::experimental::neuroscience::NeuriteElement</a></div><div class="ttdeci">NeuriteElementExt&lt; CompileTimeParam&lt; Scalar &gt;, Capsule&lt; NeuriteElementExt &gt;&gt; NeuriteElement</div><div class="ttdef"><b>Definition:</b> <a href="neurite__element_8h_source.html#l00203">neurite_element.h:203</a></div></div>
-<div class="ttc" id="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt_html"><div class="ttname"><a href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html">bdm::experimental::neuroscience::NeuriteElementExt</a></div><div class="ttdef"><b>Definition:</b> <a href="neurite__element_8h_source.html#l00203">neurite_element.h:203</a></div></div>
-<div class="ttc" id="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt_html"><div class="ttname"><a href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html">bdm::experimental::neuroscience::NeuronSomaExt</a></div><div class="ttdef"><b>Definition:</b> <a href="neuron__soma_8h_source.html#l00017">neuron_soma.h:17</a></div></div>
+<div class="ttc" id="namespacebdm_1_1experimental_1_1neuroscience_html_add6cbd0e11bc40c3e7508d0c6ff67ef2"><div class="ttname"><a href="namespacebdm_1_1experimental_1_1neuroscience.html#add6cbd0e11bc40c3e7508d0c6ff67ef2">bdm::experimental::neuroscience::NeuriteElement</a></div><div class="ttdeci">NeuriteElementExt&lt; CompileTimeParam&lt; Scalar &gt;, Capsule&lt; NeuriteElementExt &gt;&gt; NeuriteElement</div><div class="ttdef"><b>Definition:</b> <a href="neurite__element_8h_source.html#l00217">neurite_element.h:217</a></div></div>
+<div class="ttc" id="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt_html"><div class="ttname"><a href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html">bdm::experimental::neuroscience::NeuriteElementExt</a></div><div class="ttdef"><b>Definition:</b> <a href="neurite__element_8h_source.html#l00217">neurite_element.h:217</a></div></div>
+<div class="ttc" id="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt_html"><div class="ttname"><a href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html">bdm::experimental::neuroscience::NeuronSomaExt</a></div><div class="ttdef"><b>Definition:</b> <a href="neuron__soma_8h_source.html#l00031">neuron_soma.h:31</a></div></div>
 <div class="ttc" id="neuron__soma_8h_html"><div class="ttname"><a href="neuron__soma_8h.html">neuron_soma.h</a></div></div>
-<div class="ttc" id="namespacebdm_1_1experimental_1_1neuroscience_html_a19a8647c1380b168f90512da31ce4754"><div class="ttname"><a href="namespacebdm_1_1experimental_1_1neuroscience.html#a19a8647c1380b168f90512da31ce4754">bdm::experimental::neuroscience::NeuronSoma</a></div><div class="ttdeci">NeuronSomaExt&lt; CompileTimeParam&lt; Scalar &gt;, Capsule&lt; NeuronSomaExt &gt;&gt; NeuronSoma</div><div class="ttdef"><b>Definition:</b> <a href="neuron__soma_8h_source.html#l00017">neuron_soma.h:17</a></div></div>
-<div class="ttc" id="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam_html"><div class="ttname"><a href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html">bdm::experimental::neuroscience::DefaultCompileTimeParam</a></div><div class="ttdef"><b>Definition:</b> <a href="neuroscience_2compile__time__param_8h_source.html#l00015">compile_time_param.h:15</a></div></div>
+<div class="ttc" id="namespacebdm_1_1experimental_1_1neuroscience_html_a19a8647c1380b168f90512da31ce4754"><div class="ttname"><a href="namespacebdm_1_1experimental_1_1neuroscience.html#a19a8647c1380b168f90512da31ce4754">bdm::experimental::neuroscience::NeuronSoma</a></div><div class="ttdeci">NeuronSomaExt&lt; CompileTimeParam&lt; Scalar &gt;, Capsule&lt; NeuronSomaExt &gt;&gt; NeuronSoma</div><div class="ttdef"><b>Definition:</b> <a href="neuron__soma_8h_source.html#l00031">neuron_soma.h:31</a></div></div>
+<div class="ttc" id="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam_html"><div class="ttname"><a href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html">bdm::experimental::neuroscience::DefaultCompileTimeParam</a></div><div class="ttdef"><b>Definition:</b> <a href="neuroscience_2compile__time__param_8h_source.html#l00029">compile_time_param.h:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19355cc319126bb51dcdac43ee2050e0.html">neuroscience</a></li><li class="navelem"><a class="el" href="neuroscience_2compile__time__param_8h.html">compile_time_param.h</a></li>
-    <li class="footer">Generated on Fri Jun 1 2018 11:14:16 for BioDynaMo by
+    <li class="footer">Generated on Fri Jun 1 2018 13:50:20 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

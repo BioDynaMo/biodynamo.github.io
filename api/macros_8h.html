@@ -144,7 +144,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="macros_8h_source.html#l00017">17</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+<p>Definition at line <a class="el" href="macros_8h_source.html#l00031">31</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
 
 </div>
 </div>
@@ -161,7 +161,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="macros_8h_source.html#l00032">32</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+<p>Definition at line <a class="el" href="macros_8h_source.html#l00046">46</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="macros_8h_source.html#l00047">47</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+<p>Definition at line <a class="el" href="macros_8h_source.html#l00061">61</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ Macros</h2></td></tr>
 
 <p>Macro to force compiler to inline a function. </p>
 
-<p>Definition at line <a class="el" href="macros_8h_source.html#l00051">51</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+<p>Definition at line <a class="el" href="macros_8h_source.html#l00065">65</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
 
 </div>
 </div>
@@ -230,10 +230,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">operation(first)                                           \</div>
 <div class="line">  IF(HAS_ARGS(__VA_ARGS__))(                                 \</div>
 <div class="line">    DEFER2(<a class="code" href="macros_8h.html#a21626a433017b96470624329fc59cbcb">_LOOP</a>)()(operation, __VA_ARGS__))</div>
-<div class="ttc" id="macros_8h_html_a21626a433017b96470624329fc59cbcb"><div class="ttname"><a href="macros_8h.html#a21626a433017b96470624329fc59cbcb">_LOOP</a></div><div class="ttdeci">#define _LOOP()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00017">macros.h:17</a></div></div>
+<div class="ttc" id="macros_8h_html_a21626a433017b96470624329fc59cbcb"><div class="ttname"><a href="macros_8h.html#a21626a433017b96470624329fc59cbcb">_LOOP</a></div><div class="ttdeci">#define _LOOP()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00031">macros.h:31</a></div></div>
 </div><!-- fragment --><p>loops over variadic macro arguments and calls the specified operation processes one argument in each iteration e.g. <a class="el" href="macros_8h.html#a15177597b5c1274368f7187210d814eb">LOOP(OP, a, b)</a> will lead to: OP(a) OP(b) For a more detailed explanation see <code>MAP</code> macro in <code>third_party/cpp_magic.h</code> </p>
 
-<p>Definition at line <a class="el" href="macros_8h_source.html#l00013">13</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+<p>Definition at line <a class="el" href="macros_8h_source.html#l00027">27</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
 
 </div>
 </div>
@@ -275,10 +275,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">operation(first, second)                                \</div>
 <div class="line">  IF(HAS_ARGS(__VA_ARGS__))(                              \</div>
 <div class="line">    DEFER2(<a class="code" href="macros_8h.html#ae70bcca0590aa28f5736fa683657e9ea">_LOOP_2_1</a>)()(operation, first, __VA_ARGS__))</div>
-<div class="ttc" id="macros_8h_html_ae70bcca0590aa28f5736fa683657e9ea"><div class="ttname"><a href="macros_8h.html#ae70bcca0590aa28f5736fa683657e9ea">_LOOP_2_1</a></div><div class="ttdeci">#define _LOOP_2_1()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00032">macros.h:32</a></div></div>
+<div class="ttc" id="macros_8h_html_ae70bcca0590aa28f5736fa683657e9ea"><div class="ttname"><a href="macros_8h.html#ae70bcca0590aa28f5736fa683657e9ea">_LOOP_2_1</a></div><div class="ttdeci">#define _LOOP_2_1()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00046">macros.h:46</a></div></div>
 </div><!-- fragment --><p>loops over variadic macro arguments and calls the specified operation removes the first two parameters in each iteration, but adds the first one again for the next call e.g. <a class="el" href="macros_8h.html#a232a0cadc5cec5ea919a75f9e9037b4f">LOOP_3_1(OP, a, b, c)</a> will lead to: OP(a, b) OP(a, c) For a more detailed explanation see <code>MAP</code> macro in <code>third_party/cpp_magic.h</code> </p>
 
-<p>Definition at line <a class="el" href="macros_8h_source.html#l00028">28</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+<p>Definition at line <a class="el" href="macros_8h_source.html#l00042">42</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
 
 </div>
 </div>
@@ -326,10 +326,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">operation(first, second, third)                            \</div>
 <div class="line">  IF(HAS_ARGS(__VA_ARGS__))(                                 \</div>
 <div class="line">    DEFER2(<a class="code" href="macros_8h.html#a894131dab471f064580e6f76f125e518">_LOOP_3_1</a>)()(operation, first, __VA_ARGS__))</div>
-<div class="ttc" id="macros_8h_html_a894131dab471f064580e6f76f125e518"><div class="ttname"><a href="macros_8h.html#a894131dab471f064580e6f76f125e518">_LOOP_3_1</a></div><div class="ttdeci">#define _LOOP_3_1()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00047">macros.h:47</a></div></div>
+<div class="ttc" id="macros_8h_html_a894131dab471f064580e6f76f125e518"><div class="ttname"><a href="macros_8h.html#a894131dab471f064580e6f76f125e518">_LOOP_3_1</a></div><div class="ttdeci">#define _LOOP_3_1()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00061">macros.h:61</a></div></div>
 </div><!-- fragment --><p>loops over variadic macro arguments and calls the specified operation removes the first three parameters in each iteration, but adds the first one again for the next call e.g. <a class="el" href="macros_8h.html#a232a0cadc5cec5ea919a75f9e9037b4f">LOOP_3_1(OP, a, b, c, d, e)</a> will lead to: OP(a, b, c) OP(a, d, e) For a more detailed explanation see <code>MAP</code> macro in <code>third_party/cpp_magic.h</code> </p>
 
-<p>Definition at line <a class="el" href="macros_8h_source.html#l00043">43</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+<p>Definition at line <a class="el" href="macros_8h_source.html#l00057">57</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="macros_8h.html">macros.h</a></li>
-    <li class="footer">Generated on Fri Jun 1 2018 11:14:16 for BioDynaMo by
+    <li class="footer">Generated on Fri Jun 1 2018 13:50:20 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
