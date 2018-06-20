@@ -468,14 +468,13 @@
 <div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo
 <span class="nb">cd</span> biodynamo
 
-./prerequesites.sh .
-
-<span class="c1"># restart your terminal and continue with:</span>
-<span class="nv">$use_biodynamo</span>
+./prerequesites.sh
+<span class="c1"># follow the instructions of the script:</span>
+<span class="nb">source</span> &lt;path-to-bdm-installation&gt;/biodynamo-env.sh
 
 mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
 cmake .. <span class="o">&amp;&amp;</span> make -j4
-sudo make install
+make install
 </pre></div>
 
 <h2 id="cmake-build-options">CMake Build Options</h2>

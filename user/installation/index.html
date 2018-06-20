@@ -504,7 +504,7 @@
 The installation will also install all required packages including Paraview.</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo.git
 <span class="nb">cd</span> biodynamo
-./install.sh .
+./install.sh
 </pre></div>
 
 <div class="admonition important">
@@ -512,7 +512,8 @@ The installation will also install all required packages including Paraview.</p>
 <ol>
 <li>
 <p>After the installation you need to restart your terminal.
-  In every new terminal execute <code class="codehilite">$use_biodynamo</code> to use BioDynaMo!</p>
+  In every new terminal execute <code class="codehilite">source &lt;path-to-bdm-installation&gt;/biodynamo-env.sh</code>
+  to use BioDynaMo!</p>
 </li>
 <li>
 <p>BioDynaMo uses a customized version of ParaView.
@@ -527,7 +528,7 @@ The installation will also install all required packages including Paraview.</p>
 git checkout master
 <span class="c1"># get latest changes</span>
 git pull origin master
-./install.sh .
+./install.sh
 </pre></div>
 
 <h2 id="supported-platforms">Supported platforms</h2>
