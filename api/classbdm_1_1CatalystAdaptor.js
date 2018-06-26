@@ -1,10 +1,9 @@
 var classbdm_1_1CatalystAdaptor =
 [
-    [ "CoProcess", "classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc", null ],
-    [ "ExportVisualization", "classbdm_1_1CatalystAdaptor.html#a0bcf31ea114d5aecb8a5f6b878da1d69", null ],
-    [ "Finalize", "classbdm_1_1CatalystAdaptor.html#a422324623f37d7b762d9969604f0b0fe", null ],
-    [ "Initialize", "classbdm_1_1CatalystAdaptor.html#ae1ba9361c8aaffba7c72f4d326a34192", null ],
-    [ "Visualize", "classbdm_1_1CatalystAdaptor.html#a3ad556811263673a5348659e4075b79f", null ],
+    [ "CatalystAdaptor", "classbdm_1_1CatalystAdaptor.html#ae3f05c90590b0dc122d03842bbaa9d9a", null ],
+    [ "ExportVisualization", "classbdm_1_1CatalystAdaptor.html#a4aa216a6727c1bf644956d5e9ab822fa", null ],
+    [ "LiveVisualization", "classbdm_1_1CatalystAdaptor.html#af5b333f9e1074a74467386e10a80b75e", null ],
+    [ "Visualize", "classbdm_1_1CatalystAdaptor.html#a81aba083e64010adac43a03c5d6d0123", null ],
     [ "CatalystAdaptorTest_GenerateParaviewState_Test", "classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c", null ],
     [ "CatalystAdaptorTest_GenerateSimulationInfoJson_Test", "classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6", null ]
 ];

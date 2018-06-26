@@ -9,6 +9,8 @@ var searchData=
   ['bdm_5fsim_5fobject',['BDM_SIM_OBJECT',['../simulation__object__util_8h.html#a1b9f7ea7c3d696427b4d429ff4dd6bab',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5fassignment_5fop_5fbody',['BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY',['../simulation__object__util_8h.html#a2696ac93969831bbd705d5259fa70db0',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5fassignment_5fop_5fbody_5fiterator',['BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY_ITERATOR',['../simulation__object__util_8h.html#a277277a697cc554421ee16046005e755',1,'simulation_object_util.h']]],
+  ['bdm_5fsim_5fobject_5fassignment_5fop_5fmove_5fbody',['BDM_SIM_OBJECT_ASSIGNMENT_OP_MOVE_BODY',['../simulation__object__util_8h.html#a01b65a87e3f8ab5e65b256562f0cb217',1,'simulation_object_util.h']]],
+  ['bdm_5fsim_5fobject_5fassignment_5fop_5fmove_5fbody_5fiterator',['BDM_SIM_OBJECT_ASSIGNMENT_OP_MOVE_BODY_ITERATOR',['../simulation__object__util_8h.html#a975a41e02f17b6be52aced9e08c0a387',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5fclear_5fbody',['BDM_SIM_OBJECT_CLEAR_BODY',['../simulation__object__util_8h.html#a45101cd894661fa568b17d1a42fbc812',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5fclear_5fbody_5fiterator',['BDM_SIM_OBJECT_CLEAR_BODY_ITERATOR',['../simulation__object__util_8h.html#aca36ec3908fc0451f67889fb75b14734',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5fcpy_5fctor_5finit',['BDM_SIM_OBJECT_CPY_CTOR_INIT',['../simulation__object__util_8h.html#abc2dcebf452bc6bce29d5e6b33ca1619',1,'simulation_object_util.h']]],

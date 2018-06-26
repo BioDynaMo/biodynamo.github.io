@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a81699bde17492df7fb7a3829b394b036">bdm::IntegralTypeWrapper&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1OneElementArray.html#a36d0330a9d258f6176c6909e09e65528">bdm::OneElementArray&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1ResourceManager.html#a88ff27650f7c81ffff25e2ef5c3f8587">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
-, <a class="el" href="classbdm_1_1SimulationObjectVector.html#a24ea7081086b96eebd2160ec6d2527a1">bdm::SimulationObjectVector&lt; T, TResourceManager &gt;</a>
+, <a class="el" href="classbdm_1_1SimulationObjectVector.html#ac434ed6fc7cd4ce94e5728bccdd2a071">bdm::SimulationObjectVector&lt; T, TSimulation &gt;</a>
 , <a class="el" href="classbdm_1_1TransactionalVector.html#a32441d68afc9f870df19f2fb15420a70">bdm::TransactionalVector&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1Variant.html#ab282e70218f243f4c762428a1b8fbcfb">bdm::Variant&lt; Types &gt;</a>
 </li>
@@ -270,7 +270,6 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>density_
 : <a class="el" href="classbdm_1_1CellExt.html#ac9a48e994502b7c77b4f434127f27254">bdm::CellExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a361bbbcf231aa32bca7cf33575c83cb6">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 </li>
 <li>descriptions_
 : <a class="el" href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">bdm::TimingAggregator</a>
@@ -301,31 +300,31 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#ad41ba0e6b6f746c8bfdc0f7e56e9b666">bdm::DiffusionGrid</a>
 </li>
 <li>diffusion_
-: <a class="el" href="classbdm_1_1Scheduler.html#a675572d241bf0da13261612f596a3232">bdm::Scheduler&lt; TResourceManager, TGrid &gt;</a>
+: <a class="el" href="classbdm_1_1Scheduler.html#aec1ae72882f6bdde007c554618e16e26">bdm::Scheduler&lt; TSimulation &gt;</a>
 </li>
 <li>diffusion_grids_
 : <a class="el" href="classbdm_1_1ResourceManager.html#a9d351fcccfba77cd80ca7f4ef18db368">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 </li>
 <li>DiffusionGrid()
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#a9b1c0b830a7d1dbedb0e4a88ce5d8b01">bdm::DiffusionGrid</a>
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac">bdm::DiffusionGrid</a>
 </li>
 <li>DiffusionOp()
-: <a class="el" href="classbdm_1_1DiffusionOp.html#a20627676b473cdf2851ab31a641a6dd3">bdm::DiffusionOp&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1DiffusionOp.html#af5866f7e6c91715c279ead9213c89708">bdm::DiffusionOp</a>
 </li>
 <li>DisplacementOp()
-: <a class="el" href="classbdm_1_1DisplacementOp.html#a18a10ce63a36b4bd4197a447a044d66d">bdm::DisplacementOp&lt; TRm &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOp.html#af2782c42308968c64f0fef918efecac8">bdm::DisplacementOp&lt; TSimulation &gt;</a>
 </li>
 <li>DisplacementOpCpu()
-: <a class="el" href="classbdm_1_1DisplacementOpCpu.html#a5a1976287c221aa220885ab0d30e25de">bdm::DisplacementOpCpu&lt; TGrid &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOpCpu.html#a0557208baf375528eca345f5b3c5a80c">bdm::DisplacementOpCpu&lt; TSimulation &gt;</a>
 </li>
 <li>DisplacementOpCuda()
-: <a class="el" href="classbdm_1_1DisplacementOpCuda.html#aaafe2e4e1bca5bfea7b54fa7af619767">bdm::DisplacementOpCuda&lt; TGrid &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOpCuda.html#a6af04a8788d52c9087fe30cf447d2311">bdm::DisplacementOpCuda&lt; TSimulation &gt;</a>
 </li>
 <li>DisplacementOpCudaKernel()
 : <a class="el" href="classbdm_1_1DisplacementOpCudaKernel.html#a4758aa387477b14cdf02f3013f606fca">bdm::DisplacementOpCudaKernel</a>
 </li>
 <li>DisplacementOpOpenCL()
-: <a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#a3fd44b25bd315ce971db2d02876050b1">bdm::DisplacementOpOpenCL&lt; TGrid, TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#adf1c490e7ac54feb8bc4f941627f7de2">bdm::DisplacementOpOpenCL&lt; TSimulation &gt;</a>
 </li>
 <li>DistalEnd()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a1ea404d14ba536d2fe7cb1f4c725531e">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
@@ -337,7 +336,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="classbdm_1_1CellExt.html#a96cdd7f46654b80ac0913bba9f74870d">bdm::CellExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 </li>
 <li>DividingCellOp()
-: <a class="el" href="classbdm_1_1DividingCellOp.html#a59bbc58e480defbbf650c0b4d565d245">bdm::DividingCellOp</a>
+: <a class="el" href="classbdm_1_1DividingCellOp.html#a5905198afc41b6b143d29a9f7d3701c0">bdm::DividingCellOp</a>
 </li>
 <li>DoLiveVisualization()
 : <a class="el" href="classbdm_1_1InSituPipeline.html#a21ab5153b2c6f2550d5a428d6d0405eb">bdm::InSituPipeline</a>
@@ -354,7 +353,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:24 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:50 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

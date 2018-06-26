@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: bdm::Grid&lt; TResourceManager &gt; Class Template Reference</title>
+<title>BioDynaMo: bdm::Grid&lt; TSimulation &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,12 +108,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1Grid.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1Grid-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bdm::Grid&lt; TResourceManager &gt; Class Template Reference</div>  </div>
+<div class="title">bdm::Grid&lt; TSimulation &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -133,169 +132,182 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7d1be76b02db5c0320b801ca9c481b01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a> { <a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01acee9ff7a1195b94d94199867126a5024">kLow</a>, 
-<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01a18799b15ec736ef95eb80089b370d8b5">kMedium</a>, 
-<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01ace276e461f72422c0d336e2c3e87867d">kHigh</a>
+<tr class="memitem:a7d1be76b02db5c0320b801ca9c481b01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a> { <a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01a7b8eeeaeaf62062644d985de1257dd4e">kLow</a>, 
+<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01ae89d499216c0f9b1c67504ee5f449110">kMedium</a>, 
+<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01a78b2378f499703c103545febd135b4d6">kHigh</a>
  }</td></tr>
 <tr class="memdesc:a7d1be76b02db5c0320b801ca9c481b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum that determines the degree of adjacency in search neighbor boxes.  <a href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">More...</a><br/></td></tr>
 <tr class="separator:a7d1be76b02db5c0320b801ca9c481b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d36b0e1bc4ee8e6472a518df1f24920"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> = typename TSimulation::ResourceManager_t</td></tr>
+<tr class="separator:a8d36b0e1bc4ee8e6472a518df1f24920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e59fde8ab51a04355f5e1871890b3a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a1e59fde8ab51a04355f5e1871890b3a4">Grid</a> ()</td></tr>
-<tr class="separator:a1e59fde8ab51a04355f5e1871890b3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6926144fab0d3be8ff6f1003ad0e2266"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a6926144fab0d3be8ff6f1003ad0e2266">Grid</a> (<a class="el" href="classbdm_1_1Grid.html">Grid</a> const &amp;)=delete</td></tr>
-<tr class="separator:a6926144fab0d3be8ff6f1003ad0e2266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07432209939bc3134301dc1275f930e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a07432209939bc3134301dc1275f930e4">operator=</a> (<a class="el" href="classbdm_1_1Grid.html">Grid</a> const &amp;)=delete</td></tr>
-<tr class="separator:a07432209939bc3134301dc1275f930e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6bb9a88f3bb6f094b8a00581fab4980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#af6bb9a88f3bb6f094b8a00581fab4980">Initialize</a> (<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a> adjacency=<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01ace276e461f72422c0d336e2c3e87867d">kHigh</a>)</td></tr>
-<tr class="memdesc:af6bb9a88f3bb6f094b8a00581fab4980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the grid with the given simulation objects.  <a href="#af6bb9a88f3bb6f094b8a00581fab4980">More...</a><br/></td></tr>
-<tr class="separator:af6bb9a88f3bb6f094b8a00581fab4980"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c6eae7733953dd680ff6a15ce74c3cf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a3c6eae7733953dd680ff6a15ce74c3cf">~Grid</a> ()</td></tr>
-<tr class="separator:a3c6eae7733953dd680ff6a15ce74c3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74776cc3ab45303357bd73141d73ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ab74776cc3ab45303357bd73141d73ba0">ClearGrid</a> ()</td></tr>
-<tr class="memdesc:ab74776cc3ab45303357bd73141d73ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the grid.  <a href="#ab74776cc3ab45303357bd73141d73ba0">More...</a><br/></td></tr>
-<tr class="separator:ab74776cc3ab45303357bd73141d73ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a983df2ef2298a34699f9b5d207cb5e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a983df2ef2298a34699f9b5d207cb5e55">UpdateGrid</a> ()</td></tr>
-<tr class="memdesc:a983df2ef2298a34699f9b5d207cb5e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the grid, as simulation objects may have moved, added or deleted.  <a href="#a983df2ef2298a34699f9b5d207cb5e55">More...</a><br/></td></tr>
-<tr class="separator:a983df2ef2298a34699f9b5d207cb5e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bce8d601cb204e5fe615187ea18ea99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a5bce8d601cb204e5fe615187ea18ea99">CheckGridGrowth</a> ()</td></tr>
-<tr class="separator:a5bce8d601cb204e5fe615187ea18ea99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5389fb71891350e0142874ad542dec40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a5389fb71891350e0142874ad542dec40">CalculateGridDimensions</a> (array&lt; double, 6 &gt; *ret_grid_dimensions)</td></tr>
-<tr class="separator:a5389fb71891350e0142874ad542dec40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad175e3144fe953809b53ead2d33597d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ad175e3144fe953809b53ead2d33597d5">RoundOffGridDimensions</a> (const array&lt; double, 6 &gt; &amp;grid_dimensions)</td></tr>
-<tr class="separator:ad175e3144fe953809b53ead2d33597d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9f256b215326bd132c69587cbf2e635"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ae9f256b215326bd132c69587cbf2e635">SquaredEuclideanDistance</a> (const std::array&lt; double, 3 &gt; &amp;pos1, const std::array&lt; double, 3 &gt; &amp;pos2) const </td></tr>
-<tr class="memdesc:ae9f256b215326bd132c69587cbf2e635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the squared euclidian distance between two points in 3D.  <a href="#ae9f256b215326bd132c69587cbf2e635">More...</a><br/></td></tr>
-<tr class="separator:ae9f256b215326bd132c69587cbf2e635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a098e90a6958cd01c1b4e1c4b210c2c40"><td class="memTemplParams" colspan="2">template&lt;typename Lambda , typename SO &gt; </td></tr>
-<tr class="memitem:a098e90a6958cd01c1b4e1c4b210c2c40"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a098e90a6958cd01c1b4e1c4b210c2c40">ForEachNeighbor</a> (const Lambda &amp;lambda, const SO &amp;query, const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;simulation_object_id) const </td></tr>
-<tr class="memdesc:a098e90a6958cd01c1b4e1c4b210c2c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given lambda to each neighbor.  <a href="#a098e90a6958cd01c1b4e1c4b210c2c40">More...</a><br/></td></tr>
-<tr class="separator:a098e90a6958cd01c1b4e1c4b210c2c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a085353d2cffb1455955e8b8d529c1401"><td class="memTemplParams" colspan="2">template&lt;typename Lambda , typename SO &gt; </td></tr>
-<tr class="memitem:a085353d2cffb1455955e8b8d529c1401"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a085353d2cffb1455955e8b8d529c1401">ForEachNeighborWithinRadius</a> (const Lambda &amp;lambda, const SO &amp;query, const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;simulation_object_id, double squared_radius)</td></tr>
-<tr class="memdesc:a085353d2cffb1455955e8b8d529c1401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given lambda to each neighbor or the specified simulation object.  <a href="#a085353d2cffb1455955e8b8d529c1401">More...</a><br/></td></tr>
-<tr class="separator:a085353d2cffb1455955e8b8d529c1401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab396e3b537874e5ebcbe8bdcf738fa81"><td class="memTemplParams" colspan="2">template&lt;typename TLambda &gt; </td></tr>
-<tr class="memitem:ab396e3b537874e5ebcbe8bdcf738fa81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ab396e3b537874e5ebcbe8bdcf738fa81">ForEachNeighborPairWithinRadius</a> (const TLambda &amp;lambda, double squared_radius) const </td></tr>
-<tr class="separator:ab396e3b537874e5ebcbe8bdcf738fa81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e7bdb9cd7842fc7fba8c864c99d6ba"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ab0e7bdb9cd7842fc7fba8c864c99d6ba">GetBoxIndex</a> (const array&lt; double, 3 &gt; &amp;position) const </td></tr>
-<tr class="memdesc:ab0e7bdb9cd7842fc7fba8c864c99d6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the box index in the one dimensional array of the box that contains the position.  <a href="#ab0e7bdb9cd7842fc7fba8c864c99d6ba">More...</a><br/></td></tr>
-<tr class="separator:ab0e7bdb9cd7842fc7fba8c864c99d6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af50bffc0d4a8e3fed4849d23856c0bdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#af50bffc0d4a8e3fed4849d23856c0bdf">SetDimensionThresholds</a> (int32_t min, int32_t max)</td></tr>
-<tr class="separator:af50bffc0d4a8e3fed4849d23856c0bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0123534553c37baf9a7bc0a04c3cc48e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a0123534553c37baf9a7bc0a04c3cc48e">GetLargestObjectSize</a> () const </td></tr>
-<tr class="memdesc:a0123534553c37baf9a7bc0a04c3cc48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the largest object in the grid.  <a href="#a0123534553c37baf9a7bc0a04c3cc48e">More...</a><br/></td></tr>
-<tr class="separator:a0123534553c37baf9a7bc0a04c3cc48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51c57092598e0e81726f92367282e2f2"><td class="memItemLeft" align="right" valign="top">array&lt; int32_t, 6 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a51c57092598e0e81726f92367282e2f2">GetDimensions</a> ()</td></tr>
-<tr class="separator:a51c57092598e0e81726f92367282e2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36e43db6c6af8211f2ed4e7a2c923974"><td class="memItemLeft" align="right" valign="top">array&lt; int32_t, 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a36e43db6c6af8211f2ed4e7a2c923974">GetDimensionThresholds</a> ()</td></tr>
-<tr class="separator:a36e43db6c6af8211f2ed4e7a2c923974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7291b26ac614a70ac997cdb261daefd8"><td class="memItemLeft" align="right" valign="top">array&lt; uint32_t, 3 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a7291b26ac614a70ac997cdb261daefd8">GetNumBoxes</a> ()</td></tr>
-<tr class="separator:a7291b26ac614a70ac997cdb261daefd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2124baca8ee6ef583d1e67150c776f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a1a2124baca8ee6ef583d1e67150c776f">GetBoxLength</a> ()</td></tr>
-<tr class="separator:a1a2124baca8ee6ef583d1e67150c776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa0d5bd1f3102eaa434fad7d6450dd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a7fa0d5bd1f3102eaa434fad7d6450dd2">HasGrown</a> ()</td></tr>
-<tr class="separator:a7fa0d5bd1f3102eaa434fad7d6450dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8077e7103cdbc66dce15341b020b950e"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint32_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a8077e7103cdbc66dce15341b020b950e">GetBoxCoordinates</a> (size_t box_idx) const </td></tr>
-<tr class="separator:a8077e7103cdbc66dce15341b020b950e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6539d8a5ec879bdedd6828dd64e92a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#afd6539d8a5ec879bdedd6828dd64e92a">IsInitialized</a> ()</td></tr>
-<tr class="separator:afd6539d8a5ec879bdedd6828dd64e92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac367f7e92bcb22b86c1b77972796ef8e"><td class="memTemplParams" colspan="2">template&lt;typename TUint32 &gt; </td></tr>
-<tr class="memitem:ac367f7e92bcb22b86c1b77972796ef8e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ac367f7e92bcb22b86c1b77972796ef8e">GetSuccessors</a> (std::vector&lt; TUint32 &gt; *successors)</td></tr>
-<tr class="memdesc:ac367f7e92bcb22b86c1b77972796ef8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the successor list.  <a href="#ac367f7e92bcb22b86c1b77972796ef8e">More...</a><br/></td></tr>
-<tr class="separator:ac367f7e92bcb22b86c1b77972796ef8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a389ac973856b5e1a15039810f521b9db"><td class="memTemplParams" colspan="2">template&lt;typename TUint32 , typename TUint16 &gt; </td></tr>
-<tr class="memitem:a389ac973856b5e1a15039810f521b9db"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a389ac973856b5e1a15039810f521b9db">GetBoxInfo</a> (std::vector&lt; TUint32 &gt; *starts, std::vector&lt; TUint16 &gt; *lengths)</td></tr>
-<tr class="memdesc:a389ac973856b5e1a15039810f521b9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets information about the grid boxes (i.e. which simulation objects reside in each box, wich can be retrieved in combination with the successor list.  <a href="#a389ac973856b5e1a15039810f521b9db">More...</a><br/></td></tr>
-<tr class="separator:a389ac973856b5e1a15039810f521b9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace4f28f9aad836913fccc4acb5336460"><td class="memTemplParams" colspan="2">template&lt;typename TUint32 , typename TInt32 &gt; </td></tr>
-<tr class="memitem:ace4f28f9aad836913fccc4acb5336460"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ace4f28f9aad836913fccc4acb5336460">GetGridInfo</a> (TUint32 *box_length, std::array&lt; TUint32, 3 &gt; *num_boxes_axis, std::array&lt; TInt32, 3 &gt; *grid_dimensions)</td></tr>
-<tr class="memdesc:ace4f28f9aad836913fccc4acb5336460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the information about the grid.  <a href="#ace4f28f9aad836913fccc4acb5336460">More...</a><br/></td></tr>
-<tr class="separator:ace4f28f9aad836913fccc4acb5336460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aae2072d5e97abf4f071a330ee343f603"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbdm_1_1Grid.html">Grid</a>&lt; TResourceManager &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#aae2072d5e97abf4f071a330ee343f603">GetInstance</a> ()</td></tr>
-<tr class="memdesc:aae2072d5e97abf4f071a330ee343f603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the singleton instance.  <a href="#aae2072d5e97abf4f071a330ee343f603">More...</a><br/></td></tr>
-<tr class="separator:aae2072d5e97abf4f071a330ee343f603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e2ed146b653b78d4dfc242293b54b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ab7e2ed146b653b78d4dfc242293b54b4">Grid</a> ()</td></tr>
+<tr class="separator:ab7e2ed146b653b78d4dfc242293b54b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b06b19202c8553573b8211b8da3ed8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#af5b06b19202c8553573b8211b8da3ed8">Grid</a> (<a class="el" href="classbdm_1_1Grid.html">Grid</a> const &amp;)=delete</td></tr>
+<tr class="separator:af5b06b19202c8553573b8211b8da3ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad823d0f2a0d57daf032f8fb1404b11b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ad823d0f2a0d57daf032f8fb1404b11b3">operator=</a> (<a class="el" href="classbdm_1_1Grid.html">Grid</a> const &amp;)=delete</td></tr>
+<tr class="separator:ad823d0f2a0d57daf032f8fb1404b11b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133092c67ff0e2ce0f0ccc3710b4e5a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a133092c67ff0e2ce0f0ccc3710b4e5a0">Initialize</a> (<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a> adjacency=<a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01a78b2378f499703c103545febd135b4d6">kHigh</a>)</td></tr>
+<tr class="memdesc:a133092c67ff0e2ce0f0ccc3710b4e5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the grid with the given simulation objects.  <a href="#a133092c67ff0e2ce0f0ccc3710b4e5a0">More...</a><br/></td></tr>
+<tr class="separator:a133092c67ff0e2ce0f0ccc3710b4e5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdf066c17137edf623ff0e2055703c3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#aacdf066c17137edf623ff0e2055703c3">~Grid</a> ()</td></tr>
+<tr class="separator:aacdf066c17137edf623ff0e2055703c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf84257be5cf461e3ac76b48f0ecc94c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#adf84257be5cf461e3ac76b48f0ecc94c">ClearGrid</a> ()</td></tr>
+<tr class="memdesc:adf84257be5cf461e3ac76b48f0ecc94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the grid.  <a href="#adf84257be5cf461e3ac76b48f0ecc94c">More...</a><br/></td></tr>
+<tr class="separator:adf84257be5cf461e3ac76b48f0ecc94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28268d3427670a3b7853f15057faab8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a28268d3427670a3b7853f15057faab8c">UpdateGrid</a> ()</td></tr>
+<tr class="memdesc:a28268d3427670a3b7853f15057faab8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the grid, as simulation objects may have moved, added or deleted.  <a href="#a28268d3427670a3b7853f15057faab8c">More...</a><br/></td></tr>
+<tr class="separator:a28268d3427670a3b7853f15057faab8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500265b6b972509498a2d00a3c766650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a500265b6b972509498a2d00a3c766650">CheckGridGrowth</a> ()</td></tr>
+<tr class="separator:a500265b6b972509498a2d00a3c766650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330d3930f160b3a2182dd99d0ec81f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a330d3930f160b3a2182dd99d0ec81f50">CalculateGridDimensions</a> (array&lt; double, 6 &gt; *ret_grid_dimensions)</td></tr>
+<tr class="separator:a330d3930f160b3a2182dd99d0ec81f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b973c8f64ac0b45d8c31df4d4e030b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a56b973c8f64ac0b45d8c31df4d4e030b">RoundOffGridDimensions</a> (const array&lt; double, 6 &gt; &amp;grid_dimensions)</td></tr>
+<tr class="separator:a56b973c8f64ac0b45d8c31df4d4e030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bef3c4945f3d35defb56c07a70dcae6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a9bef3c4945f3d35defb56c07a70dcae6">SquaredEuclideanDistance</a> (const std::array&lt; double, 3 &gt; &amp;pos1, const std::array&lt; double, 3 &gt; &amp;pos2) const </td></tr>
+<tr class="memdesc:a9bef3c4945f3d35defb56c07a70dcae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the squared euclidian distance between two points in 3D.  <a href="#a9bef3c4945f3d35defb56c07a70dcae6">More...</a><br/></td></tr>
+<tr class="separator:a9bef3c4945f3d35defb56c07a70dcae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640bc89a85803eff987f07f9543df5ad"><td class="memTemplParams" colspan="2">template&lt;typename Lambda , typename SO &gt; </td></tr>
+<tr class="memitem:a640bc89a85803eff987f07f9543df5ad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a640bc89a85803eff987f07f9543df5ad">ForEachNeighbor</a> (const Lambda &amp;lambda, const SO &amp;query, const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;simulation_object_id) const </td></tr>
+<tr class="memdesc:a640bc89a85803eff987f07f9543df5ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given lambda to each neighbor.  <a href="#a640bc89a85803eff987f07f9543df5ad">More...</a><br/></td></tr>
+<tr class="separator:a640bc89a85803eff987f07f9543df5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add638d2b6a8040b5ff0525427f11bcd9"><td class="memTemplParams" colspan="2">template&lt;typename Lambda , typename SO &gt; </td></tr>
+<tr class="memitem:add638d2b6a8040b5ff0525427f11bcd9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#add638d2b6a8040b5ff0525427f11bcd9">ForEachNeighborWithinRadius</a> (const Lambda &amp;lambda, const SO &amp;query, const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;simulation_object_id, double squared_radius)</td></tr>
+<tr class="memdesc:add638d2b6a8040b5ff0525427f11bcd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given lambda to each neighbor or the specified simulation object.  <a href="#add638d2b6a8040b5ff0525427f11bcd9">More...</a><br/></td></tr>
+<tr class="separator:add638d2b6a8040b5ff0525427f11bcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5a3c8c6c82ce5be485adb806de88c1"><td class="memTemplParams" colspan="2">template&lt;typename TLambda &gt; </td></tr>
+<tr class="memitem:a1c5a3c8c6c82ce5be485adb806de88c1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a1c5a3c8c6c82ce5be485adb806de88c1">ForEachNeighborPairWithinRadius</a> (const TLambda &amp;lambda, double squared_radius) const </td></tr>
+<tr class="separator:a1c5a3c8c6c82ce5be485adb806de88c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74afdab351be339b18f96ca068520eed"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a74afdab351be339b18f96ca068520eed">GetBoxIndex</a> (const array&lt; double, 3 &gt; &amp;position) const </td></tr>
+<tr class="memdesc:a74afdab351be339b18f96ca068520eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the box index in the one dimensional array of the box that contains the position.  <a href="#a74afdab351be339b18f96ca068520eed">More...</a><br/></td></tr>
+<tr class="separator:a74afdab351be339b18f96ca068520eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9ffc1e38332ff36cdc994fb2a09147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#abb9ffc1e38332ff36cdc994fb2a09147">SetDimensionThresholds</a> (int32_t min, int32_t max)</td></tr>
+<tr class="separator:abb9ffc1e38332ff36cdc994fb2a09147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92c3bc7535758bd3cbefadc63920173"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#aa92c3bc7535758bd3cbefadc63920173">GetLargestObjectSize</a> () const </td></tr>
+<tr class="memdesc:aa92c3bc7535758bd3cbefadc63920173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the largest object in the grid.  <a href="#aa92c3bc7535758bd3cbefadc63920173">More...</a><br/></td></tr>
+<tr class="separator:aa92c3bc7535758bd3cbefadc63920173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf28c4aa79c823bd1bea1f42ef13dff"><td class="memItemLeft" align="right" valign="top">array&lt; int32_t, 6 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#abbf28c4aa79c823bd1bea1f42ef13dff">GetDimensions</a> ()</td></tr>
+<tr class="separator:abbf28c4aa79c823bd1bea1f42ef13dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac371db977572df48db3f5931ae19b71e"><td class="memItemLeft" align="right" valign="top">array&lt; int32_t, 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ac371db977572df48db3f5931ae19b71e">GetDimensionThresholds</a> ()</td></tr>
+<tr class="separator:ac371db977572df48db3f5931ae19b71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcecf44890cc2b4af364ada528057f1"><td class="memItemLeft" align="right" valign="top">array&lt; uint32_t, 3 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a1dcecf44890cc2b4af364ada528057f1">GetNumBoxes</a> ()</td></tr>
+<tr class="separator:a1dcecf44890cc2b4af364ada528057f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0116a512f7c5628e65d013bde801bb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#af0116a512f7c5628e65d013bde801bb9">GetBoxLength</a> ()</td></tr>
+<tr class="separator:af0116a512f7c5628e65d013bde801bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f44b76831f40ddc2bfaf126119f371f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a2f44b76831f40ddc2bfaf126119f371f">HasGrown</a> ()</td></tr>
+<tr class="separator:a2f44b76831f40ddc2bfaf126119f371f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d89b31c3c3f944026ab21de442ecc4"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint32_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ad3d89b31c3c3f944026ab21de442ecc4">GetBoxCoordinates</a> (size_t box_idx) const </td></tr>
+<tr class="separator:ad3d89b31c3c3f944026ab21de442ecc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0944b5015955315246603632c6eeb05f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a0944b5015955315246603632c6eeb05f">IsInitialized</a> ()</td></tr>
+<tr class="separator:a0944b5015955315246603632c6eeb05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418047ced8d8a9325c25cfaa16add9be"><td class="memTemplParams" colspan="2">template&lt;typename TUint32 &gt; </td></tr>
+<tr class="memitem:a418047ced8d8a9325c25cfaa16add9be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a418047ced8d8a9325c25cfaa16add9be">GetSuccessors</a> (std::vector&lt; TUint32 &gt; *successors)</td></tr>
+<tr class="memdesc:a418047ced8d8a9325c25cfaa16add9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the successor list.  <a href="#a418047ced8d8a9325c25cfaa16add9be">More...</a><br/></td></tr>
+<tr class="separator:a418047ced8d8a9325c25cfaa16add9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b42e296c732021384bc8c8bf403e3d"><td class="memTemplParams" colspan="2">template&lt;typename TUint32 , typename TUint16 &gt; </td></tr>
+<tr class="memitem:ad0b42e296c732021384bc8c8bf403e3d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ad0b42e296c732021384bc8c8bf403e3d">GetBoxInfo</a> (std::vector&lt; TUint32 &gt; *starts, std::vector&lt; TUint16 &gt; *lengths)</td></tr>
+<tr class="memdesc:ad0b42e296c732021384bc8c8bf403e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets information about the grid boxes (i.e. which simulation objects reside in each box, wich can be retrieved in combination with the successor list.  <a href="#ad0b42e296c732021384bc8c8bf403e3d">More...</a><br/></td></tr>
+<tr class="separator:ad0b42e296c732021384bc8c8bf403e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02c04fde19d1ca9e2a08e9f31ed4e2e"><td class="memTemplParams" colspan="2">template&lt;typename TUint32 , typename TInt32 &gt; </td></tr>
+<tr class="memitem:ae02c04fde19d1ca9e2a08e9f31ed4e2e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ae02c04fde19d1ca9e2a08e9f31ed4e2e">GetGridInfo</a> (TUint32 *box_length, std::array&lt; TUint32, 3 &gt; *num_boxes_axis, std::array&lt; TInt32, 3 &gt; *grid_dimensions)</td></tr>
+<tr class="memdesc:ae02c04fde19d1ca9e2a08e9f31ed4e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the information about the grid.  <a href="#ae02c04fde19d1ca9e2a08e9f31ed4e2e">More...</a><br/></td></tr>
+<tr class="separator:ae02c04fde19d1ca9e2a08e9f31ed4e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ac5f200ff877a19eb76bb13ac81340bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ac5f200ff877a19eb76bb13ac81340bff">GetMooreBoxes</a> (<a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; const <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> *, 27 &gt; *neighbor_boxes, size_t box_idx) const </td></tr>
-<tr class="memdesc:ac5f200ff877a19eb76bb13ac81340bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Moore (i.e adjacent) boxes of the query box.  <a href="#ac5f200ff877a19eb76bb13ac81340bff">More...</a><br/></td></tr>
-<tr class="separator:ac5f200ff877a19eb76bb13ac81340bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00560721f721bda1ef8e4ad8d56ec8a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a00560721f721bda1ef8e4ad8d56ec8a5">GetHalfMooreBoxIndices</a> (<a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; *neighbor_boxes, size_t box_idx) const </td></tr>
-<tr class="separator:a00560721f721bda1ef8e4ad8d56ec8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161e1cbf09ca446b3bfbb0c1fe7268d6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a161e1cbf09ca446b3bfbb0c1fe7268d6">GetBoxPointer</a> (size_t index) const </td></tr>
-<tr class="memdesc:a161e1cbf09ca446b3bfbb0c1fe7268d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the box with the given index.  <a href="#a161e1cbf09ca446b3bfbb0c1fe7268d6">More...</a><br/></td></tr>
-<tr class="separator:a161e1cbf09ca446b3bfbb0c1fe7268d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ea208893f248b78d38d247c89c9c2f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a3ea208893f248b78d38d247c89c9c2f9">GetBoxPointer</a> (size_t index)</td></tr>
-<tr class="memdesc:a3ea208893f248b78d38d247c89c9c2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the box with the given index.  <a href="#a3ea208893f248b78d38d247c89c9c2f9">More...</a><br/></td></tr>
-<tr class="separator:a3ea208893f248b78d38d247c89c9c2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cd9a46117d0386663c3649369161aeb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a2cd9a46117d0386663c3649369161aeb">GetBoxIndex</a> (const array&lt; uint32_t, 3 &gt; &amp;box_coord) const </td></tr>
-<tr class="separator:a2cd9a46117d0386663c3649369161aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686f1f48ef61f676bb992ff12183fe27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a686f1f48ef61f676bb992ff12183fe27">GetSoHandles</a> (size_t box_idx, <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt; *handles) const </td></tr>
-<tr class="memdesc:a686f1f48ef61f676bb992ff12183fe27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains all simulation object handles in a given box.  <a href="#a686f1f48ef61f676bb992ff12183fe27">More...</a><br/></td></tr>
-<tr class="separator:a686f1f48ef61f676bb992ff12183fe27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074dcb8f53919d9b9060e1d6fdea2fa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a074dcb8f53919d9b9060e1d6fdea2fa8">CacheSoHandles</a> (const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; &amp;box_indices, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; *so_handles) const </td></tr>
-<tr class="separator:a074dcb8f53919d9b9060e1d6fdea2fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c4e17a5f9d6ee91d9c15b18ee1df77d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a3c4e17a5f9d6ee91d9c15b18ee1df77d">CachePositions</a> (const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;so_handles, TResourceManager *rm, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; std::array&lt; double, 3 &gt;, 4 &gt;, 14 &gt; *pos_cache) const </td></tr>
-<tr class="separator:a3c4e17a5f9d6ee91d9c15b18ee1df77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a586dc063c39c6809ba60a61dc9d65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a72a586dc063c39c6809ba60a61dc9d65">UpdateSoHandles</a> (const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; &amp;box_indices, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; *so_handles) const </td></tr>
-<tr class="separator:a72a586dc063c39c6809ba60a61dc9d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94738f8e13b93d45351aff1458cf14ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a94738f8e13b93d45351aff1458cf14ed">UpdateCachedPositions</a> (const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;so_handles, TResourceManager *rm, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; std::array&lt; double, 3 &gt;, 4 &gt;, 14 &gt; *positions) const </td></tr>
-<tr class="separator:a94738f8e13b93d45351aff1458cf14ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57f60a5c987c86e51ce52f79ccef4b51"><td class="memTemplParams" colspan="2">template&lt;typename TLambda &gt; </td></tr>
-<tr class="memitem:a57f60a5c987c86e51ce52f79ccef4b51"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a57f60a5c987c86e51ce52f79ccef4b51">ForEachNeighborPairWithCenterBox</a> (const TLambda &amp;lambda, TResourceManager *rm, const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;so_handles, const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; std::array&lt; double, 3 &gt;, 4 &gt;, 14 &gt; &amp;positions, uint64_t center_box_idx, double squared_radius) const </td></tr>
-<tr class="separator:a57f60a5c987c86e51ce52f79ccef4b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a12826f010282b39471527223121a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a55a12826f010282b39471527223121a5">GetMooreBoxes</a> (<a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; const <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> *, 27 &gt; *neighbor_boxes, size_t box_idx) const </td></tr>
+<tr class="memdesc:a55a12826f010282b39471527223121a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Moore (i.e adjacent) boxes of the query box.  <a href="#a55a12826f010282b39471527223121a5">More...</a><br/></td></tr>
+<tr class="separator:a55a12826f010282b39471527223121a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382be5aa004818f63652b5a6da49e536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a382be5aa004818f63652b5a6da49e536">GetHalfMooreBoxIndices</a> (<a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; *neighbor_boxes, size_t box_idx) const </td></tr>
+<tr class="separator:a382be5aa004818f63652b5a6da49e536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8ea849cc7e6120a40be3b75c09b2cc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#abc8ea849cc7e6120a40be3b75c09b2cc">GetBoxPointer</a> (size_t index) const </td></tr>
+<tr class="memdesc:abc8ea849cc7e6120a40be3b75c09b2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the box with the given index.  <a href="#abc8ea849cc7e6120a40be3b75c09b2cc">More...</a><br/></td></tr>
+<tr class="separator:abc8ea849cc7e6120a40be3b75c09b2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12aae499646b927b8d79b3b057670bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ad12aae499646b927b8d79b3b057670bb">GetBoxPointer</a> (size_t index)</td></tr>
+<tr class="memdesc:ad12aae499646b927b8d79b3b057670bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the box with the given index.  <a href="#ad12aae499646b927b8d79b3b057670bb">More...</a><br/></td></tr>
+<tr class="separator:ad12aae499646b927b8d79b3b057670bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d76cd0ece5b5eb67bf29144e030213"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a78d76cd0ece5b5eb67bf29144e030213">GetBoxIndex</a> (const array&lt; uint32_t, 3 &gt; &amp;box_coord) const </td></tr>
+<tr class="separator:a78d76cd0ece5b5eb67bf29144e030213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d495b19d040808de0f1c1de867a6e2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a4d495b19d040808de0f1c1de867a6e2a">GetSoHandles</a> (size_t box_idx, <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt; *handles) const </td></tr>
+<tr class="memdesc:a4d495b19d040808de0f1c1de867a6e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains all simulation object handles in a given box.  <a href="#a4d495b19d040808de0f1c1de867a6e2a">More...</a><br/></td></tr>
+<tr class="separator:a4d495b19d040808de0f1c1de867a6e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4396f534a7b1faa3988a2dad29c0376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ac4396f534a7b1faa3988a2dad29c0376">CacheSoHandles</a> (const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; &amp;box_indices, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; *so_handles) const </td></tr>
+<tr class="separator:ac4396f534a7b1faa3988a2dad29c0376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cda4ca9a41300b9bccd6ae8f7467518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a7cda4ca9a41300b9bccd6ae8f7467518">CachePositions</a> (const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;so_handles, <a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> *rm, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; std::array&lt; double, 3 &gt;, 4 &gt;, 14 &gt; *pos_cache) const </td></tr>
+<tr class="separator:a7cda4ca9a41300b9bccd6ae8f7467518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e7a40cb06f47a425322f17a0fb6c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ad5e7a40cb06f47a425322f17a0fb6c86">UpdateSoHandles</a> (const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; &amp;box_indices, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; *so_handles) const </td></tr>
+<tr class="separator:ad5e7a40cb06f47a425322f17a0fb6c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a5e34ae8d854aa364f4c354db3db9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a33a5e34ae8d854aa364f4c354db3db9e">UpdateCachedPositions</a> (const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;so_handles, <a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> *rm, <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; std::array&lt; double, 3 &gt;, 4 &gt;, 14 &gt; *positions) const </td></tr>
+<tr class="separator:a33a5e34ae8d854aa364f4c354db3db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a2d6211a9266180ae15ca217b6f186"><td class="memTemplParams" colspan="2">template&lt;typename TLambda &gt; </td></tr>
+<tr class="memitem:a43a2d6211a9266180ae15ca217b6f186"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a43a2d6211a9266180ae15ca217b6f186">ForEachNeighborPairWithCenterBox</a> (const TLambda &amp;lambda, <a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> *rm, const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;so_handles, const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; std::array&lt; double, 3 &gt;, 4 &gt;, 14 &gt; &amp;positions, uint64_t center_box_idx, double squared_radius) const </td></tr>
+<tr class="separator:a43a2d6211a9266180ae15ca217b6f186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:acfc6e61404b9877b6d5853df91ab4e0f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#acfc6e61404b9877b6d5853df91ab4e0f">boxes_</a></td></tr>
-<tr class="memdesc:acfc6e61404b9877b6d5853df91ab4e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vector containing all the boxes in the grid.  <a href="#acfc6e61404b9877b6d5853df91ab4e0f">More...</a><br/></td></tr>
-<tr class="separator:acfc6e61404b9877b6d5853df91ab4e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a005bd2942a539f958619a3bd7e13fca2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a005bd2942a539f958619a3bd7e13fca2">box_length_</a> = 1</td></tr>
-<tr class="memdesc:a005bd2942a539f958619a3bd7e13fca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of a <a class="el" href="structbdm_1_1Grid_1_1Box.html" title="A single unit cube of the grid. ">Box</a>.  <a href="#a005bd2942a539f958619a3bd7e13fca2">More...</a><br/></td></tr>
-<tr class="separator:a005bd2942a539f958619a3bd7e13fca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969c2b9b0f39dc8a28fd63128ae3a799"><td class="memItemLeft" align="right" valign="top">array&lt; uint32_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a969c2b9b0f39dc8a28fd63128ae3a799">num_boxes_axis_</a> = {{0}}</td></tr>
-<tr class="memdesc:a969c2b9b0f39dc8a28fd63128ae3a799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the number of boxes for each axis.  <a href="#a969c2b9b0f39dc8a28fd63128ae3a799">More...</a><br/></td></tr>
-<tr class="separator:a969c2b9b0f39dc8a28fd63128ae3a799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d10e2029f03043de7a8b97c2aaa4c34"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a0d10e2029f03043de7a8b97c2aaa4c34">num_boxes_xy_</a> = 0</td></tr>
-<tr class="memdesc:a0d10e2029f03043de7a8b97c2aaa4c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of boxes in the xy plane (=num_boxes_axis_[0] * num_boxes_axis_[1])  <a href="#a0d10e2029f03043de7a8b97c2aaa4c34">More...</a><br/></td></tr>
-<tr class="separator:a0d10e2029f03043de7a8b97c2aaa4c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab3f8dfeccd243bf5e00a1d4f7ac230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimulationObjectVector.html">SimulationObjectVector</a><br class="typebreak"/>
-&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, TResourceManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a6ab3f8dfeccd243bf5e00a1d4f7ac230">successors_</a></td></tr>
-<tr class="separator:a6ab3f8dfeccd243bf5e00a1d4f7ac230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38017aff423649e8c36aa1cc4d74b456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a38017aff423649e8c36aa1cc4d74b456">adjacency_</a></td></tr>
-<tr class="memdesc:a38017aff423649e8c36aa1cc4d74b456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines which boxes to search neighbors in (see enum Adjacency)  <a href="#a38017aff423649e8c36aa1cc4d74b456">More...</a><br/></td></tr>
-<tr class="separator:a38017aff423649e8c36aa1cc4d74b456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0926734ef674fb08ddfc2c2902485c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a0c0926734ef674fb08ddfc2c2902485c">largest_object_size_</a> = 0</td></tr>
-<tr class="memdesc:a0c0926734ef674fb08ddfc2c2902485c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the largest object in the simulation.  <a href="#a0c0926734ef674fb08ddfc2c2902485c">More...</a><br/></td></tr>
-<tr class="separator:a0c0926734ef674fb08ddfc2c2902485c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19964b8be5ea003220b2b6837a34aee6"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a19964b8be5ea003220b2b6837a34aee6">grid_dimensions_</a></td></tr>
-<tr class="separator:a19964b8be5ea003220b2b6837a34aee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af72bad1677a3e31d20bb14d2c2ee33bd"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#af72bad1677a3e31d20bb14d2c2ee33bd">threshold_dimensions_</a></td></tr>
-<tr class="separator:af72bad1677a3e31d20bb14d2c2ee33bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034badb1ebe3f9557459e2a6befb40f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a034badb1ebe3f9557459e2a6befb40f5">has_grown_</a> = false</td></tr>
-<tr class="separator:a034badb1ebe3f9557459e2a6befb40f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac36ea8165d3341ea59a025cc842b826e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ac36ea8165d3341ea59a025cc842b826e">initialized_</a> = false</td></tr>
-<tr class="memdesc:ac36ea8165d3341ea59a025cc842b826e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to indicate if the grid has been initialized or not.  <a href="#ac36ea8165d3341ea59a025cc842b826e">More...</a><br/></td></tr>
-<tr class="separator:ac36ea8165d3341ea59a025cc842b826e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7841e9f9825ae558ab8f5d38c85141b9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a7841e9f9825ae558ab8f5d38c85141b9">boxes_</a></td></tr>
+<tr class="memdesc:a7841e9f9825ae558ab8f5d38c85141b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vector containing all the boxes in the grid.  <a href="#a7841e9f9825ae558ab8f5d38c85141b9">More...</a><br/></td></tr>
+<tr class="separator:a7841e9f9825ae558ab8f5d38c85141b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c74a52455c2e651a61fe05a1ba7978"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a14c74a52455c2e651a61fe05a1ba7978">box_length_</a> = 1</td></tr>
+<tr class="memdesc:a14c74a52455c2e651a61fe05a1ba7978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of a <a class="el" href="structbdm_1_1Grid_1_1Box.html" title="A single unit cube of the grid. ">Box</a>.  <a href="#a14c74a52455c2e651a61fe05a1ba7978">More...</a><br/></td></tr>
+<tr class="separator:a14c74a52455c2e651a61fe05a1ba7978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959b522ff01613cee15c1fc9f4bdf91d"><td class="memItemLeft" align="right" valign="top">array&lt; uint32_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a959b522ff01613cee15c1fc9f4bdf91d">num_boxes_axis_</a> = {{0}}</td></tr>
+<tr class="memdesc:a959b522ff01613cee15c1fc9f4bdf91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the number of boxes for each axis.  <a href="#a959b522ff01613cee15c1fc9f4bdf91d">More...</a><br/></td></tr>
+<tr class="separator:a959b522ff01613cee15c1fc9f4bdf91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecdab9f047468ff3a4e53ba6ca2016e5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#aecdab9f047468ff3a4e53ba6ca2016e5">num_boxes_xy_</a> = 0</td></tr>
+<tr class="memdesc:aecdab9f047468ff3a4e53ba6ca2016e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of boxes in the xy plane (=num_boxes_axis_[0] * num_boxes_axis_[1])  <a href="#aecdab9f047468ff3a4e53ba6ca2016e5">More...</a><br/></td></tr>
+<tr class="separator:aecdab9f047468ff3a4e53ba6ca2016e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421454d3cebc427b4e0651e9829d77b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimulationObjectVector.html">SimulationObjectVector</a><br class="typebreak"/>
+&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, TSimulation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a421454d3cebc427b4e0651e9829d77b6">successors_</a></td></tr>
+<tr class="separator:a421454d3cebc427b4e0651e9829d77b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db27f8df7e5bbbbb85382fcdf1be0b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a6db27f8df7e5bbbbb85382fcdf1be0b2">adjacency_</a></td></tr>
+<tr class="memdesc:a6db27f8df7e5bbbbb85382fcdf1be0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines which boxes to search neighbors in (see enum Adjacency)  <a href="#a6db27f8df7e5bbbbb85382fcdf1be0b2">More...</a><br/></td></tr>
+<tr class="separator:a6db27f8df7e5bbbbb85382fcdf1be0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ad2610d9c8092a229aff8ef91553d9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ad5ad2610d9c8092a229aff8ef91553d9">largest_object_size_</a> = 0</td></tr>
+<tr class="memdesc:ad5ad2610d9c8092a229aff8ef91553d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the largest object in the simulation.  <a href="#ad5ad2610d9c8092a229aff8ef91553d9">More...</a><br/></td></tr>
+<tr class="separator:ad5ad2610d9c8092a229aff8ef91553d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb254822287970db4138b669dd0992bf"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#abb254822287970db4138b669dd0992bf">grid_dimensions_</a></td></tr>
+<tr class="separator:abb254822287970db4138b669dd0992bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62a60089564240c66628a79f9a07b17"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#ac62a60089564240c66628a79f9a07b17">threshold_dimensions_</a></td></tr>
+<tr class="separator:ac62a60089564240c66628a79f9a07b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8432b642e66a294907e8fa9ed2ea287e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a8432b642e66a294907e8fa9ed2ea287e">has_grown_</a> = false</td></tr>
+<tr class="separator:a8432b642e66a294907e8fa9ed2ea287e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136c9364d62a2efbe216372b2fbfb8e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html#a136c9364d62a2efbe216372b2fbfb8e7">initialized_</a> = false</td></tr>
+<tr class="memdesc:a136c9364d62a2efbe216372b2fbfb8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to indicate if the grid has been initialized or not.  <a href="#a136c9364d62a2efbe216372b2fbfb8e7">More...</a><br/></td></tr>
+<tr class="separator:a136c9364d62a2efbe216372b2fbfb8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt;<br/>
-class bdm::Grid&lt; TResourceManager &gt;</h3>
+<div class="textblock"><h3>template&lt;typename TSimulation = Simulation&lt;&gt;&gt;<br/>
+class bdm::Grid&lt; TSimulation &gt;</h3>
 
 <p>A class that represents Cartesian 3D grid. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00086">86</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00087">87</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a8d36b0e1bc4ee8e6472a518df1f24920"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::<a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> =  typename TSimulation::ResourceManager_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00224">224</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a7d1be76b02db5c0320b801ca9c481b01"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">enum <a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">bdm::Grid::Adjacency</a></td>
@@ -305,33 +317,33 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Enum that determines the degree of adjacency in search neighbor boxes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a7d1be76b02db5c0320b801ca9c481b01acee9ff7a1195b94d94199867126a5024"></a>kLow</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a7d1be76b02db5c0320b801ca9c481b01a7b8eeeaeaf62062644d985de1257dd4e"></a>kLow</em>&#160;</td><td class="fielddoc">
 <p>The closest 8 neighboring boxes </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a7d1be76b02db5c0320b801ca9c481b01a18799b15ec736ef95eb80089b370d8b5"></a>kMedium</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a7d1be76b02db5c0320b801ca9c481b01ae89d499216c0f9b1c67504ee5f449110"></a>kMedium</em>&#160;</td><td class="fielddoc">
 <p>The closest 18 neighboring boxes </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a7d1be76b02db5c0320b801ca9c481b01ace276e461f72422c0d336e2c3e87867d"></a>kHigh</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a7d1be76b02db5c0320b801ca9c481b01a78b2378f499703c103545febd135b4d6"></a>kHigh</em>&#160;</td><td class="fielddoc">
 <p>The closest 26 neighboring boxes </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00217">217</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00218">218</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1e59fde8ab51a04355f5e1871890b3a4"></a>
+<a class="anchor" id="ab7e2ed146b653b78d4dfc242293b54b4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::<a class="el" href="classbdm_1_1Grid.html">Grid</a> </td>
+          <td class="memname"><a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::<a class="el" href="classbdm_1_1Grid.html">Grid</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -344,23 +356,23 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00223">223</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00226">226</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6926144fab0d3be8ff6f1003ad0e2266"></a>
+<a class="anchor" id="af5b06b19202c8553573b8211b8da3ed8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::<a class="el" href="classbdm_1_1Grid.html">Grid</a> </td>
+          <td class="memname"><a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::<a class="el" href="classbdm_1_1Grid.html">Grid</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html">Grid</a>&lt; TResourceManager &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html">Grid</a>&lt; TSimulation &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -374,17 +386,17 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3c6eae7733953dd680ff6a15ce74c3cf"></a>
+<a class="anchor" id="aacdf066c17137edf623ff0e2055703c3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::~<a class="el" href="classbdm_1_1Grid.html">Grid</a> </td>
+          <td class="memname">virtual <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::~<a class="el" href="classbdm_1_1Grid.html">Grid</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -397,22 +409,22 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00240">240</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00243">243</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3c4e17a5f9d6ee91d9c15b18ee1df77d"></a>
+<a class="anchor" id="a7cda4ca9a41300b9bccd6ae8f7467518"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::CachePositions </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::CachePositions </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;&#160;</td>
           <td class="paramname"><em>so_handles</em>, </td>
@@ -420,7 +432,7 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TResourceManager *&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> *&#160;</td>
           <td class="paramname"><em>rm</em>, </td>
         </tr>
         <tr>
@@ -443,21 +455,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Obtains all simulation object positions for the given box indices and puts them in a <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a> </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00963">963</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00960">960</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a074dcb8f53919d9b9060e1d6fdea2fa8"></a>
+<a class="anchor" id="ac4396f534a7b1faa3988a2dad29c0376"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::CacheSoHandles </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::CacheSoHandles </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; &amp;&#160;</td>
           <td class="paramname"><em>box_indices</em>, </td>
@@ -482,21 +494,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Obtains all simulation object handles for the given box indices and puts them in a <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00952">952</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00949">949</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5389fb71891350e0142874ad542dec40"></a>
+<a class="anchor" id="a330d3930f160b3a2182dd99d0ec81f50"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::CalculateGridDimensions </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::CalculateGridDimensions </td>
           <td>(</td>
           <td class="paramtype">array&lt; double, 6 &gt; *&#160;</td>
           <td class="paramname"><em>ret_grid_dimensions</em></td><td>)</td>
@@ -511,21 +523,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Calculates what the grid dimensions need to be in order to contain all the simulation objects </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00352">352</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00349">349</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5bce8d601cb204e5fe615187ea18ea99"></a>
+<a class="anchor" id="a500265b6b972509498a2d00a3c766650"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::CheckGridGrowth </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::CheckGridGrowth </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -538,21 +550,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00329">329</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00326">326</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab74776cc3ab45303357bd73141d73ba0"></a>
+<a class="anchor" id="adf84257be5cf461e3ac76b48f0ecc94c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::ClearGrid </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::ClearGrid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -567,15 +579,15 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Clears the grid. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00249">249</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00246">246</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a098e90a6958cd01c1b4e1c4b210c2c40"></a>
+<a class="anchor" id="a640bc89a85803eff987f07f9543df5ad"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename Lambda , typename SO &gt; </div>
 <table class="mlabels">
@@ -583,7 +595,7 @@ template&lt;typename Lambda , typename SO &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::ForEachNeighbor </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::ForEachNeighbor </td>
           <td>(</td>
           <td class="paramtype">const Lambda &amp;&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
@@ -630,15 +642,15 @@ template&lt;typename Lambda , typename SO &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00463">463</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00460">460</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a57f60a5c987c86e51ce52f79ccef4b51"></a>
+<a class="anchor" id="a43a2d6211a9266180ae15ca217b6f186"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TLambda &gt; </div>
 <table class="mlabels">
@@ -646,7 +658,7 @@ template&lt;typename TLambda &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::ForEachNeighborPairWithCenterBox </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::ForEachNeighborPairWithCenterBox </td>
           <td>(</td>
           <td class="paramtype">const TLambda &amp;&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
@@ -654,7 +666,7 @@ template&lt;typename TLambda &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TResourceManager *&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> *&#160;</td>
           <td class="paramname"><em>rm</em>, </td>
         </tr>
         <tr>
@@ -706,15 +718,15 @@ template&lt;typename TLambda &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l01044">1044</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l01041">1041</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab396e3b537874e5ebcbe8bdcf738fa81"></a>
+<a class="anchor" id="a1c5a3c8c6c82ce5be485adb806de88c1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TLambda &gt; </div>
 <table class="mlabels">
@@ -722,7 +734,7 @@ template&lt;typename TLambda &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::ForEachNeighborPairWithinRadius </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::ForEachNeighborPairWithinRadius </td>
           <td>(</td>
           <td class="paramtype">const TLambda &amp;&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
@@ -769,15 +781,15 @@ grid.ForEachNeighborPairWithinRadius([&amp;](auto&amp;&amp; lhs, SoHandle lhs_id
   counter++;
 }, squared_radius);
 // which can be solved by using std::atomic&lt;int&gt; counter; instead  </pre> 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00547">547</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00544">544</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a085353d2cffb1455955e8b8d529c1401"></a>
+<a class="anchor" id="add638d2b6a8040b5ff0525427f11bcd9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename Lambda , typename SO &gt; </div>
 <table class="mlabels">
@@ -785,7 +797,7 @@ template&lt;typename Lambda , typename SO &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::ForEachNeighborWithinRadius </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::ForEachNeighborWithinRadius </td>
           <td>(</td>
           <td class="paramtype">const Lambda &amp;&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
@@ -839,21 +851,21 @@ template&lt;typename Lambda , typename SO &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00493">493</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00490">490</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8077e7103cdbc66dce15341b020b950e"></a>
+<a class="anchor" id="ad3d89b31c3c3f944026ab21de442ecc4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;uint32_t, 3&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetBoxCoordinates </td>
+          <td class="memname">std::array&lt;uint32_t, 3&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetBoxCoordinates </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>box_idx</em></td><td>)</td>
@@ -867,21 +879,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00676">676</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00673">673</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab0e7bdb9cd7842fc7fba8c864c99d6ba"></a>
+<a class="anchor" id="a74afdab351be339b18f96ca068520eed"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetBoxIndex </td>
+          <td class="memname">size_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetBoxIndex </td>
           <td>(</td>
           <td class="paramtype">const array&lt; double, 3 &gt; &amp;&#160;</td>
           <td class="paramname"><em>position</em></td><td>)</td>
@@ -904,21 +916,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The box index. </dd></dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00649">649</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00646">646</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2cd9a46117d0386663c3649369161aeb"></a>
+<a class="anchor" id="a78d76cd0ece5b5eb67bf29144e030213"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetBoxIndex </td>
+          <td class="memname">size_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetBoxIndex </td>
           <td>(</td>
           <td class="paramtype">const array&lt; uint32_t, 3 &gt; &amp;&#160;</td>
           <td class="paramname"><em>box_coord</em></td><td>)</td>
@@ -940,15 +952,15 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The box index. </dd></dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00931">931</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00928">928</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a389ac973856b5e1a15039810f521b9db"></a>
+<a class="anchor" id="ad0b42e296c732021384bc8c8bf403e3d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TUint32 , typename TUint16 &gt; </div>
 <table class="mlabels">
@@ -956,7 +968,7 @@ template&lt;typename TUint32 , typename TUint16 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetBoxInfo </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetBoxInfo </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; TUint32 &gt; *&#160;</td>
           <td class="paramname"><em>starts</em>, </td>
@@ -996,21 +1008,21 @@ template&lt;typename TUint32 , typename TUint16 &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00713">713</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00710">710</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1a2124baca8ee6ef583d1e67150c776f"></a>
+<a class="anchor" id="af0116a512f7c5628e65d013bde801bb9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetBoxLength </td>
+          <td class="memname">uint32_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetBoxLength </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1023,21 +1035,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00672">672</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00669">669</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a161e1cbf09ca446b3bfbb0c1fe7268d6"></a>
+<a class="anchor" id="abc8ea849cc7e6120a40be3b75c09b2cc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a>* <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetBoxPointer </td>
+          <td class="memname">const <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a>* <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetBoxPointer </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -1060,21 +1072,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pointer to the box </dd></dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00914">914</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00911">911</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3ea208893f248b78d38d247c89c9c2f9"></a>
+<a class="anchor" id="ad12aae499646b927b8d79b3b057670bb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a>* <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetBoxPointer </td>
+          <td class="memname"><a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a>* <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetBoxPointer </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -1097,21 +1109,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pointer to the box </dd></dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00922">922</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00919">919</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a51c57092598e0e81726f92367282e2f2"></a>
+<a class="anchor" id="abbf28c4aa79c823bd1bea1f42ef13dff"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">array&lt;int32_t, 6&gt;&amp; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetDimensions </td>
+          <td class="memname">array&lt;int32_t, 6&gt;&amp; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetDimensions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1124,21 +1136,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00666">666</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00663">663</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a36e43db6c6af8211f2ed4e7a2c923974"></a>
+<a class="anchor" id="ac371db977572df48db3f5931ae19b71e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">array&lt;int32_t, 2&gt;&amp; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetDimensionThresholds </td>
+          <td class="memname">array&lt;int32_t, 2&gt;&amp; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetDimensionThresholds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1151,15 +1163,15 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00668">668</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00665">665</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ace4f28f9aad836913fccc4acb5336460"></a>
+<a class="anchor" id="ae02c04fde19d1ca9e2a08e9f31ed4e2e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TUint32 , typename TInt32 &gt; </div>
 <table class="mlabels">
@@ -1167,7 +1179,7 @@ template&lt;typename TUint32 , typename TInt32 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetGridInfo </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetGridInfo </td>
           <td>(</td>
           <td class="paramtype">TUint32 *&#160;</td>
           <td class="paramname"><em>box_length</em>, </td>
@@ -1214,21 +1226,21 @@ template&lt;typename TUint32 , typename TInt32 &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00734">734</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00731">731</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a00560721f721bda1ef8e4ad8d56ec8a5"></a>
+<a class="anchor" id="a382be5aa004818f63652b5a6da49e536"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetHalfMooreBoxIndices </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetHalfMooreBoxIndices </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; *&#160;</td>
           <td class="paramname"><em>neighbor_boxes</em>, </td>
@@ -1279,50 +1291,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
    +-----+----+-----+
    | FSW | FS | FSE |
    +-----+----+-----+</pre> 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00876">876</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00873">873</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aae2072d5e97abf4f071a330ee343f603"></a>
+<a class="anchor" id="aa92c3bc7535758bd3cbefadc63920173"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classbdm_1_1Grid.html">Grid</a>&lt;TResourceManager&gt;&amp; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the singleton instance. </p>
-
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00243">243</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0123534553c37baf9a7bc0a04c3cc48e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetLargestObjectSize </td>
+          <td class="memname">double <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetLargestObjectSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1337,21 +1320,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Gets the size of the largest object in the grid. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00664">664</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00661">661</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac5f200ff877a19eb76bb13ac81340bff"></a>
+<a class="anchor" id="a55a12826f010282b39471527223121a5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetMooreBoxes </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetMooreBoxes </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; const <a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a> *, 27 &gt; *&#160;</td>
           <td class="paramname"><em>neighbor_boxes</em>, </td>
@@ -1384,21 +1367,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00780">780</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00777">777</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7291b26ac614a70ac997cdb261daefd8"></a>
+<a class="anchor" id="a1dcecf44890cc2b4af364ada528057f1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">array&lt;uint32_t, 3&gt;&amp; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetNumBoxes </td>
+          <td class="memname">array&lt;uint32_t, 3&gt;&amp; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetNumBoxes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1411,21 +1394,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00670">670</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00667">667</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a686f1f48ef61f676bb992ff12183fe27"></a>
+<a class="anchor" id="a4d495b19d040808de0f1c1de867a6e2a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetSoHandles </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetSoHandles </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>box_idx</em>, </td>
@@ -1451,15 +1434,15 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Obtains all simulation object handles in a given box. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00937">937</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00934">934</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac367f7e92bcb22b86c1b77972796ef8e"></a>
+<a class="anchor" id="a418047ced8d8a9325c25cfaa16add9be"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TUint32 &gt; </div>
 <table class="mlabels">
@@ -1467,7 +1450,7 @@ template&lt;typename TUint32 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::GetSuccessors </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::GetSuccessors </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; TUint32 &gt; *&#160;</td>
           <td class="paramname"><em>successors</em></td><td>)</td>
@@ -1495,21 +1478,21 @@ template&lt;typename TUint32 &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00694">694</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00691">691</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7fa0d5bd1f3102eaa434fad7d6450dd2"></a>
+<a class="anchor" id="a2f44b76831f40ddc2bfaf126119f371f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::HasGrown </td>
+          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::HasGrown </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1522,24 +1505,24 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00674">674</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00671">671</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af6bb9a88f3bb6f094b8a00581fab4980"></a>
+<a class="anchor" id="a133092c67ff0e2ce0f0ccc3710b4e5a0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::Initialize </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::Initialize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a>&#160;</td>
-          <td class="paramname"><em>adjacency</em> = <code><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01ace276e461f72422c0d336e2c3e87867d">kHigh</a></code></td><td>)</td>
+          <td class="paramname"><em>adjacency</em> = <code><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01a78b2378f499703c103545febd135b4d6">kHigh</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1558,21 +1541,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00230">230</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00233">233</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afd6539d8a5ec879bdedd6828dd64e92a"></a>
+<a class="anchor" id="a0944b5015955315246603632c6eeb05f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::IsInitialized </td>
+          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::IsInitialized </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1585,23 +1568,23 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00685">685</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00682">682</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a07432209939bc3134301dc1275f930e4"></a>
+<a class="anchor" id="ad823d0f2a0d57daf032f8fb1404b11b3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::operator= </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html">Grid</a>&lt; TResourceManager &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html">Grid</a>&lt; TSimulation &gt; const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1615,17 +1598,17 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad175e3144fe953809b53ead2d33597d5"></a>
+<a class="anchor" id="a56b973c8f64ac0b45d8c31df4d4e030b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::RoundOffGridDimensions </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::RoundOffGridDimensions </td>
           <td>(</td>
           <td class="paramtype">const array&lt; double, 6 &gt; &amp;&#160;</td>
           <td class="paramname"><em>grid_dimensions</em></td><td>)</td>
@@ -1639,21 +1622,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00421">421</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00418">418</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af50bffc0d4a8e3fed4849d23856c0bdf"></a>
+<a class="anchor" id="abb9ffc1e38332ff36cdc994fb2a09147"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::SetDimensionThresholds </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::SetDimensionThresholds </td>
           <td>(</td>
           <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>min</em>, </td>
@@ -1677,21 +1660,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00658">658</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00655">655</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae9f256b215326bd132c69587cbf2e635"></a>
+<a class="anchor" id="a9bef3c4945f3d35defb56c07a70dcae6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::SquaredEuclideanDistance </td>
+          <td class="memname">double <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::SquaredEuclideanDistance </td>
           <td>(</td>
           <td class="paramtype">const std::array&lt; double, 3 &gt; &amp;&#160;</td>
           <td class="paramname"><em>pos1</em>, </td>
@@ -1725,21 +1708,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The distance between the two points </dd></dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00444">444</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00441">441</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a94738f8e13b93d45351aff1458cf14ed"></a>
+<a class="anchor" id="a33a5e34ae8d854aa364f4c354db3db9e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::UpdateCachedPositions </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::UpdateCachedPositions </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classbdm_1_1CircularBuffer.html">CircularBuffer</a>&lt; <a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 4 &gt;, 14 &gt; &amp;&#160;</td>
           <td class="paramname"><em>so_handles</em>, </td>
@@ -1747,7 +1730,7 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TResourceManager *&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920">ResourceManager_t</a> *&#160;</td>
           <td class="paramname"><em>rm</em>, </td>
         </tr>
         <tr>
@@ -1778,21 +1761,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l01012">1012</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l01009">1009</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a983df2ef2298a34699f9b5d207cb5e55"></a>
+<a class="anchor" id="a28268d3427670a3b7853f15057faab8c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::UpdateGrid </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::UpdateGrid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1807,21 +1790,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Updates the grid, as simulation objects may have moved, added or deleted. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00262">262</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00259">259</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a72a586dc063c39c6809ba60a61dc9d65"></a>
+<a class="anchor" id="ad5e7a40cb06f47a425322f17a0fb6c86"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::UpdateSoHandles </td>
+          <td class="memname">void <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::UpdateSoHandles </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; size_t, 14 &gt; &amp;&#160;</td>
           <td class="paramname"><em>box_indices</em>, </td>
@@ -1853,22 +1836,22 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00990">990</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00987">987</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a38017aff423649e8c36aa1cc4d74b456"></a>
+<a class="anchor" id="a6db27f8df7e5bbbbb85382fcdf1be0b2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a> <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::adjacency_</td>
+          <td class="memname"><a class="el" href="classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01">Adjacency</a> <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::adjacency_</td>
         </tr>
       </table>
   </td>
@@ -1880,21 +1863,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Determines which boxes to search neighbors in (see enum Adjacency) </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00761">761</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00758">758</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a005bd2942a539f958619a3bd7e13fca2"></a>
+<a class="anchor" id="a14c74a52455c2e651a61fe05a1ba7978"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::box_length_ = 1</td>
+          <td class="memname">uint32_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::box_length_ = 1</td>
         </tr>
       </table>
   </td>
@@ -1906,21 +1889,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Length of a <a class="el" href="structbdm_1_1Grid_1_1Box.html" title="A single unit cube of the grid. ">Box</a>. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00749">749</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00746">746</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acfc6e61404b9877b6d5853df91ab4e0f"></a>
+<a class="anchor" id="a7841e9f9825ae558ab8f5d38c85141b9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a>&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::boxes_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a>&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::boxes_</td>
         </tr>
       </table>
   </td>
@@ -1932,21 +1915,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>The vector containing all the boxes in the grid. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00747">747</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00744">744</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a19964b8be5ea003220b2b6837a34aee6"></a>
+<a class="anchor" id="abb254822287970db4138b669dd0992bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;int32_t, 6&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::grid_dimensions_</td>
+          <td class="memname">std::array&lt;int32_t, 6&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::grid_dimensions_</td>
         </tr>
       </table>
   </td>
@@ -1957,21 +1940,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Cube which contains all simulation objects {x_min, x_max, y_min, y_max, z_min, z_max} </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00766">766</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00763">763</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a034badb1ebe3f9557459e2a6befb40f5"></a>
+<a class="anchor" id="a8432b642e66a294907e8fa9ed2ea287e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::has_grown_ = false</td>
+          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::has_grown_ = false</td>
         </tr>
       </table>
   </td>
@@ -1981,21 +1964,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00771">771</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00768">768</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac36ea8165d3341ea59a025cc842b826e"></a>
+<a class="anchor" id="a136c9364d62a2efbe216372b2fbfb8e7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::initialized_ = false</td>
+          <td class="memname">bool <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::initialized_ = false</td>
         </tr>
       </table>
   </td>
@@ -2007,21 +1990,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Flag to indicate if the grid has been initialized or not. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00773">773</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00770">770</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0c0926734ef674fb08ddfc2c2902485c"></a>
+<a class="anchor" id="ad5ad2610d9c8092a229aff8ef91553d9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::largest_object_size_ = 0</td>
+          <td class="memname">double <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::largest_object_size_ = 0</td>
         </tr>
       </table>
   </td>
@@ -2033,21 +2016,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>The size of the largest object in the simulation. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00763">763</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00760">760</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a969c2b9b0f39dc8a28fd63128ae3a799"></a>
+<a class="anchor" id="a959b522ff01613cee15c1fc9f4bdf91d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">array&lt;uint32_t, 3&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::num_boxes_axis_ = {{0}}</td>
+          <td class="memname">array&lt;uint32_t, 3&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::num_boxes_axis_ = {{0}}</td>
         </tr>
       </table>
   </td>
@@ -2059,21 +2042,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Stores the number of boxes for each axis. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00751">751</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00748">748</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0d10e2029f03043de7a8b97c2aaa4c34"></a>
+<a class="anchor" id="aecdab9f047468ff3a4e53ba6ca2016e5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::num_boxes_xy_ = 0</td>
+          <td class="memname">size_t <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::num_boxes_xy_ = 0</td>
         </tr>
       </table>
   </td>
@@ -2085,21 +2068,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 
 <p>Number of boxes in the xy plane (=num_boxes_axis_[0] * num_boxes_axis_[1]) </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00753">753</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00750">750</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6ab3f8dfeccd243bf5e00a1d4f7ac230"></a>
+<a class="anchor" id="a421454d3cebc427b4e0651e9829d77b6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1SimulationObjectVector.html">SimulationObjectVector</a>&lt;<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, TResourceManager&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::successors_</td>
+          <td class="memname"><a class="el" href="classbdm_1_1SimulationObjectVector.html">SimulationObjectVector</a>&lt;<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, TSimulation&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::successors_</td>
         </tr>
       </table>
   </td>
@@ -2112,21 +2095,21 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 <pre class="fragment">// Usage
 SoHandle current_element = ...;
 SoHandle next_element = successors_[current_element];  </pre> 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00759">759</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00756">756</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af72bad1677a3e31d20bb14d2c2ee33bd"></a>
+<a class="anchor" id="ac62a60089564240c66628a79f9a07b17"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;int32_t, 2&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TResourceManager &gt;::threshold_dimensions_</td>
+          <td class="memname">std::array&lt;int32_t, 2&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::threshold_dimensions_</td>
         </tr>
       </table>
   </td>
@@ -2137,7 +2120,7 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Stores the min / max dimension value that need to be surpassed in order to trigger a diffusion grid change </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00769">769</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00766">766</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -2150,7 +2133,7 @@ template&lt;typename TResourceManager = ResourceManager&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Grid.html">Grid</a></li>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:24 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:49 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

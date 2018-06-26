@@ -13,10 +13,10 @@ var indexSectionsWithContent =
   3: "bcdefgilmnoprstv",
   4: "_abcdefghilmnoprstuvw~",
   5: "abcdefghiklmnoprstuvxyz",
-  6: "abcimnstv",
+  6: "abcimnrstv",
   7: "acens",
   8: "k",
-  9: "cginosv",
+  9: "cgnosv",
   10: "_bly"
 };
 

@@ -11,8 +11,7 @@ var files =
       [ "Soa", "structbdm_1_1Soa.html", "structbdm_1_1Soa" ],
       [ "SoaRef", "structbdm_1_1SoaRef.html", "structbdm_1_1SoaRef" ]
     ] ],
-    [ "biodynamo.cc", "biodynamo_8cc.html", "biodynamo_8cc" ],
-    [ "biodynamo.h", "biodynamo_8h.html", "biodynamo_8h" ],
+    [ "biodynamo.h", "biodynamo_8h.html", null ],
     [ "biology_module_op.h", "biology__module__op_8h.html", [
       [ "BiologyModuleOp", "structbdm_1_1BiologyModuleOp.html", "structbdm_1_1BiologyModuleOp" ]
     ] ],
@@ -84,7 +83,7 @@ var files =
       [ "Param", "structbdm_1_1Param.html", "structbdm_1_1Param" ],
       [ "VisualizeDiffusion", "structbdm_1_1Param_1_1VisualizeDiffusion.html", "structbdm_1_1Param_1_1VisualizeDiffusion" ]
     ] ],
-    [ "random.cc", "random_8cc.html", "random_8cc" ],
+    [ "random.cc", "random_8cc.html", null ],
     [ "random.h", "random_8h.html", [
       [ "Random", "classbdm_1_1Random.html", "classbdm_1_1Random" ]
     ] ],
@@ -94,16 +93,25 @@ var files =
       [ "Scheduler", "classbdm_1_1Scheduler.html", "classbdm_1_1Scheduler" ]
     ] ],
     [ "shape.h", "shape_8h.html", "shape_8h" ],
+    [ "simulation.h", "simulation_8h.html", [
+      [ "ResourceManager", "classbdm_1_1ResourceManager.html", "classbdm_1_1ResourceManager" ],
+      [ "Grid", "classbdm_1_1Grid.html", "classbdm_1_1Grid" ],
+      [ "Scheduler", "classbdm_1_1Scheduler.html", "classbdm_1_1Scheduler" ],
+      [ "CompileTimeParam", "structbdm_1_1CompileTimeParam.html", null ],
+      [ "Simulation", "structbdm_1_1Simulation.html", "structbdm_1_1Simulation" ]
+    ] ],
     [ "simulation_backup.cc", "simulation__backup_8cc.html", null ],
     [ "simulation_backup.h", "simulation__backup_8h.html", [
       [ "SimulationBackup", "classbdm_1_1SimulationBackup.html", "classbdm_1_1SimulationBackup" ]
     ] ],
+    [ "simulation_implementation.h", "simulation__implementation_8h.html", null ],
     [ "simulation_object.h", "simulation__object_8h.html", "simulation__object_8h" ],
     [ "simulation_object_util.h", "simulation__object__util_8h.html", "simulation__object__util_8h" ],
     [ "simulation_object_vector.h", "simulation__object__vector_8h.html", [
       [ "SimulationObjectVector", "classbdm_1_1SimulationObjectVector.html", "classbdm_1_1SimulationObjectVector" ]
     ] ],
     [ "so_pointer.h", "so__pointer_8h.html", "so__pointer_8h" ],
+    [ "string_util.h", "string__util_8h.html", "string__util_8h" ],
     [ "substance_initializers.h", "substance__initializers_8h.html", "substance__initializers_8h" ],
     [ "timing.h", "timing_8h.html", [
       [ "Timing", "classbdm_1_1Timing.html", "classbdm_1_1Timing" ]

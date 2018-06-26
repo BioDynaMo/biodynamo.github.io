@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 : <a class="el" href="classbdm_1_1CellExt.html#a237220f1f56fd865d10928ce808265de">bdm::CellExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 </li>
 <li>~CommitOp()
-: <a class="el" href="classbdm_1_1CommitOp.html#a09129ba2890682ea64bd01089bf1291d">bdm::CommitOp&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1CommitOp.html#a416304b60e552a6525112d6f8f02910c">bdm::CommitOp</a>
 </li>
 <li>~DefaultForce()
 : <a class="el" href="classbdm_1_1DefaultForce.html#aad27c4a1adbaf42aa49d9eff6c982404">bdm::DefaultForce</a>
@@ -160,28 +160,28 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a25d8545acb23c2e71e65ee0dae64d969">bdm::DiffusionGrid</a>
 </li>
 <li>~DiffusionOp()
-: <a class="el" href="classbdm_1_1DiffusionOp.html#abf70c36d70409ae624c07c10358cb7ba">bdm::DiffusionOp&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1DiffusionOp.html#a3a508b5361e3e9e995c0f7eeb566d71e">bdm::DiffusionOp</a>
 </li>
 <li>~DisplacementOp()
-: <a class="el" href="classbdm_1_1DisplacementOp.html#a0a6593e5f3208eb688a5e99e609b1d6f">bdm::DisplacementOp&lt; TRm &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOp.html#adec0728dcfbc7a05effddd642ba45a7b">bdm::DisplacementOp&lt; TSimulation &gt;</a>
 </li>
 <li>~DisplacementOpCpu()
-: <a class="el" href="classbdm_1_1DisplacementOpCpu.html#a2432b09ba9a0706a780f039b7ca8582c">bdm::DisplacementOpCpu&lt; TGrid &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOpCpu.html#a798ac79fb37afa939eee25acefc24684">bdm::DisplacementOpCpu&lt; TSimulation &gt;</a>
 </li>
 <li>~DisplacementOpCuda()
-: <a class="el" href="classbdm_1_1DisplacementOpCuda.html#ab24442dc1f25b2dd80a43a846e3d843d">bdm::DisplacementOpCuda&lt; TGrid &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOpCuda.html#a0a1745e8e54aeb69a82d7ea8cd110323">bdm::DisplacementOpCuda&lt; TSimulation &gt;</a>
 </li>
 <li>~DisplacementOpCudaKernel()
 : <a class="el" href="classbdm_1_1DisplacementOpCudaKernel.html#a0e1f6ef99c0825837122c650cdb96127">bdm::DisplacementOpCudaKernel</a>
 </li>
 <li>~DisplacementOpOpenCL()
-: <a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#a757222facf26977aa3c130c80d72578b">bdm::DisplacementOpOpenCL&lt; TGrid, TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#ab18cdb87b2cf7564762079484ba35030">bdm::DisplacementOpOpenCL&lt; TSimulation &gt;</a>
 </li>
 <li>~DividingCellOp()
 : <a class="el" href="classbdm_1_1DividingCellOp.html#a2cbd9fee8057b54c5440eaf8c34dcfdd">bdm::DividingCellOp</a>
 </li>
 <li>~Grid()
-: <a class="el" href="classbdm_1_1Grid.html#a3c6eae7733953dd680ff6a15ce74c3cf">bdm::Grid&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1Grid.html#aacdf066c17137edf623ff0e2055703c3">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>~InlineVector()
 : <a class="el" href="classbdm_1_1InlineVector.html#a33875d26cfd822c7ebd71ef56551bdf4">bdm::InlineVector&lt; T, N &gt;</a>
@@ -196,7 +196,10 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 : <a class="el" href="classbdm_1_1ScalarSimulationObject.html#a93b5f76e86ff2087c1979b602487f1f7">bdm::ScalarSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>~Scheduler()
-: <a class="el" href="classbdm_1_1Scheduler.html#aa90827b929894e5cc6aaeabeedad1963">bdm::Scheduler&lt; TResourceManager, TGrid &gt;</a>
+: <a class="el" href="classbdm_1_1Scheduler.html#a9777e1b2fb698ad3adec5f25c4bb7a42">bdm::Scheduler&lt; TSimulation &gt;</a>
+</li>
+<li>~Simulation()
+: <a class="el" href="structbdm_1_1Simulation.html#a16d635589dca2d97429fe7fe7c8a5d4d">bdm::Simulation&lt; TCTParam &gt;</a>
 </li>
 <li>~SimulationObject()
 : <a class="el" href="classbdm_1_1SimulationObject.html#afc983768005bb22e019ba67819cf0318">bdm::SimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
@@ -222,7 +225,7 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:24 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:50 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/installation/", 
-            "text": "Installation\n\n\nTo install BioDynaMo for the first time execute the following commands.\nThe installation will also install all required packages including Paraview.\n\n\ngit clone https://github.com/BioDynaMo/biodynamo.git\n\ncd\n biodynamo\n./install.sh\n\n\n\n\n\n\nImportant\n\n\n\n\n\n\nAfter the installation you need to restart your terminal.\n  In every new terminal execute \nsource \npath-to-bdm-installation\n/biodynamo-env.sh\n\n  to use BioDynaMo!\n\n\n\n\n\n\nBioDynaMo uses a customized version of ParaView.\n     Therefore, you should not install ParaView separately.\n\n\n\n\n\n\n\n\nUpdate Installation\n\n\nThe following commands update your BioDynaMo installation:\n\n\ncd\n path/to/biodynamo\n\n# make sure you are on the master branch\n\ngit checkout master\n\n# get latest changes\n\ngit pull origin master\n./install.sh\n\n\n\n\nSupported platforms\n\n\n\n\nUbuntu 16.04\n\n\nMac OSX", 
+            "text": "Installation\n\n\nTo install BioDynaMo for the first time execute the following commands.\nThe installation will also install all required packages including Paraview.\n\n\ngit clone https://github.com/BioDynaMo/biodynamo.git\n\ncd\n biodynamo\n./install.sh\n\n\n\n\n\n\nImportant\n\n\n\n\n\n\nAfter the installation you need to restart your terminal.\n  In every new terminal execute \nsource \npath-to-bdm-installation\n/biodynamo-env.sh\n\n  to use BioDynaMo!\n\n\n\n\n\n\nBioDynaMo uses a customized version of ParaView.\n     Therefore, you should not install ParaView separately.\n\n\n\n\n\n\n\n\nUpdate Installation\n\n\nThe following commands update your BioDynaMo installation:\n\n\ncd\n path/to/biodynamo\n\n# make sure you are on the master branch\n\ngit checkout master\n\n# get latest changes\n\ngit pull origin master\n./install.sh\n\n\n\n\nSupported platforms\n\n\n\n\nUbuntu 16.04, 18.04\n\n\nMac OSX", 
             "title": "Installation"
         }, 
         {
@@ -32,7 +32,7 @@
         }, 
         {
             "location": "/installation/#supported-platforms", 
-            "text": "Ubuntu 16.04  Mac OSX", 
+            "text": "Ubuntu 16.04, 18.04  Mac OSX", 
             "title": "Supported platforms"
         }, 
         {
@@ -97,7 +97,7 @@
         }, 
         {
             "location": "/visualization/", 
-            "text": "Enabling visualization is very easy. BioDynaMo can be configured through its own\nconfiguration file: \nbdm.toml\n. Visualization is just one of the many configuration\noptions. Let's take a look at how to set it. We shall continue using the \nhello_world\n\nexample from the previous exercise.\n\n\nCreate the configuration file\n\n\nIn your simulation directory \nhello_world\n create a new file called \nbdm.toml\n.\nYou can also do this from the command line with the following command:\n\n\ntouch bdm.toml\n\n\n\n\nExport visualization files\n\n\nOne way to enable visualization is to export a visualization file every time step\n(or every N time steps). In the \nbmd.toml\n file add the following lines:\n\n\n[visualization]\n\n\nexport\n \n=\n \ntrue\n\n\nexport_interval\n \n=\n \n1\n\n\n    \n[[visualize_sim_object]]\n\n    \nname\n \n=\n \nCell\n\n\n    additional_data_members = [ \ndiameter_\n ]\n\n\n\n\n\nThis will export a visualization file every time step. You can set the frequency\nby setting the \nexport_interval\n. Make sure that you run a good number of steps\nso that the cells have time to divide. Set it to around 2000 for the \nhello_world\n example.\nYou can do this in \nsrc/hello_world.h\n in the \nscheduler.Simulate(time_steps)\n function.\nRun your simulation with \nbiodynamo run\n.\n\n\nNow we need to open ParaView:\n\n\n\n\nWarning\n\n\nMake sure you start ParaView from the project directory. Otherwise, ParaView might not find the exported files.\n\n\n\n\nOn Linux:\n\n\nbiodynamo.paraview\n\n\n\n\nOn Mac OS:\n\n\nparaview\n\n\n\n\nSelect \"File-\nLoad State\" as shown below:\n\n\n\n\nNavigate to your simulation directory and select the \npvsm\n file.\n\n\n\n\nIn the next window keep the default (\nUse File Names From State\n) and click OK.", 
+            "text": "Enabling visualization is very easy. BioDynaMo can be configured through its own\nconfiguration file: \nbdm.toml\n. Visualization is just one of the many configuration\noptions. Let's take a look at how to set it. We shall continue using the \nhello_world\n\nexample from the previous exercise.\n\n\nCreate the configuration file\n\n\nIn your simulation directory \nhello_world\n create a new file called \nbdm.toml\n.\nYou can also do this from the command line with the following command:\n\n\ntouch bdm.toml\n\n\n\n\nExport visualization files\n\n\nOne way to enable visualization is to export a visualization file every time step\n(or every N time steps). In the \nbmd.toml\n file add the following lines:\n\n\n[visualization]\n\n\nexport\n \n=\n \ntrue\n\n\nexport_interval\n \n=\n \n1\n\n\n    \n[[visualize_sim_object]]\n\n    \nname\n \n=\n \nCell\n\n\n    additional_data_members = [ \ndiameter_\n ]\n\n\n\n\n\nThis will export a visualization file every time step. You can set the frequency\nby setting the \nexport_interval\n. Make sure that you run a good number of steps\nso that the cells have time to divide. Set it to around 2000 for the \nhello_world\n example.\nYou can do this in \nsrc/hello_world.h\n in the \nscheduler.Simulate(time_steps)\n function.\nRun your simulation with \nbiodynamo run\n.\n\n\nNow we need to open ParaView:\n\n\n\n\nWarning\n\n\nMake sure you start ParaView from the project directory. Otherwise, ParaView might not find the exported files.\n\n\n\n\nparaview\n\n\n\n\nSelect \"File-\nLoad State\" as shown below:\n\n\n\n\nNavigate to your simulation output directory and select the \npvsm\n file.\n\n\n\n\nIn the next window keep the default (\nUse File Names From State\n) and click OK.", 
             "title": "Visualization"
         }, 
         {
@@ -107,18 +107,8 @@
         }, 
         {
             "location": "/visualization/#export-visualization-files", 
-            "text": "One way to enable visualization is to export a visualization file every time step\n(or every N time steps). In the  bmd.toml  file add the following lines:  [visualization]  export   =   true  export_interval   =   1 \n\n     [[visualize_sim_object]] \n     name   =   Cell      additional_data_members = [  diameter_  ]   This will export a visualization file every time step. You can set the frequency\nby setting the  export_interval . Make sure that you run a good number of steps\nso that the cells have time to divide. Set it to around 2000 for the  hello_world  example.\nYou can do this in  src/hello_world.h  in the  scheduler.Simulate(time_steps)  function.\nRun your simulation with  biodynamo run .  Now we need to open ParaView:   Warning  Make sure you start ParaView from the project directory. Otherwise, ParaView might not find the exported files.", 
+            "text": "One way to enable visualization is to export a visualization file every time step\n(or every N time steps). In the  bmd.toml  file add the following lines:  [visualization]  export   =   true  export_interval   =   1 \n\n     [[visualize_sim_object]] \n     name   =   Cell      additional_data_members = [  diameter_  ]   This will export a visualization file every time step. You can set the frequency\nby setting the  export_interval . Make sure that you run a good number of steps\nso that the cells have time to divide. Set it to around 2000 for the  hello_world  example.\nYou can do this in  src/hello_world.h  in the  scheduler.Simulate(time_steps)  function.\nRun your simulation with  biodynamo run .  Now we need to open ParaView:   Warning  Make sure you start ParaView from the project directory. Otherwise, ParaView might not find the exported files.   paraview  Select \"File- Load State\" as shown below:   Navigate to your simulation output directory and select the  pvsm  file.   In the next window keep the default ( Use File Names From State ) and click OK.", 
             "title": "Export visualization files"
-        }, 
-        {
-            "location": "/visualization/#on-linux", 
-            "text": "biodynamo.paraview", 
-            "title": "On Linux:"
-        }, 
-        {
-            "location": "/visualization/#on-mac-os", 
-            "text": "paraview  Select \"File- Load State\" as shown below:   Navigate to your simulation directory and select the  pvsm  file.   In the next window keep the default ( Use File Names From State ) and click OK.", 
-            "title": "On Mac OS:"
         }, 
         {
             "location": "/diffusion/", 
@@ -344,6 +334,26 @@
             "location": "/gpu_acceleration/#enabling-gpu-acceleration", 
             "text": "The only thing you need to do to enjoy GPU acceleration is enabling it through the configuration file (bdm.toml) as following:  [ experimental ]  use_gpu   =   true   By default we assume that your GPU is only CUDA-compatible. If you want to let BioDynaMo know you have an OpenCL-compatible GPU just append the following to the above snippet:  use_opencl   =   true    Note  If you have multiple GPUs on your system you can select which BioDynaMo uses by setting the following flag:  preferred_gpu =  value , where  value  is the index of the GPU in the list of all GPUs.", 
             "title": "Enabling GPU acceleration"
+        }, 
+        {
+            "location": "/changelog/", 
+            "text": "Changelog\n\n\n26.06.2018 \ngba4fe1f\n\n\n\n\n\n\nAdd support for multiple simulations per process. Only one simulation\ncan be active at the same time. Introduces new class \nSimulation\n (see \nAPI\n).\nThis change causes many API changes -- see subsection below.\n\n\n\n\n\n\nWrite simulation files to separate directory: \noutput/simulation-id/\n\n\n\n\n\n\nIntegrate simulation template for \nbiodynamo new\n into the biodynamo repository to avoid\ninconsistencies with the biodynamo version.\n\n\n\n\n\n\nAPI changes\n\n\n\n\n\n\n\n\nOld\n\n\nNew\n\n\n\n\n\n\n\n\n\n\nInitializeBioDynaMo(...)\n\n\nSimulation\n simulation(...)\n\n\n\n\n\n\nRm()\n \n \nTRm::Get()\n \n  \nTResourceManager::Get()\n\n\nauto* rm = simulation.GetResourceManager();\n\n\n\n\n\n\nGetDiffusionGrid(...)\n\n\nrm-\nGetDiffusionGrid(...)\n\n\n\n\n\n\nGrid::GetInstance()\n\n\nauto* grid = simulation.GetGrid();\n\n\n\n\n\n\nParam\n::\nsome_parameter_\n;\n\n\nauto* param = simulation.GetParam();\n \n \nparam-\nsome_parameter_;", 
+            "title": "Changelog"
+        }, 
+        {
+            "location": "/changelog/#changelog", 
+            "text": "", 
+            "title": "Changelog"
+        }, 
+        {
+            "location": "/changelog/#26062018-gba4fe1f", 
+            "text": "Add support for multiple simulations per process. Only one simulation\ncan be active at the same time. Introduces new class  Simulation  (see  API ).\nThis change causes many API changes -- see subsection below.    Write simulation files to separate directory:  output/simulation-id/    Integrate simulation template for  biodynamo new  into the biodynamo repository to avoid\ninconsistencies with the biodynamo version.", 
+            "title": "26.06.2018 gba4fe1f"
+        }, 
+        {
+            "location": "/changelog/#api-changes", 
+            "text": "Old  New      InitializeBioDynaMo(...)  Simulation  simulation(...)    Rm()     TRm::Get()      TResourceManager::Get()  auto* rm = simulation.GetResourceManager();    GetDiffusionGrid(...)  rm- GetDiffusionGrid(...)    Grid::GetInstance()  auto* grid = simulation.GetGrid();    Param :: some_parameter_ ;  auto* param = simulation.GetParam();     param- some_parameter_;", 
+            "title": "API changes"
         }, 
         {
             "location": "/contact/", 

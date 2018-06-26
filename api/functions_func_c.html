@@ -145,10 +145,10 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>CachePositions()
-: <a class="el" href="classbdm_1_1Grid.html#a3c4e17a5f9d6ee91d9c15b18ee1df77d">bdm::Grid&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1Grid.html#a7cda4ca9a41300b9bccd6ae8f7467518">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>CacheSoHandles()
-: <a class="el" href="classbdm_1_1Grid.html#a074dcb8f53919d9b9060e1d6fdea2fa8">bdm::Grid&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1Grid.html#ac4396f534a7b1faa3988a2dad29c0376">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>CalculateDisplacement()
 : <a class="el" href="classbdm_1_1CellExt.html#a4fb6ea2bb35fe440c650b26c0bfb54b4">bdm::CellExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
@@ -158,10 +158,13 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a86d03c3d92b607d4c65a17bc30c165d2">bdm::DiffusionGrid</a>
 </li>
 <li>CalculateGridDimensions()
-: <a class="el" href="classbdm_1_1Grid.html#a5389fb71891350e0142874ad542dec40">bdm::Grid&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1Grid.html#a330d3930f160b3a2182dd99d0ec81f50">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>capacity()
 : <a class="el" href="classbdm_1_1InlineVector.html#a8d7b7abc1eb87998eee66dd9f73042a0">bdm::InlineVector&lt; T, N &gt;</a>
+</li>
+<li>CatalystAdaptor()
+: <a class="el" href="classbdm_1_1CatalystAdaptor.html#ae3f05c90590b0dc122d03842bbaa9d9a">bdm::CatalystAdaptor&lt; TSimulation &gt;</a>
 </li>
 <li>cbegin()
 : <a class="el" href="classbdm_1_1TransactionalVector.html#a01ecba85f6cb007962ee7b084beeeb84">bdm::TransactionalVector&lt; T &gt;</a>
@@ -180,7 +183,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a94a70bc13d401f56b2b06bcef46eb123">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 </li>
 <li>CheckGridGrowth()
-: <a class="el" href="classbdm_1_1Grid.html#a5bce8d601cb204e5fe615187ea18ea99">bdm::Grid&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1Grid.html#a500265b6b972509498a2d00a3c766650">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>CircularBuffer()
 : <a class="el" href="classbdm_1_1CircularBuffer.html#aa2e1bbc5411cf0c51da6d9aa61103452">bdm::CircularBuffer&lt; T, N &gt;</a>
@@ -227,9 +230,12 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 , <a class="el" href="structbdm_1_1GrowDivide.html#a8234c2d05e81436523874da7b17ec1e9">bdm::GrowDivide</a>
 , <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ab08ae7ac9d1b2887ff32e98bd19e2cf8">bdm::IntegralTypeWrapper&lt; T &gt;</a>
 , <a class="el" href="structbdm_1_1NullBiologyModule.html#abc4b5753349e0a02b47229572f2d4501">bdm::NullBiologyModule</a>
+, <a class="el" href="structbdm_1_1Param.html#a1878562fdbe371d546af644e16dd8205">bdm::Param</a>
+, <a class="el" href="classbdm_1_1Random.html#a1ea58388a684c2c388018de395378bca">bdm::Random</a>
 , <a class="el" href="structbdm_1_1RegulateGenes.html#a5d17df897d2d2111b004605a65747ce1">bdm::RegulateGenes</a>
 , <a class="el" href="classbdm_1_1ResourceManager.html#acf9d0196ac4e75bdadb7fef9ec463897">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 , <a class="el" href="classbdm_1_1RuntimeVariables.html#a16b45ea2a139bde36b02709bbb90bb3b">bdm::RuntimeVariables</a>
+, <a class="el" href="structbdm_1_1Simulation.html#a00be8d49c03bb84b2e76a2ca6e1c4379">bdm::Simulation&lt; TCTParam &gt;</a>
 , <a class="el" href="classbdm_1_1SoHandle.html#ab20b97d476758d54e3a940fac741ce3b">bdm::SoHandle</a>
 </li>
 <li>clear()
@@ -244,41 +250,31 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 : <a class="el" href="classbdm_1_1ResourceManager.html#a5dfd8dcbb9650edd4bfc1b1d9e28ceea">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 </li>
 <li>clear()
-: <a class="el" href="classbdm_1_1SimulationObjectVector.html#a7646380f7fc3577baca93ddf28bb8b7c">bdm::SimulationObjectVector&lt; T, TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1SimulationObjectVector.html#a621355fafe4bde66e3b3959d82f9d6fd">bdm::SimulationObjectVector&lt; T, TSimulation &gt;</a>
 , <a class="el" href="classbdm_1_1SoaSimulationObject.html#afd49eec6066437ab8d387f5e5017efc4">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1TransactionalVector.html#a324f481fcf60bf0da8ceb49b6f2854df">bdm::TransactionalVector&lt; T &gt;</a>
 </li>
 <li>ClearGrid()
-: <a class="el" href="classbdm_1_1Grid.html#ab74776cc3ab45303357bd73141d73ba0">bdm::Grid&lt; TResourceManager &gt;</a>
+: <a class="el" href="classbdm_1_1Grid.html#adf84257be5cf461e3ac76b48f0ecc94c">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>Commit()
 : <a class="el" href="classbdm_1_1SoaSimulationObject.html#a5297b4f28cd5a2990e265c4f0a9e1708">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1TransactionalVector.html#a8c306dccf60cb92de20f52a99868d775">bdm::TransactionalVector&lt; T &gt;</a>
 </li>
 <li>CommitChangesAndUpdateReferences()
-: <a class="el" href="classbdm_1_1Scheduler.html#aa74fd2b0db6fcab2d56d881c58e755da">bdm::Scheduler&lt; TResourceManager, TGrid &gt;</a>
+: <a class="el" href="classbdm_1_1Scheduler.html#a5a3db9c5be1499d692a63135ac58ddae">bdm::Scheduler&lt; TSimulation &gt;</a>
 </li>
 <li>CommitOp()
-: <a class="el" href="classbdm_1_1CommitOp.html#a84388fd10fd714f54cd87915bc329da1">bdm::CommitOp&lt; TResourceManager &gt;</a>
-</li>
-<li>CompareAndSet()
-: <a class="el" href="classbdm_1_1Random.html#ad19e7599891d6e0cb79ea2d1b0b8ce65">bdm::Random</a>
+: <a class="el" href="classbdm_1_1CommitOp.html#aaef730a5f4f57a13bed057206e73760c">bdm::CommitOp</a>
 </li>
 <li>Compute()
 : <a class="el" href="classbdm_1_1VTuneOpWrapper.html#adfc2128da56aaa8620aebb3796a02c3a">bdm::VTuneOpWrapper&lt; Op &gt;</a>
 </li>
 <li>ComputeForceOfASphereOnASphere()
-: <a class="el" href="classbdm_1_1DefaultForce.html#a6315450e8f0570ff79128b688a69d8ff">bdm::DefaultForce</a>
-</li>
-<li>ConcatNextPart()
-: <a class="el" href="classbdm_1_1Log.html#ac6de7c55fb559ccbf409796a973cc35f">bdm::Log</a>
-</li>
-<li>ConstructMessage()
-: <a class="el" href="classbdm_1_1Log.html#a97801856cb457c5abdd19f14ff0f8a21">bdm::Log</a>
+: <a class="el" href="classbdm_1_1DefaultForce.html#a984db6ac7ec691eb8fa7fc5622c7ea6a">bdm::DefaultForce</a>
 </li>
 <li>CoProcess()
-: <a class="el" href="classbdm_1_1CatalystAdaptor.html#a8f557f1b4e89c2c58c5c46419c25bfbc">bdm::CatalystAdaptor&lt; TResourceManager &gt;</a>
-, <a class="el" href="classbdm_1_1InSituPipeline.html#a302f4c27dddcf25a3c6bfdb10dc5fdd5">bdm::InSituPipeline</a>
+: <a class="el" href="classbdm_1_1InSituPipeline.html#a302f4c27dddcf25a3c6bfdb10dc5fdd5">bdm::InSituPipeline</a>
 </li>
 <li>Copy()
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#adb696f4e9ce041ef7cbe10977e3b3220">bdm::BaseBiologyModule</a>
@@ -308,7 +304,7 @@ $(document).ready(function(){initNavTree('functions_func_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:24 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:50 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

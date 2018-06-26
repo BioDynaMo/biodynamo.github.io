@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: bdm::DisplacementOpCuda&lt; TGrid &gt; Class Template Reference</title>
+<title>BioDynaMo: bdm::DisplacementOpCuda&lt; TSimulation &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('classbdm_1_1DisplacementOpCuda.html','
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1DisplacementOpCuda-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bdm::DisplacementOpCuda&lt; TGrid &gt; Class Template Reference</div>  </div>
+<div class="title">bdm::DisplacementOpCuda&lt; TSimulation &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -120,74 +120,47 @@ $(document).ready(function(){initNavTree('classbdm_1_1DisplacementOpCuda.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaafe2e4e1bca5bfea7b54fa7af619767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#aaafe2e4e1bca5bfea7b54fa7af619767">DisplacementOpCuda</a> ()</td></tr>
-<tr class="separator:aaafe2e4e1bca5bfea7b54fa7af619767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab24442dc1f25b2dd80a43a846e3d843d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#ab24442dc1f25b2dd80a43a846e3d843d">~DisplacementOpCuda</a> ()</td></tr>
-<tr class="separator:ab24442dc1f25b2dd80a43a846e3d843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2db8e60d0de003ec440ae7a983a346a"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
-<tr class="memitem:ae2db8e60d0de003ec440ae7a983a346a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
-&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#ae2db8e60d0de003ec440ae7a983a346a">operator()</a> (TContainer *cells, uint16_t type_idx)</td></tr>
-<tr class="separator:ae2db8e60d0de003ec440ae7a983a346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2702ea0cd6c1524de7c78ef43e366ddf"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
-<tr class="memitem:a2702ea0cd6c1524de7c78ef43e366ddf"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
-&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a2702ea0cd6c1524de7c78ef43e366ddf">operator()</a> (TContainer *cells, uint16_t type_idx)</td></tr>
-<tr class="separator:a2702ea0cd6c1524de7c78ef43e366ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af04a8788d52c9087fe30cf447d2311"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a6af04a8788d52c9087fe30cf447d2311">DisplacementOpCuda</a> ()</td></tr>
+<tr class="separator:a6af04a8788d52c9087fe30cf447d2311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1745e8e54aeb69a82d7ea8cd110323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a0a1745e8e54aeb69a82d7ea8cd110323">~DisplacementOpCuda</a> ()</td></tr>
+<tr class="separator:a0a1745e8e54aeb69a82d7ea8cd110323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5b64f081338cbdf410a87789d51aca"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
+<tr class="memitem:adf5b64f081338cbdf410a87789d51aca"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
+&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#adf5b64f081338cbdf410a87789d51aca">operator()</a> (TContainer *cells, uint16_t type_idx)</td></tr>
+<tr class="separator:adf5b64f081338cbdf410a87789d51aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e2855142eb8e03303cdc1ca4e3afd6"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
+<tr class="memitem:a65e2855142eb8e03303cdc1ca4e3afd6"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
+&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a65e2855142eb8e03303cdc1ca4e3afd6">operator()</a> (TContainer *cells, uint16_t type_idx)</td></tr>
+<tr class="separator:a65e2855142eb8e03303cdc1ca4e3afd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aaa8a26046c46f1f37f62c3e5618feb3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1DisplacementOpCudaKernel.html">DisplacementOpCudaKernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#aaa8a26046c46f1f37f62c3e5618feb3c">cdo_</a> = nullptr</td></tr>
-<tr class="separator:aaa8a26046c46f1f37f62c3e5618feb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71ad4a9925def1f8754abea9a2c652b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#ad71ad4a9925def1f8754abea9a2c652b">num_boxes_</a> = 0</td></tr>
-<tr class="separator:ad71ad4a9925def1f8754abea9a2c652b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c8f1ab200cbef11216513131e7fb73"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#af8c8f1ab200cbef11216513131e7fb73">num_objects_</a> = 0</td></tr>
-<tr class="separator:af8c8f1ab200cbef11216513131e7fb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2f3be34e156cdec8cc3e61938550ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1DisplacementOpCudaKernel.html">DisplacementOpCudaKernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a6c2f3be34e156cdec8cc3e61938550ee">cdo_</a> = nullptr</td></tr>
+<tr class="separator:a6c2f3be34e156cdec8cc3e61938550ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ff5f954bca6e1978d899556a6dd590"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a04ff5f954bca6e1978d899556a6dd590">num_boxes_</a> = 0</td></tr>
+<tr class="separator:a04ff5f954bca6e1978d899556a6dd590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670ad02944c7ac352ff7c6e8e9c45c12"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a670ad02944c7ac352ff7c6e8e9c45c12">num_objects_</a> = 0</td></tr>
+<tr class="separator:a670ad02944c7ac352ff7c6e8e9c45c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename TGrid = Grid&lt;&gt;&gt;<br/>
-class bdm::DisplacementOpCuda&lt; TGrid &gt;</h3>
+<div class="textblock"><h3>template&lt;typename TSimulation = Simulation&lt;&gt;&gt;<br/>
+class bdm::DisplacementOpCuda&lt; TSimulation &gt;</h3>
 
 <p>Defines the 3D physical interactions between physical objects. </p>
 
-<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00033">33</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00034">34</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aaafe2e4e1bca5bfea7b54fa7af619767"></a>
+<a class="anchor" id="a6af04a8788d52c9087fe30cf447d2311"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TGrid &gt;::<a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00035">35</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab24442dc1f25b2dd80a43a846e3d843d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TGrid &gt;::~<a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a> </td>
+          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TSimulation &gt;::<a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,12 +177,39 @@ template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a0a1745e8e54aeb69a82d7ea8cd110323"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TSimulation &gt;::~<a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00037">37</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae2db8e60d0de003ec440ae7a983a346a"></a>
+<a class="anchor" id="adf5b64f081338cbdf410a87789d51aca"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TContainer &gt; </div>
 <table class="mlabels">
@@ -217,7 +217,7 @@ template&lt;typename TContainer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a>&lt;TContainer&gt;::value&gt;::type <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TGrid &gt;::operator() </td>
+          <td class="memname">std::enable_if&lt;<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a>&lt;TContainer&gt;::value&gt;::type <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TSimulation &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">TContainer *&#160;</td>
           <td class="paramname"><em>cells</em>, </td>
@@ -241,15 +241,15 @@ template&lt;typename TContainer &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00039">39</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00040">40</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2702ea0cd6c1524de7c78ef43e366ddf"></a>
+<a class="anchor" id="a65e2855142eb8e03303cdc1ca4e3afd6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TContainer &gt; </div>
 <table class="mlabels">
@@ -257,7 +257,7 @@ template&lt;typename TContainer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a>&lt;TContainer&gt;::value&gt;::type <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TGrid &gt;::operator() </td>
+          <td class="memname">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a>&lt;TContainer&gt;::value&gt;::type <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TSimulation &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">TContainer *&#160;</td>
           <td class="paramname"><em>cells</em>, </td>
@@ -281,22 +281,22 @@ template&lt;typename TContainer &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00125">125</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00128">128</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aaa8a26046c46f1f37f62c3e5618feb3c"></a>
+<a class="anchor" id="a6c2f3be34e156cdec8cc3e61938550ee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOpCudaKernel.html">DisplacementOpCudaKernel</a>* <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TGrid &gt;::cdo_ = nullptr</td>
+          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOpCudaKernel.html">DisplacementOpCudaKernel</a>* <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TSimulation &gt;::cdo_ = nullptr</td>
         </tr>
       </table>
   </td>
@@ -306,21 +306,21 @@ template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00133">133</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00136">136</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad71ad4a9925def1f8754abea9a2c652b"></a>
+<a class="anchor" id="a04ff5f954bca6e1978d899556a6dd590"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TGrid &gt;::num_boxes_ = 0</td>
+          <td class="memname">uint32_t <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TSimulation &gt;::num_boxes_ = 0</td>
         </tr>
       </table>
   </td>
@@ -330,21 +330,21 @@ template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00134">134</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00137">137</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af8c8f1ab200cbef11216513131e7fb73"></a>
+<a class="anchor" id="a670ad02944c7ac352ff7c6e8e9c45c12"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TGrid &gt;::num_objects_ = 0</td>
+          <td class="memname">uint32_t <a class="el" href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a>&lt; TSimulation &gt;::num_objects_ = 0</td>
         </tr>
       </table>
   </td>
@@ -354,7 +354,7 @@ template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00135">135</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00138">138</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ template&lt;typename TGrid  = Grid&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a></li>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:23 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:49 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

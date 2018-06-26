@@ -6,6 +6,7 @@ var classbdm_1_1ScalarSimulationObject =
     [ "~ScalarSimulationObject", "classbdm_1_1ScalarSimulationObject.html#a93b5f76e86ff2087c1979b602487f1f7", null ],
     [ "GetElementIdx", "classbdm_1_1ScalarSimulationObject.html#a665406b54d51c3fa7447c4c775f23026", null ],
     [ "IsA", "classbdm_1_1ScalarSimulationObject.html#ae88d7fd06e78f1e4a00f60b606386dea", null ],
+    [ "operator=", "classbdm_1_1ScalarSimulationObject.html#ac22ddeefc83e8878fc5a45840a4d4692", null ],
     [ "PopBack", "classbdm_1_1ScalarSimulationObject.html#a513d4e0bc1c47ad976bf68713c557efc", null ],
     [ "PushBackImpl", "classbdm_1_1ScalarSimulationObject.html#a709f73bfffe2e97166a4698bc1e8d05c", null ],
     [ "SetElementIdx", "classbdm_1_1ScalarSimulationObject.html#a024c808886181d0e645a9849b406f529", null ],

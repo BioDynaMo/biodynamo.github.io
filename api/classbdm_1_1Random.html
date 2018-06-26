@@ -114,56 +114,59 @@ $(document).ready(function(){initNavTree('classbdm_1_1Random.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Decorator for ROOT's TRandom3.  
+ <a href="classbdm_1_1Random.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="random_8h_source.html">random.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ecd4f3d5e8abd128d874b401e4df592"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a2ecd4f3d5e8abd128d874b401e4df592">Random</a> ()</td></tr>
 <tr class="separator:a2ecd4f3d5e8abd128d874b401e4df592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8574e95f5c5b0f18812451792281d72f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a8574e95f5c5b0f18812451792281d72f">SetSeed</a> (int64_t seed)</td></tr>
-<tr class="separator:a8574e95f5c5b0f18812451792281d72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4218ece0bcd230ecb2648b9681158d4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a4218ece0bcd230ecb2648b9681158d4f">NextInt</a> ()</td></tr>
-<tr class="separator:a4218ece0bcd230ecb2648b9681158d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f7b43cd531207ba944500f70dede43"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a75f7b43cd531207ba944500f70dede43">NextDouble</a> ()</td></tr>
-<tr class="separator:a75f7b43cd531207ba944500f70dede43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a497062c80f6b2ffbad5a05fa83588752"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a497062c80f6b2ffbad5a05fa83588752">NextGaussian</a> (double mean, double standard_deviation)</td></tr>
-<tr class="separator:a497062c80f6b2ffbad5a05fa83588752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fcc69615872e7ca568a0d3f0a05411b"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a6fcc69615872e7ca568a0d3f0a05411b">NextNoise</a> (double k)</td></tr>
-<tr class="separator:a6fcc69615872e7ca568a0d3f0a05411b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c85b459a0e5e8e72c8a85122bead89a"><td class="memTemplParams" colspan="2">template&lt;typename Backend &gt; </td></tr>
-<tr class="memitem:a4c85b459a0e5e8e72c8a85122bead89a"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; typename <br class="typebreak"/>
-Backend::real_v, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a4c85b459a0e5e8e72c8a85122bead89a">NextNoise</a> (const typename Backend::real_v &amp;k)</td></tr>
-<tr class="separator:a4c85b459a0e5e8e72c8a85122bead89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9680868f8883f312bbbfafd00023de6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Random.html">Random</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#aa9680868f8883f312bbbfafd00023de6">operator=</a> (const <a class="el" href="classbdm_1_1Random.html">Random</a> &amp;other)</td></tr>
+<tr class="separator:aa9680868f8883f312bbbfafd00023de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b4590aaafd065f55458878cf4fcd0c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a10b4590aaafd065f55458878cf4fcd0c">Uniform</a> (double max=1.0)</td></tr>
+<tr class="memdesc:a10b4590aaafd065f55458878cf4fcd0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards call to TRandom3::Uniform.  <a href="#a10b4590aaafd065f55458878cf4fcd0c">More...</a><br/></td></tr>
+<tr class="separator:a10b4590aaafd065f55458878cf4fcd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacec2366adf61f85dafd29f7e2714977"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#aacec2366adf61f85dafd29f7e2714977">Uniform</a> (double min, double max)</td></tr>
+<tr class="memdesc:aacec2366adf61f85dafd29f7e2714977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards call to TRandom3::Uniform.  <a href="#aacec2366adf61f85dafd29f7e2714977">More...</a><br/></td></tr>
+<tr class="separator:aacec2366adf61f85dafd29f7e2714977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112917889a405294b4d147988c070c41"><td class="memTemplParams" colspan="2">template&lt;uint64_t N&gt; </td></tr>
+<tr class="memitem:a112917889a405294b4d147988c070c41"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; double, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a112917889a405294b4d147988c070c41">UniformArray</a> (double max=1.0)</td></tr>
+<tr class="memdesc:a112917889a405294b4d147988c070c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of uniform random numbers in the interval (0, max)  <a href="#a112917889a405294b4d147988c070c41">More...</a><br/></td></tr>
+<tr class="separator:a112917889a405294b4d147988c070c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f31aaf3740b776674960775e445a2be"><td class="memTemplParams" colspan="2">template&lt;uint64_t N&gt; </td></tr>
+<tr class="memitem:a6f31aaf3740b776674960775e445a2be"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; double, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a6f31aaf3740b776674960775e445a2be">UniformArray</a> (double min, double max)</td></tr>
+<tr class="memdesc:a6f31aaf3740b776674960775e445a2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of uniform random numbers in the interval (min, max)  <a href="#a6f31aaf3740b776674960775e445a2be">More...</a><br/></td></tr>
+<tr class="separator:a6f31aaf3740b776674960775e445a2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbc9b116c2cc0bef008a78a95538a2c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a2fbc9b116c2cc0bef008a78a95538a2c">Gaus</a> (double mean=0.0, double sigma=1.0)</td></tr>
+<tr class="memdesc:a2fbc9b116c2cc0bef008a78a95538a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards call to TRandom3::Gaus.  <a href="#a2fbc9b116c2cc0bef008a78a95538a2c">More...</a><br/></td></tr>
+<tr class="separator:a2fbc9b116c2cc0bef008a78a95538a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae7208d1f35f1b2b50df3f684edb28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#adae7208d1f35f1b2b50df3f684edb28c">SetSeed</a> (double seed)</td></tr>
+<tr class="memdesc:adae7208d1f35f1b2b50df3f684edb28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards call to TRandom3::SetSeed.  <a href="#adae7208d1f35f1b2b50df3f684edb28c">More...</a><br/></td></tr>
+<tr class="separator:adae7208d1f35f1b2b50df3f684edb28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8d353119e9b5420b2d7dabf014bf4f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a4c8d353119e9b5420b2d7dabf014bf4f">GetSeed</a> () const </td></tr>
+<tr class="memdesc:a4c8d353119e9b5420b2d7dabf014bf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards call to TRandom3::GetSeed.  <a href="#a4c8d353119e9b5420b2d7dabf014bf4f">More...</a><br/></td></tr>
+<tr class="separator:a4c8d353119e9b5420b2d7dabf014bf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a68314c83ab453d2c1f1574fbb0baf8e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a68314c83ab453d2c1f1574fbb0baf8e9">Next</a> (int i)</td></tr>
-<tr class="separator:a68314c83ab453d2c1f1574fbb0baf8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338f79875f9cfffcaf3e4b6004c5e03e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a338f79875f9cfffcaf3e4b6004c5e03e">NextGaussian</a> ()</td></tr>
-<tr class="separator:a338f79875f9cfffcaf3e4b6004c5e03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad19e7599891d6e0cb79ea2d1b0b8ce65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#ad19e7599891d6e0cb79ea2d1b0b8ce65">CompareAndSet</a> (int64_t *current, int64_t expected, int64_t update)</td></tr>
-<tr class="separator:ad19e7599891d6e0cb79ea2d1b0b8ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea58388a684c2c388018de395378bca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a1ea58388a684c2c388018de395378bca">ClassDefNV</a> (<a class="el" href="classbdm_1_1Random.html">Random</a>, 1)</td></tr>
+<tr class="separator:a1ea58388a684c2c388018de395378bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7c870053d760bf955c2ee829a2eb0d80"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a7c870053d760bf955c2ee829a2eb0d80">seed_</a> = 0</td></tr>
-<tr class="separator:a7c870053d760bf955c2ee829a2eb0d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f966511326add958d4842bab602286f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a6f966511326add958d4842bab602286f">next_next_gaussian_</a> = 0.0</td></tr>
-<tr class="separator:a6f966511326add958d4842bab602286f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecabbee0e931d52b4d638924d88a90e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#aecabbee0e931d52b4d638924d88a90e3">have_next_next_gaussian_</a> = false</td></tr>
-<tr class="separator:aecabbee0e931d52b4d638924d88a90e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49322cfa9283fdf011e6192dd3622ea3"><td class="memItemLeft" align="right" valign="top">TRandom3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a49322cfa9283fdf011e6192dd3622ea3">generator_</a></td></tr>
+<tr class="separator:a49322cfa9283fdf011e6192dd3622ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ implementation of the Java default random number generator (java.util.Random) </p>
+<div class="textblock"><p>Decorator for ROOT's TRandom3. </p>
 
 <p>Definition at line <a class="el" href="random_8h_source.html#l00027">27</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2ecd4f3d5e8abd128d874b401e4df592"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bdm::Random::Random </td>
@@ -172,19 +175,14 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00029">29</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8cc_source.html#l00022">22</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad19e7599891d6e0cb79ea2d1b0b8ce65"></a>
+<a class="anchor" id="a1ea58388a684c2c388018de395378bca"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -192,22 +190,16 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::Random::CompareAndSet </td>
+          <td class="memname">bdm::Random::ClassDefNV </td>
           <td>(</td>
-          <td class="paramtype">int64_t *&#160;</td>
-          <td class="paramname"><em>current</em>, </td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Random.html">Random</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>expected</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>update</em>&#160;</td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -222,189 +214,217 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cc_source.html#l00056">56</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a68314c83ab453d2c1f1574fbb0baf8e9"></a>
+<a class="anchor" id="a2fbc9b116c2cc0bef008a78a95538a2c"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int bdm::Random::Next </td>
+          <td class="memname">double bdm::Random::Gaus </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>mean</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>sigma</em> = <code>1.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cc_source.html#l00043">43</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
+<p>Forwards call to TRandom3::Gaus. </p>
+
+<p>Definition at line <a class="el" href="random_8cc_source.html#l00034">34</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a75f7b43cd531207ba944500f70dede43"></a>
+<a class="anchor" id="a4c8d353119e9b5420b2d7dabf014bf4f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double bdm::Random::NextDouble </td>
+          <td class="memname">double bdm::Random::GetSeed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cc_source.html#l00033">33</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a497062c80f6b2ffbad5a05fa83588752"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::Random::NextGaussian </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>mean</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>standard_deviation</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Forwards call to TRandom3::GetSeed. </p>
 
 <p>Definition at line <a class="el" href="random_8cc_source.html#l00039">39</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a338f79875f9cfffcaf3e4b6004c5e03e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::Random::NextGaussian </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8cc_source.html#l00064">64</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4218ece0bcd230ecb2648b9681158d4f"></a>
+<a class="anchor" id="aa9680868f8883f312bbbfafd00023de6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int bdm::Random::NextInt </td>
+          <td class="memname"><a class="el" href="classbdm_1_1Random.html">Random</a> &amp; bdm::Random::operator= </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1Random.html">Random</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cc_source.html#l00031">31</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
+<p>Definition at line <a class="el" href="random_8cc_source.html#l00024">24</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6fcc69615872e7ca568a0d3f0a05411b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt; double, 3 &gt; bdm::Random::NextNoise </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>k</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8cc_source.html#l00082">82</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4c85b459a0e5e8e72c8a85122bead89a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Backend &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;typename Backend::real_v, 3&gt; bdm::Random::NextNoise </td>
-          <td>(</td>
-          <td class="paramtype">const typename Backend::real_v &amp;&#160;</td>
-          <td class="paramname"><em>k</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00042">42</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8574e95f5c5b0f18812451792281d72f"></a>
+<a class="anchor" id="adae7208d1f35f1b2b50df3f684edb28c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void bdm::Random::SetSeed </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>seed</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8cc_source.html#l00025">25</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
+<p>Forwards call to TRandom3::SetSeed. </p>
+
+<p>Definition at line <a class="el" href="random_8cc_source.html#l00038">38</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10b4590aaafd065f55458878cf4fcd0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::Random::Uniform </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em> = <code>1.0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forwards call to TRandom3::Uniform. </p>
+
+<p>Definition at line <a class="el" href="random_8cc_source.html#l00029">29</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aacec2366adf61f85dafd29f7e2714977"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::Random::Uniform </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forwards call to TRandom3::Uniform. </p>
+
+<p>Definition at line <a class="el" href="random_8cc_source.html#l00030">30</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a112917889a405294b4d147988c070c41"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint64_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;double, N&gt; bdm::Random::UniformArray </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em> = <code>1.0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an array of uniform random numbers in the interval (0, max) </p>
+
+<p>Definition at line <a class="el" href="random_8h_source.html#l00039">39</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f31aaf3740b776674960775e445a2be"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint64_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;double, N&gt; bdm::Random::UniformArray </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an array of uniform random numbers in the interval (min, max) </p>
+
+<p>Definition at line <a class="el" href="random_8h_source.html#l00049">49</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aecabbee0e931d52b4d638924d88a90e3"></a>
+<a class="anchor" id="a49322cfa9283fdf011e6192dd3622ea3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -412,7 +432,7 @@ template&lt;typename Backend &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::Random::have_next_next_gaussian_ = false</td>
+          <td class="memname">TRandom3 bdm::Random::generator_</td>
         </tr>
       </table>
   </td>
@@ -422,51 +442,7 @@ template&lt;typename Backend &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random_8h_source.html#l00057">57</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6f966511326add958d4842bab602286f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::Random::next_next_gaussian_ = 0.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00056">56</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7c870053d760bf955c2ee829a2eb0d80"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t bdm::Random::seed_ = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00055">55</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
+<p>Definition at line <a class="el" href="random_8h_source.html#l00067">67</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +456,7 @@ template&lt;typename Backend &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Random.html">Random</a></li>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:24 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:49 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

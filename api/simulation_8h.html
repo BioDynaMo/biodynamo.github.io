@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: biodynamo.cc File Reference</title>
+<title>BioDynaMo: simulation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('biodynamo_8cc.html','');});
+$(document).ready(function(){initNavTree('simulation_8h.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -103,42 +103,45 @@ $(document).ready(function(){initNavTree('biodynamo_8cc.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">biodynamo.cc File Reference</div>  </div>
+<div class="title">simulation.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="biodynamo_8h_source.html">biodynamo.h</a>&quot;</code><br/>
-<code>#include &lt;cstdlib&gt;</code><br/>
+<div class="textblock"><code>#include &lt;Rtypes.h&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
-<code>#include &quot;<a class="el" href="command__line__options_8h_source.html">command_line_options.h</a>&quot;</code><br/>
-<code>#include &quot;cpptoml/cpptoml.h&quot;</code><br/>
-<code>#include &quot;version.h&quot;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &quot;<a class="el" href="random_8h_source.html">random.h</a>&quot;</code><br/>
 </div>
-<p><a href="biodynamo_8cc_source.html">Go to the source code of this file.</a></p>
+<p><a href="simulation_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid.html">bdm::Grid&lt; TSimulation &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that represents Cartesian 3D grid.  <a href="classbdm_1_1Grid.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html">bdm::Scheduler&lt; TSimulation &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1CompileTimeParam.html">bdm::CompileTimeParam&lt; TBackend &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html">bdm::Simulation&lt; TCTParam &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebdm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html">bdm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a64cd5088f02487bcf85f634cf817877a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a64cd5088f02487bcf85f634cf817877a">bdm::ExtractExecutableName</a> (const char *path)</td></tr>
-<tr class="separator:a64cd5088f02487bcf85f634cf817877a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03ba8f28c9e95f75584a44cc956602c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a03ba8f28c9e95f75584a44cc956602c2">bdm::InitializeBiodynamo</a> (int argc, const char **argv)</td></tr>
-<tr class="separator:a03ba8f28c9e95f75584a44cc956602c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947656aa920fe960aeb708ceb268b2b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a947656aa920fe960aeb708ceb268b2b8">bdm::InitializeBiodynamo</a> (const std::string &amp;executable_name)</td></tr>
-<tr class="separator:a947656aa920fe960aeb708ceb268b2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="biodynamo_8cc.html">biodynamo.cc</a></li>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:23 for BioDynaMo by
+    <li class="navelem"><a class="el" href="simulation_8h.html">simulation.h</a></li>
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:49 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

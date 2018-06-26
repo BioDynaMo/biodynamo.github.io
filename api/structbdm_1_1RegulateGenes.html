@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a282f54f7deae80894318be44f308b61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2976dc62c86d465d5a4c63e08c8ce7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1RegulateGenes.html#abb2976dc62c86d465d5a4c63e08c8ce7">GetConcentrations</a> () const </td></tr>
 <tr class="separator:abb2976dc62c86d465d5a4c63e08c8ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8687d4b349cdd14e82122248587c7c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9d8687d4b349cdd14e82122248587c7c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1RegulateGenes.html#a9d8687d4b349cdd14e82122248587c7c">Run</a> (T *cell)</td></tr>
-<tr class="separator:a9d8687d4b349cdd14e82122248587c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0776e01574ba3c4d0e0aaa5215c15d3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TSimulation  = Simulation&lt;&gt;&gt; </td></tr>
+<tr class="memitem:ae0776e01574ba3c4d0e0aaa5215c15d3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1RegulateGenes.html#ae0776e01574ba3c4d0e0aaa5215c15d3">Run</a> (T *cell)</td></tr>
+<tr class="separator:ae0776e01574ba3c4d0e0aaa5215c15d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structbdm_1_1BaseBiologyModule"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structbdm_1_1BaseBiologyModule')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td></tr>
 <tr class="memitem:a5d8390ff96e3678841dcb73ab36edc3a inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a5d8390ff96e3678841dcb73ab36edc3a">BaseBiologyModule</a> ()</td></tr>
 <tr class="separator:a5d8390ff96e3678841dcb73ab36edc3a inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,9 +167,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0b4d7b125e296c7d96e84b5694cd269a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This module simulates expression of genes and contains all required additional variables for tracking of the concentration of proteins. Thus, can work with any type of simulation object. It has the implementation of Euler and Runge-Kutta numerical methods for solving ODE. Both methods implemented inside the body of method <a class="el" href="structbdm_1_1RegulateGenes.html#a9d8687d4b349cdd14e82122248587c7c">Run()</a>. The user determines which method is picked in particular simulation through variable <code><a class="el" href="structbdm_1_1Param.html#af072605ce294a4d15402bace78bde30b">Param::numerical_ode_solver_</a></code>. </p>
+<div class="textblock"><p>This module simulates expression of genes and contains all required additional variables for tracking of the concentration of proteins. Thus, can work with any type of simulation object. It has the implementation of Euler and Runge-Kutta numerical methods for solving ODE. Both methods implemented inside the body of method <a class="el" href="structbdm_1_1RegulateGenes.html#ae0776e01574ba3c4d0e0aaa5215c15d3">Run()</a>. The user determines which method is picked in particular simulation through variable <code><a class="el" href="structbdm_1_1Param.html#a842fdc06bceb019667764f94b67b99f8">Param::numerical_ode_solver_</a></code>. </p>
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00033">33</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00034">34</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4677b066869ce51d1adf384c8287e780"></a>
 <div class="memitem">
@@ -192,7 +192,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00034">34</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00035">35</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00036">36</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00037">37</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00047">47</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00048">48</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 
 </div>
 </div>
@@ -325,15 +325,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00053">53</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00054">54</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9d8687d4b349cdd14e82122248587c7c"></a>
+<a class="anchor" id="ae0776e01574ba3c4d0e0aaa5215c15d3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -352,9 +352,9 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method <a class="el" href="structbdm_1_1RegulateGenes.html#a9d8687d4b349cdd14e82122248587c7c">Run()</a> contains the implementation for Runge-Khutta and Euler methods for solving ODE. </p>
+<p>Method <a class="el" href="structbdm_1_1RegulateGenes.html#ae0776e01574ba3c4d0e0aaa5215c15d3">Run()</a> contains the implementation for Runge-Khutta and Euler methods for solving ODE. </p>
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00060">60</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00061">61</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ template&lt;typename T &gt; </div>
 
 <p>Store the current concentration for each gene. </p>
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00092">92</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00098">98</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +402,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Store the gene differential equations, which define how the concentration change. New functions can be added through method <a class="el" href="structbdm_1_1RegulateGenes.html#a282f54f7deae80894318be44f308b61b">AddGene()</a> </p>
 
-<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00097">97</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
+<p>Definition at line <a class="el" href="regulate__genes_8h_source.html#l00103">103</a> of file <a class="el" href="regulate__genes_8h_source.html">regulate_genes.h</a>.</p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1RegulateGenes.html">RegulateGenes</a></li>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:23 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:49 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

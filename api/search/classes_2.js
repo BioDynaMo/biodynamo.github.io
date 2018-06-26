@@ -10,7 +10,6 @@ var searchData=
   ['circularbuffer',['CircularBuffer',['../classbdm_1_1CircularBuffer.html',1,'bdm']]],
   ['commandlineoptions',['CommandLineOptions',['../structbdm_1_1CommandLineOptions.html',1,'bdm']]],
   ['commitop',['CommitOp',['../classbdm_1_1CommitOp.html',1,'bdm']]],
-  ['commitop_3c_3e',['CommitOp&lt;&gt;',['../classbdm_1_1CommitOp.html',1,'bdm']]],
   ['compiletimeparam',['CompileTimeParam',['../structbdm_1_1CompileTimeParam.html',1,'bdm']]],
   ['constant',['Constant',['../structbdm_1_1Constant.html',1,'bdm']]],
   ['converttocontainertuple',['ConvertToContainerTuple',['../structbdm_1_1detail_1_1ConvertToContainerTuple.html',1,'bdm::detail']]],

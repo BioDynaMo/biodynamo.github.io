@@ -154,9 +154,9 @@ std::array&lt; double, 4 &gt;<br class="typebreak"/>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ac54551de89bf99c83c22da99063f496e"><td class="memTemplParams" colspan="2">template&lt;typename TSphereLhs , typename TSphereRhs &gt; </td></tr>
-<tr class="memitem:ac54551de89bf99c83c22da99063f496e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DefaultForce.html#ac54551de89bf99c83c22da99063f496e">ForceBetweenSpheres</a> (const TSphereLhs *sphere_lhs, const TSphereRhs *sphere_rhs, std::array&lt; double, 3 &gt; *result) const </td></tr>
-<tr class="separator:ac54551de89bf99c83c22da99063f496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d963895defe81c60824eb5e56b5823"><td class="memTemplParams" colspan="2">template&lt;typename TSphereLhs , typename TSphereRhs , typename TSimulation  = Simulation&lt;&gt;&gt; </td></tr>
+<tr class="memitem:a84d963895defe81c60824eb5e56b5823"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DefaultForce.html#a84d963895defe81c60824eb5e56b5823">ForceBetweenSpheres</a> (const TSphereLhs *sphere_lhs, const TSphereRhs *sphere_rhs, std::array&lt; double, 3 &gt; *result) const </td></tr>
+<tr class="separator:a84d963895defe81c60824eb5e56b5823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745a5966c8d4a8c4d9b2a76d62a14387"><td class="memTemplParams" colspan="2">template&lt;typename TCylinder , typename TSphere &gt; </td></tr>
 <tr class="memitem:a745a5966c8d4a8c4d9b2a76d62a14387"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DefaultForce.html#a745a5966c8d4a8c4d9b2a76d62a14387">ForceOnACylinderFromASphere</a> (const TCylinder *cylinder, const TSphere *sphere, std::array&lt; double, 4 &gt; *result) const </td></tr>
 <tr class="separator:a745a5966c8d4a8c4d9b2a76d62a14387"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,12 +166,13 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a6aa838a7a874dda0afa80d06952d0afc"><td class="memTemplParams" colspan="2">template&lt;typename TCylinderLhs , typename TCylinderRhs &gt; </td></tr>
 <tr class="memitem:a6aa838a7a874dda0afa80d06952d0afc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DefaultForce.html#a6aa838a7a874dda0afa80d06952d0afc">ForceBetweenCylinders</a> (const TCylinderLhs *cylinder1, const TCylinderRhs *cylinder2, std::array&lt; double, 4 &gt; *result) const </td></tr>
 <tr class="separator:a6aa838a7a874dda0afa80d06952d0afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6315450e8f0570ff79128b688a69d8ff"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DefaultForce.html#a6315450e8f0570ff79128b688a69d8ff">ComputeForceOfASphereOnASphere</a> (const std::array&lt; double, 3 &gt; &amp;c1, double r1, const std::array&lt; double, 3 &gt; &amp;c2, double r2) const </td></tr>
-<tr class="separator:a6315450e8f0570ff79128b688a69d8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984db6ac7ec691eb8fa7fc5622c7ea6a"><td class="memTemplParams" colspan="2">template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </td></tr>
+<tr class="memitem:a984db6ac7ec691eb8fa7fc5622c7ea6a"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; double, 4 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DefaultForce.html#a984db6ac7ec691eb8fa7fc5622c7ea6a">ComputeForceOfASphereOnASphere</a> (const std::array&lt; double, 3 &gt; &amp;c1, double r1, const std::array&lt; double, 3 &gt; &amp;c2, double r2) const </td></tr>
+<tr class="separator:a984db6ac7ec691eb8fa7fc5622c7ea6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00029">29</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00030">30</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2055df84fa6c354f566821e322275209"></a>
 <div class="memitem">
@@ -194,7 +195,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00031">31</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00032">32</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +220,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00032">32</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00033">33</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -248,9 +249,11 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6315450e8f0570ff79128b688a69d8ff"></a>
+<a class="anchor" id="a984db6ac7ec691eb8fa7fc5622c7ea6a"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -292,7 +295,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00320">320</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00324">324</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -337,15 +340,15 @@ template&lt;typename TCylinderLhs , typename TCylinderRhs &gt; </div>
 </div><div class="memdoc">
 <p>TODO(neurites) hardcoded value </p>
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00246">246</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00249">249</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac54551de89bf99c83c22da99063f496e"></a>
+<a class="anchor" id="a84d963895defe81c60824eb5e56b5823"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TSphereLhs , typename TSphereRhs &gt; </div>
+template&lt;typename TSphereLhs , typename TSphereRhs , typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -381,7 +384,7 @@ template&lt;typename TSphereLhs , typename TSphereRhs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00084">84</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00086">86</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +428,7 @@ template&lt;typename TCylinder , typename TSphere &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00137">137</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00140">140</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +472,7 @@ template&lt;typename TCylinder , typename TSphere &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00235">235</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00238">238</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -507,7 +510,7 @@ template&lt;typename TLhs , typename TRhs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00040">40</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00041">41</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +548,7 @@ template&lt;typename TLhs , typename TRhs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00050">50</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00051">51</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +586,7 @@ template&lt;typename TLhs , typename TRhs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00060">60</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00061">61</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +624,7 @@ template&lt;typename TLhs , typename TRhs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00070">70</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00071">71</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +650,7 @@ template&lt;typename TLhs , typename TRhs &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default__force_8h_source.html#l00076">76</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
+<p>Definition at line <a class="el" href="default__force_8h_source.html#l00077">77</a> of file <a class="el" href="default__force_8h_source.html">default_force.h</a>.</p>
 
 </div>
 </div>
@@ -684,7 +687,7 @@ template&lt;typename TLhs , typename TRhs &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DefaultForce.html">DefaultForce</a></li>
-    <li class="footer">Generated on Tue Jun 26 2018 16:24:23 for BioDynaMo by
+    <li class="footer">Generated on Tue Jun 26 2018 19:22:49 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

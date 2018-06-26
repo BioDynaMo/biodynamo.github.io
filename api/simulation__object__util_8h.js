@@ -4,6 +4,8 @@ var simulation__object__util_8h =
     [ "BDM_SIM_OBJECT", "simulation__object__util_8h.html#a1b9f7ea7c3d696427b4d429ff4dd6bab", null ],
     [ "BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY", "simulation__object__util_8h.html#a2696ac93969831bbd705d5259fa70db0", null ],
     [ "BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY_ITERATOR", "simulation__object__util_8h.html#a277277a697cc554421ee16046005e755", null ],
+    [ "BDM_SIM_OBJECT_ASSIGNMENT_OP_MOVE_BODY", "simulation__object__util_8h.html#a01b65a87e3f8ab5e65b256562f0cb217", null ],
+    [ "BDM_SIM_OBJECT_ASSIGNMENT_OP_MOVE_BODY_ITERATOR", "simulation__object__util_8h.html#a975a41e02f17b6be52aced9e08c0a387", null ],
     [ "BDM_SIM_OBJECT_CLEAR_BODY", "simulation__object__util_8h.html#a45101cd894661fa568b17d1a42fbc812", null ],
     [ "BDM_SIM_OBJECT_CLEAR_BODY_ITERATOR", "simulation__object__util_8h.html#aca36ec3908fc0451f67889fb75b14734", null ],
     [ "BDM_SIM_OBJECT_CPY_CTOR_INIT", "simulation__object__util_8h.html#abc2dcebf452bc6bce29d5e6b33ca1619", null ],

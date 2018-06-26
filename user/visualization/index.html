@@ -344,26 +344,6 @@
     Export visualization files
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#on-linux" title="On Linux:" class="md-nav__link">
-    On Linux:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#on-mac-os" title="On Mac OS:" class="md-nav__link">
-    On Mac OS:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
       
@@ -460,6 +440,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../contact/" title="Contact" class="md-nav__link">
       Contact
     </a>
@@ -495,26 +487,6 @@
   <a href="#export-visualization-files" title="Export visualization files" class="md-nav__link">
     Export visualization files
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#on-linux" title="On Linux:" class="md-nav__link">
-    On Linux:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#on-mac-os" title="On Mac OS:" class="md-nav__link">
-    On Mac OS:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -569,17 +541,12 @@ Run your simulation with <code class="codehilite">biodynamo run</code>.</p>
 <p class="admonition-title">Warning</p>
 <p>Make sure you start ParaView from the project directory. Otherwise, ParaView might not find the exported files.</p>
 </div>
-<h4 id="on-linux">On Linux:</h4>
-<div class="codehilite"><pre><span></span>biodynamo.paraview
-</pre></div>
-
-<h4 id="on-mac-os">On Mac OS:</h4>
 <div class="codehilite"><pre><span></span>paraview
 </pre></div>
 
 <p>Select "File-&gt;Load State" as shown below:</p>
 <p><img alt="ParaView Load State" src="../images/pv_load_state.png" /></p>
-<p>Navigate to your simulation directory and select the <code class="codehilite">pvsm</code> file.</p>
+<p>Navigate to your simulation output directory and select the <code class="codehilite">pvsm</code> file.</p>
 <p><img alt="ParaView Select *.pvsm" src="../images/pv_load_state_2.png" /></p>
 <p>In the next window keep the default (<em>Use File Names From State</em>) and click OK.</p>
 <p><img alt="ParaView Load State Data" src="../images/pv_load_state_3.png" /></p>
@@ -589,7 +556,7 @@ Another way to enable visualization is through ParaView's live visualization.
 This feature allows you to inspect your simulation while it is running. In your
 `bdm.toml` file you add the following lines:
 
-wzxhzdk:4
+wzxhzdk:3
  -->
                 
                   
