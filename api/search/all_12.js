@@ -50,5 +50,5 @@ var searchData=
   ['type_5fternary_5foperator_3ctrue_2c_20t_2c_20u_20_3e',['type_ternary_operator&lt;true, T, U &gt;',['../structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4.html',1,'bdm']]],
   ['type_5futil_2eh',['type_util.h',['../type__util_8h.html',1,'']]],
   ['typecontainer',['TypeContainer',['../classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644',1,'bdm::ResourceManager']]],
-  ['types',['types',['../structbdm_1_1VariadicTypedefWrapper.html#a40268062df49d992e62f40f07c93d91e',1,'bdm::VariadicTypedefWrapper::types()'],['../classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74',1,'bdm::ResourceManager::Types()']]]
+  ['types',['Types',['../classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74',1,'bdm::ResourceManager::Types()'],['../structbdm_1_1VariadicTypedefWrapper.html#a40268062df49d992e62f40f07c93d91e',1,'bdm::VariadicTypedefWrapper::types()']]]
 ];
