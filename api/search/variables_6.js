@@ -12,6 +12,6 @@ var searchData=
   ['gradient_5f',['gradient_',['../structbdm_1_1Param_1_1VisualizeDiffusion.html#af977582e3fe80674720451880dd55e34',1,'bdm::Param::VisualizeDiffusion']]],
   ['gradients_5f',['gradients_',['../classbdm_1_1DiffusionGrid.html#a5f50af066be2c023bd86824b452bcfbb',1,'bdm::DiffusionGrid']]],
   ['grid_5f',['grid_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#aaf22437f7c85bb5e9f00088a52c60285',1,'bdm::Grid::Box::Iterator::grid_()'],['../structbdm_1_1Simulation.html#acaa68957af135a28f51c9c3d5763a0bb',1,'bdm::Simulation::grid_()']]],
-  ['grid_5fdimensions_5f',['grid_dimensions_',['../classbdm_1_1DiffusionGrid.html#a957a1c1140ac1a4eddb871b905241a4d',1,'bdm::DiffusionGrid::grid_dimensions_()'],['../classbdm_1_1Grid.html#abb254822287970db4138b669dd0992bf',1,'bdm::Grid::grid_dimensions_()']]],
+  ['grid_5fdimensions_5f',['grid_dimensions_',['../classbdm_1_1DiffusionGrid.html#a60dc01c8f8d10726edd9dafa4ea341b9',1,'bdm::DiffusionGrid::grid_dimensions_()'],['../classbdm_1_1Grid.html#abb254822287970db4138b669dd0992bf',1,'bdm::Grid::grid_dimensions_()']]],
   ['growth_5frate_5f',['growth_rate_',['../structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432',1,'bdm::GrowDivide']]]
 ];

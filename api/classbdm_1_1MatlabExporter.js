@@ -1,5 +1,5 @@
 var classbdm_1_1MatlabExporter =
 [
-    [ "ExportIteration", "classbdm_1_1MatlabExporter.html#a86bd558eab02a6820616ba8710c51e5f", null ],
-    [ "ExportSummary", "classbdm_1_1MatlabExporter.html#a4f8bf583c86b0206eddccfa15e44b7cf", null ]
+    [ "ExportIteration", "classbdm_1_1MatlabExporter.html#ad1ef8c025db138d8a46936fdfdff03e2", null ],
+    [ "ExportSummary", "classbdm_1_1MatlabExporter.html#a2a0d6bfa12647400329852c40aa1c3da", null ]
 ];

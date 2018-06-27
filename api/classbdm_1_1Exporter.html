@@ -128,19 +128,19 @@ Collaboration diagram for bdm::Exporter&lt; TContainer &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5de9fe45330136d4b00759d6f2b08dd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Exporter.html#a5de9fe45330136d4b00759d6f2b08dd1">ExportIteration</a> (const TContainer &amp;cells, string filename, uint64_t iteration)=0</td></tr>
-<tr class="separator:a5de9fe45330136d4b00759d6f2b08dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c2f06cdd9fcbd8b637055b1e6333ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Exporter.html#a93c2f06cdd9fcbd8b637055b1e6333ca">ExportSummary</a> (string filename, uint64_t num_iterations)=0</td></tr>
-<tr class="separator:a93c2f06cdd9fcbd8b637055b1e6333ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546e64737751e4584756c2a3d98863dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Exporter.html#a546e64737751e4584756c2a3d98863dd">ExportIteration</a> (const TContainer &amp;cells, std::string filename, uint64_t iteration)=0</td></tr>
+<tr class="separator:a546e64737751e4584756c2a3d98863dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aaf6d5fb2bbefbcf2c2efc9e896fe8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Exporter.html#a9aaf6d5fb2bbefbcf2c2efc9e896fe8b">ExportSummary</a> (std::string filename, uint64_t num_iterations)=0</td></tr>
+<tr class="separator:a9aaf6d5fb2bbefbcf2c2efc9e896fe8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TContainer&gt;<br/>
 class bdm::Exporter&lt; TContainer &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="exporter_8h_source.html#l00040">40</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
+<p>Definition at line <a class="el" href="exporter_8h_source.html#l00033">33</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5de9fe45330136d4b00759d6f2b08dd1"></a>
+<a class="anchor" id="a546e64737751e4584756c2a3d98863dd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -158,7 +158,7 @@ template&lt;typename TContainer &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -189,11 +189,11 @@ template&lt;typename TContainer &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classbdm_1_1ParaviewExporter.html#ae6fb865902a6b75568accd1cbd097ca4">bdm::ParaviewExporter&lt; TContainer, TSimulation &gt;</a>, <a class="el" href="classbdm_1_1NeuroMLExporter.html#aea34018a44327a1d4c47f5dbdb770d43">bdm::NeuroMLExporter&lt; TContainer &gt;</a>, <a class="el" href="classbdm_1_1MatlabExporter.html#a86bd558eab02a6820616ba8710c51e5f">bdm::MatlabExporter&lt; TContainer &gt;</a>, and <a class="el" href="classbdm_1_1BasicExporter.html#a4dcb01a59587b2d7e24d56893082ecb6">bdm::BasicExporter&lt; TContainer &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1ParaviewExporter.html#a0c0abc370cd9f6c69893f8b3db3dcf8c">bdm::ParaviewExporter&lt; TContainer, TSimulation &gt;</a>, <a class="el" href="classbdm_1_1NeuroMLExporter.html#ae9491ceb2dd9c4867171dff56370d3d2">bdm::NeuroMLExporter&lt; TContainer &gt;</a>, <a class="el" href="classbdm_1_1MatlabExporter.html#ad1ef8c025db138d8a46936fdfdff03e2">bdm::MatlabExporter&lt; TContainer &gt;</a>, and <a class="el" href="classbdm_1_1BasicExporter.html#a77844f3f72b1e1d6d95f927851a12d4b">bdm::BasicExporter&lt; TContainer &gt;</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a93c2f06cdd9fcbd8b637055b1e6333ca"></a>
+<a class="anchor" id="a9aaf6d5fb2bbefbcf2c2efc9e896fe8b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -205,7 +205,7 @@ template&lt;typename TContainer &gt; </div>
         <tr>
           <td class="memname">virtual void <a class="el" href="classbdm_1_1Exporter.html">bdm::Exporter</a>&lt; TContainer &gt;::ExportSummary </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -235,7 +235,7 @@ template&lt;typename TContainer &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classbdm_1_1ParaviewExporter.html#ad1d35aa49a7f014a6367720bbcb33db0">bdm::ParaviewExporter&lt; TContainer, TSimulation &gt;</a>, <a class="el" href="classbdm_1_1NeuroMLExporter.html#ab570e71327690dc0c4c106aad80c0784">bdm::NeuroMLExporter&lt; TContainer &gt;</a>, <a class="el" href="classbdm_1_1MatlabExporter.html#a4f8bf583c86b0206eddccfa15e44b7cf">bdm::MatlabExporter&lt; TContainer &gt;</a>, and <a class="el" href="classbdm_1_1BasicExporter.html#a281470618bb34e1fec79da7733f9f9df">bdm::BasicExporter&lt; TContainer &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1ParaviewExporter.html#a03e4b322e2afe8848bac5f9d8b6bb017">bdm::ParaviewExporter&lt; TContainer, TSimulation &gt;</a>, <a class="el" href="classbdm_1_1NeuroMLExporter.html#a8dd10f4fbcfb7f6cabe8facc4d52371d">bdm::NeuroMLExporter&lt; TContainer &gt;</a>, <a class="el" href="classbdm_1_1MatlabExporter.html#a2a0d6bfa12647400329852c40aa1c3da">bdm::MatlabExporter&lt; TContainer &gt;</a>, and <a class="el" href="classbdm_1_1BasicExporter.html#a99644faa65a3cc1c76a1bd30524e82ac">bdm::BasicExporter&lt; TContainer &gt;</a>.</p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ template&lt;typename TContainer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Exporter.html">Exporter</a></li>
-    <li class="footer">Generated on Wed Jun 27 2018 10:13:03 for BioDynaMo by
+    <li class="footer">Generated on Wed Jun 27 2018 14:32:55 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

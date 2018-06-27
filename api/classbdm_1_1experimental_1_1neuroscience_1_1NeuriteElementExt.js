@@ -145,7 +145,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt =
     [ "spring_constant_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a1eff53e410c847278b953275e605727a", null ],
     [ "tension_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ac1e9756ffcba47b1007031394e7d795e", null ],
     [ "volume_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a648e6c03a28376672d32b3060d1f7387", null ],
-    [ "x_axis_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a941b4d0b9d04999c81ccdde29b87920b", null ],
-    [ "y_axis_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aaf952d6a4fd771ec5522ea4ec8e97a5d", null ],
-    [ "z_axis_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aa40dafa51733266de0c6c6c74b32b646", null ]
+    [ "x_axis_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a6da989481963a246b476c8171e1f83ab", null ],
+    [ "y_axis_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a8b0dfec1fead70843ba0d80e938094ae", null ],
+    [ "z_axis_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aa8833ffd1044fd009d65d2bdb9c0c387", null ]
 ];

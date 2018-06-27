@@ -128,19 +128,19 @@ Collaboration diagram for bdm::ParaviewExporter&lt; TContainer, TSimulation &gt;
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6fb865902a6b75568accd1cbd097ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ParaviewExporter.html#ae6fb865902a6b75568accd1cbd097ca4">ExportIteration</a> (const TContainer &amp;cells, string filename, uint64_t iteration) override</td></tr>
-<tr class="separator:ae6fb865902a6b75568accd1cbd097ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d35aa49a7f014a6367720bbcb33db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ParaviewExporter.html#ad1d35aa49a7f014a6367720bbcb33db0">ExportSummary</a> (string filename, uint64_t num_iterations) override</td></tr>
-<tr class="separator:ad1d35aa49a7f014a6367720bbcb33db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0abc370cd9f6c69893f8b3db3dcf8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ParaviewExporter.html#a0c0abc370cd9f6c69893f8b3db3dcf8c">ExportIteration</a> (const TContainer &amp;cells, std::string filename, uint64_t iteration) override</td></tr>
+<tr class="separator:a0c0abc370cd9f6c69893f8b3db3dcf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e4b322e2afe8848bac5f9d8b6bb017"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ParaviewExporter.html#a03e4b322e2afe8848bac5f9d8b6bb017">ExportSummary</a> (std::string filename, uint64_t num_iterations) override</td></tr>
+<tr class="separator:a03e4b322e2afe8848bac5f9d8b6bb017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TContainer, typename TSimulation = Simulation&lt;&gt;&gt;<br/>
 class bdm::ParaviewExporter&lt; TContainer, TSimulation &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="exporter_8h_source.html#l00200">200</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
+<p>Definition at line <a class="el" href="exporter_8h_source.html#l00193">193</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae6fb865902a6b75568accd1cbd097ca4"></a>
+<a class="anchor" id="a0c0abc370cd9f6c69893f8b3db3dcf8c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -158,7 +158,7 @@ template&lt;typename TContainer , typename TSimulation  = Simulation&lt;&gt;&gt;
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -189,13 +189,13 @@ template&lt;typename TContainer , typename TSimulation  = Simulation&lt;&gt;&gt;
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classbdm_1_1Exporter.html#a5de9fe45330136d4b00759d6f2b08dd1">bdm::Exporter&lt; TContainer &gt;</a>.</p>
+<p>Implements <a class="el" href="classbdm_1_1Exporter.html#a546e64737751e4584756c2a3d98863dd">bdm::Exporter&lt; TContainer &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="exporter_8h_source.html#l00202">202</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
+<p>Definition at line <a class="el" href="exporter_8h_source.html#l00195">195</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad1d35aa49a7f014a6367720bbcb33db0"></a>
+<a class="anchor" id="a03e4b322e2afe8848bac5f9d8b6bb017"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -207,7 +207,7 @@ template&lt;typename TContainer , typename TSimulation  = Simulation&lt;&gt;&gt;
         <tr>
           <td class="memname">void <a class="el" href="classbdm_1_1ParaviewExporter.html">bdm::ParaviewExporter</a>&lt; TContainer, TSimulation &gt;::ExportSummary </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
@@ -232,9 +232,9 @@ template&lt;typename TContainer , typename TSimulation  = Simulation&lt;&gt;&gt;
 <p>iterate for all (time) steps</p>
 <p>end of (time) iterations loop... </p>
 
-<p>Implements <a class="el" href="classbdm_1_1Exporter.html#a93c2f06cdd9fcbd8b637055b1e6333ca">bdm::Exporter&lt; TContainer &gt;</a>.</p>
+<p>Implements <a class="el" href="classbdm_1_1Exporter.html#a9aaf6d5fb2bbefbcf2c2efc9e896fe8b">bdm::Exporter&lt; TContainer &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="exporter_8h_source.html#l00331">331</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
+<p>Definition at line <a class="el" href="exporter_8h_source.html#l00324">324</a> of file <a class="el" href="exporter_8h_source.html">exporter.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ template&lt;typename TContainer , typename TSimulation  = Simulation&lt;&gt;&gt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ParaviewExporter.html">ParaviewExporter</a></li>
-    <li class="footer">Generated on Wed Jun 27 2018 10:13:03 for BioDynaMo by
+    <li class="footer">Generated on Wed Jun 27 2018 14:32:55 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

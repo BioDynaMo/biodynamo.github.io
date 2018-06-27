@@ -22,7 +22,7 @@ var searchData=
   ['daughter_5fright_5f',['daughter_right_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a131d12c9692f82f5347cf1c8d8e2b6d8',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['daughters_5f',['daughters_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a9edefe3207473cbb648468ad03caf0a4',1,'bdm::experimental::neuroscience::NeuronSomaExt']]],
   ['daughters_5fcoord_5f',['daughters_coord_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#aa4e048c6c51ded27d4147843d0fee9a4',1,'bdm::experimental::neuroscience::NeuronSomaExt']]],
-  ['dc_5f',['dc_',['../classbdm_1_1DiffusionGrid.html#a4f0bf2ef30643fec3e234bba6a29c5c4',1,'bdm::DiffusionGrid']]],
+  ['dc_5f',['dc_',['../classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881',1,'bdm::DiffusionGrid']]],
   ['density_5f',['density_',['../classbdm_1_1CellExt.html#ac9a48e994502b7c77b4f434127f27254',1,'bdm::CellExt']]],
   ['descriptions_5f',['descriptions_',['../classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b',1,'bdm::TimingAggregator']]],
   ['diameter_5f',['diameter_',['../classbdm_1_1CellExt.html#a7daefe788e85a6dfdf0640f2bfd0012b',1,'bdm::CellExt::diameter_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a3b4d536a8db231b5dd3c306832c14476',1,'bdm::experimental::neuroscience::NeuriteElementExt::diameter_()']]],

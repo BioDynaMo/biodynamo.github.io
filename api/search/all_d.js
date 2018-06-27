@@ -33,7 +33,7 @@ var searchData=
   ['normalize',['Normalize',['../structbdm_1_1Math.html#a06cf62fd723d1775714117f3d42cc0d4',1,'bdm::Math']]],
   ['nullbiologymodule',['NullBiologyModule',['../structbdm_1_1NullBiologyModule.html',1,'bdm']]],
   ['num_5fboxes_5f',['num_boxes_',['../classbdm_1_1DisplacementOpCuda.html#a04ff5f954bca6e1978d899556a6dd590',1,'bdm::DisplacementOpCuda']]],
-  ['num_5fboxes_5faxis_5f',['num_boxes_axis_',['../classbdm_1_1DiffusionGrid.html#ab570517f4cb3956e33c60025a9b3fe2c',1,'bdm::DiffusionGrid::num_boxes_axis_()'],['../classbdm_1_1Grid.html#a959b522ff01613cee15c1fc9f4bdf91d',1,'bdm::Grid::num_boxes_axis_()']]],
+  ['num_5fboxes_5faxis_5f',['num_boxes_axis_',['../classbdm_1_1DiffusionGrid.html#a16101fea9858034a44bcb7fac30469f3',1,'bdm::DiffusionGrid::num_boxes_axis_()'],['../classbdm_1_1Grid.html#ab0b87b94c5f67081a772177a8bb720e3',1,'bdm::Grid::num_boxes_axis_()']]],
   ['num_5fboxes_5fxy_5f',['num_boxes_xy_',['../classbdm_1_1Grid.html#aecdab9f047468ff3a4e53ba6ca2016e5',1,'bdm::Grid']]],
   ['num_5fobjects_5f',['num_objects_',['../classbdm_1_1DisplacementOpCuda.html#a670ad02944c7ac352ff7c6e8e9c45c12',1,'bdm::DisplacementOpCuda']]],
   ['numberoftypes',['NumberOfTypes',['../classbdm_1_1ResourceManager.html#a6127aca4534546e0efd7c99e976582f7',1,'bdm::ResourceManager']]],
