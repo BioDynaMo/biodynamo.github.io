@@ -12,7 +12,7 @@ var searchData=
   ['initializeoutputdir',['InitializeOutputDir',['../structbdm_1_1Simulation.html#ad4bfcefa81ce6449579c6c80347cb92a',1,'bdm::Simulation']]],
   ['initializers_5f',['initializers_',['../classbdm_1_1DiffusionGrid.html#a7e04a5c02176b97633c2dd118c381e6d',1,'bdm::DiffusionGrid']]],
   ['initializeruntimeparams',['InitializeRuntimeParams',['../structbdm_1_1Simulation.html#acd4b79bd8f9382387e42c56bf655a8d7',1,'bdm::Simulation']]],
-  ['initializesubstance',['InitializeSubstance',['../structbdm_1_1ModelInitializer.html#ad2c3c9926a1c8e66c8f02ad5be13ced2',1,'bdm::ModelInitializer']]],
+  ['initializesubstance',['InitializeSubstance',['../structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b',1,'bdm::ModelInitializer']]],
   ['initializeuniquename',['InitializeUniqueName',['../structbdm_1_1Simulation.html#aa86d9f252ae4cad7d39a850ec49806c3',1,'bdm::Simulation']]],
   ['inline_5fvector_2eh',['inline_vector.h',['../inline__vector_8h.html',1,'']]],
   ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html#a101629c311f2e143f0d41954be1a9bb7',1,'bdm::InlineVector::InlineVector(TRootIOCtor *io_ctor)'],['../classbdm_1_1InlineVector.html#a135924848eb185f3e7e612e7afc517a5',1,'bdm::InlineVector::InlineVector()'],['../classbdm_1_1InlineVector.html#a4f4812128da89c98f198e28f3da38354',1,'bdm::InlineVector::InlineVector(const InlineVector&lt; T, N &gt; &amp;other)'],['../classbdm_1_1InlineVector.html#afac5095887156661b80c560bef3d428a',1,'bdm::InlineVector::InlineVector(InlineVector&lt; T, N &gt; &amp;&amp;other) noexcept']]],

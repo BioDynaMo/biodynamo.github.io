@@ -134,12 +134,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4394e328542ff9a9e72afe6152fcd220"><td class="memTemplParams" colspan="2">template&lt;typename Function , typename TSimulation  = Simulation&lt;&gt;&gt; </td></tr>
 <tr class="memitem:a4394e328542ff9a9e72afe6152fcd220"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220">CreateCellsRandom</a> (double min, double max, int num_cells, Function cell_builder)</td></tr>
 <tr class="separator:a4394e328542ff9a9e72afe6152fcd220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3664a8e5bcd981bf26d1fa5d3f746ef1"><td class="memTemplParams" colspan="2">template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </td></tr>
-<tr class="memitem:a3664a8e5bcd981bf26d1fa5d3f746ef1"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a3664a8e5bcd981bf26d1fa5d3f746ef1">DefineSubstance</a> (int substance_id, std::string substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</td></tr>
-<tr class="separator:a3664a8e5bcd981bf26d1fa5d3f746ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2c3c9926a1c8e66c8f02ad5be13ced2"><td class="memTemplParams" colspan="2">template&lt;typename TSimulation  = Simulation&lt;&gt;, typename F &gt; </td></tr>
-<tr class="memitem:ad2c3c9926a1c8e66c8f02ad5be13ced2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ad2c3c9926a1c8e66c8f02ad5be13ced2">InitializeSubstance</a> (int substance_id, std::string substance_name, F function)</td></tr>
-<tr class="separator:ad2c3c9926a1c8e66c8f02ad5be13ced2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75b6d16195274902d8c301f0dd213f9"><td class="memTemplParams" colspan="2">template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </td></tr>
+<tr class="memitem:ac75b6d16195274902d8c301f0dd213f9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ac75b6d16195274902d8c301f0dd213f9">DefineSubstance</a> (size_t substance_id, std::string substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</td></tr>
+<tr class="separator:ac75b6d16195274902d8c301f0dd213f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a0150bdc1aff1d30eee45621200d0b"><td class="memTemplParams" colspan="2">template&lt;typename TSimulation  = Simulation&lt;&gt;, typename F &gt; </td></tr>
+<tr class="memitem:ad4a0150bdc1aff1d30eee45621200d0b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b">InitializeSubstance</a> (size_t substance_id, std::string substance_name, F function)</td></tr>
+<tr class="separator:ad4a0150bdc1aff1d30eee45621200d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -251,7 +251,7 @@ template&lt;typename Function , typename TSimulation  = Simulation&lt;&gt;&gt; <
 
 </div>
 </div>
-<a class="anchor" id="a3664a8e5bcd981bf26d1fa5d3f746ef1"></a>
+<a class="anchor" id="ac75b6d16195274902d8c301f0dd213f9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -263,7 +263,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
         <tr>
           <td class="memname">static void bdm::ModelInitializer::DefineSubstance </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>substance_id</em>, </td>
         </tr>
         <tr>
@@ -428,7 +428,7 @@ pos){ return Cell(pos); });
 
 </div>
 </div>
-<a class="anchor" id="ad2c3c9926a1c8e66c8f02ad5be13ced2"></a>
+<a class="anchor" id="ad4a0150bdc1aff1d30eee45621200d0b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -440,7 +440,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;, typename F &gt; </div>
         <tr>
           <td class="memname">static void bdm::ModelInitializer::InitializeSubstance </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>substance_id</em>, </td>
         </tr>
         <tr>
@@ -468,7 +468,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;, typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00195">195</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00199">199</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +481,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;, typename F &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1ModelInitializer.html">ModelInitializer</a></li>
-    <li class="footer">Generated on Fri Jul 6 2018 12:47:13 for BioDynaMo by
+    <li class="footer">Generated on Mon Jul 9 2018 12:15:37 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

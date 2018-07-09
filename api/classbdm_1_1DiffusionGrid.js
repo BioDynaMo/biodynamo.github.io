@@ -8,6 +8,7 @@ var classbdm_1_1DiffusionGrid =
     [ "ClassDefNV", "classbdm_1_1DiffusionGrid.html#a8956dd7db2a43a5c83c47e65062d2052", null ],
     [ "CopyOldData", "classbdm_1_1DiffusionGrid.html#a637f10d9fc27d6a2672dbfad5c3e96b5", null ],
     [ "DiffuseEuler", "classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770", null ],
+    [ "DiffuseEulerLeakingEdge", "classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e", null ],
     [ "DiffuseWithClosedEdge", "classbdm_1_1DiffusionGrid.html#a63e2d29b39597dedf86053109cbee6e6", null ],
     [ "DiffuseWithLeakingEdge", "classbdm_1_1DiffusionGrid.html#ad41ba0e6b6f746c8bfdc0f7e56e9b666", null ],
     [ "GetAllConcentrations", "classbdm_1_1DiffusionGrid.html#a1e604c4232fc5c18b551ca3ece2a95c7", null ],
