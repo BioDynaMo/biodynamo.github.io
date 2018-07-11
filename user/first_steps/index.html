@@ -326,6 +326,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#try-out-some-demos" title="Try out some demos" class="md-nav__link">
+    Try out some demos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#request-assistance" title="Request assistance" class="md-nav__link">
     Request assistance
   </a>
@@ -542,6 +549,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#try-out-some-demos" title="Try out some demos" class="md-nav__link">
+    Try out some demos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#request-assistance" title="Request assistance" class="md-nav__link">
     Request assistance
   </a>
@@ -603,6 +617,23 @@ describes your model in this folder.</p>
 <p>All your source code will be compiled and linked against the BioDynaMo libraries, and an executable file
 will be created and run. It is at this point you might encounter compilation errors.
 You will need to fix them before the simulation can actually run.</p>
+<h2 id="try-out-some-demos">Try out some demos</h2>
+<p>There are some demos in the installation. They can be listed with the command:</p>
+<div class="codehilite"><pre><span></span>biodynamo demo
+</pre></div>
+
+<p>Each of these demos can be copied out to a directory and executed with two <code class="codehilite">biodynamo</code> commands:</p>
+<div class="codehilite"><pre><span></span>biodynamo demo &lt;name&gt; <span class="o">[</span>target<span class="o">]</span>
+<span class="nb">cd</span> &lt;destination&gt;  <span class="c1"># as printed out by the previous command</span>
+biodynamo run
+</pre></div>
+
+<p>For example, to run the demo <code class="codehilite">cell_division</code>, we can do:</p>
+<div class="codehilite"><pre><span></span>biodynamo demo cell_division /tmp
+<span class="nb">cd</span> /tmp/cell_division
+biodynamo run
+</pre></div>
+
 <h2 id="request-assistance">Request assistance</h2>
 <p>It can happen that you encounter an error or issue that you cannot solve on your own.
 Or you might be convinced that there is a bug in BioDynaMo.
