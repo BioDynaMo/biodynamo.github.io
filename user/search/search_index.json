@@ -332,7 +332,7 @@
         }, 
         {
             "location": "/changelog/", 
-            "text": "Changelog\n\n\n26.06.2018 \ngba4fe1f\n\n\n\n\n\n\nAdd support for multiple simulations per process. Only one simulation\ncan be active at the same time. Introduces new class \nSimulation\n (see \nAPI\n).\nThis change causes many API changes -- see subsection below.\n\n\n\n\n\n\nWrite simulation files to separate directory: \noutput/simulation-id/\n\n\n\n\n\n\nIntegrate simulation template for \nbiodynamo new\n into the biodynamo repository to avoid\ninconsistencies with the biodynamo version.\n\n\n\n\n\n\nAPI changes\n\n\n\n\n\n\n\n\nOld\n\n\nNew\n\n\n\n\n\n\n\n\n\n\nInitializeBioDynaMo(...)\n\n\nSimulation\n simulation(...)\n\n\n\n\n\n\nRm()\n \n \nTRm::Get()\n \n  \nTResourceManager::Get()\n\n\nauto* rm = simulation.GetResourceManager();\n\n\n\n\n\n\nGetDiffusionGrid(...)\n\n\nrm-\nGetDiffusionGrid(...)\n\n\n\n\n\n\nGrid::GetInstance()\n\n\nauto* grid = simulation.GetGrid();\n\n\n\n\n\n\nParam\n::\nsome_parameter_\n;\n\n\nauto* param = simulation.GetParam();\n \n \nparam-\nsome_parameter_;", 
+            "text": "Changelog\n\n\n11.09.2018 \n82e7e15\n\n\n\n\nAdd \nbiodynamo demo\n command to try out the demos\n\nbiodynamo demo\n lists all the available demos\n\nbiodynamo demo \ndemo-name\n \ndir\n sets up the demo \ndemo-name\n in directory \ndir\n.\nIf \ndir\n is not specified, it defaults to the current working directory.\n\n\n\n\n26.06.2018 \nba4fe1f\n\n\n\n\n\n\nAdd support for multiple simulations per process. Only one simulation\ncan be active at the same time. Introduces new class \nSimulation\n (see \nAPI\n).\nThis change causes many API changes -- see subsection below.\n\n\n\n\n\n\nWrite simulation files to separate directory: \noutput/simulation-id/\n\n\n\n\n\n\nIntegrate simulation template for \nbiodynamo new\n into the biodynamo repository to avoid\ninconsistencies with the biodynamo version.\n\n\n\n\n\n\nAPI changes\n\n\n\n\n\n\n\n\nOld\n\n\nNew\n\n\n\n\n\n\n\n\n\n\nInitializeBioDynaMo(...)\n\n\nSimulation\n simulation(...)\n\n\n\n\n\n\nRm()\n \n \nTRm::Get()\n \n  \nTResourceManager::Get()\n\n\nauto* rm = simulation.GetResourceManager();\n\n\n\n\n\n\nGetDiffusionGrid(...)\n\n\nrm-\nGetDiffusionGrid(...)\n\n\n\n\n\n\nGrid::GetInstance()\n\n\nauto* grid = simulation.GetGrid();\n\n\n\n\n\n\nParam\n::\nsome_parameter_\n;\n\n\nauto* param = simulation.GetParam();\n \n \nparam-\nsome_parameter_;", 
             "title": "Changelog"
         }, 
         {
@@ -341,9 +341,14 @@
             "title": "Changelog"
         }, 
         {
-            "location": "/changelog/#26062018-gba4fe1f", 
+            "location": "/changelog/#11092018-82e7e15", 
+            "text": "Add  biodynamo demo  command to try out the demos biodynamo demo  lists all the available demos biodynamo demo  demo-name   dir  sets up the demo  demo-name  in directory  dir .\nIf  dir  is not specified, it defaults to the current working directory.", 
+            "title": "11.09.2018 82e7e15"
+        }, 
+        {
+            "location": "/changelog/#26062018-ba4fe1f", 
             "text": "Add support for multiple simulations per process. Only one simulation\ncan be active at the same time. Introduces new class  Simulation  (see  API ).\nThis change causes many API changes -- see subsection below.    Write simulation files to separate directory:  output/simulation-id/    Integrate simulation template for  biodynamo new  into the biodynamo repository to avoid\ninconsistencies with the biodynamo version.", 
-            "title": "26.06.2018 gba4fe1f"
+            "title": "26.06.2018 ba4fe1f"
         }, 
         {
             "location": "/changelog/#api-changes", 
