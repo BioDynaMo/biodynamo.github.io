@@ -431,15 +431,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#live-visualisation" title="Live visualisation" class="md-nav__link">
-    Live visualisation
+  <a href="#export-visualisation-recommended" title="Export Visualisation (recommended)" class="md-nav__link">
+    Export Visualisation (recommended)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#export-visualisation" title="Export Visualisation" class="md-nav__link">
-    Export Visualisation
+  <a href="#live-visualisation" title="Live visualisation" class="md-nav__link">
+    Live visualisation
   </a>
   
 </li>
@@ -507,6 +507,13 @@
           <li class="md-nav__item">
   <a href="#tutorialh-chapter-34" title="tutorial.h - chapter 3.4" class="md-nav__link">
     tutorial.h - chapter 3.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bdmtoml-chapter-34" title="bdm.toml - chapter 3.4" class="md-nav__link">
+    bdm.toml - chapter 3.4
   </a>
   
 </li>
@@ -695,15 +702,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#live-visualisation" title="Live visualisation" class="md-nav__link">
-    Live visualisation
+  <a href="#export-visualisation-recommended" title="Export Visualisation (recommended)" class="md-nav__link">
+    Export Visualisation (recommended)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#export-visualisation" title="Export Visualisation" class="md-nav__link">
-    Export Visualisation
+  <a href="#live-visualisation" title="Live visualisation" class="md-nav__link">
+    Live visualisation
   </a>
   
 </li>
@@ -775,6 +782,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#bdmtoml-chapter-34" title="bdm.toml - chapter 3.4" class="md-nav__link">
+    bdm.toml - chapter 3.4
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -811,7 +825,7 @@
 <h3 id="installation">Installation</h3>
 <p>You can access the installation page by clicking <a href="https://biodynamo.github.io/user/installation/">here</a>.</p>
 <h3 id="structure-creation">Structure creation</h3>
-<p>As BioDynaMo is written is C++, it needs a particular structure. Fortunately, this procedure is really easy with BioDynaMo. To create a new project, you just need to run the command <code class="codehilite">biodynamo new &lt;project&gt;</code>. If you wish not to have your Github account linked to your project you can append the <code class="codehilite">--no-github</code> option to the command. Try opening a terminal and running the command <code class="codehilite">biodynamo new tutorial</code>. This will create a folder named tutorial in your current directory, containing everything that BioDynaMo needs. Inside tutorial/src, two files with the basic structure already written have been created: tutorial.cc and tutorial.h. tutorial.cc will only contain the call to the header tutorial.h which will be the core of our work. You can easily run your code by typing the command <code class="codehilite">biodynamo run</code>.</p>
+<p>As BioDynaMo is written is C++, it needs a particular structure. Fortunately, this procedure is really easy with BioDynaMo. To create a new project, you just need to run the command <code class="codehilite">biodynamo new &lt;project&gt;</code>. If you wish not to have your Github account linked to your project you can append the <code class="codehilite">--no-github</code> option to the command. Try opening a terminal and running the command <code class="codehilite">biodynamo new tutorial</code>. This will create a folder named tutorial in your current directory, containing everything that BioDynaMo needs. Inside tutorial/src, two files with the basic structure already written have been created: tutorial.cc and tutorial.h. tutorial.cc will only contain the call to the header tutorial.h which will be the core of our work. You can easily compile your code using the command <code class="codehilite">biodynamo build</code> and run your simulation by typing the command <code class="codehilite">biodynamo run</code>.</p>
 <h2 id="cells-and-biology-module">Cells and biology Module</h2>
 <p>The structure build in the previous chapter only creates a single cell. In this chapter we will in a first time create more cells in order to building a square of 2 400 randomly distributed cells. Then in a second time, we will create a number of cancerous cells, that will grow and divide.</p>
 <h3 id="creating-cells">Creating cells</h3>
@@ -819,32 +833,39 @@
 <div class="codehilite"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">TResourceManager</span> <span class="o">=</span> <span class="n">ResourceManager</span> <span class="o">&lt;&gt;&gt;</span>
 </pre></div></p>
 <p>This ResourceManager will be used to create cells. Inside the Simulate method, we need to define a resource manager and a structure to contain our cells:
-<div class="codehilite"><pre><span></span><span class="k">auto</span> <span class="n">rm</span> <span class="o">=</span> <span class="n">TResourceManager</span><span class="o">::</span><span class="n">Get</span><span class="p">();</span> <span class="c1">// set up resource manager</span>
-<span class="k">auto</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// create a structure to contain cells</span>
+<div class="codehilite"><pre><span></span><span class="n">Simulation</span><span class="o">&lt;&gt;</span> <span class="n">simulation</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+<span class="k">auto</span><span class="o">*</span> <span class="n">rm</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetResourceManager</span><span class="p">();</span> <span class="c1">// set up resource manager</span>
+
+<span class="k">auto</span><span class="o">*</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// create a structure to contain cells</span>
 </pre></div></p>
-<p>Because we want 2400 cells randomly distributed, it is mandatory to have an random number generator to generate x, y and z coordinate of each cell. For that, we will declare three double (x_coord, y_coord and z_coord) and use the gTRandom.Uniform random engine
-<div class="codehilite"><pre><span></span>  <span class="kt">size_t</span> <span class="n">nb_of_cells</span><span class="o">=</span><span class="mi">2400</span><span class="p">;</span> <span class="c1">// number of cells in the simulation</span>
+<p>Because we want 2400 cells randomly distributed, it is mandatory to have an random number generator to generate x, y and z coordinate of each cell. For that, we will declare three double (x_coord, y_coord and z_coord) and use the included random engine. Still inside the Simulate method, write:
+<div class="codehilite"><pre><span></span><span class="k">auto</span><span class="o">*</span> <span class="n">random</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetRandom</span><span class="p">();</span> <span class="c1">// set up the random engine</span>
+
+  <span class="kt">size_t</span> <span class="n">nb_of_cells</span><span class="o">=</span><span class="mi">2400</span><span class="p">;</span> <span class="c1">// number of cells in the simulation</span>
   <span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
   <span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// cube of 100*100*100</span>
   <span class="kt">double</span> <span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">;</span>
+
   <span class="n">cells</span><span class="o">-&gt;</span><span class="n">reserve</span><span class="p">(</span><span class="n">nb_of_cells</span><span class="p">);</span> <span class="c1">// allocate the correct number of cell in our cells structure before cell creation</span>
 </pre></div></p>
 <p>Then, with a simple loop from 0 to the number of cells, we will be able to fill this cells structure with cell elements.
 <div class="codehilite"><pre><span></span>  <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nb_of_cells</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// our modelling will be a cell cube of 100*100*100</span>
-    <span class="n">x_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound</span><span class="p">);</span> <span class="c1">// random double between 0 and 100</span>
-    <span class="n">y_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound</span><span class="p">);</span>
-    <span class="n">z_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound</span><span class="p">);</span>
-    <span class="n">Cell</span> <span class="nf">cell</span><span class="p">({</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">});</span> <span class="c1">// creating the cell at position x, y, z</span>
+    <span class="c1">// random double between min_bound and max_bound ( 0 and 100)</span>
+    <span class="n">x_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
+    <span class="n">y_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
+    <span class="n">z_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
+    <span class="c1">// creating the cell at position x, y, z</span>
+    <span class="n">Cell</span> <span class="nf">cell</span><span class="p">({</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">});</span>
     <span class="c1">// set cell parameters</span>
     <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mf">7.5</span><span class="p">);</span>
 
     <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span> <span class="c1">// put the created cell in our cells structure</span>
   <span class="p">}</span>
+  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">Commit</span><span class="p">();</span>  <span class="c1">// commit cells</span>
 </pre></div></p>
 <p>We now have our structure containing all the 2400 cells! The code in charge of running our modelling is already written and will simulate it for only one step. Lets change this to simulate for 100 steps.
-<div class="codehilite"><pre><span></span><span class="n">Scheduler</span><span class="o">&lt;&gt;</span> <span class="n">scheduler</span><span class="p">;</span>
-<span class="n">scheduler</span><span class="p">.</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<div class="codehilite"><pre><span></span><span class="n">simulation</span><span class="p">.</span><span class="n">GetScheduler</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
 </pre></div></p>
 <h3 id="biology-module">Biology module</h3>
 <p>In the previous chapter, we created a great number of cells. However, those cells don’t do anything! We will here create a cancerous cell that will grow and divide when it reaches a certain diameter. For this, we will define a new biology module structure GrowthModule that will be applied to cell elements, and we will make this GrowthModule copied into the cell daughter (so the daughter will also contain an instance of the biology module GrowthModule)
@@ -873,19 +894,19 @@
       <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">GrowthModule</span><span class="o">&gt;</span><span class="p">;</span> <span class="c1">// add GrowthModule</span>
   <span class="p">};</span>
 </pre></div></p>
-<p>Of course, we need to create at least one cell that contain our GrowthModule in our Simulate method
+<p>Of course, we need to create at least one new cell that contains our GrowthModule in our Simulate method
 <div class="codehilite"><pre><span></span>  <span class="n">Cell</span> <span class="nf">cell</span> <span class="p">({</span><span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">});</span>
   <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
   <span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">());</span>
   <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span>
 </pre></div></p>
-<p>This code is now able to create and simulate 2 400 normal cells and 1 cancerous cell that will grow and divide! Complete codes for tutorial.cc and tutorial.h of this chapter are accessible at the end of this tutorial.</p>
+<p>Run running it using <code class="codehilite">biodynamo run</code>. This code is now able to create and simulate 2 400 normal cells and 1 cancerous cell that will grow and divide! Complete codes for tutorial.cc and tutorial.h of this chapter are accessible at the end of this tutorial.</p>
 <h2 id="visualisation-using-paraview">Visualisation using Paraview</h2>
-<p>In the previous chapter we created a simulation of a great number of cell, also containing dividing cancerous cells, but we were not able to visualise anything! In this chapter, we will set up a visualisation using Paraview (included in the BioDynaMo package).</p>
+<p>In the previous chapter we created a simulation of a great number of cell, also containing dividing cancerous cells, but we were not able to visualise anything! In this chapter, we will set up a visualisation using Paraview (included in the BioDynaMo package). Dedicated page about visualisation can be accessed [here] (<a href="https://biodynamo.github.io/user/visualization/">https://biodynamo.github.io/user/visualization/</a>)</p>
 <h3 id="paraview">Paraview</h3>
 <p><a href="https://www.paraview.org/">Paraview</a> is an open source application for interactive and scientific visualisation. First of all, we need to tell BioDynaMo that we will use Paraview and so that we want the visualisation to be enable. To do that, we need to create a configuration file <code class="codehilite">bdm.toml</code> in the tutorial folder. Visualisation is of course not the only configuration we can do using this file. You can allow live visualisation and/or export visualisation (here every 2 simulation step) by adding in bdm.toml
 <div class="codehilite"><pre><span></span><span class="p">[</span><span class="n">visualization</span><span class="p">]</span>
-<span class="n">live</span> <span class="o">=</span> <span class="nb">true</span>
+<span class="n">live</span> <span class="o">=</span> <span class="nb">false</span>
 <span class="k">export</span> <span class="o">=</span> <span class="nb">false</span>
 <span class="n">export_interval</span> <span class="o">=</span> <span class="mi">2</span>
 </pre></div></p>
@@ -902,15 +923,19 @@ We can note that instead of creating a configuration file, you can do the same b
     <span class="n">Param</span><span class="o">::</span><span class="n">visualize_sim_objects_</span><span class="p">[</span><span class="s">&quot;Cell&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">{</span> <span class="s">&quot;diameter_&quot;</span> <span class="p">};</span> <span class="c1">// add the data member diameter_ to the visualisation objects</span>
 </pre></div>
 Once again, it is important to note that if you want to change any visualisation parameter using this second method, you will have to compile again your code. That is not the case using a configuration file. Hence, using the toml file is highly recommended.  </p>
-<p>We will first see live visualisation then the export visualisation. In both cases, simply run Paraview using the console line command <code class="codehilite">paraview &amp;</code>. This windows should appears</p>
+<p>We will first see export visualisation then the live visualisation. In both cases, simply run Paraview using the console line command <code class="codehilite">paraview &amp;</code>. This windows should appears</p>
 <p><img alt="Open ParaView" src="../images/jean_tutorial/paraview1.png" /></p>
+<h4 id="export-visualisation-recommended">Export Visualisation (recommended)</h4>
+<p>In the configuration file (bdm.toml), turn the export parameter to true then run your modelling. You’ll notice the creation of several new files with the following file extensions <code class="codehilite">*.pvsm, *.pvtu, *.vtu, *pvti, *.vti</code> in the folder output/tutorial. Open ParaView and load the generated state file as described in <a href="../visualization/#export-visualization-files">Section Visualization</a> (file -&gt; load state)</p>
+<p>A major advantage of export visualisation, in addition of not impacting the simulation time, is that you can visualise your modelling freely in time. using the arrows in the top menu, you can choose respectively to go back to the beginning of the simulation, go one step back, run normally, go one step further or go to the end of the simulation. You also can see witch step you are currently visualising (remember that this step number is the number of your modelling step divided by the export_interval you choose in your configuration file).</p>
+<p><img alt="Paraview time" src="../images/jean_tutorial/paraview17.png" /></p>
 <h4 id="live-visualisation">Live visualisation</h4>
-<p>Click on the <em>Catalyst</em> top menu, and select <em>Connect</em> This windows should appears</p>
+<p>To use live visualisation, turn the live option of your configuration file to true, then click on the <em>Catalyst</em> top menu, and select <em>Connect</em> . This windows should appears</p>
 <p><img alt="Connect ParaView" src="../images/jean_tutorial/paraview2.png" /></p>
 <p>Click OK, then this windows should appears</p>
 <p><img alt="Connect ready" src="../images/jean_tutorial/paraview3.png" /></p>
 <p>Your Paraview is now accepting connections! Click OK, go back to the <em>Catalyst</em> menu, and select <em>Pause Simulation</em>. Using the same console, launch your tutorial simulation. You now notice that the programme stop right before running the simulation, because we used the Paraview <em>Pause Simulation</em>.</p>
-<p><img alt="terminal accetped connection" src="../images/jean_tutorial/paraview4.png" /></p>
+<p><img alt="terminal accepted connection" src="../images/jean_tutorial/paraview4.png" /></p>
 <p>Go back to Paraview. You notice that new objects have appeared in the <em>Pipeline Browser</em> section. Click on the round shape in front of <em>Cells Glyph</em>.</p>
 <p><img alt="select Cells_glyph" src="../images/jean_tutorial/paraview5.png" /></p>
 <p>A new Builtin object have appeared: <em>Extract: Cells Glyph</em>. Click on the eye in front of it.</p>
@@ -919,10 +944,6 @@ Once again, it is important to note that if you want to change any visualisation
 You can now go to the <em>Catalyst</em> menu, and select <em>Continue</em>. The simulation will run the number of steps you specified in your code.</p>
 <p><img alt="Cell display correct diam" src="../images/jean_tutorial/paraview7-4.png" /></p>
 <p>Even if live visualisation is particularly useful to set or tune a simulation, it is capital to note that it also drastically slows down the simulation! One way to avoid this major problem is to export visualisation files and read then after the modelling is done.</p>
-<h4 id="export-visualisation">Export Visualisation</h4>
-<p>In the configuration file (bdm.toml), turn the export parameter to true then run your modelling. You’ll notice the creation of several new files with the following file extensions <code class="codehilite">*.pvsm, *.pvtu, *.vtu, *pvti, *.vti</code>. Open ParaView and load the generated state file as described in <a href="../visualization/#export-visualization-files">Section Visualization</a>.</p>
-<p>A major advantage of export visualisation, in addition of not impacting the simulation time, is that you can visualise your modelling freely in time. using the arrows in the top menu, you can choose respectively to go back to the beginning of the simulation, go one step back, run normally, go one step further or go to the end of the simulation. You also can see witch step you are currently visualising (remember that this step number is the number of your modelling step divided by the export_interval you choose in your configuration file).</p>
-<p><img alt="Paraview time" src="../images/jean_tutorial/paraview17.png" /></p>
 <p>In both cases, even if we can now visualise our cell, they have all the same colour, which can be a bit confusing and doesn't allow us to visualise properly what is going on.</p>
 <h3 id="adding-layers-colour">Adding layers colour</h3>
 <p>In this chapter, we will modify our code in order to create a better colouring for our simulation.<br />
@@ -951,8 +972,8 @@ We will do that directly in our tutorial.h file by writing
 </pre></div></p>
 <p>Each cell (implementing our new object <code class="codehilite">MyCell</code>) of the modelling is now able to have a value cell_colour_ that we will choose and use to display different colours!<br />
 In order to create cells with this attribute, we need to replace all Cell object by MyCell during cells creation (inside the <code class="codehilite">Simulate()</code> method). for example
-<div class="codehilite"><pre><span></span><span class="c1">//  auto cells = rm-&gt;template Get&lt;Cell&gt;(); // previous structure containing Cell objects</span>
-  <span class="k">auto</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">MyCell</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// new structure containing MyCell objects</span>
+<div class="codehilite"><pre><span></span><span class="c1">//  auto* cells = rm-&gt;template Get&lt;Cell&gt;(); // previous structure containing Cell objects</span>
+  <span class="k">auto</span><span class="o">*</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">MyCell</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// new structure containing MyCell objects</span>
 <span class="p">[...]</span>
 <span class="c1">//     Cell cell({x_coord, y_coord, z_coord}); // creats a cell as a Cell object; so doesn&#39;t contain cell_colour_</span>
     <span class="n">MyCell</span> <span class="n">cell</span><span class="p">({</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">});</span> <span class="c1">// creats a cell as a MyCell object; so contains cell_colour_</span>
@@ -961,7 +982,7 @@ In order to create cells with this attribute, we need to replace all Cell object
 <div class="codehilite"><pre><span></span>    <span class="n">cell</span><span class="p">.</span><span class="n">SetCellColour</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span>
 </pre></div></p>
 <p>Do the same for the regular cells, setting the value depending on the y axis value. One possibility is to write
-<div class="codehilite"><pre><span></span>    <span class="n">cell</span><span class="p">.</span><span class="n">SetCellColour</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span> <span class="n">y_coord</span><span class="o">/</span><span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span><span class="o">*</span><span class="mi">6</span><span class="p">);</span> <span class="c1">// will vary from 0 to 5. so 6 different layers depending on y_coord</span>
+<div class="codehilite"><pre><span></span>    <span class="n">cell</span><span class="p">.</span><span class="n">SetCellColour</span><span class="p">((</span><span class="kt">int</span><span class="p">)(</span><span class="n">y_coord</span> <span class="o">/</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span> <span class="o">*</span> <span class="mi">6</span><span class="p">));</span> <span class="c1">// will vary from 0 to 5. so 6 different layers depending on y_coord</span>
 </pre></div></p>
 <p>This new simulation is now functional, however before running it, we need to tell BioDynamo to communicates all cell_colour_ values. Do do that, we will modify the configuration file bdm.toml by modifying the visualize_sim_object
 <div class="codehilite"><pre><span></span>    <span class="p">[[</span><span class="n">visualize_sim_object</span><span class="p">]]</span>
@@ -976,7 +997,7 @@ In order to create cells with this attribute, we need to replace all Cell object
 <h3 id="transmitting-its-colour-and-playing-with-filters">Transmitting its colour and playing with Filters</h3>
 <p>To enable dividing cells to transmit its colour - meaning its cell_colour_ attribute value - we have to modify a little our biology module.
 <div class="codehilite"><pre><span></span><span class="c1">//        cell-&gt;Divide(); // old</span>
-        <span class="k">auto</span> <span class="n">daughter</span> <span class="o">=</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span> <span class="c1">// we now have access to the daughter</span>
+        <span class="k">auto</span><span class="o">&amp;&amp;</span> <span class="n">daughter</span> <span class="o">=</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span> <span class="c1">// we now have access to the daughter</span>
         <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCellColour</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCellColour</span><span class="p">());</span> <span class="c1">// daughter cell_colour_ is setted to her mother cell_colour_ value</span>
 </pre></div></p>
 <p>Even if our cancerous cells transmit their colour to their daughter, it still is not really easy to spot them in the middle of thousands of other cells. This problem can be solve using the threshold filter function of Paraview. To do that, after displaying cells colour as at the end of 3.2, click on the threshold filter button. This filter will be applied to the currently selected <em>Pipeline Browser</em>, so pay attention to select the correct one (<em>Glyph1</em>) before creating the threshold filter.</p>
@@ -990,16 +1011,20 @@ In order to create cells with this attribute, we need to replace all Cell object
 <p>This is of course just an example of what you can do with the threshold filters.</p>
 <h3 id="adding-some-complexity">Adding some complexity</h3>
 <p>We now have all we want to visualise our modelling in the best conditions, but this modelling itself is a bit limited. We should add some movements to it as well as a new mechanism to complexify cell division.
-To add cell movement, we will modify the <code class="codehilite">Run()</code> method of our biology module <code class="codehilite">GrowthModule</code>, and use the function <code class="codehilite">UpdatePosition()</code>. To generate the direction's random numbers we will again use the <code class="codehilite">gTRandom.Uniform()</code> function which allow us to generate a random number between two specified numbers.<br />
-We choose here to give stochastic movement only to growing cells, so we will write the movement just after the volume change
-<div class="codehilite"><pre><span></span>    <span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">cell_movements</span><span class="p">{</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)};</span> <span class="c1">// create an array of 3 random numbers between -2 and 2</span>
+To add cell movement, we will modify the <code class="codehilite">Run()</code> method of our biology module <code class="codehilite">GrowthModule</code>, and use the function <code class="codehilite">UpdatePosition()</code>. To generate the direction's random numbers we will again use the <code class="codehilite">Uniform()</code> function which allow us to generate a random number between two specified numbers. First, we need to add <code class="codehilite">TSimulation</code> to the template and to define the random engine.<br />
+<div class="codehilite"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">TSimulation</span> <span class="o">=</span> <span class="n">Simulation</span><span class="o">&lt;&gt;&gt;</span>
+<span class="kt">void</span> <span class="n">Run</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">auto</span><span class="o">*</span> <span class="n">random</span> <span class="o">=</span> <span class="n">TSimulation</span><span class="o">::</span><span class="n">GetActive</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetRandom</span><span class="p">();</span>
+</pre></div></p>
+<p>We choose here to give stochastic movement only to growing cells, so we will write the movement just after the volume change
+<div class="codehilite"><pre><span></span>    <span class="c1">// create an array of 3 random numbers between -2 and 2</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">cell_movements</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">UniformArray</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
     <span class="n">cell</span><span class="o">-&gt;</span><span class="n">UpdatePosition</span><span class="p">(</span><span class="n">cell_movements</span><span class="p">);</span> <span class="c1">// update the cell mass location, ie move the cell</span>
-    <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetPosition</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetPosition</span><span class="p">());</span> <span class="c1">// set the cell position</span>
 </pre></div></p>
 <p>Using the previous chapters, you should now be able to visualise cell movement during their growth.<br />
 This is great, but every cancerous cell grows and divides indefinitely, and that is a bit too much. We will now add a mechanism to reduce the probability to divide, and assuring that a cancerous cell that didn't divide, will never divide any more.<br />
 To add a 0.8 probability to divide, simply write
-<div class="codehilite"><pre><span></span>    <span class="k">if</span> <span class="p">(</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">0.8</span><span class="p">){</span>
+<div class="codehilite"><pre><span></span>    <span class="k">if</span> <span class="p">(</span><span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">0.8</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">auto</span> <span class="n">daughter</span> <span class="o">=</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
       <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCellColour</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCellColour</span><span class="p">());</span>
     <span class="p">}</span>
@@ -1017,15 +1042,15 @@ To do that, we will create a new MyCell boolean attribute called can_divide_. As
 <div class="codehilite"><pre><span></span>    <span class="n">vec</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">can_divide_</span><span class="p">;</span>
 </pre></div></p>
 <p>Now that we got a new attribute can_divide_, we need to change the <code class="codehilite">Run()</code> method to prevent cells that failed the 80% test to divide again.
-Finaly, don't forget to set the daughter can_divide_ value to true after a cell division.
-<div class="codehilite"><pre><span></span>        <span class="k">if</span> <span class="p">(</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span><span class="mf">0.8</span> <span class="o">&amp;&amp;</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCanDivide</span><span class="p">()){</span>
-          <span class="k">auto</span> <span class="n">daughter</span> <span class="o">=</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
-          <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCellColour</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCellColour</span><span class="p">());</span> <span class="c1">// daughter take the cell_colour_ value of her mother</span>
-          <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span> <span class="c1">// the daughter will be able to divide</span>
-        <span class="p">}</span>
-        <span class="k">else</span> <span class="p">{</span>
-          <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span> <span class="c1">// this cell won&#39;t divide anymore</span>
-        <span class="p">}</span>
+Finally, don't forget to set the daughter can_divide_ value to true after a cell division.
+<div class="codehilite"><pre><span></span>      <span class="k">if</span> <span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCanDivide</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">0.8</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">auto</span><span class="o">&amp;&amp;</span> <span class="n">daughter</span> <span class="o">=</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
+        <span class="c1">// daughter take the cell_colour_ value of her mother</span>
+        <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCellColour</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCellColour</span><span class="p">());</span>
+        <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>  <span class="c1">// the daughter will be able to divide</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>  <span class="c1">// this cell won&#39;t divide anymore</span>
+      <span class="p">}</span>
 </pre></div></p>
 <p>The tutorial.h code corresponding to this chapter is accessible at the end of this tutorial.</p>
 <p>You now have all the BioDynaMo cell basic knowledge to construct your own modelling!</p>
@@ -1043,21 +1068,19 @@ Finaly, don't forget to set the daughter can_divide_ value to true after a cell 
 <span class="cp">#define TUTORIAL_H_</span>
 
 <span class="cp">#include</span> <span class="cpf">&quot;biodynamo.h&quot;</span><span class="cp"></span>
-<span class="c1">//using namespace std;</span>
 
 <span class="k">namespace</span> <span class="n">bdm</span> <span class="p">{</span>
 
-<span class="c1">// 1. Define growth behaviour</span>
+  <span class="c1">// 1. Define growth behaviour</span>
   <span class="k">struct</span> <span class="nl">GrowthModule</span> <span class="p">:</span> <span class="k">public</span> <span class="n">BaseBiologyModule</span> <span class="p">{</span>
-  <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllBmEvents</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllBmEvents</span><span class="p">)</span> <span class="p">{}</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-      <span class="kt">void</span> <span class="n">Run</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
-
+    <span class="kt">void</span> <span class="n">Run</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">if</span> <span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetDiameter</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">cell</span><span class="o">-&gt;</span><span class="n">ChangeVolume</span><span class="p">(</span><span class="mi">400</span><span class="p">);</span>
       <span class="p">}</span>
-      <span class="k">else</span><span class="p">{</span>
+      <span class="k">else</span> <span class="p">{</span>
         <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -1065,56 +1088,65 @@ Finaly, don't forget to set the daughter can_divide_ value to true after a cell 
     <span class="n">ClassDefNV</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
   <span class="p">};</span>
 
-<span class="c1">// Define compile time parameter</span>
+  <span class="c1">// Define compile time parameter</span>
   <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Backend</span><span class="o">&gt;</span>
-    <span class="k">struct</span> <span class="nl">CompileTimeParam</span> <span class="p">:</span> <span class="k">public</span> <span class="n">DefaultCompileTimeParam</span><span class="o">&lt;</span><span class="n">Backend</span><span class="o">&gt;</span> <span class="p">{</span>
-  <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">GrowthModule</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="nl">CompileTimeParam</span> <span class="p">:</span> <span class="k">public</span> <span class="n">DefaultCompileTimeParam</span><span class="o">&lt;</span><span class="n">Backend</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">GrowthModule</span><span class="o">&gt;</span><span class="p">;</span>  <span class="c1">// add GrowthModule</span>
   <span class="p">};</span>
 
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">TResourceManager</span> <span class="o">=</span> <span class="n">ResourceManager</span><span class="o">&lt;&gt;&gt;</span>
+  <span class="kr">inline</span> <span class="kt">int</span> <span class="n">Simulate</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Simulation</span><span class="o">&lt;&gt;</span> <span class="n">simulation</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">rm</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetResourceManager</span><span class="p">();</span> <span class="c1">// set up resource manager</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">param</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetParam</span><span class="p">();</span> <span class="c1">// set up params</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">random</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetRandom</span><span class="p">();</span> <span class="c1">// set up the random engine</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">TResourceManager</span> <span class="o">=</span> <span class="n">ResourceManager</span><span class="o">&lt;&gt;&gt;</span>
-<span class="kr">inline</span> <span class="kt">int</span> <span class="n">Simulate</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">InitializeBiodynamo</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+    <span class="kt">size_t</span> <span class="n">nb_of_cells</span> <span class="o">=</span> <span class="mi">2400</span><span class="p">;</span>  <span class="c1">// number of cells in the simulation</span>
+    <span class="kt">double</span> <span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">;</span>
 
-  <span class="kt">size_t</span> <span class="n">nb_of_cells</span><span class="o">=</span><span class="mi">2400</span><span class="p">;</span> <span class="c1">// number of cells in the simulation</span>
-  <span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// cube of 100*100*100</span>
-  <span class="kt">double</span> <span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">;</span>
+    <span class="n">param</span><span class="o">-&gt;</span><span class="n">bound_space_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>  <span class="c1">// cube of 100*100*100</span>
+    <span class="n">param</span><span class="o">-&gt;</span><span class="n">run_mechanical_interactions_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 
-  <span class="k">auto</span> <span class="n">rm</span> <span class="o">=</span> <span class="n">TResourceManager</span><span class="o">::</span><span class="n">Get</span><span class="p">();</span> <span class="c1">// set up resource manager</span>
-  <span class="k">auto</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// create a structure to contain cells</span>
-  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">reserve</span><span class="p">(</span><span class="n">nb_of_cells</span><span class="p">);</span> <span class="c1">// allocate the correct number of cell in our cells structure before cell creation</span>
+    <span class="c1">// create a structure to contain cells</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="c1">// allocate the correct number of cell in our cells structure before</span>
+    <span class="c1">// cell creation</span>
+    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">reserve</span><span class="p">(</span><span class="n">nb_of_cells</span><span class="p">);</span>
 
-  <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nb_of_cells</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// our modelling will be a cell cube of 100*100*100</span>
-    <span class="n">x_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound</span><span class="p">);</span> <span class="c1">// random double between 0 and 100</span>
-    <span class="n">y_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound</span><span class="p">);</span>
-    <span class="n">z_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nb_of_cells</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// our modelling will be a cell cube of 100*100*100</span>
+      <span class="c1">// random double between 0 and 100</span>
+      <span class="n">x_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
+      <span class="n">y_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
+      <span class="n">z_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
 
-    <span class="n">Cell</span> <span class="nf">cell</span><span class="p">({</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">});</span> <span class="c1">// creating the cell at position x, y, z</span>
-    <span class="c1">// set cell parameters</span>
-    <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mf">7.5</span><span class="p">);</span>
+      <span class="c1">// creating the cell at position x, y, z</span>
+      <span class="n">Cell</span> <span class="nf">cell</span><span class="p">({</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">});</span>
+      <span class="c1">// set cell parameters</span>
+      <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mf">7.5</span><span class="p">);</span>
 
-    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span> <span class="c1">// put the created cell in our cells structure</span>
-  <span class="p">}</span>
+      <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span>  <span class="c1">// put the created cell in our cells structure</span>
+    <span class="p">}</span>
 
-  <span class="c1">// create a cancerous cell, containing the BiologyModule GrowthModule</span>
-  <span class="n">Cell</span> <span class="n">cell</span><span class="p">({</span><span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">});</span>
-  <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
-  <span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">());</span>
-  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span> <span class="c1">// put the created cell in our cells structure</span>
+    <span class="c1">// create a cancerous cell, containing the BiologyModule GrowthModule</span>
+    <span class="n">Cell</span> <span class="n">cell</span><span class="p">({</span><span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">});</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">());</span>
+    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span>  <span class="c1">// put the created cell in our cells structure</span>
 
-  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">Commit</span><span class="p">();</span> <span class="c1">// commit cells</span>
+    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">Commit</span><span class="p">();</span>  <span class="c1">// commit cells</span>
 
-  <span class="c1">// Run simulation</span>
-  <span class="n">Scheduler</span><span class="o">&lt;&gt;</span> <span class="n">scheduler</span><span class="p">;</span>
-  <span class="n">scheduler</span><span class="p">.</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+    <span class="c1">// Run simulation</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;simulating&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">simulation</span><span class="p">.</span><span class="n">GetScheduler</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
 
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Simulation completed successfully!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Simulation completed successfully!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span> <span class="c1">// end simulate</span>
 
-<span class="p">}</span> <span class="c1">// namespace bdm</span>
+<span class="p">}</span>  <span class="c1">// namespace bdm</span>
 
 <span class="cp">#endif </span><span class="c1">// TUTORIAL_H_</span>
 </pre></div>
@@ -1124,59 +1156,56 @@ Finaly, don't forget to set the daughter can_divide_ value to true after a cell 
 <span class="cp">#define TUTORIAL_H_</span>
 
 <span class="cp">#include</span> <span class="cpf">&quot;biodynamo.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;random.h&quot;</span><span class="cp"></span>
-<span class="c1">//using namespace std;</span>
 
 <span class="k">namespace</span> <span class="n">bdm</span> <span class="p">{</span>
 
-  <span class="c1">// 0. Define my custom cell MyCell, which extends Cell by adding extra data members: cell_color and can_divide</span>
-  <span class="n">BDM_SIM_OBJECT</span><span class="p">(</span><span class="n">MyCell</span><span class="p">,</span> <span class="n">Cell</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// our object extends the Cell object</span>
-    <span class="n">BDM_SIM_OBJECT_HEADER</span><span class="p">(</span><span class="n">MyCellExt</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">can_divide_</span><span class="p">,</span> <span class="n">cell_colour_</span><span class="p">);</span> <span class="c1">// create the header with our new data member</span>
+  <span class="c1">// 0. Define my custom cell MyCell, which extends Cell by adding extra data</span>
+  <span class="c1">// members: cell_color and can_divide</span>
+  <span class="n">BDM_SIM_OBJECT</span><span class="p">(</span><span class="n">MyCell</span><span class="p">,</span> <span class="n">Cell</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// our object extends the Cell object</span>
+    <span class="c1">// create the header with our new data member</span>
+    <span class="n">BDM_SIM_OBJECT_HEADER</span><span class="p">(</span><span class="n">MyCellExt</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">can_divide_</span><span class="p">,</span> <span class="n">cell_colour_</span><span class="p">);</span>
 
-    <span class="k">public</span><span class="o">:</span>
-      <span class="n">MyCellExt</span><span class="p">()</span> <span class="p">{}</span>
-      <span class="n">MyCellExt</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="o">:</span> <span class="n">Base</span><span class="p">(</span><span class="n">position</span><span class="p">)</span> <span class="p">{}</span> <span class="c1">// our creator</span>
+  <span class="k">public</span><span class="o">:</span>
+    <span class="n">MyCellExt</span><span class="p">()</span> <span class="p">{}</span>
+    <span class="n">MyCellExt</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="o">:</span> <span class="n">Base</span><span class="p">(</span><span class="n">position</span><span class="p">)</span> <span class="p">{}</span>
 
-      <span class="c1">// getter and setter for our new data member</span>
-      <span class="kt">void</span> <span class="n">SetCanDivide</span><span class="p">(</span><span class="kt">bool</span> <span class="n">d</span><span class="p">)</span> <span class="p">{</span> <span class="n">can_divide_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="p">;</span> <span class="p">}</span>
-      <span class="kt">bool</span> <span class="n">GetCanDivide</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">can_divide_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">];</span> <span class="p">}</span>
-      <span class="kt">bool</span><span class="o">*</span> <span class="n">GetCanDividePtr</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">can_divide_</span><span class="p">.</span><span class="n">data</span><span class="p">();</span> <span class="p">}</span>
+    <span class="c1">// getter and setter for our new data member</span>
+    <span class="kt">void</span> <span class="n">SetCanDivide</span><span class="p">(</span><span class="kt">bool</span> <span class="n">d</span><span class="p">)</span> <span class="p">{</span> <span class="n">can_divide_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">bool</span> <span class="n">GetCanDivide</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">can_divide_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">];</span> <span class="p">}</span>
 
-      <span class="kt">void</span> <span class="n">SetCellColour</span><span class="p">(</span><span class="kt">int</span> <span class="n">cellColour</span><span class="p">)</span> <span class="p">{</span> <span class="n">cell_colour_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">]</span> <span class="o">=</span> <span class="n">cellColour</span><span class="p">;</span> <span class="p">}</span>
-      <span class="kt">int</span> <span class="n">GetCellColour</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">cell_colour_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">];</span> <span class="p">}</span>
-      <span class="kt">int</span><span class="o">*</span> <span class="n">GetCellColourPtr</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">cell_colour_</span><span class="p">.</span><span class="n">data</span><span class="p">();</span> <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">SetCellColour</span><span class="p">(</span><span class="kt">int</span> <span class="n">cellColour</span><span class="p">)</span> <span class="p">{</span> <span class="n">cell_colour_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">]</span> <span class="o">=</span> <span class="n">cellColour</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">GetCellColour</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">cell_colour_</span><span class="p">[</span><span class="n">kIdx</span><span class="p">];</span> <span class="p">}</span>
 
-    <span class="k">private</span><span class="o">:</span>
-      <span class="c1">// declare new data member and define their type</span>
-      <span class="c1">// private data can only be accessed by public function and not directly</span>
-      <span class="n">vec</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">can_divide_</span><span class="p">;</span>
-      <span class="n">vec</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">cell_colour_</span><span class="p">;</span>
+  <span class="k">private</span><span class="o">:</span>
+    <span class="c1">// declare new data member and define their type</span>
+    <span class="c1">// private data can only be accessed by public function and not directly</span>
+    <span class="n">vec</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">can_divide_</span><span class="p">;</span>
+    <span class="n">vec</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">cell_colour_</span><span class="p">;</span>
   <span class="p">};</span>
 
-<span class="c1">// 1. Define growth behaviour</span>
+  <span class="c1">// 1. Define growth behaviour</span>
   <span class="k">struct</span> <span class="nl">GrowthModule</span> <span class="p">:</span> <span class="k">public</span> <span class="n">BaseBiologyModule</span> <span class="p">{</span>
-  <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllBmEvents</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllBmEvents</span><span class="p">)</span> <span class="p">{}</span>
 
-    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-      <span class="kt">void</span> <span class="n">Run</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
-
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">TSimulation</span> <span class="o">=</span> <span class="n">Simulation</span><span class="o">&lt;&gt;&gt;</span>
+    <span class="kt">void</span> <span class="n">Run</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">auto</span><span class="o">*</span> <span class="n">random</span> <span class="o">=</span> <span class="n">TSimulation</span><span class="o">::</span><span class="n">GetActive</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetRandom</span><span class="p">();</span>
       <span class="k">if</span> <span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetDiameter</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">cell</span><span class="o">-&gt;</span><span class="n">ChangeVolume</span><span class="p">(</span><span class="mi">400</span><span class="p">);</span>
-
-        <span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">cell_movements</span><span class="p">{</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)};</span> <span class="c1">// create an array of 3 random numbers between -2 and 2</span>
-        <span class="n">cell</span><span class="o">-&gt;</span><span class="n">UpdatePosition</span><span class="p">(</span><span class="n">cell_movements</span><span class="p">);</span> <span class="c1">// update the cell mass location, ie move the cell</span>
-        <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetPosition</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetPosition</span><span class="p">());</span> <span class="c1">// set the cell position</span>
+        <span class="c1">// create an array of 3 random numbers between -2 and 2</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">cell_movements</span> <span class="o">=</span>
+        <span class="n">random</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">UniformArray</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+        <span class="c1">// update the cell mass location, ie move the cell</span>
+        <span class="n">cell</span><span class="o">-&gt;</span><span class="n">UpdatePosition</span><span class="p">(</span><span class="n">cell_movements</span><span class="p">);</span>
       <span class="p">}</span>
-
-      <span class="k">else</span> <span class="p">{</span> <span class="c1">// if diameter &gt; 8</span>
-
-        <span class="k">if</span> <span class="p">(</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span><span class="mf">0.8</span> <span class="o">&amp;&amp;</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCanDivide</span><span class="p">()){</span>
-          <span class="k">auto</span> <span class="n">daughter</span> <span class="o">=</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
-          <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCellColour</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCellColour</span><span class="p">());</span> <span class="c1">// daughter take the cell_colour_ value of her mother</span>
-          <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span> <span class="c1">// the daughter will be able to divide</span>
-        <span class="p">}</span>
-        <span class="k">else</span> <span class="p">{</span>
-          <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span> <span class="c1">// this cell won&#39;t divide anymore</span>
+      <span class="k">else</span> <span class="p">{</span>  <span class="c1">//</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCanDivide</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">0.8</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">auto</span><span class="o">&amp;&amp;</span> <span class="n">daughter</span> <span class="o">=</span> <span class="n">cell</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
+          <span class="c1">// daughter take the cell_colour_ value of her mother</span>
+          <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCellColour</span><span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetCellColour</span><span class="p">());</span>
+          <span class="n">daughter</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>  <span class="c1">// the daughter will be able to divide</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>  <span class="c1">// this cell won&#39;t divide anymore</span>
         <span class="p">}</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -1184,66 +1213,85 @@ Finaly, don't forget to set the daughter can_divide_ value to true after a cell 
     <span class="n">ClassDefNV</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
   <span class="p">};</span>
 
-<span class="c1">// Define compile time parameter</span>
+  <span class="c1">// Define compile time parameter</span>
   <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Backend</span><span class="o">&gt;</span>
-    <span class="k">struct</span> <span class="nl">CompileTimeParam</span> <span class="p">:</span> <span class="k">public</span> <span class="n">DefaultCompileTimeParam</span><span class="o">&lt;</span><span class="n">Backend</span><span class="o">&gt;</span> <span class="p">{</span>
-  <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">GrowthModule</span><span class="o">&gt;</span><span class="p">;</span> <span class="c1">// add GrowthModule</span>
-  <span class="k">using</span> <span class="n">AtomicTypes</span> <span class="o">=</span> <span class="n">VariadicTypedef</span><span class="o">&lt;</span><span class="n">MyCell</span><span class="o">&gt;</span><span class="p">;</span> <span class="c1">// use MyCell object</span>
+  <span class="k">struct</span> <span class="nl">CompileTimeParam</span> <span class="p">:</span> <span class="k">public</span> <span class="n">DefaultCompileTimeParam</span><span class="o">&lt;</span><span class="n">Backend</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">GrowthModule</span><span class="o">&gt;</span><span class="p">;</span>  <span class="c1">// add GrowthModule</span>
+    <span class="k">using</span> <span class="n">AtomicTypes</span> <span class="o">=</span> <span class="n">VariadicTypedef</span><span class="o">&lt;</span><span class="n">MyCell</span><span class="o">&gt;</span><span class="p">;</span>   <span class="c1">// use MyCell object</span>
   <span class="p">};</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">TResourceManager</span> <span class="o">=</span> <span class="n">ResourceManager</span><span class="o">&lt;&gt;&gt;</span>
+  <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">TResourceManager</span> <span class="o">=</span> <span class="n">ResourceManager</span><span class="o">&lt;&gt;&gt;</span>
 
-<span class="kr">inline</span> <span class="kt">int</span> <span class="n">Simulate</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">InitializeBiodynamo</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+  <span class="kr">inline</span> <span class="kt">int</span> <span class="n">Simulate</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Simulation</span><span class="o">&lt;&gt;</span> <span class="n">simulation</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">rm</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetResourceManager</span><span class="p">();</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">param</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetParam</span><span class="p">();</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">random</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetRandom</span><span class="p">();</span>
 
-  <span class="kt">size_t</span> <span class="n">nb_of_cells</span><span class="o">=</span><span class="mi">2400</span><span class="p">;</span> <span class="c1">// number of cells in the simulation</span>
-  <span class="kt">double</span> <span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">;</span>
+    <span class="kt">size_t</span> <span class="n">nb_of_cells</span> <span class="o">=</span> <span class="mi">2400</span><span class="p">;</span>  <span class="c1">// number of cells in the simulation</span>
+    <span class="kt">double</span> <span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">;</span>
 
-  <span class="n">Param</span><span class="o">::</span><span class="n">bound_space_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-  <span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// cube of 100*100*100</span>
-  <span class="n">Param</span><span class="o">::</span><span class="n">run_mechanical_interactions_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">param</span><span class="o">-&gt;</span><span class="n">bound_space_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>  <span class="c1">// cube of 100*100*100</span>
 
-  <span class="k">auto</span> <span class="n">rm</span> <span class="o">=</span> <span class="n">TResourceManager</span><span class="o">::</span><span class="n">Get</span><span class="p">();</span> <span class="c1">// set up resource manager</span>
-  <span class="k">auto</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">MyCell</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// create a structure to contain cells</span>
-  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">reserve</span><span class="p">(</span><span class="n">nb_of_cells</span><span class="p">);</span> <span class="c1">// allocate the correct number of cell in our cells structure before cell creation</span>
+    <span class="c1">// create a structure to contain cells</span>
+    <span class="k">auto</span><span class="o">*</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">rm</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">Get</span><span class="o">&lt;</span><span class="n">MyCell</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="c1">// allocate the correct number of cell in our cells structure before</span>
+    <span class="c1">// cell creation</span>
+    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">reserve</span><span class="p">(</span><span class="n">nb_of_cells</span><span class="p">);</span>
 
-  <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nb_of_cells</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// our modelling will be a cell cube of 100*100*100</span>
-    <span class="n">x_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span><span class="p">);</span> <span class="c1">// random double between 0 and 100</span>
-    <span class="n">y_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span><span class="p">);</span>
-    <span class="n">z_coord</span><span class="o">=</span><span class="n">gTRandom</span><span class="p">.</span><span class="n">Uniform</span><span class="p">(</span><span class="n">Param</span><span class="o">::</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nb_of_cells</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// our modelling will be a cell cube of 100*100*100</span>
+      <span class="c1">// random double between 0 and 100</span>
+      <span class="n">x_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
+      <span class="n">y_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
+      <span class="n">z_coord</span> <span class="o">=</span> <span class="n">random</span><span class="o">-&gt;</span><span class="n">Uniform</span><span class="p">(</span><span class="n">param</span><span class="o">-&gt;</span><span class="n">min_bound_</span><span class="p">,</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span><span class="p">);</span>
 
-    <span class="n">MyCell</span> <span class="nf">cell</span><span class="p">({</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">});</span> <span class="c1">// creating the cell at position x, y, z</span>
-    <span class="c1">// set cell parameters</span>
-    <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mf">7.5</span><span class="p">);</span>
-    <span class="n">cell</span><span class="p">.</span><span class="n">SetCellColour</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">y_coord</span><span class="o">/</span><span class="n">Param</span><span class="o">::</span><span class="n">max_bound_</span><span class="o">*</span><span class="mi">6</span><span class="p">));</span> <span class="c1">// will vary from 0 to 5. so 6 different layers depending on y_coord</span>
+      <span class="c1">// creating the cell at position x, y, z</span>
+      <span class="n">MyCell</span> <span class="nf">cell</span><span class="p">({</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">,</span> <span class="n">z_coord</span><span class="p">});</span>
+      <span class="c1">// set cell parameters</span>
+      <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mf">7.5</span><span class="p">);</span>
+      <span class="c1">// will vary from 0 to 5. so 6 different layers depending on y_coord</span>
+      <span class="n">cell</span><span class="p">.</span><span class="n">SetCellColour</span><span class="p">((</span><span class="kt">int</span><span class="p">)(</span><span class="n">y_coord</span> <span class="o">/</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">max_bound_</span> <span class="o">*</span> <span class="mi">6</span><span class="p">));</span>
 
-    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span> <span class="c1">// put the created cell in our cells structure</span>
+      <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span>  <span class="c1">// put the created cell in our cells structure</span>
+    <span class="p">}</span>
+
+    <span class="c1">// create a cancerous cell, containing the BiologyModule GrowthModule</span>
+    <span class="n">MyCell</span> <span class="n">cell</span><span class="p">({</span><span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">});</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">SetCellColour</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+    <span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">());</span>
+    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span>  <span class="c1">// put the created cell in our cells structure</span>
+
+    <span class="n">cells</span><span class="o">-&gt;</span><span class="n">Commit</span><span class="p">();</span>  <span class="c1">// commit cells</span>
+
+    <span class="c1">// Run simulation</span>
+    <span class="n">simulation</span><span class="p">.</span><span class="n">GetScheduler</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Simulation completed successfully!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
   <span class="p">}</span>
 
-  <span class="c1">// create a cancerous cell, containing the BiologyModule GrowthModule</span>
-  <span class="n">MyCell</span> <span class="n">cell</span><span class="p">({</span><span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">});</span>
-  <span class="n">cell</span><span class="p">.</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
-  <span class="n">cell</span><span class="p">.</span><span class="n">SetCellColour</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span>
-  <span class="n">cell</span><span class="p">.</span><span class="n">SetCanDivide</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
-  <span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">());</span>
-  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">push_back</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span> <span class="c1">// put the created cell in our cells structure</span>
-
-  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">Commit</span><span class="p">();</span> <span class="c1">// commit cells</span>
-
-
-  <span class="c1">// Run simulation</span>
-  <span class="n">Scheduler</span><span class="o">&lt;&gt;</span> <span class="n">scheduler</span><span class="p">;</span>
-  <span class="n">scheduler</span><span class="p">.</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
-
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Simulation completed successfully!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="p">}</span> <span class="c1">// namespace bdm</span>
+<span class="p">}</span>  <span class="c1">// namespace bdm</span>
 
 <span class="cp">#endif </span><span class="c1">// TUTORIAL_H_</span>
+</pre></div>
+
+<h3 id="bdmtoml-chapter-34">bdm.toml - chapter 3.4</h3>
+<div class="codehilite"><pre><span></span><span class="k">[simulation]</span>
+<span class="na">run_mechanical_interactions</span> <span class="o">=</span> <span class="s">true</span>
+
+<span class="k">[visualization]</span>
+<span class="na">live</span> <span class="o">=</span> <span class="s">false</span>
+<span class="na">export</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">export_interval</span> <span class="o">=</span> <span class="s">2</span>
+
+    <span class="k">[[visualize_sim_object]]</span>
+        <span class="na">name</span> <span class="o">=</span> <span class="s">&quot;MyCell&quot;</span>
+<span class="s">        additional_data_members = [ &quot;diameter_&quot; , &quot;cell_colour_&quot; ]</span>
 </pre></div>
                 
                   
