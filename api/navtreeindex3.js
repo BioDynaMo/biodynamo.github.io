@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a450769a5bd0c2f9ec18b0d72403e18bf":[1,0,0,1,0,2,36],
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a46e8e20303103df1d80492063196ad53":[1,0,0,1,0,2,9],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a4815f1333fba1752ff31e8b5b5e4ac85":[1,0,0,1,0,2,145],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a488735b5c1c3f170b3b576077dc347c9":[1,0,0,1,0,2,80],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a48f7184c02146707b604ce713b8085b1":[1,0,0,1,0,2,5],
@@ -208,10 +210,10 @@ var NAVTREEINDEX3 =
 "default__force_8h.html":[2,0,17],
 "default__force_8h_source.html":[2,0,17],
 "diffusion__grid_8h.html":[2,0,18],
-"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,18,4],
-"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,18,3],
-"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,18,1],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,18,2],
+"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,18,1],
+"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,18,3],
+"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,18,4],
 "diffusion__grid_8h_source.html":[2,0,18],
 "diffusion__op_8h.html":[2,0,19],
 "diffusion__op_8h_source.html":[2,0,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "functions_b.html":[1,3,0,2],
 "functions_c.html":[1,3,0,3],
 "functions_d.html":[1,3,0,4],
-"functions_e.html":[1,3,0,5],
-"functions_enum.html":[1,3,4],
-"functions_eval.html":[1,3,5]
+"functions_e.html":[1,3,0,5]
 };

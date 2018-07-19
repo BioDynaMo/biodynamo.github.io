@@ -38,13 +38,15 @@ var NAVTREEINDEX0 =
 "classbdm_1_1BoundSpace.html#a838a24739452448559965c7b0e1dc842":[1,0,0,16,1],
 "classbdm_1_1BoundSpace.html#aa40e8630a5ffc57e2511aed31f69c0bf":[1,0,0,16,2],
 "classbdm_1_1CatalystAdaptor.html":[1,0,0,81],
-"classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6":[1,0,0,81,6],
-"classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c":[1,0,0,81,5],
+"classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6":[1,0,0,81,7],
+"classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c":[1,0,0,81,6],
+"classbdm_1_1CatalystAdaptor.html#a303b5b59fe3b35aaf2850da4cca15e70":[1,0,0,81,8],
 "classbdm_1_1CatalystAdaptor.html#a4aa216a6727c1bf644956d5e9ab822fa":[1,0,0,81,1],
 "classbdm_1_1CatalystAdaptor.html#a81aba083e64010adac43a03c5d6d0123":[1,0,0,81,3],
 "classbdm_1_1CatalystAdaptor.html#aa3b31dfcf14fb17227a9f1730aa8449f":[1,0,0,81,4],
 "classbdm_1_1CatalystAdaptor.html#ae3f05c90590b0dc122d03842bbaa9d9a":[1,0,0,81,0],
 "classbdm_1_1CatalystAdaptor.html#af5b333f9e1074a74467386e10a80b75e":[1,0,0,81,2],
+"classbdm_1_1CatalystAdaptor.html#af9b89947a42ead5626f75a0d1c340cda":[1,0,0,81,5],
 "classbdm_1_1CellExt.html":[1,0,0,17],
 "classbdm_1_1CellExt.html#a025e747c9b21970c2563ab649b62a3dc":[1,0,0,17,88],
 "classbdm_1_1CellExt.html#a02cdb0c9802b45253b65c34f50b02d09":[1,0,0,17,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classbdm_1_1DisplacementOpCuda.html#a6af04a8788d52c9087fe30cf447d2311":[1,0,0,29,0],
 "classbdm_1_1DisplacementOpCuda.html#a6c2f3be34e156cdec8cc3e61938550ee":[1,0,0,29,4],
 "classbdm_1_1DisplacementOpCuda.html#adf5b64f081338cbdf410a87789d51aca":[1,0,0,29,2],
-"classbdm_1_1DisplacementOpCudaKernel.html":[1,0,0,39],
-"classbdm_1_1DisplacementOpCudaKernel.html#a0630b8898b3e35a2b43a0dcf9bc07d46":[1,0,0,39,15],
-"classbdm_1_1DisplacementOpCudaKernel.html#a080c2914ba6800b98a084036570c05f2":[1,0,0,39,18]
+"classbdm_1_1DisplacementOpCudaKernel.html":[1,0,0,39]
 };
