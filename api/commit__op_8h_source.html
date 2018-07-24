@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-92-g0fbdd3f</span>
+   &#160;<span id="projectnumber">v0.1.0-93-gb73f913</span>
    </div>
   </td>
  </tr>
@@ -138,18 +138,21 @@ $(document).ready(function(){initNavTree('commit__op_8h_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">update_info_</a>.emplace_back(sim_objects-&gt;Commit());</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5">   33</a></span>&#160;  <span class="keyword">auto</span>&amp; <a class="code" href="classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5">GetUpdateInfo</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">update_info_</a>; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classbdm_1_1CommitOp.html#a476661dd1490fad6c88866b345a173cf">   33</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1CommitOp.html#a476661dd1490fad6c88866b345a173cf">Reset</a>() { <a class="code" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">update_info_</a>.clear(); }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">   36</a></span>&#160;  std::vector&lt;std::unordered_map&lt;uint32_t, uint32_t&gt;&gt; <a class="code" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">update_info_</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5">   35</a></span>&#160;  <span class="keyword">auto</span>&amp; <a class="code" href="classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5">GetUpdateInfo</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">update_info_</a>; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">   38</a></span>&#160;  std::vector&lt;std::unordered_map&lt;uint32_t, uint32_t&gt;&gt; <a class="code" href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">update_info_</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif  // COMMIT_OP_H_</span></div>
-<div class="ttc" id="classbdm_1_1CommitOp_html_a4f1e0603fda4fae7fead8bb0fb59caf4"><div class="ttname"><a href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">bdm::CommitOp::update_info_</a></div><div class="ttdeci">std::vector&lt; std::unordered_map&lt; uint32_t, uint32_t &gt; &gt; update_info_</div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00036">commit_op.h:36</a></div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  // COMMIT_OP_H_</span></div>
+<div class="ttc" id="classbdm_1_1CommitOp_html_a4f1e0603fda4fae7fead8bb0fb59caf4"><div class="ttname"><a href="classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4">bdm::CommitOp::update_info_</a></div><div class="ttdeci">std::vector&lt; std::unordered_map&lt; uint32_t, uint32_t &gt; &gt; update_info_</div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00038">commit_op.h:38</a></div></div>
 <div class="ttc" id="classbdm_1_1CommitOp_html"><div class="ttname"><a href="classbdm_1_1CommitOp.html">bdm::CommitOp</a></div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00023">commit_op.h:23</a></div></div>
-<div class="ttc" id="classbdm_1_1CommitOp_html_ad4acae5c462e37bfadad5b89753721f5"><div class="ttname"><a href="classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5">bdm::CommitOp::GetUpdateInfo</a></div><div class="ttdeci">auto &amp; GetUpdateInfo() const </div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00033">commit_op.h:33</a></div></div>
+<div class="ttc" id="classbdm_1_1CommitOp_html_ad4acae5c462e37bfadad5b89753721f5"><div class="ttname"><a href="classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5">bdm::CommitOp::GetUpdateInfo</a></div><div class="ttdeci">auto &amp; GetUpdateInfo() const </div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00035">commit_op.h:35</a></div></div>
+<div class="ttc" id="classbdm_1_1CommitOp_html_a476661dd1490fad6c88866b345a173cf"><div class="ttname"><a href="classbdm_1_1CommitOp.html#a476661dd1490fad6c88866b345a173cf">bdm::CommitOp::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00033">commit_op.h:33</a></div></div>
 <div class="ttc" id="classbdm_1_1CommitOp_html_a416304b60e552a6525112d6f8f02910c"><div class="ttname"><a href="classbdm_1_1CommitOp.html#a416304b60e552a6525112d6f8f02910c">bdm::CommitOp::~CommitOp</a></div><div class="ttdeci">~CommitOp()</div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00026">commit_op.h:26</a></div></div>
 <div class="ttc" id="classbdm_1_1CommitOp_html_aaef730a5f4f57a13bed057206e73760c"><div class="ttname"><a href="classbdm_1_1CommitOp.html#aaef730a5f4f57a13bed057206e73760c">bdm::CommitOp::CommitOp</a></div><div class="ttdeci">CommitOp()</div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00025">commit_op.h:25</a></div></div>
 <div class="ttc" id="classbdm_1_1CommitOp_html_a5c522a80a35de585445bb59d9c1d2537"><div class="ttname"><a href="classbdm_1_1CommitOp.html#a5c522a80a35de585445bb59d9c1d2537">bdm::CommitOp::operator()</a></div><div class="ttdeci">void operator()(TSoContainer *sim_objects, uint16_t type_idx)</div><div class="ttdef"><b>Definition:</b> <a href="commit__op_8h_source.html#l00029">commit_op.h:29</a></div></div>
@@ -159,7 +162,7 @@ $(document).ready(function(){initNavTree('commit__op_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="commit__op_8h.html">commit_op.h</a></li>
-    <li class="footer">Generated on Thu Jul 19 2018 09:34:08 for BioDynaMo by
+    <li class="footer">Generated on Tue Jul 24 2018 18:16:56 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

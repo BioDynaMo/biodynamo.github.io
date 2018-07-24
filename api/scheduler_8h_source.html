@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-92-g0fbdd3f</span>
+   &#160;<span id="projectnumber">v0.1.0-93-gb73f913</span>
    </div>
   </td>
  </tr>
@@ -265,53 +265,54 @@ $(document).ready(function(){initNavTree('scheduler_8h_source.html','');});
 <div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a5a3db9c5be1499d692a63135ac58ddae">  164</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a5a3db9c5be1499d692a63135ac58ddae">CommitChangesAndUpdateReferences</a>() {</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    rm-&gt;ApplyOnAllTypesParallel(<a class="code" href="classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5">commit_</a>);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; update_info = <a class="code" href="classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5">commit_</a>-&gt;GetUpdateInfo();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">auto</span> update_references = [&amp;update_info](<span class="keyword">auto</span>* sim_objects,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                            uint16_t type_idx) {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; sim_objects-&gt;size(); i++) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        (*sim_objects)[i].UpdateReferences(update_info);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    };</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    rm-&gt;ApplyOnAllTypes(update_references);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="comment">// TODO(lukas, ahmad) After https://trello.com/c/0D6sHCK4 has been resolved</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">// think about a better solution, because some operations are executed twice</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="comment">// if Simulate is called with one timestep.</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed">  183</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed">Initialize</a>() {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a5a3db9c5be1499d692a63135ac58ddae">CommitChangesAndUpdateReferences</a>();</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">auto</span>* grid = sim-&gt;GetGrid();</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classbdm_1_1Scheduler.html#ae8b4d2afba497eea5e082bb5ad5bb33e">is_gpu_environment_initialized_</a> &amp;&amp; param-&gt;use_gpu_) {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      InitializeGPUEnvironment&lt;&gt;();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <a class="code" href="classbdm_1_1Scheduler.html#ae8b4d2afba497eea5e082bb5ad5bb33e">is_gpu_environment_initialized_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    grid-&gt;Initialize();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span> (param-&gt;bound_space_) {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      rm-&gt;ApplyOnAllTypes(<a class="code" href="classbdm_1_1Scheduler.html#aa9f94e878e1771b976d2272d2ac355f3">bound_space_</a>);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">int</span> lbound = grid-&gt;GetDimensionThresholds()[0];</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">int</span> rbound = grid-&gt;GetDimensionThresholds()[1];</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; dgrid : rm-&gt;GetDiffusionGrids()) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="comment">// Create data structures, whose size depend on the grid dimensions</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      dgrid-&gt;Initialize({lbound, rbound, lbound, rbound, lbound, rbound});</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="comment">// Initialize data structures with user-defined values</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      dgrid-&gt;RunInitializers();</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;};</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#endif  // SCHEDULER_H_</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5">commit_</a>-&gt;Reset();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    rm-&gt;ApplyOnAllTypesParallel(<a class="code" href="classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5">commit_</a>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; update_info = <a class="code" href="classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5">commit_</a>-&gt;GetUpdateInfo();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">auto</span> update_references = [&amp;update_info](<span class="keyword">auto</span>* sim_objects,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                            uint16_t type_idx) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">for</span> (uint64_t i = 0; i &lt; sim_objects-&gt;size(); i++) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        (*sim_objects)[i].UpdateReferences(update_info);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    };</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    rm-&gt;ApplyOnAllTypes(update_references);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">// TODO(lukas, ahmad) After https://trello.com/c/0D6sHCK4 has been resolved</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="comment">// think about a better solution, because some operations are executed twice</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// if Simulate is called with one timestep.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed">  184</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed">Initialize</a>() {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a5a3db9c5be1499d692a63135ac58ddae">CommitChangesAndUpdateReferences</a>();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">auto</span>* grid = sim-&gt;GetGrid();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classbdm_1_1Scheduler.html#ae8b4d2afba497eea5e082bb5ad5bb33e">is_gpu_environment_initialized_</a> &amp;&amp; param-&gt;use_gpu_) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      InitializeGPUEnvironment&lt;&gt;();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <a class="code" href="classbdm_1_1Scheduler.html#ae8b4d2afba497eea5e082bb5ad5bb33e">is_gpu_environment_initialized_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    grid-&gt;Initialize();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">if</span> (param-&gt;bound_space_) {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      rm-&gt;ApplyOnAllTypes(<a class="code" href="classbdm_1_1Scheduler.html#aa9f94e878e1771b976d2272d2ac355f3">bound_space_</a>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">int</span> lbound = grid-&gt;GetDimensionThresholds()[0];</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">int</span> rbound = grid-&gt;GetDimensionThresholds()[1];</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; dgrid : rm-&gt;GetDiffusionGrids()) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <span class="comment">// Create data structures, whose size depend on the grid dimensions</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      dgrid-&gt;Initialize({lbound, rbound, lbound, rbound, lbound, rbound});</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <span class="comment">// Initialize data structures with user-defined values</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      dgrid-&gt;RunInitializers();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;};</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#endif  // SCHEDULER_H_</span></div>
 <div class="ttc" id="classbdm_1_1Scheduler_html_a84c1112506585a55875e7ff05374b7c9"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a84c1112506585a55875e7ff05374b7c9">bdm::Scheduler::GetSimulatedSteps</a></div><div class="ttdeci">uint64_t GetSimulatedSteps() const </div><div class="ttdoc">This function returns the numer of simulated steps (=iterations). </div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00078">scheduler.h:78</a></div></div>
 <div class="ttc" id="classbdm_1_1Scheduler_html_a39ba17a28813db36d0bf633873965645"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a39ba17a28813db36d0bf633873965645">bdm::Scheduler::Scheduler</a></div><div class="ttdeci">Scheduler()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00043">scheduler.h:43</a></div></div>
 <div class="ttc" id="classbdm_1_1Scheduler_html_ab49c5033737653fb2c5248b04bde76a4"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ab49c5033737653fb2c5248b04bde76a4">bdm::Scheduler&lt; bdm::Simulation &gt;::Clock</a></div><div class="ttdeci">std::chrono::high_resolution_clock Clock</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00041">scheduler.h:41</a></div></div>
@@ -354,7 +355,7 @@ $(document).ready(function(){initNavTree('scheduler_8h_source.html','');});
 <div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
 <div class="ttc" id="classbdm_1_1Timing_html"><div class="ttname"><a href="classbdm_1_1Timing.html">bdm::Timing</a></div><div class="ttdef"><b>Definition:</b> <a href="timing_8h_source.html#l00027">timing.h:27</a></div></div>
 <div class="ttc" id="biology__module__op_8h_html"><div class="ttname"><a href="biology__module__op_8h.html">biology_module_op.h</a></div></div>
-<div class="ttc" id="classbdm_1_1Scheduler_html_ae7e4ff924dbea1e9f4f625100930e9ed"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed">bdm::Scheduler::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00183">scheduler.h:183</a></div></div>
+<div class="ttc" id="classbdm_1_1Scheduler_html_ae7e4ff924dbea1e9f4f625100930e9ed"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed">bdm::Scheduler::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00184">scheduler.h:184</a></div></div>
 <div class="ttc" id="classbdm_1_1Scheduler_html_addd8504dd3a271bc1cfff0f3edf2f03f"><div class="ttname"><a href="classbdm_1_1Scheduler.html#addd8504dd3a271bc1cfff0f3edf2f03f">bdm::Scheduler::Execute</a></div><div class="ttdeci">virtual void Execute(bool last_iteration)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00085">scheduler.h:85</a></div></div>
 <div class="ttc" id="classbdm_1_1Scheduler_html_a9777e1b2fb698ad3adec5f25c4bb7a42"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a9777e1b2fb698ad3adec5f25c4bb7a42">bdm::Scheduler::~Scheduler</a></div><div class="ttdeci">virtual ~Scheduler()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00053">scheduler.h:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -363,7 +364,7 @@ $(document).ready(function(){initNavTree('scheduler_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="scheduler_8h.html">scheduler.h</a></li>
-    <li class="footer">Generated on Thu Jul 19 2018 09:34:08 for BioDynaMo by
+    <li class="footer">Generated on Tue Jul 24 2018 18:16:56 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

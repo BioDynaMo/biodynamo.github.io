@@ -21,12 +21,13 @@ var searchData=
   ['replacescheduler',['ReplaceScheduler',['../structbdm_1_1Simulation.html#af3f4b8eab7408ab2cc22d697d96631c9',1,'bdm::Simulation']]],
   ['requestdatadescription',['RequestDataDescription',['../classbdm_1_1InSituPipeline.html#a5e8cf218b76d8b7df0b5077cc2199898',1,'bdm::InSituPipeline']]],
   ['reserve',['reserve',['../classbdm_1_1CellExt.html#a122709040e29550e9cc9a254e8753223',1,'bdm::CellExt::reserve()'],['../classbdm_1_1InlineVector.html#a2615e2345b8f313027784699077f77d0',1,'bdm::InlineVector::reserve()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a718ce6fe280ea611b6051741b67e57a0',1,'bdm::experimental::neuroscience::NeuriteElementExt::reserve()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#ae954f0cb560890057ec6c9734fc833b7',1,'bdm::experimental::neuroscience::NeuronSomaExt::reserve()'],['../classbdm_1_1SoaSimulationObject.html#adb0f0a48e0a87ae14dfb9d9fea912875',1,'bdm::SoaSimulationObject::reserve()'],['../classbdm_1_1TransactionalVector.html#afa8f881c0482d5b8927d4021ed30c96b',1,'bdm::TransactionalVector::reserve()']]],
+  ['reset',['Reset',['../classbdm_1_1CommitOp.html#a476661dd1490fad6c88866b345a173cf',1,'bdm::CommitOp']]],
   ['resizecellbuffers',['ResizeCellBuffers',['../classbdm_1_1DisplacementOpCudaKernel.html#ac4663c24488e231181f15a424d436cbd',1,'bdm::DisplacementOpCudaKernel']]],
   ['resizegridbuffers',['ResizeGridBuffers',['../classbdm_1_1DisplacementOpCudaKernel.html#a4145e95a9718eb505cce65447d2edb61',1,'bdm::DisplacementOpCudaKernel']]],
   ['resolution_5f',['resolution_',['../classbdm_1_1DiffusionGrid.html#a58335cd0453d48f24b3f2464686855ef',1,'bdm::DiffusionGrid::resolution_()'],['../classbdm_1_1DiffusionGrid.html#a087b5fdc75dea0dcd18b12072e6e4f29',1,'bdm::DiffusionGrid::resolution_(resolution)']]],
   ['resource_5fmanager_2eh',['resource_manager.h',['../resource__manager_8h.html',1,'']]],
-  ['resourcemanager',['ResourceManager',['../classbdm_1_1ResourceManager.html',1,'bdm']]],
   ['resourcemanager',['ResourceManager',['../classbdm_1_1ResourceManager.html#a4eb81532d4f08cddfd81b921c1a0871a',1,'bdm::ResourceManager::ResourceManager(TRootIOCtor *r)'],['../classbdm_1_1ResourceManager.html#ae78208481c35292dca6581c754fc006c',1,'bdm::ResourceManager::ResourceManager()']]],
+  ['resourcemanager',['ResourceManager',['../classbdm_1_1ResourceManager.html',1,'bdm']]],
   ['resourcemanager_3c_20tctparam_20_3e',['ResourceManager&lt; TCTParam &gt;',['../classbdm_1_1ResourceManager.html',1,'bdm']]],
   ['resourcemanager_5ft',['ResourceManager_t',['../classbdm_1_1Grid.html#a8d36b0e1bc4ee8e6472a518df1f24920',1,'bdm::Grid::ResourceManager_t()'],['../structbdm_1_1Simulation.html#a005e63d7f2baeeb98b9a985587a93147',1,'bdm::Simulation::ResourceManager_t()']]],
   ['resting_5flength_5f',['resting_length_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a4815f1333fba1752ff31e8b5b5e4ac85',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
@@ -46,8 +47,8 @@ var searchData=
   ['runbiologymodules',['RunBiologyModules',['../classbdm_1_1CellExt.html#ada562a72355e148e08ec449be95596e1',1,'bdm::CellExt::RunBiologyModules()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aac8c3a4ac11dcef1cbe20a7c567e614b',1,'bdm::experimental::neuroscience::NeuriteElementExt::RunBiologyModules()']]],
   ['rundiscretization',['RunDiscretization',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#abb2a8a5f8566c5a87d75504dd1af2c98',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['runinitializers',['RunInitializers',['../classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7',1,'bdm::DiffusionGrid']]],
-  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm']]],
   ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f',1,'bdm::RuntimeVariables::RuntimeVariables()'],['../classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303',1,'bdm::RuntimeVariables::RuntimeVariables(TRootIOCtor *io_ctor)']]],
-  ['runvisitor',['RunVisitor',['../structbdm_1_1RunVisitor.html#aba48b26ef0d3fe6c05c69e620a7faacb',1,'bdm::RunVisitor']]],
-  ['runvisitor',['RunVisitor',['../structbdm_1_1RunVisitor.html',1,'bdm']]]
+  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm']]],
+  ['runvisitor',['RunVisitor',['../structbdm_1_1RunVisitor.html',1,'bdm']]],
+  ['runvisitor',['RunVisitor',['../structbdm_1_1RunVisitor.html#aba48b26ef0d3fe6c05c69e620a7faacb',1,'bdm::RunVisitor']]]
 ];

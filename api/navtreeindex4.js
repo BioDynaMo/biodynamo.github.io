@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"functions_e.html":[1,3,0,5],
 "functions_enum.html":[1,3,4],
 "functions_eval.html":[1,3,5],
 "functions_f.html":[1,3,0,6],
@@ -113,8 +114,8 @@ var NAVTREEINDEX4 =
 "namespacebdm.html":[1,0,0],
 "namespacebdm_1_1detail.html":[1,0,0,0],
 "namespacebdm_1_1detail.html":[0,0,0,0],
-"namespacebdm_1_1experimental.html":[0,0,0,1],
 "namespacebdm_1_1experimental.html":[1,0,0,1],
+"namespacebdm_1_1experimental.html":[0,0,0,1],
 "namespacebdm_1_1experimental_1_1neuroscience.html":[1,0,0,1,0],
 "namespacebdm_1_1experimental_1_1neuroscience.html":[0,0,0,1,0],
 "namespacemembers.html":[0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "structbdm_1_1BaseBiologyModule.html#a21a9d781c3c2d53c078189df659c7124":[1,0,0,11,8],
 "structbdm_1_1BaseBiologyModule.html#a5d8390ff96e3678841dcb73ab36edc3a":[1,0,0,11,0],
 "structbdm_1_1BaseBiologyModule.html#a6ce25914bd87981f6997545f0630af40":[1,0,0,11,2],
-"structbdm_1_1BaseBiologyModule.html#ab27f7508849de8443cc06afc2932de75":[1,0,0,11,6],
-"structbdm_1_1BaseBiologyModule.html#ac789f4a745bf6a2c32b569d390a7bffd":[1,0,0,11,3]
+"structbdm_1_1BaseBiologyModule.html#ab27f7508849de8443cc06afc2932de75":[1,0,0,11,6]
 };

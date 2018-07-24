@@ -150,7 +150,8 @@ var NAVTREEINDEX0 =
 "classbdm_1_1CircularBuffer.html#aa3040362ca0064a116e2cc8e1a73b2cb":[1,0,0,40,7],
 "classbdm_1_1CommitOp.html":[1,0,0,21],
 "classbdm_1_1CommitOp.html#a416304b60e552a6525112d6f8f02910c":[1,0,0,21,1],
-"classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4":[1,0,0,21,4],
+"classbdm_1_1CommitOp.html#a476661dd1490fad6c88866b345a173cf":[1,0,0,21,4],
+"classbdm_1_1CommitOp.html#a4f1e0603fda4fae7fead8bb0fb59caf4":[1,0,0,21,5],
 "classbdm_1_1CommitOp.html#a5c522a80a35de585445bb59d9c1d2537":[1,0,0,21,3],
 "classbdm_1_1CommitOp.html#aaef730a5f4f57a13bed057206e73760c":[1,0,0,21,0],
 "classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5":[1,0,0,21,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classbdm_1_1DisplacementOpCuda.html#a670ad02944c7ac352ff7c6e8e9c45c12":[1,0,0,29,6],
 "classbdm_1_1DisplacementOpCuda.html#a6af04a8788d52c9087fe30cf447d2311":[1,0,0,29,0],
 "classbdm_1_1DisplacementOpCuda.html#a6c2f3be34e156cdec8cc3e61938550ee":[1,0,0,29,4],
-"classbdm_1_1DisplacementOpCuda.html#adf5b64f081338cbdf410a87789d51aca":[1,0,0,29,2],
-"classbdm_1_1DisplacementOpCudaKernel.html":[1,0,0,39]
+"classbdm_1_1DisplacementOpCuda.html#adf5b64f081338cbdf410a87789d51aca":[1,0,0,29,2]
 };
