@@ -10,7 +10,7 @@ var searchData=
   ['regulate_5fgenes_2eh',['regulate_genes.h',['../regulate__genes_8h.html',1,'']]],
   ['regulategenes',['RegulateGenes',['../structbdm_1_1RegulateGenes.html#a4677b066869ce51d1adf384c8287e780',1,'bdm::RegulateGenes::RegulateGenes()'],['../structbdm_1_1RegulateGenes.html#aeaed6ca175a5a079e12b926a4b9738f1',1,'bdm::RegulateGenes::RegulateGenes(BmEvent event)']]],
   ['regulategenes',['RegulateGenes',['../structbdm_1_1RegulateGenes.html',1,'bdm']]],
-  ['reinterpretcast',['ReinterpretCast',['../classbdm_1_1SimulationObject.html#a51153d98274f32d5d66f938506244eaa',1,'bdm::SimulationObject']]],
+  ['reinterpretcast',['ReinterpretCast',['../classbdm_1_1SimulationObject.html#a51153d98274f32d5d66f938506244eaa',1,'bdm::SimulationObject::ReinterpretCast()'],['../classbdm_1_1SimulationObject.html#aee49393dfae4212f18589b040e5c0239',1,'bdm::SimulationObject::ReinterpretCast(const TSo *object)']]],
   ['remove',['Remove',['../structbdm_1_1BaseBiologyModule.html#ab27f7508849de8443cc06afc2932de75',1,'bdm::BaseBiologyModule']]],
   ['remove_5fmask_5f',['remove_mask_',['../structbdm_1_1BaseBiologyModule.html#a21a9d781c3c2d53c078189df659c7124',1,'bdm::BaseBiologyModule']]],
   ['removedaughter',['RemoveDaughter',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#ac4ebc1b8d47e2e672e6e977b640b477e',1,'bdm::experimental::neuroscience::NeuronNeuriteAdapter::RemoveDaughter()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a0e4ca0adcadf8411c5f393f269cb761f',1,'bdm::experimental::neuroscience::NeuriteElementExt::RemoveDaughter()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#ade3b42099a150cc0aed047016a12a627',1,'bdm::experimental::neuroscience::NeuronSomaExt::RemoveDaughter()']]],

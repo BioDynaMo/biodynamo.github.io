@@ -86,6 +86,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt =
     [ "OriginOf", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#afef33b19ea3f8c043f03605f9ebfa0d3", null ],
     [ "PopBack", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a1f1218405f3aa1bb545fd04d20d0f721", null ],
     [ "ProximalEnd", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#af5cd210958e13be0e40d99abd5aa3b02", null ],
+    [ "PushBackImpl", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a4b044ae3ac1f84170b987701aea9488d", null ],
     [ "PushBackImpl", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aa9f52be47cc2a9d15df5c7c1d37dea83", null ],
     [ "RemoveDaughter", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a0e4ca0adcadf8411c5f393f269cb761f", null ],
     [ "RemoveFromSimulation", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ab25765701711f2216bab600eeaf6303a", null ],

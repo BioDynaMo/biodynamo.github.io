@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-95-gf5e3c3f</span>
+   &#160;<span id="projectnumber">v0.1.0-97-ge8f50bd</span>
    </div>
   </td>
  </tr>
@@ -163,7 +163,7 @@ Macros</h2></td></tr>
 <tr class="separator:aaa2f391d1894a181b451965f7300ff57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a063e9441b393ea61dc260838977ecb74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#a063e9441b393ea61dc260838977ecb74">BDM_SIM_OBJECT_PUSH_BACK_BODY</a>(...)&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a15177597b5c1274368f7187210d814eb">LOOP</a>(<a class="el" href="simulation__object__util_8h.html#ab251932ea74e0188d0ad7c34bb01c7c6">BDM_SIM_OBJECT_PUSH_BACK_BODY_ITERATOR</a>, __VA_ARGS__))</td></tr>
 <tr class="separator:a063e9441b393ea61dc260838977ecb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab251932ea74e0188d0ad7c34bb01c7c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#ab251932ea74e0188d0ad7c34bb01c7c6">BDM_SIM_OBJECT_PUSH_BACK_BODY_ITERATOR</a>(data_member)&#160;&#160;&#160;data_member.push_back(other.data_member[0]);</td></tr>
+<tr class="memitem:ab251932ea74e0188d0ad7c34bb01c7c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#ab251932ea74e0188d0ad7c34bb01c7c6">BDM_SIM_OBJECT_PUSH_BACK_BODY_ITERATOR</a>(data_member)&#160;&#160;&#160;data_member.push_back(other.data_member[other.kIdx]);</td></tr>
 <tr class="separator:ab251932ea74e0188d0ad7c34bb01c7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a40906f74826a321558a27866498f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#a87a40906f74826a321558a27866498f1">BDM_SIM_OBJECT_POP_BACK_BODY</a>(...)&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a15177597b5c1274368f7187210d814eb">LOOP</a>(<a class="el" href="simulation__object__util_8h.html#a78e8608d48b161e64a605794e4626ce4">BDM_SIM_OBJECT_POP_BACK_BODY_ITERATOR</a>, __VA_ARGS__))</td></tr>
 <tr class="separator:a87a40906f74826a321558a27866498f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -602,7 +602,7 @@ BDM_SIM_OBJECT(MyCell, bdm::Cell) {
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">data_member</td><td>)</td>
-          <td>&#160;&#160;&#160;data_member.push_back(other.data_member[0]);</td>
+          <td>&#160;&#160;&#160;data_member.push_back(other.data_member[other.kIdx]);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -774,7 +774,7 @@ BDM_SO_DEFINE(inline void CellExt)::Foo() { ... }  </pre>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="simulation__object__util_8h.html">simulation_object_util.h</a></li>
-    <li class="footer">Generated on Thu Jul 26 2018 10:16:43 for BioDynaMo by
+    <li class="footer">Generated on Fri Jul 27 2018 09:44:37 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
