@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../images/bdm_logo.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+      <meta name="generator" content="mkdocs-1.0.1, mkdocs-material-3.0.3">
     
     
       
@@ -98,7 +98,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#building-biodynamo" tabindex="1" class="md-skip">
+      <a href="../#building-biodynamo" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -327,8 +327,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#speed-up-installation-tests-with-a-local-cernbox-copy" title="Speed Up Installation Tests with a Local CERNBox Copy" class="md-nav__link">
-    Speed Up Installation Tests with a Local CERNBox Copy
+  <a href="#speed-up-installation-tests-with-a-local-biodynamo-lfs-copy" title="Speed Up Installation Tests with a Local BioDynaMo-LFS Copy" class="md-nav__link">
+    Speed Up Installation Tests with a Local BioDynaMo-LFS Copy
   </a>
   
 </li>
@@ -436,8 +436,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#speed-up-installation-tests-with-a-local-cernbox-copy" title="Speed Up Installation Tests with a Local CERNBox Copy" class="md-nav__link">
-    Speed Up Installation Tests with a Local CERNBox Copy
+  <a href="#speed-up-installation-tests-with-a-local-biodynamo-lfs-copy" title="Speed Up Installation Tests with a Local BioDynaMo-LFS Copy" class="md-nav__link">
+    Speed Up Installation Tests with a Local BioDynaMo-LFS Copy
   </a>
   
 </li>
@@ -654,23 +654,23 @@ If you change the value of these switches, you might have to delete <code class=
 </tr>
 </tbody>
 </table>
-<h2 id="speed-up-installation-tests-with-a-local-cernbox-copy">Speed Up Installation Tests with a Local CERNBox Copy</h2>
+<h2 id="speed-up-installation-tests-with-a-local-biodynamo-lfs-copy">Speed Up Installation Tests with a Local BioDynaMo-LFS Copy</h2>
 <p>The installation scripts fetch large precompiled dependencies like paraview
-or root from CERNBox. To enable faster builds you can download the whole
-CERNBox and tell BioDynaMo to access the local version instead. This is done with the
-environmental flag <code class="codehilite">BDM_LOCAL_CERNBOX</code>. Use an absolute path to the directory
+or root from biodynamo's large file storage (LFS). To enable faster builds you can download the whole
+LFS and tell BioDynaMo to access the local version instead. This is done with the
+environmental flag <code class="codehilite">BDM_LOCAL_LFS</code>. Use an absolute path to the directory
 that contains the local copy.</p>
-<div class="codehilite"><pre><span></span><span class="nb">export</span> <span class="nv">BDM_LOCAL_CERNBOX</span><span class="o">=</span>/path/to/local/cernbox
+<div class="codehilite"><pre><span></span><span class="nb">export</span> <span class="nv">BDM_LOCAL_LFS</span><span class="o">=</span>/path/to/local/lfs
 </pre></div>
 
-<p>If you want to download the files from <code class="codehilite">cernbox.cern.ch</code> again execute:</p>
-<div class="codehilite"><pre><span></span><span class="nb">unset</span> BDM_LOCAL_CERNBOX
+<p>If you want to download the files from remote LFS again execute:</p>
+<div class="codehilite"><pre><span></span><span class="nb">unset</span> BDM_LOCAL_LFS
 </pre></div>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>At the moment there is no check if the local copy is in synch with
-CERNBox. You have to ensure that yourself!</p>
+remote. You have to ensure that yourself!</p>
 </div>
                 
                   
@@ -756,9 +756,9 @@ CERNBox. You have to ensure that yourself!</p>
       
     </div>
     
-      <script src="../assets/javascripts/application.30f6b8b1.js"></script>
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
       
-      <script>app.initialize({version:"0.17.5",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.0.1",url:{base:".."}})</script>
       
     
     
