@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-101-g600dc35</span>
+   &#160;<span id="projectnumber">v0.1.0-103-g725d381</span>
    </div>
   </td>
  </tr>
@@ -105,26 +105,24 @@ $(document).ready(function(){initNavTree('biology__module__util_8h.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">biology_module_util.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;limits&gt;</code><br/>
-<code>#include &lt;mutex&gt;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="event_8h_source.html">event/event.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="type__util_8h_source.html">type_util.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="variant_8h_source.html">variant.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for biology_module_util.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="biology__module__util_8h__incl.svg" width="1004" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="biology__module__util_8h__incl.svg" width="1587" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="biology__module__util_8h__dep__incl.svg" width="1098" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="biology__module__util_8h__dep__incl.svg" width="804" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -132,8 +130,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniqueBmEventFactory.html">bdm::UniqueBmEventFactory</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1NullBiologyModule.html">bdm::NullBiologyModule</a></td></tr>
@@ -142,29 +138,22 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1RunVisitor.html">bdm::RunVisitor&lt; TSimulationObject &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visitor to execute the <code>Run</code> method of a biology module.  <a href="structbdm_1_1RunVisitor.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1CopyVisitor.html">bdm::CopyVisitor&lt; TVector &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visitor to copy biology modules from one structure to another.  <a href="structbdm_1_1CopyVisitor.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1RemoveVisitor.html">bdm::RemoveVisitor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visitor to query if a biology module should be removed from a simulation object after an event.  <a href="structbdm_1_1RemoveVisitor.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebdm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html">bdm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a8f3ef5f0f8361cfa469a1e6f5b66b810"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a8f3ef5f0f8361cfa469a1e6f5b66b810">bdm::BmEvent</a> = uint64_t</td></tr>
-<tr class="separator:a8f3ef5f0f8361cfa469a1e6f5b66b810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a8da6871e1086e82b615160ae38a86cda"><td class="memItemLeft" align="right" valign="top">const BmEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a8da6871e1086e82b615160ae38a86cda">bdm::gAllBmEvents</a> = std::numeric_limits&lt;uint64_t&gt;::max()</td></tr>
-<tr class="separator:a8da6871e1086e82b615160ae38a86cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a022a8b2c71830a3fc04f1824730e17fd"><td class="memItemLeft" align="right" valign="top">const BmEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a022a8b2c71830a3fc04f1824730e17fd">bdm::gNullEvent</a> = 0</td></tr>
-<tr class="separator:a022a8b2c71830a3fc04f1824730e17fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="memTemplParams" colspan="2">template&lt;typename TEvent , typename TBiologyModules &gt; </td></tr>
+<tr class="memitem:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aed30d53a0f391d8c24ef68cea7a73dc2">bdm::CopyBiologyModules</a> (const TEvent &amp;event, TBiologyModules *src, TBiologyModules *dest)</td></tr>
+<tr class="memdesc:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to copy biology modules from one structure to another.  <a href="#aed30d53a0f391d8c24ef68cea7a73dc2">More...</a><br/></td></tr>
+<tr class="separator:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4c908b7fd30c77a880d0c2e86c570e"><td class="memTemplParams" colspan="2">template&lt;typename TEvent , typename TBiologyModules1 , typename... TBiologyModules&gt; </td></tr>
+<tr class="memitem:a3b4c908b7fd30c77a880d0c2e86c570e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a3b4c908b7fd30c77a880d0c2e86c570e">bdm::BiologyModuleEventHandler</a> (const TEvent &amp;event, TBiologyModules1 *current, TBiologyModules *...bms)</td></tr>
+<tr class="memdesc:a3b4c908b7fd30c77a880d0c2e86c570e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to invoke the EventHandler of the biology module or remove it from <code>current</code>. Forwards the event handler call to each biology modules of the triggered simulation object and removes biology modules if they are flagged.  <a href="#a3b4c908b7fd30c77a880d0c2e86c570e">More...</a><br/></td></tr>
+<tr class="separator:a3b4c908b7fd30c77a880d0c2e86c570e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -172,7 +161,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="biology__module__util_8h.html">biology_module_util.h</a></li>
-    <li class="footer">Generated on Mon Aug 27 2018 09:45:36 for BioDynaMo by
+    <li class="footer">Generated on Wed Aug 29 2018 08:45:37 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -425,6 +425,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../event/" title="Event" class="md-nav__link">
+      Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../substance_initializers/" title="Substance Initialization" class="md-nav__link">
       Substance Initialization
     </a>
@@ -571,7 +583,7 @@ cell: cell division. Open the <code class="codehilite">src/hello_world.h</code><
 </pre></div>
 
 <p>And add the following line to the <code class="codehilite">construct</code> function:</p>
-<div class="codehilite"><pre><span></span><span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowDivide</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="p">{</span><span class="n">gAllBmEvents</span><span class="p">}));</span>
+<div class="codehilite"><pre><span></span><span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowDivide</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="p">{</span><span class="n">gAllEventIds</span><span class="p">}));</span>
 </pre></div>
 
 <p>Rebuild and rerun the simulation to have the cell division take effect. visit the

@@ -3,6 +3,7 @@ var searchData=
   ['task_5f',['task_',['../classbdm_1_1VTuneOpWrapper.html#a0e39614a06b3930d27e0c7781e5769c5',1,'bdm::VTuneOpWrapper']]],
   ['tension_5f',['tension_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ac1e9756ffcba47b1007031394e7d795e',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['text_5f',['text_',['../classbdm_1_1Timing.html#a035522dd4d60281f13073c4f59262611',1,'bdm::Timing']]],
+  ['theta_5f',['theta_',['../structbdm_1_1CellDivisionEvent.html#aab7e23996075bf387c50a5522bf62c12',1,'bdm::CellDivisionEvent::theta_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#a5a7bf557422f835f4b3716592ba33a89',1,'bdm::experimental::neuroscience::NewNeuriteExtensionEvent::theta_()']]],
   ['threshold_5f',['threshold_',['../structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77',1,'bdm::GrowDivide']]],
   ['threshold_5fdimensions_5f',['threshold_dimensions_',['../classbdm_1_1Grid.html#ac62a60089564240c66628a79f9a07b17',1,'bdm::Grid']]],
   ['timer_5fmsg_5f',['timer_msg_',['../structbdm_1_1OpTimer.html#a129a014be5c696b64e59dfcfd327076e',1,'bdm::OpTimer']]],

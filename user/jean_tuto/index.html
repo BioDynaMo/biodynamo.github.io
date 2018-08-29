@@ -543,6 +543,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../event/" title="Event" class="md-nav__link">
+      Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../substance_initializers/" title="Substance Initialization" class="md-nav__link">
       Substance Initialization
     </a>
@@ -827,7 +839,7 @@ You can also directly use <code class="codehilite">biodynamo demo tumor_concept<
 <h3 id="biology-module">Biology module</h3>
 <p>In the previous chapter, we created a great number of cells. However, those cells don’t do anything! We will here create a cancerous cell that will grow and divide when it reaches a certain diameter. For this, we will define a new biology module structure GrowthModule that will be applied to cell elements, and we will make this GrowthModule copied into the cell daughter (so the daughter will also contain an instance of the biology module GrowthModule)
 <div class="codehilite"><pre><span></span>  <span class="k">struct</span> <span class="nl">GrowthModule</span> <span class="p">:</span> <span class="k">public</span> <span class="n">BaseBiologyModule</span> <span class="p">{</span>
-  <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllBmEvents</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllEventIds</span><span class="p">)</span> <span class="p">{}</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
       <span class="kt">void</span> <span class="n">Run</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
@@ -1022,7 +1034,7 @@ Finally, don't forget to set the daughter can_divide_ value to true after a cell
 
   <span class="c1">// 1. Define growth behaviour</span>
   <span class="k">struct</span> <span class="nl">GrowthModule</span> <span class="p">:</span> <span class="k">public</span> <span class="n">BaseBiologyModule</span> <span class="p">{</span>
-    <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllBmEvents</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="n">GrowthModule</span><span class="p">()</span> <span class="o">:</span> <span class="n">BaseBiologyModule</span><span class="p">(</span><span class="n">gAllEventIds</span><span class="p">)</span> <span class="p">{}</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
     <span class="kt">void</span> <span class="n">Run</span><span class="p">(</span><span class="n">T</span><span class="o">*</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
@@ -1134,13 +1146,13 @@ Finally, don't forget to set the daughter can_divide_ value to true after a cell
           </a>
         
         
-          <a href="../substance_initializers/" title="Substance Initialization" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../event/" title="Event" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Substance Initialization
+                Event
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

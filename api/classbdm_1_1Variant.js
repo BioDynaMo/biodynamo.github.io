@@ -8,7 +8,8 @@ var classbdm_1_1Variant =
     [ "ShowMembers", "classbdm_1_1Variant.html#a8b97d0928925359676bb4438d499fb21", null ],
     [ "Streamer", "classbdm_1_1Variant.html#a200e1ab6a00c95e96a3b9aa68166f2f8", null ],
     [ "StreamerNVirtual", "classbdm_1_1Variant.html#ae3e3aa16535b63a223132226e0d72f5d", null ],
-    [ "get_if", "classbdm_1_1Variant.html#a6a83ee628a852c760ee6528abd79d537", null ],
+    [ "get_if", "classbdm_1_1Variant.html#a4f52e6168f6bbfec5901ce70b05dc71f", null ],
+    [ "get_if", "classbdm_1_1Variant.html#abc854ff00b4ed86bcc58ecc40ac48916", null ],
     [ "visit", "classbdm_1_1Variant.html#ae02b25e348d208f4490599a24d08cd4d", null ],
     [ "data_", "classbdm_1_1Variant.html#ab282e70218f243f4c762428a1b8fbcfb", null ]
 ];

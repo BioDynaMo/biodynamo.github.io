@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['simulation',['Simulation',['../structbdm_1_1Param.html#a75c7e0ff47867748c902eaf4c2fde112',1,'bdm::Param']]],
-  ['simulationbackup',['SimulationBackup',['../classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b',1,'bdm::ResourceManager']]],
-  ['simulationobject',['SimulationObject',['../classbdm_1_1SimulationObject.html#a13713a5650768a189d4d06f14481a941',1,'bdm::SimulationObject']]],
-  ['soasimulationobject',['SoaSimulationObject',['../classbdm_1_1SoaSimulationObject.html#aab6f689b0567bce8e28ff287d10048b7',1,'bdm::SoaSimulationObject']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../classbdm_1_1InlineVector.html#ab333d3d8502720d87fa12dcd4085ae94',1,'bdm::InlineVector::operator&lt;&lt;()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#acec4bd49b57adfc7a9256a38d10beb25',1,'bdm::experimental::neuroscience::NeuriteElementExt::operator&lt;&lt;()'],['../classbdm_1_1SoHandle.html#a5ca19db8be8b43f55a77ca976927e81f',1,'bdm::SoHandle::operator&lt;&lt;()'],['../classbdm_1_1SoPointer.html#adab3b76265dd5143ad016fd2601ae62e',1,'bdm::SoPointer::operator&lt;&lt;()'],['../classbdm_1_1TimingAggregator.html#a095c5402c60251b53f097a0439b963d2',1,'bdm::TimingAggregator::operator&lt;&lt;()']]]
 ];

@@ -1,6 +1,11 @@
 var namespacebdm_1_1experimental_1_1neuroscience =
 [
     [ "DefaultCompileTimeParam", "structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html", "structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam" ],
+    [ "NeuriteBifurcationEvent", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent" ],
+    [ "NeuriteBranchingEvent", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent" ],
+    [ "NewNeuriteExtensionEvent", "structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html", "structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent" ],
+    [ "SideNeuriteExtensionEvent", "structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html", "structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent" ],
+    [ "SplitNeuriteElementEvent", "structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html", "structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent" ],
     [ "NeuronNeuriteAdapter", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter" ],
     [ "NeuriteElementExt", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt" ],
     [ "Capsule", "structbdm_1_1experimental_1_1neuroscience_1_1Capsule.html", null ],

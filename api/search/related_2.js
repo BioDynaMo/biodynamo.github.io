@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fif',['get_if',['../classbdm_1_1Variant.html#a6a83ee628a852c760ee6528abd79d537',1,'bdm::Variant']]]
+  ['eventhandler',['EventHandler',['../classbdm_1_1CellExt.html#a011685632233292b433bbc9e92ccb9fb',1,'bdm::CellExt::EventHandler()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a011685632233292b433bbc9e92ccb9fb',1,'bdm::experimental::neuroscience::NeuriteElementExt::EventHandler()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a011685632233292b433bbc9e92ccb9fb',1,'bdm::experimental::neuroscience::NeuronSomaExt::EventHandler()']]]
 ];

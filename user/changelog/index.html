@@ -368,6 +368,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../event/" title="Event" class="md-nav__link">
+      Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../substance_initializers/" title="Substance Initialization" class="md-nav__link">
       Substance Initialization
     </a>
@@ -422,6 +434,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#29082018-a373fca" title="29.08.2018 a373fca" class="md-nav__link">
+    29.08.2018 a373fca
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#16072018-3bac827" title="16.07.2018 3bac827" class="md-nav__link">
@@ -501,6 +520,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#29082018-a373fca" title="29.08.2018 a373fca" class="md-nav__link">
+    29.08.2018 a373fca
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#16072018-3bac827" title="16.07.2018 3bac827" class="md-nav__link">
     16.07.2018 3bac827
   </a>
@@ -552,6 +578,53 @@
                 
                 
                 <h1 id="changelog">Changelog</h1>
+<h2 id="29082018-a373fca">29.08.2018 <a href="https://github.com/BioDynaMo/biodynamo/commit/a373fcaad5b50d2ec8ad5a9d8a218adf7850fcc6"><code class="codehilite">a373fca</code></a></h2>
+<p>Add the concept of <a href="event">Events</a>.
+This is an important change to support extensibility. Now, there is a clear
+way to tell BioDynaMo what should happen with a new data member for a specific
+event.</p>
+<table>
+<thead>
+<tr>
+<th>Old</th>
+<th>New</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="codehilite">gAllBmEvents</code></td>
+<td><code class="codehilite">gAllEventIds</code></td>
+</tr>
+<tr>
+<td><code class="codehilite">gNullEvent</code></td>
+<td><code class="codehilite">gNullEventId</code></td>
+</tr>
+<tr>
+<td><code class="codehilite">gCellDivision</code></td>
+<td><code class="codehilite">CellDivisionEvent::kEventId</code></td>
+</tr>
+<tr>
+<td><code class="codehilite">gNeuriteElongation</code></td>
+<td><code class="codehilite">SplitNeuriteElementEvent::kEventId</code></td>
+</tr>
+<tr>
+<td><code class="codehilite">gNeuriteBranching</code></td>
+<td><code class="codehilite">NeuriteBranchingEvent::kEventId</code></td>
+</tr>
+<tr>
+<td><code class="codehilite">gNeuriteBifurcation</code></td>
+<td><code class="codehilite">NeuriteBifurcationEvent::kEventId</code></td>
+</tr>
+<tr>
+<td><code class="codehilite">gNeuriteSideCylinderExtension</code></td>
+<td><code class="codehilite">SideNeuriteExtensionEvent::kEventId</code></td>
+</tr>
+<tr>
+<td></td>
+<td>Simulation objects and biology modules must have an event constructor and event handler function in order to support an event.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="16072018-3bac827">16.07.2018 <code class="codehilite">3bac827</code></h2>
 <p>Change github option for <code class="codehilite">biodynamo new</code>. Previously it was opt-out (<code class="codehilite">--no-github</code>).
 This commit changes it to opt-in (<code class="codehilite">--github</code>).</p>

@@ -1,6 +1,7 @@
 var files =
 [
     [ "biology_module", "dir_482e3b5788813bb8988d91880328383c.html", "dir_482e3b5788813bb8988d91880328383c" ],
+    [ "event", "dir_c4c9d1c37db7e6303b7ab794cedc52f7.html", "dir_c4c9d1c37db7e6303b7ab794cedc52f7" ],
     [ "gpu", "dir_6b3ae6988449b0834e9596fad5d75199.html", "dir_6b3ae6988449b0834e9596fad5d75199" ],
     [ "neuroscience", "dir_19355cc319126bb51dcdac43ee2050e0.html", "dir_19355cc319126bb51dcdac43ee2050e0" ],
     [ "visualization", "dir_2ac5e416e20d6963657ce30aa6dbcd0f.html", "dir_2ac5e416e20d6963657ce30aa6dbcd0f" ],
@@ -17,7 +18,6 @@ var files =
     ] ],
     [ "biology_module_util.h", "biology__module__util_8h.html", "biology__module__util_8h" ],
     [ "bound_space_op.h", "bound__space__op_8h.html", "bound__space__op_8h" ],
-    [ "cell.cc", "cell_8cc.html", "cell_8cc" ],
     [ "cell.h", "cell_8h.html", "cell_8h" ],
     [ "command_line_options.cc", "command__line__options_8cc.html", "command__line__options_8cc" ],
     [ "command_line_options.h", "command__line__options_8h.html", "command__line__options_8h" ],
@@ -121,13 +121,7 @@ var files =
       [ "TransactionalVector", "classbdm_1_1TransactionalVector.html", "classbdm_1_1TransactionalVector" ]
     ] ],
     [ "tuple_util.h", "tuple__util_8h.html", "tuple__util_8h" ],
-    [ "type_util.h", "type__util_8h.html", [
-      [ "type_ternary_operator", "structbdm_1_1type__ternary__operator.html", null ],
-      [ "type_ternary_operator<true, T, U >", "structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4.html", "structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4" ],
-      [ "type_ternary_operator<false, T, U >", "structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4.html", "structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4" ],
-      [ "is_soa", "structbdm_1_1is__soa.html", null ],
-      [ "is_soa_sphere", "structbdm_1_1is__soa__sphere.html", null ]
-    ] ],
+    [ "type_util.h", "type__util_8h.html", "type__util_8h" ],
     [ "variadic_template_parameter_util.h", "variadic__template__parameter__util_8h.html", "variadic__template__parameter__util_8h" ],
     [ "variant.h", "variant_8h.html", "variant_8h" ],
     [ "vtune.h", "vtune_8h.html", "vtune_8h" ],

@@ -5,6 +5,7 @@ var searchData=
   ['text_5f',['text_',['../classbdm_1_1Timing.html#a035522dd4d60281f13073c4f59262611',1,'bdm::Timing']]],
   ['tfileraii',['TFileRaii',['../classbdm_1_1TFileRaii.html',1,'bdm']]],
   ['tfileraii',['TFileRaii',['../classbdm_1_1TFileRaii.html#a78cbc76457bf507b93da8f6848c64352',1,'bdm::TFileRaii::TFileRaii(const std::string &amp;filename, const char *mode)'],['../classbdm_1_1TFileRaii.html#ac7159a60c5d725b33b9f3ab5e7ea95c0',1,'bdm::TFileRaii::TFileRaii(TFile *file)']]],
+  ['theta_5f',['theta_',['../structbdm_1_1CellDivisionEvent.html#aab7e23996075bf387c50a5522bf62c12',1,'bdm::CellDivisionEvent::theta_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#a5a7bf557422f835f4b3716592ba33a89',1,'bdm::experimental::neuroscience::NewNeuriteExtensionEvent::theta_()']]],
   ['thismd',['ThisMD',['../classbdm_1_1CellExt.html#a6a7789e1c47ea33c876fa9cc6ab6a845',1,'bdm::CellExt::ThisMD()'],['../classbdm_1_1CellExt.html#a625fa52d1d23df9dd729c7fe9f79acc1',1,'bdm::CellExt::ThisMD() const '],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#af1a75e23feffe754933556bbb7b9132a',1,'bdm::experimental::neuroscience::NeuriteElementExt::ThisMD()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aab9a482ad88fa6571bfceb7d6ef4214e',1,'bdm::experimental::neuroscience::NeuriteElementExt::ThisMD() const '],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#aaf2df2e29198975693cab99c5dc30e3c',1,'bdm::experimental::neuroscience::NeuronSomaExt::ThisMD()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a596f219c0b99b9ef263df9558a1a4681',1,'bdm::experimental::neuroscience::NeuronSomaExt::ThisMD() const ']]],
   ['threshold_5f',['threshold_',['../structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77',1,'bdm::GrowDivide']]],
   ['threshold_5fdimensions_5f',['threshold_dimensions_',['../classbdm_1_1Grid.html#ac62a60089564240c66628a79f9a07b17',1,'bdm::Grid']]],
@@ -50,5 +51,5 @@ var searchData=
   ['type_5fternary_5foperator_3ctrue_2c_20t_2c_20u_20_3e',['type_ternary_operator&lt;true, T, U &gt;',['../structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4.html',1,'bdm']]],
   ['type_5futil_2eh',['type_util.h',['../type__util_8h.html',1,'']]],
   ['typecontainer',['TypeContainer',['../classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644',1,'bdm::ResourceManager']]],
-  ['types',['Types',['../classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74',1,'bdm::ResourceManager::Types()'],['../structbdm_1_1VariadicTypedefWrapper.html#a40268062df49d992e62f40f07c93d91e',1,'bdm::VariadicTypedefWrapper::types()']]]
+  ['types',['types',['../structbdm_1_1VariadicTypedefWrapper.html#a40268062df49d992e62f40f07c93d91e',1,'bdm::VariadicTypedefWrapper::types()'],['../classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74',1,'bdm::ResourceManager::Types()']]]
 ];

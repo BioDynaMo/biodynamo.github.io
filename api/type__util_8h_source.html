@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-101-g600dc35</span>
+   &#160;<span id="projectnumber">v0.1.0-103-g725d381</span>
    </div>
   </td>
  </tr>
@@ -157,12 +157,16 @@ $(document).ready(function(){initNavTree('type__util_8h_source.html','');});
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="structbdm_1_1is__soa.html">is_soa&lt;typename TSimObject::Backend&gt;::value</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif  // TYPE_UTIL_H_</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacebdm.html#a07415a0247931fb2324b90bcaf78afb3">   59</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacebdm.html#a07415a0247931fb2324b90bcaf78afb3">raw_type</a> = std::remove_pointer_t&lt;std::decay_t&lt;T&gt;&gt;;  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  // TYPE_UTIL_H_</span></div>
 <div class="ttc" id="structbdm_1_1is__soa_html"><div class="ttname"><a href="structbdm_1_1is__soa.html">bdm::is_soa</a></div><div class="ttdoc">Type trait to determine whether a backend is soa. </div><div class="ttdef"><b>Definition:</b> <a href="type__util_8h_source.html#l00043">type_util.h:43</a></div></div>
 <div class="ttc" id="structbdm_1_1type__ternary__operator_html"><div class="ttname"><a href="structbdm_1_1type__ternary__operator.html">bdm::type_ternary_operator</a></div><div class="ttdef"><b>Definition:</b> <a href="type__util_8h_source.html#l00029">type_util.h:29</a></div></div>
 <div class="ttc" id="structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4_html_a7ea0118eb2a2f8a6191db2ec07fd9866"><div class="ttname"><a href="structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4.html#a7ea0118eb2a2f8a6191db2ec07fd9866">bdm::type_ternary_operator&lt;false, T, U &gt;::type</a></div><div class="ttdeci">U type</div><div class="ttdef"><b>Definition:</b> <a href="type__util_8h_source.html#l00038">type_util.h:38</a></div></div>
+<div class="ttc" id="namespacebdm_html_a07415a0247931fb2324b90bcaf78afb3"><div class="ttname"><a href="namespacebdm.html#a07415a0247931fb2324b90bcaf78afb3">bdm::raw_type</a></div><div class="ttdeci">std::remove_pointer_t&lt; std::decay_t&lt; T &gt;&gt; raw_type</div><div class="ttdoc">Type trait that converts T*, T&amp;, T&amp;&amp;, T*&amp; to T </div><div class="ttdef"><b>Definition:</b> <a href="type__util_8h_source.html#l00059">type_util.h:59</a></div></div>
 <div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">bdm::kSphere</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
 <div class="ttc" id="structbdm_1_1is__soa_html_a0709239c8fa5c1a8a76bfa1bd78899d6"><div class="ttname"><a href="structbdm_1_1is__soa.html#a0709239c8fa5c1a8a76bfa1bd78899d6">bdm::is_soa::value</a></div><div class="ttdeci">static const bool value</div><div class="ttdef"><b>Definition:</b> <a href="type__util_8h_source.html#l00044">type_util.h:44</a></div></div>
 <div class="ttc" id="structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4_html_ab6b66c2d3c37efa133a1b091e3872f4c"><div class="ttname"><a href="structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4.html#ab6b66c2d3c37efa133a1b091e3872f4c">bdm::type_ternary_operator&lt;true, T, U &gt;::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> <a href="type__util_8h_source.html#l00033">type_util.h:33</a></div></div>
@@ -176,7 +180,7 @@ $(document).ready(function(){initNavTree('type__util_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="type__util_8h.html">type_util.h</a></li>
-    <li class="footer">Generated on Mon Aug 27 2018 09:45:36 for BioDynaMo by
+    <li class="footer">Generated on Wed Aug 29 2018 08:45:37 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
