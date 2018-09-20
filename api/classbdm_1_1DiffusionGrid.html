@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-104-g2ce12be</span>
+   &#160;<span id="projectnumber">v0.1.0-105-gb075ea6</span>
    </div>
   </td>
  </tr>
@@ -210,6 +210,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f83b22e624ebe2410db4644ed85fa47"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a7f83b22e624ebe2410db4644ed85fa47"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a7f83b22e624ebe2410db4644ed85fa47">AddInitializer</a> (F function)</td></tr>
 <tr class="separator:a7f83b22e624ebe2410db4644ed85fa47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046b1657bfdd383bff5cd08cb8faa463"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a046b1657bfdd383bff5cd08cb8faa463">IsFixedSubstance</a> ()</td></tr>
+<tr class="separator:a046b1657bfdd383bff5cd08cb8faa463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -271,6 +273,8 @@ Private Attributes</h2></td></tr>
 double)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a7e04a5c02176b97633c2dd118c381e6d">initializers_</a> = {}</td></tr>
 <tr class="memdesc:a7e04a5c02176b97633c2dd118c381e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of functions that initialize this diffusion grid.  <a href="#a7e04a5c02176b97633c2dd118c381e6d">More...</a><br/></td></tr>
 <tr class="separator:a7e04a5c02176b97633c2dd118c381e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ff04feac82276cb3f1d31dbf074788"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac5ff04feac82276cb3f1d31dbf074788">init_gradient_</a> = false</td></tr>
+<tr class="separator:ac5ff04feac82276cb3f1d31dbf074788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that computes the diffusion of extracellular substances It maintains the concentration and gradient of a single substance </p>
@@ -407,7 +411,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00676">676</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00698">698</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +440,15 @@ template&lt;typename F &gt; </div>
 <p>where c(x) implies the concentration at position x</p>
 <p>At the edges the gradient is the same as the box next to it </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00523">523</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00535">535</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DiffusionGrid_a86d03c3d92b607d4c65a17bc30c165d2_cgraph.svg" width="331" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -553,6 +565,14 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00384">384</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DiffusionGrid_ab51c423cea72cee71a7af99b0c1ee770_cgraph.svg" width="326" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a02e069de1edb14a404da425037d63f7e"></a>
@@ -576,7 +596,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00439">439</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00445">445</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DiffusionGrid_a02e069de1edb14a404da425037d63f7e_cgraph.svg" width="374" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -653,7 +681,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00647">647</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00669">669</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -678,7 +706,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00649">649</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00671">671</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -704,7 +732,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00620">620</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00642">642</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -738,7 +766,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00629">629</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00651">651</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -774,7 +802,7 @@ Here is the caller graph for this function:</div>
 
 <p>Calculates the box index of the substance at specified position. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00636">636</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00658">658</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -807,7 +835,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00655">655</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00677">677</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +860,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00673">673</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00695">695</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -860,7 +888,7 @@ Here is the call graph for this function:</div>
 
 <p>Get the concentration at specified position. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00597">597</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00619">619</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -893,7 +921,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00645">645</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00667">667</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -918,7 +946,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00661">661</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00683">683</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -943,7 +971,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00667">667</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00689">689</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -968,7 +996,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00665">665</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00687">687</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -993,7 +1021,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00663">663</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00685">685</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1031,7 +1059,7 @@ Here is the call graph for this function:</div>
 
 <p>Get the (normalized) gradient at specified position. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00602">602</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00624">624</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1064,7 +1092,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00653">653</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00675">675</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1117,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00651">651</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00673">673</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1142,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00671">671</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00693">693</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1167,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00657">657</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00679">679</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1164,7 +1192,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00659">659</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00681">681</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1230,7 @@ Here is the call graph for this function:</div>
 
 <p>Increase the concentration at specified position with specified amount. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00580">580</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00602">602</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1256,7 +1284,7 @@ Here is the caller graph for this function:</div>
 
 <p>Increase the concentration at specified box with specified amount. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00587">587</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00609">609</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1295,6 +1323,39 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a046b1657bfdd383bff5cd08cb8faa463"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::DiffusionGrid::IsFixedSubstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00703">703</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DiffusionGrid_a046b1657bfdd383bff5cd08cb8faa463_icgraph.svg" width="374" height="182"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="afadc126df0a3c01d5f547bbc8b16cdd3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1316,7 +1377,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00669">669</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00691">691</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1417,7 +1478,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00643">643</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00665">665</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1443,7 +1504,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00641">641</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00663">663</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1510,7 +1571,7 @@ Here is the call graph for this function:</div>
 
 <p>The side length of each box. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00686">686</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00714">714</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1595,7 @@ Here is the call graph for this function:</div>
 
 <p>the volume of each box </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00688">688</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00716">716</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1619,7 @@ Here is the call graph for this function:</div>
 
 <p>The array of concentration values. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00690">690</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00718">718</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1582,7 +1643,7 @@ Here is the call graph for this function:</div>
 
 <p>An extra concentration data buffer for faster value updating. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00692">692</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00720">720</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1667,7 @@ Here is the call graph for this function:</div>
 
 <p>The maximum concentration value that a box can have. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00696">696</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00724">724</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1630,7 +1691,7 @@ Here is the call graph for this function:</div>
 
 <p>The diffusion coefficients [cc, cw, ce, cs, cn, cb, ct]. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00698">698</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00726">726</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1654,7 +1715,7 @@ Here is the call graph for this function:</div>
 
 <p>The array of gradients (x, y, z) </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00694">694</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00722">722</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1678,7 +1739,29 @@ Here is the call graph for this function:</div>
 
 <p>The grid dimensions of the diffusion grid. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00702">702</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00730">730</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5ff04feac82276cb3f1d31dbf074788"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::DiffusionGrid::init_gradient_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00744">744</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1702,7 +1785,7 @@ Here is the call graph for this function:</div>
 
 <p>Flag to determine if this grid has been initialized. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00708">708</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00736">736</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1809,7 @@ Here is the call graph for this function:</div>
 
 <p>A list of functions that initialize this diffusion grid. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00714">714</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00742">742</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1750,7 +1833,7 @@ Here is the call graph for this function:</div>
 
 <p>The decay constant. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00700">700</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00728">728</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1774,7 +1857,7 @@ Here is the call graph for this function:</div>
 
 <p>The number of boxes at each axis [x, y, z]. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00704">704</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00732">732</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1798,7 +1881,7 @@ Here is the call graph for this function:</div>
 
 <p>If false, grid dimensions are even; if true, they are odd. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00712">712</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00740">740</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1822,7 +1905,7 @@ Here is the call graph for this function:</div>
 
 <p>The resolution of the diffusion grid. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00710">710</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00738">738</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1846,7 +1929,7 @@ Here is the call graph for this function:</div>
 
 <p>The id of the substance of this grid. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00682">682</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00710">710</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1953,7 @@ Here is the call graph for this function:</div>
 
 <p>The name of the substance of this grid. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00684">684</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00712">712</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1894,7 +1977,7 @@ Here is the call graph for this function:</div>
 
 <p>The total number of boxes in the diffusion grid. </p>
 
-<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00706">706</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p>Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00734">734</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +1990,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a></li>
-    <li class="footer">Generated on Wed Aug 29 2018 13:37:19 for BioDynaMo by
+    <li class="footer">Generated on Thu Sep 20 2018 07:55:20 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -19,6 +19,7 @@ var searchData=
   ['isatend',['IsAtEnd',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#aa2ba7f459dea1694750319fcfb6fdad5',1,'bdm::Grid::Box::Iterator::IsAtEnd()'],['../structbdm_1_1Grid_1_1NeighborIterator.html#ad6525b3b6a7239666175f894b500793d',1,'bdm::Grid::NeighborIterator::IsAtEnd()']]],
   ['isaxon',['IsAxon',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a44712e47cd760e0bbc736979aa64d110',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['isempty',['IsEmpty',['../structbdm_1_1Grid_1_1Box.html#a9df702a81f2bf77b39174cfebfb30ffa',1,'bdm::Grid::Box']]],
+  ['isfixedsubstance',['IsFixedSubstance',['../classbdm_1_1DiffusionGrid.html#a046b1657bfdd383bff5cd08cb8faa463',1,'bdm::DiffusionGrid']]],
   ['isinitialized',['IsInitialized',['../classbdm_1_1DiffusionGrid.html#afadc126df0a3c01d5f547bbc8b16cdd3',1,'bdm::DiffusionGrid::IsInitialized()'],['../classbdm_1_1Grid.html#a0944b5015955315246603632c6eeb05f',1,'bdm::Grid::IsInitialized()']]],
   ['isneuriteelement',['IsNeuriteElement',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#ae2ffe7cc3a2c157cda3cbd2819f3a6d1',1,'bdm::experimental::neuroscience::NeuronNeuriteAdapter']]],
   ['isneuronsoma',['IsNeuronSoma',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a8f555cd029b6589ed3d15a54fa729ba3',1,'bdm::experimental::neuroscience::NeuronNeuriteAdapter']]],

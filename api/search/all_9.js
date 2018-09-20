@@ -6,6 +6,7 @@ var searchData=
   ['increaseconcentrationby',['IncreaseConcentrationBy',['../classbdm_1_1DiffusionGrid.html#a6222e3f58b39f8b5fb8a4b6fd18b11be',1,'bdm::DiffusionGrid::IncreaseConcentrationBy(const std::array&lt; double, 3 &gt; &amp;position, double amount)'],['../classbdm_1_1DiffusionGrid.html#a899d8de7216180b98e6d80ab70ecae2e',1,'bdm::DiffusionGrid::IncreaseConcentrationBy(size_t idx, double amount)']]],
   ['increment',['Increment',['../classbdm_1_1CircularBuffer.html#a2ea2ceb7273c5a61283e86ce4ec75e9b',1,'bdm::CircularBuffer']]],
   ['info',['Info',['../classbdm_1_1Log.html#a416ad3b1f970835cf2d3041d1e57cfa5',1,'bdm::Log']]],
+  ['init_5fgradient_5f',['init_gradient_',['../classbdm_1_1DiffusionGrid.html#ac5ff04feac82276cb3f1d31dbf074788',1,'bdm::DiffusionGrid']]],
   ['initialize',['Initialize',['../classbdm_1_1DiffusionGrid.html#afa16a2da1af4fe02b22abe25eca9ef2f',1,'bdm::DiffusionGrid::Initialize()'],['../classbdm_1_1Grid.html#a133092c67ff0e2ce0f0ccc3710b4e5a0',1,'bdm::Grid::Initialize()'],['../classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed',1,'bdm::Scheduler::Initialize()'],['../structbdm_1_1Simulation.html#a26014e839330bc31a403cc98e0469ea0',1,'bdm::Simulation::Initialize()'],['../classbdm_1_1SimulationObjectVector.html#a45c1c6a776e920edcb0940d28c3c773b',1,'bdm::SimulationObjectVector::Initialize()'],['../classbdm_1_1InSituPipeline.html#a0f9733baaa9cc4fb637312635ccd16f0',1,'bdm::InSituPipeline::Initialize()']]],
   ['initialized_5f',['initialized_',['../classbdm_1_1DiffusionGrid.html#a48946f820cc47499ed52f019b5f952d8',1,'bdm::DiffusionGrid::initialized_()'],['../classbdm_1_1Grid.html#a136c9364d62a2efbe216372b2fbfb8e7',1,'bdm::Grid::initialized_()']]],
   ['initializemembers',['InitializeMembers',['../structbdm_1_1Simulation.html#a18aef979b7deddb50ec74037163f9598',1,'bdm::Simulation']]],
@@ -21,8 +22,8 @@ var searchData=
   ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html#a101629c311f2e143f0d41954be1a9bb7',1,'bdm::InlineVector::InlineVector(TRootIOCtor *io_ctor)'],['../classbdm_1_1InlineVector.html#a135924848eb185f3e7e612e7afc517a5',1,'bdm::InlineVector::InlineVector()'],['../classbdm_1_1InlineVector.html#a4f4812128da89c98f198e28f3da38354',1,'bdm::InlineVector::InlineVector(const InlineVector&lt; T, N &gt; &amp;other)'],['../classbdm_1_1InlineVector.html#afac5095887156661b80c560bef3d428a',1,'bdm::InlineVector::InlineVector(InlineVector&lt; T, N &gt; &amp;&amp;other) noexcept']]],
   ['insitu_5fpipeline_2eh',['insitu_pipeline.h',['../insitu__pipeline_8h.html',1,'']]],
   ['insitupipeline',['InSituPipeline',['../classbdm_1_1InSituPipeline.html',1,'bdm']]],
-  ['integraltypewrapper',['IntegralTypeWrapper',['../classbdm_1_1IntegralTypeWrapper.html',1,'bdm']]],
   ['integraltypewrapper',['IntegralTypeWrapper',['../classbdm_1_1IntegralTypeWrapper.html#ae45ba02474b6cb167cfc0185600c61ed',1,'bdm::IntegralTypeWrapper::IntegralTypeWrapper(const T &amp;data)'],['../classbdm_1_1IntegralTypeWrapper.html#a6debd50c53e9f8364daf0487a8de1db6',1,'bdm::IntegralTypeWrapper::IntegralTypeWrapper(TRootIOCtor *io_ctor)']]],
+  ['integraltypewrapper',['IntegralTypeWrapper',['../classbdm_1_1IntegralTypeWrapper.html',1,'bdm']]],
   ['io_5futil_2ecc',['io_util.cc',['../io__util_8cc.html',1,'']]],
   ['io_5futil_2eh',['io_util.h',['../io__util_8h.html',1,'']]],
   ['is_5faxon_5f',['is_axon_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a56f1bc04ba1d5c0ff3bf050e0450f735',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
@@ -34,11 +35,12 @@ var searchData=
   ['isatend',['IsAtEnd',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#aa2ba7f459dea1694750319fcfb6fdad5',1,'bdm::Grid::Box::Iterator::IsAtEnd()'],['../structbdm_1_1Grid_1_1NeighborIterator.html#ad6525b3b6a7239666175f894b500793d',1,'bdm::Grid::NeighborIterator::IsAtEnd()']]],
   ['isaxon',['IsAxon',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a44712e47cd760e0bbc736979aa64d110',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['isempty',['IsEmpty',['../structbdm_1_1Grid_1_1Box.html#a9df702a81f2bf77b39174cfebfb30ffa',1,'bdm::Grid::Box']]],
+  ['isfixedsubstance',['IsFixedSubstance',['../classbdm_1_1DiffusionGrid.html#a046b1657bfdd383bff5cd08cb8faa463',1,'bdm::DiffusionGrid']]],
   ['isinitialized',['IsInitialized',['../classbdm_1_1DiffusionGrid.html#afadc126df0a3c01d5f547bbc8b16cdd3',1,'bdm::DiffusionGrid::IsInitialized()'],['../classbdm_1_1Grid.html#a0944b5015955315246603632c6eeb05f',1,'bdm::Grid::IsInitialized()']]],
   ['isneuriteelement',['IsNeuriteElement',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#ae2ffe7cc3a2c157cda3cbd2819f3a6d1',1,'bdm::experimental::neuroscience::NeuronNeuriteAdapter']]],
   ['isneuronsoma',['IsNeuronSoma',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a8f555cd029b6589ed3d15a54fa729ba3',1,'bdm::experimental::neuroscience::NeuronNeuriteAdapter']]],
   ['issotype',['IsSoType',['../classbdm_1_1SimulationObject.html#a4b39656ce319096f68c93b26e76a2f1a',1,'bdm::SimulationObject::IsSoType()'],['../classbdm_1_1SimulationObject.html#a7525cbf361b78f7f2c847629e8d37745',1,'bdm::SimulationObject::IsSoType(const TSo *object)']]],
   ['isterminal',['IsTerminal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ac35dc2737816d652cf8f6c15b482b293',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
-  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a9c207bfebd872662e7ad9fc74a5b6065',1,'bdm::Grid::Box::Iterator::Iterator()'],['../classbdm_1_1TransactionalVector.html#a3e23584d0dd270c3481816a0ac9dbb23',1,'bdm::TransactionalVector::iterator()']]],
-  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]]
+  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]],
+  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a9c207bfebd872662e7ad9fc74a5b6065',1,'bdm::Grid::Box::Iterator::Iterator()'],['../classbdm_1_1TransactionalVector.html#a3e23584d0dd270c3481816a0ac9dbb23',1,'bdm::TransactionalVector::iterator()']]]
 ];

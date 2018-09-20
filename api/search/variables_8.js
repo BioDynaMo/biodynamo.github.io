@@ -1,6 +1,7 @@
 var searchData=
 [
   ['id_5f',['id_',['../structbdm_1_1Simulation.html#a9ac46e8719e4c69061da4bebb24697ce',1,'bdm::Simulation']]],
+  ['init_5fgradient_5f',['init_gradient_',['../classbdm_1_1DiffusionGrid.html#ac5ff04feac82276cb3f1d31dbf074788',1,'bdm::DiffusionGrid']]],
   ['initialized_5f',['initialized_',['../classbdm_1_1DiffusionGrid.html#a48946f820cc47499ed52f019b5f952d8',1,'bdm::DiffusionGrid::initialized_()'],['../classbdm_1_1Grid.html#a136c9364d62a2efbe216372b2fbfb8e7',1,'bdm::Grid::initialized_()']]],
   ['initializers_5f',['initializers_',['../classbdm_1_1DiffusionGrid.html#a7e04a5c02176b97633c2dd118c381e6d',1,'bdm::DiffusionGrid']]],
   ['is_5faxon_5f',['is_axon_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a56f1bc04ba1d5c0ff3bf050e0450f735',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
