@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['activate',['Activate',['../structbdm_1_1Simulation.html#a83eec14c7f24abd7185519ac84bf4062',1,'bdm::Simulation']]],
+  ['activate',['Activate',['../structbdm_1_1Simulation.html#a8383591632e5fb3c17e4224931f33bd9',1,'bdm::Simulation']]],
   ['active_5f',['active_',['../structbdm_1_1Simulation.html#a06d525ae165cf7ed24cd309f375d1548',1,'bdm::Simulation']]],
   ['actual_5flength_5f',['actual_length_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a2b6710318f9ef15b9ccb2ea88e9ba8bc',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['add',['Add',['../structbdm_1_1Math.html#a6e410e3dc82bab5dd53e0157df3587b2',1,'bdm::Math']]],
@@ -26,8 +26,7 @@ var searchData=
   ['applyonalltypes',['ApplyOnAllTypes',['../classbdm_1_1ResourceManager.html#a7a8d6e674e70b39ec38b3ae726d912f5',1,'bdm::ResourceManager']]],
   ['applyonalltypesparallel',['ApplyOnAllTypesParallel',['../classbdm_1_1ResourceManager.html#abfae576a005f5cca9d8e1b7f0ec11e26',1,'bdm::ResourceManager']]],
   ['applyonelement',['ApplyOnElement',['../classbdm_1_1ResourceManager.html#a4255c44092eb446798812ad0bb367b8e',1,'bdm::ResourceManager']]],
-  ['assignfromconfig',['AssignFromConfig',['../structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a',1,'bdm::Param']]],
-  ['atomictypes',['AtomicTypes',['../structbdm_1_1DefaultCompileTimeParam.html#a4d0962997a120e824c9f8fc55ee41a9d',1,'bdm::DefaultCompileTimeParam']]],
+  ['assignfromconfig',['AssignFromConfig',['../structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ae365fefa1320254ffcfce9bc65ea2f5b',1,'bdm::experimental::neuroscience::Param::AssignFromConfig()'],['../structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a',1,'bdm::Param::AssignFromConfig()']]],
   ['axis',['Axis',['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848',1,'bdm']]],
   ['axis_5f',['axis_',['../structbdm_1_1Uniform.html#a3ece56bf1a1596a6764827ebeb7e5a7c',1,'bdm::Uniform::axis_()'],['../structbdm_1_1GaussianBand.html#aee290aa7e9a60587e1491857b9669378',1,'bdm::GaussianBand::axis_()'],['../structbdm_1_1PoissonBand.html#a32b1b437a155d8d771ec460f48bfb393',1,'bdm::PoissonBand::axis_()']]]
 ];

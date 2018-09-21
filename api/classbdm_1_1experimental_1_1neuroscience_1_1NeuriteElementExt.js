@@ -2,7 +2,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt =
 [
     [ "Backend", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#affcdd0087bacaaf4171eb6248e42f697", null ],
     [ "Base", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a86b24e62f97db69df075dd419230978d", null ],
-    [ "BiologyModules", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a0210857fb088e07895488e3e7d4337d3", null ],
+    [ "BiologyModules", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ac0328220b3487e1a5ef561336117065f", null ],
     [ "MostDerived", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aca6c5356ac82eb01a3796f256dabfb52", null ],
     [ "MostDerivedScalar", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a075ed25bc56ffef7cb26835c69e36c04", null ],
     [ "MostDerivedSoPtr", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a48f7184c02146707b604ce713b8085b1", null ],

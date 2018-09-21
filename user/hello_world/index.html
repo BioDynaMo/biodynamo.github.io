@@ -425,6 +425,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../parameter/" title="Parameter" class="md-nav__link">
+      Parameter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../event/" title="Event" class="md-nav__link">
       Event
     </a>
@@ -575,10 +587,12 @@ this simple simulation.</p>
 <h3 id="extra-cell-division">Extra: Cell division</h3>
 <p>Let's make the simulation more interesting by adding a biological behavior to the
 cell: cell division. Open the <code class="codehilite">src/hello_world.h</code></p>
-<p>Replace the <code class="codehilite">CompileTimeParameters</code> struct with the following one:</p>
-<div class="codehilite"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Backend</span><span class="o">&gt;</span>
-<span class="k">struct</span> <span class="nl">CompileTimeParam</span> <span class="p">:</span> <span class="k">public</span> <span class="n">DefaultCompileTimeParam</span><span class="o">&lt;</span><span class="n">Backend</span><span class="o">&gt;</span> <span class="p">{</span>
-  <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">GrowDivide</span><span class="o">&gt;</span><span class="p">;</span>
+<p>Replace the line starting with <code class="codehilite">BDM_CTPARAM()</code> with the following one:</p>
+<div class="codehilite"><pre><span></span><span class="n">BDM_CTPARAM</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">BDM_CTPARAM_HEADER</span><span class="p">();</span>
+
+  <span class="c1">// Override default BiologyModules for Cell</span>
+  <span class="n">BDM_CTPARAM_FOR</span><span class="p">(</span><span class="n">bdm</span><span class="p">,</span> <span class="n">Cell</span><span class="p">)</span> <span class="p">{</span> <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">CTList</span><span class="o">&lt;</span><span class="n">GrowDivide</span><span class="o">&gt;</span><span class="p">;</span> <span class="p">};</span>
 <span class="p">};</span>
 </pre></div>
 

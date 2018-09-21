@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-105-gb075ea6</span>
+   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
    </div>
   </td>
  </tr>
@@ -129,8 +129,8 @@ Collaboration diagram for bdm::ResourceManager&lt; TCompileTimeParam &gt;:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a3e9300450dc45e32d02303902cd64210"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210">Backend</a> = typename TCompileTimeParam::SimulationBackend</td></tr>
 <tr class="separator:a3e9300450dc45e32d02303902cd64210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad980443bdaadf06ed635a4e2f0308e74"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74">Types</a> = typename TCompileTimeParam::AtomicTypes</td></tr>
-<tr class="separator:ad980443bdaadf06ed635a4e2f0308e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7afa51cd013ab7b35aa8bfb1062ade"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade">Types</a> = typename TCompileTimeParam::SimObjectTypes</td></tr>
+<tr class="separator:aff7afa51cd013ab7b35aa8bfb1062ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad93ce66980fcc44e42779d5b1d96e644"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad93ce66980fcc44e42779d5b1d96e644"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">TypeContainer</a> = typename Backend::template Container&lt; T &gt;</td></tr>
 <tr class="memdesc:ad93ce66980fcc44e42779d5b1d96e644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine Container based on the Backend.  <a href="#ad93ce66980fcc44e42779d5b1d96e644">More...</a><br/></td></tr>
@@ -215,7 +215,7 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a88ff27650f7c81ffff25e2ef5c3f8587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1ConvertToContainerTuple.html">ConvertToContainerTuple</a><br class="typebreak"/>
-&lt; <a class="el" href="classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210">Backend</a>, <a class="el" href="classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74">Types</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a88ff27650f7c81ffff25e2ef5c3f8587">data_</a></td></tr>
+&lt; <a class="el" href="classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210">Backend</a>, <a class="el" href="classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade">Types</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a88ff27650f7c81ffff25e2ef5c3f8587">data_</a></td></tr>
 <tr class="separator:a88ff27650f7c81ffff25e2ef5c3f8587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d351fcccfba77cd80ca7f4ef18db368"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a9d351fcccfba77cd80ca7f4ef18db368">diffusion_grids_</a></td></tr>
 <tr class="separator:a9d351fcccfba77cd80ca7f4ef18db368"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,10 +229,10 @@ Friends</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt;<br/>
 class bdm::ResourceManager&lt; TCompileTimeParam &gt;</h3>
 
-<p><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> holds a container for each atomic type in the simulation. It provides methods to get a certain container, execute a function on a a certain element, all elements of a certain type or all elements inside the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Elements are uniquely identified with its <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>. Furthermore, the types specified in AtomicTypes are backend invariant Hence it doesn't matter which version of the Backend is specified. <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> internally uses the TBackendWrapper parameter to convert all atomic types to the desired backend. This makes user code easier since atomic types can be specified as scalars. </p>
+<p><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> holds a container for each atomic type in the simulation. It provides methods to get a certain container, execute a function on a a certain element, all elements of a certain type or all elements inside the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Elements are uniquely identified with its <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>. Furthermore, the types specified in SimObjectTypes are backend invariant Hence it doesn't matter which version of the Backend is specified. <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> internally uses the TBackendWrapper parameter to convert all SimObjectTypes to the desired backend. This makes user code easier since SimObjectTypes can be specified as scalars. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TCompileTimeParam</td><td>type that containes the compile time parameter for a specific simulation. <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> extracts Backend and AtomicTypes. </td></tr>
+    <tr><td class="paramname">TCompileTimeParam</td><td>type that containes the compile time parameter for a specific simulation. <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> extracts Backend and SimObjectTypes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,14 +295,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad980443bdaadf06ed635a4e2f0308e74"></a>
+<a class="anchor" id="aff7afa51cd013ab7b35aa8bfb1062ade"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::<a class="el" href="classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74">Types</a> =  typename TCompileTimeParam::AtomicTypes</td>
+          <td class="memname">using <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::<a class="el" href="classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade">Types</a> =  typename TCompileTimeParam::SimObjectTypes</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1071,7 +1071,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structbdm_1_1ConvertToContainerTuple.html">ConvertToContainerTuple</a>&lt;<a class="el" href="classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210">Backend</a>, <a class="el" href="classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74">Types</a>&gt;::type <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::data_</td>
+          <td class="memname"><a class="el" href="structbdm_1_1ConvertToContainerTuple.html">ConvertToContainerTuple</a>&lt;<a class="el" href="classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210">Backend</a>, <a class="el" href="classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade">Types</a>&gt;::type <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::data_</td>
         </tr>
       </table>
   </td>
@@ -1119,7 +1119,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a></li>
-    <li class="footer">Generated on Thu Sep 20 2018 07:55:20 for BioDynaMo by
+    <li class="footer">Generated on Fri Sep 21 2018 07:26:41 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

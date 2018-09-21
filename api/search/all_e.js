@@ -24,5 +24,5 @@ var searchData=
   ['optimer_3c_20bdm_3a_3adisplacementop_3c_20bdm_3a_3asimulation_20_3e_20_3e',['OpTimer&lt; bdm::DisplacementOp&lt; bdm::Simulation &gt; &gt;',['../structbdm_1_1OpTimer.html',1,'bdm']]],
   ['optimer_3c_20bdm_3a_3adisplacementop_3c_20tsimulation_20_3e_20_3e',['OpTimer&lt; bdm::DisplacementOp&lt; TSimulation &gt; &gt;',['../structbdm_1_1OpTimer.html',1,'bdm']]],
   ['originof',['OriginOf',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a7fa9dce9c4313fbfb1a638dca4fe5a44',1,'bdm::experimental::neuroscience::NeuronNeuriteAdapter::OriginOf()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#afef33b19ea3f8c043f03605f9ebfa0d3',1,'bdm::experimental::neuroscience::NeuriteElementExt::OriginOf()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a31df8344960c37d71a0ff2be2b50fe2d',1,'bdm::experimental::neuroscience::NeuronSomaExt::OriginOf()']]],
-  ['output_5fdir_5f',['output_dir_',['../structbdm_1_1Simulation.html#aa44aaa5236e93040202a6fbd1623db83',1,'bdm::Simulation']]]
+  ['output_5fdir_5f',['output_dir_',['../structbdm_1_1Param.html#af9c75f427be9fa054a7a7f6a15171896',1,'bdm::Param::output_dir_()'],['../structbdm_1_1Simulation.html#aa44aaa5236e93040202a6fbd1623db83',1,'bdm::Simulation::output_dir_()']]]
 ];

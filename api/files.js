@@ -4,6 +4,7 @@ var files =
     [ "event", "dir_c4c9d1c37db7e6303b7ab794cedc52f7.html", "dir_c4c9d1c37db7e6303b7ab794cedc52f7" ],
     [ "gpu", "dir_6b3ae6988449b0834e9596fad5d75199.html", "dir_6b3ae6988449b0834e9596fad5d75199" ],
     [ "neuroscience", "dir_19355cc319126bb51dcdac43ee2050e0.html", "dir_19355cc319126bb51dcdac43ee2050e0" ],
+    [ "util", "dir_23ec12649285f9fabf3a6b7380226c28.html", "dir_23ec12649285f9fabf3a6b7380226c28" ],
     [ "visualization", "dir_2ac5e416e20d6963657ce30aa6dbcd0f.html", "dir_2ac5e416e20d6963657ce30aa6dbcd0f" ],
     [ "backend.h", "backend_8h.html", [
       [ "VectorPlaceholder", "classbdm_1_1VectorPlaceholder.html", "classbdm_1_1VectorPlaceholder" ],
@@ -23,6 +24,9 @@ var files =
     [ "command_line_options.h", "command__line__options_8h.html", "command__line__options_8h" ],
     [ "commit_op.h", "commit__op_8h.html", [
       [ "CommitOp", "classbdm_1_1CommitOp.html", "classbdm_1_1CommitOp" ]
+    ] ],
+    [ "compile_time_list.h", "compile__time__list_8h.html", [
+      [ "CTList", "structbdm_1_1CTList.html", "structbdm_1_1CTList" ]
     ] ],
     [ "compile_time_param.h", "compile__time__param_8h.html", "compile__time__param_8h" ],
     [ "constant.h", "constant_8h.html", [
@@ -77,12 +81,12 @@ var files =
     [ "model_initializer.h", "model__initializer_8h.html", [
       [ "ModelInitializer", "structbdm_1_1ModelInitializer.html", null ]
     ] ],
-    [ "op_timer.h", "op__timer_8h.html", "op__timer_8h" ],
-    [ "param.cc", "param_8cc.html", "param_8cc" ],
+    [ "param.cc", "param_8cc.html", null ],
     [ "param.h", "param_8h.html", [
       [ "Param", "structbdm_1_1Param.html", "structbdm_1_1Param" ],
       [ "VisualizeDiffusion", "structbdm_1_1Param_1_1VisualizeDiffusion.html", "structbdm_1_1Param_1_1VisualizeDiffusion" ]
     ] ],
+    [ "op_timer.h", "op__timer_8h.html", "op__timer_8h" ],
     [ "random.cc", "random_8cc.html", null ],
     [ "random.h", "random_8h.html", [
       [ "Random", "classbdm_1_1Random.html", "classbdm_1_1Random" ]
@@ -122,7 +126,6 @@ var files =
     ] ],
     [ "tuple_util.h", "tuple__util_8h.html", "tuple__util_8h" ],
     [ "type_util.h", "type__util_8h.html", "type__util_8h" ],
-    [ "variadic_template_parameter_util.h", "variadic__template__parameter__util_8h.html", "variadic__template__parameter__util_8h" ],
     [ "variant.h", "variant_8h.html", "variant_8h" ],
     [ "vtune.h", "vtune_8h.html", "vtune_8h" ],
     [ "vtune_op_wrapper.h", "vtune__op__wrapper_8h.html", [

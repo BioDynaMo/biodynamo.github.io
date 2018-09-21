@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-105-gb075ea6</span>
+   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
    </div>
   </td>
  </tr>
@@ -166,8 +166,8 @@ Public Types</h2></td></tr>
 <tr class="separator:ad98b5a523418673290b68aa76883317c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc6c8dc9fa9722e0d623f826476cc383"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1CellExt.html#afc6c8dc9fa9722e0d623f826476cc383">Simulation_t</a> = <a class="el" href="structbdm_1_1Simulation.html">Simulation</a>&lt; typename TCompileTimeParam::template <a class="el" href="classbdm_1_1CellExt.html#ab9b31cdb4373dec124a6a94a3b7277c6">Self</a>&lt; <a class="el" href="structbdm_1_1Soa.html">Soa</a> &gt;&gt;</td></tr>
 <tr class="separator:afc6c8dc9fa9722e0d623f826476cc383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd102ffcfe4414d9012a0d1c5d9afe1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1CellExt.html#aecd102ffcfe4414d9012a0d1c5d9afe1">BiologyModules</a> = typename TCompileTimeParam::BiologyModules</td></tr>
-<tr class="separator:aecd102ffcfe4414d9012a0d1c5d9afe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad92722306d9fe3721ec83cd83d89c07"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1CellExt.html#aad92722306d9fe3721ec83cd83d89c07">BiologyModules</a> = typename TCompileTimeParam::template CTMap&lt; <a class="el" href="classbdm_1_1CellExt.html#a949bfdd1b14cc1e531c150dd7ab96f87">MostDerivedScalar</a>, 0 &gt;::BiologyModules::Variant_t</td></tr>
+<tr class="separator:aad92722306d9fe3721ec83cd83d89c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -347,7 +347,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6492b7b47edf591cbfc277f8728bfb35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1CellExt.html#aaee1297210d547d7dcaa5e04a2b6c444">vec</a>&lt; std::vector<br class="typebreak"/>
-&lt; <a class="el" href="classbdm_1_1CellExt.html#aecd102ffcfe4414d9012a0d1c5d9afe1">BiologyModules</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1CellExt.html#a6492b7b47edf591cbfc277f8728bfb35">biology_modules_</a></td></tr>
+&lt; <a class="el" href="classbdm_1_1CellExt.html#aad92722306d9fe3721ec83cd83d89c07">BiologyModules</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1CellExt.html#a6492b7b47edf591cbfc277f8728bfb35">biology_modules_</a></td></tr>
 <tr class="memdesc:a6492b7b47edf591cbfc277f8728bfb35"><td class="mdescLeft">&#160;</td><td class="mdescRight">collection of biology modules which define the internal behavior  <a href="#a6492b7b47edf591cbfc277f8728bfb35">More...</a><br/></td></tr>
 <tr class="separator:a6492b7b47edf591cbfc277f8728bfb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -465,19 +465,19 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 
 </div>
 </div>
-<a class="anchor" id="aecd102ffcfe4414d9012a0d1c5d9afe1"></a>
+<a class="anchor" id="aad92722306d9fe3721ec83cd83d89c07"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDerived  = char, template&lt; typename, typename &gt; class TBase = bdm::SimulationObject_TCTParam_TDerived&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classbdm_1_1CellExt.html">bdm::CellExt</a>&lt; TCompileTimeParam, TDerived, TBase &gt;::<a class="el" href="classbdm_1_1CellExt.html#aecd102ffcfe4414d9012a0d1c5d9afe1">BiologyModules</a> =  typename TCompileTimeParam::BiologyModules</td>
+          <td class="memname">using <a class="el" href="classbdm_1_1CellExt.html">bdm::CellExt</a>&lt; TCompileTimeParam, TDerived, TBase &gt;::<a class="el" href="classbdm_1_1CellExt.html#aad92722306d9fe3721ec83cd83d89c07">BiologyModules</a> =  typename TCompileTimeParam::template CTMap&lt;<a class="el" href="classbdm_1_1CellExt.html#a949bfdd1b14cc1e531c150dd7ab96f87">MostDerivedScalar</a>, 0&gt;::BiologyModules::Variant_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00060">60</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00062">62</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +777,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00061">61</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00063">63</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -805,7 +805,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00062">62</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00064">64</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -833,7 +833,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00065">65</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00067">67</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -875,7 +875,7 @@ template&lt;typename TMother &gt; </div>
 <p>This constructor is used to create daughter 2 for a cell division event </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00071">71</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00073">73</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -910,7 +910,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00137">137</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00139">139</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -948,7 +948,7 @@ template&lt;typename TBiologyModule &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00356">356</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00358">358</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -976,7 +976,7 @@ template&lt;typename TCompileTimeParam , typename TDerived , template&lt; typena
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00465">465</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00467">467</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1016,7 @@ template&lt;typename TGrid &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00369">369</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00371">371</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1052,7 +1052,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00273">273</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00275">275</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1310,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 The axis of division is random. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00168">168</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00170">170</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1342,7 +1342,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <p>The axis of division is random. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00177">177</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00179">179</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1375,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00190">190</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00192">192</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1424,7 +1424,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <p>Divide this cell. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00201">201</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00203">203</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1479,7 +1479,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <p>Divide this cell. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00211">211</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00213">213</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1530,7 @@ template&lt;typename TDaughter &gt; </div>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00342">342</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00344">344</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1566,7 +1566,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00236">236</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00238">238</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1665,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00219">219</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00221">221</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1692,7 +1692,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00233">233</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00235">235</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1728,7 +1728,7 @@ template&lt;typename TBiologyModule &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00151">151</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00153">153</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1755,7 +1755,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00234">234</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00236">236</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1782,7 +1782,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00306">306</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00308">308</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1809,7 +1809,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00225">225</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00227">227</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1836,7 +1836,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00221">221</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00223">223</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1863,7 +1863,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00231">231</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00233">233</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1890,7 +1890,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00223">223</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00225">225</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1917,7 +1917,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00227">227</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00229">229</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1944,7 +1944,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00230">230</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00232">232</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2111,7 +2111,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00243">243</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00245">245</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2138,7 +2138,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00232">232</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00234">234</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2165,7 +2165,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00247">247</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00249">249</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2558,7 +2558,7 @@ template&lt;typename TCompileTimeParam , typename TDerived , template&lt; typena
 
 <p>Execute all biology modules. </p>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00360">360</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00362">362</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2594,7 +2594,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00249">249</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00251">251</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2622,7 +2622,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00308">308</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00310">310</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2650,7 +2650,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00263">263</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00265">265</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2678,7 +2678,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00251">251</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00253">253</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2706,7 +2706,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00261">261</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00263">263</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2734,7 +2734,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00265">265</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00267">267</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2762,7 +2762,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00269">269</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00271">271</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2790,7 +2790,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00256">256</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00258">258</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3004,7 +3004,7 @@ template&lt;typename TCompileTimeParam , typename TDerived , template&lt; typena
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the position in local coordinates </dd></dl>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00473">473</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00475">475</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3095,7 +3095,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00284">284</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00286">286</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3123,7 +3123,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00294">294</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00296">296</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3150,7 +3150,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00289">289</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00291">291</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3229,7 +3229,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00328">328</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00330">330</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3240,14 +3240,14 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDerived  = char, template&lt; typename, typename &gt; class TBase = bdm::SimulationObject_TCTParam_TDerived&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1CellExt.html#aaee1297210d547d7dcaa5e04a2b6c444">vec</a>&lt;std::vector&lt;<a class="el" href="classbdm_1_1CellExt.html#aecd102ffcfe4414d9012a0d1c5d9afe1">BiologyModules</a>&gt; &gt; <a class="el" href="classbdm_1_1CellExt.html">bdm::CellExt</a>&lt; TCompileTimeParam, TDerived, TBase &gt;::biology_modules_</td>
+          <td class="memname"><a class="el" href="classbdm_1_1CellExt.html#aaee1297210d547d7dcaa5e04a2b6c444">vec</a>&lt;std::vector&lt;<a class="el" href="classbdm_1_1CellExt.html#aad92722306d9fe3721ec83cd83d89c07">BiologyModules</a>&gt; &gt; <a class="el" href="classbdm_1_1CellExt.html">bdm::CellExt</a>&lt; TCompileTimeParam, TDerived, TBase &gt;::biology_modules_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>collection of biology modules which define the internal behavior </p>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00313">313</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00315">315</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3273,7 +3273,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 
 <p><a class="el" href="classbdm_1_1Grid.html" title="A class that represents Cartesian 3D grid. ">Grid</a> box index. </p>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00332">332</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00334">334</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3297,7 +3297,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00329">329</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00331">331</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3321,7 +3321,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00326">326</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00328">328</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3447,7 +3447,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00324">324</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00326">326</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3471,7 +3471,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00325">325</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00327">327</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3495,7 +3495,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00327">327</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00329">329</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -3508,7 +3508,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1CellExt.html">CellExt</a></li>
-    <li class="footer">Generated on Thu Sep 20 2018 07:55:20 for BioDynaMo by
+    <li class="footer">Generated on Fri Sep 21 2018 07:26:40 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

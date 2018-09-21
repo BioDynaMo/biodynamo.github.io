@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-105-gb075ea6</span>
+   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>Backend
 : <a class="el" href="classbdm_1_1CellExt.html#a6698b690945e7db8b39de40343e17ed6">bdm::CellExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
-, <a class="el" href="structbdm_1_1DefaultCompileTimeParam.html#a3326faf2c611d6d6bc6ae2405bf477da">bdm::DefaultCompileTimeParam&lt; TBackend &gt;</a>
+, <a class="el" href="structbdm_1_1DefaultCTParam.html#a12562050b56edc15d53a5bd8311b39e0">bdm::DefaultCTParam&lt; TBackend &gt;</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#affcdd0087bacaaf4171eb6248e42f697">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a29ee7073ea1c5020418dc3d666db54f1">bdm::experimental::neuroscience::NeuronSomaExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 , <a class="el" href="classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
@@ -187,15 +187,18 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <li>BaseBiologyModule()
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#a5d8390ff96e3678841dcb73ab36edc3a">bdm::BaseBiologyModule</a>
 </li>
+<li>BDM_DEFAULT_CTPARAM_FOR()
+: <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1DefaultCTParam.html#a35ce68a6b03c3e4b4c214b4d49654195">bdm::experimental::neuroscience::DefaultCTParam&lt; TBackend &gt;</a>
+</li>
 <li>begin()
-: <a class="el" href="classbdm_1_1FixedSizeVector.html#afc170a65c238f985d69f582036b01316">bdm::FixedSizeVector&lt; T, N &gt;</a>
+: <a class="el" href="classbdm_1_1FixedSizeVector.html#aad902211cee138f490f212ac6b0bb30c">bdm::FixedSizeVector&lt; T, N &gt;</a>
 , <a class="el" href="structbdm_1_1Grid_1_1Box.html#aa9d5eb5e317907dd992c32746e5f7971">bdm::Grid&lt; TSimulation &gt;::Box</a>
-, <a class="el" href="classbdm_1_1OneElementArray.html#a7bf756198b54d0d3c49ab68dfab6c630">bdm::OneElementArray&lt; T &gt;</a>
+, <a class="el" href="classbdm_1_1OneElementArray.html#a33b26fcdbcdc35b0740689881f80552f">bdm::OneElementArray&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1TransactionalVector.html#a35af95e2f4210a77ff0f82b36fce8c9c">bdm::TransactionalVector&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1VectorPlaceholder.html#abacdf6f33b4f37c1e7cb840dac46faf0">bdm::VectorPlaceholder&lt; T &gt;</a>
 </li>
 <li>Bifurcate()
-: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a5034a8b639090e948131064c701bde46">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
+: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aa62110b09373e6f2f4933f3c0ebf6e07">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 </li>
 <li>BifurcationPermitted()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a575a2efaec2afb3085e3d1feae2065ba">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
@@ -208,9 +211,9 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a4b539af48347b27061a2b0aaee27812c">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 </li>
 <li>BiologyModules
-: <a class="el" href="classbdm_1_1CellExt.html#aecd102ffcfe4414d9012a0d1c5d9afe1">bdm::CellExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
-, <a class="el" href="structbdm_1_1DefaultCompileTimeParam.html#aab79f0dff9f080345aabf4513dc61661">bdm::DefaultCompileTimeParam&lt; TBackend &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a0210857fb088e07895488e3e7d4337d3">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
+: <a class="el" href="classbdm_1_1CellExt.html#aad92722306d9fe3721ec83cd83d89c07">bdm::CellExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
+, <a class="el" href="structbdm_1_1CTMapDefault.html#a19706899f55091d226490078954ad840">bdm::CTMapDefault&lt; TSimObject, Dummy &gt;</a>
+, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ac0328220b3487e1a5ef561336117065f">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived, TBase &gt;</a>
 </li>
 <li>bound_space_
 : <a class="el" href="structbdm_1_1Param.html#aec37de9267ac01cbb088db5c993b20af">bdm::Param</a>
@@ -262,7 +265,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 20 2018 07:55:20 for BioDynaMo by
+    <li class="footer">Generated on Fri Sep 21 2018 07:26:41 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

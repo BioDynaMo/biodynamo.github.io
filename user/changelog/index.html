@@ -368,6 +368,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../parameter/" title="Parameter" class="md-nav__link">
+      Parameter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../event/" title="Event" class="md-nav__link">
       Event
     </a>
@@ -434,6 +446,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#18091028-3a380e4" title="18.09.1028 3a380e4" class="md-nav__link">
+    18.09.1028 3a380e4
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#29082018-a373fca" title="29.08.2018 a373fca" class="md-nav__link">
@@ -520,6 +539,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#18091028-3a380e4" title="18.09.1028 3a380e4" class="md-nav__link">
+    18.09.1028 3a380e4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#29082018-a373fca" title="29.08.2018 a373fca" class="md-nav__link">
     29.08.2018 a373fca
   </a>
@@ -578,6 +604,26 @@
                 
                 
                 <h1 id="changelog">Changelog</h1>
+<h2 id="18091028-3a380e4">18.09.1028 <a href="https://github.com/BioDynaMo/biodynamo/commit/3a380e451ed1d691a6b8dce4c46d82e7faaf5ddc"><code class="codehilite">3a380e4</code></a></h2>
+<p>Refactor <a href="parameter">parameters</a>.</p>
+<ul>
+<li>Add functionality to define compile time parameters for a specific simulation
+   object. This was necessary due to compile time errors of neurite biology modules.
+   (Although they were not used for neurons, the compiler tried to compile them)
+   This replaces the reinterpret cast workaround.</li>
+<li><code class="codehilite">Simulation&lt;&gt;::GetActive()-&gt;GetParam()</code> returns const pointer
+   Runtime parameter should not be changed during the simulation. This simplifies
+   the distributed runtime.</li>
+<li>Add macros to simplify definition of compile time parameter.</li>
+<li>All compile time parameter that take more than one type will be defined using
+   <code class="codehilite">CTList</code>. No more distinction between <code class="codehilite">Variant</code> and <code class="codehilite">VariadicTypedef</code>.</li>
+<li>Improve modularity. Each module can have its own parameter class.
+   All parameter classes will be combined into <code class="codehilite">CompileTimeParam::Param</code>.</li>
+<li>Make all runtime parameters non static.</li>
+<li>Rename <code class="codehilite">AtomicTypes</code> to <code class="codehilite">SimObjectTypes</code></li>
+</ul>
+<p>Please have a look at the changes of the demos to
+see which lines need to be changed in your simulation after <a href="https://github.com/BioDynaMo/biodynamo/commit/3a380e451ed1d691a6b8dce4c46d82e7faaf5ddc">this commit</a>.</p>
 <h2 id="29082018-a373fca">29.08.2018 <a href="https://github.com/BioDynaMo/biodynamo/commit/a373fcaad5b50d2ec8ad5a9d8a218adf7850fcc6"><code class="codehilite">a373fca</code></a></h2>
 <p>Add the concept of <a href="event">Events</a>.
 This is an important change to support extensibility. Now, there is a clear

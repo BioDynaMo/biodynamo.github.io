@@ -459,6 +459,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../parameter/" title="Parameter" class="md-nav__link">
+      Parameter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../event/" title="Event" class="md-nav__link">
       Event
     </a>
@@ -639,11 +651,16 @@ an <code class="codehilite"><span class="k">enum</span></code> data structure. I
 coding style we will prepend the substance's name with the letter "k".</p>
 <h4 id="2-set-up-the-biology-modules">2. Set up the biology modules</h4>
 <p>Open the <code class="codehilite">src/diffusion.h</code> source file.</p>
-<p>In order for BioDynaMo to anticipate the biology modules that you want to use in
-the simulation, we need to declare them in our <code class="codehilite">CompileTimeParameters</code> as such:</p>
-<div class="codehilite"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Backend</span><span class="o">&gt;</span>
-<span class="k">struct</span> <span class="nl">CompileTimeParam</span> <span class="p">:</span> <span class="k">public</span> <span class="n">DefaultCompileTimeParam</span><span class="o">&lt;</span><span class="n">Backend</span><span class="o">&gt;</span> <span class="p">{</span>
-  <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">Variant</span><span class="o">&lt;</span><span class="n">Chemotaxis</span><span class="p">,</span> <span class="n">KaliumSecretion</span><span class="o">&gt;</span><span class="p">;</span>
+<p>We need to tell BioDynaMo that we want to use the BiologyModules <code class="codehilite">Chemotaxis</code>
+and <code class="codehilite">KaliumSecretion</code> for our cells. We can do that by defining it in the compile
+time parameters.</p>
+<div class="codehilite"><pre><span></span><span class="n">BDM_CTPARAM</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">BDM_CTPARAM_HEADER</span><span class="p">();</span>
+
+  <span class="c1">// Override default BiologyModules for Cell</span>
+  <span class="n">BDM_CTPARAM_FOR</span><span class="p">(</span><span class="n">bdm</span><span class="p">,</span> <span class="n">Cell</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">CTList</span><span class="o">&lt;</span><span class="n">Chemotaxis</span><span class="p">,</span> <span class="n">KaliumSecretion</span><span class="o">&gt;</span><span class="p">;</span>
+  <span class="p">};</span>
 <span class="p">};</span>
 </pre></div>
 

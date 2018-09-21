@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-105-gb075ea6</span>
+   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,8 @@ $(document).ready(function(){initNavTree('structbdm_1_1Param.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="structbdm_1_1Param-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::Param Struct Reference</div>  </div>
@@ -121,7 +120,7 @@ $(document).ready(function(){initNavTree('structbdm_1_1Param.html','');});
 <div class="dynheader">
 Collaboration diagram for bdm::Param:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="227" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="227" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -141,6 +140,8 @@ Public Types</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a842fdc06bceb019667764f94b67b99f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471">NumericalODESolver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a842fdc06bceb019667764f94b67b99f8">numerical_ode_solver_</a> = NumericalODESolver::kEuler</td></tr>
 <tr class="separator:a842fdc06bceb019667764f94b67b99f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c75f427be9fa054a7a7f6a15171896"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#af9c75f427be9fa054a7a7f6a15171896">output_dir_</a> = &quot;output&quot;</td></tr>
+<tr class="separator:af9c75f427be9fa054a7a7f6a15171896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3790595d9010d2e4c1cd765fa697e8b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#ab3790595d9010d2e4c1cd765fa697e8b">backup_file_</a> = &quot;&quot;</td></tr>
 <tr class="separator:ab3790595d9010d2e4c1cd765fa697e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d0a1349732defbaeecd64de66f158d3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a1d0a1349732defbaeecd64de66f158d3">restore_file_</a> = &quot;&quot;</td></tr>
@@ -192,48 +193,16 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4b46410b40ad02da690638c7e04be73a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a4b46410b40ad02da690638c7e04be73a">preferred_gpu_</a> = 0</td></tr>
 <tr class="separator:a4b46410b40ad02da690638c7e04be73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a991a420a2cd9c6f5315364b0a7f65e5d"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a991a420a2cd9c6f5315364b0a7f65e5d">kNeuriteDefaultActualLength</a> = 1.0</td></tr>
-<tr class="memdesc:a991a420a2cd9c6f5315364b0a7f65e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial value of the restingLength before any specification.  <a href="#a991a420a2cd9c6f5315364b0a7f65e5d">More...</a><br/></td></tr>
-<tr class="separator:a991a420a2cd9c6f5315364b0a7f65e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af88dc4a131d81d75734455e67ef213d5"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#af88dc4a131d81d75734455e67ef213d5">kNeuriteDefaultDensity</a> = 1.0</td></tr>
-<tr class="separator:af88dc4a131d81d75734455e67ef213d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9bcc773fcec24a9ee777f25bd2a56e"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a7f9bcc773fcec24a9ee777f25bd2a56e">kNeuriteDefaultDiameter</a> = 1.0</td></tr>
-<tr class="separator:a7f9bcc773fcec24a9ee777f25bd2a56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf886b20c9740991b995dd914f778ae7"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#aaf886b20c9740991b995dd914f778ae7">kNeuriteMinimalBifurcationLength</a> = 0</td></tr>
-<tr class="separator:aaf886b20c9740991b995dd914f778ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f3cad0c94b90905fab42ff05334822b"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a5f3cad0c94b90905fab42ff05334822b">kNeuriteDefaultSpringConstant</a> = 10</td></tr>
-<tr class="memdesc:a5f3cad0c94b90905fab42ff05334822b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spring constant.  <a href="#a5f3cad0c94b90905fab42ff05334822b">More...</a><br/></td></tr>
-<tr class="separator:a5f3cad0c94b90905fab42ff05334822b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e9643fa24cb2cfdba921ebdf68fcf33"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a0e9643fa24cb2cfdba921ebdf68fcf33">kNeuriteDefaultAdherence</a> = 0.1</td></tr>
-<tr class="separator:a0e9643fa24cb2cfdba921ebdf68fcf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340c23c9db22a7ba2c79ccd684ff5ac3"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a340c23c9db22a7ba2c79ccd684ff5ac3">kNeuriteDefaultMass</a> = 1</td></tr>
-<tr class="memdesc:a340c23c9db22a7ba2c79ccd684ff5ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rest to the movement ( = kinetic friction).  <a href="#a340c23c9db22a7ba2c79ccd684ff5ac3">More...</a><br/></td></tr>
-<tr class="separator:a340c23c9db22a7ba2c79ccd684ff5ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7274e2cae4ff9825e5d6823b88847293"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a7274e2cae4ff9825e5d6823b88847293">kNeuriteDefaultTension</a> = 0.0</td></tr>
-<tr class="separator:a7274e2cae4ff9825e5d6823b88847293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cfa07754b34d378bd581f92cf903e89"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a5cfa07754b34d378bd581f92cf903e89">kNeuriteMinLength</a> = 2.0</td></tr>
-<tr class="separator:a5cfa07754b34d378bd581f92cf903e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe917043894ac59e34974fda2ca2b20"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a0fe917043894ac59e34974fda2ca2b20">kNeuriteMaxLength</a> = 15</td></tr>
-<tr class="separator:a0fe917043894ac59e34974fda2ca2b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c6beeb58e248319854016bc78c0948"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a21c6beeb58e248319854016bc78c0948">kOutputDir</a> = &quot;output&quot;</td></tr>
-<tr class="memdesc:a21c6beeb58e248319854016bc78c0948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output directory relative to working directory.  <a href="#a21c6beeb58e248319854016bc78c0948">More...</a><br/></td></tr>
-<tr class="separator:a21c6beeb58e248319854016bc78c0948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
 <tr class="memitem:af29c280b881dbd07e1561e87ad69f00a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a">AssignFromConfig</a> (const std::shared_ptr&lt; cpptoml::table &gt; &amp;)</td></tr>
 <tr class="memdesc:af29c280b881dbd07e1561e87ad69f00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign values from config file to variables.  <a href="#af29c280b881dbd07e1561e87ad69f00a">More...</a><br/></td></tr>
 <tr class="separator:af29c280b881dbd07e1561e87ad69f00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:a1878562fdbe371d546af644e16dd8205"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a1878562fdbe371d546af644e16dd8205">ClassDefNV</a> (<a class="el" href="structbdm_1_1Param.html">Param</a>, 1)</td></tr>
 <tr class="separator:a1878562fdbe371d546af644e16dd8205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a75c7e0ff47867748c902eaf4c2fde112"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a75c7e0ff47867748c902eaf4c2fde112"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a75c7e0ff47867748c902eaf4c2fde112">Simulation</a></td></tr>
-<tr class="separator:a75c7e0ff47867748c902eaf4c2fde112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -256,7 +225,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00054">54</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00033">33</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -278,14 +247,14 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Assign values from config file to variables. </p>
 
-<p>Definition at line <a class="el" href="param_8cc_source.html#l00034">34</a> of file <a class="el" href="param_8cc_source.html">param.cc</a>.</p>
+<p>Definition at line <a class="el" href="param_8cc_source.html#l00023">23</a> of file <a class="el" href="param_8cc_source.html">param.cc</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -331,31 +300,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a75c7e0ff47867748c902eaf4c2fde112"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend struct <a class="el" href="structbdm_1_1Simulation.html">Simulation</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00307">307</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ab3790595d9010d2e4c1cd765fa697e8b"></a>
 <div class="memitem">
@@ -374,7 +318,7 @@ TOML config file: </p>
 backup_file = &lt;path&gt;/&lt;filename&gt;.root
 </pre><p> Command line argument: <code>-b, --backup</code> </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00068">68</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00053">53</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -392,7 +336,7 @@ Default Value: <code>1800</code> (every half an hour)<br/>
 TOML config file: </p>
 <pre class="fragment">[simulation]
 backup_interval = 1800  # backup every half an hour  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00086">86</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00071">71</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +354,7 @@ Default value: <code>false</code> (simulation space is "infinite")<br/>
 TOML config file: </p>
 <pre class="fragment">[simulation]
 bound_space = false  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00121">121</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00106">106</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +371,7 @@ bound_space = false  </pre>
 TOML config file: </p>
 <pre class="fragment">[simulation]
 calculate_gradients = true  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00155">155</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00140">140</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -444,259 +388,7 @@ calculate_gradients = true  </pre>
 TOML config file: </p>
 <pre class="fragment">[visualization]
 export = false  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00173">173</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a991a420a2cd9c6f5315364b0a7f65e5d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteDefaultActualLength = 1.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initial value of the restingLength before any specification. </p>
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00031">31</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0e9643fa24cb2cfdba921ebdf68fcf33"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteDefaultAdherence = 0.1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Threshold the force acting on a neurite has to reach before a move is made ( = static friction). </p>
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00041">41</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af88dc4a131d81d75734455e67ef213d5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteDefaultDensity = 1.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00032">32</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7f9bcc773fcec24a9ee777f25bd2a56e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteDefaultDiameter = 1.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Diameter of an unspecified (= axon/dendrite) neurite when extends from the somaElement </p>
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00035">35</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a340c23c9db22a7ba2c79ccd684ff5ac3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteDefaultMass = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Rest to the movement ( = kinetic friction). </p>
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00043">43</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5f3cad0c94b90905fab42ff05334822b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteDefaultSpringConstant = 10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Spring constant. </p>
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00038">38</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7274e2cae4ff9825e5d6823b88847293"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteDefaultTension = 0.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00045">45</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0fe917043894ac59e34974fda2ca2b20"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteMaxLength = 15</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00048">48</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaf886b20c9740991b995dd914f778ae7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteMinimalBifurcationLength = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00036">36</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5cfa07754b34d378bd581f92cf903e89"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double bdm::Param::kNeuriteMinLength = 2.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00047">47</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a21c6beeb58e248319854016bc78c0948"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const char * bdm::Param::kOutputDir = &quot;output&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Output directory relative to working directory. </p>
-
-<p>Definition at line <a class="el" href="param_8h_source.html#l00058">58</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00158">158</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +406,7 @@ Default value: <code>true</code><br/>
 TOML config file: </p>
 <pre class="fragment">[simulation]
 leaking_edges = true  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00148">148</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00133">133</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -732,7 +424,7 @@ Defaut value: <code>false</code><br/>
 TOML config file: </p>
 <pre class="fragment">[visualization]
 live = false  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00165">165</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00150">150</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +443,7 @@ Default value: <code>100</code><br/>
 TOML config file: <pre class="fragment">[simulation]
 max_bound = 100  </pre> </dd></dl>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00139">139</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00124">124</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -770,7 +462,7 @@ Default value: <code>0</code><br/>
 TOML config file: <pre class="fragment">[simulation]
 min_bound = 0  </pre> </dd></dl>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00130">130</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00115">115</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -784,7 +476,7 @@ min_bound = 0  </pre> </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00055">55</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00034">34</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +492,26 @@ min_bound = 0  </pre> </dd></dl>
 <p>Compile OpenCL kernels with debugging symbols, for debugging on CPU targets with GNU gdb. Default value: <code>false</code><br/>
 TOML config file: [experimental] opencl_debug_ = false </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00296">296</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00281">281</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9c75f427be9fa054a7a7f6a15171896"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string bdm::Param::output_dir_ = &quot;output&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ouput Directory name used to store visualization and other files.<br/>
+Path is relative to working directory.<br/>
+Default value: <code>"output"</code><br/>
+TOML config file: </p>
+<pre class="fragment">[simulation]
+ouput_dir = "output"  </pre> 
+<p>Definition at line <a class="el" href="param_8h_source.html#l00043">43</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +527,7 @@ TOML config file: [experimental] opencl_debug_ = false </p>
 <p>Set the index of the preferred GPU you wish to use. Default value: <code>0</code><br/>
 TOML config file: [experimental] preferred_gpu = 0 </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00303">303</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00288">288</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +543,7 @@ TOML config file: [experimental] preferred_gpu = 0 </p>
 <p>Use the python script (simple_pipeline.py) to do Live Visualization with ParaView. If false, we use the C++ pipeline Default value: <code>false</code><br/>
 TOML config file: [development] python_catalyst_pipeline_ = false </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00255">255</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00240">240</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +564,7 @@ TOML config file: </p>
 restore_file = &lt;path&gt;/&lt;filename&gt;.root
 </pre><p> Command line argument: <code>-r, --restore</code> </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00078">78</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00063">63</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -871,7 +582,7 @@ Default value: <code>true</code><br/>
 TOML config file: </p>
 <pre class="fragment">[simulation]
 run_mechanical_interactions = true  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00111">111</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00096">96</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -887,7 +598,7 @@ run_mechanical_interactions = true  </pre>
 <p>Display the current simulation step in the terminal output Default value: <code>true</code><br/>
 TOML config file: [development] show_simulation_step = true </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00262">262</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00247">247</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +616,7 @@ Default value: <code>3.0</code><br/>
 TOML config file: </p>
 <pre class="fragment">[simulation]
 max_displacement = 3.0  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00103">103</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00088">88</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -921,7 +632,7 @@ max_displacement = 3.0  </pre>
 <p>Sets the frequency at which the current simulation step is displayed. Display every <code>simulation_step_freq_</code> steps. Default value: <code>10</code><br/>
 TOML config file: [development] simulation_step_freq = false </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00270">270</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00255">255</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +649,7 @@ TOML config file: [development] simulation_step_freq = false </p>
 TOML config file: </p>
 <pre class="fragment">[simulation]
 time_step = 0.0125  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00094">94</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00079">79</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -956,7 +667,7 @@ Default Value: <code>false</code><br/>
 TOML config file: </p>
 <pre class="fragment">[development]
 statistics = false  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00247">247</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00232">232</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -972,7 +683,7 @@ statistics = false  </pre>
 <p>Run the simulation partially on the GPU for improved performance. Default value: <code>false</code><br/>
 TOML config file: [experimental] use_gpu = false </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00280">280</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00265">265</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -988,7 +699,7 @@ TOML config file: [experimental] use_gpu = false </p>
 <p>When both CUDA and OpenCL are available on a machine, the preference to OpenCL can be set with this flag, as per default CUDA is used. Default value: <code>false</code><br/>
 TOML config file: [experimental] use_opencl = false </p>
 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00288">288</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00273">273</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +717,7 @@ Defaut value: <code>1</code><br/>
 TOML config file: </p>
 <pre class="fragment">[visualization]
 export_interval = 1  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00183">183</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00168">168</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +750,7 @@ export = true
   [[visualize_diffusion]]
   name = "K"
   # default values: concentration = true and gradient = false  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00237">237</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00222">222</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1068,7 +779,7 @@ export = true
   # The former block can be repeated for further simulation objects
   [[visualize_sim_object]]
   name = "Neurite"  </pre> 
-<p>Definition at line <a class="el" href="param_8h_source.html#l00207">207</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="param_8h_source.html#l00192">192</a> of file <a class="el" href="param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +793,7 @@ export = true
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1Param.html">Param</a></li>
-    <li class="footer">Generated on Thu Sep 20 2018 07:55:20 for BioDynaMo by
+    <li class="footer">Generated on Fri Sep 21 2018 07:26:41 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

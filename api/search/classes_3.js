@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['defaultcompiletimeparam',['DefaultCompileTimeParam',['../structbdm_1_1DefaultCompileTimeParam.html',1,'bdm']]],
-  ['defaultcompiletimeparam',['DefaultCompileTimeParam',['../structbdm_1_1experimental_1_1neuroscience_1_1DefaultCompileTimeParam.html',1,'bdm::experimental::neuroscience']]],
+  ['defaultctparam',['DefaultCTParam',['../structbdm_1_1DefaultCTParam.html',1,'bdm']]],
+  ['defaultctparam',['DefaultCTParam',['../structbdm_1_1experimental_1_1neuroscience_1_1DefaultCTParam.html',1,'bdm::experimental::neuroscience']]],
   ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html',1,'bdm']]],
   ['diffusiongrid',['DiffusionGrid',['../classbdm_1_1DiffusionGrid.html',1,'bdm']]],
   ['diffusionop',['DiffusionOp',['../classbdm_1_1DiffusionOp.html',1,'bdm']]],

@@ -3,7 +3,7 @@ var classbdm_1_1ResourceManager =
     [ "Backend", "classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210", null ],
     [ "ToBackend", "classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f", null ],
     [ "TypeContainer", "classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644", null ],
-    [ "Types", "classbdm_1_1ResourceManager.html#ad980443bdaadf06ed635a4e2f0308e74", null ],
+    [ "Types", "classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade", null ],
     [ "ResourceManager", "classbdm_1_1ResourceManager.html#a4eb81532d4f08cddfd81b921c1a0871a", null ],
     [ "ResourceManager", "classbdm_1_1ResourceManager.html#ae78208481c35292dca6581c754fc006c", null ],
     [ "~ResourceManager", "classbdm_1_1ResourceManager.html#a0b909716f905dcbcb3340a5c656c6921", null ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-105-gb075ea6</span>
+   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
    </div>
   </td>
  </tr>
@@ -103,8 +103,7 @@ $(document).ready(function(){initNavTree('param_8cc.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">param.cc File Reference</div>  </div>
 </div><!--header-->
@@ -112,6 +111,7 @@ $(document).ready(function(){initNavTree('param_8cc.html','');});
 <div class="textblock"><code>#include &lt;vector&gt;</code><br/>
 <code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="param_8h_source.html">param.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="cpptoml_8h_source.html">util/cpptoml.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for param.cc:</div>
 <div class="dyncontent">
@@ -125,56 +125,14 @@ Include dependency graph for param.cc:</div>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebdm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html">bdm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a1aeaabc4c0e409f5f057548c3108999f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param_8cc.html#a1aeaabc4c0e409f5f057548c3108999f">BDM_ASSIGN_CONFIG_VALUE</a>(variable, config_key)</td></tr>
-<tr class="separator:a1aeaabc4c0e409f5f057548c3108999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a1aeaabc4c0e409f5f057548c3108999f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BDM_ASSIGN_CONFIG_VALUE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">variable, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">config_key&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                          \</div>
-<div class="line">    if (config-&gt;contains_qualified(config_key)) {                            \</div>
-<div class="line">      auto value = config-&gt;get_qualified_as&lt;decltype(variable)&gt;(config_key); \</div>
-<div class="line">      if (value) {                                                           \</div>
-<div class="line">        variable = *value;                                                   \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">    }                                                                        \</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="param_8cc_source.html#l00024">24</a> of file <a class="el" href="param_8cc_source.html">param.cc</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="param_8cc.html">param.cc</a></li>
-    <li class="footer">Generated on Thu Sep 20 2018 07:55:20 for BioDynaMo by
+    <li class="footer">Generated on Fri Sep 21 2018 07:26:40 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

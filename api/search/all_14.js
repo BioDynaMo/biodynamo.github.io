@@ -1,15 +1,13 @@
 var searchData=
 [
-  ['value',['value',['../structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01VariadicTypedef_3_01Types_8_8_8_4_01_4.html#a8d053eb39b7346425837d6b89dd04f5b',1,'bdm::detail::ToIndex&lt; TSo, VariadicTypedef&lt; Types...&gt; &gt;::value()'],['../structbdm_1_1is__soa.html#a0709239c8fa5c1a8a76bfa1bd78899d6',1,'bdm::is_soa::value()'],['../structbdm_1_1is__soa__sphere.html#a53dc87606d5c57698d40531c94b5a329',1,'bdm::is_soa_sphere::value()']]],
+  ['value',['value',['../structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01CTList_3_01Types_8_8_8_4_01_4.html#a0f3ca4d8fceb14d082695602df538856',1,'bdm::detail::ToIndex&lt; TSo, CTList&lt; Types...&gt; &gt;::value()'],['../structbdm_1_1is__soa.html#a0709239c8fa5c1a8a76bfa1bd78899d6',1,'bdm::is_soa::value()'],['../structbdm_1_1is__soa__sphere.html#a53dc87606d5c57698d40531c94b5a329',1,'bdm::is_soa_sphere::value()']]],
   ['value_5f',['value_',['../structbdm_1_1Uniform.html#a66737c1bc4622489c54142ce0f20b928',1,'bdm::Uniform']]],
   ['value_5ftype',['value_type',['../classbdm_1_1VectorPlaceholder.html#ad5180cf3d65f28c35ddb71f424ef918b',1,'bdm::VectorPlaceholder::value_type()'],['../classbdm_1_1OneElementArray.html#aa581355738c2a46506e71d361704b33f',1,'bdm::OneElementArray::value_type()'],['../classbdm_1_1CellExt.html#ad98b5a523418673290b68aa76883317c',1,'bdm::CellExt::value_type()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#acf205b09dcc059a1ac71b066e65bb894',1,'bdm::experimental::neuroscience::NeuriteElementExt::value_type()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#ad93ef48c5324dceadc97f7c073249ea5',1,'bdm::experimental::neuroscience::NeuronSomaExt::value_type()'],['../classbdm_1_1TransactionalVector.html#a273f35bd1bcc9388fa0d5287629c5442',1,'bdm::TransactionalVector::value_type()']]],
-  ['variadic_5ftemplate_5fparameter_5futil_2eh',['variadic_template_parameter_util.h',['../variadic__template__parameter__util_8h.html',1,'']]],
-  ['variadictypedef',['VariadicTypedef',['../structbdm_1_1VariadicTypedef.html',1,'bdm']]],
-  ['variadictypedefwrapper',['VariadicTypedefWrapper',['../structbdm_1_1VariadicTypedefWrapper.html',1,'bdm']]],
   ['variant',['Variant',['../classbdm_1_1Variant.html',1,'bdm']]],
   ['variant',['Variant',['../classbdm_1_1Variant.html#a6f4f10a85c69c606792b52c9d9a6475b',1,'bdm::Variant::Variant(const T &amp;value)'],['../classbdm_1_1Variant.html#a4803331d3c5a7b730346ddf58a560463',1,'bdm::Variant::Variant()']]],
   ['variant_2eh',['variant.h',['../variant_8h.html',1,'']]],
   ['variant_5f',['variant_',['../structbdm_1_1StreamerReadFunctor.html#a312d119a4e51724d4427df39e6994399',1,'bdm::StreamerReadFunctor']]],
+  ['variant_5ft',['Variant_t',['../structbdm_1_1CTList.html#ae59488c5a2cd27942eeef518cc861faf',1,'bdm::CTList']]],
   ['vec',['vec',['../structbdm_1_1Scalar.html#a82e39d618d9d99a66acb7be951daace8',1,'bdm::Scalar::vec()'],['../structbdm_1_1Soa.html#a2d106496c7972d3447d25469398d56af',1,'bdm::Soa::vec()'],['../structbdm_1_1SoaRef.html#a0969f8c3bf1a415a5ab27bfc301034a8',1,'bdm::SoaRef::vec()'],['../classbdm_1_1CellExt.html#aaee1297210d547d7dcaa5e04a2b6c444',1,'bdm::CellExt::vec()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a419ad84dfb134ea3b39ba3a8ea9a34d2',1,'bdm::experimental::neuroscience::NeuriteElementExt::vec()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#ab7b2a430a916f1d65ca09537f35d6e6b',1,'bdm::experimental::neuroscience::NeuronSomaExt::vec()']]],
   ['vectorplaceholder',['VectorPlaceholder',['../classbdm_1_1VectorPlaceholder.html',1,'bdm']]],
   ['vectorplaceholder',['VectorPlaceholder',['../classbdm_1_1VectorPlaceholder.html#ac3fc5b9d80073c94b359a8f3f81fa35a',1,'bdm::VectorPlaceholder::VectorPlaceholder()'],['../classbdm_1_1VectorPlaceholder.html#a3bcd9b17d4403a65afbf49c69ce1fc96',1,'bdm::VectorPlaceholder::VectorPlaceholder(std::initializer_list&lt; T &gt; list)']]],
@@ -24,6 +22,6 @@ var searchData=
   ['volume_5fratio_5f',['volume_ratio_',['../structbdm_1_1CellDivisionEvent.html#a76773fc803eb2f49028a76521a360c24',1,'bdm::CellDivisionEvent']]],
   ['vtune_2eh',['vtune.h',['../vtune_8h.html',1,'']]],
   ['vtune_5fop_5fwrapper_2eh',['vtune_op_wrapper.h',['../vtune__op__wrapper_8h.html',1,'']]],
-  ['vtuneopwrapper',['VTuneOpWrapper',['../classbdm_1_1VTuneOpWrapper.html',1,'bdm']]],
-  ['vtuneopwrapper',['VTuneOpWrapper',['../classbdm_1_1VTuneOpWrapper.html#aca8a74f6b888dc56b4cc128542f57a50',1,'bdm::VTuneOpWrapper']]]
+  ['vtuneopwrapper',['VTuneOpWrapper',['../classbdm_1_1VTuneOpWrapper.html#aca8a74f6b888dc56b4cc128542f57a50',1,'bdm::VTuneOpWrapper']]],
+  ['vtuneopwrapper',['VTuneOpWrapper',['../classbdm_1_1VTuneOpWrapper.html',1,'bdm']]]
 ];
