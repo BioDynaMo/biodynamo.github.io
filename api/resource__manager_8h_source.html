@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
+   &#160;<span id="projectnumber">v0.1.0-108-g0f7148a</span>
    </div>
   </td>
  </tr>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('resource__manager_8h_source.html','');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSo, <span class="keyword">typename</span>... Types&gt;</div>
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01CTList_3_01Types_8_8_8_4_01_4.html">  118</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1detail_1_1ToIndex.html">ToIndex</a>&lt;TSo, <a class="code" href="structbdm_1_1CTList.html">CTList</a>&lt;Types...&gt;&gt; {</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01CTList_3_01Types_8_8_8_4_01_4.html#a0f3ca4d8fceb14d082695602df538856">  119</a></span>&#160;  <span class="keyword">static</span> constexpr uint16_t value = <a class="code" href="namespacebdm.html#a5d44535e6a8d94e12d2e4593fd0f444b">GetIndex</a>&lt;TSo, Types...&gt;();  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01CTList_3_01Types_8_8_8_4_01_4.html#a0f3ca4d8fceb14d082695602df538856">  119</a></span>&#160;  <span class="keyword">static</span> constexpr uint16_t value = <a class="code" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt;TSo, Types...&gt;();  <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}  <span class="comment">// namespace detail</span></div>
@@ -423,6 +423,7 @@ $(document).ready(function(){initNavTree('resource__manager_8h_source.html','');
 <div class="ttc" id="classbdm_1_1ResourceManager_html_a830c32338145b48c97e4e7bc64ad19f3"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#a830c32338145b48c97e4e7bc64ad19f3">bdm::ResourceManager::ApplyOnAllElements</a></div><div class="ttdeci">void ApplyOnAllElements(TFunction &amp;&amp;function)</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00291">resource_manager.h:291</a></div></div>
 <div class="ttc" id="classbdm_1_1ResourceManager_html_a753fc0f5c4c6a19ae1b1c6a55ad2770e"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#a753fc0f5c4c6a19ae1b1c6a55ad2770e">bdm::ResourceManager::GetNumSimObjects</a></div><div class="ttdeci">size_t GetNumSimObjects()</div><div class="ttdoc">Returns the total number of simulation objects. </div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00228">resource_manager.h:228</a></div></div>
 <div class="ttc" id="classbdm_1_1SoHandle_html_ae58184b4769bac7da6e34285afe59030"><div class="ttname"><a href="classbdm_1_1SoHandle.html#ae58184b4769bac7da6e34285afe59030">bdm::SoHandle::GetElementIdx</a></div><div class="ttdeci">uint32_t GetElementIdx() const </div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00057">resource_manager.h:57</a></div></div>
+<div class="ttc" id="namespacebdm_html_a44410ba36e14149fdc0984839332899c"><div class="ttname"><a href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">bdm::GetIndex</a></div><div class="ttdeci">constexpr int GetIndex()</div><div class="ttdef"><b>Definition:</b> <a href="tuple__util_8h_source.html#l00096">tuple_util.h:96</a></div></div>
 <div class="ttc" id="classbdm_1_1ResourceManager_html"><div class="ttname"><a href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00149">resource_manager.h:149</a></div></div>
 <div class="ttc" id="classbdm_1_1ResourceManager_html_a918128f277cddece9a29e791d6b780f8"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#a918128f277cddece9a29e791d6b780f8">bdm::ResourceManager::New</a></div><div class="ttdeci">std::enable_if&lt; std::is_same&lt; TBackend, Soa &gt;::value, typename TScalarSo::template Self&lt; SoaRef &gt; &gt;::type New(Args...args)</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00343">resource_manager.h:343</a></div></div>
 <div class="ttc" id="classbdm_1_1SoHandle_html"><div class="ttname"><a href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00049">resource_manager.h:49</a></div></div>
@@ -433,7 +434,6 @@ $(document).ready(function(){initNavTree('resource__manager_8h_source.html','');
 <div class="ttc" id="classbdm_1_1ResourceManager_html_a9df906309ee1480a9a4d04393d79baa2"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#a9df906309ee1480a9a4d04393d79baa2">bdm::ResourceManager::GetDiffusionGrids</a></div><div class="ttdeci">std::vector&lt; DiffusionGrid * &gt; &amp; GetDiffusionGrids()</div><div class="ttdoc">Return the container of diffusion grids. </div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00203">resource_manager.h:203</a></div></div>
 <div class="ttc" id="tuple__util_8h_html"><div class="ttname"><a href="tuple__util_8h.html">tuple_util.h</a></div></div>
 <div class="ttc" id="structbdm_1_1ConvertToContainerTuple_html_a2367c2c96cb8585dc6313cd7a538a4f2"><div class="ttname"><a href="structbdm_1_1ConvertToContainerTuple.html#a2367c2c96cb8585dc6313cd7a538a4f2">bdm::ConvertToContainerTuple::type</a></div><div class="ttdeci">detail::ConvertToContainerTuple&lt; Backend, TCTList &gt;::type type</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00133">resource_manager.h:133</a></div></div>
-<div class="ttc" id="namespacebdm_html_a5d44535e6a8d94e12d2e4593fd0f444b"><div class="ttname"><a href="namespacebdm.html#a5d44535e6a8d94e12d2e4593fd0f444b">bdm::GetIndex</a></div><div class="ttdeci">constexpr size_t GetIndex()</div><div class="ttdef"><b>Definition:</b> <a href="tuple__util_8h_source.html#l00090">tuple_util.h:90</a></div></div>
 <div class="ttc" id="classbdm_1_1SoHandle_html_a52b17301f60f82fca0541a268a2db4f0"><div class="ttname"><a href="classbdm_1_1SoHandle.html#a52b17301f60f82fca0541a268a2db4f0">bdm::SoHandle::operator==</a></div><div class="ttdeci">bool operator==(const SoHandle &amp;other) const </div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00060">resource_manager.h:60</a></div></div>
 <div class="ttc" id="classbdm_1_1ResourceManager_html_acf9d0196ac4e75bdadb7fef9ec463897"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#acf9d0196ac4e75bdadb7fef9ec463897">bdm::ResourceManager::ClassDefNV</a></div><div class="ttdeci">ClassDefNV(ResourceManager, 1)</div></div>
 <div class="ttc" id="classbdm_1_1SoHandle_html_a355b6fc15a935a5f05fda45b1085f573"><div class="ttname"><a href="classbdm_1_1SoHandle.html#a355b6fc15a935a5f05fda45b1085f573">bdm::SoHandle::SoHandle</a></div><div class="ttdeci">SoHandle(uint16_t type_idx, uint32_t element_idx)</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00054">resource_manager.h:54</a></div></div>
@@ -468,7 +468,7 @@ $(document).ready(function(){initNavTree('resource__manager_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="resource__manager_8h.html">resource_manager.h</a></li>
-    <li class="footer">Generated on Fri Sep 21 2018 07:26:40 for BioDynaMo by
+    <li class="footer">Generated on Mon Sep 24 2018 12:43:53 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

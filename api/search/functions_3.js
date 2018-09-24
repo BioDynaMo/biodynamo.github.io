@@ -29,7 +29,7 @@ var searchData=
   ['concatnextpart',['ConcatNextPart',['../namespacebdm_1_1detail.html#a16e0361b1aefd0958218781e4e3bbf12',1,'bdm::detail::ConcatNextPart(std::ostringstream *ss)'],['../namespacebdm_1_1detail.html#ae95fbde7a3e0d9eda48e5c84a491996c',1,'bdm::detail::ConcatNextPart(std::ostringstream *ss, const T &amp;arg, const Args &amp;...parts)']]],
   ['coprocess',['CoProcess',['../classbdm_1_1InSituPipeline.html#a302f4c27dddcf25a3c6bfdb10dc5fdd5',1,'bdm::InSituPipeline']]],
   ['copy',['Copy',['../structbdm_1_1BaseBiologyModule.html#af76be6bbaae400590598cb11c1c73ef6',1,'bdm::BaseBiologyModule::Copy()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a2819596608096310568d593b63ff1553',1,'bdm::experimental::neuroscience::NeuriteElementExt::Copy()']]],
-  ['copybiologymodules',['CopyBiologyModules',['../namespacebdm.html#aed30d53a0f391d8c24ef68cea7a73dc2',1,'bdm']]],
+  ['copybiologymodules',['CopyBiologyModules',['../namespacebdm.html#a4c062c6bcddf1e43dd406a65cfa451eb',1,'bdm']]],
   ['copyolddata',['CopyOldData',['../classbdm_1_1DiffusionGrid.html#a637f10d9fc27d6a2672dbfad5c3e96b5',1,'bdm::DiffusionGrid']]],
   ['createcells',['CreateCells',['../structbdm_1_1ModelInitializer.html#a2b721509ccc34c02f11a59d96da47868',1,'bdm::ModelInitializer']]],
   ['createcellsrandom',['CreateCellsRandom',['../structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220',1,'bdm::ModelInitializer']]],

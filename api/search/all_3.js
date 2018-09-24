@@ -77,7 +77,7 @@ var searchData=
   ['coprocess',['CoProcess',['../classbdm_1_1InSituPipeline.html#a302f4c27dddcf25a3c6bfdb10dc5fdd5',1,'bdm::InSituPipeline']]],
   ['copy',['Copy',['../structbdm_1_1BaseBiologyModule.html#af76be6bbaae400590598cb11c1c73ef6',1,'bdm::BaseBiologyModule::Copy()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a2819596608096310568d593b63ff1553',1,'bdm::experimental::neuroscience::NeuriteElementExt::Copy()']]],
   ['copy_5fmask_5f',['copy_mask_',['../structbdm_1_1BaseBiologyModule.html#ab11c03eab9ce8faf961c2da0171e3d90',1,'bdm::BaseBiologyModule']]],
-  ['copybiologymodules',['CopyBiologyModules',['../namespacebdm.html#aed30d53a0f391d8c24ef68cea7a73dc2',1,'bdm']]],
+  ['copybiologymodules',['CopyBiologyModules',['../namespacebdm.html#a4c062c6bcddf1e43dd406a65cfa451eb',1,'bdm']]],
   ['copyolddata',['CopyOldData',['../classbdm_1_1DiffusionGrid.html#a637f10d9fc27d6a2672dbfad5c3e96b5',1,'bdm::DiffusionGrid']]],
   ['countdown_5f',['countdown_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#aaa9648ffdc1a0d0a1cb6b6eed486f5bc',1,'bdm::Grid::Box::Iterator']]],
   ['counter_5f',['counter_',['../classbdm_1_1UniqueEventIdFactory.html#a83e9f33ec29b0489d805b7c3d43e3cca',1,'bdm::UniqueEventIdFactory::counter_()'],['../structbdm_1_1Simulation.html#a8f9dd024140c7122319fb69414a483cf',1,'bdm::Simulation::counter_()']]],

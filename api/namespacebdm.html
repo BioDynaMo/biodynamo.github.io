@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
+   &#160;<span id="projectnumber">v0.1.0-108-g0f7148a</span>
    </div>
   </td>
  </tr>
@@ -359,10 +359,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="memTemplParams" colspan="2">template&lt;typename TEvent , typename TBiologyModules &gt; </td></tr>
-<tr class="memitem:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aed30d53a0f391d8c24ef68cea7a73dc2">CopyBiologyModules</a> (const TEvent &amp;event, TBiologyModules *src, TBiologyModules *dest)</td></tr>
-<tr class="memdesc:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to copy biology modules from one structure to another.  <a href="#aed30d53a0f391d8c24ef68cea7a73dc2">More...</a><br/></td></tr>
-<tr class="separator:aed30d53a0f391d8c24ef68cea7a73dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c062c6bcddf1e43dd406a65cfa451eb"><td class="memTemplParams" colspan="2">template&lt;typename TEvent , typename TSrcBms , typename TDestBms &gt; </td></tr>
+<tr class="memitem:a4c062c6bcddf1e43dd406a65cfa451eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a4c062c6bcddf1e43dd406a65cfa451eb">CopyBiologyModules</a> (const TEvent &amp;event, TSrcBms *src, TDestBms *dest)</td></tr>
+<tr class="memdesc:a4c062c6bcddf1e43dd406a65cfa451eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to copy biology modules from one structure to another.  <a href="#a4c062c6bcddf1e43dd406a65cfa451eb">More...</a><br/></td></tr>
+<tr class="separator:a4c062c6bcddf1e43dd406a65cfa451eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b4c908b7fd30c77a880d0c2e86c570e"><td class="memTemplParams" colspan="2">template&lt;typename TEvent , typename TBiologyModules1 , typename... TBiologyModules&gt; </td></tr>
 <tr class="memitem:a3b4c908b7fd30c77a880d0c2e86c570e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a3b4c908b7fd30c77a880d0c2e86c570e">BiologyModuleEventHandler</a> (const TEvent &amp;event, TBiologyModules1 *current, TBiologyModules *...bms)</td></tr>
 <tr class="memdesc:a3b4c908b7fd30c77a880d0c2e86c570e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to invoke the EventHandler of the biology module or remove it from <code>current</code>. Forwards the event handler call to each biology modules of the triggered simulation object and removes biology modules if they are flagged.  <a href="#a3b4c908b7fd30c77a880d0c2e86c570e">More...</a><br/></td></tr>
@@ -399,12 +399,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a0178a169df1fa84ba03b5251bbe37b11"><td class="memTemplParams" colspan="2">template&lt;typename TTuple , typename TFunction &gt; </td></tr>
 <tr class="memitem:a0178a169df1fa84ba03b5251bbe37b11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11">Apply</a> (TTuple *t, size_t index, TFunction &amp;&amp;f)</td></tr>
 <tr class="separator:a0178a169df1fa84ba03b5251bbe37b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d44535e6a8d94e12d2e4593fd0f444b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Types&gt; </td></tr>
-<tr class="memitem:a5d44535e6a8d94e12d2e4593fd0f444b"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a5d44535e6a8d94e12d2e4593fd0f444b">GetIndex</a> ()</td></tr>
-<tr class="separator:a5d44535e6a8d94e12d2e4593fd0f444b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44410ba36e14149fdc0984839332899c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Types&gt; </td></tr>
+<tr class="memitem:a44410ba36e14149fdc0984839332899c"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a> ()</td></tr>
+<tr class="separator:a44410ba36e14149fdc0984839332899c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0afb3104a493a1bbe226d5d8941dedb6"><td class="memTemplParams" colspan="2">template&lt;typename TFunction , typename TVariant &gt; </td></tr>
 <tr class="memitem:a0afb3104a493a1bbe226d5d8941dedb6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a0afb3104a493a1bbe226d5d8941dedb6">visit</a> (TFunction &amp;&amp;function, TVariant &amp;&amp;variant_wrapper)</td></tr>
-<tr class="memdesc:a0afb3104a493a1bbe226d5d8941dedb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for mpark::visit.  <a href="#a0afb3104a493a1bbe226d5d8941dedb6">More...</a><br/></td></tr>
 <tr class="separator:a0afb3104a493a1bbe226d5d8941dedb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab291b0599189874b13202a8d563e700c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TVariant &gt; </td></tr>
 <tr class="memitem:ab291b0599189874b13202a8d563e700c"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ab291b0599189874b13202a8d563e700c">get_if</a> (TVariant *variant_wrapper)</td></tr>
@@ -812,7 +811,7 @@ template&lt;typename TTuple , typename TFunction &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="tuple__util_8h_source.html#l00082">82</a> of file <a class="el" href="tuple__util_8h_source.html">tuple_util.h</a>.</p>
+<p>Definition at line <a class="el" href="tuple__util_8h_source.html#l00088">88</a> of file <a class="el" href="tuple__util_8h_source.html">tuple_util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -911,7 +910,7 @@ template&lt;typename TEvent , typename TBiologyModules1 , typename... TBiologyMo
 <p>Function to invoke the EventHandler of the biology module or remove it from <code>current</code>. Forwards the event handler call to each biology modules of the triggered simulation object and removes biology modules if they are flagged. </p>
 <p>return nullptr of condition is false or pointer to object in variant </p>
 
-<p>Definition at line <a class="el" href="biology__module__util_8h_source.html#l00128">128</a> of file <a class="el" href="biology__module__util_8h_source.html">biology_module_util.h</a>.</p>
+<p>Definition at line <a class="el" href="biology__module__util_8h_source.html#l00127">127</a> of file <a class="el" href="biology__module__util_8h_source.html">biology_module_util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -977,18 +976,18 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a2fa839a2549004e92e23175955de8ae9_icgraph.svg" width="782" height="1736"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a2fa839a2549004e92e23175955de8ae9_icgraph.svg" width="782" height="1891"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aed30d53a0f391d8c24ef68cea7a73dc2"></a>
+<a class="anchor" id="a4c062c6bcddf1e43dd406a65cfa451eb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TEvent , typename TBiologyModules &gt; </div>
+template&lt;typename TEvent , typename TSrcBms , typename TDestBms &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void bdm::CopyBiologyModules </td>
@@ -999,13 +998,13 @@ template&lt;typename TEvent , typename TBiologyModules &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TBiologyModules *&#160;</td>
+          <td class="paramtype">TSrcBms *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TBiologyModules *&#160;</td>
+          <td class="paramtype">TDestBms *&#160;</td>
           <td class="paramname"><em>dest</em>&#160;</td>
         </tr>
         <tr>
@@ -1037,7 +1036,7 @@ template&lt;typename TEvent , typename TBiologyModules &gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_aed30d53a0f391d8c24ef68cea7a73dc2_cgraph.svg" width="318" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a4c062c6bcddf1e43dd406a65cfa451eb_cgraph.svg" width="318" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1045,7 +1044,7 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_aed30d53a0f391d8c24ef68cea7a73dc2_icgraph.svg" width="494" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a4c062c6bcddf1e43dd406a65cfa451eb_icgraph.svg" width="494" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1130,8 +1129,10 @@ template&lt;typename T , typename TVariant &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Use same interface for <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a> as std::variant </p>
+<dl class="section see"><dt>See Also</dt><dd>std::get_if </dd></dl>
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00037">37</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00040">40</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -1150,12 +1151,14 @@ template&lt;typename T , typename TVariant &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Use same interface for <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a> as std::variant </p>
+<dl class="section see"><dt>See Also</dt><dd>std::get_if </dd></dl>
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00041">41</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00047">47</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5d44535e6a8d94e12d2e4593fd0f444b"></a>
+<a class="anchor" id="a44410ba36e14149fdc0984839332899c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1165,7 +1168,7 @@ template&lt;typename T , typename... Types&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t bdm::GetIndex </td>
+          <td class="memname">constexpr int bdm::GetIndex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1179,12 +1182,12 @@ template&lt;typename T , typename... Types&gt; </div>
 </div><div class="memdoc">
 <p>Return the index of the first occurence of type T within the variadic template parameter Types. </p>
 
-<p>Definition at line <a class="el" href="tuple__util_8h_source.html#l00090">90</a> of file <a class="el" href="tuple__util_8h_source.html">tuple_util.h</a>.</p>
+<p>Definition at line <a class="el" href="tuple__util_8h_source.html#l00096">96</a> of file <a class="el" href="tuple__util_8h_source.html">tuple_util.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a5d44535e6a8d94e12d2e4593fd0f444b_icgraph.svg" width="352" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a44410ba36e14149fdc0984839332899c_icgraph.svg" width="352" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1329,15 +1332,15 @@ template&lt;typename TFunction , typename TVariant &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Use same interface for <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a> as std::variant </p>
+<dl class="section see"><dt>See Also</dt><dd>std::visit </dd></dl>
 
-<p>Wrapper for mpark::visit. </p>
-
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00031">31</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00033">33</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a0afb3104a493a1bbe226d5d8941dedb6_icgraph.svg" width="662" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebdm_a0afb3104a493a1bbe226d5d8941dedb6_icgraph.svg" width="662" height="607"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1475,7 +1478,7 @@ Used to create a biology module which is copied for every event. </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li>
-    <li class="footer">Generated on Fri Sep 21 2018 07:26:40 for BioDynaMo by
+    <li class="footer">Generated on Mon Sep 24 2018 12:43:53 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-107-gb0d52e6</span>
+   &#160;<span id="projectnumber">v0.1.0-108-g0f7148a</span>
    </div>
   </td>
  </tr>
@@ -120,22 +120,53 @@ $(document).ready(function(){initNavTree('classbdm_1_1Variant.html','');});
 <div class="dynheader">
 Collaboration diagram for bdm::Variant&lt; Types &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Variant__coll__graph.svg" width="166" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Variant__coll__graph.svg" width="166" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6f4f10a85c69c606792b52c9d9a6475b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6f4f10a85c69c606792b52c9d9a6475b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a6f4f10a85c69c606792b52c9d9a6475b">Variant</a> (const T &amp;value)</td></tr>
-<tr class="separator:a6f4f10a85c69c606792b52c9d9a6475b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc6a3caf54fa03f903e3fef016dee84"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acbc6a3caf54fa03f903e3fef016dee84"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#acbc6a3caf54fa03f903e3fef016dee84">Variant</a> (const T &amp;value, typename std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, Types...&gt;()!=-1 &gt;::type *p=nullptr)</td></tr>
+<tr class="separator:acbc6a3caf54fa03f903e3fef016dee84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e5f32b0d4624cb1c57a31eb8573ca9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a63e5f32b0d4624cb1c57a31eb8573ca9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a63e5f32b0d4624cb1c57a31eb8573ca9">Variant</a> (const T &amp;value, typename std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, Types...&gt;()==-1 &gt;::type *p=nullptr)</td></tr>
+<tr class="separator:a63e5f32b0d4624cb1c57a31eb8573ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4803331d3c5a7b730346ddf58a560463"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a4803331d3c5a7b730346ddf58a560463">Variant</a> ()</td></tr>
 <tr class="separator:a4803331d3c5a7b730346ddf58a560463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d0c2d66cf126b5792e5cbb424305b85"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a9d0c2d66cf126b5792e5cbb424305b85">~Variant</a> ()</td></tr>
 <tr class="separator:a9d0c2d66cf126b5792e5cbb424305b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa94bec2324daa3a3037b7663fb35ed92"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa94bec2324daa3a3037b7663fb35ed92"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Variant.html">Variant</a>&lt; Types...&gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#aa94bec2324daa3a3037b7663fb35ed92">operator=</a> (const T &amp;value)</td></tr>
-<tr class="separator:aa94bec2324daa3a3037b7663fb35ed92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7ca1f01899b17be1b9946076292bed"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aff7ca1f01899b17be1b9946076292bed"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, <br class="typebreak"/>
+Types...&gt;)!=-1, <a class="el" href="classbdm_1_1Variant.html">Variant</a><br class="typebreak"/>
+&lt; Types...&gt; &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#aff7ca1f01899b17be1b9946076292bed">operator=</a> (const T &amp;value)</td></tr>
+<tr class="separator:aff7ca1f01899b17be1b9946076292bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8daf077e2e4a9aa3410ceea52c77aa6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa8daf077e2e4a9aa3410ceea52c77aa6"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, <br class="typebreak"/>
+Types...&gt;)==-1, <a class="el" href="classbdm_1_1Variant.html">Variant</a><br class="typebreak"/>
+&lt; Types...&gt; &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#aa8daf077e2e4a9aa3410ceea52c77aa6">operator=</a> (const T &amp;value)</td></tr>
+<tr class="separator:aa8daf077e2e4a9aa3410ceea52c77aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da895fe9819bfda56cefcec2594a9f6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9da895fe9819bfda56cefcec2594a9f6"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, <br class="typebreak"/>
+Types...&gt;)!=-1, T * &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a9da895fe9819bfda56cefcec2594a9f6">GetIf</a> ()</td></tr>
+<tr class="separator:a9da895fe9819bfda56cefcec2594a9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a25cc81cb7f4bc6bc8d7b44c31fb18"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a51a25cc81cb7f4bc6bc8d7b44c31fb18"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, <br class="typebreak"/>
+Types...&gt;)==-1, T * &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a51a25cc81cb7f4bc6bc8d7b44c31fb18">GetIf</a> ()</td></tr>
+<tr class="separator:a51a25cc81cb7f4bc6bc8d7b44c31fb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1239c03fae27a76e011dcaf8db8b6ee5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1239c03fae27a76e011dcaf8db8b6ee5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, <br class="typebreak"/>
+Types...&gt;)!=-1, const T * &gt;<br class="typebreak"/>
+::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a1239c03fae27a76e011dcaf8db8b6ee5">GetIf</a> () const </td></tr>
+<tr class="separator:a1239c03fae27a76e011dcaf8db8b6ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e649d0bc4a3d16bf83e80a2abf5c2b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac9e649d0bc4a3d16bf83e80a2abf5c2b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, <br class="typebreak"/>
+Types...&gt;)==-1, const T * &gt;<br class="typebreak"/>
+::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#ac9e649d0bc4a3d16bf83e80a2abf5c2b">GetIf</a> () const </td></tr>
+<tr class="separator:ac9e649d0bc4a3d16bf83e80a2abf5c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9a61b03801d8e2448cbb1eb3118365"><td class="memTemplParams" colspan="2">template&lt;typename TFunction &gt; </td></tr>
+<tr class="memitem:a0f9a61b03801d8e2448cbb1eb3118365"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a0f9a61b03801d8e2448cbb1eb3118365">Visit</a> (TFunction &amp;&amp;function)</td></tr>
+<tr class="separator:a0f9a61b03801d8e2448cbb1eb3118365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b59d896fc043f9c91a439d5a82cb094"><td class="memItemLeft" align="right" valign="top">TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a6b59d896fc043f9c91a439d5a82cb094">IsA</a> () const </td></tr>
 <tr class="separator:a6b59d896fc043f9c91a439d5a82cb094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b97d0928925359676bb4438d499fb21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a8b97d0928925359676bb4438d499fb21">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
@@ -178,7 +209,6 @@ Static Private Attributes</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:ae02b25e348d208f4490599a24d08cd4d"><td class="memTemplParams" colspan="2">template&lt;typename TFunction , typename TVariant &gt; </td></tr>
 <tr class="memitem:ae02b25e348d208f4490599a24d08cd4d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#ae02b25e348d208f4490599a24d08cd4d">visit</a> (TFunction &amp;&amp;function, TVariant &amp;&amp;variant_wrapper)</td></tr>
-<tr class="memdesc:ae02b25e348d208f4490599a24d08cd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for mpark::visit.  <a href="#ae02b25e348d208f4490599a24d08cd4d">More...</a><br/></td></tr>
 <tr class="separator:ae02b25e348d208f4490599a24d08cd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f52e6168f6bbfec5901ce70b05dc71f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TVariant &gt; </td></tr>
 <tr class="memitem:a4f52e6168f6bbfec5901ce70b05dc71f"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Variant.html#a4f52e6168f6bbfec5901ce70b05dc71f">get_if</a> (TVariant *variant_wrapper)</td></tr>
@@ -193,9 +223,9 @@ class bdm::Variant&lt; Types &gt;</h3>
 
 <p>Wrapper for mpark::variant. Necessary, because mpark::variant canno be written to a ROOT file. Therefore, it is wrapped in this object that has a custom streamer. </p>
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00049">49</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00055">55</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6f4f10a85c69c606792b52c9d9a6475b"></a>
+<a class="anchor" id="acbc6a3caf54fa03f903e3fef016dee84"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -210,8 +240,18 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::<a class="el" href="classbdm_1_1Variant.html">Variant</a> </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, Types...&gt;()!=-1 &gt;::type *&#160;</td>
+          <td class="paramname"><em>p</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -221,7 +261,55 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00052">52</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00058">58</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63e5f32b0d4624cb1c57a31eb8573ca9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::<a class="el" href="classbdm_1_1Variant.html">Variant</a> </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; <a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt; T, Types...&gt;()==-1 &gt;::type *&#160;</td>
+          <td class="paramname"><em>p</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00064">64</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Variant_a63e5f32b0d4624cb1c57a31eb8573ca9_cgraph.svg" width="704" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -248,7 +336,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00054">54</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00072">72</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +363,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00056">56</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00074">74</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -303,7 +391,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +443,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +470,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +497,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -435,6 +523,138 @@ template&lt;typename... Types&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9da895fe9819bfda56cefcec2594a9f6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;<a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt;T, Types...&gt;) != -1, T*&gt;::type <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::GetIf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00095">95</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a51a25cc81cb7f4bc6bc8d7b44c31fb18"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;<a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt;T, Types...&gt;) == -1, T*&gt;::type <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::GetIf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00100">100</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Variant_a51a25cc81cb7f4bc6bc8d7b44c31fb18_cgraph.svg" width="691" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1239c03fae27a76e011dcaf8db8b6ee5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;<a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt;T, Types...&gt;) != -1, const T*&gt;::type <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::GetIf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00107">107</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9e649d0bc4a3d16bf83e80a2abf5c2b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;<a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt;T, Types...&gt;) == -1, const T*&gt;::type <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::GetIf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00113">113</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Variant_ac9e649d0bc4a3d16bf83e80a2abf5c2b_cgraph.svg" width="691" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -511,11 +731,11 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa94bec2324daa3a3037b7663fb35ed92"></a>
+<a class="anchor" id="aff7ca1f01899b17be1b9946076292bed"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -527,7 +747,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1Variant.html">Variant</a>&lt;Types...&gt;&amp; <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::operator= </td>
+          <td class="memname">std::enable_if&lt;<a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt;T, Types...&gt;) != -1, <a class="el" href="classbdm_1_1Variant.html">Variant</a>&lt;Types...&gt;&amp;&gt;::type <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -541,7 +761,45 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00059">59</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00079">79</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8daf077e2e4a9aa3410ceea52c77aa6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;<a class="el" href="namespacebdm.html#a44410ba36e14149fdc0984839332899c">GetIndex</a>&lt;T, Types...&gt;) == -1, <a class="el" href="classbdm_1_1Variant.html">Variant</a>&lt;Types...&gt;&amp;&gt;::type <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00087">87</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Variant_aa8daf077e2e4a9aa3410ceea52c77aa6_cgraph.svg" width="718" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -569,7 +827,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +855,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00135">135</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00196">196</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -633,7 +891,45 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f9a61b03801d8e2448cbb1eb3118365"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Types&gt; </div>
+<div class="memtemplate">
+template&lt;typename TFunction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a>&lt; Types &gt;::Visit </td>
+          <td>(</td>
+          <td class="paramtype">TFunction &amp;&amp;&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00121">121</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Variant_a0f9a61b03801d8e2448cbb1eb3118365_cgraph.svg" width="270" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -663,8 +959,10 @@ template&lt;typename T , typename TVariant &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Use same interface for <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a> as std::variant </p>
+<dl class="section see"><dt>See Also</dt><dd>std::get_if </dd></dl>
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00037">37</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00040">40</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -693,8 +991,10 @@ template&lt;typename T , typename TVariant &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Use same interface for <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a> as std::variant </p>
+<dl class="section see"><dt>See Also</dt><dd>std::get_if </dd></dl>
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00041">41</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00047">47</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -733,10 +1033,10 @@ template&lt;typename TFunction , typename TVariant &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Use same interface for <a class="el" href="classbdm_1_1Variant.html">bdm::Variant</a> as std::variant </p>
+<dl class="section see"><dt>See Also</dt><dd>std::visit </dd></dl>
 
-<p>Wrapper for mpark::visit. </p>
-
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00031">31</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00033">33</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +1061,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00065">65</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00126">126</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -785,7 +1085,7 @@ template&lt;typename... Types&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="variant_8h_source.html#l00078">78</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
+<p>Definition at line <a class="el" href="variant_8h_source.html#l00139">139</a> of file <a class="el" href="variant_8h_source.html">variant.h</a>.</p>
 
 </div>
 </div>
@@ -798,7 +1098,7 @@ template&lt;typename... Types&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Variant.html">Variant</a></li>
-    <li class="footer">Generated on Fri Sep 21 2018 07:26:41 for BioDynaMo by
+    <li class="footer">Generated on Mon Sep 24 2018 12:43:53 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
