@@ -1,7 +1,10 @@
 var structbdm_1_1experimental_1_1neuroscience_1_1Param =
 [
     [ "AssignFromConfig", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ae365fefa1320254ffcfce9bc65ea2f5b", null ],
-    [ "ClassDefNV", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a38d8f2b9c7766598474a9b8d7c675344", null ],
+    [ "IsA", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a61d7b6bd8746cbb10546c37b3aed1310", null ],
+    [ "ShowMembers", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a7b4e4f12c3773561114370fd2c66f7f2", null ],
+    [ "Streamer", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ad6af2ff8990b879bcbbfd6892d7cbbf7", null ],
+    [ "StreamerNVirtual", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a114e24047743ad434874f9dac7551f90", null ],
     [ "neurite_default_actual_length_", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a6cf5e4cb50eb1a77b99c18e7e078a122", null ],
     [ "neurite_default_adherence_", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a13311dca9bdf9969157e2603739de8ad", null ],
     [ "neurite_default_density_", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a047459fb3258bfcd78929f9f2a2dce74", null ],

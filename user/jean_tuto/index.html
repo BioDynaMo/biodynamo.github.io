@@ -858,7 +858,7 @@ You can also directly use <code class="codehilite">biodynamo demo tumor_concept<
         <span class="c1">// code to be executed each at simulation step</span>
       <span class="p">}</span>
 
-    <span class="n">ClassDefNV</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="n">BDM_CLASS_DEF_NV</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
   <span class="p">};</span>
 </pre></div></p>
 <p>We are now able to add any code in the Run() method, that will be executed at each simulation step for each cell containing this GrowthModule. In our case, it will be a cellular growth, until a certain diameter is reached and then a cell division:
@@ -1066,7 +1066,7 @@ Finally, don't forget to set the daughter can_divide_ value to true after a cell
       <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="n">ClassDefNV</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="n">BDM_CLASS_DEF_NV</span><span class="p">(</span><span class="n">GrowthModule</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
   <span class="p">};</span>
 
   <span class="c1">// Define compile time parameter</span>

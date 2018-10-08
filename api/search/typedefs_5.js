@@ -7,5 +7,6 @@ var searchData=
   ['neuriteorneuron',['NeuriteOrNeuron',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a44ec5cf3a0a8b24ef42e99cc72ddb9ca',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['neuronsoma',['NeuronSoma',['../structbdm_1_1experimental_1_1neuroscience_1_1DefaultCTParam.html#a292cd3a5397d7519c4e1f0ad5d52598e',1,'bdm::experimental::neuroscience::DefaultCTParam::NeuronSoma()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aa0e661c70c491f8eb0d532e69239c911',1,'bdm::experimental::neuroscience::NeuriteElementExt::NeuronSoma()'],['../namespacebdm_1_1experimental_1_1neuroscience.html#a19a8647c1380b168f90512da31ce4754',1,'bdm::experimental::neuroscience::NeuronSoma()']]],
   ['neuronsoma_5ftctparam_5ftderived',['NeuronSoma_TCTParam_TDerived',['../namespacebdm_1_1experimental_1_1neuroscience.html#a2b0ca4b7c961e8f400925e57f41eb612',1,'bdm::experimental::neuroscience']]],
+  ['neuronsomasoptr',['NeuronSomaSoPtr',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ad5abc8dfbb03c46e1d5ed5461e08bf47',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['neuronsomatest',['NeuronSomaTest',['../namespacebdm_1_1experimental_1_1neuroscience.html#ae0e41bbabd6125c7e11761aa0100614d',1,'bdm::experimental::neuroscience']]]
 ];

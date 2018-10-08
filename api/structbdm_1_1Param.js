@@ -6,7 +6,10 @@ var structbdm_1_1Param =
       [ "kRK4", "structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471af4c505faf476b7245b728bbba6dedd34", null ]
     ] ],
     [ "AssignFromConfig", "structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a", null ],
-    [ "ClassDefNV", "structbdm_1_1Param.html#a1878562fdbe371d546af644e16dd8205", null ],
+    [ "IsA", "structbdm_1_1Param.html#a9751bbc8a00396afec220d25773af757", null ],
+    [ "ShowMembers", "structbdm_1_1Param.html#a4dfb22d2e4d9f16a397bc689489b1851", null ],
+    [ "Streamer", "structbdm_1_1Param.html#a18addc5179619c36f1126daf4fc6a3fc", null ],
+    [ "StreamerNVirtual", "structbdm_1_1Param.html#af9ee80cc7c8022a1b1bdb43838bbe2c3", null ],
     [ "backup_file_", "structbdm_1_1Param.html#ab3790595d9010d2e4c1cd765fa697e8b", null ],
     [ "backup_interval_", "structbdm_1_1Param.html#ae8a9d38081642a9323f8884b64d41efe", null ],
     [ "bound_space_", "structbdm_1_1Param.html#aec37de9267ac01cbb088db5c993b20af", null ],

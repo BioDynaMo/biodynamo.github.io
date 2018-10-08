@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-108-g0f7148a</span>
+   &#160;<span id="projectnumber">v0.1.0-110-g8a97cf2</span>
    </div>
   </td>
  </tr>
@@ -108,18 +108,17 @@ $(document).ready(function(){initNavTree('root__util_8h.html','');});
 <div class="title">root_util.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;Rtypes.h&gt;</code><br/>
-<code>#include &lt;TBuffer.h&gt;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for root_util.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="root__util_8h__incl.svg" width="186" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="root__util_8h__incl.svg" width="423" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="root__util_8h__dep__incl.svg" width="1916" height="774"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="root__util_8h__dep__incl.svg" width="3964" height="848"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -127,15 +126,189 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a64dc6aae7ee3dc454c736b85bcdf8729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#a64dc6aae7ee3dc454c736b85bcdf8729">BDM_ROOT_CLASS_DEF</a>(class_name, class_version_id)</td></tr>
+<tr class="memitem:aa07a4a7d59baa93774c7bf6d7ff06ae2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#aa07a4a7d59baa93774c7bf6d7ff06ae2">BDM_DICT_ERROR_MSG</a></td></tr>
+<tr class="separator:aa07a4a7d59baa93774c7bf6d7ff06ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52b2736a51330e98bf5c85214fe9e7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d">BDM_NULL_CLASS_DEF</a>(class_name, class_version_id)</td></tr>
+<tr class="separator:ad52b2736a51330e98bf5c85214fe9e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc090da0be957a6b9db6f5db37682208"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#afc090da0be957a6b9db6f5db37682208">BDM_NULL_CLASS_DEF_NV</a>(class_name, class_version_id)</td></tr>
+<tr class="separator:afc090da0be957a6b9db6f5db37682208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3354d9f302bfaa691c2092993c795d54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#a3354d9f302bfaa691c2092993c795d54">BDM_NULL_CLASS_DEF_CUSTOM_STREAMER</a>(class_name, class_version_id)</td></tr>
+<tr class="separator:a3354d9f302bfaa691c2092993c795d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef6be35d6b3f2ce05d2db5ee58beeb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5">BDM_CLASS_DEF_NV</a>(class_name, class_version_id)&#160;&#160;&#160;<a class="el" href="root__util_8h.html#afc090da0be957a6b9db6f5db37682208">BDM_NULL_CLASS_DEF_NV</a>(class_name, class_version_id)</td></tr>
+<tr class="memdesc:a7ef6be35d6b3f2ce05d2db5ee58beeb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward all calls to BDM_NULL_CLASS_DEF.  <a href="#a7ef6be35d6b3f2ce05d2db5ee58beeb5">More...</a><br/></td></tr>
+<tr class="separator:a7ef6be35d6b3f2ce05d2db5ee58beeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109149e13a192399f7c71b28f1e4c3ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#a109149e13a192399f7c71b28f1e4c3ea">BDM_CLASS_DEF</a>(class_name, class_version_id)&#160;&#160;&#160;<a class="el" href="root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d">BDM_NULL_CLASS_DEF</a>(class_name, class_version_id)</td></tr>
+<tr class="separator:a109149e13a192399f7c71b28f1e4c3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dc6aae7ee3dc454c736b85bcdf8729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#a64dc6aae7ee3dc454c736b85bcdf8729">BDM_ROOT_CLASS_DEF</a>(class_name, class_version_id)&#160;&#160;&#160;<a class="el" href="root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d">BDM_NULL_CLASS_DEF</a>(class_name, class_version_id)</td></tr>
 <tr class="separator:a64dc6aae7ee3dc454c736b85bcdf8729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbebc0a8e378d43b5eeefaf2b6f56287"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#abbebc0a8e378d43b5eeefaf2b6f56287">BDM_ROOT_CLASS_DEF_OVERRIDE</a>(class_name, class_version_id)</td></tr>
-<tr class="memdesc:abbebc0a8e378d43b5eeefaf2b6f56287"><td class="mdescLeft">&#160;</td><td class="mdescRight">See documentation of BDM_ROOT_CLASS_DEF.  <a href="#abbebc0a8e378d43b5eeefaf2b6f56287">More...</a><br/></td></tr>
+<tr class="memitem:abbebc0a8e378d43b5eeefaf2b6f56287"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#abbebc0a8e378d43b5eeefaf2b6f56287">BDM_ROOT_CLASS_DEF_OVERRIDE</a>(class_name, class_version_id)&#160;&#160;&#160;<a class="el" href="root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d">BDM_NULL_CLASS_DEF</a>(class_name, class_version_id)</td></tr>
 <tr class="separator:abbebc0a8e378d43b5eeefaf2b6f56287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6603a108a7534f809ef5e02a5af41135"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#a6603a108a7534f809ef5e02a5af41135">BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER</a>(class_name, class_version_id)</td></tr>
+<tr class="memitem:a6603a108a7534f809ef5e02a5af41135"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="root__util_8h.html#a6603a108a7534f809ef5e02a5af41135">BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER</a>(class_name, class_version_id)&#160;&#160;&#160;<a class="el" href="root__util_8h.html#a3354d9f302bfaa691c2092993c795d54">BDM_NULL_CLASS_DEF_CUSTOM_STREAMER</a>(class_name, class_version_id)</td></tr>
 <tr class="separator:a6603a108a7534f809ef5e02a5af41135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a109149e13a192399f7c71b28f1e4c3ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_CLASS_DEF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_version_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d">BDM_NULL_CLASS_DEF</a>(class_name, class_version_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00304">304</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ef6be35d6b3f2ce05d2db5ee58beeb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_CLASS_DEF_NV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_version_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="root__util_8h.html#afc090da0be957a6b9db6f5db37682208">BDM_NULL_CLASS_DEF_NV</a>(class_name, class_version_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forward all calls to BDM_NULL_CLASS_DEF. </p>
+
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00302">302</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa07a4a7d59baa93774c7bf6d7ff06ae2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_DICT_ERROR_MSG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="stringliteral">&quot;You tried to use a ROOT dictionary function, but &quot;</span> \</div>
+<div class="line">  <span class="stringliteral">&quot;compiled BioDynaMo without dictionary support. &quot;</span>   \</div>
+<div class="line">  <span class="stringliteral">&quot;Please configure with cmake -Ddict=on .. and recompile.&quot;</span></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00145">145</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad52b2736a51330e98bf5c85214fe9e7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_NULL_CLASS_DEF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_version_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Macro that inserts empty definitions of each function used for compilations without dictionaries. <br/>
+The compiler won't complain about missing functions. <br/>
+However, if ROOT functions are used that rely on dictionaries (e.g. backup) a runtime error will be thrown. </p>
+
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00155">155</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3354d9f302bfaa691c2092993c795d54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_NULL_CLASS_DEF_CUSTOM_STREAMER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_version_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00252">252</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc090da0be957a6b9db6f5db37682208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_NULL_CLASS_DEF_NV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_version_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00206">206</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a64dc6aae7ee3dc454c736b85bcdf8729"></a>
 <div class="memitem">
 <div class="memproto">
@@ -155,51 +328,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d">BDM_NULL_CLASS_DEF</a>(class_name, class_version_id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                                                                  \</div>
-<div class="line">  static atomic_TClass_ptr fgIsA;                                          \</div>
-<div class="line">                                                                           \</div>
-<div class="line"> public:                                                                   \</div>
-<div class="line">  static TClass* Class() {                                                 \</div>
-<div class="line">    throw <span class="stringliteral">&quot;This method should have been replaced by the ROOT dictionary.&quot;</span>; \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* Class_Name();                                         \</div>
-<div class="line">  static Version_t Class_Version() { <span class="keywordflow">return</span> class_version_id; }            \</div>
-<div class="line">  static TClass* Dictionary();                                             \</div>
-<div class="line">  virtual TClass* IsA()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> class_name::Class(); }              \</div>
-<div class="line">  virtual <span class="keywordtype">void</span> ShowMembers(TMemberInspector&amp; insp)<span class="keyword"> const </span>{                 \</div>
-<div class="line">    ::ROOT::Class_ShowMembers(class_name::Class(), <span class="keyword">this</span>, insp);            \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  virtual <span class="keywordtype">void</span> Streamer(TBuffer&amp;) {                                        \</div>
-<div class="line">    throw <span class="stringliteral">&quot;This method should have been replaced by the ROOT dictionary.&quot;</span>; \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  void StreamerNVirtual(TBuffer&amp; ClassDef_StreamerNVirtual_b) {            \</div>
-<div class="line">    class_name::Streamer(ClassDef_StreamerNVirtual_b);                     \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* DeclFileName() { <span class="keywordflow">return</span> __FILE__; }                   \</div>
-<div class="line">  static <span class="keywordtype">int</span> ImplFileLine();                                               \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* ImplFileName();                                       \</div>
-<div class="line">  static <span class="keywordtype">int</span> DeclFileLine() { <span class="keywordflow">return</span> __LINE__; }                           \</div>
-<div class="line">                                                                           \</div>
-<div class="line"> private:</div>
-</div><!-- fragment --><p>ROOT's ClassDef macro had to be modified due to an issue with SoaRef backend. Since all data members are references, they cannot be initialized from ROOT I/O. As a consequence, classes with a <code>SoaRef</code> backend are excluded from dictionary generation. With the default ROOT <code>ClassDef</code> macro this would lead to a linking error, because there is no implementation for the methods <code>Class()</code> and <code>Streamer()</code>. To mitigate this problem, this macro inserts a default implementation of these methods. For other backends, these implementation is replaced by the dictionary using template specialization. See also ROOT-8784 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">class_name</td><td>class name without template specifier. e.g. <br/>
- <code>class Foo {};</code> <br/>
- -&gt; class_name: <code>Foo</code> <br/>
- <code>template &lt;typename T&gt; class Foo {};</code> <br/>
- -&gt; class_name: <code>Foo</code> <br/>
-</td></tr>
-    <tr><td class="paramname">class_version_id</td><td>required for ROOT I/O (see ROOT ClassDef Macro). Every time the layout of the class is changed, class_version_id must be incremented by one. The class_version_id should be greater or equal to 1. </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Definition at line <a class="el" href="root__util_8h_source.html#l00039">39</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00306">306</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
 
 </div>
 </div>
@@ -222,40 +356,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d">BDM_NULL_CLASS_DEF</a>(class_name, class_version_id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                                                                  \</div>
-<div class="line">  static atomic_TClass_ptr fgIsA;                                          \</div>
-<div class="line">                                                                           \</div>
-<div class="line"> public:                                                                   \</div>
-<div class="line">  static TClass* Class() {                                                 \</div>
-<div class="line">    throw <span class="stringliteral">&quot;This method should have been replaced by the ROOT dictionary.&quot;</span>; \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* Class_Name();                                         \</div>
-<div class="line">  static Version_t Class_Version() { <span class="keywordflow">return</span> class_version_id; }            \</div>
-<div class="line">  static TClass* Dictionary();                                             \</div>
-<div class="line">  TClass* IsA()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> class_name::Class(); }             \</div>
-<div class="line">  void ShowMembers(TMemberInspector&amp; insp)<span class="keyword"> const override </span>{                \</div>
-<div class="line">    ::ROOT::Class_ShowMembers(class_name::Class(), <span class="keyword">this</span>, insp);            \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  void Streamer(TBuffer&amp;)<span class="keyword"> override </span>{                                       \</div>
-<div class="line">    throw <span class="stringliteral">&quot;This method should have been replaced by the ROOT dictionary.&quot;</span>; \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  void StreamerNVirtual(TBuffer&amp; ClassDef_StreamerNVirtual_b) {            \</div>
-<div class="line">    class_name::Streamer(ClassDef_StreamerNVirtual_b);                     \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* DeclFileName() { <span class="keywordflow">return</span> __FILE__; }                   \</div>
-<div class="line">  static <span class="keywordtype">int</span> ImplFileLine();                                               \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* ImplFileName();                                       \</div>
-<div class="line">  static <span class="keywordtype">int</span> DeclFileLine() { <span class="keywordflow">return</span> __LINE__; }                           \</div>
-<div class="line">                                                                           \</div>
-<div class="line"> private:</div>
-</div><!-- fragment -->
-<p>See documentation of BDM_ROOT_CLASS_DEF. </p>
 
-<p>Definition at line <a class="el" href="root__util_8h_source.html#l00069">69</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00308">308</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
 
 </div>
 </div>
@@ -278,37 +384,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="root__util_8h.html#a3354d9f302bfaa691c2092993c795d54">BDM_NULL_CLASS_DEF_CUSTOM_STREAMER</a>(class_name, class_version_id)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                                                                    \</div>
-<div class="line">  static atomic_TClass_ptr fgIsA;                                            \</div>
-<div class="line">                                                                             \</div>
-<div class="line"> public:                                                                     \</div>
-<div class="line">  static TClass* Class() {                                                   \</div>
-<div class="line">    throw <span class="stringliteral">&quot;This method should have been replaced by the ROOT dictionary.&quot;</span>;   \</div>
-<div class="line">  }                                                                          \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* Class_Name();                                           \</div>
-<div class="line">  static Version_t Class_Version() { <span class="keywordflow">return</span> class_version_id; }              \</div>
-<div class="line">  static TClass* Dictionary();                                               \</div>
-<div class="line">  TClass* IsA()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> class_name::Class(); }                        \</div>
-<div class="line">  void ShowMembers(TMemberInspector&amp; insp)<span class="keyword"> const </span>{                           \</div>
-<div class="line">    ::ROOT::Class_ShowMembers(class_name::Class(), <span class="keyword">this</span>, insp);              \</div>
-<div class="line">  }                                                                          \</div>
-<div class="line">  void Streamer(TBuffer&amp;);                                                   \</div>
-<div class="line">  void StreamerNVirtual(TBuffer&amp; ClassDef_StreamerNVirtual_b) {              \</div>
-<div class="line">    class_name::Streamer(ClassDef_StreamerNVirtual_b);                       \</div>
-<div class="line">  }                                                                          \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* DeclFileName() { <span class="keywordflow">return</span> __FILE__; }                     \</div>
-<div class="line">  static <span class="keywordtype">int</span> ImplFileLine();                                                 \</div>
-<div class="line">  static <span class="keyword">const</span> <span class="keywordtype">char</span>* ImplFileName();                                         \</div>
-<div class="line">  static <span class="keywordtype">int</span> DeclFileLine() { <span class="keywordflow">return</span> __LINE__; }                             \</div>
-<div class="line">                                                                             \</div>
-<div class="line"> private:</div>
-</div><!-- fragment --><p>This modification makes it possible to use templated classes with custom streamers without the generation of a dictionary for template instantiations that do not require I/O. Using ROOT's ClassDef macro would lead to a linking error since the function Class would not be defined. </p>
 
-<p>Definition at line <a class="el" href="root__util_8h_source.html#l00102">102</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
+<p>Definition at line <a class="el" href="root__util_8h_source.html#l00310">310</a> of file <a class="el" href="root__util_8h_source.html">root_util.h</a>.</p>
 
 </div>
 </div>
@@ -318,7 +399,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="root__util_8h.html">root_util.h</a></li>
-    <li class="footer">Generated on Mon Sep 24 2018 12:43:53 for BioDynaMo by
+    <li class="footer">Generated on Mon Oct 8 2018 21:17:38 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

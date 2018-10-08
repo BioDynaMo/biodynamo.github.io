@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-108-g0f7148a</span>
+   &#160;<span id="projectnumber">v0.1.0-110-g8a97cf2</span>
    </div>
   </td>
  </tr>
@@ -123,13 +123,13 @@ $(document).ready(function(){initNavTree('param_8h_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef PARAM_H_</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PARAM_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;Rtypes.h&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cinttypes&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;cpptoml/cpptoml.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;cinttypes&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;cpptoml/cpptoml.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="root__util_8h.html">root_util.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('param_8h_source.html','');});
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a">AssignFromConfig</a>(<span class="keyword">const</span> std::shared_ptr&lt;cpptoml::table&gt;&amp;);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <a class="code" href="structbdm_1_1Param.html#a1878562fdbe371d546af644e16dd8205">ClassDefNV</a>(<a class="code" href="structbdm_1_1Param.html">Param</a>, 1);</div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="structbdm_1_1Param.html#af9ee80cc7c8022a1b1bdb43838bbe2c3">  295</a></span>&#160;  <a class="code" href="root__util_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5">BDM_CLASS_DEF_NV</a>(<a class="code" href="structbdm_1_1Param.html">Param</a>, 1);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;};</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}  <span class="comment">// namespace bdm</span></div>
@@ -222,15 +222,16 @@ $(document).ready(function(){initNavTree('param_8h_source.html','');});
 <div class="ttc" id="structbdm_1_1Param_1_1VisualizeDiffusion_html_af977582e3fe80674720451880dd55e34"><div class="ttname"><a href="structbdm_1_1Param_1_1VisualizeDiffusion.html#af977582e3fe80674720451880dd55e34">bdm::Param::VisualizeDiffusion::gradient_</a></div><div class="ttdeci">bool gradient_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00197">param.h:197</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a10912de24f843fd275c0aad868259b97"><div class="ttname"><a href="structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97">bdm::Param::show_simulation_step_</a></div><div class="ttdeci">bool show_simulation_step_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00247">param.h:247</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a6e7b0cdea02e9f135f0a0dad4bc2daea"><div class="ttname"><a href="structbdm_1_1Param.html#a6e7b0cdea02e9f135f0a0dad4bc2daea">bdm::Param::opencl_debug_</a></div><div class="ttdeci">bool opencl_debug_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00281">param.h:281</a></div></div>
+<div class="ttc" id="root__util_8h_html_a7ef6be35d6b3f2ce05d2db5ee58beeb5"><div class="ttname"><a href="root__util_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5">BDM_CLASS_DEF_NV</a></div><div class="ttdeci">#define BDM_CLASS_DEF_NV(class_name, class_version_id)</div><div class="ttdoc">Forward all calls to BDM_NULL_CLASS_DEF. </div><div class="ttdef"><b>Definition:</b> <a href="root__util_8h_source.html#l00302">root_util.h:302</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a25533a4a1e5c4d04006263f443b30471af4c505faf476b7245b728bbba6dedd34"><div class="ttname"><a href="structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471af4c505faf476b7245b728bbba6dedd34">bdm::Param::kRK4</a></div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00033">param.h:33</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html"><div class="ttname"><a href="structbdm_1_1Param.html">bdm::Param</a></div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00028">param.h:28</a></div></div>
+<div class="ttc" id="root__util_8h_html"><div class="ttname"><a href="root__util_8h.html">root_util.h</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_ae2b0678d6ce93d8ed0e626876470dc7d"><div class="ttname"><a href="structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d">bdm::Param::statistics_</a></div><div class="ttdeci">bool statistics_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00232">param.h:232</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a3cc70d57ed2965f5551e03b36a4a7219"><div class="ttname"><a href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">bdm::Param::simulation_time_step_</a></div><div class="ttdeci">double simulation_time_step_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00079">param.h:79</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a6165e06ccf4fc25c0148756a870442ad"><div class="ttname"><a href="structbdm_1_1Param.html#a6165e06ccf4fc25c0148756a870442ad">bdm::Param::run_mechanical_interactions_</a></div><div class="ttdeci">bool run_mechanical_interactions_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00096">param.h:96</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a48592ced2b325839d663fc40c377d98f"><div class="ttname"><a href="structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f">bdm::Param::min_bound_</a></div><div class="ttdeci">double min_bound_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00115">param.h:115</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a8c442a24b866f33c7ceb00a56e7cd710"><div class="ttname"><a href="structbdm_1_1Param.html#a8c442a24b866f33c7ceb00a56e7cd710">bdm::Param::leaking_edges_</a></div><div class="ttdeci">bool leaking_edges_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00133">param.h:133</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a4b46410b40ad02da690638c7e04be73a"><div class="ttname"><a href="structbdm_1_1Param.html#a4b46410b40ad02da690638c7e04be73a">bdm::Param::preferred_gpu_</a></div><div class="ttdeci">int preferred_gpu_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00288">param.h:288</a></div></div>
-<div class="ttc" id="structbdm_1_1Param_html_a1878562fdbe371d546af644e16dd8205"><div class="ttname"><a href="structbdm_1_1Param.html#a1878562fdbe371d546af644e16dd8205">bdm::Param::ClassDefNV</a></div><div class="ttdeci">ClassDefNV(Param, 1)</div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a856e1442fb63e05bc6c2956051dd6848"><div class="ttname"><a href="structbdm_1_1Param.html#a856e1442fb63e05bc6c2956051dd6848">bdm::Param::max_bound_</a></div><div class="ttdeci">double max_bound_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00124">param.h:124</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a63cbc816311cd6dddc85c35dd908ed68"><div class="ttname"><a href="structbdm_1_1Param.html#a63cbc816311cd6dddc85c35dd908ed68">bdm::Param::simulation_step_freq_</a></div><div class="ttdeci">uint32_t simulation_step_freq_</div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00255">param.h:255</a></div></div>
 <div class="ttc" id="structbdm_1_1Param_html_a25533a4a1e5c4d04006263f443b30471ab4b7c9039fe62b59de1a9faea739efc1"><div class="ttname"><a href="structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471ab4b7c9039fe62b59de1a9faea739efc1">bdm::Param::kEuler</a></div><div class="ttdef"><b>Definition:</b> <a href="param_8h_source.html#l00033">param.h:33</a></div></div>
@@ -254,7 +255,7 @@ $(document).ready(function(){initNavTree('param_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="param_8h.html">param.h</a></li>
-    <li class="footer">Generated on Mon Sep 24 2018 12:43:53 for BioDynaMo by
+    <li class="footer">Generated on Mon Oct 8 2018 21:17:38 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

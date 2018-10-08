@@ -1,6 +1,8 @@
 var searchData=
 [
   ['bdm_5fassign_5fconfig_5fvalue',['BDM_ASSIGN_CONFIG_VALUE',['../cpptoml_8h.html#a1aeaabc4c0e409f5f057548c3108999f',1,'cpptoml.h']]],
+  ['bdm_5fclass_5fdef',['BDM_CLASS_DEF',['../root__util_8h.html#a109149e13a192399f7c71b28f1e4c3ea',1,'root_util.h']]],
+  ['bdm_5fclass_5fdef_5fnv',['BDM_CLASS_DEF_NV',['../root__util_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5',1,'root_util.h']]],
   ['bdm_5fctparam',['BDM_CTPARAM',['../compile__time__param_8h.html#a6ae097f790e34136921a1c7752e4ef33',1,'compile_time_param.h']]],
   ['bdm_5fctparam_5fbases',['BDM_CTPARAM_BASES',['../compile__time__param_8h.html#ae98647876b8a8534c1b6144d475b18ce',1,'compile_time_param.h']]],
   ['bdm_5fctparam_5fbases_5fiterator',['BDM_CTPARAM_BASES_ITERATOR',['../compile__time__param_8h.html#af9ba5b65b60b00667ca4f33e7ebc6402',1,'compile_time_param.h']]],
@@ -13,7 +15,11 @@ var searchData=
   ['bdm_5fctparam_5fheader_5fparam_5fload_5fbody',['BDM_CTPARAM_HEADER_PARAM_LOAD_BODY',['../compile__time__param_8h.html#ab78521847b79c558f55ae38abd4f4366',1,'compile_time_param.h']]],
   ['bdm_5fctparam_5fheader_5fparam_5fload_5fbody_5fiterator',['BDM_CTPARAM_HEADER_PARAM_LOAD_BODY_ITERATOR',['../compile__time__param_8h.html#a439883de26d8a5da7206476e51787ddb',1,'compile_time_param.h']]],
   ['bdm_5fdefault_5fctparam_5ffor',['BDM_DEFAULT_CTPARAM_FOR',['../compile__time__param_8h.html#ab6718bdea8e3c04b08077b97bd91c39c',1,'compile_time_param.h']]],
+  ['bdm_5fdict_5ferror_5fmsg',['BDM_DICT_ERROR_MSG',['../root__util_8h.html#aa07a4a7d59baa93774c7bf6d7ff06ae2',1,'root_util.h']]],
   ['bdm_5fforce_5finline',['BDM_FORCE_INLINE',['../macros_8h.html#aa716ca54fa5b2822124b2130962f16f0',1,'macros.h']]],
+  ['bdm_5fnull_5fclass_5fdef',['BDM_NULL_CLASS_DEF',['../root__util_8h.html#ad52b2736a51330e98bf5c85214fe9e7d',1,'root_util.h']]],
+  ['bdm_5fnull_5fclass_5fdef_5fcustom_5fstreamer',['BDM_NULL_CLASS_DEF_CUSTOM_STREAMER',['../root__util_8h.html#a3354d9f302bfaa691c2092993c795d54',1,'root_util.h']]],
+  ['bdm_5fnull_5fclass_5fdef_5fnv',['BDM_NULL_CLASS_DEF_NV',['../root__util_8h.html#afc090da0be957a6b9db6f5db37682208',1,'root_util.h']]],
   ['bdm_5froot_5fclass_5fdef',['BDM_ROOT_CLASS_DEF',['../root__util_8h.html#a64dc6aae7ee3dc454c736b85bcdf8729',1,'root_util.h']]],
   ['bdm_5froot_5fclass_5fdef_5foverride',['BDM_ROOT_CLASS_DEF_OVERRIDE',['../root__util_8h.html#abbebc0a8e378d43b5eeefaf2b6f56287',1,'root_util.h']]],
   ['bdm_5fsim_5fobject',['BDM_SIM_OBJECT',['../simulation__object__util_8h.html#a1b9f7ea7c3d696427b4d429ff4dd6bab',1,'simulation_object_util.h']]],
