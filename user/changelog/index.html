@@ -448,8 +448,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#18091028-3a380e4" title="18.09.1028 3a380e4" class="md-nav__link">
-    18.09.1028 3a380e4
+  <a href="#08102018-8a97cf2" title="08.10.2018 8a97cf2" class="md-nav__link">
+    08.10.2018 8a97cf2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18092018-3a380e4" title="18.09.2018 3a380e4" class="md-nav__link">
+    18.09.2018 3a380e4
   </a>
   
 </li>
@@ -539,8 +546,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#18091028-3a380e4" title="18.09.1028 3a380e4" class="md-nav__link">
-    18.09.1028 3a380e4
+  <a href="#08102018-8a97cf2" title="08.10.2018 8a97cf2" class="md-nav__link">
+    08.10.2018 8a97cf2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18092018-3a380e4" title="18.09.2018 3a380e4" class="md-nav__link">
+    18.09.2018 3a380e4
   </a>
   
 </li>
@@ -604,7 +618,32 @@
                 
                 
                 <h1 id="changelog">Changelog</h1>
-<h2 id="18091028-3a380e4">18.09.1028 <a href="https://github.com/BioDynaMo/biodynamo/commit/3a380e451ed1d691a6b8dce4c46d82e7faaf5ddc"><code class="codehilite">3a380e4</code></a></h2>
+<h2 id="08102018-8a97cf2">08.10.2018 <a href="https://github.com/BioDynaMo/biodynamo/commit/8a97cf21ad3e07be19f764d116eb10cae5c6ab05"><code class="codehilite">8a97cf2</code></a></h2>
+<p>Allow builds without dictionaries to speed up compile time                                 </p>
+<p>Early development of a simulation requires fast iteration cycles.                <br />
+During this stage serialization features are not needed. Thus,                                <br />
+we support builds without dictionaries.                                     </p>
+<p>By default dictionaries will be built. To turn them off, run:                                 <br />
+cmake -Ddict=off ..</p>
+<table>
+<thead>
+<tr>
+<th>Old</th>
+<th>New</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ClassDef(...)</td>
+<td>BDM_CLASS_DEF(...)</td>
+</tr>
+<tr>
+<td>ClassDefNV(...)</td>
+<td>BDM_CLASS_DEF_NV(...)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="18092018-3a380e4">18.09.2018 <a href="https://github.com/BioDynaMo/biodynamo/commit/3a380e451ed1d691a6b8dce4c46d82e7faaf5ddc"><code class="codehilite">3a380e4</code></a></h2>
 <p>Refactor <a href="parameter">parameters</a>.</p>
 <ul>
 <li>Add functionality to define compile time parameters for a specific simulation
