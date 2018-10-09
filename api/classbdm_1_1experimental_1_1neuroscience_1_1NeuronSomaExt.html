@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-110-g8a97cf2</span>
+   &#160;<span id="projectnumber">v0.1.0-111-g39dfad2</span>
    </div>
   </td>
  </tr>
@@ -226,10 +226,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab2e759a2ad6e9efc937483dc1ced63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3ec41ef0436efb1a1597531e45b45f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a5e3ec41ef0436efb1a1597531e45b45f">NeuronSomaExt</a> (const std::array&lt; double, 3 &gt; &amp;position)</td></tr>
 <tr class="separator:a5e3ec41ef0436efb1a1597531e45b45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25cc56981f07b18ef823d922a866e6e4"><td class="memTemplParams" colspan="2">template&lt;typename TMother &gt; </td></tr>
-<tr class="memitem:a25cc56981f07b18ef823d922a866e6e4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a25cc56981f07b18ef823d922a866e6e4">NeuronSomaExt</a> (const <a class="el" href="structbdm_1_1CellDivisionEvent.html">CellDivisionEvent</a> &amp;event, TMother *mother)</td></tr>
-<tr class="memdesc:a25cc56981f07b18ef823d922a866e6e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor is used to create daughter 2 for a cell division event.  <a href="#a25cc56981f07b18ef823d922a866e6e4">More...</a><br/></td></tr>
-<tr class="separator:a25cc56981f07b18ef823d922a866e6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e0b92d2bdfcb6483fa336293da8890"><td class="memTemplParams" colspan="2">template&lt;typename TMother &gt; </td></tr>
+<tr class="memitem:a68e0b92d2bdfcb6483fa336293da8890"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a68e0b92d2bdfcb6483fa336293da8890">NeuronSomaExt</a> (const <a class="el" href="structbdm_1_1CellDivisionEvent.html">CellDivisionEvent</a> &amp;event, TMother *mother, uint64_t new_oid=0)</td></tr>
+<tr class="memdesc:a68e0b92d2bdfcb6483fa336293da8890"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor is used to create daughter 2 for a cell division event.  <a href="#a68e0b92d2bdfcb6483fa336293da8890">More...</a><br/></td></tr>
+<tr class="separator:a68e0b92d2bdfcb6483fa336293da8890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a403ad63e2fad0bb5b74dfd7aa60755e9"><td class="memTemplParams" colspan="2">template&lt;typename TDaughter &gt; </td></tr>
 <tr class="memitem:a403ad63e2fad0bb5b74dfd7aa60755e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a403ad63e2fad0bb5b74dfd7aa60755e9">EventHandler</a> (const <a class="el" href="structbdm_1_1CellDivisionEvent.html">CellDivisionEvent</a> &amp;event, TDaughter *daughter_2)</td></tr>
 <tr class="memdesc:a403ad63e2fad0bb5b74dfd7aa60755e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">EventHandler to modify the data members of this neuron soma after a cell division event.  <a href="#a403ad63e2fad0bb5b74dfd7aa60755e9">More...</a><br/></td></tr>
@@ -718,7 +718,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 
 </div>
 </div>
-<a class="anchor" id="a25cc56981f07b18ef823d922a866e6e4"></a>
+<a class="anchor" id="a68e0b92d2bdfcb6483fa336293da8890"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -739,7 +739,13 @@ template&lt;typename TMother &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">TMother *&#160;</td>
-          <td class="paramname"><em>mother</em>&#160;</td>
+          <td class="paramname"><em>mother</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>new_oid</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1040,7 +1046,7 @@ template&lt;typename TDaughter &gt; </div>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00069">69</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00070">70</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1097,7 @@ template&lt;typename TNeurite &gt; </div>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html" title="Contains the parameters to extend a new neurite from a neuron soma. ">NewNeuriteExtensionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00177">177</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00178">178</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1131,7 +1137,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <p>Uses default diameter for new neurite </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html" title="Contains the parameters to extend a new neurite from a neuron soma. ">NewNeuriteExtensionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00097">97</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00098">98</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1186,7 +1192,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <p>Extend a new neurite from this soma. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html" title="Contains the parameters to extend a new neurite from a neuron soma. ">NewNeuriteExtensionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00108">108</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00109">109</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1291,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00156">156</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00157">157</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -1630,7 +1636,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the coord </dd></dl>
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00129">129</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00130">130</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1752,7 +1758,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00117">117</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00118">118</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -2079,7 +2085,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00076">76</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00077">77</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -2117,7 +2123,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00145">145</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00146">146</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2204,7 +2210,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00161">161</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00162">162</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -2231,7 +2237,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <div class="line">      {}}</div>
 </div><!-- fragment --><p>Daughter attachment points in local coordinates Key: element index of neurite segement Value: position </p>
 
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00166">166</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00167">167</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -2244,7 +2250,7 @@ template&lt;typename TCompileTimeParam  = CompileTimeParam&lt;&gt;, typename TDe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="namespacebdm_1_1experimental.html">experimental</a></li><li class="navelem"><a class="el" href="namespacebdm_1_1experimental_1_1neuroscience.html">neuroscience</a></li><li class="navelem"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html">NeuronSomaExt</a></li>
-    <li class="footer">Generated on Mon Oct 8 2018 21:17:39 for BioDynaMo by
+    <li class="footer">Generated on Tue Oct 9 2018 09:15:20 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

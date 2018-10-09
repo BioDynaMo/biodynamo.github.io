@@ -19,7 +19,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt =
     [ "NeuronSomaExt", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#aef9f77759fbbe3965bebdf0770046ffb", null ],
     [ "NeuronSomaExt", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#aab2e759a2ad6e9efc937483dc1ced63e", null ],
     [ "NeuronSomaExt", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a5e3ec41ef0436efb1a1597531e45b45f", null ],
-    [ "NeuronSomaExt", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a25cc56981f07b18ef823d922a866e6e4", null ],
+    [ "NeuronSomaExt", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a68e0b92d2bdfcb6483fa336293da8890", null ],
     [ "clear", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#aa6951273c84caaeaefbe01401bf9c14f", null ],
     [ "DelayedPushBack", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#aff8c186b95124d2e5a2668267b053167", null ],
     [ "EventHandler", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a403ad63e2fad0bb5b74dfd7aa60755e9", null ],
