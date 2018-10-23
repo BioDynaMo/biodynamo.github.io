@@ -242,12 +242,12 @@ var NAVTREEINDEX2 =
 "classbdm_1_1VectorPlaceholder.html#ad5180cf3d65f28c35ddb71f424ef918b":[1,0,0,2,0],
 "classbdm_1_1VectorPlaceholder.html#afb7cb288011475c9344090e6102b586c":[1,0,0,2,4],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html":[1,0,0,1,0,7],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a011685632233292b433bbc9e92ccb9fb":[1,0,0,1,0,7,142],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a02a1ffdac15f600af1e456bddfc0c12c":[1,0,0,1,0,7,154],
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a011685632233292b433bbc9e92ccb9fb":[1,0,0,1,0,7,141],
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a02a1ffdac15f600af1e456bddfc0c12c":[1,0,0,1,0,7,153],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a04560b9cb9811940e8c0ab1e116a5ac7":[1,0,0,1,0,7,55],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a05e4d24ea9ecedee749cacce199a4af9":[1,0,0,1,0,7,138],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a061c427d08f461415aab8df011153ee7":[1,0,0,1,0,7,129],
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a05e4d24ea9ecedee749cacce199a4af9":[1,0,0,1,0,7,137],
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a061c427d08f461415aab8df011153ee7":[1,0,0,1,0,7,128],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a075ed25bc56ffef7cb26835c69e36c04":[1,0,0,1,0,7,4],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a0a5242916ea8bad60acd4f5cabc12181":[1,0,0,1,0,7,134],
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a0a5242916ea8bad60acd4f5cabc12181":[1,0,0,1,0,7,133],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a0b4cd4c6dbe3e2272a7d9c4544822d50":[1,0,0,1,0,7,12]
 };
