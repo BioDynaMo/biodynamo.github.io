@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['param',['Param',['../structbdm_1_1Param.html',1,'bdm']]],
   ['param',['Param',['../structbdm_1_1experimental_1_1neuroscience_1_1Param.html',1,'bdm::experimental::neuroscience']]],
+  ['param',['Param',['../structbdm_1_1Param.html',1,'bdm']]],
   ['param_2ecc',['param.cc',['../neuroscience_2param_8cc.html',1,'']]],
   ['param_2ecc',['param.cc',['../param_8cc.html',1,'']]],
   ['param_2eh',['param.h',['../param_8h.html',1,'']]],

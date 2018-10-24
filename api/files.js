@@ -86,7 +86,9 @@ var files =
       [ "Param", "structbdm_1_1Param.html", "structbdm_1_1Param" ],
       [ "VisualizeDiffusion", "structbdm_1_1Param_1_1VisualizeDiffusion.html", "structbdm_1_1Param_1_1VisualizeDiffusion" ]
     ] ],
-    [ "op_timer.h", "op__timer_8h.html", "op__timer_8h" ],
+    [ "op_timer.h", "op__timer_8h.html", [
+      [ "OpTimer", "structbdm_1_1OpTimer.html", "structbdm_1_1OpTimer" ]
+    ] ],
     [ "random.cc", "random_8cc.html", null ],
     [ "random.h", "random_8h.html", [
       [ "Random", "classbdm_1_1Random.html", "classbdm_1_1Random" ]
@@ -117,9 +119,7 @@ var files =
     [ "so_pointer.h", "so__pointer_8h.html", "so__pointer_8h" ],
     [ "string_util.h", "string__util_8h.html", "string__util_8h" ],
     [ "substance_initializers.h", "substance__initializers_8h.html", "substance__initializers_8h" ],
-    [ "timing.h", "timing_8h.html", [
-      [ "Timing", "classbdm_1_1Timing.html", "classbdm_1_1Timing" ]
-    ] ],
+    [ "timing.h", "timing_8h.html", "timing_8h" ],
     [ "timing_aggregator.h", "timing__aggregator_8h.html", "timing__aggregator_8h" ],
     [ "transactional_vector.h", "transactional__vector_8h.html", [
       [ "TransactionalVector", "classbdm_1_1TransactionalVector.html", "classbdm_1_1TransactionalVector" ]

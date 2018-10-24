@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-118-g6c5372f</span>
+   &#160;<span id="projectnumber">v0.1.0-125-gf434381</span>
    </div>
   </td>
  </tr>
@@ -155,22 +155,20 @@ $(document).ready(function(){initNavTree('bound__space__op_8h_source.html','');}
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// positions</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// which would lead to inconsistencies</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">auto</span>* grid = sim-&gt;GetGrid();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sim_objects-&gt;size(); i++) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">auto</span>&amp;&amp; sim_object = (*sim_objects)[i];</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> (param-&gt;bound_space_) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="namespacebdm.html#a1ae437fcc5c5597c487dec102e315005">ApplyBoundingBox</a>(&amp;sim_object, param-&gt;min_bound_, param-&gt;max_bound_);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        grid-&gt;SetDimensionThresholds(param-&gt;min_bound_, param-&gt;max_bound_);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sim_objects-&gt;size(); i++) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keyword">auto</span>&amp;&amp; sim_object = (*sim_objects)[i];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">if</span> (param-&gt;bound_space_) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="namespacebdm.html#a1ae437fcc5c5597c487dec102e315005">ApplyBoundingBox</a>(&amp;sim_object, param-&gt;min_bound_, param-&gt;max_bound_);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif  // BOUND_SPACE_OP_H_</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  // BOUND_SPACE_OP_H_</span></div>
 <div class="ttc" id="classbdm_1_1BoundSpace_html_a838a24739452448559965c7b0e1dc842"><div class="ttname"><a href="classbdm_1_1BoundSpace.html#a838a24739452448559965c7b0e1dc842">bdm::BoundSpace::~BoundSpace</a></div><div class="ttdeci">~BoundSpace()</div><div class="ttdef"><b>Definition:</b> <a href="bound__space__op_8h_source.html#l00043">bound_space_op.h:43</a></div></div>
 <div class="ttc" id="classbdm_1_1BoundSpace_html_aa40e8630a5ffc57e2511aed31f69c0bf"><div class="ttname"><a href="classbdm_1_1BoundSpace.html#aa40e8630a5ffc57e2511aed31f69c0bf">bdm::BoundSpace::operator()</a></div><div class="ttdeci">void operator()(TContainer *sim_objects, uint16_t type_idx) const </div><div class="ttdef"><b>Definition:</b> <a href="bound__space__op_8h_source.html#l00046">bound_space_op.h:46</a></div></div>
 <div class="ttc" id="classbdm_1_1BoundSpace_html_a2185e5732ec5964ea3d81b9f2c441e88"><div class="ttname"><a href="classbdm_1_1BoundSpace.html#a2185e5732ec5964ea3d81b9f2c441e88">bdm::BoundSpace::BoundSpace</a></div><div class="ttdeci">BoundSpace()</div><div class="ttdef"><b>Definition:</b> <a href="bound__space__op_8h_source.html#l00042">bound_space_op.h:42</a></div></div>
@@ -183,7 +181,7 @@ $(document).ready(function(){initNavTree('bound__space__op_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="bound__space__op_8h.html">bound_space_op.h</a></li>
-    <li class="footer">Generated on Wed Oct 24 2018 09:20:03 for BioDynaMo by
+    <li class="footer">Generated on Wed Oct 24 2018 09:49:21 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

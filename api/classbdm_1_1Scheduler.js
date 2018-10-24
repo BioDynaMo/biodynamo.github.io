@@ -14,7 +14,7 @@ var classbdm_1_1Scheduler =
     [ "biology_", "classbdm_1_1Scheduler.html#a8455711570f1a8cb8b94893c6ea500f4", null ],
     [ "bound_space_", "classbdm_1_1Scheduler.html#aa9f94e878e1771b976d2272d2ac355f3", null ],
     [ "commit_", "classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5", null ],
-    [ "diffusion_", "classbdm_1_1Scheduler.html#aec1ae72882f6bdde007c554618e16e26", null ],
+    [ "diffusion_", "classbdm_1_1Scheduler.html#a179133d8b37028f28b883b78cd7869a3", null ],
     [ "is_gpu_environment_initialized_", "classbdm_1_1Scheduler.html#ae8b4d2afba497eea5e082bb5ad5bb33e", null ],
     [ "last_backup_", "classbdm_1_1Scheduler.html#ab59a669cace4c00dcb662668055704de", null ],
     [ "physics_", "classbdm_1_1Scheduler.html#aa7fd64d3e2fc84e00b4fc242d3f67fd7", null ],
