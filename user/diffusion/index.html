@@ -406,6 +406,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#diffusion-parameter-constraints" title="Diffusion parameter constraints" class="md-nav__link">
+    Diffusion parameter constraints
+  </a>
+  
+</li>
+      
       
       
       
@@ -610,6 +617,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#diffusion-parameter-constraints" title="Diffusion parameter constraints" class="md-nav__link">
+    Diffusion parameter constraints
+  </a>
+  
+</li>
+      
       
       
       
@@ -740,6 +754,21 @@ Then click the Play button at the top of the screen to run the simulation visual
   <source src="https://cernbox.cern.ch/index.php/s/rzl2Kb4uxny4ZXF/download?path=%2F&files=exported_visualization.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<h3 id="diffusion-parameter-constraints">Diffusion parameter constraints</h3>
+<p>The differential equations that describe the diffusion are solved in an
+analytical way using the central difference method as shown in the figure below:</p>
+<p><img alt="Central Difference Method" src="../images/diffusion_central_difference_method.png" /></p>
+<p>Mathematically, the method would allow for unphysical behavior to occur, such as
+negative concentration values. In order to avoid such behavior from happening,
+we impose the following constraint on the parameters:</p>
+<p><img alt="Parameter Constraint" src="../images/diffusion_parameters_constraint.png" /></p>
+<p>Since as a user, you are giving the resolution of the diffusion grid and not the
+distance between the grid points, you can determine this value by dividing the
+longest dimension of your space by the resolution, or by calling the corresponding
+function <code class="codehilite">DiffusionGrid::GetBoxLength()</code>.</p>
+<p>For more information on the inner workings of the diffusion module, please
+refer to: <a href="https://repository.tudelft.nl/islandora/object/uuid%3A2fa2203b-ca26-4aa2-9861-1a4352391e09?collection=education">https://repository.tudelft.nl/islandora/object/uuid%3A2fa2203b-ca26-4aa2-9861-1a4352391e09?collection=education</a></p>
                 
                   
                 

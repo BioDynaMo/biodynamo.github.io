@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['parameterscheck',['ParametersCheck',['../classbdm_1_1DiffusionGrid.html#ae629fc95a257bfd8438d5de2224c2540',1,'bdm::DiffusionGrid']]],
   ['perp3',['Perp3',['../structbdm_1_1Math.html#a0295284d54dc8b78b7d981fefe373889',1,'bdm::Math']]],
   ['poissonband',['PoissonBand',['../structbdm_1_1PoissonBand.html#acdc5ce0e2526341d990b1326a69160d9',1,'bdm::PoissonBand']]],
   ['pop_5fback',['pop_back',['../classbdm_1_1VectorPlaceholder.html#a432b503b86ee02938ba846938048d1ee',1,'bdm::VectorPlaceholder::pop_back()'],['../classbdm_1_1OneElementArray.html#a7f9dc51d5e006e7f0f63c1aa8e8002f2',1,'bdm::OneElementArray::pop_back()']]],

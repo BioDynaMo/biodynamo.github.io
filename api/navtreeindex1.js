@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classbdm_1_1DisplacementOpCuda.html":[1,0,0,28],
+"classbdm_1_1DisplacementOpCuda.html#a04ff5f954bca6e1978d899556a6dd590":[1,0,0,28,5],
 "classbdm_1_1DisplacementOpCuda.html#a0a1745e8e54aeb69a82d7ea8cd110323":[1,0,0,28,1],
 "classbdm_1_1DisplacementOpCuda.html#a65e2855142eb8e03303cdc1ca4e3afd6":[1,0,0,28,3],
 "classbdm_1_1DisplacementOpCuda.html#a670ad02944c7ac352ff7c6e8e9c45c12":[1,0,0,28,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "classbdm_1_1ScalarSimulationObject.html":[1,0,0,62],
 "classbdm_1_1ScalarSimulationObject.html#a024c808886181d0e645a9849b406f529":[1,0,0,62,10],
 "classbdm_1_1ScalarSimulationObject.html#a1ddd6970cc8594ca3e32b8617ee83e52":[1,0,0,62,16],
-"classbdm_1_1ScalarSimulationObject.html#a1df21bb1ebf13d674184935f7073de78":[1,0,0,62,12],
-"classbdm_1_1ScalarSimulationObject.html#a43b5facc311be217f8b8f061eebf530b":[1,0,0,62,14],
-"classbdm_1_1ScalarSimulationObject.html#a4ce6c4cfe5f364a0147994e8f0ee03b9":[1,0,0,62,9]
+"classbdm_1_1ScalarSimulationObject.html#a1df21bb1ebf13d674184935f7073de78":[1,0,0,62,12]
 };

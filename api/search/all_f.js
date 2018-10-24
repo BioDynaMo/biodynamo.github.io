@@ -8,6 +8,7 @@ var searchData=
   ['param_2eh',['param.h',['../neuroscience_2param_8h.html',1,'']]],
   ['param_5f',['param_',['../structbdm_1_1Simulation.html#a96ba40c664f2a675202ca64d748cb292',1,'bdm::Simulation']]],
   ['param_5ft',['Param_t',['../structbdm_1_1Simulation.html#aa680bcade750990cf43266d8490e33da',1,'bdm::Simulation']]],
+  ['parameterscheck',['ParametersCheck',['../classbdm_1_1DiffusionGrid.html#ae629fc95a257bfd8438d5de2224c2540',1,'bdm::DiffusionGrid']]],
   ['paraviewexporter',['ParaviewExporter',['../classbdm_1_1ParaviewExporter.html',1,'bdm']]],
   ['parity_5f',['parity_',['../classbdm_1_1DiffusionGrid.html#a43eb9c7672545e39ce391b08e6ea24d3',1,'bdm::DiffusionGrid']]],
   ['perp3',['Perp3',['../structbdm_1_1Math.html#a0295284d54dc8b78b7d981fefe373889',1,'bdm::Math']]],
