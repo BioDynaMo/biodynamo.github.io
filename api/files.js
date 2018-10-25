@@ -17,7 +17,11 @@ var files =
     [ "biology_module_op.h", "biology__module__op_8h.html", [
       [ "BiologyModuleOp", "structbdm_1_1BiologyModuleOp.html", "structbdm_1_1BiologyModuleOp" ]
     ] ],
-    [ "biology_module_util.h", "biology__module__util_8h.html", "biology__module__util_8h" ],
+    [ "biology_module_util.h", "biology__module__util_8h.html", [
+      [ "BaseBiologyModule", "structbdm_1_1BaseBiologyModule.html", "structbdm_1_1BaseBiologyModule" ],
+      [ "NullBiologyModule", "structbdm_1_1NullBiologyModule.html", "structbdm_1_1NullBiologyModule" ],
+      [ "RunVisitor", "structbdm_1_1RunVisitor.html", "structbdm_1_1RunVisitor" ]
+    ] ],
     [ "bound_space_op.h", "bound__space__op_8h.html", "bound__space__op_8h" ],
     [ "cell.h", "cell_8h.html", "cell_8h" ],
     [ "command_line_options.cc", "command__line__options_8cc.html", "command__line__options_8cc" ],
@@ -111,7 +115,13 @@ var files =
       [ "SimulationBackup", "classbdm_1_1SimulationBackup.html", "classbdm_1_1SimulationBackup" ]
     ] ],
     [ "simulation_implementation.h", "simulation__implementation_8h.html", null ],
-    [ "simulation_object.h", "simulation__object_8h.html", "simulation__object_8h" ],
+    [ "simulation_object.h", "simulation__object_8h.html", [
+      [ "ScalarSimulationObject", "classbdm_1_1ScalarSimulationObject.html", "classbdm_1_1ScalarSimulationObject" ],
+      [ "SoaSimulationObject", "classbdm_1_1SoaSimulationObject.html", "classbdm_1_1SoaSimulationObject" ],
+      [ "ScalarSimulationObject", "classbdm_1_1ScalarSimulationObject.html", "classbdm_1_1ScalarSimulationObject" ],
+      [ "SimulationObjectImpl", "structbdm_1_1SimulationObjectImpl.html", "structbdm_1_1SimulationObjectImpl" ],
+      [ "SimulationObjectExt", "classbdm_1_1SimulationObjectExt.html", "classbdm_1_1SimulationObjectExt" ]
+    ] ],
     [ "simulation_object_util.h", "simulation__object__util_8h.html", "simulation__object__util_8h" ],
     [ "simulation_object_vector.h", "simulation__object__vector_8h.html", [
       [ "SimulationObjectVector", "classbdm_1_1SimulationObjectVector.html", "classbdm_1_1SimulationObjectVector" ]

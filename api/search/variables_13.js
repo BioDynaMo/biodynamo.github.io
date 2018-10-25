@@ -7,6 +7,6 @@ var searchData=
   ['visualization_5fexport_5finterval_5f',['visualization_export_interval_',['../structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2',1,'bdm::Param']]],
   ['visualize_5fdiffusion_5f',['visualize_diffusion_',['../structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc',1,'bdm::Param']]],
   ['visualize_5fsim_5fobjects_5f',['visualize_sim_objects_',['../structbdm_1_1Param.html#a84eb2718cdaa737f937f71f89055f6a0',1,'bdm::Param']]],
-  ['volume_5f',['volume_',['../classbdm_1_1CellExt.html#acf46d8fff7b6f8ae9470a7b6a63ce76c',1,'bdm::CellExt::volume_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a648e6c03a28376672d32b3060d1f7387',1,'bdm::experimental::neuroscience::NeuriteElementExt::volume_()']]],
+  ['volume_5f',['volume_',['../classbdm_1_1CellExt.html#a65d8e619b11b4d94bef4909327d34358',1,'bdm::CellExt::volume_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ae66a5f4c01d29980c89b073e2a81adbf',1,'bdm::experimental::neuroscience::NeuriteElementExt::volume_()']]],
   ['volume_5fratio_5f',['volume_ratio_',['../structbdm_1_1CellDivisionEvent.html#a76773fc803eb2f49028a76521a360c24',1,'bdm::CellDivisionEvent']]]
 ];

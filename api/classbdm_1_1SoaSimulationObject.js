@@ -16,6 +16,7 @@ var classbdm_1_1SoaSimulationObject =
     [ "GetElementIdx", "classbdm_1_1SoaSimulationObject.html#adadb447d5c5e6c765b4a30f3867618b5", null ],
     [ "IsA", "classbdm_1_1SoaSimulationObject.html#a12fc4f46d4c59cce3f7519891d74c681", null ],
     [ "operator=", "classbdm_1_1SoaSimulationObject.html#a31a95b4b13ff2689298a71b21f637236", null ],
+    [ "operator=", "classbdm_1_1SoaSimulationObject.html#ab0bfc031b92c7640cd5eab9d12b336f1", null ],
     [ "PopBack", "classbdm_1_1SoaSimulationObject.html#a474caf604f814d7a90c6e912ca01f7c6", null ],
     [ "push_back", "classbdm_1_1SoaSimulationObject.html#a83a140f326bd97d0a08fc449b8cfe4ac", null ],
     [ "PushBackImpl", "classbdm_1_1SoaSimulationObject.html#a308e684961714d8e3f90bd9f25d2394e", null ],

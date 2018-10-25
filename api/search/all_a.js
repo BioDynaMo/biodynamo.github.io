@@ -24,7 +24,7 @@ var searchData=
   ['ksimulationobject',['kSimulationObject',['../structbdm_1_1RunVisitor.html#acf879a46729da2f9587fb5928a23ebba',1,'bdm::RunVisitor']]],
   ['ksimulationstepname',['kSimulationStepName',['../classbdm_1_1SimulationBackup.html#aab7666331b21587eeda2715c1e196ff0',1,'bdm::SimulationBackup']]],
   ['ksphere',['kSphere',['../namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e',1,'bdm']]],
-  ['kxaxis',['kXAxis',['../classbdm_1_1CellExt.html#acc9495fcca70670080b9a26d1fce3957',1,'bdm::CellExt::kXAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ac4c4cf7b0573705b2d1574de6c316d8c',1,'bdm::kXAxis()']]],
-  ['kyaxis',['kYAxis',['../classbdm_1_1CellExt.html#a69a280dd28697eee88d6321a4d977a6c',1,'bdm::CellExt::kYAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848afa5adecc0424877d1ee7d16a3d63cdf1',1,'bdm::kYAxis()']]],
-  ['kzaxis',['kZAxis',['../classbdm_1_1CellExt.html#adf09e562442e2cf20ccac819fcce1ea2',1,'bdm::CellExt::kZAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ae05e11269be454a7a086691d0b7d1ecf',1,'bdm::kZAxis()']]]
+  ['kxaxis',['kXAxis',['../classbdm_1_1CellExt.html#aa61707f88c60d451e94024c12919e35b',1,'bdm::CellExt::kXAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ac4c4cf7b0573705b2d1574de6c316d8c',1,'bdm::kXAxis()']]],
+  ['kyaxis',['kYAxis',['../classbdm_1_1CellExt.html#a17b39e00a542a6a192c3f3585b29aa7a',1,'bdm::CellExt::kYAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848afa5adecc0424877d1ee7d16a3d63cdf1',1,'bdm::kYAxis()']]],
+  ['kzaxis',['kZAxis',['../classbdm_1_1CellExt.html#ae0e806503e6998ee355e3c52c3028243',1,'bdm::CellExt::kZAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ae05e11269be454a7a086691d0b7d1ecf',1,'bdm::kZAxis()']]]
 ];

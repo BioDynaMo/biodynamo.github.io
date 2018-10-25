@@ -113,11 +113,6 @@ var hierarchy =
     [ "bdm::experimental::neuroscience::SplitNeuriteElementEvent", "structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html", null ],
     [ "bdm::StreamerReadFunctor< TVariant >", "structbdm_1_1StreamerReadFunctor.html", null ],
     [ "bdm::StreamerWriteFunctor< Types >", "structbdm_1_1StreamerWriteFunctor.html", null ],
-    [ "TBase", null, [
-      [ "bdm::CellExt< TCompileTimeParam, TDerived, TBase >", "classbdm_1_1CellExt.html", null ],
-      [ "bdm::experimental::neuroscience::NeuriteElementExt< TCompileTimeParam, TDerived, TBase >", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html", null ],
-      [ "bdm::experimental::neuroscience::NeuronSomaExt< TCompileTimeParam, TDerived, TBase >", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html", null ]
-    ] ],
     [ "bdm::TFileRaii", "classbdm_1_1TFileRaii.html", null ],
     [ "bdm::Timing", "classbdm_1_1Timing.html", null ],
     [ "bdm::TimingAggregator", "classbdm_1_1TimingAggregator.html", null ],
@@ -125,7 +120,12 @@ var hierarchy =
     [ "bdm::detail::ToIndex< TSo, CTList< Types...> >", "structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01CTList_3_01Types_8_8_8_4_01_4.html", null ],
     [ "bdm::TransactionalVector< T >", "classbdm_1_1TransactionalVector.html", null ],
     [ "type", null, [
-      [ "bdm::SimulationObject< TCompileTimeParam, TDerived >", "classbdm_1_1SimulationObject.html", null ]
+      [ "bdm::SimulationObjectExt< TCompileTimeParam, TDerived >", "classbdm_1_1SimulationObjectExt.html", [
+        [ "bdm::CellExt< TCompileTimeParam, TDerived >", "classbdm_1_1CellExt.html", [
+          [ "bdm::experimental::neuroscience::NeuronSomaExt< TCompileTimeParam, TDerived >", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html", null ]
+        ] ],
+        [ "bdm::experimental::neuroscience::NeuriteElementExt< TCompileTimeParam, TDerived >", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html", null ]
+      ] ]
     ] ],
     [ "bdm::type_ternary_operator< Condition, T, U >", "structbdm_1_1type__ternary__operator.html", null ],
     [ "bdm::type_ternary_operator<false, T, U >", "structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4.html", null ],

@@ -1,14 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classbdm_1_1DisplacementOpCpu.html#ae4b5e662cd11fc83eb5e31e5df99f2cf":[1,0,0,27,2],
-"classbdm_1_1DisplacementOpCuda.html":[1,0,0,28],
-"classbdm_1_1DisplacementOpCuda.html#a04ff5f954bca6e1978d899556a6dd590":[1,0,0,28,5],
-"classbdm_1_1DisplacementOpCuda.html#a0a1745e8e54aeb69a82d7ea8cd110323":[1,0,0,28,1],
-"classbdm_1_1DisplacementOpCuda.html#a65e2855142eb8e03303cdc1ca4e3afd6":[1,0,0,28,3],
-"classbdm_1_1DisplacementOpCuda.html#a670ad02944c7ac352ff7c6e8e9c45c12":[1,0,0,28,6],
-"classbdm_1_1DisplacementOpCuda.html#a6af04a8788d52c9087fe30cf447d2311":[1,0,0,28,0],
-"classbdm_1_1DisplacementOpCuda.html#a6c2f3be34e156cdec8cc3e61938550ee":[1,0,0,28,4],
-"classbdm_1_1DisplacementOpCuda.html#adf5b64f081338cbdf410a87789d51aca":[1,0,0,28,2],
 "classbdm_1_1DisplacementOpCudaKernel.html":[1,0,0,40],
 "classbdm_1_1DisplacementOpCudaKernel.html#a0630b8898b3e35a2b43a0dcf9bc07d46":[1,0,0,40,15],
 "classbdm_1_1DisplacementOpCudaKernel.html#a080c2914ba6800b98a084036570c05f2":[1,0,0,40,18],
@@ -248,6 +239,15 @@ var NAVTREEINDEX1 =
 "classbdm_1_1RuntimeVariables.html#ad633608e6768905c77369a5305089a7b":[1,0,0,44,9],
 "classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303":[1,0,0,44,1],
 "classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f":[1,0,0,44,0],
-"classbdm_1_1ScalarSimulationObject.html":[1,0,0,62],
-"classbdm_1_1ScalarSimulationObject.html#a024c808886181d0e645a9849b406f529":[1,0,0,62,10]
+"classbdm_1_1ScalarSimulationObject.html":[1,0,0,60],
+"classbdm_1_1ScalarSimulationObject.html#a024c808886181d0e645a9849b406f529":[1,0,0,60,12],
+"classbdm_1_1ScalarSimulationObject.html#a1ddd6970cc8594ca3e32b8617ee83e52":[1,0,0,60,18],
+"classbdm_1_1ScalarSimulationObject.html#a1df21bb1ebf13d674184935f7073de78":[1,0,0,60,14],
+"classbdm_1_1ScalarSimulationObject.html#a43b5facc311be217f8b8f061eebf530b":[1,0,0,60,16],
+"classbdm_1_1ScalarSimulationObject.html#a4ce6c4cfe5f364a0147994e8f0ee03b9":[1,0,0,60,11],
+"classbdm_1_1ScalarSimulationObject.html#a513d4e0bc1c47ad976bf68713c557efc":[1,0,0,60,9],
+"classbdm_1_1ScalarSimulationObject.html#a52b04314cebfd895736b9582cdd05673":[1,0,0,60,2],
+"classbdm_1_1ScalarSimulationObject.html#a665406b54d51c3fa7447c4c775f23026":[1,0,0,60,5],
+"classbdm_1_1ScalarSimulationObject.html#a709f73bfffe2e97166a4698bc1e8d05c":[1,0,0,60,10],
+"classbdm_1_1ScalarSimulationObject.html#a7c308f2c3aab01c4f1724c120ca70a91":[1,0,0,60,0]
 };

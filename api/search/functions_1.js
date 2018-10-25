@@ -2,7 +2,7 @@ var searchData=
 [
   ['activate',['Activate',['../structbdm_1_1Simulation.html#a8383591632e5fb3c17e4224931f33bd9',1,'bdm::Simulation']]],
   ['add',['Add',['../structbdm_1_1Math.html#a6e410e3dc82bab5dd53e0157df3587b2',1,'bdm::Math']]],
-  ['addbiologymodule',['AddBiologyModule',['../classbdm_1_1CellExt.html#ad61025e868ed9869700f57c6d6a71b7c',1,'bdm::CellExt::AddBiologyModule()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a9f2bd88dfdacdc01c8f541e2309c4e19',1,'bdm::experimental::neuroscience::NeuriteElementExt::AddBiologyModule()']]],
+  ['addbiologymodule',['AddBiologyModule',['../classbdm_1_1SimulationObjectExt.html#aed91c421c85d2c4d8fcf1cacce21216c',1,'bdm::SimulationObjectExt']]],
   ['adddescription',['AddDescription',['../classbdm_1_1TimingAggregator.html#a5ec4595643e3d7574029151bc3acab92',1,'bdm::TimingAggregator']]],
   ['adddiffusiongrid',['AddDiffusionGrid',['../classbdm_1_1ResourceManager.html#a145653cd70f307ca111e17c524f724b8',1,'bdm::ResourceManager']]],
   ['addentry',['AddEntry',['../classbdm_1_1TimingAggregator.html#ac699a9494f65bb899ac03901c5f9a173',1,'bdm::TimingAggregator']]],
@@ -13,7 +13,7 @@ var searchData=
   ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#aa8ecbf6af44a29c3f314ab97a1c53f20',1,'bdm::Math']]],
   ['apply',['Apply',['../namespacebdm_1_1detail.html#af9dd3c90d52d2cb13122388d395a1d66',1,'bdm::detail::Apply()'],['../namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11',1,'bdm::Apply()']]],
   ['applyboundingbox',['ApplyBoundingBox',['../namespacebdm.html#a1ae437fcc5c5597c487dec102e315005',1,'bdm']]],
-  ['applydisplacement',['ApplyDisplacement',['../classbdm_1_1CellExt.html#a9bd91e7df851ed0a601ff07b3657f418',1,'bdm::CellExt::ApplyDisplacement()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a6d1cbfd883b7127ecc71639c9a131470',1,'bdm::experimental::neuroscience::NeuriteElementExt::ApplyDisplacement()']]],
+  ['applydisplacement',['ApplyDisplacement',['../classbdm_1_1CellExt.html#adca141e706e382e4898cd86323a513f7',1,'bdm::CellExt::ApplyDisplacement()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#af3ab2b764ef515502bc68a63fe37d45d',1,'bdm::experimental::neuroscience::NeuriteElementExt::ApplyDisplacement()']]],
   ['applyimpl',['ApplyImpl',['../namespacebdm_1_1detail.html#a4de1bcc42a5a3ab2a97ebae108fe4d0e',1,'bdm::detail']]],
   ['applyonalldiffusiongrids',['ApplyOnAllDiffusionGrids',['../classbdm_1_1ResourceManager.html#ac8cfb4a6b143b4a59921d7ab081d0384',1,'bdm::ResourceManager']]],
   ['applyonallelements',['ApplyOnAllElements',['../classbdm_1_1ResourceManager.html#a830c32338145b48c97e4e7bc64ad19f3',1,'bdm::ResourceManager']]],

@@ -7,7 +7,7 @@ var searchData=
   ['sideneuriteextensionevent',['SideNeuriteExtensionEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html',1,'bdm::experimental::neuroscience']]],
   ['simulation',['Simulation',['../structbdm_1_1Simulation.html',1,'bdm']]],
   ['simulationbackup',['SimulationBackup',['../classbdm_1_1SimulationBackup.html',1,'bdm']]],
-  ['simulationobject',['SimulationObject',['../classbdm_1_1SimulationObject.html',1,'bdm']]],
+  ['simulationobjectext',['SimulationObjectExt',['../classbdm_1_1SimulationObjectExt.html',1,'bdm']]],
   ['simulationobjectimpl',['SimulationObjectImpl',['../structbdm_1_1SimulationObjectImpl.html',1,'bdm']]],
   ['simulationobjectvector',['SimulationObjectVector',['../classbdm_1_1SimulationObjectVector.html',1,'bdm']]],
   ['simulationobjectvector_3c_20bdm_3a_3asohandle_2c_20bdm_3a_3asimulation_20_3e',['SimulationObjectVector&lt; bdm::SoHandle, bdm::Simulation &gt;',['../classbdm_1_1SimulationObjectVector.html',1,'bdm']]],

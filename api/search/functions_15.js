@@ -1,7 +1,7 @@
 var searchData=
 [
   ['_7eboundspace',['~BoundSpace',['../classbdm_1_1BoundSpace.html#a838a24739452448559965c7b0e1dc842',1,'bdm::BoundSpace']]],
-  ['_7ecellext',['~CellExt',['../classbdm_1_1CellExt.html#a237220f1f56fd865d10928ce808265de',1,'bdm::CellExt']]],
+  ['_7ecellext',['~CellExt',['../classbdm_1_1CellExt.html#ada880f3a6c3a193d08f95434c7e36523',1,'bdm::CellExt']]],
   ['_7ecommitop',['~CommitOp',['../classbdm_1_1CommitOp.html#a416304b60e552a6525112d6f8f02910c',1,'bdm::CommitOp']]],
   ['_7edefaultforce',['~DefaultForce',['../classbdm_1_1DefaultForce.html#aad27c4a1adbaf42aa49d9eff6c982404',1,'bdm::DefaultForce']]],
   ['_7ediffusiongrid',['~DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#a25d8545acb23c2e71e65ee0dae64d969',1,'bdm::DiffusionGrid']]],
@@ -19,7 +19,7 @@ var searchData=
   ['_7escalarsimulationobject',['~ScalarSimulationObject',['../classbdm_1_1ScalarSimulationObject.html#a93b5f76e86ff2087c1979b602487f1f7',1,'bdm::ScalarSimulationObject']]],
   ['_7escheduler',['~Scheduler',['../classbdm_1_1Scheduler.html#a9777e1b2fb698ad3adec5f25c4bb7a42',1,'bdm::Scheduler']]],
   ['_7esimulation',['~Simulation',['../structbdm_1_1Simulation.html#a70344f927dd212450f8438f0e74a6109',1,'bdm::Simulation']]],
-  ['_7esimulationobject',['~SimulationObject',['../classbdm_1_1SimulationObject.html#afc983768005bb22e019ba67819cf0318',1,'bdm::SimulationObject']]],
+  ['_7esimulationobjectext',['~SimulationObjectExt',['../classbdm_1_1SimulationObjectExt.html#ade900401fc34e2db5b8b60fbd4d4c81a',1,'bdm::SimulationObjectExt']]],
   ['_7esoasimulationobject',['~SoaSimulationObject',['../classbdm_1_1SoaSimulationObject.html#a45e16009a8858a7a148de56d98b694a4',1,'bdm::SoaSimulationObject']]],
   ['_7etfileraii',['~TFileRaii',['../classbdm_1_1TFileRaii.html#aeaf85c5414a5d3ebb9f0e98d4c047e17',1,'bdm::TFileRaii']]],
   ['_7etiming',['~Timing',['../classbdm_1_1Timing.html#a6acd5fbcf296e24001e8bb62cd3667a0',1,'bdm::Timing']]],

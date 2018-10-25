@@ -1,7 +1,6 @@
 var searchData=
 [
   ['cell',['Cell',['../namespacebdm.html#a4b599e250763e252b6b19f62d4fe030c',1,'bdm']]],
-  ['cell_5ftctparam_5ftderived',['Cell_TCTParam_TDerived',['../namespacebdm.html#a01ddd1a9de1d52e959a4bd5e957f75c0',1,'bdm']]],
   ['celltest',['CellTest',['../namespacebdm.html#a2d1afa14d9fe0b9acf74d694fccd03e5',1,'bdm']]],
   ['clock',['Clock',['../classbdm_1_1Scheduler.html#ab49c5033737653fb2c5248b04bde76a4',1,'bdm::Scheduler::Clock()'],['../classbdm_1_1Timing.html#a82e8b4b8b6f1f536924285fa166acfe7',1,'bdm::Timing::Clock()']]],
   ['const_5fiterator',['const_iterator',['../classbdm_1_1TransactionalVector.html#af48011c4093802cbc311a2b3e6ee22d4',1,'bdm::TransactionalVector']]],

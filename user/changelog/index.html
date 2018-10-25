@@ -448,6 +448,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#25102018-b197542" title="25.10.2018 b197542" class="md-nav__link">
+    25.10.2018 b197542
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#08102018-8a97cf2" title="08.10.2018 8a97cf2" class="md-nav__link">
     08.10.2018 8a97cf2
   </a>
@@ -486,19 +493,6 @@
   <a href="#26062018-ba4fe1f" title="26.06.2018 ba4fe1f" class="md-nav__link">
     26.06.2018 ba4fe1f
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#api-changes" title="API changes" class="md-nav__link">
-    API changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -546,6 +540,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#25102018-b197542" title="25.10.2018 b197542" class="md-nav__link">
+    25.10.2018 b197542
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#08102018-8a97cf2" title="08.10.2018 8a97cf2" class="md-nav__link">
     08.10.2018 8a97cf2
   </a>
@@ -585,19 +586,6 @@
     26.06.2018 ba4fe1f
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#api-changes" title="API changes" class="md-nav__link">
-    API changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
       
@@ -618,6 +606,31 @@
                 
                 
                 <h1 id="changelog">Changelog</h1>
+<h2 id="25102018-b197542">25.10.2018 <a href="https://github.com/BioDynaMo/biodynamo/commit/b197542ef90864c97af899baa8b1ca6d68c71ef7"><code class="codehilite">b197542</code></a></h2>
+<p>Resolve ROOT-9321 by removing TBase template parameter of simulation objects</p>
+<p>Motivation:
+  * Workaround for ROOT-9321
+  * Shortens full name of simulation objects</p>
+<p>Move duplicated biology module code from <code class="codehilite">Cell</code> and <code class="codehilite">NeuriteELement</code>
+to <code class="codehilite">SimulationObject</code></p>
+<p>Introduce <code class="codehilite">TestSimObject</code> to avoid code duplication of special sim
+objects used for unit testing</p>
+<p>This requires an additional parameter for the <code class="codehilite">BDM_SIM_OBJECT_HEADER</code> macro.
+The base class name must be added as second parameter:</p>
+<table>
+<thead>
+<tr>
+<th>Old</th>
+<th>New</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="codehilite">BDM_SIM_OBJECT_HEADER(Cell, 1, ...)</code></td>
+<td><code class="codehilite">BDM_SIM_OBJECT_HEADER(Cell,</code><strong><code class="codehilite">SimulationObject</code></strong><code class="codehilite">, 1, ...)</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="08102018-8a97cf2">08.10.2018 <a href="https://github.com/BioDynaMo/biodynamo/commit/8a97cf21ad3e07be19f764d116eb10cae5c6ab05"><code class="codehilite">8a97cf2</code></a></h2>
 <p>Allow builds without dictionaries to speed up compile time                                 </p>
 <p>Early development of a simulation requires fast iteration cycles.                <br />
@@ -753,7 +766,6 @@ This change causes many API changes -- see subsection below.</p>
 inconsistencies with the biodynamo version.</p>
 </li>
 </ul>
-<h3 id="api-changes">API changes</h3>
 <table>
 <thead>
 <tr>
