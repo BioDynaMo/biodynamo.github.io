@@ -608,15 +608,22 @@
                 <h1 id="changelog">Changelog</h1>
 <h2 id="25102018-b197542">25.10.2018 <a href="https://github.com/BioDynaMo/biodynamo/commit/b197542ef90864c97af899baa8b1ca6d68c71ef7"><code class="codehilite">b197542</code></a></h2>
 <p>Resolve ROOT-9321 by removing TBase template parameter of simulation objects</p>
-<p>Motivation:
-  * Workaround for ROOT-9321
-  * Shortens full name of simulation objects</p>
+<p>Motivation:</p>
+<ul>
+<li>Workaround for ROOT-9321</li>
+<li>Shortens full name of simulation objects</li>
+</ul>
 <p>Move duplicated biology module code from <code class="codehilite">Cell</code> and <code class="codehilite">NeuriteELement</code>
 to <code class="codehilite">SimulationObject</code></p>
-<p>Introduce <code class="codehilite">TestSimObject</code> to avoid code duplication of special sim
-objects used for unit testing</p>
-<p>This requires an additional parameter for the <code class="codehilite">BDM_SIM_OBJECT_HEADER</code> macro.
-The base class name must be added as second parameter:</p>
+<p>This change requires a different signature of <code class="codehilite">BDM_SIM_OBJECT_HEADER</code>.</p>
+<ol>
+<li>Remove the suffix <code class="codehilite">Ext</code> from the first parameter</li>
+<li>Add the base class name as a second parameter.</li>
+</ol>
+<p>In other words, copy the parameters from <code class="codehilite">BDM_SIM_OBJECT</code> to the beginning of <code class="codehilite">BDM_SIM_OBJECT_HEADER</code>
+<div class="codehilite"><pre><span></span><span class="n">BDM_SIM_OBJECT</span><span class="p">(</span><span class="n">Cell</span><span class="p">,</span> <span class="n">SimulationObject</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">BDM_SIM_OBJECT_HEADER</span><span class="p">(</span><span class="n">Cell</span><span class="p">,</span> <span class="n">SimulationObject</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">...)</span>
+</pre></div></p>
 <table>
 <thead>
 <tr>
@@ -626,7 +633,7 @@ The base class name must be added as second parameter:</p>
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">BDM_SIM_OBJECT_HEADER(Cell, 1, ...)</code></td>
+<td><code class="codehilite">BDM_SIM_OBJECT_HEADER(CellExt, 1, ...)</code></td>
 <td><code class="codehilite">BDM_SIM_OBJECT_HEADER(Cell,</code><strong><code class="codehilite">SimulationObject</code></strong><code class="codehilite">, 1, ...)</code></td>
 </tr>
 </tbody>
