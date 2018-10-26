@@ -42,10 +42,10 @@ var NAVTREEINDEX =
 "annotated.html",
 "classbdm_1_1DisplacementOpCudaKernel.html",
 "classbdm_1_1ScalarSimulationObject.html#a93b5f76e86ff2087c1979b602487f1f7",
-"classbdm_1_1Variant.html#a4f52e6168f6bbfec5901ce70b05dc71f",
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a86e5a84440b6f5b00ae59baaa47add15",
-"neuron__soma_8h.html",
-"structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a"
+"classbdm_1_1Variant.html#a4803331d3c5a7b730346ddf58a560463",
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a78629519681c477549579e061aa3383e",
+"neurite__element_8h_source.html",
+"structbdm_1_1Param.html#aec37de9267ac01cbb088db5c993b20af"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

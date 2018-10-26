@@ -45,7 +45,7 @@ var searchData=
   ['run',['Run',['../structbdm_1_1GrowDivide.html#aa349b719939d7a8caff9da4eafe06cb6',1,'bdm::GrowDivide::Run()'],['../structbdm_1_1RegulateGenes.html#ae0776e01574ba3c4d0e0aaa5215c15d3',1,'bdm::RegulateGenes::Run()'],['../structbdm_1_1NullBiologyModule.html#a1f1a78bbc7163b6ad5b907fc644108c0',1,'bdm::NullBiologyModule::Run()']]],
   ['run_5fmechanical_5finteractions_5f',['run_mechanical_interactions_',['../structbdm_1_1Param.html#a6165e06ccf4fc25c0148756a870442ad',1,'bdm::Param']]],
   ['runbiologymodules',['RunBiologyModules',['../classbdm_1_1SimulationObjectExt.html#a611a9a72ca0f47402b2d18d3fd9a2b5d',1,'bdm::SimulationObjectExt']]],
-  ['rundiscretization',['RunDiscretization',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ac0c398a0e5cc1404b405cd5f6564690b',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
+  ['rundiscretization',['RunDiscretization',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ac0c398a0e5cc1404b405cd5f6564690b',1,'bdm::experimental::neuroscience::NeuriteElementExt::RunDiscretization()'],['../classbdm_1_1SimulationObjectExt.html#a0dbfad23251ce651b0f66748771e2b65',1,'bdm::SimulationObjectExt::RunDiscretization()']]],
   ['runinitializers',['RunInitializers',['../classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7',1,'bdm::DiffusionGrid']]],
   ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f',1,'bdm::RuntimeVariables::RuntimeVariables()'],['../classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303',1,'bdm::RuntimeVariables::RuntimeVariables(TRootIOCtor *io_ctor)']]],
   ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm']]],

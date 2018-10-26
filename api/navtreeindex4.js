@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a78629519681c477549579e061aa3383e":[1,0,0,1,0,10,33],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a86e5a84440b6f5b00ae59baaa47add15":[1,0,0,1,0,10,24],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a8a1895377e1eb96106db9524fe0527d9":[1,0,0,1,0,10,0],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a8c61cdd483bda103512ce827d77cb54e":[1,0,0,1,0,10,55],
@@ -62,10 +63,10 @@ var NAVTREEINDEX4 =
 "default__force_8h.html":[2,0,19],
 "default__force_8h_source.html":[2,0,19],
 "diffusion__grid_8h.html":[2,0,20],
+"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,3],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,2],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,4],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,1],
-"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,3],
 "diffusion__grid_8h_source.html":[2,0,20],
 "diffusion__op_8h.html":[2,0,21],
 "diffusion__op_8h_source.html":[2,0,21],
@@ -105,8 +106,8 @@ var NAVTREEINDEX4 =
 "files.html":[2,0],
 "fixed__size__vector_8h.html":[2,0,28],
 "fixed__size__vector_8h_source.html":[2,0,28],
-"functions.html":[1,3,0,0],
 "functions.html":[1,3,0],
+"functions.html":[1,3,0,0],
 "functions_a.html":[1,3,0,1],
 "functions_b.html":[1,3,0,2],
 "functions_c.html":[1,3,0,3],
@@ -154,8 +155,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[1,3,3],
 "functions_u.html":[1,3,0,19],
 "functions_v.html":[1,3,0,20],
-"functions_vars.html":[1,3,2],
 "functions_vars.html":[1,3,2,0],
+"functions_vars.html":[1,3,2],
 "functions_vars_b.html":[1,3,2,1],
 "functions_vars_c.html":[1,3,2,2],
 "functions_vars_d.html":[1,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "neurite__element_8h.html#a9ebae444d389be296fb4da70a3d0db08":[2,0,3,2,10],
 "neurite__element_8h.html#acce56bf7f35e5f807256782b1b2ead85":[2,0,3,2,8],
 "neurite__element_8h.html#add6cbd0e11bc40c3e7508d0c6ff67ef2":[2,0,3,2,5],
-"neurite__element_8h.html#afaeb41eaf35e113784929a1e6a9928dc":[2,0,3,2,11],
-"neurite__element_8h_source.html":[2,0,3,2]
+"neurite__element_8h.html#afaeb41eaf35e113784929a1e6a9928dc":[2,0,3,2,11]
 };
