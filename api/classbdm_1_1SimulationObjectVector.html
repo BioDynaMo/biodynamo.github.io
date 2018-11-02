@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-130-g632f33f</span>
+   &#160;<span id="projectnumber">v0.1.0-131-g1c49bb3</span>
    </div>
   </td>
  </tr>
@@ -117,16 +117,17 @@ $(document).ready(function(){initNavTree('classbdm_1_1SimulationObjectVector.htm
 <div class="dynheader">
 Collaboration diagram for bdm::SimulationObjectVector&lt; T, TSimulation &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimulationObjectVector__coll__graph.svg" width="203" height="192"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimulationObjectVector__coll__graph.svg" width="203" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cc8e0890e3e30ab1f69be7aad723bbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimulationObjectVector.html#a8cc8e0890e3e30ab1f69be7aad723bbd">SimulationObjectVector</a> ()</td></tr>
+<tr class="memdesc:a8cc8e0890e3e30ab1f69be7aad723bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">NB: Elements will not be initilized.  <a href="#a8cc8e0890e3e30ab1f69be7aad723bbd">More...</a><br/></td></tr>
 <tr class="separator:a8cc8e0890e3e30ab1f69be7aad723bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c1c6a776e920edcb0940d28c3c773b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimulationObjectVector.html#a45c1c6a776e920edcb0940d28c3c773b">Initialize</a> ()</td></tr>
-<tr class="separator:a45c1c6a776e920edcb0940d28c3c773b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158735dda7329c80de370619f89dba0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimulationObjectVector.html#a158735dda7329c80de370619f89dba0b">Reserve</a> ()</td></tr>
+<tr class="separator:a158735dda7329c80de370619f89dba0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a621355fafe4bde66e3b3959d82f9d6fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimulationObjectVector.html#a621355fafe4bde66e3b3959d82f9d6fd">clear</a> ()</td></tr>
 <tr class="separator:a621355fafe4bde66e3b3959d82f9d6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c384e21563f3eb7cf362876fc337cd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimulationObjectVector.html#a15c384e21563f3eb7cf362876fc337cd">size</a> ()</td></tr>
@@ -143,12 +144,14 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac434ed6fc7cd4ce94e5728bccdd2a071"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimulationObjectVector.html#ac434ed6fc7cd4ce94e5728bccdd2a071">data_</a></td></tr>
 <tr class="memdesc:ac434ed6fc7cd4ce94e5728bccdd2a071"><td class="mdescLeft">&#160;</td><td class="mdescRight">one std::vector&lt;T&gt; for each type in <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>  <a href="#ac434ed6fc7cd4ce94e5728bccdd2a071">More...</a><br/></td></tr>
 <tr class="separator:ac434ed6fc7cd4ce94e5728bccdd2a071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c0ec8a282eaddfb562d942d5d95936"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimulationObjectVector.html#a47c0ec8a282eaddfb562d942d5d95936">size_</a></td></tr>
+<tr class="separator:a47c0ec8a282eaddfb562d942d5d95936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt;<br/>
 class bdm::SimulationObjectVector&lt; T, TSimulation &gt;</h3>
 
-<p>Two dimensional vector. Creates one vector for each simulation type Use this vector if you need one object of type T for each simulation object </p>
+<p>Two dimensional vector. Holds one element of type <code>T</code> for each simulation object in the simulation. </p>
 
 <p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00027">27</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -175,7 +178,9 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00029">29</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+<p>NB: Elements will not be initilized. </p>
+
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00030">30</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -203,48 +208,12 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00051">51</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00054">54</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimulationObjectVector_a621355fafe4bde66e3b3959d82f9d6fd_icgraph.svg" width="454" height="64"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a45c1c6a776e920edcb0940d28c3c773b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1SimulationObjectVector.html">bdm::SimulationObjectVector</a>&lt; T, TSimulation &gt;::Initialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>resize vectors to match number of simulation object of the corresponding type. e.g. <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> has two types <code>A</code> and <code>B</code>. <code>A</code> has 10 elements and <code>B</code> 20. <code>data_[0]</code> corresponds to <code>A</code> and is therefore resized to 10 elements, while <code>data_[1]</code> corresponds to <code>B</code> and is resized to 20 elements. </p>
-
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00042">42</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimulationObjectVector_a45c1c6a776e920edcb0940d28c3c773b_icgraph.svg" width="454" height="64"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -275,7 +244,7 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00063">63</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00066">66</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -303,7 +272,43 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00067">67</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00070">70</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a158735dda7329c80de370619f89dba0b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbdm_1_1SimulationObjectVector.html">bdm::SimulationObjectVector</a>&lt; T, TSimulation &gt;::Reserve </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reserves enough memory to hold N instances of type T (N being the number of simulation objects in the simulation). e.g. <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> has two types <code>A</code> and <code>B</code>. <code>A</code> has 10 elements and <code>B</code> 20. <code>data_[0]</code> corresponds to <code>A</code> and reserves 10 elements, while <code>data_[1]</code> corresponds to <code>B</code> and reserves 20 elements. NB: Elements will not be initilized. </p>
+
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00044">44</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimulationObjectVector_a158735dda7329c80de370619f89dba0b_icgraph.svg" width="454" height="64"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -330,7 +335,7 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00058">58</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00061">61</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +363,7 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00061">61</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00064">64</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +390,31 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 
 <p>one std::vector&lt;T&gt; for each type in <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> </p>
 
-<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00073">73</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00076">76</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47c0ec8a282eaddfb562d942d5d95936"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; <a class="el" href="classbdm_1_1SimulationObjectVector.html">bdm::SimulationObjectVector</a>&lt; T, TSimulation &gt;::size_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="simulation__object__vector_8h_source.html#l00077">77</a> of file <a class="el" href="simulation__object__vector_8h_source.html">simulation_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +427,7 @@ template&lt;typename T, typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SimulationObjectVector.html">SimulationObjectVector</a></li>
-    <li class="footer">Generated on Thu Nov 1 2018 09:54:01 for BioDynaMo by
+    <li class="footer">Generated on Fri Nov 2 2018 19:12:08 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
