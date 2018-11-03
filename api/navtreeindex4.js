@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a73f948bd692d72bba415111972e6aa8d":[1,0,0,1,0,10,20],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a744b34f287f4a32432819e1ef2324cb5":[1,0,0,1,0,10,39],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a78629519681c477549579e061aa3383e":[1,0,0,1,0,10,33],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a86e5a84440b6f5b00ae59baaa47add15":[1,0,0,1,0,10,24],
@@ -64,10 +65,10 @@ var NAVTREEINDEX4 =
 "default__force_8h.html":[2,0,19],
 "default__force_8h_source.html":[2,0,19],
 "diffusion__grid_8h.html":[2,0,20],
-"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,4],
-"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,1],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,3],
+"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,1],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,2],
+"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,4],
 "diffusion__grid_8h_source.html":[2,0,20],
 "diffusion__op_8h.html":[2,0,21],
 "diffusion__op_8h_source.html":[2,0,21],
@@ -156,8 +157,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[1,3,3],
 "functions_u.html":[1,3,0,19],
 "functions_v.html":[1,3,0,20],
-"functions_vars.html":[1,3,2],
 "functions_vars.html":[1,3,2,0],
+"functions_vars.html":[1,3,2],
 "functions_vars_b.html":[1,3,2,1],
 "functions_vars_c.html":[1,3,2,2],
 "functions_vars_d.html":[1,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "neurite__element_8h.html#a7c844ce08c374b89a415486dec6cfe19":[2,0,3,2,9],
 "neurite__element_8h.html#a7c9e6f5ef916000981c276b50fd49dd0":[2,0,3,2,6],
 "neurite__element_8h.html#a9ebae444d389be296fb4da70a3d0db08":[2,0,3,2,10],
-"neurite__element_8h.html#acce56bf7f35e5f807256782b1b2ead85":[2,0,3,2,8],
-"neurite__element_8h.html#add6cbd0e11bc40c3e7508d0c6ff67ef2":[2,0,3,2,5]
+"neurite__element_8h.html#acce56bf7f35e5f807256782b1b2ead85":[2,0,3,2,8]
 };

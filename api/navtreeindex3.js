@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classbdm_1_1Variant.html#a1239c03fae27a76e011dcaf8db8b6ee5":[1,0,0,77,6],
 "classbdm_1_1Variant.html#a200e1ab6a00c95e96a3b9aa68166f2f8":[1,0,0,77,12],
 "classbdm_1_1Variant.html#a4803331d3c5a7b730346ddf58a560463":[1,0,0,77,2],
 "classbdm_1_1Variant.html#a4f52e6168f6bbfec5901ce70b05dc71f":[1,0,0,77,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a6688933430b7092a225787bf4ed0b5e9":[1,0,0,1,0,10,32],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a67b92e63210ac30fcfeaaf28553006b5":[1,0,0,1,0,10,3],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a6f3f62073cc2fc3911d33ec31c0fb964":[1,0,0,1,0,10,5],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a734b859ec2f6835e2e3e14b11535055b":[1,0,0,1,0,10,7],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a73f948bd692d72bba415111972e6aa8d":[1,0,0,1,0,10,20]
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a734b859ec2f6835e2e3e14b11535055b":[1,0,0,1,0,10,7]
 };

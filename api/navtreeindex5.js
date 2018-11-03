@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"neurite__element_8h.html#add6cbd0e11bc40c3e7508d0c6ff67ef2":[2,0,3,2,5],
 "neurite__element_8h.html#afaeb41eaf35e113784929a1e6a9928dc":[2,0,3,2,11],
 "neurite__element_8h_source.html":[2,0,3,2],
 "neuron__soma_8h.html":[2,0,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structbdm_1_1Param.html#ab3790595d9010d2e4c1cd765fa697e8b":[1,0,0,51,7],
 "structbdm_1_1Param.html#abd15e376dcf514fb83c6ff55b49cd3db":[1,0,0,51,28],
 "structbdm_1_1Param.html#ac7e02189f045a9b327897ba5a9f1aba5":[1,0,0,51,20],
-"structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2":[1,0,0,51,30],
-"structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d":[1,0,0,51,27]
+"structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2":[1,0,0,51,30]
 };

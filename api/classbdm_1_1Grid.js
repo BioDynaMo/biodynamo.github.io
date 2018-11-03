@@ -45,6 +45,7 @@ var classbdm_1_1Grid =
     [ "UpdateCachedPositions", "classbdm_1_1Grid.html#a33a5e34ae8d854aa364f4c354db3db9e", null ],
     [ "UpdateGrid", "classbdm_1_1Grid.html#a28268d3427670a3b7853f15057faab8c", null ],
     [ "UpdateSoHandles", "classbdm_1_1Grid.html#ad5e7a40cb06f47a425322f17a0fb6c86", null ],
+    [ "WithinSquaredEuclideanDistance", "classbdm_1_1Grid.html#ae8c9791f0ffd0fffd56dd9de8bf50b08", null ],
     [ "adjacency_", "classbdm_1_1Grid.html#a6db27f8df7e5bbbbb85382fcdf1be0b2", null ],
     [ "box_length_", "classbdm_1_1Grid.html#a14c74a52455c2e651a61fe05a1ba7978", null ],
     [ "boxes_", "classbdm_1_1Grid.html#a7841e9f9825ae558ab8f5d38c85141b9", null ],
