@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-133-ge6b6d4d</span>
+   &#160;<span id="projectnumber">v0.1.0-134-g982456b</span>
    </div>
   </td>
  </tr>
@@ -560,33 +560,33 @@ $(document).ready(function(){initNavTree('diffusion__grid_8h_source.html','');})
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;          s = (y == ny - 1) ? c : c + nx;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;          b = (z == 0) ? c : c - nx * ny;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;          t = (z == nz - 1) ? c : c + nx * ny;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;          <a class="code" href="classbdm_1_1DiffusionGrid.html#a051eff2bbb3df7bf6baef0a55c3d8b58">c2_</a>[c] = (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + d * <a class="code" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> * (0 - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c + 1]) * ibl2 +</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                    d * <a class="code" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> * (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[n]) * ibl2 +</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                    d * <a class="code" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> * (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[t]) * ibl2) *</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                   (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a>);</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="preprocessor">#pragma omp simd</span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor"></span>          <span class="keywordflow">for</span> (x = 1; x &lt; nx - 1; x++) {</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            ++c;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            ++n;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            ++s;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            ++b;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            ++t;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            l.fill(1);</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            <span class="keywordflow">if</span> (y == 0) {</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;              l[0] = 0;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;            }</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;            <span class="keywordflow">if</span> (y == ny - 1) {</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;              l[1] = 0;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            }</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            <span class="keywordflow">if</span> (z == 0) {</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;              l[2] = 0;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;            }</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;            <span class="keywordflow">if</span> (z == nz - 1) {</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;              l[3] = 0;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;            }</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;          l.fill(1);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;          <span class="keywordflow">if</span> (y == 0) {</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            l[0] = 0;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;          }</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;          <span class="keywordflow">if</span> (y == ny - 1) {</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            l[1] = 0;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;          }</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;          <span class="keywordflow">if</span> (z == 0) {</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            l[2] = 0;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;          }</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;          <span class="keywordflow">if</span> (z == nz - 1) {</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;            l[3] = 0;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;          }</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;          <a class="code" href="classbdm_1_1DiffusionGrid.html#a051eff2bbb3df7bf6baef0a55c3d8b58">c2_</a>[c] = (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + d * <a class="code" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> * (0 - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c + 1]) * ibl2 +</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                    d * <a class="code" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> * (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[n]) * ibl2 +</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                    d * <a class="code" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> * (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[t]) * ibl2) *</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                   (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a>);</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="preprocessor">#pragma omp simd</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="preprocessor"></span>          <span class="keywordflow">for</span> (x = 1; x &lt; nx - 1; x++) {</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;            ++c;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;            ++n;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;            ++s;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;            ++b;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;            ++t;</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;            <a class="code" href="classbdm_1_1DiffusionGrid.html#a051eff2bbb3df7bf6baef0a55c3d8b58">c2_</a>[c] =</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] +</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                 d * <a class="code" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> * (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c - 1] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#ae2749f7cd92700b5d4e8da71cd7b68e4">c1_</a>[c + 1]) * ibl2 +</div>
@@ -880,7 +880,7 @@ $(document).ready(function(){initNavTree('diffusion__grid_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="diffusion__grid_8h.html">diffusion_grid.h</a></li>
-    <li class="footer">Generated on Mon Nov 12 2018 11:28:44 for BioDynaMo by
+    <li class="footer">Generated on Mon Nov 12 2018 15:24:55 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
