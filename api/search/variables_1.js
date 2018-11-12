@@ -10,7 +10,7 @@ var searchData=
   ['box_5fiterator_5f',['box_iterator_',['../structbdm_1_1Grid_1_1NeighborIterator.html#a0ca0b16b916fc6ce5047077b7004e22f',1,'bdm::Grid::NeighborIterator']]],
   ['box_5flength_5f',['box_length_',['../classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c',1,'bdm::DiffusionGrid::box_length_()'],['../classbdm_1_1Grid.html#a14c74a52455c2e651a61fe05a1ba7978',1,'bdm::Grid::box_length_()']]],
   ['box_5fvolume_5f',['box_volume_',['../classbdm_1_1DiffusionGrid.html#a83f73fcc15f8876c672a23a9189dee0c',1,'bdm::DiffusionGrid']]],
-  ['boxes_5f',['boxes_',['../classbdm_1_1Grid.html#a7841e9f9825ae558ab8f5d38c85141b9',1,'bdm::Grid']]],
+  ['boxes_5f',['boxes_',['../classbdm_1_1Grid.html#a6675fa00c707c6d760099a60f492fa67',1,'bdm::Grid']]],
   ['branch_5forder_5f',['branch_order_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a00f27182fe8d7721fba28b1b8bef7ced',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['buffer_5f',['buffer_',['../structbdm_1_1StreamerWriteFunctor.html#accb92efd9671c11a8d9082c226e1ba3c',1,'bdm::StreamerWriteFunctor::buffer_()'],['../structbdm_1_1StreamerReadFunctor.html#a3adef3890ed781285fbcc95ce5c8c7c7',1,'bdm::StreamerReadFunctor::buffer_()']]]
 ];

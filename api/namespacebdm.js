@@ -51,6 +51,7 @@ var namespacebdm =
     [ "Math", "structbdm_1_1Math.html", null ],
     [ "ModelInitializer", "structbdm_1_1ModelInitializer.html", null ],
     [ "OpTimer", "structbdm_1_1OpTimer.html", "structbdm_1_1OpTimer" ],
+    [ "ParallelResizeVector", "classbdm_1_1ParallelResizeVector.html", "classbdm_1_1ParallelResizeVector" ],
     [ "Param", "structbdm_1_1Param.html", "structbdm_1_1Param" ],
     [ "Random", "classbdm_1_1Random.html", "classbdm_1_1Random" ],
     [ "SoHandle", "classbdm_1_1SoHandle.html", "classbdm_1_1SoHandle" ],

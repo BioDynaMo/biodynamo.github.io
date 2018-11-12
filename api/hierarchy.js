@@ -85,6 +85,8 @@ var hierarchy =
     [ "bdm::OpTimer< bdm::CommitOp >", "structbdm_1_1OpTimer.html", null ],
     [ "bdm::OpTimer< bdm::DisplacementOp< bdm::Simulation > >", "structbdm_1_1OpTimer.html", null ],
     [ "bdm::OpTimer< bdm::DisplacementOp< TSimulation > >", "structbdm_1_1OpTimer.html", null ],
+    [ "bdm::ParallelResizeVector< T >", "classbdm_1_1ParallelResizeVector.html", null ],
+    [ "bdm::ParallelResizeVector< bdm::Grid::Box >", "classbdm_1_1ParallelResizeVector.html", null ],
     [ "bdm::experimental::neuroscience::Param", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html", null ],
     [ "bdm::Param", "structbdm_1_1Param.html", null ],
     [ "bdm::PoissonBand", "structbdm_1_1PoissonBand.html", null ],

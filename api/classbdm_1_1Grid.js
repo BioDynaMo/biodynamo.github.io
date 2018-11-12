@@ -48,7 +48,7 @@ var classbdm_1_1Grid =
     [ "WithinSquaredEuclideanDistance", "classbdm_1_1Grid.html#ae8c9791f0ffd0fffd56dd9de8bf50b08", null ],
     [ "adjacency_", "classbdm_1_1Grid.html#a6db27f8df7e5bbbbb85382fcdf1be0b2", null ],
     [ "box_length_", "classbdm_1_1Grid.html#a14c74a52455c2e651a61fe05a1ba7978", null ],
-    [ "boxes_", "classbdm_1_1Grid.html#a7841e9f9825ae558ab8f5d38c85141b9", null ],
+    [ "boxes_", "classbdm_1_1Grid.html#a6675fa00c707c6d760099a60f492fa67", null ],
     [ "grid_dimensions_", "classbdm_1_1Grid.html#abb254822287970db4138b669dd0992bf", null ],
     [ "has_grown_", "classbdm_1_1Grid.html#a8432b642e66a294907e8fa9ed2ea287e", null ],
     [ "initialized_", "classbdm_1_1Grid.html#a136c9364d62a2efbe216372b2fbfb8e7", null ],

@@ -42,5 +42,5 @@ var searchData=
   ['issotype',['IsSoType',['../classbdm_1_1SimulationObjectExt.html#a2693f10e752ee32a1928db0460162be7',1,'bdm::SimulationObjectExt::IsSoType()'],['../classbdm_1_1SimulationObjectExt.html#aa8c739a149fd7dbcc9c6a593b54b625f',1,'bdm::SimulationObjectExt::IsSoType(const TSo *object)']]],
   ['isterminal',['IsTerminal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ab412f8debeea8c6835894d18d800c147',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]],
-  ['iterator',['iterator',['../classbdm_1_1TransactionalVector.html#a3e23584d0dd270c3481816a0ac9dbb23',1,'bdm::TransactionalVector::iterator()'],['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a9c207bfebd872662e7ad9fc74a5b6065',1,'bdm::Grid::Box::Iterator::Iterator()']]]
+  ['iterator',['iterator',['../classbdm_1_1ParallelResizeVector.html#a1cb7d1818853f8fec334c05e2882aa7b',1,'bdm::ParallelResizeVector::iterator()'],['../classbdm_1_1TransactionalVector.html#a3e23584d0dd270c3481816a0ac9dbb23',1,'bdm::TransactionalVector::iterator()'],['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a9c207bfebd872662e7ad9fc74a5b6065',1,'bdm::Grid::Box::Iterator::Iterator()']]]
 ];

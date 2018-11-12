@@ -15,6 +15,7 @@ var searchData=
   ['_7egrid',['~Grid',['../classbdm_1_1Grid.html#aacdf066c17137edf623ff0e2055703c3',1,'bdm::Grid']]],
   ['_7einlinevector',['~InlineVector',['../classbdm_1_1InlineVector.html#a33875d26cfd822c7ebd71ef56551bdf4',1,'bdm::InlineVector']]],
   ['_7eoneelementarray',['~OneElementArray',['../classbdm_1_1OneElementArray.html#ae8944d33cb990e84a0a3fc8922205a60',1,'bdm::OneElementArray']]],
+  ['_7eparallelresizevector',['~ParallelResizeVector',['../classbdm_1_1ParallelResizeVector.html#a6418eda61dd0ae708bfcf609ebb25c39',1,'bdm::ParallelResizeVector']]],
   ['_7eresourcemanager',['~ResourceManager',['../classbdm_1_1ResourceManager.html#a0b909716f905dcbcb3340a5c656c6921',1,'bdm::ResourceManager']]],
   ['_7escalarsimulationobject',['~ScalarSimulationObject',['../classbdm_1_1ScalarSimulationObject.html#a93b5f76e86ff2087c1979b602487f1f7',1,'bdm::ScalarSimulationObject']]],
   ['_7escheduler',['~Scheduler',['../classbdm_1_1Scheduler.html#a9777e1b2fb698ad3adec5f25c4bb7a42',1,'bdm::Scheduler']]],

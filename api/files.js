@@ -93,6 +93,9 @@ var files =
     [ "op_timer.h", "op__timer_8h.html", [
       [ "OpTimer", "structbdm_1_1OpTimer.html", "structbdm_1_1OpTimer" ]
     ] ],
+    [ "parallel_resize_vector.h", "parallel__resize__vector_8h.html", [
+      [ "ParallelResizeVector", "classbdm_1_1ParallelResizeVector.html", "classbdm_1_1ParallelResizeVector" ]
+    ] ],
     [ "random.cc", "random_8cc.html", null ],
     [ "random.h", "random_8h.html", [
       [ "Random", "classbdm_1_1Random.html", "classbdm_1_1Random" ]
