@@ -589,16 +589,15 @@ this simple simulation.</p>
 <p>Let's make the simulation more interesting by adding a biological behavior to the
 cell: cell division. Open the <code class="codehilite">src/hello_world.h</code></p>
 <p>Replace the line starting with <code class="codehilite">BDM_CTPARAM()</code> with the following one:</p>
-<div class="codehilite"><pre><span></span><span class="n">BDM_CTPARAM</span><span class="p">()</span> <span class="p">{</span>
+<p><div class="codehilite"><pre><span></span><span class="n">BDM_CTPARAM</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">BDM_CTPARAM_HEADER</span><span class="p">();</span>
 
   <span class="c1">// Override default BiologyModules for Cell</span>
   <span class="n">BDM_CTPARAM_FOR</span><span class="p">(</span><span class="n">bdm</span><span class="p">,</span> <span class="n">Cell</span><span class="p">)</span> <span class="p">{</span> <span class="k">using</span> <span class="n">BiologyModules</span> <span class="o">=</span> <span class="n">CTList</span><span class="o">&lt;</span><span class="n">GrowDivide</span><span class="o">&gt;</span><span class="p">;</span> <span class="p">};</span>
 <span class="p">};</span>
 </pre></div>
-
-<p>And add the following line to the <code class="codehilite">construct</code> function:</p>
-<div class="codehilite"><pre><span></span><span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowDivide</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="p">{</span><span class="n">gAllEventIds</span><span class="p">}));</span>
+Now one needs to add this behaviour to the cell, this can be done by adding the following line to the simulate function after the cell is created.</p>
+<div class="codehilite"><pre><span></span><span class="n">cell</span><span class="p">.</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="n">GrowDivide</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="p">{</span><span class="n">gAllEventIds</span><span class="p">}));</span> <span class="c1">// Addidng the biological behaviour to the cell.</span>
 </pre></div>
 
 <p>Rebuild and rerun the simulation to have the cell division take effect. visit the
