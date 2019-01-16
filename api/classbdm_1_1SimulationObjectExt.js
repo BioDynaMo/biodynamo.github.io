@@ -45,7 +45,7 @@ var classbdm_1_1SimulationObjectExt =
     [ "PushBackImpl", "classbdm_1_1SimulationObjectExt.html#af705de0b32ad498a82ead821dadcd73a", null ],
     [ "ReinterpretCast", "classbdm_1_1SimulationObjectExt.html#aac71347db0a0bc4bc7cf2fde0387d60c", null ],
     [ "ReinterpretCast", "classbdm_1_1SimulationObjectExt.html#a39bc73e100c4da1e2b54a39e53f1aaf6", null ],
-    [ "RemoveBiologyModule", "classbdm_1_1SimulationObjectExt.html#a058e64909cca4a459eb465a6d354dc07", null ],
+    [ "RemoveBiologyModule", "classbdm_1_1SimulationObjectExt.html#a490a655aff197d558c50c48e6edce4b3", null ],
     [ "RemoveFromSimulation", "classbdm_1_1SimulationObjectExt.html#a521ad32b70d7a38e414b6e52348b3aab", null ],
     [ "reserve", "classbdm_1_1SimulationObjectExt.html#a9602b7ee00ebc92a80f5739c0bc94090", null ],
     [ "RunBiologyModules", "classbdm_1_1SimulationObjectExt.html#a611a9a72ca0f47402b2d18d3fd9a2b5d", null ],
@@ -62,5 +62,6 @@ var classbdm_1_1SimulationObjectExt =
     [ "UpdateReferences", "classbdm_1_1SimulationObjectExt.html#abf96cff64cb7638a5e7c92fedb105ba2", null ],
     [ "EventHandler", "classbdm_1_1SimulationObjectExt.html#a011685632233292b433bbc9e92ccb9fb", null ],
     [ "SimulationObjectExt", "classbdm_1_1SimulationObjectExt.html#a6168e3e39370c348690bb97d0a249d87", null ],
-    [ "biology_modules_", "classbdm_1_1SimulationObjectExt.html#a38b72d36bdf97d32351c4503d19b7939", null ]
+    [ "biology_modules_", "classbdm_1_1SimulationObjectExt.html#a38b72d36bdf97d32351c4503d19b7939", null ],
+    [ "run_bm_loop_idx_", "classbdm_1_1SimulationObjectExt.html#ab72d10d9e120786f6f607e335c833dd3", null ]
 ];

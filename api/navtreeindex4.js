@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a1203ab34f62ad8ddb5324cc992386d8a":[1,0,0,1,0,10,10],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a123d77cf95caa7e1e73699ec576282a0":[1,0,0,1,0,10,41],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a180430d10454c7d047552c9e5503d53b":[1,0,0,1,0,10,25],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a204e26ce1e7a677ad1c34dbb56a4d660":[1,0,0,1,0,10,37],
@@ -88,8 +89,8 @@ var NAVTREEINDEX4 =
 "diffusion__grid_8h.html":[2,0,20],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,4],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,2],
-"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,3],
 "diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,1],
+"diffusion__grid_8h.html#a61399329cc3d9b2b7c5284558a5ad75e":[2,0,20,3],
 "diffusion__grid_8h_source.html":[2,0,20],
 "diffusion__op_8h.html":[2,0,21],
 "diffusion__op_8h_source.html":[2,0,21],
@@ -178,8 +179,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[1,3,3],
 "functions_u.html":[1,3,0,19],
 "functions_v.html":[1,3,0,20],
-"functions_vars.html":[1,3,2,0],
 "functions_vars.html":[1,3,2],
+"functions_vars.html":[1,3,2,0],
 "functions_vars_b.html":[1,3,2,1],
 "functions_vars_c.html":[1,3,2,2],
 "functions_vars_d.html":[1,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "model__initializer_8h_source.html":[2,0,36],
 "namespacebdm.html":[0,0,0],
 "namespacebdm.html":[1,0,0],
-"namespacebdm_1_1detail.html":[1,0,0,0],
-"namespacebdm_1_1detail.html":[0,0,0,0]
+"namespacebdm_1_1detail.html":[1,0,0,0]
 };

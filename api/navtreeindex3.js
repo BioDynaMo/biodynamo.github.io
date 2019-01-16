@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classbdm_1_1TransactionalVector.html#a8c306dccf60cb92de20f52a99868d775":[1,0,0,72,10],
 "classbdm_1_1TransactionalVector.html#a8cab46d5f2c7d21dcf04dabe8fdef2f4":[1,0,0,72,5],
 "classbdm_1_1TransactionalVector.html#aa7a4c5220925b7e05a3bf9b5332deee8":[1,0,0,72,16],
 "classbdm_1_1TransactionalVector.html#ab6c06063dc5e4a6cb0ff24a20a9e44f2":[1,0,0,72,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a04a02f4e8d433650f3be28f12d8cea1d":[1,0,0,1,0,10,19],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a05a7804c708fd1db32d441e817686bda":[1,0,0,1,0,10,26],
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a05ee994e58ed028a20620c774ca6e9c9":[1,0,0,1,0,10,23],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a0953f516ce10c4025f695477e6a4b1a8":[1,0,0,1,0,10,4],
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a1203ab34f62ad8ddb5324cc992386d8a":[1,0,0,1,0,10,10]
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a0953f516ce10c4025f695477e6a4b1a8":[1,0,0,1,0,10,4]
 };

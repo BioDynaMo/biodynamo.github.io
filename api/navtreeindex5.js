@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"namespacebdm_1_1detail.html":[0,0,0,0],
 "namespacebdm_1_1experimental.html":[1,0,0,1],
 "namespacebdm_1_1experimental.html":[0,0,0,1],
 "namespacebdm_1_1experimental_1_1neuroscience.html":[1,0,0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structbdm_1_1Param.html":[1,0,0,52],
 "structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97":[1,0,0,52,23],
 "structbdm_1_1Param.html#a18addc5179619c36f1126daf4fc6a3fc":[1,0,0,52,5],
-"structbdm_1_1Param.html#a1d0a1349732defbaeecd64de66f158d3":[1,0,0,52,21],
-"structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471":[1,0,0,52,1]
+"structbdm_1_1Param.html#a1d0a1349732defbaeecd64de66f158d3":[1,0,0,52,21]
 };
