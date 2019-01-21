@@ -6,13 +6,12 @@ var searchData=
   ['capacity_5f',['capacity_',['../classbdm_1_1InlineVector.html#a849922aee1d0e34277935b7b20b08256',1,'bdm::InlineVector']]],
   ['catalystadaptortest',['CatalystAdaptorTest',['../structbdm_1_1Simulation.html#adb301b53d1c2ef59bdb058f58eb515e5',1,'bdm::Simulation']]],
   ['cdo_5f',['cdo_',['../classbdm_1_1DisplacementOpCuda.html#a6c2f3be34e156cdec8cc3e61938550ee',1,'bdm::DisplacementOpCuda']]],
-  ['commit_5f',['commit_',['../classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5',1,'bdm::Scheduler']]],
   ['concentration_5f',['concentration_',['../structbdm_1_1Param_1_1VisualizeDiffusion.html#a5474de1413cec9e65640347ec4704c95',1,'bdm::Param::VisualizeDiffusion']]],
   ['concentration_5fthreshold_5f',['concentration_threshold_',['../classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094',1,'bdm::DiffusionGrid']]],
   ['concentrations_5f',['concentrations_',['../structbdm_1_1RegulateGenes.html#a10fbfc91670d91ed4c04ee10521d9537',1,'bdm::RegulateGenes']]],
   ['copy_5fmask_5f',['copy_mask_',['../structbdm_1_1BaseBiologyModule.html#ab11c03eab9ce8faf961c2da0171e3d90',1,'bdm::BaseBiologyModule']]],
   ['countdown_5f',['countdown_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#aaa9648ffdc1a0d0a1cb6b6eed486f5bc',1,'bdm::Grid::Box::Iterator']]],
-  ['counter_5f',['counter_',['../classbdm_1_1UniqueEventIdFactory.html#a83e9f33ec29b0489d805b7c3d43e3cca',1,'bdm::UniqueEventIdFactory::counter_()'],['../structbdm_1_1Simulation.html#a8f9dd024140c7122319fb69414a483cf',1,'bdm::Simulation::counter_()']]],
+  ['counter_5f',['counter_',['../classbdm_1_1UniqueEventIdFactory.html#a83e9f33ec29b0489d805b7c3d43e3cca',1,'bdm::UniqueEventIdFactory::counter_()'],['../classbdm_1_1SoUidGenerator.html#ad1247e6e74f218e802bd0cfd7aaa837b',1,'bdm::SoUidGenerator::counter_()'],['../structbdm_1_1Simulation.html#a8f9dd024140c7122319fb69414a483cf',1,'bdm::Simulation::counter_()']]],
   ['cpu_5f',['cpu_',['../classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3',1,'bdm::DisplacementOp']]],
   ['current_5fvalue_5f',['current_value_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a2d05e27332a11f1ab576a44a91478be6',1,'bdm::Grid::Box::Iterator']]]
 ];

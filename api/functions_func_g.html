@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -161,7 +161,8 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>Get()
 : <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a98db85b6051bac2f9379eda85701c8be">bdm::IntegralTypeWrapper&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1ResourceManager.html#a6e62b97b78fb5da1beeb6833257b3510">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#ae479691864f04c7394fb544927666066">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+, <a class="el" href="classbdm_1_1SoUidGenerator.html#a0960708a976ee283d69e0e72d5c5636d">bdm::SoUidGenerator</a>
 , <a class="el" href="classbdm_1_1TFileRaii.html#ac4328103c3774c141fa55a7f3bfa35df">bdm::TFileRaii</a>
 , <a class="el" href="classbdm_1_1UniqueEventIdFactory.html#a24bf443bbaf12aad456de4c8ba52c0cc">bdm::UniqueEventIdFactory</a>
 </li>
@@ -184,6 +185,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>GetAllConcentrations()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a1e604c4232fc5c18b551ca3ece2a95c7">bdm::DiffusionGrid</a>
 </li>
+<li>GetAllExecCtxts()
+: <a class="el" href="structbdm_1_1Simulation.html#a9a681d615157b00dc912425afb6a272c">bdm::Simulation&lt; TCTParam &gt;</a>
+</li>
 <li>GetAllGradients()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#ad64c3adbb7b8ba693b44e71af7bf09f7">bdm::DiffusionGrid</a>
 </li>
@@ -198,11 +202,10 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="classbdm_1_1Grid.html#ad3d89b31c3c3f944026ab21de442ecc4">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>GetBoxIdPtr()
-: <a class="el" href="classbdm_1_1CellExt.html#a2d399646b754cbdf6b0ad58dec75e79a">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
+: <a class="el" href="classbdm_1_1SimulationObjectExt.html#ab88e86a4c7fb05e5b72cc87b167374ee">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>GetBoxIdx()
-: <a class="el" href="classbdm_1_1CellExt.html#a7afe5e3c834bd1dfcaae585e8f3a2a05">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a36823ef9ef6add984dbb5097a214366f">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
+: <a class="el" href="classbdm_1_1SimulationObjectExt.html#a38f50985609f8cd5cb83471faf89e152">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>GetBoxIndex()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a2ddbef350c4af0dea9e0f604863835db">bdm::DiffusionGrid</a>
@@ -232,6 +235,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>GetConcentrationThreshold()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a49d06d7df7cd7c45544d52c4c8216441">bdm::DiffusionGrid</a>
+</li>
+<li>GetConstSimObject()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a3cda46bc016e3beca4cb836bf49492ba">bdm::InPlaceExecutionContext&lt; TCTParam &gt;</a>
+</li>
+<li>GetContainer()
+: <a class="el" href="classbdm_1_1ResourceManager.html#a72f9bc083430530910a09ef010d7ba82">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 </li>
 <li>GetDaughterLeft()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a79efe07209fa21c05ab784607e91a999">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
@@ -279,10 +288,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classbdm_1_1ScalarSimulationObject.html#a665406b54d51c3fa7447c4c775f23026">bdm::ScalarSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1SoaSimulationObject.html#adadb447d5c5e6c765b4a30f3867618b5">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1SoHandle.html#ae58184b4769bac7da6e34285afe59030">bdm::SoHandle</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a448ed215c9603ef9dc1d39961150eeac">bdm::SoPointer&lt; TSoSimBackend, TBackend &gt;</a>
+</li>
+<li>GetExecutionContext()
+: <a class="el" href="structbdm_1_1Simulation.html#a0135569c0ef35822fc99e3389577eddf">bdm::Simulation&lt; TCTParam &gt;</a>
 </li>
 <li>GetForce()
-: <a class="el" href="classbdm_1_1DefaultForce.html#a60ee811d3593be9a541ff349bb4d7626">bdm::DefaultForce</a>
+: <a class="el" href="classbdm_1_1DefaultForce.html#a9bb58e49a1f7c999c3d022659a71958a">bdm::DefaultForce</a>
 </li>
 <li>GetGradient()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#aa8d692c55189c53f3cb38c0a8dadb33c">bdm::DiffusionGrid</a>
@@ -318,19 +329,28 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>GetMooreBoxes()
 : <a class="el" href="classbdm_1_1Grid.html#a55a12826f010282b39471527223121a5">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
+<li>GetMooreBoxIndices()
+: <a class="el" href="classbdm_1_1Grid.html#a82f5f0ea506a4c86080d20c006598a22">bdm::Grid&lt; TSimulation &gt;</a>
+</li>
 <li>GetMother()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a6ad376498b28920a5a13d3528e21c6e1">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#aa266f923a7de5cd15fc4194f2ebb5368">bdm::experimental::neuroscience::NeuronNeuriteAdapter&lt; TNeuronSomaSoPtr, TNeuriteElementSoPtr &gt;</a>
+</li>
+<li>GetMutex()
+: <a class="el" href="classbdm_1_1Grid_1_1NeighborMutexBuilder.html#af851cd8496a52312caade6dde6cce7a0">bdm::Grid&lt; TSimulation &gt;::NeighborMutexBuilder</a>
+</li>
+<li>GetNeighborMutexBuilder()
+: <a class="el" href="classbdm_1_1Grid.html#abf7e2ed209b9548037ab0dfadd4e4f79">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>GetNeuriteElementSoPtr()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#ae00e139f23595f2982c63f7d9e982211">bdm::experimental::neuroscience::NeuronNeuriteAdapter&lt; TNeuronSomaSoPtr, TNeuriteElementSoPtr &gt;</a>
 </li>
 <li>GetNeuronSomaSoPtr()
-: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a0854c74881648c1a6dddfd5705afb125">bdm::experimental::neuroscience::NeuronNeuriteAdapter&lt; TNeuronSomaSoPtr, TNeuriteElementSoPtr &gt;</a>
+: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a0d243d8c61c7c199f25bee0e217c4bdf">bdm::experimental::neuroscience::NeuronNeuriteAdapter&lt; TNeuronSomaSoPtr, TNeuriteElementSoPtr &gt;</a>
 </li>
 <li>GetNumBoxes()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#abb152a3f9e9aec5e0c50e4e68f19a637">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1Grid.html#a281c519fc78b05ceca47054821b24ff1">bdm::Grid&lt; TSimulation &gt;</a>
+, <a class="el" href="classbdm_1_1Grid.html#abaa62ebe446973cc91ce362394fde06f">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>GetNumBoxesArray()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a00624d39395b728d9d034e0413f748ea">bdm::DiffusionGrid</a>
@@ -386,6 +406,10 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classbdm_1_1CellExt.html#a5c300f7db9552af0d2fd363b4fa152d7">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a36662c3dc770a6e014467388222c5203">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
+<li>GetSimObject()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ad8340495c61efb4ebf363f53c038c03f">bdm::InPlaceExecutionContext&lt; TCTParam &gt;</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#a387153de84ca777061074360094d4627">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+</li>
 <li>GetSimulatedSteps()
 : <a class="el" href="classbdm_1_1Scheduler.html#a84c1112506585a55875e7ff05374b7c9">bdm::Scheduler&lt; TSimulation &gt;</a>
 </li>
@@ -393,19 +417,14 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classbdm_1_1SimulationBackup.html#ae39680ee434349e02016bedb6f165dd8">bdm::SimulationBackup</a>
 </li>
 <li>GetSoHandle()
-: <a class="el" href="classbdm_1_1CellExt.html#a2fd05fe73286266840fe4f061703ee09">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#abce86b152463dfc16e6294979adc49c2">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#ab9ca27ed9319b7d210ba787a9f7862e5">bdm::experimental::neuroscience::NeuronSomaExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1SimulationObjectExt.html#a6c8a4893da53096438b7804841c92245">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
+: <a class="el" href="classbdm_1_1ResourceManager.html#aa9bc00d692c04e69c03bef88f1e7360b">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+, <a class="el" href="classbdm_1_1SimulationObjectExt.html#a579d4d0fb296c229f4f6d98445986884">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>GetSoHandles()
 : <a class="el" href="classbdm_1_1Grid.html#a4d495b19d040808de0f1c1de867a6e2a">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>GetSoPtr()
-: <a class="el" href="classbdm_1_1CellExt.html#a6b96144756fad8192627f9e113319e98">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a7fa06ff61ffcca2a9ab241cfa617f013">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#aaff5dca8c022b6c61b3303f31343ce53">bdm::experimental::neuroscience::NeuronSomaExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1SimulationObjectExt.html#a963a168b3d1f073ffd587258614ebb2e">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
+: <a class="el" href="classbdm_1_1SimulationObjectExt.html#aa3c620bfba0a6775d48543ef39799427">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>GetSpringAxis()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a7d165263e29e5bf68e2ada19b7a9ffee">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
@@ -440,14 +459,14 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>GetTypeIndex()
 : <a class="el" href="classbdm_1_1ResourceManager.html#ac68c593ebb4e126b03cf8d86a5ae9d1d">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 </li>
+<li>GetUid()
+: <a class="el" href="classbdm_1_1SimulationObjectExt.html#a10e51010e9b9e4790447a48a7561edfd">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
+</li>
 <li>GetUniqueName()
 : <a class="el" href="structbdm_1_1Simulation.html#a2590a11d5b670cc6d089a885785a3ef0">bdm::Simulation&lt; TCTParam &gt;</a>
 </li>
 <li>GetUnitaryAxisDirectionVector()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a28e404ddc08e3b62a73159a67a85ddbf">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
-</li>
-<li>GetUpdateInfo()
-: <a class="el" href="classbdm_1_1CommitOp.html#ad4acae5c462e37bfadad5b89753721f5">bdm::CommitOp</a>
 </li>
 <li>GetValue()
 : <a class="el" href="structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_01_4.html#a8c04160ee6ab006889ae944475801143">bdm::detail::GetIndexImpl&lt; T, Counter, FirstType &gt;</a>
@@ -467,7 +486,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a63c07539804beafa892a9556d254d2eb">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>Grid()
-: <a class="el" href="classbdm_1_1Grid.html#af5b06b19202c8553573b8211b8da3ed8">bdm::Grid&lt; TSimulation &gt;</a>
+: <a class="el" href="classbdm_1_1Grid.html#ab7e2ed146b653b78d4dfc242293b54b4">bdm::Grid&lt; TSimulation &gt;</a>
 </li>
 <li>Grid3D()
 : <a class="el" href="structbdm_1_1ModelInitializer.html#af3ee69f1967f60ea278f7a32e4cd176d">bdm::ModelInitializer</a>
@@ -481,7 +500,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

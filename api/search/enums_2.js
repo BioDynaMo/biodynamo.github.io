@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exportertype',['ExporterType',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811',1,'bdm']]]
+  ['numericalodesolver',['NumericalODESolver',['../structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471',1,'bdm::Param']]]
 ];

@@ -17,7 +17,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter =
     [ "IsNeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a8f555cd029b6589ed3d15a54fa729ba3", null ],
     [ "operator!=", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#acab0dd47ad027a139541a431f9e2b184", null ],
     [ "operator==", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a3e9c79802e9f3aec60e79cf1b6eb303e", null ],
-    [ "OriginOf", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a7fa9dce9c4313fbfb1a638dca4fe5a44", null ],
+    [ "OriginOf", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#ad80d56f3d76aefa32821294bd881bd94", null ],
     [ "RemoveDaughter", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#ac4ebc1b8d47e2e672e6e977b640b477e", null ],
     [ "RemoveFromSimulation", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a549b8747c20cad1ac5820f52e5bcc182", null ],
     [ "Set", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a77a590be0976ceb0b0dce335b973b0f3", null ],

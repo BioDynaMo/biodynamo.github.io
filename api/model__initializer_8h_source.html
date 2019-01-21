@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -143,122 +143,116 @@ $(document).ready(function(){initNavTree('model__initializer_8h_source.html','')
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Determine simulation object type which is returned by the cell_builder</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">using</span> FunctionReturnType = decltype(cell_builder({0, 0, 0}));</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">auto</span> container = rm-&gt;template Get&lt;FunctionReturnType&gt;();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    container-&gt;reserve(cells_per_dim * cells_per_dim * cells_per_dim);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    rm-&gt;template Reserve&lt;FunctionReturnType&gt;(cells_per_dim * cells_per_dim *</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                             cells_per_dim);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> x = 0; x &lt; cells_per_dim; x++) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">auto</span> x_pos = x * space;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> y = 0; y &lt; cells_per_dim; y++) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">auto</span> y_pos = y * space;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> z = 0; z &lt; cells_per_dim; z++) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          <span class="keyword">auto</span> new_simulation_object = cell_builder({x_pos, y_pos, z * space});</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          container-&gt;push_back(new_simulation_object);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          rm-&gt;push_back(new_simulation_object);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    container-&gt;Commit();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Function, <span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a14ddc0306744af2cdb4d6c1aeebf8ef5">   87</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a14ddc0306744af2cdb4d6c1aeebf8ef5">Grid3D</a>(<span class="keyword">const</span> std::array&lt;size_t, 3&gt;&amp; cells_per_dim, <span class="keywordtype">double</span> space,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                     Function cell_builder) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Determine simulation object type which is returned by the cell_builder</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">using</span> FunctionReturnType = decltype(cell_builder({0, 0, 0}));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">auto</span> container = rm-&gt;template Get&lt;FunctionReturnType&gt;();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    container-&gt;reserve(cells_per_dim[0] * cells_per_dim[1] * cells_per_dim[2]);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> x = 0; x &lt; cells_per_dim[0]; x++) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keyword">auto</span> x_pos = x * space;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> y = 0; y &lt; cells_per_dim[1]; y++) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">auto</span> y_pos = y * space;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> z = 0; z &lt; cells_per_dim[2]; z++) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          <span class="keyword">auto</span> new_simulation_object = cell_builder({x_pos, y_pos, z * space});</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          container-&gt;push_back(new_simulation_object);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    container-&gt;Commit();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Function, <span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a2b721509ccc34c02f11a59d96da47868">  118</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a2b721509ccc34c02f11a59d96da47868">CreateCells</a>(<span class="keyword">const</span> std::vector&lt;std::array&lt;double, 3&gt;&gt;&amp; positions,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                          Function cell_builder) {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// Determine simulation object type which is returned by the cell_builder</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">using</span> FunctionReturnType = decltype(cell_builder({0, 0, 0}));</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">auto</span> container = rm-&gt;template Get&lt;FunctionReturnType&gt;();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    container-&gt;reserve(positions.size());</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; positions.size(); i++) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keyword">auto</span> new_simulation_object =</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;          cell_builder({positions[i][0], positions[i][1], positions[i][2]});</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      container-&gt;push_back(new_simulation_object);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    container-&gt;Commit();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Function, <span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220">  147</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220">CreateCellsRandom</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max, <span class="keywordtype">int</span> num_cells,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                Function cell_builder) {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// Determine simulation object type which is returned by the cell_builder</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">using</span> FunctionReturnType = decltype(cell_builder({0, 0, 0}));</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">auto</span> container = rm-&gt;template Get&lt;FunctionReturnType&gt;();</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    container-&gt;reserve(num_cells);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">// TODO(ahmad): throughout simulation only one random number generator</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// should be used, so this should go someplace accessible for other</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">// classes / functions</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">auto</span>* random = sim-&gt;GetRandom();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_cells; i++) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <span class="keywordtype">double</span> x = random-&gt;Uniform(min, max);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordtype">double</span> y = random-&gt;Uniform(min, max);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordtype">double</span> z = random-&gt;Uniform(min, max);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keyword">auto</span> new_simulation_object = cell_builder({x, y, z});</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      container-&gt;push_back(new_simulation_object);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    container-&gt;Commit();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
-<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#ac75b6d16195274902d8c301f0dd213f9">  181</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#ac75b6d16195274902d8c301f0dd213f9">DefineSubstance</a>(<span class="keywordtype">size_t</span> substance_id, std::string substance_name,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                              <span class="keywordtype">double</span> diffusion_coeff, <span class="keywordtype">double</span> decay_constant,</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                              <span class="keywordtype">int</span> resolution = 10) {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    assert(resolution &gt; 0 &amp;&amp; <span class="stringliteral">&quot;Resolution needs to be a positive integer value&quot;</span>);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* d_grid =</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keyword">new</span> <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                          decay_constant, resolution);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    rm-&gt;AddDiffusionGrid(d_grid);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;, <span class="keyword">typename</span> F&gt;</div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b">  194</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b">InitializeSubstance</a>(<span class="keywordtype">size_t</span> substance_id,</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                  std::string substance_name, F <span class="keyword">function</span>) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">auto</span> diffusion_grid = rm-&gt;GetDiffusionGrid(substance_id);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    diffusion_grid-&gt;AddInitializer(<span class="keyword">function</span>);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;};</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#endif  // MODEL_INITIALIZER_H_</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Function, <span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a14ddc0306744af2cdb4d6c1aeebf8ef5">   86</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a14ddc0306744af2cdb4d6c1aeebf8ef5">Grid3D</a>(<span class="keyword">const</span> std::array&lt;size_t, 3&gt;&amp; cells_per_dim, <span class="keywordtype">double</span> space,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                     Function cell_builder) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Determine simulation object type which is returned by the cell_builder</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">using</span> FunctionReturnType = decltype(cell_builder({0, 0, 0}));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    rm-&gt;template Reserve&lt;FunctionReturnType&gt;(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        cells_per_dim[0] * cells_per_dim[1] * cells_per_dim[2]);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> x = 0; x &lt; cells_per_dim[0]; x++) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">auto</span> x_pos = x * space;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> y = 0; y &lt; cells_per_dim[1]; y++) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">auto</span> y_pos = y * space;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> z = 0; z &lt; cells_per_dim[2]; z++) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <span class="keyword">auto</span> new_simulation_object = cell_builder({x_pos, y_pos, z * space});</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          rm-&gt;push_back(new_simulation_object);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Function, <span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a2b721509ccc34c02f11a59d96da47868">  116</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a2b721509ccc34c02f11a59d96da47868">CreateCells</a>(<span class="keyword">const</span> std::vector&lt;std::array&lt;double, 3&gt;&gt;&amp; positions,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                          Function cell_builder) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Determine simulation object type which is returned by the cell_builder</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">using</span> FunctionReturnType = decltype(cell_builder({0, 0, 0}));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    rm-&gt;template Reserve&lt;FunctionReturnType&gt;(positions.size());</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; positions.size(); i++) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keyword">auto</span> new_simulation_object =</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;          cell_builder({positions[i][0], positions[i][1], positions[i][2]});</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      rm-&gt;push_back(new_simulation_object);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Function, <span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220">  143</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220">CreateCellsRandom</a>(<span class="keywordtype">double</span> min, <span class="keywordtype">double</span> max, <span class="keywordtype">int</span> num_cells,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                Function cell_builder) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// Determine simulation object type which is returned by the cell_builder</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">using</span> FunctionReturnType = decltype(cell_builder({0, 0, 0}));</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    rm-&gt;template Reserve&lt;FunctionReturnType&gt;(num_cells);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// TODO(ahmad): throughout simulation only one random number generator</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// should be used, so this should go someplace accessible for other</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// classes / functions</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">auto</span>* random = sim-&gt;GetRandom();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_cells; i++) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keywordtype">double</span> x = random-&gt;Uniform(min, max);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordtype">double</span> y = random-&gt;Uniform(min, max);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordtype">double</span> z = random-&gt;Uniform(min, max);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keyword">auto</span> new_simulation_object = cell_builder({x, y, z});</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      rm-&gt;push_back(new_simulation_object);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;&gt;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#ac75b6d16195274902d8c301f0dd213f9">  175</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#ac75b6d16195274902d8c301f0dd213f9">DefineSubstance</a>(<span class="keywordtype">size_t</span> substance_id, std::string substance_name,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                              <span class="keywordtype">double</span> diffusion_coeff, <span class="keywordtype">double</span> decay_constant,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                              <span class="keywordtype">int</span> resolution = 10) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    assert(resolution &gt; 0 &amp;&amp; <span class="stringliteral">&quot;Resolution needs to be a positive integer value&quot;</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* d_grid =</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">new</span> <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                          decay_constant, resolution);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    rm-&gt;AddDiffusionGrid(d_grid);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSimulation = Simulation&lt;&gt;, <span class="keyword">typename</span> F&gt;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b">  188</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b">InitializeSubstance</a>(<span class="keywordtype">size_t</span> substance_id,</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                  std::string substance_name, F <span class="keyword">function</span>) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">auto</span> diffusion_grid = rm-&gt;GetDiffusionGrid(substance_id);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    diffusion_grid-&gt;AddInitializer(<span class="keyword">function</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif  // MODEL_INITIALIZER_H_</span></div>
 <div class="ttc" id="diffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
-<div class="ttc" id="structbdm_1_1ModelInitializer_html_a14ddc0306744af2cdb4d6c1aeebf8ef5"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a14ddc0306744af2cdb4d6c1aeebf8ef5">bdm::ModelInitializer::Grid3D</a></div><div class="ttdeci">static void Grid3D(const std::array&lt; size_t, 3 &gt; &amp;cells_per_dim, double space, Function cell_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00087">model_initializer.h:87</a></div></div>
-<div class="ttc" id="structbdm_1_1ModelInitializer_html_ad4a0150bdc1aff1d30eee45621200d0b"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b">bdm::ModelInitializer::InitializeSubstance</a></div><div class="ttdeci">static void InitializeSubstance(size_t substance_id, std::string substance_name, F function)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00194">model_initializer.h:194</a></div></div>
-<div class="ttc" id="structbdm_1_1ModelInitializer_html_a2b721509ccc34c02f11a59d96da47868"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a2b721509ccc34c02f11a59d96da47868">bdm::ModelInitializer::CreateCells</a></div><div class="ttdeci">static void CreateCells(const std::vector&lt; std::array&lt; double, 3 &gt;&gt; &amp;positions, Function cell_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00118">model_initializer.h:118</a></div></div>
+<div class="ttc" id="structbdm_1_1ModelInitializer_html_a14ddc0306744af2cdb4d6c1aeebf8ef5"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a14ddc0306744af2cdb4d6c1aeebf8ef5">bdm::ModelInitializer::Grid3D</a></div><div class="ttdeci">static void Grid3D(const std::array&lt; size_t, 3 &gt; &amp;cells_per_dim, double space, Function cell_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00086">model_initializer.h:86</a></div></div>
+<div class="ttc" id="structbdm_1_1ModelInitializer_html_ad4a0150bdc1aff1d30eee45621200d0b"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b">bdm::ModelInitializer::InitializeSubstance</a></div><div class="ttdeci">static void InitializeSubstance(size_t substance_id, std::string substance_name, F function)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00188">model_initializer.h:188</a></div></div>
+<div class="ttc" id="structbdm_1_1ModelInitializer_html_a2b721509ccc34c02f11a59d96da47868"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a2b721509ccc34c02f11a59d96da47868">bdm::ModelInitializer::CreateCells</a></div><div class="ttdeci">static void CreateCells(const std::vector&lt; std::array&lt; double, 3 &gt;&gt; &amp;positions, Function cell_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00116">model_initializer.h:116</a></div></div>
 <div class="ttc" id="structbdm_1_1ModelInitializer_html"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html">bdm::ModelInitializer</a></div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00029">model_initializer.h:29</a></div></div>
 <div class="ttc" id="structbdm_1_1ModelInitializer_html_af3ee69f1967f60ea278f7a32e4cd176d"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#af3ee69f1967f60ea278f7a32e4cd176d">bdm::ModelInitializer::Grid3D</a></div><div class="ttdeci">static void Grid3D(size_t cells_per_dim, double space, Function cell_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00047">model_initializer.h:47</a></div></div>
 <div class="ttc" id="simulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
-<div class="ttc" id="structbdm_1_1ModelInitializer_html_ac75b6d16195274902d8c301f0dd213f9"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ac75b6d16195274902d8c301f0dd213f9">bdm::ModelInitializer::DefineSubstance</a></div><div class="ttdeci">static void DefineSubstance(size_t substance_id, std::string substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00181">model_initializer.h:181</a></div></div>
-<div class="ttc" id="structbdm_1_1ModelInitializer_html_a4394e328542ff9a9e72afe6152fcd220"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220">bdm::ModelInitializer::CreateCellsRandom</a></div><div class="ttdeci">static void CreateCellsRandom(double min, double max, int num_cells, Function cell_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00147">model_initializer.h:147</a></div></div>
+<div class="ttc" id="structbdm_1_1ModelInitializer_html_ac75b6d16195274902d8c301f0dd213f9"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ac75b6d16195274902d8c301f0dd213f9">bdm::ModelInitializer::DefineSubstance</a></div><div class="ttdeci">static void DefineSubstance(size_t substance_id, std::string substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00175">model_initializer.h:175</a></div></div>
+<div class="ttc" id="structbdm_1_1ModelInitializer_html_a4394e328542ff9a9e72afe6152fcd220"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a4394e328542ff9a9e72afe6152fcd220">bdm::ModelInitializer::CreateCellsRandom</a></div><div class="ttdeci">static void CreateCellsRandom(double min, double max, int num_cells, Function cell_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00143">model_initializer.h:143</a></div></div>
 <div class="ttc" id="resource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>
 <div class="ttc" id="random_8h_html"><div class="ttname"><a href="random_8h.html">random.h</a></div></div>
 <div class="ttc" id="classbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00037">diffusion_grid.h:37</a></div></div>
@@ -268,7 +262,7 @@ $(document).ready(function(){initNavTree('model__initializer_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="model__initializer_8h.html">model_initializer.h</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:18 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

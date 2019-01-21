@@ -17,6 +17,5 @@ var classbdm_1_1ScalarSimulationObject =
     [ "size", "classbdm_1_1ScalarSimulationObject.html#a1df21bb1ebf13d674184935f7073de78", null ],
     [ "Streamer", "classbdm_1_1ScalarSimulationObject.html#af7cfa58caa9d1554d7333393644e4360", null ],
     [ "StreamerNVirtual", "classbdm_1_1ScalarSimulationObject.html#a43b5facc311be217f8b8f061eebf530b", null ],
-    [ "SwapAndPopBack", "classbdm_1_1ScalarSimulationObject.html#aeada96b1ee2704ee634a8e99b392e675", null ],
     [ "element_idx_", "classbdm_1_1ScalarSimulationObject.html#a1ddd6970cc8594ca3e32b8617ee83e52", null ]
 ];

@@ -17,6 +17,7 @@ var searchData=
   ['soasimulationobject',['SoaSimulationObject',['../classbdm_1_1SoaSimulationObject.html',1,'bdm']]],
   ['sohandle',['SoHandle',['../classbdm_1_1SoHandle.html',1,'bdm']]],
   ['sopointer',['SoPointer',['../classbdm_1_1SoPointer.html',1,'bdm']]],
+  ['souidgenerator',['SoUidGenerator',['../classbdm_1_1SoUidGenerator.html',1,'bdm']]],
   ['splitneuriteelementevent',['SplitNeuriteElementEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html',1,'bdm::experimental::neuroscience']]],
   ['streamerreadfunctor',['StreamerReadFunctor',['../structbdm_1_1StreamerReadFunctor.html',1,'bdm']]],
   ['streamerwritefunctor',['StreamerWriteFunctor',['../structbdm_1_1StreamerWriteFunctor.html',1,'bdm']]]

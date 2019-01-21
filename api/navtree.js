@@ -40,12 +40,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classbdm_1_1DisplacementOpCudaKernel.html",
-"classbdm_1_1RuntimeVariables.html#a152c5ff04c5183a5db9a9890061752d1",
-"classbdm_1_1TransactionalVector.html#a8c306dccf60cb92de20f52a99868d775",
-"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a1203ab34f62ad8ddb5324cc992386d8a",
-"namespacebdm_1_1detail.html",
-"structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471"
+"classbdm_1_1DisplacementOpCudaKernel.html#a9c5efa6f7fde1178bee183abe37a985e",
+"classbdm_1_1ResourceManager.html#a4eb81532d4f08cddfd81b921c1a0871a",
+"classbdm_1_1Timing.html#a6acd5fbcf296e24001e8bb62cd3667a0",
+"classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a2df8b920e5420479ff92d96461616cb2",
+"namespacemembers_func.html",
+"structbdm_1_1Param.html#a4dfb22d2e4d9f16a397bc689489b1851"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

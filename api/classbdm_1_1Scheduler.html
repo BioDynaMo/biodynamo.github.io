@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('classbdm_1_1Scheduler.html','');});
 <div class="dynheader">
 Collaboration diagram for bdm::Scheduler&lt; TSimulation &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="1392" height="782"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="1008" height="768"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -159,8 +159,6 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:acd65c560a3f122e1fd296e1dd2ba6071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acefcf34d84bb7ebfff4478285e58c6a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#acefcf34d84bb7ebfff4478285e58c6a2">Restore</a> (uint64_t *steps)</td></tr>
 <tr class="separator:acefcf34d84bb7ebfff4478285e58c6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a3db9c5be1499d692a63135ac58ddae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a5a3db9c5be1499d692a63135ac58ddae">CommitChangesAndUpdateReferences</a> ()</td></tr>
-<tr class="separator:a5a3db9c5be1499d692a63135ac58ddae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7e4ff924dbea1e9f4f625100930e9ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ae7e4ff924dbea1e9f4f625100930e9ed">Initialize</a> ()</td></tr>
 <tr class="separator:ae7e4ff924dbea1e9f4f625100930e9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -176,15 +174,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a68310f9b5d93cb211a9d6bcbfe16885d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b4d2afba497eea5e082bb5ad5bb33e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ae8b4d2afba497eea5e082bb5ad5bb33e">is_gpu_environment_initialized_</a> = false</td></tr>
 <tr class="separator:ae8b4d2afba497eea5e082bb5ad5bb33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af059369aa986fa499511eead9a68e9a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt; <a class="el" href="classbdm_1_1CommitOp.html">CommitOp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#af059369aa986fa499511eead9a68e9a5">commit_</a> = <a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="classbdm_1_1CommitOp.html">CommitOp</a>&gt;(&quot;commit&quot;)</td></tr>
-<tr class="separator:af059369aa986fa499511eead9a68e9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8455711570f1a8cb8b94893c6ea500f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt; <a class="el" href="structbdm_1_1BiologyModuleOp.html">BiologyModuleOp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a8455711570f1a8cb8b94893c6ea500f4">biology_</a> = <a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="structbdm_1_1BiologyModuleOp.html">BiologyModuleOp</a>&gt;(&quot;biology&quot;)</td></tr>
-<tr class="separator:a8455711570f1a8cb8b94893c6ea500f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7fd64d3e2fc84e00b4fc242d3f67fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt; <a class="el" href="classbdm_1_1DisplacementOp.html">DisplacementOp</a><br class="typebreak"/>
-&lt; TSimulation &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#aa7fd64d3e2fc84e00b4fc242d3f67fd7">physics_</a></td></tr>
-<tr class="separator:aa7fd64d3e2fc84e00b4fc242d3f67fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f94e878e1771b976d2272d2ac355f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt; <a class="el" href="classbdm_1_1BoundSpace.html">BoundSpace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#aa9f94e878e1771b976d2272d2ac355f3">bound_space_</a> = <a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="classbdm_1_1BoundSpace.html">BoundSpace</a>&gt;(&quot;bound_space&quot;)</td></tr>
 <tr class="separator:aa9f94e878e1771b976d2272d2ac355f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9074bde54810b7c97845bc40b7ab0767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1DisplacementOp.html">DisplacementOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a9074bde54810b7c97845bc40b7ab0767">displacement_</a></td></tr>
+<tr class="separator:a9074bde54810b7c97845bc40b7ab0767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a179133d8b37028f28b883b78cd7869a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1DiffusionOp.html">DiffusionOp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a179133d8b37028f28b883b78cd7869a3">diffusion_</a></td></tr>
 <tr class="separator:a179133d8b37028f28b883b78cd7869a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -193,7 +186,7 @@ Private Attributes</h2></td></tr>
 class bdm::Scheduler&lt; TSimulation &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00039">39</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00037">37</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ab49c5033737653fb2c5248b04bde76a4"></a>
 <div class="memitem">
@@ -207,7 +200,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00041">41</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00039">39</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +228,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00043">43</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00041">41</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +255,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00053">53</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00051">51</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -292,47 +285,12 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 
 <p>Backup the simulation. Backup interval based on <code><a class="el" href="structbdm_1_1Param.html#ae8a9d38081642a9323f8884b64d41efe">Param::backup_interval_</a></code> </p>
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00126">126</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00154">154</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_acd65c560a3f122e1fd296e1dd2ba6071_icgraph.svg" width="387" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a5a3db9c5be1499d692a63135ac58ddae"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1Scheduler.html">bdm::Scheduler</a>&lt; TSimulation &gt;::CommitChangesAndUpdateReferences </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00157">157</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a5a3db9c5be1499d692a63135ac58ddae_icgraph.svg" width="438" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -364,7 +322,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Executes one step. This design makes testing more convenient </p>
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00085">85</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00082">82</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -401,7 +359,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 
 <p>This function returns the numer of simulated steps (=iterations). </p>
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00078">78</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00075">75</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +386,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00177">177</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00188">188</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -472,7 +430,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>if <code>Simulate</code> should return early </dd></dl>
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00141">141</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00169">169</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -508,7 +466,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00062">62</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00060">60</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -533,31 +491,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00112">112</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8455711570f1a8cb8b94893c6ea500f4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="structbdm_1_1BiologyModuleOp.html">BiologyModuleOp</a>&gt; <a class="el" href="classbdm_1_1Scheduler.html">bdm::Scheduler</a>&lt; TSimulation &gt;::biology_ = <a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="structbdm_1_1BiologyModuleOp.html">BiologyModuleOp</a>&gt;(&quot;biology&quot;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00119">119</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00143">143</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -581,31 +515,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00122">122</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af059369aa986fa499511eead9a68e9a5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="classbdm_1_1CommitOp.html">CommitOp</a>&gt; <a class="el" href="classbdm_1_1Scheduler.html">bdm::Scheduler</a>&lt; TSimulation &gt;::commit_ = <a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="classbdm_1_1CommitOp.html">CommitOp</a>&gt;(&quot;commit&quot;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00118">118</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00149">149</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +539,31 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00123">123</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00151">151</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9074bde54810b7c97845bc40b7ab0767"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOp.html">DisplacementOp</a> <a class="el" href="classbdm_1_1Scheduler.html">bdm::Scheduler</a>&lt; TSimulation &gt;::displacement_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00150">150</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +587,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00116">116</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00147">147</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -677,33 +611,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00114">114</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa7fd64d3e2fc84e00b4fc242d3f67fd7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structbdm_1_1OpTimer.html">OpTimer</a>&lt;<a class="el" href="classbdm_1_1DisplacementOp.html">DisplacementOp</a>&lt;TSimulation&gt; &gt; <a class="el" href="classbdm_1_1Scheduler.html">bdm::Scheduler</a>&lt; TSimulation &gt;::physics_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      OpTimer&lt;DisplacementOp&lt;TSimulation&gt;&gt;(<span class="stringliteral">&quot;physics&quot;</span>)</div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00120">120</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00145">145</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +635,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00113">113</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00144">144</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +659,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00081">81</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00078">78</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +683,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00115">115</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00146">146</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +696,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Scheduler.html">Scheduler</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

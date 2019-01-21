@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -117,6 +117,8 @@ $(document).ready(function(){initNavTree('grid_8h.html','');});
 <code>#include &lt;cmath&gt;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;limits&gt;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
+<code>#include &lt;mutex&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &quot;<a class="el" href="constant_8h_source.html">constant.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="fixed__size__vector_8h_source.html">fixed_size_vector.h</a>&quot;</code><br/>
@@ -128,7 +130,7 @@ $(document).ready(function(){initNavTree('grid_8h.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for grid.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="grid_8h__incl.svg" width="2894" height="710"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="grid_8h__incl.svg" width="3090" height="710"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -156,6 +158,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1NeighborIterator.html">bdm::Grid&lt; TSimulation &gt;::NeighborIterator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iterator that iterates over the boxes in this grid.  <a href="structbdm_1_1Grid_1_1NeighborIterator.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid_1_1NeighborMutexBuilder.html">bdm::Grid&lt; TSimulation &gt;::NeighborMutexBuilder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html">bdm::Grid&lt; TSimulation &gt;::NeighborMutexBuilder::NeighborMutex</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html">bdm::Grid&lt; TSimulation &gt;::NeighborMutexBuilder::MutexWrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -168,7 +176,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="grid_8h.html">grid.h</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

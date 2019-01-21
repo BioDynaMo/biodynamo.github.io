@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('simulation__object__util_8h.html','');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for simulation_object_util.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="simulation__object__util_8h__incl.svg" width="3003" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="simulation__object__util_8h__incl.svg" width="2792" height="635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -185,7 +185,7 @@ Macros</h2></td></tr>
 <tr class="separator:ae4a00a53df6e452aa735100e4937c370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2696ac93969831bbd705d5259fa70db0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#a2696ac93969831bbd705d5259fa70db0">BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY</a>(...)&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a94d0a7b023e21e4b25f761c84d1120ef">LOOP</a>(<a class="el" href="simulation__object__util_8h.html#a277277a697cc554421ee16046005e755">BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY_ITERATOR</a>, __VA_ARGS__))</td></tr>
 <tr class="separator:a2696ac93969831bbd705d5259fa70db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a277277a697cc554421ee16046005e755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#a277277a697cc554421ee16046005e755">BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY_ITERATOR</a>(data_member)&#160;&#160;&#160;data_member[kIdx] = rhs.data_member[0];</td></tr>
+<tr class="memitem:a277277a697cc554421ee16046005e755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#a277277a697cc554421ee16046005e755">BDM_SIM_OBJECT_ASSIGNMENT_OP_BODY_ITERATOR</a>(data_member)&#160;&#160;&#160;data_member[kIdx] = rhs.data_member[rhs.kIdx];</td></tr>
 <tr class="separator:a277277a697cc554421ee16046005e755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b65a87e3f8ab5e65b256562f0cb217"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simulation__object__util_8h.html#a01b65a87e3f8ab5e65b256562f0cb217">BDM_SIM_OBJECT_ASSIGNMENT_OP_MOVE_BODY</a>(...)&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a94d0a7b023e21e4b25f761c84d1120ef">LOOP</a>(<a class="el" href="simulation__object__util_8h.html#a975a41e02f17b6be52aced9e08c0a387">BDM_SIM_OBJECT_ASSIGNMENT_OP_MOVE_BODY_ITERATOR</a>, __VA_ARGS__))</td></tr>
 <tr class="separator:a01b65a87e3f8ab5e65b256562f0cb217"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,7 +293,7 @@ BDM_SIM_OBJECT(MyCell, Cell) {
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">data_member</td><td>)</td>
-          <td>&#160;&#160;&#160;data_member[kIdx] = rhs.data_member[0];</td>
+          <td>&#160;&#160;&#160;data_member[kIdx] = rhs.data_member[rhs.kIdx];</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -729,7 +729,7 @@ BDM_SO_DEFINE(inline void CellExt)::Foo() { ... }  </pre>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="simulation__object__util_8h.html">simulation_object_util.h</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

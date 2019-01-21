@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -167,8 +167,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a6edc8ff5db8a7aac98bbbb6d49aa0bd8">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>SetBoxIdx()
-: <a class="el" href="classbdm_1_1CellExt.html#a6f192554adf2fa3a9f97b15de7ecfbfb">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a4efe71a2f1a0d8b8f2499762861855fa">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
+: <a class="el" href="classbdm_1_1SimulationObjectExt.html#af920d7fafcc4101c7636c69085f41585">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>SetBranchOrder()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ad61457b52babe77dce5ab901efea1c58">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
@@ -195,8 +194,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>SetElementIdx()
 : <a class="el" href="classbdm_1_1ScalarSimulationObject.html#a024c808886181d0e645a9849b406f529">bdm::ScalarSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
+, <a class="el" href="classbdm_1_1SoaSimulationObject.html#a7f32c91e349a7fe89aefa4adb60b1a8a">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1SoHandle.html#afe78759667972cac037cb5fb30ebea0c">bdm::SoHandle</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a1ded7e26533f5b55d3ff6080ea12d37b">bdm::SoPointer&lt; TSoSimBackend, TBackend &gt;</a>
 </li>
 <li>SetMass()
 : <a class="el" href="classbdm_1_1CellExt.html#a6e5c340502dfff9be8041f136f4d9341">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
@@ -235,11 +234,11 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>SetTractorForce()
 : <a class="el" href="classbdm_1_1CellExt.html#a313d68d17a9e461abf0248542f5ff6bd">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
+<li>SetupIteration()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#accdbddd3e2f099a290d64b96cbf8be66">bdm::InPlaceExecutionContext&lt; TCTParam &gt;</a>
+</li>
 <li>SetVolume()
 : <a class="el" href="classbdm_1_1CellExt.html#ab993931d2a2d27dc1e2a5806625b5b3a">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
-</li>
-<li>ShortcutUpdatedIndices()
-: <a class="el" href="classbdm_1_1TransactionalVector.html#a95b3f3105bfaa1f2746a254cee3f28ab">bdm::TransactionalVector&lt; T &gt;</a>
 </li>
 <li>ShowMembers()
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#a399fd41ba93da438b135197013e3b261">bdm::BaseBiologyModule</a>
@@ -270,7 +269,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classbdm_1_1Scheduler.html#ade883ba510f30a7ebb9bdd2f8b958d18">bdm::Scheduler&lt; TSimulation &gt;</a>
 </li>
 <li>Simulation()
-: <a class="el" href="structbdm_1_1Simulation.html#ac9ec9591974839375ce0b5346a2915b0">bdm::Simulation&lt; TCTParam &gt;</a>
+: <a class="el" href="structbdm_1_1Simulation.html#a902da0a945e2e03315b7f03c464c65f8">bdm::Simulation&lt; TCTParam &gt;</a>
 </li>
 <li>SimulationBackup()
 : <a class="el" href="classbdm_1_1SimulationBackup.html#ac073b636105394abf06331e784af20fe">bdm::SimulationBackup</a>
@@ -289,17 +288,19 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classbdm_1_1ScalarSimulationObject.html#a1df21bb1ebf13d674184935f7073de78">bdm::ScalarSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1SimulationObjectVector.html#a15c384e21563f3eb7cf362876fc337cd">bdm::SimulationObjectVector&lt; T, TSimulation &gt;</a>
 , <a class="el" href="classbdm_1_1SoaSimulationObject.html#abe6f16358972a99433fc158feed6591e">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1TransactionalVector.html#a656f41c28fa365f284d021dd11ff3bc3">bdm::TransactionalVector&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1VectorPlaceholder.html#a8e56cd330c1f76a30a882b802d893b65">bdm::VectorPlaceholder&lt; T &gt;</a>
 </li>
 <li>SoaSimulationObject()
-: <a class="el" href="classbdm_1_1SoaSimulationObject.html#a1424771eca36836804b54d3a2bd00056">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
+: <a class="el" href="classbdm_1_1SoaSimulationObject.html#ac1b8b6e31829e02849020f634164fa9b">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>SoHandle()
 : <a class="el" href="classbdm_1_1SoHandle.html#a70d796d62a6e58f19842542c5374dd49">bdm::SoHandle</a>
 </li>
 <li>SoPointer()
-: <a class="el" href="classbdm_1_1SoPointer.html#a94e99104e862881ee26e3ff1a095a110">bdm::SoPointer&lt; TSoSimBackend, TBackend &gt;</a>
+: <a class="el" href="classbdm_1_1SoPointer.html#a4b8ca6b9c47cfd1aad9eb124b0b649be">bdm::SoPointer&lt; TSoSimBackend, TBackend &gt;</a>
+</li>
+<li>SoUidGenerator()
+: <a class="el" href="classbdm_1_1SoUidGenerator.html#acbe16fa47b07701ddc78223cf8d63e80">bdm::SoUidGenerator</a>
 </li>
 <li>SplitNeuriteElement()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ab24e90d79e1b21885cb236387de19bb1">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
@@ -369,14 +370,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>Sum()
 : <a class="el" href="structbdm_1_1Math.html#a1bf5459fe9cd256573211ffeb8554264">bdm::Math</a>
 </li>
-<li>SwapAndPopBack()
-: <a class="el" href="classbdm_1_1CellExt.html#af06b3912a2f30f9eb5e73443ea0e591c">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ab771170f26dfeab095e1be46e7784ec3">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#ad083d530f5380337706b06a0c5db8478">bdm::experimental::neuroscience::NeuronSomaExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1ScalarSimulationObject.html#aeada96b1ee2704ee634a8e99b392e675">bdm::ScalarSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1SimulationObjectExt.html#abf8c70e7ba61bdaba589340bc5e54548">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1SoaSimulationObject.html#ab9a887ecbb2cc84f0573446cad575906">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
-</li>
 <li>SysError()
 : <a class="el" href="classbdm_1_1Log.html#abdbbb6b659eb2e08d2a195ac0d51bd7a">bdm::Log</a>
 </li>
@@ -386,7 +379,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

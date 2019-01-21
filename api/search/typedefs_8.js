@@ -9,5 +9,6 @@ var searchData=
   ['soacell',['SoaCell',['../namespacebdm.html#aff05afc6021c0a18156542c73f47a4b9',1,'bdm']]],
   ['soaneuriteelement',['SoaNeuriteElement',['../namespacebdm_1_1experimental_1_1neuroscience.html#a3c2363340cba2f67f9124aae81cdc7d3',1,'bdm::experimental::neuroscience']]],
   ['soaneuronsoma',['SoaNeuronSoma',['../namespacebdm_1_1experimental_1_1neuroscience.html#ac593f2119e382acf2b1da510aa4fac2a',1,'bdm::experimental::neuroscience']]],
-  ['sosoaref',['SoSoaRef',['../classbdm_1_1SoPointer.html#af1f704e64081a1409805e765fbe9d6bd',1,'bdm::SoPointer']]]
+  ['sosoaref',['SoSoaRef',['../classbdm_1_1SoPointer.html#af1f704e64081a1409805e765fbe9d6bd',1,'bdm::SoPointer']]],
+  ['souid',['SoUid',['../namespacebdm.html#ab1414cb069958d6877465d6f385fc719',1,'bdm']]]
 ];

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,9 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <li>task_
 : <a class="el" href="classbdm_1_1VTuneOpWrapper.html#a0e39614a06b3930d27e0c7781e5769c5">bdm::VTuneOpWrapper&lt; Op &gt;</a>
 </li>
+<li>TearDownIteration()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ad4b2a91b28e1b5288b3854b7a1889e04">bdm::InPlaceExecutionContext&lt; TCTParam &gt;</a>
+</li>
 <li>tension_
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a076767dd75f092c38980d64df47e3427">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
@@ -168,7 +171,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="classbdm_1_1CellExt.html#a85b44ec51dd384d72f3f5a4352383f44">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a6daef53d200beffb2ea87fd2ff107e09">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#abac338ad5a5eed8f4290840095f4722c">bdm::experimental::neuroscience::NeuronSomaExt&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1SimulationObjectExt.html#a2f3df177175f60a3f6fbaa1e7427a4e2">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
+, <a class="el" href="classbdm_1_1SimulationObjectExt.html#a3d368a65f774ce089f60865fb0da99ad">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
 <li>threshold_
 : <a class="el" href="structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77">bdm::GrowDivide</a>
@@ -194,10 +197,6 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <li>timings_
 : <a class="el" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">bdm::TimingAggregator</a>
 </li>
-<li>to_be_removed_
-: <a class="el" href="classbdm_1_1SoaSimulationObject.html#a825adafee2d2830f1dc4979e837eca70">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
-, <a class="el" href="classbdm_1_1TransactionalVector.html#a103427db952275886ed4933da600ebfe">bdm::TransactionalVector&lt; T &gt;</a>
-</li>
 <li>ToBackend
 : <a class="el" href="structbdm_1_1detail_1_1ConvertToContainerTuple_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4.html#a51c3778bb66c1ee0b46caa4195affeb0">bdm::detail::ConvertToContainerTuple&lt; Backend, CTList&lt; Types...&gt; &gt;</a>
 , <a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
@@ -217,20 +216,11 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <li>total_num_boxes_
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44">bdm::DiffusionGrid</a>
 </li>
-<li>total_size_
-: <a class="el" href="classbdm_1_1SoaSimulationObject.html#a55aff7f1dbd47c41b299f5780d7f7e19">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
-</li>
 <li>total_steps_
 : <a class="el" href="classbdm_1_1Scheduler.html#af168506b9317606ec5b3d5321cfc5f43">bdm::Scheduler&lt; TSimulation &gt;</a>
 </li>
-<li>TotalSize()
-: <a class="el" href="classbdm_1_1SoaSimulationObject.html#adb347a4685de2e3024fb879b33eab131">bdm::SoaSimulationObject&lt; TCompileTimeParam, TDerived &gt;</a>
-</li>
 <li>tractor_force_
 : <a class="el" href="classbdm_1_1CellExt.html#af4248bd9b97fc20396fd23736c92df84">bdm::CellExt&lt; TCompileTimeParam, TDerived &gt;</a>
-</li>
-<li>TransactionalVector()
-: <a class="el" href="classbdm_1_1TransactionalVector.html#a3100d49344133691e0260f6a823b85b1">bdm::TransactionalVector&lt; T &gt;</a>
 </li>
 <li>TransformCoordinatesGlobalToLocal()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a600815f07e587cd791f05303d9d7762d">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
@@ -268,7 +258,8 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 </li>
 <li>Types
-: <a class="el" href="classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a6a7cdbfcd8f3df405293627d6d6239c5">bdm::InPlaceExecutionContext&lt; TCTParam &gt;</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -276,7 +267,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

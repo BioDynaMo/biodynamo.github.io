@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('structbdm_1_1Simulation.html','');});
 <div class="dynheader">
 Collaboration diagram for bdm::Simulation&lt; TCTParam &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Simulation__coll__graph.svg" width="2168" height="1934"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Simulation__coll__graph.svg" width="1852" height="1792"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -164,6 +164,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabf6454a11b2285629501929af86c652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Random.html">Random</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#aabf6454a11b2285629501929af86c652">GetRandom</a> ()</td></tr>
 <tr class="memdesc:aabf6454a11b2285629501929af86c652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a thread local random number generator.  <a href="#aabf6454a11b2285629501929af86c652">More...</a><br/></td></tr>
 <tr class="separator:aabf6454a11b2285629501929af86c652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0135569c0ef35822fc99e3389577eddf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a><br class="typebreak"/>
+&lt; TCTParam &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#a0135569c0ef35822fc99e3389577eddf">GetExecutionContext</a> ()</td></tr>
+<tr class="memdesc:a0135569c0ef35822fc99e3389577eddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a thread local execution context.  <a href="#a0135569c0ef35822fc99e3389577eddf">More...</a><br/></td></tr>
+<tr class="separator:a0135569c0ef35822fc99e3389577eddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a681d615157b00dc912425afb6a272c"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a><br class="typebreak"/>
+&lt; TCTParam &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#a9a681d615157b00dc912425afb6a272c">GetAllExecCtxts</a> ()</td></tr>
+<tr class="memdesc:a9a681d615157b00dc912425afb6a272c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all thread local execution contexts.  <a href="#a9a681d615157b00dc912425afb6a272c">More...</a><br/></td></tr>
+<tr class="separator:a9a681d615157b00dc912425afb6a272c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2590a11d5b670cc6d089a885785a3ef0"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#a2590a11d5b670cc6d089a885785a3ef0">GetUniqueName</a> () const </td></tr>
 <tr class="separator:a2590a11d5b670cc6d089a885785a3ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06289aa9cd50e2d0045f3e5c809b2749"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#a06289aa9cd50e2d0045f3e5c809b2749">GetOutputDir</a> () const </td></tr>
@@ -229,6 +238,11 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae3e202aa56c4be96cb7bc259f987efae"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbdm_1_1Random.html">Random</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#ae3e202aa56c4be96cb7bc259f987efae">random_</a></td></tr>
 <tr class="memdesc:ae3e202aa56c4be96cb7bc259f987efae"><td class="mdescLeft">&#160;</td><td class="mdescRight">random number generator for each thread  <a href="#ae3e202aa56c4be96cb7bc259f987efae">More...</a><br/></td></tr>
 <tr class="separator:ae3e202aa56c4be96cb7bc259f987efae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6c5717d50742bd817eed6d13b7fcf5"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a><br class="typebreak"/>
+&lt; TCTParam &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#abe6c5717d50742bd817eed6d13b7fcf5">exec_ctxt_</a></td></tr>
+<tr class="memdesc:abe6c5717d50742bd817eed6d13b7fcf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution Context for each thread.  <a href="#abe6c5717d50742bd817eed6d13b7fcf5">More...</a><br/></td></tr>
+<tr class="separator:abe6c5717d50742bd817eed6d13b7fcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e3e70e87295916e4a97d569a60a388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>&lt; TCTParam &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#a74e3e70e87295916e4a97d569a60a388">rm_</a> = nullptr</td></tr>
 <tr class="separator:a74e3e70e87295916e4a97d569a60a388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ba40c664f2a675202ca64d748cb292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Simulation.html#aa680bcade750990cf43266d8490e33da">Param_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Simulation.html#a96ba40c664f2a675202ca64d748cb292">param_</a> = nullptr</td></tr>
@@ -268,7 +282,7 @@ struct bdm::Simulation&lt; TCTParam &gt;</h3>
 <p>This is the central BioDynaMo object. It containes pointers to e.g. the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>, the scheduler, parameters, ... <br/>
 It is possible to create multiple simulations, but only one can be active at the same time. Creating a new simulation object automatically activates it. Implementation for <code><a class="el" href="structbdm_1_1Simulation.html">Simulation</a></code> can be found in file: <code><a class="el" href="simulation__implementation_8h.html">simulation_implementation.h</a></code>. It must be separate to avoid circular dependencies. It can't be defined in a source file, because it is templated. </p>
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00047">47</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00049">49</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aa680bcade750990cf43266d8490e33da"></a>
 <div class="memitem">
@@ -282,7 +296,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00049">49</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00051">51</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -298,7 +312,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00048">48</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00050">50</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -327,7 +341,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation__implementation_8h_source.html#l00050">50</a> of file <a class="el" href="simulation__implementation_8h_source.html">simulation_implementation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__implementation_8h_source.html#l00052">52</a> of file <a class="el" href="simulation__implementation_8h_source.html">simulation_implementation.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +372,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Constructor that takes the arguments from <code>main</code> to parse command line arguments. The simulation name is extracted from the executable name. Creation of a new simulation automatically activates it. </p>
 
-<p>Definition at line <a class="el" href="simulation__implementation_8h_source.html#l00053">53</a> of file <a class="el" href="simulation__implementation_8h_source.html">simulation_implementation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__implementation_8h_source.html#l00055">55</a> of file <a class="el" href="simulation__implementation_8h_source.html">simulation_implementation.h</a>.</p>
 
 </div>
 </div>
@@ -517,7 +531,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +558,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +585,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +612,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -625,7 +639,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +666,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -715,7 +729,53 @@ template&lt;typename T &gt; </div>
 
 <p>This function returns the currently active <a class="el" href="structbdm_1_1Simulation.html">Simulation</a> simulation. </p>
 
-<p>Definition at line <a class="el" href="simulation__implementation_8h_source.html#l00045">45</a> of file <a class="el" href="simulation__implementation_8h_source.html">simulation_implementation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation__implementation_8h_source.html#l00047">47</a> of file <a class="el" href="simulation__implementation_8h_source.html">simulation_implementation.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Simulation_af9b7c93dcdc2056906768f5c74c93fe6_icgraph.svg" width="446" height="247"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a681d615157b00dc912425afb6a272c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a>&lt;TCTParam&gt;*&gt;&amp; <a class="el" href="structbdm_1_1Simulation.html">bdm::Simulation</a>&lt; TCTParam &gt;::GetAllExecCtxts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns all thread local execution contexts. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0135569c0ef35822fc99e3389577eddf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a>&lt;TCTParam&gt;* <a class="el" href="structbdm_1_1Simulation.html">bdm::Simulation</a>&lt; TCTParam &gt;::GetExecutionContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a thread local execution context. </p>
 
 </div>
 </div>
@@ -866,7 +926,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -893,7 +953,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1162,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1229,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1257,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1285,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1312,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>Currently active simulation. </p>
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00107">107</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00115">115</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1336,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00171">171</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1363,33 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 <p>Number of simulations in this process. </p>
 <p>Implementation for <code><a class="el" href="structbdm_1_1Simulation.html">Simulation</a></code>: It must be separate to avoid circular dependencies. It can't be defined in a source file, because it is templated. </p>
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00109">109</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00117">117</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe6c5717d50742bd817eed6d13b7fcf5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a>&lt;TCTParam&gt;*&gt; <a class="el" href="structbdm_1_1Simulation.html">bdm::Simulation</a>&lt; TCTParam &gt;::exec_ctxt_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execution Context for each thread. </p>
+
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00123">123</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1413,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00117">117</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00128">128</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1439,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>This id is unique for each simulation within the same process. </p>
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00120">120</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00131">131</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1463,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00116">116</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00127">127</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1489,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>cached value where <code>unique_name_</code> is appended to <code><a class="el" href="structbdm_1_1Param.html#af9c75f427be9fa054a7a7f6a15171896">Param::output_dir_</a></code> </p>
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00127">127</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00138">138</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1427,7 +1513,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00115">115</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00126">126</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1453,7 +1539,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>random number generator for each thread </p>
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00112">112</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00120">120</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1477,7 +1563,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00114">114</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00125">125</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1501,7 +1587,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00118">118</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00129">129</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1611,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00159">159</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00170">170</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1552,7 +1638,7 @@ template&lt;typename TCTParam = CompileTimeParam&lt;&gt;&gt; </div>
 e.g. <code>name_ = "my-sim"</code> and <code>id_ = 0</code> -&gt; "my-sim"<br/>
 e.g. <code>name_ = "my-sim"</code> and <code>id_ = 4</code> -&gt; "my-sim4" </p>
 
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00125">125</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p>Definition at line <a class="el" href="simulation_8h_source.html#l00136">136</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1566,7 +1652,7 @@ e.g. <code>name_ = "my-sim"</code> and <code>id_ = 4</code> -&gt; "my-sim4" </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1Simulation.html">Simulation</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

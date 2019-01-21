@@ -2,7 +2,6 @@ var searchData=
 [
   ['_7eboundspace',['~BoundSpace',['../classbdm_1_1BoundSpace.html#a838a24739452448559965c7b0e1dc842',1,'bdm::BoundSpace']]],
   ['_7ecellext',['~CellExt',['../classbdm_1_1CellExt.html#ada880f3a6c3a193d08f95434c7e36523',1,'bdm::CellExt']]],
-  ['_7ecommitop',['~CommitOp',['../classbdm_1_1CommitOp.html#a416304b60e552a6525112d6f8f02910c',1,'bdm::CommitOp']]],
   ['_7edefaultforce',['~DefaultForce',['../classbdm_1_1DefaultForce.html#aad27c4a1adbaf42aa49d9eff6c982404',1,'bdm::DefaultForce']]],
   ['_7ediffusiongrid',['~DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#a25d8545acb23c2e71e65ee0dae64d969',1,'bdm::DiffusionGrid']]],
   ['_7ediffusionop',['~DiffusionOp',['../classbdm_1_1DiffusionOp.html#a3a508b5361e3e9e995c0f7eeb566d71e',1,'bdm::DiffusionOp']]],

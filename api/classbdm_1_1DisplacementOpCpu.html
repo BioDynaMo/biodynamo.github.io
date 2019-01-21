@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('classbdm_1_1DisplacementOpCpu.html',''
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1DisplacementOpCpu-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::DisplacementOpCpu&lt; TSimulation &gt; Class Template Reference</div>  </div>
@@ -116,7 +117,7 @@ $(document).ready(function(){initNavTree('classbdm_1_1DisplacementOpCpu.html',''
 <div class="dynheader">
 Collaboration diagram for bdm::DisplacementOpCpu&lt; TSimulation &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpCpu__coll__graph.svg" width="187" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpCpu__coll__graph.svg" width="187" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -126,16 +127,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0557208baf375528eca345f5b3c5a80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798ac79fb37afa939eee25acefc24684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCpu.html#a798ac79fb37afa939eee25acefc24684">~DisplacementOpCpu</a> ()</td></tr>
 <tr class="separator:a798ac79fb37afa939eee25acefc24684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4b5e662cd11fc83eb5e31e5df99f2cf"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
-<tr class="memitem:ae4b5e662cd11fc83eb5e31e5df99f2cf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCpu.html#ae4b5e662cd11fc83eb5e31e5df99f2cf">operator()</a> (TContainer *sim_objects, uint16_t type_idx) const </td></tr>
-<tr class="separator:ae4b5e662cd11fc83eb5e31e5df99f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc78185210c9e1f1fea0d53b3389070d"><td class="memTemplParams" colspan="2">template&lt;typename TSimObject &gt; </td></tr>
+<tr class="memitem:abc78185210c9e1f1fea0d53b3389070d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCpu.html#abc78185210c9e1f1fea0d53b3389070d">operator()</a> (TSimObject &amp;&amp;sim_object)</td></tr>
+<tr class="separator:abc78185210c9e1f1fea0d53b3389070d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9dcd414b2ea12ec4a5096f7e9edb1fc9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCpu.html#a9dcd414b2ea12ec4a5096f7e9edb1fc9">squared_radius_</a></td></tr>
+<tr class="separator:a9dcd414b2ea12ec4a5096f7e9edb1fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab047ff30203c6924cbbb0935dea0d461"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCpu.html#ab047ff30203c6924cbbb0935dea0d461">last_iteration_</a> = std::numeric_limits&lt;uint64_t&gt;::max()</td></tr>
+<tr class="separator:ab047ff30203c6924cbbb0935dea0d461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSimulation = Simulation&lt;&gt;&gt;<br/>
 class bdm::DisplacementOpCpu&lt; TSimulation &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00030">30</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00031">31</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0557208baf375528eca345f5b3c5a80c"></a>
 <div class="memitem">
@@ -160,7 +168,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00032">32</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00033">33</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
 
 </div>
 </div>
@@ -187,18 +195,18 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00033">33</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00034">34</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae4b5e662cd11fc83eb5e31e5df99f2cf"></a>
+<a class="anchor" id="abc78185210c9e1f1fea0d53b3389070d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
-template&lt;typename TContainer &gt; </div>
+template&lt;typename TSimObject &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -206,19 +214,9 @@ template&lt;typename TContainer &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classbdm_1_1DisplacementOpCpu.html">bdm::DisplacementOpCpu</a>&lt; TSimulation &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">TContainer *&#160;</td>
-          <td class="paramname"><em>sim_objects</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">TSimObject &amp;&amp;&#160;</td>
+          <td class="paramname"><em>sim_object</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>type_idx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -228,15 +226,64 @@ template&lt;typename TContainer &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00036">36</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
+<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00037">37</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpCpu_ae4b5e662cd11fc83eb5e31e5df99f2cf_cgraph.svg" width="400" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpCpu_abc78185210c9e1f1fea0d53b3389070d_cgraph.svg" width="400" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab047ff30203c6924cbbb0935dea0d461"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t <a class="el" href="classbdm_1_1DisplacementOpCpu.html">bdm::DisplacementOpCpu</a>&lt; TSimulation &gt;::last_iteration_ = std::numeric_limits&lt;uint64_t&gt;::max()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00062">62</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dcd414b2ea12ec4a5096f7e9edb1fc9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classbdm_1_1DisplacementOpCpu.html">bdm::DisplacementOpCpu</a>&lt; TSimulation &gt;::squared_radius_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="displacement__op__cpu_8h_source.html#l00061">61</a> of file <a class="el" href="displacement__op__cpu_8h_source.html">displacement_op_cpu.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +296,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DisplacementOpCpu.html">DisplacementOpCpu</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

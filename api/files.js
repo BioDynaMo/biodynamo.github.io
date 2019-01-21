@@ -2,8 +2,10 @@ var files =
 [
     [ "biology_module", "dir_482e3b5788813bb8988d91880328383c.html", "dir_482e3b5788813bb8988d91880328383c" ],
     [ "event", "dir_c4c9d1c37db7e6303b7ab794cedc52f7.html", "dir_c4c9d1c37db7e6303b7ab794cedc52f7" ],
+    [ "execution_context", "dir_89e173edb433c5269f382739968c3ebb.html", "dir_89e173edb433c5269f382739968c3ebb" ],
     [ "gpu", "dir_6b3ae6988449b0834e9596fad5d75199.html", "dir_6b3ae6988449b0834e9596fad5d75199" ],
     [ "neuroscience", "dir_19355cc319126bb51dcdac43ee2050e0.html", "dir_19355cc319126bb51dcdac43ee2050e0" ],
+    [ "sim_object", "dir_88d48a5b3deb0ec636a5e31b5b2639b9.html", "dir_88d48a5b3deb0ec636a5e31b5b2639b9" ],
     [ "util", "dir_23ec12649285f9fabf3a6b7380226c28.html", "dir_23ec12649285f9fabf3a6b7380226c28" ],
     [ "visualization", "dir_2ac5e416e20d6963657ce30aa6dbcd0f.html", "dir_2ac5e416e20d6963657ce30aa6dbcd0f" ],
     [ "backend.h", "backend_8h.html", [
@@ -14,9 +16,6 @@ var files =
       [ "SoaRef", "structbdm_1_1SoaRef.html", "structbdm_1_1SoaRef" ]
     ] ],
     [ "biodynamo.h", "biodynamo_8h.html", null ],
-    [ "biology_module_op.h", "biology__module__op_8h.html", [
-      [ "BiologyModuleOp", "structbdm_1_1BiologyModuleOp.html", "structbdm_1_1BiologyModuleOp" ]
-    ] ],
     [ "biology_module_util.h", "biology__module__util_8h.html", [
       [ "BaseBiologyModule", "structbdm_1_1BaseBiologyModule.html", "structbdm_1_1BaseBiologyModule" ],
       [ "NullBiologyModule", "structbdm_1_1NullBiologyModule.html", "structbdm_1_1NullBiologyModule" ],
@@ -26,9 +25,6 @@ var files =
     [ "cell.h", "cell_8h.html", "cell_8h" ],
     [ "command_line_options.cc", "command__line__options_8cc.html", "command__line__options_8cc" ],
     [ "command_line_options.h", "command__line__options_8h.html", "command__line__options_8h" ],
-    [ "commit_op.h", "commit__op_8h.html", [
-      [ "CommitOp", "classbdm_1_1CommitOp.html", "classbdm_1_1CommitOp" ]
-    ] ],
     [ "compile_time_list.h", "compile__time__list_8h.html", [
       [ "CTList", "structbdm_1_1CTList.html", "structbdm_1_1CTList" ]
     ] ],
@@ -68,7 +64,10 @@ var files =
       [ "Grid", "classbdm_1_1Grid.html", "classbdm_1_1Grid" ],
       [ "Box", "structbdm_1_1Grid_1_1Box.html", "structbdm_1_1Grid_1_1Box" ],
       [ "Iterator", "structbdm_1_1Grid_1_1Box_1_1Iterator.html", "structbdm_1_1Grid_1_1Box_1_1Iterator" ],
-      [ "NeighborIterator", "structbdm_1_1Grid_1_1NeighborIterator.html", "structbdm_1_1Grid_1_1NeighborIterator" ]
+      [ "NeighborIterator", "structbdm_1_1Grid_1_1NeighborIterator.html", "structbdm_1_1Grid_1_1NeighborIterator" ],
+      [ "NeighborMutexBuilder", "classbdm_1_1Grid_1_1NeighborMutexBuilder.html", "classbdm_1_1Grid_1_1NeighborMutexBuilder" ],
+      [ "NeighborMutex", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex" ],
+      [ "MutexWrapper", "structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html", "structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper" ]
     ] ],
     [ "inline_vector.h", "inline__vector_8h.html", [
       [ "InlineVector", "classbdm_1_1InlineVector.html", "classbdm_1_1InlineVector" ]
@@ -110,6 +109,7 @@ var files =
       [ "ResourceManager", "classbdm_1_1ResourceManager.html", "classbdm_1_1ResourceManager" ],
       [ "Grid", "classbdm_1_1Grid.html", "classbdm_1_1Grid" ],
       [ "Scheduler", "classbdm_1_1Scheduler.html", "classbdm_1_1Scheduler" ],
+      [ "InPlaceExecutionContext", "classbdm_1_1InPlaceExecutionContext.html", "classbdm_1_1InPlaceExecutionContext" ],
       [ "CompileTimeParam", "structbdm_1_1CompileTimeParam.html", null ],
       [ "Simulation", "structbdm_1_1Simulation.html", "structbdm_1_1Simulation" ]
     ] ],
@@ -129,14 +129,13 @@ var files =
     [ "simulation_object_vector.h", "simulation__object__vector_8h.html", [
       [ "SimulationObjectVector", "classbdm_1_1SimulationObjectVector.html", "classbdm_1_1SimulationObjectVector" ]
     ] ],
-    [ "so_pointer.h", "so__pointer_8h.html", "so__pointer_8h" ],
+    [ "so_pointer.h", "so__pointer_8h.html", [
+      [ "SoPointer", "classbdm_1_1SoPointer.html", "classbdm_1_1SoPointer" ]
+    ] ],
     [ "string_util.h", "string__util_8h.html", "string__util_8h" ],
     [ "substance_initializers.h", "substance__initializers_8h.html", "substance__initializers_8h" ],
     [ "timing.h", "timing_8h.html", "timing_8h" ],
     [ "timing_aggregator.h", "timing__aggregator_8h.html", "timing__aggregator_8h" ],
-    [ "transactional_vector.h", "transactional__vector_8h.html", [
-      [ "TransactionalVector", "classbdm_1_1TransactionalVector.html", "classbdm_1_1TransactionalVector" ]
-    ] ],
     [ "tuple_util.h", "tuple__util_8h.html", "tuple__util_8h" ],
     [ "type_util.h", "type__util_8h.html", "type__util_8h" ],
     [ "variant.h", "variant_8h.html", "variant_8h" ],

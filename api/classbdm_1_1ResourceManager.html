@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-139-g94b177e</span>
+   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
    </div>
   </td>
  </tr>
@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classbdm_1_1ResourceManager-members.html">List of all members</a>  </div>
@@ -120,7 +121,7 @@ $(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');
 <div class="dynheader">
 Collaboration diagram for bdm::ResourceManager&lt; TCompileTimeParam &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager__coll__graph.svg" width="214" height="555"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager__coll__graph.svg" width="214" height="584"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -150,9 +151,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0b909716f905dcbcb3340a5c656c6921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8119122e7795d96a3f6ef9d22c75b8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ac8119122e7795d96a3f6ef9d22c75b8c">operator=</a> (<a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> &amp;&amp;other)</td></tr>
 <tr class="separator:ac8119122e7795d96a3f6ef9d22c75b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e62b97b78fb5da1beeb6833257b3510"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
-<tr class="memitem:a6e62b97b78fb5da1beeb6833257b3510"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">TypeContainer</a>&lt; <a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">ToBackend</a>&lt; Type &gt; &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a6e62b97b78fb5da1beeb6833257b3510">Get</a> ()</td></tr>
-<tr class="separator:a6e62b97b78fb5da1beeb6833257b3510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bc00d692c04e69c03bef88f1e7360b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#aa9bc00d692c04e69c03bef88f1e7360b">GetSoHandle</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> so_uid) const </td></tr>
+<tr class="separator:aa9bc00d692c04e69c03bef88f1e7360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af9d6ce4269d73a1075c0ab1d08b6ad"><td class="memTemplParams" colspan="2">template&lt;typename TSo , typename TSimBackend  = Backend&gt; </td></tr>
+<tr class="memitem:a9af9d6ce4269d73a1075c0ab1d08b6ad"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a9af9d6ce4269d73a1075c0ab1d08b6ad">GetSimObject</a> (<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> handle, typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Scalar.html">Scalar</a> &gt;::value &gt;::type *ptr=0)</td></tr>
+<tr class="separator:a9af9d6ce4269d73a1075c0ab1d08b6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387153de84ca777061074360094d4627"><td class="memTemplParams" colspan="2">template&lt;typename TSo , typename TSimBackend  = Backend&gt; </td></tr>
+<tr class="memitem:a387153de84ca777061074360094d4627"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a387153de84ca777061074360094d4627">GetSimObject</a> (<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> handle, typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Soa.html">Soa</a> &gt;::value &gt;::type *ptr=0)</td></tr>
+<tr class="separator:a387153de84ca777061074360094d4627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46eaf3b1c83befa6a4e42a39613bba7"><td class="memTemplParams" colspan="2">template&lt;typename TSo , typename TSimBackend  = Backend&gt; </td></tr>
+<tr class="memitem:af46eaf3b1c83befa6a4e42a39613bba7"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#af46eaf3b1c83befa6a4e42a39613bba7">GetSimObject</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid, typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Scalar.html">Scalar</a> &gt;::value &gt;::type *ptr=0)</td></tr>
+<tr class="separator:af46eaf3b1c83befa6a4e42a39613bba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e09a88913a51887e0b14b2653e7517f"><td class="memTemplParams" colspan="2">template&lt;typename TSo , typename TSimBackend  = Backend&gt; </td></tr>
+<tr class="memitem:a4e09a88913a51887e0b14b2653e7517f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a4e09a88913a51887e0b14b2653e7517f">GetSimObject</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid, typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Soa.html">Soa</a> &gt;::value &gt;::type *ptr=0)</td></tr>
+<tr class="separator:a4e09a88913a51887e0b14b2653e7517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145653cd70f307ca111e17c524f724b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a145653cd70f307ca111e17c524f724b8">AddDiffusionGrid</a> (<a class="el" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a> *dgrid)</td></tr>
 <tr class="separator:a145653cd70f307ca111e17c524f724b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96eaa1698cf3279ae0fb643f97a99f27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a96eaa1698cf3279ae0fb643f97a99f27">RemoveDiffusionGrid</a> (size_t substance_id)</td></tr>
@@ -183,23 +195,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec867d8e6f3c47defd50a9b508729525"><td class="memTemplParams" colspan="2">template&lt;typename TFunction &gt; </td></tr>
 <tr class="memitem:aec867d8e6f3c47defd50a9b508729525"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#aec867d8e6f3c47defd50a9b508729525">ApplyOnAllElementsParallel</a> (TFunction &amp;&amp;function)</td></tr>
 <tr class="separator:aec867d8e6f3c47defd50a9b508729525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d2cc8dc47de484d0c2c37b7fbaf832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a77d2cc8dc47de484d0c2c37b7fbaf832">Reserve</a> (size_t capacity)</td></tr>
+<tr class="separator:a77d2cc8dc47de484d0c2c37b7fbaf832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe30ac0e5f9da8ceb7ebf6ed6b360c28"><td class="memTemplParams" colspan="2">template&lt;typename TSo &gt; </td></tr>
+<tr class="memitem:abe30ac0e5f9da8ceb7ebf6ed6b360c28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#abe30ac0e5f9da8ceb7ebf6ed6b360c28">Reserve</a> (size_t capacity)</td></tr>
+<tr class="separator:abe30ac0e5f9da8ceb7ebf6ed6b360c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3899ea5da5ea1610831cfd1781b41ddd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a3899ea5da5ea1610831cfd1781b41ddd">Contains</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid) const </td></tr>
+<tr class="separator:a3899ea5da5ea1610831cfd1781b41ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfd8dcbb9650edd4bfc1b1d9e28ceea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a5dfd8dcbb9650edd4bfc1b1d9e28ceea">Clear</a> ()</td></tr>
-<tr class="memdesc:a5dfd8dcbb9650edd4bfc1b1d9e28ceea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove elements from each type.  <a href="#a5dfd8dcbb9650edd4bfc1b1d9e28ceea">More...</a><br/></td></tr>
 <tr class="separator:a5dfd8dcbb9650edd4bfc1b1d9e28ceea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba76c080e2db0a5359e219f9da31a71"><td class="memTemplParams" colspan="2">template&lt;typename TSo &gt; </td></tr>
 <tr class="memitem:afba76c080e2db0a5359e219f9da31a71"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#afba76c080e2db0a5359e219f9da31a71">push_back</a> (const TSo &amp;so)</td></tr>
 <tr class="separator:afba76c080e2db0a5359e219f9da31a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a918128f277cddece9a29e791d6b780f8"><td class="memTemplParams" colspan="2">template&lt;typename TScalarSo , typename... Args, typename TBackend  = Backend&gt; </td></tr>
-<tr class="memitem:a918128f277cddece9a29e791d6b780f8"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same<br class="typebreak"/>
-&lt; TBackend, <a class="el" href="structbdm_1_1Soa.html">Soa</a> &gt;::value, <br class="typebreak"/>
-typename TScalarSo::template <br class="typebreak"/>
-Self&lt; <a class="el" href="structbdm_1_1SoaRef.html">SoaRef</a> &gt; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a918128f277cddece9a29e791d6b780f8">New</a> (Args...args)</td></tr>
-<tr class="separator:a918128f277cddece9a29e791d6b780f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7318d032f98fa0b2a4fef085e1046960"><td class="memTemplParams" colspan="2">template&lt;typename TScalarSo , typename... Args, typename TBackend  = Backend&gt; </td></tr>
-<tr class="memitem:a7318d032f98fa0b2a4fef085e1046960"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same<br class="typebreak"/>
-&lt; TBackend, <a class="el" href="structbdm_1_1Scalar.html">Scalar</a> &gt;::value, <br class="typebreak"/>
-TScalarSo &amp; &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a7318d032f98fa0b2a4fef085e1046960">New</a> (Args...args)</td></tr>
-<tr class="separator:a7318d032f98fa0b2a4fef085e1046960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6a1eea66860bd51a7f3727643ffb58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a8e6a1eea66860bd51a7f3727643ffb58">Remove</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid)</td></tr>
+<tr class="separator:a8e6a1eea66860bd51a7f3727643ffb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae479691864f04c7394fb544927666066"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:ae479691864f04c7394fb544927666066"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">TypeContainer</a>&lt; <a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">ToBackend</a><br class="typebreak"/>
+&lt; Type &gt; &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ae479691864f04c7394fb544927666066">Get</a> ()</td></tr>
+<tr class="separator:ae479691864f04c7394fb544927666066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b34830c8529bb75b45947daca1f6d1"><td class="memItemLeft" align="right" valign="top">TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a00b34830c8529bb75b45947daca1f6d1">IsA</a> () const </td></tr>
 <tr class="separator:a00b34830c8529bb75b45947daca1f6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b6fa0c23f3232bcbbdcb54e97d7841b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a2b6fa0c23f3232bcbbdcb54e97d7841b">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
@@ -234,11 +247,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abb07f54a07a837b0a27a76171abcc861"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#abb07f54a07a837b0a27a76171abcc861">DeclFileLine</a> ()</td></tr>
 <tr class="separator:abb07f54a07a837b0a27a76171abcc861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a72f9bc083430530910a09ef010d7ba82"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:a72f9bc083430530910a09ef010d7ba82"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">TypeContainer</a>&lt; <a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">ToBackend</a>&lt; Type &gt; &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a72f9bc083430530910a09ef010d7ba82">GetContainer</a> ()</td></tr>
+<tr class="separator:a72f9bc083430530910a09ef010d7ba82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a88ff27650f7c81ffff25e2ef5c3f8587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1ConvertToContainerTuple.html">ConvertToContainerTuple</a><br class="typebreak"/>
 &lt; <a class="el" href="classbdm_1_1ResourceManager.html#a3e9300450dc45e32d02303902cd64210">Backend</a>, <a class="el" href="classbdm_1_1ResourceManager.html#aff7afa51cd013ab7b35aa8bfb1062ade">Types</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a88ff27650f7c81ffff25e2ef5c3f8587">data_</a></td></tr>
 <tr class="separator:a88ff27650f7c81ffff25e2ef5c3f8587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660b55c44a17dcfb1095f747d4afe066"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; <a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>, <br class="typebreak"/>
+<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a660b55c44a17dcfb1095f747d4afe066">so_storage_location_</a></td></tr>
+<tr class="memdesc:a660b55c44a17dcfb1095f747d4afe066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping between SoUid and <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> (stored location)  <a href="#a660b55c44a17dcfb1095f747d4afe066">More...</a><br/></td></tr>
+<tr class="separator:a660b55c44a17dcfb1095f747d4afe066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b7e1b91737cb5bcb6a02c7fc53f481"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; uint64_t, <br class="typebreak"/>
 <a class="el" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ae4b7e1b91737cb5bcb6a02c7fc53f481">diffusion_grids_</a></td></tr>
 <tr class="separator:ae4b7e1b91737cb5bcb6a02c7fc53f481"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,7 +283,7 @@ class bdm::ResourceManager&lt; TCompileTimeParam &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00150">150</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00151">151</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a3e9300450dc45e32d02303902cd64210"></a>
 <div class="memitem">
@@ -274,7 +297,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00152">152</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00153">153</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +317,7 @@ template&lt;typename T &gt; </div>
 
 <p>Helper type alias to get a type with certain Backend. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00159">159</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00160">160</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +337,7 @@ template&lt;typename T &gt; </div>
 
 <p>Determine Container based on the Backend. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00156">156</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00157">157</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +353,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00153">153</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00154">154</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +382,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00172">172</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00173">173</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +410,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Default constructor. Unfortunately needs to be public although it is a singleton to be able to use ROOT I/O </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00176">176</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00177">177</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +439,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>Free the memory that was reserved for the diffusion grids. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00182">182</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00183">183</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +468,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00204">204</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00231">231</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +499,7 @@ template&lt;typename TFunctor &gt; </div>
 </div><div class="memdoc">
 <p>Execute the given functor for all diffusion grids rm-&gt;ApplyOnAllDiffusionGrids([](DiffusionGrid* dgrid) { ... }); </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00255">255</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00282">282</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +538,15 @@ template&lt;typename TFunction &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00325">325</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00352">352</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a830c32338145b48c97e4e7bc64ad19f3_icgraph.svg" width="675" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -547,7 +578,7 @@ template&lt;typename TFunction &gt; </div>
 <p>Apply a function on all elements in every container Function invocations are parallelized </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classbdm_1_1ResourceManager.html#a830c32338145b48c97e4e7bc64ad19f3">ApplyOnAllElements</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00340">340</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00367">367</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -586,12 +617,12 @@ template&lt;typename TFunction &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00296">296</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00323">323</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a7a8d6e674e70b39ec38b3ae726d912f5_icgraph.svg" width="384" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a7a8d6e674e70b39ec38b3ae726d912f5_icgraph.svg" width="390" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -633,7 +664,7 @@ template&lt;typename TFunction &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00311">311</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00338">338</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -689,7 +720,7 @@ template&lt;typename TFunction &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00280">280</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00307">307</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +747,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +774,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -770,7 +801,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -796,15 +827,51 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Remove all simulation objects NB: This method is not thread-safe! This function invalidates sim_object references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> are not affected. </p>
 
-<p>Remove elements from each type. </p>
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00353">353</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00404">404</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a5dfd8dcbb9650edd4bfc1b1d9e28ceea_icgraph.svg" width="446" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a5dfd8dcbb9650edd4bfc1b1d9e28ceea_icgraph.svg" width="696" height="116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3899ea5da5ea1610831cfd1781b41ddd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::Contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if a sim object with the given uid is stored in this <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. </p>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00396">396</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a3899ea5da5ea1610831cfd1781b41ddd_icgraph.svg" width="424" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -834,7 +901,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -861,7 +928,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -888,11 +955,11 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6e62b97b78fb5da1beeb6833257b3510"></a>
+<a class="anchor" id="ae479691864f04c7394fb544927666066"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -904,7 +971,7 @@ template&lt;typename Type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">TypeContainer</a>&lt;<a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">ToBackend</a>&lt;Type&gt; &gt;* <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::Get </td>
+          <td class="memname">const <a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">TypeContainer</a>&lt;<a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">ToBackend</a>&lt;Type&gt; &gt;* <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::Get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -924,7 +991,43 @@ template&lt;typename Type &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00200">200</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00466">466</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72f9bc083430530910a09ef010d7ba82"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">TypeContainer</a>&lt;<a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">ToBackend</a>&lt;Type&gt; &gt;* <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::GetContainer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the container of this Type </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Type</td><td>atomic type whose container should be returned invariant to the Backend. This means that even if <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> stores e.g. <code>SoaCell</code>, Type can be <code>Cell</code> and still returns the correct container. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00477">477</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +1057,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>Return the diffusion grid which holds the substance of specified id. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00228">228</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00255">255</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1086,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Return the diffusion grid which holds the substance of specified name Caution: using this function in a tight loop will result in a slow simulation. Use <code>GetDiffusionGrid(size_t)</code> in those cases. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00237">237</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00264">264</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1115,195 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>Returns the total number of simulation objects. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00262">262</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00289">289</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9af9d6ce4269d73a1075c0ab1d08b6ad"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename TSo , typename TSimBackend  = Backend&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp;&amp; <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::GetSimObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Scalar.html">Scalar</a> &gt;::value &gt;::type *&#160;</td>
+          <td class="paramname"><em>ptr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00200">200</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a387153de84ca777061074360094d4627"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename TSo , typename TSimBackend  = Backend&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::GetSimObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Soa.html">Soa</a> &gt;::value &gt;::type *&#160;</td>
+          <td class="paramname"><em>ptr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00208">208</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af46eaf3b1c83befa6a4e42a39613bba7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename TSo , typename TSimBackend  = Backend&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp;&amp; <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::GetSimObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Scalar.html">Scalar</a> &gt;::value &gt;::type *&#160;</td>
+          <td class="paramname"><em>ptr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00215">215</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e09a88913a51887e0b14b2653e7517f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename TSo , typename TSimBackend  = Backend&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::GetSimObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramname"><em>uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_same&lt; TSimBackend, <a class="el" href="structbdm_1_1Soa.html">Soa</a> &gt;::value &gt;::type *&#160;</td>
+          <td class="paramname"><em>ptr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00224">224</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9bc00d692c04e69c03bef88f1e7360b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::GetSoHandle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramname"><em>so_uid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00195">195</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1332,7 @@ template&lt;typename TSo &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00167">167</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00168">168</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1068,7 +1359,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1386,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1122,81 +1413,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a918128f277cddece9a29e791d6b780f8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;typename TScalarSo , typename... Args, typename TBackend  = Backend&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;std::is_same&lt;TBackend, <a class="el" href="structbdm_1_1Soa.html">Soa</a>&gt;::value, typename TScalarSo::template Self&lt;<a class="el" href="structbdm_1_1SoaRef.html">SoaRef</a>&gt; &gt;::type <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::New </td>
-          <td>(</td>
-          <td class="paramtype">Args...&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a new simulation object and return a reference to it. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TScalarSo</td><td>simulation object type with scalar backend </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">args</td><td>arguments which will be forwarded to the TScalarSo constructor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Note that this function is not thread safe. </dd></dl>
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00377">377</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7318d032f98fa0b2a4fef085e1046960"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
-<div class="memtemplate">
-template&lt;typename TScalarSo , typename... Args, typename TBackend  = Backend&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;std::is_same&lt;TBackend, <a class="el" href="structbdm_1_1Scalar.html">Scalar</a>&gt;::value, TScalarSo&amp;&gt;::type <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::New </td>
-          <td>(</td>
-          <td class="paramtype">Args...&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00387">387</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1442,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 
 <p>Returns the number of simulation object types. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00162">162</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00163">163</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1253,7 +1470,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00188">188</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00189">189</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1282,16 +1499,47 @@ template&lt;typename TSo &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>NB: This method is not thread-safe! This function might invalidate sim_object references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> are not affected. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00359">359</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00414">414</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_afba76c080e2db0a5359e219f9da31a71_icgraph.svg" width="174" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_afba76c080e2db0a5359e219f9da31a71_icgraph.svg" width="462" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e6a1eea66860bd51a7f3727643ffb58"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::Remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes the simulation object with the given uid.<br/>
+NB: This method is not thread-safe! This function invalidates sim_object references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> are not affected. </p>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00428">428</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1319,7 +1567,75 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00216">216</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00243">243</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77d2cc8dc47de484d0c2c37b7fbaf832"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reserves enough memory to hold <code>capacity</code> number of simulation objects for each simulation object type. </p>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00381">381</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a77d2cc8dc47de484d0c2c37b7fbaf832_icgraph.svg" width="424" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe30ac0e5f9da8ceb7ebf6ed6b360c28"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename TSo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reserves enough memory to hold <code>capacity</code> number of simulation objects for the given simulation object type. </p>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00390">390</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1663,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1691,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1719,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00409">409</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00499">499</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1428,7 +1744,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00408">408</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00498">498</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1770,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>creates one container for each type in Types. Container type is determined based on the specified Backend </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00397">397</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00483">483</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1478,7 +1794,33 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00398">398</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00488">488</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a660b55c44a17dcfb1095f747d4afe066"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>, <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>&gt; <a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a>&lt; TCompileTimeParam &gt;::so_storage_location_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mapping between SoUid and <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> (stored location) </p>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00486">486</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1491,7 +1833,7 @@ template&lt;typename TCompileTimeParam = CompileTimeParam&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 17:42:18 for BioDynaMo by
+    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
