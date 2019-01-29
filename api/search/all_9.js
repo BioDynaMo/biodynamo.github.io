@@ -44,6 +44,7 @@ var searchData=
   ['isneuronsoma',['IsNeuronSoma',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronNeuriteAdapter.html#a8f555cd029b6589ed3d15a54fa729ba3',1,'bdm::experimental::neuroscience::NeuronNeuriteAdapter']]],
   ['issotype',['IsSoType',['../classbdm_1_1SimulationObjectExt.html#a2693f10e752ee32a1928db0460162be7',1,'bdm::SimulationObjectExt::IsSoType()'],['../classbdm_1_1SimulationObjectExt.html#aa8c739a149fd7dbcc9c6a593b54b625f',1,'bdm::SimulationObjectExt::IsSoType(const TSo *object)']]],
   ['isterminal',['IsTerminal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ab412f8debeea8c6835894d18d800c147',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
-  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]],
-  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a9c207bfebd872662e7ad9fc74a5b6065',1,'bdm::Grid::Box::Iterator::Iterator()'],['../classbdm_1_1ParallelResizeVector.html#a1cb7d1818853f8fec334c05e2882aa7b',1,'bdm::ParallelResizeVector::iterator()']]]
+  ['iteratezorder',['IterateZOrder',['../classbdm_1_1Grid.html#a46eaac1116459c4b297f23952d7e6d83',1,'bdm::Grid']]],
+  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a9c207bfebd872662e7ad9fc74a5b6065',1,'bdm::Grid::Box::Iterator::Iterator()'],['../classbdm_1_1ParallelResizeVector.html#a1cb7d1818853f8fec334c05e2882aa7b',1,'bdm::ParallelResizeVector::iterator()']]],
+  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]]
 ];

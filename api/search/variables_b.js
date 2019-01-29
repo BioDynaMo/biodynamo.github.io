@@ -3,6 +3,7 @@ var searchData=
   ['mass_5flocation_5f',['mass_location_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a9f2b36c63d1e1ce7499d90c5894abc73',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['max_5f',['max_',['../structbdm_1_1Uniform.html#a388fe654bd06372699f13f5d42cc9cf1',1,'bdm::Uniform']]],
   ['max_5fbound_5f',['max_bound_',['../structbdm_1_1Param.html#a856e1442fb63e05bc6c2956051dd6848',1,'bdm::Param']]],
+  ['max_5fthreads_5f',['max_threads_',['../classbdm_1_1ThreadInfo.html#aed526534a4a5d80c63e87461ad5e124f',1,'bdm::ThreadInfo']]],
   ['mean_5f',['mean_',['../structbdm_1_1GaussianBand.html#aeed0c5a31ad80f52c330dfe3354e5286',1,'bdm::GaussianBand']]],
   ['min_5f',['min_',['../structbdm_1_1Uniform.html#ab65bfc034aa51ab2b75226be85ff3ade',1,'bdm::Uniform']]],
   ['min_5fbound_5f',['min_bound_',['../structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f',1,'bdm::Param']]],

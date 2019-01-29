@@ -43,9 +43,11 @@ var classbdm_1_1Grid =
     [ "HasGrown", "classbdm_1_1Grid.html#a2f44b76831f40ddc2bfaf126119f371f", null ],
     [ "Initialize", "classbdm_1_1Grid.html#a133092c67ff0e2ce0f0ccc3710b4e5a0", null ],
     [ "IsInitialized", "classbdm_1_1Grid.html#a0944b5015955315246603632c6eeb05f", null ],
+    [ "IterateZOrder", "classbdm_1_1Grid.html#a46eaac1116459c4b297f23952d7e6d83", null ],
     [ "operator=", "classbdm_1_1Grid.html#ad823d0f2a0d57daf032f8fb1404b11b3", null ],
     [ "RoundOffGridDimensions", "classbdm_1_1Grid.html#a9e92f2d0f4cb5044b57e21fd0e17c735", null ],
     [ "SquaredEuclideanDistance", "classbdm_1_1Grid.html#a9bef3c4945f3d35defb56c07a70dcae6", null ],
+    [ "UpdateBoxZOrder", "classbdm_1_1Grid.html#a7ea0d899bb20a971382cf66facfd4fc1", null ],
     [ "UpdateCachedPositions", "classbdm_1_1Grid.html#a33a5e34ae8d854aa364f4c354db3db9e", null ],
     [ "UpdateGrid", "classbdm_1_1Grid.html#a28268d3427670a3b7853f15057faab8c", null ],
     [ "UpdateSoHandles", "classbdm_1_1Grid.html#ad5e7a40cb06f47a425322f17a0fb6c86", null ],
@@ -61,5 +63,6 @@ var classbdm_1_1Grid =
     [ "num_boxes_axis_", "classbdm_1_1Grid.html#ab0b87b94c5f67081a772177a8bb720e3", null ],
     [ "num_boxes_xy_", "classbdm_1_1Grid.html#aecdab9f047468ff3a4e53ba6ca2016e5", null ],
     [ "successors_", "classbdm_1_1Grid.html#a421454d3cebc427b4e0651e9829d77b6", null ],
-    [ "threshold_dimensions_", "classbdm_1_1Grid.html#ac62a60089564240c66628a79f9a07b17", null ]
+    [ "threshold_dimensions_", "classbdm_1_1Grid.html#ac62a60089564240c66628a79f9a07b17", null ],
+    [ "zorder_sorted_boxes_", "classbdm_1_1Grid.html#a9d872b7bec5f3a29673c8591087e27e4", null ]
 ];

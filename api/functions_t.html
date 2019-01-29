@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
+   &#160;<span id="projectnumber">v0.1.0-142-g7b40e71</span>
    </div>
   </td>
  </tr>
@@ -173,6 +173,18 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#abac338ad5a5eed8f4290840095f4722c">bdm::experimental::neuroscience::NeuronSomaExt&lt; TCompileTimeParam, TDerived &gt;</a>
 , <a class="el" href="classbdm_1_1SimulationObjectExt.html#a3d368a65f774ce089f60865fb0da99ad">bdm::SimulationObjectExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
+<li>thread_info_
+: <a class="el" href="classbdm_1_1ResourceManager.html#af90ed2e62de8c15d7ea755b89bedbfdc">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+</li>
+<li>thread_numa_mapping_
+: <a class="el" href="classbdm_1_1ThreadInfo.html#a807d8a6b60aa21653e18434b771a3d60">bdm::ThreadInfo</a>
+</li>
+<li>ThreadInfo()
+: <a class="el" href="classbdm_1_1ThreadInfo.html#afea5a69f62569e047a55ab343e0647d6">bdm::ThreadInfo</a>
+</li>
+<li>threads_in_numa_
+: <a class="el" href="classbdm_1_1ThreadInfo.html#a93d1fa5cb62531a6871ae17614dd8024">bdm::ThreadInfo</a>
+</li>
 <li>threshold_
 : <a class="el" href="structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77">bdm::GrowDivide</a>
 </li>
@@ -198,7 +210,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">bdm::TimingAggregator</a>
 </li>
 <li>ToBackend
-: <a class="el" href="structbdm_1_1detail_1_1ConvertToContainerTuple_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4.html#a51c3778bb66c1ee0b46caa4195affeb0">bdm::detail::ConvertToContainerTuple&lt; Backend, CTList&lt; Types...&gt; &gt;</a>
+: <a class="el" href="structbdm_1_1detail_1_1ToTupleOfSOContainers_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4.html#a9abc3a70cb203dd30a8bde9297b222d5">bdm::detail::ToTupleOfSOContainers&lt; Backend, CTList&lt; Types...&gt; &gt;</a>
 , <a class="el" href="classbdm_1_1ResourceManager.html#aa77e37f57db4001c826b0f43829d7d7f">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
 </li>
 <li>ToSimBackend
@@ -241,21 +253,27 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <li>TransformCoordinatesPolarToLocal()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a5836b627b32490e161ebfac717f30442">bdm::experimental::neuroscience::NeuriteElementExt&lt; TCompileTimeParam, TDerived &gt;</a>
 </li>
+<li>TupleOfSOContainers
+: <a class="el" href="classbdm_1_1ResourceManager.html#a73074f545e7b122d3a990bd48d74d2f3">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+</li>
 <li>type
 : <a class="el" href="structbdm_1_1Capsule_3_01CellExt_01_4.html#a2e2e1a54617d3e853268ec8b768a0483">bdm::Capsule&lt; CellExt &gt;</a>
-, <a class="el" href="structbdm_1_1ConvertToContainerTuple.html#a2367c2c96cb8585dc6313cd7a538a4f2">bdm::ConvertToContainerTuple&lt; Backend, TCTList &gt;</a>
-, <a class="el" href="structbdm_1_1detail_1_1ConvertToContainerTuple_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4.html#a3644a0dd96491fdec2d0b8565848cc01">bdm::detail::ConvertToContainerTuple&lt; Backend, CTList&lt; Types...&gt; &gt;</a>
+, <a class="el" href="structbdm_1_1detail_1_1ToTupleOfSOContainers_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4.html#aeeab1691b766ca2121280cdda39fa2c6">bdm::detail::ToTupleOfSOContainers&lt; Backend, CTList&lt; Types...&gt; &gt;</a>
 , <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Capsule_3_01NeuriteElementExt_01_4.html#a6f6bed3610da52b403fc740b29e0e41c">bdm::experimental::neuroscience::Capsule&lt; NeuriteElementExt &gt;</a>
 , <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Capsule_3_01NeuronSomaExt_01_4.html#a7581081891ce3da4b5c70f2c67a67623">bdm::experimental::neuroscience::Capsule&lt; NeuronSomaExt &gt;</a>
 , <a class="el" href="structbdm_1_1SimulationObjectImpl.html#a55d618b6783ceabc8dddd8511a0334fc">bdm::SimulationObjectImpl&lt; TCompileTimeParam, TDerived &gt;</a>
+, <a class="el" href="structbdm_1_1ToTupleOfSOContainers.html#ac5bd65171313fa2c54b075d7f9d7d5f6">bdm::ToTupleOfSOContainers&lt; Backend, TCTList &gt;</a>
 , <a class="el" href="structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4.html#a7ea0118eb2a2f8a6191db2ec07fd9866">bdm::type_ternary_operator&lt;false, T, U &gt;</a>
 , <a class="el" href="structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4.html#ab6b66c2d3c37efa133a1b091e3872f4c">bdm::type_ternary_operator&lt;true, T, U &gt;</a>
 </li>
 <li>type_idx_
-: <a class="el" href="classbdm_1_1SoHandle.html#a076e9145fbb60cca34c23d2e229275c5">bdm::SoHandle</a>
+: <a class="el" href="classbdm_1_1SoHandle.html#a0ae2afa133caf2e3cbc945bf581f5519">bdm::SoHandle</a>
 </li>
 <li>TypeContainer
 : <a class="el" href="classbdm_1_1ResourceManager.html#ad93ce66980fcc44e42779d5b1d96e644">bdm::ResourceManager&lt; TCompileTimeParam &gt;</a>
+</li>
+<li>TypeIdx_t
+: <a class="el" href="classbdm_1_1SoHandle.html#a9675a356ef787c88a5b779f8ae147a4c">bdm::SoHandle</a>
 </li>
 <li>Types
 : <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a6a7cdbfcd8f3df405293627d6d6239c5">bdm::InPlaceExecutionContext&lt; TCTParam &gt;</a>
@@ -267,7 +285,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
+    <li class="footer">Generated on Tue Jan 29 2019 13:05:27 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

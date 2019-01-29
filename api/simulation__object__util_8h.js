@@ -21,6 +21,8 @@ var simulation__object__util_8h =
     [ "BDM_SIM_OBJECT_PUSH_BACK_BODY_ITERATOR", "simulation__object__util_8h.html#ab251932ea74e0188d0ad7c34bb01c7c6", null ],
     [ "BDM_SIM_OBJECT_RESERVE_BODY", "simulation__object__util_8h.html#a23ff23d7351000f051e39ed7131334ca", null ],
     [ "BDM_SIM_OBJECT_RESERVE_BODY_ITERATOR", "simulation__object__util_8h.html#ae4a00a53df6e452aa735100e4937c370", null ],
+    [ "BDM_SIM_OBJECT_RESIZE_BODY", "simulation__object__util_8h.html#a66d542fd64e9fed37b3208cd445ee0d5", null ],
+    [ "BDM_SIM_OBJECT_RESIZE_BODY_ITERATOR", "simulation__object__util_8h.html#a8bef85e2339b9e3304fbbaad3420f297", null ],
     [ "BDM_SIM_OBJECT_SWAP_AND_POP_BACK_BODY", "simulation__object__util_8h.html#a73a6fba715ab81a0b480499f5ba84946", null ],
     [ "BDM_SIM_OBJECT_SWAP_AND_POP_BACK_BODY_ITERATOR", "simulation__object__util_8h.html#a8c149707fc249222dbb3af948327442b", null ],
     [ "BDM_SO_DEFINE", "simulation__object__util_8h.html#a67552328ee60aaa4f258a0349aec1216", null ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
+   &#160;<span id="projectnumber">v0.1.0-142-g7b40e71</span>
    </div>
   </td>
  </tr>
@@ -147,88 +147,93 @@ $(document).ready(function(){initNavTree('displacement__op_8h_source.html','');}
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#af2782c42308968c64f0fef918efecac8">   40</a></span>&#160;  <a class="code" href="classbdm_1_1DisplacementOp.html#af2782c42308968c64f0fef918efecac8">DisplacementOp</a>() {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    rm-&gt;template ApplyOnAllTypes([<span class="keyword">this</span>](<span class="keyword">auto</span>* container, uint16_t type_idx) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keyword">using</span> Container = std::remove_pointer_t&lt;decltype(container)&gt;;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">using</span> SimObject = <span class="keyword">typename</span> Container::value_type;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">if</span> (SimObject::GetShape() != <a class="code" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">Shape::kSphere</a>) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">Log::Warning</a>(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="stringliteral">&quot;DisplacementOp&quot;</span>,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="stringliteral">&quot;Currently GPU/FPGA implementation only supports spherical &quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="stringliteral">&quot;shapes. Therefore, the CPU implementation will be used.&quot;</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        this-&gt;<a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    });</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#adec0728dcfbc7a05effddd642ba45a7b">   56</a></span>&#160;  <a class="code" href="classbdm_1_1DisplacementOp.html#adec0728dcfbc7a05effddd642ba45a7b">~DisplacementOp</a>() {}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#a6ba337952fa3e21776b85cbc327cf08e">   58</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classbdm_1_1DisplacementOp.html#a6ba337952fa3e21776b85cbc327cf08e">UseCpu</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">auto</span>* param = TSimulation::GetActive()-&gt;GetParam();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a> ||</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;           (!param-&gt;use_gpu_ &amp;&amp; !param-&gt;use_opencl_);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#ab370ac2ae040cfae30ed281d4db88911">   64</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1DisplacementOp.html#ab370ac2ae040cfae30ed281d4db88911">operator()</a>() {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span>* param = TSimulation::GetActive()-&gt;GetParam();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (param-&gt;use_gpu_ &amp;&amp; !<a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a>) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef USE_OPENCL</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (param-&gt;use_opencl_) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">auto</span>* rm = TSimulation::GetActive()-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        rm-&gt;ApplyOnAllTypes(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            [](<span class="keyword">auto</span>* cells, uint16_t type_idx) { opencl_(cells, type_idx); });</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef USE_CUDA</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (!param-&gt;use_opencl_) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">auto</span>* rm = TSimulation::GetActive()-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        rm-&gt;ApplyOnAllTypes(</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            [](<span class="keyword">auto</span>* cells, uint16_t type_idx) { cuda_(cells, type_idx); });</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;DisplacementOp&quot;</span>,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                 <span class="stringliteral">&quot;Currently GPU/FPGA implementation only supports spherical &quot;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                 <span class="stringliteral">&quot;shapes.&quot;</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSimObject&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#ae6e596dcf51df86147a5a071f6c0d390">   89</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1DisplacementOp.html#ae6e596dcf51df86147a5a071f6c0d390">operator()</a>(TSimObject&amp;&amp; sim_object) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">cpu_</a>(sim_object);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    rm-&gt;template ApplyOnAllTypes(</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        [<span class="keyword">this</span>](<span class="keyword">auto</span>* container, uint16_t numa_node, uint16_t type_idx) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          <span class="keyword">using</span> Container = std::remove_pointer_t&lt;decltype(container)&gt;;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          <span class="keyword">using</span> SimObject = <span class="keyword">typename</span> Container::value_type;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          <span class="keywordflow">if</span> (SimObject::GetShape() != <a class="code" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">Shape::kSphere</a>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">Log::Warning</a>(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="stringliteral">&quot;DisplacementOp&quot;</span>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="stringliteral">&quot;Currently GPU/FPGA implementation only supports spherical &quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="stringliteral">&quot;shapes. Therefore, the CPU implementation will be used.&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            this-&gt;<a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        });</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#adec0728dcfbc7a05effddd642ba45a7b">   57</a></span>&#160;  <a class="code" href="classbdm_1_1DisplacementOp.html#adec0728dcfbc7a05effddd642ba45a7b">~DisplacementOp</a>() {}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#a6ba337952fa3e21776b85cbc327cf08e">   59</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classbdm_1_1DisplacementOp.html#a6ba337952fa3e21776b85cbc327cf08e">UseCpu</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">auto</span>* param = TSimulation::GetActive()-&gt;GetParam();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a> ||</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;           (!param-&gt;use_gpu_ &amp;&amp; !param-&gt;use_opencl_);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#ab370ac2ae040cfae30ed281d4db88911">   65</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1DisplacementOp.html#ab370ac2ae040cfae30ed281d4db88911">operator()</a>() {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span>* param = TSimulation::GetActive()-&gt;GetParam();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (param-&gt;use_gpu_ &amp;&amp; !<a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef USE_OPENCL</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (param-&gt;use_opencl_) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">auto</span>* rm = TSimulation::GetActive()-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        rm-&gt;ApplyOnAllTypes(</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            [](<span class="keyword">auto</span>* cells, uint16_t numa_node, uint16_t type_idx) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;              opencl_(cells, numa_node_, type_idx);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            });</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef USE_CUDA</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (!param-&gt;use_opencl_) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">auto</span>* rm = TSimulation::GetActive()-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        rm-&gt;ApplyOnAllTypes(</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            [](<span class="keyword">auto</span>* cells, uint16_t numa_node, uint16_t type_idx) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;              cuda_(cells, numa_node, type_idx);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            });</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">Log::Fatal</a>(<span class="stringliteral">&quot;DisplacementOp&quot;</span>,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                 <span class="stringliteral">&quot;Currently GPU/FPGA implementation only supports spherical &quot;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                 <span class="stringliteral">&quot;shapes.&quot;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">   99</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">  100</a></span>&#160;  <a class="code" href="classbdm_1_1DisplacementOpCpu.html">DisplacementOpCpu&lt;&gt;</a> <a class="code" href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">cpu_</a>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#ifdef USE_CUDA</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda&lt;&gt;</a> cuda_;  <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef USE_OPENCL</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classbdm_1_1DisplacementOpOpenCL.html">DisplacementOpOpenCL&lt;&gt;</a> opencl_;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span>};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif  // DISPLACEMENT_OP_H_</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSimObject&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#ae6e596dcf51df86147a5a071f6c0d390">   94</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1DisplacementOp.html#ae6e596dcf51df86147a5a071f6c0d390">operator()</a>(TSimObject&amp;&amp; sim_object) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">cpu_</a>(sim_object);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">  104</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">force_cpu_implementation_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">  105</a></span>&#160;  <a class="code" href="classbdm_1_1DisplacementOpCpu.html">DisplacementOpCpu&lt;&gt;</a> <a class="code" href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">cpu_</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#ifdef USE_CUDA</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda&lt;&gt;</a> cuda_;  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef USE_OPENCL</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classbdm_1_1DisplacementOpOpenCL.html">DisplacementOpOpenCL&lt;&gt;</a> opencl_;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif  // DISPLACEMENT_OP_H_</span></div>
 <div class="ttc" id="classbdm_1_1DisplacementOp_html_af2782c42308968c64f0fef918efecac8"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#af2782c42308968c64f0fef918efecac8">bdm::DisplacementOp::DisplacementOp</a></div><div class="ttdeci">DisplacementOp()</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00040">displacement_op.h:40</a></div></div>
 <div class="ttc" id="displacement__op__cuda_8h_html"><div class="ttname"><a href="displacement__op__cuda_8h.html">displacement_op_cuda.h</a></div></div>
 <div class="ttc" id="displacement__op__opencl_8h_html"><div class="ttname"><a href="displacement__op__opencl_8h.html">displacement_op_opencl.h</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpOpenCL_html"><div class="ttname"><a href="classbdm_1_1DisplacementOpOpenCL.html">bdm::DisplacementOpOpenCL</a></div><div class="ttdoc">Defines the 3D physical interactions between physical objects. </div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__opencl_8h_source.html#l00040">displacement_op_opencl.h:40</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_a30fb7f6a405338c9bddba3d7cbb07f16"><div class="ttname"><a href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">bdm::Log::Warning</a></div><div class="ttdeci">static void Warning(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints warning message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00065">log.h:65</a></div></div>
 <div class="ttc" id="param_8h_html"><div class="ttname"><a href="param_8h.html">param.h</a></div></div>
-<div class="ttc" id="classbdm_1_1DisplacementOp_html_a17d60acd3a69a0f82802007df77e5bc3"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">bdm::DisplacementOp::cpu_</a></div><div class="ttdeci">DisplacementOpCpu cpu_</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00100">displacement_op.h:100</a></div></div>
-<div class="ttc" id="classbdm_1_1DisplacementOp_html_ab370ac2ae040cfae30ed281d4db88911"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#ab370ac2ae040cfae30ed281d4db88911">bdm::DisplacementOp::operator()</a></div><div class="ttdeci">void operator()()</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00064">displacement_op.h:64</a></div></div>
+<div class="ttc" id="classbdm_1_1DisplacementOp_html_a17d60acd3a69a0f82802007df77e5bc3"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#a17d60acd3a69a0f82802007df77e5bc3">bdm::DisplacementOp::cpu_</a></div><div class="ttdeci">DisplacementOpCpu cpu_</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00105">displacement_op.h:105</a></div></div>
+<div class="ttc" id="classbdm_1_1DisplacementOp_html_ab370ac2ae040cfae30ed281d4db88911"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#ab370ac2ae040cfae30ed281d4db88911">bdm::DisplacementOp::operator()</a></div><div class="ttdeci">void operator()()</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00065">displacement_op.h:65</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_ad80c15ca7fb87dc59f68477f5e8166d6"><div class="ttname"><a href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints fatal error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00113">log.h:113</a></div></div>
-<div class="ttc" id="classbdm_1_1DisplacementOp_html_adec0728dcfbc7a05effddd642ba45a7b"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#adec0728dcfbc7a05effddd642ba45a7b">bdm::DisplacementOp::~DisplacementOp</a></div><div class="ttdeci">~DisplacementOp()</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00056">displacement_op.h:56</a></div></div>
+<div class="ttc" id="classbdm_1_1DisplacementOp_html_adec0728dcfbc7a05effddd642ba45a7b"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#adec0728dcfbc7a05effddd642ba45a7b">bdm::DisplacementOp::~DisplacementOp</a></div><div class="ttdeci">~DisplacementOp()</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00057">displacement_op.h:57</a></div></div>
 <div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">bdm::kSphere</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
 <div class="ttc" id="displacement__op__cpu_8h_html"><div class="ttname"><a href="displacement__op__cpu_8h.html">displacement_op_cpu.h</a></div></div>
 <div class="ttc" id="grid_8h_html"><div class="ttname"><a href="grid_8h.html">grid.h</a></div></div>
 <div class="ttc" id="simulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
-<div class="ttc" id="classbdm_1_1DisplacementOp_html_a6ba337952fa3e21776b85cbc327cf08e"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#a6ba337952fa3e21776b85cbc327cf08e">bdm::DisplacementOp::UseCpu</a></div><div class="ttdeci">bool UseCpu() const </div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00058">displacement_op.h:58</a></div></div>
-<div class="ttc" id="classbdm_1_1DisplacementOp_html_a92492b8dc06d13179898ec791471b2e0"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">bdm::DisplacementOp::force_cpu_implementation_</a></div><div class="ttdeci">bool force_cpu_implementation_</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00099">displacement_op.h:99</a></div></div>
+<div class="ttc" id="classbdm_1_1DisplacementOp_html_a6ba337952fa3e21776b85cbc327cf08e"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#a6ba337952fa3e21776b85cbc327cf08e">bdm::DisplacementOp::UseCpu</a></div><div class="ttdeci">bool UseCpu() const </div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00059">displacement_op.h:59</a></div></div>
+<div class="ttc" id="classbdm_1_1DisplacementOp_html_a92492b8dc06d13179898ec791471b2e0"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#a92492b8dc06d13179898ec791471b2e0">bdm::DisplacementOp::force_cpu_implementation_</a></div><div class="ttdeci">bool force_cpu_implementation_</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00104">displacement_op.h:104</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOp_html"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html">bdm::DisplacementOp</a></div><div class="ttdoc">Defines the 3D physical interactions between physical objects. </div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00038">displacement_op.h:38</a></div></div>
-<div class="ttc" id="classbdm_1_1DisplacementOp_html_ae6e596dcf51df86147a5a071f6c0d390"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#ae6e596dcf51df86147a5a071f6c0d390">bdm::DisplacementOp::operator()</a></div><div class="ttdeci">void operator()(TSimObject &amp;&amp;sim_object)</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00089">displacement_op.h:89</a></div></div>
+<div class="ttc" id="classbdm_1_1DisplacementOp_html_ae6e596dcf51df86147a5a071f6c0d390"><div class="ttname"><a href="classbdm_1_1DisplacementOp.html#ae6e596dcf51df86147a5a071f6c0d390">bdm::DisplacementOp::operator()</a></div><div class="ttdeci">void operator()(TSimObject &amp;&amp;sim_object)</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op_8h_source.html#l00094">displacement_op.h:94</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCpu_html"><div class="ttname"><a href="classbdm_1_1DisplacementOpCpu.html">bdm::DisplacementOpCpu</a></div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cpu_8h_source.html#l00031">displacement_op_cpu.h:31</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCuda_html"><div class="ttname"><a href="classbdm_1_1DisplacementOpCuda.html">bdm::DisplacementOpCuda</a></div><div class="ttdoc">Defines the 3D physical interactions between physical objects. </div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cuda_8h_source.html#l00032">displacement_op_cuda.h:32</a></div></div>
 <div class="ttc" id="shape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div></div>
@@ -239,7 +244,7 @@ $(document).ready(function(){initNavTree('displacement__op_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="displacement__op_8h.html">displacement_op.h</a></li>
-    <li class="footer">Generated on Mon Jan 21 2019 15:48:18 for BioDynaMo by
+    <li class="footer">Generated on Tue Jan 29 2019 13:05:27 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

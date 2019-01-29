@@ -12,5 +12,11 @@ var searchData=
   ['norm',['Norm',['../structbdm_1_1Math.html#a7f1e8761aa38ac6cb93d35bfa1ad2d26',1,'bdm::Math']]],
   ['normalize',['Normalize',['../structbdm_1_1Math.html#a06cf62fd723d1775714117f3d42cc0d4',1,'bdm::Math']]],
   ['nullbiologymodule',['NullBiologyModule',['../structbdm_1_1NullBiologyModule.html#afb667410d27de7267071c0e8bfe808a3',1,'bdm::NullBiologyModule::NullBiologyModule()'],['../structbdm_1_1NullBiologyModule.html#ad94e8a59595d1ffb0c31f90ae4325294',1,'bdm::NullBiologyModule::NullBiologyModule(const TEvent &amp;event, TBm *other, uint64_t new_oid=0)']]],
+  ['numa_5favailable',['numa_available',['../numa_8h.html#a185e19a5b3d5c5c86bb46bfc241fbbed',1,'numa.h']]],
+  ['numa_5fmove_5fpages',['numa_move_pages',['../numa_8h.html#a67d79e6b6f16df55cead3e83dbf27097',1,'numa.h']]],
+  ['numa_5fnode_5fof_5fcpu',['numa_node_of_cpu',['../numa_8h.html#a618fa597d7ee20a6bb6dd00567c7730f',1,'numa.h']]],
+  ['numa_5fnum_5fconfigured_5fcpus',['numa_num_configured_cpus',['../numa_8h.html#ab14a400ab10eb7b2a1049d9d3257f74a',1,'numa.h']]],
+  ['numa_5fnum_5fconfigured_5fnodes',['numa_num_configured_nodes',['../numa_8h.html#a22585176d6e08c221de8377637bd72a7',1,'numa.h']]],
+  ['numa_5frun_5fon_5fnode',['numa_run_on_node',['../numa_8h.html#afd99c98919326052154ccc388370c747',1,'numa.h']]],
   ['numberoftypes',['NumberOfTypes',['../classbdm_1_1ResourceManager.html#a6127aca4534546e0efd7c99e976582f7',1,'bdm::ResourceManager']]]
 ];

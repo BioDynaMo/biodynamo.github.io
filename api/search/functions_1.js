@@ -18,8 +18,10 @@ var searchData=
   ['applyonalldiffusiongrids',['ApplyOnAllDiffusionGrids',['../classbdm_1_1ResourceManager.html#ac8cfb4a6b143b4a59921d7ab081d0384',1,'bdm::ResourceManager']]],
   ['applyonallelements',['ApplyOnAllElements',['../classbdm_1_1ResourceManager.html#a830c32338145b48c97e4e7bc64ad19f3',1,'bdm::ResourceManager']]],
   ['applyonallelementsparallel',['ApplyOnAllElementsParallel',['../classbdm_1_1ResourceManager.html#aec867d8e6f3c47defd50a9b508729525',1,'bdm::ResourceManager']]],
+  ['applyonallelementsparalleldynamic',['ApplyOnAllElementsParallelDynamic',['../classbdm_1_1ResourceManager.html#a4d1fb2c2950adbf32728e9c852a317fb',1,'bdm::ResourceManager']]],
+  ['applyonallelementsparalleldynamicalternativews',['ApplyOnAllElementsParallelDynamicAlternativeWS',['../classbdm_1_1ResourceManager.html#a7fc7d46a6a0d4e335fa06dd081950a03',1,'bdm::ResourceManager']]],
+  ['applyonallelementsparallelnested',['ApplyOnAllElementsParallelNested',['../classbdm_1_1ResourceManager.html#a70ff2e8e9c551a3ae2430a512c4b4ae5',1,'bdm::ResourceManager']]],
   ['applyonalltypes',['ApplyOnAllTypes',['../classbdm_1_1ResourceManager.html#a7a8d6e674e70b39ec38b3ae726d912f5',1,'bdm::ResourceManager']]],
-  ['applyonalltypesparallel',['ApplyOnAllTypesParallel',['../classbdm_1_1ResourceManager.html#abfae576a005f5cca9d8e1b7f0ec11e26',1,'bdm::ResourceManager']]],
   ['applyonelement',['ApplyOnElement',['../classbdm_1_1ResourceManager.html#a4255c44092eb446798812ad0bb367b8e',1,'bdm::ResourceManager']]],
   ['assignfromconfig',['AssignFromConfig',['../structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ae365fefa1320254ffcfce9bc65ea2f5b',1,'bdm::experimental::neuroscience::Param::AssignFromConfig()'],['../structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a',1,'bdm::Param::AssignFromConfig()']]]
 ];

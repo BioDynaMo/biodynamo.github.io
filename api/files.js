@@ -134,6 +134,9 @@ var files =
     ] ],
     [ "string_util.h", "string__util_8h.html", "string__util_8h" ],
     [ "substance_initializers.h", "substance__initializers_8h.html", "substance__initializers_8h" ],
+    [ "thread_info.h", "thread__info_8h.html", [
+      [ "ThreadInfo", "classbdm_1_1ThreadInfo.html", "classbdm_1_1ThreadInfo" ]
+    ] ],
     [ "timing.h", "timing_8h.html", "timing_8h" ],
     [ "timing_aggregator.h", "timing__aggregator_8h.html", "timing__aggregator_8h" ],
     [ "tuple_util.h", "tuple__util_8h.html", "tuple__util_8h" ],

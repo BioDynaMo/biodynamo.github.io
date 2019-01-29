@@ -54,6 +54,8 @@ var searchData=
   ['bdm_5fsim_5fobject_5fpush_5fback_5fbody_5fiterator',['BDM_SIM_OBJECT_PUSH_BACK_BODY_ITERATOR',['../simulation__object__util_8h.html#ab251932ea74e0188d0ad7c34bb01c7c6',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5freserve_5fbody',['BDM_SIM_OBJECT_RESERVE_BODY',['../simulation__object__util_8h.html#a23ff23d7351000f051e39ed7131334ca',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5freserve_5fbody_5fiterator',['BDM_SIM_OBJECT_RESERVE_BODY_ITERATOR',['../simulation__object__util_8h.html#ae4a00a53df6e452aa735100e4937c370',1,'simulation_object_util.h']]],
+  ['bdm_5fsim_5fobject_5fresize_5fbody',['BDM_SIM_OBJECT_RESIZE_BODY',['../simulation__object__util_8h.html#a66d542fd64e9fed37b3208cd445ee0d5',1,'simulation_object_util.h']]],
+  ['bdm_5fsim_5fobject_5fresize_5fbody_5fiterator',['BDM_SIM_OBJECT_RESIZE_BODY_ITERATOR',['../simulation__object__util_8h.html#a8bef85e2339b9e3304fbbaad3420f297',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5fswap_5fand_5fpop_5fback_5fbody',['BDM_SIM_OBJECT_SWAP_AND_POP_BACK_BODY',['../simulation__object__util_8h.html#a73a6fba715ab81a0b480499f5ba84946',1,'simulation_object_util.h']]],
   ['bdm_5fsim_5fobject_5fswap_5fand_5fpop_5fback_5fbody_5fiterator',['BDM_SIM_OBJECT_SWAP_AND_POP_BACK_BODY_ITERATOR',['../simulation__object__util_8h.html#a8c149707fc249222dbb3af948327442b',1,'simulation_object_util.h']]],
   ['bdm_5fso_5fdefine',['BDM_SO_DEFINE',['../simulation__object__util_8h.html#a67552328ee60aaa4f258a0349aec1216',1,'simulation_object_util.h']]],

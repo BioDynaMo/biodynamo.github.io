@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
+   &#160;<span id="projectnumber">v0.1.0-142-g7b40e71</span>
    </div>
   </td>
  </tr>
@@ -153,9 +153,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a994ce1a15fffb12ce62ef46c54d2436f"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1Box.html#a994ce1a15fffb12ce62ef46c54d2436f">start_</a></td></tr>
 <tr class="separator:a994ce1a15fffb12ce62ef46c54d2436f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194b8517329f9978292518e81235d54e"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1Box.html#a194b8517329f9978292518e81235d54e">length_</a></td></tr>
-<tr class="memdesc:a194b8517329f9978292518e81235d54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">length of the linked list (i.e. number of simulation objects)  <a href="#a194b8517329f9978292518e81235d54e">More...</a><br/></td></tr>
-<tr class="separator:a194b8517329f9978292518e81235d54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf35192347bab383cf4b21cd6cbffedc"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1Box.html#adf35192347bab383cf4b21cd6cbffedc">length_</a></td></tr>
+<tr class="separator:adf35192347bab383cf4b21cd6cbffedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSimulation = Simulation&lt;&gt;&gt;<br/>
@@ -163,7 +162,7 @@ struct bdm::Grid&lt; TSimulation &gt;::Box</h3>
 
 <p>A single unit cube of the grid. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00089">89</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00095">95</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a41346e457ca0edafe4cba4a020d540da"></a>
 <div class="memitem">
@@ -188,7 +187,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00096">96</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00103">103</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +216,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Copy Constructor required for boxes_.resize() Since box values will be overwritten afterwards it forwards to the default ctor </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00100">100</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00107">107</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +272,7 @@ template&lt;typename TSimulationObjectVector &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00118">118</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00125">125</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +301,7 @@ template&lt;typename TGrid  = Grid&lt;TSimulation&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00154">154</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00161">161</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +328,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00108">108</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00115">115</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -357,26 +356,25 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00102">102</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00109">109</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a194b8517329f9978292518e81235d54e"></a>
+<a class="anchor" id="adf35192347bab383cf4b21cd6cbffedc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;uint16_t&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::Box::length_</td>
+          <td class="memname">std::atomic&lt;uint64_t&gt; <a class="el" href="classbdm_1_1Grid.html">bdm::Grid</a>&lt; TSimulation &gt;::Box::length_</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>length of the linked list (i.e. number of simulation objects) uint64_t, because sizeof(Box) = 16, for uint16_t and uint64_t </p>
 
-<p>length of the linked list (i.e. number of simulation objects) </p>
-
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00094">94</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00101">101</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +391,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>start value of the linked list of simulatio objects inside this box. Next element can be found at <code>successors_[start_]</code> </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00092">92</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00098">98</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +404,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Grid.html">Grid</a></li><li class="navelem"><a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a></li>
-    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
+    <li class="footer">Generated on Tue Jan 29 2019 13:05:27 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

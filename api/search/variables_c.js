@@ -19,5 +19,8 @@ var searchData=
   ['num_5fboxes_5faxis_5f',['num_boxes_axis_',['../classbdm_1_1DiffusionGrid.html#a16101fea9858034a44bcb7fac30469f3',1,'bdm::DiffusionGrid::num_boxes_axis_()'],['../classbdm_1_1Grid.html#ab0b87b94c5f67081a772177a8bb720e3',1,'bdm::Grid::num_boxes_axis_()']]],
   ['num_5fboxes_5fxy_5f',['num_boxes_xy_',['../classbdm_1_1Grid.html#aecdab9f047468ff3a4e53ba6ca2016e5',1,'bdm::Grid']]],
   ['num_5fobjects_5f',['num_objects_',['../classbdm_1_1DisplacementOpCuda.html#a670ad02944c7ac352ff7c6e8e9c45c12',1,'bdm::DisplacementOpCuda']]],
+  ['numa_5fnode_5f',['numa_node_',['../classbdm_1_1SoHandle.html#a70c686d6e0c1743a5d81ef14ef30b7de',1,'bdm::SoHandle::numa_node_()'],['../classbdm_1_1SimulationObjectExt.html#af2581a615b579c0a8fd0bcb0f4a70ff5',1,'bdm::SimulationObjectExt::numa_node_()']]],
+  ['numa_5fnodes_5f',['numa_nodes_',['../classbdm_1_1ResourceManager.html#ad65d308716ceebe9360d8f594fedce0e',1,'bdm::ResourceManager::numa_nodes_()'],['../classbdm_1_1ThreadInfo.html#a44218669ea9b2c69c8b5f0730fc469de',1,'bdm::ThreadInfo::numa_nodes_()']]],
+  ['numa_5fthread_5fid_5f',['numa_thread_id_',['../classbdm_1_1ThreadInfo.html#a1b85150dbaf69837590017bda20b5629',1,'bdm::ThreadInfo']]],
   ['numerical_5fode_5fsolver_5f',['numerical_ode_solver_',['../structbdm_1_1Param.html#a842fdc06bceb019667764f94b67b99f8',1,'bdm::Param']]]
 ];

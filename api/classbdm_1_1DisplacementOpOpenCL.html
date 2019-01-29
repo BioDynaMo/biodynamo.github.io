@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
+   &#160;<span id="projectnumber">v0.1.0-142-g7b40e71</span>
    </div>
   </td>
  </tr>
@@ -129,14 +129,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf1c490e7ac54feb8bc4f941627f7de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18cdb87b2cf7564762079484ba35030"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#ab18cdb87b2cf7564762079484ba35030">~DisplacementOpOpenCL</a> ()</td></tr>
 <tr class="separator:ab18cdb87b2cf7564762079484ba35030"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1536be921f4aad440926840b82f1f23"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
-<tr class="memitem:ae1536be921f4aad440926840b82f1f23"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
-&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#ae1536be921f4aad440926840b82f1f23">operator()</a> (TContainer *cells, uint16_t type_idx) const </td></tr>
-<tr class="separator:ae1536be921f4aad440926840b82f1f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad317a0965b03dc3335a2edca01b35bc9"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
-<tr class="memitem:ad317a0965b03dc3335a2edca01b35bc9"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
-&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#ad317a0965b03dc3335a2edca01b35bc9">operator()</a> (TContainer *cells, uint16_t type_idx)</td></tr>
-<tr class="separator:ad317a0965b03dc3335a2edca01b35bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f66595ecec8d655fb2f041afe6f31a"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
+<tr class="memitem:a15f66595ecec8d655fb2f041afe6f31a"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
+&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#a15f66595ecec8d655fb2f041afe6f31a">operator()</a> (TContainer *cells, uint16_t numa_node, uint16_t type_idx) const </td></tr>
+<tr class="separator:a15f66595ecec8d655fb2f041afe6f31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c9f3e8294112c0f34dafab3dc19dd0"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
+<tr class="memitem:a06c9f3e8294112c0f34dafab3dc19dd0"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
+&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpOpenCL.html#a06c9f3e8294112c0f34dafab3dc19dd0">operator()</a> (TContainer *cells, uint16_t numa_node, uint16_t type_idx)</td></tr>
+<tr class="separator:a06c9f3e8294112c0f34dafab3dc19dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSimulation = Simulation&lt;&gt;&gt;<br/>
@@ -201,7 +201,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae1536be921f4aad440926840b82f1f23"></a>
+<a class="anchor" id="a15f66595ecec8d655fb2f041afe6f31a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -217,6 +217,12 @@ template&lt;typename TContainer &gt; </div>
           <td>(</td>
           <td class="paramtype">TContainer *&#160;</td>
           <td class="paramname"><em>cells</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>numa_node</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -242,14 +248,14 @@ template&lt;typename TContainer &gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpOpenCL_ae1536be921f4aad440926840b82f1f23_cgraph.svg" width="808" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpOpenCL_a15f66595ecec8d655fb2f041afe6f31a_cgraph.svg" width="808" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad317a0965b03dc3335a2edca01b35bc9"></a>
+<a class="anchor" id="a06c9f3e8294112c0f34dafab3dc19dd0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -265,6 +271,12 @@ template&lt;typename TContainer &gt; </div>
           <td>(</td>
           <td class="paramtype">TContainer *&#160;</td>
           <td class="paramname"><em>cells</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>numa_node</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -298,7 +310,7 @@ template&lt;typename TContainer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DisplacementOpOpenCL.html">DisplacementOpOpenCL</a></li>
-    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
+    <li class="footer">Generated on Tue Jan 29 2019 13:05:27 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-141-gd61c95b</span>
+   &#160;<span id="projectnumber">v0.1.0-142-g7b40e71</span>
    </div>
   </td>
  </tr>
@@ -130,14 +130,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6af04a8788d52c9087fe30cf447d2311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1745e8e54aeb69a82d7ea8cd110323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a0a1745e8e54aeb69a82d7ea8cd110323">~DisplacementOpCuda</a> ()</td></tr>
 <tr class="separator:a0a1745e8e54aeb69a82d7ea8cd110323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5b64f081338cbdf410a87789d51aca"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
-<tr class="memitem:adf5b64f081338cbdf410a87789d51aca"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
-&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#adf5b64f081338cbdf410a87789d51aca">operator()</a> (TContainer *cells, uint16_t type_idx)</td></tr>
-<tr class="separator:adf5b64f081338cbdf410a87789d51aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65e2855142eb8e03303cdc1ca4e3afd6"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
-<tr class="memitem:a65e2855142eb8e03303cdc1ca4e3afd6"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
-&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a65e2855142eb8e03303cdc1ca4e3afd6">operator()</a> (TContainer *cells, uint16_t type_idx)</td></tr>
-<tr class="separator:a65e2855142eb8e03303cdc1ca4e3afd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833ca032df51262850294b3a4acb739f"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
+<tr class="memitem:a833ca032df51262850294b3a4acb739f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
+&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a833ca032df51262850294b3a4acb739f">operator()</a> (TContainer *cells, uint16_t numa_node, uint16_t type_idx)</td></tr>
+<tr class="separator:a833ca032df51262850294b3a4acb739f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468892c4068c9a61e4f5ba0cb143f0f2"><td class="memTemplParams" colspan="2">template&lt;typename TContainer &gt; </td></tr>
+<tr class="memitem:a468892c4068c9a61e4f5ba0cb143f0f2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!<a class="el" href="structbdm_1_1is__soa__sphere.html">is_soa_sphere</a><br class="typebreak"/>
+&lt; TContainer &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1DisplacementOpCuda.html#a468892c4068c9a61e4f5ba0cb143f0f2">operator()</a> (TContainer *cells, uint16_t numa_node, uint16_t type_idx)</td></tr>
+<tr class="separator:a468892c4068c9a61e4f5ba0cb143f0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -211,7 +211,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="adf5b64f081338cbdf410a87789d51aca"></a>
+<a class="anchor" id="a833ca032df51262850294b3a4acb739f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -227,6 +227,12 @@ template&lt;typename TContainer &gt; </div>
           <td>(</td>
           <td class="paramtype">TContainer *&#160;</td>
           <td class="paramname"><em>cells</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>numa_node</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -252,14 +258,14 @@ template&lt;typename TContainer &gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpCuda_adf5b64f081338cbdf410a87789d51aca_cgraph.svg" width="848" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DisplacementOpCuda_a833ca032df51262850294b3a4acb739f_cgraph.svg" width="848" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a65e2855142eb8e03303cdc1ca4e3afd6"></a>
+<a class="anchor" id="a468892c4068c9a61e4f5ba0cb143f0f2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -275,6 +281,12 @@ template&lt;typename TContainer &gt; </div>
           <td>(</td>
           <td class="paramtype">TContainer *&#160;</td>
           <td class="paramname"><em>cells</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>numa_node</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -381,7 +393,7 @@ template&lt;typename TSimulation  = Simulation&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a></li>
-    <li class="footer">Generated on Mon Jan 21 2019 15:48:19 for BioDynaMo by
+    <li class="footer">Generated on Tue Jan 29 2019 13:05:27 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
