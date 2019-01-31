@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: backend.h Source File</title>
+<title>BioDynaMo: core/sim_object/backend.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,18 +120,18 @@ $(document).ready(function(){initNavTree('backend_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef BACKEND_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BACKEND_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_SIM_OBJECT_BACKEND_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_SIM_OBJECT_BACKEND_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">macros.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="root__util_8h.html">root_util.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">core/util/macros.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="root_8h.html">core/util/root.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacebdm.html">   26</a></span>&#160;<span class="keyword">namespace </span>bdm {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classbdm_1_1VectorPlaceholder.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1VectorPlaceholder.html">VectorPlaceholder</a> {</div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('backend_8h_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classbdm_1_1OneElementArray.html#a36d0330a9d258f6176c6909e09e65528">  127</a></span>&#160;  T <a class="code" href="classbdm_1_1OneElementArray.html#a36d0330a9d258f6176c6909e09e65528">data_</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classbdm_1_1OneElementArray.html#a859eb5ece661b2c4851e6a217f42f4aa">  128</a></span>&#160;  <a class="code" href="root__util_8h.html#a64dc6aae7ee3dc454c736b85bcdf8729">BDM_ROOT_CLASS_DEF</a>(<a class="code" href="classbdm_1_1OneElementArray.html">OneElementArray</a>, 1)  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classbdm_1_1OneElementArray.html#a859eb5ece661b2c4851e6a217f42f4aa">  128</a></span>&#160;  <a class="code" href="root_8h.html#a64dc6aae7ee3dc454c736b85bcdf8729">BDM_ROOT_CLASS_DEF</a>(<a class="code" href="classbdm_1_1OneElementArray.html">OneElementArray</a>, 1)  <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="structbdm_1_1Scalar.html">  131</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1Scalar.html">Scalar</a> {</div>
@@ -234,13 +234,13 @@ $(document).ready(function(){initNavTree('backend_8h_source.html','');});
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif  // BACKEND_H_</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif  // CORE_SIM_OBJECT_BACKEND_H_</span></div>
 <div class="ttc" id="structbdm_1_1Scalar_html_aab14e76ceaebcec7c7fd12dac58fe2f9"><div class="ttname"><a href="structbdm_1_1Scalar.html#aab14e76ceaebcec7c7fd12dac58fe2f9">bdm::Scalar::Container</a></div><div class="ttdeci">std::vector&lt; T &gt; Container</div><div class="ttdoc">Data type to store a collection of simulation objects with this backend. </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00138">backend.h:138</a></div></div>
 <div class="ttc" id="classbdm_1_1VectorPlaceholder_html_a8e56cd330c1f76a30a882b802d893b65"><div class="ttname"><a href="classbdm_1_1VectorPlaceholder.html#a8e56cd330c1f76a30a882b802d893b65">bdm::VectorPlaceholder::size</a></div><div class="ttdeci">std::size_t size() const </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00040">backend.h:40</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_ae779765aa1a075682fe745e6de06a3f8"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#ae779765aa1a075682fe745e6de06a3f8">bdm::OneElementArray::end</a></div><div class="ttdeci">T * end()</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00121">backend.h:121</a></div></div>
-<div class="ttc" id="root__util_8h_html_a64dc6aae7ee3dc454c736b85bcdf8729"><div class="ttname"><a href="root__util_8h.html#a64dc6aae7ee3dc454c736b85bcdf8729">BDM_ROOT_CLASS_DEF</a></div><div class="ttdeci">#define BDM_ROOT_CLASS_DEF(class_name, class_version_id)</div><div class="ttdef"><b>Definition:</b> <a href="root__util_8h_source.html#l00306">root_util.h:306</a></div></div>
 <div class="ttc" id="classbdm_1_1VectorPlaceholder_html_a3bcd9b17d4403a65afbf49c69ce1fc96"><div class="ttname"><a href="classbdm_1_1VectorPlaceholder.html#a3bcd9b17d4403a65afbf49c69ce1fc96">bdm::VectorPlaceholder::VectorPlaceholder</a></div><div class="ttdeci">VectorPlaceholder(std::initializer_list&lt; T &gt; list)</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00038">backend.h:38</a></div></div>
 <div class="ttc" id="structbdm_1_1Soa_html_a2d106496c7972d3447d25469398d56af"><div class="ttname"><a href="structbdm_1_1Soa.html#a2d106496c7972d3447d25469398d56af">bdm::Soa::vec</a></div><div class="ttdeci">std::vector&lt; T &gt; vec</div><div class="ttdoc">Data type used to store data members of a class. </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00144">backend.h:144</a></div></div>
+<div class="ttc" id="root_8h_html"><div class="ttname"><a href="root_8h.html">root.h</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_a9bf93281f3a290cad56441fbdc88090a"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#a9bf93281f3a290cad56441fbdc88090a">bdm::OneElementArray::push_back</a></div><div class="ttdeci">void push_back(const T &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00104">backend.h:104</a></div></div>
 <div class="ttc" id="structbdm_1_1Soa_html"><div class="ttname"><a href="structbdm_1_1Soa.html">bdm::Soa</a></div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00141">backend.h:141</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_a7149c4727f97529807acc992edd19428"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#a7149c4727f97529807acc992edd19428">bdm::OneElementArray::OneElementArray</a></div><div class="ttdeci">OneElementArray(T &amp;&amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00086">backend.h:86</a></div></div>
@@ -251,7 +251,6 @@ $(document).ready(function(){initNavTree('backend_8h_source.html','');});
 <div class="ttc" id="classbdm_1_1VectorPlaceholder_html_a719ae5703f7b217a36db740a163f1fa4"><div class="ttname"><a href="classbdm_1_1VectorPlaceholder.html#a719ae5703f7b217a36db740a163f1fa4">bdm::VectorPlaceholder::push_back</a></div><div class="ttdeci">void push_back(const T &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00050">backend.h:50</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html"><div class="ttname"><a href="classbdm_1_1OneElementArray.html">bdm::OneElementArray</a></div><div class="ttdoc">This class represents an array with exactly one element. </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00080">backend.h:80</a></div></div>
 <div class="ttc" id="classbdm_1_1VectorPlaceholder_html_ac70efc5ab3fe42ad4b8e0869fdd2facc"><div class="ttname"><a href="classbdm_1_1VectorPlaceholder.html#ac70efc5ab3fe42ad4b8e0869fdd2facc">bdm::VectorPlaceholder::end</a></div><div class="ttdeci">const T * end() const </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00067">backend.h:67</a></div></div>
-<div class="ttc" id="root__util_8h_html"><div class="ttname"><a href="root__util_8h.html">root_util.h</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_aa441042080a4fefa3c505d94eab5c163"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#aa441042080a4fefa3c505d94eab5c163">bdm::OneElementArray::OneElementArray</a></div><div class="ttdeci">OneElementArray(const T &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00085">backend.h:85</a></div></div>
 <div class="ttc" id="classbdm_1_1VectorPlaceholder_html_a70a0c8b57009f564d3bccf3c8aaee778"><div class="ttname"><a href="classbdm_1_1VectorPlaceholder.html#a70a0c8b57009f564d3bccf3c8aaee778">bdm::VectorPlaceholder::operator[]</a></div><div class="ttdeci">T &amp; operator[](const size_t idx)</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00042">backend.h:42</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_aad1c727724ab56bc265a5c22d0b4e5bc"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#aad1c727724ab56bc265a5c22d0b4e5bc">bdm::OneElementArray::OneElementArray</a></div><div class="ttdeci">OneElementArray()</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00083">backend.h:83</a></div></div>
@@ -266,6 +265,7 @@ $(document).ready(function(){initNavTree('backend_8h_source.html','');});
 <div class="ttc" id="classbdm_1_1VectorPlaceholder_html_ab13bef276dde6ce902ca94e146b1f987"><div class="ttname"><a href="classbdm_1_1VectorPlaceholder.html#ab13bef276dde6ce902ca94e146b1f987">bdm::VectorPlaceholder::operator[]</a></div><div class="ttdeci">const T &amp; operator[](const size_t idx) const </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00046">backend.h:46</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_ae7c2fff84518c26500b3d65e15e42dc1"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#ae7c2fff84518c26500b3d65e15e42dc1">bdm::OneElementArray::end</a></div><div class="ttdeci">const T * end() const </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00124">backend.h:124</a></div></div>
 <div class="ttc" id="structbdm_1_1SoaRef_html_a0969f8c3bf1a415a5ab27bfc301034a8"><div class="ttname"><a href="structbdm_1_1SoaRef.html#a0969f8c3bf1a415a5ab27bfc301034a8">bdm::SoaRef::vec</a></div><div class="ttdeci">typename Soa::template vec&lt; T &gt; &amp; vec</div><div class="ttdoc">Data type used to store data members of a class. </div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00154">backend.h:154</a></div></div>
+<div class="ttc" id="root_8h_html_a64dc6aae7ee3dc454c736b85bcdf8729"><div class="ttname"><a href="root_8h.html#a64dc6aae7ee3dc454c736b85bcdf8729">BDM_ROOT_CLASS_DEF</a></div><div class="ttdeci">#define BDM_ROOT_CLASS_DEF(class_name, class_version_id)</div><div class="ttdef"><b>Definition:</b> <a href="root_8h_source.html#l00306">root.h:306</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_a7f9dc51d5e006e7f0f63c1aa8e8002f2"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#a7f9dc51d5e006e7f0f63c1aa8e8002f2">bdm::OneElementArray::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00116">backend.h:116</a></div></div>
 <div class="ttc" id="classbdm_1_1VectorPlaceholder_html_abacdf6f33b4f37c1e7cb840dac46faf0"><div class="ttname"><a href="classbdm_1_1VectorPlaceholder.html#abacdf6f33b4f37c1e7cb840dac46faf0">bdm::VectorPlaceholder::begin</a></div><div class="ttdeci">T * begin()</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00061">backend.h:61</a></div></div>
 <div class="ttc" id="classbdm_1_1OneElementArray_html_a7bf756198b54d0d3c49ab68dfab6c630"><div class="ttname"><a href="classbdm_1_1OneElementArray.html#a7bf756198b54d0d3c49ab68dfab6c630">bdm::OneElementArray::begin</a></div><div class="ttdeci">T * begin()</div><div class="ttdef"><b>Definition:</b> <a href="backend_8h_source.html#l00120">backend.h:120</a></div></div>
@@ -282,8 +282,8 @@ $(document).ready(function(){initNavTree('backend_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="backend_8h.html">backend.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_8417c195086d4ff6acfc795544c5eeb6.html">sim_object</a></li><li class="navelem"><a class="el" href="backend_8h.html">backend.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

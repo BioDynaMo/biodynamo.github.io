@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: thread_info.h Source File</title>
+<title>BioDynaMo: core/util/thread_info.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,15 +120,15 @@ $(document).ready(function(){initNavTree('thread__info_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef THREAD_INFO_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define THREAD_INFO_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_UTIL_THREAD_INFO_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_UTIL_THREAD_INFO_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;omp.h&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;sched.h&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="numa_8h.html">util/numa.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">core/util/log.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="numa_8h.html">core/util/numa.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -198,9 +198,10 @@ $(document).ready(function(){initNavTree('thread__info_8h_source.html','');});
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classbdm_1_1ThreadInfo.html#a93d1fa5cb62531a6871ae17614dd8024">  115</a></span>&#160;  std::vector&lt;int&gt; <a class="code" href="classbdm_1_1ThreadInfo.html#a93d1fa5cb62531a6871ae17614dd8024">threads_in_numa_</a>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif  // THREAD_INFO_H_</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif  // CORE_UTIL_THREAD_INFO_H_</span></div>
 <div class="ttc" id="classbdm_1_1ThreadInfo_html"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html">bdm::ThreadInfo</a></div><div class="ttdoc">This class stores information about each thread. (e.g. to which NUMA node it belongs to...</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00030">thread_info.h:30</a></div></div>
 <div class="ttc" id="classbdm_1_1ThreadInfo_html_a1b1ef16b68512b4a1066a078665f53c0"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a1b1ef16b68512b4a1066a078665f53c0">bdm::ThreadInfo::GetNumaNodes</a></div><div class="ttdeci">int GetNumaNodes() const </div><div class="ttdoc">Returns the number of NUMA nodes on this machine. </div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00048">thread_info.h:48</a></div></div>
 <div class="ttc" id="numa_8h_html"><div class="ttname"><a href="numa_8h.html">numa.h</a></div></div>
@@ -225,8 +226,8 @@ $(document).ready(function(){initNavTree('thread__info_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="thread__info_8h.html">thread_info.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_459a7c9a427a2877b0db19c6b8d6e89d.html">util</a></li><li class="navelem"><a class="el" href="thread__info_8h.html">thread_info.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

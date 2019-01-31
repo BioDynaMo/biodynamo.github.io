@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: gpu/displacement_op_cuda_kernel.h Source File</title>
+<title>BioDynaMo: core/gpu/displacement_op_cuda_kernel.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,10 +120,10 @@ $(document).ready(function(){initNavTree('displacement__op__cuda__kernel_8h_sour
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef DISPLACEMENT_OP_CUDA_KERNEL_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DISPLACEMENT_OP_CUDA_KERNEL_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_GPU_DISPLACEMENT_OP_CUDA_KERNEL_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_GPU_DISPLACEMENT_OP_CUDA_KERNEL_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="math_8h.html">math.h</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;stdio.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
@@ -167,7 +167,8 @@ $(document).ready(function(){initNavTree('displacement__op__cuda__kernel_8h_sour
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // DISPLACEMENT_OP_CUDA_KERNEL_H_</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // CORE_GPU_DISPLACEMENT_OP_CUDA_KERNEL_H_</span></div>
+<div class="ttc" id="math_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCudaKernel_html_a6bab00306a3b3ccc7a66d692fba5f96c"><div class="ttname"><a href="classbdm_1_1DisplacementOpCudaKernel.html#a6bab00306a3b3ccc7a66d692fba5f96c">bdm::DisplacementOpCudaKernel::d_mass_</a></div><div class="ttdeci">double * d_mass_</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cuda__kernel_8h_source.html#l00043">displacement_op_cuda_kernel.h:43</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCudaKernel_html_a4758aa387477b14cdf02f3013f606fca"><div class="ttname"><a href="classbdm_1_1DisplacementOpCudaKernel.html#a4758aa387477b14cdf02f3013f606fca">bdm::DisplacementOpCudaKernel::DisplacementOpCudaKernel</a></div><div class="ttdeci">DisplacementOpCudaKernel(uint32_t num_objects, uint32_t num_boxes)</div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCudaKernel_html_ac4663c24488e231181f15a424d436cbd"><div class="ttname"><a href="classbdm_1_1DisplacementOpCudaKernel.html#ac4663c24488e231181f15a424d436cbd">bdm::DisplacementOpCudaKernel::ResizeCellBuffers</a></div><div class="ttdeci">void ResizeCellBuffers(uint32_t num_cells)</div></div>
@@ -196,8 +197,8 @@ $(document).ready(function(){initNavTree('displacement__op__cuda__kernel_8h_sour
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6b3ae6988449b0834e9596fad5d75199.html">gpu</a></li><li class="navelem"><a class="el" href="displacement__op__cuda__kernel_8h.html">displacement_op_cuda_kernel.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_1194f1e4283959aa8e4c16c774981ba1.html">gpu</a></li><li class="navelem"><a class="el" href="displacement__op__cuda__kernel_8h.html">displacement_op_cuda_kernel.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

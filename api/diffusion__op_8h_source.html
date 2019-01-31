@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: diffusion_op.h Source File</title>
+<title>BioDynaMo: core/operation/diffusion_op.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,19 +120,19 @@ $(document).ready(function(){initNavTree('diffusion__op_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef DIFFUSION_OP_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DIFFUSION_OP_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_OPERATION_DIFFUSION_OP_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_OPERATION_DIFFUSION_OP_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diffusion__grid_8h.html">diffusion_grid.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="grid_8h.html">grid.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inline__vector_8h.html">inline_vector.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="param_8h.html">param.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">resource_manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inline__vector_8h.html">core/container/inline_vector.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diffusion__grid_8h.html">core/diffusion_grid.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="grid_8h.html">core/grid.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2param_2param_8h.html">core/param/param.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">core/resource_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">core/simulation.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
@@ -175,11 +175,11 @@ $(document).ready(function(){initNavTree('diffusion__op_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  // DIFFUSION_OP_H_</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  // CORE_OPERATION_DIFFUSION_OP_H_</span></div>
 <div class="ttc" id="diffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
 <div class="ttc" id="classbdm_1_1DiffusionGrid_html_a86d03c3d92b607d4c65a17bc30c165d2"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a86d03c3d92b607d4c65a17bc30c165d2">bdm::DiffusionGrid::CalculateGradient</a></div><div class="ttdeci">void CalculateGradient()</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00560">diffusion_grid.h:560</a></div></div>
+<div class="ttc" id="core_2param_2param_8h_html"><div class="ttname"><a href="core_2param_2param_8h.html">param.h</a></div></div>
 <div class="ttc" id="inline__vector_8h_html"><div class="ttname"><a href="inline__vector_8h.html">inline_vector.h</a></div></div>
-<div class="ttc" id="param_8h_html"><div class="ttname"><a href="param_8h.html">param.h</a></div></div>
 <div class="ttc" id="classbdm_1_1DiffusionGrid_html_acab47c37fa2b8e604d015791be32b2ea"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#acab47c37fa2b8e604d015791be32b2ea">bdm::DiffusionGrid::Update</a></div><div class="ttdeci">void Update(const std::array&lt; int32_t, 2 &gt; &amp;threshold_dimensions)</div><div class="ttdoc">Updates the grid dimensions, based on the given threshold values. The diffusion grid dimensions need ...</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00147">diffusion_grid.h:147</a></div></div>
 <div class="ttc" id="classbdm_1_1DiffusionGrid_html_ab51c423cea72cee71a7af99b0c1ee770"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770">bdm::DiffusionGrid::DiffuseEuler</a></div><div class="ttdeci">void DiffuseEuler()</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00401">diffusion_grid.h:401</a></div></div>
 <div class="ttc" id="classbdm_1_1DiffusionGrid_html_a02e069de1edb14a404da425037d63f7e"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e">bdm::DiffusionGrid::DiffuseEulerLeakingEdge</a></div><div class="ttdeci">void DiffuseEulerLeakingEdge()</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00460">diffusion_grid.h:460</a></div></div>
@@ -197,8 +197,8 @@ $(document).ready(function(){initNavTree('diffusion__op_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="diffusion__op_8h.html">diffusion_op.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_087ef7b4b2bc9758818ca5b5acc1bcc7.html">operation</a></li><li class="navelem"><a class="el" href="diffusion__op_8h.html">diffusion_op.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

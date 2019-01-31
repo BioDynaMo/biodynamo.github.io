@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: default_force.h Source File</title>
+<title>BioDynaMo: core/default_force.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,18 +120,18 @@ $(document).ready(function(){initNavTree('default__force_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef DEFAULT_FORCE_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DEFAULT_FORCE_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_DEFAULT_FORCE_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_DEFAULT_FORCE_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="backend_8h.html">backend.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="math__util_8h.html">math_util.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="random_8h.html">random.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">shape.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">core/shape.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="backend_8h.html">core/sim_object/backend.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">core/simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">core/util/log.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="math_8h.html">core/util/math.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="random_8h.html">core/util/random.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
@@ -463,16 +463,17 @@ $(document).ready(function(){initNavTree('default__force_8h_source.html','');});
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#endif  // DEFAULT_FORCE_H_</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#endif  // CORE_DEFAULT_FORCE_H_</span></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a2055df84fa6c354f566821e322275209"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a2055df84fa6c354f566821e322275209">bdm::DefaultForce::DefaultForce</a></div><div class="ttdeci">DefaultForce()</div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00032">default_force.h:32</a></div></div>
-<div class="ttc" id="structbdm_1_1Math_html_aed3c71a56eb984be1e7c318fa2056fb2"><div class="ttname"><a href="structbdm_1_1Math.html#aed3c71a56eb984be1e7c318fa2056fb2">bdm::Math::ScalarMult</a></div><div class="ttdeci">static std::array&lt; double, N &gt; ScalarMult(double k, const std::array&lt; double, N &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="math__util_8h_source.html#l00078">math_util.h:78</a></div></div>
+<div class="ttc" id="math_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
+<div class="ttc" id="structbdm_1_1Math_html_aed3c71a56eb984be1e7c318fa2056fb2"><div class="ttname"><a href="structbdm_1_1Math.html#aed3c71a56eb984be1e7c318fa2056fb2">bdm::Math::ScalarMult</a></div><div class="ttdeci">static std::array&lt; double, N &gt; ScalarMult(double k, const std::array&lt; double, N &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00080">math.h:80</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a84d963895defe81c60824eb5e56b5823"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a84d963895defe81c60824eb5e56b5823">bdm::DefaultForce::ForceBetweenSpheres</a></div><div class="ttdeci">void ForceBetweenSpheres(const TSphereLhs *sphere_lhs, const TSphereRhs *sphere_rhs, std::array&lt; double, 3 &gt; *result) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00086">default_force.h:86</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_ade8beaeb01ab9be1f2179beb577b960b"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#ade8beaeb01ab9be1f2179beb577b960b">bdm::DefaultForce::operator=</a></div><div class="ttdeci">DefaultForce &amp; operator=(const DefaultForce &amp;)=delete</div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a60ee811d3593be9a541ff349bb4d7626"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a60ee811d3593be9a541ff349bb4d7626">bdm::DefaultForce::GetForce</a></div><div class="ttdeci">std::enable_if&lt; TLhs::GetShape()==kCylinder &amp;&amp;TRhs::GetShape()==kSphere, std::array&lt; double, 4 &gt; &gt;::type GetForce(const TLhs *lhs, const TRhs *rhs) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00061">default_force.h:61</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a9bb58e49a1f7c999c3d022659a71958a"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a9bb58e49a1f7c999c3d022659a71958a">bdm::DefaultForce::GetForce</a></div><div class="ttdeci">std::enable_if&lt; TLhs::GetShape()==kSphere &amp;&amp;TRhs::GetShape()==kSphere, std::array&lt; double, 3 &gt; &gt;::type GetForce(const TLhs *lhs, const TRhs *rhs) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00041">default_force.h:41</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a6aa838a7a874dda0afa80d06952d0afc"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a6aa838a7a874dda0afa80d06952d0afc">bdm::DefaultForce::ForceBetweenCylinders</a></div><div class="ttdeci">void ForceBetweenCylinders(const TCylinderLhs *cylinder1, const TCylinderRhs *cylinder2, std::array&lt; double, 4 &gt; *result) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00249">default_force.h:249</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a745a5966c8d4a8c4d9b2a76d62a14387"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a745a5966c8d4a8c4d9b2a76d62a14387">bdm::DefaultForce::ForceOnACylinderFromASphere</a></div><div class="ttdeci">void ForceOnACylinderFromASphere(const TCylinder *cylinder, const TSphere *sphere, std::array&lt; double, 4 &gt; *result) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00140">default_force.h:140</a></div></div>
-<div class="ttc" id="structbdm_1_1Math_html_a6e410e3dc82bab5dd53e0157df3587b2"><div class="ttname"><a href="structbdm_1_1Math.html#a6e410e3dc82bab5dd53e0157df3587b2">bdm::Math::Add</a></div><div class="ttdeci">static std::array&lt; T, N &gt; Add(const std::array&lt; T, N &gt; &amp;a, const std::array&lt; T, N &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="math__util_8h_source.html#l00036">math_util.h:36</a></div></div>
+<div class="ttc" id="structbdm_1_1Math_html_a6e410e3dc82bab5dd53e0157df3587b2"><div class="ttname"><a href="structbdm_1_1Math.html#a6e410e3dc82bab5dd53e0157df3587b2">bdm::Math::Add</a></div><div class="ttdeci">static std::array&lt; T, N &gt; Add(const std::array&lt; T, N &gt; &amp;a, const std::array&lt; T, N &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00038">math.h:38</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_ac90e94f7ac192dd38d2a789ae768dd05"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#ac90e94f7ac192dd38d2a789ae768dd05">bdm::DefaultForce::GetForce</a></div><div class="ttdeci">std::array&lt; double, 3 &gt; GetForce(...) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00077">default_force.h:77</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a984db6ac7ec691eb8fa7fc5622c7ea6a"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a984db6ac7ec691eb8fa7fc5622c7ea6a">bdm::DefaultForce::ComputeForceOfASphereOnASphere</a></div><div class="ttdeci">std::array&lt; double, 4 &gt; ComputeForceOfASphereOnASphere(const std::array&lt; double, 3 &gt; &amp;c1, double r1, const std::array&lt; double, 3 &gt; &amp;c2, double r2) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00324">default_force.h:324</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_ad80c15ca7fb87dc59f68477f5e8166d6"><div class="ttname"><a href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints fatal error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00113">log.h:113</a></div></div>
@@ -480,26 +481,25 @@ $(document).ready(function(){initNavTree('default__force_8h_source.html','');});
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a8a62f488e1fed5f63ce1d8c59a608809"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a8a62f488e1fed5f63ce1d8c59a608809">bdm::DefaultForce::ForceOnASphereFromACylinder</a></div><div class="ttdeci">void ForceOnASphereFromACylinder(const TSphere *sphere, const TCylinder *cylinder, std::array&lt; double, 3 &gt; *result) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00238">default_force.h:238</a></div></div>
 <div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">bdm::kSphere</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html"><div class="ttname"><a href="classbdm_1_1DefaultForce.html">bdm::DefaultForce</a></div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00030">default_force.h:30</a></div></div>
-<div class="ttc" id="structbdm_1_1Math_html_a80c38cbb986a66639c5ff0ccfce5674e"><div class="ttname"><a href="structbdm_1_1Math.html#a80c38cbb986a66639c5ff0ccfce5674e">bdm::Math::Subtract</a></div><div class="ttdeci">static std::array&lt; T, N &gt; Subtract(const std::array&lt; T, N &gt; &amp;a, const std::array&lt; T, N &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="math__util_8h_source.html#l00050">math_util.h:50</a></div></div>
+<div class="ttc" id="structbdm_1_1Math_html_a80c38cbb986a66639c5ff0ccfce5674e"><div class="ttname"><a href="structbdm_1_1Math.html#a80c38cbb986a66639c5ff0ccfce5674e">bdm::Math::Subtract</a></div><div class="ttdeci">static std::array&lt; T, N &gt; Subtract(const std::array&lt; T, N &gt; &amp;a, const std::array&lt; T, N &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00052">math.h:52</a></div></div>
 <div class="ttc" id="simulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html"><div class="ttname"><a href="structbdm_1_1Simulation.html">bdm::Simulation</a></div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00049">simulation.h:49</a></div></div>
 <div class="ttc" id="random_8h_html"><div class="ttname"><a href="random_8h.html">random.h</a></div></div>
 <div class="ttc" id="shape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div></div>
-<div class="ttc" id="structbdm_1_1Math_html_a7f1e8761aa38ac6cb93d35bfa1ad2d26"><div class="ttname"><a href="structbdm_1_1Math.html#a7f1e8761aa38ac6cb93d35bfa1ad2d26">bdm::Math::Norm</a></div><div class="ttdeci">static double Norm(const std::array&lt; double, 3 &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="math__util_8h_source.html#l00095">math_util.h:95</a></div></div>
+<div class="ttc" id="structbdm_1_1Math_html_a7f1e8761aa38ac6cb93d35bfa1ad2d26"><div class="ttname"><a href="structbdm_1_1Math.html#a7f1e8761aa38ac6cb93d35bfa1ad2d26">bdm::Math::Norm</a></div><div class="ttdeci">static double Norm(const std::array&lt; double, 3 &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00097">math.h:97</a></div></div>
 <div class="ttc" id="backend_8h_html"><div class="ttname"><a href="backend_8h.html">backend.h</a></div></div>
-<div class="ttc" id="structbdm_1_1Math_html_a65bded2897a4df9a78328fa315872f0c"><div class="ttname"><a href="structbdm_1_1Math.html#a65bded2897a4df9a78328fa315872f0c">bdm::Math::GetL2Distance</a></div><div class="ttdeci">static double GetL2Distance(const std::array&lt; double, 3 &gt; &amp;pos1, const std::array&lt; double, 3 &gt; &amp;pos2)</div><div class="ttdef"><b>Definition:</b> <a href="math__util_8h_source.html#l00116">math_util.h:116</a></div></div>
+<div class="ttc" id="structbdm_1_1Math_html_a65bded2897a4df9a78328fa315872f0c"><div class="ttname"><a href="structbdm_1_1Math.html#a65bded2897a4df9a78328fa315872f0c">bdm::Math::GetL2Distance</a></div><div class="ttdeci">static double GetL2Distance(const std::array&lt; double, 3 &gt; &amp;pos1, const std::array&lt; double, 3 &gt; &amp;pos2)</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00118">math.h:118</a></div></div>
 <div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
 <div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055">bdm::kCylinder</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a94df2bab2c9c2145d254db21cec9ed7d"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a94df2bab2c9c2145d254db21cec9ed7d">bdm::DefaultForce::GetForce</a></div><div class="ttdeci">std::enable_if&lt; TLhs::GetShape()==kCylinder &amp;&amp;TRhs::GetShape()==kCylinder, std::array&lt; double, 4 &gt; &gt;::type GetForce(const TLhs *lhs, const TRhs *rhs) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00071">default_force.h:71</a></div></div>
-<div class="ttc" id="math__util_8h_html"><div class="ttname"><a href="math__util_8h.html">math_util.h</a></div></div>
 <div class="ttc" id="classbdm_1_1DefaultForce_html_a6ff305b933e1674d3c30ddead73e85cd"><div class="ttname"><a href="classbdm_1_1DefaultForce.html#a6ff305b933e1674d3c30ddead73e85cd">bdm::DefaultForce::GetForce</a></div><div class="ttdeci">std::enable_if&lt; TLhs::GetShape()==kSphere &amp;&amp;TRhs::GetShape()==kCylinder, std::array&lt; double, 3 &gt; &gt;::type GetForce(const TLhs *lhs, const TRhs *rhs) const </div><div class="ttdef"><b>Definition:</b> <a href="default__force_8h_source.html#l00051">default_force.h:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="default__force_8h.html">default_force.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="default__force_8h.html">default_force.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

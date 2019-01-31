@@ -42,11 +42,11 @@ var NAVTREEINDEX =
 "annotated.html",
 "classbdm_1_1DisplacementOpCudaKernel.html#a6bab00306a3b3ccc7a66d692fba5f96c",
 "classbdm_1_1ResourceManager.html#a1061c86d9c6f973fbac5d0d6b50d0898",
-"classbdm_1_1SoaSimulationObject.html#a86208cd6b137985b81626e284fb131fc",
+"classbdm_1_1SoaSimObject.html#a833cdd00fe1189475107981b73b284c0",
 "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#afb4feb2c648f5922b8a39e3b809cb2cc",
-"in__place__exec__ctxt_8h_source.html",
-"structbdm_1_1Grid_1_1NeighborIterator.html#ad6525b3b6a7239666175f894b500793d",
-"timing__aggregator_8h.html"
+"grid_8h.html",
+"structbdm_1_1Grid_1_1NeighborIterator.html#ad6771e9a2129f9ea84d89308fe315fe6",
+"timing__aggregator_8h.html#a4fc06c0a9fdcc7851353ca573c3c163a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

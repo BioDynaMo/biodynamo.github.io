@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: biology_module/grow_divide.h Source File</title>
+<title>BioDynaMo: core/biology_module/grow_divide.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,12 +120,12 @@ $(document).ready(function(){initNavTree('grow__divide_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef BIOLOGY_MODULE_GROW_DIVIDE_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BIOLOGY_MODULE_GROW_DIVIDE_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_BIOLOGY_MODULE_GROW_DIVIDE_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_BIOLOGY_MODULE_GROW_DIVIDE_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="biology__module__util_8h.html">biology_module_util.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cell__division__event_8h.html">event/cell_division_event.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="root__util_8h.html">root_util.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="biology__module_8h.html">core/biology_module/biology_module.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cell__division__event_8h.html">core/event/cell_division_event.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="root_8h.html">core/util/root.h</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
@@ -156,24 +156,24 @@ $(document).ready(function(){initNavTree('grow__divide_8h_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structbdm_1_1GrowDivide.html#a3bb6c7fb619a182b2d54b614dd8a003e">   56</a></span>&#160;  <a class="code" href="root__util_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5">BDM_CLASS_DEF_NV</a>(<a class="code" href="structbdm_1_1GrowDivide.html">GrowDivide</a>, 1);</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structbdm_1_1GrowDivide.html#a3bb6c7fb619a182b2d54b614dd8a003e">   56</a></span>&#160;  <a class="code" href="root_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5">BDM_CLASS_DEF_NV</a>(<a class="code" href="structbdm_1_1GrowDivide.html">GrowDivide</a>, 1);</div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77">   57</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77">threshold_</a> = 40;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432">   58</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432">growth_rate_</a> = 300;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  // BIOLOGY_MODULE_GROW_DIVIDE_H_</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  // CORE_BIOLOGY_MODULE_GROW_DIVIDE_H_</span></div>
 <div class="ttc" id="structbdm_1_1GrowDivide_html_aa349b719939d7a8caff9da4eafe06cb6"><div class="ttname"><a href="structbdm_1_1GrowDivide.html#aa349b719939d7a8caff9da4eafe06cb6">bdm::GrowDivide::Run</a></div><div class="ttdeci">void Run(T *cell)</div><div class="ttdef"><b>Definition:</b> <a href="grow__divide_8h_source.html#l00047">grow_divide.h:47</a></div></div>
 <div class="ttc" id="structbdm_1_1GrowDivide_html_a0efd18f12d3a1b969141301c710c64f8"><div class="ttname"><a href="structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8">bdm::GrowDivide::GrowDivide</a></div><div class="ttdeci">GrowDivide(double threshold, double growth_rate, std::initializer_list&lt; EventId &gt; event_list)</div><div class="ttdef"><b>Definition:</b> <a href="grow__divide_8h_source.html#l00028">grow_divide.h:28</a></div></div>
 <div class="ttc" id="structbdm_1_1GrowDivide_html"><div class="ttname"><a href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></div><div class="ttdef"><b>Definition:</b> <a href="grow__divide_8h_source.html#l00026">grow_divide.h:26</a></div></div>
+<div class="ttc" id="root_8h_html"><div class="ttname"><a href="root_8h.html">root.h</a></div></div>
 <div class="ttc" id="cell__division__event_8h_html"><div class="ttname"><a href="cell__division__event_8h.html">cell_division_event.h</a></div></div>
+<div class="ttc" id="root_8h_html_a7ef6be35d6b3f2ce05d2db5ee58beeb5"><div class="ttname"><a href="root_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5">BDM_CLASS_DEF_NV</a></div><div class="ttdeci">#define BDM_CLASS_DEF_NV(class_name, class_version_id)</div><div class="ttdoc">Forward all calls to BDM_NULL_CLASS_DEF. </div><div class="ttdef"><b>Definition:</b> <a href="root_8h_source.html#l00302">root.h:302</a></div></div>
 <div class="ttc" id="structbdm_1_1GrowDivide_html_aae25247c6543918f1be8f38836d7fb46"><div class="ttname"><a href="structbdm_1_1GrowDivide.html#aae25247c6543918f1be8f38836d7fb46">bdm::GrowDivide::EventHandler</a></div><div class="ttdeci">void EventHandler(const TEvent &amp;, TBms *...)</div><div class="ttdef"><b>Definition:</b> <a href="grow__divide_8h_source.html#l00044">grow_divide.h:44</a></div></div>
-<div class="ttc" id="biology__module__util_8h_html"><div class="ttname"><a href="biology__module__util_8h.html">biology_module_util.h</a></div></div>
 <div class="ttc" id="namespacebdm_html_a74fd079a5b33c8c675f366cd83bf7b0d"><div class="ttname"><a href="namespacebdm.html#a74fd079a5b33c8c675f366cd83bf7b0d">bdm::gAllEventIds</a></div><div class="ttdeci">const EventId gAllEventIds</div><div class="ttdef"><b>Definition:</b> <a href="event_8h_source.html#l00033">event.h:33</a></div></div>
-<div class="ttc" id="root__util_8h_html_a7ef6be35d6b3f2ce05d2db5ee58beeb5"><div class="ttname"><a href="root__util_8h.html#a7ef6be35d6b3f2ce05d2db5ee58beeb5">BDM_CLASS_DEF_NV</a></div><div class="ttdeci">#define BDM_CLASS_DEF_NV(class_name, class_version_id)</div><div class="ttdoc">Forward all calls to BDM_NULL_CLASS_DEF. </div><div class="ttdef"><b>Definition:</b> <a href="root__util_8h_source.html#l00302">root_util.h:302</a></div></div>
-<div class="ttc" id="root__util_8h_html"><div class="ttname"><a href="root__util_8h.html">root_util.h</a></div></div>
-<div class="ttc" id="structbdm_1_1BaseBiologyModule_html"><div class="ttname"><a href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></div><div class="ttdef"><b>Definition:</b> <a href="biology__module__util_8h_source.html#l00026">biology_module_util.h:26</a></div></div>
+<div class="ttc" id="biology__module_8h_html"><div class="ttname"><a href="biology__module_8h.html">biology_module.h</a></div></div>
+<div class="ttc" id="structbdm_1_1BaseBiologyModule_html"><div class="ttname"><a href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></div><div class="ttdef"><b>Definition:</b> <a href="biology__module_8h_source.html#l00026">biology_module.h:26</a></div></div>
 <div class="ttc" id="structbdm_1_1GrowDivide_html_adf1e1edbbe23c0d539e261885c98d407"><div class="ttname"><a href="structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407">bdm::GrowDivide::GrowDivide</a></div><div class="ttdeci">GrowDivide()</div><div class="ttdef"><b>Definition:</b> <a href="grow__divide_8h_source.html#l00027">grow_divide.h:27</a></div></div>
 <div class="ttc" id="structbdm_1_1GrowDivide_html_aa9aa6da5ba956a2d58c566c35884cd77"><div class="ttname"><a href="structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77">bdm::GrowDivide::threshold_</a></div><div class="ttdeci">double threshold_</div><div class="ttdef"><b>Definition:</b> <a href="grow__divide_8h_source.html#l00057">grow_divide.h:57</a></div></div>
 <div class="ttc" id="structbdm_1_1GrowDivide_html_af79c81bc5c6ef2aba82f1fa84d8fc432"><div class="ttname"><a href="structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432">bdm::GrowDivide::growth_rate_</a></div><div class="ttdeci">double growth_rate_</div><div class="ttdef"><b>Definition:</b> <a href="grow__divide_8h_source.html#l00058">grow_divide.h:58</a></div></div>
@@ -183,8 +183,8 @@ $(document).ready(function(){initNavTree('grow__divide_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_482e3b5788813bb8988d91880328383c.html">biology_module</a></li><li class="navelem"><a class="el" href="grow__divide_8h.html">grow_divide.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_cc1139eeea87fb0d81a0dc0c64778f26.html">biology_module</a></li><li class="navelem"><a class="el" href="grow__divide_8h.html">grow_divide.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

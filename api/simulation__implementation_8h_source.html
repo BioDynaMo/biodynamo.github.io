@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: simulation_implementation.h Source File</title>
+<title>BioDynaMo: core/simulation_implementation.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('simulation__implementation_8h_source.h
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// regarding copyright ownership.</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef SIMULATION_IMPLEMENTATION_H_</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SIMULATION_IMPLEMENTATION_H_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef CORE_SIMULATION_IMPLEMENTATION_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_SIMULATION_IMPLEMENTATION_H_</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;cpptoml/cpptoml.h&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;omp.h&gt;</span></div>
@@ -129,14 +129,14 @@ $(document).ready(function(){initNavTree('simulation__implementation_8h_source.h
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="command__line__options_8h.html">command_line_options.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="in__place__exec__ctxt_8h.html">execution_context/in_place_exec_ctxt.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="grid_8h.html">grid.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="param_8h.html">param.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">resource_manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="scheduler_8h.html">scheduler.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="string__util_8h.html">string_util.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="in__place__exec__ctxt_8h.html">core/execution_context/in_place_exec_ctxt.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="grid_8h.html">core/grid.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="command__line__options_8h.html">core/param/command_line_options.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2param_2param_8h.html">core/param/param.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">core/resource_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="scheduler_8h.html">core/scheduler.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">core/util/log.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="string_8h.html">core/util/string.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;version.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>bdm {</div>
@@ -387,11 +387,13 @@ $(document).ready(function(){initNavTree('simulation__implementation_8h_source.h
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#endif  // SIMULATION_IMPLEMENTATION_H_</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#endif  // CORE_SIMULATION_IMPLEMENTATION_H_</span></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a33abc2c2ba3b42398e8375e4cc345078"><div class="ttname"><a href="structbdm_1_1Simulation.html#a33abc2c2ba3b42398e8375e4cc345078">bdm::Simulation::InitializeUniqueName</a></div><div class="ttdeci">void InitializeUniqueName(const std::string &amp;simulation_name)</div><div class="ttdoc">This function initialzes unique_name_ </div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_afec7f917abc41c17aaa66bfadc94f0c6"><div class="ttname"><a href="structbdm_1_1Simulation.html#afec7f917abc41c17aaa66bfadc94f0c6">bdm::Simulation::GetScheduler</a></div><div class="ttdeci">Scheduler&lt; Simulation &gt; * GetScheduler()</div></div>
 <div class="ttc" id="command__line__options_8h_html"><div class="ttname"><a href="command__line__options_8h.html">command_line_options.h</a></div></div>
 <div class="ttc" id="namespacebdm_html_a57c691b418c95e9566f3b899b7feb14b"><div class="ttname"><a href="namespacebdm.html#a57c691b418c95e9566f3b899b7feb14b">bdm::DefaultSimulationOptionParser</a></div><div class="ttdeci">CommandLineOptions DefaultSimulationOptionParser(int &amp;argc, const char **&amp;argv)</div><div class="ttdef"><b>Definition:</b> <a href="command__line__options_8cc_source.html#l00024">command_line_options.cc:24</a></div></div>
+<div class="ttc" id="string_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div></div>
+<div class="ttc" id="core_2param_2param_8h_html"><div class="ttname"><a href="core_2param_2param_8h.html">param.h</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_ae5c33426414fcfd2f5f8aa978f9f24c0"><div class="ttname"><a href="structbdm_1_1Simulation.html#ae5c33426414fcfd2f5f8aa978f9f24c0">bdm::Simulation::Restore</a></div><div class="ttdeci">void Restore(Simulation &amp;&amp;restored)</div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_accd6c2206bc66347278ff96faae9592a"><div class="ttname"><a href="structbdm_1_1Simulation.html#accd6c2206bc66347278ff96faae9592a">bdm::Simulation::InitializeRuntimeParams</a></div><div class="ttdeci">void InitializeRuntimeParams(int argc, const char **argv, const TSetParamLambda &amp;set_param)</div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a536a3ddc6320efc5be0da9622130fd03"><div class="ttname"><a href="structbdm_1_1Simulation.html#a536a3ddc6320efc5be0da9622130fd03">bdm::Simulation::Initialize</a></div><div class="ttdeci">void Initialize(int argc, const char **argv, const TSetParamLambda &amp;set_param)</div><div class="ttdoc">Initialize Simulation. </div></div>
@@ -400,21 +402,19 @@ $(document).ready(function(){initNavTree('simulation__implementation_8h_source.h
 <div class="ttc" id="structbdm_1_1Simulation_html_a9a681d615157b00dc912425afb6a272c"><div class="ttname"><a href="structbdm_1_1Simulation.html#a9a681d615157b00dc912425afb6a272c">bdm::Simulation::GetAllExecCtxts</a></div><div class="ttdeci">std::vector&lt; InPlaceExecutionContext&lt; TCTParam &gt; * &gt; &amp; GetAllExecCtxts()</div><div class="ttdoc">Returns all thread local execution contexts. </div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_ac9ec9591974839375ce0b5346a2915b0"><div class="ttname"><a href="structbdm_1_1Simulation.html#ac9ec9591974839375ce0b5346a2915b0">bdm::Simulation::Simulation</a></div><div class="ttdeci">Simulation(TRootIOCtor *p)</div><div class="ttdef"><b>Definition:</b> <a href="simulation__implementation_8h_source.html#l00052">simulation_implementation.h:52</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_a30fb7f6a405338c9bddba3d7cbb07f16"><div class="ttname"><a href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">bdm::Log::Warning</a></div><div class="ttdeci">static void Warning(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints warning message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00065">log.h:65</a></div></div>
-<div class="ttc" id="string__util_8h_html"><div class="ttname"><a href="string__util_8h.html">string_util.h</a></div></div>
 <div class="ttc" id="scheduler_8h_html"><div class="ttname"><a href="scheduler_8h.html">scheduler.h</a></div></div>
-<div class="ttc" id="param_8h_html"><div class="ttname"><a href="param_8h.html">param.h</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a8383591632e5fb3c17e4224931f33bd9"><div class="ttname"><a href="structbdm_1_1Simulation.html#a8383591632e5fb3c17e4224931f33bd9">bdm::Simulation::Activate</a></div><div class="ttdeci">void Activate()</div><div class="ttdoc">Activates this simulation. </div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_aabf6454a11b2285629501929af86c652"><div class="ttname"><a href="structbdm_1_1Simulation.html#aabf6454a11b2285629501929af86c652">bdm::Simulation::GetRandom</a></div><div class="ttdeci">Random * GetRandom()</div><div class="ttdoc">Returns a thread local random number generator. </div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a06289aa9cd50e2d0045f3e5c809b2749"><div class="ttname"><a href="structbdm_1_1Simulation.html#a06289aa9cd50e2d0045f3e5c809b2749">bdm::Simulation::GetOutputDir</a></div><div class="ttdeci">const std::string &amp; GetOutputDir() const </div><div class="ttdoc">Returns the output directory for this specific simulation. </div></div>
 <div class="ttc" id="classbdm_1_1Log_html_ad80c15ca7fb87dc59f68477f5e8166d6"><div class="ttname"><a href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints fatal error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00113">log.h:113</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a2590a11d5b670cc6d089a885785a3ef0"><div class="ttname"><a href="structbdm_1_1Simulation.html#a2590a11d5b670cc6d089a885785a3ef0">bdm::Simulation::GetUniqueName</a></div><div class="ttdeci">const std::string &amp; GetUniqueName() const </div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a0c69d3adb476d045d9f36550772ebb57"><div class="ttname"><a href="structbdm_1_1Simulation.html#a0c69d3adb476d045d9f36550772ebb57">bdm::Simulation::GetParam</a></div><div class="ttdeci">const Param_t * GetParam() const </div></div>
-<div class="ttc" id="namespacebdm_html_a52b5f1a0e2dac8df993214aee8678d51"><div class="ttname"><a href="namespacebdm.html#a52b5f1a0e2dac8df993214aee8678d51">bdm::FileExists</a></div><div class="ttdeci">bool FileExists(const std::string &amp;file_name)</div><div class="ttdef"><b>Definition:</b> <a href="io__util_8cc_source.html#l00078">io_util.cc:78</a></div></div>
+<div class="ttc" id="namespacebdm_html_a52b5f1a0e2dac8df993214aee8678d51"><div class="ttname"><a href="namespacebdm.html#a52b5f1a0e2dac8df993214aee8678d51">bdm::FileExists</a></div><div class="ttdeci">bool FileExists(const std::string &amp;file_name)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00078">io.cc:78</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a9ed46ad66a186bd90ef01123d9cbc07d"><div class="ttname"><a href="structbdm_1_1Simulation.html#a9ed46ad66a186bd90ef01123d9cbc07d">bdm::Simulation::GetResourceManager</a></div><div class="ttdeci">ResourceManager&lt; TCTParam &gt; * GetResourceManager()</div></div>
 <div class="ttc" id="grid_8h_html"><div class="ttname"><a href="grid_8h.html">grid.h</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_adf25f0358eecf922b21532c9c279b7dd"><div class="ttname"><a href="structbdm_1_1Simulation.html#adf25f0358eecf922b21532c9c279b7dd">bdm::Simulation::ReplaceScheduler</a></div><div class="ttdeci">void ReplaceScheduler(Scheduler&lt; Simulation &gt; *)</div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a70344f927dd212450f8438f0e74a6109"><div class="ttname"><a href="structbdm_1_1Simulation.html#a70344f927dd212450f8438f0e74a6109">bdm::Simulation::~Simulation</a></div><div class="ttdeci">~Simulation()</div></div>
-<div class="ttc" id="namespacebdm_html_a2fa839a2549004e92e23175955de8ae9"><div class="ttname"><a href="namespacebdm.html#a2fa839a2549004e92e23175955de8ae9">bdm::Concat</a></div><div class="ttdeci">std::string Concat(const Args &amp;...parts)</div><div class="ttdoc">Concatenates all arguments into a string. Equivalent to streaming all arguments into a stringstream a...</div><div class="ttdef"><b>Definition:</b> <a href="string__util_8h_source.html#l00055">string_util.h:55</a></div></div>
+<div class="ttc" id="namespacebdm_html_a2fa839a2549004e92e23175955de8ae9"><div class="ttname"><a href="namespacebdm.html#a2fa839a2549004e92e23175955de8ae9">bdm::Concat</a></div><div class="ttdeci">std::string Concat(const Args &amp;...parts)</div><div class="ttdoc">Concatenates all arguments into a string. Equivalent to streaming all arguments into a stringstream a...</div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00055">string.h:55</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html"><div class="ttname"><a href="structbdm_1_1Simulation.html">bdm::Simulation</a></div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00049">simulation.h:49</a></div></div>
 <div class="ttc" id="structbdm_1_1Simulation_html_a1547baa9146e7eddbce8ef2208d904b4"><div class="ttname"><a href="structbdm_1_1Simulation.html#a1547baa9146e7eddbce8ef2208d904b4">bdm::Simulation::InitializeMembers</a></div><div class="ttdeci">void InitializeMembers()</div><div class="ttdoc">Initialize data members that have a dependency on Simulation. </div></div>
 <div class="ttc" id="resource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>
@@ -429,8 +429,8 @@ $(document).ready(function(){initNavTree('simulation__implementation_8h_source.h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="simulation__implementation_8h.html">simulation_implementation.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="simulation__implementation_8h.html">simulation_implementation.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

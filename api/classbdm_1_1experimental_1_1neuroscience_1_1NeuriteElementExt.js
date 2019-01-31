@@ -1,7 +1,7 @@
 var classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt =
 [
     [ "Backend", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a762aaa382fb30f6c3ad6e9059c3e9399", null ],
-    [ "Base", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a048b1378ff4e8dc4e79c6d7389b9d4ba", null ],
+    [ "Base", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#abb773d29a6227cee64c472d9b4c01bf4", null ],
     [ "MostDerived", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a06bb5f32f470bcc240dfbfeb270a9d2a", null ],
     [ "MostDerivedScalar", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aebddb800ae203872a6ea331a51260406", null ],
     [ "MostDerivedSoPtr", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a78f5bbbbeb9df7c2658f36a4cfb8484a", null ],
@@ -11,7 +11,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt =
     [ "Self", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a9121e003cf36cc5c992e8dbd8ad1cff0", null ],
     [ "SimBackend", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ab9c1b771a39ee8d0cc40b0780e85c4a1", null ],
     [ "Simulation_t", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a1161f6082ce5beb8a267c72c8d47a108", null ],
-    [ "ToSimBackend", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a1befff601546518d843156ce14ec0827", null ],
+    [ "ToSimBackend", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a467ecf088dadb2365e4fbafd187b7071", null ],
     [ "ToSoPtr", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#acc4dc579d54b17238ef4308ea57361ab", null ],
     [ "value_type", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a2151946c3e875820e88aac330046851f", null ],
     [ "vec", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#aa1045063ee131247ed7164f508177d40", null ],
@@ -81,8 +81,8 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt =
     [ "IsTerminal", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ab412f8debeea8c6835894d18d800c147", null ],
     [ "LengthToProximalBranchingPoint", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a5f05d55094b1bc3a2f77ec0e73c0bebe", null ],
     [ "MovePointMass", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a9b6e713ff2d44ad555b6603b27bd6d34", null ],
-    [ "operator=", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a9338bfe517100e476bb516fb3f7837be", null ],
-    [ "operator=", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a84ff20fa760c8926d1d3311d32da4974", null ],
+    [ "operator=", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a183a2e83b68aac2051ac21ed7afb8802", null ],
+    [ "operator=", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a397ba3379f69b104e64c20e55efe5b61", null ],
     [ "operator=", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a3a6c8c1457783f1306ded890160c93ec", null ],
     [ "operator[]", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a053e305794b632c55bd4c1ae306b409e", null ],
     [ "operator[]", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ae3d03bed0e66a07904c3952ebf68d6db", null ],

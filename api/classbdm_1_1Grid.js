@@ -62,7 +62,7 @@ var classbdm_1_1Grid =
     [ "nb_mutex_builder_", "classbdm_1_1Grid.html#ad52d274d5527bb7412f19ab46002d859", null ],
     [ "num_boxes_axis_", "classbdm_1_1Grid.html#ab0b87b94c5f67081a772177a8bb720e3", null ],
     [ "num_boxes_xy_", "classbdm_1_1Grid.html#aecdab9f047468ff3a4e53ba6ca2016e5", null ],
-    [ "successors_", "classbdm_1_1Grid.html#a421454d3cebc427b4e0651e9829d77b6", null ],
+    [ "successors_", "classbdm_1_1Grid.html#a269310c4d3cb20955b5be1e386bb0f9b", null ],
     [ "threshold_dimensions_", "classbdm_1_1Grid.html#ac62a60089564240c66628a79f9a07b17", null ],
     [ "zorder_sorted_boxes_", "classbdm_1_1Grid.html#a9d872b7bec5f3a29673c8591087e27e4", null ]
 ];

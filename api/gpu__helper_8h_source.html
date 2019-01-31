@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: gpu/gpu_helper.h Source File</title>
+<title>BioDynaMo: core/gpu/gpu_helper.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,8 +120,8 @@ $(document).ready(function(){initNavTree('gpu__helper_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef GPU_GPU_HELPER_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPU_GPU_HELPER_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_GPU_GPU_HELPER_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_GPU_GPU_HELPER_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
@@ -141,9 +141,9 @@ $(document).ready(function(){initNavTree('gpu__helper_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;cuda_runtime_api.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="param_8h.html">param.h</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2param_2param_8h.html">core/param/param.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">core/simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">core/util/log.h</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
@@ -504,9 +504,9 @@ $(document).ready(function(){initNavTree('gpu__helper_8h_source.html','');});
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#endif  // GPU_GPU_HELPER_H_</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#endif  // CORE_GPU_GPU_HELPER_H_</span></div>
+<div class="ttc" id="core_2param_2param_8h_html"><div class="ttname"><a href="core_2param_2param_8h.html">param.h</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_a30fb7f6a405338c9bddba3d7cbb07f16"><div class="ttname"><a href="classbdm_1_1Log.html#a30fb7f6a405338c9bddba3d7cbb07f16">bdm::Log::Warning</a></div><div class="ttdeci">static void Warning(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints warning message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00065">log.h:65</a></div></div>
-<div class="ttc" id="param_8h_html"><div class="ttname"><a href="param_8h.html">param.h</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_ad80c15ca7fb87dc59f68477f5e8166d6"><div class="ttname"><a href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints fatal error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00113">log.h:113</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_a88415fb012739acb817f50e8b03752c5"><div class="ttname"><a href="classbdm_1_1Log.html#a88415fb012739acb817f50e8b03752c5">bdm::Log::Error</a></div><div class="ttdeci">static void Error(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00077">log.h:77</a></div></div>
 <div class="ttc" id="simulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
@@ -517,8 +517,8 @@ $(document).ready(function(){initNavTree('gpu__helper_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6b3ae6988449b0834e9596fad5d75199.html">gpu</a></li><li class="navelem"><a class="el" href="gpu__helper_8h.html">gpu_helper.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_1194f1e4283959aa8e4c16c774981ba1.html">gpu</a></li><li class="navelem"><a class="el" href="gpu__helper_8h.html">gpu_helper.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -10,8 +10,8 @@ var hierarchy =
     ] ],
     [ "bdm::BoundSpace", "classbdm_1_1BoundSpace.html", null ],
     [ "bdm::Grid< TSimulation >::Box", "structbdm_1_1Grid_1_1Box.html", null ],
-    [ "bdm::experimental::neuroscience::Capsule< TSoExt >", "structbdm_1_1experimental_1_1neuroscience_1_1Capsule.html", null ],
     [ "bdm::Capsule< TSoExt >", "structbdm_1_1Capsule.html", null ],
+    [ "bdm::experimental::neuroscience::Capsule< TSoExt >", "structbdm_1_1experimental_1_1neuroscience_1_1Capsule.html", null ],
     [ "bdm::Capsule< CellExt >", "structbdm_1_1Capsule_3_01CellExt_01_4.html", null ],
     [ "bdm::experimental::neuroscience::Capsule< NeuriteElementExt >", "structbdm_1_1experimental_1_1neuroscience_1_1Capsule_3_01NeuriteElementExt_01_4.html", null ],
     [ "bdm::experimental::neuroscience::Capsule< NeuronSomaExt >", "structbdm_1_1experimental_1_1neuroscience_1_1Capsule_3_01NeuronSomaExt_01_4.html", null ],
@@ -20,13 +20,18 @@ var hierarchy =
     [ "bdm::CircularBuffer< T, N >", "classbdm_1_1CircularBuffer.html", null ],
     [ "bdm::CommandLineOptions", "structbdm_1_1CommandLineOptions.html", null ],
     [ "bdm::CompileTimeParam< TBackend >", "structbdm_1_1CompileTimeParam.html", null ],
-    [ "bdm::Constant", "structbdm_1_1Constant.html", null ],
     [ "bdm::CTList< Types >", "structbdm_1_1CTList.html", null ],
     [ "bdm::DefaultCTParam< TBackend >::CTMap< TSimObject, Dummy >", "structbdm_1_1DefaultCTParam_1_1CTMap.html", null ],
     [ "bdm::experimental::neuroscience::DefaultCTParam< TBackend >::CTMap< TSimObject, Dummy >", "structbdm_1_1experimental_1_1neuroscience_1_1DefaultCTParam_1_1CTMap.html", null ],
     [ "bdm::CTMapDefault< TSimObject, Dummy >", "structbdm_1_1CTMapDefault.html", null ],
     [ "bdm::CTMapDefault< Cell, Dummy >", "structbdm_1_1CTMapDefault.html", [
       [ "bdm::DefaultCTParam< TBackend >::CTMap< Cell, Dummy >", "structbdm_1_1DefaultCTParam_1_1CTMap_3_01Cell_00_01Dummy_01_4.html", null ]
+    ] ],
+    [ "bdm::CTMapDefault< NeuriteElement, Dummy >", "structbdm_1_1CTMapDefault.html", [
+      [ "bdm::experimental::neuroscience::DefaultCTParam< TBackend >::CTMap< NeuriteElement, Dummy >", "structbdm_1_1experimental_1_1neuroscience_1_1DefaultCTParam_1_1CTMap_3_01NeuriteElement_00_01Dummy_01_4.html", null ]
+    ] ],
+    [ "bdm::CTMapDefault< NeuronSoma, Dummy >", "structbdm_1_1CTMapDefault.html", [
+      [ "bdm::experimental::neuroscience::DefaultCTParam< TBackend >::CTMap< NeuronSoma, Dummy >", "structbdm_1_1experimental_1_1neuroscience_1_1DefaultCTParam_1_1CTMap_3_01NeuronSoma_00_01Dummy_01_4.html", null ]
     ] ],
     [ "bdm::DefaultCTParam< TBackend >", "structbdm_1_1DefaultCTParam.html", null ],
     [ "bdm::experimental::neuroscience::DefaultCTParam< TBackend >", "structbdm_1_1experimental_1_1neuroscience_1_1DefaultCTParam.html", null ],
@@ -90,21 +95,21 @@ var hierarchy =
     [ "bdm::ResourceManager< TCompileTimeParam >", "classbdm_1_1ResourceManager.html", null ],
     [ "bdm::ResourceManager< TCTParam >", "classbdm_1_1ResourceManager.html", null ],
     [ "bdm::RuntimeVariables", "classbdm_1_1RuntimeVariables.html", null ],
-    [ "bdm::RunVisitor< TSimulationObject >", "structbdm_1_1RunVisitor.html", null ],
+    [ "bdm::RunVisitor< TSimObject >", "structbdm_1_1RunVisitor.html", null ],
     [ "bdm::Scalar", "structbdm_1_1Scalar.html", null ],
-    [ "bdm::ScalarSimulationObject< TCompileTimeParam, TDerived >", "classbdm_1_1ScalarSimulationObject.html", null ],
+    [ "bdm::ScalarSimObject< TCompileTimeParam, TDerived >", "classbdm_1_1ScalarSimObject.html", null ],
     [ "bdm::Scheduler< TSimulation >", "classbdm_1_1Scheduler.html", null ],
     [ "bdm::Scheduler< bdm::Simulation >", "classbdm_1_1Scheduler.html", null ],
     [ "bdm::experimental::neuroscience::SideNeuriteExtensionEvent", "structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html", null ],
+    [ "bdm::SimObjectImpl< TCompileTimeParam, TDerived >", "structbdm_1_1SimObjectImpl.html", null ],
+    [ "bdm::SimObjectVector< T, TSimulation >", "classbdm_1_1SimObjectVector.html", null ],
+    [ "bdm::SimObjectVector< bdm::SoHandle, bdm::Simulation >", "classbdm_1_1SimObjectVector.html", null ],
+    [ "bdm::SimObjectVector< bdm::SoHandle, TSimulation >", "classbdm_1_1SimObjectVector.html", null ],
     [ "bdm::Simulation< TCTParam >", "structbdm_1_1Simulation.html", null ],
     [ "bdm::SimulationBackup", "classbdm_1_1SimulationBackup.html", null ],
-    [ "bdm::SimulationObjectImpl< TCompileTimeParam, TDerived >", "structbdm_1_1SimulationObjectImpl.html", null ],
-    [ "bdm::SimulationObjectVector< T, TSimulation >", "classbdm_1_1SimulationObjectVector.html", null ],
-    [ "bdm::SimulationObjectVector< bdm::SoHandle, bdm::Simulation >", "classbdm_1_1SimulationObjectVector.html", null ],
-    [ "bdm::SimulationObjectVector< bdm::SoHandle, TSimulation >", "classbdm_1_1SimulationObjectVector.html", null ],
     [ "bdm::Soa", "structbdm_1_1Soa.html", null ],
     [ "bdm::SoaRef", "structbdm_1_1SoaRef.html", null ],
-    [ "bdm::SoaSimulationObject< TCompileTimeParam, TDerived >", "classbdm_1_1SoaSimulationObject.html", null ],
+    [ "bdm::SoaSimObject< TCompileTimeParam, TDerived >", "classbdm_1_1SoaSimObject.html", null ],
     [ "bdm::SoHandle", "classbdm_1_1SoHandle.html", null ],
     [ "bdm::SoPointer< TSoSimBackend, TBackend >", "classbdm_1_1SoPointer.html", null ],
     [ "bdm::SoUidGenerator", "classbdm_1_1SoUidGenerator.html", null ],
@@ -121,7 +126,7 @@ var hierarchy =
     [ "bdm::ToTupleOfSOContainers< Backend, TCTList >", "structbdm_1_1ToTupleOfSOContainers.html", null ],
     [ "bdm::detail::ToTupleOfSOContainers< Backend, CTList< Types...> >", "structbdm_1_1detail_1_1ToTupleOfSOContainers_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4.html", null ],
     [ "type", null, [
-      [ "bdm::SimulationObjectExt< TCompileTimeParam, TDerived >", "classbdm_1_1SimulationObjectExt.html", [
+      [ "bdm::SimObjectExt< TCompileTimeParam, TDerived >", "classbdm_1_1SimObjectExt.html", [
         [ "bdm::CellExt< TCompileTimeParam, TDerived >", "classbdm_1_1CellExt.html", [
           [ "bdm::experimental::neuroscience::NeuronSomaExt< TCompileTimeParam, TDerived >", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html", null ]
         ] ],

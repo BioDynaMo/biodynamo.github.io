@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: so_pointer.h Source File</title>
+<title>BioDynaMo: core/sim_object/so_pointer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,17 +120,17 @@ $(document).ready(function(){initNavTree('so__pointer_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef SO_POINTER_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SO_POINTER_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_SIM_OBJECT_SO_POINTER_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_SIM_OBJECT_SO_POINTER_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="backend_8h.html">backend.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">simulation.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation__backup_8h.html">simulation_backup.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="backend_8h.html">core/sim_object/backend.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">core/simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation__backup_8h.html">core/simulation_backup.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>bdm {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
@@ -200,19 +200,19 @@ $(document).ready(function(){initNavTree('so__pointer_8h_source.html','');});
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classbdm_1_1SoPointer.html#a5b4f0a5ff5c4ddfbe557e365c8036591">  110</a></span>&#160;  <a class="code" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> <a class="code" href="classbdm_1_1SoPointer.html#a5b4f0a5ff5c4ddfbe557e365c8036591">uid_</a> = std::numeric_limits&lt;uint64_t&gt;::max();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classbdm_1_1SoPointer.html#aa4df982d511cff71a4357240e744cdb8">  112</a></span>&#160;  <a class="code" href="root__util_8h.html#a6603a108a7534f809ef5e02a5af41135">BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER</a>(<a class="code" href="classbdm_1_1SoPointer.html">SoPointer</a>, 2);</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classbdm_1_1SoPointer.html#aa4df982d511cff71a4357240e744cdb8">  112</a></span>&#160;  <a class="code" href="root_8h.html#a6603a108a7534f809ef5e02a5af41135">BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER</a>(<a class="code" href="classbdm_1_1SoPointer.html">SoPointer</a>, 2);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif  // SO_POINTER_H_</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif  // CORE_SIM_OBJECT_SO_POINTER_H_</span></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_ad099f2478e87c24be8551fb8e31a4fec"><div class="ttname"><a href="classbdm_1_1SoPointer.html#ad099f2478e87c24be8551fb8e31a4fec">bdm::SoPointer::operator=</a></div><div class="ttdeci">SoPointer &amp; operator=(std::nullptr_t)</div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00063">so_pointer.h:63</a></div></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_af1f704e64081a1409805e765fbe9d6bd"><div class="ttname"><a href="classbdm_1_1SoPointer.html#af1f704e64081a1409805e765fbe9d6bd">bdm::SoPointer::SoSoaRef</a></div><div class="ttdeci">typename TSoSimBackend::template Self&lt; SoaRef &gt; SoSoaRef</div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00042">so_pointer.h:42</a></div></div>
+<div class="ttc" id="root_8h_html_a6603a108a7534f809ef5e02a5af41135"><div class="ttname"><a href="root_8h.html#a6603a108a7534f809ef5e02a5af41135">BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER</a></div><div class="ttdeci">#define BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER(class_name, class_version_id)</div><div class="ttdef"><b>Definition:</b> <a href="root_8h_source.html#l00310">root.h:310</a></div></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_a044b953c03f6ece34eed0db9867e0279"><div class="ttname"><a href="classbdm_1_1SoPointer.html#a044b953c03f6ece34eed0db9867e0279">bdm::SoPointer::operator==</a></div><div class="ttdeci">bool operator==(const SoPointer &amp;other) const </div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00059">so_pointer.h:59</a></div></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_a74db616da718251a5f9df99f96365bc1"><div class="ttname"><a href="classbdm_1_1SoPointer.html#a74db616da718251a5f9df99f96365bc1">bdm::SoPointer::operator-&gt;</a></div><div class="ttdeci">std::enable_if&lt; std::is_same&lt; TTBackend, Soa &gt;::value, SoSoaRef &gt;::type operator-&gt;()</div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00088">so_pointer.h:88</a></div></div>
 <div class="ttc" id="namespacebdm_html_ab1414cb069958d6877465d6f385fc719"><div class="ttname"><a href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">bdm::SoUid</a></div><div class="ttdeci">uint64_t SoUid</div><div class="ttdef"><b>Definition:</b> <a href="so__uid_8h_source.html#l00024">so_uid.h:24</a></div></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_a0dfb193c8a743d7307194b2dd7519d0a"><div class="ttname"><a href="classbdm_1_1SoPointer.html#a0dfb193c8a743d7307194b2dd7519d0a">bdm::SoPointer::SoPointer</a></div><div class="ttdeci">SoPointer()</div><div class="ttdoc">constructs an SoPointer object representing a nullptr </div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00048">so_pointer.h:48</a></div></div>
-<div class="ttc" id="root__util_8h_html_a6603a108a7534f809ef5e02a5af41135"><div class="ttname"><a href="root__util_8h.html#a6603a108a7534f809ef5e02a5af41135">BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER</a></div><div class="ttdeci">#define BDM_TEMPLATE_CLASS_DEF_CUSTOM_STREAMER(class_name, class_version_id)</div><div class="ttdef"><b>Definition:</b> <a href="root__util_8h_source.html#l00310">root_util.h:310</a></div></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_a5b4f0a5ff5c4ddfbe557e365c8036591"><div class="ttname"><a href="classbdm_1_1SoPointer.html#a5b4f0a5ff5c4ddfbe557e365c8036591">bdm::SoPointer::uid_</a></div><div class="ttdeci">SoUid uid_</div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00110">so_pointer.h:110</a></div></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_a9ce1570fe5500147c946e98dba2e4952"><div class="ttname"><a href="classbdm_1_1SoPointer.html#a9ce1570fe5500147c946e98dba2e4952">bdm::SoPointer::operator!=</a></div><div class="ttdeci">bool operator!=(std::nullptr_t) const </div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00057">so_pointer.h:57</a></div></div>
 <div class="ttc" id="classbdm_1_1SoPointer_html_adab3b76265dd5143ad016fd2601ae62e"><div class="ttname"><a href="classbdm_1_1SoPointer.html#adab3b76265dd5143ad016fd2601ae62e">bdm::SoPointer::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;str, const SoPointer&lt; TSoSimBackend, TBackend &gt; &amp;so_ptr)</div><div class="ttdef"><b>Definition:</b> <a href="so__pointer_8h_source.html#l00103">so_pointer.h:103</a></div></div>
@@ -230,8 +230,8 @@ $(document).ready(function(){initNavTree('so__pointer_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="so__pointer_8h.html">so_pointer.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:57 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_8417c195086d4ff6acfc795544c5eeb6.html">sim_object</a></li><li class="navelem"><a class="el" href="so__pointer_8h.html">so_pointer.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

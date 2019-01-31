@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BioDynaMo: visualization/catalyst_adaptor.h Source File</title>
+<title>BioDynaMo: core/visualization/catalyst_adaptor.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -120,8 +120,8 @@ $(document).ready(function(){initNavTree('catalyst__adaptor_8h_source.html','');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef CORE_VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CORE_VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
@@ -131,11 +131,11 @@ $(document).ready(function(){initNavTree('catalyst__adaptor_8h_source.html','');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">log.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="param_8h.html">param.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">resource_manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">shape.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core_2param_2param_8h.html">core/param/param.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="resource__manager_8h.html">core/resource_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="shape_8h.html">core/shape.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simulation_8h.html">core/simulation.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log_8h.html">core/util/log.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// check for ROOTCLING was necessary, due to ambigous reference to namespace</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// detail when using ROOT I/O</span></div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('catalyst__adaptor_8h_source.html','');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &lt;vtkXMLPImageDataWriter.h&gt;</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;vtkXMLPUnstructuredGridWriter.h&gt;</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="insitu__pipeline_8h.html">visualization/insitu_pipeline.h</a>&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="insitu__pipeline_8h.html">core/visualization/insitu_pipeline.h</a>&quot;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif  // defined(USE_CATALYST) &amp;&amp; !defined(__ROOTCLING__)</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
@@ -645,7 +645,7 @@ $(document).ready(function(){initNavTree('catalyst__adaptor_8h_source.html','');
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keyword">auto</span>* sim = TSimulation::GetActive();</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    std::stringstream python_cmd;</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    python_cmd &lt;&lt; <span class="stringliteral">&quot;pvpython &quot;</span></div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;               &lt;&lt; BDM_SRC_DIR <span class="stringliteral">&quot;/visualization/generate_pv_state.py &quot;</span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;               &lt;&lt; BDM_SRC_DIR <span class="stringliteral">&quot;/core/visualization/generate_pv_state.py &quot;</span></div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;               &lt;&lt; sim-&gt;GetOutputDir() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; kSimulationInfoJson;</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keywordtype">int</span> ret_code = system(python_cmd.str().c_str());</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keywordflow">if</span> (ret_code) {</div>
@@ -697,20 +697,20 @@ $(document).ready(function(){initNavTree('catalyst__adaptor_8h_source.html','');
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="preprocessor">#endif  // VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="preprocessor">#endif  // CORE_VISUALIZATION_CATALYST_ADAPTOR_H_</span></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a303b5b59fe3b35aaf2850da4cca15e70"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a303b5b59fe3b35aaf2850da4cca15e70">bdm::CatalystAdaptor::DiffusionTest_ModelInitializer_Test</a></div><div class="ttdeci">friend class DiffusionTest_ModelInitializer_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00633">catalyst_adaptor.h:633</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_ad755e5fb35a5537b4ef5b15e4daf4025"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#ad755e5fb35a5537b4ef5b15e4daf4025">bdm::CatalystAdaptor::GenerateParaviewState</a></div><div class="ttdeci">static void GenerateParaviewState()</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00645">catalyst_adaptor.h:645</a></div></div>
+<div class="ttc" id="core_2param_2param_8h_html"><div class="ttname"><a href="core_2param_2param_8h.html">param.h</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_af9b89947a42ead5626f75a0d1c340cda"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#af9b89947a42ead5626f75a0d1c340cda">bdm::CatalystAdaptor::CatalystAdaptorTest_CheckVisualizationSelection_Test</a></div><div class="ttdeci">friend class CatalystAdaptorTest_CheckVisualizationSelection_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00632">catalyst_adaptor.h:632</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_af5b333f9e1074a74467386e10a80b75e"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#af5b333f9e1074a74467386e10a80b75e">bdm::CatalystAdaptor::LiveVisualization</a></div><div class="ttdeci">void LiveVisualization(double time, size_t time_step, bool last_time_step)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00635">catalyst_adaptor.h:635</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a045d2d8a4ec23e79f3250efe3baf8ea6"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6">bdm::CatalystAdaptor::CatalystAdaptorTest_GenerateSimulationInfoJson_Test</a></div><div class="ttdeci">friend class CatalystAdaptorTest_GenerateSimulationInfoJson_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00630">catalyst_adaptor.h:630</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a588cfea156b649758ae7b893c37262ec"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a588cfea156b649758ae7b893c37262ec">bdm::CatalystAdaptor::GenerateSimulationInfoJson</a></div><div class="ttdeci">static void GenerateSimulationInfoJson(const std::unordered_map&lt; std::string, Shape &gt; &amp;shapes)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00642">catalyst_adaptor.h:642</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_ae3f05c90590b0dc122d03842bbaa9d9a"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#ae3f05c90590b0dc122d03842bbaa9d9a">bdm::CatalystAdaptor::CatalystAdaptor</a></div><div class="ttdeci">CatalystAdaptor(const std::string &amp;script)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00625">catalyst_adaptor.h:625</a></div></div>
-<div class="ttc" id="param_8h_html"><div class="ttname"><a href="param_8h.html">param.h</a></div></div>
 <div class="ttc" id="classbdm_1_1Log_html_ad80c15ca7fb87dc59f68477f5e8166d6"><div class="ttname"><a href="classbdm_1_1Log.html#ad80c15ca7fb87dc59f68477f5e8166d6">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;...parts)</div><div class="ttdoc">Prints fatal error message. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00113">log.h:113</a></div></div>
 <div class="ttc" id="namespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">bdm::kSphere</a></div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a4aa216a6727c1bf644956d5e9ab822fa"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a4aa216a6727c1bf644956d5e9ab822fa">bdm::CatalystAdaptor::ExportVisualization</a></div><div class="ttdeci">void ExportVisualization(double step, size_t time_step, bool last_time_step)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00637">catalyst_adaptor.h:637</a></div></div>
 <div class="ttc" id="simulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
-<div class="ttc" id="namespacebdm_html_a2fa839a2549004e92e23175955de8ae9"><div class="ttname"><a href="namespacebdm.html#a2fa839a2549004e92e23175955de8ae9">bdm::Concat</a></div><div class="ttdeci">std::string Concat(const Args &amp;...parts)</div><div class="ttdoc">Concatenates all arguments into a string. Equivalent to streaming all arguments into a stringstream a...</div><div class="ttdef"><b>Definition:</b> <a href="string__util_8h_source.html#l00055">string_util.h:55</a></div></div>
+<div class="ttc" id="namespacebdm_html_a2fa839a2549004e92e23175955de8ae9"><div class="ttname"><a href="namespacebdm.html#a2fa839a2549004e92e23175955de8ae9">bdm::Concat</a></div><div class="ttdeci">std::string Concat(const Args &amp;...parts)</div><div class="ttdoc">Concatenates all arguments into a string. Equivalent to streaming all arguments into a stringstream a...</div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00055">string.h:55</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html">bdm::CatalystAdaptor</a></div><div class="ttdoc">False front (to ignore Catalyst in gtests) </div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00623">catalyst_adaptor.h:623</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a20551b0ab1df1b17546fb7f6f42bfe4c"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c">bdm::CatalystAdaptor::CatalystAdaptorTest_GenerateParaviewState_Test</a></div><div class="ttdeci">friend class CatalystAdaptorTest_GenerateParaviewState_Test</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00631">catalyst_adaptor.h:631</a></div></div>
 <div class="ttc" id="classbdm_1_1CatalystAdaptor_html_a81aba083e64010adac43a03c5d6d0123"><div class="ttname"><a href="classbdm_1_1CatalystAdaptor.html#a81aba083e64010adac43a03c5d6d0123">bdm::CatalystAdaptor::Visualize</a></div><div class="ttdeci">void Visualize(uint64_t, bool)</div><div class="ttdef"><b>Definition:</b> <a href="catalyst__adaptor_8h_source.html#l00627">catalyst_adaptor.h:627</a></div></div>
@@ -725,8 +725,8 @@ $(document).ready(function(){initNavTree('catalyst__adaptor_8h_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_2ac5e416e20d6963657ce30aa6dbcd0f.html">visualization</a></li><li class="navelem"><a class="el" href="catalyst__adaptor_8h.html">catalyst_adaptor.h</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:58 for BioDynaMo by
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_495c398245f1b03c2187e57d110c3617.html">visualization</a></li><li class="navelem"><a class="el" href="catalyst__adaptor_8h.html">catalyst_adaptor.h</a></li>
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

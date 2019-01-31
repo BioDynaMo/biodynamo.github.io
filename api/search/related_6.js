@@ -1,6 +1,6 @@
 var searchData=
 [
+  ['simobjectext',['SimObjectExt',['../classbdm_1_1SimObjectExt.html#a769477a2dc53ce237a8b5ed6428328ce',1,'bdm::SimObjectExt']]],
   ['simulationbackup',['SimulationBackup',['../classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b',1,'bdm::ResourceManager']]],
-  ['simulationobjectext',['SimulationObjectExt',['../classbdm_1_1SimulationObjectExt.html#a6168e3e39370c348690bb97d0a249d87',1,'bdm::SimulationObjectExt']]],
-  ['soasimulationobject',['SoaSimulationObject',['../classbdm_1_1SoaSimulationObject.html#aab6f689b0567bce8e28ff287d10048b7',1,'bdm::SoaSimulationObject']]]
+  ['soasimobject',['SoaSimObject',['../classbdm_1_1SoaSimObject.html#a4527cf4e6387f5416cf39d31c8856731',1,'bdm::SoaSimObject']]]
 ];

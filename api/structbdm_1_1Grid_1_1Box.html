@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-143-gfd0d1a2</span>
+   &#160;<span id="projectnumber">v0.1.0-146-g9332a6c</span>
    </div>
   </td>
  </tr>
@@ -141,10 +141,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0b925b2ff7a71f55e847c0de27f423f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df702a81f2bf77b39174cfebfb30ffa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1Box.html#a9df702a81f2bf77b39174cfebfb30ffa">IsEmpty</a> () const </td></tr>
 <tr class="separator:a9df702a81f2bf77b39174cfebfb30ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac20a1101e0830ea8ae9d1d5baeeb27be"><td class="memTemplParams" colspan="2">template&lt;typename TSimulationObjectVector &gt; </td></tr>
-<tr class="memitem:ac20a1101e0830ea8ae9d1d5baeeb27be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1Box.html#ac20a1101e0830ea8ae9d1d5baeeb27be">AddObject</a> (<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> obj_id, TSimulationObjectVector *successors)</td></tr>
-<tr class="memdesc:ac20a1101e0830ea8ae9d1d5baeeb27be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a simulation object to this box.  <a href="#ac20a1101e0830ea8ae9d1d5baeeb27be">More...</a><br/></td></tr>
-<tr class="separator:ac20a1101e0830ea8ae9d1d5baeeb27be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6b5a95fbb8d3eeb7b7b306a181e75f"><td class="memTemplParams" colspan="2">template&lt;typename TSimObjectVector &gt; </td></tr>
+<tr class="memitem:aac6b5a95fbb8d3eeb7b7b306a181e75f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1Box.html#aac6b5a95fbb8d3eeb7b7b306a181e75f">AddObject</a> (<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> obj_id, TSimObjectVector *successors)</td></tr>
+<tr class="memdesc:aac6b5a95fbb8d3eeb7b7b306a181e75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a simulation object to this box.  <a href="#aac6b5a95fbb8d3eeb7b7b306a181e75f">More...</a><br/></td></tr>
+<tr class="separator:aac6b5a95fbb8d3eeb7b7b306a181e75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9d5eb5e317907dd992c32746e5f7971"><td class="memTemplParams" colspan="2">template&lt;typename TGrid  = Grid&lt;TSimulation&gt;&gt; </td></tr>
 <tr class="memitem:aa9d5eb5e317907dd992c32746e5f7971"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Grid_1_1Box_1_1Iterator.html">Iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1Box.html#aa9d5eb5e317907dd992c32746e5f7971">begin</a> () const </td></tr>
 <tr class="separator:aa9d5eb5e317907dd992c32746e5f7971"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +162,7 @@ struct bdm::Grid&lt; TSimulation &gt;::Box</h3>
 
 <p>A single unit cube of the grid. </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00095">95</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00094">94</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a41346e457ca0edafe4cba4a020d540da"></a>
 <div class="memitem">
@@ -187,7 +187,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00103">103</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00102">102</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -216,18 +216,18 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Copy Constructor required for boxes_.resize() Since box values will be overwritten afterwards it forwards to the default ctor </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00107">107</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00106">106</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac20a1101e0830ea8ae9d1d5baeeb27be"></a>
+<a class="anchor" id="aac6b5a95fbb8d3eeb7b7b306a181e75f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div class="memtemplate">
-template&lt;typename TSimulationObjectVector &gt; </div>
+template&lt;typename TSimObjectVector &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -241,7 +241,7 @@ template&lt;typename TSimulationObjectVector &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TSimulationObjectVector *&#160;</td>
+          <td class="paramtype">TSimObjectVector *&#160;</td>
           <td class="paramname"><em>successors</em>&#160;</td>
         </tr>
         <tr>
@@ -272,7 +272,7 @@ template&lt;typename TSimulationObjectVector &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00125">125</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00124">124</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ template&lt;typename TGrid  = Grid&lt;TSimulation&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00161">161</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00160">160</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00115">115</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00114">114</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00109">109</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00108">108</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>length of the linked list (i.e. number of simulation objects) uint64_t, because sizeof(Box) = 16, for uint16_t and uint64_t </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00101">101</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00100">100</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
@@ -391,12 +391,12 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 </div><div class="memdoc">
 <p>start value of the linked list of simulatio objects inside this box. Next element can be found at <code>successors_[start_]</code> </p>
 
-<p>Definition at line <a class="el" href="grid_8h_source.html#l00098">98</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
+<p>Definition at line <a class="el" href="grid_8h_source.html#l00097">97</a> of file <a class="el" href="grid_8h_source.html">grid.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="grid_8h_source.html">grid.h</a></li>
+<li>core/<a class="el" href="grid_8h_source.html">grid.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -404,7 +404,7 @@ template&lt;typename TSimulation = Simulation&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Grid.html">Grid</a></li><li class="navelem"><a class="el" href="structbdm_1_1Grid_1_1Box.html">Box</a></li>
-    <li class="footer">Generated on Tue Jan 29 2019 15:39:58 for BioDynaMo by
+    <li class="footer">Generated on Thu Jan 31 2019 12:41:04 for BioDynaMo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
