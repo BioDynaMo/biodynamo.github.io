@@ -16,7 +16,7 @@ var searchData=
   ['initializeruntimeparams',['InitializeRuntimeParams',['../structbdm_1_1Simulation.html#accd6c2206bc66347278ff96faae9592a',1,'bdm::Simulation']]],
   ['initializesideextensionorbranching',['InitializeSideExtensionOrBranching',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a186aac72592a7f9b12f3e81ccfd0d407',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
   ['initializesplitorbranching',['InitializeSplitOrBranching',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a9fe411942ebf642d812741ccbc3d439f',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
-  ['initializesubstance',['InitializeSubstance',['../structbdm_1_1ModelInitializer.html#ad4a0150bdc1aff1d30eee45621200d0b',1,'bdm::ModelInitializer']]],
+  ['initializesubstance',['InitializeSubstance',['../structbdm_1_1ModelInitializer.html#afe4c4238b4c37b32eb537af8c4ffe9aa',1,'bdm::ModelInitializer']]],
   ['initializeuniquename',['InitializeUniqueName',['../structbdm_1_1Simulation.html#a33abc2c2ba3b42398e8375e4cc345078',1,'bdm::Simulation']]],
   ['inline_5fvector_2eh',['inline_vector.h',['../inline__vector_8h.html',1,'']]],
   ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html',1,'bdm']]],

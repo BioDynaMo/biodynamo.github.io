@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../images/bdm_logo.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.3.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
     
     
       
@@ -40,9 +40,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
       
       
         
@@ -51,7 +51,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.962652e9.js"></script>
+      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
     
     
       
@@ -123,22 +123,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                BioDynaMo User Documentation
-              </span>
-              <span class="md-header-nav__topic">
-                Substance Initialization
-              </span>
-            
+            <span class="md-header-nav__topic">
+              BioDynaMo User Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Substance Initialization
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -161,7 +158,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -172,20 +168,18 @@
 
   
 
-
-  <a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      BioDynaMo/biodynamo
+<a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    BioDynaMo/biodynamo
+  </div>
+</a>
           </div>
         </div>
       
@@ -221,20 +215,18 @@
 
   
 
-
-  <a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      BioDynaMo/biodynamo
+<a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    BioDynaMo/biodynamo
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -663,7 +655,7 @@
 in your simulation. In this tutorial we shal take a look on how to do so.</p>
 <h3 id="tutorial-by-example">Tutorial by example</h3>
 <p>Go into the <code class="codehilite">test/integration</code> directory and open the source file
-<code class="codehilite">substance_initialization.h</code> in your favorite editor. </p>
+<code class="codehilite">substance_initialization.h</code> in your favorite editor.</p>
 <h4 id="1-list-the-substances">1. List the substance(s)</h4>
 <p>We start the code of by listing the s we will use in our simulation in an enum
 data structure. In this example we just create one substance.</p>
@@ -699,7 +691,7 @@ of 1.</p>
 <p>Now comes the most important part of the tutorial: initializing our substance(s)
 concentration values throught the space. We will use the function
 <code class="codehilite">ModelInitializer::InitializeSubstance</code> for this purpose.</p>
-<div class="codehilite"><pre><span></span><span class="n">ModelInitializer</span><span class="o">::</span><span class="n">InitializeSubstance</span><span class="p">(</span><span class="n">kSubstance</span><span class="p">,</span> <span class="s">&quot;Substance&quot;</span><span class="p">,</span> <span class="n">GaussianBand</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">Axis</span><span class="o">::</span><span class="n">kXAxis</span><span class="p">));</span>
+<div class="codehilite"><pre><span></span><span class="n">ModelInitializer</span><span class="o">::</span><span class="n">InitializeSubstance</span><span class="p">(</span><span class="n">kSubstance</span><span class="p">,</span> <span class="n">GaussianBand</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">Axis</span><span class="o">::</span><span class="n">kXAxis</span><span class="p">));</span>
 </pre></div>
 
 <p>Let's break this down. We first pass the substance enum id and name in the
@@ -732,7 +724,7 @@ available in BioDynaMo, and you can create your own.</p>
       <span class="k">case</span> <span class="n">Axis</span><span class="o">::</span><span class="nl">kXAxis</span><span class="p">:</span> <span class="k">return</span> <span class="n">ROOT</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">normal_pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sigma_</span><span class="p">,</span> <span class="n">mean_</span><span class="p">);</span>
       <span class="k">case</span> <span class="n">Axis</span><span class="o">::</span><span class="nl">kYAxis</span><span class="p">:</span> <span class="k">return</span> <span class="n">ROOT</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">normal_pdf</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">sigma_</span><span class="p">,</span> <span class="n">mean_</span><span class="p">);</span>
       <span class="k">case</span> <span class="n">Axis</span><span class="o">::</span><span class="nl">kZAxis</span><span class="p">:</span> <span class="k">return</span> <span class="n">ROOT</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">normal_pdf</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">sigma_</span><span class="p">,</span> <span class="n">mean_</span><span class="p">);</span>
-      <span class="k">default</span><span class="o">:</span> <span class="k">throw</span> <span class="n">std</span><span class="o">::</span><span class="n">logic_error</span><span class="p">(</span><span class="s">&quot;You have chosen an non-existing axis!&quot;</span><span class="p">);</span> 
+      <span class="k">default</span><span class="o">:</span> <span class="k">throw</span> <span class="n">std</span><span class="o">::</span><span class="n">logic_error</span><span class="p">(</span><span class="s">&quot;You have chosen an non-existing axis!&quot;</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">};</span>
@@ -826,7 +818,6 @@ lambdas might be the way to go.</p>
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
@@ -836,14 +827,13 @@ lambdas might be the way to go.</p>
     
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.a353778b.js"></script>
+      <script src="../assets/javascripts/application.d9aa80ab.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
