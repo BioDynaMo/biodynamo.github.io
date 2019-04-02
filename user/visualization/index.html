@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../images/bdm_logo.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.2">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
       
@@ -51,7 +51,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
     
     
       
@@ -542,7 +542,9 @@ You can also do this from the command line with the following command:</p>
 <h2 id="export-visualization-files">Export visualization files</h2>
 <p>One way to enable visualization is to export a visualization file every time step
 (or every N time steps). In the <code class="codehilite">bmd.toml</code> file add the following lines:</p>
-<div class="codehilite"><pre><span></span><span class="k">[visualization]</span>
+<div class="codehilite"><pre><span></span><span class="k">[simulation]</span>
+<span class="c1"># For other simulations certain parameters would also need to be defined within this section of the toml file.</span>
+<span class="k">[visualization]</span>
 <span class="na">export</span> <span class="o">=</span> <span class="s">true</span>
 <span class="na">export_interval</span> <span class="o">=</span> <span class="s">1</span>
 
@@ -576,7 +578,9 @@ Another way to enable visualization is through ParaView's live visualization.
 This feature allows you to inspect your simulation while it is running. In your
 `bdm.toml` file you add the following lines:
 
-wzxhzdk:3
+<div class="codehilite"><pre><span></span><span class="k">[visualization]</span>
+<span class="na">live</span> <span class="o">=</span> <span class="s">true</span>
+</pre></div>
  -->
                 
                   
@@ -660,7 +664,7 @@ This feature allows you to inspect your simulation while it is running. In your
       
     </div>
     
-      <script src="../assets/javascripts/application.d9aa80ab.js"></script>
+      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
