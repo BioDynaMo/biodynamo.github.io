@@ -1,649 +1,8 @@
-
-
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-      
-      
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../images/bdm_logo.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
-    
-    
-      
-        <title>Contribute - BioDynaMo Developer Documentation</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/application.3020aac5.css">
-      
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
-      
-      
-        
-        
-        <meta name="theme-color" content="#3f51b5">
-      
-    
-    
-      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
-    
-    
-      
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-    
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
-    
-    
-    
-      
-    
-    
-  </head>
-  
-    
-    
-    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#contributing-code" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="BioDynaMo Developer Documentation" class="md-header-nav__button md-logo">
-          
-            <img src="../images/bdm_logo.png" width="24" height="24">
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            <span class="md-header-nav__topic">
-              BioDynaMo Developer Documentation
-            </span>
-            <span class="md-header-nav__topic">
-              Contribute
-            </span>
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-          
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-        
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
-
-
-  
-
-<a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
-  
-    <div class="md-source__icon">
-      <svg viewBox="0 0 24 24" width="24" height="24">
-        <use xlink:href="#__github" width="24" height="24"></use>
-      </svg>
-    </div>
-  
-  <div class="md-source__repository">
-    BioDynaMo/biodynamo
-  </div>
-</a>
-          </div>
-        </div>
-      
-    </div>
-  </nav>
-</header>
-    
-    <div class="md-container">
-      
-        
-      
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href=".." title="BioDynaMo Developer Documentation" class="md-nav__button md-logo">
-      
-        <img src="../images/bdm_logo.png" width="48" height="48">
-      
-    </a>
-    BioDynaMo Developer Documentation
-  </label>
-  
-    <div class="md-nav__source">
-      
-
-
-  
-
-<a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
-  
-    <div class="md-source__icon">
-      <svg viewBox="0 0 24 24" width="24" height="24">
-        <use xlink:href="#__github" width="24" height="24"></use>
-      </svg>
-    </div>
-  
-  <div class="md-source__repository">
-    BioDynaMo/biodynamo
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href=".." title="Welcome" class="md-nav__link">
-      Welcome
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../build/" title="Build BioDynaMo" class="md-nav__link">
-      Build BioDynaMo
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../code_quality/" title="Code Quality" class="md-nav__link">
-      Code Quality
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Contribute
-      </label>
-    
-    <a href="./" title="Contribute" class="md-nav__link md-nav__link--active">
-      Contribute
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#from-cloning-biodynamo-to-your-first-contribution" title="From Cloning BioDynaMo to Your First Contribution" class="md-nav__link">
-    From Cloning BioDynaMo to Your First Contribution
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-get-familiar-with-our-coding-convention" title="1. Get familiar with our coding convention" class="md-nav__link">
-    1. Get familiar with our coding convention
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-clone-the-repository" title="2. Clone the repository" class="md-nav__link">
-    2. Clone the repository
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-checkout-the-master-branch" title="3. Checkout the master branch" class="md-nav__link">
-    3. Checkout the master branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-get-latest-version-of-master" title="4. Get latest version of master" class="md-nav__link">
-    4. Get latest version of master
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-create-the-feature-branch" title="5. Create the feature branch" class="md-nav__link">
-    5. Create the feature branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-make-your-changes-and-write-tests" title="6. Make your changes and write tests" class="md-nav__link">
-    6. Make your changes and write tests
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-compile-and-run-tests" title="7. Compile and run tests" class="md-nav__link">
-    7. Compile and run tests
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-code-coverage" title="8. Code coverage" class="md-nav__link">
-    8. Code coverage
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-performance" title="9. Performance" class="md-nav__link">
-    9. Performance
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-documentation" title="10. Documentation" class="md-nav__link">
-    10. Documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#11-perform-final-checks-on-your-machine" title="11. Perform final checks on your machine" class="md-nav__link">
-    11. Perform final checks on your machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-commit" title="12. Commit" class="md-nav__link">
-    12. Commit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-create-pull-request" title="13. Create pull request" class="md-nav__link">
-    13. Create pull request
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14-verify-if-travis-ci-builds-are-ok" title="14. Verify if Travis-CI builds are OK" class="md-nav__link">
-    14. Verify if Travis-CI builds are OK
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#15-if-everything-is-ok-contact-one-of-the-code-reviewers-on-slack" title="15. If everything is OK contact one of the code reviewers on Slack" class="md-nav__link">
-    15. If everything is OK contact one of the code reviewers on Slack
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#16-discuss-suggested-changes-with-the-code-reviewer" title="16. Discuss suggested changes with the code reviewer" class="md-nav__link">
-    16. Discuss suggested changes with the code reviewer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#17-congratulations-your-code-has-been-merged-into-the-master-branch" title="17. Congratulations, your code has been merged into the master branch" class="md-nav__link">
-    17. Congratulations, your code has been merged into the master branch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#98-finished-projects" title="98% Finished Projects" class="md-nav__link">
-    98% Finished Projects
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#make-check-submission-explained" title="make check-submission explained" class="md-nav__link">
-    make check-submission explained
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#from-cloning-biodynamo-to-your-first-contribution" title="From Cloning BioDynaMo to Your First Contribution" class="md-nav__link">
-    From Cloning BioDynaMo to Your First Contribution
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-get-familiar-with-our-coding-convention" title="1. Get familiar with our coding convention" class="md-nav__link">
-    1. Get familiar with our coding convention
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-clone-the-repository" title="2. Clone the repository" class="md-nav__link">
-    2. Clone the repository
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-checkout-the-master-branch" title="3. Checkout the master branch" class="md-nav__link">
-    3. Checkout the master branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-get-latest-version-of-master" title="4. Get latest version of master" class="md-nav__link">
-    4. Get latest version of master
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-create-the-feature-branch" title="5. Create the feature branch" class="md-nav__link">
-    5. Create the feature branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-make-your-changes-and-write-tests" title="6. Make your changes and write tests" class="md-nav__link">
-    6. Make your changes and write tests
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-compile-and-run-tests" title="7. Compile and run tests" class="md-nav__link">
-    7. Compile and run tests
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-code-coverage" title="8. Code coverage" class="md-nav__link">
-    8. Code coverage
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-performance" title="9. Performance" class="md-nav__link">
-    9. Performance
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-documentation" title="10. Documentation" class="md-nav__link">
-    10. Documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#11-perform-final-checks-on-your-machine" title="11. Perform final checks on your machine" class="md-nav__link">
-    11. Perform final checks on your machine
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-commit" title="12. Commit" class="md-nav__link">
-    12. Commit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-create-pull-request" title="13. Create pull request" class="md-nav__link">
-    13. Create pull request
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14-verify-if-travis-ci-builds-are-ok" title="14. Verify if Travis-CI builds are OK" class="md-nav__link">
-    14. Verify if Travis-CI builds are OK
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#15-if-everything-is-ok-contact-one-of-the-code-reviewers-on-slack" title="15. If everything is OK contact one of the code reviewers on Slack" class="md-nav__link">
-    15. If everything is OK contact one of the code reviewers on Slack
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#16-discuss-suggested-changes-with-the-code-reviewer" title="16. Discuss suggested changes with the code reviewer" class="md-nav__link">
-    16. Discuss suggested changes with the code reviewer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#17-congratulations-your-code-has-been-merged-into-the-master-branch" title="17. Congratulations, your code has been merged into the master branch" class="md-nav__link">
-    17. Congratulations, your code has been merged into the master branch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#98-finished-projects" title="98% Finished Projects" class="md-nav__link">
-    98% Finished Projects
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#make-check-submission-explained" title="make check-submission explained" class="md-nav__link">
-    make check-submission explained
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                <h1 id="contributing-code">Contributing Code</h1>
+<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="lang:clipboard.copy" content="Copy to clipboard"><meta name="lang:clipboard.copied" content="Copied to clipboard"><meta name="lang:search.language" content="en"><meta name="lang:search.pipeline.stopwords" content="True"><meta name="lang:search.pipeline.trimmer" content="True"><meta name="lang:search.result.none" content="No matching documents"><meta name="lang:search.result.one" content="1 matching document"><meta name="lang:search.result.other" content="# matching documents"><meta name="lang:search.tokenizer" content="[\s\-]+"><link rel="shortcut icon" href="../images/bdm_logo.png"><meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.3.1"><title>Contribute - BioDynaMo Developer Documentation</title><link rel="stylesheet" href="../assets/stylesheets/application.4031d38b.css"><link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css"><meta name="theme-color" content="#3f51b5"><script src="../assets/javascripts/modernizr.74668098.js"></script><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=swap"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel="stylesheet" href="../assets/fonts/material-icons.css"></head><body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo"><svg class="md-svg"><defs><svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg></defs></svg> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label><a href="#contributing-code" tabindex="1" class="md-skip">Skip to content </a><header class="md-header" data-md-component="header"><nav class="md-header-nav md-grid"><div class="md-flex"><div class="md-flex__cell md-flex__cell--shrink"><a href=".." title="BioDynaMo Developer Documentation" class="md-header-nav__button md-logo"><img src="../images/bdm_logo.png" width="24" height="24"></a></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label></div><div class="md-flex__cell md-flex__cell--stretch"><div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"><span class="md-header-nav__topic">BioDynaMo Developer Documentation</span><span class="md-header-nav__topic">Contribute</span></div></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--search md-header-nav__button" for="__search"></label><div class="md-search" data-md-component="search" role="dialog"><label class="md-search__overlay" for="__search"></label><div class="md-search__inner" role="search"><form class="md-search__form" name="search"><input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active"> <label class="md-icon md-search__icon" for="__search"></label> <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">&#xE5CD;</button></form><div class="md-search__output"><div class="md-search__scrollwrap" data-md-scrollfix><div class="md-search-result" data-md-component="result"><div class="md-search-result__meta">Type to start searching</div><ol class="md-search-result__list"></ol></div></div></div></div></div></div><div class="md-flex__cell md-flex__cell--shrink"><div class="md-header-nav__source"><a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">BioDynaMo/biodynamo</div></a></div></div></div></nav></header><div class="md-container"><main class="md-main"><div class="md-main__inner md-grid" data-md-component="container"><div class="md-sidebar md-sidebar--primary" data-md-component="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary" data-md-level="0"><label class="md-nav__title md-nav__title--site" for="__drawer"><a href=".." title="BioDynaMo Developer Documentation" class="md-nav__button md-logo"><img src="../images/bdm_logo.png" width="48" height="48"></a>BioDynaMo Developer Documentation</label><div class="md-nav__source"><a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">BioDynaMo/biodynamo</div></a></div><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href=".." title="Welcome" class="md-nav__link">Welcome</a></li><li class="md-nav__item"><a href="../build/" title="Build BioDynaMo" class="md-nav__link">Build BioDynaMo</a></li><li class="md-nav__item"><a href="../code_quality/" title="Code Quality" class="md-nav__link">Code Quality</a></li><li class="md-nav__item md-nav__item--active"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc"><label class="md-nav__link md-nav__link--active" for="__toc">Contribute</label><a href="./" title="Contribute" class="md-nav__link md-nav__link--active">Contribute</a><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#from-cloning-biodynamo-to-your-first-contribution" title="From Cloning BioDynaMo to Your First Contribution" class="md-nav__link">From Cloning BioDynaMo to Your First Contribution</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#1-get-familiar-with-our-coding-convention" title="1. Get familiar with our coding convention" class="md-nav__link">1. Get familiar with our coding convention</a></li><li class="md-nav__item"><a href="#2-clone-the-repository" title="2. Clone the repository" class="md-nav__link">2. Clone the repository</a></li><li class="md-nav__item"><a href="#3-checkout-the-master-branch" title="3. Checkout the master branch" class="md-nav__link">3. Checkout the master branch</a></li><li class="md-nav__item"><a href="#4-get-latest-version-of-master" title="4. Get latest version of master" class="md-nav__link">4. Get latest version of master</a></li><li class="md-nav__item"><a href="#5-create-the-feature-branch" title="5. Create the feature branch" class="md-nav__link">5. Create the feature branch</a></li><li class="md-nav__item"><a href="#6-make-your-changes-and-write-tests" title="6. Make your changes and write tests" class="md-nav__link">6. Make your changes and write tests</a></li><li class="md-nav__item"><a href="#7-compile-and-run-tests" title="7. Compile and run tests" class="md-nav__link">7. Compile and run tests</a></li><li class="md-nav__item"><a href="#8-code-coverage" title="8. Code coverage" class="md-nav__link">8. Code coverage</a></li><li class="md-nav__item"><a href="#9-performance" title="9. Performance" class="md-nav__link">9. Performance</a></li><li class="md-nav__item"><a href="#10-documentation" title="10. Documentation" class="md-nav__link">10. Documentation</a></li><li class="md-nav__item"><a href="#11-perform-final-checks-on-your-machine" title="11. Perform final checks on your machine" class="md-nav__link">11. Perform final checks on your machine</a></li><li class="md-nav__item"><a href="#12-commit" title="12. Commit" class="md-nav__link">12. Commit</a></li><li class="md-nav__item"><a href="#13-create-pull-request" title="13. Create pull request" class="md-nav__link">13. Create pull request</a></li><li class="md-nav__item"><a href="#14-verify-if-travis-ci-builds-are-ok" title="14. Verify if Travis-CI builds are OK" class="md-nav__link">14. Verify if Travis-CI builds are OK</a></li><li class="md-nav__item"><a href="#15-if-everything-is-ok-contact-one-of-the-code-reviewers-on-slack" title="15. If everything is OK contact one of the code reviewers on Slack" class="md-nav__link">15. If everything is OK contact one of the code reviewers on Slack</a></li><li class="md-nav__item"><a href="#16-discuss-suggested-changes-with-the-code-reviewer" title="16. Discuss suggested changes with the code reviewer" class="md-nav__link">16. Discuss suggested changes with the code reviewer</a></li><li class="md-nav__item"><a href="#17-congratulations-your-code-has-been-merged-into-the-master-branch" title="17. Congratulations, your code has been merged into the master branch" class="md-nav__link">17. Congratulations, your code has been merged into the master branch</a></li></ul></nav></li><li class="md-nav__item"><a href="#98-finished-projects" title="98% Finished Projects" class="md-nav__link">98% Finished Projects</a></li><li class="md-nav__item"><a href="#make-check-submission-explained" title="make check-submission explained" class="md-nav__link">make check-submission explained</a></li></ul></nav></li></ul></nav></div></div></div><div class="md-sidebar md-sidebar--secondary" data-md-component="toc"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#from-cloning-biodynamo-to-your-first-contribution" title="From Cloning BioDynaMo to Your First Contribution" class="md-nav__link">From Cloning BioDynaMo to Your First Contribution</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#1-get-familiar-with-our-coding-convention" title="1. Get familiar with our coding convention" class="md-nav__link">1. Get familiar with our coding convention</a></li><li class="md-nav__item"><a href="#2-clone-the-repository" title="2. Clone the repository" class="md-nav__link">2. Clone the repository</a></li><li class="md-nav__item"><a href="#3-checkout-the-master-branch" title="3. Checkout the master branch" class="md-nav__link">3. Checkout the master branch</a></li><li class="md-nav__item"><a href="#4-get-latest-version-of-master" title="4. Get latest version of master" class="md-nav__link">4. Get latest version of master</a></li><li class="md-nav__item"><a href="#5-create-the-feature-branch" title="5. Create the feature branch" class="md-nav__link">5. Create the feature branch</a></li><li class="md-nav__item"><a href="#6-make-your-changes-and-write-tests" title="6. Make your changes and write tests" class="md-nav__link">6. Make your changes and write tests</a></li><li class="md-nav__item"><a href="#7-compile-and-run-tests" title="7. Compile and run tests" class="md-nav__link">7. Compile and run tests</a></li><li class="md-nav__item"><a href="#8-code-coverage" title="8. Code coverage" class="md-nav__link">8. Code coverage</a></li><li class="md-nav__item"><a href="#9-performance" title="9. Performance" class="md-nav__link">9. Performance</a></li><li class="md-nav__item"><a href="#10-documentation" title="10. Documentation" class="md-nav__link">10. Documentation</a></li><li class="md-nav__item"><a href="#11-perform-final-checks-on-your-machine" title="11. Perform final checks on your machine" class="md-nav__link">11. Perform final checks on your machine</a></li><li class="md-nav__item"><a href="#12-commit" title="12. Commit" class="md-nav__link">12. Commit</a></li><li class="md-nav__item"><a href="#13-create-pull-request" title="13. Create pull request" class="md-nav__link">13. Create pull request</a></li><li class="md-nav__item"><a href="#14-verify-if-travis-ci-builds-are-ok" title="14. Verify if Travis-CI builds are OK" class="md-nav__link">14. Verify if Travis-CI builds are OK</a></li><li class="md-nav__item"><a href="#15-if-everything-is-ok-contact-one-of-the-code-reviewers-on-slack" title="15. If everything is OK contact one of the code reviewers on Slack" class="md-nav__link">15. If everything is OK contact one of the code reviewers on Slack</a></li><li class="md-nav__item"><a href="#16-discuss-suggested-changes-with-the-code-reviewer" title="16. Discuss suggested changes with the code reviewer" class="md-nav__link">16. Discuss suggested changes with the code reviewer</a></li><li class="md-nav__item"><a href="#17-congratulations-your-code-has-been-merged-into-the-master-branch" title="17. Congratulations, your code has been merged into the master branch" class="md-nav__link">17. Congratulations, your code has been merged into the master branch</a></li></ul></nav></li><li class="md-nav__item"><a href="#98-finished-projects" title="98% Finished Projects" class="md-nav__link">98% Finished Projects</a></li><li class="md-nav__item"><a href="#make-check-submission-explained" title="make check-submission explained" class="md-nav__link">make check-submission explained</a></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset"><h1 id="contributing-code">Contributing Code</h1>
 <h2 id="from-cloning-biodynamo-to-your-first-contribution">From Cloning BioDynaMo to Your First Contribution</h2>
-<p>The following process describes steps to contribute code changes to the <code class="codehilite">master</code> branch.
+<p>The following process describes steps to contribute code changes to the <code class="codehilite"><span class="n">master</span></code> branch.
 It follows best practices from industry to ensure a maintainable, high quality code base.</p>
-<p>The shown commands assume that <code class="codehilite">biodynamo/build</code> is the current directory.</p>
+<p>The shown commands assume that <code class="codehilite"><span class="n">biodynamo</span><span class="o">/</span><span class="n">build</span></code> is the current directory.</p>
 <p>If you follow these steps it will make life of the code reviewer a lot easier!
 Consequently, it will ensure that your code is accepted sooner :)</p>
 <h3 id="1-get-familiar-with-our-coding-convention">1. Get familiar with our coding convention</h3>
@@ -653,11 +12,11 @@ and our page about <a href="code_quality">Code Quality</a></p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo.git
 </pre></div>
 
-<h3 id="3-checkout-the-master-branch">3. Checkout the <code class="codehilite">master</code> branch</h3>
+<h3 id="3-checkout-the-master-branch">3. Checkout the <code class="codehilite"><span class="n">master</span></code> branch</h3>
 <div class="codehilite"><pre><span></span>git checkout master
 </pre></div>
 
-<h3 id="4-get-latest-version-of-master">4. Get latest version of <code class="codehilite">master</code></h3>
+<h3 id="4-get-latest-version-of-master">4. Get latest version of <code class="codehilite"><span class="n">master</span></code></h3>
 <div class="codehilite"><pre><span></span>git pull origin master
 </pre></div>
 
@@ -694,42 +53,42 @@ Check if</p>
 <li>it sufficiently describes the functionality</li>
 </ul>
 <p>Please pay attention to warnings from doxygen generation. Here an example of an inconsistent documentation:
-<div class="codehilite"><pre><span></span># make doc ouput:
-...
-kd_tree_node.h:132: warning: argument &#39;axis&#39; of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode&lt; T &gt;::GetSAHSplitPoint()
-kd_tree_node.h:132: warning: argument &#39;num&#39; of command @param is not found in the argument list of bdm::spatial_organization::KdTreeNode&lt; T &gt;::GetSAHSplitPoint()
+<div class="codehilite"><pre><span></span><span class="err">#</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">doc</span><span class="w"> </span><span class="nl">ouput</span><span class="p">:</span><span class="w"></span>
+<span class="p">...</span><span class="w"></span>
+<span class="n">kd_tree_node</span><span class="p">.</span><span class="nl">h</span><span class="p">:</span><span class="mi">132</span><span class="err">:</span><span class="w"> </span><span class="nl">warning</span><span class="p">:</span><span class="w"> </span><span class="n">argument</span><span class="w"> </span><span class="s1">&#39;axis&#39;</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="nv">@param</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="k">found</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">argument</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nl">bdm</span><span class="p">:</span><span class="err">:</span><span class="nl">spatial_organization</span><span class="p">:</span><span class="err">:</span><span class="n">KdTreeNode</span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&gt;::</span><span class="n">GetSAHSplitPoint</span><span class="p">()</span><span class="w"></span>
+<span class="n">kd_tree_node</span><span class="p">.</span><span class="nl">h</span><span class="p">:</span><span class="mi">132</span><span class="err">:</span><span class="w"> </span><span class="nl">warning</span><span class="p">:</span><span class="w"> </span><span class="n">argument</span><span class="w"> </span><span class="s1">&#39;num&#39;</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">command</span><span class="w"> </span><span class="nv">@param</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="k">found</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">argument</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nl">bdm</span><span class="p">:</span><span class="err">:</span><span class="nl">spatial_organization</span><span class="p">:</span><span class="err">:</span><span class="n">KdTreeNode</span><span class="o">&lt;</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">&gt;::</span><span class="n">GetSAHSplitPoint</span><span class="p">()</span><span class="w"></span>
 </pre></div></p>
 <p>The corresponding code snippet shows a mismatch between code and documentation
 which needs to be fixed.
-<div class="codehilite"><pre><span></span>/// Gets point, which we use for surface area heuristics
-/// @param axis - on what axis are we separating: x=0,y=1,z=2
-/// @param num - what parttion are we on (1;N)
-/// @return sah rating
-Point GetSAHSplitPoint();
+<div class="codehilite"><pre><span></span><span class="o">///</span> <span class="nv">Gets</span> <span class="nv">point</span>, <span class="nv">which</span> <span class="nv">we</span> <span class="nv">use</span> <span class="k">for</span> <span class="nv">surface</span> <span class="nv">area</span> <span class="nv">heuristics</span>
+<span class="o">///</span> @<span class="nv">param</span> <span class="nv">axis</span> <span class="o">-</span> <span class="nv">on</span> <span class="nv">what</span> <span class="nv">axis</span> <span class="nv">are</span> <span class="nv">we</span> <span class="nv">separating</span>: <span class="nv">x</span><span class="o">=</span><span class="mi">0</span>,<span class="nv">y</span><span class="o">=</span><span class="mi">1</span>,<span class="nv">z</span><span class="o">=</span><span class="mi">2</span>
+<span class="o">///</span> @<span class="nv">param</span> <span class="nv">num</span> <span class="o">-</span> <span class="nv">what</span> <span class="nv">parttion</span> <span class="nv">are</span> <span class="nv">we</span> <span class="nv">on</span> <span class="ss">(</span><span class="mi">1</span><span class="c1">;N)</span>
+<span class="o">///</span> @<span class="k">return</span> <span class="nv">sah</span> <span class="nv">rating</span>
+<span class="nv">Point</span> <span class="nv">GetSAHSplitPoint</span><span class="ss">()</span><span class="c1">;</span>
 </pre></div></p>
 <h3 id="11-perform-final-checks-on-your-machine">11. Perform final checks on your machine</h3>
 <p><div class="codehilite"><pre><span></span>make check-submission
 </pre></div>
 This command will execute all tests, check code formatting, styleguide rules, build the documentation and coverage report (<a href="contribute/#make-check-submission-explained">more info</a>).</p>
-<p>False positives from <code class="codehilite">clang-tidy</code> can be silenced by adding <code class="codehilite">// NOLINT</code> at the end of the line.
-Disabling <code class="codehilite">clang-format</code> for a certain part can be done by encapsulating it with the following comments:
-<div class="codehilite"><pre><span></span>// clang-format off
-code here is not changed by clang-format
-// clang-format on
+<p>False positives from <code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">tidy</span></code> can be silenced by adding <code class="codehilite"><span class="o">//</span> <span class="n">NOLINT</span></code> at the end of the line.
+Disabling <code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">format</span></code> for a certain part can be done by encapsulating it with the following comments:
+<div class="codehilite"><pre><span></span><span class="o">//</span> <span class="n">clang</span><span class="o">-</span><span class="n">format</span> <span class="k">off</span>
+<span class="n">code</span> <span class="n">here</span> <span class="k">is</span> <span class="k">not</span> <span class="n">changed</span> <span class="k">by</span> <span class="n">clang</span><span class="o">-</span><span class="n">format</span>
+<span class="o">//</span> <span class="n">clang</span><span class="o">-</span><span class="n">format</span> <span class="k">on</span>
 </pre></div></p>
-<p>If there are no false positives and you are fine with the changes suggested by <code class="codehilite">clang-format</code> and <code class="codehilite">clang-tidy</code> run: <code class="codehilite">make fix-submission</code>. However, failing build, tests, compiler warnings, issues from cpplint and warnings from doxygen must be fixed manually. Also some <code class="codehilite">clang-tidy</code> issues cannot be resolved automatically. After running <code class="codehilite">make fix-submission</code> please execute <code class="codehilite">make check-submission</code> to see if all issues have been resolved.</p>
+<p>If there are no false positives and you are fine with the changes suggested by <code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">format</span></code> and <code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">tidy</span></code> run: <code class="codehilite"><span class="n">make</span> <span class="n">fix</span><span class="o">-</span><span class="n">submission</span></code>. However, failing build, tests, compiler warnings, issues from cpplint and warnings from doxygen must be fixed manually. Also some <code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">tidy</span></code> issues cannot be resolved automatically. After running <code class="codehilite"><span class="n">make</span> <span class="n">fix</span><span class="o">-</span><span class="n">submission</span></code> please execute <code class="codehilite"><span class="n">make</span> <span class="k">check</span><span class="o">-</span><span class="n">submission</span></code> to see if all issues have been resolved.</p>
 <p>Please verify that:</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> code compiles without warnings</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> all tests pass</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> all valgrind tests pass</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> code complies with our coding styleguide -- no errors from <code class="codehilite">clang-format</code>, <code class="codehilite">clang-tidy</code> or <code class="codehilite">cpplint</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> code complies with our coding styleguide -- no errors from <code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">format</span></code>, <code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">tidy</span></code> or <code class="codehilite"><span class="n">cpplint</span></code></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> documentation is in good order -- see point 10</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> code is sufficiently covered by test cases</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> performance did not degrade due to the code changes</li>
 </ul>
 <h3 id="12-commit">12. Commit</h3>
-<p>Once <code class="codehilite">make check-submission</code> does not report any issues, the final commit can be done.
+<p>Once <code class="codehilite"><span class="n">make</span> <span class="k">check</span><span class="o">-</span><span class="n">submission</span></code> does not report any issues, the final commit can be done.
 Have a look at <a href="https://github.com/BioDynaMo/biodynamo/wiki/BioDynaMo-Developers-Guide">how to write good commit messages</a>!
 <div class="codehilite"><pre><span></span>git add -i
 git commit
@@ -742,7 +101,7 @@ Unlike compilation and test suite execution, problems caused by formatting, code
 <h3 id="15-if-everything-is-ok-contact-one-of-the-code-reviewers-on-slack">15. If everything is OK contact one of the code reviewers on Slack</h3>
 <h3 id="16-discuss-suggested-changes-with-the-code-reviewer">16. Discuss suggested changes with the code reviewer</h3>
 <p>If code changes are necessary, go back to step 6</p>
-<h3 id="17-congratulations-your-code-has-been-merged-into-the-master-branch">17. Congratulations, your code has been merged into the <code class="codehilite">master</code> branch</h3>
+<h3 id="17-congratulations-your-code-has-been-merged-into-the-master-branch">17. Congratulations, your code has been merged into the <code class="codehilite"><span class="n">master</span></code> branch</h3>
 <p>Many thanks for your contribution, rigor and patience!</p>
 <h2 id="98-finished-projects">98% Finished Projects</h2>
 <p>In the open source world sometimes it happens that people work on a feature for weeks or month and leave after it has been finished for 98%. Although this 2% don't look like a big issue, usually that means that all your work doesn't make it into the production code. Normally, other developers are busy and don't have the time to dive into your work and find the pieces that are missing or not working yet. This situation would be a waste of your precious time. We bet that it is way more satisfying if your contribution makes it into production and will be used by scientists around the world.</p>
@@ -752,8 +111,8 @@ Unlike compilation and test suite execution, problems caused by formatting, code
 * well documented
 * include a demo / screencast in certain cases.</p>
 <p>Therefore, we want to encourage you to reserve enough time in the end where you don't code. We do our best to support you!</p>
-<h2 id="make-check-submission-explained"><code class="codehilite">make check-submission</code> explained</h2>
-<p>The command <code class="codehilite">make check-submission</code> is our central automatic tool to validate if code changes are ready to be merged into master. It performs a series of checks and reports errors or warnings.</p>
+<h2 id="make-check-submission-explained"><code class="codehilite"><span class="n">make</span> <span class="k">check</span><span class="o">-</span><span class="n">submission</span></code> explained</h2>
+<p>The command <code class="codehilite"><span class="n">make</span> <span class="k">check</span><span class="o">-</span><span class="n">submission</span></code> is our central automatic tool to validate if code changes are ready to be merged into master. It performs a series of checks and reports errors or warnings.</p>
 <p>Therefore, it makes the code review process easier. Since developers can execute it on their local machine, the feedback loop is much tighter, resulting in a faster submission process.
 Although, many issues are caught, it has its limitations. Thus, it cannot fully replace manual code reviews.</p>
 <p>Since it possibly outputs a lot of information, this page explains how to interpret the results.</p>
@@ -761,93 +120,18 @@ Although, many issues are caught, it has its limitations. Thus, it cannot fully 
 <ul>
 <li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L930-L1015">Successful build without compiler warnings</a></li>
 <li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1017-L1026">All tests pass</a></li>
-<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1063"><code class="codehilite">clang-format</code> does not report issues</a></li>
-<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1092"><code class="codehilite">clang-tidy</code> does not report issues</a></li>
-<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1145"><code class="codehilite">cpplint</code> does not report issues</a></li>
+<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1063"><code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">format</span></code> does not report issues</a></li>
+<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1092"><code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">tidy</span></code> does not report issues</a></li>
+<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1145"><code class="codehilite"><span class="n">cpplint</span></code> does not report issues</a></li>
 <li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233559945#L1150">doxygen does not report issues</a></li>
 </ul>
 <p><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836">Here</a> an example of a <strong>passing build</strong>, but with issues in many categories -- these issues must be fixed as well:</p>
 <ul>
 <li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L936-L940">Compiler warning</a></li>
-<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1047-L1051"><code class="codehilite">clang-format</code> reports issues</a></li>
+<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1047-L1051"><code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">format</span></code> reports issues</a></li>
 <li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1059-L1079">Since there were issues, they are displayed</a></li>
-<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1086-L1093"><code class="codehilite">clang-tidy</code> reports issues</a></li>
+<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1086-L1093"><code class="codehilite"><span class="n">clang</span><span class="o">-</span><span class="n">tidy</span></code> reports issues</a></li>
 <li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1100-L1114">Since there were issues, they are displayed</a></li>
-<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1119-L1129"><code class="codehilite">cpplint</code> reports issues</a></li>
+<li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1119-L1129"><code class="codehilite"><span class="n">cpplint</span></code> reports issues</a></li>
 <li><a href="https://travis-ci.org/BioDynaMo/biodynamo/jobs/233636836#L1133-L1142">doxygen reports issues</a></li>
-</ul>
-                
-                  
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-      </main>
-      
-        
-<footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../code_quality/" title="Code Quality" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Code Quality
-              </span>
-            </div>
-          </a>
-        
-        
-      </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; The BioDynaMo Project. All Rights Reserved.
-          </div>
-        
-        powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
-      </div>
-      
-  <div class="md-footer-social">
-    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
-    
-      <a href="http://biodynamo.web.cern.ch" class="md-footer-social__link fa fa-globe"></a>
-    
-      <a href="https://github.com/BioDynaMo/biodynamo" class="md-footer-social__link fa fa-github-alt"></a>
-    
-  </div>
-
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    
-      <script src="../assets/javascripts/application.dc02f8ce.js"></script>
-      
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-    
-  </body>
-</html>
+</ul></article></div></div></main><footer class="md-footer"><div class="md-footer-nav"><nav class="md-footer-nav__inner md-grid"><a href="../code_quality/" title="Code Quality" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev"><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-back md-footer-nav__button"></i></div><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Previous</span>Code Quality</span></div></a></nav></div><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright"><div class="md-footer-copyright__highlight">Copyright &copy; The BioDynaMo Project. All Rights Reserved.</div>powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div><div class="md-footer-social"><link rel="stylesheet" href="../assets/fonts/font-awesome.css"> <a href="http://biodynamo.web.cern.ch" class="md-footer-social__link fa fa-globe"></a>  <a href="https://github.com/BioDynaMo/biodynamo" class="md-footer-social__link fa fa-github-alt"></a> </div></div></div></footer></div><script src="../assets/javascripts/application.b260a35d.js"></script><script>app.initialize({version:"1.0.4",url:{base:".."}})</script></body></html>
