@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['param_5ft',['Param_t',['../structbdm_1_1Simulation.html#aa680bcade750990cf43266d8490e33da',1,'bdm::Simulation']]]
+  ['raw_5ftype',['raw_type',['../namespacebdm.html#a07415a0247931fb2324b90bcaf78afb3',1,'bdm']]]
 ];

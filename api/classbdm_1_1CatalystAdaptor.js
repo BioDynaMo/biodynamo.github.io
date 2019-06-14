@@ -1,12 +1,12 @@
 var classbdm_1_1CatalystAdaptor =
 [
-    [ "CatalystAdaptor", "classbdm_1_1CatalystAdaptor.html#ae3f05c90590b0dc122d03842bbaa9d9a", null ],
-    [ "ExportVisualization", "classbdm_1_1CatalystAdaptor.html#a4aa216a6727c1bf644956d5e9ab822fa", null ],
-    [ "LiveVisualization", "classbdm_1_1CatalystAdaptor.html#af5b333f9e1074a74467386e10a80b75e", null ],
-    [ "Visualize", "classbdm_1_1CatalystAdaptor.html#a81aba083e64010adac43a03c5d6d0123", null ],
-    [ "WriteToFile", "classbdm_1_1CatalystAdaptor.html#aa3b31dfcf14fb17227a9f1730aa8449f", null ],
+    [ "CatalystAdaptor", "classbdm_1_1CatalystAdaptor.html#ad961b7e753f89ec80ac8d11f41cd9951", null ],
+    [ "ExportVisualization", "classbdm_1_1CatalystAdaptor.html#ae87363d34d3b0b28a415054aad4a7236", null ],
+    [ "LiveVisualization", "classbdm_1_1CatalystAdaptor.html#a08f0042a38c7d3866d5afa5b9944d015", null ],
+    [ "Visualize", "classbdm_1_1CatalystAdaptor.html#adde0779e5fc7bedb53d98789a10a9077", null ],
+    [ "WriteToFile", "classbdm_1_1CatalystAdaptor.html#a0ff983c6ce3d0836ab9f820800f1e607", null ],
     [ "CatalystAdaptorTest_CheckVisualizationSelection_Test", "classbdm_1_1CatalystAdaptor.html#af9b89947a42ead5626f75a0d1c340cda", null ],
     [ "CatalystAdaptorTest_GenerateParaviewState_Test", "classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c", null ],
     [ "CatalystAdaptorTest_GenerateSimulationInfoJson_Test", "classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6", null ],
-    [ "DiffusionTest_ModelInitializer_Test", "classbdm_1_1CatalystAdaptor.html#a303b5b59fe3b35aaf2850da4cca15e70", null ]
+    [ "DISABLED_DiffusionTest_ModelInitializer_Test", "classbdm_1_1CatalystAdaptor.html#aaa1dff7072350094a3a0cc149be6fba5", null ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['neuriteelementext',['NeuriteElementExt',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#a75fad2cb32b8d13b73de12f62f48aa55',1,'bdm::experimental::neuroscience::NeuriteElementExt']]],
-  ['neuronsomaext',['NeuronSomaExt',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSomaExt.html#a935fb3070a895a1110ffce5234d1663e',1,'bdm::experimental::neuroscience::NeuronSomaExt']]]
+  ['simulation',['Simulation',['../structbdm_1_1Param.html#aeb51e0a4c44d4192cfbdb79598859172',1,'bdm::Param']]],
+  ['simulationbackup',['SimulationBackup',['../classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b',1,'bdm::ResourceManager']]]
 ];

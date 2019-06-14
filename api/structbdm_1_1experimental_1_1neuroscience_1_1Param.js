@@ -1,9 +1,11 @@
 var structbdm_1_1experimental_1_1neuroscience_1_1Param =
 [
-    [ "AssignFromConfig", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ae365fefa1320254ffcfce9bc65ea2f5b", null ],
-    [ "IsA", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a61d7b6bd8746cbb10546c37b3aed1310", null ],
-    [ "ShowMembers", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a7b4e4f12c3773561114370fd2c66f7f2", null ],
-    [ "Streamer", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ad6af2ff8990b879bcbbfd6892d7cbbf7", null ],
+    [ "AssignFromConfig", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a21c6c14e7a2567d74396c60e64410645", null ],
+    [ "GetCopy", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ac1028efe1d6d822ec3cbe9e5c9cdcee5", null ],
+    [ "GetUid", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a7b1e5c116a791d404ce5951f8e45b6ca", null ],
+    [ "IsA", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a51923737fe3f919273e2a2665323a8e3", null ],
+    [ "ShowMembers", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#aa197d8740e0e50882e4de169c62c39b9", null ],
+    [ "Streamer", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ad90aedce9a385a74ce9795bad5c2781b", null ],
     [ "StreamerNVirtual", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a114e24047743ad434874f9dac7551f90", null ],
     [ "neurite_default_actual_length_", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a6cf5e4cb50eb1a77b99c18e7e078a122", null ],
     [ "neurite_default_adherence_", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a13311dca9bdf9969157e2603739de8ad", null ],

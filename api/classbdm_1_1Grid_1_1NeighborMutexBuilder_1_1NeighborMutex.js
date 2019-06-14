@@ -1,9 +1,8 @@
 var classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex =
 [
-    [ "NeighborMutex", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a9b16379a6abc07d4d37f98850d721793", null ],
-    [ "lock", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ae0e4546a87624f020b15a53473b222ac", null ],
-    [ "unlock", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a3f94e880f38b1c01e18c4f3f33243f03", null ],
-    [ "box_idx_", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#aecde4b08fb043fe25fe7bbab64087cfe", null ],
-    [ "mutex_builder_", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a8f8a54f2dbdb7cef93fbe7010ab54b4e", null ],
-    [ "mutex_indices_", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ab0c0241359f52b5232c11096c3ae7f2e", null ]
+    [ "NeighborMutex", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a5028bd465f9277f825b62633ed1bc86b", null ],
+    [ "lock", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0efa7dfa2c8dd0d3570757bdfd9aa3ed", null ],
+    [ "unlock", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a33db0eb930a139e8555416693400c280", null ],
+    [ "mutex_builder_", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ae2eddd8d9b03d55f93a0c66d347aaebf", null ],
+    [ "mutex_indices_", "classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0eceaf66add590b75a6d3d2bfcde309f", null ]
 ];

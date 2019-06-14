@@ -1,10 +1,7 @@
 var namespacebdm_1_1detail =
 [
-    [ "ToTupleOfSOContainers", "structbdm_1_1detail_1_1ToTupleOfSOContainers.html", null ],
-    [ "ToTupleOfSOContainers< Backend, CTList< Types...> >", "structbdm_1_1detail_1_1ToTupleOfSOContainers_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4.html", "structbdm_1_1detail_1_1ToTupleOfSOContainers_3_01Backend_00_01CTList_3_01Types_8_8_8_4_01_4" ],
-    [ "ToIndex", "structbdm_1_1detail_1_1ToIndex.html", null ],
-    [ "ToIndex< TSo, CTList< Types...> >", "structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01CTList_3_01Types_8_8_8_4_01_4.html", null ],
+    [ "ExtractUidPtr", "structbdm_1_1detail_1_1ExtractUidPtr.html", null ],
     [ "GetIndexImpl", "structbdm_1_1detail_1_1GetIndexImpl.html", null ],
     [ "GetIndexImpl< T, Counter, FirstType >", "structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_01_4.html", null ],
-    [ "GetIndexImpl< T, Counter, FirstType, RemainingTypes...>", "structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_00_01RemainingTypes_8_8_8_4.html", null ]
+    [ "GetIndexImpl< T, Counter, FirstType, RemainingTypes... >", "structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_00_01RemainingTypes_8_8_8_01_4.html", null ]
 ];

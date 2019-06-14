@@ -10,12 +10,8 @@ var dir_087ef7b4b2bc9758818ca5b5acc1bcc7 =
     [ "displacement_op_cpu.h", "displacement__op__cpu_8h.html", [
       [ "DisplacementOpCpu", "classbdm_1_1DisplacementOpCpu.html", "classbdm_1_1DisplacementOpCpu" ]
     ] ],
-    [ "displacement_op_cuda.h", "displacement__op__cuda_8h.html", [
-      [ "DisplacementOpCuda", "classbdm_1_1DisplacementOpCuda.html", "classbdm_1_1DisplacementOpCuda" ]
-    ] ],
-    [ "displacement_op_opencl.h", "displacement__op__opencl_8h.html", [
-      [ "DisplacementOpOpenCL", "classbdm_1_1DisplacementOpOpenCL.html", "classbdm_1_1DisplacementOpOpenCL" ]
-    ] ],
+    [ "displacement_op_cuda.h", "displacement__op__cuda_8h.html", null ],
+    [ "displacement_op_opencl.h", "displacement__op__opencl_8h.html", null ],
     [ "dividing_cell_op.h", "dividing__cell__op_8h.html", [
       [ "DividingCellOp", "classbdm_1_1DividingCellOp.html", "classbdm_1_1DividingCellOp" ]
     ] ],

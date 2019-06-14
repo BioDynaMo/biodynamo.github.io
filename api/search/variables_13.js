@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['value',['value',['../structbdm_1_1detail_1_1ToIndex_3_01TSo_00_01CTList_3_01Types_8_8_8_4_01_4.html#a0f3ca4d8fceb14d082695602df538856',1,'bdm::detail::ToIndex&lt; TSo, CTList&lt; Types...&gt; &gt;::value()'],['../structbdm_1_1is__soa.html#a0709239c8fa5c1a8a76bfa1bd78899d6',1,'bdm::is_soa::value()'],['../structbdm_1_1is__soa__sphere.html#a53dc87606d5c57698d40531c94b5a329',1,'bdm::is_soa_sphere::value()']]],
+  ['value',['value',['../structbdm_1_1is__so__ptr.html#a8a4bd6c1b035019338672551ded993eb',1,'bdm::is_so_ptr::value()'],['../structbdm_1_1is__so__ptr_3_01SoPointer_3_01T_01_4_01_4.html#a748638e7b1fd70d5ba4e8a602d032618',1,'bdm::is_so_ptr&lt; SoPointer&lt; T &gt; &gt;::value()']]],
   ['value_5f',['value_',['../structbdm_1_1Uniform.html#a66737c1bc4622489c54142ce0f20b928',1,'bdm::Uniform']]],
-  ['variant_5f',['variant_',['../structbdm_1_1StreamerReadFunctor.html#a312d119a4e51724d4427df39e6994399',1,'bdm::StreamerReadFunctor']]],
-  ['visualization_5f',['visualization_',['../classbdm_1_1Scheduler.html#a68310f9b5d93cb211a9d6bcbfe16885d',1,'bdm::Scheduler']]],
+  ['visualization_5f',['visualization_',['../classbdm_1_1Scheduler.html#a0bae4e5fc79d2716b096002d13284ba7',1,'bdm::Scheduler']]],
   ['visualization_5fexport_5finterval_5f',['visualization_export_interval_',['../structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2',1,'bdm::Param']]],
   ['visualize_5fdiffusion_5f',['visualize_diffusion_',['../structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc',1,'bdm::Param']]],
   ['visualize_5fsim_5fobjects_5f',['visualize_sim_objects_',['../structbdm_1_1Param.html#a84eb2718cdaa737f937f71f89055f6a0',1,'bdm::Param']]],
-  ['volume_5f',['volume_',['../classbdm_1_1CellExt.html#a65d8e619b11b4d94bef4909327d34358',1,'bdm::CellExt::volume_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElementExt.html#ae66a5f4c01d29980c89b073e2a81adbf',1,'bdm::experimental::neuroscience::NeuriteElementExt::volume_()']]],
+  ['volume_5f',['volume_',['../classbdm_1_1Cell.html#ae704adb3dbe70154f878c35916b7ba22',1,'bdm::Cell::volume_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a04289af10f3679e6d0eb66d0a688f3bb',1,'bdm::experimental::neuroscience::NeuriteElement::volume_()']]],
   ['volume_5fratio_5f',['volume_ratio_',['../structbdm_1_1CellDivisionEvent.html#a76773fc803eb2f49028a76521a360c24',1,'bdm::CellDivisionEvent']]]
 ];

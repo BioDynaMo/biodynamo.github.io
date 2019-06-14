@@ -11,6 +11,5 @@ var dir_1b63f22ff36ffa98be356425464e796a =
     ] ],
     [ "sim_object_vector.h", "sim__object__vector_8h.html", [
       [ "SimObjectVector", "classbdm_1_1SimObjectVector.html", "classbdm_1_1SimObjectVector" ]
-    ] ],
-    [ "variant.h", "variant_8h.html", "variant_8h" ]
+    ] ]
 ];

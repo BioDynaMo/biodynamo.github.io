@@ -1,5 +1,8 @@
 var structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent =
 [
+    [ "NeuriteBifurcationEvent", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a9de2021e8adb1d55cf5fa1c677fe921f", null ],
+    [ "~NeuriteBifurcationEvent", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a300e4f32cd0b12658240928cee125723", null ],
+    [ "GetId", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#aa6d9c3bcfcefd991fb3aeb4a9533e39c", null ],
     [ "diameter_left_", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a475c2e8f940e1b91463502e489318d38", null ],
     [ "diameter_right_", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a11689e53374d8877fea8571129fe108c", null ],
     [ "direction_left_", "structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a3c23212ace9720585ccd8c23b7e80e1f", null ],
