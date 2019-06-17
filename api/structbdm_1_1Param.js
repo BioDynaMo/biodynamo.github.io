@@ -44,6 +44,7 @@ var structbdm_1_1Param =
     [ "statistics_", "structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d", null ],
     [ "use_gpu_", "structbdm_1_1Param.html#abd15e376dcf514fb83c6ff55b49cd3db", null ],
     [ "use_opencl_", "structbdm_1_1Param.html#a36f0fb400b2fcbe803373bc994a8a612", null ],
+    [ "visualization_export_generate_pvsm_", "structbdm_1_1Param.html#a728fb8329237dc9a52413beb47b84dbb", null ],
     [ "visualization_export_interval_", "structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2", null ],
     [ "visualize_diffusion_", "structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc", null ],
     [ "visualize_sim_objects_", "structbdm_1_1Param.html#a84eb2718cdaa737f937f71f89055f6a0", null ]
