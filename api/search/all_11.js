@@ -67,7 +67,7 @@ var searchData=
   ['simulationbackup',['SimulationBackup',['../classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b',1,'bdm::ResourceManager::SimulationBackup()'],['../classbdm_1_1SimulationBackup.html#ac073b636105394abf06331e784af20fe',1,'bdm::SimulationBackup::SimulationBackup()']]],
   ['simulationbackup',['SimulationBackup',['../classbdm_1_1SimulationBackup.html',1,'bdm']]],
   ['simulationtest',['SimulationTest',['../classbdm_1_1Simulation.html#a5a2a30678340fd7a851b8c3e262a1e06',1,'bdm::Simulation']]],
-  ['size',['size',['../classbdm_1_1FixedSizeVector.html#a0b13d16bee3d7804f652f9313e8de55f',1,'bdm::FixedSizeVector::size()'],['../classbdm_1_1InlineVector.html#a273b386a3b0b2717b03661c6344d1c93',1,'bdm::InlineVector::size()'],['../classbdm_1_1ParallelResizeVector.html#ac98e7b25a39e5795c28db16b7167124d',1,'bdm::ParallelResizeVector::size()'],['../classbdm_1_1SimObjectVector.html#aab4c7d5c260acc7ffed17423ad354051',1,'bdm::SimObjectVector::size()']]],
+  ['size',['size',['../classbdm_1_1FixedSizeVector.html#a0b13d16bee3d7804f652f9313e8de55f',1,'bdm::FixedSizeVector::size()'],['../classbdm_1_1InlineVector.html#a273b386a3b0b2717b03661c6344d1c93',1,'bdm::InlineVector::size()'],['../classbdm_1_1MathArray.html#a4a161dbd859277729b119a42df99aaaf',1,'bdm::MathArray::size()'],['../classbdm_1_1ParallelResizeVector.html#ac98e7b25a39e5795c28db16b7167124d',1,'bdm::ParallelResizeVector::size()'],['../classbdm_1_1SimObjectVector.html#aab4c7d5c260acc7ffed17423ad354051',1,'bdm::SimObjectVector::size()']]],
   ['size_5f',['size_',['../classbdm_1_1FixedSizeVector.html#a10db98c34d66869c0c79bad812f1f7bb',1,'bdm::FixedSizeVector::size_()'],['../classbdm_1_1InlineVector.html#a136441448e8d8f015f408d9fc5e7845c',1,'bdm::InlineVector::size_()'],['../classbdm_1_1ParallelResizeVector.html#a1e5153234955ee97a2d29c5253727637',1,'bdm::ParallelResizeVector::size_()'],['../classbdm_1_1SimObjectVector.html#a74feb8a1e0f38dee49f38b246e1e2cd5',1,'bdm::SimObjectVector::size_()']]],
   ['so_5fpointer_2eh',['so_pointer.h',['../so__pointer_8h.html',1,'']]],
   ['so_5fuid_2eh',['so_uid.h',['../so__uid_8h.html',1,'']]],
@@ -101,7 +101,7 @@ var searchData=
   ['substance_5fname_5f',['substance_name_',['../classbdm_1_1DiffusionGrid.html#aa260ee52df8f892cdbd10d01ce94d69e',1,'bdm::DiffusionGrid']]],
   ['subtract',['Subtract',['../structbdm_1_1Math.html#a80c38cbb986a66639c5ff0ccfce5674e',1,'bdm::Math']]],
   ['successors_5f',['successors_',['../classbdm_1_1Grid.html#aa87802e86af6794443b1b15c4f4bc440',1,'bdm::Grid']]],
-  ['sum',['Sum',['../structbdm_1_1Math.html#a1bf5459fe9cd256573211ffeb8554264',1,'bdm::Math']]],
+  ['sum',['Sum',['../classbdm_1_1MathArray.html#a71d4901bf000d48ffbb198f2780c94b1',1,'bdm::MathArray::Sum()'],['../structbdm_1_1Math.html#a1bf5459fe9cd256573211ffeb8554264',1,'bdm::Math::Sum()']]],
   ['swap',['swap',['../classbdm_1_1ParallelResizeVector.html#a696aa8b0f42003d412ab539d60f5297d',1,'bdm::ParallelResizeVector']]],
   ['syserror',['SysError',['../classbdm_1_1Log.html#abdbbb6b659eb2e08d2a195ac0d51bd7a',1,'bdm::Log']]],
   ['sysinfo_5f',['sysinfo_',['../classbdm_1_1RuntimeVariables.html#a728f3490435d097f321795b28564af02',1,'bdm::RuntimeVariables']]]

@@ -33,6 +33,7 @@ var namespacebdm =
     [ "is_so_ptr< SoPointer< T > >", "structbdm_1_1is__so__ptr_3_01SoPointer_3_01T_01_4_01_4.html", null ],
     [ "Log", "classbdm_1_1Log.html", null ],
     [ "Math", "structbdm_1_1Math.html", null ],
+    [ "MathArray", "classbdm_1_1MathArray.html", "classbdm_1_1MathArray" ],
     [ "MatlabExporter", "classbdm_1_1MatlabExporter.html", "classbdm_1_1MatlabExporter" ],
     [ "ModelInitializer", "structbdm_1_1ModelInitializer.html", null ],
     [ "ModuleParam", "structbdm_1_1ModuleParam.html", "structbdm_1_1ModuleParam" ],
