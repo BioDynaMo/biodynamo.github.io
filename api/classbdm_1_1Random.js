@@ -11,7 +11,7 @@ var classbdm_1_1Random =
     [ "StreamerNVirtual", "classbdm_1_1Random.html#a8271551daf045f2c9e35991ad9cbff0f", null ],
     [ "Uniform", "classbdm_1_1Random.html#a10b4590aaafd065f55458878cf4fcd0c", null ],
     [ "Uniform", "classbdm_1_1Random.html#aacec2366adf61f85dafd29f7e2714977", null ],
-    [ "UniformArray", "classbdm_1_1Random.html#a112917889a405294b4d147988c070c41", null ],
-    [ "UniformArray", "classbdm_1_1Random.html#a6f31aaf3740b776674960775e445a2be", null ],
+    [ "UniformArray", "classbdm_1_1Random.html#a361a07207377ef62e8fd19d7e9aff12c", null ],
+    [ "UniformArray", "classbdm_1_1Random.html#ab0ce391655d50cf0fa91e12f7e21c4a8", null ],
     [ "generator_", "classbdm_1_1Random.html#a49322cfa9283fdf011e6192dd3622ea3", null ]
 ];

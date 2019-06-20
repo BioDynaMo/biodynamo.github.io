@@ -1,7 +1,6 @@
 var searchData=
 [
   ['activate',['Activate',['../classbdm_1_1Simulation.html#a5410ed6a61259720b51e047f92215856',1,'bdm::Simulation']]],
-  ['add',['Add',['../structbdm_1_1Math.html#a6e410e3dc82bab5dd53e0157df3587b2',1,'bdm::Math']]],
   ['addbiologymodule',['AddBiologyModule',['../classbdm_1_1SimObject.html#a9e07e6deb0adebaedb7abb21ba875fd7',1,'bdm::SimObject']]],
   ['adddescription',['AddDescription',['../classbdm_1_1TimingAggregator.html#a5ec4595643e3d7574029151bc3acab92',1,'bdm::TimingAggregator']]],
   ['adddiffusiongrid',['AddDiffusionGrid',['../classbdm_1_1ResourceManager.html#ac6c11141f5285480d234f782658f9550',1,'bdm::ResourceManager']]],
@@ -10,10 +9,10 @@ var searchData=
   ['addinitializer',['AddInitializer',['../classbdm_1_1DiffusionGrid.html#a7f83b22e624ebe2410db4644ed85fa47',1,'bdm::DiffusionGrid']]],
   ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ade13c2ff75365cb4271f3746f6e20905',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#ae76b3a3a326d558e296d3ccfb40c67fa',1,'bdm::Grid::Box']]],
-  ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#aa8ecbf6af44a29c3f314ab97a1c53f20',1,'bdm::Math']]],
+  ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#a357af2bdea31bf521ee128bbde6b1fef',1,'bdm::Math']]],
   ['apply',['Apply',['../namespacebdm_1_1detail.html#a99bd062e7d4d505f3816656b9f6ee917',1,'bdm::detail::Apply()'],['../namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11',1,'bdm::Apply()']]],
   ['applyboundingbox',['ApplyBoundingBox',['../namespacebdm.html#a45cc3ed5a6b31cb8863f4a68ce88c7e4',1,'bdm']]],
-  ['applydisplacement',['ApplyDisplacement',['../classbdm_1_1Cell.html#ab99bbb988c48b776e1f3d0b332c74d59',1,'bdm::Cell::ApplyDisplacement()'],['../classbdm_1_1SimObject.html#a8354f6881ff3d3b91eaeb750ef6a741e',1,'bdm::SimObject::ApplyDisplacement()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a6c0b9be024d6c33355b695f99f02bb7d',1,'bdm::experimental::neuroscience::NeuriteElement::ApplyDisplacement()']]],
+  ['applydisplacement',['ApplyDisplacement',['../classbdm_1_1Cell.html#a44da9e52a027d5053a6eece1cecf2eef',1,'bdm::Cell::ApplyDisplacement()'],['../classbdm_1_1SimObject.html#a09b644923cb26e2b0a5dbee377dedee4',1,'bdm::SimObject::ApplyDisplacement()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a199634d081be87a650d5cd8b51d9f64a',1,'bdm::experimental::neuroscience::NeuriteElement::ApplyDisplacement()']]],
   ['applyimpl',['ApplyImpl',['../namespacebdm_1_1detail.html#a4de1bcc42a5a3ab2a97ebae108fe4d0e',1,'bdm::detail']]],
   ['applyonalldiffusiongrids',['ApplyOnAllDiffusionGrids',['../classbdm_1_1ResourceManager.html#aa6569e0af9fcd82b28e2ab731144b55f',1,'bdm::ResourceManager']]],
   ['applyonallelements',['ApplyOnAllElements',['../classbdm_1_1ResourceManager.html#ac927a4f96a3283ac58f2ebc896cf7a28',1,'bdm::ResourceManager::ApplyOnAllElements(const std::function&lt; void(SimObject *)&gt; &amp;function)'],['../classbdm_1_1ResourceManager.html#a6852bc9a6da071ea996da2a53f82bb13',1,'bdm::ResourceManager::ApplyOnAllElements(const std::function&lt; void(SimObject *, SoHandle)&gt; &amp;function)']]],
@@ -22,5 +21,5 @@ var searchData=
   ['applyrundisplacementforallnextts',['ApplyRunDisplacementForAllNextTs',['../classbdm_1_1SimObject.html#a2b46e5c05f45dfdeec9a6df2b0cb9c12',1,'bdm::SimObject']]],
   ['assignfromconfig',['AssignFromConfig',['../structbdm_1_1ModuleParam.html#a89e5173fb0cedf79c94ee1618c12836b',1,'bdm::ModuleParam::AssignFromConfig()'],['../structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a',1,'bdm::Param::AssignFromConfig()'],['../structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a21c6c14e7a2567d74396c60e64410645',1,'bdm::experimental::neuroscience::Param::AssignFromConfig()']]],
   ['assignnewuid',['AssignNewUid',['../classbdm_1_1SimObject.html#abac69fd05d170d2d9b9f99ffaca94f5a',1,'bdm::SimObject']]],
-  ['at',['at',['../classbdm_1_1MathArray.html#a82c6f4b83497987949ef64b4540575e0',1,'bdm::MathArray']]]
+  ['at',['at',['../classbdm_1_1MathArray.html#a7fddb8d32964619d1b9685a78cbc3d77',1,'bdm::MathArray']]]
 ];

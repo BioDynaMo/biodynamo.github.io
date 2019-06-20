@@ -4,11 +4,11 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma =
     [ "NeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#af148070adb3b42f7124185e55bafd76b", null ],
     [ "NeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a43bf725b459150cd9614cddc4d6a4623", null ],
     [ "~NeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a040a372f0343b3ea2d3fe2792e56779c", null ],
-    [ "NeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a0559eab3ad8459d4022f2c3887ca5949", null ],
+    [ "NeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aae39efb8c4b6066255b10932fbd9b85a", null ],
     [ "NeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aa0d0f9f0eaf3cfc640d6165d1d2cf17d", null ],
     [ "NeuronSoma", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a1e1ed2b4ca3fde8dfaa1ea1d57fa4b54", null ],
     [ "EventHandler", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#af5f90bc7392b33ef9326e2e4f9be7351", null ],
-    [ "ExtendNewNeurite", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a9353882ac2026de99dd27d844f616c04", null ],
+    [ "ExtendNewNeurite", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a458e73d6d2814f7eec5b29f17ac89847", null ],
     [ "ExtendNewNeurite", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a7b0f3584caa4334a8360699bb193a05f", null ],
     [ "ForEachDataMember", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a393e2e305f4453396796639c4471d146", null ],
     [ "ForEachDataMemberIn", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a606b238826160b7477c2034cd009eaf2", null ],
@@ -18,7 +18,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma =
     [ "GetTypeName", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a96153206422187686ec77dc2615fca35", null ],
     [ "GetUid", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aa0c06ce77abd198eb610a8008d5f1ace", null ],
     [ "IsA", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6f9bc170e006135a4c2de75501e3d410", null ],
-    [ "OriginOf", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a3a52735a80c3c7115f9bd991bf343a0d", null ],
+    [ "OriginOf", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#ab0cc2162e4ee56a9f94d9546c1b8d9b5", null ],
     [ "RemoveDaughter", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a8065e8e0e178e6321abe19a67a732efb", null ],
     [ "ShowMembers", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#abfa9e66e341bb555f183cfdabca9a5cc", null ],
     [ "Streamer", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#ac691d8eb9cd45d8eaaa0b4ce75416345", null ],
@@ -28,5 +28,5 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma =
     [ "UpdateDependentPhysicalVariables", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a45183074a7b7e2dd57e31f3e1ae1c88d", null ],
     [ "UpdateRelative", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a97b22fde9cbc3f00092343bc963cb583", null ],
     [ "daughters_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a2de438b27341b370a774ed8931967af4", null ],
-    [ "daughters_coord_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a093e764988c9395ea6d73c7617727c65", null ]
+    [ "daughters_coord_", "classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6602a8ac0120b4e9bfa7ea7384f13c67", null ]
 ];

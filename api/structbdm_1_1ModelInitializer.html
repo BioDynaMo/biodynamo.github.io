@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-364-gc664450</span>
+   &#160;<span id="projectnumber">v0.1.0-366-g0c24c0e</span>
    </div>
   </td>
  </tr>
@@ -130,9 +130,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d2e49be0a1ba221a4194ab230414f62"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
 <tr class="memitem:a4d2e49be0a1ba221a4194ab230414f62"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a4d2e49be0a1ba221a4194ab230414f62">Grid3D</a> (const std::array&lt; size_t, 3 &gt; &amp;cells_per_dim, double space, Function cell_builder)</td></tr>
 <tr class="separator:a4d2e49be0a1ba221a4194ab230414f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a009b1ef5d3f91816284ccf96cd018186"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
-<tr class="memitem:a009b1ef5d3f91816284ccf96cd018186"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a009b1ef5d3f91816284ccf96cd018186">CreateCells</a> (const std::vector&lt; std::array&lt; double, 3 &gt;&gt; &amp;positions, Function cell_builder)</td></tr>
-<tr class="separator:a009b1ef5d3f91816284ccf96cd018186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49aec670a6c69f75f1f43e546b3838b"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
+<tr class="memitem:ab49aec670a6c69f75f1f43e546b3838b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ab49aec670a6c69f75f1f43e546b3838b">CreateCells</a> (const std::vector&lt; <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &gt; &amp;positions, Function cell_builder)</td></tr>
+<tr class="separator:ab49aec670a6c69f75f1f43e546b3838b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add68668791308815e954bf4f15bc90d8"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
 <tr class="memitem:add68668791308815e954bf4f15bc90d8"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#add68668791308815e954bf4f15bc90d8">CreateCellsRandom</a> (double min, double max, int num_cells, Function cell_builder)</td></tr>
 <tr class="separator:add68668791308815e954bf4f15bc90d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,9 +144,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00029">29</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00030">30</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a009b1ef5d3f91816284ccf96cd018186"></a>
+<a class="anchor" id="ab49aec670a6c69f75f1f43e546b3838b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -158,7 +158,7 @@ template&lt;typename Function &gt; </div>
         <tr>
           <td class="memname">static void bdm::ModelInitializer::CreateCells </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::array&lt; double, 3 &gt;&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>positions</em>, </td>
         </tr>
         <tr>
@@ -183,17 +183,17 @@ template&lt;typename Function &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">positions</td><td>positions of the simulation objects to be </td></tr>
-    <tr><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const std::array&lt;double, 3&gt;&amp;</code> as input parameter </td></tr>
+    <tr><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00110">110</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00111">111</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1ModelInitializer_a009b1ef5d3f91816284ccf96cd018186_cgraph.svg" width="410" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1ModelInitializer_ab49aec670a6c69f75f1f43e546b3838b_cgraph.svg" width="410" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -251,12 +251,12 @@ template&lt;typename Function &gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>The minimum position value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>The maximum position value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_cells</td><td>The number cells </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const std::array&lt;double, 3&gt;&amp;</code> as input parameter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00135">135</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00136">136</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -329,7 +329,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00164">164</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00165">165</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -380,18 +380,18 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a 3D cubic grid of simulation objects and adds them to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the simulation object is determined by the return type of parameter cell_builder. </p><pre class="fragment">ModelInitializer::Grid3D(8, 10, [](const std::array&lt;double, 3&gt;&amp; pos){
+<p>Creates a 3D cubic grid of simulation objects and adds them to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the simulation object is determined by the return type of parameter cell_builder. </p><pre class="fragment">ModelInitializer::Grid3D(8, 10, [](const Double3&amp; pos){
 return Cell(pos); });
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cells_per_dim</td><td>number of simulation objects on each axis. Number of generated simulation objects = <code>cells_per_dim ^ 3</code> </td></tr>
     <tr><td class="paramname">space</td><td>space between the positions - e.g space = 10: positions = <code>{(0, 0, 0), (0, 0, 10), (0, 0, 20), ... }</code> </td></tr>
-    <tr><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const std::array&lt;double, 3&gt;&amp;</code> as input parameter </td></tr>
+    <tr><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00047">47</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00048">48</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -442,18 +442,18 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a 3D grid of simulation objects and adds them to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the simulation object is determined by the return type of parameter cell_builder. </p><pre class="fragment">ModelInitializer::Grid3D({8,6,4}, 10, [](const std::array&lt;double, 3&gt;&amp;
+<p>Creates a 3D grid of simulation objects and adds them to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the simulation object is determined by the return type of parameter cell_builder. </p><pre class="fragment">ModelInitializer::Grid3D({8,6,4}, 10, [](const Double3&amp;
 pos){ return Cell(pos); });
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cells_per_dim</td><td>number of simulation objects on each axis. Number of generated simulation objects = <code>cells_per_dim[0] * cells_per_dim[1] * cells_per_dim[2]</code> </td></tr>
     <tr><td class="paramname">space</td><td>space between the positions - e.g space = 10: positions = <code>{(0, 0, 0), (0, 0, 10), (0, 0, 20), ... }</code> </td></tr>
-    <tr><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const std::array&lt;double, 3&gt;&amp;</code> as input parameter </td></tr>
+    <tr><td class="paramname">cell_builder</td><td>function containing the logic to instantiate a new simulation object. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00083">83</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00084">84</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -505,7 +505,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00177">177</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p>Definition at line <a class="el" href="model__initializer_8h_source.html#l00178">178</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>

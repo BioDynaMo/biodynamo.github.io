@@ -528,6 +528,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../math_array/" title="MathArray" class="md-nav__link">
+      MathArray
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../substance_initializers/" title="Substance Initialization" class="md-nav__link">
       Substance Initialization
     </a>
@@ -929,7 +941,7 @@ We will do that directly in our <code class="codehilite"><span class="n">tutoria
 
  <span class="k">public</span><span class="o">:</span>
   <span class="n">MyCell</span><span class="p">()</span> <span class="p">{}</span>
-  <span class="k">explicit</span> <span class="n">MyCell</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="o">:</span> <span class="n">Base</span><span class="p">(</span><span class="n">position</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="k">explicit</span> <span class="n">MyCell</span><span class="p">(</span><span class="k">const</span> <span class="n">Double3</span><span class="o">&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="o">:</span> <span class="n">Base</span><span class="p">(</span><span class="n">position</span><span class="p">)</span> <span class="p">{}</span>
 
   <span class="c1">/// If MyCell divides, daughter 2 copies the data members from the mother</span>
   <span class="n">MyCell</span><span class="p">(</span><span class="k">const</span> <span class="n">Event</span><span class="o">&amp;</span> <span class="n">event</span><span class="p">,</span> <span class="n">SimObject</span><span class="o">*</span> <span class="n">other</span><span class="p">,</span> <span class="kt">uint64_t</span> <span class="n">new_oid</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
@@ -992,7 +1004,7 @@ To add cell movement, we will modify the <code class="codehilite"><span class="n
 We choose here to give stochastic movement only to growing cells, so we will write the movement just after the volume change</p>
 <div class="codehilite"><pre><span></span><span class="k">auto</span><span class="o">*</span> <span class="n">random</span> <span class="o">=</span> <span class="n">Simulation</span><span class="o">::</span><span class="n">GetActive</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetRandom</span><span class="p">();</span>
 <span class="c1">// create an array of 3 random numbers between -2 and 2</span>
-<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">cell_movements</span> <span class="o">=</span>
+<span class="n">Double3</span> <span class="n">cell_movements</span> <span class="o">=</span>
     <span class="n">random</span><span class="o">-&gt;</span><span class="k">template</span> <span class="n">UniformArray</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 <span class="c1">// update the cell mass location, ie move the cell</span>
 <span class="n">cell</span><span class="o">-&gt;</span><span class="n">UpdatePosition</span><span class="p">(</span><span class="n">cell_movements</span><span class="p">);</span>

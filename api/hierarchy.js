@@ -54,6 +54,7 @@ var hierarchy =
     [ "bdm::Log", "classbdm_1_1Log.html", null ],
     [ "bdm::Math", "structbdm_1_1Math.html", null ],
     [ "bdm::MathArray< T, N >", "classbdm_1_1MathArray.html", null ],
+    [ "bdm::MathArray< double, 3 >", "classbdm_1_1MathArray.html", null ],
     [ "bdm::ModelInitializer", "structbdm_1_1ModelInitializer.html", null ],
     [ "bdm::ModuleParam", "structbdm_1_1ModuleParam.html", [
       [ "bdm::experimental::neuroscience::Param", "structbdm_1_1experimental_1_1neuroscience_1_1Param.html", null ]

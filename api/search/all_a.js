@@ -19,7 +19,7 @@ var searchData=
   ['ksimulationstepname',['kSimulationStepName',['../classbdm_1_1SimulationBackup.html#aab7666331b21587eeda2715c1e196ff0',1,'bdm::SimulationBackup']]],
   ['ksphere',['kSphere',['../namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e',1,'bdm']]],
   ['kuid',['kUid',['../structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a4bb62bfd0134b1504e23be5353b5427e',1,'bdm::experimental::neuroscience::Param']]],
-  ['kxaxis',['kXAxis',['../classbdm_1_1Cell.html#af76cd330969e4268dd65e2d299de1bad',1,'bdm::Cell::kXAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ac4c4cf7b0573705b2d1574de6c316d8c',1,'bdm::kXAxis()']]],
-  ['kyaxis',['kYAxis',['../classbdm_1_1Cell.html#a13fef1ac0c9df04cd000a99671fd269c',1,'bdm::Cell::kYAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848afa5adecc0424877d1ee7d16a3d63cdf1',1,'bdm::kYAxis()']]],
-  ['kzaxis',['kZAxis',['../classbdm_1_1Cell.html#ac4c65f18fabdbf90f9f7a812267b6cf9',1,'bdm::Cell::kZAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ae05e11269be454a7a086691d0b7d1ecf',1,'bdm::kZAxis()']]]
+  ['kxaxis',['kXAxis',['../classbdm_1_1Cell.html#afa90d12d41f4d6f932f179a92d658e43',1,'bdm::Cell::kXAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ac4c4cf7b0573705b2d1574de6c316d8c',1,'bdm::kXAxis()']]],
+  ['kyaxis',['kYAxis',['../classbdm_1_1Cell.html#aadfb4df6dad447b38b9adec1635a0036',1,'bdm::Cell::kYAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848afa5adecc0424877d1ee7d16a3d63cdf1',1,'bdm::kYAxis()']]],
+  ['kzaxis',['kZAxis',['../classbdm_1_1Cell.html#a98d6cf6e6bc878ae74cfbe822f9df62d',1,'bdm::Cell::kZAxis()'],['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848ae05e11269be454a7a086691d0b7d1ecf',1,'bdm::kZAxis()']]]
 ];

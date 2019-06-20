@@ -471,6 +471,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../math_array/" title="MathArray" class="md-nav__link">
+      MathArray
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../substance_initializers/" title="Substance Initialization" class="md-nav__link">
       Substance Initialization
     </a>
@@ -692,18 +704,18 @@ behavior of the simulation objects (i.e. cells).</p>
 <p>Next up is creating the initial model of our simulation.
 Therefore, we have to create an initial set of simulation objects and set their
 attributes:</p>
-<div class="codehilite"><pre><span></span>  <span class="k">auto</span> <span class="n">construct</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span>  <span class="k">auto</span> <span class="n">construct</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">Double3</span><span class="o">&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">Cell</span><span class="o">*</span> <span class="n">cell</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cell</span><span class="p">(</span><span class="n">position</span><span class="p">);</span>
     <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
     <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetMass</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
     <span class="n">cell</span><span class="o">-&gt;</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="k">new</span> <span class="n">Chemotaxis</span><span class="p">());</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">secretion_position</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">}};</span>
+    <span class="n">Double3</span> <span class="n">secretion_position</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">}};</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">position</span> <span class="o">==</span> <span class="n">secretion_position</span><span class="p">)</span> <span class="p">{</span>
       <span class="n">cell</span><span class="o">-&gt;</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="k">new</span> <span class="n">KaliumSecretion</span><span class="p">());</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
   <span class="p">};</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&gt;</span> <span class="n">positions</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Double3</span><span class="o">&gt;</span> <span class="n">positions</span><span class="p">;</span>
   <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
   <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
   <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
