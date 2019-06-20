@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-366-g0c24c0e</span>
+   &#160;<span id="projectnumber">v0.1.0-367-g257f1a3</span>
    </div>
   </td>
  </tr>
@@ -201,8 +201,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab20e792e1fa8514a970d062fbdd0e0b8"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structbdm_1_1BaseBiologyModule.html">BaseBiologyModule</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#ab20e792e1fa8514a970d062fbdd0e0b8">GetAllBiologyModules</a> () const </td></tr>
 <tr class="memdesc:ab20e792e1fa8514a970d062fbdd0e0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all biology modules.  <a href="#ab20e792e1fa8514a970d062fbdd0e0b8">More...</a><br /></td></tr>
 <tr class="separator:ab20e792e1fa8514a970d062fbdd0e0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bcf48bb20efe806f939e505f08add1c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a2bcf48bb20efe806f939e505f08add1c">CalculateDisplacement</a> (double squared_radius)=0</td></tr>
-<tr class="separator:a2bcf48bb20efe806f939e505f08add1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a9be6d2c39b7bf2556c581ff462505"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a08a9be6d2c39b7bf2556c581ff462505">CalculateDisplacement</a> (double squared_radius, double dt)=0</td></tr>
+<tr class="separator:a08a9be6d2c39b7bf2556c581ff462505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b644923cb26e2b0a5dbee377dedee4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a09b644923cb26e2b0a5dbee377dedee4">ApplyDisplacement</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;displacement)=0</td></tr>
 <tr class="separator:a09b644923cb26e2b0a5dbee377dedee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee76d8d139aff1e56575df09266bcfab"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#aee76d8d139aff1e56575df09266bcfab">GetPosition</a> () const =0</td></tr>
@@ -504,6 +504,14 @@ Here is the call graph for this function:</div>
 </div>
 </p>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a2b46e5c05f45dfdeec9a6df2b0cb9c12_icgraph.svg" width="444" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="abac69fd05d170d2d9b9f99ffaca94f5a"></a>
@@ -599,7 +607,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2bcf48bb20efe806f939e505f08add1c"></a>
+<a class="anchor" id="a08a9be6d2c39b7bf2556c581ff462505"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -610,8 +618,18 @@ Here is the caller graph for this function:</div>
           <td class="memname">virtual <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> bdm::SimObject::CalculateDisplacement </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>squared_radius</em></td><td>)</td>
+          <td class="paramname"><em>squared_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -621,12 +639,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#abf625dd222c87d47f071f53275cf0f06">bdm::experimental::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1Cell.html#a8657b7accd8b647cd6772108a58bedfb">bdm::Cell</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a0814f964adc086b96a736cae2dc0bc52">bdm::experimental::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1Cell.html#ac18655f69e3e64ec0683b5a0c5791330">bdm::Cell</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a2bcf48bb20efe806f939e505f08add1c_icgraph.svg" width="734" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a08a9be6d2c39b7bf2556c581ff462505_icgraph.svg" width="734" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1034,7 +1052,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a1acfbb130802d3570a099e82825875df_icgraph.svg" width="983" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a1acfbb130802d3570a099e82825875df_icgraph.svg" width="1226" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1535,7 +1553,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a45e76058662f256965f9a7c6043a288f_icgraph.svg" width="744" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a45e76058662f256965f9a7c6043a288f_icgraph.svg" width="744" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1570,7 +1588,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a574c6f014376642e060b3d5306187a44_icgraph.svg" width="524" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a574c6f014376642e060b3d5306187a44_icgraph.svg" width="524" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1773,7 +1791,7 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a9fdc26eb423c9e465f1fc5b82c2c2436_icgraph.svg" width="516" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a9fdc26eb423c9e465f1fc5b82c2c2436_icgraph.svg" width="759" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1884,6 +1902,14 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sim__object_8h_source.html#l00196">196</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a53944126db971aaa0c57109e816610e2_icgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>

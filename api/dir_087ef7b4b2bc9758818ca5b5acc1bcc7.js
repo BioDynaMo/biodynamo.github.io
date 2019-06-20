@@ -18,6 +18,10 @@ var dir_087ef7b4b2bc9758818ca5b5acc1bcc7 =
     [ "op_timer.h", "op__timer_8h.html", [
       [ "OpTimer", "structbdm_1_1OpTimer.html", "structbdm_1_1OpTimer" ]
     ] ],
+    [ "operation.cc", "operation_8cc.html", null ],
+    [ "operation.h", "operation_8h.html", [
+      [ "Operation", "structbdm_1_1Operation.html", "structbdm_1_1Operation" ]
+    ] ],
     [ "vtune_op_wrapper.h", "vtune__op__wrapper_8h.html", [
       [ "VTuneOpWrapper", "classbdm_1_1VTuneOpWrapper.html", "classbdm_1_1VTuneOpWrapper" ]
     ] ]

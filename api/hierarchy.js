@@ -71,6 +71,7 @@ var hierarchy =
     [ "Op", null, [
       [ "bdm::VTuneOpWrapper< Op >", "classbdm_1_1VTuneOpWrapper.html", null ]
     ] ],
+    [ "bdm::Operation", "structbdm_1_1Operation.html", null ],
     [ "bdm::OpTimer< TOp >", "structbdm_1_1OpTimer.html", null ],
     [ "bdm::ParallelResizeVector< T >", "classbdm_1_1ParallelResizeVector.html", null ],
     [ "bdm::ParallelResizeVector< bdm::Grid::Box >", "classbdm_1_1ParallelResizeVector.html", null ],

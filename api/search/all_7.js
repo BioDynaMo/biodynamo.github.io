@@ -75,6 +75,7 @@ var searchData=
   ['getnumboxes',['GetNumBoxes',['../classbdm_1_1DiffusionGrid.html#aa89089ac00719e2c92d6d2abb60c01a9',1,'bdm::DiffusionGrid::GetNumBoxes()'],['../classbdm_1_1Grid.html#af1fdbfb9b9d2ff4c90d082d355b4ffe6',1,'bdm::Grid::GetNumBoxes()']]],
   ['getnumboxesarray',['GetNumBoxesArray',['../classbdm_1_1DiffusionGrid.html#aed2db61eb73fba9cd8b4571bbb2eec5d',1,'bdm::DiffusionGrid']]],
   ['getnumsimobjects',['GetNumSimObjects',['../classbdm_1_1ResourceManager.html#ae877fccc0bcbddf7facc9858f5e59ed3',1,'bdm::ResourceManager']]],
+  ['getoperation',['GetOperation',['../classbdm_1_1Scheduler.html#a48466b64a9239b2e093f96c64eb7e668',1,'bdm::Scheduler']]],
   ['getoutputdir',['GetOutputDir',['../classbdm_1_1Simulation.html#a5ca16259ab552490d6c8468082f3f7f1',1,'bdm::Simulation']]],
   ['getparam',['GetParam',['../classbdm_1_1Simulation.html#a9ef1e078599527eca03cc93fc4ed7228',1,'bdm::Simulation']]],
   ['getpersistentobject',['GetPersistentObject',['../namespacebdm.html#ab69142f2c58bfb100d371ba95c8e92cb',1,'bdm']]],
@@ -85,6 +86,7 @@ var searchData=
   ['getresourcemanager',['GetResourceManager',['../classbdm_1_1Simulation.html#a12410bfc9dec5d64d0ae3223a5c59385',1,'bdm::Simulation']]],
   ['getrestinglength',['GetRestingLength',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a568d90493f5244b0c91fe7d490dd07ee',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['getrundisplacementforallnextts',['GetRunDisplacementForAllNextTs',['../classbdm_1_1SimObject.html#a8ffc703c13fdd58eb12920a71cf9ca5b',1,'bdm::SimObject']]],
+  ['getscheduleops',['GetScheduleOps',['../classbdm_1_1Scheduler.html#ade2e38a422ea00e1d5170a54ee096f99',1,'bdm::Scheduler']]],
   ['getscheduler',['GetScheduler',['../classbdm_1_1Simulation.html#a831f22ad084c248b0d2698242ebdabb8',1,'bdm::Simulation']]],
   ['getseed',['GetSeed',['../classbdm_1_1Random.html#a4c8d353119e9b5420b2d7dabf014bf4f',1,'bdm::Random']]],
   ['getshape',['GetShape',['../classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783',1,'bdm::Cell::GetShape()'],['../classbdm_1_1SimObject.html#ab178f73dd35873394b74e2b5ad82f52e',1,'bdm::SimObject::GetShape()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4826ee1c2b558fff8919468df9606c8a',1,'bdm::experimental::neuroscience::NeuriteElement::GetShape()']]],
@@ -123,8 +125,8 @@ var searchData=
   ['grid_5f',['grid_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#ae2088333027d6cb2bcd75ec6a0147616',1,'bdm::Grid::Box::Iterator::grid_()'],['../classbdm_1_1Simulation.html#a7b2f640f72f9487e8081d279d01a79cd',1,'bdm::Simulation::grid_()']]],
   ['grid_5fdimensions_5f',['grid_dimensions_',['../classbdm_1_1DiffusionGrid.html#a60dc01c8f8d10726edd9dafa4ea341b9',1,'bdm::DiffusionGrid::grid_dimensions_()'],['../classbdm_1_1Grid.html#a89bda8315a4e67a8f22c812d09a86c70',1,'bdm::Grid::grid_dimensions_()']]],
   ['grow_5fdivide_2eh',['grow_divide.h',['../grow__divide_8h.html',1,'']]],
-  ['growdivide',['GrowDivide',['../structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407',1,'bdm::GrowDivide::GrowDivide()'],['../structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8',1,'bdm::GrowDivide::GrowDivide(double threshold, double growth_rate, std::initializer_list&lt; EventId &gt; event_list)'],['../structbdm_1_1GrowDivide.html#a7989089a41718e38a98e5ef32f177d79',1,'bdm::GrowDivide::GrowDivide(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)']]],
   ['growdivide',['GrowDivide',['../structbdm_1_1GrowDivide.html',1,'bdm']]],
+  ['growdivide',['GrowDivide',['../structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407',1,'bdm::GrowDivide::GrowDivide()'],['../structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8',1,'bdm::GrowDivide::GrowDivide(double threshold, double growth_rate, std::initializer_list&lt; EventId &gt; event_list)'],['../structbdm_1_1GrowDivide.html#a7989089a41718e38a98e5ef32f177d79',1,'bdm::GrowDivide::GrowDivide(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)']]],
   ['growsocontainer',['GrowSoContainer',['../classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7',1,'bdm::ResourceManager']]],
   ['growth_5frate_5f',['growth_rate_',['../structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432',1,'bdm::GrowDivide']]]
 ];

@@ -1,5 +1,25 @@
 var NAVTREEINDEX6 =
 {
+"structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#a2cd79c26b45308e5a0b11ced18568c08":[1,0,0,1,0,7,1],
+"structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#a9ea729026e3b058173cae526dfa9198f":[1,0,0,1,0,7,2],
+"structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#aa1e5c0eb31db676a2d3f278a4952d63d":[1,0,0,1,0,7,3],
+"structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#af1e730b430dfe84e10aaeccd0dcc3660":[1,0,0,1,0,7,4],
+"structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#af8135a2788218126232626ba9abb2a7d":[1,0,0,1,0,7,5],
+"structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#af924bcea2ca5e264d75f0d01d093d6e1":[1,0,0,1,0,7,0],
+"structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html":[1,0,0,1,0,8],
+"structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#a5ee71dc9eff941173e922953630e1948":[1,0,0,1,0,8,3],
+"structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#a947821eb5c05887983bf6466fb3dea5c":[1,0,0,1,0,8,0],
+"structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#ad50376f2931c5cebcb14b63e26448b78":[1,0,0,1,0,8,1],
+"structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#aeab2912443cf54ecbd9762175094e91c":[1,0,0,1,0,8,2],
+"structbdm_1_1is__so__ptr.html":[1,0,0,29],
+"structbdm_1_1is__so__ptr_3_01SoPointer_3_01T_01_4_01_4.html":[1,0,0,30],
+"structbdm_1_1type__ternary__operator.html":[1,0,0,62],
+"structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4.html":[1,0,0,63],
+"structbdm_1_1type__ternary__operator_3false_00_01T_00_01U_01_4.html#a7ea0118eb2a2f8a6191db2ec07fd9866":[1,0,0,63,0],
+"structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4.html":[1,0,0,64],
+"structbdm_1_1type__ternary__operator_3true_00_01T_00_01U_01_4.html#ab6b66c2d3c37efa133a1b091e3872f4c":[1,0,0,64,0],
+"substance__initializers_8h.html":[2,0,0,26],
+"substance__initializers_8h.html#acca80530a197baaf5fc40acfa4c58848":[2,0,0,26,3],
 "substance__initializers_8h.html#acca80530a197baaf5fc40acfa4c58848ac4c4cf7b0573705b2d1574de6c316d8c":[2,0,0,26,3,0],
 "substance__initializers_8h.html#acca80530a197baaf5fc40acfa4c58848ae05e11269be454a7a086691d0b7d1ecf":[2,0,0,26,3,2],
 "substance__initializers_8h.html#acca80530a197baaf5fc40acfa4c58848afa5adecc0424877d1ee7d16a3d63cdf1":[2,0,0,26,3,1],
@@ -30,6 +50,6 @@ var NAVTREEINDEX6 =
 "vtune_8h.html#ab6338362dc73ff27d0da77bf49704683":[2,0,0,8,17,7],
 "vtune_8h.html#af49eb1afc5bff5d1f90fb0e25d3964d8":[2,0,0,8,17,9],
 "vtune_8h_source.html":[2,0,0,8,17],
-"vtune__op__wrapper_8h.html":[2,0,0,5,8],
-"vtune__op__wrapper_8h_source.html":[2,0,0,5,8]
+"vtune__op__wrapper_8h.html":[2,0,0,5,10],
+"vtune__op__wrapper_8h_source.html":[2,0,0,5,10]
 };

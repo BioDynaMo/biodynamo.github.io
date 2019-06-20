@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-366-g0c24c0e</span>
+   &#160;<span id="projectnumber">v0.1.0-367-g257f1a3</span>
    </div>
   </td>
  </tr>
@@ -257,8 +257,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5626be226ce49be5304a061e4976b93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97293e2479a90df06275e34b5df14ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a97293e2479a90df06275e34b5df14ada">ChangeDiameter</a> (double speed)</td></tr>
 <tr class="separator:a97293e2479a90df06275e34b5df14ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf625dd222c87d47f071f53275cf0f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#abf625dd222c87d47f071f53275cf0f06">CalculateDisplacement</a> (double squared_radius) override</td></tr>
-<tr class="separator:abf625dd222c87d47f071f53275cf0f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0814f964adc086b96a736cae2dc0bc52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a0814f964adc086b96a736cae2dc0bc52">CalculateDisplacement</a> (double squared_radius, double dt) override</td></tr>
+<tr class="separator:a0814f964adc086b96a736cae2dc0bc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a199634d081be87a650d5cd8b51d9f64a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a199634d081be87a650d5cd8b51d9f64a">ApplyDisplacement</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;displacement) override</td></tr>
 <tr class="separator:a199634d081be87a650d5cd8b51d9f64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af836a93915d5c9bb63a931b1f2c4b2cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#af836a93915d5c9bb63a931b1f2c4b2cb">UpdateLocalCoordinateAxis</a> ()</td></tr>
@@ -696,7 +696,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classbdm_1_1SimObject.html#a09b644923cb26e2b0a5dbee377dedee4">bdm::SimObject</a>.</p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00746">746</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00745">745</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1136,7 +1136,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="abf625dd222c87d47f071f53275cf0f06"></a>
+<a class="anchor" id="a0814f964adc086b96a736cae2dc0bc52"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1147,8 +1147,18 @@ Here is the caller graph for this function:</div>
           <td class="memname"><a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> bdm::experimental::neuroscience::NeuriteElement::CalculateDisplacement </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>squared_radius</em></td><td>)</td>
+          <td class="paramname"><em>squared_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1158,14 +1168,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classbdm_1_1SimObject.html#a2bcf48bb20efe806f939e505f08add1c">bdm::SimObject</a>.</p>
+<p>Implements <a class="el" href="classbdm_1_1SimObject.html#a08a9be6d2c39b7bf2556c581ff462505">bdm::SimObject</a>.</p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00620">620</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00619">619</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_abf625dd222c87d47f071f53275cf0f06_cgraph.svg" width="1851" height="772"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_a0814f964adc086b96a736cae2dc0bc52_cgraph.svg" width="1851" height="772"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1349,7 +1359,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01073">1073</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01072">1072</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1467,7 +1477,7 @@ Here is the caller graph for this function:</div>
 
 <p>Returns the position of the distal end == position_. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00992">992</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00991">991</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1633,7 @@ Here is the caller graph for this function:</div>
 <p>Extend a side neurite element and assign it to daughter right. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html" title="Contains the parameters to add a side neurite element. ">SideNeuriteExtensionEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01201">1201</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01200">1200</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1751,7 +1761,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00941">941</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00940">940</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -1811,7 +1821,7 @@ Here is the caller graph for this function:</div>
 
 <p>Returns the axis direction of a neurite element. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01013">1013</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01012">1012</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -1836,7 +1846,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00937">937</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00936">936</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1898,7 +1908,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the (first) distal neurite element, if it exists, i.e. if this is not the terminal segment (otherwise returns nullptr). </dd></dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00918">918</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00917">917</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1932,7 +1942,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the second distal neurite element, if it exists i.e. if there is a branching point just after this element (otherwise returns nullptr). </dd></dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00929">929</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00928">928</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2078,7 +2088,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01010">1010</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01009">1009</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -2163,7 +2173,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00910">910</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00909">909</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2196,7 +2206,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00912">912</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00911">911</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -2276,7 +2286,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00951">951</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00950">950</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2336,7 +2346,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00957">957</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00956">956</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2369,7 +2379,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00964">964</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00963">963</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2402,7 +2412,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00970">970</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00969">969</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -2498,7 +2508,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>NOT A "REAL" GETTER Gets a vector of length 1, with the same direction as the SpringAxis. </p><dl class="section return"><dt>Returns</dt><dd>a normalized spring axis </dd></dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00977">977</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00976">976</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -2730,7 +2740,7 @@ Here is the caller graph for this function:</div>
 
 <p>TODO. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01266">1266</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01265">1265</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2796,7 +2806,7 @@ Here is the caller graph for this function:</div>
 
 <p>TODO. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01220">1220</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01219">1219</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2861,7 +2871,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Neurite branching is composed of neurite splitting and side neurite extension. To avoid code duplication in constructors, logic has been moved here. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01347">1347</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01346">1346</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2914,7 +2924,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Neurite branching is composed of neurite splitting and side neurite extension. To avoid code duplication in constructors, logic has been moved here. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html" title="Contains the parameters to split a neurite element into two segments. ">SplitNeuriteElementEvent</a>, <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html" title="This event splits the current neurite element into two elements and adds a new side branch as daughte...">NeuriteBranchingEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01315">1315</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01314">1314</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -2982,7 +2992,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00906">906</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00905">905</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3008,7 +3018,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Should return yes if the PhysicalCylinder is considered a terminal branch. </p><dl class="section return"><dt>Returns</dt><dd>is it a terminal branch </dd></dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00984">984</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00983">983</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3034,7 +3044,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Returns the total (actual) length of all the neurite elements (including the one in which this method is called) before the previous branching point. Used to decide if long enough to bifurcate or branch, independently of the discretization. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00999">999</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00998">998</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3155,7 +3165,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>retuns the position of the proximal end, ie the position minus the spring axis. Is mainly used for paint </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00989">989</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00988">988</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -3217,7 +3227,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Merges two neurite elements together. The one in which the method is called phagocytes it's mother. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01165">1165</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01164">1164</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3346,7 +3356,7 @@ Here is the call graph for this function:</div>
 
 <p>Should not be used, since the actual length depends on the geometry. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00944">944</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00943">943</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3414,7 +3424,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00908">908</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00907">907</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3440,7 +3450,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00939">939</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00938">938</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3466,7 +3476,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00922">922</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00921">921</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -3500,7 +3510,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00933">933</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00932">932</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -3646,7 +3656,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00914">914</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00913">913</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -3724,7 +3734,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00953">953</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00952">952</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3784,7 +3794,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00959">959</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00958">958</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3826,7 +3836,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00966">966</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00965">965</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3852,7 +3862,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00972">972</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00971">971</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -3909,7 +3919,7 @@ Here is the caller graph for this function:</div>
 <p>Split this neurite element into two segments. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html" title="Contains the parameters to split a neurite element into two segments. ">SplitNeuriteElementEvent</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01153">1153</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01152">1152</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4016,7 +4026,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00845">845</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00844">844</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4060,7 +4070,7 @@ Here is the caller graph for this function:</div>
 
 <p>G -&gt; L : G -&gt; L, then L -&gt; P. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00897">897</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00896">896</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4100,7 +4110,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00855">855</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00854">854</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4148,7 +4158,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00870">870</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00869">869</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -4184,7 +4194,7 @@ Here is the caller graph for this function:</div>
 
 <p>P -&gt; G : P -&gt; L, then L -&gt; G. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00885">885</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00884">884</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4224,7 +4234,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00879">879</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00878">878</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -4314,7 +4324,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a517da3488e5739c253b48c784f96cb1f">bdm::experimental::neuroscience::NeuronOrNeurite</a>.</p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01023">1023</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01022">1022</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4357,7 +4367,7 @@ Here is the caller graph for this function:</div>
 
 <p>Recomputes diameter after volume has changed. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00798">798</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00797">797</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4399,7 +4409,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Defines the three orthonormal local axis so that a cylindrical coordinate system can be used. The <code>x_axis_</code> is aligned with the <code>spring_axis_</code>. The two other are in the plane perpendicular to <code>spring_axis_</code>. This method to update the axis was suggested by Matt Coock. Although not perfectly exact, it is accurate enough for us to use. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00777">777</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00776">776</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -4521,7 +4531,7 @@ Here is the call graph for this function:</div>
 
 <p>Recomputes volume, after diameter has been changed. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00807">807</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l00806">806</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -4566,7 +4576,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01038">1038</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01037">1037</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4590,7 +4600,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Real length of the PhysicalCylinder (norm of the springAxis). NB: Use setter and don't assign values directly </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01137">1137</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01136">1136</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4612,7 +4622,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01102">1102</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01101">1101</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4635,7 +4645,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>number of branching points from here to the soma (root of the neuron tree-structure). </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01125">1125</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01124">1124</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4658,7 +4668,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>First child node in the neuron tree structure (can only be a Neurite element) </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01118">1118</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01117">1117</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4681,7 +4691,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Second child node in the neuron tree structure. (can only be a Neurite element) </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01121">1121</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01120">1120</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4703,7 +4713,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01101">1101</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01100">1100</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4727,7 +4737,7 @@ Here is the caller graph for this function:</div>
 
 <p>NB: Use setter and don't assign values directly. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01100">1100</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01099">1099</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4751,7 +4761,7 @@ Here is the caller graph for this function:</div>
 
 <p>The part of the inter-object force transmitted to the mother (parent node) </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01128">1128</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01127">1127</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4773,7 +4783,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01110">1110</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01109">1109</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4796,7 +4806,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>mass_location_ is distal end of the cylinder NB: Use setter and don't assign values directly </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01093">1093</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01092">1092</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4819,7 +4829,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Parent node in the neuron tree structure can be a Neurite element or cell body </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01114">1114</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01113">1113</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4843,7 +4853,7 @@ Here is the caller graph for this function:</div>
 
 <p>position_ is the middle point of cylinder </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01096">1096</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01095">1095</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4866,7 +4876,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>The length of the internal spring where tension would be zero. T = k*(A-R)/R &ndash;&gt; R = k*A/(T+K) </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01148">1148</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01147">1147</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4889,7 +4899,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>from the attachment point to the mass location (proximal -&gt; distal). NB: Use setter and don't assign values directly </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01133">1133</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01132">1132</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4912,7 +4922,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Spring constant per distance unit (springConstant restingLength = "real" spring constant). </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01144">1144</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01143">1143</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4936,7 +4946,7 @@ Here is the caller graph for this function:</div>
 
 <p>Tension in the cylinder spring. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01140">1140</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01139">1139</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4958,7 +4968,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01098">1098</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01097">1097</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -4982,7 +4992,7 @@ Here is the caller graph for this function:</div>
 
 <p>First axis of the local coordinate system equal to cylinder axis. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01104">1104</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01103">1103</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -5006,7 +5016,7 @@ Here is the caller graph for this function:</div>
 
 <p>Second axis of the local coordinate system. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01106">1106</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01105">1105</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>
@@ -5030,7 +5040,7 @@ Here is the caller graph for this function:</div>
 
 <p>Third axis of the local coordinate system. </p>
 
-<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01108">1108</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
+<p>Definition at line <a class="el" href="neurite__element_8h_source.html#l01107">1107</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
 </div>
 </div>

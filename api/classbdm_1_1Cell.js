@@ -8,7 +8,7 @@ var classbdm_1_1Cell =
     [ "Cell", "classbdm_1_1Cell.html#ae14a7a57d8dd89d86fa8456c02245956", null ],
     [ "~Cell", "classbdm_1_1Cell.html#ac256d9a0ecbcd57bcde3dc8b498c2cf7", null ],
     [ "ApplyDisplacement", "classbdm_1_1Cell.html#a44da9e52a027d5053a6eece1cecf2eef", null ],
-    [ "CalculateDisplacement", "classbdm_1_1Cell.html#a8657b7accd8b647cd6772108a58bedfb", null ],
+    [ "CalculateDisplacement", "classbdm_1_1Cell.html#ac18655f69e3e64ec0683b5a0c5791330", null ],
     [ "ChangeVolume", "classbdm_1_1Cell.html#ab49d39bdc888db1de209181d7872c14b", null ],
     [ "Divide", "classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0", null ],
     [ "Divide", "classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba", null ],

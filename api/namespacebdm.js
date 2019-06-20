@@ -39,6 +39,7 @@ var namespacebdm =
     [ "ModuleParam", "structbdm_1_1ModuleParam.html", "structbdm_1_1ModuleParam" ],
     [ "ModuleParamUidGenerator", "classbdm_1_1ModuleParamUidGenerator.html", "classbdm_1_1ModuleParamUidGenerator" ],
     [ "NeuroMLExporter", "classbdm_1_1NeuroMLExporter.html", "classbdm_1_1NeuroMLExporter" ],
+    [ "Operation", "structbdm_1_1Operation.html", "structbdm_1_1Operation" ],
     [ "OpTimer", "structbdm_1_1OpTimer.html", "structbdm_1_1OpTimer" ],
     [ "ParallelResizeVector", "classbdm_1_1ParallelResizeVector.html", "classbdm_1_1ParallelResizeVector" ],
     [ "Param", "structbdm_1_1Param.html", "structbdm_1_1Param" ],

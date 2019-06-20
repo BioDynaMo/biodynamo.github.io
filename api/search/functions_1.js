@@ -9,6 +9,7 @@ var searchData=
   ['addinitializer',['AddInitializer',['../classbdm_1_1DiffusionGrid.html#a7f83b22e624ebe2410db4644ed85fa47',1,'bdm::DiffusionGrid']]],
   ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ade13c2ff75365cb4271f3746f6e20905',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#ae76b3a3a326d558e296d3ccfb40c67fa',1,'bdm::Grid::Box']]],
+  ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213',1,'bdm::Scheduler']]],
   ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#a357af2bdea31bf521ee128bbde6b1fef',1,'bdm::Math']]],
   ['apply',['Apply',['../namespacebdm_1_1detail.html#a99bd062e7d4d505f3816656b9f6ee917',1,'bdm::detail::Apply()'],['../namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11',1,'bdm::Apply()']]],
   ['applyboundingbox',['ApplyBoundingBox',['../namespacebdm.html#a45cc3ed5a6b31cb8863f4a68ce88c7e4',1,'bdm']]],

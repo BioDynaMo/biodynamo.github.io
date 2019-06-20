@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-366-g0c24c0e</span>
+   &#160;<span id="projectnumber">v0.1.0-367-g257f1a3</span>
    </div>
   </td>
  </tr>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classbdm_1_1Scheduler.html','');});
 <div class="dynheader">
 Collaboration diagram for bdm::Scheduler:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="1062" height="764"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="1062" height="867"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -143,6 +143,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad17f1e0e7d2618e48f8dec904314d87f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ad17f1e0e7d2618e48f8dec904314d87f">GetSimulatedSteps</a> () const </td></tr>
 <tr class="memdesc:ad17f1e0e7d2618e48f8dec904314d87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the numer of simulated steps (=iterations).  <a href="#ad17f1e0e7d2618e48f8dec904314d87f">More...</a><br /></td></tr>
 <tr class="separator:ad17f1e0e7d2618e48f8dec904314d87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43373b26d187c511dd7fd5226df1213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213">AddOperation</a> (const <a class="el" href="structbdm_1_1Operation.html">Operation</a> &amp;operation)</td></tr>
+<tr class="separator:ac43373b26d187c511dd7fd5226df1213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03054bc37a95a1a58fec814dfab1c06c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a03054bc37a95a1a58fec814dfab1c06c">RemoveOperation</a> (const std::string &amp;op_name)</td></tr>
+<tr class="separator:a03054bc37a95a1a58fec814dfab1c06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48466b64a9239b2e093f96c64eb7e668"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a48466b64a9239b2e093f96c64eb7e668">GetOperation</a> (const std::string &amp;op_name)</td></tr>
+<tr class="separator:a48466b64a9239b2e093f96c64eb7e668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -163,6 +169,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a998a74737b1e380ca2a43732a16291b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a755db2f226475df0ca5194610f289359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">Initialize</a> ()</td></tr>
 <tr class="separator:a755db2f226475df0ca5194610f289359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2e38a422ea00e1d5170a54ee096f99"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ade2e38a422ea00e1d5170a54ee096f99">GetScheduleOps</a> ()</td></tr>
+<tr class="separator:ade2e38a422ea00e1d5170a54ee096f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -182,12 +190,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a46aa360608eddac60cc85dc0bc67a37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae76d9035d0d5774cb813b258abbec28a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1DiffusionOp.html">DiffusionOp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ae76d9035d0d5774cb813b258abbec28a">diffusion_</a></td></tr>
 <tr class="separator:ae76d9035d0d5774cb813b258abbec28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dbb495ccdc69d5fe02a5c050c6d0493"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function&lt; void(<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a2dbb495ccdc69d5fe02a5c050c6d0493">operations_</a></td></tr>
-<tr class="separator:a2dbb495ccdc69d5fe02a5c050c6d0493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45589265d083f65e2178694adcde1f7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#aa45589265d083f65e2178694adcde1f7">operations_</a></td></tr>
+<tr class="separator:aa45589265d083f65e2178694adcde1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbe26ab1619c4b98420351608dad87b"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b">protected_operations_</a></td></tr>
+<tr class="separator:a1fbe26ab1619c4b98420351608dad87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00032">32</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00034">34</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a337a791a56b9163ebe9663e70eac3229"></a>
 <div class="memitem">
@@ -199,7 +209,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00034">34</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00036">36</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +232,7 @@ Private Attributes</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a222b9c94d5c909750d22acc6718dcc48_cgraph.svg" width="1195" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a222b9c94d5c909750d22acc6718dcc48_cgraph.svg" width="1326" height="570"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -250,7 +260,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00064">64</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00066">66</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -263,6 +273,24 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac43373b26d187c511dd7fd5226df1213"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::AddOperation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structbdm_1_1Operation.html">Operation</a> &amp;&#160;</td>
+          <td class="paramname"><em>operation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00094">94</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7aa37b61bfd3791935d4d515e58b5fc9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +314,7 @@ Here is the call graph for this function:</div>
 
 <p>Backup the simulation. Backup interval based on <code><a class="el" href="structbdm_1_1Param.html#ae8a9d38081642a9323f8884b64d41efe">Param::backup_interval_</a></code> </p>
 
-<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00129">129</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00167">167</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -329,12 +357,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Executes one step. This design makes testing more convenient </p>
 
-<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00092">92</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00129">129</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_ada349d49edc73824de9bf6a454174a4b_cgraph.svg" width="654" height="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_ada349d49edc73824de9bf6a454174a4b_cgraph.svg" width="940" height="259"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -343,6 +371,74 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_ada349d49edc73824de9bf6a454174a4b_icgraph.svg" width="430" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a48466b64a9239b2e093f96c64eb7e668"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbdm_1_1Operation.html">Operation</a> * bdm::Scheduler::GetOperation </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>op_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a reference to an operation. However, some operations are protected and will not be returned. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b">protected_operations_</a> If the operation does not exist or is protected, a nullptr will be returned. </dd></dl>
+
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00114">114</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a48466b64a9239b2e093f96c64eb7e668_cgraph.svg" width="819" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ade2e38a422ea00e1d5170a54ee096f99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> &gt; bdm::Scheduler::GetScheduleOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00230">230</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_ade2e38a422ea00e1d5170a54ee096f99_cgraph.svg" width="710" height="92"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_ade2e38a422ea00e1d5170a54ee096f99_icgraph.svg" width="716" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -364,7 +460,7 @@ Here is the caller graph for this function:</div>
 
 <p>This function returns the numer of simulated steps (=iterations). </p>
 
-<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00090">90</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00092">92</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -389,7 +485,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00163">163</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00201">201</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -403,6 +499,33 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a755db2f226475df0ca5194610f289359_icgraph.svg" width="430" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a03054bc37a95a1a58fec814dfab1c06c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::RemoveOperation </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>op_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Remove an operation. However, some operations are protected and cannot be removed. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b">protected_operations_</a> A request to remove a proteced operation is ignored. </dd></dl>
+
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00099">99</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a03054bc37a95a1a58fec814dfab1c06c_cgraph.svg" width="847" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -438,7 +561,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>if <code>Simulate</code> should return early </dd></dl>
 
-<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00144">144</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00182">182</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -472,12 +595,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00076">76</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8cc_source.html#l00078">78</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a380c05f2af4a12eb9655acf37b993996_cgraph.svg" width="1803" height="1118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler_a380c05f2af4a12eb9655acf37b993996_cgraph.svg" width="1859" height="1260"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -503,7 +626,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00053">53</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00068">68</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -525,7 +648,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00059">59</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00074">74</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +670,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00061">61</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00076">76</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -569,7 +692,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00060">60</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00075">75</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -591,7 +714,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00057">57</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00072">72</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -613,11 +736,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00055">55</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00070">70</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2dbb495ccdc69d5fe02a5c050c6d0493"></a>
+<a class="anchor" id="aa45589265d083f65e2178694adcde1f7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -625,7 +748,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::function&lt;void(<a class="el" href="classbdm_1_1SimObject.html">SimObject</a>*)&gt; &gt; bdm::Scheduler::operations_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Operation.html">Operation</a>&gt; bdm::Scheduler::operations_</td>
         </tr>
       </table>
   </td>
@@ -635,7 +758,29 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00063">63</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00078">78</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fbe26ab1619c4b98420351608dad87b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;std::string&gt; bdm::Scheduler::protected_operations_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00079">79</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -657,7 +802,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00054">54</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00069">69</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +824,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00046">46</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00061">61</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -701,7 +846,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00056">56</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Definition at line <a class="el" href="scheduler_8h_source.html#l00071">71</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>

@@ -11,6 +11,7 @@ var searchData=
   ['addinitializer',['AddInitializer',['../classbdm_1_1DiffusionGrid.html#a7f83b22e624ebe2410db4644ed85fa47',1,'bdm::DiffusionGrid']]],
   ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ade13c2ff75365cb4271f3746f6e20905',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#ae76b3a3a326d558e296d3ccfb40c67fa',1,'bdm::Grid::Box']]],
+  ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213',1,'bdm::Scheduler']]],
   ['adherence_5f',['adherence_',['../classbdm_1_1Cell.html#ab8e48d82040233041774f9f6c2485eb3',1,'bdm::Cell::adherence_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a822217a94249b05772010696d88b05d3',1,'bdm::experimental::neuroscience::NeuriteElement::adherence_()']]],
   ['adjacency',['Adjacency',['../classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01',1,'bdm::Grid']]],
   ['adjacency_5f',['adjacency_',['../classbdm_1_1Grid.html#a635450d4defc43146a0ea559dd88ee20',1,'bdm::Grid']]],

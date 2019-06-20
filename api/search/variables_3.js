@@ -24,6 +24,7 @@ var searchData=
   ['daughters_5fcoord_5f',['daughters_coord_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6602a8ac0120b4e9bfa7ea7384f13c67',1,'bdm::experimental::neuroscience::NeuronSoma']]],
   ['dc_5f',['dc_',['../classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881',1,'bdm::DiffusionGrid']]],
   ['debug_5fnuma_5f',['debug_numa_',['../structbdm_1_1Param.html#a189573fb33841f0eaa23d801b510e2c4',1,'bdm::Param']]],
+  ['delta_5ftime_5f',['delta_time_',['../classbdm_1_1DisplacementOpCpu.html#a811b17807f412a491dab59017a3a0e1c',1,'bdm::DisplacementOpCpu']]],
   ['density_5f',['density_',['../classbdm_1_1Cell.html#a6f72cb19b4bf0bfb37a5d69487b1f7dd',1,'bdm::Cell::density_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a27d489a3e48fc8e5b75c6df4220239c5',1,'bdm::experimental::neuroscience::NeuriteElement::density_()']]],
   ['descriptions_5f',['descriptions_',['../classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b',1,'bdm::TimingAggregator']]],
   ['detect_5fstatic_5fsim_5fobjects_5f',['detect_static_sim_objects_',['../structbdm_1_1Param.html#adeb7a4ca69031a443d0381c9064f34a4',1,'bdm::Param']]],

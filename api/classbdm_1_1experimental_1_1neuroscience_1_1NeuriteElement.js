@@ -15,7 +15,7 @@ var classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement =
     [ "Branch", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad634a6885a73e10f9607c9fca485f858", null ],
     [ "Branch", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a9f140c897d87898503718b47b4e058e7", null ],
     [ "BranchPermitted", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a626b0087fcabc62ae7a17292eba6eda1", null ],
-    [ "CalculateDisplacement", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#abf625dd222c87d47f071f53275cf0f06", null ],
+    [ "CalculateDisplacement", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a0814f964adc086b96a736cae2dc0bc52", null ],
     [ "ChangeDiameter", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a97293e2479a90df06275e34b5df14ada", null ],
     [ "ChangeVolume", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a5626be226ce49be5304a061e4976b93d", null ],
     [ "Copy", "classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a0e743406a0bbd9bfb817873965b06f2b", null ],
