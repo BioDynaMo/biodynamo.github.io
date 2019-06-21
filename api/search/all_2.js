@@ -52,6 +52,5 @@ var searchData=
   ['break',['Break',['../classbdm_1_1Log.html#a55d49d670e72d71dc8a5b2477a5386b3',1,'bdm::Log']]],
   ['detail',['detail',['../namespacebdm_1_1detail.html',1,'bdm']]],
   ['experimental',['experimental',['../namespacebdm_1_1experimental.html',1,'bdm']]],
-  ['biodynamo',['BioDynaMo',['../index.html',1,'']]],
   ['neuroscience',['neuroscience',['../namespacebdm_1_1experimental_1_1neuroscience.html',1,'bdm::experimental']]]
 ];
