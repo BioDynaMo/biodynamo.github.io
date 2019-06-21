@@ -876,8 +876,7 @@ Second, we create a BioDynaMo simulation.</p>
   <span class="p">}</span>
 <span class="p">};</span>
 </pre></div></p>
-<p>The names of user-defined Biology modules have to be postfixed by <code class="codehilite"><span class="n">BM</span></code>, <code class="codehilite"><span class="k">Module</span></code> or <code class="codehilite"><span class="n">Behaviour</span></code>.
-We are now able to add any code in the Run() method, that will be executed at each simulation step for each cell containing this GrowthModule. In our case, it will be a cellular growth, until a certain diameter is reached and then a cell division:
+<p>We are now able to add any code in the Run() method, that will be executed at each simulation step for each cell containing this GrowthModule. In our case, it will be a cellular growth, until a certain diameter is reached and then a cell division:
 <div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="k">auto</span><span class="o">*</span> <span class="n">cell</span> <span class="o">=</span> <span class="k">dynamic_cast</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">so</span><span class="p">))</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">cell</span><span class="o">-&gt;</span><span class="n">GetDiameter</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">cell</span><span class="o">-&gt;</span><span class="n">ChangeVolume</span><span class="p">(</span><span class="mi">400</span><span class="p">);</span>

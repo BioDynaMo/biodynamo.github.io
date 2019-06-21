@@ -608,7 +608,7 @@
 <p>Operations are functions that are executed for each simulation object.
 To execute a function for <em>specific</em> simulation objects have a look at
 biology modules.</p>
-<p>To support multi-scale simulations, operations have a data member frequency.
+<p>To support multiscale simulations, operations have a data member frequency.
 If it is set to one it means that this function will be executed for every
 time step. If this member is set to two it will be executed every second time
 step, and so on.</p>
@@ -621,14 +621,14 @@ simulation object unique ids.</p>
 <span class="n">Operation</span> <span class="nf">op</span><span class="p">(</span><span class="s">&quot;print uid op&quot;</span><span class="p">,</span> <span class="p">[](</span><span class="n">SimObject</span><span class="o">*</span> <span class="n">so</span><span class="p">){</span>
     <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;SimObject &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">so</span><span class="o">-&gt;</span><span class="n">GetUid</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="p">});</span>
-<span class="n">scheduler</span><span class="p">.</span><span class="n">AddOperation</span><span class="p">(</span><span class="n">op</span><span class="p">);</span>
+<span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">AddOperation</span><span class="p">(</span><span class="n">op</span><span class="p">);</span>
 </pre></div>
 
 <h3 id="change-the-execution-frequency-of-an-operation">Change the execution frequency of an operation</h3>
 <p>Let's assume that we want to output all unique ids every 100 timesteps instead
 of every.</p>
 <div class="codehilite"><pre><span></span><span class="k">auto</span><span class="o">*</span> <span class="n">scheduler</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetScheduler</span><span class="p">();</span>
-<span class="n">scheduler</span><span class="p">.</span><span class="n">GetOperation</span><span class="p">(</span><span class="s">&quot;print uid op&quot;</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">frequency_</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">GetOperation</span><span class="p">(</span><span class="s">&quot;print uid op&quot;</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">frequency_</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 </pre></div>
                 
                   
