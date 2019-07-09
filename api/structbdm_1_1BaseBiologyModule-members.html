@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structbdm_1_1BaseBiologyModule.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('structbdm_1_1BaseBiologyModule.html','
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1BaseBiologyModule.html">BaseBiologyModule</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::BaseBiologyModule Member List</div>  </div>
@@ -118,36 +101,22 @@ $(document).ready(function(){initNavTree('structbdm_1_1BaseBiologyModule.html','
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac3c3b1f233fd3516e053f9c672fa2d09">BaseBiologyModule</a>(std::initializer_list&lt; EventId &gt; copy_events, std::initializer_list&lt; EventId &gt; remove_events={})</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a456d123a50b259027859282fb5cd0001">BaseBiologyModule</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac789f4a745bf6a2c32b569d390a7bffd">BaseBiologyModule</a>(const BaseBiologyModule &amp;other)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a78ceea1f70ea3e3743aa417add776458">Class</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a95bd4d558b20af347c7a6239a11792f6">Class_Name</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af3139f314d6e2c5ed7b6c41812fe4b52">Class_Version</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a8424e30d0bc6522559f3f16313b11e6f">BDM_CLASS_DEF</a>(BaseBiologyModule, 2)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af76be6bbaae400590598cb11c1c73ef6">Copy</a>(EventId event) const </td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ab11c03eab9ce8faf961c2da0171e3d90">copy_mask_</a></td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a575730b81025ab94d88b86cd1701d74d">DeclFileLine</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a47854593101cb72691be9c733206160f">DeclFileName</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a5e57ecad41388284d1901e878513dafb">Dictionary</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a5f41fe5c67d6771633421d9421383b19">EventHandler</a>(const Event &amp;event, BaseBiologyModule *other1, BaseBiologyModule *other2=nullptr)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af13d7c88c2a69166c2d7a7c51554d880">GetCopy</a>() const =0</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a56454e497e634175b18e22e6a3c89af3">GetInstance</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0) const =0</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af37094ea45d38eb327d69176f211ec37">ImplFileLine</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a26b43065fd4a8d106914666808b582f9">ImplFileName</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#affe89aa5810d8ee9a58184a0bb4d0af8">IsA</a>() const </td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a5f41fe5c67d6771633421d9421383b19">EventHandler</a>(const Event &amp;event, BaseBiologyModule *other1, BaseBiologyModule *other2=nullptr)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af13d7c88c2a69166c2d7a7c51554d880">GetCopy</a>() const =0</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a56454e497e634175b18e22e6a3c89af3">GetInstance</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0) const =0</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ab2834ebabf64a247d639d4f684ccd547">Remove</a>(EventId event) const </td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ab4940e1f97ea5c616c1b053aa0ead3c3">remove_mask_</a></td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac93e1cbecc9b902fb8fb247db1f93122">Run</a>(SimObject *so)=0</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#acbe2e708990024e0da2abe5677e3abcd">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#acc76d63b284182164720aab22605f564">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ad92045f2bbd3a28f44f07b7d70a3ce1b">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac4422a8fbf6ae46baa13e1b4e3d0a7d5">~BaseBiologyModule</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac4422a8fbf6ae46baa13e1b4e3d0a7d5">~BaseBiologyModule</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

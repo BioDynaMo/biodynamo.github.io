@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,13 +83,16 @@ $(document).ready(function(){initNavTree('classbdm_1_1experimental_1_1neuroscien
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="namespacebdm_1_1experimental.html">experimental</a></li><li class="navelem"><a class="el" href="namespacebdm_1_1experimental_1_1neuroscience.html">neuroscience</a></li><li class="navelem"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html">NeuronSoma</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::experimental::neuroscience::NeuronSoma Class Reference</div>  </div>
@@ -122,46 +103,18 @@ $(document).ready(function(){initNavTree('classbdm_1_1experimental_1_1neuroscien
 <div class="dynheader">
 Inheritance diagram for bdm::experimental::neuroscience::NeuronSoma:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma__inherit__graph.svg" width="528" height="1498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma__inherit__graph.svg" width="363" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for bdm::experimental::neuroscience::NeuronSoma:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma__coll__graph.svg" width="770" height="1610"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma__coll__graph.svg" width="580" height="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a04460d381665711099be189f29628d2c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a04460d381665711099be189f29628d2c">Base</a> = <a class="el" href="classbdm_1_1Cell.html">Cell</a></td></tr>
-<tr class="separator:a04460d381665711099be189f29628d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classbdm_1_1Cell"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classbdm_1_1Cell')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td></tr>
-<tr class="memitem:a6275f020cba86e1d373d2ce00aa5adb8 inherit pub_types_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> = <a class="el" href="classbdm_1_1SimObject.html">SimObject</a></td></tr>
-<tr class="separator:a6275f020cba86e1d373d2ce00aa5adb8 inherit pub_types_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af148070adb3b42f7124185e55bafd76b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#af148070adb3b42f7124185e55bafd76b">NeuronSoma</a> (TRootIOCtor *io_ctor)</td></tr>
-<tr class="separator:af148070adb3b42f7124185e55bafd76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ea33b1c18508a683f2a4da47b1f7456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a7ea33b1c18508a683f2a4da47b1f7456">GetInstance</a> (const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;event, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *other, uint64_t new_oid=0) const override</td></tr>
-<tr class="separator:a7ea33b1c18508a683f2a4da47b1f7456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642d287010fcf98e1afae8e6e065a712"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a642d287010fcf98e1afae8e6e065a712">GetCopy</a> () const override</td></tr>
-<tr class="separator:a642d287010fcf98e1afae8e6e065a712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96153206422187686ec77dc2615fca35"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a96153206422187686ec77dc2615fca35">GetTypeName</a> () const override</td></tr>
-<tr class="separator:a96153206422187686ec77dc2615fca35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393e2e305f4453396796639c4471d146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a393e2e305f4453396796639c4471d146">ForEachDataMember</a> (<a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const override</td></tr>
-<tr class="separator:a393e2e305f4453396796639c4471d146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a606b238826160b7477c2034cd009eaf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a606b238826160b7477c2034cd009eaf2">ForEachDataMemberIn</a> (const std::set&lt; std::string &gt; &amp;dm_selector, <a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const override</td></tr>
-<tr class="separator:a606b238826160b7477c2034cd009eaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9bc170e006135a4c2de75501e3d410"><td class="memItemLeft" align="right" valign="top">virtual TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6f9bc170e006135a4c2de75501e3d410">IsA</a> () const </td></tr>
-<tr class="separator:a6f9bc170e006135a4c2de75501e3d410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa9e66e341bb555f183cfdabca9a5cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#abfa9e66e341bb555f183cfdabca9a5cc">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:abfa9e66e341bb555f183cfdabca9a5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac691d8eb9cd45d8eaaa0b4ce75416345"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#ac691d8eb9cd45d8eaaa0b4ce75416345">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:ac691d8eb9cd45d8eaaa0b4ce75416345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaceac325625ff027fb2acefce4b58211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aaceac325625ff027fb2acefce4b58211">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:aaceac325625ff027fb2acefce4b58211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43bf725b459150cd9614cddc4d6a4623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a43bf725b459150cd9614cddc4d6a4623">NeuronSoma</a> ()</td></tr>
 <tr class="separator:a43bf725b459150cd9614cddc4d6a4623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a040a372f0343b3ea2d3fe2792e56779c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a040a372f0343b3ea2d3fe2792e56779c">~NeuronSoma</a> ()</td></tr>
@@ -195,10 +148,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b460d27be0fb72e9b4b8f5fcc31f3fc"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a>&lt; <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html">NeuriteElement</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a3b460d27be0fb72e9b4b8f5fcc31f3fc">GetDaughters</a> () const </td></tr>
 <tr class="separator:a3b460d27be0fb72e9b4b8f5fcc31f3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbdm_1_1Cell"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbdm_1_1Cell')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td></tr>
-<tr class="memitem:a29c446d49167a3e37554cb239e89338a inherit pub_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a29c446d49167a3e37554cb239e89338a">Cell</a> (TRootIOCtor *io_ctor)</td></tr>
-<tr class="separator:a29c446d49167a3e37554cb239e89338a inherit pub_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0cbe58ccb6e68fc3a8accc0e2854b9 inherit pub_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a9e0cbe58ccb6e68fc3a8accc0e2854b9">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a9e0cbe58ccb6e68fc3a8accc0e2854b9 inherit pub_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca6e7785542c5bccf677271f3d02376f inherit pub_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#aca6e7785542c5bccf677271f3d02376f">Cell</a> ()</td></tr>
 <tr class="separator:aca6e7785542c5bccf677271f3d02376f inherit pub_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5866efa6a6d2b8e706d1cd828a7661 inherit pub_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a8c5866efa6a6d2b8e706d1cd828a7661">Cell</a> (double diameter)</td></tr>
@@ -278,6 +227,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0da0b36bd769adb2c065259981688208 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a5bc87e3294eb9ec1b62a1f4fe26c8 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a43a5bc87e3294eb9ec1b62a1f4fe26c8">~SimObject</a> ()</td></tr>
 <tr class="separator:a43a5bc87e3294eb9ec1b62a1f4fe26c8 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada99a3a971b24be4a0d1e7ec86d9638 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#aada99a3a971b24be4a0d1e7ec86d9638">ForEachDataMember</a> (<a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const </td></tr>
+<tr class="separator:aada99a3a971b24be4a0d1e7ec86d9638 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b96fb273997f5217a1c92ac57cba65 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#ae2b96fb273997f5217a1c92ac57cba65">ForEachDataMemberIn</a> (const std::set&lt; std::string &gt; &amp;dm_selector, <a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const </td></tr>
+<tr class="separator:ae2b96fb273997f5217a1c92ac57cba65 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f549d48268b907f198325d8bc17d7f inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">GetInstance</a> (const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;event, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *other, uint64_t new_oid=0) const =0</td></tr>
+<tr class="memdesc:a68f549d48268b907f198325d8bc17d7f inherit pub_methods_classbdm_1_1SimObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of this object using the default constructor.  <a href="#a68f549d48268b907f198325d8bc17d7f">More...</a><br /></td></tr>
+<tr class="separator:a68f549d48268b907f198325d8bc17d7f inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819a078ee28817c3c7c368664f31c993 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a819a078ee28817c3c7c368664f31c993">GetCopy</a> () const =0</td></tr>
+<tr class="memdesc:a819a078ee28817c3c7c368664f31c993 inherit pub_methods_classbdm_1_1SimObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a copy of this object.  <a href="#a819a078ee28817c3c7c368664f31c993">More...</a><br /></td></tr>
+<tr class="separator:a819a078ee28817c3c7c368664f31c993 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab538852c2c25afb578a915affeaa56 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a3ab538852c2c25afb578a915affeaa56">GetTypeName</a> () const </td></tr>
+<tr class="separator:a3ab538852c2c25afb578a915affeaa56 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f5e2a3f459e0d5616929cbafb948260 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a4f5e2a3f459e0d5616929cbafb948260">GetRequiredVisDataMembers</a> () const </td></tr>
 <tr class="separator:a4f5e2a3f459e0d5616929cbafb948260 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a574c6f014376642e060b3d5306187a44 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a574c6f014376642e060b3d5306187a44">RunDiscretization</a> ()</td></tr>
@@ -320,8 +281,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab20e792e1fa8514a970d062fbdd0e0b8 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5490ec0c79366ed7c1d5f9feae546588 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a5490ec0c79366ed7c1d5f9feae546588">RemoveFromSimulation</a> () const </td></tr>
 <tr class="separator:a5490ec0c79366ed7c1d5f9feae546588 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01c837b792fcbc14155239e4b82ede38 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a01c837b792fcbc14155239e4b82ede38">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a01c837b792fcbc14155239e4b82ede38 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html">bdm::experimental::neuroscience::NeuronOrNeurite</a></td></tr>
 <tr class="memitem:ae6b89f40fdd6111a66edb2cfda09ce50 inherit pub_methods_classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#ae6b89f40fdd6111a66edb2cfda09ce50">~NeuronOrNeurite</a> ()</td></tr>
 <tr class="separator:ae6b89f40fdd6111a66edb2cfda09ce50 inherit pub_methods_classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,73 +290,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5da7a3b05f48063e132b1c8a20c7e66d inherit pub_methods_classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0600ddd92fa919ddeab65d5012eedd inherit pub_methods_classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a8e0600ddd92fa919ddeab65d5012eedd">IsNeuriteElement</a> () const </td></tr>
 <tr class="separator:a8e0600ddd92fa919ddeab65d5012eedd inherit pub_methods_classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aac791eda8aca815f80c00794e42e40f4"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aac791eda8aca815f80c00794e42e40f4">Class</a> ()</td></tr>
-<tr class="separator:aac791eda8aca815f80c00794e42e40f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3113c8ca0d84d4adbf26005936d517bb"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a3113c8ca0d84d4adbf26005936d517bb">Class_Name</a> ()</td></tr>
-<tr class="separator:a3113c8ca0d84d4adbf26005936d517bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa853c3f589f9eea19b1a57963cf4bb42"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aa853c3f589f9eea19b1a57963cf4bb42">Class_Version</a> ()</td></tr>
-<tr class="separator:aa853c3f589f9eea19b1a57963cf4bb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b4fb7f460397ced7ef62d01cf9b44ae"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a9b4fb7f460397ced7ef62d01cf9b44ae">Dictionary</a> ()</td></tr>
-<tr class="separator:a9b4fb7f460397ced7ef62d01cf9b44ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a854563f26399de3478dcaec40503f"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a07a854563f26399de3478dcaec40503f">DeclFileName</a> ()</td></tr>
-<tr class="separator:a07a854563f26399de3478dcaec40503f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57497d4aa26f62bbb65a15841735116e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a57497d4aa26f62bbb65a15841735116e">ImplFileLine</a> ()</td></tr>
-<tr class="separator:a57497d4aa26f62bbb65a15841735116e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99721f766f92d032cfb73e9cae908241"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a99721f766f92d032cfb73e9cae908241">ImplFileName</a> ()</td></tr>
-<tr class="separator:a99721f766f92d032cfb73e9cae908241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102bb79aa929ae964732c0a0d15ec7a4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a102bb79aa929ae964732c0a0d15ec7a4">DeclFileLine</a> ()</td></tr>
-<tr class="separator:a102bb79aa929ae964732c0a0d15ec7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classbdm_1_1Cell"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classbdm_1_1Cell')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td></tr>
-<tr class="memitem:ace0177acd61d1963147325961980bede inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ace0177acd61d1963147325961980bede">Class</a> ()</td></tr>
-<tr class="separator:ace0177acd61d1963147325961980bede inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a824034fa46fe94774618536a4d812121 inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a824034fa46fe94774618536a4d812121">Class_Name</a> ()</td></tr>
-<tr class="separator:a824034fa46fe94774618536a4d812121 inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a5ad17378f66ae231c7acfbc410fa1 inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a93a5ad17378f66ae231c7acfbc410fa1">Class_Version</a> ()</td></tr>
-<tr class="separator:a93a5ad17378f66ae231c7acfbc410fa1 inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f9ca4263d6b2f7b0ca48b53c2ab7543 inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a4f9ca4263d6b2f7b0ca48b53c2ab7543">Dictionary</a> ()</td></tr>
-<tr class="separator:a4f9ca4263d6b2f7b0ca48b53c2ab7543 inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfea94179cc0ae80b13458ed2b9f0e2a inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#acfea94179cc0ae80b13458ed2b9f0e2a">DeclFileName</a> ()</td></tr>
-<tr class="separator:acfea94179cc0ae80b13458ed2b9f0e2a inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6fc98ccb585b15722db1e6c9bbb5b8f inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ae6fc98ccb585b15722db1e6c9bbb5b8f">ImplFileLine</a> ()</td></tr>
-<tr class="separator:ae6fc98ccb585b15722db1e6c9bbb5b8f inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a672ca2c325132dc34da8ee5e81b79b inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a1a672ca2c325132dc34da8ee5e81b79b">ImplFileName</a> ()</td></tr>
-<tr class="separator:a1a672ca2c325132dc34da8ee5e81b79b inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b267ff6b76e2b5e76685af3dbcf3c3 inherit pub_static_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a60b267ff6b76e2b5e76685af3dbcf3c3">DeclFileLine</a> ()</td></tr>
-<tr class="separator:a60b267ff6b76e2b5e76685af3dbcf3c3 inherit pub_static_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classbdm_1_1SimObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classbdm_1_1SimObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td></tr>
-<tr class="memitem:a8a661185ce66f2d76e353fe175e8f34f inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a8a661185ce66f2d76e353fe175e8f34f">Class</a> ()</td></tr>
-<tr class="separator:a8a661185ce66f2d76e353fe175e8f34f inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841fe8d587aa7ee91cf528fc5473cfb3 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a841fe8d587aa7ee91cf528fc5473cfb3">Class_Name</a> ()</td></tr>
-<tr class="separator:a841fe8d587aa7ee91cf528fc5473cfb3 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2ee781eb67e288a6a6ec59cfa1d5a7 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#afa2ee781eb67e288a6a6ec59cfa1d5a7">Class_Version</a> ()</td></tr>
-<tr class="separator:afa2ee781eb67e288a6a6ec59cfa1d5a7 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffcec2997d1396729352f2e29e0699d inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#adffcec2997d1396729352f2e29e0699d">Dictionary</a> ()</td></tr>
-<tr class="separator:adffcec2997d1396729352f2e29e0699d inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6ac652b6bcee50921d55c45f527ea8 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a7a6ac652b6bcee50921d55c45f527ea8">DeclFileName</a> ()</td></tr>
-<tr class="separator:a7a6ac652b6bcee50921d55c45f527ea8 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5d4602ac4d7e7e4caaa95870fd5853 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a3f5d4602ac4d7e7e4caaa95870fd5853">ImplFileLine</a> ()</td></tr>
-<tr class="separator:a3f5d4602ac4d7e7e4caaa95870fd5853 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ed514fcec3284e9a97c3baa1c68bd9 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a95ed514fcec3284e9a97c3baa1c68bd9">ImplFileName</a> ()</td></tr>
-<tr class="separator:a95ed514fcec3284e9a97c3baa1c68bd9 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa890220016bce4a10ff51b749d61b5b0 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#aa890220016bce4a10ff51b749d61b5b0">DeclFileLine</a> ()</td></tr>
-<tr class="separator:aa890220016bce4a10ff51b749d61b5b0 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab89a0fc993dbb5f3ebea7e0020d0ea70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#ab89a0fc993dbb5f3ebea7e0020d0ea70">UpCast</a> ()</td></tr>
-<tr class="separator:ab89a0fc993dbb5f3ebea7e0020d0ea70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f494028190728797a795c70117010f8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a9f494028190728797a795c70117010f8">UpCast</a> () const </td></tr>
-<tr class="separator:a9f494028190728797a795c70117010f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classbdm_1_1Cell"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbdm_1_1Cell')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td></tr>
-<tr class="memitem:a121b150d2788fa7f20c54f74ef1eae20 inherit pro_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a121b150d2788fa7f20c54f74ef1eae20">UpCast</a> ()</td></tr>
-<tr class="separator:a121b150d2788fa7f20c54f74ef1eae20 inherit pro_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4678dc1ffedcb0aadcf69dff2883b1ce inherit pro_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a4678dc1ffedcb0aadcf69dff2883b1ce">UpCast</a> () const </td></tr>
-<tr class="separator:a4678dc1ffedcb0aadcf69dff2883b1ce inherit pro_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a38aadbb9ed943fad3728585b0756b inherit pro_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ac5a38aadbb9ed943fad3728585b0756b">TransformCoordinatesGlobalToPolar</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;coord) const </td></tr>
-<tr class="separator:ac5a38aadbb9ed943fad3728585b0756b inherit pro_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -431,6 +323,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a0ebcdef38fca8c1d8e0fb92a0ead71bb inherit pro_attribs_classbdm_1_1SimObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">collection of biology modules which define the internal behavior  <a href="#a0ebcdef38fca8c1d8e0fb92a0ead71bb">More...</a><br /></td></tr>
 <tr class="separator:a0ebcdef38fca8c1d8e0fb92a0ead71bb inherit pro_attribs_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abcc11c6b9ac61896eaf3e61568a28de3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#abcc11c6b9ac61896eaf3e61568a28de3">BDM_SIM_OBJECT_HEADER</a> (<a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html">NeuronSoma</a>, <a class="el" href="classbdm_1_1Cell.html">Cell</a>, 1, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a2de438b27341b370a774ed8931967af4">daughters_</a>, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6602a8ac0120b4e9bfa7ea7384f13c67">daughters_coord_</a>)</td></tr>
+<tr class="separator:abcc11c6b9ac61896eaf3e61568a28de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_classbdm_1_1Cell"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classbdm_1_1Cell')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td></tr>
@@ -443,52 +340,14 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a98d6cf6e6bc878ae74cfbe822f9df62d inherit pub_static_attribs_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a98d6cf6e6bc878ae74cfbe822f9df62d">kZAxis</a> = {0.0, 0.0, 1.0}</td></tr>
 <tr class="memdesc:a98d6cf6e6bc878ae74cfbe822f9df62d inherit pub_static_attribs_classbdm_1_1Cell"><td class="mdescLeft">&#160;</td><td class="mdescRight">Third axis of the local coordinate system.  <a href="#a98d6cf6e6bc878ae74cfbe822f9df62d">More...</a><br /></td></tr>
 <tr class="separator:a98d6cf6e6bc878ae74cfbe822f9df62d inherit pub_static_attribs_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classbdm_1_1Cell"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbdm_1_1Cell')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td></tr>
+<tr class="memitem:ac5a38aadbb9ed943fad3728585b0756b inherit pro_methods_classbdm_1_1Cell"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ac5a38aadbb9ed943fad3728585b0756b">TransformCoordinatesGlobalToPolar</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;coord) const </td></tr>
+<tr class="separator:ac5a38aadbb9ed943fad3728585b0756b inherit pro_methods_classbdm_1_1Cell"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00031">31</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a04460d381665711099be189f29628d2c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a04460d381665711099be189f29628d2c">bdm::experimental::neuroscience::NeuronSoma::Base</a> =  <a class="el" href="classbdm_1_1Cell.html">Cell</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af148070adb3b42f7124185e55bafd76b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bdm::experimental::neuroscience::NeuronSoma::NeuronSoma </td>
-          <td>(</td>
-          <td class="paramtype">TRootIOCtor *&#160;</td>
-          <td class="paramname"><em>io_ctor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a43bf725b459150cd9614cddc4d6a4623"></a>
 <div class="memitem">
 <div class="memproto">
@@ -619,18 +478,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00049">49</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a1e1ed2b4ca3fde8dfaa1ea1d57fa4b54_cgraph.svg" width="1488" height="208"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aac791eda8aca815f80c00794e42e40f4"></a>
+<a class="anchor" id="abcc11c6b9ac61896eaf3e61568a28de3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -638,145 +489,47 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::experimental::neuroscience::NeuronSoma::Class </td>
+          <td class="memname">bdm::experimental::neuroscience::NeuronSoma::BDM_SIM_OBJECT_HEADER </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html">NeuronSoma</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3113c8ca0d84d4adbf26005936d517bb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::experimental::neuroscience::NeuronSoma::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html">Cell</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa853c3f589f9eea19b1a57963cf4bb42"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t bdm::experimental::neuroscience::NeuronSoma::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a102bb79aa929ae964732c0a0d15ec7a4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static int bdm::experimental::neuroscience::NeuronSoma::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a2de438b27341b370a774ed8931967af4">daughters_</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a07a854563f26399de3478dcaec40503f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::experimental::neuroscience::NeuronSoma::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6602a8ac0120b4e9bfa7ea7384f13c67">daughters_coord_</a>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9b4fb7f460397ced7ef62d01cf9b44ae"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::experimental::neuroscience::NeuronSoma::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -832,22 +585,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00050">50</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_af5f90bc7392b33ef9326e2e4f9be7351_cgraph.svg" width="1240" height="208"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_af5f90bc7392b33ef9326e2e4f9be7351_icgraph.svg" width="459" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a458e73d6d2814f7eec5b29f17ac89847"></a>
@@ -878,22 +615,6 @@ Here is the caller graph for this function:</div>
 <p>Uses default diameter for new neurite </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html" title="Contains the parameters to extend a new neurite from a neuron soma. ">NewNeuriteExtensionEvent</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00071">71</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a458e73d6d2814f7eec5b29f17ac89847_cgraph.svg" width="1104" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a458e73d6d2814f7eec5b29f17ac89847_icgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -938,110 +659,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00080">80</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a7b0f3584caa4334a8360699bb193a05f_cgraph.svg" width="1508" height="362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a393e2e305f4453396796639c4471d146"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::experimental::neuroscience::NeuronSoma::ForEachDataMember </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *&#160;</td>
-          <td class="paramname"><em>visitor</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Executes the given function for all data members </p>
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#ab2da75e8eee6fd174ea362c1f31318ed">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a606b238826160b7477c2034cd009eaf2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::experimental::neuroscience::NeuronSoma::ForEachDataMemberIn </td>
-          <td>(</td>
-          <td class="paramtype">const std::set&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dm_selector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *&#160;</td>
-          <td class="paramname"><em>visitor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Executes the given function for the specified data members </p>
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#a25d86d14407a5caa9fc8375517aea575">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a642d287010fcf98e1afae8e6e065a712"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a>* bdm::experimental::neuroscience::NeuronSoma::GetCopy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a copy of this object. </p>
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#ad002f3d901c3708d6c0abc6d68cc875b">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a3b460d27be0fb72e9b4b8f5fcc31f3fc"></a>
@@ -1058,86 +675,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00135">135</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a3b460d27be0fb72e9b4b8f5fcc31f3fc_icgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7ea33b1c18508a683f2a4da47b1f7456"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a>* bdm::experimental::neuroscience::NeuronSoma::GetInstance </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>new_oid</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a new instance of this object using the default constructor. </p>
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#af0633e150c29ff13103e877006849f68">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a96153206422187686ec77dc2615fca35"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* bdm::experimental::neuroscience::NeuronSoma::GetTypeName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#a70341ab58a39be8a701222e108e4fbb1">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -1165,91 +702,6 @@ Here is the caller graph for this function:</div>
 <p>Implements <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#aa6c1eed04a2b30028c9cad18e6a9a848">bdm::experimental::neuroscience::NeuronOrNeurite</a>.</p>
 
 <p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00064">64</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_aa0c06ce77abd198eb610a8008d5f1ace_cgraph.svg" width="1410" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a57497d4aa26f62bbb65a15841735116e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::experimental::neuroscience::NeuronSoma::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a99721f766f92d032cfb73e9cae908241"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::experimental::neuroscience::NeuronSoma::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6f9bc170e006135a4c2de75501e3d410"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual TClass* bdm::experimental::neuroscience::NeuronSoma::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#a0ee685f80abc124b4bc33ddd0a60852d">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
 
 </div>
 </div>
@@ -1286,14 +738,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00104">104</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_ab0cc2162e4ee56a9f94d9546c1b8d9b5_icgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a8065e8e0e178e6321abe19a67a732efb"></a>
@@ -1322,148 +766,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00097">97</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a8065e8e0e178e6321abe19a67a732efb_icgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="abfa9e66e341bb555f183cfdabca9a5cc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::experimental::neuroscience::NeuronSoma::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#aeec28340cf1e0234e79e6c8d0568d5d0">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac691d8eb9cd45d8eaaa0b4ce75416345"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::experimental::neuroscience::NeuronSoma::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1Cell.html#a00578feee831012da27ee25d58096e7a">bdm::Cell</a>.</p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaceac325625ff027fb2acefce4b58211"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::experimental::neuroscience::NeuronSoma::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab89a0fc993dbb5f3ebea7e0020d0ea70"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a>* bdm::experimental::neuroscience::NeuronSoma::UpCast </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Cast <code>this</code> to the base class pointer (one level up) </p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9f494028190728797a795c70117010f8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a>* bdm::experimental::neuroscience::NeuronSoma::UpCast </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Cast <code>this</code> to the base class pointer (one level up) </p>
-
-<p>Definition at line <a class="el" href="neuron__soma_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__soma_8h_source.html">neuron_soma.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a45183074a7b7e2dd57e31f3e1ae1c88d"></a>
@@ -1490,14 +792,6 @@ Here is the caller graph for this function:</div>
 <p>Implements <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a517da3488e5739c253b48c784f96cb1f">bdm::experimental::neuroscience::NeuronOrNeurite</a>.</p>
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00118">118</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a45183074a7b7e2dd57e31f3e1ae1c88d_icgraph.svg" width="516" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1536,22 +830,6 @@ Here is the caller graph for this function:</div>
 <p>Implements <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a4d7d668843f30d1e8879fe7078904dd5">bdm::experimental::neuroscience::NeuronOrNeurite</a>.</p>
 
 <p>Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00120">120</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a97b22fde9cbc3f00092343bc963cb583_cgraph.svg" width="826" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma_a97b22fde9cbc3f00092343bc963cb583_icgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1606,15 +884,11 @@ Here is the caller graph for this function:</div>
 <li>neuroscience/<a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="namespacebdm_1_1experimental.html">experimental</a></li><li class="navelem"><a class="el" href="namespacebdm_1_1experimental_1_1neuroscience.html">neuroscience</a></li><li class="navelem"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html">NeuronSoma</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

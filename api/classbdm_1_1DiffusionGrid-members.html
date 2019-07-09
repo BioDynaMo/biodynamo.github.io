@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1DiffusionGrid.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1DiffusionGrid.html','');})
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::DiffusionGrid Member List</div>  </div>
@@ -114,57 +97,49 @@ $(document).ready(function(){initNavTree('classbdm_1_1DiffusionGrid.html','');})
 <p>This is the complete list of members for <a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a7f83b22e624ebe2410db4644ed85fa47">AddInitializer</a>(F function)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c">box_length_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a83f73fcc15f8876c672a23a9189dee0c">box_volume_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a86d03c3d92b607d4c65a17bc30c165d2">CalculateGradient</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a0d9c1140fc69d72538e95e3e7382ab97">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a92a7c169a97424fb7becbccb67cf3cf0">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a365fcf7a2757135d6a86310c64410bc9">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a0b3bbb9647f6ee8b2e568cf0b3216e47">BDM_CLASS_DEF_NV</a>(DiffusionGrid, 1)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c">box_length_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a83f73fcc15f8876c672a23a9189dee0c">box_volume_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a86d03c3d92b607d4c65a17bc30c165d2">CalculateGradient</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094">concentration_threshold_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a0a4d7563c9f4a01e2c3fc541e3398016">CopyOldData</a>(const ParallelResizeVector&lt; double &gt; &amp;old_c1, const ParallelResizeVector&lt; double &gt; &amp;old_gradients, const std::array&lt; size_t, 3 &gt; &amp;old_num_boxes_axis)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881">dc_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad9fd366de7937241436eb53d1d7fff05">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad9d3f1201eae1f4e1370a8e67deb785a">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a95ad29d5345c51238b61a8970665e4c1">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770">DiffuseEuler</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e">DiffuseEulerLeakingEdge</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a63e2d29b39597dedf86053109cbee6e6">DiffuseWithClosedEdge</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad41ba0e6b6f746c8bfdc0f7e56e9b666">DiffuseWithLeakingEdge</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac">DiffusionGrid</a>(TRootIOCtor *p)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a79aab2d224eced115cab3c7ee08dd269">DiffusionGrid</a>(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a3d1c0439a1ffb3a93722c28ce596f1ce">GetAllConcentrations</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a40d9bb48b504f20cffe4548f62dcd6dd">GetAllGradients</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a5e6aeb81c2f7c2b06eca3f6671557a1a">GetBoxCoordinates</a>(const Double3 &amp;position) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a2ddbef350c4af0dea9e0f604863835db">GetBoxIndex</a>(const std::array&lt; uint32_t, 3 &gt; &amp;box_coord) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#adb559f48cb53e713a46f1a31bf46bd3f">GetBoxIndex</a>(const Double3 &amp;position) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a846c23d83be8186482b7b87d810e8d9e">GetBoxLength</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#afa9180e7a4ad56398fce27032ed0371d">GetBoxVolume</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a663241be95424bc4a073d4a51e9330e8">GetConcentration</a>(const Double3 &amp;position) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#acea04fe3dfcd93fc61d8c2fb2a099040">GetConcentrationThreshold</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac565a9ae835143856514052681e75d6e">GetDecayConstant</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac24e1bc4177f16c7d51cb1aa500ad3f6">GetDiffusionCoefficients</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae5e75ca2a185d5ad5c0bdc522e7454b7">GetDimensions</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad93fac755c8944c8e44219941d08d604">GetDimensionsPtr</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a92584952452aaa98ff51d6fd7a4d9635">GetGradient</a>(const Double3 &amp;position, Double3 *gradient) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa89089ac00719e2c92d6d2abb60c01a9">GetNumBoxes</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aed2db61eb73fba9cd8b4571bbb2eec5d">GetNumBoxesArray</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aef092d068cfb33c79f85e141da284857">GetResolution</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad22cf51d85fcfed891c49e775f04864e">GetSubstanceId</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa80d7393f0fa25d2673bcc5612e8420f">GetSubstanceName</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#afea4b278a082f85ae6b31b8715a6ad16">gradients_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a60dc01c8f8d10726edd9dafa4ea341b9">grid_dimensions_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ada068799b39302da8927223ada1e782d">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#afaa34552a2f21df51edc2307ce722003">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a835626ff5dd584326fa42ef34ccf3c32">IncreaseConcentrationBy</a>(const Double3 &amp;position, double amount)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a899d8de7216180b98e6d80ab70ecae2e">IncreaseConcentrationBy</a>(size_t idx, double amount)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac5ff04feac82276cb3f1d31dbf074788">init_gradient_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#afa16a2da1af4fe02b22abe25eca9ef2f">Initialize</a>(const std::array&lt; int32_t, 6 &gt; &amp;grid_dimensions)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a48946f820cc47499ed52f019b5f952d8">initialized_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a7e04a5c02176b97633c2dd118c381e6d">initializers_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac25e1679b683af136a5f4b9e9949f1a2">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770">DiffuseEuler</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e">DiffuseEulerLeakingEdge</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a63e2d29b39597dedf86053109cbee6e6">DiffuseWithClosedEdge</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad41ba0e6b6f746c8bfdc0f7e56e9b666">DiffuseWithLeakingEdge</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac">DiffusionGrid</a>(TRootIOCtor *p)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a79aab2d224eced115cab3c7ee08dd269">DiffusionGrid</a>(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a3d1c0439a1ffb3a93722c28ce596f1ce">GetAllConcentrations</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a40d9bb48b504f20cffe4548f62dcd6dd">GetAllGradients</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a5e6aeb81c2f7c2b06eca3f6671557a1a">GetBoxCoordinates</a>(const Double3 &amp;position) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a2ddbef350c4af0dea9e0f604863835db">GetBoxIndex</a>(const std::array&lt; uint32_t, 3 &gt; &amp;box_coord) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#adb559f48cb53e713a46f1a31bf46bd3f">GetBoxIndex</a>(const Double3 &amp;position) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a846c23d83be8186482b7b87d810e8d9e">GetBoxLength</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#afa9180e7a4ad56398fce27032ed0371d">GetBoxVolume</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a663241be95424bc4a073d4a51e9330e8">GetConcentration</a>(const Double3 &amp;position) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#acea04fe3dfcd93fc61d8c2fb2a099040">GetConcentrationThreshold</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac565a9ae835143856514052681e75d6e">GetDecayConstant</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac24e1bc4177f16c7d51cb1aa500ad3f6">GetDiffusionCoefficients</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae5e75ca2a185d5ad5c0bdc522e7454b7">GetDimensions</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad93fac755c8944c8e44219941d08d604">GetDimensionsPtr</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a92584952452aaa98ff51d6fd7a4d9635">GetGradient</a>(const Double3 &amp;position, Double3 *gradient) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa89089ac00719e2c92d6d2abb60c01a9">GetNumBoxes</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aed2db61eb73fba9cd8b4571bbb2eec5d">GetNumBoxesArray</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aef092d068cfb33c79f85e141da284857">GetResolution</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ad22cf51d85fcfed891c49e775f04864e">GetSubstanceId</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa80d7393f0fa25d2673bcc5612e8420f">GetSubstanceName</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#afea4b278a082f85ae6b31b8715a6ad16">gradients_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a60dc01c8f8d10726edd9dafa4ea341b9">grid_dimensions_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a835626ff5dd584326fa42ef34ccf3c32">IncreaseConcentrationBy</a>(const Double3 &amp;position, double amount)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a899d8de7216180b98e6d80ab70ecae2e">IncreaseConcentrationBy</a>(size_t idx, double amount)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac5ff04feac82276cb3f1d31dbf074788">init_gradient_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#afa16a2da1af4fe02b22abe25eca9ef2f">Initialize</a>(const std::array&lt; int32_t, 6 &gt; &amp;grid_dimensions)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a48946f820cc47499ed52f019b5f952d8">initialized_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a7e04a5c02176b97633c2dd118c381e6d">initializers_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a046b1657bfdd383bff5cd08cb8faa463">IsFixedSubstance</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a19bf72ccd0a5199302fa5391032698f2">IsInitialized</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -175,23 +150,17 @@ $(document).ready(function(){initNavTree('classbdm_1_1DiffusionGrid.html','');})
   <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7">RunInitializers</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a3a08309bcd8e0354c9812e14423248a6">SetConcentrationThreshold</a>(double t)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a199259da821fd2b2efc4616528d2a00e">SetDecayConstant</a>(double mu)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a27a9dbda9a7d09a4a0675fd4f071d24d">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a16ab56e035890b39a06ca1654af935eb">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae1857d16997f9031479dad9478576fbe">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a68c0f04fa1e76d95bf1a776d2280df7c">substance_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa260ee52df8f892cdbd10d01ce94d69e">substance_name_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44">total_num_boxes_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#acab47c37fa2b8e604d015791be32b2ea">Update</a>(const std::array&lt; int32_t, 2 &gt; &amp;threshold_dimensions)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a25d8545acb23c2e71e65ee0dae64d969">~DiffusionGrid</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a68c0f04fa1e76d95bf1a776d2280df7c">substance_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa260ee52df8f892cdbd10d01ce94d69e">substance_name_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44">total_num_boxes_</a></td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#acab47c37fa2b8e604d015791be32b2ea">Update</a>(const std::array&lt; int32_t, 2 &gt; &amp;threshold_dimensions)</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html#a25d8545acb23c2e71e65ee0dae64d969">~DiffusionGrid</a>()</td><td class="entry"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1Cell.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1Cell.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Cell.html">Cell</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::Cell Member List</div>  </div>
@@ -118,52 +101,42 @@ $(document).ready(function(){initNavTree('classbdm_1_1Cell.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a44da9e52a027d5053a6eece1cecf2eef">ApplyDisplacement</a>(const Double3 &amp;displacement) override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a2b46e5c05f45dfdeec9a6df2b0cb9c12">ApplyRunDisplacementForAllNextTs</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#abac69fd05d170d2d9b9f99ffaca94f5a">AssignNewUid</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> typedef</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#af1a620bd700325e8b448ee17dd6bd009">BDM_SIM_OBJECT_HEADER</a>(Cell, SimObject, 1, position_, tractor_force_, diameter_, volume_, adherence_, density_)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a0ebcdef38fca8c1d8e0fb92a0ead71bb">biology_modules_</a></td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#aa8d0d6d3e4d9e1ac549ac5f9794814fb">box_idx_</a></td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac18655f69e3e64ec0683b5a0c5791330">CalculateDisplacement</a>(double squared_radius, double dt) override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a29c446d49167a3e37554cb239e89338a">Cell</a>(TRootIOCtor *io_ctor)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aca6e7785542c5bccf677271f3d02376f">Cell</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a8c5866efa6a6d2b8e706d1cd828a7661">Cell</a>(double diameter)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac484de8f75b033459e60ff45a9b086fb">Cell</a>(const Double3 &amp;position)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ae14a7a57d8dd89d86fa8456c02245956">Cell</a>(const Event &amp;event, SimObject *mother, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ab49d39bdc888db1de209181d7872c14b">ChangeVolume</a>(double speed)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ace0177acd61d1963147325961980bede">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a824034fa46fe94774618536a4d812121">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a93a5ad17378f66ae231c7acfbc410fa1">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a60b267ff6b76e2b5e76685af3dbcf3c3">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#acfea94179cc0ae80b13458ed2b9f0e2a">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aca6e7785542c5bccf677271f3d02376f">Cell</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a8c5866efa6a6d2b8e706d1cd828a7661">Cell</a>(double diameter)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac484de8f75b033459e60ff45a9b086fb">Cell</a>(const Double3 &amp;position)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ae14a7a57d8dd89d86fa8456c02245956">Cell</a>(const Event &amp;event, SimObject *mother, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ab49d39bdc888db1de209181d7872c14b">ChangeVolume</a>(double speed)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a6f72cb19b4bf0bfb37a5d69487b1f7dd">density_</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a874d0d83c15733e9c075115755ff0a2b">diameter_</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a4f9ca4263d6b2f7b0ca48b53c2ab7543">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0">Divide</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba">Divide</a>(double volume_ratio)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d">Divide</a>(const Double3 &amp;axis)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69">Divide</a>(double volume_ratio, const Double3 &amp;axis)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875">Divide</a>(double volume_ratio, double phi, double theta)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aca13397bf85b0bd08bde4ca7ddaa7da1">EventHandler</a>(const Event &amp;event, SimObject *other1, SimObject *other2=nullptr) override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ab2da75e8eee6fd174ea362c1f31318ed">ForEachDataMember</a>(SoVisitor *visitor) const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a25d86d14407a5caa9fc8375517aea575">ForEachDataMemberIn</a>(const std::set&lt; std::string &gt; &amp;dm_selector, SoVisitor *visitor) const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a980978f227fe357812e494c9f87752d5">GetAdherence</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#ab20e792e1fa8514a970d062fbdd0e0b8">GetAllBiologyModules</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a1acfbb130802d3570a099e82825875df">GetBoxIdx</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ad002f3d901c3708d6c0abc6d68cc875b">GetCopy</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aad42ba11bb5ace3c5006247caf2c95db">GetDensity</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a5d245e964e5bc6b4cc42bd7a83a31d65">GetDiameter</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#af0633e150c29ff13103e877006849f68">GetInstance</a>(const Event &amp;event, SimObject *other, uint64_t new_oid=0) const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a45b924591257cbe3124d3dd3faf73a35">GetMass</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ab46d5806fa59d15ceb66d273274adb77">GetPosition</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a4f5e2a3f459e0d5616929cbafb948260">GetRequiredVisDataMembers</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a8ffc703c13fdd58eb12920a71cf9ca5b">GetRunDisplacementForAllNextTs</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783">GetShape</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a60953d3c8387583076920e4e2fd8af2d">GetSoPtr</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a10dd1a604eff893e3fede37698a8d21b">GetTractorForce</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a70341ab58a39be8a701222e108e4fbb1">GetTypeName</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a09dd24a4bc359074948de9b698f3ad04">GetUid</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac5c0301e239d597ea2ce39e99aaf8c4d">GetVolume</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ae6fc98ccb585b15722db1e6c9bbb5b8f">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a1a672ca2c325132dc34da8ee5e81b79b">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a0ee685f80abc124b4bc33ddd0a60852d">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0">Divide</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba">Divide</a>(double volume_ratio)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d">Divide</a>(const Double3 &amp;axis)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69">Divide</a>(double volume_ratio, const Double3 &amp;axis)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875">Divide</a>(double volume_ratio, double phi, double theta)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aca13397bf85b0bd08bde4ca7ddaa7da1">EventHandler</a>(const Event &amp;event, SimObject *other1, SimObject *other2=nullptr) override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#aada99a3a971b24be4a0d1e7ec86d9638">ForEachDataMember</a>(SoVisitor *visitor) const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#ae2b96fb273997f5217a1c92ac57cba65">ForEachDataMemberIn</a>(const std::set&lt; std::string &gt; &amp;dm_selector, SoVisitor *visitor) const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a980978f227fe357812e494c9f87752d5">GetAdherence</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#ab20e792e1fa8514a970d062fbdd0e0b8">GetAllBiologyModules</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a1acfbb130802d3570a099e82825875df">GetBoxIdx</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a819a078ee28817c3c7c368664f31c993">GetCopy</a>() const =0</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aad42ba11bb5ace3c5006247caf2c95db">GetDensity</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a5d245e964e5bc6b4cc42bd7a83a31d65">GetDiameter</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">GetInstance</a>(const Event &amp;event, SimObject *other, uint64_t new_oid=0) const =0</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a45b924591257cbe3124d3dd3faf73a35">GetMass</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ab46d5806fa59d15ceb66d273274adb77">GetPosition</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a4f5e2a3f459e0d5616929cbafb948260">GetRequiredVisDataMembers</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a8ffc703c13fdd58eb12920a71cf9ca5b">GetRunDisplacementForAllNextTs</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783">GetShape</a>() const override</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a60953d3c8387583076920e4e2fd8af2d">GetSoPtr</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a10dd1a604eff893e3fede37698a8d21b">GetTractorForce</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a3ab538852c2c25afb578a915affeaa56">GetTypeName</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a09dd24a4bc359074948de9b698f3ad04">GetUid</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac5c0301e239d597ea2ce39e99aaf8c4d">GetVolume</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#afa90d12d41f4d6f932f179a92d658e43">kXAxis</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aadfb4df6dad447b38b9adec1635a0036">kYAxis</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a98d6cf6e6bc878ae74cfbe822f9df62d">kZAxis</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -183,34 +156,26 @@ $(document).ready(function(){initNavTree('classbdm_1_1Cell.html','');});
   <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a9fdc26eb423c9e465f1fc5b82c2c2436">SetRunDisplacementNextTimestep</a>(bool run) const </td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a4241bd7988cc499302c4afb5e52376c8">SetTractorForce</a>(const Double3 &amp;tractor_force)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a0a5e9c9c39fb488bb15337b790486ba2">SetVolume</a>(double volume)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aeec28340cf1e0234e79e6c8d0568d5d0">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#acbc9cbf2d777bbcecf3c4b5474996be4">SimObject</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#affb9c3c53fde67272594abf2afc2f00a">SimObject</a>(const Event &amp;event, SimObject *other, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#aa0ae4af483823976f7aafdfd1f18776a">SimObject</a>(TRootIOCtor *io_ctor)</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a0da0b36bd769adb2c065259981688208">SimObject</a>(const SimObject &amp;other)</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a00578feee831012da27ee25d58096e7a">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a9e0cbe58ccb6e68fc3a8accc0e2854b9">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc">tractor_force_</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac5a38aadbb9ed943fad3728585b0756b">TransformCoordinatesGlobalToPolar</a>(const Double3 &amp;coord) const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#aad75e8d777318cd042f4fc354dde51a4">uid_</a></td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a121b150d2788fa7f20c54f74ef1eae20">UpCast</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a4678dc1ffedcb0aadcf69dff2883b1ce">UpCast</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aaac2374315b1a803c6d27ff6ce710198">UpdateDiameter</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a2401ac09787f78b7a0b4cd2405c04f08">UpdatePosition</a>(const Double3 &amp;delta)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a53944126db971aaa0c57109e816610e2">UpdateRunDisplacement</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a45c3e0ed831794031bf074228f534b5d">UpdateVolume</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ae704adb3dbe70154f878c35916b7ba22">volume_</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac256d9a0ecbcd57bcde3dc8b498c2cf7">~Cell</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a43a5bc87e3294eb9ec1b62a1f4fe26c8">~SimObject</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#acbc9cbf2d777bbcecf3c4b5474996be4">SimObject</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#affb9c3c53fde67272594abf2afc2f00a">SimObject</a>(const Event &amp;event, SimObject *other, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#aa0ae4af483823976f7aafdfd1f18776a">SimObject</a>(TRootIOCtor *io_ctor)</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a0da0b36bd769adb2c065259981688208">SimObject</a>(const SimObject &amp;other)</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc">tractor_force_</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac5a38aadbb9ed943fad3728585b0756b">TransformCoordinatesGlobalToPolar</a>(const Double3 &amp;coord) const </td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#aad75e8d777318cd042f4fc354dde51a4">uid_</a></td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#aaac2374315b1a803c6d27ff6ce710198">UpdateDiameter</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a2401ac09787f78b7a0b4cd2405c04f08">UpdatePosition</a>(const Double3 &amp;delta)</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a53944126db971aaa0c57109e816610e2">UpdateRunDisplacement</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#a45c3e0ed831794031bf074228f534b5d">UpdateVolume</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ae704adb3dbe70154f878c35916b7ba22">volume_</a></td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Cell.html#ac256d9a0ecbcd57bcde3dc8b498c2cf7">~Cell</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Cell.html">bdm::Cell</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SimObject.html#a43a5bc87e3294eb9ec1b62a1f4fe26c8">~SimObject</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structbdm_1_1ModuleParam.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,11 +83,16 @@ $(document).ready(function(){initNavTree('structbdm_1_1ModuleParam.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1ModuleParam.html">ModuleParam</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="structbdm_1_1ModuleParam-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -124,15 +107,9 @@ $(document).ready(function(){initNavTree('structbdm_1_1ModuleParam.html','');});
 <div class="dynheader">
 Inheritance diagram for bdm::ModuleParam:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1ModuleParam__inherit__graph.svg" width="228" height="830"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1ModuleParam__inherit__graph.svg" width="167" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
-<div class="dynheader">
-Collaboration diagram for bdm::ModuleParam:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1ModuleParam__coll__graph.svg" width="172" height="308"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -142,39 +119,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd3142d0f865a356bb7a2d582ff829cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ed7fc2b16a99c73f62f0ffff01e279"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacebdm.html#abe476bd9b7f889be914257c29fef38e0">ModuleParamUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a81ed7fc2b16a99c73f62f0ffff01e279">GetUid</a> () const =0</td></tr>
 <tr class="separator:a81ed7fc2b16a99c73f62f0ffff01e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aa15d2d291af2c83af3efb9c69433fd"><td class="memItemLeft" align="right" valign="top">virtual TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a5aa15d2d291af2c83af3efb9c69433fd">IsA</a> () const </td></tr>
-<tr class="separator:a5aa15d2d291af2c83af3efb9c69433fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ae938cd1924e3097e8875dd90e1620"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a94ae938cd1924e3097e8875dd90e1620">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:a94ae938cd1924e3097e8875dd90e1620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5263f58ce233c7c85fbcc2c9c2426a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#aea5263f58ce233c7c85fbcc2c9c2426a">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:aea5263f58ce233c7c85fbcc2c9c2426a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c4041001345fc00f6004dd076d93ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a56c4041001345fc00f6004dd076d93ae">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a56c4041001345fc00f6004dd076d93ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0910157dbec711eca8c2619657ab522b"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a0910157dbec711eca8c2619657ab522b">Class</a> ()</td></tr>
-<tr class="separator:a0910157dbec711eca8c2619657ab522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a44c63ec795a7f0a9a234a5b18b4483"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a4a44c63ec795a7f0a9a234a5b18b4483">Class_Name</a> ()</td></tr>
-<tr class="separator:a4a44c63ec795a7f0a9a234a5b18b4483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00340d73c6d92235339b80e158fe7432"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a00340d73c6d92235339b80e158fe7432">Class_Version</a> ()</td></tr>
-<tr class="separator:a00340d73c6d92235339b80e158fe7432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3d7b2ed739d3b7f8ea78b8d28818f59"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#ac3d7b2ed739d3b7f8ea78b8d28818f59">Dictionary</a> ()</td></tr>
-<tr class="separator:ac3d7b2ed739d3b7f8ea78b8d28818f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774226fbe0f04a135ee9e19747bfb740"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a774226fbe0f04a135ee9e19747bfb740">DeclFileName</a> ()</td></tr>
-<tr class="separator:a774226fbe0f04a135ee9e19747bfb740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4197e3d671edce427d8bad9db4cf303"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#ad4197e3d671edce427d8bad9db4cf303">ImplFileLine</a> ()</td></tr>
-<tr class="separator:ad4197e3d671edce427d8bad9db4cf303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ccd0b594b06686117e0567764377a83"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a0ccd0b594b06686117e0567764377a83">ImplFileName</a> ()</td></tr>
-<tr class="separator:a0ccd0b594b06686117e0567764377a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25525e0cad6f2322bef481e18c83c716"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a25525e0cad6f2322bef481e18c83c716">DeclFileLine</a> ()</td></tr>
-<tr class="separator:a25525e0cad6f2322bef481e18c83c716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a89e5173fb0cedf79c94ee1618c12836b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a89e5173fb0cedf79c94ee1618c12836b">AssignFromConfig</a> (const std::shared_ptr&lt; cpptoml::table &gt; &amp;)=0</td></tr>
 <tr class="memdesc:a89e5173fb0cedf79c94ee1618c12836b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign values from config file to variables.  <a href="#a89e5173fb0cedf79c94ee1618c12836b">More...</a><br /></td></tr>
 <tr class="separator:a89e5173fb0cedf79c94ee1618c12836b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abfa9eb7bec85b09aba8d92a127230df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#abfa9eb7bec85b09aba8d92a127230df6">BDM_CLASS_DEF</a> (<a class="el" href="structbdm_1_1ModuleParam.html">ModuleParam</a>, 1)</td></tr>
+<tr class="separator:abfa9eb7bec85b09aba8d92a127230df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -240,7 +195,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0910157dbec711eca8c2619657ab522b"></a>
+<a class="anchor" id="abfa9eb7bec85b09aba8d92a127230df6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -248,145 +203,29 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::ModuleParam::Class </td>
+          <td class="memname">bdm::ModuleParam::BDM_CLASS_DEF </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1ModuleParam.html">ModuleParam</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4a44c63ec795a7f0a9a234a5b18b4483"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::ModuleParam::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a00340d73c6d92235339b80e158fe7432"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t bdm::ModuleParam::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a25525e0cad6f2322bef481e18c83c716"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::ModuleParam::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a774226fbe0f04a135ee9e19747bfb740"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::ModuleParam::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac3d7b2ed739d3b7f8ea78b8d28818f59"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::ModuleParam::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
 
 </div>
 </div>
@@ -438,173 +277,6 @@ Friends</h2></td></tr>
 
 <p>Implemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a7b1e5c116a791d404ce5951f8e45b6ca">bdm::experimental::neuroscience::Param</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1ModuleParam_a81ed7fc2b16a99c73f62f0ffff01e279_icgraph.svg" width="691" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ad4197e3d671edce427d8bad9db4cf303"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::ModuleParam::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0ccd0b594b06686117e0567764377a83"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::ModuleParam::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5aa15d2d291af2c83af3efb9c69433fd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual TClass* bdm::ModuleParam::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a51923737fe3f919273e2a2665323a8e3">bdm::experimental::neuroscience::Param</a>.</p>
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a94ae938cd1924e3097e8875dd90e1620"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::ModuleParam::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#aa197d8740e0e50882e4de169c62c39b9">bdm::experimental::neuroscience::Param</a>.</p>
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aea5263f58ce233c7c85fbcc2c9c2426a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::ModuleParam::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ad90aedce9a385a74ce9795bad5c2781b">bdm::experimental::neuroscience::Param</a>.</p>
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a56c4041001345fc00f6004dd076d93ae"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::ModuleParam::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="module__param_8h_source.html#l00056">56</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -635,15 +307,11 @@ Here is the caller graph for this function:</div>
 <li>core/param/<a class="el" href="module__param_8cc_source.html">module_param.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1ModuleParam.html">ModuleParam</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

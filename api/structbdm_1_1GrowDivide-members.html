@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structbdm_1_1GrowDivide.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('structbdm_1_1GrowDivide.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1GrowDivide.html">GrowDivide</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::GrowDivide Member List</div>  </div>
@@ -118,39 +101,25 @@ $(document).ready(function(){initNavTree('structbdm_1_1GrowDivide.html','');});
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac3c3b1f233fd3516e053f9c672fa2d09">BaseBiologyModule</a>(std::initializer_list&lt; EventId &gt; copy_events, std::initializer_list&lt; EventId &gt; remove_events={})</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a456d123a50b259027859282fb5cd0001">BaseBiologyModule</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac789f4a745bf6a2c32b569d390a7bffd">BaseBiologyModule</a>(const BaseBiologyModule &amp;other)</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a9da363294903db8b9a01faf5c9bc4284">Class</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a83fc7a2e7d191308c98dc49bf6758a78">Class_Name</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a8afa491c9dde67f20e4af04f0132560f">Class_Version</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#ac3e885b5486f5805ac895c04fb8c3b43">BDM_CLASS_DEF_OVERRIDE</a>(GrowDivide, 1)</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af76be6bbaae400590598cb11c1c73ef6">Copy</a>(EventId event) const </td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#afe4b699a16d4f5251033b236ff0da4b9">DeclFileLine</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a5d1c935830c03137c70a40d62673a5a1">DeclFileName</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a2261bc5b5dba8f455f192a2021b66ea3">Dictionary</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a6876b179d1dae484a4e68afc421ee883">EventHandler</a>(const Event &amp;event, BaseBiologyModule *other1, BaseBiologyModule *other2=nullptr) override</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#afde2a6b4188964a2f809b6b44ba4f058">GetCopy</a>() const override</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a63f1c049ef0f3f7acac1df98d563e20d">GetInstance</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0) const override</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407">GrowDivide</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8">GrowDivide</a>(double threshold, double growth_rate, std::initializer_list&lt; EventId &gt; event_list)</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a7989089a41718e38a98e5ef32f177d79">GrowDivide</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432">growth_rate_</a></td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#af2f246e47bca1ef4955ba7842a0c9ef0">ImplFileLine</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a38cd361abc9b79ba56e4d39f6f40f3c3">ImplFileName</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a5dbf1be7e94c519562d80572410a7202">IsA</a>() const </td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a6876b179d1dae484a4e68afc421ee883">EventHandler</a>(const Event &amp;event, BaseBiologyModule *other1, BaseBiologyModule *other2=nullptr) override</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#afde2a6b4188964a2f809b6b44ba4f058">GetCopy</a>() const override</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a63f1c049ef0f3f7acac1df98d563e20d">GetInstance</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0) const override</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407">GrowDivide</a>()</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8">GrowDivide</a>(double threshold, double growth_rate, std::initializer_list&lt; EventId &gt; event_list)</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a7989089a41718e38a98e5ef32f177d79">GrowDivide</a>(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432">growth_rate_</a></td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ab2834ebabf64a247d639d4f684ccd547">Remove</a>(EventId event) const </td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a3e9e710d9c082f0c0de73512c05b7d06">Run</a>(SimObject *so) override</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a5329a46b4f39e205c0159f07df5beec2">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a8050cf482a71758d7b733cfb00537767">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#a3bb6c7fb619a182b2d54b614dd8a003e">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77">threshold_</a></td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac4422a8fbf6ae46baa13e1b4e3d0a7d5">~BaseBiologyModule</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html#aa9aa6da5ba956a2d58c566c35884cd77">threshold_</a></td><td class="entry"><a class="el" href="structbdm_1_1GrowDivide.html">bdm::GrowDivide</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ac4422a8fbf6ae46baa13e1b4e3d0a7d5">~BaseBiologyModule</a>()</td><td class="entry"><a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1SoHandle.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoHandle.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::SoHandle Member List</div>  </div>
@@ -113,19 +96,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoHandle.html','');});
 
 <p>This is the complete list of members for <a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a8f03577d4b36c4e8c07ff9135f6d48bd">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a1e93a4344647caf9a61ff8409b776ebc">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#ab83585fa6d773a8c7075aac2600319ce">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a5b33d537b47f11e1ad9b88f4943b64aa">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#aace3db76b31ec6889fb21878c5a5fe75">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a6db291aaf96fd10c070cca2d46b8fb5d">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#ae493279031dce827115c2caa62b161d1">element_idx_</a></td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#ad771d29ca82820f864f5c37391c0759f">ElementIdx_t</a> typedef</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a5654a517d24798c26bbd3a6bba4a5f1a">GetElementIdx</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a9074aa08e64171bcad24f7a8aabe49e5">GetNumaNode</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#ae0f5b1bfd1e7a11a02fd0ec94e21181a">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#af29a68222eda907201ccaf33f04fd341">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a94c9cad835e357645a43fedf45ae4e33">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a71e0bfd1ab7e517f0c4a905617f4e987">BDM_CLASS_DEF_NV</a>(SoHandle, 1)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#ae493279031dce827115c2caa62b161d1">element_idx_</a></td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#ad771d29ca82820f864f5c37391c0759f">ElementIdx_t</a> typedef</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a5654a517d24798c26bbd3a6bba4a5f1a">GetElementIdx</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a9074aa08e64171bcad24f7a8aabe49e5">GetNumaNode</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a70c686d6e0c1743a5d81ef14ef30b7de">numa_node_</a></td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a3a5b1776435a0f8575769d8ce0fd2a90">NumaNode_t</a> typedef</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#afe08fec285fbc15725f04b6cf1712007">operator!=</a>(const SoHandle &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -133,21 +108,15 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoHandle.html','');});
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a5ca19db8be8b43f55a77ca976927e81f">operator&lt;&lt;</a>(std::ostream &amp;stream, const SoHandle &amp;handle)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a52b17301f60f82fca0541a268a2db4f0">operator==</a>(const SoHandle &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a722837ba7290fd556ef43afc18f57337">SetElementIdx</a>(ElementIdx_t element_idx)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#ae40fbc8c7ec8f426526e5d377c5c0eed">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a70d796d62a6e58f19842542c5374dd49">SoHandle</a>() noexcept</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#afb4730421d890ce5cc71455e6871db63">SoHandle</a>(ElementIdx_t element_idx)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a8cd501146937d91b49948133762548f2">SoHandle</a>(NumaNode_t numa_node, ElementIdx_t element_idx)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a261debef6879106f5fbfb4548a2a63a8">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a46e2ec42b79f5094c7c578031fe9a0c8">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a70d796d62a6e58f19842542c5374dd49">SoHandle</a>() noexcept</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#afb4730421d890ce5cc71455e6871db63">SoHandle</a>(ElementIdx_t element_idx)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html#a8cd501146937d91b49948133762548f2">SoHandle</a>(NumaNode_t numa_node, ElementIdx_t element_idx)</td><td class="entry"><a class="el" href="classbdm_1_1SoHandle.html">bdm::SoHandle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structbdm_1_1GrowDivide.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,10 +83,15 @@ $(document).ready(function(){initNavTree('structbdm_1_1GrowDivide.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1GrowDivide.html">GrowDivide</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="structbdm_1_1GrowDivide-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -120,15 +103,15 @@ $(document).ready(function(){initNavTree('structbdm_1_1GrowDivide.html','');});
 <div class="dynheader">
 Inheritance diagram for bdm::GrowDivide:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide__inherit__graph.svg" width="194" height="771"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide__inherit__graph.svg" width="194" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for bdm::GrowDivide:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide__coll__graph.svg" width="194" height="771"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide__coll__graph.svg" width="194" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -148,14 +131,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6876b179d1dae484a4e68afc421ee883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9e710d9c082f0c0de73512c05b7d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a3e9e710d9c082f0c0de73512c05b7d06">Run</a> (<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *so) override</td></tr>
 <tr class="separator:a3e9e710d9c082f0c0de73512c05b7d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dbf1be7e94c519562d80572410a7202"><td class="memItemLeft" align="right" valign="top">virtual TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a5dbf1be7e94c519562d80572410a7202">IsA</a> () const </td></tr>
-<tr class="separator:a5dbf1be7e94c519562d80572410a7202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5329a46b4f39e205c0159f07df5beec2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a5329a46b4f39e205c0159f07df5beec2">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:a5329a46b4f39e205c0159f07df5beec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8050cf482a71758d7b733cfb00537767"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a8050cf482a71758d7b733cfb00537767">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:a8050cf482a71758d7b733cfb00537767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bb6c7fb619a182b2d54b614dd8a003e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a3bb6c7fb619a182b2d54b614dd8a003e">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a3bb6c7fb619a182b2d54b614dd8a003e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structbdm_1_1BaseBiologyModule"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structbdm_1_1BaseBiologyModule')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td></tr>
 <tr class="memitem:a5d8390ff96e3678841dcb73ab36edc3a inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a5d8390ff96e3678841dcb73ab36edc3a">BaseBiologyModule</a> ()</td></tr>
 <tr class="separator:a5d8390ff96e3678841dcb73ab36edc3a inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,44 +148,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af76be6bbaae400590598cb11c1c73ef6 inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2834ebabf64a247d639d4f684ccd547 inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ab2834ebabf64a247d639d4f684ccd547">Remove</a> (<a class="el" href="namespacebdm.html#a74372a497f510a062e414e207c2f90f4">EventId</a> event) const </td></tr>
 <tr class="separator:ab2834ebabf64a247d639d4f684ccd547 inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad92045f2bbd3a28f44f07b7d70a3ce1b inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#ad92045f2bbd3a28f44f07b7d70a3ce1b">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:ad92045f2bbd3a28f44f07b7d70a3ce1b inherit pub_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9da363294903db8b9a01faf5c9bc4284"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a9da363294903db8b9a01faf5c9bc4284">Class</a> ()</td></tr>
-<tr class="separator:a9da363294903db8b9a01faf5c9bc4284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83fc7a2e7d191308c98dc49bf6758a78"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a83fc7a2e7d191308c98dc49bf6758a78">Class_Name</a> ()</td></tr>
-<tr class="separator:a83fc7a2e7d191308c98dc49bf6758a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8afa491c9dde67f20e4af04f0132560f"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a8afa491c9dde67f20e4af04f0132560f">Class_Version</a> ()</td></tr>
-<tr class="separator:a8afa491c9dde67f20e4af04f0132560f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2261bc5b5dba8f455f192a2021b66ea3"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a2261bc5b5dba8f455f192a2021b66ea3">Dictionary</a> ()</td></tr>
-<tr class="separator:a2261bc5b5dba8f455f192a2021b66ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d1c935830c03137c70a40d62673a5a1"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a5d1c935830c03137c70a40d62673a5a1">DeclFileName</a> ()</td></tr>
-<tr class="separator:a5d1c935830c03137c70a40d62673a5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2f246e47bca1ef4955ba7842a0c9ef0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#af2f246e47bca1ef4955ba7842a0c9ef0">ImplFileLine</a> ()</td></tr>
-<tr class="separator:af2f246e47bca1ef4955ba7842a0c9ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38cd361abc9b79ba56e4d39f6f40f3c3"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#a38cd361abc9b79ba56e4d39f6f40f3c3">ImplFileName</a> ()</td></tr>
-<tr class="separator:a38cd361abc9b79ba56e4d39f6f40f3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4b699a16d4f5251033b236ff0da4b9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#afe4b699a16d4f5251033b236ff0da4b9">DeclFileLine</a> ()</td></tr>
-<tr class="separator:afe4b699a16d4f5251033b236ff0da4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_structbdm_1_1BaseBiologyModule"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_structbdm_1_1BaseBiologyModule')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></td></tr>
-<tr class="memitem:a78ceea1f70ea3e3743aa417add776458 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a78ceea1f70ea3e3743aa417add776458">Class</a> ()</td></tr>
-<tr class="separator:a78ceea1f70ea3e3743aa417add776458 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95bd4d558b20af347c7a6239a11792f6 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a95bd4d558b20af347c7a6239a11792f6">Class_Name</a> ()</td></tr>
-<tr class="separator:a95bd4d558b20af347c7a6239a11792f6 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3139f314d6e2c5ed7b6c41812fe4b52 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af3139f314d6e2c5ed7b6c41812fe4b52">Class_Version</a> ()</td></tr>
-<tr class="separator:af3139f314d6e2c5ed7b6c41812fe4b52 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e57ecad41388284d1901e878513dafb inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a5e57ecad41388284d1901e878513dafb">Dictionary</a> ()</td></tr>
-<tr class="separator:a5e57ecad41388284d1901e878513dafb inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47854593101cb72691be9c733206160f inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a47854593101cb72691be9c733206160f">DeclFileName</a> ()</td></tr>
-<tr class="separator:a47854593101cb72691be9c733206160f inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af37094ea45d38eb327d69176f211ec37 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#af37094ea45d38eb327d69176f211ec37">ImplFileLine</a> ()</td></tr>
-<tr class="separator:af37094ea45d38eb327d69176f211ec37 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b43065fd4a8d106914666808b582f9 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a26b43065fd4a8d106914666808b582f9">ImplFileName</a> ()</td></tr>
-<tr class="separator:a26b43065fd4a8d106914666808b582f9 inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575730b81025ab94d88b86cd1701d74d inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BaseBiologyModule.html#a575730b81025ab94d88b86cd1701d74d">DeclFileLine</a> ()</td></tr>
-<tr class="separator:a575730b81025ab94d88b86cd1701d74d inherit pub_static_methods_structbdm_1_1BaseBiologyModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac3e885b5486f5805ac895c04fb8c3b43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GrowDivide.html#ac3e885b5486f5805ac895c04fb8c3b43">BDM_CLASS_DEF_OVERRIDE</a> (<a class="el" href="structbdm_1_1GrowDivide.html">GrowDivide</a>, 1)</td></tr>
+<tr class="separator:ac3e885b5486f5805ac895c04fb8c3b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -246,14 +188,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00029">29</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide_adf1e1edbbe23c0d539e261885c98d407_icgraph.svg" width="483" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -339,18 +273,10 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00036">36</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide_a7989089a41718e38a98e5ef32f177d79_cgraph.svg" width="791" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9da363294903db8b9a01faf5c9bc4284"></a>
+<a class="anchor" id="ac3e885b5486f5805ac895c04fb8c3b43"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -358,145 +284,29 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::GrowDivide::Class </td>
+          <td class="memname">bdm::GrowDivide::BDM_CLASS_DEF_OVERRIDE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1GrowDivide.html">GrowDivide</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a83fc7a2e7d191308c98dc49bf6758a78"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::GrowDivide::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8afa491c9dde67f20e4af04f0132560f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t bdm::GrowDivide::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afe4b699a16d4f5251033b236ff0da4b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::GrowDivide::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5d1c935830c03137c70a40d62673a5a1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::GrowDivide::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2261bc5b5dba8f455f192a2021b66ea3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::GrowDivide::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
 
 </div>
 </div>
@@ -543,14 +353,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00058">58</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide_a6876b179d1dae484a4e68afc421ee883_cgraph.svg" width="728" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="afde2a6b4188964a2f809b6b44ba4f058"></a>
@@ -579,14 +381,6 @@ Here is the call graph for this function:</div>
 <p>Implements <a class="el" href="structbdm_1_1BaseBiologyModule.html#af13d7c88c2a69166c2d7a7c51554d880">bdm::BaseBiologyModule</a>.</p>
 
 <p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00054">54</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide_afde2a6b4188964a2f809b6b44ba4f058_cgraph.svg" width="462" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -634,91 +428,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00048">48</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide_a63f1c049ef0f3f7acac1df98d563e20d_cgraph.svg" width="483" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="af2f246e47bca1ef4955ba7842a0c9ef0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::GrowDivide::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a38cd361abc9b79ba56e4d39f6f40f3c3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::GrowDivide::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5dbf1be7e94c519562d80572410a7202"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual TClass* bdm::GrowDivide::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="structbdm_1_1BaseBiologyModule.html#affe89aa5810d8ee9a58184a0bb4d0af8">bdm::BaseBiologyModule</a>.</p>
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a3e9e710d9c082f0c0de73512c05b7d06"></a>
@@ -746,96 +455,6 @@ Here is the call graph for this function:</div>
 <p>Implements <a class="el" href="structbdm_1_1BaseBiologyModule.html#ac93e1cbecc9b902fb8fb247db1f93122">bdm::BaseBiologyModule</a>.</p>
 
 <p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00063">63</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1GrowDivide_a3e9e710d9c082f0c0de73512c05b7d06_cgraph.svg" width="743" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a5329a46b4f39e205c0159f07df5beec2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::GrowDivide::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="structbdm_1_1BaseBiologyModule.html#acbe2e708990024e0da2abe5677e3abcd">bdm::BaseBiologyModule</a>.</p>
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8050cf482a71758d7b733cfb00537767"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::GrowDivide::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="structbdm_1_1BaseBiologyModule.html#acc76d63b284182164720aab22605f564">bdm::BaseBiologyModule</a>.</p>
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3bb6c7fb619a182b2d54b614dd8a003e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::GrowDivide::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="grow__divide_8h_source.html#l00076">76</a> of file <a class="el" href="grow__divide_8h_source.html">grow_divide.h</a>.</p>
 
 </div>
 </div>
@@ -888,15 +507,11 @@ Here is the call graph for this function:</div>
 <li>core/biology_module/<a class="el" href="grow__divide_8h_source.html">grow_divide.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1GrowDivide.html">GrowDivide</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

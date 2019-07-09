@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1SoPointer.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,10 +83,15 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoPointer.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classbdm_1_1SoPointer-members.html">List of all members</a>  </div>
@@ -118,12 +101,6 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoPointer.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for bdm::SoPointer&lt; TSimObject &gt;:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoPointer__coll__graph.svg" width="235" height="352"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -164,33 +141,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb99bf136cce952b2eaa2a1243f6835a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bc3a3624104fb99321202e3c681eb9b"><td class="memItemLeft" align="right" valign="top">const TSimObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a2bc3a3624104fb99321202e3c681eb9b">Get</a> () const </td></tr>
 <tr class="separator:a2bc3a3624104fb99321202e3c681eb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3085c941b9911d56bc4c51bf7e62c01"><td class="memItemLeft" align="right" valign="top">virtual TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#ad3085c941b9911d56bc4c51bf7e62c01">IsA</a> () const </td></tr>
-<tr class="separator:ad3085c941b9911d56bc4c51bf7e62c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc5fafbd3260656a6d9393381743bc45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#adc5fafbd3260656a6d9393381743bc45">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:adc5fafbd3260656a6d9393381743bc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda2f127d9995224e8b7a2e21ca63ae4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#afda2f127d9995224e8b7a2e21ca63ae4">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:afda2f127d9995224e8b7a2e21ca63ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c6e30be86202282ff3db3ee1a32d31b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a3c6e30be86202282ff3db3ee1a32d31b">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a3c6e30be86202282ff3db3ee1a32d31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ed1ef96153a2ec68de9933e90c25166"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a4ed1ef96153a2ec68de9933e90c25166">Class</a> ()</td></tr>
-<tr class="separator:a4ed1ef96153a2ec68de9933e90c25166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bb7072d98916a72b2abfeda7780e670"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a1bb7072d98916a72b2abfeda7780e670">Class_Name</a> ()</td></tr>
-<tr class="separator:a1bb7072d98916a72b2abfeda7780e670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dc341b7338347f4b1f7fb30586f33e1"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a7dc341b7338347f4b1f7fb30586f33e1">Class_Version</a> ()</td></tr>
-<tr class="separator:a7dc341b7338347f4b1f7fb30586f33e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7485bd7a8b8f1320877c6f491b86b1a9"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a7485bd7a8b8f1320877c6f491b86b1a9">Dictionary</a> ()</td></tr>
-<tr class="separator:a7485bd7a8b8f1320877c6f491b86b1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4922c10d80e1d1b64cc283d7a09474"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a1a4922c10d80e1d1b64cc283d7a09474">DeclFileName</a> ()</td></tr>
-<tr class="separator:a1a4922c10d80e1d1b64cc283d7a09474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefee3c62657c614c8c1078ecb824779a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#aefee3c62657c614c8c1078ecb824779a">ImplFileLine</a> ()</td></tr>
-<tr class="separator:aefee3c62657c614c8c1078ecb824779a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e546d5dc5d25cc162606e170e98fe42"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a0e546d5dc5d25cc162606e170e98fe42">ImplFileName</a> ()</td></tr>
-<tr class="separator:a0e546d5dc5d25cc162606e170e98fe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab28266ddd8257822f14796b905e60017"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#ab28266ddd8257822f14796b905e60017">DeclFileLine</a> ()</td></tr>
-<tr class="separator:ab28266ddd8257822f14796b905e60017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a33f9359e853542041721599ca37e51f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoPointer.html#a33f9359e853542041721599ca37e51f9">BDM_TEMPLATE_CLASS_DEF</a> (<a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a>, 2)</td></tr>
+<tr class="separator:a33f9359e853542041721599ca37e51f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -300,7 +255,7 @@ template&lt;typename TSimObject&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4ed1ef96153a2ec68de9933e90c25166"></a>
+<a class="anchor" id="a33f9359e853542041721599ca37e51f9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -310,155 +265,29 @@ template&lt;typename TSimObject&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::Class </td>
+          <td class="memname"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::BDM_TEMPLATE_CLASS_DEF </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a>&lt; TSimObject &gt;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1bb7072d98916a72b2abfeda7780e670"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">2&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7dc341b7338347f4b1f7fb30586f33e1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab28266ddd8257822f14796b905e60017"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1a4922c10d80e1d1b64cc283d7a09474"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7485bd7a8b8f1320877c6f491b86b1a9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -486,14 +315,6 @@ template&lt;typename TSimObject&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00103">103</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoPointer_acb99bf136cce952b2eaa2a1243f6835a_icgraph.svg" width="710" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -575,87 +396,6 @@ template&lt;typename TSimObject&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00050">50</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aefee3c62657c614c8c1078ecb824779a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0e546d5dc5d25cc162606e170e98fe42"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad3085c941b9911d56bc4c51bf7e62c01"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual TClass* <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -795,14 +535,6 @@ template&lt;typename TSimObject&gt; </div>
 
 <p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00079">79</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoPointer_a93820143785ae4a28f0feca1df45c9d3_icgraph.svg" width="472" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a264b03735b9799cfe5b4e071d2f0e476"></a>
@@ -889,14 +621,6 @@ template&lt;typename TSimObject&gt; </div>
 
 <p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00053">53</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoPointer_af22b3ee66dd097d9ee3d54912474e853_icgraph.svg" width="490" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a7f1d0d46d2769cd10fe45dab800a50f6"></a>
@@ -954,90 +678,6 @@ template&lt;typename TSo &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00064">64</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adc5fafbd3260656a6d9393381743bc45"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afda2f127d9995224e8b7a2e21ca63ae4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3c6e30be86202282ff3db3ee1a32d31b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSimObject&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer</a>&lt; TSimObject &gt;::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="so__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="so__pointer_8h_source.html">so_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -1109,15 +749,11 @@ template&lt;typename TSimObject&gt; </div>
 <li>core/sim_object/<a class="el" href="so__pointer_8h_source.html">so_pointer.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

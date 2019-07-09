@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,10 +83,15 @@ $(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classbdm_1_1ResourceManager-members.html">List of all members</a>  </div>
@@ -121,9 +104,9 @@ $(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');
 <div class="dynheader">
 Collaboration diagram for bdm::ResourceManager:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager__coll__graph.svg" width="236" height="683"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager__coll__graph.svg" width="184" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -183,33 +166,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade13c2ff75365cb4271f3746f6e20905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce6bf2395d248fbd7839f176921dd83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#abce6bf2395d248fbd7839f176921dd83">Remove</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid)</td></tr>
 <tr class="separator:abce6bf2395d248fbd7839f176921dd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b6cc82a645525b8fc7d876fb7d01a6"><td class="memItemLeft" align="right" valign="top">TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ab0b6cc82a645525b8fc7d876fb7d01a6">IsA</a> () const </td></tr>
-<tr class="separator:ab0b6cc82a645525b8fc7d876fb7d01a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b2dc1f666f54939943837875d768e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ad5b2dc1f666f54939943837875d768e1">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:ad5b2dc1f666f54939943837875d768e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312ac47dac4a3b28b6703b67a58f3f43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a312ac47dac4a3b28b6703b67a58f3f43">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:a312ac47dac4a3b28b6703b67a58f3f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b050ed2f1af592ef4d7815ac2a32de0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a9b050ed2f1af592ef4d7815ac2a32de0">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a9b050ed2f1af592ef4d7815ac2a32de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb5c36515f8b25b3d30ca139b9f5ca36"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#aeb5c36515f8b25b3d30ca139b9f5ca36">Class</a> ()</td></tr>
-<tr class="separator:aeb5c36515f8b25b3d30ca139b9f5ca36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49bae8dd340ed94bc87cbe7f8c0ee9fd"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a49bae8dd340ed94bc87cbe7f8c0ee9fd">Class_Name</a> ()</td></tr>
-<tr class="separator:a49bae8dd340ed94bc87cbe7f8c0ee9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af622c8101651c2e98d0589d88ddd7804"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#af622c8101651c2e98d0589d88ddd7804">Class_Version</a> ()</td></tr>
-<tr class="separator:af622c8101651c2e98d0589d88ddd7804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebb667f033c84af67d6e71b52bb235e"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#adebb667f033c84af67d6e71b52bb235e">Dictionary</a> ()</td></tr>
-<tr class="separator:adebb667f033c84af67d6e71b52bb235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf43b1505af2d0873df421851e8bbf7a"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#acf43b1505af2d0873df421851e8bbf7a">DeclFileName</a> ()</td></tr>
-<tr class="separator:acf43b1505af2d0873df421851e8bbf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8ab5441b701f9eaa840b82049aac968"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ae8ab5441b701f9eaa840b82049aac968">ImplFileLine</a> ()</td></tr>
-<tr class="separator:ae8ab5441b701f9eaa840b82049aac968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b9bdb53d3984b55fc9a6a1789c56f49"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a2b9bdb53d3984b55fc9a6a1789c56f49">ImplFileName</a> ()</td></tr>
-<tr class="separator:a2b9bdb53d3984b55fc9a6a1789c56f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c5742d86b84a1e4c05c731e103728cd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a5c5742d86b84a1e4c05c731e103728cd">DeclFileLine</a> ()</td></tr>
-<tr class="separator:a5c5742d86b84a1e4c05c731e103728cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a576cc697b5c0d5e4b6e9ee2a35c7ef47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a576cc697b5c0d5e4b6e9ee2a35c7ef47">BDM_CLASS_DEF_NV</a> (<a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>, 1)</td></tr>
+<tr class="separator:a576cc697b5c0d5e4b6e9ee2a35c7ef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -284,14 +245,6 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00116">116</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_acaaeab80337d37ceea067ce40dbc1d9e_cgraph.svg" width="804" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ad6cc6887caa2e7dd880d35018a569f45"></a>
@@ -344,14 +297,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00182">182</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_ac6c11141f5285480d234f782658f9550_cgraph.svg" width="775" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ade13c2ff75365cb4271f3746f6e20905"></a>
@@ -394,14 +339,6 @@ Here is the call graph for this function:</div>
 <p>Adds <code>new_sim_objects</code> to <code>sim_objects_[numa_node]</code>. <code>offset</code> specifies the index at which the first element is inserted. Sim objects are inserted consecutively. This methos is thread safe only if insertion intervals do not overlap! </p>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00355">355</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_ade13c2ff75365cb4271f3746f6e20905_cgraph.svg" width="423" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -466,14 +403,6 @@ template&lt;typename TFunctor &gt; </div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00259">259</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_ac927a4f96a3283ac58f2ebc896cf7a28_icgraph.svg" width="446" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a6852bc9a6da071ea996da2a53f82bb13"></a>
@@ -500,14 +429,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00267">267</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a6852bc9a6da071ea996da2a53f82bb13_cgraph.svg" width="423" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ab548998df960492f542a6d04db2258d5"></a>
@@ -528,14 +449,6 @@ Function invocations are parallelized.<br />
 Uses static scheduling. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1ResourceManager.html#ac927a4f96a3283ac58f2ebc896cf7a28">ApplyOnAllElements</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00020">20</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_ab548998df960492f542a6d04db2258d5_cgraph.svg" width="492" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -574,17 +487,9 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 
 <p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00042">42</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_afa8519765cf14980c555281d5d71f743_cgraph.svg" width="496" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aeb5c36515f8b25b3d30ca139b9f5ca36"></a>
+<a class="anchor" id="a576cc697b5c0d5e4b6e9ee2a35c7ef47"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -592,70 +497,29 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::ResourceManager::Class </td>
+          <td class="memname">bdm::ResourceManager::BDM_CLASS_DEF_NV </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a49bae8dd340ed94bc87cbe7f8c0ee9fd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::ResourceManager::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af622c8101651c2e98d0589d88ddd7804"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t bdm::ResourceManager::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -726,89 +590,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00238">238</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a32bc1e93a5c7303719a2a02a709cdcb0_icgraph.svg" width="447" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a5c5742d86b84a1e4c05c731e103728cd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::ResourceManager::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acf43b1505af2d0873df421851e8bbf7a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::ResourceManager::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adebb667f033c84af67d6e71b52bb235e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::ResourceManager::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -892,14 +673,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00241">241</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_ae877fccc0bcbddf7facc9858f5e59ed3_icgraph.svg" width="446" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a9afc2cbe3f896aca2e288b0d80638023"></a>
@@ -926,14 +699,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00167">167</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a9afc2cbe3f896aca2e288b0d80638023_cgraph.svg" width="458" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a47be9c07710d8826c57416c1bcb116e3"></a>
@@ -959,14 +724,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00176">176</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a47be9c07710d8826c57416c1bcb116e3_cgraph.svg" width="492" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1031,89 +788,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00306">306</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a8d60a8c4b5979a7d93eee445072b16a7_icgraph.svg" width="712" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ae8ab5441b701f9eaa840b82049aac968"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::ResourceManager::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2b9bdb53d3984b55fc9a6a1789c56f49"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::ResourceManager::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab0b6cc82a645525b8fc7d876fb7d01a6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TClass* bdm::ResourceManager::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a44910abacebe89f18779cc6bd4ce263c"></a>
@@ -1139,14 +813,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00136">136</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a44910abacebe89f18779cc6bd4ce263c_cgraph.svg" width="755" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1185,14 +851,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00344">344</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a66e53531bad206afb96f7ba569ed8acd_cgraph.svg" width="423" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="abce6bf2395d248fbd7839f176921dd83"></a>
@@ -1221,14 +879,6 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00371">371</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_abce6bf2395d248fbd7839f176921dd83_cgraph.svg" width="458" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a51c6917d4e3c1d1871a4ae78915ebace"></a>
@@ -1254,14 +904,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00194">194</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a51c6917d4e3c1d1871a4ae78915ebace_cgraph.svg" width="755" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1315,40 +957,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00156">156</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_a32d3ccd2719c943bbeba76315f8237cd_cgraph.svg" width="423" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ad5b2dc1f666f54939943837875d768e1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::ResourceManager::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab17beb97ee664ffeb79a1d839896b0ad"></a>
@@ -1366,66 +974,6 @@ Here is the call graph for this function:</div>
 <p>Reorder simulation objects such that, sim objects are distributed to NUMA nodes. Nearby sim objects will be moved to the same NUMA node. </p>
 
 <p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00135">135</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ResourceManager_ab17beb97ee664ffeb79a1d839896b0ad_cgraph.svg" width="910" height="940"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a312ac47dac4a3b28b6703b67a58f3f43"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::ResourceManager::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9b050ed2f1af592ef4d7815ac2a32de0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::ResourceManager::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00419">419</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1549,15 +1097,11 @@ Here is the call graph for this function:</div>
 <li>core/<a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

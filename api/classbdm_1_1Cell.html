@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1Cell.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,14 +83,18 @@ $(document).ready(function(){initNavTree('classbdm_1_1Cell.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Cell.html">Cell</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classbdm_1_1Cell-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::Cell Class Reference</div>  </div>
@@ -123,43 +105,18 @@ $(document).ready(function(){initNavTree('classbdm_1_1Cell.html','');});
 <div class="dynheader">
 Inheritance diagram for bdm::Cell:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell__inherit__graph.svg" width="230" height="1498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell__inherit__graph.svg" width="211" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for bdm::Cell:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell__coll__graph.svg" width="674" height="1160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell__coll__graph.svg" width="580" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a6275f020cba86e1d373d2ce00aa5adb8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> = <a class="el" href="classbdm_1_1SimObject.html">SimObject</a></td></tr>
-<tr class="separator:a6275f020cba86e1d373d2ce00aa5adb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a29c446d49167a3e37554cb239e89338a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a29c446d49167a3e37554cb239e89338a">Cell</a> (TRootIOCtor *io_ctor)</td></tr>
-<tr class="separator:a29c446d49167a3e37554cb239e89338a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0633e150c29ff13103e877006849f68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#af0633e150c29ff13103e877006849f68">GetInstance</a> (const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;event, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *other, uint64_t new_oid=0) const override</td></tr>
-<tr class="separator:af0633e150c29ff13103e877006849f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad002f3d901c3708d6c0abc6d68cc875b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ad002f3d901c3708d6c0abc6d68cc875b">GetCopy</a> () const override</td></tr>
-<tr class="separator:ad002f3d901c3708d6c0abc6d68cc875b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70341ab58a39be8a701222e108e4fbb1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a70341ab58a39be8a701222e108e4fbb1">GetTypeName</a> () const override</td></tr>
-<tr class="separator:a70341ab58a39be8a701222e108e4fbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2da75e8eee6fd174ea362c1f31318ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ab2da75e8eee6fd174ea362c1f31318ed">ForEachDataMember</a> (<a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const override</td></tr>
-<tr class="separator:ab2da75e8eee6fd174ea362c1f31318ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d86d14407a5caa9fc8375517aea575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a25d86d14407a5caa9fc8375517aea575">ForEachDataMemberIn</a> (const std::set&lt; std::string &gt; &amp;dm_selector, <a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const override</td></tr>
-<tr class="separator:a25d86d14407a5caa9fc8375517aea575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ee685f80abc124b4bc33ddd0a60852d"><td class="memItemLeft" align="right" valign="top">virtual TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a0ee685f80abc124b4bc33ddd0a60852d">IsA</a> () const </td></tr>
-<tr class="separator:a0ee685f80abc124b4bc33ddd0a60852d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec28340cf1e0234e79e6c8d0568d5d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#aeec28340cf1e0234e79e6c8d0568d5d0">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:aeec28340cf1e0234e79e6c8d0568d5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00578feee831012da27ee25d58096e7a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a00578feee831012da27ee25d58096e7a">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:a00578feee831012da27ee25d58096e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0cbe58ccb6e68fc3a8accc0e2854b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a9e0cbe58ccb6e68fc3a8accc0e2854b9">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a9e0cbe58ccb6e68fc3a8accc0e2854b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca6e7785542c5bccf677271f3d02376f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#aca6e7785542c5bccf677271f3d02376f">Cell</a> ()</td></tr>
 <tr class="separator:aca6e7785542c5bccf677271f3d02376f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5866efa6a6d2b8e706d1cd828a7661"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a8c5866efa6a6d2b8e706d1cd828a7661">Cell</a> (double diameter)</td></tr>
@@ -242,6 +199,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0da0b36bd769adb2c065259981688208 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a5bc87e3294eb9ec1b62a1f4fe26c8 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a43a5bc87e3294eb9ec1b62a1f4fe26c8">~SimObject</a> ()</td></tr>
 <tr class="separator:a43a5bc87e3294eb9ec1b62a1f4fe26c8 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada99a3a971b24be4a0d1e7ec86d9638 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#aada99a3a971b24be4a0d1e7ec86d9638">ForEachDataMember</a> (<a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const </td></tr>
+<tr class="separator:aada99a3a971b24be4a0d1e7ec86d9638 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b96fb273997f5217a1c92ac57cba65 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#ae2b96fb273997f5217a1c92ac57cba65">ForEachDataMemberIn</a> (const std::set&lt; std::string &gt; &amp;dm_selector, <a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const </td></tr>
+<tr class="separator:ae2b96fb273997f5217a1c92ac57cba65 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f549d48268b907f198325d8bc17d7f inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">GetInstance</a> (const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;event, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *other, uint64_t new_oid=0) const =0</td></tr>
+<tr class="memdesc:a68f549d48268b907f198325d8bc17d7f inherit pub_methods_classbdm_1_1SimObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of this object using the default constructor.  <a href="#a68f549d48268b907f198325d8bc17d7f">More...</a><br /></td></tr>
+<tr class="separator:a68f549d48268b907f198325d8bc17d7f inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819a078ee28817c3c7c368664f31c993 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a819a078ee28817c3c7c368664f31c993">GetCopy</a> () const =0</td></tr>
+<tr class="memdesc:a819a078ee28817c3c7c368664f31c993 inherit pub_methods_classbdm_1_1SimObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a copy of this object.  <a href="#a819a078ee28817c3c7c368664f31c993">More...</a><br /></td></tr>
+<tr class="separator:a819a078ee28817c3c7c368664f31c993 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab538852c2c25afb578a915affeaa56 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a3ab538852c2c25afb578a915affeaa56">GetTypeName</a> () const </td></tr>
+<tr class="separator:a3ab538852c2c25afb578a915affeaa56 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f5e2a3f459e0d5616929cbafb948260 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a4f5e2a3f459e0d5616929cbafb948260">GetRequiredVisDataMembers</a> () const </td></tr>
 <tr class="separator:a4f5e2a3f459e0d5616929cbafb948260 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a574c6f014376642e060b3d5306187a44 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a574c6f014376642e060b3d5306187a44">RunDiscretization</a> ()</td></tr>
@@ -284,44 +253,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab20e792e1fa8514a970d062fbdd0e0b8 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5490ec0c79366ed7c1d5f9feae546588 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a5490ec0c79366ed7c1d5f9feae546588">RemoveFromSimulation</a> () const </td></tr>
 <tr class="separator:a5490ec0c79366ed7c1d5f9feae546588 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01c837b792fcbc14155239e4b82ede38 inherit pub_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a01c837b792fcbc14155239e4b82ede38">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a01c837b792fcbc14155239e4b82ede38 inherit pub_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ace0177acd61d1963147325961980bede"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ace0177acd61d1963147325961980bede">Class</a> ()</td></tr>
-<tr class="separator:ace0177acd61d1963147325961980bede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a824034fa46fe94774618536a4d812121"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a824034fa46fe94774618536a4d812121">Class_Name</a> ()</td></tr>
-<tr class="separator:a824034fa46fe94774618536a4d812121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a5ad17378f66ae231c7acfbc410fa1"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a93a5ad17378f66ae231c7acfbc410fa1">Class_Version</a> ()</td></tr>
-<tr class="separator:a93a5ad17378f66ae231c7acfbc410fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f9ca4263d6b2f7b0ca48b53c2ab7543"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a4f9ca4263d6b2f7b0ca48b53c2ab7543">Dictionary</a> ()</td></tr>
-<tr class="separator:a4f9ca4263d6b2f7b0ca48b53c2ab7543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfea94179cc0ae80b13458ed2b9f0e2a"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#acfea94179cc0ae80b13458ed2b9f0e2a">DeclFileName</a> ()</td></tr>
-<tr class="separator:acfea94179cc0ae80b13458ed2b9f0e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6fc98ccb585b15722db1e6c9bbb5b8f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ae6fc98ccb585b15722db1e6c9bbb5b8f">ImplFileLine</a> ()</td></tr>
-<tr class="separator:ae6fc98ccb585b15722db1e6c9bbb5b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a672ca2c325132dc34da8ee5e81b79b"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a1a672ca2c325132dc34da8ee5e81b79b">ImplFileName</a> ()</td></tr>
-<tr class="separator:a1a672ca2c325132dc34da8ee5e81b79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60b267ff6b76e2b5e76685af3dbcf3c3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a60b267ff6b76e2b5e76685af3dbcf3c3">DeclFileLine</a> ()</td></tr>
-<tr class="separator:a60b267ff6b76e2b5e76685af3dbcf3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classbdm_1_1SimObject"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classbdm_1_1SimObject')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classbdm_1_1SimObject.html">bdm::SimObject</a></td></tr>
-<tr class="memitem:a8a661185ce66f2d76e353fe175e8f34f inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a8a661185ce66f2d76e353fe175e8f34f">Class</a> ()</td></tr>
-<tr class="separator:a8a661185ce66f2d76e353fe175e8f34f inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841fe8d587aa7ee91cf528fc5473cfb3 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a841fe8d587aa7ee91cf528fc5473cfb3">Class_Name</a> ()</td></tr>
-<tr class="separator:a841fe8d587aa7ee91cf528fc5473cfb3 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2ee781eb67e288a6a6ec59cfa1d5a7 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#afa2ee781eb67e288a6a6ec59cfa1d5a7">Class_Version</a> ()</td></tr>
-<tr class="separator:afa2ee781eb67e288a6a6ec59cfa1d5a7 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffcec2997d1396729352f2e29e0699d inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#adffcec2997d1396729352f2e29e0699d">Dictionary</a> ()</td></tr>
-<tr class="separator:adffcec2997d1396729352f2e29e0699d inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6ac652b6bcee50921d55c45f527ea8 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a7a6ac652b6bcee50921d55c45f527ea8">DeclFileName</a> ()</td></tr>
-<tr class="separator:a7a6ac652b6bcee50921d55c45f527ea8 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5d4602ac4d7e7e4caaa95870fd5853 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a3f5d4602ac4d7e7e4caaa95870fd5853">ImplFileLine</a> ()</td></tr>
-<tr class="separator:a3f5d4602ac4d7e7e4caaa95870fd5853 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ed514fcec3284e9a97c3baa1c68bd9 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a95ed514fcec3284e9a97c3baa1c68bd9">ImplFileName</a> ()</td></tr>
-<tr class="separator:a95ed514fcec3284e9a97c3baa1c68bd9 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa890220016bce4a10ff51b749d61b5b0 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#aa890220016bce4a10ff51b749d61b5b0">DeclFileLine</a> ()</td></tr>
-<tr class="separator:aa890220016bce4a10ff51b749d61b5b0 inherit pub_static_methods_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -337,10 +268,6 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a121b150d2788fa7f20c54f74ef1eae20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a121b150d2788fa7f20c54f74ef1eae20">UpCast</a> ()</td></tr>
-<tr class="separator:a121b150d2788fa7f20c54f74ef1eae20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4678dc1ffedcb0aadcf69dff2883b1ce"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#a4678dc1ffedcb0aadcf69dff2883b1ce">UpCast</a> () const </td></tr>
-<tr class="separator:a4678dc1ffedcb0aadcf69dff2883b1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5a38aadbb9ed943fad3728585b0756b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#ac5a38aadbb9ed943fad3728585b0756b">TransformCoordinatesGlobalToPolar</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;coord) const </td></tr>
 <tr class="separator:ac5a38aadbb9ed943fad3728585b0756b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -370,52 +297,16 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a0ebcdef38fca8c1d8e0fb92a0ead71bb inherit pro_attribs_classbdm_1_1SimObject"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1BaseBiologyModule.html">BaseBiologyModule</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a0ebcdef38fca8c1d8e0fb92a0ead71bb">biology_modules_</a></td></tr>
 <tr class="memdesc:a0ebcdef38fca8c1d8e0fb92a0ead71bb inherit pro_attribs_classbdm_1_1SimObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">collection of biology modules which define the internal behavior  <a href="#a0ebcdef38fca8c1d8e0fb92a0ead71bb">More...</a><br /></td></tr>
 <tr class="separator:a0ebcdef38fca8c1d8e0fb92a0ead71bb inherit pro_attribs_classbdm_1_1SimObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af1a620bd700325e8b448ee17dd6bd009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Cell.html#af1a620bd700325e8b448ee17dd6bd009">BDM_SIM_OBJECT_HEADER</a> (<a class="el" href="classbdm_1_1Cell.html">Cell</a>, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a>, 1, <a class="el" href="classbdm_1_1Cell.html#a4162cd38320f2ca2deb7bbd2a8a1e45b">position_</a>, <a class="el" href="classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc">tractor_force_</a>, <a class="el" href="classbdm_1_1Cell.html#a874d0d83c15733e9c075115755ff0a2b">diameter_</a>, <a class="el" href="classbdm_1_1Cell.html#ae704adb3dbe70154f878c35916b7ba22">volume_</a>, <a class="el" href="classbdm_1_1Cell.html#ab8e48d82040233041774f9f6c2485eb3">adherence_</a>, <a class="el" href="classbdm_1_1Cell.html#a6f72cb19b4bf0bfb37a5d69487b1f7dd">density_</a>)</td></tr>
+<tr class="separator:af1a620bd700325e8b448ee17dd6bd009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00039">39</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a6275f020cba86e1d373d2ce00aa5adb8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">bdm::Cell::Base</a> =  <a class="el" href="classbdm_1_1SimObject.html">SimObject</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a29c446d49167a3e37554cb239e89338a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bdm::Cell::Cell </td>
-          <td>(</td>
-          <td class="paramtype">TRootIOCtor *&#160;</td>
-          <td class="paramname"><em>io_ctor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aca6e7785542c5bccf677271f3d02376f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -464,14 +355,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00052">52</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a8c5866efa6a6d2b8e706d1cd828a7661_cgraph.svg" width="358" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -544,14 +427,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00061">61</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ae14a7a57d8dd89d86fa8456c02245956_cgraph.svg" width="927" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ac256d9a0ecbcd57bcde3dc8b498c2cf7"></a>
@@ -606,21 +481,81 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8cc_source.html#l00023">23</a> of file <a class="el" href="cell_8cc_source.html">cell.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a44da9e52a027d5053a6eece1cecf2eef_cgraph.svg" width="778" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a44da9e52a027d5053a6eece1cecf2eef_icgraph.svg" width="510" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<a class="anchor" id="af1a620bd700325e8b448ee17dd6bd009"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bdm::Cell::BDM_SIM_OBJECT_HEADER </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html">Cell</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html#a4162cd38320f2ca2deb7bbd2a8a1e45b">position_</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc">tractor_force_</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html#a874d0d83c15733e9c075115755ff0a2b">diameter_</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html#ae704adb3dbe70154f878c35916b7ba22">volume_</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html#ab8e48d82040233041774f9f6c2485eb3">adherence_</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Cell.html#a6f72cb19b4bf0bfb37a5d69487b1f7dd">density_</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -660,14 +595,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00261">261</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ac18655f69e3e64ec0683b5a0c5791330_cgraph.svg" width="1928" height="856"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ab49d39bdc888db1de209181d7872c14b"></a>
@@ -693,164 +620,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00231">231</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ab49d39bdc888db1de209181d7872c14b_cgraph.svg" width="759" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ace0177acd61d1963147325961980bede"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::Cell::Class </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a824034fa46fe94774618536a4d812121"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::Cell::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a93a5ad17378f66ae231c7acfbc410fa1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Version_t bdm::Cell::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a60b267ff6b76e2b5e76685af3dbcf3c3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::Cell::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acfea94179cc0ae80b13458ed2b9f0e2a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::Cell::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4f9ca4263d6b2f7b0ca48b53c2ab7543"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::Cell::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -881,22 +650,6 @@ The axis of division is random. </p><dl class="section see"><dt>See also</dt><dd
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00141">141</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ac8034f95d3da4f3996f85f3e41f74fe0_cgraph.svg" width="399" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ac8034f95d3da4f3996f85f3e41f74fe0_icgraph.svg" width="318" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aa3e1dce9ec0245af8ba03916a965c6ba"></a>
@@ -925,14 +678,6 @@ Here is the caller graph for this function:</div>
 <p>The axis of division is random. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00150">150</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_aa3e1dce9ec0245af8ba03916a965c6ba_cgraph.svg" width="576" height="100"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -963,14 +708,6 @@ Here is the call graph for this function:</div>
 </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00163">163</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ac5536140d9ea4e07211db201002ddc5d_cgraph.svg" width="678" height="160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1010,14 +747,6 @@ Here is the call graph for this function:</div>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00172">172</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a401ae6ea24c9f8e73a9b47d814ce8c69_cgraph.svg" width="678" height="130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1063,14 +792,6 @@ Here is the call graph for this function:</div>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1CellDivisionEvent.html" title="Contains the parameters to perform a cell division. ">CellDivisionEvent</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00180">180</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a0c2eaa89f933fe42036a690b9adf3875_cgraph.svg" width="1175" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1128,94 +849,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00129">129</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_aca13397bf85b0bd08bde4ca7ddaa7da1_cgraph.svg" width="954" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_aca13397bf85b0bd08bde4ca7ddaa7da1_icgraph.svg" width="683" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ab2da75e8eee6fd174ea362c1f31318ed"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Cell::ForEachDataMember </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *&#160;</td>
-          <td class="paramname"><em>visitor</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Executes the given function for all data members </p>
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1SimObject.html#aada99a3a971b24be4a0d1e7ec86d9638">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a393e2e305f4453396796639c4471d146">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a25d86d14407a5caa9fc8375517aea575"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Cell::ForEachDataMemberIn </td>
-          <td>(</td>
-          <td class="paramtype">const std::set&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dm_selector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *&#160;</td>
-          <td class="paramname"><em>visitor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Executes the given function for the specified data members </p>
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1SimObject.html#ae2b96fb273997f5217a1c92ac57cba65">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a606b238826160b7477c2034cd009eaf2">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a980978f227fe357812e494c9f87752d5"></a>
@@ -1241,44 +874,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00189">189</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a980978f227fe357812e494c9f87752d5_icgraph.svg" width="479" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ad002f3d901c3708d6c0abc6d68cc875b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a>* bdm::Cell::GetCopy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a copy of this object. </p>
-
-<p>Implements <a class="el" href="classbdm_1_1SimObject.html#a819a078ee28817c3c7c368664f31c993">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a642d287010fcf98e1afae8e6e065a712">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aad42ba11bb5ace3c5006247caf2c95db"></a>
@@ -1303,14 +898,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00195">195</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_aad42ba11bb5ace3c5006247caf2c95db_icgraph.svg" width="334" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1339,69 +926,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00191">191</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a5d245e964e5bc6b4cc42bd7a83a31d65_icgraph.svg" width="712" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="af0633e150c29ff13103e877006849f68"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a>* bdm::Cell::GetInstance </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>new_oid</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create a new instance of this object using the default constructor. </p>
-
-<p>Implements <a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a7ea33b1c18508a683f2a4da47b1f7456">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_af0633e150c29ff13103e877006849f68_icgraph.svg" width="355" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a45b924591257cbe3124d3dd3faf73a35"></a>
@@ -1426,14 +950,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00193">193</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a45b924591257cbe3124d3dd3faf73a35_icgraph.svg" width="443" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1461,14 +977,6 @@ Here is the caller graph for this function:</div>
 <p>Implements <a class="el" href="classbdm_1_1SimObject.html#aee76d8d139aff1e56575df09266bcfab">bdm::SimObject</a>.</p>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00197">197</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ab46d5806fa59d15ceb66d273274adb77_icgraph.svg" width="702" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1522,43 +1030,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00199">199</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a10dd1a604eff893e3fede37698a8d21b_icgraph.svg" width="487" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a70341ab58a39be8a701222e108e4fbb1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* bdm::Cell::GetTypeName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1SimObject.html#a3ab538852c2c25afb578a915affeaa56">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a96153206422187686ec77dc2615fca35">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ac5c0301e239d597ea2ce39e99aaf8c4d"></a>
@@ -1583,93 +1054,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00201">201</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ac5c0301e239d597ea2ce39e99aaf8c4d_icgraph.svg" width="334" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ae6fc98ccb585b15722db1e6c9bbb5b8f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::Cell::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1a672ca2c325132dc34da8ee5e81b79b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::Cell::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0ee685f80abc124b4bc33ddd0a60852d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual TClass* bdm::Cell::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1SimObject.html#ae44eec7cd773917f8a2755b989d29356">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6f9bc170e006135a4c2de75501e3d410">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -1751,14 +1135,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00205">205</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a11258c5270717be715fec3f17e72ec59_cgraph.svg" width="498" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ae97032cc7cb94f18a9b41cf0ea50ddd2"></a>
@@ -1813,22 +1189,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00222">222</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a838cf007275cfec6c478a4df83ebbb8c_cgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a838cf007275cfec6c478a4df83ebbb8c_icgraph.svg" width="335" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a4241bd7988cc499302c4afb5e52376c8"></a>
@@ -1855,14 +1215,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00227">227</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a4241bd7988cc499302c4afb5e52376c8_icgraph.svg" width="748" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a0a5e9c9c39fb488bb15337b790486ba2"></a>
@@ -1888,108 +1240,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00213">213</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a0a5e9c9c39fb488bb15337b790486ba2_cgraph.svg" width="731" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a0a5e9c9c39fb488bb15337b790486ba2_icgraph.svg" width="332" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aeec28340cf1e0234e79e6c8d0568d5d0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::Cell::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1SimObject.html#af79824997617b5d082cf74d2b724c2b5">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#abfa9e66e341bb555f183cfdabca9a5cc">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a00578feee831012da27ee25d58096e7a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::Cell::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classbdm_1_1SimObject.html#a5a57d31c2561527f3ccb9e3fd1e9dbf5">bdm::SimObject</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#ac691d8eb9cd45d8eaaa0b4ce75416345">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9e0cbe58ccb6e68fc3a8accc0e2854b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Cell::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2024,66 +1274,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8cc_source.html#l00033">33</a> of file <a class="el" href="cell_8cc_source.html">cell.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_ac5a38aadbb9ed943fad3728585b0756b_icgraph.svg" width="775" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a121b150d2788fa7f20c54f74ef1eae20"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a>* bdm::Cell::UpCast </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Cast <code>this</code> to the base class pointer (one level up) </p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4678dc1ffedcb0aadcf69dff2883b1ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classbdm_1_1Cell.html#a6275f020cba86e1d373d2ce00aa5adb8">Base</a>* bdm::Cell::UpCast </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Cast <code>this</code> to the base class pointer (one level up) </p>
-
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aaac2374315b1a803c6d27ff6ce710198"></a>
@@ -2108,22 +1298,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00242">242</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_aaac2374315b1a803c6d27ff6ce710198_cgraph.svg" width="523" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_aaac2374315b1a803c6d27ff6ce710198_icgraph.svg" width="604" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -2151,22 +1325,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00256">256</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a2401ac09787f78b7a0b4cd2405c04f08_cgraph.svg" width="512" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a2401ac09787f78b7a0b4cd2405c04f08_icgraph.svg" width="744" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a45c3e0ed831794031bf074228f534b5d"></a>
@@ -2191,14 +1349,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cell_8h_source.html#l00251">251</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Cell_a45c3e0ed831794031bf074228f534b5d_icgraph.svg" width="416" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -2291,7 +1441,7 @@ Here is the caller graph for this function:</div>
 
 <p>First axis of the local coordinate system. </p>
 
-<p>Definition at line <a class="el" href="cell_8h_source.html#l00041">41</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
+<p>Definition at line <a class="el" href="cell_8h_source.html#l00045">45</a> of file <a class="el" href="cell_8h_source.html">cell.h</a>.</p>
 
 </div>
 </div>
@@ -2416,15 +1566,11 @@ Here is the caller graph for this function:</div>
 <li>core/sim_object/<a class="el" href="cell_8cc_source.html">cell.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Cell.html">Cell</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

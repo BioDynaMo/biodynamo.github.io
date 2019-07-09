@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('structbdm_1_1Param.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('structbdm_1_1Param.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1Param.html">Param</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::Param Member List</div>  </div>
@@ -116,23 +99,15 @@ $(document).ready(function(){initNavTree('structbdm_1_1Param.html','');});
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a">AssignFromConfig</a>(const std::shared_ptr&lt; cpptoml::table &gt; &amp;)</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#ab3790595d9010d2e4c1cd765fa697e8b">backup_file_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#ae8a9d38081642a9323f8884b64d41efe">backup_interval_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#aec37de9267ac01cbb088db5c993b20af">bound_space_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a3c1611769f7c143d49de7843d7bcb43a">cache_neighbors_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a9d446ab9be245007036391d6275fcfe7">calculate_gradients_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#ab990dd607248f52f014bb0ef0be0ca12">Class</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#abf0133eb600b5814e6385425ee2eb234">Class_Name</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a9edacfe9c597b14220d39277d2a1df36">Class_Version</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#abd8968f951a19a6db481f74962b35bbc">BDM_CLASS_DEF_NV</a>(Param, 1)</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#aec37de9267ac01cbb088db5c993b20af">bound_space_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a3c1611769f7c143d49de7843d7bcb43a">cache_neighbors_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a9d446ab9be245007036391d6275fcfe7">calculate_gradients_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a189573fb33841f0eaa23d801b510e2c4">debug_numa_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a0533f33713e9211d7e8c546232c6fdee">DeclFileLine</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a39c838dfa97484bf6a2737e93103aa6f">DeclFileName</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#adeb7a4ca69031a443d0381c9064f34a4">detect_static_sim_objects_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a5510ae82d1bce21c85774ded056c739d">Dictionary</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">export_visualization_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a89007026454b633d6df71cf51e4ad774">GetModuleParam</a>() const </td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a1b6739faa89ba842fbe8ca65478c0af4">GetModuleParam</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a4e8ac550e975e83cc67fdcd8d4af79a1">ImplFileLine</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a378aceeaa513ae0a77a961ed4ddfa00f">ImplFileName</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a9751bbc8a00396afec220d25773af757">IsA</a>() const </td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">export_visualization_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a89007026454b633d6df71cf51e4ad774">GetModuleParam</a>() const </td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a1b6739faa89ba842fbe8ca65478c0af4">GetModuleParam</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471ab4b7c9039fe62b59de1a9faea739efc1">kEuler</a> enum value</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471af4c505faf476b7245b728bbba6dedd34">kRK4</a> enum value</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a8c442a24b866f33c7ceb00a56e7cd710">leaking_edges_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
@@ -154,30 +129,24 @@ $(document).ready(function(){initNavTree('structbdm_1_1Param.html','');});
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a6165e06ccf4fc25c0148756a870442ad">run_mechanical_interactions_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#adac07de04521ddd5e025cc00c5664851">scheduling_batch_size_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97">show_simulation_step_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a4dfb22d2e4d9f16a397bc689489b1851">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#aeb51e0a4c44d4192cfbdb79598859172">Simulation</a> class</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#af493a386064dc32d43d19b8ebcd5e7cb">simulation_max_displacement_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a63cbc816311cd6dddc85c35dd908ed68">simulation_step_freq_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">simulation_time_step_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d">statistics_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a18addc5179619c36f1126daf4fc6a3fc">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#af9ee80cc7c8022a1b1bdb43838bbe2c3">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#abd15e376dcf514fb83c6ff55b49cd3db">use_gpu_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a36f0fb400b2fcbe803373bc994a8a612">use_opencl_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a728fb8329237dc9a52413beb47b84dbb">visualization_export_generate_pvsm_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2">visualization_export_interval_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc">visualize_diffusion_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a84eb2718cdaa737f937f71f89055f6a0">visualize_sim_objects_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a03fb8d75726d937695cdff8ee4ae8445">~Param</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#aeb51e0a4c44d4192cfbdb79598859172">Simulation</a> class</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#af493a386064dc32d43d19b8ebcd5e7cb">simulation_max_displacement_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a63cbc816311cd6dddc85c35dd908ed68">simulation_step_freq_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">simulation_time_step_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d">statistics_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#abd15e376dcf514fb83c6ff55b49cd3db">use_gpu_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a36f0fb400b2fcbe803373bc994a8a612">use_opencl_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a728fb8329237dc9a52413beb47b84dbb">visualization_export_generate_pvsm_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2">visualization_export_interval_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc">visualize_diffusion_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Param.html#a84eb2718cdaa737f937f71f89055f6a0">visualize_sim_objects_</a></td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Param.html#a03fb8d75726d937695cdff8ee4ae8445">~Param</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Param.html">bdm::Param</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1Simulation.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1Simulation.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Simulation.html">Simulation</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -122,9 +105,9 @@ $(document).ready(function(){initNavTree('classbdm_1_1Simulation.html','');});
 <div class="dynheader">
 Collaboration diagram for bdm::Simulation:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation__coll__graph.svg" width="1895" height="2126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation__coll__graph.svg" width="1127" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -174,36 +157,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5ca16259ab552490d6c8468082f3f7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a586e4605fd004af75e5dfb143b27fb95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a586e4605fd004af75e5dfb143b27fb95">ReplaceScheduler</a> (<a class="el" href="classbdm_1_1Scheduler.html">Scheduler</a> *scheduler)</td></tr>
 <tr class="separator:a586e4605fd004af75e5dfb143b27fb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7c67df615cea6abaacc3d5664e40980"><td class="memItemLeft" align="right" valign="top">TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#ae7c67df615cea6abaacc3d5664e40980">IsA</a> () const </td></tr>
-<tr class="separator:ae7c67df615cea6abaacc3d5664e40980"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235f075d1b43dbce1fbda79de7f42f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a235f075d1b43dbce1fbda79de7f42f37">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:a235f075d1b43dbce1fbda79de7f42f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6adb963900c81de4083e2d0e5080473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#ad6adb963900c81de4083e2d0e5080473">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:ad6adb963900c81de4083e2d0e5080473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a2b341f2757067685bc1d3a6b02ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a56a2b341f2757067685bc1d3a6b02ec8">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a56a2b341f2757067685bc1d3a6b02ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a67bdfef8ac06a741e287d73d2d941c63"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">GetActive</a> ()</td></tr>
 <tr class="memdesc:a67bdfef8ac06a741e287d73d2d941c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the currently active <a class="el" href="classbdm_1_1Simulation.html">Simulation</a> simulation.  <a href="#a67bdfef8ac06a741e287d73d2d941c63">More...</a><br /></td></tr>
 <tr class="separator:a67bdfef8ac06a741e287d73d2d941c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a426fa163cfc74a68626975534394fb1f"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a426fa163cfc74a68626975534394fb1f">Class</a> ()</td></tr>
-<tr class="separator:a426fa163cfc74a68626975534394fb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95b36cdf75502f2fcd699882cd864948"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a95b36cdf75502f2fcd699882cd864948">Class_Name</a> ()</td></tr>
-<tr class="separator:a95b36cdf75502f2fcd699882cd864948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85da049cf2d7c84629037d6f92aac3d8"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a85da049cf2d7c84629037d6f92aac3d8">Class_Version</a> ()</td></tr>
-<tr class="separator:a85da049cf2d7c84629037d6f92aac3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7feed71910bbbc86de42a665d4bbda59"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a7feed71910bbbc86de42a665d4bbda59">Dictionary</a> ()</td></tr>
-<tr class="separator:a7feed71910bbbc86de42a665d4bbda59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93edd95442021fdbb559cee6c7a6a12e"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a93edd95442021fdbb559cee6c7a6a12e">DeclFileName</a> ()</td></tr>
-<tr class="separator:a93edd95442021fdbb559cee6c7a6a12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf52ece392a0f2922bf41e2a7286c38"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a0bf52ece392a0f2922bf41e2a7286c38">ImplFileLine</a> ()</td></tr>
-<tr class="separator:a0bf52ece392a0f2922bf41e2a7286c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e9c06b7540c7f3fc08597a8720afda"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a52e9c06b7540c7f3fc08597a8720afda">ImplFileName</a> ()</td></tr>
-<tr class="separator:a52e9c06b7540c7f3fc08597a8720afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74838d5639e7d330361c6f1b575f89d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#ab74838d5639e7d330361c6f1b575f89d">DeclFileLine</a> ()</td></tr>
-<tr class="separator:ab74838d5639e7d330361c6f1b575f89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -223,6 +182,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ad5431b3a52d85f73de84719144549246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#ad5431b3a52d85f73de84719144549246">InitializeOutputDir</a> ()</td></tr>
 <tr class="memdesc:ad5431b3a52d85f73de84719144549246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <code>output_dir_</code> and creates dir if it does not exist.  <a href="#ad5431b3a52d85f73de84719144549246">More...</a><br /></td></tr>
 <tr class="separator:ad5431b3a52d85f73de84719144549246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58e16a3e0ce9d179063da53ecb7c9a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#ae58e16a3e0ce9d179063da53ecb7c9a0">BDM_CLASS_DEF_NV</a> (<a class="el" href="classbdm_1_1Simulation.html">Simulation</a>, 1)</td></tr>
+<tr class="separator:ae58e16a3e0ce9d179063da53ecb7c9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -386,14 +347,6 @@ Creation of a new simulation automatically activates it. </p>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00056">56</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a977224f116960643d3178bfb9229cb91_cgraph.svg" width="1574" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aca1affbbc5466e009f928f2514062c5f"></a>
@@ -422,14 +375,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00061">61</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_aca1affbbc5466e009f928f2514062c5f_cgraph.svg" width="1574" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a07a2514efb7500c7858769ac0d51d7b3"></a>
@@ -446,14 +391,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00094">94</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a07a2514efb7500c7858769ac0d51d7b3_cgraph.svg" width="484" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -475,17 +412,9 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00118">118</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a5410ed6a61259720b51e047f92215856_icgraph.svg" width="683" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a426fa163cfc74a68626975534394fb1f"></a>
+<a class="anchor" id="ae58e16a3e0ce9d179063da53ecb7c9a0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -493,145 +422,29 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::Simulation::Class </td>
+          <td class="memname">bdm::Simulation::BDM_CLASS_DEF_NV </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Simulation.html">Simulation</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a95b36cdf75502f2fcd699882cd864948"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::Simulation::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a85da049cf2d7c84629037d6f92aac3d8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t bdm::Simulation::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab74838d5639e7d330361c6f1b575f89d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::Simulation::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a93edd95442021fdbb559cee6c7a6a12e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::Simulation::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7feed71910bbbc86de42a665d4bbda59"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::Simulation::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -665,14 +478,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd><code>executable</code> </dd></dl>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00237">237</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a838d3fbcb4adf7f5495f6d6d2fbfa43e_icgraph.svg" width="676" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -758,14 +563,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00137">137</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a0be91b02708fc3ecbc5ac229a09e9ba1_icgraph.svg" width="1047" height="779"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a492a30c9ca53ea4e71b7ce0cfddc4933"></a>
@@ -782,14 +579,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00129">129</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a492a30c9ca53ea4e71b7ce0cfddc4933_icgraph.svg" width="990" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -827,14 +616,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00127">127</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a9ef1e078599527eca03cc93fc4ed7228_icgraph.svg" width="1262" height="1984"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a21d53321d1a164024667acac9f35479d"></a>
@@ -854,14 +635,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00133">133</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a21d53321d1a164024667acac9f35479d_icgraph.svg" width="1579" height="964"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a12410bfc9dec5d64d0ae3223a5c59385"></a>
@@ -878,14 +651,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00120">120</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a12410bfc9dec5d64d0ae3223a5c59385_icgraph.svg" width="1236" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -921,56 +686,6 @@ Here is the caller graph for this function:</div>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classbdm_1_1Simulation.html#abae3b6b33c723cf575acd0e2c975293b">unique_name_</a></code> </dd></dl>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00145">145</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0bf52ece392a0f2922bf41e2a7286c38"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::Simulation::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a52e9c06b7540c7f3fc08597a8720afda"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::Simulation::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1016,22 +731,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00154">154</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_ac64095238593f5201617dc67c5212cb4_cgraph.svg" width="1323" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_ac64095238593f5201617dc67c5212cb4_icgraph.svg" width="448" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a44af9088b940190018e61a1ef6fb3375"></a>
@@ -1059,22 +758,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00164">164</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a44af9088b940190018e61a1ef6fb3375_cgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a44af9088b940190018e61a1ef6fb3375_icgraph.svg" width="683" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ad5431b3a52d85f73de84719144549246"></a>
@@ -1101,22 +784,6 @@ Here is the caller graph for this function:</div>
 <p>Initializes <code>output_dir_</code> and creates dir if it does not exist. </p>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00247">247</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_ad5431b3a52d85f73de84719144549246_cgraph.svg" width="768" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_ad5431b3a52d85f73de84719144549246_icgraph.svg" width="1146" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1167,22 +834,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00184">184</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a4fcb8eac928bc7f231298b89845dec71_cgraph.svg" width="1088" height="451"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a4fcb8eac928bc7f231298b89845dec71_icgraph.svg" width="683" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a6cfcdfca4147ce20921e67f962175f97"></a>
@@ -1210,39 +861,6 @@ Here is the caller graph for this function:</div>
 <p>This function initialzes <code>unique_name_</code> </p>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00227">227</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a6cfcdfca4147ce20921e67f962175f97_icgraph.svg" width="1146" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ae7c67df615cea6abaacc3d5664e40980"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TClass* bdm::Simulation::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1283,22 +901,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00067">67</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a372f430298d79571847015c2e108b246_cgraph.svg" width="1019" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation_a372f430298d79571847015c2e108b246_icgraph.svg" width="879" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a26651387b596e60601f4e6979ceaeac4"></a>
@@ -1316,84 +918,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="simulation_8cc_source.html#l00122">122</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a235f075d1b43dbce1fbda79de7f42f37"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Simulation::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad6adb963900c81de4083e2d0e5080473"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Simulation::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a56a2b341f2757067685bc1d3a6b02ec8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Simulation::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1727,15 +1251,11 @@ e.g. <code>name_ = "my-sim"</code> and <code>id_ = 4</code> -&gt; "my-sim4" </p>
 <li>core/<a class="el" href="simulation_8cc_source.html">simulation.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Simulation.html">Simulation</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1SoHandle.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,11 +83,16 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoHandle.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classbdm_1_1SoHandle-members.html">List of all members</a>  </div>
@@ -119,12 +102,6 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoHandle.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for bdm::SoHandle:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoHandle__coll__graph.svg" width="170" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -153,33 +130,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe08fec285fbc15725f04b6cf1712007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03637fff134e769aafe2b3d5f0eec67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#ae03637fff134e769aafe2b3d5f0eec67">operator&lt;</a> (const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;other) const </td></tr>
 <tr class="separator:ae03637fff134e769aafe2b3d5f0eec67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c9cad835e357645a43fedf45ae4e33"><td class="memItemLeft" align="right" valign="top">TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a94c9cad835e357645a43fedf45ae4e33">IsA</a> () const </td></tr>
-<tr class="separator:a94c9cad835e357645a43fedf45ae4e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae40fbc8c7ec8f426526e5d377c5c0eed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#ae40fbc8c7ec8f426526e5d377c5c0eed">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:ae40fbc8c7ec8f426526e5d377c5c0eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a261debef6879106f5fbfb4548a2a63a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a261debef6879106f5fbfb4548a2a63a8">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:a261debef6879106f5fbfb4548a2a63a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e2ec42b79f5094c7c578031fe9a0c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a46e2ec42b79f5094c7c578031fe9a0c8">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a46e2ec42b79f5094c7c578031fe9a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f03577d4b36c4e8c07ff9135f6d48bd"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a8f03577d4b36c4e8c07ff9135f6d48bd">Class</a> ()</td></tr>
-<tr class="separator:a8f03577d4b36c4e8c07ff9135f6d48bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e93a4344647caf9a61ff8409b776ebc"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a1e93a4344647caf9a61ff8409b776ebc">Class_Name</a> ()</td></tr>
-<tr class="separator:a1e93a4344647caf9a61ff8409b776ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83585fa6d773a8c7075aac2600319ce"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#ab83585fa6d773a8c7075aac2600319ce">Class_Version</a> ()</td></tr>
-<tr class="separator:ab83585fa6d773a8c7075aac2600319ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db291aaf96fd10c070cca2d46b8fb5d"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a6db291aaf96fd10c070cca2d46b8fb5d">Dictionary</a> ()</td></tr>
-<tr class="separator:a6db291aaf96fd10c070cca2d46b8fb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace3db76b31ec6889fb21878c5a5fe75"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#aace3db76b31ec6889fb21878c5a5fe75">DeclFileName</a> ()</td></tr>
-<tr class="separator:aace3db76b31ec6889fb21878c5a5fe75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f5b1bfd1e7a11a02fd0ec94e21181a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#ae0f5b1bfd1e7a11a02fd0ec94e21181a">ImplFileLine</a> ()</td></tr>
-<tr class="separator:ae0f5b1bfd1e7a11a02fd0ec94e21181a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29a68222eda907201ccaf33f04fd341"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#af29a68222eda907201ccaf33f04fd341">ImplFileName</a> ()</td></tr>
-<tr class="separator:af29a68222eda907201ccaf33f04fd341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b33d537b47f11e1ad9b88f4943b64aa"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a5b33d537b47f11e1ad9b88f4943b64aa">DeclFileLine</a> ()</td></tr>
-<tr class="separator:a5b33d537b47f11e1ad9b88f4943b64aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a71e0bfd1ab7e517f0c4a905617f4e987"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SoHandle.html#a71e0bfd1ab7e517f0c4a905617f4e987">BDM_CLASS_DEF_NV</a> (<a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>, 1)</td></tr>
+<tr class="separator:a71e0bfd1ab7e517f0c4a905617f4e987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -252,14 +207,6 @@ The id is split into two parts: Numa node, element index. The first one is used 
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00062">62</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoHandle_a70d796d62a6e58f19842542c5374dd49_icgraph.svg" width="423" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="afb4730421d890ce5cc71455e6871db63"></a>
@@ -325,7 +272,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8f03577d4b36c4e8c07ff9135f6d48bd"></a>
+<a class="anchor" id="a71e0bfd1ab7e517f0c4a905617f4e987"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -333,145 +280,29 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::SoHandle::Class </td>
+          <td class="memname">bdm::SoHandle::BDM_CLASS_DEF_NV </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1e93a4344647caf9a61ff8409b776ebc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::SoHandle::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab83585fa6d773a8c7075aac2600319ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t bdm::SoHandle::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5b33d537b47f11e1ad9b88f4943b64aa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::SoHandle::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aace3db76b31ec6889fb21878c5a5fe75"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::SoHandle::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6db291aaf96fd10c070cca2d46b8fb5d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::SoHandle::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -498,14 +329,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00073">73</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoHandle_a5654a517d24798c26bbd3a6bba4a5f1a_icgraph.svg" width="506" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a9074aa08e64171bcad24f7a8aabe49e5"></a>
@@ -530,89 +353,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00072">72</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SoHandle_a9074aa08e64171bcad24f7a8aabe49e5_icgraph.svg" width="508" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ae0f5b1bfd1e7a11a02fd0ec94e21181a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::SoHandle::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af29a68222eda907201ccaf33f04fd341"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::SoHandle::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a94c9cad835e357645a43fedf45ae4e33"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TClass* bdm::SoHandle::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -720,84 +460,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae40fbc8c7ec8f426526e5d377c5c0eed"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::SoHandle::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a261debef6879106f5fbfb4548a2a63a8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::SoHandle::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a46e2ec42b79f5094c7c578031fe9a0c8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::SoHandle::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00104">104</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a class="anchor" id="a5ca19db8be8b43f55a77ca976927e81f"></a>
 <div class="memitem">
@@ -885,15 +547,11 @@ Here is the caller graph for this function:</div>
 <li>core/<a class="el" href="resource__manager_8h_source.html">resource_manager.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

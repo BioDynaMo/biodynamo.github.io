@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['double3',['Double3',['../namespacebdm.html#a999db57a7e39895fb42c100d7856836c',1,'bdm']]],
-  ['double4',['Double4',['../namespacebdm.html#a482b174c833a56a19b71cc36847a1013',1,'bdm']]]
+  ['elementidx_5ft',['ElementIdx_t',['../classbdm_1_1SoHandle.html#ad771d29ca82820f864f5c37391c0759f',1,'bdm::SoHandle']]],
+  ['eventid',['EventId',['../namespacebdm.html#a74372a497f510a062e414e207c2f90f4',1,'bdm']]]
 ];

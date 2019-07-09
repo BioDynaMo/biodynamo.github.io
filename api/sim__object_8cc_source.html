@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -74,21 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('sim__object_8cc_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +81,11 @@ $(document).ready(function(){initNavTree('sim__object_8cc_source.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_8417c195086d4ff6acfc795544c5eeb6.html">sim_object</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">sim_object.cc</div>  </div>
@@ -117,7 +100,7 @@ $(document).ready(function(){initNavTree('sim__object_8cc_source.html','');});
 <div class="ttc" id="classbdm_1_1SimObject_html_a9e07e6deb0adebaedb7abb21ba875fd7"><div class="ttname"><a href="classbdm_1_1SimObject.html#a9e07e6deb0adebaedb7abb21ba875fd7">bdm::SimObject::AddBiologyModule</a></div><div class="ttdeci">void AddBiologyModule(BaseBiologyModule *module)</div><div class="ttdoc">Add a biology module to this sim object. </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00108">sim_object.cc:108</a></div></div>
 <div class="ttc" id="classbdm_1_1InPlaceExecutionContext_html_aef5eebb0e1b28b3f7729dd70d8616f1b"><div class="ttname"><a href="classbdm_1_1InPlaceExecutionContext.html#aef5eebb0e1b28b3f7729dd70d8616f1b">bdm::InPlaceExecutionContext::ForEachNeighbor</a></div><div class="ttdeci">void ForEachNeighbor(const std::function&lt; void(const SimObject *)&gt; &amp;lambda, const SimObject &amp;query)</div><div class="ttdef"><b>Definition:</b> <a href="in__place__exec__ctxt_8cc_source.html#l00104">in_place_exec_ctxt.cc:104</a></div></div>
 <div class="ttc" id="classbdm_1_1SimObject_html_a574c6f014376642e060b3d5306187a44"><div class="ttname"><a href="classbdm_1_1SimObject.html#a574c6f014376642e060b3d5306187a44">bdm::SimObject::RunDiscretization</a></div><div class="ttdeci">virtual void RunDiscretization()</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00095">sim_object.cc:95</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_a9fdc26eb423c9e465f1fc5b82c2c2436"><div class="ttname"><a href="classbdm_1_1SimObject.html#a9fdc26eb423c9e465f1fc5b82c2c2436">bdm::SimObject::SetRunDisplacementNextTimestep</a></div><div class="ttdeci">void SetRunDisplacementNextTimestep(bool run) const </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00182">sim_object.h:182</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_a9fdc26eb423c9e465f1fc5b82c2c2436"><div class="ttname"><a href="classbdm_1_1SimObject.html#a9fdc26eb423c9e465f1fc5b82c2c2436">bdm::SimObject::SetRunDisplacementNextTimestep</a></div><div class="ttdeci">void SetRunDisplacementNextTimestep(bool run) const </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00184">sim_object.h:184</a></div></div>
 <div class="ttc" id="root_8h_html"><div class="ttname"><a href="root_8h.html">root.h</a></div></div>
 <div class="ttc" id="classbdm_1_1SimObject_html_a2b46e5c05f45dfdeec9a6df2b0cb9c12"><div class="ttname"><a href="classbdm_1_1SimObject.html#a2b46e5c05f45dfdeec9a6df2b0cb9c12">bdm::SimObject::ApplyRunDisplacementForAllNextTs</a></div><div class="ttdeci">void ApplyRunDisplacementForAllNextTs()</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00073">sim_object.cc:73</a></div></div>
 <div class="ttc" id="classbdm_1_1SimObject_html_a09dd24a4bc359074948de9b698f3ad04"><div class="ttname"><a href="classbdm_1_1SimObject.html#a09dd24a4bc359074948de9b698f3ad04">bdm::SimObject::GetUid</a></div><div class="ttdeci">SoUid GetUid() const </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00099">sim_object.cc:99</a></div></div>
@@ -129,23 +112,23 @@ $(document).ready(function(){initNavTree('sim__object_8cc_source.html','');});
 <div class="ttc" id="biology__module_8h_html"><div class="ttname"><a href="biology__module_8h.html">biology_module.h</a></div></div>
 <div class="ttc" id="classbdm_1_1SimObject_html_a81f3c7798d3ba67c0d178565031055a3"><div class="ttname"><a href="classbdm_1_1SimObject.html#a81f3c7798d3ba67c0d178565031055a3">bdm::SimObject::RemoveBiologyModule</a></div><div class="ttdeci">void RemoveBiologyModule(const BaseBiologyModule *remove_module)</div><div class="ttdoc">Remove a biology module from this sim object. </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00112">sim_object.cc:112</a></div></div>
 <div class="ttc" id="structbdm_1_1BaseBiologyModule_html"><div class="ttname"><a href="structbdm_1_1BaseBiologyModule.html">bdm::BaseBiologyModule</a></div><div class="ttdef"><b>Definition:</b> <a href="biology__module_8h_source.html#l00026">biology_module.h:26</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_acea59fa40cbf9b70b23dd48c33403701"><div class="ttname"><a href="classbdm_1_1SimObject.html#acea59fa40cbf9b70b23dd48c33403701">bdm::SimObject::run_displacement_next_ts_</a></div><div class="ttdeci">bool run_displacement_next_ts_</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00256">sim_object.h:256</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_acea59fa40cbf9b70b23dd48c33403701"><div class="ttname"><a href="classbdm_1_1SimObject.html#acea59fa40cbf9b70b23dd48c33403701">bdm::SimObject::run_displacement_next_ts_</a></div><div class="ttdeci">bool run_displacement_next_ts_</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00258">sim_object.h:258</a></div></div>
 <div class="ttc" id="classbdm_1_1Simulation_html_a0be91b02708fc3ecbc5ac229a09e9ba1"><div class="ttname"><a href="classbdm_1_1Simulation.html#a0be91b02708fc3ecbc5ac229a09e9ba1">bdm::Simulation::GetExecutionContext</a></div><div class="ttdeci">InPlaceExecutionContext * GetExecutionContext()</div><div class="ttdoc">Returns a thread local execution context. </div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00137">simulation.cc:137</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_aa8d0d6d3e4d9e1ac549ac5f9794814fb"><div class="ttname"><a href="classbdm_1_1SimObject.html#aa8d0d6d3e4d9e1ac549ac5f9794814fb">bdm::SimObject::box_idx_</a></div><div class="ttdeci">uint32_t box_idx_</div><div class="ttdoc">Grid box index. </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00245">sim_object.h:245</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_a9ce3c107c46f0546d535f23ad00b419a"><div class="ttname"><a href="classbdm_1_1SimObject.html#a9ce3c107c46f0546d535f23ad00b419a">bdm::SimObject::run_bm_loop_idx_</a></div><div class="ttdeci">uint32_t run_bm_loop_idx_</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00252">sim_object.h:252</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_aa8d0d6d3e4d9e1ac549ac5f9794814fb"><div class="ttname"><a href="classbdm_1_1SimObject.html#aa8d0d6d3e4d9e1ac549ac5f9794814fb">bdm::SimObject::box_idx_</a></div><div class="ttdeci">uint32_t box_idx_</div><div class="ttdoc">Grid box index. </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00247">sim_object.h:247</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_a9ce3c107c46f0546d535f23ad00b419a"><div class="ttname"><a href="classbdm_1_1SimObject.html#a9ce3c107c46f0546d535f23ad00b419a">bdm::SimObject::run_bm_loop_idx_</a></div><div class="ttdeci">uint32_t run_bm_loop_idx_</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00254">sim_object.h:254</a></div></div>
 <div class="ttc" id="structbdm_1_1Event_html_aae3f862e492baeb005128e65e93ecbd8"><div class="ttname"><a href="structbdm_1_1Event.html#aae3f862e492baeb005128e65e93ecbd8">bdm::Event::GetId</a></div><div class="ttdeci">virtual EventId GetId() const =0</div></div>
 <div class="ttc" id="classbdm_1_1SoUidGenerator_html_a9cd8cf84b08c40d8121e484eb25482cc"><div class="ttname"><a href="classbdm_1_1SoUidGenerator.html#a9cd8cf84b08c40d8121e484eb25482cc">bdm::SoUidGenerator::NewSoUid</a></div><div class="ttdeci">SoUid NewSoUid()</div><div class="ttdef"><b>Definition:</b> <a href="so__uid_8h_source.html#l00037">so_uid.h:37</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_aad75e8d777318cd042f4fc354dde51a4"><div class="ttname"><a href="classbdm_1_1SimObject.html#aad75e8d777318cd042f4fc354dde51a4">bdm::SimObject::uid_</a></div><div class="ttdeci">SoUid uid_</div><div class="ttdoc">unique id </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00243">sim_object.h:243</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_aad75e8d777318cd042f4fc354dde51a4"><div class="ttname"><a href="classbdm_1_1SimObject.html#aad75e8d777318cd042f4fc354dde51a4">bdm::SimObject::uid_</a></div><div class="ttdeci">SoUid uid_</div><div class="ttdoc">unique id </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00245">sim_object.h:245</a></div></div>
 <div class="ttc" id="classbdm_1_1SoUidGenerator_html_a0960708a976ee283d69e0e72d5c5636d"><div class="ttname"><a href="classbdm_1_1SoUidGenerator.html#a0960708a976ee283d69e0e72d5c5636d">bdm::SoUidGenerator::Get</a></div><div class="ttdeci">static SoUidGenerator * Get()</div><div class="ttdef"><b>Definition:</b> <a href="so__uid_8h_source.html#l00032">so_uid.h:32</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_a0ebcdef38fca8c1d8e0fb92a0ead71bb"><div class="ttname"><a href="classbdm_1_1SimObject.html#a0ebcdef38fca8c1d8e0fb92a0ead71bb">bdm::SimObject::biology_modules_</a></div><div class="ttdeci">std::vector&lt; BaseBiologyModule * &gt; biology_modules_</div><div class="ttdoc">collection of biology modules which define the internal behavior </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00247">sim_object.h:247</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_a5caaa66cd96966b2d545e331c1440789"><div class="ttname"><a href="classbdm_1_1SimObject.html#a5caaa66cd96966b2d545e331c1440789">bdm::SimObject::SetRunDisplacementForAllNextTs</a></div><div class="ttdeci">void SetRunDisplacementForAllNextTs(bool value=true)</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00190">sim_object.h:190</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_a0ebcdef38fca8c1d8e0fb92a0ead71bb"><div class="ttname"><a href="classbdm_1_1SimObject.html#a0ebcdef38fca8c1d8e0fb92a0ead71bb">bdm::SimObject::biology_modules_</a></div><div class="ttdeci">std::vector&lt; BaseBiologyModule * &gt; biology_modules_</div><div class="ttdoc">collection of biology modules which define the internal behavior </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00249">sim_object.h:249</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_a5caaa66cd96966b2d545e331c1440789"><div class="ttname"><a href="classbdm_1_1SimObject.html#a5caaa66cd96966b2d545e331c1440789">bdm::SimObject::SetRunDisplacementForAllNextTs</a></div><div class="ttdeci">void SetRunDisplacementForAllNextTs(bool value=true)</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00192">sim_object.h:192</a></div></div>
 <div class="ttc" id="structbdm_1_1Event_html"><div class="ttname"><a href="structbdm_1_1Event.html">bdm::Event</a></div><div class="ttdef"><b>Definition:</b> <a href="event_8h_source.html#l00067">event.h:67</a></div></div>
 <div class="ttc" id="classbdm_1_1SimObject_html_a93ab12aa6166d9f07337b799c0056c2a"><div class="ttname"><a href="classbdm_1_1SimObject.html#a93ab12aa6166d9f07337b799c0056c2a">bdm::SimObject::GetDiameter</a></div><div class="ttdeci">virtual double GetDiameter() const =0</div></div>
 <div class="ttc" id="classbdm_1_1SimObject_html_a43a5bc87e3294eb9ec1b62a1f4fe26c8"><div class="ttname"><a href="classbdm_1_1SimObject.html#a43a5bc87e3294eb9ec1b62a1f4fe26c8">bdm::SimObject::~SimObject</a></div><div class="ttdeci">virtual ~SimObject()</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00067">sim_object.cc:67</a></div></div>
 <div class="ttc" id="grid_8h_html"><div class="ttname"><a href="grid_8h.html">grid.h</a></div></div>
 <div class="ttc" id="simulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
 <div class="ttc" id="event_8h_html"><div class="ttname"><a href="event_8h.html">event.h</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_ac63e75d651dfa76c30edce6480d7d6ad"><div class="ttname"><a href="classbdm_1_1SimObject.html#ac63e75d651dfa76c30edce6480d7d6ad">bdm::SimObject::run_displacement_for_all_next_ts_</a></div><div class="ttdeci">bool run_displacement_for_all_next_ts_</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00255">sim_object.h:255</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_ac63e75d651dfa76c30edce6480d7d6ad"><div class="ttname"><a href="classbdm_1_1SimObject.html#ac63e75d651dfa76c30edce6480d7d6ad">bdm::SimObject::run_displacement_for_all_next_ts_</a></div><div class="ttdeci">bool run_displacement_for_all_next_ts_</div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00257">sim_object.h:257</a></div></div>
 <div class="ttc" id="namespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="biology__module_8h_source.html#l00022">biology_module.h:22</a></div></div>
 <div class="ttc" id="classbdm_1_1SimObject_html_a1acfbb130802d3570a099e82825875df"><div class="ttname"><a href="classbdm_1_1SimObject.html#a1acfbb130802d3570a099e82825875df">bdm::SimObject::GetBoxIdx</a></div><div class="ttdeci">uint32_t GetBoxIdx() const </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00101">sim_object.cc:101</a></div></div>
 <div class="ttc" id="resource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>
@@ -158,15 +141,11 @@ $(document).ready(function(){initNavTree('sim__object_8cc_source.html','');});
 <div class="ttc" id="classbdm_1_1SimObject_html_a45e76058662f256965f9a7c6043a288f"><div class="ttname"><a href="classbdm_1_1SimObject.html#a45e76058662f256965f9a7c6043a288f">bdm::SimObject::RunBiologyModules</a></div><div class="ttdeci">void RunBiologyModules()</div><div class="ttdoc">Execute all biology modulesq. </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8cc_source.html#l00124">sim_object.cc:124</a></div></div>
 <div class="ttc" id="type_8h_html"><div class="ttname"><a href="type_8h.html">type.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_8417c195086d4ff6acfc795544c5eeb6.html">sim_object</a></li><li class="navelem"><a class="el" href="sim__object_8cc.html">sim_object.cc</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

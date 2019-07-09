@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1IntegralTypeWrapper.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,10 +83,15 @@ $(document).ready(function(){initNavTree('classbdm_1_1IntegralTypeWrapper.html',
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">IntegralTypeWrapper</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1IntegralTypeWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -117,12 +100,6 @@ $(document).ready(function(){initNavTree('classbdm_1_1IntegralTypeWrapper.html',
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="io_8h_source.html">io.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for bdm::IntegralTypeWrapper&lt; T &gt;:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1IntegralTypeWrapper__coll__graph.svg" width="235" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,33 +109,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6debd50c53e9f8364daf0487a8de1db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98db85b6051bac2f9379eda85701c8be"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a98db85b6051bac2f9379eda85701c8be">Get</a> () const </td></tr>
 <tr class="separator:a98db85b6051bac2f9379eda85701c8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab830a326b4ff307701eae6f5f5bcda5e"><td class="memItemLeft" align="right" valign="top">TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ab830a326b4ff307701eae6f5f5bcda5e">IsA</a> () const </td></tr>
-<tr class="separator:ab830a326b4ff307701eae6f5f5bcda5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6426b0835c035632bb2d3f0b03224af0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a6426b0835c035632bb2d3f0b03224af0">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:a6426b0835c035632bb2d3f0b03224af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be733ce53fee2bdeae182ab0024e166"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a1be733ce53fee2bdeae182ab0024e166">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:a1be733ce53fee2bdeae182ab0024e166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b30978acedb6bf522577de101e8a14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a70b30978acedb6bf522577de101e8a14">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a70b30978acedb6bf522577de101e8a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa544b78bdc6b8027b77d86c2dccf393a"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aa544b78bdc6b8027b77d86c2dccf393a">Class</a> ()</td></tr>
-<tr class="separator:aa544b78bdc6b8027b77d86c2dccf393a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3954ced3d664f412b18eac0487d87d0"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ae3954ced3d664f412b18eac0487d87d0">Class_Name</a> ()</td></tr>
-<tr class="separator:ae3954ced3d664f412b18eac0487d87d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d75a4009c328e135ba310fd4e3645b"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a77d75a4009c328e135ba310fd4e3645b">Class_Version</a> ()</td></tr>
-<tr class="separator:a77d75a4009c328e135ba310fd4e3645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d6cf02f08fc6c75a46205cad1799e49"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a3d6cf02f08fc6c75a46205cad1799e49">Dictionary</a> ()</td></tr>
-<tr class="separator:a3d6cf02f08fc6c75a46205cad1799e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae984f5eb33476295e7c5f804e05ff9cf"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ae984f5eb33476295e7c5f804e05ff9cf">DeclFileName</a> ()</td></tr>
-<tr class="separator:ae984f5eb33476295e7c5f804e05ff9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43dcdb0d21d79cddeaa835309dfc3040"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a43dcdb0d21d79cddeaa835309dfc3040">ImplFileLine</a> ()</td></tr>
-<tr class="separator:a43dcdb0d21d79cddeaa835309dfc3040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c6cf400447e0e4327ab14afe348fb3d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a6c6cf400447e0e4327ab14afe348fb3d">ImplFileName</a> ()</td></tr>
-<tr class="separator:a6c6cf400447e0e4327ab14afe348fb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa19e24ded4e59c2dfba3ce03f9c230a1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aa19e24ded4e59c2dfba3ce03f9c230a1">DeclFileLine</a> ()</td></tr>
-<tr class="separator:aa19e24ded4e59c2dfba3ce03f9c230a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aacb40b2edac1b40788c7d3f4a838dc5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aacb40b2edac1b40788c7d3f4a838dc5b">BDM_CLASS_DEF_NV</a> (<a class="el" href="classbdm_1_1IntegralTypeWrapper.html">IntegralTypeWrapper</a>, 1)</td></tr>
+<tr class="separator:aacb40b2edac1b40788c7d3f4a838dc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -230,7 +185,7 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa544b78bdc6b8027b77d86c2dccf393a"></a>
+<a class="anchor" id="aacb40b2edac1b40788c7d3f4a838dc5b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -240,155 +195,29 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::Class </td>
+          <td class="memname"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::BDM_CLASS_DEF_NV </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">IntegralTypeWrapper</a>&lt; T &gt;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae3954ced3d664f412b18eac0487d87d0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a77d75a4009c328e135ba310fd4e3645b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa19e24ded4e59c2dfba3ce03f9c230a1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae984f5eb33476295e7c5f804e05ff9cf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3d6cf02f08fc6c75a46205cad1799e49"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
@@ -416,179 +245,6 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="io_8h_source.html#l00067">67</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1IntegralTypeWrapper_a98db85b6051bac2f9379eda85701c8be_icgraph.svg" width="1220" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a43dcdb0d21d79cddeaa835309dfc3040"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6c6cf400447e0e4327ab14afe348fb3d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab830a326b4ff307701eae6f5f5bcda5e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TClass* <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6426b0835c035632bb2d3f0b03224af0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1be733ce53fee2bdeae182ab0024e166"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a70b30978acedb6bf522577de101e8a14"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper</a>&lt; T &gt;::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="io_8h_source.html#l00071">71</a> of file <a class="el" href="io_8h_source.html">io.h</a>.</p>
 
 </div>
 </div>
@@ -621,15 +277,11 @@ template&lt;typename T&gt; </div>
 <li>core/util/<a class="el" href="io_8h_source.html">io.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">IntegralTypeWrapper</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

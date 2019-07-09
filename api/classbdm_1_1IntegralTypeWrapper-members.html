@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1IntegralTypeWrapper.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1IntegralTypeWrapper.html',
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">IntegralTypeWrapper</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::IntegralTypeWrapper&lt; T &gt; Member List</div>  </div>
@@ -113,31 +96,17 @@ $(document).ready(function(){initNavTree('classbdm_1_1IntegralTypeWrapper.html',
 
 <p>This is the complete list of members for <a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aa544b78bdc6b8027b77d86c2dccf393a">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ae3954ced3d664f412b18eac0487d87d0">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a77d75a4009c328e135ba310fd4e3645b">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aacb40b2edac1b40788c7d3f4a838dc5b">BDM_CLASS_DEF_NV</a>(IntegralTypeWrapper, 1)</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a81699bde17492df7fb7a3829b394b036">data_</a></td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aa19e24ded4e59c2dfba3ce03f9c230a1">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ae984f5eb33476295e7c5f804e05ff9cf">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a3d6cf02f08fc6c75a46205cad1799e49">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a98db85b6051bac2f9379eda85701c8be">Get</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a43dcdb0d21d79cddeaa835309dfc3040">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a6c6cf400447e0e4327ab14afe348fb3d">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ae45ba02474b6cb167cfc0185600c61ed">IntegralTypeWrapper</a>(const T &amp;data)</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a6debd50c53e9f8364daf0487a8de1db6">IntegralTypeWrapper</a>(TRootIOCtor *io_ctor)</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ab830a326b4ff307701eae6f5f5bcda5e">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a6426b0835c035632bb2d3f0b03224af0">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a1be733ce53fee2bdeae182ab0024e166">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a70b30978acedb6bf522577de101e8a14">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a98db85b6051bac2f9379eda85701c8be">Get</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ae45ba02474b6cb167cfc0185600c61ed">IntegralTypeWrapper</a>(const T &amp;data)</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a6debd50c53e9f8364daf0487a8de1db6">IntegralTypeWrapper</a>(TRootIOCtor *io_ctor)</td><td class="entry"><a class="el" href="classbdm_1_1IntegralTypeWrapper.html">bdm::IntegralTypeWrapper&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

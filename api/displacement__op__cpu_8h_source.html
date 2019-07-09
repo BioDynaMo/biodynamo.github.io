@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -74,21 +67,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('displacement__op__cpu_8h_source.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +81,11 @@ $(document).ready(function(){initNavTree('displacement__op__cpu_8h_source.html',
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_087ef7b4b2bc9758818ca5b5acc1bcc7.html">operation</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">displacement_op_cpu.h</div>  </div>
@@ -118,7 +101,7 @@ $(document).ready(function(){initNavTree('displacement__op__cpu_8h_source.html',
 <div class="ttc" id="scheduler_8h_html"><div class="ttname"><a href="scheduler_8h.html">scheduler.h</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCpu_html_a9cc44eeceeb93698de7f41ce06e8e2bb"><div class="ttname"><a href="classbdm_1_1DisplacementOpCpu.html#a9cc44eeceeb93698de7f41ce06e8e2bb">bdm::DisplacementOpCpu::last_iteration_</a></div><div class="ttdeci">uint64_t last_iteration_</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cpu_8h_source.html#l00073">displacement_op_cpu.h:73</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCpu_html_aed92e8bc6a963c43ae7b7e4a62a244ea"><div class="ttname"><a href="classbdm_1_1DisplacementOpCpu.html#aed92e8bc6a963c43ae7b7e4a62a244ea">bdm::DisplacementOpCpu::~DisplacementOpCpu</a></div><div class="ttdeci">~DisplacementOpCpu()</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cpu_8h_source.html#l00036">displacement_op_cpu.h:36</a></div></div>
-<div class="ttc" id="classbdm_1_1SimObject_html_a961ba40129151a040376fd416caad642"><div class="ttname"><a href="classbdm_1_1SimObject.html#a961ba40129151a040376fd416caad642">bdm::SimObject::RunDisplacement</a></div><div class="ttdeci">bool RunDisplacement() const </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00201">sim_object.h:201</a></div></div>
+<div class="ttc" id="classbdm_1_1SimObject_html_a961ba40129151a040376fd416caad642"><div class="ttname"><a href="classbdm_1_1SimObject.html#a961ba40129151a040376fd416caad642">bdm::SimObject::RunDisplacement</a></div><div class="ttdeci">bool RunDisplacement() const </div><div class="ttdef"><b>Definition:</b> <a href="sim__object_8h_source.html#l00203">sim_object.h:203</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCpu_html_a44d59d984096837f48eac0893da20771"><div class="ttname"><a href="classbdm_1_1DisplacementOpCpu.html#a44d59d984096837f48eac0893da20771">bdm::DisplacementOpCpu::last_time_run_</a></div><div class="ttdeci">double last_time_run_</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cpu_8h_source.html#l00071">displacement_op_cpu.h:71</a></div></div>
 <div class="ttc" id="bound__space__op_8h_html"><div class="ttname"><a href="bound__space__op_8h.html">bound_space_op.h</a></div></div>
 <div class="ttc" id="grid_8h_html"><div class="ttname"><a href="grid_8h.html">grid.h</a></div></div>
@@ -131,15 +114,11 @@ $(document).ready(function(){initNavTree('displacement__op__cpu_8h_source.html',
 <div class="ttc" id="classbdm_1_1DisplacementOpCpu_html_a15d548e606d50c46388a6b74c356a8c7"><div class="ttname"><a href="classbdm_1_1DisplacementOpCpu.html#a15d548e606d50c46388a6b74c356a8c7">bdm::DisplacementOpCpu::operator()</a></div><div class="ttdeci">void operator()(SimObject *sim_object)</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cpu_8h_source.html#l00038">displacement_op_cpu.h:38</a></div></div>
 <div class="ttc" id="classbdm_1_1DisplacementOpCpu_html_a366d9896cbd658c17cf80e15e338878a"><div class="ttname"><a href="classbdm_1_1DisplacementOpCpu.html#a366d9896cbd658c17cf80e15e338878a">bdm::DisplacementOpCpu::DisplacementOpCpu</a></div><div class="ttdeci">DisplacementOpCpu()</div><div class="ttdef"><b>Definition:</b> <a href="displacement__op__cpu_8h_source.html#l00035">displacement_op_cpu.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_087ef7b4b2bc9758818ca5b5acc1bcc7.html">operation</a></li><li class="navelem"><a class="el" href="displacement__op__cpu_8h.html">displacement_op_cpu.h</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

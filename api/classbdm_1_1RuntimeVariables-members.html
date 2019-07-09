@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1RuntimeVariables.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1RuntimeVariables.html','')
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1RuntimeVariables.html">RuntimeVariables</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::RuntimeVariables Member List</div>  </div>
@@ -113,35 +96,21 @@ $(document).ready(function(){initNavTree('classbdm_1_1RuntimeVariables.html','')
 
 <p>This is the complete list of members for <a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#af85d87c2fc48179e0333be53c99e3c7c">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#ac5bc793e082256a75809bef40722638a">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a2c96d977f6e7d43d4f6715ec832f1ffa">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#afe0bcb22fe197ea9bbf7a1d52fc1f439">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a721038cfc6d4b610a97ecf8c26a9bd61">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a2a8a47c37c0e446d3cc5bcfc6f0614da">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a4949a8920f91cd81b84aee2d9832b342">GetSystemInfo</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#aed5c2869ca220992eddfdc14373a843b">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#aad2c04c82871fe81c31c6c89bb7db7ed">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a152c5ff04c5183a5db9a9890061752d1">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a31452f8a3b72ebe64f7b617ce824daa7">BDM_CLASS_DEF_NV</a>(RuntimeVariables, 1)</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a4949a8920f91cd81b84aee2d9832b342">GetSystemInfo</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a6bc3d600c3b4d59bd45ed2175b8cffb3">operator!=</a>(const RuntimeVariables &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#aafeea064a5444ec634bc7a68d5faed6e">operator==</a>(const RuntimeVariables &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#ab695c02a536ff0854ad0f7d64f21236c">PrintSystemInfo</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f">RuntimeVariables</a>()</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303">RuntimeVariables</a>(TRootIOCtor *io_ctor)</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a19ce1fa20a93b62fcb7e39ec3f7e89a1">SetSystemInfo</a>(const SysInfo_t &amp;other)</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a150d23f0c3bff3a0682c88196ec0e3a9">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#ad633608e6768905c77369a5305089a7b">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a5a183bb1aef9d2e3479bd5009e9fb36b">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a728f3490435d097f321795b28564af02">sysinfo_</a></td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html#a728f3490435d097f321795b28564af02">sysinfo_</a></td><td class="entry"><a class="el" href="classbdm_1_1RuntimeVariables.html">bdm::RuntimeVariables</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::ResourceManager Member List</div>  </div>
@@ -120,26 +103,18 @@ $(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a6852bc9a6da071ea996da2a53f82bb13">ApplyOnAllElements</a>(const std::function&lt; void(SimObject *, SoHandle)&gt; &amp;function)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ab548998df960492f542a6d04db2258d5">ApplyOnAllElementsParallel</a>(const std::function&lt; void(SimObject *)&gt; &amp;function)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#afa8519765cf14980c555281d5d71f743">ApplyOnAllElementsParallelDynamic</a>(uint64_t chunk, const std::function&lt; void(SimObject *, SoHandle)&gt; &amp;function)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#aeb5c36515f8b25b3d30ca139b9f5ca36">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a49bae8dd340ed94bc87cbe7f8c0ee9fd">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#af622c8101651c2e98d0589d88ddd7804">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a576cc697b5c0d5e4b6e9ee2a35c7ef47">BDM_CLASS_DEF_NV</a>(ResourceManager, 1)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a860e20d1082f65b2f6e0411d81245420">Clear</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a89aa07ab395d7af09af0e67412be4dcf">Contains</a>(SoUid uid) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a32bc1e93a5c7303719a2a02a709cdcb0">DebugNuma</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a5c5742d86b84a1e4c05c731e103728cd">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#acf43b1505af2d0873df421851e8bbf7a">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#adebb667f033c84af67d6e71b52bb235e">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#aee7be8062b0ccdbbbd2626bd5a64e050">diffusion_grids_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#aa65bd439783474575a713871ab54842a">GetDiffusionGrid</a>(size_t substance_id) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a3bdfbe25243a344ee7c801ecbfc25d55">GetDiffusionGrid</a>(std::string substance_name) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ae877fccc0bcbddf7facc9858f5e59ed3">GetNumSimObjects</a>(int numa_node=-1) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a9afc2cbe3f896aca2e288b0d80638023">GetSimObject</a>(SoUid uid)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a47be9c07710d8826c57416c1bcb116e3">GetSimObjectWithSoHandle</a>(SoHandle soh)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#aad818d11201278f8cc0de139f5bd13f1">GetSoHandle</a>(SoUid uid)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7">GrowSoContainer</a>(size_t additional, size_t numa_node)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ae8ab5441b701f9eaa840b82049aac968">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a2b9bdb53d3984b55fc9a6a1789c56f49">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ab0b6cc82a645525b8fc7d876fb7d01a6">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#aee7be8062b0ccdbbbd2626bd5a64e050">diffusion_grids_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#aa65bd439783474575a713871ab54842a">GetDiffusionGrid</a>(size_t substance_id) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a3bdfbe25243a344ee7c801ecbfc25d55">GetDiffusionGrid</a>(std::string substance_name) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ae877fccc0bcbddf7facc9858f5e59ed3">GetNumSimObjects</a>(int numa_node=-1) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a9afc2cbe3f896aca2e288b0d80638023">GetSimObject</a>(SoUid uid)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a47be9c07710d8826c57416c1bcb116e3">GetSimObjectWithSoHandle</a>(SoHandle soh)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#aad818d11201278f8cc0de139f5bd13f1">GetSoHandle</a>(SoUid uid)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7">GrowSoContainer</a>(size_t additional, size_t numa_node)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a44910abacebe89f18779cc6bd4ce263c">operator=</a>(ResourceManager &amp;&amp;other)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a66e53531bad206afb96f7ba569ed8acd">push_back</a>(SimObject *so, typename SoHandle::NumaNode_t numa_node=0)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#abce6bf2395d248fbd7839f176921dd83">Remove</a>(SoUid uid)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -148,24 +123,18 @@ $(document).ready(function(){initNavTree('classbdm_1_1ResourceManager.html','');
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a55eee7e3bbf236417a0d839930b8bd56">ResourceManager</a>(TRootIOCtor *r)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#acaaeab80337d37ceea067ce40dbc1d9e">ResourceManager</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a32d3ccd2719c943bbeba76315f8237cd">RestoreUidSoMap</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ad5b2dc1f666f54939943837875d768e1">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a35225455554669be879ee829d968b13f">sim_objects_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b">SimulationBackup</a> class</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ab17beb97ee664ffeb79a1d839896b0ad">SortAndBalanceNumaNodes</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a312ac47dac4a3b28b6703b67a58f3f43">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a9b050ed2f1af592ef4d7815ac2a32de0">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a90b079c40f9f7e40199c569146ae97ba">thread_info_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a95cd1019e769e1a563f1fd9360506380">uid_soh_map_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ad6cc6887caa2e7dd880d35018a569f45">~ResourceManager</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a35225455554669be879ee829d968b13f">sim_objects_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b">SimulationBackup</a> class</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ab17beb97ee664ffeb79a1d839896b0ad">SortAndBalanceNumaNodes</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a90b079c40f9f7e40199c569146ae97ba">thread_info_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#a95cd1019e769e1a563f1fd9360506380">uid_soh_map_</a></td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html#ad6cc6887caa2e7dd880d35018a569f45">~ResourceManager</a>()</td><td class="entry"><a class="el" href="classbdm_1_1ResourceManager.html">bdm::ResourceManager</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

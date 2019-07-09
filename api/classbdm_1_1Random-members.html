@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1Random.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1Random.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Random.html">Random</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::Random Member List</div>  </div>
@@ -113,37 +96,23 @@ $(document).ready(function(){initNavTree('classbdm_1_1Random.html','');});
 
 <p>This is the complete list of members for <a class="el" href="classbdm_1_1Random.html">bdm::Random</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a5d572ca7b6e8ba7fcd0c31c3853e7df5">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a17ef010f4ae23dc6efe6986cb6ce898a">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#af32b522105ebfdadfae0de642ecbcd1e">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#ae779cc2b145244681c62b0940f527ffa">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#aa7f399a587d830c481595a5735069a16">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#ab108a2434595354e6789fc65663ca5e9">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a2fbc9b116c2cc0bef008a78a95538a2c">Gaus</a>(double mean=0.0, double sigma=1.0)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a49322cfa9283fdf011e6192dd3622ea3">generator_</a></td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a4c8d353119e9b5420b2d7dabf014bf4f">GetSeed</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a2c83e7156bc0433104db2ec26cc4ef11">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a75f4f0434d6300e762e5b50289497185">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#ae1f1db68a38b289efa1daf74d0fe85be">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a9af8c09d20d30eae0e1b9b5289ad3ba9">BDM_CLASS_DEF_NV</a>(Random, 1)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a2fbc9b116c2cc0bef008a78a95538a2c">Gaus</a>(double mean=0.0, double sigma=1.0)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a49322cfa9283fdf011e6192dd3622ea3">generator_</a></td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a4c8d353119e9b5420b2d7dabf014bf4f">GetSeed</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#aa9680868f8883f312bbbfafd00023de6">operator=</a>(const Random &amp;other)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a2ecd4f3d5e8abd128d874b401e4df592">Random</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#adae7208d1f35f1b2b50df3f684edb28c">SetSeed</a>(double seed)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a80092947ce5802503381ddafdd14bd2d">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a7483a579e36c1a34253228f0e454ec50">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a8271551daf045f2c9e35991ad9cbff0f">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a10b4590aaafd065f55458878cf4fcd0c">Uniform</a>(double max=1.0)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#aacec2366adf61f85dafd29f7e2714977">Uniform</a>(double min, double max)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#a361a07207377ef62e8fd19d7e9aff12c">UniformArray</a>(double max=1.0)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#ab0ce391655d50cf0fa91e12f7e21c4a8">UniformArray</a>(double min, double max)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a10b4590aaafd065f55458878cf4fcd0c">Uniform</a>(double max=1.0)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#aacec2366adf61f85dafd29f7e2714977">Uniform</a>(double min, double max)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Random.html#a361a07207377ef62e8fd19d7e9aff12c">UniformArray</a>(double max=1.0)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Random.html#ab0ce391655d50cf0fa91e12f7e21c4a8">UniformArray</a>(double min, double max)</td><td class="entry"><a class="el" href="classbdm_1_1Random.html">bdm::Random</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

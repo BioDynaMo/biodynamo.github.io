@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1Random.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,10 +83,15 @@ $(document).ready(function(){initNavTree('classbdm_1_1Random.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Random.html">Random</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1Random-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -120,12 +103,6 @@ $(document).ready(function(){initNavTree('classbdm_1_1Random.html','');});
  <a href="classbdm_1_1Random.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="random_8h_source.html">random.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for bdm::Random:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Random__coll__graph.svg" width="170" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -156,33 +133,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c8d353119e9b5420b2d7dabf014bf4f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a4c8d353119e9b5420b2d7dabf014bf4f">GetSeed</a> () const </td></tr>
 <tr class="memdesc:a4c8d353119e9b5420b2d7dabf014bf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards call to TRandom3::GetSeed.  <a href="#a4c8d353119e9b5420b2d7dabf014bf4f">More...</a><br /></td></tr>
 <tr class="separator:a4c8d353119e9b5420b2d7dabf014bf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1f1db68a38b289efa1daf74d0fe85be"><td class="memItemLeft" align="right" valign="top">TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#ae1f1db68a38b289efa1daf74d0fe85be">IsA</a> () const </td></tr>
-<tr class="separator:ae1f1db68a38b289efa1daf74d0fe85be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80092947ce5802503381ddafdd14bd2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a80092947ce5802503381ddafdd14bd2d">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:a80092947ce5802503381ddafdd14bd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7483a579e36c1a34253228f0e454ec50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a7483a579e36c1a34253228f0e454ec50">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:a7483a579e36c1a34253228f0e454ec50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8271551daf045f2c9e35991ad9cbff0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a8271551daf045f2c9e35991ad9cbff0f">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a8271551daf045f2c9e35991ad9cbff0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d572ca7b6e8ba7fcd0c31c3853e7df5"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a5d572ca7b6e8ba7fcd0c31c3853e7df5">Class</a> ()</td></tr>
-<tr class="separator:a5d572ca7b6e8ba7fcd0c31c3853e7df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17ef010f4ae23dc6efe6986cb6ce898a"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a17ef010f4ae23dc6efe6986cb6ce898a">Class_Name</a> ()</td></tr>
-<tr class="separator:a17ef010f4ae23dc6efe6986cb6ce898a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af32b522105ebfdadfae0de642ecbcd1e"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#af32b522105ebfdadfae0de642ecbcd1e">Class_Version</a> ()</td></tr>
-<tr class="separator:af32b522105ebfdadfae0de642ecbcd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab108a2434595354e6789fc65663ca5e9"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#ab108a2434595354e6789fc65663ca5e9">Dictionary</a> ()</td></tr>
-<tr class="separator:ab108a2434595354e6789fc65663ca5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f399a587d830c481595a5735069a16"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#aa7f399a587d830c481595a5735069a16">DeclFileName</a> ()</td></tr>
-<tr class="separator:aa7f399a587d830c481595a5735069a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c83e7156bc0433104db2ec26cc4ef11"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a2c83e7156bc0433104db2ec26cc4ef11">ImplFileLine</a> ()</td></tr>
-<tr class="separator:a2c83e7156bc0433104db2ec26cc4ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f4f0434d6300e762e5b50289497185"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a75f4f0434d6300e762e5b50289497185">ImplFileName</a> ()</td></tr>
-<tr class="separator:a75f4f0434d6300e762e5b50289497185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae779cc2b145244681c62b0940f527ffa"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#ae779cc2b145244681c62b0940f527ffa">DeclFileLine</a> ()</td></tr>
-<tr class="separator:ae779cc2b145244681c62b0940f527ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9af8c09d20d30eae0e1b9b5289ad3ba9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Random.html#a9af8c09d20d30eae0e1b9b5289ad3ba9">BDM_CLASS_DEF_NV</a> (<a class="el" href="classbdm_1_1Random.html">Random</a>, 1)</td></tr>
+<tr class="separator:a9af8c09d20d30eae0e1b9b5289ad3ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -212,7 +167,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5d572ca7b6e8ba7fcd0c31c3853e7df5"></a>
+<a class="anchor" id="a9af8c09d20d30eae0e1b9b5289ad3ba9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -220,145 +175,29 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static TClass* bdm::Random::Class </td>
+          <td class="memname">bdm::Random::BDM_CLASS_DEF_NV </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Random.html">Random</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a17ef010f4ae23dc6efe6986cb6ce898a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static const char* bdm::Random::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af32b522105ebfdadfae0de642ecbcd1e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">static Version_t bdm::Random::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae779cc2b145244681c62b0940f527ffa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::Random::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa7f399a587d830c481595a5735069a16"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::Random::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab108a2434595354e6789fc65663ca5e9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::Random::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 </div>
 </div>
@@ -390,14 +229,6 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="random_8cc_source.html#l00034">34</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Random_a2fbc9b116c2cc0bef008a78a95538a2c_icgraph.svg" width="418" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a4c8d353119e9b5420b2d7dabf014bf4f"></a>
@@ -416,89 +247,6 @@ Here is the caller graph for this function:</div>
 <p>Forwards call to TRandom3::GetSeed. </p>
 
 <p>Definition at line <a class="el" href="random_8cc_source.html#l00039">39</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Random_a4c8d353119e9b5420b2d7dabf014bf4f_icgraph.svg" width="440" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a2c83e7156bc0433104db2ec26cc4ef11"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::Random::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a75f4f0434d6300e762e5b50289497185"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::Random::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae1f1db68a38b289efa1daf74d0fe85be"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TClass* bdm::Random::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
 </div>
 </div>
@@ -538,92 +286,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="random_8cc_source.html#l00038">38</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Random_adae7208d1f35f1b2b50df3f684edb28c_icgraph.svg" width="439" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a80092947ce5802503381ddafdd14bd2d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Random::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7483a579e36c1a34253228f0e454ec50"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Random::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8271551daf045f2c9e35991ad9cbff0f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Random::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="random_8h_source.html#l00069">69</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a10b4590aaafd065f55458878cf4fcd0c"></a>
@@ -643,14 +305,6 @@ Here is the caller graph for this function:</div>
 <p>Forwards call to TRandom3::Uniform. </p>
 
 <p>Definition at line <a class="el" href="random_8cc_source.html#l00029">29</a> of file <a class="el" href="random_8cc_source.html">random.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Random_a10b4590aaafd065f55458878cf4fcd0c_icgraph.svg" width="707" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -712,14 +366,6 @@ template&lt;uint64_t N&gt; </div>
 
 <p>Definition at line <a class="el" href="random_8h_source.html#l00040">40</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Random_a361a07207377ef62e8fd19d7e9aff12c_cgraph.svg" width="435" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ab0ce391655d50cf0fa91e12f7e21c4a8"></a>
@@ -760,14 +406,6 @@ template&lt;uint64_t N&gt; </div>
 
 <p>Definition at line <a class="el" href="random_8h_source.html#l00050">50</a> of file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Random_ab0ce391655d50cf0fa91e12f7e21c4a8_cgraph.svg" width="440" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -798,15 +436,11 @@ Here is the call graph for this function:</div>
 <li>core/util/<a class="el" href="random_8cc_source.html">random.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1Random.html">Random</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

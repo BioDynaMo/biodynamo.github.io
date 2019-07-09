@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1ThreadInfo.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1ThreadInfo.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -122,12 +105,6 @@ $(document).ready(function(){initNavTree('classbdm_1_1ThreadInfo.html','');});
  <a href="classbdm_1_1ThreadInfo.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="thread__info_8h_source.html">thread_info.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for bdm::ThreadInfo:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo__coll__graph.svg" width="216" height="250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -207,14 +184,6 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00140">140</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_afea5a69f62569e047a55ab343e0647d6_cgraph.svg" width="903" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -240,14 +209,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00032">32</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_a2053a2f50fe195b5843e19ba4a827c1a_icgraph.svg" width="970" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -275,14 +236,6 @@ Here is the caller graph for this function:</div>
 <p>Return the maximum number of threads. </p>
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00056">56</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_a0a2632d0eaeaa36ab9686e3f21469e35_icgraph.svg" width="774" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -312,14 +265,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00041">41</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_a169d9e516c897d677f9d788f24e2c018_icgraph.svg" width="770" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a1b1ef16b68512b4a1066a078665f53c0"></a>
@@ -346,14 +291,6 @@ Here is the caller graph for this function:</div>
 <p>Returns the number of NUMA nodes on this machine. </p>
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00038">38</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_a1b1ef16b68512b4a1066a078665f53c0_icgraph.svg" width="744" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -383,14 +320,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00051">51</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_a93c3d36e806b0a7230fdbb6f82537358_icgraph.svg" width="468" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ab15078b29aed7523e562ead69e6d267e"></a>
@@ -419,14 +348,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00046">46</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_ab15078b29aed7523e562ead69e6d267e_icgraph.svg" width="480" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a1ce2476af333c140531fda4b2ac62623"></a>
@@ -453,22 +374,6 @@ Here is the caller graph for this function:</div>
 Whenever a thread is scheduled on a different cpu, e.g. using <code>numa_run_on_node</code>, <code><a class="el" href="classbdm_1_1ThreadInfo.html#a1ce2476af333c140531fda4b2ac62623">Renew()</a></code> must be called to update the thread metadata. </p>
 
 <p>Definition at line <a class="el" href="thread__info_8h_source.html#l00062">62</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_a1ce2476af333c140531fda4b2ac62623_cgraph.svg" width="403" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ThreadInfo_a1ce2476af333c140531fda4b2ac62623_icgraph.svg" width="920" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -637,15 +542,11 @@ vector value number of threads </p>
 <li>core/util/<a class="el" href="thread__info_8h_source.html">thread_info.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

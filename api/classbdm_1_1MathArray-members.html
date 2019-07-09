@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1MathArray.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1MathArray.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1MathArray.html">MathArray</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::MathArray&lt; T, N &gt; Member List</div>  </div>
@@ -115,25 +98,17 @@ $(document).ready(function(){initNavTree('classbdm_1_1MathArray.html','');});
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a7fddb8d32964619d1b9685a78cbc3d77">at</a>(size_t idx) noexcept(false)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a113c19a21bd9ca5451a7054f8692334c">back</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#af96f8cf944412bf7d574cf6b859dc84f">begin</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ad697514a7e000cb2fe90b9f526d72e1f">begin</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a721cd17ed095f311d2ef459007c89b8f">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#af631adec29a5e32a9f4463de0b3c10ec">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a4e58f4b51c067f601442f49053196218">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ae70f930a2d8f0b2a41a3f5898eb854e7">BDM_CLASS_DEF_NV</a>(MathArray, 1)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#af96f8cf944412bf7d574cf6b859dc84f">begin</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ad697514a7e000cb2fe90b9f526d72e1f">begin</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#aee0b60c10a5d5d5c41a38650722a82ec">data</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ab11c1f37607dfb375bb8b65b8603e354">data_</a></td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#acc2744595e2fea819ee999017df6664e">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a72e0729d02510a81fd434a21ca855763">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a7c7a8a79a9f9b64b4c07196a2f64f17e">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ac588ac5606ead630c1470bd981f8e10b">empty</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ae83a33a4ee2301f2a1e4aa89f604644b">end</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#aa08e32469d45944a9d20a04236e8ea22">end</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ac8ce2e1d72a975e8cbaba90b84bab326">EntryWiseProduct</a>(const MathArray &amp;rhs)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#af271b151a30cad08b4d4618be659c5cc">fill</a>(const T &amp;k)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#adf28598d3603aa2111bfcb2d74ae8c79">front</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ad4c9dd8c144567b4880bb712e88ddc9a">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ad209683d308a74d879ac32c420b716e5">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ae7a134d63104d23ff2bb8c3ddaf827e9">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ac588ac5606ead630c1470bd981f8e10b">empty</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ae83a33a4ee2301f2a1e4aa89f604644b">end</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#aa08e32469d45944a9d20a04236e8ea22">end</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ac8ce2e1d72a975e8cbaba90b84bab326">EntryWiseProduct</a>(const MathArray &amp;rhs)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#af271b151a30cad08b4d4618be659c5cc">fill</a>(const T &amp;k)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#adf28598d3603aa2111bfcb2d74ae8c79">front</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#ae974c83df853e6a7295ca15002a3b26a">MathArray</a>()</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a2f0ad0ffce118e55453b6a280e4487fe">MathArray</a>(std::initializer_list&lt; T &gt; l)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#aee468e908cbd26284dbf7c21e57753d7">Norm</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -164,20 +139,14 @@ $(document).ready(function(){initNavTree('classbdm_1_1MathArray.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a4e1d5a581286de91bf5f18dc7e329dac">operator==</a>(const MathArray &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a0e28b0fab9f1a8cb4e37147bd422e122">operator[]</a>(size_t idx)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a7576dc7844127c53695aa4e22acfad35">operator[]</a>(size_t idx) const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#aad7468ed481ece4d400d006e79e75241">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a4a161dbd859277729b119a42df99aaaf">size</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a4264e3b74b81ef72e56bf2bcd26fde27">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#aaf90940f0d8bb28fee9ce45ebeeb5bfe">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a71d4901bf000d48ffbb198f2780c94b1">Sum</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a4a161dbd859277729b119a42df99aaaf">size</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1MathArray.html#a71d4901bf000d48ffbb198f2780c94b1">Sum</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray&lt; T, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

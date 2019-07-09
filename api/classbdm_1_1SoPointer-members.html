@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1SoPointer.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,6 +83,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoPointer.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">bdm::SoPointer&lt; TSimObject &gt; Member List</div>  </div>
@@ -113,19 +96,11 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoPointer.html','');});
 
 <p>This is the complete list of members for <a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a4ed1ef96153a2ec68de9933e90c25166">Class</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a1bb7072d98916a72b2abfeda7780e670">Class_Name</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a7dc341b7338347f4b1f7fb30586f33e1">Class_Version</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#ab28266ddd8257822f14796b905e60017">DeclFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a1a4922c10d80e1d1b64cc283d7a09474">DeclFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a7485bd7a8b8f1320877c6f491b86b1a9">Dictionary</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#acb99bf136cce952b2eaa2a1243f6835a">Get</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a2bc3a3624104fb99321202e3c681eb9b">Get</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#accff7bbd61d5500643a58be2b05ecd99">GetUid</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#adf209338af3bbda0e550f04a4abe1fff">GetUidPtr</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#aefee3c62657c614c8c1078ecb824779a">ImplFileLine</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a0e546d5dc5d25cc162606e170e98fe42">ImplFileName</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#ad3085c941b9911d56bc4c51bf7e62c01">IsA</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a33f9359e853542041721599ca37e51f9">BDM_TEMPLATE_CLASS_DEF</a>(SoPointer, 2)</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#acb99bf136cce952b2eaa2a1243f6835a">Get</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a2bc3a3624104fb99321202e3c681eb9b">Get</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#accff7bbd61d5500643a58be2b05ecd99">GetUid</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#adf209338af3bbda0e550f04a4abe1fff">GetUidPtr</a>() const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a387f1489be2cb5233c6948223a364acc">operator!=</a>(std::nullptr_t) const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a28d826953e103a507d595c5e7cd61bd4">operator!=</a>(const TSimObject &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#ad3c14cce868715659bde234adc098405">operator*</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -137,22 +112,16 @@ $(document).ready(function(){initNavTree('classbdm_1_1SoPointer.html','');});
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#af22b3ee66dd097d9ee3d54912474e853">operator==</a>(std::nullptr_t) const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a7f1d0d46d2769cd10fe45dab800a50f6">operator==</a>(const SoPointer &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a29637c4bc893924a98b7aaf66fb71efa">operator==</a>(const TSo &amp;other) const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#adc5fafbd3260656a6d9393381743bc45">ShowMembers</a>(TMemberInspector &amp;insp) const </td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#ab997d08aa4b5950805532d8f58695d34">SoPointer</a>(SoUid uid)</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a2a4ebd6f4e7ac3c65a775d51d03895ad">SoPointer</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#afda2f127d9995224e8b7a2e21ca63ae4">Streamer</a>(TBuffer &amp;)</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a3c6e30be86202282ff3db3ee1a32d31b">StreamerNVirtual</a>(TBuffer &amp;ClassDef_StreamerNVirtual_b)</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#ac0379507b95bbb0840dff68eb6d07de8">uid_</a></td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a7e588232bb720ed989d3f7f0cb99951b">~SoPointer</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#ab997d08aa4b5950805532d8f58695d34">SoPointer</a>(SoUid uid)</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a2a4ebd6f4e7ac3c65a775d51d03895ad">SoPointer</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#ac0379507b95bbb0840dff68eb6d07de8">uid_</a></td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html#a7e588232bb720ed989d3f7f0cb99951b">~SoPointer</a>()</td><td class="entry"><a class="el" href="classbdm_1_1SoPointer.html">bdm::SoPointer&lt; TSimObject &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

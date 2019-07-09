@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -117,20 +110,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_c.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -198,7 +177,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="classbdm_1_1ParallelResizeVector.html#ad1d60be58b35efe22671792208be8a5b">bdm::ParallelResizeVector&lt; T &gt;</a>
 </li>
 <li>Cell()
-: <a class="el" href="classbdm_1_1Cell.html#a29c446d49167a3e37554cb239e89338a">bdm::Cell</a>
+: <a class="el" href="classbdm_1_1Cell.html#aca6e7785542c5bccf677271f3d02376f">bdm::Cell</a>
 </li>
 <li>CellDivisionEvent()
 : <a class="el" href="structbdm_1_1CellDivisionEvent.html#aaab699c7ebc67759aca6ecfc31f25d7c">bdm::CellDivisionEvent</a>
@@ -218,72 +197,6 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>CircularBuffer()
 : <a class="el" href="classbdm_1_1CircularBuffer.html#aa2e1bbc5411cf0c51da6d9aa61103452">bdm::CircularBuffer&lt; T, N &gt;</a>
-</li>
-<li>Class()
-: <a class="el" href="structbdm_1_1BaseBiologyModule.html#a78ceea1f70ea3e3743aa417add776458">bdm::BaseBiologyModule</a>
-, <a class="el" href="classbdm_1_1Cell.html#ace0177acd61d1963147325961980bede">bdm::Cell</a>
-, <a class="el" href="classbdm_1_1DiffusionGrid.html#a0d9c1140fc69d72538e95e3e7382ab97">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a7c70cc11757e318fd54bf90e8b284a99">bdm::experimental::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aac791eda8aca815f80c00794e42e40f4">bdm::experimental::neuroscience::NeuronSoma</a>
-, <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a15d73c659dfc1dbc7d0f847b550c6d86">bdm::experimental::neuroscience::Param</a>
-, <a class="el" href="structbdm_1_1GrowDivide.html#a9da363294903db8b9a01faf5c9bc4284">bdm::GrowDivide</a>
-, <a class="el" href="classbdm_1_1InlineVector.html#aad02621ffd4dc35401ed555955613b1e">bdm::InlineVector&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aa544b78bdc6b8027b77d86c2dccf393a">bdm::IntegralTypeWrapper&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#a721cd17ed095f311d2ef459007c89b8f">bdm::MathArray&lt; T, N &gt;</a>
-, <a class="el" href="structbdm_1_1ModuleParam.html#a0910157dbec711eca8c2619657ab522b">bdm::ModuleParam</a>
-, <a class="el" href="structbdm_1_1Param.html#ab990dd607248f52f014bb0ef0be0ca12">bdm::Param</a>
-, <a class="el" href="classbdm_1_1Random.html#a5d572ca7b6e8ba7fcd0c31c3853e7df5">bdm::Random</a>
-, <a class="el" href="structbdm_1_1RegulateGenes.html#a52bd7a18b209569554d2356a8e0b7eb9">bdm::RegulateGenes</a>
-, <a class="el" href="classbdm_1_1ResourceManager.html#aeb5c36515f8b25b3d30ca139b9f5ca36">bdm::ResourceManager</a>
-, <a class="el" href="classbdm_1_1RuntimeVariables.html#af85d87c2fc48179e0333be53c99e3c7c">bdm::RuntimeVariables</a>
-, <a class="el" href="classbdm_1_1SimObject.html#a8a661185ce66f2d76e353fe175e8f34f">bdm::SimObject</a>
-, <a class="el" href="classbdm_1_1Simulation.html#a426fa163cfc74a68626975534394fb1f">bdm::Simulation</a>
-, <a class="el" href="classbdm_1_1SoHandle.html#a8f03577d4b36c4e8c07ff9135f6d48bd">bdm::SoHandle</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a4ed1ef96153a2ec68de9933e90c25166">bdm::SoPointer&lt; TSimObject &gt;</a>
-</li>
-<li>Class_Name()
-: <a class="el" href="structbdm_1_1BaseBiologyModule.html#a95bd4d558b20af347c7a6239a11792f6">bdm::BaseBiologyModule</a>
-, <a class="el" href="classbdm_1_1Cell.html#a824034fa46fe94774618536a4d812121">bdm::Cell</a>
-, <a class="el" href="classbdm_1_1DiffusionGrid.html#a92a7c169a97424fb7becbccb67cf3cf0">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aad334d5298953a151d861b3ee28841bf">bdm::experimental::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a3113c8ca0d84d4adbf26005936d517bb">bdm::experimental::neuroscience::NeuronSoma</a>
-, <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a0428b3960aa533ec6734b961c537cb87">bdm::experimental::neuroscience::Param</a>
-, <a class="el" href="structbdm_1_1GrowDivide.html#a83fc7a2e7d191308c98dc49bf6758a78">bdm::GrowDivide</a>
-, <a class="el" href="classbdm_1_1InlineVector.html#a5b50a45464cef1f3540510e419ea11d2">bdm::InlineVector&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#ae3954ced3d664f412b18eac0487d87d0">bdm::IntegralTypeWrapper&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#af631adec29a5e32a9f4463de0b3c10ec">bdm::MathArray&lt; T, N &gt;</a>
-, <a class="el" href="structbdm_1_1ModuleParam.html#a4a44c63ec795a7f0a9a234a5b18b4483">bdm::ModuleParam</a>
-, <a class="el" href="structbdm_1_1Param.html#abf0133eb600b5814e6385425ee2eb234">bdm::Param</a>
-, <a class="el" href="classbdm_1_1Random.html#a17ef010f4ae23dc6efe6986cb6ce898a">bdm::Random</a>
-, <a class="el" href="structbdm_1_1RegulateGenes.html#ad46cde6202e0052c2978cdeecb0b84a7">bdm::RegulateGenes</a>
-, <a class="el" href="classbdm_1_1ResourceManager.html#a49bae8dd340ed94bc87cbe7f8c0ee9fd">bdm::ResourceManager</a>
-, <a class="el" href="classbdm_1_1RuntimeVariables.html#ac5bc793e082256a75809bef40722638a">bdm::RuntimeVariables</a>
-, <a class="el" href="classbdm_1_1SimObject.html#a841fe8d587aa7ee91cf528fc5473cfb3">bdm::SimObject</a>
-, <a class="el" href="classbdm_1_1Simulation.html#a95b36cdf75502f2fcd699882cd864948">bdm::Simulation</a>
-, <a class="el" href="classbdm_1_1SoHandle.html#a1e93a4344647caf9a61ff8409b776ebc">bdm::SoHandle</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a1bb7072d98916a72b2abfeda7780e670">bdm::SoPointer&lt; TSimObject &gt;</a>
-</li>
-<li>Class_Version()
-: <a class="el" href="structbdm_1_1BaseBiologyModule.html#af3139f314d6e2c5ed7b6c41812fe4b52">bdm::BaseBiologyModule</a>
-, <a class="el" href="classbdm_1_1Cell.html#a93a5ad17378f66ae231c7acfbc410fa1">bdm::Cell</a>
-, <a class="el" href="classbdm_1_1DiffusionGrid.html#a365fcf7a2757135d6a86310c64410bc9">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a274b4651ee75a4314b2d60c7e71ca005">bdm::experimental::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#aa853c3f589f9eea19b1a57963cf4bb42">bdm::experimental::neuroscience::NeuronSoma</a>
-, <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a1694632b62127100624a99bcdddc59b4">bdm::experimental::neuroscience::Param</a>
-, <a class="el" href="structbdm_1_1GrowDivide.html#a8afa491c9dde67f20e4af04f0132560f">bdm::GrowDivide</a>
-, <a class="el" href="classbdm_1_1InlineVector.html#a5136fadbc152af621e65ef409f62ba64">bdm::InlineVector&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a77d75a4009c328e135ba310fd4e3645b">bdm::IntegralTypeWrapper&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#a4e58f4b51c067f601442f49053196218">bdm::MathArray&lt; T, N &gt;</a>
-, <a class="el" href="structbdm_1_1ModuleParam.html#a00340d73c6d92235339b80e158fe7432">bdm::ModuleParam</a>
-, <a class="el" href="structbdm_1_1Param.html#a9edacfe9c597b14220d39277d2a1df36">bdm::Param</a>
-, <a class="el" href="classbdm_1_1Random.html#af32b522105ebfdadfae0de642ecbcd1e">bdm::Random</a>
-, <a class="el" href="structbdm_1_1RegulateGenes.html#a28eed41aaedf8d3012f3485c8429f489">bdm::RegulateGenes</a>
-, <a class="el" href="classbdm_1_1ResourceManager.html#af622c8101651c2e98d0589d88ddd7804">bdm::ResourceManager</a>
-, <a class="el" href="classbdm_1_1RuntimeVariables.html#a2c96d977f6e7d43d4f6715ec832f1ffa">bdm::RuntimeVariables</a>
-, <a class="el" href="classbdm_1_1SimObject.html#afa2ee781eb67e288a6a6ec59cfa1d5a7">bdm::SimObject</a>
-, <a class="el" href="classbdm_1_1Simulation.html#a85da049cf2d7c84629037d6f92aac3d8">bdm::Simulation</a>
-, <a class="el" href="classbdm_1_1SoHandle.html#ab83585fa6d773a8c7075aac2600319ce">bdm::SoHandle</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a7dc341b7338347f4b1f7fb30586f33e1">bdm::SoPointer&lt; TSimObject &gt;</a>
 </li>
 <li>clear()
 : <a class="el" href="classbdm_1_1CircularBuffer.html#a08ac4cc14057225b3142cb4d7bcf87fd">bdm::CircularBuffer&lt; T, N &gt;</a>
@@ -373,14 +286,11 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

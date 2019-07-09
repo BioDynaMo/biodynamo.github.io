@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -76,21 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('classbdm_1_1SimObject.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -105,10 +83,14 @@ $(document).ready(function(){initNavTree('classbdm_1_1SimObject.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -125,15 +107,9 @@ $(document).ready(function(){initNavTree('classbdm_1_1SimObject.html','');});
 <div class="dynheader">
 Inheritance diagram for bdm::SimObject:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject__inherit__graph.svg" width="499" height="1644"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject__inherit__graph.svg" width="392" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</div>
-<div class="dynheader">
-Collaboration diagram for bdm::SimObject:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject__coll__graph.svg" width="230" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -217,33 +193,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5490ec0c79366ed7c1d5f9feae546588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5187477c43b00044e8347e7ce13da72"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#ac5187477c43b00044e8347e7ce13da72">EventHandler</a> (const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;event, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *other1, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *other2=nullptr)</td></tr>
 <tr class="separator:ac5187477c43b00044e8347e7ce13da72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae44eec7cd773917f8a2755b989d29356"><td class="memItemLeft" align="right" valign="top">virtual TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#ae44eec7cd773917f8a2755b989d29356">IsA</a> () const </td></tr>
-<tr class="separator:ae44eec7cd773917f8a2755b989d29356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af79824997617b5d082cf74d2b724c2b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#af79824997617b5d082cf74d2b724c2b5">ShowMembers</a> (TMemberInspector &amp;insp) const </td></tr>
-<tr class="separator:af79824997617b5d082cf74d2b724c2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a57d31c2561527f3ccb9e3fd1e9dbf5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a5a57d31c2561527f3ccb9e3fd1e9dbf5">Streamer</a> (TBuffer &amp;)</td></tr>
-<tr class="separator:a5a57d31c2561527f3ccb9e3fd1e9dbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01c837b792fcbc14155239e4b82ede38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a01c837b792fcbc14155239e4b82ede38">StreamerNVirtual</a> (TBuffer &amp;ClassDef_StreamerNVirtual_b)</td></tr>
-<tr class="separator:a01c837b792fcbc14155239e4b82ede38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a661185ce66f2d76e353fe175e8f34f"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a8a661185ce66f2d76e353fe175e8f34f">Class</a> ()</td></tr>
-<tr class="separator:a8a661185ce66f2d76e353fe175e8f34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841fe8d587aa7ee91cf528fc5473cfb3"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a841fe8d587aa7ee91cf528fc5473cfb3">Class_Name</a> ()</td></tr>
-<tr class="separator:a841fe8d587aa7ee91cf528fc5473cfb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2ee781eb67e288a6a6ec59cfa1d5a7"><td class="memItemLeft" align="right" valign="top">static Version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#afa2ee781eb67e288a6a6ec59cfa1d5a7">Class_Version</a> ()</td></tr>
-<tr class="separator:afa2ee781eb67e288a6a6ec59cfa1d5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffcec2997d1396729352f2e29e0699d"><td class="memItemLeft" align="right" valign="top">static TClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#adffcec2997d1396729352f2e29e0699d">Dictionary</a> ()</td></tr>
-<tr class="separator:adffcec2997d1396729352f2e29e0699d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6ac652b6bcee50921d55c45f527ea8"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a7a6ac652b6bcee50921d55c45f527ea8">DeclFileName</a> ()</td></tr>
-<tr class="separator:a7a6ac652b6bcee50921d55c45f527ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5d4602ac4d7e7e4caaa95870fd5853"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a3f5d4602ac4d7e7e4caaa95870fd5853">ImplFileLine</a> ()</td></tr>
-<tr class="separator:a3f5d4602ac4d7e7e4caaa95870fd5853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ed514fcec3284e9a97c3baa1c68bd9"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a95ed514fcec3284e9a97c3baa1c68bd9">ImplFileName</a> ()</td></tr>
-<tr class="separator:a95ed514fcec3284e9a97c3baa1c68bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa890220016bce4a10ff51b749d61b5b0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#aa890220016bce4a10ff51b749d61b5b0">DeclFileLine</a> ()</td></tr>
-<tr class="separator:aa890220016bce4a10ff51b749d61b5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -297,14 +246,6 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00042">42</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_acbc9cbf2d777bbcecf3c4b5474996be4_cgraph.svg" width="451" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="affb9c3c53fde67272594abf2afc2f00a"></a>
@@ -338,14 +279,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00044">44</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_affb9c3c53fde67272594abf2afc2f00a_cgraph.svg" width="654" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -437,14 +370,6 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00108">108</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a9e07e6deb0adebaedb7abb21ba875fd7_icgraph.svg" width="746" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a09b644923cb26e2b0a5dbee377dedee4"></a>
@@ -471,14 +396,6 @@ Here is the caller graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a199634d081be87a650d5cd8b51d9f64a">bdm::experimental::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1Cell.html#a44da9e52a027d5053a6eece1cecf2eef">bdm::Cell</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a09b644923cb26e2b0a5dbee377dedee4_icgraph.svg" width="798" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a2b46e5c05f45dfdeec9a6df2b0cb9c12"></a>
@@ -496,22 +413,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00073">73</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a2b46e5c05f45dfdeec9a6df2b0cb9c12_cgraph.svg" width="1031" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a2b46e5c05f45dfdeec9a6df2b0cb9c12_icgraph.svg" width="444" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="abac69fd05d170d2d9b9f99ffaca94f5a"></a>
@@ -528,22 +429,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00097">97</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_abac69fd05d170d2d9b9f99ffaca94f5a_cgraph.svg" width="475" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_abac69fd05d170d2d9b9f99ffaca94f5a_icgraph.svg" width="504" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -589,22 +474,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00161">161</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a7e4d1916eda10e7bec979b8dbd4e3dd3_cgraph.svg" width="422" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a7e4d1916eda10e7bec979b8dbd4e3dd3_icgraph.svg" width="1320" height="502"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a08a9be6d2c39b7bf2556c581ff462505"></a>
@@ -640,89 +509,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a0814f964adc086b96a736cae2dc0bc52">bdm::experimental::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1Cell.html#ac18655f69e3e64ec0683b5a0c5791330">bdm::Cell</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a08a9be6d2c39b7bf2556c581ff462505_icgraph.svg" width="734" height="71"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8a661185ce66f2d76e353fe175e8f34f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::SimObject::Class </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a841fe8d587aa7ee91cf528fc5473cfb3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::SimObject::Class_Name </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afa2ee781eb67e288a6a6ec59cfa1d5a7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Version_t bdm::SimObject::Class_Version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -770,97 +556,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00151">151</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_aee74861f4b5073fe7c1bab3f698b457f_cgraph.svg" width="407" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_aee74861f4b5073fe7c1bab3f698b457f_icgraph.svg" width="468" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aa890220016bce4a10ff51b749d61b5b0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::SimObject::DeclFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7a6ac652b6bcee50921d55c45f527ea8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::SimObject::DeclFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adffcec2997d1396729352f2e29e0699d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static TClass* bdm::SimObject::Dictionary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ac5187477c43b00044e8347e7ce13da72"></a>
@@ -905,22 +600,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00141">141</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_ac5187477c43b00044e8347e7ce13da72_cgraph.svg" width="730" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_ac5187477c43b00044e8347e7ce13da72_icgraph.svg" width="1047" height="502"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aada99a3a971b24be4a0d1e7ec86d9638"></a>
@@ -946,17 +625,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Executes the given function for all data members </p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a></code> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ae6968ff1aabc198b0694d0b0314bb64d">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#ab2da75e8eee6fd174ea362c1f31318ed">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a393e2e305f4453396796639c4471d146">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
 <p>Definition at line <a class="el" href="sim__object_8h_source.html#l00142">142</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_aada99a3a971b24be4a0d1e7ec86d9638_cgraph.svg" width="488" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -993,17 +662,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Executes the given visitor for the specified data members </p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a></code> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a41c151998208d9b149cfcc9115822fc0">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#a25d86d14407a5caa9fc8375517aea575">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a606b238826160b7477c2034cd009eaf2">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00148">148</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_ae2b96fb273997f5217a1c92ac57cba65_icgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00149">149</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1024,14 +683,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00132">132</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_ab20e792e1fa8514a970d062fbdd0e0b8_icgraph.svg" width="759" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a1acfbb130802d3570a099e82825875df"></a>
@@ -1048,14 +699,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00101">101</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a1acfbb130802d3570a099e82825875df_icgraph.svg" width="1226" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1082,8 +725,6 @@ Here is the caller graph for this function:</div>
 
 <p>Create a copy of this object. </p>
 
-<p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a867ca0e27fa5bca600be4ff41fc526e6">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#ad002f3d901c3708d6c0abc6d68cc875b">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a642d287010fcf98e1afae8e6e065a712">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a93ab12aa6166d9f07337b799c0056c2a"></a>
@@ -1108,14 +749,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aa7d04abcf0a6111fd76850a69665a1b0">bdm::experimental::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1Cell.html#a5d245e964e5bc6b4cc42bd7a83a31d65">bdm::Cell</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a93ab12aa6166d9f07337b799c0056c2a_icgraph.svg" width="1271" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1159,16 +792,6 @@ Here is the caller graph for this function:</div>
 
 <p>Create a new instance of this object using the default constructor. </p>
 
-<p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4f807ad033b87ee66bb45fa462b647c9">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#af0633e150c29ff13103e877006849f68">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a7ea33b1c18508a683f2a4da47b1f7456">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a68f549d48268b907f198325d8bc17d7f_icgraph.svg" width="484" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aee76d8d139aff1e56575df09266bcfab"></a>
@@ -1193,14 +816,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classbdm_1_1Cell.html#ab46d5806fa59d15ceb66d273274adb77">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#abc38eba08a0f97871b7658d38442bb57">bdm::experimental::neuroscience::NeuriteElement</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_aee76d8d139aff1e56575df09266bcfab_icgraph.svg" width="1262" height="694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1228,15 +843,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a9ae62ca093c0f6c1d11de3bb1d324d98">bdm::experimental::neuroscience::NeuriteElement</a>.</p>
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00168">168</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a4f5e2a3f459e0d5616929cbafb948260_icgraph.svg" width="492" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00170">170</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +868,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00186">186</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00188">188</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1287,14 +894,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4826ee1c2b558fff8919468df9606c8a">bdm::experimental::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783">bdm::Cell</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_ab178f73dd35873394b74e2b5ad82f52e_icgraph.svg" width="764" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1323,15 +922,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 
 <p>Return simulation object pointer. </p>
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00205">205</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a60953d3c8387583076920e4e2fd8af2d_icgraph.svg" width="1026" height="652"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00207">207</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1356,17 +947,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#acc6ec62cf0b12cefad51892baaf2f45a">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#a70341ab58a39be8a701222e108e4fbb1">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a96153206422187686ec77dc2615fca35">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00162">162</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a3ab538852c2c25afb578a915affeaa56_cgraph.svg" width="766" height="307"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00164">164</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1384,91 +965,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00099">99</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a09dd24a4bc359074948de9b698f3ad04_icgraph.svg" width="1318" height="911"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a3f5d4602ac4d7e7e4caaa95870fd5853"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int bdm::SimObject::ImplFileLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a95ed514fcec3284e9a97c3baa1c68bd9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const char* bdm::SimObject::ImplFileName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae44eec7cd773917f8a2755b989d29356"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual TClass* bdm::SimObject::IsA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad38ac892fc027821a42060f6862d03c5">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#a0ee685f80abc124b4bc33ddd0a60852d">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a6f9bc170e006135a4c2de75501e3d410">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1490,14 +986,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00112">112</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a81f3c7798d3ba67c0d178565031055a3_icgraph.svg" width="772" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a5490ec0c79366ed7c1d5f9feae546588"></a>
@@ -1514,22 +1002,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00137">137</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a5490ec0c79366ed7c1d5f9feae546588_cgraph.svg" width="495" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a5490ec0c79366ed7c1d5f9feae546588_icgraph.svg" width="758" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1549,14 +1021,6 @@ Here is the caller graph for this function:</div>
 <p>Execute all biology modulesq. </p>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00124">124</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a45e76058662f256965f9a7c6043a288f_icgraph.svg" width="744" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1585,14 +1049,6 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00095">95</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a574c6f014376642e060b3d5306187a44_icgraph.svg" width="524" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a961ba40129151a040376fd416caad642"></a>
@@ -1616,23 +1072,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00201">201</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a961ba40129151a040376fd416caad642_cgraph.svg" width="1059" height="848"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a961ba40129151a040376fd416caad642_icgraph.svg" width="494" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00203">203</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1651,14 +1091,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="sim__object_8cc_source.html#l00103">103</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a87a7363f5cc27867b4213d110df5bf92_icgraph.svg" width="423" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
 
 </div>
 </div>
@@ -1686,14 +1118,6 @@ Here is the caller graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classbdm_1_1Cell.html#a11258c5270717be715fec3f17e72ec59">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a1c093ffea9be9788c9013af7b6954b7b">bdm::experimental::neuroscience::NeuriteElement</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a38d6b74b64bf66be1c22667c8e3a1edf_icgraph.svg" width="756" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="afc7cbe6f9c20e4327cf2340396758657"></a>
@@ -1720,14 +1144,6 @@ Here is the caller graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classbdm_1_1Cell.html#a838cf007275cfec6c478a4df83ebbb8c">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ae25c2938a9a31433ac1f7481251ac4d5">bdm::experimental::neuroscience::NeuriteElement</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_afc7cbe6f9c20e4327cf2340396758657_icgraph.svg" width="770" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a5caaa66cd96966b2d545e331c1440789"></a>
@@ -1752,15 +1168,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00190">190</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a5caaa66cd96966b2d545e331c1440789_icgraph.svg" width="1674" height="1678"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00192">192</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1786,97 +1194,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00182">182</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a9fdc26eb423c9e465f1fc5b82c2c2436_icgraph.svg" width="759" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="af79824997617b5d082cf74d2b724c2b5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::SimObject::ShowMembers </td>
-          <td>(</td>
-          <td class="paramtype">TMemberInspector &amp;&#160;</td>
-          <td class="paramname"><em>insp</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a6a6b3939f006ec2b1a5259da9eabf321">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#aeec28340cf1e0234e79e6c8d0568d5d0">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#abfa9e66e341bb555f183cfdabca9a5cc">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5a57d31c2561527f3ccb9e3fd1e9dbf5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::SimObject::Streamer </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a2edc87cca3a6d6a9a6331b8a3a0f0139">bdm::experimental::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#a00578feee831012da27ee25d58096e7a">bdm::Cell</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#ac691d8eb9cd45d8eaaa0b4ce75416345">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a01c837b792fcbc14155239e4b82ede38"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::SimObject::StreamerNVirtual </td>
-          <td>(</td>
-          <td class="paramtype">TBuffer &amp;&#160;</td>
-          <td class="paramname"><em>ClassDef_StreamerNVirtual_b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00274">274</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00184">184</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1901,15 +1219,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00196">196</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1SimObject_a53944126db971aaa0c57109e816610e2_icgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00198">198</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1934,7 +1244,7 @@ Here is the caller graph for this function:</div>
 
 <p>collection of biology modules which define the internal behavior </p>
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00247">247</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00249">249</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1958,7 +1268,7 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classbdm_1_1Grid.html" title="A class that represents Cartesian 3D grid. ">Grid</a> box index. </p>
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00245">245</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00247">247</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1981,7 +1291,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Helper variable used to support removal of biology modules while <code>RunBiologyModules</code> iterates over them. </p>
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00252">252</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00254">254</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -2003,7 +1313,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00254">254</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00256">256</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -2025,7 +1335,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00255">255</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00257">257</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -2047,7 +1357,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00256">256</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00258">258</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +1381,7 @@ Here is the caller graph for this function:</div>
 
 <p>unique id </p>
 
-<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00243">243</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object_8h_source.html#l00245">245</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -2080,15 +1390,11 @@ Here is the caller graph for this function:</div>
 <li>core/sim_object/<a class="el" href="sim__object_8cc_source.html">sim_object.cc</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a></li>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

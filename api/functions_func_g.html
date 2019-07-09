@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -32,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-374-g59d6ef7</span>
+   &#160;<span id="projectnumber">v0.1.0-375-g2745014</span>
    </div>
   </td>
  </tr>
@@ -46,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
+      <li><a href="http://biodynamo.web.cern.ch"><span>Home</span></a></li>
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -113,20 +106,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('functions_func_g.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -237,9 +216,6 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>GetCopy()
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#af13d7c88c2a69166c2d7a7c51554d880">bdm::BaseBiologyModule</a>
-, <a class="el" href="classbdm_1_1Cell.html#ad002f3d901c3708d6c0abc6d68cc875b">bdm::Cell</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a867ca0e27fa5bca600be4ff41fc526e6">bdm::experimental::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a642d287010fcf98e1afae8e6e065a712">bdm::experimental::neuroscience::NeuronSoma</a>
 , <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ac1028efe1d6d822ec3cbe9e5c9cdcee5">bdm::experimental::neuroscience::Param</a>
 , <a class="el" href="structbdm_1_1GrowDivide.html#afde2a6b4188964a2f809b6b44ba4f058">bdm::GrowDivide</a>
 , <a class="el" href="structbdm_1_1ModuleParam.html#acd3142d0f865a356bb7a2d582ff829cc">bdm::ModuleParam</a>
@@ -315,9 +291,6 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>GetInstance()
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#a56454e497e634175b18e22e6a3c89af3">bdm::BaseBiologyModule</a>
-, <a class="el" href="classbdm_1_1Cell.html#af0633e150c29ff13103e877006849f68">bdm::Cell</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4f807ad033b87ee66bb45fa462b647c9">bdm::experimental::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a7ea33b1c18508a683f2a4da47b1f7456">bdm::experimental::neuroscience::NeuronSoma</a>
 , <a class="el" href="structbdm_1_1GrowDivide.html#a63f1c049ef0f3f7acac1df98d563e20d">bdm::GrowDivide</a>
 , <a class="el" href="structbdm_1_1RegulateGenes.html#a11b666d77ce306e0051b5d57a51cfe23">bdm::RegulateGenes</a>
 , <a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">bdm::SimObject</a>
@@ -346,7 +319,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classbdm_1_1ThreadInfo.html#a0a2632d0eaeaa36ab9686e3f21469e35">bdm::ThreadInfo</a>
 </li>
 <li>GetModuleParam()
-: <a class="el" href="structbdm_1_1Param.html#a89007026454b633d6df71cf51e4ad774">bdm::Param</a>
+: <a class="el" href="structbdm_1_1Param.html#a1b6739faa89ba842fbe8ca65478c0af4">bdm::Param</a>
 </li>
 <li>GetMooreBoxes()
 : <a class="el" href="classbdm_1_1Grid.html#adee49cc8a52102d2dfd9bfafb095edca">bdm::Grid</a>
@@ -355,7 +328,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classbdm_1_1Grid.html#a6ab6037c5459139bbd85f27b34179ad8">bdm::Grid</a>
 </li>
 <li>GetMother()
-: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a35e9590cb1f939c9cf1b8ad2992ffc2b">bdm::experimental::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ab8a0b75f8b985ba277e8663124c44e5b">bdm::experimental::neuroscience::NeuriteElement</a>
 </li>
 <li>GetMutex()
 : <a class="el" href="classbdm_1_1Grid_1_1NeighborMutexBuilder.html#ac41629b9d95dd94316b858a8b3428cff">bdm::Grid::NeighborMutexBuilder</a>
@@ -477,10 +450,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classbdm_1_1Cell.html#a10dd1a604eff893e3fede37698a8d21b">bdm::Cell</a>
 </li>
 <li>GetTypeName()
-: <a class="el" href="classbdm_1_1Cell.html#a70341ab58a39be8a701222e108e4fbb1">bdm::Cell</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#acc6ec62cf0b12cefad51892baaf2f45a">bdm::experimental::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a96153206422187686ec77dc2615fca35">bdm::experimental::neuroscience::NeuronSoma</a>
-, <a class="el" href="classbdm_1_1SimObject.html#a3ab538852c2c25afb578a915affeaa56">bdm::SimObject</a>
+: <a class="el" href="classbdm_1_1SimObject.html#a3ab538852c2c25afb578a915affeaa56">bdm::SimObject</a>
 </li>
 <li>GetUid()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a453f979599bf74821c81ed5e9301ae6a">bdm::experimental::neuroscience::NeuriteElement</a>
@@ -492,7 +462,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="classbdm_1_1SoPointer.html#accff7bbd61d5500643a58be2b05ecd99">bdm::SoPointer&lt; TSimObject &gt;</a>
 </li>
 <li>GetUidPtr()
-: <a class="el" href="structbdm_1_1detail_1_1ExtractUidPtr.html#ae0c6ca525e36ba21ceba73eec42fb220">bdm::detail::ExtractUidPtr</a>
+: <a class="el" href="structbdm_1_1detail_1_1ExtractUidPtr.html#a115d9fa4cee29b1750ecced2436e4c9c">bdm::detail::ExtractUidPtr</a>
 , <a class="el" href="classbdm_1_1SoPointer.html#adf209338af3bbda0e550f04a4abe1fff">bdm::SoPointer&lt; TSimObject &gt;</a>
 </li>
 <li>GetUniqueName()
@@ -526,21 +496,18 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="structbdm_1_1ModelInitializer.html#a3712676125f8ef1bcec71d81a2d9e227">bdm::ModelInitializer</a>
 </li>
 <li>GrowDivide()
-: <a class="el" href="structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407">bdm::GrowDivide</a>
+: <a class="el" href="structbdm_1_1GrowDivide.html#a7989089a41718e38a98e5ef32f177d79">bdm::GrowDivide</a>
 </li>
 <li>GrowSoContainer()
 : <a class="el" href="classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7">bdm::ResourceManager</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>
