@@ -6,6 +6,7 @@ var searchData=
   ['calculate_5fgradients_5f',['calculate_gradients_',['../structbdm_1_1Param.html#a9d446ab9be245007036391d6275fcfe7',1,'bdm::Param']]],
   ['capacity_5f',['capacity_',['../classbdm_1_1InlineVector.html#a849922aee1d0e34277935b7b20b08256',1,'bdm::InlineVector']]],
   ['catalystadaptortest',['CatalystAdaptorTest',['../classbdm_1_1Simulation.html#ab889dec7761bbc83537da76c51f57e52',1,'bdm::Simulation']]],
+  ['cdo_5f',['cdo_',['../classbdm_1_1DisplacementOpCuda.html#a50c7718ce677c30160e58000c63591b4',1,'bdm::DisplacementOpCuda']]],
   ['concentration_5f',['concentration_',['../structbdm_1_1Param_1_1VisualizeDiffusion.html#a5474de1413cec9e65640347ec4704c95',1,'bdm::Param::VisualizeDiffusion']]],
   ['concentration_5fthreshold_5f',['concentration_threshold_',['../classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094',1,'bdm::DiffusionGrid']]],
   ['concentrations_5f',['concentrations_',['../structbdm_1_1RegulateGenes.html#a10fbfc91670d91ed4c04ee10521d9537',1,'bdm::RegulateGenes']]],

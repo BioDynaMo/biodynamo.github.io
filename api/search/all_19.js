@@ -9,6 +9,7 @@ var searchData=
   ['_7ediffusionop',['~DiffusionOp',['../classbdm_1_1DiffusionOp.html#a3a508b5361e3e9e995c0f7eeb566d71e',1,'bdm::DiffusionOp']]],
   ['_7edisplacementop',['~DisplacementOp',['../classbdm_1_1DisplacementOp.html#aea4ff2248decac2c789228a52c4deb43',1,'bdm::DisplacementOp']]],
   ['_7edisplacementopcpu',['~DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html#aed92e8bc6a963c43ae7b7e4a62a244ea',1,'bdm::DisplacementOpCpu']]],
+  ['_7edisplacementopcuda',['~DisplacementOpCuda',['../classbdm_1_1DisplacementOpCuda.html#a2ffad0aa4d50ce6600adc969e95ceb70',1,'bdm::DisplacementOpCuda']]],
   ['_7edisplacementopcudakernel',['~DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a0e1f6ef99c0825837122c650cdb96127',1,'bdm::DisplacementOpCudaKernel']]],
   ['_7edividingcellop',['~DividingCellOp',['../classbdm_1_1DividingCellOp.html#a2cbd9fee8057b54c5440eaf8c34dcfdd',1,'bdm::DividingCellOp']]],
   ['_7eevent',['~Event',['../structbdm_1_1Event.html#a6969354e6a9bf50b789524e7a98ebad8',1,'bdm::Event']]],

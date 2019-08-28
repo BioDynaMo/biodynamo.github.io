@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-384-gd7b53de</span>
+   &#160;<span id="projectnumber">v0.1.0-385-gaee0e94</span>
    </div>
   </td>
  </tr>
@@ -179,8 +179,10 @@ Protected Attributes</h2></td></tr>
 .  <a href="#a95cd1019e769e1a563f1fd9360506380">More...</a><br /></td></tr>
 <tr class="separator:a95cd1019e769e1a563f1fd9360506380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35225455554669be879ee829d968b13f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a35225455554669be879ee829d968b13f">sim_objects_</a></td></tr>
+<tr class="memdesc:a35225455554669be879ee829d968b13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer container for all simulation objects.  <a href="#a35225455554669be879ee829d968b13f">More...</a><br /></td></tr>
 <tr class="separator:a35225455554669be879ee829d968b13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee7be8062b0ccdbbbd2626bd5a64e050"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; uint64_t, <a class="el" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#aee7be8062b0ccdbbbd2626bd5a64e050">diffusion_grids_</a></td></tr>
+<tr class="memdesc:aee7be8062b0ccdbbbd2626bd5a64e050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a diffusion grid ID to the pointer to the diffusion grid.  <a href="#aee7be8062b0ccdbbbd2626bd5a64e050">More...</a><br /></td></tr>
 <tr class="separator:aee7be8062b0ccdbbbd2626bd5a64e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b079c40f9f7e40199c569146ae97ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a90b079c40f9f7e40199c569146ae97ba">thread_info_</a> = <a class="el" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>()</td></tr>
 <tr class="separator:a90b079c40f9f7e40199c569146ae97ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -996,7 +998,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00418">418</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00404">404</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1021,9 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00406">406</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Maps a diffusion grid ID to the pointer to the diffusion grid. </p>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00400">400</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1045,9 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00404">404</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Pointer container for all simulation objects. </p>
+
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00398">398</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1069,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00408">408</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00402">402</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1094,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 <p>Maps an SoUid to its storage location in <code>sim_objects_</code> <br />
 . </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00402">402</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00396">396</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>

@@ -20,6 +20,7 @@ var searchData=
   ['catalystadaptortest_5fgenerateparaviewstate_5ftest',['CatalystAdaptorTest_GenerateParaviewState_Test',['../classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c',1,'bdm::CatalystAdaptor']]],
   ['catalystadaptortest_5fgeneratesimulationinfojson_5ftest',['CatalystAdaptorTest_GenerateSimulationInfoJson_Test',['../classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6',1,'bdm::CatalystAdaptor']]],
   ['cbegin',['cbegin',['../classbdm_1_1ParallelResizeVector.html#ad1d60be58b35efe22671792208be8a5b',1,'bdm::ParallelResizeVector']]],
+  ['cdo_5f',['cdo_',['../classbdm_1_1DisplacementOpCuda.html#a50c7718ce677c30160e58000c63591b4',1,'bdm::DisplacementOpCuda']]],
   ['cell',['Cell',['../classbdm_1_1Cell.html',1,'bdm']]],
   ['cell',['Cell',['../classbdm_1_1Cell.html#aca6e7785542c5bccf677271f3d02376f',1,'bdm::Cell::Cell()'],['../classbdm_1_1Cell.html#a8c5866efa6a6d2b8e706d1cd828a7661',1,'bdm::Cell::Cell(double diameter)'],['../classbdm_1_1Cell.html#ac484de8f75b033459e60ff45a9b086fb',1,'bdm::Cell::Cell(const Double3 &amp;position)'],['../classbdm_1_1Cell.html#ae14a7a57d8dd89d86fa8456c02245956',1,'bdm::Cell::Cell(const Event &amp;event, SimObject *mother, uint64_t new_oid=0)']]],
   ['cell_2ecc',['cell.cc',['../cell_8cc.html',1,'']]],
@@ -63,6 +64,6 @@ var searchData=
   ['crossproduct',['CrossProduct',['../structbdm_1_1Math.html#abdcaeb1f47b85657a5cff0714bb5b8ec',1,'bdm::Math']]],
   ['current_5fvalue_5f',['current_value_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#acd70d9e45d5b7e523fd36fd7a416aaf3',1,'bdm::Grid::Box::Iterator']]],
   ['custom_5fclo_5fparser_2eh',['custom_clo_parser.h',['../custom__clo__parser_8h.html',1,'']]],
-  ['customcloparser',['CustomCLOParser',['../structbdm_1_1CustomCLOParser.html#abbff4ac8fa6ab3edc2c486c860d2266b',1,'bdm::CustomCLOParser']]],
-  ['customcloparser',['CustomCLOParser',['../structbdm_1_1CustomCLOParser.html',1,'bdm']]]
+  ['customcloparser',['CustomCLOParser',['../structbdm_1_1CustomCLOParser.html',1,'bdm']]],
+  ['customcloparser',['CustomCLOParser',['../structbdm_1_1CustomCLOParser.html#abbff4ac8fa6ab3edc2c486c860d2266b',1,'bdm::CustomCLOParser']]]
 ];

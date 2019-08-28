@@ -16,6 +16,7 @@ var searchData=
   ['disableneighbormutexes',['DisableNeighborMutexes',['../classbdm_1_1Grid.html#a3f8c88d5c55461e322e2c375c13048f8',1,'bdm::Grid']]],
   ['displacementop',['DisplacementOp',['../classbdm_1_1DisplacementOp.html#af7611a05f17b66fd6c575588f0818317',1,'bdm::DisplacementOp']]],
   ['displacementopcpu',['DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html#a366d9896cbd658c17cf80e15e338878a',1,'bdm::DisplacementOpCpu']]],
+  ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1DisplacementOpCuda.html#a7a77905be0b1402f37e5641f8a367d66',1,'bdm::DisplacementOpCuda']]],
   ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a4758aa387477b14cdf02f3013f606fca',1,'bdm::DisplacementOpCudaKernel']]],
   ['distalend',['DistalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a60e8809d10d0b4e6c408755bc22f92f4',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['divide',['Divide',['../classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0',1,'bdm::Cell::Divide()'],['../classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba',1,'bdm::Cell::Divide(double volume_ratio)'],['../classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d',1,'bdm::Cell::Divide(const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69',1,'bdm::Cell::Divide(double volume_ratio, const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875',1,'bdm::Cell::Divide(double volume_ratio, double phi, double theta)']]],
