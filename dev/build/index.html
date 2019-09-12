@@ -344,8 +344,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-a-custom-paraviewroot-installation" class="md-nav__link">
-    Use a Custom ParaView/ROOT installation
+  <a href="#use-a-specific-root-paraview-installation" class="md-nav__link">
+    Use a Specific ROOT / ParaView Installation
   </a>
   
 </li>
@@ -513,8 +513,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-a-custom-paraviewroot-installation" class="md-nav__link">
-    Use a Custom ParaView/ROOT installation
+  <a href="#use-a-specific-root-paraview-installation" class="md-nav__link">
+    Use a Specific ROOT / ParaView Installation
   </a>
   
 </li>
@@ -811,8 +811,8 @@ If you change the value of these switches, you might have to delete <code class=
 <h2 id="advanced-build-options">Advanced Build Options</h2>
 <h4 id="use-a-custom-compiler">Use a Custom Compiler</h4>
 <p>If you need to user a custom compilers (instead of the one automatically detected by BioDynaMo) you will need
-to set first two variables: <code class="codehilite"><span class="n">CXX</span></code> for the C++ compiler and <code class="codehilite"><span class="n">CC</span></code> for the C compiler. Please not that your custom compiler
-must support C++14 standard and also it must be compatible with OpenMP. The complete procedure will become:
+to set the variables: <code class="codehilite"><span class="n">CXX</span></code> for the C++ compiler and <code class="codehilite"><span class="n">CC</span></code> for the C compiler. Please not that your custom compiler
+must support the C++14 standard and must be compatible with OpenMP. The complete procedure will become:
 <div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo.git
 <span class="nb">cd</span> biodynamo
 
@@ -822,16 +822,18 @@ must support C++14 standard and also it must be compatible with OpenMP. The comp
 
 ./install.sh
 </pre></div></p>
-<h4 id="use-a-custom-paraviewroot-installation">Use a Custom ParaView/ROOT installation</h4>
-<p>BioDynaMo will download automatically the required ParaView, ROOT and Qt5 libraries to build the project. However,
-it is also possible to specify custom version of them. You will need to set some environmental variables such to
-enable this behaviour. Check out the example below.</p>
+<h4 id="use-a-specific-root-paraview-installation">Use a Specific ROOT / ParaView Installation</h4>
+<p>When you want to inform BioDynaMo of a specific installation of ROOT and /or ParaView on your system,
+you will need to perform the following instructions prior to installation.</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo.git
 <span class="nb">cd</span> biodynamo
 
-<span class="nb">export</span> <span class="nv">ROOT_DIR</span><span class="o">=</span>/opt/local/root
-<span class="nb">export</span> <span class="nv">ParaView_DIR</span><span class="o">=</span>/opt/local/paraview
-<span class="nb">export</span> <span class="nv">Qt5_DIR</span><span class="o">=</span>/usr/local/qt
+<span class="c1"># For ROOT</span>
+<span class="nb">source</span> &lt;root_installation_dir&gt;/bin/thisroot.sh
+
+<span class="c1"># For ParaView</span>
+<span class="nb">export</span> <span class="nv">ParaView_DIR</span><span class="o">=</span>&lt;paraview_installation_dir&gt;/lib/cmake/paraview-5.6
+<span class="nb">export</span> <span class="nv">Qt5_DIR</span><span class="o">=</span>&lt;qt5_installation_dir&gt;/lib/cmake/Qt5
 
 ./install.sh
 </pre></div>
@@ -839,7 +841,7 @@ enable this behaviour. Check out the example below.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you specify ParaView_DIR, then you will need to provide also the Qt5_DIR variable.
-This happens because ParaView needs to explicitly know where Qt is located.</p>
+This is because ParaView implicitly relies on the Qt5 installation.</p>
 </div>
 <h4 id="speed-up-installation-tests-with-a-local-biodynamo-lfs-copy">Speed Up Installation Tests with a Local BioDynaMo-LFS Copy</h4>
 <p>The installation scripts fetch large precompiled dependencies like paraview
@@ -856,7 +858,7 @@ that contains the local copy.</p>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>At the moment there is no check if the local copy is in synch with
+<p>At the moment there is no check if the local copy is in sync with
 remote. You have to ensure that yourself!</p>
 </div>
                 
