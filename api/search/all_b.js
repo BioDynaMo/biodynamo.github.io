@@ -11,6 +11,7 @@ var searchData=
   ['lengthtoproximalbranchingpoint',['LengthToProximalBranchingPoint',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a5a5ee860cdbb0a02f5477b7741fa8872',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['live_5fvisualization_5f',['live_visualization_',['../structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861',1,'bdm::Param']]],
   ['livevisualization',['LiveVisualization',['../classbdm_1_1CatalystAdaptor.html#a08f0042a38c7d3866d5afa5b9944d015',1,'bdm::CatalystAdaptor']]],
+  ['loadconfigfile',['LoadConfigFile',['../classbdm_1_1Simulation.html#add06888b18b82b8349a8da90aeda6d6a',1,'bdm::Simulation']]],
   ['lock',['lock',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0efa7dfa2c8dd0d3570757bdfd9aa3ed',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['log',['Log',['../classbdm_1_1Log.html',1,'bdm']]],
   ['log_2eh',['log.h',['../log_8h.html',1,'']]],
