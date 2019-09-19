@@ -315,8 +315,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-7" class="md-nav__link">
-    CentOS 7
+  <a href="#centos-761810" class="md-nav__link">
+    CentOS 7.6.1810
   </a>
   
     <nav class="md-nav">
@@ -760,8 +760,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-7" class="md-nav__link">
-    CentOS 7
+  <a href="#centos-761810" class="md-nav__link">
+    CentOS 7.6.1810
   </a>
   
     <nav class="md-nav">
@@ -912,8 +912,6 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <li><strong>graphviz</strong>: Graph Visualization Software used optionally by Doxygen;</li>
 <li><strong>lcov</strong>: Graphical front-end for GCC's coverage testing tool gcov;</li>
 <li><strong>gcovr</strong>: Tool to test code coverage in programs.</li>
-<li><strong>llvm-6.0 llvm-6.0-dev llvm-6.0-runtime</strong>: Modular compiler and toolchain</li>
-<li><strong>libxml2-dev</strong>: Development files for the GNOME XML library</li>
 </ul>
 <h3 id="installation">Installation</h3>
 <h4 id="required-packages_1">Required Packages</h4>
@@ -925,12 +923,11 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <h4 id="optional-packages_1">Optional Packages</h4>
 <div class="codehilite"><pre><span></span>pip3 install --user mkdocs mkdocs-material
 sudo apt-get install -y freeglut3-dev valgrind <span class="se">\</span>
-  clang-3.9 clang-format-3.9 clang-tidy-3.9 <span class="se">\</span>
-  doxygen graphviz lcov gcovr <span class="se">\</span>
-  llvm-6.0 llvm-6.0-dev llvm-6.0-runtime libxml2-dev
+clang-3.9 clang-format-3.9 clang-tidy-3.9 <span class="se">\</span>
+doxygen graphviz lcov gcovr
 </pre></div>
 
-<h2 id="centos-7">CentOS 7</h2>
+<h2 id="centos-761810">CentOS 7.6.1810</h2>
 <h3 id="required-packages_2">Required Packages</h3>
 <ul>
 <li><strong>epel-release</strong>: It provides a set of additional packages for Enterprise Linux;</li>
@@ -954,8 +951,6 @@ sudo apt-get install -y freeglut3-dev valgrind <span class="se">\</span>
 <li><strong>valgrind</strong>: A suite of tools for debugging and profiling;</li>
 <li><strong>doxygen</strong>: Tool for generating documentation from annotated C++ sources;</li>
 <li><strong>graphviz</strong>: Graph Visualization Software used optionally by Doxygen.</li>
-<li><strong>llvm-toolset-6.0-llvm-devel llvm-toolset-6.0-llvm-static</strong>: Modular compiler and toolchain</li>
-<li><strong>libxml2-devel</strong>: Development files for the GNOME XML library</li>
 </ul>
 <h3 id="installation_1">Installation</h3>
 <h4 id="required-packages_3">Required Packages</h4>
@@ -971,18 +966,6 @@ sudo yum -y install cmake3 libXt-devel libXext-devel <span class="se">\</span>
 <div class="codehilite"><pre><span></span>pip install --user mkdocs mkdocs-material
 sudo yum -y install lcov gcovr llvm-toolset-7 <span class="se">\</span>
    llvm-toolset-7-clang-tools-extra doxygen graphviz valgrind freeglut-devel
-   <span class="c1"># SBML integration</span>
-sudo bash -c <span class="s1">&#39;cat &lt;&lt; EOF  &gt; /etc/yum.repos.d/springdale-7-SCL.repo</span>
-<span class="s1">[SCL-core]</span>
-<span class="s1">name=Springdale SCL Base 7.6 - x86_64</span>
-<span class="s1">mirrorlist=http://springdale.princeton.edu/data/springdale/SCL/7.6/x86_64/mirrorlist</span>
-<span class="s1">#baseurl=http://springdale.princeton.edu/data/springdale/SCL/7.6/x86_64</span>
-<span class="s1">gpgcheck=1</span>
-<span class="s1">gpgkey=http://springdale.math.ias.edu/data/puias/7.6/x86_64/os/RPM-GPG-KEY-puias</span>
-<span class="s1">EOF&#39;</span>
-sudo yum update -y
-sudo yum install -y llvm-toolset-6.0-llvm-devel llvm-toolset-6.0-llvm-static
-sudo yum install -y libxml2-devel
 </pre></div>
 
 <h2 id="macos">MacOS</h2>
