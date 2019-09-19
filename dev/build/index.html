@@ -268,8 +268,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-761810" class="md-nav__link">
-    CentOS 7.6.1810
+  <a href="#centos-7" class="md-nav__link">
+    CentOS 7
   </a>
   
 </li>
@@ -437,8 +437,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#centos-761810" class="md-nav__link">
-    CentOS 7.6.1810
+  <a href="#centos-7" class="md-nav__link">
+    CentOS 7
   </a>
   
 </li>
@@ -582,14 +582,14 @@ Run <code class="codehilite"><span class="p">.</span><span class="o">/</span><sp
 If you do not have <code class="codehilite"><span class="n">brew</span></code> on your system, or you are using a different package manager, you will need to
 manually install all the required packages. Please have a look to the <a href="user/prerequisites">Prerequisites</a> page.</p>
 </div>
-<h2 id="centos-761810">CentOS 7.6.1810</h2>
+<h2 id="centos-7">CentOS 7</h2>
 <p>In case of CentOS, you will need to run some additional commands before actually calling <code class="codehilite"><span class="n">cmake</span></code> and <code class="codehilite"><span class="n">make</span></code>. This is because
 CentOS do not provide by default the correct C++ compilers and the correct python interpreter. Moerover, we will need to
 load the OpenMPI module. You will need to run these instructions only before building BioDynaMo. You will not need them in
 order to run the library.</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/BioDynaMo/biodynamo.git
 <span class="nb">cd</span> biodynamo
-./prerequisites.sh all centos-7.6.1810
+./prerequisites.sh all centos-7
 
 <span class="nb">export</span> <span class="nv">MESA_GL_VERSION_OVERRIDE</span><span class="o">=</span><span class="m">3</span>.3
 . scl_source <span class="nb">enable</span> rh-python36
