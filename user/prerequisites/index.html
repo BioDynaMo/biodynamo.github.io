@@ -890,25 +890,26 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <h2 id="ubuntu-1604-1804">Ubuntu 16.04, 18.04</h2>
 <h3 id="required-packages">Required Packages</h3>
 <ul>
-<li><strong>cmake</strong>: Set of tools for automate building, testing of software (for <em>/usr/bin/cmake</em>);</li>
-<li><strong>make</strong>: Build automation tool (for <em>/usr/bin/make</em>);</li>
-<li><strong>gcc</strong>: GNU C compiler (for <em>/usr/bin/gcc</em>);</li>
-<li><strong>g++</strong>: GNU C++ compiler (for <em>/usr/bin/g++</em>);</li>
+<li><strong>wget</strong>: Retrieves files from the web;</li>
+<li><strong>cmake</strong>: Set of tools for automate building, testing of software;</li>
+<li><strong>make</strong>: Build automation tool;</li>
+<li><strong>gcc</strong>: GNU C compiler;</li>
+<li><strong>g++</strong>: GNU C++ compiler;</li>
 <li><strong>libopenmpi-dev</strong>: Development files for OpenMPI (Open Source Message Passing Interface);</li>
 <li><strong>libomp-dev</strong>: Development files for OpenMP (API for multiprocessor programming);</li>
 <li><strong>libnuma-dev</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel);</li>
 <li><strong>libtbb-dev</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
 <li><strong>libpthread-stubs0-dev</strong>: Development files for managing threads;</li>
-<li><strong>python3</strong>: Python 3 Interpreter (for <em>/usr/bin/python3</em>);</li>
-<li><strong>python3-pip</strong>: Python 3 Package Manager (for <em>/usr/bin/pip3</em>).</li>
+<li><strong>python3</strong>: Python 3 Interpreter;</li>
+<li><strong>python3-pip</strong>: Python 3 Package Manager.</li>
 </ul>
 <h3 id="optional-packages">Optional Packages</h3>
 <ul>
 <li><strong>freeglut3-dev</strong>: Development files for GLUT (OpenGL Utility Toolkit);</li>
-<li><strong>valgrind</strong>: A suite of tools for debugging and profiling (for <em>/usr/bin/valgrind</em>);</li>
-<li><strong>clang-format-3.9</strong>: clang-based C++ style checker and formatter (for <em>/usr/bin/clang-format-3.9</em>);</li>
-<li><strong>clang-tidy-3.9</strong>: clang-based C++ “linter” tool (for <em>/usr/bin/clang-tidy-3.9</em>);</li>
-<li><strong>doxygen</strong>: Tool for generating documentation from annotated C++ sources (for <em>/usr/bin/doxygen</em>);</li>
+<li><strong>valgrind</strong>: A suite of tools for debugging and profiling;</li>
+<li><strong>clang-format-3.9</strong>: clang-based C++ style checker and formatter;</li>
+<li><strong>clang-tidy-3.9</strong>: clang-based C++ “linter” tool;</li>
+<li><strong>doxygen</strong>: Tool for generating documentation from annotated C++ sources;</li>
 <li><strong>graphviz</strong>: Graph Visualization Software used optionally by Doxygen;</li>
 <li><strong>lcov</strong>: Graphical front-end for GCC's coverage testing tool gcov;</li>
 <li><strong>gcovr</strong>: Tool to test code coverage in programs.</li>
@@ -917,7 +918,7 @@ BioDynaMo provides also an automated procedure to install all the needed library
 </ul>
 <h3 id="installation">Installation</h3>
 <h4 id="required-packages_1">Required Packages</h4>
-<div class="codehilite"><pre><span></span>sudo apt-get install -y cmake make gcc g++ <span class="se">\</span>
+<div class="codehilite"><pre><span></span>sudo apt-get install -y wget cmake make gcc g++ <span class="se">\</span>
    libopenmpi-dev libomp-dev libnuma-dev libtbb-dev <span class="se">\</span>
    libpthread-stubs0-dev python3 python3-pip
 </pre></div>
@@ -935,6 +936,7 @@ sudo apt-get install -y freeglut3-dev valgrind <span class="se">\</span>
 <ul>
 <li><strong>epel-release</strong>: It provides a set of additional packages for Enterprise Linux;</li>
 <li><strong>ius-release</strong>: It provides RPM packages for newer software versions for for Enterprise Linux distributions;</li>
+<li><strong>wget</strong>: Retrieves files from the web;</li>
 <li><strong>cmake3</strong>: Set of tools for automate building, testing of software;</li>
 <li><strong>libXt-devel</strong>: Basic library for developing X11;</li>
 <li><strong>libXext-devel</strong>: Library which contains a handful of X11 extensions</li>
@@ -962,7 +964,7 @@ sudo apt-get install -y freeglut3-dev valgrind <span class="se">\</span>
 <div class="codehilite"><pre><span></span>sudo yum update -y
 sudo yum -y install centos-release-scl epel-release
 sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
-sudo yum -y install cmake3 libXt-devel libXext-devel <span class="se">\</span>
+sudo yum -y install wget cmake3 libXt-devel libXext-devel <span class="se">\</span>
    devtoolset-7-gcc* numactl-devel tbb-devel openmpi3-devel <span class="se">\</span>
    rh-python36 python python-pip
 </pre></div>
@@ -995,6 +997,7 @@ the corresponding packages.</p>
 <h3 id="required-packages_4">Required Packages</h3>
 <ul>
 <li><strong>llvm</strong>: LLVM compiler suite with also OpenMP compliant clang and clang++;</li>
+<li><strong>wget</strong>: Retrieves files from the web;</li>
 <li><strong>cmake</strong>: Set of tools for automate building, testing of software;</li>
 <li><strong>libomp</strong>: Development files for OpenMP (API for multiprocessor programming);</li>
 <li><strong>tbb</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
@@ -1011,21 +1014,20 @@ the corresponding packages.</p>
 <h3 id="installation_2">Installation</h3>
 <h4 id="required-packages_5">Required Packages</h4>
 <p>Using HomeBrew:</p>
-<div class="codehilite"><pre><span></span>sudo brew install llvm cmake libomp tbb open-mpi <span class="se">\</span>
-   python python@2
+<div class="codehilite"><pre><span></span>brew install llvm wget cmake libomp tbb open-mpi python python@2 <span class="o">||</span> <span class="nb">true</span>
 
-brew upgrade python cmake
+brew upgrade python cmake <span class="o">||</span> <span class="nb">true</span>
 </pre></div>
 
 <p>Using Fink:</p>
-<div class="codehilite"><pre><span></span>sudo fink install llvm-clang cmake libomp-dev libtbb4 openmpi <span class="se">\</span>
+<div class="codehilite"><pre><span></span>sudo fink install wget llvm-clang cmake libomp-dev libtbb4 openmpi <span class="se">\</span>
    python3 pip-py37
 </pre></div>
 
 <h4 id="optional-packages_5">Optional Packages</h4>
 <p>Using HomeBrew:</p>
 <div class="codehilite"><pre><span></span>pip install --user mkdocs mkdocs-material
-sudo brew install doxygen graphviz lcov gcovr
+brew install doxygen graphviz lcov gcovr <span class="o">||</span> <span class="nb">true</span>
 </pre></div>
 
 <p>Using Fink:</p>
