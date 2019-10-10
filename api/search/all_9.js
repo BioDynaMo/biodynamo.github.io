@@ -5,6 +5,7 @@ var searchData=
   ['in_5fplace_5fexec_5fctxt_2eh',['in_place_exec_ctxt.h',['../in__place__exec__ctxt_8h.html',1,'']]],
   ['increaseconcentrationby',['IncreaseConcentrationBy',['../classbdm_1_1DiffusionGrid.html#a835626ff5dd584326fa42ef34ccf3c32',1,'bdm::DiffusionGrid::IncreaseConcentrationBy(const Double3 &amp;position, double amount)'],['../classbdm_1_1DiffusionGrid.html#a899d8de7216180b98e6d80ab70ecae2e',1,'bdm::DiffusionGrid::IncreaseConcentrationBy(size_t idx, double amount)']]],
   ['increment',['Increment',['../classbdm_1_1CircularBuffer.html#a2ea2ceb7273c5a61283e86ce4ec75e9b',1,'bdm::CircularBuffer']]],
+  ['index_5f',['index_',['../structbdm_1_1InlineVector_1_1Iterator.html#a31869f513113db401bdf1846da99e087',1,'bdm::InlineVector::Iterator']]],
   ['info',['Info',['../classbdm_1_1Log.html#a416ad3b1f970835cf2d3041d1e57cfa5',1,'bdm::Log']]],
   ['init_5fgradient_5f',['init_gradient_',['../classbdm_1_1DiffusionGrid.html#ac5ff04feac82276cb3f1d31dbf074788',1,'bdm::DiffusionGrid']]],
   ['initialize',['Initialize',['../classbdm_1_1DiffusionGrid.html#afa16a2da1af4fe02b22abe25eca9ef2f',1,'bdm::DiffusionGrid::Initialize()'],['../classbdm_1_1Grid.html#a37b3b98eb69562dd067aebe8a3cec1ac',1,'bdm::Grid::Initialize()'],['../classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359',1,'bdm::Scheduler::Initialize()'],['../classbdm_1_1Simulation.html#af3e015b79435c289130f1731d4db07b1',1,'bdm::Simulation::Initialize()'],['../classbdm_1_1InSituPipeline.html#a0f9733baaa9cc4fb637312635ccd16f0',1,'bdm::InSituPipeline::Initialize()']]],
@@ -21,10 +22,10 @@ var searchData=
   ['initializeuniquename',['InitializeUniqueName',['../classbdm_1_1Simulation.html#a6cfcdfca4147ce20921e67f962175f97',1,'bdm::Simulation']]],
   ['initmodule',['InitModule',['../namespacebdm_1_1experimental_1_1neuroscience.html#a4abd66929007213c872994c01b8180c3',1,'bdm::experimental::neuroscience']]],
   ['inline_5fvector_2eh',['inline_vector.h',['../inline__vector_8h.html',1,'']]],
-  ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html',1,'bdm']]],
   ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html#a101629c311f2e143f0d41954be1a9bb7',1,'bdm::InlineVector::InlineVector(TRootIOCtor *io_ctor)'],['../classbdm_1_1InlineVector.html#a135924848eb185f3e7e612e7afc517a5',1,'bdm::InlineVector::InlineVector()'],['../classbdm_1_1InlineVector.html#a4f4812128da89c98f198e28f3da38354',1,'bdm::InlineVector::InlineVector(const InlineVector&lt; T, N &gt; &amp;other)'],['../classbdm_1_1InlineVector.html#afac5095887156661b80c560bef3d428a',1,'bdm::InlineVector::InlineVector(InlineVector&lt; T, N &gt; &amp;&amp;other) noexcept']]],
-  ['inplaceexecutioncontext',['InPlaceExecutionContext',['../classbdm_1_1InPlaceExecutionContext.html#a82d5496f0adf5e7ae10a2af0e4bc9d76',1,'bdm::InPlaceExecutionContext']]],
+  ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html',1,'bdm']]],
   ['inplaceexecutioncontext',['InPlaceExecutionContext',['../classbdm_1_1InPlaceExecutionContext.html',1,'bdm']]],
+  ['inplaceexecutioncontext',['InPlaceExecutionContext',['../classbdm_1_1InPlaceExecutionContext.html#a82d5496f0adf5e7ae10a2af0e4bc9d76',1,'bdm::InPlaceExecutionContext']]],
   ['insitu_5fpipeline_2eh',['insitu_pipeline.h',['../insitu__pipeline_8h.html',1,'']]],
   ['insitupipeline',['InSituPipeline',['../classbdm_1_1InSituPipeline.html',1,'bdm']]],
   ['integraltypewrapper',['IntegralTypeWrapper',['../classbdm_1_1IntegralTypeWrapper.html',1,'bdm']]],
@@ -46,6 +47,7 @@ var searchData=
   ['isnonsphericalobjectpresent',['IsNonSphericalObjectPresent',['../classbdm_1_1DisplacementOpCuda.html#af7b450c07fa9d9b0111f9e185203605e',1,'bdm::DisplacementOpCuda']]],
   ['isterminal',['IsTerminal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad9436f774b376a16d4648da51e3ec73d',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['iteratezorder',['IterateZOrder',['../classbdm_1_1Grid.html#ac2e9f22d6ff3315623ed62374ce25494',1,'bdm::Grid']]],
-  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a2f7a65451ded1e7a43548540812e9208',1,'bdm::Grid::Box::Iterator::Iterator()'],['../classbdm_1_1ParallelResizeVector.html#a1cb7d1818853f8fec334c05e2882aa7b',1,'bdm::ParallelResizeVector::iterator()']]],
-  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]]
+  ['iterator',['Iterator',['../structbdm_1_1InlineVector_1_1Iterator.html',1,'bdm::InlineVector']]],
+  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]],
+  ['iterator',['iterator',['../classbdm_1_1InlineVector.html#a7e9ea389f9721a018e031a051d45edc9',1,'bdm::InlineVector::iterator()'],['../classbdm_1_1ParallelResizeVector.html#a1cb7d1818853f8fec334c05e2882aa7b',1,'bdm::ParallelResizeVector::iterator()'],['../structbdm_1_1InlineVector_1_1Iterator.html#a8db90b017f5d9f88416adfb343508aa7',1,'bdm::InlineVector::Iterator::Iterator(uint16_t index, TIV *iv)'],['../structbdm_1_1InlineVector_1_1Iterator.html#af853ee2251afa301c740328c10186be8',1,'bdm::InlineVector::Iterator::Iterator(const Iterator &amp;other)'],['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a2f7a65451ded1e7a43548540812e9208',1,'bdm::Grid::Box::Iterator::Iterator()']]]
 ];

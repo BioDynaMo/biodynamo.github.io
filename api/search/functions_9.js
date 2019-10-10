@@ -27,5 +27,5 @@ var searchData=
   ['isnonsphericalobjectpresent',['IsNonSphericalObjectPresent',['../classbdm_1_1DisplacementOpCuda.html#af7b450c07fa9d9b0111f9e185203605e',1,'bdm::DisplacementOpCuda']]],
   ['isterminal',['IsTerminal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad9436f774b376a16d4648da51e3ec73d',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['iteratezorder',['IterateZOrder',['../classbdm_1_1Grid.html#ac2e9f22d6ff3315623ed62374ce25494',1,'bdm::Grid']]],
-  ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a2f7a65451ded1e7a43548540812e9208',1,'bdm::Grid::Box::Iterator']]]
+  ['iterator',['Iterator',['../structbdm_1_1InlineVector_1_1Iterator.html#a8db90b017f5d9f88416adfb343508aa7',1,'bdm::InlineVector::Iterator::Iterator(uint16_t index, TIV *iv)'],['../structbdm_1_1InlineVector_1_1Iterator.html#af853ee2251afa301c740328c10186be8',1,'bdm::InlineVector::Iterator::Iterator(const Iterator &amp;other)'],['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a2f7a65451ded1e7a43548540812e9208',1,'bdm::Grid::Box::Iterator::Iterator()']]]
 ];
