@@ -14,6 +14,7 @@ var searchData=
   ['so_5fpointer_2eh',['so_pointer.h',['../so__pointer_8h.html',1,'']]],
   ['so_5fuid_2eh',['so_uid.h',['../so__uid_8h.html',1,'']]],
   ['so_5fvisitor_2eh',['so_visitor.h',['../so__visitor_8h.html',1,'']]],
+  ['spinlock_2eh',['spinlock.h',['../spinlock_8h.html',1,'']]],
   ['split_5fneurite_5felement_5fevent_2eh',['split_neurite_element_event.h',['../split__neurite__element__event_8h.html',1,'']]],
   ['string_2eh',['string.h',['../string_8h.html',1,'']]],
   ['substance_5finitializers_2eh',['substance_initializers.h',['../substance__initializers_8h.html',1,'']]]

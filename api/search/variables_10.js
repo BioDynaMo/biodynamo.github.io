@@ -13,7 +13,7 @@ var searchData=
   ['spring_5faxis_5f',['spring_axis_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#adc293cbd70c8586567e9704277220c47',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['spring_5fconstant_5f',['spring_constant_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a2bf28904fc4585d589c262edc1a5bcba',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['squared_5fradius_5f',['squared_radius_',['../classbdm_1_1DisplacementOpCpu.html#a7f31e0197c3f2d39a8676f4bfe4e37da',1,'bdm::DisplacementOpCpu']]],
-  ['start_5f',['start_',['../structbdm_1_1Grid_1_1Box.html#a194518a21c2e8cbe682ec6631fe53a41',1,'bdm::Grid::Box::start_()'],['../classbdm_1_1Timing.html#afb03795f79dd8290366f29f05bc0ac8e',1,'bdm::Timing::start_()']]],
+  ['start_5f',['start_',['../structbdm_1_1Grid_1_1Box.html#a6fe9eda9107d23f7570882e02c30687a',1,'bdm::Grid::Box::start_()'],['../classbdm_1_1Timing.html#afb03795f79dd8290366f29f05bc0ac8e',1,'bdm::Timing::start_()']]],
   ['statistics_5f',['statistics_',['../structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d',1,'bdm::Param']]],
   ['substance_5f',['substance_',['../classbdm_1_1DiffusionGrid.html#a68c0f04fa1e76d95bf1a776d2280df7c',1,'bdm::DiffusionGrid']]],
   ['substance_5fname_5f',['substance_name_',['../classbdm_1_1DiffusionGrid.html#aa260ee52df8f892cdbd10d01ce94d69e',1,'bdm::DiffusionGrid']]],

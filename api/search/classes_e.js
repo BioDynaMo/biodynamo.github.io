@@ -13,5 +13,6 @@ var searchData=
   ['sopointer_3c_20bdm_3a_3aexperimental_3a_3aneuroscience_3a_3aneuronorneurite_20_3e',['SoPointer&lt; bdm::experimental::neuroscience::NeuronOrNeurite &gt;',['../classbdm_1_1SoPointer.html',1,'bdm']]],
   ['souidgenerator',['SoUidGenerator',['../classbdm_1_1SoUidGenerator.html',1,'bdm']]],
   ['sovisitor',['SoVisitor',['../structbdm_1_1SoVisitor.html',1,'bdm']]],
+  ['spinlock',['Spinlock',['../classSpinlock.html',1,'']]],
   ['splitneuriteelementevent',['SplitNeuriteElementEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html',1,'bdm::experimental::neuroscience']]]
 ];

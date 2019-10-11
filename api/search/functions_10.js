@@ -42,6 +42,7 @@ var searchData=
   ['sopointer',['SoPointer',['../classbdm_1_1SoPointer.html#ab997d08aa4b5950805532d8f58695d34',1,'bdm::SoPointer::SoPointer(SoUid uid)'],['../classbdm_1_1SoPointer.html#a2a4ebd6f4e7ac3c65a775d51d03895ad',1,'bdm::SoPointer::SoPointer()']]],
   ['sortandbalancenumanodes',['SortAndBalanceNumaNodes',['../classbdm_1_1ResourceManager.html#ab17beb97ee664ffeb79a1d839896b0ad',1,'bdm::ResourceManager']]],
   ['souidgenerator',['SoUidGenerator',['../classbdm_1_1SoUidGenerator.html#acbe16fa47b07701ddc78223cf8d63e80',1,'bdm::SoUidGenerator::SoUidGenerator(const SoUidGenerator &amp;)=delete'],['../classbdm_1_1SoUidGenerator.html#ad14bec92f52a9771d28f5cca2cd518bd',1,'bdm::SoUidGenerator::SoUidGenerator()']]],
+  ['spinlock',['Spinlock',['../classSpinlock.html#acf609d9c8948b20352396fadf1938f3e',1,'Spinlock']]],
   ['splitneuriteelement',['SplitNeuriteElement',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#acfd3ee9d43dac28ff8023b7d4bebeeb5',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['splitneuriteelementevent',['SplitNeuriteElementEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#a947821eb5c05887983bf6466fb3dea5c',1,'bdm::experimental::neuroscience::SplitNeuriteElementEvent']]],
   ['squaredeuclideandistance',['SquaredEuclideanDistance',['../classbdm_1_1Grid.html#a6341063318d620038edb0d72f3654f4e',1,'bdm::Grid']]],
