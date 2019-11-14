@@ -40,8 +40,7 @@ var searchData=
   ['clock',['Clock',['../classbdm_1_1Scheduler.html#a337a791a56b9163ebe9663e70eac3229',1,'bdm::Scheduler::Clock()'],['../classbdm_1_1Timing.html#a82e8b4b8b6f1f536924285fa166acfe7',1,'bdm::Timing::Clock()']]],
   ['command_5fline_5foptions_2ecc',['command_line_options.cc',['../command__line__options_8cc.html',1,'']]],
   ['command_5fline_5foptions_2eh',['command_line_options.h',['../command__line__options_8h.html',1,'']]],
-  ['commandlineoptions',['CommandLineOptions',['../classbdm_1_1CommandLineOptions.html#afc6b73aa0eb734c42d79987d30ebe404',1,'bdm::CommandLineOptions']]],
-  ['commandlineoptions',['CommandLineOptions',['../classbdm_1_1CommandLineOptions.html',1,'bdm']]],
+  ['commandlineoptions',['CommandLineOptions',['../structbdm_1_1CommandLineOptions.html',1,'bdm']]],
   ['compute',['Compute',['../classbdm_1_1VTuneOpWrapper.html#adfc2128da56aaa8620aebb3796a02c3a',1,'bdm::VTuneOpWrapper']]],
   ['computeforceofasphereonasphere',['ComputeForceOfASphereOnASphere',['../classbdm_1_1DefaultForce.html#a7609abf8d2c565b8cb50a3593e372c36',1,'bdm::DefaultForce']]],
   ['concat',['Concat',['../namespacebdm.html#a2fa839a2549004e92e23175955de8ae9',1,'bdm']]],
@@ -49,6 +48,7 @@ var searchData=
   ['concentration_5f',['concentration_',['../structbdm_1_1Param_1_1VisualizeDiffusion.html#a5474de1413cec9e65640347ec4704c95',1,'bdm::Param::VisualizeDiffusion']]],
   ['concentration_5fthreshold_5f',['concentration_threshold_',['../classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094',1,'bdm::DiffusionGrid']]],
   ['concentrations_5f',['concentrations_',['../structbdm_1_1RegulateGenes.html#a10fbfc91670d91ed4c04ee10521d9537',1,'bdm::RegulateGenes']]],
+  ['config_5ffile_5f',['config_file_',['../structbdm_1_1CommandLineOptions.html#a7c012a8dfff0e862ec37370835ccf7e5',1,'bdm::CommandLineOptions']]],
   ['const_5fiterator',['const_iterator',['../classbdm_1_1InlineVector.html#a29bb16388e50d7e412c20091e5c9bd59',1,'bdm::InlineVector::const_iterator()'],['../classbdm_1_1ParallelResizeVector.html#a352936f70b9c82d6444c64daca99243b',1,'bdm::ParallelResizeVector::const_iterator()']]],
   ['contains',['Contains',['../classbdm_1_1ResourceManager.html#a89aa07ab395d7af09af0e67412be4dcf',1,'bdm::ResourceManager']]],
   ['coprocess',['CoProcess',['../classbdm_1_1InSituPipeline.html#a302f4c27dddcf25a3c6bfdb10dc5fdd5',1,'bdm::InSituPipeline']]],
@@ -64,5 +64,8 @@ var searchData=
   ['createcellsrandom',['CreateCellsRandom',['../structbdm_1_1ModelInitializer.html#add68668791308815e954bf4f15bc90d8',1,'bdm::ModelInitializer']]],
   ['createpipeline',['CreatePipeline',['../classbdm_1_1InSituPipeline.html#a494270a972753169af88179d1ed9680e',1,'bdm::InSituPipeline']]],
   ['crossproduct',['CrossProduct',['../structbdm_1_1Math.html#abdcaeb1f47b85657a5cff0714bb5b8ec',1,'bdm::Math']]],
-  ['current_5fvalue_5f',['current_value_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#acd70d9e45d5b7e523fd36fd7a416aaf3',1,'bdm::Grid::Box::Iterator']]]
+  ['current_5fvalue_5f',['current_value_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#acd70d9e45d5b7e523fd36fd7a416aaf3',1,'bdm::Grid::Box::Iterator']]],
+  ['custom_5fclo_5fparser_2eh',['custom_clo_parser.h',['../custom__clo__parser_8h.html',1,'']]],
+  ['customcloparser',['CustomCLOParser',['../structbdm_1_1CustomCLOParser.html',1,'bdm']]],
+  ['customcloparser',['CustomCLOParser',['../structbdm_1_1CustomCLOParser.html#abbff4ac8fa6ab3edc2c486c860d2266b',1,'bdm::CustomCLOParser']]]
 ];

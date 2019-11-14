@@ -4,7 +4,6 @@ var searchData=
   ['scheduling_5fbatch_5fsize_5f',['scheduling_batch_size_',['../structbdm_1_1Param.html#adac07de04521ddd5e025cc00c5664851',1,'bdm::Param']]],
   ['show_5fsimulation_5fstep_5f',['show_simulation_step_',['../structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97',1,'bdm::Param']]],
   ['sigma_5f',['sigma_',['../structbdm_1_1GaussianBand.html#ad61feda0ad17554132adac6e23378d28',1,'bdm::GaussianBand']]],
-  ['sim_5fname_5f',['sim_name_',['../classbdm_1_1CommandLineOptions.html#a64f38a1e5d8bf8796e23706720c80103',1,'bdm::CommandLineOptions']]],
   ['sim_5fobjects_5f',['sim_objects_',['../classbdm_1_1ResourceManager.html#a35225455554669be879ee829d968b13f',1,'bdm::ResourceManager']]],
   ['simulation_5fmax_5fdisplacement_5f',['simulation_max_displacement_',['../structbdm_1_1Param.html#af493a386064dc32d43d19b8ebcd5e7cb',1,'bdm::Param']]],
   ['simulation_5fstep_5ffreq_5f',['simulation_step_freq_',['../structbdm_1_1Param.html#a63cbc816311cd6dddc85c35dd908ed68',1,'bdm::Param']]],
