@@ -4,7 +4,6 @@ var searchData=
   ['debug',['Debug',['../classbdm_1_1Log.html#adbcec0e2c0968d3aad5e1e91931d5e10',1,'bdm::Log']]],
   ['debugnuma',['DebugNuma',['../classbdm_1_1ResourceManager.html#a32bc1e93a5c7303719a2a02a709cdcb0',1,'bdm::ResourceManager']]],
   ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html#a2055df84fa6c354f566821e322275209',1,'bdm::DefaultForce::DefaultForce()'],['../classbdm_1_1DefaultForce.html#aadcab81e8fa9889c7793b32de656ecde',1,'bdm::DefaultForce::DefaultForce(const DefaultForce &amp;)=delete']]],
-  ['defaultsimulationoptionparser',['DefaultSimulationOptionParser',['../namespacebdm.html#a57c691b418c95e9566f3b899b7feb14b',1,'bdm']]],
   ['definesubstance',['DefineSubstance',['../structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2',1,'bdm::ModelInitializer']]],
   ['diffuseeuler',['DiffuseEuler',['../classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770',1,'bdm::DiffusionGrid']]],
   ['diffuseeulerleakingedge',['DiffuseEulerLeakingEdge',['../classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e',1,'bdm::DiffusionGrid']]],

@@ -409,8 +409,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-parameter" class="md-nav__link">
-    Command Line Parameter
+  <a href="#command-line-options" class="md-nav__link">
+    Command Line Options
   </a>
   
 </li>
@@ -586,8 +586,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-parameter" class="md-nav__link">
-    Command Line Parameter
+  <a href="#command-line-options" class="md-nav__link">
+    Command Line Options
   </a>
   
 </li>
@@ -623,13 +623,13 @@ Each module can define its own <a href="https://biodynamo.github.io/api/structbd
 <p>There are three ways to set the value of a parameter:</p>
 <ol>
 <li>TOML configuration file</li>
-<li>Command line parameter</li>
+<li>Command line argument</li>
 <li>Assignment in the source code.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Higher index takes precedence.  E.g. If you define the <code class="codehilite"><span class="n">backup_file</span></code> in the TOML file and the
-command line parameter, the command line version will be used.</p>
+command line arguments, the command line version will be used.</p>
 </div>
 <p>The documentation of each parameter contains a description of the
 parameter, its default value and how to set it in the TOML file (<a href="https://biodynamo.github.io/api/structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219">example</a>)</p>
@@ -652,27 +652,53 @@ in the working directory and add your configuration. You can find a sample below
 <span class="na">additional_data_members</span> <span class="o">=</span> <span class="s">[ &quot;density_&quot; ]</span>
 </pre></div>
 
-<h3 id="command-line-parameter">Command Line Parameter</h3>
+<h3 id="command-line-options">Command Line Options</h3>
 <p>Some parameter can be set as command line argument when you start the simulation.
 For a complete list execute the binary with the <code class="codehilite"><span class="c1">--help</span></code> switch. e.g. <code class="codehilite"><span class="p">.</span><span class="o">/</span><span class="n">cell_division</span> <span class="c1">--help</span></code>.</p>
 <p>Sample output:
-<div class="codehilite"><pre><span></span><span class="nv">Info</span>: <span class="nv">Initialize</span> <span class="nv">new</span> <span class="nv">simulation</span> <span class="nv">using</span> <span class="nv">BioDynaMo</span> <span class="nv">v0</span>.<span class="mi">1</span>.<span class="mi">0</span><span class="o">-</span><span class="mi">105</span><span class="o">-</span><span class="nv">g74f6a24</span>
+<div class="codehilite"><pre><span></span> <span class="o">--</span> <span class="nv">BioDynaMo</span> <span class="nv">command</span> <span class="nv">line</span> <span class="nv">options</span>
 
-<span class="o">-</span><span class="nv">v</span>, <span class="o">--</span><span class="nv">verbose</span>
-    <span class="nv">Verbose</span> <span class="nv">mode</span>. <span class="nv">Causes</span> <span class="nv">BioDynaMo</span> <span class="nv">to</span> <span class="nv">print</span> <span class="nv">debugging</span> <span class="nv">messages</span>.
-    <span class="nv">Multiple</span> <span class="o">-</span><span class="nv">v</span> <span class="nv">options</span> <span class="nv">increases</span> <span class="nv">the</span> <span class="nv">verbosity</span>. <span class="nv">The</span> <span class="nv">maximum</span> <span class="nv">is</span> <span class="mi">3</span>.
+<span class="nv">Usage</span>:
+  .<span class="o">/</span><span class="nv">cell_division</span> [<span class="nv">OPTION</span>...]
 
-<span class="o">-</span><span class="nv">r</span>, <span class="o">--</span><span class="nv">restore</span> <span class="nv">filename</span>
-    <span class="nv">Restores</span> <span class="nv">the</span> <span class="nv">simulation</span> <span class="nv">from</span> <span class="nv">the</span> <span class="nv">checkpoint</span> <span class="nv">found</span> <span class="nv">in</span> <span class="nv">filename</span> <span class="nv">and</span>
-    <span class="nv">continues</span> <span class="nv">simulation</span> <span class="nv">from</span> <span class="nv">that</span> <span class="nv">point</span>.
+ <span class="nv">Simulation</span> <span class="nv">options</span>:
+  <span class="o">-</span><span class="nv">n</span>, <span class="o">--</span><span class="nv">num</span><span class="o">-</span><span class="nv">cells</span> <span class="nv">arg</span>  <span class="nv">The</span> <span class="nv">total</span> <span class="nv">number</span> <span class="nv">of</span> <span class="nv">cells</span> <span class="ss">(</span><span class="nv">default</span>: <span class="mi">10</span><span class="ss">)</span>
 
-<span class="o">-</span><span class="nv">b</span>, <span class="o">--</span><span class="nv">backup</span> <span class="nv">filename</span>
-    <span class="nv">Periodically</span> <span class="nv">create</span> <span class="nv">full</span> <span class="nv">simulation</span> <span class="nv">backup</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">specified</span> <span class="nv">file</span>
-    <span class="nv">NOTA</span> <span class="nv">BENE</span>: <span class="nv">File</span> <span class="nv">will</span> <span class="nv">be</span> <span class="nv">overriden</span> <span class="k">if</span> <span class="nv">it</span> <span class="nv">exists</span>
-
-<span class="o">--</span><span class="nv">help</span>
-    <span class="nv">Print</span> <span class="nv">usage</span> <span class="nv">and</span> <span class="k">exit</span>.
+ <span class="nv">Core</span> <span class="nv">options</span>:
+  <span class="o">-</span><span class="nv">h</span>, <span class="o">--</span><span class="nv">help</span>          <span class="nv">Print</span> <span class="nv">this</span> <span class="nv">help</span> <span class="nv">message</span>.
+      <span class="o">--</span><span class="nv">version</span>       <span class="nv">Print</span> <span class="nv">version</span> <span class="nv">number</span> <span class="nv">of</span> <span class="nv">BioDynaMo</span>.
+      <span class="o">--</span><span class="nv">opencl</span>        <span class="nv">Enable</span> <span class="nv">GPU</span> <span class="nv">acceleration</span> <span class="nv">through</span> <span class="nv">OpenCL</span>.
+      <span class="o">--</span><span class="nv">cuda</span>          <span class="nv">Enable</span> <span class="nv">GPU</span> <span class="nv">acceleration</span> <span class="nv">through</span> <span class="nv">CUDA</span>.
+  <span class="o">-</span><span class="nv">v</span>, <span class="o">--</span><span class="nv">verbose</span>       <span class="nv">Verbose</span> <span class="nv">mode</span>. <span class="nv">Causes</span> <span class="nv">BioDynaMo</span> <span class="nv">to</span> <span class="nv">print</span> <span class="nv">debugging</span>
+                      <span class="nv">messages</span>. <span class="nv">Multiple</span> <span class="o">-</span><span class="nv">v</span> <span class="nv">options</span> <span class="nv">increases</span> <span class="nv">the</span> <span class="nv">verbosity</span>. <span class="nv">The</span>
+                      <span class="nv">maximum</span> <span class="nv">is</span> <span class="mi">3</span>.
+  <span class="o">-</span><span class="nv">r</span>, <span class="o">--</span><span class="nv">restore</span> <span class="nv">FILE</span>  <span class="nv">Restores</span> <span class="nv">the</span> <span class="nv">simulation</span> <span class="nv">from</span> <span class="nv">the</span> <span class="nv">checkpoint</span> <span class="nv">found</span> <span class="nv">in</span>
+                      <span class="nv">FILE</span> <span class="nv">and</span> <span class="nv">continues</span> <span class="nv">simulation</span> <span class="nv">from</span> <span class="nv">that</span> <span class="nv">point</span>. <span class="ss">(</span><span class="nv">default</span>: <span class="ss">)</span>
+  <span class="o">-</span><span class="nv">b</span>, <span class="o">--</span><span class="nv">backup</span> <span class="nv">FILE</span>   <span class="nv">Periodically</span> <span class="nv">create</span> <span class="nv">full</span> <span class="nv">simulation</span> <span class="nv">backup</span> <span class="nv">to</span> <span class="nv">the</span>
+                      <span class="nv">specified</span> <span class="nv">file</span>. <span class="nv">NOTA</span> <span class="nv">BENE</span>: <span class="nv">File</span> <span class="nv">will</span> <span class="nv">be</span> <span class="nv">overriden</span> <span class="k">if</span> <span class="nv">it</span>
+                      <span class="nv">exists</span>. <span class="ss">(</span><span class="nv">default</span>: <span class="ss">)</span>
+  <span class="o">-</span><span class="nv">c</span>, <span class="o">--</span><span class="nv">config</span> <span class="nv">FILE</span>   <span class="nv">The</span> <span class="nv">TOML</span> <span class="nv">configuration</span> <span class="nv">that</span> <span class="nv">should</span> <span class="nv">be</span> <span class="nv">used</span>. <span class="ss">(</span><span class="nv">default</span>: <span class="ss">)</span>
 </pre></div></p>
+<p>You can append your own command line options as following (e.g. <code class="codehilite"><span class="n">num</span><span class="o">-</span><span class="n">cells</span></code> as
+show in the sample above):</p>
+<div class="codehilite"><pre><span></span><span class="n">auto</span> <span class="n">opts</span> <span class="o">=</span> <span class="n">CommandLineOptions</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+<span class="n">opts</span><span class="p">.</span><span class="n">AddOption</span><span class="o">&lt;</span><span class="n">uint64_t</span><span class="o">&gt;</span><span class="p">(</span><span class="ss">&quot;n, num-cells&quot;</span><span class="p">,</span> <span class="ss">&quot;The total number of cells&quot;</span><span class="p">,</span> <span class="ss">&quot;10&quot;</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">You</span> <span class="n">will</span> <span class="n">need</span> <span class="k">to</span> <span class="n">pass</span> <span class="n">this</span> <span class="k">object</span> <span class="k">to</span> <span class="n">the</span> <span class="n">main</span> <span class="n">Simulation</span> <span class="k">object</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+<span class="n">Simulation</span> <span class="n">simulation</span><span class="p">(</span><span class="n">opts</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="k">To</span> <span class="n">retrieve</span> <span class="n">the</span> <span class="k">values</span> <span class="k">from</span> <span class="n">the</span> <span class="n">command</span> <span class="n">line</span> <span class="k">in</span> <span class="n">your</span> <span class="n">simulation</span> <span class="n">code</span>
+<span class="n">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">opts</span><span class="p">.</span><span class="n">Parse</span><span class="p">();</span>
+<span class="n">uint64_t</span> <span class="n">num_cells</span> <span class="o">=</span> <span class="n">parser</span><span class="p">.</span><span class="k">Get</span><span class="o">&lt;</span><span class="n">uint64_t</span><span class="o">&gt;</span><span class="p">(</span><span class="ss">&quot;num-cells&quot;</span><span class="p">);</span>
+</pre></div>
+
+<p>The <code class="codehilite"><span class="n">AddOption</span></code> function can be broken down as follows: The template parameter
+(<code class="codehilite"><span class="n">uint64_t</span></code>) specifies what value type your option should be. The first fucntion
+parameter is for the flag abbreviation (in this case -n and --num-cells) The
+second parameter is the name of your command line option The third parameter is
+the description (as shown in the help dialogue) The fourth parameter is the
+default value of the command line option (i.e. when you do not specify the
+flag).</p>
 <h3 id="assignment-in-the-source-code">Assignment in the Source Code</h3>
 <p>You can also set a runtime parameter in the source code. You have to recompile
 your simulation though.</p>
