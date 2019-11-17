@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../images/bdm_logo.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
     
     
       
@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -51,7 +51,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
@@ -912,7 +912,7 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <li><strong>libnuma-dev</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel);</li>
 <li><strong>libtbb-dev</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
 <li><strong>libpthread-stubs0-dev</strong>: Development files for managing threads;</li>
-<li><strong>python3</strong>: Python 3 Interpreter;</li>
+<li><strong>python-pip</strong>: Python 2 Package Manager.</li>
 <li><strong>python3-pip</strong>: Python 3 Package Manager.</li>
 </ul>
 <h3 id="optional-packages">Optional Packages</h3>
@@ -931,12 +931,13 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <h3 id="installation">Installation</h3>
 <h4 id="required-packages_1">Required Packages</h4>
 <div class="codehilite"><pre><span></span>sudo apt-get install -y wget cmake make gcc g++ <span class="se">\</span>
-   libopenmpi-dev libomp-dev libnuma-dev libtbb-dev <span class="se">\</span>
-   libpthread-stubs0-dev python3 python3-pip
+libopenmpi-dev libomp-dev libnuma-dev libtbb-dev freeglut3-dev <span class="se">\</span>
+libpthread-stubs0-dev python-pip python3-pip
 </pre></div>
 
 <h4 id="optional-packages_1">Optional Packages</h4>
-<div class="codehilite"><pre><span></span>pip3 install --user mkdocs mkdocs-material
+<div class="codehilite"><pre><span></span>pip install --upgrade pip
+<span class="nv">$HOME</span>/.local/bin/pip2 install --user mkdocs mkdocs-material jupyter metakernel
 sudo apt-get install -y freeglut3-dev valgrind <span class="se">\</span>
   clang-3.9 clang-format-3.9 clang-tidy-3.9 <span class="se">\</span>
   doxygen graphviz lcov gcovr <span class="se">\</span>
@@ -956,7 +957,7 @@ sudo apt-get install -y freeglut3-dev valgrind <span class="se">\</span>
 <li><strong>numactl-devel</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel);</li>
 <li><strong>tbb-devel</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
 <li><strong>openmpi3-devel</strong>: Development files for OpenMP (API for multiprocessor programming);</li>
-<li><strong>rh-python36</strong>, <strong>python</strong> and <strong>python-pip</strong>: Python 3 Interpreter and Package Manager.</li>
+<li><strong>rh-python36</strong>, <strong>python27</strong> and <strong>python-pip</strong>: Python 2 and 3 Interpreter and Package Manager.</li>
 </ul>
 <h3 id="optional-packages_2">Optional Packages</h3>
 <ul>
@@ -977,12 +978,14 @@ sudo apt-get install -y freeglut3-dev valgrind <span class="se">\</span>
 sudo yum -y install centos-release-scl epel-release
 sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum -y install wget cmake3 libXt-devel libXext-devel <span class="se">\</span>
-   devtoolset-7-gcc* numactl-devel tbb-devel openmpi3-devel <span class="se">\</span>
-   rh-python36 python python-pip
+  devtoolset-7-gcc* numactl-devel <span class="se">\</span>
+  tbb-devel openmpi3-devel freeglut-devel <span class="se">\</span>
+  python27 python36 python-pip git
 </pre></div>
 
 <h4 id="optional-packages_3">Optional Packages</h4>
-<div class="codehilite"><pre><span></span>pip install --user mkdocs mkdocs-material
+<div class="codehilite"><pre><span></span>sudo pip install --upgrade pip
+pip2 install --user mkdocs mkdocs-material nbformat jupyter metakernel
 sudo yum -y install lcov gcovr llvm-toolset-7 <span class="se">\</span>
    llvm-toolset-7-clang-tools-extra doxygen graphviz valgrind freeglut-devel
    <span class="c1"># SBML integration</span>
@@ -1038,12 +1041,12 @@ brew upgrade python cmake <span class="o">||</span> <span class="nb">true</span>
 
 <h4 id="optional-packages_5">Optional Packages</h4>
 <p>Using HomeBrew:</p>
-<div class="codehilite"><pre><span></span>pip install --user mkdocs mkdocs-material
+<div class="codehilite"><pre><span></span>pip2 install --user mkdocs mkdocs-material nbformat jupyter metakernel
 brew install doxygen graphviz lcov gcovr <span class="o">||</span> <span class="nb">true</span>
 </pre></div>
 
 <p>Using Fink:</p>
-<div class="codehilite"><pre><span></span>pip install --user mkdocs mkdocs-material
+<div class="codehilite"><pre><span></span>pip2 install --user mkdocs mkdocs-material nbformat jupyter metakernel
 sudo fink install doxygen graphviz
 </pre></div>
                 
@@ -1128,7 +1131,7 @@ sudo fink install doxygen graphviz
       
     </div>
     
-      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../assets/javascripts/application.a8b5e56f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       

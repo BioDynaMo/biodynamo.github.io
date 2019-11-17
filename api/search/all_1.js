@@ -15,7 +15,7 @@ var searchData=
   ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ade13c2ff75365cb4271f3746f6e20905',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#aeacd6575c8666c9882b875f4fd862c96',1,'bdm::Grid::Box']]],
   ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213',1,'bdm::Scheduler']]],
-  ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#a3189e59940c894540665626e32a3d072',1,'bdm::CommandLineOptions::AddOption(string group=&quot;&quot;)'],['../classbdm_1_1CommandLineOptions.html#afa14d1eff5e4d11d388c452031b2ae50',1,'bdm::CommandLineOptions::AddOption(string opt, string description, string def, string group=&quot;Simulation&quot;)']]],
+  ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#adb789cac5481816ed0ecdef6fcca2f17',1,'bdm::CommandLineOptions::AddOption(std::string group=&quot;Simulation&quot;)'],['../classbdm_1_1CommandLineOptions.html#aeb88d5d9bb969b3b3f2ad8994d0691ee',1,'bdm::CommandLineOptions::AddOption(std::string opt, std::string def, std::string description=&quot;&quot;, std::string group=&quot;Simulation&quot;)']]],
   ['addsphere',['AddSphere',['../classbdm_1_1RootAdaptor.html#aeb7442dbc1e83198cfe8b44ee6f3fe75',1,'bdm::RootAdaptor']]],
   ['adherence_5f',['adherence_',['../classbdm_1_1Cell.html#ab8e48d82040233041774f9f6c2485eb3',1,'bdm::Cell::adherence_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a822217a94249b05772010696d88b05d3',1,'bdm::experimental::neuroscience::NeuriteElement::adherence_()']]],
   ['adjacency',['Adjacency',['../classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01',1,'bdm::Grid']]],

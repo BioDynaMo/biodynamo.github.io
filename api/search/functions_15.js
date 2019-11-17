@@ -4,6 +4,7 @@ var searchData=
   ['_7eboundspace',['~BoundSpace',['../classbdm_1_1BoundSpace.html#a838a24739452448559965c7b0e1dc842',1,'bdm::BoundSpace']]],
   ['_7ecell',['~Cell',['../classbdm_1_1Cell.html#ac256d9a0ecbcd57bcde3dc8b498c2cf7',1,'bdm::Cell']]],
   ['_7ecelldivisionevent',['~CellDivisionEvent',['../structbdm_1_1CellDivisionEvent.html#ab39f8e6802db41b0aa1e2e4a7de70add',1,'bdm::CellDivisionEvent']]],
+  ['_7ecommandlineoptions',['~CommandLineOptions',['../classbdm_1_1CommandLineOptions.html#a7b7e07ce4c66922d9f5d6f9c43467f8e',1,'bdm::CommandLineOptions']]],
   ['_7edefaultforce',['~DefaultForce',['../classbdm_1_1DefaultForce.html#aad27c4a1adbaf42aa49d9eff6c982404',1,'bdm::DefaultForce']]],
   ['_7ediffusiongrid',['~DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#a25d8545acb23c2e71e65ee0dae64d969',1,'bdm::DiffusionGrid']]],
   ['_7ediffusionop',['~DiffusionOp',['../classbdm_1_1DiffusionOp.html#a3a508b5361e3e9e995c0f7eeb566d71e',1,'bdm::DiffusionOp']]],

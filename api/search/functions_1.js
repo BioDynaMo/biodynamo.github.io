@@ -13,7 +13,7 @@ var searchData=
   ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ade13c2ff75365cb4271f3746f6e20905',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#aeacd6575c8666c9882b875f4fd862c96',1,'bdm::Grid::Box']]],
   ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213',1,'bdm::Scheduler']]],
-  ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#a3189e59940c894540665626e32a3d072',1,'bdm::CommandLineOptions::AddOption(string group=&quot;&quot;)'],['../classbdm_1_1CommandLineOptions.html#afa14d1eff5e4d11d388c452031b2ae50',1,'bdm::CommandLineOptions::AddOption(string opt, string description, string def, string group=&quot;Simulation&quot;)']]],
+  ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#adb789cac5481816ed0ecdef6fcca2f17',1,'bdm::CommandLineOptions::AddOption(std::string group=&quot;Simulation&quot;)'],['../classbdm_1_1CommandLineOptions.html#aeb88d5d9bb969b3b3f2ad8994d0691ee',1,'bdm::CommandLineOptions::AddOption(std::string opt, std::string def, std::string description=&quot;&quot;, std::string group=&quot;Simulation&quot;)']]],
   ['addsphere',['AddSphere',['../classbdm_1_1RootAdaptor.html#aeb7442dbc1e83198cfe8b44ee6f3fe75',1,'bdm::RootAdaptor']]],
   ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#a357af2bdea31bf521ee128bbde6b1fef',1,'bdm::Math']]],
   ['apply',['Apply',['../namespacebdm_1_1detail.html#a99bd062e7d4d505f3816656b9f6ee917',1,'bdm::detail::Apply()'],['../namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11',1,'bdm::Apply()']]],
