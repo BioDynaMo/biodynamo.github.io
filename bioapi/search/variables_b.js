@@ -1,10 +1,15 @@
 var searchData=
 [
   ['mass_5flocation_5f',['mass_location_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aaff1bfd2639355a3115aa0f114b335c0',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['mat_5fempty_5fspace_5f',['mat_empty_space_',['../classbdm_1_1RootAdaptor.html#a84aa3d20e8e2cf5ccaf0b839b7c1bdba',1,'bdm::RootAdaptor']]],
+  ['mat_5fsolid_5f',['mat_solid_',['../classbdm_1_1RootAdaptor.html#ac9c2148347034c5e5cfd2db9e693fc4b',1,'bdm::RootAdaptor']]],
   ['max_5f',['max_',['../structbdm_1_1Uniform.html#a388fe654bd06372699f13f5d42cc9cf1',1,'bdm::Uniform']]],
   ['max_5fbound_5f',['max_bound_',['../structbdm_1_1Param.html#a856e1442fb63e05bc6c2956051dd6848',1,'bdm::Param']]],
   ['max_5fthreads_5f',['max_threads_',['../classbdm_1_1ThreadInfo.html#aed526534a4a5d80c63e87461ad5e124f',1,'bdm::ThreadInfo']]],
+  ['max_5fviz_5fnodes_5f',['max_viz_nodes_',['../classbdm_1_1RootAdaptor.html#aa7c9745b88f7c5386ee401a42a11d549',1,'bdm::RootAdaptor']]],
   ['mean_5f',['mean_',['../structbdm_1_1GaussianBand.html#aeed0c5a31ad80f52c330dfe3354e5286',1,'bdm::GaussianBand']]],
+  ['med_5fempty_5fspace_5f',['med_empty_space_',['../classbdm_1_1RootAdaptor.html#a7fd2686a6766d0cdb269312b4159ca20',1,'bdm::RootAdaptor']]],
+  ['med_5fsolid_5f',['med_solid_',['../classbdm_1_1RootAdaptor.html#aad2682aaf7644cd068b606059a8ae4ea',1,'bdm::RootAdaptor']]],
   ['min_5f',['min_',['../structbdm_1_1Uniform.html#ab65bfc034aa51ab2b75226be85ff3ade',1,'bdm::Uniform']]],
   ['min_5fbound_5f',['min_bound_',['../structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f',1,'bdm::Param']]],
   ['modules_5f',['modules_',['../structbdm_1_1Param.html#ab75f07e3a6618b90311f07d2ec1d33dc',1,'bdm::Param']]],

@@ -22,6 +22,7 @@ var searchData=
   ['restoreenabled',['RestoreEnabled',['../classbdm_1_1SimulationBackup.html#a883be6288cae9cf54f3a92637a862020',1,'bdm::SimulationBackup']]],
   ['restoreuidsomap',['RestoreUidSoMap',['../classbdm_1_1ResourceManager.html#a32d3ccd2719c943bbeba76315f8237cd',1,'bdm::ResourceManager']]],
   ['retractterminalend',['RetractTerminalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a635d05007807af4f7b271faad9c4d4d3',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['rootadaptor',['RootAdaptor',['../classbdm_1_1RootAdaptor.html#aeb30d6c22b683c6c92b9401fed0134e1',1,'bdm::RootAdaptor']]],
   ['rotaroundaxis',['RotAroundAxis',['../structbdm_1_1Math.html#a0bb76d5981eba8f596ac2ab8cbae2bb7',1,'bdm::Math']]],
   ['roundoffgriddimensions',['RoundOffGridDimensions',['../classbdm_1_1Grid.html#a6d79edfe4cf403d45463eb40f2cae3b7',1,'bdm::Grid']]],
   ['run',['Run',['../structbdm_1_1BaseBiologyModule.html#ac93e1cbecc9b902fb8fb247db1f93122',1,'bdm::BaseBiologyModule::Run()'],['../structbdm_1_1GrowDivide.html#a3e9e710d9c082f0c0de73512c05b7d06',1,'bdm::GrowDivide::Run()'],['../structbdm_1_1RegulateGenes.html#a47125a2ca8927e0ec8a079799381ffd4',1,'bdm::RegulateGenes::Run()']]],

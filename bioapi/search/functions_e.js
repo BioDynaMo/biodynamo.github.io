@@ -3,6 +3,7 @@ var searchData=
   ['parallelresizevector',['ParallelResizeVector',['../classbdm_1_1ParallelResizeVector.html#a6f286dac653ef276a7ceabb12e4880a4',1,'bdm::ParallelResizeVector::ParallelResizeVector()'],['../classbdm_1_1ParallelResizeVector.html#a753e1b4cd91455e56e9ebab127d46e4c',1,'bdm::ParallelResizeVector::ParallelResizeVector(std::initializer_list&lt; T &gt; init)'],['../classbdm_1_1ParallelResizeVector.html#a835a2ed1f08cc7aab143ce7c3809b0a1',1,'bdm::ParallelResizeVector::ParallelResizeVector(const ParallelResizeVector &amp;other)']]],
   ['param',['Param',['../structbdm_1_1Param.html#a13d24f045335b7ac62a091f56c6fe166',1,'bdm::Param']]],
   ['parameterscheck',['ParametersCheck',['../classbdm_1_1DiffusionGrid.html#ae629fc95a257bfd8438d5de2224c2540',1,'bdm::DiffusionGrid']]],
+  ['parse',['Parse',['../classbdm_1_1CommandLineOptions.html#a664fd8fbdcea673488c175d4155e864f',1,'bdm::CommandLineOptions']]],
   ['perp3',['Perp3',['../structbdm_1_1Math.html#ad9439a4fcc5acbc6b378ed45b26786f8',1,'bdm::Math']]],
   ['poissonband',['PoissonBand',['../structbdm_1_1PoissonBand.html#acdc5ce0e2526341d990b1326a69160d9',1,'bdm::PoissonBand']]],
   ['print',['Print',['../debug_8h.html#af766b8d70deb42e9e0893916bb5501b2',1,'debug.h']]],

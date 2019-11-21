@@ -6,5 +6,6 @@ var searchData=
   ['regulate_5fgenes_2eh',['regulate_genes.h',['../regulate__genes_8h.html',1,'']]],
   ['resource_5fmanager_2ecc',['resource_manager.cc',['../resource__manager_8cc.html',1,'']]],
   ['resource_5fmanager_2eh',['resource_manager.h',['../resource__manager_8h.html',1,'']]],
-  ['root_2eh',['root.h',['../root_8h.html',1,'']]]
+  ['root_2eh',['root.h',['../root_8h.html',1,'']]],
+  ['root_5fadaptor_2eh',['root_adaptor.h',['../root__adaptor_8h.html',1,'']]]
 ];

@@ -2,6 +2,9 @@ var searchData=
 [
   ['activate',['Activate',['../classbdm_1_1Simulation.html#a5410ed6a61259720b51e047f92215856',1,'bdm::Simulation']]],
   ['addbiologymodule',['AddBiologyModule',['../classbdm_1_1SimObject.html#a9e07e6deb0adebaedb7abb21ba875fd7',1,'bdm::SimObject']]],
+  ['addbranch',['AddBranch',['../classbdm_1_1RootAdaptor.html#a0cbd565db861caf34fa802491ccf7dd2',1,'bdm::RootAdaptor']]],
+  ['addcoreoptions',['AddCoreOptions',['../classbdm_1_1CommandLineOptions.html#a9f66951bd5306e40fa945dd043f7b600',1,'bdm::CommandLineOptions']]],
+  ['addcylinder',['AddCylinder',['../classbdm_1_1RootAdaptor.html#add7a6ee0df333861cad4ce126b63c565',1,'bdm::RootAdaptor']]],
   ['adddescription',['AddDescription',['../classbdm_1_1TimingAggregator.html#a5ec4595643e3d7574029151bc3acab92',1,'bdm::TimingAggregator']]],
   ['adddiffusiongrid',['AddDiffusionGrid',['../classbdm_1_1ResourceManager.html#ac6c11141f5285480d234f782658f9550',1,'bdm::ResourceManager']]],
   ['addentry',['AddEntry',['../classbdm_1_1TimingAggregator.html#ac699a9494f65bb899ac03901c5f9a173',1,'bdm::TimingAggregator']]],
@@ -10,6 +13,8 @@ var searchData=
   ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ade13c2ff75365cb4271f3746f6e20905',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#aeacd6575c8666c9882b875f4fd862c96',1,'bdm::Grid::Box']]],
   ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213',1,'bdm::Scheduler']]],
+  ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#adb789cac5481816ed0ecdef6fcca2f17',1,'bdm::CommandLineOptions::AddOption(std::string group=&quot;Simulation&quot;)'],['../classbdm_1_1CommandLineOptions.html#aeb88d5d9bb969b3b3f2ad8994d0691ee',1,'bdm::CommandLineOptions::AddOption(std::string opt, std::string def, std::string description=&quot;&quot;, std::string group=&quot;Simulation&quot;)']]],
+  ['addsphere',['AddSphere',['../classbdm_1_1RootAdaptor.html#aeb7442dbc1e83198cfe8b44ee6f3fe75',1,'bdm::RootAdaptor']]],
   ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#a357af2bdea31bf521ee128bbde6b1fef',1,'bdm::Math']]],
   ['apply',['Apply',['../namespacebdm_1_1detail.html#a99bd062e7d4d505f3816656b9f6ee917',1,'bdm::detail::Apply()'],['../namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11',1,'bdm::Apply()']]],
   ['applyboundingbox',['ApplyBoundingBox',['../namespacebdm.html#a45cc3ed5a6b31cb8863f4a68ce88c7e4',1,'bdm']]],

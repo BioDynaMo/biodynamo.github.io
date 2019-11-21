@@ -3,6 +3,8 @@ var searchData=
   ['macros_2eh',['macros.h',['../macros_8h.html',1,'']]],
   ['make_5fstd_5fvector',['make_std_vector',['../classbdm_1_1InlineVector.html#ae4ee6e59b5b42b7d4b43d90af65ce418',1,'bdm::InlineVector']]],
   ['mass_5flocation_5f',['mass_location_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aaff1bfd2639355a3115aa0f114b335c0',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['mat_5fempty_5fspace_5f',['mat_empty_space_',['../classbdm_1_1RootAdaptor.html#a84aa3d20e8e2cf5ccaf0b839b7c1bdba',1,'bdm::RootAdaptor']]],
+  ['mat_5fsolid_5f',['mat_solid_',['../classbdm_1_1RootAdaptor.html#ac9c2148347034c5e5cfd2db9e693fc4b',1,'bdm::RootAdaptor']]],
   ['math',['Math',['../structbdm_1_1Math.html',1,'bdm']]],
   ['math_2eh',['math.h',['../math_8h.html',1,'']]],
   ['math_5farray_2eh',['math_array.h',['../math__array_8h.html',1,'']]],
@@ -13,7 +15,10 @@ var searchData=
   ['max_5f',['max_',['../structbdm_1_1Uniform.html#a388fe654bd06372699f13f5d42cc9cf1',1,'bdm::Uniform']]],
   ['max_5fbound_5f',['max_bound_',['../structbdm_1_1Param.html#a856e1442fb63e05bc6c2956051dd6848',1,'bdm::Param']]],
   ['max_5fthreads_5f',['max_threads_',['../classbdm_1_1ThreadInfo.html#aed526534a4a5d80c63e87461ad5e124f',1,'bdm::ThreadInfo']]],
+  ['max_5fviz_5fnodes_5f',['max_viz_nodes_',['../classbdm_1_1RootAdaptor.html#aa7c9745b88f7c5386ee401a42a11d549',1,'bdm::RootAdaptor']]],
   ['mean_5f',['mean_',['../structbdm_1_1GaussianBand.html#aeed0c5a31ad80f52c330dfe3354e5286',1,'bdm::GaussianBand']]],
+  ['med_5fempty_5fspace_5f',['med_empty_space_',['../classbdm_1_1RootAdaptor.html#a7fd2686a6766d0cdb269312b4159ca20',1,'bdm::RootAdaptor']]],
+  ['med_5fsolid_5f',['med_solid_',['../classbdm_1_1RootAdaptor.html#aad2682aaf7644cd068b606059a8ae4ea',1,'bdm::RootAdaptor']]],
   ['min_5f',['min_',['../structbdm_1_1Uniform.html#ab65bfc034aa51ab2b75226be85ff3ade',1,'bdm::Uniform']]],
   ['min_5fbound_5f',['min_bound_',['../structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f',1,'bdm::Param']]],
   ['model_5finitializer_2eh',['model_initializer.h',['../model__initializer_8h.html',1,'']]],
@@ -34,6 +39,6 @@ var searchData=
   ['mutex_5fbuilder_5f',['mutex_builder_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ae2eddd8d9b03d55f93a0c66d347aaebf',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutex_5findices_5f',['mutex_indices_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0eceaf66add590b75a6d3d2bfcde309f',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutexes_5f',['mutexes_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder.html#ab0ad535099ad9f2d586e172d1505e4fa',1,'bdm::Grid::NeighborMutexBuilder']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]]
+  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]],
+  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder']]]
 ];
