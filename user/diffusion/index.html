@@ -1,0 +1,918 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/bdm_logo.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>Diffusion - BioDynaMo User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4caf50">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#copy-the-demo-code" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="BioDynaMo User Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../images/bdm_logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              BioDynaMo User Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Diffusion
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    BioDynaMo/biodynamo
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="BioDynaMo User Documentation" class="md-nav__button md-logo">
+      
+        <img src="../images/bdm_logo.png" width="48" height="48">
+      
+    </a>
+    BioDynaMo User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/BioDynaMo/biodynamo" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    BioDynaMo/biodynamo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../prerequisites/" title="Prerequisites" class="md-nav__link">
+      Prerequisites
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../first_steps/" title="First Steps" class="md-nav__link">
+      First Steps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../notebooks/" title="Notebooks" class="md-nav__link">
+      Notebooks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hello_world/" title="Hello World" class="md-nav__link">
+      Hello World
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../visualization/" title="Visualization" class="md-nav__link">
+      Visualization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Diffusion
+      </label>
+    
+    <a href="./" title="Diffusion" class="md-nav__link md-nav__link--active">
+      Diffusion
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-demo-code" class="md-nav__link">
+    Copy the demo code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspect-the-code" class="md-nav__link">
+    Inspect the code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-substance-list" class="md-nav__link">
+    1. Substance list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-biology-modules" class="md-nav__link">
+    2. Biology modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-initial-model" class="md-nav__link">
+    3. Initial model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation-parameters" class="md-nav__link">
+    Simulation Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-and-run-the-simulation" class="md-nav__link">
+    Build and run the simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualize-the-simulation" class="md-nav__link">
+    Visualize the simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diffusion-parameter-constraints" class="md-nav__link">
+    Diffusion parameter constraints
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tumor_concept/" title="Tumor Concept" class="md-nav__link">
+      Tumor Concept
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../parameter/" title="Parameter" class="md-nav__link">
+      Parameter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../event/" title="Event" class="md-nav__link">
+      Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../math_array/" title="MathArray" class="md-nav__link">
+      MathArray
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../operation/" title="Operation" class="md-nav__link">
+      Operation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../substance_initializers/" title="Substance Initialization" class="md-nav__link">
+      Substance Initialization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gpu_acceleration/" title="GPU Acceleration" class="md-nav__link">
+      GPU Acceleration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../opengl_issues/" title="OpenGL" class="md-nav__link">
+      OpenGL
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contact/" title="Contact" class="md-nav__link">
+      Contact
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-demo-code" class="md-nav__link">
+    Copy the demo code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspect-the-code" class="md-nav__link">
+    Inspect the code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-substance-list" class="md-nav__link">
+    1. Substance list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-biology-modules" class="md-nav__link">
+    2. Biology modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-initial-model" class="md-nav__link">
+    3. Initial model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation-parameters" class="md-nav__link">
+    Simulation Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-and-run-the-simulation" class="md-nav__link">
+    Build and run the simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualize-the-simulation" class="md-nav__link">
+    Visualize the simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diffusion-parameter-constraints" class="md-nav__link">
+    Diffusion parameter constraints
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Diffusion</h1>
+                
+                <p>One of BioDynaMo's built-in biological processes is extracellular diffusion.
+It is the process of extracellular substances diffusing through space. The constants
+that govern the diffusion process can be set by the user. Let's go through an
+example where diffusion plays a role.</p>
+<h3 id="copy-the-demo-code">Copy the demo code</h3>
+<p><code class="codehilite"><span class="n">diffusion</span></code> is one of many installed demos in BioDynaMo. It can be copied out
+with <code class="codehilite"><span class="n">biodynamo</span> <span class="n">demo</span></code>.</p>
+<div class="codehilite"><pre><span></span>biodynamo demo diffusion .
+</pre></div>
+
+<h3 id="inspect-the-code">Inspect the code</h3>
+<p>Go into the <code class="codehilite"><span class="n">diffusion</span></code> directory and open the source file <code class="codehilite"><span class="n">src</span><span class="o">/</span><span class="n">diffusion_biology_modules</span><span class="p">.</span><span class="n">h</span></code> in your favorite editor.
+We can note the following things from its content:</p>
+<h4 id="1-substance-list">1. Substance list</h4>
+<div class="codehilite"><pre><span></span><span class="k">enum</span> <span class="n">Substances</span> <span class="p">{</span> <span class="n">kKalium</span> <span class="p">};</span>
+</pre></div>
+
+<p>The extracellular substances that will be used in the simulation are listed in
+an <code class="codehilite"><span class="k">enum</span></code> data structure. In this case it is just a single substance. According to our C++
+coding style we will prepend the substance's name with the letter "k".</p>
+<h4 id="2-biology-modules">2. Biology modules</h4>
+<p>In the same file you can find the definition of the biology modules <code class="codehilite"><span class="n">Chemotaxis</span></code>
+and <code class="codehilite"><span class="n">KaliumSecretion</span></code>. These are the modules that will govern the
+behavior of the simulation objects (i.e. cells).</p>
+<h4 id="3-initial-model">3. Initial model</h4>
+<p>Open the <code class="codehilite"><span class="n">src</span><span class="o">/</span><span class="n">diffusion</span><span class="p">.</span><span class="n">h</span></code> source file.</p>
+<p>First, create a BioDynaMo simulation:
+<div class="codehilite"><pre><span></span><span class="n">Simulation</span> <span class="nf">simulation</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+</pre></div></p>
+<p>Next up is creating the initial model of our simulation.
+Therefore, we have to create an initial set of simulation objects and set their
+attributes:</p>
+<div class="codehilite"><pre><span></span>  <span class="k">auto</span> <span class="n">construct</span> <span class="o">=</span> <span class="p">[](</span><span class="k">const</span> <span class="n">Double3</span><span class="o">&amp;</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Cell</span><span class="o">*</span> <span class="n">cell</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cell</span><span class="p">(</span><span class="n">position</span><span class="p">);</span>
+    <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetDiameter</span><span class="p">(</span><span class="mi">30</span><span class="p">);</span>
+    <span class="n">cell</span><span class="o">-&gt;</span><span class="n">SetMass</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+    <span class="n">cell</span><span class="o">-&gt;</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="k">new</span> <span class="n">Chemotaxis</span><span class="p">());</span>
+    <span class="n">Double3</span> <span class="n">secretion_position</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">}};</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">position</span> <span class="o">==</span> <span class="n">secretion_position</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">cell</span><span class="o">-&gt;</span><span class="n">AddBiologyModule</span><span class="p">(</span><span class="k">new</span> <span class="n">KaliumSecretion</span><span class="p">());</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
+  <span class="p">};</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Double3</span><span class="o">&gt;</span> <span class="n">positions</span><span class="p">;</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">});</span>
+  <span class="c1">// the cell responsible for secretion</span>
+  <span class="n">positions</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">});</span>
+  <span class="n">ModelInitializer</span><span class="o">::</span><span class="n">CreateCells</span><span class="p">(</span><span class="n">positions</span><span class="p">,</span> <span class="n">construct</span><span class="p">);</span>
+</pre></div>
+
+<p>The <code class="codehilite"><span class="n">construct</span></code> lambda defines the properties of each cell that we create. These can be
+physical properties (diameter, mass), but also biological properties and behaviors
+(chemotaxis, substance secretion)</p>
+<p>In this example, each cell is assigned the <code class="codehilite"><span class="n">Chemotaxis</span></code> behavior. In <code class="codehilite"><span class="n">diffusion_biology_behaviors</span><span class="p">.</span><span class="n">h</span></code> you can
+check the source code of this module. Basically it makes cells move according to the gradient,
+caused by a concentration difference of the substance. One of the cells
+(the cell at position <code class="codehilite"><span class="err">{</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="err">}</span></code>) will be the one secreting the substance;
+it therefore gets assigned the <code class="codehilite"><span class="n">SubstanceSecretion</span></code> behavior.</p>
+<p>Furthermore, we define the initial positions of the cells. In this example it is
+done explicitly, but one could also generate a grid of cells, or a random distribution
+of cells.</p>
+<h3 id="simulation-parameters">Simulation Parameters</h3>
+<p>Create a <code class="codehilite"><span class="n">bdm</span><span class="p">.</span><span class="n">toml</span></code> file in the <code class="codehilite"><span class="n">diffusion</span></code> directory, and copy the following lines
+into it:</p>
+<div class="codehilite"><pre><span></span><span class="k">[visualization]</span>
+<span class="na">export</span> <span class="o">=</span> <span class="s">true</span>
+<span class="na">export_interval</span> <span class="o">=</span> <span class="s">10</span>
+
+    <span class="k">[[visualize_sim_object]]</span>
+    <span class="na">name</span> <span class="o">=</span> <span class="s">&quot;Cell&quot;</span>
+<span class="s">    additional_data_members = [ &quot;diameter_&quot; ]</span>
+
+    <span class="k">[[visualize_diffusion]]</span>
+    <span class="na">name</span> <span class="o">=</span> <span class="s">&quot;Kalium&quot;</span>
+<span class="s">    gradient = true</span>
+</pre></div>
+
+<p>This will enable exporting visualization files, so that we can visualize the
+simulation after it has finished. Furthermore, we enable the output of the diameter
+of our simulation objects (by default named "Cell"), and the gradient data of the
+extracellular diffusion</p>
+<h3 id="build-and-run-the-simulation">Build and run the simulation</h3>
+<p>Run the following commands to build and run the simulation.</p>
+<div class="codehilite"><pre><span></span>biodynamo run
+</pre></div>
+
+<h3 id="visualize-the-simulation">Visualize the simulation</h3>
+<p>Load the generated ParaView state file as described in <a href="../visualization/#export-visualization-files">Section Visualization</a>.</p>
+<p>From "View", select "Animation Panel". This will display some animation settings
+at the bottom of the screen. From the "Mode" select "Real Time".
+Then click the Play button at the top of the screen to run the simulation visualization.</p>
+<video width="100%" controls>
+  <source src="https://cernbox.cern.ch/index.php/s/rzl2Kb4uxny4ZXF/download?path=%2F&files=exported_visualization.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h3 id="diffusion-parameter-constraints">Diffusion parameter constraints</h3>
+<p>The differential equations that describe the diffusion are solved in an
+analytical way using the central difference method as shown in the figure below:</p>
+<p><img alt="Central Difference Method" src="../images/diffusion_central_difference_method.png" /></p>
+<p>The diffusion coefficient dictates the speed of diffusing a substance through
+space, while with the decay constant one controls the speed at which a substance
+decays. Mathematically, the method would allow for unphysical behavior to occur, such as
+negative concentration values. In order to avoid such behavior from happening,
+we impose the following constraint on the parameters:</p>
+<p><img alt="Parameter Constraint" src="../images/diffusion_parameters_constraint.png" /></p>
+<p>Since as a user, you are giving the resolution of the diffusion grid and not the
+distance between the grid points, you can determine this value by dividing the
+longest dimension of your space by the resolution, or by calling the corresponding
+function <code class="codehilite"><span class="n">DiffusionGrid</span><span class="p">::</span><span class="n">GetBoxLength</span><span class="p">()</span></code>.</p>
+<p>For more information on the inner workings of the diffusion module, please
+refer to: <a href="https://repository.tudelft.nl/islandora/object/uuid%3A2fa2203b-ca26-4aa2-9861-1a4352391e09?collection=education">https://repository.tudelft.nl/islandora/object/uuid%3A2fa2203b-ca26-4aa2-9861-1a4352391e09?collection=education</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../visualization/" title="Visualization" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Visualization
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tumor_concept/" title="Tumor Concept" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tumor Concept
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; The BioDynaMo Project. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="http://biodynamo.web.cern.ch" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/BioDynaMo/biodynamo" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a8b5e56f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
