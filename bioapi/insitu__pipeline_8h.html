@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>BioDynaMo: core/visualization/insitu_pipeline.h File Reference</title>
+<title>BioDynaMo: core/visualization/paraview/insitu_pipeline.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-444-g0dea55e</span>
+   &#160;<span id="projectnumber">v0.1.0-445-g37003a7</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_495c398245f1b03c2187e57d110c3617.html">visualization</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_495c398245f1b03c2187e57d110c3617.html">visualization</a></li><li class="navelem"><a class="el" href="dir_3aa7801462393104955ed6c120541043.html">paraview</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,10 +100,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="log_8h_source.html">core/util/log.h</a>&quot;</code><br />
+<code>#include &lt;vtkCPDataDescription.h&gt;</code><br />
+<code>#include &lt;vtkCPInputDataDescription.h&gt;</code><br />
+<code>#include &lt;vtkCPPipeline.h&gt;</code><br />
+<code>#include &lt;vtkDataObject.h&gt;</code><br />
+<code>#include &lt;vtkImageData.h&gt;</code><br />
+<code>#include &lt;vtkLiveInsituLink.h&gt;</code><br />
+<code>#include &lt;vtkNew.h&gt;</code><br />
+<code>#include &lt;vtkPVTrivialProducer.h&gt;</code><br />
+<code>#include &lt;vtkSMInputProperty.h&gt;</code><br />
+<code>#include &lt;vtkSMParaViewPipelineControllerWithRendering.h&gt;</code><br />
+<code>#include &lt;vtkSMPluginManager.h&gt;</code><br />
+<code>#include &lt;vtkSMPropertyHelper.h&gt;</code><br />
+<code>#include &lt;vtkSMProxy.h&gt;</code><br />
+<code>#include &lt;vtkSMProxyListDomain.h&gt;</code><br />
+<code>#include &lt;vtkSMProxyManager.h&gt;</code><br />
+<code>#include &lt;vtkSMSessionProxyManager.h&gt;</code><br />
+<code>#include &lt;vtkSMSourceProxy.h&gt;</code><br />
+<code>#include &lt;vtkUnstructuredGrid.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="helper_8h_source.html">core/visualization/paraview/helper.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for insitu_pipeline.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="insitu__pipeline_8h__incl.svg" width="586" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="insitu__pipeline_8h__incl.svg" width="4039" height="604"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="insitu__pipeline_8h__dep__incl.svg" width="199" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>

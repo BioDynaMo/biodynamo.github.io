@@ -23,8 +23,8 @@ var searchData=
   ['removeproximalneuriteelement',['RemoveProximalNeuriteElement',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4066c356a9be52560bf671f5f14219b1',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['renew',['Renew',['../classbdm_1_1ThreadInfo.html#a1ce2476af333c140531fda4b2ac62623',1,'bdm::ThreadInfo']]],
   ['replacescheduler',['ReplaceScheduler',['../classbdm_1_1Simulation.html#a586e4605fd004af75e5dfb143b27fb95',1,'bdm::Simulation']]],
-  ['requestdatadescription',['RequestDataDescription',['../classbdm_1_1InSituPipeline.html#a5e8cf218b76d8b7df0b5077cc2199898',1,'bdm::InSituPipeline']]],
-  ['reserve',['reserve',['../classbdm_1_1InlineVector.html#a6272e04acfbe2c2b1b1c73020a2d4c2f',1,'bdm::InlineVector::reserve()'],['../classbdm_1_1ParallelResizeVector.html#a7ab14f92cd38ace352b6a266b53dda00',1,'bdm::ParallelResizeVector::reserve()'],['../classbdm_1_1SimObjectVector.html#a0828068795ec8632dff9ee57f2d5d360',1,'bdm::SimObjectVector::reserve()'],['../classbdm_1_1ResourceManager.html#a3b0546450a375bad325d5e16dab25eb5',1,'bdm::ResourceManager::Reserve()']]],
+  ['requestdatadescription',['RequestDataDescription',['../classbdm_1_1InSituPipeline.html#a5c6501861d86407451a02206d8bcbc0b',1,'bdm::InSituPipeline']]],
+  ['reserve',['Reserve',['../classbdm_1_1ResourceManager.html#a3b0546450a375bad325d5e16dab25eb5',1,'bdm::ResourceManager::Reserve()'],['../classbdm_1_1InlineVector.html#a6272e04acfbe2c2b1b1c73020a2d4c2f',1,'bdm::InlineVector::reserve()'],['../classbdm_1_1ParallelResizeVector.html#a7ab14f92cd38ace352b6a266b53dda00',1,'bdm::ParallelResizeVector::reserve()'],['../classbdm_1_1SimObjectVector.html#a0828068795ec8632dff9ee57f2d5d360',1,'bdm::SimObjectVector::reserve()']]],
   ['resize',['resize',['../classbdm_1_1ParallelResizeVector.html#ac004f5f717041b05a135417f4c3d5456',1,'bdm::ParallelResizeVector']]],
   ['resizecellbuffers',['ResizeCellBuffers',['../classbdm_1_1DisplacementOpCudaKernel.html#ac4663c24488e231181f15a424d436cbd',1,'bdm::DisplacementOpCudaKernel']]],
   ['resizegridbuffers',['ResizeGridBuffers',['../classbdm_1_1DisplacementOpCudaKernel.html#a4145e95a9718eb505cce65447d2edb61',1,'bdm::DisplacementOpCudaKernel']]],
@@ -43,7 +43,6 @@ var searchData=
   ['retractterminalend',['RetractTerminalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a635d05007807af4f7b271faad9c4d4d3',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['rm_5f',['rm_',['../classbdm_1_1Simulation.html#ab887c5957799dfc9e1a039cef4920cff',1,'bdm::Simulation']]],
   ['root_2eh',['root.h',['../root_8h.html',1,'']]],
-  ['root_5fadaptor_2eh',['root_adaptor.h',['../root__adaptor_8h.html',1,'']]],
   ['root_5fvisualization_5f',['root_visualization_',['../structbdm_1_1Param.html#acb36331f91e926314bfee8283783cb3a',1,'bdm::Param::root_visualization_()'],['../classbdm_1_1Scheduler.html#a1be0347fbd4b6efbc962c46284c4334e',1,'bdm::Scheduler::root_visualization_()']]],
   ['rootadaptor',['RootAdaptor',['../classbdm_1_1RootAdaptor.html',1,'bdm']]],
   ['rootadaptor',['RootAdaptor',['../classbdm_1_1RootAdaptor.html#aeb30d6c22b683c6c92b9401fed0134e1',1,'bdm::RootAdaptor']]],
@@ -59,6 +58,6 @@ var searchData=
   ['rundiscretization',['RunDiscretization',['../classbdm_1_1SimObject.html#a574c6f014376642e060b3d5306187a44',1,'bdm::SimObject::RunDiscretization()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aa0936af954812aaf2d8913c6cab0f4c6',1,'bdm::experimental::neuroscience::NeuriteElement::RunDiscretization()']]],
   ['rundisplacement',['RunDisplacement',['../classbdm_1_1SimObject.html#a961ba40129151a040376fd416caad642',1,'bdm::SimObject']]],
   ['runinitializers',['RunInitializers',['../classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7',1,'bdm::DiffusionGrid']]],
-  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f',1,'bdm::RuntimeVariables::RuntimeVariables()'],['../classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303',1,'bdm::RuntimeVariables::RuntimeVariables(TRootIOCtor *io_ctor)']]],
-  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm']]]
+  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm']]],
+  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f',1,'bdm::RuntimeVariables::RuntimeVariables()'],['../classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303',1,'bdm::RuntimeVariables::RuntimeVariables(TRootIOCtor *io_ctor)']]]
 ];

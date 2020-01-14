@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['catalystadaptortest_5fcheckvisualizationselection_5ftest',['CatalystAdaptorTest_CheckVisualizationSelection_Test',['../classbdm_1_1CatalystAdaptor.html#af9b89947a42ead5626f75a0d1c340cda',1,'bdm::CatalystAdaptor']]],
-  ['catalystadaptortest_5fgenerateparaviewstate_5ftest',['CatalystAdaptorTest_GenerateParaviewState_Test',['../classbdm_1_1CatalystAdaptor.html#a20551b0ab1df1b17546fb7f6f42bfe4c',1,'bdm::CatalystAdaptor']]],
-  ['catalystadaptortest_5fgeneratesimulationinfojson_5ftest',['CatalystAdaptorTest_GenerateSimulationInfoJson_Test',['../classbdm_1_1CatalystAdaptor.html#a045d2d8a4ec23e79f3250efe3baf8ea6',1,'bdm::CatalystAdaptor']]]
+  ['disabled_5fdiffusiontest_5fmodelinitializer_5ftest',['DISABLED_DiffusionTest_ModelInitializer_Test',['../classbdm_1_1ParaviewAdaptor.html#aaa1dff7072350094a3a0cc149be6fba5',1,'bdm::ParaviewAdaptor']]],
+  ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1Grid.html#ade8b07e3d474ae87c7b6622a37f23a0e',1,'bdm::Grid']]],
+  ['displacementopopencl',['DisplacementOpOpenCL',['../classbdm_1_1Grid.html#a4ae7feaca3a244dc5168235f29fc13b3',1,'bdm::Grid']]]
 ];

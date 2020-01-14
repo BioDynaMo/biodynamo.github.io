@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['fixed_5fsize_5fvector_2eh',['fixed_size_vector.h',['../fixed__size__vector_8h.html',1,'']]]
+  ['event_2ecc',['event.cc',['../core_2event_2event_8cc.html',1,'']]],
+  ['event_2ecc',['event.cc',['../neuroscience_2event_2event_8cc.html',1,'']]],
+  ['event_2eh',['event.h',['../event_8h.html',1,'']]],
+  ['exporter_2ecc',['exporter.cc',['../exporter_8cc.html',1,'']]],
+  ['exporter_2eh',['exporter.h',['../exporter_8h.html',1,'']]]
 ];

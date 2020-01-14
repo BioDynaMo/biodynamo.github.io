@@ -2,6 +2,8 @@ var searchData=
 [
   ['scheduler_5f',['scheduler_',['../classbdm_1_1Simulation.html#aa08fb1afa3ef057f677d92707fe08f26',1,'bdm::Simulation']]],
   ['scheduling_5fbatch_5fsize_5f',['scheduling_batch_size_',['../structbdm_1_1Param.html#adac07de04521ddd5e025cc00c5664851',1,'bdm::Param']]],
+  ['session_5fmanager_5f',['session_manager_',['../classbdm_1_1InSituPipeline.html#a45757c4e141604d013a60e0d1e0243d2',1,'bdm::InSituPipeline']]],
+  ['shape_5f',['shape_',['../structbdm_1_1VtkSoGrid.html#af932d1a1ac08274659764f82ea93da9c',1,'bdm::VtkSoGrid']]],
   ['show_5fsimulation_5fstep_5f',['show_simulation_step_',['../structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97',1,'bdm::Param']]],
   ['sigma_5f',['sigma_',['../structbdm_1_1GaussianBand.html#ad61feda0ad17554132adac6e23378d28',1,'bdm::GaussianBand']]],
   ['sim_5fname_5f',['sim_name_',['../classbdm_1_1CommandLineOptions.html#a5d548ce3bf5431e3ddb328a04f814a4f',1,'bdm::CommandLineOptions']]],
@@ -11,6 +13,7 @@ var searchData=
   ['simulation_5ftime_5fstep_5f',['simulation_time_step_',['../structbdm_1_1Param.html#a3cc70d57ed2965f5551e03b36a4a7219',1,'bdm::Param']]],
   ['simulationtest',['SimulationTest',['../classbdm_1_1Simulation.html#a5a2a30678340fd7a851b8c3e262a1e06',1,'bdm::Simulation']]],
   ['size_5f',['size_',['../classbdm_1_1FixedSizeVector.html#a10db98c34d66869c0c79bad812f1f7bb',1,'bdm::FixedSizeVector::size_()'],['../classbdm_1_1InlineVector.html#a6eefc4b12a26ba9fb8c3ff6593830068',1,'bdm::InlineVector::size_()'],['../classbdm_1_1ParallelResizeVector.html#a1e5153234955ee97a2d29c5253727637',1,'bdm::ParallelResizeVector::size_()'],['../classbdm_1_1SimObjectVector.html#a74feb8a1e0f38dee49f38b246e1e2cd5',1,'bdm::SimObjectVector::size_()']]],
+  ['so_5fgrid_5f',['so_grid_',['../structbdm_1_1ParaviewSoVisitor_1_1ParaviewImpl.html#afc8c6785d659268295e6fc959db33d91',1,'bdm::ParaviewSoVisitor::ParaviewImpl']]],
   ['spring_5faxis_5f',['spring_axis_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#adc293cbd70c8586567e9704277220c47',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['spring_5fconstant_5f',['spring_constant_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a2bf28904fc4585d589c262edc1a5bcba',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['squared_5fradius_5f',['squared_radius_',['../classbdm_1_1DisplacementOpCpu.html#a7f31e0197c3f2d39a8676f4bfe4e37da',1,'bdm::DisplacementOpCpu']]],

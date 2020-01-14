@@ -21,5 +21,6 @@ var searchData=
   ['divide',['Divide',['../classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0',1,'bdm::Cell::Divide()'],['../classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba',1,'bdm::Cell::Divide(double volume_ratio)'],['../classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d',1,'bdm::Cell::Divide(const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69',1,'bdm::Cell::Divide(double volume_ratio, const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875',1,'bdm::Cell::Divide(double volume_ratio, double phi, double theta)']]],
   ['dividingcellop',['DividingCellOp',['../classbdm_1_1DividingCellOp.html#a59bbc58e480defbbf650c0b4d565d245',1,'bdm::DividingCellOp']]],
   ['dolivevisualization',['DoLiveVisualization',['../classbdm_1_1InSituPipeline.html#a21ab5153b2c6f2550d5a428d6d0405eb',1,'bdm::InSituPipeline']]],
+  ['double',['Double',['../classbdm_1_1ParaviewSoVisitor.html#a8c9583b910289fd00987e84c583ddf96',1,'bdm::ParaviewSoVisitor']]],
   ['drawincanvas',['DrawInCanvas',['../classbdm_1_1RootAdaptor.html#a835878ac47b53a0fedbb0d4b4aeeaad9',1,'bdm::RootAdaptor']]]
 ];
