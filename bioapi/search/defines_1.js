@@ -15,6 +15,5 @@ var searchData=
   ['bdm_5fsim_5fobject_5fforeachdmin_5fbody_5fiterator',['BDM_SIM_OBJECT_FOREACHDMIN_BODY_ITERATOR',['../sim__object_8h.html#af382b0692d3ed5c73c7f4cfc10f11eb8',1,'sim_object.h']]],
   ['bdm_5fsim_5fobject_5fheader',['BDM_SIM_OBJECT_HEADER',['../sim__object_8h.html#ad183c3423c5115a10ee9f5213dd9ac0d',1,'sim_object.h']]],
   ['bdm_5fstateless_5fbm_5fheader',['BDM_STATELESS_BM_HEADER',['../biology__module_8h.html#ab8d28ad8cacf75622c422bff6ae575ec',1,'biology_module.h']]],
-  ['bdm_5ftemplate_5fclass_5fdef',['BDM_TEMPLATE_CLASS_DEF',['../root_8h.html#a840e959524ebdd583bdf2e16f1be2ba3',1,'root.h']]],
   ['bdm_5fvtune_5flog_5fwarning',['BDM_VTUNE_LOG_WARNING',['../vtune_8h.html#a30ec00bb12b7c72a298dc6aefb43e973',1,'vtune.h']]]
 ];
