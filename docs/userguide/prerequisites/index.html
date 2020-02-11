@@ -87,8 +87,6 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <li><strong>libnuma-dev</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel);</li>
 <li><strong>libtbb-dev</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
 <li><strong>libpthread-stubs0-dev</strong>: Development files for managing threads;</li>
-<li><strong>python-pip</strong>: Python 2 Package Manager.</li>
-<li><strong>python3-pip</strong>: Python 3 Package Manager.</li>
 </ul>
 <h3 id="optional-packages"><a href="#optional-packages" aria-label="optional packages permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional Packages</h3>
 <ul>
@@ -107,10 +105,15 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <h4 id="required-packages-1"><a href="#required-packages-1" aria-label="required packages 1 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Required Packages</h4>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y <span class="token function">wget</span> cmake <span class="token function">make</span> gcc g++ \
 libopenmpi-dev libomp-dev libnuma-dev libtbb-dev freeglut3-dev \
-libpthread-stubs0-dev python-pip python3-pip</code></pre></div>
+libpthread-stubs0-dev
+
+<span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
+<span class="token function">env</span> PYTHON_CONFIGURE_OPTS<span class="token operator">=</span><span class="token string">"--enable-shared"</span> pyenv <span class="token function">install</span> 3.6.9</code></pre></div>
+<p>We install pyenv as the Python Version Management to be able to switch
+to a supported Python environment for BioDynaMo. This will not interfere with
+your system's Python installation.</p>
 <h4 id="optional-packages-1"><a href="#optional-packages-1" aria-label="optional packages 1 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional Packages</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pip <span class="token function">install</span> --upgrade pip
-<span class="token variable">$HOME</span>/.local/bin/pip2 <span class="token function">install</span> --user jupyter metakernel
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pip <span class="token function">install</span> --user nbformat jupyter metakernel
 <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y freeglut3-dev valgrind \
   clang-3.9 clang-format-3.9 clang-tidy-3.9 \
   doxygen graphviz lcov gcovr \
@@ -128,8 +131,10 @@ libpthread-stubs0-dev python-pip python3-pip</code></pre></div>
 <li><strong>numactl-devel</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel);</li>
 <li><strong>tbb-devel</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
 <li><strong>openmpi3-devel</strong>: Development files for OpenMP (API for multiprocessor programming);</li>
-<li><strong>rh-python36</strong>, <strong>python27</strong> and <strong>python-pip</strong>: Python 2 and 3 Interpreter and Package Manager.</li>
 </ul>
+<p>We install pyenv as the Python Version Management to be able to switch
+to a supported Python environment for BioDynaMo. This will not interfere with
+your system's Python installation.</p>
 <h3 id="optional-packages-2"><a href="#optional-packages-2" aria-label="optional packages 2 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional Packages</h3>
 <ul>
 <li><strong>freeglut-devel</strong>: Development files for GLUT (OpenGL Utility Toolkit);</li>
@@ -150,11 +155,12 @@ libpthread-stubs0-dev python-pip python3-pip</code></pre></div>
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> https://centos7.iuscommunity.org/ius-release.rpm
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> <span class="token function">wget</span> cmake3 libXt-devel libXext-devel \
   devtoolset-7-gcc* numactl-devel \
-  tbb-devel openmpi3-devel freeglut-devel \
-  python27 python36 python-pip <span class="token function">git</span></code></pre></div>
+  tbb-devel openmpi3-devel freeglut-devel <span class="token function">git</span>
+
+<span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
+<span class="token function">env</span> PYTHON_CONFIGURE_OPTS<span class="token operator">=</span><span class="token string">"--enable-shared"</span> pyenv <span class="token function">install</span> 3.6.9</code></pre></div>
 <h4 id="optional-packages-3"><a href="#optional-packages-3" aria-label="optional packages 3 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional Packages</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> pip <span class="token function">install</span> --upgrade pip
-pip2 <span class="token function">install</span> --user nbformat jupyter metakernel
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pip <span class="token function">install</span> --user nbformat jupyter metakernel
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> lcov gcovr llvm-toolset-7 \
    llvm-toolset-7-clang-tools-extra doxygen graphviz valgrind freeglut-devel
    <span class="token comment"># SBML integration</span>
