@@ -1,7 +1,7 @@
 var searchData=
 [
   ['parallel_5fresize_5fvector_2eh',['parallel_resize_vector.h',['../parallel__resize__vector_8h.html',1,'']]],
-  ['parallelresizevector',['ParallelResizeVector',['../classbdm_1_1ParallelResizeVector.html#a6f286dac653ef276a7ceabb12e4880a4',1,'bdm::ParallelResizeVector::ParallelResizeVector()'],['../classbdm_1_1ParallelResizeVector.html#a753e1b4cd91455e56e9ebab127d46e4c',1,'bdm::ParallelResizeVector::ParallelResizeVector(std::initializer_list&lt; T &gt; init)'],['../classbdm_1_1ParallelResizeVector.html#a835a2ed1f08cc7aab143ce7c3809b0a1',1,'bdm::ParallelResizeVector::ParallelResizeVector(const ParallelResizeVector &amp;other)']]],
+  ['parallelresizevector',['ParallelResizeVector',['../classbdm_1_1ParallelResizeVector.html#afe129edd176b44cf4873d3379baaec6a',1,'bdm::ParallelResizeVector::ParallelResizeVector(TRootIOCtor *io_ctor)'],['../classbdm_1_1ParallelResizeVector.html#a6f286dac653ef276a7ceabb12e4880a4',1,'bdm::ParallelResizeVector::ParallelResizeVector()'],['../classbdm_1_1ParallelResizeVector.html#a753e1b4cd91455e56e9ebab127d46e4c',1,'bdm::ParallelResizeVector::ParallelResizeVector(std::initializer_list&lt; T &gt; init)'],['../classbdm_1_1ParallelResizeVector.html#a835a2ed1f08cc7aab143ce7c3809b0a1',1,'bdm::ParallelResizeVector::ParallelResizeVector(const ParallelResizeVector &amp;other)']]],
   ['parallelresizevector',['ParallelResizeVector',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
   ['parallelresizevector_3c_20bdm_3a_3agrid_3a_3abox_20_3e',['ParallelResizeVector&lt; bdm::Grid::Box &gt;',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
   ['parallelresizevector_3c_20double_20_3e',['ParallelResizeVector&lt; double &gt;',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
