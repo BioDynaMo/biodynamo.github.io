@@ -13,6 +13,7 @@ var searchData=
   ['kneuroml',['kNeuroML',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811a3e3ffea12f482d42f9def297c077000f',1,'bdm']]],
   ['kparaview',['kParaview',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811ab5f46e21e28754c3d4ecbcf100236c41',1,'bdm']]],
   ['kpi',['kPi',['../structbdm_1_1Math.html#a59ce6781aaf6ed4ee0c7648fd33f6b55',1,'bdm::Math']]],
+  ['kreusedmax',['kReusedMax',['../classbdm_1_1SoUid.html#a2d5469b14316f21033fefa95b8648d76',1,'bdm::SoUid']]],
   ['krk4',['kRK4',['../structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471af4c505faf476b7245b728bbba6dedd34',1,'bdm::Param']]],
   ['kruntimevariablename',['kRuntimeVariableName',['../classbdm_1_1SimulationBackup.html#ae5193fc9cad208b14d29b9cdbee1a967',1,'bdm::SimulationBackup']]],
   ['ksimulationname',['kSimulationName',['../classbdm_1_1SimulationBackup.html#a7836719b90021bac8ea35a7c38ee39d7',1,'bdm::SimulationBackup']]],

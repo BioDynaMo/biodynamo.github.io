@@ -4,6 +4,7 @@ var searchData=
   ['kgrowfactor',['kGrowFactor',['../classbdm_1_1InlineVector.html#a266ada31ab4d5ff0db567014951758ea',1,'bdm::InlineVector::kGrowFactor()'],['../classbdm_1_1ParallelResizeVector.html#a3169d134ec922af86710317101e5898c',1,'bdm::ParallelResizeVector::kGrowFactor()']]],
   ['kinfinity',['kInfinity',['../structbdm_1_1Math.html#ad4fdb7491acb43b733ef89625ac9de5d',1,'bdm::Math']]],
   ['kpi',['kPi',['../structbdm_1_1Math.html#a59ce6781aaf6ed4ee0c7648fd33f6b55',1,'bdm::Math']]],
+  ['kreusedmax',['kReusedMax',['../classbdm_1_1SoUid.html#a2d5469b14316f21033fefa95b8648d76',1,'bdm::SoUid']]],
   ['kruntimevariablename',['kRuntimeVariableName',['../classbdm_1_1SimulationBackup.html#ae5193fc9cad208b14d29b9cdbee1a967',1,'bdm::SimulationBackup']]],
   ['ksimulationname',['kSimulationName',['../classbdm_1_1SimulationBackup.html#a7836719b90021bac8ea35a7c38ee39d7',1,'bdm::SimulationBackup']]],
   ['ksimulationstepname',['kSimulationStepName',['../classbdm_1_1SimulationBackup.html#aab7666331b21587eeda2715c1e196ff0',1,'bdm::SimulationBackup']]],

@@ -15,7 +15,7 @@ var searchData=
   ['addentry',['AddEntry',['../classbdm_1_1TimingAggregator.html#ac699a9494f65bb899ac03901c5f9a173',1,'bdm::TimingAggregator']]],
   ['addgene',['AddGene',['../structbdm_1_1RegulateGenes.html#a282f54f7deae80894318be44f308b61b',1,'bdm::RegulateGenes']]],
   ['addinitializer',['AddInitializer',['../classbdm_1_1DiffusionGrid.html#a7f83b22e624ebe2410db4644ed85fa47',1,'bdm::DiffusionGrid']]],
-  ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ade13c2ff75365cb4271f3746f6e20905',1,'bdm::ResourceManager']]],
+  ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ab2df59935ab8e3511c56738b94ee189a',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#aeacd6575c8666c9882b875f4fd862c96',1,'bdm::Grid::Box']]],
   ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213',1,'bdm::Scheduler']]],
   ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#adb789cac5481816ed0ecdef6fcca2f17',1,'bdm::CommandLineOptions::AddOption(std::string group=&quot;Simulation&quot;)'],['../classbdm_1_1CommandLineOptions.html#aeb88d5d9bb969b3b3f2ad8994d0691ee',1,'bdm::CommandLineOptions::AddOption(std::string opt, std::string def, std::string description=&quot;&quot;, std::string group=&quot;Simulation&quot;)']]],

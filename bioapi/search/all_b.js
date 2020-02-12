@@ -13,7 +13,7 @@ var searchData=
   ['livevisualization',['LiveVisualization',['../classbdm_1_1ParaviewAdaptor.html#a76c0ecb4a3d8b142b63cbc4d27bfc167',1,'bdm::ParaviewAdaptor']]],
   ['loadconfigfile',['LoadConfigFile',['../classbdm_1_1Simulation.html#add06888b18b82b8349a8da90aeda6d6a',1,'bdm::Simulation']]],
   ['lock',['lock',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0efa7dfa2c8dd0d3570757bdfd9aa3ed',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex::lock()'],['../classSpinlock.html#a27a03c3d6b4cdd677e7d16e59689e38e',1,'Spinlock::lock()']]],
-  ['lock_5f',['lock_',['../structbdm_1_1Grid_1_1Box.html#a656790efdeb4e7e7b9e39f65ba2d587e',1,'bdm::Grid::Box']]],
+  ['lock_5f',['lock_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#ac3bbf08cd9ffd3458de9d3a210c3fce3',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::lock_()'],['../structbdm_1_1Grid_1_1Box.html#a656790efdeb4e7e7b9e39f65ba2d587e',1,'bdm::Grid::Box::lock_()'],['../classbdm_1_1SoUidGenerator.html#a3e418e098f24ee6c4e70a04a9df0bb8d',1,'bdm::SoUidGenerator::lock_()']]],
   ['log',['Log',['../classbdm_1_1Log.html',1,'bdm']]],
   ['log_2eh',['log.h',['../log_8h.html',1,'']]],
   ['loop',['LOOP',['../macros_8h.html#a94d0a7b023e21e4b25f761c84d1120ef',1,'macros.h']]],

@@ -10,6 +10,7 @@ var searchData=
   ['plugin_5fmanager_5f',['plugin_manager_',['../classbdm_1_1InSituPipeline.html#a24dc1a463de22e92f51e034b90aa2047',1,'bdm::InSituPipeline']]],
   ['position_5f',['position_',['../classbdm_1_1CircularBuffer.html#a2c99abf5f73b97731089943e05baae0a',1,'bdm::CircularBuffer::position_()'],['../classbdm_1_1Cell.html#a4162cd38320f2ca2deb7bbd2a8a1e45b',1,'bdm::Cell::position_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#adaadaad2946004a6d4e81556519c93c7',1,'bdm::experimental::neuroscience::NeuriteElement::position_()']]],
   ['preferred_5fgpu_5f',['preferred_gpu_',['../structbdm_1_1Param.html#a4b46410b40ad02da690638c7e04be73a',1,'bdm::Param']]],
+  ['previous_5fmaps_5f',['previous_maps_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a76cef64b09ea95898f697ad313e97bc6',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
   ['producer_5fmap_5f',['producer_map_',['../classbdm_1_1InSituPipeline.html#a8ff700c68a2e5778299cab7b50ab506f',1,'bdm::InSituPipeline']]],
   ['protected_5foperations_5f',['protected_operations_',['../classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b',1,'bdm::Scheduler']]],
   ['proxy_5fmanager_5f',['proxy_manager_',['../classbdm_1_1InSituPipeline.html#a7d09c2ca20c8cb70a78e8ca54d661636',1,'bdm::InSituPipeline']]],

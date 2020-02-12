@@ -85,7 +85,6 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <li><strong>libopenmpi-dev</strong>: Development files for OpenMPI (Open Source Message Passing Interface);</li>
 <li><strong>libomp-dev</strong>: Development files for OpenMP (API for multiprocessor programming);</li>
 <li><strong>libnuma-dev</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel);</li>
-<li><strong>libtbb-dev</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
 <li><strong>libpthread-stubs0-dev</strong>: Development files for managing threads;</li>
 </ul>
 <h3 id="optional-packages"><a href="#optional-packages" aria-label="optional packages permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional Packages</h3>
@@ -104,7 +103,7 @@ BioDynaMo provides also an automated procedure to install all the needed library
 <h3 id="installation"><a href="#installation" aria-label="installation permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h3>
 <h4 id="required-packages-1"><a href="#required-packages-1" aria-label="required packages 1 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Required Packages</h4>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y <span class="token function">wget</span> cmake <span class="token function">make</span> gcc g++ \
-libopenmpi-dev libomp-dev libnuma-dev libtbb-dev freeglut3-dev \
+libopenmpi-dev libomp-dev libnuma-dev freeglut3-dev \
 libpthread-stubs0-dev
 
 <span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
@@ -131,7 +130,6 @@ your system's Python installation.</p>
 <li><strong>libXext-devel</strong>: Library which contains a handful of X11 extensions</li>
 <li><strong>devtoolset-7-gcc</strong>: Compiler suite for C and C++;</li>
 <li><strong>numactl-devel</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel);</li>
-<li><strong>tbb-devel</strong>: Development files for TBB (C++ template library developed by Intel for parallel programming);</li>
 <li><strong>openmpi3-devel</strong>: Development files for OpenMP (API for multiprocessor programming);</li>
 </ul>
 <p>We install pyenv as the Python Version Management to be able to switch
@@ -157,7 +155,7 @@ your system's Python installation.</p>
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> https://centos7.iuscommunity.org/ius-release.rpm
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> <span class="token function">wget</span> cmake3 libXt-devel libXext-devel \
   devtoolset-7-gcc* numactl-devel \
-  tbb-devel openmpi3-devel freeglut-devel <span class="token function">git</span>
+  openmpi3-devel freeglut-devel <span class="token function">git</span>
 
 <span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
 <span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"<span class="token variable">$HOME</span>/.pyenv/bin:<span class="token variable">$PATH</span>"</span>

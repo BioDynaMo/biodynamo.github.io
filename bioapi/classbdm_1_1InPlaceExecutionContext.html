@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-465-gb395e5a</span>
+   &#160;<span id="projectnumber">v0.1.0-466-gbb5a5f4</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -107,10 +108,15 @@ Collaboration diagram for bdm::InPlaceExecutionContext:</div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html">ThreadSafeSoUidMap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82d5496f0adf5e7ae10a2af0e4bc9d76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a82d5496f0adf5e7ae10a2af0e4bc9d76">InPlaceExecutionContext</a> ()</td></tr>
-<tr class="separator:a82d5496f0adf5e7ae10a2af0e4bc9d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e1a688d9405d6262837e941b0de882"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a88e1a688d9405d6262837e941b0de882">InPlaceExecutionContext</a> (const std::shared_ptr&lt; <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html">ThreadSafeSoUidMap</a> &gt; &amp;map)</td></tr>
+<tr class="separator:a88e1a688d9405d6262837e941b0de882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac20057bd2ddddfea4cf1422c45bd93b2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ac20057bd2ddddfea4cf1422c45bd93b2">~InPlaceExecutionContext</a> ()</td></tr>
 <tr class="separator:ac20057bd2ddddfea4cf1422c45bd93b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33bd7724eaa5b2509d9334b6c6a622d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ad33bd7724eaa5b2509d9334b6c6a622d">SetupIterationAll</a> (const std::vector&lt; <a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a> * &gt; &amp;all_exec_ctxts) const </td></tr>
@@ -128,29 +134,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad13aa59c66e57c1a8fdba97c63d95f33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ad13aa59c66e57c1a8fdba97c63d95f33">ForEachNeighborWithinRadius</a> (const std::function&lt; void(const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *)&gt; &amp;lambda, const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> &amp;query, double squared_radius)</td></tr>
 <tr class="memdesc:ad13aa59c66e57c1a8fdba97c63d95f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards the call to <code><a class="el" href="classbdm_1_1Grid.html#afab4c4e576851c7f588fbed7cb8ff9ce" title="Applies the given lambda to each neighbor or the specified simulation object. ">Grid::ForEachNeighborWithinRadius</a></code>  <a href="#ad13aa59c66e57c1a8fdba97c63d95f33">More...</a><br /></td></tr>
 <tr class="separator:ad13aa59c66e57c1a8fdba97c63d95f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37eda55e3a5923499ea719481f28acc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a37eda55e3a5923499ea719481f28acc9">GetSimObject</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid)</td></tr>
-<tr class="separator:a37eda55e3a5923499ea719481f28acc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68002c809adabcacc2432fa5f8f1651f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a68002c809adabcacc2432fa5f8f1651f">GetConstSimObject</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid)</td></tr>
-<tr class="separator:a68002c809adabcacc2432fa5f8f1651f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85be32c66adc7bd34628012d8c73d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#af85be32c66adc7bd34628012d8c73d7b">RemoveFromSimulation</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid)</td></tr>
-<tr class="separator:af85be32c66adc7bd34628012d8c73d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39183af11504e5807ce654c1dae2343b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a39183af11504e5807ce654c1dae2343b">GetSimObject</a> (const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;uid)</td></tr>
+<tr class="separator:a39183af11504e5807ce654c1dae2343b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40cad98751d8e16f9954d221d01f6bd7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a40cad98751d8e16f9954d221d01f6bd7">GetConstSimObject</a> (const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;uid)</td></tr>
+<tr class="separator:a40cad98751d8e16f9954d221d01f6bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce086af6e3e9cdf74bb7395eaf33b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a9ce086af6e3e9cdf74bb7395eaf33b60">RemoveFromSimulation</a> (const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;uid)</td></tr>
+<tr class="separator:a9ce086af6e3e9cdf74bb7395eaf33b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3440095f62409b7e665d598c1b2d040e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a3440095f62409b7e665d598c1b2d040e">DisableNeighborGuard</a> ()</td></tr>
 <tr class="separator:a3440095f62409b7e665d598c1b2d040e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:abd9a7d379952ac18af020d123eb31282"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#abd9a7d379952ac18af020d123eb31282">GetCachedSimObject</a> (<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> uid)</td></tr>
-<tr class="separator:abd9a7d379952ac18af020d123eb31282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85677185cd6b63ab3f461627dbe26f03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a85677185cd6b63ab3f461627dbe26f03">GetCachedSimObject</a> (const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;uid)</td></tr>
+<tr class="separator:a85677185cd6b63ab3f461627dbe26f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a512e5568132d199873b853b48782e0a2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html">ThreadSafeSoUidMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a512e5568132d199873b853b48782e0a2">new_so_map_</a></td></tr>
+<tr class="memdesc:a512e5568132d199873b853b48782e0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup table <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> -&gt; <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> for new created sim objects.  <a href="#a512e5568132d199873b853b48782e0a2">More...</a><br /></td></tr>
+<tr class="separator:a512e5568132d199873b853b48782e0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0b9aa4edea3401f1be1368de24b9246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ad0b9aa4edea3401f1be1368de24b9246">tinfo_</a></td></tr>
 <tr class="separator:ad0b9aa4edea3401f1be1368de24b9246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72c370ffa339ddda8482478f8ec9e9df"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a72c370ffa339ddda8482478f8ec9e9df">remove_</a></td></tr>
+<tr class="memitem:a72c370ffa339ddda8482478f8ec9e9df"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a72c370ffa339ddda8482478f8ec9e9df">remove_</a></td></tr>
 <tr class="separator:a72c370ffa339ddda8482478f8ec9e9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3adb6be211c47c02887f4323a279f449"><td class="memItemLeft" align="right" valign="top">tbb::concurrent_unordered_map&lt; <a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a3adb6be211c47c02887f4323a279f449">new_sim_objects_</a></td></tr>
-<tr class="memdesc:a3adb6be211c47c02887f4323a279f449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to new sim objects.  <a href="#a3adb6be211c47c02887f4323a279f449">More...</a><br /></td></tr>
-<tr class="separator:a3adb6be211c47c02887f4323a279f449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11347b956b5b9f8fb32415a342aa5bdc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a11347b956b5b9f8fb32415a342aa5bdc">new_sim_objects_</a></td></tr>
+<tr class="memdesc:a11347b956b5b9f8fb32415a342aa5bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to new sim objects.  <a href="#a11347b956b5b9f8fb32415a342aa5bdc">More...</a><br /></td></tr>
+<tr class="separator:a11347b956b5b9f8fb32415a342aa5bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e2bc15009c8b718a883ea8af0dec26"><td class="memItemLeft" align="right" valign="top">std::atomic_flag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a06e2bc15009c8b718a883ea8af0dec26">mutex_</a> = ATOMIC_FLAG_INIT</td></tr>
 <tr class="memdesc:a06e2bc15009c8b718a883ea8af0dec26"><td class="mdescLeft">&#160;</td><td class="mdescRight">prevent race conditions for cached SimObjects  <a href="#a06e2bc15009c8b718a883ea8af0dec26">More...</a><br /></td></tr>
 <tr class="separator:a06e2bc15009c8b718a883ea8af0dec26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,22 +174,31 @@ In-place updates can lead to race conditions if simulation objects not only modi
 New sim objects will only be visible at the next iteration. <br />
 Also removal of a sim object happens at the end of each iteration. </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00046">46</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00048">48</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a82d5496f0adf5e7ae10a2af0e4bc9d76"></a>
+<a class="anchor" id="a88e1a688d9405d6262837e941b0de882"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bdm::InPlaceExecutionContext::InPlaceExecutionContext </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html">ThreadSafeSoUidMap</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00023">23</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00090">90</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -205,7 +223,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00026">26</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00096">96</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -224,7 +242,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
 </div><div class="memdoc">
 <p>If a sim objects modifies other simulation objects while it is updated, race conditions can occur using this execution context. This function turns the protection mechanism off to improve performance. This is safe simulation objects only update themselves. </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00200">200</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00272">272</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -253,7 +271,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
 </div><div class="memdoc">
 <p>Execute a series of operations on a simulation object in the order given in the argument </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00081">81</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00162">162</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -281,7 +299,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00104">104</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00187">187</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -309,7 +327,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00119">119</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00202">202</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -345,11 +363,11 @@ Also removal of a sim object happens at the end of each iteration. </p>
 
 <p>Forwards the call to <code><a class="el" href="classbdm_1_1Grid.html#afab4c4e576851c7f588fbed7cb8ff9ce" title="Applies the given lambda to each neighbor or the specified simulation object. ">Grid::ForEachNeighborWithinRadius</a></code> </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00142">142</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00225">225</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abd9a7d379952ac18af020d123eb31282"></a>
+<a class="anchor" id="a85677185cd6b63ab3f461627dbe26f03"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -359,7 +377,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
         <tr>
           <td class="memname"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> * bdm::InPlaceExecutionContext::GetCachedSimObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;&#160;</td>
           <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
@@ -371,43 +389,43 @@ Also removal of a sim object happens at the end of each iteration. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00204">204</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00276">276</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a68002c809adabcacc2432fa5f8f1651f"></a>
+<a class="anchor" id="a40cad98751d8e16f9954d221d01f6bd7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> * bdm::InPlaceExecutionContext::GetConstSimObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;&#160;</td>
           <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00192">192</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00264">264</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a37eda55e3a5923499ea719481f28acc9"></a>
+<a class="anchor" id="a39183af11504e5807ce654c1dae2343b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> * bdm::InPlaceExecutionContext::GetSimObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;&#160;</td>
           <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00169">169</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00252">252</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -425,25 +443,25 @@ Also removal of a sim object happens at the end of each iteration. </p>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00100">100</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00181">181</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af85be32c66adc7bd34628012d8c73d7b"></a>
+<a class="anchor" id="a9ce086af6e3e9cdf74bb7395eaf33b60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void bdm::InPlaceExecutionContext::RemoveFromSimulation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;&#160;</td>
           <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00196">196</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00268">268</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -462,7 +480,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
 </div><div class="memdoc">
 <p>This function is called at the beginning of each iteration to setup all execution contexts. This function is not thread-safe. NB: Invalidates references and pointers to simulation objects. </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00032">32</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00102">102</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -482,7 +500,7 @@ Also removal of a sim object happens at the end of each iteration. </p>
 <p>This function is called at the end of each iteration to tear down all execution contexts. This function is not thread-safe. <br />
 NB: Invalidates references and pointers to simulation objects. </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00038">38</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00108">108</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -507,7 +525,7 @@ NB: Invalidates references and pointers to simulation objects. </p>
 
 <p>prevent race conditions for cached SimObjects </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00107">107</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00131">131</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -529,11 +547,11 @@ NB: Invalidates references and pointers to simulation objects. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00109">109</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00133">133</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3adb6be211c47c02887f4323a279f449"></a>
+<a class="anchor" id="a11347b956b5b9f8fb32415a342aa5bdc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -541,7 +559,7 @@ NB: Invalidates references and pointers to simulation objects. </p>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">tbb::concurrent_unordered_map&lt;<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a>*&gt; bdm::InPlaceExecutionContext::new_sim_objects_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classbdm_1_1SimObject.html">SimObject</a>*&gt; bdm::InPlaceExecutionContext::new_sim_objects_</td>
         </tr>
       </table>
   </td>
@@ -553,7 +571,31 @@ NB: Invalidates references and pointers to simulation objects. </p>
 
 <p>Pointer to new sim objects. </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00104">104</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00128">128</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a512e5568132d199873b853b48782e0a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html">ThreadSafeSoUidMap</a>&gt; bdm::InPlaceExecutionContext::new_so_map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lookup table <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> -&gt; <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> for new created sim objects. </p>
+
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00119">119</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +607,7 @@ NB: Invalidates references and pointers to simulation objects. </p>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="namespacebdm.html#ab1414cb069958d6877465d6f385fc719">SoUid</a>&gt; bdm::InPlaceExecutionContext::remove_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classbdm_1_1SoUid.html">SoUid</a>&gt; bdm::InPlaceExecutionContext::remove_</td>
         </tr>
       </table>
   </td>
@@ -576,7 +618,7 @@ NB: Invalidates references and pointers to simulation objects. </p>
 </div><div class="memdoc">
 <p>Contains unique ids of sim objects that will be removed at the end of each iteration. </p>
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00101">101</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00125">125</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +640,7 @@ NB: Invalidates references and pointers to simulation objects. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00097">97</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p>Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00121">121</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>

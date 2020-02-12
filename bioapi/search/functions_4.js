@@ -11,6 +11,7 @@ var searchData=
   ['diffusewithleakingedge',['DiffuseWithLeakingEdge',['../classbdm_1_1DiffusionGrid.html#ad41ba0e6b6f746c8bfdc0f7e56e9b666',1,'bdm::DiffusionGrid']]],
   ['diffusiongrid',['DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac',1,'bdm::DiffusionGrid::DiffusionGrid(TRootIOCtor *p)'],['../classbdm_1_1DiffusionGrid.html#a79aab2d224eced115cab3c7ee08dd269',1,'bdm::DiffusionGrid::DiffusionGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)']]],
   ['diffusionop',['DiffusionOp',['../classbdm_1_1DiffusionOp.html#af5866f7e6c91715c279ead9213c89708',1,'bdm::DiffusionOp']]],
+  ['disabledefragmentation',['DisableDefragmentation',['../classbdm_1_1SoUidGenerator.html#a3ec67d440dfc649443cacc75a08f2789',1,'bdm::SoUidGenerator']]],
   ['disableneighborguard',['DisableNeighborGuard',['../classbdm_1_1InPlaceExecutionContext.html#a3440095f62409b7e665d598c1b2d040e',1,'bdm::InPlaceExecutionContext']]],
   ['disableneighbormutexes',['DisableNeighborMutexes',['../classbdm_1_1Grid.html#a3f8c88d5c55461e322e2c375c13048f8',1,'bdm::Grid']]],
   ['displacementop',['DisplacementOp',['../classbdm_1_1DisplacementOp.html#af7611a05f17b66fd6c575588f0818317',1,'bdm::DisplacementOp']]],

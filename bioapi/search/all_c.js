@@ -2,6 +2,8 @@ var searchData=
 [
   ['macros_2eh',['macros.h',['../macros_8h.html',1,'']]],
   ['make_5fstd_5fvector',['make_std_vector',['../classbdm_1_1InlineVector.html#ae4ee6e59b5b42b7d4b43d90af65ce418',1,'bdm::InlineVector']]],
+  ['map',['Map',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
+  ['map_5f',['map_',['../structbdm_1_1SoUidMap_1_1Iterator.html#a95c2949c9aa6a32bca9aae8ec4e96dc9',1,'bdm::SoUidMap::Iterator::map_()'],['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#acd2b9ab30cefd3079d81e3b1342fd278',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::map_()'],['../classbdm_1_1SoUidGenerator.html#ad95966f72b4a9856b7b00a55e9d8bab6',1,'bdm::SoUidGenerator::map_()']]],
   ['mass_5flocation_5f',['mass_location_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aaff1bfd2639355a3115aa0f114b335c0',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['mat_5fempty_5fspace_5f',['mat_empty_space_',['../classbdm_1_1RootAdaptor.html#a84aa3d20e8e2cf5ccaf0b839b7c1bdba',1,'bdm::RootAdaptor']]],
   ['mat_5fsolid_5f',['mat_solid_',['../classbdm_1_1RootAdaptor.html#ac9c2148347034c5e5cfd2db9e693fc4b',1,'bdm::RootAdaptor']]],
@@ -40,6 +42,6 @@ var searchData=
   ['mutex_5fbuilder_5f',['mutex_builder_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ae2eddd8d9b03d55f93a0c66d347aaebf',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutex_5findices_5f',['mutex_indices_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0eceaf66add590b75a6d3d2bfcde309f',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutexes_5f',['mutexes_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder.html#ab0ad535099ad9f2d586e172d1505e4fa',1,'bdm::Grid::NeighborMutexBuilder']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]]
+  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]],
+  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder']]]
 ];

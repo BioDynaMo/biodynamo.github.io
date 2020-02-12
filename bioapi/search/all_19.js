@@ -38,6 +38,7 @@ var searchData=
   ['_7esovisitor',['~SoVisitor',['../structbdm_1_1SoVisitor.html#a463338665d22923357c2bf5aed9c83c8',1,'bdm::SoVisitor']]],
   ['_7esplitneuriteelementevent',['~SplitNeuriteElementEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#ad50376f2931c5cebcb14b63e26448b78',1,'bdm::experimental::neuroscience::SplitNeuriteElementEvent']]],
   ['_7etfileraii',['~TFileRaii',['../classbdm_1_1TFileRaii.html#aeaf85c5414a5d3ebb9f0e98d4c047e17',1,'bdm::TFileRaii']]],
+  ['_7ethreadsafesouidmap',['~ThreadSafeSoUidMap',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#ac22da51b39d6422ee3615b6442921c24',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
   ['_7etiming',['~Timing',['../classbdm_1_1Timing.html#a6acd5fbcf296e24001e8bb62cd3667a0',1,'bdm::Timing']]],
   ['_7etimingaggregator',['~TimingAggregator',['../classbdm_1_1TimingAggregator.html#acd28bfd68821a93cf558f8dde895102e',1,'bdm::TimingAggregator']]],
   ['_7evisualizationadaptor',['~VisualizationAdaptor',['../classbdm_1_1VisualizationAdaptor.html#af7398db71b32f29d229e5e71fa92058b',1,'bdm::VisualizationAdaptor']]],

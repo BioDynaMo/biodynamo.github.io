@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-465-gb395e5a</span>
+   &#160;<span id="projectnumber">v0.1.0-466-gbb5a5f4</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sim_object.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sim__object_8h__incl.svg" width="2360" height="708"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sim__object_8h__incl.svg" width="2683" height="708"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -183,7 +183,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (is_so_ptr&lt;decltype(data_member)&gt;::value) {                            \</div><div class="line">    visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(uint64_t).hash_code(),              \</div><div class="line">                   static_cast&lt;const void*&gt;(                                \</div><div class="line">                       detail::ExtractUidPtr::GetUidPtr(data_member)));     \</div><div class="line">  } <span class="keywordflow">else</span> {                                                                  \</div><div class="line">    visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(decltype(data_member)).hash_code(), \</div><div class="line">                   static_cast&lt;const void*&gt;(&amp;data_member));                 \</div><div class="line">  }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (is_so_ptr&lt;decltype(data_member)&gt;::value) {                            \</div><div class="line">    const uint64_t uid = detail::ExtractUid::GetUid(data_member);           \</div><div class="line">    visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(uint64_t).hash_code(),              \</div><div class="line">                   static_cast&lt;const void*&gt;(&amp;uid));                         \</div><div class="line">  } <span class="keywordflow">else</span> {                                                                  \</div><div class="line">    visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(decltype(data_member)).hash_code(), \</div><div class="line">                   static_cast&lt;const void*&gt;(&amp;data_member));                 \</div><div class="line">  }</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="sim__object_8h_source.html#l00045">45</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
@@ -219,7 +219,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                         \</div><div class="line">    auto it = dm_selector.find(#data_member);                               \</div><div class="line">    if (it != dm_selector.end()) {                                          \</div><div class="line">      if (is_so_ptr&lt;decltype(data_member)&gt;::value) {                        \</div><div class="line">        visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(uint64_t).hash_code(),          \</div><div class="line">                       static_cast&lt;const void*&gt;(                            \</div><div class="line">                           detail::ExtractUidPtr::GetUidPtr(data_member))); \</div><div class="line">      } <span class="keywordflow">else</span> {                                                              \</div><div class="line">        visitor-&gt;Visit(#data_member,                                        \</div><div class="line">                       <span class="keyword">typeid</span>(decltype(data_member)).hash_code(),           \</div><div class="line">                       static_cast&lt;const void*&gt;(&amp;data_member));             \</div><div class="line">      }                                                                     \</div><div class="line">    }                                                                       \</div><div class="line">  }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                                   \</div><div class="line">    auto it = dm_selector.find(#data_member);                         \</div><div class="line">    if (it != dm_selector.end()) {                                    \</div><div class="line">      if (is_so_ptr&lt;decltype(data_member)&gt;::value) {                  \</div><div class="line">        const uint64_t uid = detail::ExtractUid::GetUid(data_member); \</div><div class="line">        visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(uint64_t).hash_code(),    \</div><div class="line">                       static_cast&lt;const void*&gt;(&amp;uid));               \</div><div class="line">      } <span class="keywordflow">else</span> {                                                        \</div><div class="line">        visitor-&gt;Visit(#data_member,                                  \</div><div class="line">                       <span class="keyword">typeid</span>(decltype(data_member)).hash_code(),     \</div><div class="line">                       static_cast&lt;const void*&gt;(&amp;data_member));       \</div><div class="line">      }                                                               \</div><div class="line">    }                                                                 \</div><div class="line">  }</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="sim__object_8h_source.html#l00058">58</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
