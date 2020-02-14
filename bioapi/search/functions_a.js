@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['lastop',['LastOp',['../structbdm_1_1LastOp.html#aacd3eb8fc2ef436a21b4cba40c273594',1,'bdm::LastOp']]],
   ['launchdisplacementkernel',['LaunchDisplacementKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a91676b7d2ddbc2324e67546c47069429',1,'bdm::DisplacementOpCudaKernel']]],
   ['lengthtoproximalbranchingpoint',['LengthToProximalBranchingPoint',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a5a5ee860cdbb0a02f5477b7741fa8872',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['livevisualization',['LiveVisualization',['../classbdm_1_1ParaviewAdaptor.html#a76c0ecb4a3d8b142b63cbc4d27bfc167',1,'bdm::ParaviewAdaptor']]],

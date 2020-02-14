@@ -21,6 +21,8 @@ var searchData=
   ['updateproducers',['UpdateProducers',['../classbdm_1_1InSituPipeline.html#aa6c03563f1ee9098d86da6091d953c0d',1,'bdm::InSituPipeline']]],
   ['updaterelative',['UpdateRelative',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a6064fcc60d17910dd915c117e225c06a',1,'bdm::experimental::neuroscience::NeuriteElement::UpdateRelative()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a4d7d668843f30d1e8879fe7078904dd5',1,'bdm::experimental::neuroscience::NeuronOrNeurite::UpdateRelative()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a97b22fde9cbc3f00092343bc963cb583',1,'bdm::experimental::neuroscience::NeuronSoma::UpdateRelative()']]],
   ['updaterundisplacement',['UpdateRunDisplacement',['../classbdm_1_1SimObject.html#a53944126db971aaa0c57109e816610e2',1,'bdm::SimObject']]],
+  ['updateuidsohmapfunctor',['UpdateUidSoHMapFunctor',['../structbdm_1_1UpdateUidSoHMapFunctor.html#ad0a1bca476958d44bea93273067520e4',1,'bdm::UpdateUidSoHMapFunctor']]],
+  ['updateuidsohmapfunctor',['UpdateUidSoHMapFunctor',['../structbdm_1_1UpdateUidSoHMapFunctor.html',1,'bdm']]],
   ['updatevolume',['UpdateVolume',['../classbdm_1_1Cell.html#a45c3e0ed831794031bf074228f534b5d',1,'bdm::Cell::UpdateVolume()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a771c4d37ee536add440c183cbf54822f',1,'bdm::experimental::neuroscience::NeuriteElement::UpdateVolume()']]],
   ['use_5fgpu_5f',['use_gpu_',['../structbdm_1_1Param.html#abd15e376dcf514fb83c6ff55b49cd3db',1,'bdm::Param']]],
   ['use_5fopencl_5f',['use_opencl_',['../structbdm_1_1Param.html#a36f0fb400b2fcbe803373bc994a8a612',1,'bdm::Param']]],

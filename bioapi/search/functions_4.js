@@ -12,6 +12,8 @@ var searchData=
   ['diffusiongrid',['DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac',1,'bdm::DiffusionGrid::DiffusionGrid(TRootIOCtor *p)'],['../classbdm_1_1DiffusionGrid.html#a79aab2d224eced115cab3c7ee08dd269',1,'bdm::DiffusionGrid::DiffusionGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)']]],
   ['diffusionop',['DiffusionOp',['../classbdm_1_1DiffusionOp.html#af5866f7e6c91715c279ead9213c89708',1,'bdm::DiffusionOp']]],
   ['disabledefragmentation',['DisableDefragmentation',['../classbdm_1_1SoUidGenerator.html#a3ec67d440dfc649443cacc75a08f2789',1,'bdm::SoUidGenerator']]],
+  ['discretizationop',['DiscretizationOp',['../structbdm_1_1DiscretizationOp.html#a659dde95e6b993a0a56d8cd08ef8901d',1,'bdm::DiscretizationOp']]],
+  ['displacementfunctor',['DisplacementFunctor',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#a7d488157c987a31cfd2e7fef1e90fd03',1,'bdm::Cell::DisplacementFunctor::DisplacementFunctor()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a47112082489b067ec3a2ae3dfca48060',1,'bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor::DisplacementFunctor()']]],
   ['displacementop',['DisplacementOp',['../classbdm_1_1DisplacementOp.html#af7611a05f17b66fd6c575588f0818317',1,'bdm::DisplacementOp']]],
   ['displacementopcpu',['DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html#a366d9896cbd658c17cf80e15e338878a',1,'bdm::DisplacementOpCpu']]],
   ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1DisplacementOpCuda.html#a7a77905be0b1402f37e5641f8a367d66',1,'bdm::DisplacementOpCuda']]],

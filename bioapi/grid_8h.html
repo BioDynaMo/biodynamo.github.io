@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-478-g3604c28</span>
+   &#160;<span id="projectnumber">v0.1.0-479-gbdab419</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="math__array_8h_source.html">core/container/math_array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="parallel__resize__vector_8h_source.html">core/container/parallel_resize_vector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sim__object__vector_8h_source.html">core/container/sim_object_vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="functor_8h_source.html">core/functor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="core_2param_2param_8h_source.html">core/param/param.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="resource__manager_8h_source.html">core/resource_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="log_8h_source.html">core/util/log.h</a>&quot;</code><br />
@@ -119,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for grid.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="grid_8h__incl.svg" width="4424" height="694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="grid_8h__incl.svg" width="4574" height="694"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -147,11 +148,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1NeighborIterator.html">bdm::Grid::NeighborIterator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An iterator that iterates over the boxes in this grid.  <a href="structbdm_1_1Grid_1_1NeighborIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1AssignToBoxesFunctor.html">bdm::Grid::AssignToBoxesFunctor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid_1_1NeighborMutexBuilder.html">bdm::Grid::NeighborMutexBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html">bdm::Grid::NeighborMutexBuilder::NeighborMutex</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html">bdm::Grid::NeighborMutexBuilder::MutexWrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Grid_1_1SimDimensionAndLargestObjectFunctor.html">bdm::Grid::SimDimensionAndLargestObjectFunctor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

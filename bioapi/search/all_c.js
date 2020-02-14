@@ -2,7 +2,7 @@ var searchData=
 [
   ['macros_2eh',['macros.h',['../macros_8h.html',1,'']]],
   ['make_5fstd_5fvector',['make_std_vector',['../classbdm_1_1InlineVector.html#ae4ee6e59b5b42b7d4b43d90af65ce418',1,'bdm::InlineVector']]],
-  ['map',['Map',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
+  ['map',['Map',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::Map()'],['../structbdm_1_1UpdateUidSoHMapFunctor.html#a6448689de4c678b28b4e690943c298bc',1,'bdm::UpdateUidSoHMapFunctor::Map()']]],
   ['map_5f',['map_',['../structbdm_1_1SoUidMap_1_1Iterator.html#a95c2949c9aa6a32bca9aae8ec4e96dc9',1,'bdm::SoUidMap::Iterator::map_()'],['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#acd2b9ab30cefd3079d81e3b1342fd278',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::map_()'],['../classbdm_1_1SoUidGenerator.html#ad95966f72b4a9856b7b00a55e9d8bab6',1,'bdm::SoUidGenerator::map_()']]],
   ['mass_5flocation_5f',['mass_location_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aaff1bfd2639355a3115aa0f114b335c0',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['mat_5fempty_5fspace_5f',['mat_empty_space_',['../classbdm_1_1RootAdaptor.html#a84aa3d20e8e2cf5ccaf0b839b7c1bdba',1,'bdm::RootAdaptor']]],

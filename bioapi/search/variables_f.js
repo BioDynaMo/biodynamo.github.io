@@ -11,6 +11,7 @@ var searchData=
   ['restore_5fpoint_5f',['restore_point_',['../classbdm_1_1Scheduler.html#ae3dfd5ea7fe1369103cfc28ca042b894',1,'bdm::Scheduler']]],
   ['reused_5f',['reused_',['../classbdm_1_1SoUid.html#ac5fa482dc4157fe44dff87ba5733ffbc',1,'bdm::SoUid']]],
   ['rm_5f',['rm_',['../classbdm_1_1Simulation.html#ab887c5957799dfc9e1a039cef4920cff',1,'bdm::Simulation']]],
+  ['rm_5fuid_5fsoh_5fmap_5f',['rm_uid_soh_map_',['../structbdm_1_1UpdateUidSoHMapFunctor.html#af3dd8e3ead15b6298a88ecea6203aa3b',1,'bdm::UpdateUidSoHMapFunctor']]],
   ['root_5fcounter_5f',['root_counter_',['../classbdm_1_1SoUidGenerator.html#a9f967c5e066329429d42ccd6741f93e9',1,'bdm::SoUidGenerator']]],
   ['root_5fvisualization_5f',['root_visualization_',['../structbdm_1_1Param.html#acb36331f91e926314bfee8283783cb3a',1,'bdm::Param::root_visualization_()'],['../classbdm_1_1Scheduler.html#a1be0347fbd4b6efbc962c46284c4334e',1,'bdm::Scheduler::root_visualization_()']]],
   ['run_5fbm_5floop_5fidx_5f',['run_bm_loop_idx_',['../classbdm_1_1SimObject.html#a9ce3c107c46f0546d535f23ad00b419a',1,'bdm::SimObject']]],

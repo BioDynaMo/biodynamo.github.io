@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-478-g3604c28</span>
+   &#160;<span id="projectnumber">v0.1.0-479-gbdab419</span>
    </div>
   </td>
  </tr>
@@ -96,10 +96,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ae9db9faea6fce226f6142befd8fdc208">Execute</a>(SimObject *so, const std::vector&lt; Operation &gt; &amp;operations)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a7c17d42c2e5b0507c5b10a78ad3fee84">Execute</a>(SimObject *so, const std::vector&lt; Operation * &gt; &amp;operations)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#aef5eebb0e1b28b3f7729dd70d8616f1b">ForEachNeighbor</a>(const std::function&lt; void(const SimObject *)&gt; &amp;lambda, const SimObject &amp;query)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a10ff54b2e5347c5c270506c5dc531ec0">ForEachNeighbor</a>(const std::function&lt; void(const SimObject *, double)&gt; &amp;lambda, const SimObject &amp;query)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ad13aa59c66e57c1a8fdba97c63d95f33">ForEachNeighborWithinRadius</a>(const std::function&lt; void(const SimObject *)&gt; &amp;lambda, const SimObject &amp;query, double squared_radius)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a02a62250aeb00282c45d1cb540e8ee14">ForEachNeighbor</a>(Functor&lt; void, const SimObject *, double &gt; &amp;lambda, const SimObject &amp;query)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#abeec01d41e4fab0a92d0bb7bfe090fa1">ForEachNeighborWithinRadius</a>(Functor&lt; void, const SimObject *, double &gt; &amp;lambda, const SimObject &amp;query, double squared_radius)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a40cad98751d8e16f9954d221d01f6bd7">GetConstSimObject</a>(const SoUid &amp;uid)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a39183af11504e5807ce654c1dae2343b">GetSimObject</a>(const SoUid &amp;uid)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a88e1a688d9405d6262837e941b0de882">InPlaceExecutionContext</a>(const std::shared_ptr&lt; ThreadSafeSoUidMap &gt; &amp;map)</td><td class="entry"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">bdm::InPlaceExecutionContext</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>

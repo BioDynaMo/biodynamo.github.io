@@ -18,5 +18,6 @@ var searchData=
   ['top_5f',['top_',['../classbdm_1_1RootAdaptor.html#a1245f0dc2619a867d24cb08ece9e4e44',1,'bdm::RootAdaptor']]],
   ['total_5fnum_5fboxes_5f',['total_num_boxes_',['../classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44',1,'bdm::DiffusionGrid']]],
   ['total_5fsteps_5f',['total_steps_',['../classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a',1,'bdm::Scheduler']]],
-  ['tractor_5fforce_5f',['tractor_force_',['../classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc',1,'bdm::Cell']]]
+  ['tractor_5fforce_5f',['tractor_force_',['../classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc',1,'bdm::Cell']]],
+  ['translation_5fforce_5fon_5fpoint_5fmass',['translation_force_on_point_mass',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#a4d6006338695e04c2fc74abb376560fa',1,'bdm::Cell::DisplacementFunctor']]]
 ];

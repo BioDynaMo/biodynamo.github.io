@@ -59,7 +59,7 @@ var searchData=
   ['isterminal',['IsTerminal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad9436f774b376a16d4648da51e3ec73d',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['iteratezorder',['IterateZOrder',['../classbdm_1_1Grid.html#ac2e9f22d6ff3315623ed62374ce25494',1,'bdm::Grid']]],
   ['iterator',['iterator',['../classbdm_1_1InlineVector.html#a7e9ea389f9721a018e031a051d45edc9',1,'bdm::InlineVector::iterator()'],['../classbdm_1_1ParallelResizeVector.html#a0b1f52e2f5f2973f9424b917ff2bb907',1,'bdm::ParallelResizeVector::iterator()'],['../structbdm_1_1InlineVector_1_1Iterator.html#a8db90b017f5d9f88416adfb343508aa7',1,'bdm::InlineVector::Iterator::Iterator(uint16_t index, TIV *iv)'],['../structbdm_1_1InlineVector_1_1Iterator.html#af853ee2251afa301c740328c10186be8',1,'bdm::InlineVector::Iterator::Iterator(const Iterator &amp;other)'],['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#a2f7a65451ded1e7a43548540812e9208',1,'bdm::Grid::Box::Iterator::Iterator()']]],
-  ['iterator',['Iterator',['../structbdm_1_1SoUidMap_1_1Iterator.html',1,'bdm::SoUidMap']]],
   ['iterator',['Iterator',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html',1,'bdm::Grid::Box']]],
-  ['iterator',['Iterator',['../structbdm_1_1InlineVector_1_1Iterator.html',1,'bdm::InlineVector']]]
+  ['iterator',['Iterator',['../structbdm_1_1InlineVector_1_1Iterator.html',1,'bdm::InlineVector']]],
+  ['iterator',['Iterator',['../structbdm_1_1SoUidMap_1_1Iterator.html',1,'bdm::SoUidMap']]]
 ];

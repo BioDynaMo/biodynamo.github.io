@@ -84,7 +84,7 @@ var searchData=
   ['getreused',['GetReused',['../classbdm_1_1SoUidMap.html#a07bed3601cfc2d84ed610f3fb379e7e3',1,'bdm::SoUidMap::GetReused()'],['../classbdm_1_1SoUid.html#abfa01365933db2af602c08017f0e0b14',1,'bdm::SoUid::GetReused()']]],
   ['getrootvisualization',['GetRootVisualization',['../classbdm_1_1Scheduler.html#a3103e62eaf8ba572318dc0a6050f6e95',1,'bdm::Scheduler']]],
   ['getrundisplacementforallnextts',['GetRunDisplacementForAllNextTs',['../classbdm_1_1SimObject.html#a8ffc703c13fdd58eb12920a71cf9ca5b',1,'bdm::SimObject']]],
-  ['getscheduleops',['GetScheduleOps',['../classbdm_1_1Scheduler.html#ade2e38a422ea00e1d5170a54ee096f99',1,'bdm::Scheduler']]],
+  ['getscheduleops',['GetScheduleOps',['../classbdm_1_1Scheduler.html#a97f8cecdea4b22815b88d413056e98db',1,'bdm::Scheduler']]],
   ['getscheduler',['GetScheduler',['../classbdm_1_1Simulation.html#a831f22ad084c248b0d2698242ebdabb8',1,'bdm::Simulation']]],
   ['getseed',['GetSeed',['../classbdm_1_1Random.html#a4c8d353119e9b5420b2d7dabf014bf4f',1,'bdm::Random']]],
   ['getshape',['GetShape',['../classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783',1,'bdm::Cell::GetShape()'],['../classbdm_1_1SimObject.html#ab178f73dd35873394b74e2b5ad82f52e',1,'bdm::SimObject::GetShape()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4826ee1c2b558fff8919468df9606c8a',1,'bdm::experimental::neuroscience::NeuriteElement::GetShape()']]],

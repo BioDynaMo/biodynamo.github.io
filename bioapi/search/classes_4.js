@@ -1,7 +1,14 @@
 var searchData=
 [
-  ['event',['Event',['../structbdm_1_1Event.html',1,'bdm']]],
-  ['exporter',['Exporter',['../classbdm_1_1Exporter.html',1,'bdm']]],
-  ['exporterfactory',['ExporterFactory',['../classbdm_1_1ExporterFactory.html',1,'bdm']]],
-  ['extractuid',['ExtractUid',['../structbdm_1_1detail_1_1ExtractUid.html',1,'bdm::detail']]]
+  ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html',1,'bdm']]],
+  ['diffusiongrid',['DiffusionGrid',['../classbdm_1_1DiffusionGrid.html',1,'bdm']]],
+  ['diffusionop',['DiffusionOp',['../classbdm_1_1DiffusionOp.html',1,'bdm']]],
+  ['discretizationop',['DiscretizationOp',['../structbdm_1_1DiscretizationOp.html',1,'bdm']]],
+  ['displacementfunctor',['DisplacementFunctor',['../structbdm_1_1Cell_1_1DisplacementFunctor.html',1,'bdm::Cell']]],
+  ['displacementfunctor',['DisplacementFunctor',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['displacementop',['DisplacementOp',['../classbdm_1_1DisplacementOp.html',1,'bdm']]],
+  ['displacementopcpu',['DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html',1,'bdm']]],
+  ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1DisplacementOpCuda.html',1,'bdm']]],
+  ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html',1,'bdm']]],
+  ['dividingcellop',['DividingCellOp',['../classbdm_1_1DividingCellOp.html',1,'bdm']]]
 ];

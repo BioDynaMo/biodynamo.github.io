@@ -12,7 +12,7 @@ var searchData=
   ['addinitializer',['AddInitializer',['../classbdm_1_1DiffusionGrid.html#a7f83b22e624ebe2410db4644ed85fa47',1,'bdm::DiffusionGrid']]],
   ['addnewsimobjects',['AddNewSimObjects',['../classbdm_1_1ResourceManager.html#ab2df59935ab8e3511c56738b94ee189a',1,'bdm::ResourceManager']]],
   ['addobject',['AddObject',['../structbdm_1_1Grid_1_1Box.html#aeacd6575c8666c9882b875f4fd862c96',1,'bdm::Grid::Box']]],
-  ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#ac43373b26d187c511dd7fd5226df1213',1,'bdm::Scheduler']]],
+  ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#aa7ac989a26f9d1e1d7fb6e78cd22b75a',1,'bdm::Scheduler']]],
   ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#adb789cac5481816ed0ecdef6fcca2f17',1,'bdm::CommandLineOptions::AddOption(std::string group=&quot;Simulation&quot;)'],['../classbdm_1_1CommandLineOptions.html#aeb88d5d9bb969b3b3f2ad8994d0691ee',1,'bdm::CommandLineOptions::AddOption(std::string opt, std::string def, std::string description=&quot;&quot;, std::string group=&quot;Simulation&quot;)']]],
   ['addsphere',['AddSphere',['../classbdm_1_1RootAdaptor.html#aeb7442dbc1e83198cfe8b44ee6f3fe75',1,'bdm::RootAdaptor']]],
   ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#a357af2bdea31bf521ee128bbde6b1fef',1,'bdm::Math']]],
@@ -22,11 +22,12 @@ var searchData=
   ['applyimpl',['ApplyImpl',['../namespacebdm_1_1detail.html#a4de1bcc42a5a3ab2a97ebae108fe4d0e',1,'bdm::detail']]],
   ['applyonalldiffusiongrids',['ApplyOnAllDiffusionGrids',['../classbdm_1_1ResourceManager.html#aa6569e0af9fcd82b28e2ab731144b55f',1,'bdm::ResourceManager']]],
   ['applyonallelements',['ApplyOnAllElements',['../classbdm_1_1ResourceManager.html#ac927a4f96a3283ac58f2ebc896cf7a28',1,'bdm::ResourceManager::ApplyOnAllElements(const std::function&lt; void(SimObject *)&gt; &amp;function)'],['../classbdm_1_1ResourceManager.html#a6852bc9a6da071ea996da2a53f82bb13',1,'bdm::ResourceManager::ApplyOnAllElements(const std::function&lt; void(SimObject *, SoHandle)&gt; &amp;function)']]],
-  ['applyonallelementsparallel',['ApplyOnAllElementsParallel',['../classbdm_1_1ResourceManager.html#ab548998df960492f542a6d04db2258d5',1,'bdm::ResourceManager']]],
-  ['applyonallelementsparalleldynamic',['ApplyOnAllElementsParallelDynamic',['../classbdm_1_1ResourceManager.html#afa8519765cf14980c555281d5d71f743',1,'bdm::ResourceManager']]],
+  ['applyonallelementsparallel',['ApplyOnAllElementsParallel',['../classbdm_1_1ResourceManager.html#a49d24c037ab710aeee8c680803ca96a9',1,'bdm::ResourceManager']]],
+  ['applyonallelementsparalleldynamic',['ApplyOnAllElementsParallelDynamic',['../classbdm_1_1ResourceManager.html#afa32c1d087beee05ed4ac2a5ed503509',1,'bdm::ResourceManager']]],
   ['applyrundisplacementforallnextts',['ApplyRunDisplacementForAllNextTs',['../classbdm_1_1SimObject.html#a2b46e5c05f45dfdeec9a6df2b0cb9c12',1,'bdm::SimObject']]],
   ['assignfromconfig',['AssignFromConfig',['../structbdm_1_1ModuleParam.html#a89e5173fb0cedf79c94ee1618c12836b',1,'bdm::ModuleParam::AssignFromConfig()'],['../structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a',1,'bdm::Param::AssignFromConfig()'],['../structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a21c6c14e7a2567d74396c60e64410645',1,'bdm::experimental::neuroscience::Param::AssignFromConfig()']]],
   ['assignnewuid',['AssignNewUid',['../classbdm_1_1SimObject.html#abac69fd05d170d2d9b9f99ffaca94f5a',1,'bdm::SimObject']]],
   ['assignthreadsafetymechanism',['AssignThreadSafetyMechanism',['../namespacebdm.html#a85f69154d0b09bdfcb35b3c3ce112371',1,'bdm']]],
+  ['assigntoboxesfunctor',['AssignToBoxesFunctor',['../structbdm_1_1Grid_1_1AssignToBoxesFunctor.html#a5bff718a6e9817b98aff24347e96ca0e',1,'bdm::Grid::AssignToBoxesFunctor']]],
   ['at',['at',['../classbdm_1_1MathArray.html#a7fddb8d32964619d1b9685a78cbc3d77',1,'bdm::MathArray']]]
 ];
