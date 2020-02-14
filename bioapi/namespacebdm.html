@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-477-g0f8db1f</span>
+   &#160;<span id="projectnumber">v0.1.0-478-g3604c28</span>
    </div>
   </td>
  </tr>
@@ -241,6 +241,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1TFileRaii.html">TFileRaii</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically close a TFile object using RAII pattern.  <a href="classbdm_1_1TFileRaii.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,6 +316,8 @@ Functions</h2></td></tr>
 <tr class="separator:a36a873db32fbcc419e619f90c3e994bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45cc3ed5a6b31cb8863f4a68ce88c7e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a45cc3ed5a6b31cb8863f4a68ce88c7e4">ApplyBoundingBox</a> (<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *sim_object, double lb, double rb)</td></tr>
 <tr class="separator:a45cc3ed5a6b31cb8863f4a68ce88c7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f69154d0b09bdfcb35b3c3ce112371"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a85f69154d0b09bdfcb35b3c3ce112371">AssignThreadSafetyMechanism</a> (const std::shared_ptr&lt; cpptoml::table &gt; &amp;config, <a class="el" href="structbdm_1_1Param.html">Param</a> *param)</td></tr>
+<tr class="separator:a85f69154d0b09bdfcb35b3c3ce112371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b5f1a0e2dac8df993214aee8678d51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a52b5f1a0e2dac8df993214aee8678d51">FileExists</a> (const std::string &amp;file_name)</td></tr>
 <tr class="separator:a52b5f1a0e2dac8df993214aee8678d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69142f2c58bfb100d371ba95c8e92cb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -589,6 +593,34 @@ template&lt;typename TTuple , typename TFunction &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="bound__space__op_8h_source.html#l00024">24</a> of file <a class="el" href="bound__space__op_8h_source.html">bound_space_op.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85f69154d0b09bdfcb35b3c3ce112371"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::AssignThreadSafetyMechanism </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; cpptoml::table &gt; &amp;&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1Param.html">Param</a> *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="core_2param_2param_8cc_source.html#l00049">49</a> of file <a class="el" href="core_2param_2param_8cc_source.html">param.cc</a>.</p>
 
 </div>
 </div>

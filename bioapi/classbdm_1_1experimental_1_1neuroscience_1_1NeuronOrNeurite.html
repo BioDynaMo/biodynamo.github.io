@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-477-g0f8db1f</span>
+   &#160;<span id="projectnumber">v0.1.0-478-g3604c28</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae6b89f40fdd6111a66edb2cfda09ce50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13af251a7316a97f218cd6bdd065cedd"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a13af251a7316a97f218cd6bdd065cedd">GetUid</a> () const =0</td></tr>
 <tr class="separator:a13af251a7316a97f218cd6bdd065cedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d1c4d8721b78f794d6188366f94517"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a15d1c4d8721b78f794d6188366f94517">GetLock</a> ()=0</td></tr>
+<tr class="separator:a15d1c4d8721b78f794d6188366f94517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb61f2c3615b73393e8c6f5581910a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a>&lt; <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html">NeuronOrNeurite</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#afb61f2c3615b73393e8c6f5581910a07">GetNeuronOrNeuriteSoPtr</a> () const </td></tr>
 <tr class="separator:afb61f2c3615b73393e8c6f5581910a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da7a3b05f48063e132b1c8a20c7e66d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a5da7a3b05f48063e132b1c8a20c7e66d">IsNeuronSoma</a> () const </td></tr>
@@ -129,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The mother of a neurite element can either be a neuron or a neurite. This class declares this interface. </p>
 
-<p>Definition at line <a class="el" href="neuron__or__neurite_8h_source.html#l00032">32</a> of file <a class="el" href="neuron__or__neurite_8h_source.html">neuron_or_neurite.h</a>.</p>
+<p>Definition at line <a class="el" href="neuron__or__neurite_8h_source.html#l00035">35</a> of file <a class="el" href="neuron__or__neurite_8h_source.html">neuron_or_neurite.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae6b89f40fdd6111a66edb2cfda09ce50"></a>
 <div class="memitem">
@@ -157,6 +159,31 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a15d1c4d8721b78f794d6188366f94517"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a>* bdm::experimental::neuroscience::NeuronOrNeurite::GetLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a44c59cf0a1e28d9323933d257ea83328">bdm::experimental::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a0385b981cd10a2bd4fddf3715ad4a16e">bdm::experimental::neuroscience::NeuronSoma</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="afb61f2c3615b73393e8c6f5581910a07"></a>
 <div class="memitem">
 <div class="memproto">

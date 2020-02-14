@@ -30,5 +30,6 @@ var searchData=
   ['createcellsrandom',['CreateCellsRandom',['../structbdm_1_1ModelInitializer.html#add68668791308815e954bf4f15bc90d8',1,'bdm::ModelInitializer']]],
   ['createpipeline',['CreatePipeline',['../classbdm_1_1InSituPipeline.html#a494270a972753169af88179d1ed9680e',1,'bdm::InSituPipeline']]],
   ['createvtkobjects',['CreateVtkObjects',['../classbdm_1_1ParaviewAdaptor.html#a24c07711957c1fa717c8f2a4d51d96a1',1,'bdm::ParaviewAdaptor']]],
+  ['criticalregion',['CriticalRegion',['../classbdm_1_1SimObject.html#a6c1e6f0f31a74b559640be8e14027e72',1,'bdm::SimObject::CriticalRegion()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a21ccc76b7ffe0e3a62494d84654f4eb4',1,'bdm::experimental::neuroscience::NeuriteElement::CriticalRegion()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a596394c12d05f20c2068a8a10baec6ec',1,'bdm::experimental::neuroscience::NeuronSoma::CriticalRegion()']]],
   ['crossproduct',['CrossProduct',['../structbdm_1_1Math.html#abdcaeb1f47b85657a5cff0714bb5b8ec',1,'bdm::Math']]]
 ];

@@ -16,6 +16,6 @@ var searchData=
   ['souidmap',['SoUidMap',['../classbdm_1_1SoUidMap.html',1,'bdm']]],
   ['souidmap_3c_20bdm_3a_3asohandle_20_3e',['SoUidMap&lt; bdm::SoHandle &gt;',['../classbdm_1_1SoUidMap.html',1,'bdm']]],
   ['sovisitor',['SoVisitor',['../structbdm_1_1SoVisitor.html',1,'bdm']]],
-  ['spinlock',['Spinlock',['../classSpinlock.html',1,'']]],
+  ['spinlock',['Spinlock',['../classbdm_1_1Spinlock.html',1,'bdm']]],
   ['splitneuriteelementevent',['SplitNeuriteElementEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html',1,'bdm::experimental::neuroscience']]]
 ];
