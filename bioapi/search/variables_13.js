@@ -2,7 +2,7 @@ var searchData=
 [
   ['value',['value',['../structbdm_1_1is__so__ptr.html#a8a4bd6c1b035019338672551ded993eb',1,'bdm::is_so_ptr::value()'],['../structbdm_1_1is__so__ptr_3_01SoPointer_3_01T_01_4_01_4.html#a748638e7b1fd70d5ba4e8a602d032618',1,'bdm::is_so_ptr&lt; SoPointer&lt; T &gt; &gt;::value()']]],
   ['value_5f',['value_',['../structbdm_1_1Uniform.html#a66737c1bc4622489c54142ce0f20b928',1,'bdm::Uniform']]],
-  ['vector_5f',['vector_',['../structbdm_1_1InlineVector_1_1Iterator.html#a70adbc579c038201314fc132d8181563',1,'bdm::InlineVector::Iterator']]],
+  ['vector_5f',['vector_',['../structbdm_1_1InlineVector_1_1Iterator.html#a70adbc579c038201314fc132d8181563',1,'bdm::InlineVector::Iterator::vector_()'],['../classbdm_1_1VectorTypeWrapper.html#afc6716b0cca8b596f15bc3bc260ab50f',1,'bdm::VectorTypeWrapper::vector_()']]],
   ['vis_5fdata_5fmembers_5f',['vis_data_members_',['../structbdm_1_1VtkSoGrid.html#af8d1a0c3a1007a04104ecae4273990d5',1,'bdm::VtkSoGrid']]],
   ['visualization_5f',['visualization_',['../classbdm_1_1Scheduler.html#a1bd15064a4ae333bb1b89dfc0aff0609',1,'bdm::Scheduler']]],
   ['visualization_5fengine_5f',['visualization_engine_',['../structbdm_1_1Param.html#a53e8b71abfe700d6fcde3b1f361193a3',1,'bdm::Param']]],
