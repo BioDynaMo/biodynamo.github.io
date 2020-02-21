@@ -10,6 +10,7 @@ var searchData=
   ['canvas_5f',['canvas_',['../classbdm_1_1RootAdaptor.html#ac590ef38538563afec533bdd6a362222',1,'bdm::RootAdaptor']]],
   ['capacity',['capacity',['../classbdm_1_1InlineVector.html#a7f7d0143c0caf58a178e659ffcceaa06',1,'bdm::InlineVector::capacity()'],['../classbdm_1_1ParallelResizeVector.html#a51165bd16ce279a903eb29abab6f33e3',1,'bdm::ParallelResizeVector::capacity()']]],
   ['capacity_5f',['capacity_',['../classbdm_1_1ParallelResizeVector.html#a9db21c9ef0bd6658626a99e3692d7ed3',1,'bdm::ParallelResizeVector']]],
+  ['cast',['Cast',['../classbdm_1_1SoPointer.html#a94b1e5cb1de83e17521ba6d503c9357d',1,'bdm::SoPointer::Cast(TFrom *so) const '],['../classbdm_1_1SoPointer.html#a2dedffcb38c9bdcc7dbc4eab82b78db0',1,'bdm::SoPointer::Cast(TFrom *so) const ']]],
   ['cbegin',['cbegin',['../classbdm_1_1ParallelResizeVector.html#ad1d60be58b35efe22671792208be8a5b',1,'bdm::ParallelResizeVector']]],
   ['cdo_5f',['cdo_',['../classbdm_1_1DisplacementOpCuda.html#a50c7718ce677c30160e58000c63591b4',1,'bdm::DisplacementOpCuda']]],
   ['cell',['Cell',['../classbdm_1_1Cell.html',1,'bdm']]],

@@ -68,7 +68,7 @@ var searchData=
   ['getmoduleparam',['GetModuleParam',['../structbdm_1_1Param.html#a89007026454b633d6df71cf51e4ad774',1,'bdm::Param::GetModuleParam() const '],['../structbdm_1_1Param.html#a1b6739faa89ba842fbe8ca65478c0af4',1,'bdm::Param::GetModuleParam()']]],
   ['getmooreboxes',['GetMooreBoxes',['../classbdm_1_1Grid.html#adee49cc8a52102d2dfd9bfafb095edca',1,'bdm::Grid']]],
   ['getmooreboxindices',['GetMooreBoxIndices',['../classbdm_1_1Grid.html#a6ab6037c5459139bbd85f27b34179ad8',1,'bdm::Grid']]],
-  ['getmother',['GetMother',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a35e9590cb1f939c9cf1b8ad2992ffc2b',1,'bdm::experimental::neuroscience::NeuriteElement::GetMother()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ab8a0b75f8b985ba277e8663124c44e5b',1,'bdm::experimental::neuroscience::NeuriteElement::GetMother() const ']]],
+  ['getmother',['GetMother',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#af04422266bf74ee0ff183fe53aed089a',1,'bdm::experimental::neuroscience::NeuriteElement::GetMother()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ab3308d098c2bcf534f322f81d59d4c5e',1,'bdm::experimental::neuroscience::NeuriteElement::GetMother() const ']]],
   ['getmutex',['GetMutex',['../classbdm_1_1Grid_1_1NeighborMutexBuilder.html#ac41629b9d95dd94316b858a8b3428cff',1,'bdm::Grid::NeighborMutexBuilder']]],
   ['getneighbormutexbuilder',['GetNeighborMutexBuilder',['../classbdm_1_1Grid.html#a5a211fc1501b233eb759599f6c448d0a',1,'bdm::Grid']]],
   ['getneuronorneuritesoptr',['GetNeuronOrNeuriteSoPtr',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#afb61f2c3615b73393e8c6f5581910a07',1,'bdm::experimental::neuroscience::NeuronOrNeurite']]],
