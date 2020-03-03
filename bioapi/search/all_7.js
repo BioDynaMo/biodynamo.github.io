@@ -57,7 +57,7 @@ var searchData=
   ['getindeximpl',['GetIndexImpl',['../structbdm_1_1detail_1_1GetIndexImpl.html',1,'bdm::detail']]],
   ['getindeximpl_3c_20t_2c_20counter_2c_20firsttype_20_3e',['GetIndexImpl&lt; T, Counter, FirstType &gt;',['../structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_01_4.html',1,'bdm::detail']]],
   ['getindeximpl_3c_20t_2c_20counter_2c_20firsttype_2c_20remainingtypes_2e_2e_2e_20_3e',['GetIndexImpl&lt; T, Counter, FirstType, RemainingTypes... &gt;',['../structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_00_01RemainingTypes_8_8_8_01_4.html',1,'bdm::detail']]],
-  ['getinstance',['GetInstance',['../structbdm_1_1BaseBiologyModule.html#a56454e497e634175b18e22e6a3c89af3',1,'bdm::BaseBiologyModule::GetInstance()'],['../classbdm_1_1GpuHelper.html#a79e5e79b22ae31f2666646f64f1dc96a',1,'bdm::GpuHelper::GetInstance()'],['../classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f',1,'bdm::SimObject::GetInstance()'],['../classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a',1,'bdm::ThreadInfo::GetInstance()']]],
+  ['getinstance',['GetInstance',['../structbdm_1_1BaseBiologyModule.html#a56454e497e634175b18e22e6a3c89af3',1,'bdm::BaseBiologyModule::GetInstance()'],['../classbdm_1_1GpuHelper.html#a79e5e79b22ae31f2666646f64f1dc96a',1,'bdm::GpuHelper::GetInstance()'],['../classbdm_1_1OpenCLState.html#ab6e01b1c83d8d84da5c4a2e62aedfd4f',1,'bdm::OpenCLState::GetInstance()'],['../classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f',1,'bdm::SimObject::GetInstance()'],['../classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a',1,'bdm::ThreadInfo::GetInstance()']]],
   ['getl2distance',['GetL2Distance',['../structbdm_1_1Math.html#af686ccdb5c4a9b25e6c5177bf8d8c4eb',1,'bdm::Math']]],
   ['getlargestobjectsize',['GetLargestObjectSize',['../classbdm_1_1Grid.html#aaff1a9df022f98cd33610b6873dbbeed',1,'bdm::Grid']]],
   ['getlength',['GetLength',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a2997e12554631aa09206ffc95bee34a1',1,'bdm::experimental::neuroscience::NeuriteElement']]],
@@ -78,6 +78,7 @@ var searchData=
   ['getnumboxes',['GetNumBoxes',['../classbdm_1_1DiffusionGrid.html#aa89089ac00719e2c92d6d2abb60c01a9',1,'bdm::DiffusionGrid::GetNumBoxes()'],['../classbdm_1_1Grid.html#af1fdbfb9b9d2ff4c90d082d355b4ffe6',1,'bdm::Grid::GetNumBoxes()']]],
   ['getnumboxesarray',['GetNumBoxesArray',['../classbdm_1_1DiffusionGrid.html#aed2db61eb73fba9cd8b4571bbb2eec5d',1,'bdm::DiffusionGrid']]],
   ['getnumsimobjects',['GetNumSimObjects',['../classbdm_1_1ResourceManager.html#ae877fccc0bcbddf7facc9858f5e59ed3',1,'bdm::ResourceManager']]],
+  ['getopenclstate',['GetOpenCLState',['../classbdm_1_1Simulation.html#a9ef5f8da9bed3ddd417b98a22fce83b7',1,'bdm::Simulation']]],
   ['getoperation',['GetOperation',['../classbdm_1_1Scheduler.html#a48466b64a9239b2e093f96c64eb7e668',1,'bdm::Scheduler']]],
   ['getoutputdir',['GetOutputDir',['../classbdm_1_1Simulation.html#a5ca16259ab552490d6c8468082f3f7f1',1,'bdm::Simulation']]],
   ['getparam',['GetParam',['../classbdm_1_1Simulation.html#a9ef1e078599527eca03cc93fc4ed7228',1,'bdm::Simulation']]],
@@ -134,8 +135,8 @@ var searchData=
   ['grid_5fdimensions_5f',['grid_dimensions_',['../classbdm_1_1DiffusionGrid.html#a60dc01c8f8d10726edd9dafa4ea341b9',1,'bdm::DiffusionGrid::grid_dimensions_()'],['../classbdm_1_1Grid.html#a89bda8315a4e67a8f22c812d09a86c70',1,'bdm::Grid::grid_dimensions_()']]],
   ['grid_5ftimestamp_5f',['grid_timestamp_',['../structbdm_1_1Grid_1_1NeighborIterator.html#a81ca1b4a62205d04fbb1b73d84182cba',1,'bdm::Grid::NeighborIterator']]],
   ['grow_5fdivide_2eh',['grow_divide.h',['../grow__divide_8h.html',1,'']]],
-  ['growdivide',['GrowDivide',['../structbdm_1_1GrowDivide.html',1,'bdm']]],
   ['growdivide',['GrowDivide',['../structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407',1,'bdm::GrowDivide::GrowDivide()'],['../structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8',1,'bdm::GrowDivide::GrowDivide(double threshold, double growth_rate, std::initializer_list&lt; EventId &gt; event_list)'],['../structbdm_1_1GrowDivide.html#a7989089a41718e38a98e5ef32f177d79',1,'bdm::GrowDivide::GrowDivide(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)']]],
+  ['growdivide',['GrowDivide',['../structbdm_1_1GrowDivide.html',1,'bdm']]],
   ['growsocontainer',['GrowSoContainer',['../classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7',1,'bdm::ResourceManager']]],
   ['growth_5frate_5f',['growth_rate_',['../structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432',1,'bdm::GrowDivide']]]
 ];

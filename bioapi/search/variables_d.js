@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ocl_5fstate_5f',['ocl_state_',['../classbdm_1_1Simulation.html#ac2e43f4a5bddd36ef41f3cd52eafcd42',1,'bdm::Simulation']]],
   ['opencl_5fdebug_5f',['opencl_debug_',['../structbdm_1_1Param.html#a6e7b0cdea02e9f135f0a0dad4bc2daea',1,'bdm::Param']]],
   ['operation_5f',['operation_',['../structbdm_1_1OpTimer.html#abbbcb76c2eb95fcf7e09e8b9afeced47',1,'bdm::OpTimer']]],
   ['operations_5f',['operations_',['../classbdm_1_1Scheduler.html#a9bee6cdd96c024cb07157fba7e35f4e6',1,'bdm::Scheduler']]],
