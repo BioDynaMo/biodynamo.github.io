@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-498-g06b0154</span>
+   &#160;<span id="projectnumber">v0.1.0-499-g7cd5bd8</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ Include dependency graph for numa.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="numa_8h__dep__incl.svg" width="3583" height="902"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="numa_8h__dep__incl.svg" width="3992" height="976"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -123,10 +123,50 @@ Functions</h2></td></tr>
 <tr class="separator:a618fa597d7ee20a6bb6dd00567c7730f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67d79e6b6f16df55cead3e83dbf27097"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numa_8h.html#a67d79e6b6f16df55cead3e83dbf27097">numa_move_pages</a> (int pid, unsigned long count, void **pages, const int *nodes, int *status, int flags)</td></tr>
 <tr class="separator:a67d79e6b6f16df55cead3e83dbf27097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55414cbb38a0dd46176b32bdd8de672"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numa_8h.html#aa55414cbb38a0dd46176b32bdd8de672">numa_alloc_onnode</a> (uint64_t size, int nid)</td></tr>
+<tr class="separator:aa55414cbb38a0dd46176b32bdd8de672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ffe691f3ecc8fb5e94065542b2c5c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numa_8h.html#a35ffe691f3ecc8fb5e94065542b2c5c8">numa_free</a> (void *p, uint64_t)</td></tr>
+<tr class="separator:a35ffe691f3ecc8fb5e94065542b2c5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42888a490b3af636fd5bfc0535de12c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="numa_8h.html#a42888a490b3af636fd5bfc0535de12c0">sched_getcpu</a> ()</td></tr>
 <tr class="separator:a42888a490b3af636fd5bfc0535de12c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aa55414cbb38a0dd46176b32bdd8de672"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* numa_alloc_onnode </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="numa_8h_source.html#l00036">36</a> of file <a class="el" href="numa_8h_source.html">numa.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a185e19a5b3d5c5c86bb46bfc241fbbed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -149,6 +189,42 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="numa_8h_source.html#l00026">26</a> of file <a class="el" href="numa_8h_source.html">numa.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35ffe691f3ecc8fb5e94065542b2c5c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void numa_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="numa_8h_source.html#l00037">37</a> of file <a class="el" href="numa_8h_source.html">numa.h</a>.</p>
 
 </div>
 </div>
@@ -335,7 +411,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="numa_8h_source.html#l00038">38</a> of file <a class="el" href="numa_8h_source.html">numa.h</a>.</p>
+<p>Definition at line <a class="el" href="numa_8h_source.html#l00040">40</a> of file <a class="el" href="numa_8h_source.html">numa.h</a>.</p>
 
 </div>
 </div>

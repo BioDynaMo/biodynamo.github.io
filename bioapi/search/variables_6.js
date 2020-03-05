@@ -9,5 +9,5 @@ var searchData=
   ['grid_5f',['grid_',['../structbdm_1_1Grid_1_1Box_1_1Iterator.html#ae2088333027d6cb2bcd75ec6a0147616',1,'bdm::Grid::Box::Iterator::grid_()'],['../structbdm_1_1Grid_1_1AssignToBoxesFunctor.html#a903393c0650faebe211c9a2df28c7299',1,'bdm::Grid::AssignToBoxesFunctor::grid_()'],['../classbdm_1_1Simulation.html#a7b2f640f72f9487e8081d279d01a79cd',1,'bdm::Simulation::grid_()']]],
   ['grid_5fdimensions_5f',['grid_dimensions_',['../classbdm_1_1DiffusionGrid.html#a60dc01c8f8d10726edd9dafa4ea341b9',1,'bdm::DiffusionGrid::grid_dimensions_()'],['../classbdm_1_1Grid.html#a89bda8315a4e67a8f22c812d09a86c70',1,'bdm::Grid::grid_dimensions_()']]],
   ['grid_5ftimestamp_5f',['grid_timestamp_',['../structbdm_1_1Grid_1_1NeighborIterator.html#a81ca1b4a62205d04fbb1b73d84182cba',1,'bdm::Grid::NeighborIterator']]],
-  ['growth_5frate_5f',['growth_rate_',['../structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432',1,'bdm::GrowDivide']]]
+  ['growth_5frate_5f',['growth_rate_',['../structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432',1,'bdm::GrowDivide::growth_rate_()'],['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a7ce9cf9f06be59bf3032e352818e4bfa',1,'bdm::memory_manager_detail::NumaPoolAllocator::growth_rate_()'],['../classbdm_1_1MemoryManager.html#aa2ae19226454f034f73e35618ad6650b',1,'bdm::MemoryManager::growth_rate_()']]]
 ];

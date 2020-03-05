@@ -1,6 +1,8 @@
 var searchData=
 [
   ['pa_5f',['pa_',['../structbdm_1_1ProcessSimObjectFunctor.html#a9c034d0abc328e071a3a4cd2c4587c8f',1,'bdm::ProcessSimObjectFunctor']]],
+  ['page_5fshift_5f',['page_shift_',['../classbdm_1_1MemoryManager.html#a4638ccd9f38cadf6d4a4f66719e054b7',1,'bdm::MemoryManager']]],
+  ['page_5fsize_5f',['page_size_',['../classbdm_1_1MemoryManager.html#ae2e99940767a97a54ed1851a09816dc0',1,'bdm::MemoryManager']]],
   ['param',['param',['../structbdm_1_1ForEachNeighborFunctor.html#aaf834903a50321d01bcb9e5a9d7cc48f',1,'bdm::ForEachNeighborFunctor::param()'],['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#aee771d2aca33eb7e341b8819cdc6c257',1,'bdm::ForEachNeighborWithinRadiusFunctor::param()']]],
   ['param_5f',['param_',['../classbdm_1_1Simulation.html#a1d2c3f883be532589c9582cf1b7311a5',1,'bdm::Simulation']]],
   ['paraviewadaptortest',['ParaviewAdaptorTest',['../classbdm_1_1Simulation.html#a0bad47fe459dbc64e41e90eb07924ec6',1,'bdm::Simulation']]],

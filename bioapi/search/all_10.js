@@ -25,7 +25,7 @@ var searchData=
   ['renew',['Renew',['../classbdm_1_1ThreadInfo.html#a1ce2476af333c140531fda4b2ac62623',1,'bdm::ThreadInfo']]],
   ['replacescheduler',['ReplaceScheduler',['../classbdm_1_1Simulation.html#a586e4605fd004af75e5dfb143b27fb95',1,'bdm::Simulation']]],
   ['requestdatadescription',['RequestDataDescription',['../classbdm_1_1InSituPipeline.html#a5c6501861d86407451a02206d8bcbc0b',1,'bdm::InSituPipeline']]],
-  ['reserve',['Reserve',['../classbdm_1_1ResourceManager.html#a3b0546450a375bad325d5e16dab25eb5',1,'bdm::ResourceManager::Reserve()'],['../classbdm_1_1InlineVector.html#a6272e04acfbe2c2b1b1c73020a2d4c2f',1,'bdm::InlineVector::reserve()'],['../classbdm_1_1ParallelResizeVector.html#a72ee93a31679c734c28beef9c575c656',1,'bdm::ParallelResizeVector::reserve()'],['../classbdm_1_1SimObjectVector.html#a0828068795ec8632dff9ee57f2d5d360',1,'bdm::SimObjectVector::reserve()']]],
+  ['reserve',['Reserve',['../classbdm_1_1ResourceManager.html#a3b0546450a375bad325d5e16dab25eb5',1,'bdm::ResourceManager::Reserve()'],['../classbdm_1_1UnorderedFlatmap.html#a56af32f16c7a2238bca0ea20008afe26',1,'bdm::UnorderedFlatmap::reserve()'],['../classbdm_1_1InlineVector.html#a6272e04acfbe2c2b1b1c73020a2d4c2f',1,'bdm::InlineVector::reserve()'],['../classbdm_1_1ParallelResizeVector.html#a72ee93a31679c734c28beef9c575c656',1,'bdm::ParallelResizeVector::reserve()'],['../classbdm_1_1SimObjectVector.html#a0828068795ec8632dff9ee57f2d5d360',1,'bdm::SimObjectVector::reserve()']]],
   ['resize',['resize',['../classbdm_1_1ParallelResizeVector.html#ac004f5f717041b05a135417f4c3d5456',1,'bdm::ParallelResizeVector::resize()'],['../classbdm_1_1SoUidMap.html#ab6e83a105677fc2f8d43581bf6b58a97',1,'bdm::SoUidMap::resize()'],['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a97a4669dcdd3a4b03296dc0ef9192748',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::Resize()']]],
   ['resizecellbuffers',['ResizeCellBuffers',['../classbdm_1_1DisplacementOpCudaKernel.html#ac4663c24488e231181f15a424d436cbd',1,'bdm::DisplacementOpCudaKernel']]],
   ['resizegridbuffers',['ResizeGridBuffers',['../classbdm_1_1DisplacementOpCudaKernel.html#a4145e95a9718eb505cce65447d2edb61',1,'bdm::DisplacementOpCudaKernel']]],
@@ -54,6 +54,7 @@ var searchData=
   ['rootadaptor',['RootAdaptor',['../classbdm_1_1RootAdaptor.html#aeb30d6c22b683c6c92b9401fed0134e1',1,'bdm::RootAdaptor']]],
   ['rotaroundaxis',['RotAroundAxis',['../structbdm_1_1Math.html#a0bb76d5981eba8f596ac2ab8cbae2bb7',1,'bdm::Math']]],
   ['roundoffgriddimensions',['RoundOffGridDimensions',['../classbdm_1_1Grid.html#a6d79edfe4cf403d45463eb40f2cae3b7',1,'bdm::Grid']]],
+  ['roundupto',['RoundUpTo',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a4428b352d944125051541e09ad873cfa',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['run',['Run',['../structbdm_1_1BaseBiologyModule.html#ac93e1cbecc9b902fb8fb247db1f93122',1,'bdm::BaseBiologyModule::Run()'],['../structbdm_1_1GrowDivide.html#a3e9e710d9c082f0c0de73512c05b7d06',1,'bdm::GrowDivide::Run()'],['../structbdm_1_1RegulateGenes.html#a47125a2ca8927e0ec8a079799381ffd4',1,'bdm::RegulateGenes::Run()']]],
   ['run_5fbm_5floop_5fidx_5f',['run_bm_loop_idx_',['../classbdm_1_1SimObject.html#a9ce3c107c46f0546d535f23ad00b419a',1,'bdm::SimObject']]],
   ['run_5fdisplacement_5f',['run_displacement_',['../classbdm_1_1SimObject.html#a35ee85fb978c8ccc09998d8bce546d21',1,'bdm::SimObject']]],
@@ -66,6 +67,6 @@ var searchData=
   ['rundiscretization',['RunDiscretization',['../classbdm_1_1SimObject.html#a574c6f014376642e060b3d5306187a44',1,'bdm::SimObject::RunDiscretization()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aa0936af954812aaf2d8913c6cab0f4c6',1,'bdm::experimental::neuroscience::NeuriteElement::RunDiscretization()']]],
   ['rundisplacement',['RunDisplacement',['../classbdm_1_1SimObject.html#a961ba40129151a040376fd416caad642',1,'bdm::SimObject']]],
   ['runinitializers',['RunInitializers',['../classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7',1,'bdm::DiffusionGrid']]],
-  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f',1,'bdm::RuntimeVariables::RuntimeVariables()'],['../classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303',1,'bdm::RuntimeVariables::RuntimeVariables(TRootIOCtor *io_ctor)']]],
-  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm']]]
+  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm']]],
+  ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f',1,'bdm::RuntimeVariables::RuntimeVariables()'],['../classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303',1,'bdm::RuntimeVariables::RuntimeVariables(TRootIOCtor *io_ctor)']]]
 ];

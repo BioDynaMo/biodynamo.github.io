@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-498-g06b0154</span>
+   &#160;<span id="projectnumber">v0.1.0-499-g7cd5bd8</span>
    </div>
   </td>
  </tr>
@@ -108,6 +108,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ada33bc37b2597f38e5cb88067eb1f12a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ThreadInfo.html#ada33bc37b2597f38e5cb88067eb1f12a">GetMyThreadId</a> () const </td></tr>
+<tr class="separator:ada33bc37b2597f38e5cb88067eb1f12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5064408de899dcf41a6b37cc675ed47e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ThreadInfo.html#a5064408de899dcf41a6b37cc675ed47e">GetMyNumaNode</a> () const </td></tr>
+<tr class="separator:a5064408de899dcf41a6b37cc675ed47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af002caa2c476e6640444a39111283112"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ThreadInfo.html#af002caa2c476e6640444a39111283112">GetMyNumaThreadId</a> () const </td></tr>
+<tr class="memdesc:af002caa2c476e6640444a39111283112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the numa thread id of an openmp thread.  <a href="#af002caa2c476e6640444a39111283112">More...</a><br /></td></tr>
+<tr class="separator:af002caa2c476e6640444a39111283112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1ef16b68512b4a1066a078665f53c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ThreadInfo.html#a1b1ef16b68512b4a1066a078665f53c0">GetNumaNodes</a> () const </td></tr>
 <tr class="memdesc:a1b1ef16b68512b4a1066a078665f53c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of NUMA nodes on this machine.  <a href="#a1b1ef16b68512b4a1066a078665f53c0">More...</a><br /></td></tr>
 <tr class="separator:a1b1ef16b68512b4a1066a078665f53c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,7 +189,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00140">140</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00149">149</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +242,84 @@ Friends</h2></td></tr>
 
 <p>Return the maximum number of threads. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00056">56</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00065">65</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5064408de899dcf41a6b37cc675ed47e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bdm::ThreadInfo::GetMyNumaNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00041">41</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af002caa2c476e6640444a39111283112"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bdm::ThreadInfo::GetMyNumaThreadId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the numa thread id of an openmp thread. </p>
+
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00044">44</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada33bc37b2597f38e5cb88067eb1f12a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bdm::ThreadInfo::GetMyThreadId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00038">38</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +347,7 @@ Friends</h2></td></tr>
 
 <p>Returns the numa node the given openmp thread is bound to. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00041">41</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00050">50</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -290,7 +374,7 @@ Friends</h2></td></tr>
 
 <p>Returns the number of NUMA nodes on this machine. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00038">38</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00047">47</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -318,7 +402,7 @@ Friends</h2></td></tr>
 
 <p>Return the numa thread id of an openmp thread. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00051">51</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00060">60</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +430,7 @@ Friends</h2></td></tr>
 
 <p>Returns the number of threads in a given NUMA node. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00046">46</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00055">55</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +457,7 @@ Friends</h2></td></tr>
 <p>Renews the metadata.<br />
 Whenever a thread is scheduled on a different cpu, e.g. using <code>numa_run_on_node</code>, <code><a class="el" href="classbdm_1_1ThreadInfo.html#a1ce2476af333c140531fda4b2ac62623">Renew()</a></code> must be called to update the thread metadata. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00062">62</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00071">71</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +494,7 @@ Whenever a thread is scheduled on a different cpu, e.g. using <code>numa_run_on_
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00096">96</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00105">105</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +519,7 @@ Whenever a thread is scheduled on a different cpu, e.g. using <code>numa_run_on_
 
 <p>Maximum number of threads for this simulation. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00120">120</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00129">129</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +543,7 @@ Whenever a thread is scheduled on a different cpu, e.g. using <code>numa_run_on_
 
 <p>Number of NUMA nodes on this machine. </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00122">122</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00131">131</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +568,7 @@ Whenever a thread is scheduled on a different cpu, e.g. using <code>numa_run_on_
 each thread in a numa domain has a unique id in the range 0 to number <br />
 of threads in this numa domain </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00132">132</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00141">141</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -509,7 +593,7 @@ of threads in this numa domain </p>
 vector position = omp_thread_id <br />
 vector value = numa node </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00127">127</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00136">136</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +618,7 @@ vector value = numa node </p>
 vector position: numa node <br />
 vector value number of threads </p>
 
-<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00138">138</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
+<p>Definition at line <a class="el" href="thread__info_8h_source.html#l00147">147</a> of file <a class="el" href="thread__info_8h_source.html">thread_info.h</a>.</p>
 
 </div>
 </div>

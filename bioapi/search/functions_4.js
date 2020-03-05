@@ -5,6 +5,7 @@ var searchData=
   ['debugnuma',['DebugNuma',['../classbdm_1_1ResourceManager.html#a32bc1e93a5c7303719a2a02a709cdcb0',1,'bdm::ResourceManager']]],
   ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html#a2055df84fa6c354f566821e322275209',1,'bdm::DefaultForce::DefaultForce()'],['../classbdm_1_1DefaultForce.html#aadcab81e8fa9889c7793b32de656ecde',1,'bdm::DefaultForce::DefaultForce(const DefaultForce &amp;)=delete']]],
   ['definesubstance',['DefineSubstance',['../structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2',1,'bdm::ModelInitializer']]],
+  ['delete',['Delete',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a26767b39c3ebca444029092fe35d2c56',1,'bdm::memory_manager_detail::NumaPoolAllocator::Delete()'],['../classbdm_1_1MemoryManager.html#a11f9ab16579eed8ca320e2a2b395d59e',1,'bdm::MemoryManager::Delete()']]],
   ['diffuseeuler',['DiffuseEuler',['../classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770',1,'bdm::DiffusionGrid']]],
   ['diffuseeulerleakingedge',['DiffuseEulerLeakingEdge',['../classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e',1,'bdm::DiffusionGrid']]],
   ['diffusewithclosededge',['DiffuseWithClosedEdge',['../classbdm_1_1DiffusionGrid.html#a63e2d29b39597dedf86053109cbee6e6',1,'bdm::DiffusionGrid']]],

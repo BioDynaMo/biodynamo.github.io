@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['tail_5f',['tail_',['../classbdm_1_1memory__manager__detail_1_1List.html#a4b7d0461e9993ac93ffd5fa2622d8631',1,'bdm::memory_manager_detail::List']]],
   ['task_5f',['task_',['../classbdm_1_1VTuneOpWrapper.html#a0e39614a06b3930d27e0c7781e5769c5',1,'bdm::VTuneOpWrapper']]],
   ['teardowniterationall',['TearDownIterationAll',['../classbdm_1_1InPlaceExecutionContext.html#a588d308205afc00fedf1fa375ae17157',1,'bdm::InPlaceExecutionContext']]],
   ['tension_5f',['tension_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a7c195fe5adc21266051fb338f61588b9',1,'bdm::experimental::neuroscience::NeuriteElement']]],
@@ -31,11 +32,12 @@ var searchData=
   ['timingaggregator',['TimingAggregator',['../classbdm_1_1TimingAggregator.html#ad700cc0ce0b4560829558c0b1fdd7054',1,'bdm::TimingAggregator']]],
   ['timingaggregator',['TimingAggregator',['../classbdm_1_1TimingAggregator.html',1,'bdm']]],
   ['timings_5f',['timings_',['../classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36',1,'bdm::TimingAggregator']]],
-  ['tinfo_5f',['tinfo_',['../classbdm_1_1InPlaceExecutionContext.html#ad0b9aa4edea3401f1be1368de24b9246',1,'bdm::InPlaceExecutionContext']]],
+  ['tinfo_5f',['tinfo_',['../classbdm_1_1InPlaceExecutionContext.html#ad0b9aa4edea3401f1be1368de24b9246',1,'bdm::InPlaceExecutionContext::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a7cda3c18122e4b9298bb77bee20c0c10',1,'bdm::memory_manager_detail::NumaPoolAllocator::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#af730835ddd0b774d5d09dc03945a44e1',1,'bdm::memory_manager_detail::PoolAllocator::tinfo_()']]],
   ['todegree',['ToDegree',['../structbdm_1_1Math.html#a3ee1b385bc17152842e1fdf1c3102726',1,'bdm::Math']]],
   ['top_5f',['top_',['../classbdm_1_1RootAdaptor.html#a1245f0dc2619a867d24cb08ece9e4e44',1,'bdm::RootAdaptor']]],
   ['toradian',['ToRadian',['../structbdm_1_1Math.html#a585001fd86aafbbbb593a34687b15986',1,'bdm::Math']]],
   ['total_5fnum_5fboxes_5f',['total_num_boxes_',['../classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44',1,'bdm::DiffusionGrid']]],
+  ['total_5fsize_5f',['total_size_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a1eb9b11822c8bc7b750b3454e2f8147f',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['total_5fsteps_5f',['total_steps_',['../classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a',1,'bdm::Scheduler']]],
   ['tractor_5fforce_5f',['tractor_force_',['../classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc',1,'bdm::Cell']]],
   ['transformcoordinatesglobaltolocal',['TransformCoordinatesGlobalToLocal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4a71fcce557c2d9047b7eb76aee3f950',1,'bdm::experimental::neuroscience::NeuriteElement']]],

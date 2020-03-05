@@ -7,6 +7,7 @@ var searchData=
   ['canvas_5f',['canvas_',['../classbdm_1_1RootAdaptor.html#ac590ef38538563afec533bdd6a362222',1,'bdm::RootAdaptor']]],
   ['capacity_5f',['capacity_',['../classbdm_1_1ParallelResizeVector.html#a9db21c9ef0bd6658626a99e3692d7ed3',1,'bdm::ParallelResizeVector']]],
   ['cdo_5f',['cdo_',['../classbdm_1_1DisplacementOpCuda.html#a50c7718ce677c30160e58000c63591b4',1,'bdm::DisplacementOpCuda']]],
+  ['central_5f',['central_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a3e945e9bbd27cc2d7abcecd7a74fae35',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['concentration_5f',['concentration_',['../structbdm_1_1Param_1_1VisualizeDiffusion.html#a5474de1413cec9e65640347ec4704c95',1,'bdm::Param::VisualizeDiffusion::concentration_()'],['../structbdm_1_1VtkDiffusionGrid.html#a399a12946eadde500a41f3d34b83e1fa',1,'bdm::VtkDiffusionGrid::concentration_()']]],
   ['concentration_5fthreshold_5f',['concentration_threshold_',['../classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094',1,'bdm::DiffusionGrid']]],
   ['concentrations_5f',['concentrations_',['../structbdm_1_1RegulateGenes.html#a10fbfc91670d91ed4c04ee10521d9537',1,'bdm::RegulateGenes']]],

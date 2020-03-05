@@ -15,6 +15,7 @@ var searchData=
   ['addoperation',['AddOperation',['../classbdm_1_1Scheduler.html#aa7ac989a26f9d1e1d7fb6e78cd22b75a',1,'bdm::Scheduler']]],
   ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#adb789cac5481816ed0ecdef6fcca2f17',1,'bdm::CommandLineOptions::AddOption(std::string group=&quot;Simulation&quot;)'],['../classbdm_1_1CommandLineOptions.html#aeb88d5d9bb969b3b3f2ad8994d0691ee',1,'bdm::CommandLineOptions::AddOption(std::string opt, std::string def, std::string description=&quot;&quot;, std::string group=&quot;Simulation&quot;)']]],
   ['addsphere',['AddSphere',['../classbdm_1_1RootAdaptor.html#aeb7442dbc1e83198cfe8b44ee6f3fe75',1,'bdm::RootAdaptor']]],
+  ['allocnewmemoryblock',['AllocNewMemoryBlock',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a39a0ba704a895e4b206901299ee98407',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#a357af2bdea31bf521ee128bbde6b1fef',1,'bdm::Math']]],
   ['apply',['Apply',['../namespacebdm_1_1detail.html#a99bd062e7d4d505f3816656b9f6ee917',1,'bdm::detail::Apply()'],['../namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11',1,'bdm::Apply()']]],
   ['applyboundingbox',['ApplyBoundingBox',['../namespacebdm.html#a45cc3ed5a6b31cb8863f4a68ce88c7e4',1,'bdm']]],
@@ -29,5 +30,5 @@ var searchData=
   ['assignnewuid',['AssignNewUid',['../classbdm_1_1SimObject.html#abac69fd05d170d2d9b9f99ffaca94f5a',1,'bdm::SimObject']]],
   ['assignthreadsafetymechanism',['AssignThreadSafetyMechanism',['../namespacebdm.html#a85f69154d0b09bdfcb35b3c3ce112371',1,'bdm']]],
   ['assigntoboxesfunctor',['AssignToBoxesFunctor',['../structbdm_1_1Grid_1_1AssignToBoxesFunctor.html#a5bff718a6e9817b98aff24347e96ca0e',1,'bdm::Grid::AssignToBoxesFunctor']]],
-  ['at',['at',['../classbdm_1_1MathArray.html#a7fddb8d32964619d1b9685a78cbc3d77',1,'bdm::MathArray']]]
+  ['at',['at',['../classbdm_1_1UnorderedFlatmap.html#a38304a3a0f73c13c88bab47c92e2365a',1,'bdm::UnorderedFlatmap::at()'],['../classbdm_1_1MathArray.html#a7fddb8d32964619d1b9685a78cbc3d77',1,'bdm::MathArray::at()']]]
 ];

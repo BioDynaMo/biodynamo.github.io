@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['tail_5f',['tail_',['../classbdm_1_1memory__manager__detail_1_1List.html#a4b7d0461e9993ac93ffd5fa2622d8631',1,'bdm::memory_manager_detail::List']]],
   ['task_5f',['task_',['../classbdm_1_1VTuneOpWrapper.html#a0e39614a06b3930d27e0c7781e5769c5',1,'bdm::VTuneOpWrapper']]],
   ['tension_5f',['tension_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a7c195fe5adc21266051fb338f61588b9',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['text_5f',['text_',['../classbdm_1_1Timing.html#a035522dd4d60281f13073c4f59262611',1,'bdm::Timing']]],
@@ -14,9 +15,10 @@ var searchData=
   ['timer_5fmsg_5f',['timer_msg_',['../structbdm_1_1OpTimer.html#a129a014be5c696b64e59dfcfd327076e',1,'bdm::OpTimer']]],
   ['timestamp_5f',['timestamp_',['../structbdm_1_1Grid_1_1Box.html#ab947574702bd6eeff37046940f1b326e',1,'bdm::Grid::Box::timestamp_()'],['../classbdm_1_1Grid.html#a15b3c1a377fd0e9b9542187197fc1b73',1,'bdm::Grid::timestamp_()']]],
   ['timings_5f',['timings_',['../classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36',1,'bdm::TimingAggregator']]],
-  ['tinfo_5f',['tinfo_',['../classbdm_1_1InPlaceExecutionContext.html#ad0b9aa4edea3401f1be1368de24b9246',1,'bdm::InPlaceExecutionContext']]],
+  ['tinfo_5f',['tinfo_',['../classbdm_1_1InPlaceExecutionContext.html#ad0b9aa4edea3401f1be1368de24b9246',1,'bdm::InPlaceExecutionContext::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a7cda3c18122e4b9298bb77bee20c0c10',1,'bdm::memory_manager_detail::NumaPoolAllocator::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#af730835ddd0b774d5d09dc03945a44e1',1,'bdm::memory_manager_detail::PoolAllocator::tinfo_()']]],
   ['top_5f',['top_',['../classbdm_1_1RootAdaptor.html#a1245f0dc2619a867d24cb08ece9e4e44',1,'bdm::RootAdaptor']]],
   ['total_5fnum_5fboxes_5f',['total_num_boxes_',['../classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44',1,'bdm::DiffusionGrid']]],
+  ['total_5fsize_5f',['total_size_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a1eb9b11822c8bc7b750b3454e2f8147f',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['total_5fsteps_5f',['total_steps_',['../classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a',1,'bdm::Scheduler']]],
   ['tractor_5fforce_5f',['tractor_force_',['../classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc',1,'bdm::Cell']]],
   ['translation_5fforce_5fon_5fpoint_5fmass',['translation_force_on_point_mass',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#a4d6006338695e04c2fc74abb376560fa',1,'bdm::Cell::DisplacementFunctor']]]

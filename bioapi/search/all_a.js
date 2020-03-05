@@ -11,6 +11,7 @@ var searchData=
   ['klow',['kLow',['../classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01a2954ccd2860c5fbd2fb9b572f16b9253',1,'bdm::Grid']]],
   ['kmatlab',['kMatlab',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811a31b654bbff3f2ca35a790a9ae0375bbb',1,'bdm']]],
   ['kmedium',['kMedium',['../classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01a384b91db79f8720cda85d23966f105fd',1,'bdm::Grid']]],
+  ['kmetadatasize',['kMetadataSize',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a02ede79dfae16ce1218f7cd3f266b895',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['kneuroml',['kNeuroML',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811a3e3ffea12f482d42f9def297c077000f',1,'bdm']]],
   ['knone',['kNone',['../structbdm_1_1Param.html#a338ac6f09819f7b64f3b2af01b8cb5bca2ba836cfe40d5faf46b3a037320f1d1f',1,'bdm::Param']]],
   ['kparaview',['kParaview',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811ab5f46e21e28754c3d4ecbcf100236c41',1,'bdm']]],

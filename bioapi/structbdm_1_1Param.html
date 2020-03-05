@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-498-g06b0154</span>
+   &#160;<span id="projectnumber">v0.1.0-499-g7cd5bd8</span>
    </div>
   </td>
  </tr>
@@ -207,6 +207,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae5e7bf592c9fe225750f5d3de721e778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7790a0e7b6d989263209edd3744d1a5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#af7790a0e7b6d989263209edd3744d1a5">souid_defragmentation_high_watermark_</a> = 0.9</td></tr>
 <tr class="separator:af7790a0e7b6d989263209edd3744d1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10baf52fe950a852aa35baf72cfeb5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#af10baf52fe950a852aa35baf72cfeb5c">use_bdm_mem_mgr_</a> = true</td></tr>
+<tr class="separator:af10baf52fe950a852aa35baf72cfeb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bec2d4077ce17df004a8be6935c5c9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a22bec2d4077ce17df004a8be6935c5c9">mem_mgr_aligned_pages_shift_</a> = 8</td></tr>
+<tr class="separator:a22bec2d4077ce17df004a8be6935c5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369e7313d721d10c18c5cf0f2d2b094e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a369e7313d721d10c18c5cf0f2d2b094e">mem_mgr_growth_rate_</a> = 1.1</td></tr>
+<tr class="separator:a369e7313d721d10c18c5cf0f2d2b094e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf7a0810d2a67b7f354032e2a3693cc"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a3bf7a0810d2a67b7f354032e2a3693cc">mem_mgr_max_mem_per_thread_</a> = 1024 * 1024 * 10</td></tr>
+<tr class="separator:a3bf7a0810d2a67b7f354032e2a3693cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b0678d6ce93d8ed0e626876470dc7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d">statistics_</a> = false</td></tr>
 <tr class="separator:ae2b0678d6ce93d8ed0e626876470dc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189573fb33841f0eaa23d801b510e2c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a189573fb33841f0eaa23d801b510e2c4">debug_numa_</a> = false</td></tr>
@@ -518,7 +526,7 @@ template&lt;typename TModuleParam &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00425">425</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00466">466</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +632,7 @@ calculate_gradients = true  </pre>
 TOML config file: <pre class="fragment">[development]
 debug_numa = false  </pre> </dd></dl>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00362">362</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00403">403</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -713,6 +721,60 @@ max_bound = 100  </pre> </dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="a22bec2d4077ce17df004a8be6935c5c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t bdm::Param::mem_mgr_aligned_pages_shift_ = 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The BioDynaMo memory manager allocates N page aligned memory blocks. The bigger N, the lower the memory overhead due to metadata storage if a lot of memory is used.<br />
+N must be a number of two.<br />
+Therefore, this parameter specifies the shift for N. <code>N = 2 ^ shift</code><br />
+Default value: <code>8</code> <code>-&gt; N = 256</code><br />
+TOML config file: </p><pre class="fragment">[performance]
+mem_mgr_aligned_pages_shift = 8  </pre> 
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00363">363</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a369e7313d721d10c18c5cf0f2d2b094e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::Param::mem_mgr_growth_rate_ = 1.1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The BioDynaMo memory manager allocates memory in increasing sizes using a geometric series. This parameter specifies the growth rate. Default value: <code>2.0</code><br />
+TOML config file: </p><pre class="fragment">[performance]
+mem_mgr_growth_rate = 1.1  </pre> 
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00372">372</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3bf7a0810d2a67b7f354032e2a3693cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t bdm::Param::mem_mgr_max_mem_per_thread_ = 1024 * 1024 * 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The BioDynaMo memory manager can migrate memory between thread pools to avoid memory leaks.<br />
+This parameter specifies the maximum memory size in bytes before migration happens.<br />
+This value must be bigger than <code>PAGE_SIZE * 2 ^ mem_mgr_growth_rate_</code><br />
+Default value: <code>10485760</code> (10 MB)<br />
+TOML config file: </p><pre class="fragment">[performance]
+mem_mgr_max_mem_per_thread = 10485760  </pre> 
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00384">384</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a48592ced2b325839d663fc40c377d98f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -749,7 +811,7 @@ min_bound = 0  </pre> </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00428">428</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00469">469</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -779,7 +841,7 @@ min_bound = 0  </pre> </dd></dl>
 <p>Compile OpenCL kernels with debugging symbols, for debugging on CPU targets with GNU gdb. Default value: <code>false</code><br />
 TOML config file: [experimental] opencl_debug_ = false </p>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00411">411</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00452">452</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -813,7 +875,7 @@ ouput_dir = "output"  </pre>
 <p>Set the index of the preferred GPU you wish to use. Default value: <code>0</code><br />
 TOML config file: [experimental] preferred_gpu = 0 </p>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00418">418</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00459">459</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -829,7 +891,7 @@ TOML config file: [experimental] preferred_gpu = 0 </p>
 <p>Use the python script (simple_pipeline.py) to do Live Visualization with ParaView. If false, we use the C++ pipeline Default value: <code>false</code><br />
 TOML config file: [development] python_paraview_pipeline_ = false </p>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00370">370</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00411">411</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +913,7 @@ TOML config file: [development] python_paraview_pipeline_ = false </p>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00427">427</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00468">468</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +1000,7 @@ scheduling_batch_size = 1000  </pre>
 <p>Display the current simulation step in the terminal output Default value: <code>true</code><br />
 TOML config file: [development] show_simulation_step = true </p>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00377">377</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00418">418</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1033,7 @@ max_displacement = 3.0  </pre>
 <p>Sets the frequency at which the current simulation step is displayed. Display every <code>simulation_step_freq_</code> steps. Default value: <code>10</code><br />
 TOML config file: [development] simulation_step_freq = false </p>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00385">385</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00426">426</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1100,7 @@ souid_defragmentation_low_watermark = 0.5  </pre>
 Default Value: <code>false</code><br />
 TOML config file: </p><pre class="fragment">[development]
 statistics = false  </pre> 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00353">353</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00394">394</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1059,6 +1121,22 @@ thread_safety_mechanism_ = "none"  </pre>
 
 </div>
 </div>
+<a class="anchor" id="af10baf52fe950a852aa35baf72cfeb5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::Param::use_bdm_mem_mgr_ = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use the BioDynaMo memory manager. Default value: <code>true</code><br />
+TOML config file: </p><pre class="fragment">[performance]
+use_bdm_mem_mgr = true  </pre> 
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00351">351</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abd15e376dcf514fb83c6ff55b49cd3db"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1071,7 +1149,7 @@ thread_safety_mechanism_ = "none"  </pre>
 <p>Run the simulation partially on the GPU for improved performance. Default value: <code>false</code><br />
 TOML config file: [experimental] use_gpu = false </p>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00395">395</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00436">436</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1165,7 @@ TOML config file: [experimental] use_gpu = false </p>
 <p>When both CUDA and OpenCL are available on a machine, the preference to OpenCL can be set with this flag, as per default CUDA is used. Default value: <code>false</code><br />
 TOML config file: [experimental] use_opencl = false </p>
 
-<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00403">403</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p>Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00444">444</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
