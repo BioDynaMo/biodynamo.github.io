@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-499-g7cd5bd8</span>
+   &#160;<span id="projectnumber">v0.1.0-500-gce46cc2</span>
    </div>
   </td>
  </tr>
@@ -146,6 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6852bc9a6da071ea996da2a53f82bb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d24c037ab710aeee8c680803ca96a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a49d24c037ab710aeee8c680803ca96a9">ApplyOnAllElementsParallel</a> (<a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> * &gt; &amp;function)</td></tr>
 <tr class="separator:a49d24c037ab710aeee8c680803ca96a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4034e11438875b135fb4526110cf8493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a4034e11438875b135fb4526110cf8493">ApplyOnAllElementsParallel</a> (<a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *, <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &gt; &amp;function)</td></tr>
+<tr class="separator:a4034e11438875b135fb4526110cf8493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa32c1d087beee05ed4ac2a5ed503509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#afa32c1d087beee05ed4ac2a5ed503509">ApplyOnAllElementsParallelDynamic</a> (uint64_t chunk, <a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *, <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &gt; &amp;function)</td></tr>
 <tr class="separator:afa32c1d087beee05ed4ac2a5ed503509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b0546450a375bad325d5e16dab25eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a3b0546450a375bad325d5e16dab25eb5">Reserve</a> (size_t capacity)</td></tr>
@@ -344,7 +346,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds <code>new_sim_objects</code> to <code>sim_objects_[numa_node]</code>. <code>offset</code> specifies the index at which the first element is inserted. Sim objects are inserted consecutively. This methos is thread safe only if insertion intervals do not overlap! </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00330">330</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00333">333</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -454,6 +456,24 @@ template&lt;typename TFunctor &gt; </div>
 Function invocations are parallelized.<br />
 Uses static scheduling. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1ResourceManager.html#ac927a4f96a3283ac58f2ebc896cf7a28">ApplyOnAllElements</a> </dd></dl>
 
+<p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00050">50</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4034e11438875b135fb4526110cf8493"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::ResourceManager::ApplyOnAllElementsParallel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *, <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00020">20</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
@@ -491,7 +511,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1ResourceManager.html#ac927a4f96a3283ac58f2ebc896cf7a28">ApplyOnAllElements</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00042">42</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00056">56</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -551,7 +571,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 </div><div class="memdoc">
 <p>Remove all simulation objects NB: This method is not thread-safe! This function invalidates sim_object references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> are not affected. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00275">275</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00278">278</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +598,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 </div><div class="memdoc">
 <p>Returns true if a sim object with the given uid is stored in this <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00269">269</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00272">272</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -595,7 +615,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00250">250</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00286">286</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -620,7 +640,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00313">313</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00316">316</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +837,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 </div><div class="memdoc">
 <p>Resize <code>sim_objects_[numa_node]</code> such that it holds <code>current + additional</code> elements after this call. Returns the size after </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00255">255</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00258">258</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -880,7 +900,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 </div><div class="memdoc">
 <p>NB: This method is not thread-safe! This function might invalidate sim_object references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> are not affected. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00294">294</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00297">297</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -908,7 +928,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 <p>Removes the simulation object with the given uid.<br />
 NB: This method is not thread-safe! This function invalidates sim_object references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1SoPointer.html">SoPointer</a> are not affected. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00346">346</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00349">349</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -961,7 +981,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </div><div class="memdoc">
 <p>Reserves enough memory to hold <code>capacity</code> number of simulation objects for each numa domain. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00246">246</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00249">249</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -986,7 +1006,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00305">305</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00308">308</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1049,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </div><div class="memdoc">
 <p>Reorder simulation objects such that, sim objects are distributed to NUMA nodes. Nearby sim objects will be moved to the same NUMA node. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00148">148</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8cc_source.html#l00166">166</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -1052,7 +1072,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00377">377</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00380">380</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1097,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 
 <p>Maps a diffusion grid ID to the pointer to the diffusion grid. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00373">373</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00376">376</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1121,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 
 <p>Pointer container for all simulation objects. </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00371">371</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00374">374</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1143,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00375">375</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00378">378</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1168,7 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 <p>Maps an <a class="el" href="classbdm_1_1SoUid.html">SoUid</a> to its storage location in <code>sim_objects_</code> <br />
 . </p>
 
-<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00369">369</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p>Definition at line <a class="el" href="resource__manager_8h_source.html#l00372">372</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>

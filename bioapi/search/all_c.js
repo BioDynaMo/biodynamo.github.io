@@ -35,6 +35,7 @@ var searchData=
   ['memorymanager',['MemoryManager',['../classbdm_1_1MemoryManager.html#a3864028a3a6d48e9fe27bdbd05b1edab',1,'bdm::MemoryManager']]],
   ['min_5f',['min_',['../structbdm_1_1Uniform.html#ab65bfc034aa51ab2b75226be85ff3ade',1,'bdm::Uniform']]],
   ['min_5fbound_5f',['min_bound_',['../structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f',1,'bdm::Param']]],
+  ['minimize_5fmemory_5fwhile_5frebalancing_5f',['minimize_memory_while_rebalancing_',['../structbdm_1_1Param.html#ae84845859c1c3197923ef4bf2d450655',1,'bdm::Param']]],
   ['model_5finitializer_2eh',['model_initializer.h',['../model__initializer_8h.html',1,'']]],
   ['modelinitializer',['ModelInitializer',['../structbdm_1_1ModelInitializer.html',1,'bdm']]],
   ['module_2ecc',['module.cc',['../module_8cc.html',1,'']]],
@@ -53,6 +54,6 @@ var searchData=
   ['mutex_5fbuilder_5f',['mutex_builder_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ae2eddd8d9b03d55f93a0c66d347aaebf',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutex_5findices_5f',['mutex_indices_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0eceaf66add590b75a6d3d2bfcde309f',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutexes_5f',['mutexes_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder.html#ab0ad535099ad9f2d586e172d1505e4fa',1,'bdm::Grid::NeighborMutexBuilder']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder']]]
+  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder']]],
+  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]]
 ];

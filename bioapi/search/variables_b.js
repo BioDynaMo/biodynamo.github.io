@@ -20,6 +20,7 @@ var searchData=
   ['memory_5fblocks_5f',['memory_blocks_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a85449fb1ea689d06c8c05219031b24a6',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['min_5f',['min_',['../structbdm_1_1Uniform.html#ab65bfc034aa51ab2b75226be85ff3ade',1,'bdm::Uniform']]],
   ['min_5fbound_5f',['min_bound_',['../structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f',1,'bdm::Param']]],
+  ['minimize_5fmemory_5fwhile_5frebalancing_5f',['minimize_memory_while_rebalancing_',['../structbdm_1_1Param.html#ae84845859c1c3197923ef4bf2d450655',1,'bdm::Param']]],
   ['modules_5f',['modules_',['../structbdm_1_1Param.html#ab75f07e3a6618b90311f07d2ec1d33dc',1,'bdm::Param']]],
   ['mother_5f',['mother_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a634e489761abae8f72e922b9063c11ec',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['mu_5f',['mu_',['../classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a',1,'bdm::DiffusionGrid']]],
