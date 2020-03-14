@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-507-g2d9e65d</span>
+   &#160;<span id="projectnumber">v0.1.0-512-g091be5d</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classbdm_1_1SimObjectVector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::SimObjectVector&lt; T &gt; Class Template Reference</div>  </div>
@@ -131,6 +132,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a74feb8a1e0f38dee49f38b246e1e2cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae910503cb2e85e08ee0b2889c16effd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObjectVector.html#ae910503cb2e85e08ee0b2889c16effd1">thread_info_</a> = <a class="el" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>()</td></tr>
 <tr class="separator:ae910503cb2e85e08ee0b2889c16effd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ade8b07e3d474ae87c7b6622a37f23a0e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObjectVector.html#ade8b07e3d474ae87c7b6622a37f23a0e">DisplacementOpCuda</a></td></tr>
+<tr class="separator:ade8b07e3d474ae87c7b6622a37f23a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -165,7 +171,7 @@ template&lt;typename T&gt; </div>
 
 <p>NB: Elements will not be initilized. </p>
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00030">30</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00032">32</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -193,7 +199,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00055">55</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00057">57</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +227,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00067">67</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00069">69</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +255,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00071">71</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00073">73</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +283,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 <p>Reserves enough memory to hold N instances of type T (N being the number of simulation objects in the simulation). e.g. <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> has two types <code>A</code> and <code>B</code>. <code>A</code> has 10 elements and <code>B</code> 20. <code>data_[0]</code> corresponds to <code>A</code> and reserves 10 elements, while <code>data_[1]</code> corresponds to <code>B</code> and reserves 20 elements. NB: Elements will not be initilized. </p>
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00042">42</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00044">44</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +311,32 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00065">65</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00067">67</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="ade8b07e3d474ae87c7b6622a37f23a0e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00028">28</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +363,7 @@ template&lt;typename T&gt; </div>
 
 <p>one std::vector&lt;T&gt; for each numa node </p>
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00077">77</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00079">79</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +387,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00078">78</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00080">80</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +411,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00079">79</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p>Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00081">81</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>

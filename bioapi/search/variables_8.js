@@ -11,5 +11,6 @@ var searchData=
   ['insitu_5flink_5f',['insitu_link_',['../classbdm_1_1InSituPipeline.html#a9ab8980f91dc335f59500465220df5fc',1,'bdm::InSituPipeline']]],
   ['is_5faxon_5f',['is_axon_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a2f1aafbadc5599397bb21155bb2d1b89',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['is_5fend_5f',['is_end_',['../structbdm_1_1Grid_1_1NeighborIterator.html#a26d6ef7619e6d0058f73dc35d6b0a539',1,'bdm::Grid::NeighborIterator']]],
-  ['is_5fgpu_5fenvironment_5finitialized_5f',['is_gpu_environment_initialized_',['../classbdm_1_1Scheduler.html#add3c2d25af3a09a7bb941953df3cb627',1,'bdm::Scheduler']]]
+  ['is_5fgpu_5fenvironment_5finitialized_5f',['is_gpu_environment_initialized_',['../classbdm_1_1Scheduler.html#add3c2d25af3a09a7bb941953df3cb627',1,'bdm::Scheduler']]],
+  ['is_5fnon_5fspherical_5fobject',['is_non_spherical_object',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#af52fc11da1ce18667a30b7f5c146b1b6',1,'bdm::DisplacementOpCuda::InitializeGPUData']]]
 ];

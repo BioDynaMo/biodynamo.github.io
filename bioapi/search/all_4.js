@@ -80,7 +80,7 @@ var searchData=
   ['displacementopcpu',['DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html',1,'bdm']]],
   ['displacementopcpu',['DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html#a366d9896cbd658c17cf80e15e338878a',1,'bdm::DisplacementOpCpu']]],
   ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1DisplacementOpCuda.html',1,'bdm']]],
-  ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1Grid.html#ade8b07e3d474ae87c7b6622a37f23a0e',1,'bdm::Grid::DisplacementOpCuda()'],['../classbdm_1_1DisplacementOpCuda.html#a7a77905be0b1402f37e5641f8a367d66',1,'bdm::DisplacementOpCuda::DisplacementOpCuda()']]],
+  ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1SimObjectVector.html#ade8b07e3d474ae87c7b6622a37f23a0e',1,'bdm::SimObjectVector::DisplacementOpCuda()'],['../classbdm_1_1Grid.html#ade8b07e3d474ae87c7b6622a37f23a0e',1,'bdm::Grid::DisplacementOpCuda()'],['../classbdm_1_1DisplacementOpCuda.html#a7a77905be0b1402f37e5641f8a367d66',1,'bdm::DisplacementOpCuda::DisplacementOpCuda()']]],
   ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a4758aa387477b14cdf02f3013f606fca',1,'bdm::DisplacementOpCudaKernel']]],
   ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html',1,'bdm']]],
   ['displacementopopencl',['DisplacementOpOpenCL',['../classbdm_1_1Grid.html#a4ae7feaca3a244dc5168235f29fc13b3',1,'bdm::Grid']]],

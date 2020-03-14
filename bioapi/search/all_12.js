@@ -37,6 +37,7 @@ var searchData=
   ['top_5f',['top_',['../classbdm_1_1RootAdaptor.html#a1245f0dc2619a867d24cb08ece9e4e44',1,'bdm::RootAdaptor']]],
   ['toradian',['ToRadian',['../structbdm_1_1Math.html#a585001fd86aafbbbb593a34687b15986',1,'bdm::Math']]],
   ['total_5fnum_5fboxes_5f',['total_num_boxes_',['../classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44',1,'bdm::DiffusionGrid']]],
+  ['total_5fnum_5fobjects_5f',['total_num_objects_',['../classbdm_1_1DisplacementOpCuda.html#ab284100461658abd9e45c3e81a9c7654',1,'bdm::DisplacementOpCuda']]],
   ['total_5fsize_5f',['total_size_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a1eb9b11822c8bc7b750b3454e2f8147f',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['total_5fsteps_5f',['total_steps_',['../classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a',1,'bdm::Scheduler']]],
   ['tractor_5fforce_5f',['tractor_force_',['../classbdm_1_1Cell.html#a514e012bd2e7c0dd552da2cd32f8c5dc',1,'bdm::Cell']]],

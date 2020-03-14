@@ -58,7 +58,6 @@ var searchData=
   ['num_5fboxes_5faxis_5f',['num_boxes_axis_',['../classbdm_1_1DiffusionGrid.html#a16101fea9858034a44bcb7fac30469f3',1,'bdm::DiffusionGrid::num_boxes_axis_()'],['../classbdm_1_1Grid.html#a71512892f5859a17d93fb9dd4e1c766b',1,'bdm::Grid::num_boxes_axis_()']]],
   ['num_5fboxes_5fxy_5f',['num_boxes_xy_',['../classbdm_1_1Grid.html#ab6f8b75954c3330b9d8f85e887802b7a',1,'bdm::Grid']]],
   ['num_5felements_5fper_5fn_5fpages_5f',['num_elements_per_n_pages_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a3e7571fee284bd4f294fc20fc627b856',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
-  ['num_5fobjects_5f',['num_objects_',['../classbdm_1_1DisplacementOpCuda.html#a52099266b4428dbb80de983c00393d49',1,'bdm::DisplacementOpCuda']]],
   ['num_5fthreads_5f',['num_threads_',['../classbdm_1_1MemoryManager.html#aa0aa7437cdf1b9effd1248ee9f7fb256',1,'bdm::MemoryManager']]],
   ['numa_2eh',['numa.h',['../numa_8h.html',1,'']]],
   ['numa_5falloc_5fonnode',['numa_alloc_onnode',['../numa_8h.html#aa55414cbb38a0dd46176b32bdd8de672',1,'numa.h']]],
