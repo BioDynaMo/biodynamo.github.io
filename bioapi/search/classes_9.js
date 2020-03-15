@@ -2,7 +2,7 @@ var searchData=
 [
   ['initializegpudata',['InitializeGPUData',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html',1,'bdm::DisplacementOpCuda']]],
   ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html',1,'bdm']]],
-  ['inlinevector_3c_20bdm_3a_3abasebiologymodule_20_2a_2c_205_20_3e',['InlineVector&lt; bdm::BaseBiologyModule *, 5 &gt;',['../classbdm_1_1InlineVector.html',1,'bdm']]],
+  ['inlinevector_3c_20bdm_3a_3abasebiologymodule_20_2a_2c_202_20_3e',['InlineVector&lt; bdm::BaseBiologyModule *, 2 &gt;',['../classbdm_1_1InlineVector.html',1,'bdm']]],
   ['inplaceexecutioncontext',['InPlaceExecutionContext',['../classbdm_1_1InPlaceExecutionContext.html',1,'bdm']]],
   ['insitupipeline',['InSituPipeline',['../classbdm_1_1InSituPipeline.html',1,'bdm']]],
   ['integraltypewrapper',['IntegralTypeWrapper',['../classbdm_1_1IntegralTypeWrapper.html',1,'bdm']]],
