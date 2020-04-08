@@ -9,5 +9,6 @@ var searchData=
   ['vtkdiffusiongrid',['VtkDiffusionGrid',['../structbdm_1_1VtkDiffusionGrid.html#ae1902e2b6d1ba3ba4424d8c3a51de740',1,'bdm::VtkDiffusionGrid']]],
   ['vtksogrid',['VtkSoGrid',['../structbdm_1_1VtkSoGrid.html#a6e1fab60994a3c6bf63b46dad3479120',1,'bdm::VtkSoGrid']]],
   ['vtktypemacro',['vtkTypeMacro',['../classbdm_1_1InSituPipeline.html#aeb2b4af48e05bcc1f8b6fe6b03b237f1',1,'bdm::InSituPipeline']]],
-  ['vtuneopwrapper',['VTuneOpWrapper',['../classbdm_1_1VTuneOpWrapper.html#aca8a74f6b888dc56b4cc128542f57a50',1,'bdm::VTuneOpWrapper']]]
+  ['vtuneopwrapper',['VTuneOpWrapper',['../classbdm_1_1VTuneOpWrapper.html#aca8a74f6b888dc56b4cc128542f57a50',1,'bdm::VTuneOpWrapper']]],
+  ['vtunetask',['VTuneTask',['../classbdm_1_1VTuneTask.html#a18f42fefcbeb130bbd902c7d9d5eb0d3',1,'bdm::VTuneTask']]]
 ];

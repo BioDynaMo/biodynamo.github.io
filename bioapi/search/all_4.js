@@ -91,7 +91,7 @@ var searchData=
   ['dividingcellop',['DividingCellOp',['../classbdm_1_1DividingCellOp.html',1,'bdm']]],
   ['dividingcellop',['DividingCellOp',['../classbdm_1_1DividingCellOp.html#a59bbc58e480defbbf650c0b4d565d245',1,'bdm::DividingCellOp']]],
   ['dolivevisualization',['DoLiveVisualization',['../classbdm_1_1InSituPipeline.html#a21ab5153b2c6f2550d5a428d6d0405eb',1,'bdm::InSituPipeline']]],
-  ['domain_5f',['domain_',['../classbdm_1_1VTuneOpWrapper.html#aeaa400940a292cd53809f0a3bb3decb5',1,'bdm::VTuneOpWrapper']]],
+  ['domain_5f',['domain_',['../classbdm_1_1VTuneOpWrapper.html#aeaa400940a292cd53809f0a3bb3decb5',1,'bdm::VTuneOpWrapper::domain_()'],['../classbdm_1_1VTuneTask.html#a8ab660b416600ec61d93b49c8ecd7d0a',1,'bdm::VTuneTask::domain_()']]],
   ['double',['Double',['../classbdm_1_1ParaviewSoVisitor.html#a8c9583b910289fd00987e84c583ddf96',1,'bdm::ParaviewSoVisitor']]],
   ['double3',['Double3',['../namespacebdm.html#a999db57a7e39895fb42c100d7856836c',1,'bdm']]],
   ['double4',['Double4',['../namespacebdm.html#a482b174c833a56a19b71cc36847a1013',1,'bdm']]],
