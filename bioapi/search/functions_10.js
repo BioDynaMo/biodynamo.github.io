@@ -13,6 +13,7 @@ var searchData=
   ['setdecayconstant',['SetDecayConstant',['../classbdm_1_1DiffusionGrid.html#a199259da821fd2b2efc4616528d2a00e',1,'bdm::DiffusionGrid']]],
   ['setdensity',['SetDensity',['../classbdm_1_1Cell.html#a302f6ebaa424408a387ca3f0ddafa5ef',1,'bdm::Cell::SetDensity()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ade51750ddd010430051bad319d3f9671',1,'bdm::experimental::neuroscience::NeuriteElement::SetDensity()']]],
   ['setdiameter',['SetDiameter',['../classbdm_1_1Cell.html#a11258c5270717be715fec3f17e72ec59',1,'bdm::Cell::SetDiameter()'],['../classbdm_1_1SimObject.html#a38d6b74b64bf66be1c22667c8e3a1edf',1,'bdm::SimObject::SetDiameter()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a1c093ffea9be9788c9013af7b6954b7b',1,'bdm::experimental::neuroscience::NeuriteElement::SetDiameter()']]],
+  ['setdiffusionsteps',['SetDiffusionSteps',['../classbdm_1_1DiffusionGrid.html#ab2a5171f4020fef1401457debe395e9d',1,'bdm::DiffusionGrid']]],
   ['setelementidx',['SetElementIdx',['../classbdm_1_1SoHandle.html#a722837ba7290fd556ef43afc18f57337',1,'bdm::SoHandle']]],
   ['setmass',['SetMass',['../classbdm_1_1Cell.html#ae97032cc7cb94f18a9b41cf0ea50ddd2',1,'bdm::Cell']]],
   ['setmasslocation',['SetMassLocation',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a7821da04dc89808ec5587bd24b094349',1,'bdm::experimental::neuroscience::NeuriteElement']]],

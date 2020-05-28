@@ -38,6 +38,8 @@ var searchData=
   ['diameter_5fright_5f',['diameter_right_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a11689e53374d8877fea8571129fe108c',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
   ['diffusion_5f',['diffusion_',['../classbdm_1_1Scheduler.html#ae76d9035d0d5774cb813b258abbec28a',1,'bdm::Scheduler']]],
   ['diffusion_5fgrids_5f',['diffusion_grids_',['../classbdm_1_1ResourceManager.html#aee7be8062b0ccdbbbd2626bd5a64e050',1,'bdm::ResourceManager']]],
+  ['diffusion_5fstep_5f',['diffusion_step_',['../classbdm_1_1DiffusionGrid.html#a87bcb3e8e2955cd2840838e7d8adf99d',1,'bdm::DiffusionGrid']]],
+  ['diffusion_5ftype_5f',['diffusion_type_',['../structbdm_1_1Param.html#a80828db7c837b9039591e7bfc2ed7fa2',1,'bdm::Param']]],
   ['direction_5f',['direction_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html#a304727b485d72afd948007364446fdd5',1,'bdm::experimental::neuroscience::NeuriteBranchingEvent::direction_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#af1e730b430dfe84e10aaeccd0dcc3660',1,'bdm::experimental::neuroscience::SideNeuriteExtensionEvent::direction_()']]],
   ['direction_5fleft_5f',['direction_left_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a0ab57e3cce470ab9967e047de3d6b34b',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
   ['direction_5fright_5f',['direction_right_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a8a12ae9f1c8f5c20adc52798b138e855',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['r1_5f',['r1_',['../classbdm_1_1DiffusionGrid.html#a338b7f8f480264f75effb12ef8093f98',1,'bdm::DiffusionGrid']]],
   ['random_5f',['random_',['../classbdm_1_1Simulation.html#a47d53e7e95c4744483ea213cf3407a47',1,'bdm::Simulation']]],
   ['registered_5fmodules_5f',['registered_modules_',['../structbdm_1_1Param.html#a32067d1377a23a36ea5e340e4d894c5b',1,'bdm::Param']]],
   ['remove_5f',['remove_',['../classbdm_1_1InPlaceExecutionContext.html#a72c370ffa339ddda8482478f8ec9e9df',1,'bdm::InPlaceExecutionContext']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['k_5f',['k_',['../classbdm_1_1DiffusionGrid.html#abce1d44460bd04c495f07d82bccd239e',1,'bdm::DiffusionGrid']]],
   ['kautomatic',['kAutomatic',['../structbdm_1_1Param.html#a338ac6f09819f7b64f3b2af01b8cb5bca27323fdb54ebca463e7060b4d4fe380c',1,'bdm::Param']]],
   ['kbasic',['kBasic',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811aa93d8d2c6e46f6132934aa8535f5c032',1,'bdm']]],
   ['kcylinder',['kCylinder',['../namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eea3069b5d7175aff08def5caa5266f8055',1,'bdm']]],

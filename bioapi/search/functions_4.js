@@ -10,7 +10,7 @@ var searchData=
   ['diffuseeulerleakingedge',['DiffuseEulerLeakingEdge',['../classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e',1,'bdm::DiffusionGrid']]],
   ['diffusewithclosededge',['DiffuseWithClosedEdge',['../classbdm_1_1DiffusionGrid.html#a63e2d29b39597dedf86053109cbee6e6',1,'bdm::DiffusionGrid']]],
   ['diffusewithleakingedge',['DiffuseWithLeakingEdge',['../classbdm_1_1DiffusionGrid.html#ad41ba0e6b6f746c8bfdc0f7e56e9b666',1,'bdm::DiffusionGrid']]],
-  ['diffusiongrid',['DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac',1,'bdm::DiffusionGrid::DiffusionGrid(TRootIOCtor *p)'],['../classbdm_1_1DiffusionGrid.html#a79aab2d224eced115cab3c7ee08dd269',1,'bdm::DiffusionGrid::DiffusionGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)']]],
+  ['diffusiongrid',['DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac',1,'bdm::DiffusionGrid::DiffusionGrid(TRootIOCtor *p)'],['../classbdm_1_1DiffusionGrid.html#ae625fb208226b3765c0169d9451b98be',1,'bdm::DiffusionGrid::DiffusionGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11, unsigned int diffusion_step=1)']]],
   ['diffusionop',['DiffusionOp',['../classbdm_1_1DiffusionOp.html#af5866f7e6c91715c279ead9213c89708',1,'bdm::DiffusionOp']]],
   ['disabledefragmentation',['DisableDefragmentation',['../classbdm_1_1SoUidGenerator.html#a3ec67d440dfc649443cacc75a08f2789',1,'bdm::SoUidGenerator']]],
   ['discretizationop',['DiscretizationOp',['../structbdm_1_1DiscretizationOp.html#a659dde95e6b993a0a56d8cd08ef8901d',1,'bdm::DiscretizationOp']]],
