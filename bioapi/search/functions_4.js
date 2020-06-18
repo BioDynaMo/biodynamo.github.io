@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['data',['data',['../classbdm_1_1MathArray.html#aee0b60c10a5d5d5c41a38650722a82ec',1,'bdm::MathArray::data()'],['../classbdm_1_1ParallelResizeVector.html#a93bae7c1ee894ffa1db23e846bcb0438',1,'bdm::ParallelResizeVector::data() noexcept'],['../classbdm_1_1ParallelResizeVector.html#a64b0df69c36103850a0752332e762e20',1,'bdm::ParallelResizeVector::data() const noexcept']]],
-  ['debug',['Debug',['../classbdm_1_1Log.html#adbcec0e2c0968d3aad5e1e91931d5e10',1,'bdm::Log']]],
-  ['debugnuma',['DebugNuma',['../classbdm_1_1ResourceManager.html#a32bc1e93a5c7303719a2a02a709cdcb0',1,'bdm::ResourceManager']]],
+  ['data',['data',['../classbdm_1_1MathArray.html#af109703b223c2630e843ce61e2398a6d',1,'bdm::MathArray::data()'],['../classbdm_1_1ParallelResizeVector.html#a93bae7c1ee894ffa1db23e846bcb0438',1,'bdm::ParallelResizeVector::data() noexcept'],['../classbdm_1_1ParallelResizeVector.html#a64b0df69c36103850a0752332e762e20',1,'bdm::ParallelResizeVector::data() const noexcept']]],
+  ['debug',['Debug',['../classbdm_1_1Log.html#acd2340b1df773c7bef7c7bac907fe98f',1,'bdm::Log']]],
+  ['debugnuma',['DebugNuma',['../classbdm_1_1ResourceManager.html#a0416556df304a7c785c580f1ac9fccaa',1,'bdm::ResourceManager']]],
   ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html#a2055df84fa6c354f566821e322275209',1,'bdm::DefaultForce::DefaultForce()'],['../classbdm_1_1DefaultForce.html#aadcab81e8fa9889c7793b32de656ecde',1,'bdm::DefaultForce::DefaultForce(const DefaultForce &amp;)=delete']]],
   ['definesubstance',['DefineSubstance',['../structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2',1,'bdm::ModelInitializer']]],
   ['delete',['Delete',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a26767b39c3ebca444029092fe35d2c56',1,'bdm::memory_manager_detail::NumaPoolAllocator::Delete()'],['../classbdm_1_1MemoryManager.html#a11f9ab16579eed8ca320e2a2b395d59e',1,'bdm::MemoryManager::Delete()']]],
@@ -19,7 +19,7 @@ var searchData=
   ['displacementopcpu',['DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html#a366d9896cbd658c17cf80e15e338878a',1,'bdm::DisplacementOpCpu']]],
   ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1DisplacementOpCuda.html#a7a77905be0b1402f37e5641f8a367d66',1,'bdm::DisplacementOpCuda']]],
   ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a4758aa387477b14cdf02f3013f606fca',1,'bdm::DisplacementOpCudaKernel']]],
-  ['distalend',['DistalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a60e8809d10d0b4e6c408755bc22f92f4',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['distalend',['DistalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ac2478f196c63cae8addd9d4e86eb13d2',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['divide',['Divide',['../classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0',1,'bdm::Cell::Divide()'],['../classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba',1,'bdm::Cell::Divide(double volume_ratio)'],['../classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d',1,'bdm::Cell::Divide(const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69',1,'bdm::Cell::Divide(double volume_ratio, const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875',1,'bdm::Cell::Divide(double volume_ratio, double phi, double theta)']]],
   ['dividingcellop',['DividingCellOp',['../classbdm_1_1DividingCellOp.html#a59bbc58e480defbbf650c0b4d565d245',1,'bdm::DividingCellOp']]],
   ['dolivevisualization',['DoLiveVisualization',['../classbdm_1_1InSituPipeline.html#a21ab5153b2c6f2550d5a428d6d0405eb',1,'bdm::InSituPipeline']]],

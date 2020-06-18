@@ -11,7 +11,7 @@ var searchData=
   ['newsouid',['NewSoUid',['../classbdm_1_1SoUidGenerator.html#a9cd8cf84b08c40d8121e484eb25482cc',1,'bdm::SoUidGenerator']]],
   ['newuid',['NewUid',['../classbdm_1_1ModuleParamUidGenerator.html#aa05a899e877c47251831ed3782663c37',1,'bdm::ModuleParamUidGenerator']]],
   ['newuniqueeventid',['NewUniqueEventId',['../classbdm_1_1UniqueEventIdFactory.html#ae811368e090a96628b97e33f26e28206',1,'bdm::UniqueEventIdFactory']]],
-  ['norm',['Norm',['../classbdm_1_1MathArray.html#aee468e908cbd26284dbf7c21e57753d7',1,'bdm::MathArray']]],
+  ['norm',['Norm',['../classbdm_1_1MathArray.html#a9852671303a8e3dfc9ce040d0406ad93',1,'bdm::MathArray']]],
   ['normalize',['Normalize',['../classbdm_1_1MathArray.html#a4035a0dd466cdbdc2ea0b1f581a0e3af',1,'bdm::MathArray']]],
   ['numa_5falloc_5fonnode',['numa_alloc_onnode',['../numa_8h.html#aa55414cbb38a0dd46176b32bdd8de672',1,'numa.h']]],
   ['numa_5favailable',['numa_available',['../numa_8h.html#a185e19a5b3d5c5c86bb46bfc241fbbed',1,'numa.h']]],

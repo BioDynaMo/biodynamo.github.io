@@ -1,7 +1,7 @@
 var searchData=
 [
   ['macros_2eh',['macros.h',['../macros_8h.html',1,'']]],
-  ['make_5fstd_5fvector',['make_std_vector',['../classbdm_1_1InlineVector.html#ae4ee6e59b5b42b7d4b43d90af65ce418',1,'bdm::InlineVector']]],
+  ['make_5fstd_5fvector',['make_std_vector',['../classbdm_1_1InlineVector.html#a4d9a5306e228a5e0bec19fe20b27c623',1,'bdm::InlineVector']]],
   ['map',['Map',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::Map()'],['../structbdm_1_1UpdateUidSoHMapFunctor.html#a6448689de4c678b28b4e690943c298bc',1,'bdm::UpdateUidSoHMapFunctor::Map()']]],
   ['map_5f',['map_',['../structbdm_1_1SoUidMap_1_1Iterator.html#a95c2949c9aa6a32bca9aae8ec4e96dc9',1,'bdm::SoUidMap::Iterator::map_()'],['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#acd2b9ab30cefd3079d81e3b1342fd278',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::map_()'],['../classbdm_1_1SoUidGenerator.html#ad95966f72b4a9856b7b00a55e9d8bab6',1,'bdm::SoUidGenerator::map_()']]],
   ['mass',['mass',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ad61ad7d041edd8aa0b8edb5c18f22c94',1,'bdm::DisplacementOpCuda::InitializeGPUData']]],
@@ -11,8 +11,7 @@ var searchData=
   ['math',['Math',['../structbdm_1_1Math.html',1,'bdm']]],
   ['math_2eh',['math.h',['../math_8h.html',1,'']]],
   ['math_5farray_2eh',['math_array.h',['../math__array_8h.html',1,'']]],
-  ['matharray',['MathArray',['../classbdm_1_1MathArray.html',1,'bdm']]],
-  ['matharray',['MathArray',['../classbdm_1_1MathArray.html#ae974c83df853e6a7295ca15002a3b26a',1,'bdm::MathArray::MathArray()'],['../classbdm_1_1MathArray.html#a2f0ad0ffce118e55453b6a280e4487fe',1,'bdm::MathArray::MathArray(std::initializer_list&lt; T &gt; l)']]],
+  ['matharray',['MathArray',['../classbdm_1_1MathArray.html',1,'bdm::MathArray&lt; T, N &gt;'],['../classbdm_1_1MathArray.html#ae974c83df853e6a7295ca15002a3b26a',1,'bdm::MathArray::MathArray()'],['../classbdm_1_1MathArray.html#a2f0ad0ffce118e55453b6a280e4487fe',1,'bdm::MathArray::MathArray(std::initializer_list&lt; T &gt; l)']]],
   ['matharray3',['MathArray3',['../classbdm_1_1ParaviewSoVisitor.html#a802531b67388fb384763742116867c6a',1,'bdm::ParaviewSoVisitor']]],
   ['matharray_3c_20double_2c_203_20_3e',['MathArray&lt; double, 3 &gt;',['../classbdm_1_1MathArray.html',1,'bdm']]],
   ['matlabexporter',['MatlabExporter',['../classbdm_1_1MatlabExporter.html',1,'bdm']]],
@@ -32,8 +31,7 @@ var searchData=
   ['memory_5fblocks_5f',['memory_blocks_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a85449fb1ea689d06c8c05219031b24a6',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['memory_5fmanager_2ecc',['memory_manager.cc',['../memory__manager_8cc.html',1,'']]],
   ['memory_5fmanager_2eh',['memory_manager.h',['../memory__manager_8h.html',1,'']]],
-  ['memorymanager',['MemoryManager',['../classbdm_1_1MemoryManager.html#a3864028a3a6d48e9fe27bdbd05b1edab',1,'bdm::MemoryManager']]],
-  ['memorymanager',['MemoryManager',['../classbdm_1_1MemoryManager.html',1,'bdm']]],
+  ['memorymanager',['MemoryManager',['../classbdm_1_1MemoryManager.html',1,'bdm::MemoryManager'],['../classbdm_1_1MemoryManager.html#a3864028a3a6d48e9fe27bdbd05b1edab',1,'bdm::MemoryManager::MemoryManager()']]],
   ['min_5f',['min_',['../structbdm_1_1Uniform.html#ab65bfc034aa51ab2b75226be85ff3ade',1,'bdm::Uniform']]],
   ['min_5fbound_5f',['min_bound_',['../structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f',1,'bdm::Param']]],
   ['minimize_5fmemory_5fwhile_5frebalancing_5f',['minimize_memory_while_rebalancing_',['../structbdm_1_1Param.html#ae84845859c1c3197923ef4bf2d450655',1,'bdm::Param']]],
@@ -45,8 +43,7 @@ var searchData=
   ['module_5fparam_2eh',['module_param.h',['../module__param_8h.html',1,'']]],
   ['moduleparam',['ModuleParam',['../structbdm_1_1ModuleParam.html',1,'bdm']]],
   ['moduleparamuid',['ModuleParamUid',['../namespacebdm.html#abe476bd9b7f889be914257c29fef38e0',1,'bdm']]],
-  ['moduleparamuidgenerator',['ModuleParamUidGenerator',['../classbdm_1_1ModuleParamUidGenerator.html#a149cdc12fb9451454720f09c008d6dcd',1,'bdm::ModuleParamUidGenerator::ModuleParamUidGenerator(const ModuleParamUidGenerator &amp;)=delete'],['../classbdm_1_1ModuleParamUidGenerator.html#a976b2dc6a4526db25a154f58c26f9f9b',1,'bdm::ModuleParamUidGenerator::ModuleParamUidGenerator()']]],
-  ['moduleparamuidgenerator',['ModuleParamUidGenerator',['../classbdm_1_1ModuleParamUidGenerator.html',1,'bdm']]],
+  ['moduleparamuidgenerator',['ModuleParamUidGenerator',['../classbdm_1_1ModuleParamUidGenerator.html',1,'bdm::ModuleParamUidGenerator'],['../classbdm_1_1ModuleParamUidGenerator.html#a149cdc12fb9451454720f09c008d6dcd',1,'bdm::ModuleParamUidGenerator::ModuleParamUidGenerator(const ModuleParamUidGenerator &amp;)=delete'],['../classbdm_1_1ModuleParamUidGenerator.html#a976b2dc6a4526db25a154f58c26f9f9b',1,'bdm::ModuleParamUidGenerator::ModuleParamUidGenerator()']]],
   ['modules_5f',['modules_',['../structbdm_1_1Param.html#ab75f07e3a6618b90311f07d2ec1d33dc',1,'bdm::Param']]],
   ['mother_5f',['mother_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a634e489761abae8f72e922b9063c11ec',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['movepointmass',['MovePointMass',['../classbdm_1_1Cell.html#a836f7062f56ffaf32d32a300670ad98b',1,'bdm::Cell::MovePointMass()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aeb2f33d46f31511625648808bbb7bce3',1,'bdm::experimental::neuroscience::NeuriteElement::MovePointMass()']]],
@@ -55,6 +52,5 @@ var searchData=
   ['mutex_5fbuilder_5f',['mutex_builder_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ae2eddd8d9b03d55f93a0c66d347aaebf',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutex_5findices_5f',['mutex_indices_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a0eceaf66add590b75a6d3d2bfcde309f',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
   ['mutexes_5f',['mutexes_',['../classbdm_1_1Grid_1_1NeighborMutexBuilder.html#ab0ad535099ad9f2d586e172d1505e4fa',1,'bdm::Grid::NeighborMutexBuilder']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder']]],
-  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]]
+  ['mutexwrapper',['MutexWrapper',['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#a87662697a077641e8f81452ed0e645a9',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1Grid_1_1NeighborMutexBuilder_1_1MutexWrapper.html#afc1d699adbdbdc6e234f74a205241e7e',1,'bdm::Grid::NeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]]
 ];

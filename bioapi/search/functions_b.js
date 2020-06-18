@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['make_5fstd_5fvector',['make_std_vector',['../classbdm_1_1InlineVector.html#ae4ee6e59b5b42b7d4b43d90af65ce418',1,'bdm::InlineVector']]],
+  ['make_5fstd_5fvector',['make_std_vector',['../classbdm_1_1InlineVector.html#a4d9a5306e228a5e0bec19fe20b27c623',1,'bdm::InlineVector']]],
   ['matharray',['MathArray',['../classbdm_1_1MathArray.html#ae974c83df853e6a7295ca15002a3b26a',1,'bdm::MathArray::MathArray()'],['../classbdm_1_1MathArray.html#a2f0ad0ffce118e55453b6a280e4487fe',1,'bdm::MathArray::MathArray(std::initializer_list&lt; T &gt; l)']]],
   ['matharray3',['MathArray3',['../classbdm_1_1ParaviewSoVisitor.html#a802531b67388fb384763742116867c6a',1,'bdm::ParaviewSoVisitor']]],
   ['memorymanager',['MemoryManager',['../classbdm_1_1MemoryManager.html#a3864028a3a6d48e9fe27bdbd05b1edab',1,'bdm::MemoryManager']]],

@@ -20,5 +20,5 @@ var searchData=
   ['updaterundisplacement',['UpdateRunDisplacement',['../classbdm_1_1SimObject.html#a53944126db971aaa0c57109e816610e2',1,'bdm::SimObject']]],
   ['updateuidsohmapfunctor',['UpdateUidSoHMapFunctor',['../structbdm_1_1UpdateUidSoHMapFunctor.html#ad0a1bca476958d44bea93273067520e4',1,'bdm::UpdateUidSoHMapFunctor']]],
   ['updatevolume',['UpdateVolume',['../classbdm_1_1Cell.html#a45c3e0ed831794031bf074228f534b5d',1,'bdm::Cell::UpdateVolume()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a771c4d37ee536add440c183cbf54822f',1,'bdm::experimental::neuroscience::NeuriteElement::UpdateVolume()']]],
-  ['usecpu',['UseCpu',['../classbdm_1_1DisplacementOp.html#a9ad316dba5dac953c55e567fc8151d0d',1,'bdm::DisplacementOp']]]
+  ['usecpu',['UseCpu',['../classbdm_1_1DisplacementOp.html#a9c26d85943c0888ebe4d478c75830058',1,'bdm::DisplacementOp']]]
 ];
