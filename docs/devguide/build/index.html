@@ -233,16 +233,28 @@ If you change the value of these switches, you might have to delete <code class=
 </thead>
 <tbody>
 <tr>
-<td><code class="language-text">test</code></td>
-<td>executes all tests</td>
+<td><code class="language-text">run-unit-tests</code></td>
+<td>executes all BioDynaMo unit tests</td>
 </tr>
 <tr>
-<td><code class="language-text">check</code></td>
-<td>executes all tests and shows test output on failure</td>
+<td><code class="language-text">run-valgrind</code></td>
+<td>executes BioDynaMo valgrind tests</td>
+</tr>
+<tr>
+<td><code class="language-text">run-check</code></td>
+<td>executes both unit and valgrind tests</td>
+</tr>
+<tr>
+<td><code class="language-text">run-demos</code></td>
+<td>executes all demos and integration tests</td>
 </tr>
 <tr>
 <td><code class="language-text">clean</code></td>
 <td>will clean all targets, also the external projects</td>
+</tr>
+<tr>
+<td><code class="language-text">cleanbuild</code></td>
+<td>will clean everything in the build directory, except for third_party (useful for avoiding downloading third party software)</td>
 </tr>
 <tr>
 <td><code class="language-text">bdmclean</code></td>
