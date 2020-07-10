@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['adjacency',['Adjacency',['../classbdm_1_1Grid.html#a7d1be76b02db5c0320b801ca9c481b01',1,'bdm::Grid']]],
+  ['adjacency',['Adjacency',['../classbdm_1_1UniformGridEnvironment.html#ae04dac79aac36d69a63d354c023ead3d',1,'bdm::UniformGridEnvironment']]],
   ['axis',['Axis',['../namespacebdm.html#acca80530a197baaf5fc40acfa4c58848',1,'bdm']]]
 ];

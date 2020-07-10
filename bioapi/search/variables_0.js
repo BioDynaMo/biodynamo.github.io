@@ -3,7 +3,7 @@ var searchData=
   ['active_5f',['active_',['../classbdm_1_1Simulation.html#ace31080e5a85b8eecc2cd543de914339',1,'bdm::Simulation']]],
   ['actual_5flength_5f',['actual_length_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a72df84ae918545e032a0d6bdd5139cfc',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['adherence_5f',['adherence_',['../classbdm_1_1Cell.html#ab8e48d82040233041774f9f6c2485eb3',1,'bdm::Cell::adherence_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a822217a94249b05772010696d88b05d3',1,'bdm::experimental::neuroscience::NeuriteElement::adherence_()']]],
-  ['adjacency_5f',['adjacency_',['../classbdm_1_1Grid.html#a635450d4defc43146a0ea559dd88ee20',1,'bdm::Grid']]],
+  ['adjacency_5f',['adjacency_',['../classbdm_1_1UniformGridEnvironment.html#abd01782a444faec2eb4673bf5c908b78',1,'bdm::UniformGridEnvironment']]],
   ['after_5frestore_5fevent_5f',['after_restore_event_',['../classbdm_1_1SimulationBackup.html#a1604e2a1edcc409a971fd55fa5a5e910',1,'bdm::SimulationBackup']]],
   ['aggregator_5f',['aggregator_',['../classbdm_1_1Timing.html#a2eb66efb25a8eac943086814407f597c',1,'bdm::Timing']]],
   ['aligned_5fpages_5f',['aligned_pages_',['../classbdm_1_1MemoryManager.html#a786494bb9871053deecc4d9ca8d4ca50',1,'bdm::MemoryManager']]],

@@ -3,7 +3,7 @@ var searchData=
   ['scheduler',['Scheduler',['../classbdm_1_1Scheduler.html',1,'bdm']]],
   ['setrundisplacementforeachneighbor',['SetRunDisplacementForEachNeighbor',['../structbdm_1_1SetRunDisplacementForEachNeighbor.html',1,'bdm']]],
   ['sideneuriteextensionevent',['SideNeuriteExtensionEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html',1,'bdm::experimental::neuroscience']]],
-  ['simdimensionandlargestobjectfunctor',['SimDimensionAndLargestObjectFunctor',['../structbdm_1_1Grid_1_1SimDimensionAndLargestObjectFunctor.html',1,'bdm::Grid']]],
+  ['simdimensionandlargestsimobjectfunctor',['SimDimensionAndLargestSimObjectFunctor',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html',1,'bdm::Environment']]],
   ['simobject',['SimObject',['../classbdm_1_1SimObject.html',1,'bdm']]],
   ['simobjectvector',['SimObjectVector',['../classbdm_1_1SimObjectVector.html',1,'bdm']]],
   ['simobjectvector_3c_20bdm_3a_3asohandle_20_3e',['SimObjectVector&lt; bdm::SoHandle &gt;',['../classbdm_1_1SimObjectVector.html',1,'bdm']]],

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['neighboriterator',['NeighborIterator',['../structbdm_1_1Grid_1_1NeighborIterator.html#a07d75af8dd2c46ef3cecb859dc462941',1,'bdm::Grid::NeighborIterator']]],
-  ['neighbormutex',['NeighborMutex',['../classbdm_1_1Grid_1_1NeighborMutexBuilder_1_1NeighborMutex.html#a5028bd465f9277f825b62633ed1bc86b',1,'bdm::Grid::NeighborMutexBuilder::NeighborMutex']]],
+  ['neighboriterator',['NeighborIterator',['../structbdm_1_1UniformGridEnvironment_1_1NeighborIterator.html#a2b6f64dfd333f35dc4a7f2621d5a6aa5',1,'bdm::UniformGridEnvironment::NeighborIterator']]],
   ['neuritebifurcationevent',['NeuriteBifurcationEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#acf56c767f8c998e55911dfd9851e5151',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
   ['neuritebranchingevent',['NeuriteBranchingEvent',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html#a61fae9f6cecfb9263b23f610d73e4de6',1,'bdm::experimental::neuroscience::NeuriteBranchingEvent']]],
   ['neuriteelement',['NeuriteElement',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad992c49b9c617395fa26815280294f37',1,'bdm::experimental::neuroscience::NeuriteElement::NeuriteElement()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#abb2101f3b2f4bff7c03f40b4e95f227d',1,'bdm::experimental::neuroscience::NeuriteElement::NeuriteElement(const Event &amp;event, SimObject *other, uint64_t new_oid=0)']]],
