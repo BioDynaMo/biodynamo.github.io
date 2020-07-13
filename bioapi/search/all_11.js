@@ -25,6 +25,7 @@ var searchData=
   ['setmass',['SetMass',['../classbdm_1_1Cell.html#ae97032cc7cb94f18a9b41cf0ea50ddd2',1,'bdm::Cell']]],
   ['setmasslocation',['SetMassLocation',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a7821da04dc89808ec5587bd24b094349',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['setmother',['SetMother',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a98a7416619df50d7d095ee6b81cda392',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['setmutexindices',['SetMutexIndices',['../classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1GridNeighborMutex.html#a86cbdb9356cf4df844aeb9be6931c580',1,'bdm::UniformGridEnvironment::GridNeighborMutexBuilder::GridNeighborMutex']]],
   ['setposition',['SetPosition',['../classbdm_1_1Cell.html#a838cf007275cfec6c478a4df83ebbb8c',1,'bdm::Cell::SetPosition()'],['../classbdm_1_1SimObject.html#afc7cbe6f9c20e4327cf2340396758657',1,'bdm::SimObject::SetPosition()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ae25c2938a9a31433ac1f7481251ac4d5',1,'bdm::experimental::neuroscience::NeuriteElement::SetPosition()']]],
   ['setresourcemanager',['SetResourceManager',['../classbdm_1_1Simulation.html#a26651387b596e60601f4e6979ceaeac4',1,'bdm::Simulation']]],
   ['setrestinglength',['SetRestingLength',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a598fb0f0bfde965ee4a0c8fa0550253b',1,'bdm::experimental::neuroscience::NeuriteElement']]],
