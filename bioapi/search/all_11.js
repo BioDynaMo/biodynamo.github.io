@@ -22,6 +22,7 @@ var searchData=
   ['setdiameter',['SetDiameter',['../classbdm_1_1Cell.html#a11258c5270717be715fec3f17e72ec59',1,'bdm::Cell::SetDiameter()'],['../classbdm_1_1SimObject.html#a38d6b74b64bf66be1c22667c8e3a1edf',1,'bdm::SimObject::SetDiameter()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a1c093ffea9be9788c9013af7b6954b7b',1,'bdm::experimental::neuroscience::NeuriteElement::SetDiameter()']]],
   ['setdiffusionsteps',['SetDiffusionSteps',['../classbdm_1_1DiffusionGrid.html#ab2a5171f4020fef1401457debe395e9d',1,'bdm::DiffusionGrid']]],
   ['setelementidx',['SetElementIdx',['../classbdm_1_1SoHandle.html#a722837ba7290fd556ef43afc18f57337',1,'bdm::SoHandle']]],
+  ['setignoredelete',['SetIgnoreDelete',['../classbdm_1_1MemoryManager.html#a75fbaa78f00edb0236c6ef1d1a136443',1,'bdm::MemoryManager']]],
   ['setmass',['SetMass',['../classbdm_1_1Cell.html#ae97032cc7cb94f18a9b41cf0ea50ddd2',1,'bdm::Cell']]],
   ['setmasslocation',['SetMassLocation',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a7821da04dc89808ec5587bd24b094349',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['setmother',['SetMother',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a98a7416619df50d7d095ee6b81cda392',1,'bdm::experimental::neuroscience::NeuriteElement']]],

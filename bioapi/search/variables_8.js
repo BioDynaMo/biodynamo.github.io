@@ -2,6 +2,7 @@ var searchData=
 [
   ['id_5f',['id_',['../classbdm_1_1Simulation.html#aca1656df06f26bbbc42d34e2818c7d36',1,'bdm::Simulation']]],
   ['idx_5f',['idx_',['../structbdm_1_1SoUidMap_1_1Iterator.html#a9ae8ac5eef1dbcdef40e75c1fda8e0b2',1,'bdm::SoUidMap::Iterator']]],
+  ['ignore_5fdelete_5f',['ignore_delete_',['../classbdm_1_1MemoryManager.html#a965bb1593dab70a9aa6da34d1ee726b9',1,'bdm::MemoryManager']]],
   ['impl_5f',['impl_',['../classbdm_1_1ParaviewAdaptor.html#ae344f0627b0745aaa1007b8810424437',1,'bdm::ParaviewAdaptor::impl_()'],['../classbdm_1_1ParaviewSoVisitor.html#a0339c60a59645972c5250f079850dbb6',1,'bdm::ParaviewSoVisitor::impl_()']]],
   ['index_5f',['index_',['../structbdm_1_1InlineVector_1_1Iterator.html#a31869f513113db401bdf1846da99e087',1,'bdm::InlineVector::Iterator::index_()'],['../classbdm_1_1SoUid.html#af25cd3b0a28140c283cab078f85553ad',1,'bdm::SoUid::index_()']]],
   ['init_5fgradient_5f',['init_gradient_',['../classbdm_1_1DiffusionGrid.html#ac5ff04feac82276cb3f1d31dbf074788',1,'bdm::DiffusionGrid']]],

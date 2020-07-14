@@ -41,6 +41,8 @@ var searchData=
   ['newuid',['NewUid',['../classbdm_1_1ModuleParamUidGenerator.html#aa05a899e877c47251831ed3782663c37',1,'bdm::ModuleParamUidGenerator']]],
   ['newuniqueeventid',['NewUniqueEventId',['../classbdm_1_1UniqueEventIdFactory.html#ae811368e090a96628b97e33f26e28206',1,'bdm::UniqueEventIdFactory']]],
   ['next',['next',['../structbdm_1_1memory__manager__detail_1_1Node.html#a10218244f03332bd841562e9a9c9f923',1,'bdm::memory_manager_detail::Node']]],
+  ['next_5f',['next_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a4cdcb1de1749598d5517e6e74bb91ee2',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
+  ['next_5flock_5f',['next_lock_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#ab8de94431e7e4d380016794e2f284742',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
   ['nid_5f',['nid_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a38ada068bf639116654f0e8ad8bbf591',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['node',['Node',['../structbdm_1_1memory__manager__detail_1_1Node.html',1,'bdm::memory_manager_detail']]],
   ['nodes_5fbefore_5fskip_5flist_5f',['nodes_before_skip_list_',['../classbdm_1_1memory__manager__detail_1_1List.html#a8d089109b3b2cb23d9a9f621819c1a21',1,'bdm::memory_manager_detail::List']]],

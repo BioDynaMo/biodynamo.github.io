@@ -2,6 +2,7 @@ var searchData=
 [
   ['id_5f',['id_',['../classbdm_1_1Simulation.html#aca1656df06f26bbbc42d34e2818c7d36',1,'bdm::Simulation']]],
   ['idx_5f',['idx_',['../structbdm_1_1SoUidMap_1_1Iterator.html#a9ae8ac5eef1dbcdef40e75c1fda8e0b2',1,'bdm::SoUidMap::Iterator']]],
+  ['ignore_5fdelete_5f',['ignore_delete_',['../classbdm_1_1MemoryManager.html#a965bb1593dab70a9aa6da34d1ee726b9',1,'bdm::MemoryManager']]],
   ['impl_5f',['impl_',['../classbdm_1_1ParaviewAdaptor.html#ae344f0627b0745aaa1007b8810424437',1,'bdm::ParaviewAdaptor::impl_()'],['../classbdm_1_1ParaviewSoVisitor.html#a0339c60a59645972c5250f079850dbb6',1,'bdm::ParaviewSoVisitor::impl_()']]],
   ['in_5fplace_5fexec_5fctxt_2ecc',['in_place_exec_ctxt.cc',['../in__place__exec__ctxt_8cc.html',1,'']]],
   ['in_5fplace_5fexec_5fctxt_2eh',['in_place_exec_ctxt.h',['../in__place__exec__ctxt_8h.html',1,'']]],

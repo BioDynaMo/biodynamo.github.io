@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-553-g4d1fa057</span>
+   &#160;<span id="projectnumber">v0.1.0-555-g5092924f</span>
    </div>
   </td>
  </tr>
@@ -77,7 +77,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for bdm::InPlaceExecutionContext::ThreadSafeSoUidMap:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap__coll__graph.svg" width="323" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap__coll__graph.svg" width="323" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -109,8 +109,12 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac3bbf08cd9ffd3458de9d3a210c3fce3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#ac3bbf08cd9ffd3458de9d3a210c3fce3">lock_</a></td></tr>
 <tr class="separator:ac3bbf08cd9ffd3458de9d3a210c3fce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8de94431e7e4d380016794e2f284742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#ab8de94431e7e4d380016794e2f284742">next_lock_</a></td></tr>
+<tr class="separator:ab8de94431e7e4d380016794e2f284742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2b9ab30cefd3079d81e3b1342fd278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a">Map</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#acd2b9ab30cefd3079d81e3b1342fd278">map_</a></td></tr>
 <tr class="separator:acd2b9ab30cefd3079d81e3b1342fd278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdcb1de1749598d5517e6e74bb91ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a">Map</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a4cdcb1de1749598d5517e6e74bb91ee2">next_</a></td></tr>
+<tr class="separator:a4cdcb1de1749598d5517e6e74bb91ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76cef64b09ea95898f697ad313e97bc6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a">Map</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a76cef64b09ea95898f697ad313e97bc6">previous_maps_</a></td></tr>
 <tr class="separator:a76cef64b09ea95898f697ad313e97bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -216,7 +220,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00047">47</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00050">50</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -237,7 +241,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>NB: This method fixes any race-condition of <code><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#aab05a2e33104384ca9dafc97e61a3176">ThreadSafeSoUidMap::Insert</a></code> It might happen that a <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#aab05a2e33104384ca9dafc97e61a3176">ThreadSafeSoUidMap::Insert</a> inserts the element into one of the <code>previous_maps_</code>. Therefore, if we don't find the element in <code>map_</code>, we iterate through <code>previous_maps_</code> to see if we can find it there. This iteration happens only in the unlikely event of a race-condition and is therefore not performance relevant. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00077">77</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00091">91</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -256,7 +260,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00108">108</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00122">122</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -276,7 +280,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00104">104</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00118">118</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -295,7 +299,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00101">101</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00115">115</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -328,6 +332,38 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00063">63</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+
+</div>
+</div>
+<a id="a4cdcb1de1749598d5517e6e74bb91ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cdcb1de1749598d5517e6e74bb91ee2">&#9670;&nbsp;</a></span>next_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a">Map</a>* bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::next_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00064">64</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8de94431e7e4d380016794e2f284742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8de94431e7e4d380016794e2f284742">&#9670;&nbsp;</a></span>next_lock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::next_lock_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00062">62</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
@@ -344,7 +380,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00063">63</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00065">65</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
