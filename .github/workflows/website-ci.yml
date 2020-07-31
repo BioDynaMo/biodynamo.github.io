@@ -60,6 +60,11 @@ jobs:
         path: build/third_party
         key: ${{ env.OSVERS }}-third-party-${{ hashFiles('cmake/external/SHA256Digests.cmake') }}
 
+    - name: Install prerequisites
+      shell: bash
+      run: |
+        util/installation/ubuntu-16.04/prerequisites.sh all
+
     - name: Build biodynamo.org
       shell: bash
       run: |
