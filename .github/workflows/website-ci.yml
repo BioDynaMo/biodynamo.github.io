@@ -7,6 +7,14 @@ on:
   schedule:
     # Every day at 3 am
     - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags' 
 
 jobs:
   build:
@@ -57,9 +65,11 @@ jobs:
       run: |
         cmake \
           -Dwebsite=on \
+          -Dtest=off \
           -Dnotebooks=on \
           -B build
         cd build
+        make -j4 notebooks
         make website
 
     - name: Deploy biodynamo.org
