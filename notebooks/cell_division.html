@@ -13140,7 +13140,7 @@ volume, after which it proliferates (i.e. divides).</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>input_line_126:1:10: fatal error: &#39;biodynamo.h&#39; file not found
+<pre>input_line_53:1:10: fatal error: &#39;biodynamo.h&#39; file not found
 #include &#34;biodynamo.h&#34;
          ^~~~~~~~~~~~~
 </pre>
@@ -13181,11 +13181,11 @@ volume, after which it proliferates (i.e. divides).</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>input_line_127:2:12: error: expected &#39;;&#39; after expression
+<pre>input_line_54:2:12: error: expected &#39;;&#39; after expression
  Simulation simulation(&#34;cell_division&#34;);
            ^
            ;
-input_line_127:2:13: error: use of undeclared identifier &#39;simulation&#39;
+input_line_54:2:13: error: use of undeclared identifier &#39;simulation&#39;
  Simulation simulation(&#34;cell_division&#34;);
             ^
 </pre>
@@ -13258,19 +13258,19 @@ input_line_127:2:13: error: use of undeclared identifier &#39;simulation&#39;
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>input_line_129:2:29: error: unknown type name &#39;Double3&#39;
+<pre>input_line_56:2:29: error: unknown type name &#39;Double3&#39;
  auto construct = [&amp;](const Double3&amp; position) {
                             ^
-input_line_129:3:3: error: unknown type name &#39;Cell&#39;
+input_line_56:3:3: error: unknown type name &#39;Cell&#39;
   Cell* cell = new Cell(position);
   ^
-input_line_129:3:20: error: unknown type name &#39;Cell&#39;
+input_line_56:3:20: error: unknown type name &#39;Cell&#39;
   Cell* cell = new Cell(position);
                    ^
-input_line_129:6:30: error: unknown type name &#39;GrowDivide&#39;
+input_line_56:6:30: error: unknown type name &#39;GrowDivide&#39;
   cell-&gt;AddBiologyModule(new GrowDivide());
                              ^
-input_line_129:9:1: error: use of undeclared identifier &#39;ModelInitializer&#39;
+input_line_56:9:1: error: use of undeclared identifier &#39;ModelInitializer&#39;
 ModelInitializer::Grid3D(cells_per_dim, spacing, construct);
 ^
 </pre>

@@ -75,8 +75,8 @@
 steps presented below:</p>
 <ul>
 <li>Add a new directory called <code class="language-text">&lt;your-os-name&gt;-&lt;version&gt;</code> inside <code class="language-text">util/installation</code>. Generally,
-<code class="language-text">&lt;your-os-name&gt;</code> must be all lowercase and must match the result of the command <code class="language-text">lsb_release -is</code>.
-Moreover, also <code class="language-text">&lt;version&gt;</code> must match the result of the command <code class="language-text">lsb_release -sr</code>;</li>
+<code class="language-text">&lt;your-os-name&gt;</code> must be all lowercase and must match the result of the command <code class="language-text">echo $(grep -oP &#39;(?&lt;=^ID=).+&#39; /etc/os-release | tr -d &#39;&quot;&#39;)</code>.
+Moreover, also <code class="language-text">&lt;version&gt;</code> must match the result of the command <code class="language-text">echo $(grep -oP &#39;(?&lt;=^VERSION_ID=).+&#39; /etc/os-release | tr -d &#39;&quot;&#39;)</code>;</li>
 <li>Create a file called <code class="language-text">prerequisites.sh</code> and place it inside <code class="language-text">util/installation/&lt;your-os-name&gt;-&lt;version&gt;</code>.
 This file will install all the prerequisites needed by the new OS. The script must take only one argument
 which specifies which prerequisites will be installed (all of them or just the optional ones). Please have a

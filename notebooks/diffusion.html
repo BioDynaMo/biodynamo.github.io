@@ -13143,7 +13143,7 @@ according to the extracellular gradient; in this case to the middle.</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>input_line_126:2:10: fatal error: &#39;biodynamo.h&#39; file not found
+<pre>input_line_53:2:10: fatal error: &#39;biodynamo.h&#39; file not found
 #include &#34;biodynamo.h&#34;
          ^~~~~~~~~~~~~
 </pre>
@@ -13205,35 +13205,35 @@ according to the extracellular gradient; in this case to the middle.</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>input_line_127:2:12: error: expected &#39;;&#39; after expression
+<pre>input_line_54:2:12: error: expected &#39;;&#39; after expression
  Simulation simulation(&#34;diffusion&#34;);
            ^
            ;
-input_line_127:2:13: error: use of undeclared identifier &#39;simulation&#39;
+input_line_54:2:13: error: use of undeclared identifier &#39;simulation&#39;
  Simulation simulation(&#34;diffusion&#34;);
             ^
-input_line_127:4:27: error: unknown type name &#39;Double3&#39;
+input_line_54:4:27: error: unknown type name &#39;Double3&#39;
 auto construct = [](const Double3&amp; position) {
                           ^
-input_line_127:5:3: error: unknown type name &#39;Cell&#39;
+input_line_54:5:3: error: unknown type name &#39;Cell&#39;
   Cell* cell = new Cell(position);
   ^
-input_line_127:5:20: error: unknown type name &#39;Cell&#39;
+input_line_54:5:20: error: unknown type name &#39;Cell&#39;
   Cell* cell = new Cell(position);
                    ^
-input_line_127:8:30: error: unknown type name &#39;Chemotaxis&#39;
+input_line_54:8:30: error: unknown type name &#39;Chemotaxis&#39;
   cell-&gt;AddBiologyModule(new Chemotaxis());
                              ^
-input_line_127:9:3: error: unknown type name &#39;Double3&#39;
+input_line_54:9:3: error: unknown type name &#39;Double3&#39;
   Double3 secretion_position = {{50, 50, 50}};
   ^
-input_line_127:11:32: error: unknown type name &#39;KaliumSecretion&#39;
+input_line_54:11:32: error: unknown type name &#39;KaliumSecretion&#39;
     cell-&gt;AddBiologyModule(new KaliumSecretion());
                                ^
-input_line_127:15:13: error: use of undeclared identifier &#39;Double3&#39;
+input_line_54:15:13: error: use of undeclared identifier &#39;Double3&#39;
 std::vector&lt;Double3&gt; positions;
             ^
-input_line_127:15:22: error: C++ requires a type specifier for all declarations
+input_line_54:15:22: error: C++ requires a type specifier for all declarations
 std::vector&lt;Double3&gt; positions;
                      ^
 </pre>
@@ -13275,14 +13275,14 @@ std::vector&lt;Double3&gt; positions;
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>input_line_128:3:1: error: &#39;ModelInitializer&#39; is not a class, namespace, or enumeration
+<pre>input_line_55:3:1: error: &#39;ModelInitializer&#39; is not a class, namespace, or enumeration
 ModelInitializer::CreateCells(positions, construct);
 ^
-input_line_128:3:1: note: &#39;ModelInitializer&#39; declared here
-input_line_128:3:31: error: use of undeclared identifier &#39;positions&#39;
+input_line_55:3:1: note: &#39;ModelInitializer&#39; declared here
+input_line_55:3:31: error: use of undeclared identifier &#39;positions&#39;
 ModelInitializer::CreateCells(positions, construct);
                               ^
-input_line_128:3:42: error: use of undeclared identifier &#39;construct&#39;
+input_line_55:3:42: error: use of undeclared identifier &#39;construct&#39;
 ModelInitializer::CreateCells(positions, construct);
                                          ^
 </pre>
@@ -13323,11 +13323,11 @@ ModelInitializer::CreateCells(positions, construct);
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>input_line_129:2:2: error: &#39;ModelInitializer&#39; is not a class, namespace, or enumeration
+<pre>input_line_56:2:2: error: &#39;ModelInitializer&#39; is not a class, namespace, or enumeration
  ModelInitializer::DefineSubstance(kKalium, &#34;Kalium&#34;, 0.4, 0, 25);
  ^
-input_line_129:2:2: note: &#39;ModelInitializer&#39; declared here
-input_line_129:2:36: error: use of undeclared identifier &#39;kKalium&#39;
+input_line_56:2:2: note: &#39;ModelInitializer&#39; declared here
+input_line_56:2:36: error: use of undeclared identifier &#39;kKalium&#39;
  ModelInitializer::DefineSubstance(kKalium, &#34;Kalium&#34;, 0.4, 0, 25);
                                    ^
 </pre>
