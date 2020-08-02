@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['data',['data',['../classbdm_1_1MathArray.html#af109703b223c2630e843ce61e2398a6d',1,'bdm::MathArray::data()'],['../classbdm_1_1ParallelResizeVector.html#a93bae7c1ee894ffa1db23e846bcb0438',1,'bdm::ParallelResizeVector::data() noexcept'],['../classbdm_1_1ParallelResizeVector.html#a64b0df69c36103850a0752332e762e20',1,'bdm::ParallelResizeVector::data() const noexcept']]],
+  ['debug',['Debug',['../classbdm_1_1Log.html#acd2340b1df773c7bef7c7bac907fe98f',1,'bdm::Log']]],
+  ['debugnuma',['DebugNuma',['../classbdm_1_1ResourceManager.html#a0416556df304a7c785c580f1ac9fccaa',1,'bdm::ResourceManager']]],
+  ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html#a2055df84fa6c354f566821e322275209',1,'bdm::DefaultForce::DefaultForce()'],['../classbdm_1_1DefaultForce.html#aadcab81e8fa9889c7793b32de656ecde',1,'bdm::DefaultForce::DefaultForce(const DefaultForce &amp;)=delete']]],
+  ['definesubstance',['DefineSubstance',['../structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2',1,'bdm::ModelInitializer']]],
+  ['delete',['Delete',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a26767b39c3ebca444029092fe35d2c56',1,'bdm::memory_manager_detail::NumaPoolAllocator::Delete()'],['../classbdm_1_1MemoryManager.html#a11f9ab16579eed8ca320e2a2b395d59e',1,'bdm::MemoryManager::Delete()']]],
+  ['diffuseeuler',['DiffuseEuler',['../classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770',1,'bdm::DiffusionGrid']]],
+  ['diffuseeulerleakingedge',['DiffuseEulerLeakingEdge',['../classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e',1,'bdm::DiffusionGrid']]],
+  ['diffusewithclosededge',['DiffuseWithClosedEdge',['../classbdm_1_1DiffusionGrid.html#a63e2d29b39597dedf86053109cbee6e6',1,'bdm::DiffusionGrid']]],
+  ['diffusewithleakingedge',['DiffuseWithLeakingEdge',['../classbdm_1_1DiffusionGrid.html#ad41ba0e6b6f746c8bfdc0f7e56e9b666',1,'bdm::DiffusionGrid']]],
+  ['diffusiongrid',['DiffusionGrid',['../classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac',1,'bdm::DiffusionGrid::DiffusionGrid(TRootIOCtor *p)'],['../classbdm_1_1DiffusionGrid.html#ae625fb208226b3765c0169d9451b98be',1,'bdm::DiffusionGrid::DiffusionGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11, unsigned int diffusion_step=1)']]],
+  ['diffusionop',['DiffusionOp',['../classbdm_1_1DiffusionOp.html#af5866f7e6c91715c279ead9213c89708',1,'bdm::DiffusionOp']]],
+  ['disabledefragmentation',['DisableDefragmentation',['../classbdm_1_1SoUidGenerator.html#a3ec67d440dfc649443cacc75a08f2789',1,'bdm::SoUidGenerator']]],
+  ['discretizationop',['DiscretizationOp',['../structbdm_1_1DiscretizationOp.html#a659dde95e6b993a0a56d8cd08ef8901d',1,'bdm::DiscretizationOp']]],
+  ['displacementfunctor',['DisplacementFunctor',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#a7d488157c987a31cfd2e7fef1e90fd03',1,'bdm::Cell::DisplacementFunctor::DisplacementFunctor()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a47112082489b067ec3a2ae3dfca48060',1,'bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor::DisplacementFunctor()']]],
+  ['displacementop',['DisplacementOp',['../classbdm_1_1DisplacementOp.html#af7611a05f17b66fd6c575588f0818317',1,'bdm::DisplacementOp']]],
+  ['displacementopcpu',['DisplacementOpCpu',['../classbdm_1_1DisplacementOpCpu.html#a366d9896cbd658c17cf80e15e338878a',1,'bdm::DisplacementOpCpu']]],
+  ['displacementopcuda',['DisplacementOpCuda',['../classbdm_1_1DisplacementOpCuda.html#a7a77905be0b1402f37e5641f8a367d66',1,'bdm::DisplacementOpCuda']]],
+  ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a4758aa387477b14cdf02f3013f606fca',1,'bdm::DisplacementOpCudaKernel']]],
+  ['distalend',['DistalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ac2478f196c63cae8addd9d4e86eb13d2',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['divide',['Divide',['../classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0',1,'bdm::Cell::Divide()'],['../classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba',1,'bdm::Cell::Divide(double volume_ratio)'],['../classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d',1,'bdm::Cell::Divide(const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69',1,'bdm::Cell::Divide(double volume_ratio, const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875',1,'bdm::Cell::Divide(double volume_ratio, double phi, double theta)']]],
+  ['dividingcellop',['DividingCellOp',['../classbdm_1_1DividingCellOp.html#a59bbc58e480defbbf650c0b4d565d245',1,'bdm::DividingCellOp']]],
+  ['dolivevisualization',['DoLiveVisualization',['../classbdm_1_1InSituPipeline.html#a21ab5153b2c6f2550d5a428d6d0405eb',1,'bdm::InSituPipeline']]],
+  ['double',['Double',['../classbdm_1_1ParaviewSoVisitor.html#a8c9583b910289fd00987e84c583ddf96',1,'bdm::ParaviewSoVisitor']]],
+  ['drawincanvas',['DrawInCanvas',['../classbdm_1_1RootAdaptor.html#a835878ac47b53a0fedbb0d4b4aeeaad9',1,'bdm::RootAdaptor']]]
+];
