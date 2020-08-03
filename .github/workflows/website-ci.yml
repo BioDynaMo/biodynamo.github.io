@@ -65,6 +65,9 @@ jobs:
       run: |
         util/installation/ubuntu-16.04/prerequisites.sh all
 
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v2
+
     - name: Build biodynamo.org
       shell: bash
       run: |
