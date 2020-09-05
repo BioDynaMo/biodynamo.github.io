@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-591-ge0d20341</span>
+   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
    </div>
   </td>
  </tr>
@@ -170,6 +170,9 @@ $(function() {
 <li>GetDecayConstant()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a37d15baf5b87e4c510443319c2860ecd">bdm::DiffusionGrid</a>
 </li>
+<li>GetDefaultOp()
+: <a class="el" href="classbdm_1_1Scheduler.html#a336058ebc20e90e5073eca64132f6854">bdm::Scheduler</a>
+</li>
 <li>GetDensity()
 : <a class="el" href="classbdm_1_1Cell.html#a12a6e314f97307562c2a74bd55d03068">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ae9018f3a6ef6b9fb376c6f70635f16a0">bdm::experimental::neuroscience::NeuriteElement</a>
@@ -233,6 +236,9 @@ $(function() {
 , <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#a9ea729026e3b058173cae526dfa9198f">bdm::experimental::neuroscience::SideNeuriteExtensionEvent</a>
 , <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#aeab2912443cf54ecbd9762175094e91c">bdm::experimental::neuroscience::SplitNeuriteElementEvent</a>
 </li>
+<li>GetImplementation()
+: <a class="el" href="structbdm_1_1Operation.html#a220acd9e419290d058605ee2d6b86c7d">bdm::Operation</a>
+</li>
 <li>GetIndex()
 : <a class="el" href="classbdm_1_1SoUid.html#a17546ac00e04ad478e8bc41daa8e54df">bdm::SoUid</a>
 </li>
@@ -240,6 +246,7 @@ $(function() {
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#a56454e497e634175b18e22e6a3c89af3">bdm::BaseBiologyModule</a>
 , <a class="el" href="classbdm_1_1GpuHelper.html#a79e5e79b22ae31f2666646f64f1dc96a">bdm::GpuHelper</a>
 , <a class="el" href="classbdm_1_1OpenCLState.html#ab6e01b1c83d8d84da5c4a2e62aedfd4f">bdm::OpenCLState</a>
+, <a class="el" href="structbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">bdm::OperationRegistry</a>
 , <a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">bdm::SimObject</a>
 , <a class="el" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">bdm::ThreadInfo</a>
 </li>
@@ -252,6 +259,15 @@ $(function() {
 </li>
 <li>GetLength()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad78febd9a060fe755b9eeb8d763c337a">bdm::experimental::neuroscience::NeuriteElement</a>
+</li>
+<li>GetListOfDefaultOps()
+: <a class="el" href="classbdm_1_1Scheduler.html#a789c2f19b6a28e50ac350b0890af540a">bdm::Scheduler</a>
+</li>
+<li>GetListOfScheduledSimObjectOps()
+: <a class="el" href="classbdm_1_1Scheduler.html#a72d3979ac59890be0714480f6e749d74">bdm::Scheduler</a>
+</li>
+<li>GetListOfScheduledStandaloneOps()
+: <a class="el" href="classbdm_1_1Scheduler.html#a9887820c913e6642703c76bda2436a8a">bdm::Scheduler</a>
 </li>
 <li>GetLock()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a44c59cf0a1e28d9323933d257ea83328">bdm::experimental::neuroscience::NeuriteElement</a>
@@ -334,7 +350,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1Simulation.html#a9ef5f8da9bed3ddd417b98a22fce83b7">bdm::Simulation</a>
 </li>
 <li>GetOperation()
-: <a class="el" href="classbdm_1_1Scheduler.html#a48466b64a9239b2e093f96c64eb7e668">bdm::Scheduler</a>
+: <a class="el" href="structbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">bdm::OperationRegistry</a>
 </li>
 <li>GetOutputDir()
 : <a class="el" href="classbdm_1_1Simulation.html#a96a9f8206b1cda3ff84751fa037e61c0">bdm::Simulation</a>
@@ -372,9 +388,6 @@ $(function() {
 </li>
 <li>GetRunDisplacementForAllNextTs()
 : <a class="el" href="classbdm_1_1SimObject.html#aecf3908a3d44322474ab7119b7e930f7">bdm::SimObject</a>
-</li>
-<li>GetScheduleOps()
-: <a class="el" href="classbdm_1_1Scheduler.html#a97f8cecdea4b22815b88d413056e98db">bdm::Scheduler</a>
 </li>
 <li>GetScheduler()
 : <a class="el" href="classbdm_1_1Simulation.html#a831f22ad084c248b0d2698242ebdabb8">bdm::Simulation</a>
@@ -446,7 +459,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1SimObject.html#a56be44cdbd966ee7b7cf539078d09bde">bdm::SimObject</a>
 </li>
 <li>GetUid()
-: <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#a58bd5adcadb866a332075256441413f2">bdm::detail::ExtractUid</a>
+: <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#afc7ec1a938763983258bfa2597de41c1">bdm::detail::ExtractUid</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a065c432e54c18637bba18cf17ae68498">bdm::experimental::neuroscience::NeuriteElement</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronOrNeurite.html#a13af251a7316a97f218cd6bdd065cedd">bdm::experimental::neuroscience::NeuronOrNeurite</a>
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#a27e6bf95a05d044c9f7fd2479811e207">bdm::experimental::neuroscience::NeuronSoma</a>
@@ -492,6 +505,9 @@ $(function() {
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1AssignToBoxesFunctor.html#ac817f198a2d1988ccd68f21561f50d43">bdm::UniformGridEnvironment::AssignToBoxesFunctor</a>
 , <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box_1_1Iterator.html#a53fa24b6c9fa856521068568a4877ea1">bdm::UniformGridEnvironment::Box::Iterator</a>
 </li>
+<li>grid_dimensions
+: <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ab67ea93718b3fa67a820993683495a63">bdm::DisplacementOpCuda::InitializeGPUData</a>
+</li>
 <li>grid_dimensions_
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a60dc01c8f8d10726edd9dafa4ea341b9">bdm::DiffusionGrid</a>
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a84ca7553ee82112b042b0a71fba1f563">bdm::UniformGridEnvironment</a>
@@ -503,7 +519,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1GridNeighborMutex.html#abca8ea0866a496d6b7b4f4c68e6f8d7d">bdm::UniformGridEnvironment::GridNeighborMutexBuilder::GridNeighborMutex</a>
 </li>
 <li>GrowDivide()
-: <a class="el" href="structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407">bdm::GrowDivide</a>
+: <a class="el" href="structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8">bdm::GrowDivide</a>
 </li>
 <li>GrowSoContainer()
 : <a class="el" href="classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7">bdm::ResourceManager</a>

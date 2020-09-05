@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-591-ge0d20341</span>
+   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
    </div>
   </td>
  </tr>
@@ -70,14 +70,23 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a62e9456e898d4766bbd35faf3e3533e0">frequency_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#ac0c6c73acfad45c5c699ea0b0b6de496">Operation</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#aa77af061d11b3d2d3f06c8d581cc0903">Operation</a>(const std::string &amp;name, uint32_t frequency)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a47ddd8379b370b26b0233008b3192f16">operator()</a>(SimObject *so) override=0</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Functor.html#af246e41e86d21be2dcfca5bf4cc47310">Functor&lt; void, SimObject *&gt;::operator()</a>(TParameter... parameter)=0</td><td class="entry"><a class="el" href="structbdm_1_1Functor.html">bdm::Functor&lt; void, SimObject *&gt;</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Functor.html#a2f50cabeabf4657631659ecf73016eb4">~Functor</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Functor.html">bdm::Functor&lt; void, SimObject *&gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#af71c268f8ab93714fae49deaa6c1f160">~Operation</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#acf14d091224537843dc2d2ffec138642">active_target_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#ae92921d5ddbf10894e306d5b33328688">AddOperationImpl</a>(OpComputeTarget target, OperationImpl *impl)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a3bf351b8b5e383c445ae176b9c0137b5">Clone</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a220acd9e419290d058605ee2d6b86c7d">GetImplementation</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a9382c3856b0d4d48955632e05ca4a2b9">implementations_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a7dcf8d997d5af6c3440f2170150f30f2">IsComputeTargetSupported</a>(OpComputeTarget target)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a0742d3bad1a91a9a83bac914ea6044ef">IsStandalone</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#ac0c6c73acfad45c5c699ea0b0b6de496">Operation</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#aa77af061d11b3d2d3f06c8d581cc0903">Operation</a>(const std::string &amp;name, uint32_t frequency)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#afad6710f7e0649712be3ad9ffb8e3f49">operator()</a>(SimObject *so)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a70f4540752681cdc64ba697af255664d">operator()</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a68e617bb499e73ffa6b69dccffb99169">SelectComputeTarget</a>(OpComputeTarget target)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#af18eaad4f239df7bd561c1ad0c0957c5">SetUp</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a9238c049bfa4d46f6e882149c43ad9a9">TearDown</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#af71c268f8ab93714fae49deaa6c1f160">~Operation</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -6,12 +6,11 @@ var searchData=
   ['first_5fparse_5f',['first_parse_',['../classbdm_1_1CommandLineOptions.html#ac96a2b7dfafa21bd45548f1cf41f7361',1,'bdm::CommandLineOptions']]],
   ['flag_5f',['flag_',['../classbdm_1_1Spinlock.html#a9bb64a6eb8c45c864026c3558ae5fd11',1,'bdm::Spinlock']]],
   ['force',['force',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a346ddee2053778ac7d42cf70947f006f',1,'bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor']]],
-  ['force_5fcpu_5fimplementation_5f',['force_cpu_implementation_',['../classbdm_1_1DisplacementOp.html#a625428fe0bdb483dd627fa97a1aa5817',1,'bdm::DisplacementOp']]],
   ['force_5ffrom_5fneighbors',['force_from_neighbors',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#aef02c2f10deb7bdd686e5c474a8dfbec',1,'bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor']]],
   ['force_5fon_5fmy_5fmothers_5fpoint_5fmass',['force_on_my_mothers_point_mass',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#af21d3cb71abb716f46e98ce4d86bbfce',1,'bdm::experimental::neuroscience::NeuriteElement::DisplacementFunctor']]],
   ['force_5fto_5ftransmit_5fto_5fproximal_5fmass_5f',['force_to_transmit_to_proximal_mass_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a6741cadfa50c972e478eaf0007a97c4d',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['free_5flists_5f',['free_lists_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#ad3f111848f499af53362bbd64b718ea7',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
-  ['frequency_5f',['frequency_',['../structbdm_1_1Operation.html#a62e9456e898d4766bbd35faf3e3533e0',1,'bdm::Operation']]],
+  ['frequency_5f',['frequency_',['../structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc',1,'bdm::Operation']]],
   ['function_5f',['function_',['../structbdm_1_1ForEachNeighborFunctor.html#a932c6595511d49510449899bb12b9610',1,'bdm::ForEachNeighborFunctor::function_()'],['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a85052986a9e29e1910750ea0950b5260',1,'bdm::ForEachNeighborWithinRadiusFunctor::function_()']]],
-  ['functor_5f',['functor_',['../structbdm_1_1ApplyOnAllElementsParallelFunctor.html#a5b19cb200e142508a270b4b19ffc6053',1,'bdm::ApplyOnAllElementsParallelFunctor']]]
+  ['functor_5f',['functor_',['../structbdm_1_1ApplyOnAllElementsParallelFunctor.html#a7e0e0b2ca3e52bd0fe4eed0749a4a73d',1,'bdm::ApplyOnAllElementsParallelFunctor']]]
 ];

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-591-ge0d20341</span>
+   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
    </div>
   </td>
  </tr>
@@ -59,7 +59,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="classbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a></li><li class="navelem"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html">InitializeGPUData</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacebdm.html">bdm</a></li><li class="navelem"><a class="el" href="structbdm_1_1DisplacementOpCuda.html">DisplacementOpCuda</a></li><li class="navelem"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html">InitializeGPUData</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,6 +100,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af52fc11da1ce18667a30b7f5c146b1b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#af52fc11da1ce18667a30b7f5c146b1b6">is_non_spherical_object</a> = false</td></tr>
 <tr class="separator:af52fc11da1ce18667a30b7f5c146b1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ecb6eb56dacad54f4ad0840fb525e9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; double, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a04ecb6eb56dacad54f4ad0840fb525e9">cell_movements</a></td></tr>
+<tr class="separator:a04ecb6eb56dacad54f4ad0840fb525e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b4ee1ac6545ec139e49dd7d678514d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a3b4ee1ac6545ec139e49dd7d678514d9">cell_positions</a></td></tr>
 <tr class="separator:a3b4ee1ac6545ec139e49dd7d678514d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda910eac8f46ae23c6506f2ce0e21db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#adda910eac8f46ae23c6506f2ce0e21db">cell_diameters</a></td></tr>
@@ -114,10 +116,26 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad61ad7d041edd8aa0b8edb5c18f22c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aee46435ea47d69f50a9db95318f94d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbdm_1_1SoHandle.html#ad771d29ca82820f864f5c37391c0759f">SoHandle::ElementIdx_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a7aee46435ea47d69f50a9db95318f94d">offset</a></td></tr>
 <tr class="separator:a7aee46435ea47d69f50a9db95318f94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6d4cae4f49061c239c0b66cf4785da"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classbdm_1_1SoHandle.html#ad771d29ca82820f864f5c37391c0759f">SoHandle::ElementIdx_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a9e6d4cae4f49061c239c0b66cf4785da">successors</a></td></tr>
+<tr class="separator:a9e6d4cae4f49061c239c0b66cf4785da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fa6e8a4114427640b795669d187b30"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ac9fa6e8a4114427640b795669d187b30">starts</a></td></tr>
+<tr class="separator:ac9fa6e8a4114427640b795669d187b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc41d60c3ca228ccd9f4b9b8f4e06018"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#adc41d60c3ca228ccd9f4b9b8f4e06018">lengths</a></td></tr>
+<tr class="separator:adc41d60c3ca228ccd9f4b9b8f4e06018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade119b7eb55941664fc42748ea906440"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ade119b7eb55941664fc42748ea906440">timestamps</a></td></tr>
+<tr class="separator:ade119b7eb55941664fc42748ea906440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500e64d45952d757b06bc93671c090b2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a500e64d45952d757b06bc93671c090b2">current_timestamp</a></td></tr>
+<tr class="separator:a500e64d45952d757b06bc93671c090b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229b269c1ac53ee857a7d61d7d2e4514"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a229b269c1ac53ee857a7d61d7d2e4514">box_length</a></td></tr>
+<tr class="separator:a229b269c1ac53ee857a7d61d7d2e4514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66814d25538c4ffedf92e9c0fc76f6cf"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint32_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a66814d25538c4ffedf92e9c0fc76f6cf">num_boxes_axis</a></td></tr>
+<tr class="separator:a66814d25538c4ffedf92e9c0fc76f6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67ea93718b3fa67a820993683495a63"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ab67ea93718b3fa67a820993683495a63">grid_dimensions</a></td></tr>
+<tr class="separator:ab67ea93718b3fa67a820993683495a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00198">198</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00194">194</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a01a39c6e8ed4ea1d7a60da09fe35fb12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01a39c6e8ed4ea1d7a60da09fe35fb12">&#9670;&nbsp;</a></span>InitializeGPUData()</h2>
@@ -153,7 +171,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00208">208</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00217">217</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -192,11 +210,27 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00219">219</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00230">230</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a229b269c1ac53ee857a7d61d7d2e4514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229b269c1ac53ee857a7d61d7d2e4514">&#9670;&nbsp;</a></span>box_length</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t bdm::DisplacementOpCuda::InitializeGPUData::box_length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00213">213</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
 <a id="a636c4ec877a58b00c668443d0e23b66e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a636c4ec877a58b00c668443d0e23b66e">&#9670;&nbsp;</a></span>cell_adherence</h2>
 
@@ -209,7 +243,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00202">202</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00203">203</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +259,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00204">204</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00205">205</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +275,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00201">201</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00202">202</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="a04ecb6eb56dacad54f4ad0840fb525e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ecb6eb56dacad54f4ad0840fb525e9">&#9670;&nbsp;</a></span>cell_movements</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::array&lt;double, 3&gt; &gt; bdm::DisplacementOpCuda::InitializeGPUData::cell_movements</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00200">200</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -257,7 +307,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00200">200</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00201">201</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +323,39 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00203">203</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00204">204</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="a500e64d45952d757b06bc93671c090b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500e64d45952d757b06bc93671c090b2">&#9670;&nbsp;</a></span>current_timestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t bdm::DisplacementOpCuda::InitializeGPUData::current_timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00212">212</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="ab67ea93718b3fa67a820993683495a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67ea93718b3fa67a820993683495a63">&#9670;&nbsp;</a></span>grid_dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int32_t, 3&gt; bdm::DisplacementOpCuda::InitializeGPUData::grid_dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00215">215</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +371,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00199">199</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00195">195</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="adc41d60c3ca228ccd9f4b9b8f4e06018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc41d60c3ca228ccd9f4b9b8f4e06018">&#9670;&nbsp;</a></span>lengths</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint16_t&gt; bdm::DisplacementOpCuda::InitializeGPUData::lengths</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00210">210</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +403,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00205">205</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00206">206</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="a66814d25538c4ffedf92e9c0fc76f6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66814d25538c4ffedf92e9c0fc76f6cf">&#9670;&nbsp;</a></span>num_boxes_axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;uint32_t, 3&gt; bdm::DisplacementOpCuda::InitializeGPUData::num_boxes_axis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00214">214</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>
@@ -321,7 +435,55 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00206">206</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00207">207</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="ac9fa6e8a4114427640b795669d187b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9fa6e8a4114427640b795669d187b30">&#9670;&nbsp;</a></span>starts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint32_t&gt; bdm::DisplacementOpCuda::InitializeGPUData::starts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00209">209</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="a9e6d4cae4f49061c239c0b66cf4785da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6d4cae4f49061c239c0b66cf4785da">&#9670;&nbsp;</a></span>successors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classbdm_1_1SoHandle.html#ad771d29ca82820f864f5c37391c0759f">SoHandle::ElementIdx_t</a>&gt; bdm::DisplacementOpCuda::InitializeGPUData::successors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00208">208</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
+
+</div>
+</div>
+<a id="ade119b7eb55941664fc42748ea906440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade119b7eb55941664fc42748ea906440">&#9670;&nbsp;</a></span>timestamps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint64_t&gt; bdm::DisplacementOpCuda::InitializeGPUData::timestamps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="displacement__op__cuda_8h_source.html#l00211">211</a> of file <a class="el" href="displacement__op__cuda_8h_source.html">displacement_op_cuda.h</a>.</p>
 
 </div>
 </div>

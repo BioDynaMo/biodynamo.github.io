@@ -16,7 +16,7 @@ var searchData=
   ['preferred_5fgpu_5f',['preferred_gpu_',['../structbdm_1_1Param.html#a4b46410b40ad02da690638c7e04be73a',1,'bdm::Param']]],
   ['previous_5fmaps_5f',['previous_maps_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a76cef64b09ea95898f697ad313e97bc6',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
   ['producer_5fmap_5f',['producer_map_',['../classbdm_1_1InSituPipeline.html#a8ff700c68a2e5778299cab7b50ab506f',1,'bdm::InSituPipeline']]],
-  ['protected_5foperations_5f',['protected_operations_',['../classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b',1,'bdm::Scheduler']]],
+  ['protected_5fops_5f',['protected_ops_',['../classbdm_1_1Scheduler.html#acc33e732a0947d960ae6467b59a17c29',1,'bdm::Scheduler']]],
   ['proxy_5fmanager_5f',['proxy_manager_',['../classbdm_1_1InSituPipeline.html#a7d09c2ca20c8cb70a78e8ca54d661636',1,'bdm::InSituPipeline']]],
   ['python_5fparaview_5fpipeline_5f',['python_paraview_pipeline_',['../structbdm_1_1Param.html#aa8794382394ee28b7c0093d0124ae6ec',1,'bdm::Param']]]
 ];

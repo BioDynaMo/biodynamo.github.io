@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-591-ge0d20341</span>
+   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for bdm::Param:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="175" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="175" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -203,10 +203,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a10912de24f843fd275c0aad868259b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63cbc816311cd6dddc85c35dd908ed68"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a63cbc816311cd6dddc85c35dd908ed68">simulation_step_freq_</a> = 10</td></tr>
 <tr class="separator:a63cbc816311cd6dddc85c35dd908ed68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd15e376dcf514fb83c6ff55b49cd3db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#abd15e376dcf514fb83c6ff55b49cd3db">use_gpu_</a> = false</td></tr>
-<tr class="separator:abd15e376dcf514fb83c6ff55b49cd3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36f0fb400b2fcbe803373bc994a8a612"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a36f0fb400b2fcbe803373bc994a8a612">use_opencl_</a> = false</td></tr>
-<tr class="separator:a36f0fb400b2fcbe803373bc994a8a612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bda522d033cafe3389a7d351f3cc7bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a7bda522d033cafe3389a7d351f3cc7bd">compute_target_</a> = &quot;cpu&quot;</td></tr>
+<tr class="separator:a7bda522d033cafe3389a7d351f3cc7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e7b0cdea02e9f135f0a0dad4bc2daea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a6e7b0cdea02e9f135f0a0dad4bc2daea">opencl_debug_</a> = false</td></tr>
 <tr class="separator:a6e7b0cdea02e9f135f0a0dad4bc2daea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b46410b40ad02da690638c7e04be73a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a4b46410b40ad02da690638c7e04be73a">preferred_gpu_</a> = 0</td></tr>
@@ -521,7 +519,7 @@ template&lt;typename TModuleParam &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00492">492</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00485">485</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -621,6 +619,24 @@ TOML config file: Default value: <code>true</code><br />
 </p><pre class="fragment">[simulation]
 calculate_gradients = true  </pre> 
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00180">180</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a id="a7bda522d033cafe3389a7d351f3cc7bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bda522d033cafe3389a7d351f3cc7bd">&#9670;&nbsp;</a></span>compute_target_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string bdm::Param::compute_target_ = &quot;cpu&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run the simulation partially on the GPU for improved performance. Possible values: "cpu", "cuda", "opencl" Default value: <code>"cpu"</code><br />
+TOML config file: [experimental] compute_target = false </p>
+
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00463">463</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -876,7 +892,7 @@ minimize_memory_while_rebalancing = true  </pre>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00495">495</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00488">488</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -910,7 +926,7 @@ minimize_memory_while_rebalancing = true  </pre>
 <p>Compile OpenCL kernels with debugging symbols, for debugging on CPU targets with GNU gdb. Default value: <code>false</code><br />
 TOML config file: [experimental] opencl_debug_ = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00478">478</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00471">471</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -948,7 +964,7 @@ ouput_dir = "output"  </pre>
 <p>Set the index of the preferred GPU you wish to use. Default value: <code>0</code><br />
 TOML config file: [experimental] preferred_gpu = 0 </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00485">485</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00478">478</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -990,7 +1006,7 @@ TOML config file: [development] python_paraview_pipeline_ = false </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00494">494</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00487">487</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1237,42 +1253,6 @@ thread_safety_mechanism_ = "none"  </pre>
 TOML config file: </p><pre class="fragment">[performance]
 use_bdm_mem_mgr = true  </pre> 
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00363">363</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a id="abd15e376dcf514fb83c6ff55b49cd3db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd15e376dcf514fb83c6ff55b49cd3db">&#9670;&nbsp;</a></span>use_gpu_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool bdm::Param::use_gpu_ = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Run the simulation partially on the GPU for improved performance. Default value: <code>false</code><br />
-TOML config file: [experimental] use_gpu = false </p>
-
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00462">462</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
-
-</div>
-</div>
-<a id="a36f0fb400b2fcbe803373bc994a8a612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36f0fb400b2fcbe803373bc994a8a612">&#9670;&nbsp;</a></span>use_opencl_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool bdm::Param::use_opencl_ = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>When both CUDA and OpenCL are available on a machine, the preference to OpenCL can be set with this flag, as per default CUDA is used. Default value: <code>false</code><br />
-TOML config file: [experimental] use_opencl = false </p>
-
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00470">470</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>

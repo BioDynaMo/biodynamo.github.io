@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-591-ge0d20341</span>
+   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1ParallelResizeVector.html#ad1d60be58b35efe22671792208be8a5b">bdm::ParallelResizeVector&lt; T &gt;</a>
 </li>
 <li>cdo_
-: <a class="el" href="classbdm_1_1DisplacementOpCuda.html#a50c7718ce677c30160e58000c63591b4">bdm::DisplacementOpCuda</a>
+: <a class="el" href="structbdm_1_1DisplacementOpCuda.html#a50c7718ce677c30160e58000c63591b4">bdm::DisplacementOpCuda</a>
 </li>
 <li>Cell()
 : <a class="el" href="classbdm_1_1Cell.html#aca6e7785542c5bccf677271f3d02376f">bdm::Cell</a>
@@ -123,7 +123,8 @@ $(function() {
 : <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#adda910eac8f46ae23c6506f2ce0e21db">bdm::DisplacementOpCuda::InitializeGPUData</a>
 </li>
 <li>cell_movements
-: <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1UpdateCPUResults.html#a87a6df57ad5954eee63b2006a744e782">bdm::DisplacementOpCuda::UpdateCPUResults</a>
+: <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a04ecb6eb56dacad54f4ad0840fb525e9">bdm::DisplacementOpCuda::InitializeGPUData</a>
+, <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1UpdateCPUResults.html#a87a6df57ad5954eee63b2006a744e782">bdm::DisplacementOpCuda::UpdateCPUResults</a>
 </li>
 <li>cell_positions
 : <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a3b4ee1ac6545ec139e49dd7d678514d9">bdm::DisplacementOpCuda::InitializeGPUData</a>
@@ -179,6 +180,10 @@ $(function() {
 : <a class="el" href="classbdm_1_1Scheduler.html#a337a791a56b9163ebe9663e70eac3229">bdm::Scheduler</a>
 , <a class="el" href="classbdm_1_1Timing.html#a82e8b4b8b6f1f536924285fa166acfe7">bdm::Timing</a>
 </li>
+<li>Clone()
+: <a class="el" href="structbdm_1_1Operation.html#a3bf351b8b5e383c445ae176b9c0137b5">bdm::Operation</a>
+, <a class="el" href="structbdm_1_1OperationImpl.html#a5f442a4f4c6f0a137ba137f46e97d399">bdm::OperationImpl</a>
+</li>
 <li>cnt
 : <a class="el" href="structbdm_1_1RearrangeFunctor.html#aeb925e9471e3f3cc82c24565c2326a12">bdm::RearrangeFunctor</a>
 </li>
@@ -187,6 +192,9 @@ $(function() {
 </li>
 <li>Compute()
 : <a class="el" href="classbdm_1_1VTuneOpWrapper.html#a568c8f384f98d53af11271f3782c862d">bdm::VTuneOpWrapper&lt; Op &gt;</a>
+</li>
+<li>compute_target_
+: <a class="el" href="structbdm_1_1Param.html#a7bda522d033cafe3389a7d351f3cc7bd">bdm::Param</a>
 </li>
 <li>ComputeForceOfASphereOnASphere()
 : <a class="el" href="classbdm_1_1DefaultForce.html#ac549d23e2eec4f4f53da7960295fc9b8">bdm::DefaultForce</a>
@@ -200,6 +208,9 @@ $(function() {
 </li>
 <li>concentrations_
 : <a class="el" href="structbdm_1_1RegulateGenes.html#a10fbfc91670d91ed4c04ee10521d9537">bdm::RegulateGenes</a>
+</li>
+<li>Condition()
+: <a class="el" href="classbdm_1_1Log.html#a8731d2ecebd271a8ec159b98247f0cad">bdm::Log</a>
 </li>
 <li>const_iterator
 : <a class="el" href="classbdm_1_1InlineVector.html#a29bb16388e50d7e412c20091e5c9bd59">bdm::InlineVector&lt; T, N &gt;</a>
@@ -241,9 +252,6 @@ $(function() {
 , <a class="el" href="classbdm_1_1SoUidGenerator.html#a8b72728ad373eadc94ab793698df4dc0">bdm::SoUidGenerator</a>
 , <a class="el" href="classbdm_1_1UniqueEventIdFactory.html#a83e9f33ec29b0489d805b7c3d43e3cca">bdm::UniqueEventIdFactory</a>
 </li>
-<li>cpu_
-: <a class="el" href="classbdm_1_1DisplacementOp.html#a6e781e069759f3d27d59c240b1ad0816">bdm::DisplacementOp</a>
-</li>
 <li>Create()
 : <a class="el" href="classbdm_1_1VisualizationAdaptor.html#ac96ce07c860ffbb9a37c08d5deded10b">bdm::VisualizationAdaptor</a>
 </li>
@@ -269,6 +277,9 @@ $(function() {
 </li>
 <li>current_numa
 : <a class="el" href="structbdm_1_1RearrangeFunctor.html#aed41f7d3375e9c3f3812a151475cc589">bdm::RearrangeFunctor</a>
+</li>
+<li>current_timestamp
+: <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a500e64d45952d757b06bc93671c090b2">bdm::DisplacementOpCuda::InitializeGPUData</a>
 </li>
 <li>current_value_
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box_1_1Iterator.html#af588d2bde9ef4967e4a656ff91b12062">bdm::UniformGridEnvironment::Box::Iterator</a>

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['scheduled_5fops_5f',['scheduled_ops_',['../structbdm_1_1RunAllScheduldedOps.html#abf07c0b1e64427784c6f48b8369a27c0',1,'bdm::RunAllScheduldedOps']]],
+  ['scheduled_5fops_5f',['scheduled_ops_',['../structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426',1,'bdm::RunAllScheduledOps']]],
+  ['scheduled_5fsim_5fobject_5fops_5f',['scheduled_sim_object_ops_',['../classbdm_1_1Scheduler.html#a8d15c088991feff6e5ca7b834e049daa',1,'bdm::Scheduler']]],
+  ['scheduled_5fstandalone_5fops_5f',['scheduled_standalone_ops_',['../classbdm_1_1Scheduler.html#a1e3e1ddac79853320514a1eaf29ad859',1,'bdm::Scheduler']]],
   ['scheduler_5f',['scheduler_',['../classbdm_1_1Simulation.html#aa08fb1afa3ef057f677d92707fe08f26',1,'bdm::Simulation']]],
   ['scheduling_5fbatch_5fsize_5f',['scheduling_batch_size_',['../structbdm_1_1Param.html#adac07de04521ddd5e025cc00c5664851',1,'bdm::Param']]],
   ['search_5findex_5f',['search_index_',['../classbdm_1_1SoUidGenerator.html#a3662af423d0f4b9c2154a7d935fa65d9',1,'bdm::SoUidGenerator']]],
@@ -8,7 +10,7 @@ var searchData=
   ['shape_5f',['shape_',['../structbdm_1_1VtkSoGrid.html#af932d1a1ac08274659764f82ea93da9c',1,'bdm::VtkSoGrid']]],
   ['show_5fsimulation_5fstep_5f',['show_simulation_step_',['../structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97',1,'bdm::Param']]],
   ['sigma_5f',['sigma_',['../structbdm_1_1GaussianBand.html#ad61feda0ad17554132adac6e23378d28',1,'bdm::GaussianBand']]],
-  ['sim_5f',['sim_',['../structbdm_1_1RunAllScheduldedOps.html#a9a9f3e802949c7d80e98996977f9d226',1,'bdm::RunAllScheduldedOps']]],
+  ['sim_5f',['sim_',['../structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552',1,'bdm::RunAllScheduledOps']]],
   ['sim_5fname_5f',['sim_name_',['../classbdm_1_1CommandLineOptions.html#a5d548ce3bf5431e3ddb328a04f814a4f',1,'bdm::CommandLineOptions']]],
   ['sim_5fobjects_5f',['sim_objects_',['../classbdm_1_1ResourceManager.html#a35225455554669be879ee829d968b13f',1,'bdm::ResourceManager']]],
   ['simulation_5fmax_5fdisplacement_5f',['simulation_max_displacement_',['../structbdm_1_1Param.html#af493a386064dc32d43d19b8ebcd5e7cb',1,'bdm::Param']]],
@@ -28,12 +30,14 @@ var searchData=
   ['souid_5fdefragmentation_5flow_5fwatermark_5f',['souid_defragmentation_low_watermark_',['../structbdm_1_1Param.html#ae5e7bf592c9fe225750f5d3de721e778',1,'bdm::Param']]],
   ['spring_5faxis_5f',['spring_axis_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#adc293cbd70c8586567e9704277220c47',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['spring_5fconstant_5f',['spring_constant_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a2bf28904fc4585d589c262edc1a5bcba',1,'bdm::experimental::neuroscience::NeuriteElement']]],
-  ['squared_5fradius_5f',['squared_radius_',['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a030d83d385d2cfb03cc2a7ef43a05339',1,'bdm::ForEachNeighborWithinRadiusFunctor::squared_radius_()'],['../classbdm_1_1DisplacementOpCpu.html#a7f31e0197c3f2d39a8676f4bfe4e37da',1,'bdm::DisplacementOpCpu::squared_radius_()']]],
+  ['squared_5fradius_5f',['squared_radius_',['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a030d83d385d2cfb03cc2a7ef43a05339',1,'bdm::ForEachNeighborWithinRadiusFunctor::squared_radius_()'],['../structbdm_1_1DisplacementOp.html#a03cf84d2f6d438d3ce2ec608d41c4b78',1,'bdm::DisplacementOp::squared_radius_()']]],
   ['start_5f',['start_',['../structbdm_1_1UniformGridEnvironment_1_1Box.html#a354dd2095fa669e29b4233759e814fc7',1,'bdm::UniformGridEnvironment::Box::start_()'],['../classbdm_1_1Timing.html#afb03795f79dd8290366f29f05bc0ac8e',1,'bdm::Timing::start_()']]],
   ['start_5fpointer_5f',['start_pointer_',['../structbdm_1_1memory__manager__detail_1_1AllocatedBlock.html#a90c7642504d8f9d3ebb74af3cf40df3f',1,'bdm::memory_manager_detail::AllocatedBlock']]],
+  ['starts',['starts',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ac9fa6e8a4114427640b795669d187b30',1,'bdm::DisplacementOpCuda::InitializeGPUData']]],
   ['statistics_5f',['statistics_',['../structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d',1,'bdm::Param']]],
   ['substance_5f',['substance_',['../classbdm_1_1DiffusionGrid.html#a68c0f04fa1e76d95bf1a776d2280df7c',1,'bdm::DiffusionGrid']]],
   ['substance_5fname_5f',['substance_name_',['../classbdm_1_1DiffusionGrid.html#aa260ee52df8f892cdbd10d01ce94d69e',1,'bdm::DiffusionGrid']]],
+  ['successors',['successors',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a9e6d4cae4f49061c239c0b66cf4785da',1,'bdm::DisplacementOpCuda::InitializeGPUData']]],
   ['successors_5f',['successors_',['../classbdm_1_1UniformGridEnvironment.html#a2a3160dc96b3d757af37e28908ea0234',1,'bdm::UniformGridEnvironment']]],
   ['sysinfo_5f',['sysinfo_',['../classbdm_1_1RuntimeVariables.html#a728f3490435d097f321795b28564af02',1,'bdm::RuntimeVariables']]]
 ];

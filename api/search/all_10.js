@@ -20,7 +20,6 @@ var searchData=
   ['removediffusiongrid',['RemoveDiffusionGrid',['../classbdm_1_1ResourceManager.html#a51c6917d4e3c1d1871a4ae78915ebace',1,'bdm::ResourceManager']]],
   ['removefromsimulation',['RemoveFromSimulation',['../classbdm_1_1InPlaceExecutionContext.html#a9ce086af6e3e9cdf74bb7395eaf33b60',1,'bdm::InPlaceExecutionContext::RemoveFromSimulation()'],['../classbdm_1_1SimObject.html#a1e89f44e4946844b4fac0a0dbd6437c4',1,'bdm::SimObject::RemoveFromSimulation()']]],
   ['removeoldcopies',['RemoveOldCopies',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a2967c265c0fbb0bc309e6faf82c0155b',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
-  ['removeoperation',['RemoveOperation',['../classbdm_1_1Scheduler.html#a03054bc37a95a1a58fec814dfab1c06c',1,'bdm::Scheduler']]],
   ['removeproximalneuriteelement',['RemoveProximalNeuriteElement',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a4066c356a9be52560bf671f5f14219b1',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['renew',['Renew',['../classbdm_1_1ThreadInfo.html#a1ce2476af333c140531fda4b2ac62623',1,'bdm::ThreadInfo']]],
   ['replacescheduler',['ReplaceScheduler',['../classbdm_1_1Simulation.html#a586e4605fd004af75e5dfb143b27fb95',1,'bdm::Simulation']]],
@@ -61,10 +60,11 @@ var searchData=
   ['run_5fdisplacement_5ffor_5fall_5fnext_5fts_5f',['run_displacement_for_all_next_ts_',['../classbdm_1_1SimObject.html#ac63e75d651dfa76c30edce6480d7d6ad',1,'bdm::SimObject']]],
   ['run_5fdisplacement_5fnext_5fts_5f',['run_displacement_next_ts_',['../classbdm_1_1SimObject.html#acea59fa40cbf9b70b23dd48c33403701',1,'bdm::SimObject']]],
   ['run_5fmechanical_5finteractions_5f',['run_mechanical_interactions_',['../structbdm_1_1Param.html#a6165e06ccf4fc25c0148756a870442ad',1,'bdm::Param']]],
-  ['runallscheduldedops',['RunAllScheduldedOps',['../structbdm_1_1RunAllScheduldedOps.html',1,'bdm::RunAllScheduldedOps'],['../structbdm_1_1RunAllScheduldedOps.html#a9e5ca6291318073c323fb0f7e357e735',1,'bdm::RunAllScheduldedOps::RunAllScheduldedOps()']]],
+  ['runallscheduledops',['RunAllScheduledOps',['../structbdm_1_1RunAllScheduledOps.html',1,'bdm::RunAllScheduledOps'],['../structbdm_1_1RunAllScheduledOps.html#a413973769e764d18de6cb9eeb696cb99',1,'bdm::RunAllScheduledOps::RunAllScheduledOps()']]],
   ['runbiologymodules',['RunBiologyModules',['../classbdm_1_1SimObject.html#a45e76058662f256965f9a7c6043a288f',1,'bdm::SimObject']]],
   ['rundiscretization',['RunDiscretization',['../classbdm_1_1SimObject.html#a574c6f014376642e060b3d5306187a44',1,'bdm::SimObject::RunDiscretization()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aa0936af954812aaf2d8913c6cab0f4c6',1,'bdm::experimental::neuroscience::NeuriteElement::RunDiscretization()']]],
   ['rundisplacement',['RunDisplacement',['../classbdm_1_1SimObject.html#a03a43118f9bc5dd756ea1ec2c05f0bef',1,'bdm::SimObject']]],
   ['runinitializers',['RunInitializers',['../classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7',1,'bdm::DiffusionGrid']]],
+  ['runscheduledops',['RunScheduledOps',['../classbdm_1_1Scheduler.html#ab3f96fc2c63fea7520f5fd4a8ef7aa30',1,'bdm::Scheduler']]],
   ['runtimevariables',['RuntimeVariables',['../classbdm_1_1RuntimeVariables.html',1,'bdm::RuntimeVariables'],['../classbdm_1_1RuntimeVariables.html#af2f0ab77b94efc29d0f5f370bff4dd2f',1,'bdm::RuntimeVariables::RuntimeVariables()'],['../classbdm_1_1RuntimeVariables.html#ad861444aa96517bed8bddcba4f573303',1,'bdm::RuntimeVariables::RuntimeVariables(TRootIOCtor *io_ctor)']]]
 ];

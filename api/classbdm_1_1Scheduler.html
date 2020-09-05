@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-591-ge0d20341</span>
+   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for bdm::Scheduler:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="1084" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="523" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -100,12 +100,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9aaee4634b7f7271fb048f08c04bfad"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">GetSimulatedSteps</a> () const</td></tr>
 <tr class="memdesc:ac9aaee4634b7f7271fb048f08c04bfad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the numer of simulated steps (=iterations).  <a href="#ac9aaee4634b7f7271fb048f08c04bfad">More...</a><br /></td></tr>
 <tr class="separator:ac9aaee4634b7f7271fb048f08c04bfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ac989a26f9d1e1d7fb6e78cd22b75a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#aa7ac989a26f9d1e1d7fb6e78cd22b75a">AddOperation</a> (<a class="el" href="structbdm_1_1Operation.html">Operation</a> *operation)</td></tr>
-<tr class="separator:aa7ac989a26f9d1e1d7fb6e78cd22b75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03054bc37a95a1a58fec814dfab1c06c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a03054bc37a95a1a58fec814dfab1c06c">RemoveOperation</a> (const std::string &amp;op_name)</td></tr>
-<tr class="separator:a03054bc37a95a1a58fec814dfab1c06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48466b64a9239b2e093f96c64eb7e668"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a48466b64a9239b2e093f96c64eb7e668">GetOperation</a> (const std::string &amp;op_name)</td></tr>
-<tr class="separator:a48466b64a9239b2e093f96c64eb7e668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e8abe23bb88e1a4a3ea52967f42a27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a34e8abe23bb88e1a4a3ea52967f42a27">ScheduleOp</a> (<a class="el" href="structbdm_1_1Operation.html">Operation</a> *op)</td></tr>
+<tr class="separator:a34e8abe23bb88e1a4a3ea52967f42a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28201b43ed845316c21d06216cb487bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">UnscheduleOp</a> (<a class="el" href="structbdm_1_1Operation.html">Operation</a> *op)</td></tr>
+<tr class="separator:a28201b43ed845316c21d06216cb487bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336058ebc20e90e5073eca64132f6854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a336058ebc20e90e5073eca64132f6854">GetDefaultOp</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:a336058ebc20e90e5073eca64132f6854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789c2f19b6a28e50ac350b0890af540a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a789c2f19b6a28e50ac350b0890af540a">GetListOfDefaultOps</a> ()</td></tr>
+<tr class="memdesc:a789c2f19b6a28e50ac350b0890af540a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of operations that are scheduled by default.  <a href="#a789c2f19b6a28e50ac350b0890af540a">More...</a><br /></td></tr>
+<tr class="separator:a789c2f19b6a28e50ac350b0890af540a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d3979ac59890be0714480f6e749d74"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a72d3979ac59890be0714480f6e749d74">GetListOfScheduledSimObjectOps</a> ()</td></tr>
+<tr class="memdesc:a72d3979ac59890be0714480f6e749d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of SimObjectOperations that are scheduled.  <a href="#a72d3979ac59890be0714480f6e749d74">More...</a><br /></td></tr>
+<tr class="separator:a72d3979ac59890be0714480f6e749d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9887820c913e6642703c76bda2436a8a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a9887820c913e6642703c76bda2436a8a">GetListOfScheduledStandaloneOps</a> ()</td></tr>
+<tr class="memdesc:a9887820c913e6642703c76bda2436a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of StandAloneOperations that are scheduled.  <a href="#a9887820c913e6642703c76bda2436a8a">More...</a><br /></td></tr>
+<tr class="separator:a9887820c913e6642703c76bda2436a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f5bb7b404a3d59930060b62851795b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b">SetUpOps</a> ()</td></tr>
+<tr class="separator:a16f5bb7b404a3d59930060b62851795b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af620cd831cab54644a1017a8e881505e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#af620cd831cab54644a1017a8e881505e">TearDownOps</a> ()</td></tr>
+<tr class="separator:af620cd831cab54644a1017a8e881505e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f96fc2c63fea7520f5fd4a8ef7aa30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ab3f96fc2c63fea7520f5fd4a8ef7aa30">RunScheduledOps</a> ()</td></tr>
+<tr class="separator:ab3f96fc2c63fea7520f5fd4a8ef7aa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d60a07f2a8c9122fb09adba3a81f777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a9d60a07f2a8c9122fb09adba3a81f777">ScheduleOps</a> ()</td></tr>
+<tr class="separator:a9d60a07f2a8c9122fb09adba3a81f777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3103e62eaf8ba572318dc0a6050f6e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1RootAdaptor.html">RootAdaptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a3103e62eaf8ba572318dc0a6050f6e95">GetRootVisualization</a> ()</td></tr>
 <tr class="separator:a3103e62eaf8ba572318dc0a6050f6e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,8 +145,6 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a998a74737b1e380ca2a43732a16291b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a755db2f226475df0ca5194610f289359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">Initialize</a> ()</td></tr>
 <tr class="separator:a755db2f226475df0ca5194610f289359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97f8cecdea4b22815b88d413056e98db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a97f8cecdea4b22815b88d413056e98db">GetScheduleOps</a> ()</td></tr>
-<tr class="separator:a97f8cecdea4b22815b88d413056e98db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -143,20 +158,33 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1bd15064a4ae333bb1b89dfc0aff0609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be0347fbd4b6efbc962c46284c4334e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1RootAdaptor.html">RootAdaptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a1be0347fbd4b6efbc962c46284c4334e">root_visualization_</a> = nullptr</td></tr>
 <tr class="separator:a1be0347fbd4b6efbc962c46284c4334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13391f5b2a58b8851680eee9a44d9597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1BoundSpace.html">BoundSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a13391f5b2a58b8851680eee9a44d9597">bound_space_</a></td></tr>
-<tr class="separator:a13391f5b2a58b8851680eee9a44d9597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46aa360608eddac60cc85dc0bc67a37b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1DisplacementOp.html">DisplacementOp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a46aa360608eddac60cc85dc0bc67a37b">displacement_</a></td></tr>
-<tr class="separator:a46aa360608eddac60cc85dc0bc67a37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76d9035d0d5774cb813b258abbec28a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1DiffusionOp.html">DiffusionOp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ae76d9035d0d5774cb813b258abbec28a">diffusion_</a></td></tr>
-<tr class="separator:ae76d9035d0d5774cb813b258abbec28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bee6cdd96c024cb07157fba7e35f4e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a9bee6cdd96c024cb07157fba7e35f4e6">operations_</a></td></tr>
-<tr class="separator:a9bee6cdd96c024cb07157fba7e35f4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fbe26ab1619c4b98420351608dad87b"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b">protected_operations_</a></td></tr>
-<tr class="separator:a1fbe26ab1619c4b98420351608dad87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb80c7a51496fd197a91bc0122418b49"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#acb80c7a51496fd197a91bc0122418b49">ops_to_add_</a></td></tr>
+<tr class="memdesc:acb80c7a51496fd197a91bc0122418b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of operations that are to be added in the upcoming timestep.  <a href="#acb80c7a51496fd197a91bc0122418b49">More...</a><br /></td></tr>
+<tr class="separator:acb80c7a51496fd197a91bc0122418b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcda7dad7f2f7369aee32c75049c619"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#aadcda7dad7f2f7369aee32c75049c619">ops_to_remove_</a></td></tr>
+<tr class="memdesc:aadcda7dad7f2f7369aee32c75049c619"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of operations that are to be removed in the upcoming timestep.  <a href="#aadcda7dad7f2f7369aee32c75049c619">More...</a><br /></td></tr>
+<tr class="separator:aadcda7dad7f2f7369aee32c75049c619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade072a7754581151a3627f470832851f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ade072a7754581151a3627f470832851f">unscheduled_ops_</a></td></tr>
+<tr class="separator:ade072a7754581151a3627f470832851f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3e1ddac79853320514a1eaf29ad859"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a1e3e1ddac79853320514a1eaf29ad859">scheduled_standalone_ops_</a></td></tr>
+<tr class="memdesc:a1e3e1ddac79853320514a1eaf29ad859"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of operations will be executed as a stand-alone operation.  <a href="#a1e3e1ddac79853320514a1eaf29ad859">More...</a><br /></td></tr>
+<tr class="separator:a1e3e1ddac79853320514a1eaf29ad859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d15c088991feff6e5ca7b834e049daa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a8d15c088991feff6e5ca7b834e049daa">scheduled_sim_object_ops_</a></td></tr>
+<tr class="memdesc:a8d15c088991feff6e5ca7b834e049daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of operations will be executed on all simulation objects.  <a href="#a8d15c088991feff6e5ca7b834e049daa">More...</a><br /></td></tr>
+<tr class="separator:a8d15c088991feff6e5ca7b834e049daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea7a6e71ea2dd8802f4b43960810399"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a9ea7a6e71ea2dd8802f4b43960810399">default_ops_</a></td></tr>
+<tr class="memdesc:a9ea7a6e71ea2dd8802f4b43960810399"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of operations that are scheduled by default.  <a href="#a9ea7a6e71ea2dd8802f4b43960810399">More...</a><br /></td></tr>
+<tr class="separator:a9ea7a6e71ea2dd8802f4b43960810399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc33e732a0947d960ae6467b59a17c29"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#acc33e732a0947d960ae6467b59a17c29">protected_ops_</a></td></tr>
+<tr class="memdesc:acc33e732a0947d960ae6467b59a17c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of operations that cannot be affected by the user.  <a href="#acc33e732a0947d960ae6467b59a17c29">More...</a><br /></td></tr>
+<tr class="separator:acc33e732a0947d960ae6467b59a17c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7651c91cf7dea2d5f49dd94abc85c6ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a7651c91cf7dea2d5f49dd94abc85c6ad">initialized_</a> = false</td></tr>
+<tr class="memdesc:a7651c91cf7dea2d5f49dd94abc85c6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check if scheduler has beeen initialized at least once.  <a href="#a7651c91cf7dea2d5f49dd94abc85c6ad">More...</a><br /></td></tr>
+<tr class="separator:a7651c91cf7dea2d5f49dd94abc85c6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00035">35</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00036">36</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a337a791a56b9163ebe9663e70eac3229"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a337a791a56b9163ebe9663e70eac3229">&#9670;&nbsp;</a></span>Clock</h2>
@@ -170,7 +198,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00037">37</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00038">38</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -190,7 +218,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00060">60</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00035">35</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -217,31 +245,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00082">82</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00056">56</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa7ac989a26f9d1e1d7fb6e78cd22b75a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7ac989a26f9d1e1d7fb6e78cd22b75a">&#9670;&nbsp;</a></span>AddOperation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Scheduler::AddOperation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td>
-          <td class="paramname"><em>operation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00114">114</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
-
-</div>
-</div>
 <a id="a7aa37b61bfd3791935d4d515e58b5fc9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7aa37b61bfd3791935d4d515e58b5fc9">&#9670;&nbsp;</a></span>Backup()</h2>
 
@@ -267,7 +275,7 @@ Private Attributes</h2></td></tr>
 
 <p>Backup the simulation. Backup interval based on <code><a class="el" href="structbdm_1_1Param.html#ae8a9d38081642a9323f8884b64d41efe">Param::backup_interval_</a></code> </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00202">202</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00241">241</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -295,28 +303,114 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Executes one step. This design makes testing more convenient </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00164">164</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00212">212</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
-<a id="a48466b64a9239b2e093f96c64eb7e668"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48466b64a9239b2e093f96c64eb7e668">&#9670;&nbsp;</a></span>GetOperation()</h2>
+<a id="a336058ebc20e90e5073eca64132f6854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a336058ebc20e90e5073eca64132f6854">&#9670;&nbsp;</a></span>GetDefaultOp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structbdm_1_1Operation.html">Operation</a> * bdm::Scheduler::GetOperation </td>
+          <td class="memname"><a class="el" href="structbdm_1_1Operation.html">Operation</a> * bdm::Scheduler::GetDefaultOp </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>op_name</em></td><td>)</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a reference to an operation. However, some operations are protected and will not be returned. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b">protected_operations_</a> If the operation does not exist or is protected, a nullptr will be returned. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00135">135</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00113">113</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
+<a id="a789c2f19b6a28e50ac350b0890af540a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789c2f19b6a28e50ac350b0890af540a">&#9670;&nbsp;</a></span>GetListOfDefaultOps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; bdm::Scheduler::GetListOfDefaultOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of operations that are scheduled by default. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00056">56</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a72d3979ac59890be0714480f6e749d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d3979ac59890be0714480f6e749d74">&#9670;&nbsp;</a></span>GetListOfScheduledSimObjectOps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; bdm::Scheduler::GetListOfScheduledSimObjectOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of SimObjectOperations that are scheduled. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00059">59</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a9887820c913e6642703c76bda2436a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9887820c913e6642703c76bda2436a8a">&#9670;&nbsp;</a></span>GetListOfScheduledStandaloneOps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; bdm::Scheduler::GetListOfScheduledStandaloneOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of StandAloneOperations that are scheduled. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00068">68</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -343,34 +437,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00061">61</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
-
-</div>
-</div>
-<a id="a97f8cecdea4b22815b88d413056e98db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97f8cecdea4b22815b88d413056e98db">&#9670;&nbsp;</a></span>GetScheduleOps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt; bdm::Scheduler::GetScheduleOps </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00260">260</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00084">84</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +458,7 @@ Private Attributes</h2></td></tr>
 
 <p>This function returns the numer of simulated steps (=iterations). </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00112">112</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00097">97</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -418,28 +485,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00236">236</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
-
-</div>
-</div>
-<a id="a03054bc37a95a1a58fec814dfab1c06c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03054bc37a95a1a58fec814dfab1c06c">&#9670;&nbsp;</a></span>RemoveOperation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::Scheduler::RemoveOperation </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>op_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Remove an operation. However, some operations are protected and cannot be removed. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1Scheduler.html#a1fbe26ab1619c4b98420351608dad87b">protected_operations_</a> A request to remove a proteced operation is ignored. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00119">119</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00275">275</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -474,7 +520,84 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>if <code>Simulate</code> should return early </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00217">217</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00256">256</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
+<a id="ab3f96fc2c63fea7520f5fd4a8ef7aa30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f96fc2c63fea7520f5fd4a8ef7aa30">&#9670;&nbsp;</a></span>RunScheduledOps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::RunScheduledOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00188">188</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
+<a id="a34e8abe23bb88e1a4a3ea52967f42a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e8abe23bb88e1a4a3ea52967f42a27">&#9670;&nbsp;</a></span>ScheduleOp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::ScheduleOp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00099">99</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
+<a id="a9d60a07f2a8c9122fb09adba3a81f777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d60a07f2a8c9122fb09adba3a81f777">&#9670;&nbsp;</a></span>ScheduleOps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::ScheduleOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00306">306</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
+<a id="a16f5bb7b404a3d59930060b62851795b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f5bb7b404a3d59930060b62851795b">&#9670;&nbsp;</a></span>SetUpOps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::SetUpOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00160">160</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -494,7 +617,46 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00098">98</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00083">83</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
+<a id="af620cd831cab54644a1017a8e881505e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af620cd831cab54644a1017a8e881505e">&#9670;&nbsp;</a></span>TearDownOps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::TearDownOps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00174">174</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+
+</div>
+</div>
+<a id="a28201b43ed845316c21d06216cb487bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28201b43ed845316c21d06216cb487bc">&#9670;&nbsp;</a></span>UnscheduleOp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Scheduler::UnscheduleOp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00101">101</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -519,12 +681,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00071">71</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00094">94</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
-<a id="a13391f5b2a58b8851680eee9a44d9597"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13391f5b2a58b8851680eee9a44d9597">&#9670;&nbsp;</a></span>bound_space_</h2>
+<a id="a9ea7a6e71ea2dd8802f4b43960810399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea7a6e71ea2dd8802f4b43960810399">&#9670;&nbsp;</a></span>default_ops_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,7 +695,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1BoundSpace.html">BoundSpace</a>* bdm::Scheduler::bound_space_</td>
+          <td class="memname">std::vector&lt;std::string&gt; bdm::Scheduler::default_ops_</td>
         </tr>
       </table>
   </td>
@@ -543,12 +705,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00077">77</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>List of operations that are scheduled by default. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00112">112</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
-<a id="ae76d9035d0d5774cb813b258abbec28a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae76d9035d0d5774cb813b258abbec28a">&#9670;&nbsp;</a></span>diffusion_</h2>
+<a id="a7651c91cf7dea2d5f49dd94abc85c6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7651c91cf7dea2d5f49dd94abc85c6ad">&#9670;&nbsp;</a></span>initialized_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +721,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1DiffusionOp.html">DiffusionOp</a>* bdm::Scheduler::diffusion_</td>
+          <td class="memname">bool bdm::Scheduler::initialized_ = false</td>
         </tr>
       </table>
   </td>
@@ -567,31 +731,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00079">79</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>Flag to check if scheduler has beeen initialized at least once. </p>
 
-</div>
-</div>
-<a id="a46aa360608eddac60cc85dc0bc67a37b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46aa360608eddac60cc85dc0bc67a37b">&#9670;&nbsp;</a></span>displacement_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1DisplacementOp.html">DisplacementOp</a>* bdm::Scheduler::displacement_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00078">78</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00116">116</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -615,12 +757,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00073">73</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00096">96</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
-<a id="a9bee6cdd96c024cb07157fba7e35f4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bee6cdd96c024cb07157fba7e35f4e6">&#9670;&nbsp;</a></span>operations_</h2>
+<a id="acb80c7a51496fd197a91bc0122418b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb80c7a51496fd197a91bc0122418b49">&#9670;&nbsp;</a></span>ops_to_add_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -629,7 +771,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Operation.html">Operation</a>*&gt; bdm::Scheduler::operations_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Operation.html">Operation</a>*&gt; bdm::Scheduler::ops_to_add_</td>
         </tr>
       </table>
   </td>
@@ -639,12 +781,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00081">81</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>List of operations that are to be added in the upcoming timestep. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00101">101</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
-<a id="a1fbe26ab1619c4b98420351608dad87b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fbe26ab1619c4b98420351608dad87b">&#9670;&nbsp;</a></span>protected_operations_</h2>
+<a id="aadcda7dad7f2f7369aee32c75049c619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcda7dad7f2f7369aee32c75049c619">&#9670;&nbsp;</a></span>ops_to_remove_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -653,7 +797,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;std::string&gt; bdm::Scheduler::protected_operations_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Operation.html">Operation</a>*&gt; bdm::Scheduler::ops_to_remove_</td>
         </tr>
       </table>
   </td>
@@ -663,7 +807,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00082">82</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p>List of operations that are to be removed in the upcoming timestep. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00103">103</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="acc33e732a0947d960ae6467b59a17c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc33e732a0947d960ae6467b59a17c29">&#9670;&nbsp;</a></span>protected_ops_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; bdm::Scheduler::protected_ops_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of operations that cannot be affected by the user. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00114">114</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +859,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00072">72</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00095">95</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +883,59 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00075">75</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00098">98</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a8d15c088991feff6e5ca7b834e049daa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d15c088991feff6e5ca7b834e049daa">&#9670;&nbsp;</a></span>scheduled_sim_object_ops_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Operation.html">Operation</a>*&gt; bdm::Scheduler::scheduled_sim_object_ops_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of operations will be executed on all simulation objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00110">110</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a1e3e1ddac79853320514a1eaf29ad859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3e1ddac79853320514a1eaf29ad859">&#9670;&nbsp;</a></span>scheduled_standalone_ops_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Operation.html">Operation</a>*&gt; bdm::Scheduler::scheduled_standalone_ops_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of operations will be executed as a stand-alone operation. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00108">108</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -735,7 +959,32 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00064">64</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00087">87</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="ade072a7754581151a3627f470832851f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade072a7754581151a3627f470832851f">&#9670;&nbsp;</a></span>unscheduled_ops_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structbdm_1_1Operation.html">Operation</a>*&gt; bdm::Scheduler::unscheduled_ops_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>List of operations that were removed from scheduling, but could be reused later on in a simulation </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00106">106</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +1008,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00074">74</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00097">97</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>

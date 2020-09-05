@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lastop',['LastOp',['../structbdm_1_1LastOp.html#aacd3eb8fc2ef436a21b4cba40c273594',1,'bdm::LastOp']]],
   ['launchdisplacementkernel',['LaunchDisplacementKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a8d408ab37444f3d2f4954611283b577d',1,'bdm::DisplacementOpCudaKernel']]],
   ['lengthtoproximalbranchingpoint',['LengthToProximalBranchingPoint',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a1e4f1225490e2f97b14f5029aed60f7a',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['list',['List',['../classbdm_1_1memory__manager__detail_1_1List.html#a419de586a1965c214139bb8c1eeaca1b',1,'bdm::memory_manager_detail::List::List(uint64_t n)'],['../classbdm_1_1memory__manager__detail_1_1List.html#aa2f1300f868b502712ca064cbf46c7dc',1,'bdm::memory_manager_detail::List::List(const List &amp;other)']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['u_5f',['u_',['../structbdm_1_1DisplacementOpCuda.html#a4081e24eb97193dd90bcf8c58650c8f3',1,'bdm::DisplacementOpCuda']]],
   ['uid_5f',['uid_',['../classbdm_1_1SimObject.html#aad75e8d777318cd042f4fc354dde51a4',1,'bdm::SimObject::uid_()'],['../classbdm_1_1SoPointer.html#ac0379507b95bbb0840dff68eb6d07de8',1,'bdm::SoPointer::uid_()']]],
   ['uid_5fsoh_5fmap_5f',['uid_soh_map_',['../classbdm_1_1ResourceManager.html#a228b6b3ede60a536fd3d0e0f380ab905',1,'bdm::ResourceManager']]],
   ['uint64t',['Uint64T',['../classbdm_1_1ParaviewSoVisitor.html#addb6307e123d9d72d03225260b2af134',1,'bdm::ParaviewSoVisitor']]],
@@ -12,6 +13,8 @@ var searchData=
   ['unlock',['unlock',['../classbdm_1_1Environment_1_1NeighborMutexBuilder_1_1NeighborMutex.html#ae3526da6db8c12110dfe6a97446e8355',1,'bdm::Environment::NeighborMutexBuilder::NeighborMutex::unlock()'],['../classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1GridNeighborMutex.html#a06612f8a559b9ae394eef9ba6fe6df1d',1,'bdm::UniformGridEnvironment::GridNeighborMutexBuilder::GridNeighborMutex::unlock()'],['../classbdm_1_1Spinlock.html#a3545b7076f9b3a93038df0c04e13823e',1,'bdm::Spinlock::unlock()']]],
   ['unorderedflatmap',['UnorderedFlatmap',['../classbdm_1_1UnorderedFlatmap.html',1,'bdm::UnorderedFlatmap&lt; TKey, TValue &gt;'],['../classbdm_1_1UnorderedFlatmap.html#a0daf67b2d1705d282c4ed521913f86bf',1,'bdm::UnorderedFlatmap::UnorderedFlatmap()']]],
   ['unorderedflatmap_3c_20std_3a_3asize_5ft_2c_20bdm_3a_3amemory_5fmanager_5fdetail_3a_3apoolallocator_20_2a_3e',['UnorderedFlatmap&lt; std::size_t, bdm::memory_manager_detail::PoolAllocator *&gt;',['../classbdm_1_1UnorderedFlatmap.html',1,'bdm']]],
+  ['unscheduled_5fops_5f',['unscheduled_ops_',['../classbdm_1_1Scheduler.html#ade072a7754581151a3627f470832851f',1,'bdm::Scheduler']]],
+  ['unscheduleop',['UnscheduleOp',['../classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc',1,'bdm::Scheduler']]],
   ['update',['Update',['../classbdm_1_1DiffusionGrid.html#acab47c37fa2b8e604d015791be32b2ea',1,'bdm::DiffusionGrid::Update()'],['../classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2',1,'bdm::Environment::Update()'],['../classbdm_1_1UniformGridEnvironment.html#a3b8d49bec009fd86067172c3ac66bc11',1,'bdm::UniformGridEnvironment::Update()'],['../classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder.html#affff3e97bb359d9eecb5fae97507a73d',1,'bdm::UniformGridEnvironment::GridNeighborMutexBuilder::Update()']]],
   ['updateboxzorder',['UpdateBoxZOrder',['../classbdm_1_1UniformGridEnvironment.html#a8f3d10e47043ea73d33f66d5b653a42c',1,'bdm::UniformGridEnvironment']]],
   ['updatecpuresults',['UpdateCPUResults',['../structbdm_1_1DisplacementOpCuda_1_1UpdateCPUResults.html',1,'bdm::DisplacementOpCuda::UpdateCPUResults'],['../structbdm_1_1DisplacementOpCuda_1_1UpdateCPUResults.html#a3af95dac489bb002a12869882e8f524b',1,'bdm::DisplacementOpCuda::UpdateCPUResults::UpdateCPUResults()']]],
@@ -26,8 +29,5 @@ var searchData=
   ['updateuidsohmapfunctor',['UpdateUidSoHMapFunctor',['../structbdm_1_1UpdateUidSoHMapFunctor.html',1,'bdm::UpdateUidSoHMapFunctor'],['../structbdm_1_1UpdateUidSoHMapFunctor.html#ad0a1bca476958d44bea93273067520e4',1,'bdm::UpdateUidSoHMapFunctor::UpdateUidSoHMapFunctor()']]],
   ['updatevolume',['UpdateVolume',['../classbdm_1_1Cell.html#a45c3e0ed831794031bf074228f534b5d',1,'bdm::Cell::UpdateVolume()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a771c4d37ee536add440c183cbf54822f',1,'bdm::experimental::neuroscience::NeuriteElement::UpdateVolume()']]],
   ['use_5fbdm_5fmem_5fmgr_5f',['use_bdm_mem_mgr_',['../structbdm_1_1Param.html#af10baf52fe950a852aa35baf72cfeb5c',1,'bdm::Param']]],
-  ['use_5fgpu_5f',['use_gpu_',['../structbdm_1_1Param.html#abd15e376dcf514fb83c6ff55b49cd3db',1,'bdm::Param']]],
-  ['use_5fopencl_5f',['use_opencl_',['../structbdm_1_1Param.html#a36f0fb400b2fcbe803373bc994a8a612',1,'bdm::Param']]],
-  ['usecpu',['UseCpu',['../classbdm_1_1DisplacementOp.html#a9c26d85943c0888ebe4d478c75830058',1,'bdm::DisplacementOp']]],
   ['used_5f',['used_',['../structbdm_1_1VtkDiffusionGrid.html#aca2745001e25aeec2c33912c35da7a92',1,'bdm::VtkDiffusionGrid']]]
 ];
