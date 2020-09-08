@@ -5,6 +5,7 @@ var searchData=
   ['task_5f',['task_',['../classbdm_1_1VTuneOpWrapper.html#a0e39614a06b3930d27e0c7781e5769c5',1,'bdm::VTuneOpWrapper::task_()'],['../classbdm_1_1VTuneTask.html#abde33b6a9961034af53a27d0c1ef8672',1,'bdm::VTuneTask::task_()']]],
   ['teardown',['TearDown',['../structbdm_1_1DisplacementOpCuda.html#af89cd654842e5e8914c3618d63720aab',1,'bdm::DisplacementOpCuda::TearDown()'],['../structbdm_1_1OperationImpl.html#a512a4e0aa0d4ef419de947a555c67299',1,'bdm::OperationImpl::TearDown()'],['../structbdm_1_1Operation.html#a9238c049bfa4d46f6e882149c43ad9a9',1,'bdm::Operation::TearDown()']]],
   ['teardowniterationall',['TearDownIterationAll',['../classbdm_1_1InPlaceExecutionContext.html#afd7742a308f8f5406ed021026747148c',1,'bdm::InPlaceExecutionContext']]],
+  ['teardowniterationop',['TearDownIterationOp',['../structbdm_1_1TearDownIterationOp.html',1,'bdm']]],
   ['teardownops',['TearDownOps',['../classbdm_1_1Scheduler.html#af620cd831cab54644a1017a8e881505e',1,'bdm::Scheduler']]],
   ['tension_5f',['tension_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a7c195fe5adc21266051fb338f61588b9',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['text_5f',['text_',['../classbdm_1_1Timing.html#a035522dd4d60281f13073c4f59262611',1,'bdm::Timing']]],

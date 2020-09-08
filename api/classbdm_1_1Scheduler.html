@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
+   &#160;<span id="projectnumber">v0.1.0-597-g81df1fb6</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for bdm::Scheduler:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="523" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Scheduler__coll__graph.svg" width="504" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9d60a07f2a8c9122fb09adba3a81f777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3103e62eaf8ba572318dc0a6050f6e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1RootAdaptor.html">RootAdaptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a3103e62eaf8ba572318dc0a6050f6e95">GetRootVisualization</a> ()</td></tr>
 <tr class="separator:a3103e62eaf8ba572318dc0a6050f6e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2e05f71d46294184cdbe5202547100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">GetOpTimes</a> ()</td></tr>
+<tr class="separator:a8b2e05f71d46294184cdbe5202547100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -154,8 +156,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae3dfd5ea7fe1369103cfc28ca042b894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a118529ea78c294d4c7f549e613e1a3e2"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; <a class="el" href="classbdm_1_1Scheduler.html#a337a791a56b9163ebe9663e70eac3229">Clock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a118529ea78c294d4c7f549e613e1a3e2">last_backup_</a> = Clock::now()</td></tr>
 <tr class="separator:a118529ea78c294d4c7f549e613e1a3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bd15064a4ae333bb1b89dfc0aff0609"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1VisualizationAdaptor.html">VisualizationAdaptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a1bd15064a4ae333bb1b89dfc0aff0609">visualization_</a> = nullptr</td></tr>
-<tr class="separator:a1bd15064a4ae333bb1b89dfc0aff0609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be0347fbd4b6efbc962c46284c4334e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1RootAdaptor.html">RootAdaptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a1be0347fbd4b6efbc962c46284c4334e">root_visualization_</a> = nullptr</td></tr>
 <tr class="separator:a1be0347fbd4b6efbc962c46284c4334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb80c7a51496fd197a91bc0122418b49"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#acb80c7a51496fd197a91bc0122418b49">ops_to_add_</a></td></tr>
@@ -181,10 +181,13 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7651c91cf7dea2d5f49dd94abc85c6ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a7651c91cf7dea2d5f49dd94abc85c6ad">initialized_</a> = false</td></tr>
 <tr class="memdesc:a7651c91cf7dea2d5f49dd94abc85c6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to check if scheduler has beeen initialized at least once.  <a href="#a7651c91cf7dea2d5f49dd94abc85c6ad">More...</a><br /></td></tr>
 <tr class="separator:a7651c91cf7dea2d5f49dd94abc85c6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd395d6a67fe0fca4cedf3b7538cf7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e">op_times_</a></td></tr>
+<tr class="memdesc:a3cd395d6a67fe0fca4cedf3b7538cf7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks operations' execution times.  <a href="#a3cd395d6a67fe0fca4cedf3b7538cf7e">More...</a><br /></td></tr>
+<tr class="separator:a3cd395d6a67fe0fca4cedf3b7538cf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00036">36</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00038">38</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a337a791a56b9163ebe9663e70eac3229"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a337a791a56b9163ebe9663e70eac3229">&#9670;&nbsp;</a></span>Clock</h2>
@@ -198,7 +201,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00038">38</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00040">40</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +221,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00035">35</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00034">34</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -245,7 +248,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00056">56</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00065">65</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -275,7 +278,7 @@ Private Attributes</h2></td></tr>
 
 <p>Backup the simulation. Backup interval based on <code><a class="el" href="structbdm_1_1Param.html#ae8a9d38081642a9323f8884b64d41efe">Param::backup_interval_</a></code> </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00241">241</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00229">229</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -303,7 +306,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Executes one step. This design makes testing more convenient </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00212">212</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00219">219</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -323,7 +326,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00113">113</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00117">117</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -352,7 +355,7 @@ Private Attributes</h2></td></tr>
 
 <p>Return a list of operations that are scheduled by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00056">56</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00058">58</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +384,7 @@ Private Attributes</h2></td></tr>
 
 <p>Return a list of SimObjectOperations that are scheduled. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00059">59</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00061">61</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +413,26 @@ Private Attributes</h2></td></tr>
 
 <p>Return a list of StandAloneOperations that are scheduled. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00068">68</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00070">70</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a8b2e05f71d46294184cdbe5202547100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b2e05f71d46294184cdbe5202547100">&#9670;&nbsp;</a></span>GetOpTimes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a> * bdm::Scheduler::GetOpTimes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00101">101</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -437,7 +459,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00084">84</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00086">86</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -458,7 +480,7 @@ Private Attributes</h2></td></tr>
 
 <p>This function returns the numer of simulated steps (=iterations). </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00097">97</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00099">99</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -485,7 +507,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00275">275</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00263">263</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -520,7 +542,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>if <code>Simulate</code> should return early </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00256">256</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00244">244</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -539,7 +561,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00188">188</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00192">192</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -559,7 +581,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00099">99</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00103">103</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -578,7 +600,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00306">306</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00294">294</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -597,7 +619,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00160">160</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00164">164</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -617,7 +639,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00083">83</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00085">85</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -636,7 +658,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00174">174</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00178">178</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -656,7 +678,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00101">101</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00105">105</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -681,7 +703,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00094">94</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00098">98</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +729,7 @@ Private Attributes</h2></td></tr>
 
 <p>List of operations that are scheduled by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00112">112</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00115">115</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +755,7 @@ Private Attributes</h2></td></tr>
 
 <p>Flag to check if scheduler has beeen initialized at least once. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00116">116</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00119">119</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -757,7 +779,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00096">96</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00100">100</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="a3cd395d6a67fe0fca4cedf3b7538cf7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd395d6a67fe0fca4cedf3b7538cf7e">&#9670;&nbsp;</a></span>op_times_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a> bdm::Scheduler::op_times_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tracks operations' execution times. </p>
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00121">121</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -783,7 +831,7 @@ Private Attributes</h2></td></tr>
 
 <p>List of operations that are to be added in the upcoming timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00101">101</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00104">104</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +857,7 @@ Private Attributes</h2></td></tr>
 
 <p>List of operations that are to be removed in the upcoming timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00103">103</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00106">106</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +883,7 @@ Private Attributes</h2></td></tr>
 
 <p>List of operations that cannot be affected by the user. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00114">114</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00117">117</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -859,7 +907,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00095">95</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00099">99</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -883,7 +931,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00098">98</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00101">101</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -909,7 +957,7 @@ Private Attributes</h2></td></tr>
 
 <p>List of operations will be executed on all simulation objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00110">110</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00113">113</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -935,7 +983,7 @@ Private Attributes</h2></td></tr>
 
 <p>List of operations will be executed as a stand-alone operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00108">108</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00111">111</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -959,7 +1007,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00087">87</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00091">91</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -984,31 +1032,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>List of operations that were removed from scheduling, but could be reused later on in a simulation </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00106">106</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
-
-</div>
-</div>
-<a id="a1bd15064a4ae333bb1b89dfc0aff0609"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bd15064a4ae333bb1b89dfc0aff0609">&#9670;&nbsp;</a></span>visualization_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1VisualizationAdaptor.html">VisualizationAdaptor</a>* bdm::Scheduler::visualization_ = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00097">97</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00109">109</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>

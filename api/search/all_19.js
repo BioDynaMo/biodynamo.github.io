@@ -48,6 +48,7 @@ var searchData=
   ['_7etimingaggregator',['~TimingAggregator',['../classbdm_1_1TimingAggregator.html#acd28bfd68821a93cf558f8dde895102e',1,'bdm::TimingAggregator']]],
   ['_7euniformgridenvironment',['~UniformGridEnvironment',['../classbdm_1_1UniformGridEnvironment.html#ae196e9401d7eb076a01821ad7aaa2343',1,'bdm::UniformGridEnvironment']]],
   ['_7evisualizationadaptor',['~VisualizationAdaptor',['../classbdm_1_1VisualizationAdaptor.html#af7398db71b32f29d229e5e71fa92058b',1,'bdm::VisualizationAdaptor']]],
+  ['_7evisualizationop',['~VisualizationOp',['../structbdm_1_1VisualizationOp.html#a65885159775f0dfd312b3143750f3eee',1,'bdm::VisualizationOp']]],
   ['_7evtkdiffusiongrid',['~VtkDiffusionGrid',['../structbdm_1_1VtkDiffusionGrid.html#a0a79c2387de62ca01138457e4dd5496c',1,'bdm::VtkDiffusionGrid']]],
   ['_7evtksogrid',['~VtkSoGrid',['../structbdm_1_1VtkSoGrid.html#ab736f2bdca8456081274aee4447d831a',1,'bdm::VtkSoGrid']]]
 ];

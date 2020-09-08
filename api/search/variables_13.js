@@ -4,7 +4,7 @@ var searchData=
   ['value_5f',['value_',['../structbdm_1_1Uniform.html#a66737c1bc4622489c54142ce0f20b928',1,'bdm::Uniform']]],
   ['vector_5f',['vector_',['../structbdm_1_1InlineVector_1_1Iterator.html#a70adbc579c038201314fc132d8181563',1,'bdm::InlineVector::Iterator::vector_()'],['../classbdm_1_1VectorTypeWrapper.html#afc6716b0cca8b596f15bc3bc260ab50f',1,'bdm::VectorTypeWrapper::vector_()']]],
   ['vis_5fdata_5fmembers_5f',['vis_data_members_',['../structbdm_1_1VtkSoGrid.html#af8d1a0c3a1007a04104ecae4273990d5',1,'bdm::VtkSoGrid']]],
-  ['visualization_5f',['visualization_',['../classbdm_1_1Scheduler.html#a1bd15064a4ae333bb1b89dfc0aff0609',1,'bdm::Scheduler']]],
+  ['visualization_5f',['visualization_',['../structbdm_1_1VisualizationOp.html#a598af7aff78f0ae08d4cf1904cbe850b',1,'bdm::VisualizationOp']]],
   ['visualization_5fengine_5f',['visualization_engine_',['../structbdm_1_1Param.html#a53e8b71abfe700d6fcde3b1f361193a3',1,'bdm::Param']]],
   ['visualization_5fexport_5fgenerate_5fpvsm_5f',['visualization_export_generate_pvsm_',['../structbdm_1_1Param.html#a728fb8329237dc9a52413beb47b84dbb',1,'bdm::Param']]],
   ['visualization_5fexport_5finterval_5f',['visualization_export_interval_',['../structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2',1,'bdm::Param']]],

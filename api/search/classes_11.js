@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['teardowniterationop',['TearDownIterationOp',['../structbdm_1_1TearDownIterationOp.html',1,'bdm']]],
   ['tfileraii',['TFileRaii',['../classbdm_1_1TFileRaii.html',1,'bdm']]],
   ['threadinfo',['ThreadInfo',['../classbdm_1_1ThreadInfo.html',1,'bdm']]],
   ['threadsafesouidmap',['ThreadSafeSoUidMap',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html',1,'bdm::InPlaceExecutionContext']]],

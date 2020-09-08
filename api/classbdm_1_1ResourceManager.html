@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
+   &#160;<span id="projectnumber">v0.1.0-597-g81df1fb6</span>
    </div>
   </td>
  </tr>
@@ -173,6 +173,8 @@ Protected Attributes</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:ad855c19de56bdc8b0a6ab64ac20c306b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ad855c19de56bdc8b0a6ab64ac20c306b">SimulationBackup</a></td></tr>
 <tr class="separator:ad855c19de56bdc8b0a6ab64ac20c306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376396dfdb6e68d47f28283fad0d6c4e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a376396dfdb6e68d47f28283fad0d6c4e">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> &amp;rm)</td></tr>
+<tr class="separator:a376396dfdb6e68d47f28283fad0d6c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> stores simulation objects and diffusion grids and provides methods to add, remove, and access them. Sim objects are uniquely identified by their <a class="el" href="classbdm_1_1SoUid.html">SoUid</a>, and <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a>. A <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> might change during the simulation. </p>
@@ -676,8 +678,6 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00301">301</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
-
 </div>
 </div>
 <a id="ae4bdd2130f764a38094ad80aecb4ec80"></a>
@@ -1155,6 +1155,44 @@ NB: This method is not thread-safe! This function invalidates sim_object referen
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a376396dfdb6e68d47f28283fad0d6c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376396dfdb6e68d47f28283fad0d6c4e">&#9670;&nbsp;</a></span>operator<<</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>rm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00393">393</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+
+</div>
+</div>
 <a id="ad855c19de56bdc8b0a6ab64ac20c306b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad855c19de56bdc8b0a6ab64ac20c306b">&#9670;&nbsp;</a></span>SimulationBackup</h2>
 

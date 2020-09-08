@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-594-gece0bfb0</span>
+   &#160;<span id="projectnumber">v0.1.0-597-g81df1fb6</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,9 @@ $(function() {
 <li>offset
 : <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a7aee46435ea47d69f50a9db95318f94d">bdm::DisplacementOpCuda::InitializeGPUData</a>
 , <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1UpdateCPUResults.html#a0d299b71ce13f09462838094e2ae38ca">bdm::DisplacementOpCuda::UpdateCPUResults</a>
+</li>
+<li>op_times_
+: <a class="el" href="classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e">bdm::Scheduler</a>
 </li>
 <li>opencl_debug_
 : <a class="el" href="structbdm_1_1Param.html#a6e7b0cdea02e9f135f0a0dad4bc2daea">bdm::Param</a>
@@ -134,11 +137,15 @@ $(function() {
 , <a class="el" href="structbdm_1_1RearrangeFunctor.html#a49be4abd9ccd96a90ecf988a02183b9e">bdm::RearrangeFunctor</a>
 , <a class="el" href="structbdm_1_1RunAllScheduledOps.html#a87a6084b2c16f55f5f60a5b1d1b29fdc">bdm::RunAllScheduledOps</a>
 , <a class="el" href="structbdm_1_1SetRunDisplacementForEachNeighbor.html#a9aa8274e6e0ea1efb3b6738aba212b33">bdm::SetRunDisplacementForEachNeighbor</a>
+, <a class="el" href="structbdm_1_1SetUpIterationOp.html#a30bf448cd4e4f2166fb7ba14c8d26ec1">bdm::SetUpIterationOp</a>
 , <a class="el" href="structbdm_1_1SimObjectOperationImpl.html#a050eafd5eb4b82cbb4d34029635832ed">bdm::SimObjectOperationImpl</a>
 , <a class="el" href="structbdm_1_1StandaloneOperationImpl.html#a6cd368f8b4a80d2f3ac9bf11e4c2ae5a">bdm::StandaloneOperationImpl</a>
+, <a class="el" href="structbdm_1_1TearDownIterationOp.html#a330fcfcfb3c412b5fe79e34453fe7900">bdm::TearDownIterationOp</a>
 , <a class="el" href="structbdm_1_1Uniform.html#a0b6f6fa0307f09532b9621c1740cd0ae">bdm::Uniform</a>
 , <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1AssignToBoxesFunctor.html#a867104e4a2cd89331c0dd187c9965a3a">bdm::UniformGridEnvironment::AssignToBoxesFunctor</a>
+, <a class="el" href="structbdm_1_1UpdateEnvironmentOp.html#a4473313617f5ba94841cb3b31e531883">bdm::UpdateEnvironmentOp</a>
 , <a class="el" href="structbdm_1_1UpdateUidSoHMapFunctor.html#ad282453407ee5ab43e675056e60a2736">bdm::UpdateUidSoHMapFunctor</a>
+, <a class="el" href="structbdm_1_1VisualizationOp.html#a4fc0ec3592e2f2de545f74748fbf41f4">bdm::VisualizationOp</a>
 , <a class="el" href="structstd_1_1hash_3_01bdm_1_1SoUid_01_4.html#a088e99304bade89afafa676a820e8c18">std::hash&lt; bdm::SoUid &gt;</a>
 </li>
 <li>operator*()
@@ -165,13 +172,13 @@ $(function() {
 </li>
 <li>operator+=()
 : <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a3890c88332eb455fad14510394ea2435">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#a2813f5085a317c246ec69d2286c1e130">bdm::MathArray&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1MathArray.html#a19b70e563d7381d07acb55fef4b3c1c4">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1SoUid.html#a5cd5364f2437441eec9cb673108b1b44">bdm::SoUid</a>
 </li>
 <li>operator-()
-: <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#aeaf2e19cfe05efe38fbd87d5c689a642">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
+: <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a2a026bf38a25f12ed52ccc296e3afdc3">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
 , <a class="el" href="classbdm_1_1MathArray.html#a4786fa42c4a21e4c74bb4709871bb2cc">bdm::MathArray&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1SoUid.html#aa47bd7a48b787015d06d8048ed8278d8">bdm::SoUid</a>
+, <a class="el" href="classbdm_1_1SoUid.html#ac8663dc3a59830040de4a769dd2ffac1">bdm::SoUid</a>
 </li>
 <li>operator--()
 : <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a20859fdf14bcb9b633e50025db6bed2d">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
@@ -183,7 +190,7 @@ $(function() {
 </li>
 <li>operator-&gt;()
 : <a class="el" href="structbdm_1_1OpTimer.html#ab07558f085a567d8f789d5513b7b5983">bdm::OpTimer&lt; TOp &gt;</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a047425912310ffb55d69e0f37f06f0ca">bdm::SoPointer&lt; TSimObject &gt;</a>
+, <a class="el" href="classbdm_1_1SoPointer.html#a93820143785ae4a28f0feca1df45c9d3">bdm::SoPointer&lt; TSimObject &gt;</a>
 </li>
 <li>operator/()
 : <a class="el" href="classbdm_1_1MathArray.html#a88464f55a25b6c6d5927ddbce58e0973">bdm::MathArray&lt; T, N &gt;</a>
@@ -198,6 +205,8 @@ $(function() {
 <li>operator&lt;&lt;
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a0e9dcaf0c6b673f92eb9d504a40a29a5">bdm::experimental::neuroscience::NeuriteElement</a>
 , <a class="el" href="classbdm_1_1InlineVector.html#ab333d3d8502720d87fa12dcd4085ae94">bdm::InlineVector&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#a376396dfdb6e68d47f28283fad0d6c4e">bdm::ResourceManager</a>
+, <a class="el" href="classbdm_1_1Simulation.html#a1156f8770233b8c4c1b377b146c8e61c">bdm::Simulation</a>
 , <a class="el" href="classbdm_1_1SoHandle.html#a5ca19db8be8b43f55a77ca976927e81f">bdm::SoHandle</a>
 , <a class="el" href="classbdm_1_1SoPointer.html#afb7e9bc98eff2cdb2c92e4f8819c3da2">bdm::SoPointer&lt; TSimObject &gt;</a>
 , <a class="el" href="classbdm_1_1SoUid.html#ab79f94a1671d99395e5d697f596102e6">bdm::SoUid</a>
@@ -222,16 +231,16 @@ $(function() {
 , <a class="el" href="classbdm_1_1MathArray.html#a6787725fc6a5f6956a666d46be941f6b">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1RuntimeVariables.html#aa6ce53fccd67b8c8819980a61943dce1">bdm::RuntimeVariables</a>
 , <a class="el" href="classbdm_1_1SoHandle.html#a0ce846aa2e7457979af61c57b003db6d">bdm::SoHandle</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a961577eae9e8cac07b9d97a257a879d1">bdm::SoPointer&lt; TSimObject &gt;</a>
+, <a class="el" href="classbdm_1_1SoPointer.html#af526fcac4a4525b18cbc438b280b7604">bdm::SoPointer&lt; TSimObject &gt;</a>
 , <a class="el" href="classbdm_1_1SoUid.html#a8a078b90ac2f6b1ee02efff41488b934">bdm::SoUid</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classbdm_1_1FixedSizeVector.html#addb98ab9c0b42fc905d9f4beec306059">bdm::FixedSizeVector&lt; T, N &gt;</a>
+: <a class="el" href="classbdm_1_1FixedSizeVector.html#aee838ed9b440a06452d8cc856021a178">bdm::FixedSizeVector&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1InlineVector.html#ad92e5513352cf567d852e3618af9c688">bdm::InlineVector&lt; T, N &gt;</a>
 , <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a2a1cfa770f6f76e6db5430823a9af6c7">bdm::InPlaceExecutionContext::ThreadSafeSoUidMap</a>
 , <a class="el" href="classbdm_1_1MathArray.html#a73e8a9c93f0380eb2c2a9961f2f17c2d">bdm::MathArray&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1ParallelResizeVector.html#ae6a1f3cad0d0354e5d3781179d3a3a78">bdm::ParallelResizeVector&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1SimObjectVector.html#a59778ac67acdbdfbe2ffb08f0b72d10c">bdm::SimObjectVector&lt; T &gt;</a>
+, <a class="el" href="classbdm_1_1ParallelResizeVector.html#a5055aeb79b6ef86264c426f31164678c">bdm::ParallelResizeVector&lt; T &gt;</a>
+, <a class="el" href="classbdm_1_1SimObjectVector.html#aba5aaed905f55ca168900216b9fb310f">bdm::SimObjectVector&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1SoUidMap.html#a447389466c2f7e298f003be39939f4c7">bdm::SoUidMap&lt; TValue &gt;</a>
 , <a class="el" href="classbdm_1_1UnorderedFlatmap.html#a12d9a8b94921e26d80858f58f91b69ba">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
 </li>
