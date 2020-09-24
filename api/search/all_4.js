@@ -36,7 +36,6 @@ var searchData=
   ['default_5fforce_2ecc',['default_force.cc',['../default__force_8cc.html',1,'']]],
   ['default_5fforce_2eh',['default_force.h',['../default__force_8h.html',1,'']]],
   ['default_5fops_2ecc',['default_ops.cc',['../default__ops_8cc.html',1,'']]],
-  ['default_5fops_5f',['default_ops_',['../classbdm_1_1Scheduler.html#a9ea7a6e71ea2dd8802f4b43960810399',1,'bdm::Scheduler']]],
   ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html',1,'bdm::DefaultForce'],['../classbdm_1_1DefaultForce.html#a2055df84fa6c354f566821e322275209',1,'bdm::DefaultForce::DefaultForce()'],['../classbdm_1_1DefaultForce.html#aadcab81e8fa9889c7793b32de656ecde',1,'bdm::DefaultForce::DefaultForce(const DefaultForce &amp;)=delete']]],
   ['definesubstance',['DefineSubstance',['../structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2',1,'bdm::ModelInitializer']]],
   ['delete',['Delete',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a26767b39c3ebca444029092fe35d2c56',1,'bdm::memory_manager_detail::NumaPoolAllocator::Delete()'],['../classbdm_1_1MemoryManager.html#a11f9ab16579eed8ca320e2a2b395d59e',1,'bdm::MemoryManager::Delete()']]],
@@ -45,6 +44,7 @@ var searchData=
   ['density_5f',['density_',['../classbdm_1_1Cell.html#a6f72cb19b4bf0bfb37a5d69487b1f7dd',1,'bdm::Cell::density_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a27d489a3e48fc8e5b75c6df4220239c5',1,'bdm::experimental::neuroscience::NeuriteElement::density_()']]],
   ['descriptions_5f',['descriptions_',['../classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b',1,'bdm::TimingAggregator']]],
   ['detect_5fstatic_5fsim_5fobjects_5f',['detect_static_sim_objects_',['../structbdm_1_1Param.html#adeb7a4ca69031a443d0381c9064f34a4',1,'bdm::Param']]],
+  ['dgrid_5f',['dgrid_',['../structbdm_1_1Chemotaxis.html#aebc735ec74c4bf57f1f34e2416573d87',1,'bdm::Chemotaxis::dgrid_()'],['../structbdm_1_1Secretion.html#ad33f676c7f39db2aa76f1ed7489f202b',1,'bdm::Secretion::dgrid_()']]],
   ['diameter_5f',['diameter_',['../classbdm_1_1Cell.html#a874d0d83c15733e9c075115755ff0a2b',1,'bdm::Cell::diameter_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html#afc90e294f5b37c7b000896eb014546b6',1,'bdm::experimental::neuroscience::NeuriteBranchingEvent::diameter_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#adeebea3d9fb6b387ec75cf3dbb2c4e04',1,'bdm::experimental::neuroscience::NewNeuriteExtensionEvent::diameter_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#aa1e5c0eb31db676a2d3f278a4952d63d',1,'bdm::experimental::neuroscience::SideNeuriteExtensionEvent::diameter_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ab0fd80d9f6d369cf76a3cb5921c5e75a',1,'bdm::experimental::neuroscience::NeuriteElement::diameter_()']]],
   ['diameter_5fleft_5f',['diameter_left_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a475c2e8f940e1b91463502e489318d38',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
   ['diameter_5fright_5f',['diameter_right_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a11689e53374d8877fea8571129fe108c',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
@@ -76,6 +76,8 @@ var searchData=
   ['displacementopopencl',['DisplacementOpOpenCL',['../classbdm_1_1UniformGridEnvironment.html#a4ae7feaca3a244dc5168235f29fc13b3',1,'bdm::UniformGridEnvironment']]],
   ['distal_5fportion_5f',['distal_portion_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html#a02dd7ac1228d3e4e7ec6f8704d4846ca',1,'bdm::experimental::neuroscience::NeuriteBranchingEvent::distal_portion_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#a5ee71dc9eff941173e922953630e1948',1,'bdm::experimental::neuroscience::SplitNeuriteElementEvent::distal_portion_()']]],
   ['distalend',['DistalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ac2478f196c63cae8addd9d4e86eb13d2',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['distributerundisplacementinfo',['DistributeRunDisplacementInfo',['../classbdm_1_1SimObject.html#acc1c31a7ec6264813b69f30f31c7d5c5',1,'bdm::SimObject']]],
+  ['distributerundisplacementinfoop',['DistributeRunDisplacementInfoOp',['../structbdm_1_1DistributeRunDisplacementInfoOp.html',1,'bdm']]],
   ['divide',['Divide',['../classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0',1,'bdm::Cell::Divide()'],['../classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba',1,'bdm::Cell::Divide(double volume_ratio)'],['../classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d',1,'bdm::Cell::Divide(const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69',1,'bdm::Cell::Divide(double volume_ratio, const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875',1,'bdm::Cell::Divide(double volume_ratio, double phi, double theta)']]],
   ['dividing_5fcell_5fop_2eh',['dividing_cell_op.h',['../dividing__cell__op_8h.html',1,'']]],
   ['dividingcellop',['DividingCellOp',['../structbdm_1_1DividingCellOp.html',1,'bdm']]],
@@ -85,5 +87,6 @@ var searchData=
   ['double3',['Double3',['../namespacebdm.html#a999db57a7e39895fb42c100d7856836c',1,'bdm']]],
   ['double4',['Double4',['../namespacebdm.html#a482b174c833a56a19b71cc36847a1013',1,'bdm']]],
   ['drawincanvas',['DrawInCanvas',['../classbdm_1_1RootAdaptor.html#a835878ac47b53a0fedbb0d4b4aeeaad9',1,'bdm::RootAdaptor']]],
-  ['dt_5f',['dt_',['../classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0',1,'bdm::DiffusionGrid']]]
+  ['dt_5f',['dt_',['../classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0',1,'bdm::DiffusionGrid']]],
+  ['dtor_5fts_5f',['dtor_ts_',['../classbdm_1_1Simulation.html#a324cba7b3a008710b2c0b8cb9560cf87',1,'bdm::Simulation']]]
 ];

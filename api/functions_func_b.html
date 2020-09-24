@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-597-g81df1fb6</span>
+   &#160;<span id="projectnumber">v0.1.0-622-gf9c8295c</span>
    </div>
   </td>
  </tr>
@@ -76,8 +76,10 @@ $(function() {
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#a456d123a50b259027859282fb5cd0001">bdm::BaseBiologyModule</a>
 </li>
 <li>BDM_BM_HEADER()
-: <a class="el" href="structbdm_1_1GrowDivide.html#a2ef318bffdd8a18b9c9e4b1eaab84af3">bdm::GrowDivide</a>
+: <a class="el" href="structbdm_1_1Chemotaxis.html#af0ee03560f4140aca76720ee1e2473b6">bdm::Chemotaxis</a>
+, <a class="el" href="structbdm_1_1GrowDivide.html#a2ef318bffdd8a18b9c9e4b1eaab84af3">bdm::GrowDivide</a>
 , <a class="el" href="structbdm_1_1RegulateGenes.html#a6c643d3457569903a516c748d042a147">bdm::RegulateGenes</a>
+, <a class="el" href="structbdm_1_1Secretion.html#ae378dab3a3c524f50e4cd73f6b1ab81a">bdm::Secretion</a>
 </li>
 <li>BDM_CLASS_DEF()
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#a8424e30d0bc6522559f3f16313b11e6f">bdm::BaseBiologyModule</a>
@@ -99,8 +101,8 @@ $(function() {
 , <a class="el" href="classbdm_1_1SoUid.html#a1f0f18f4c0fc9266b2d3b1151dbdcf92">bdm::SoUid</a>
 , <a class="el" href="classbdm_1_1SoUidGenerator.html#a1b651cc6041a661e720f336fb22b9dfb">bdm::SoUidGenerator</a>
 </li>
-<li>BDM_CLASS_DEF_OVERRIDE()
-: <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a003fc6e144f240f1106ab5451b690dcb">bdm::experimental::neuroscience::Param</a>
+<li>BDM_MODULE_PARAM_HEADER()
+: <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ab665a3062f85fb9fe80860e7cd693091">bdm::experimental::neuroscience::Param</a>
 </li>
 <li>BDM_OP_HEADER()
 : <a class="el" href="structbdm_1_1BiologyModuleOp.html#a903a4f4f30ef680d364bc2531713f093">bdm::BiologyModuleOp</a>
@@ -109,12 +111,13 @@ $(function() {
 , <a class="el" href="structbdm_1_1DiscretizationOp.html#a99c7828c4e57e866f526ee42e1bff41d">bdm::DiscretizationOp</a>
 , <a class="el" href="structbdm_1_1DisplacementOp.html#aff45c4bcc4a9b6cc8dc0704589f9705c">bdm::DisplacementOp</a>
 , <a class="el" href="structbdm_1_1DisplacementOpCuda.html#a9f3591ac29bd6181bea946d4e8e0f2b7">bdm::DisplacementOpCuda</a>
+, <a class="el" href="structbdm_1_1DistributeRunDisplacementInfoOp.html#a11ea487a53dcc4dfc76c41d917960e5c">bdm::DistributeRunDisplacementInfoOp</a>
 , <a class="el" href="structbdm_1_1DividingCellOp.html#a81921c8bb57a40e6e167ee745366f76a">bdm::DividingCellOp</a>
-, <a class="el" href="structbdm_1_1FirstOp.html#a7df4e7101833e517e8431a1fdf8b77ce">bdm::FirstOp</a>
-, <a class="el" href="structbdm_1_1LastOp.html#a5a81e6cc9c1c59cb186a95d2c8a4f975">bdm::LastOp</a>
+, <a class="el" href="structbdm_1_1LoadBalancingOp.html#a707a184a52cb7a3a13f3b17560456ab4">bdm::LoadBalancingOp</a>
 , <a class="el" href="structbdm_1_1SetUpIterationOp.html#ad3ade748b787b8402f12aa3492c9ee7f">bdm::SetUpIterationOp</a>
 , <a class="el" href="structbdm_1_1TearDownIterationOp.html#a08f9d977410a375be5f6ecf7e958ea53">bdm::TearDownIterationOp</a>
 , <a class="el" href="structbdm_1_1UpdateEnvironmentOp.html#ae749622face12b3984e75511f684f920">bdm::UpdateEnvironmentOp</a>
+, <a class="el" href="structbdm_1_1UpdateRunDisplacementOp.html#a839db3a0ddf24498417884d8f81992fc">bdm::UpdateRunDisplacementOp</a>
 , <a class="el" href="structbdm_1_1VisualizationOp.html#a4657c636a3374165d8c64cb567169530">bdm::VisualizationOp</a>
 </li>
 <li>BDM_SIM_OBJECT_HEADER()
@@ -123,15 +126,15 @@ $(function() {
 , <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuronSoma.html#abcc11c6b9ac61896eaf3e61568a28de3">bdm::experimental::neuroscience::NeuronSoma</a>
 </li>
 <li>begin()
-: <a class="el" href="classbdm_1_1FixedSizeVector.html#a7e744d0c5df14a89328e8b500e5d1934">bdm::FixedSizeVector&lt; T, N &gt;</a>
+: <a class="el" href="classbdm_1_1FixedSizeVector.html#afc170a65c238f985d69f582036b01316">bdm::FixedSizeVector&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1InlineVector.html#a2551dcded04af7e956a8e4361a038c9c">bdm::InlineVector&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1MathArray.html#ab17f8d0fa513cecf575f59a072dcb67a">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1ParallelResizeVector.html#a00f46dbc999b1671e696c3412e85ef1e">bdm::ParallelResizeVector&lt; T &gt;</a>
 , <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html#acac0189a057dbec5f5c391fe6e525bc2">bdm::UniformGridEnvironment::Box</a>
-, <a class="el" href="classbdm_1_1UnorderedFlatmap.html#ab1f9d7c14c627e21c098b1f7664ddbe8">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
+, <a class="el" href="classbdm_1_1UnorderedFlatmap.html#ad97f248e3fc6663219417118975c6c69">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
 </li>
 <li>Bifurcate()
-: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ab0f8077b3e94bb8a93451200b42b8229">bdm::experimental::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#abe0a0133e899f425b109078919273bfe">bdm::experimental::neuroscience::NeuriteElement</a>
 </li>
 <li>BifurcationPermitted()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a46ad70f7cfce03fc3fd7b093e5413d7b">bdm::experimental::neuroscience::NeuriteElement</a>
@@ -143,7 +146,7 @@ $(function() {
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html#ae73c0cc6300b4838da9d73419fe9fc6a">bdm::UniformGridEnvironment::Box</a>
 </li>
 <li>Branch()
-: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a98adc0f31644a663947b9e041fc26357">bdm::experimental::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a742c8deba8632cb9826427f3fded9aa9">bdm::experimental::neuroscience::NeuriteElement</a>
 </li>
 <li>BranchPermitted()
 : <a class="el" href="classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a17c0037abb406e4435daad77de63edb9">bdm::experimental::neuroscience::NeuriteElement</a>

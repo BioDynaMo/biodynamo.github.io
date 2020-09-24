@@ -29,11 +29,11 @@ var searchData=
   ['dc_5f',['dc_',['../classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881',1,'bdm::DiffusionGrid']]],
   ['debug_5fnuma_5f',['debug_numa_',['../structbdm_1_1Param.html#a189573fb33841f0eaa23d801b510e2c4',1,'bdm::Param']]],
   ['default_5fforce',['default_force',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#ad0b6fcf42f0a5ed9bee19317390b86e1',1,'bdm::Cell::DisplacementFunctor']]],
-  ['default_5fops_5f',['default_ops_',['../classbdm_1_1Scheduler.html#a9ea7a6e71ea2dd8802f4b43960810399',1,'bdm::Scheduler']]],
   ['delta_5ftime_5f',['delta_time_',['../structbdm_1_1DisplacementOp.html#a333f7e0cd5498ba851ebf708250bd5b1',1,'bdm::DisplacementOp']]],
   ['density_5f',['density_',['../classbdm_1_1Cell.html#a6f72cb19b4bf0bfb37a5d69487b1f7dd',1,'bdm::Cell::density_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a27d489a3e48fc8e5b75c6df4220239c5',1,'bdm::experimental::neuroscience::NeuriteElement::density_()']]],
   ['descriptions_5f',['descriptions_',['../classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b',1,'bdm::TimingAggregator']]],
   ['detect_5fstatic_5fsim_5fobjects_5f',['detect_static_sim_objects_',['../structbdm_1_1Param.html#adeb7a4ca69031a443d0381c9064f34a4',1,'bdm::Param']]],
+  ['dgrid_5f',['dgrid_',['../structbdm_1_1Chemotaxis.html#aebc735ec74c4bf57f1f34e2416573d87',1,'bdm::Chemotaxis::dgrid_()'],['../structbdm_1_1Secretion.html#ad33f676c7f39db2aa76f1ed7489f202b',1,'bdm::Secretion::dgrid_()']]],
   ['diameter_5f',['diameter_',['../classbdm_1_1Cell.html#a874d0d83c15733e9c075115755ff0a2b',1,'bdm::Cell::diameter_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html#afc90e294f5b37c7b000896eb014546b6',1,'bdm::experimental::neuroscience::NeuriteBranchingEvent::diameter_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#adeebea3d9fb6b387ec75cf3dbb2c4e04',1,'bdm::experimental::neuroscience::NewNeuriteExtensionEvent::diameter_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#aa1e5c0eb31db676a2d3f278a4952d63d',1,'bdm::experimental::neuroscience::SideNeuriteExtensionEvent::diameter_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ab0fd80d9f6d369cf76a3cb5921c5e75a',1,'bdm::experimental::neuroscience::NeuriteElement::diameter_()']]],
   ['diameter_5fleft_5f',['diameter_left_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a475c2e8f940e1b91463502e489318d38',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
   ['diameter_5fright_5f',['diameter_right_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a11689e53374d8877fea8571129fe108c',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
@@ -45,5 +45,6 @@ var searchData=
   ['direction_5fright_5f',['direction_right_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a8a12ae9f1c8f5c20adc52798b138e855',1,'bdm::experimental::neuroscience::NeuriteBifurcationEvent']]],
   ['distal_5fportion_5f',['distal_portion_',['../structbdm_1_1experimental_1_1neuroscience_1_1NeuriteBranchingEvent.html#a02dd7ac1228d3e4e7ec6f8704d4846ca',1,'bdm::experimental::neuroscience::NeuriteBranchingEvent::distal_portion_()'],['../structbdm_1_1experimental_1_1neuroscience_1_1SplitNeuriteElementEvent.html#a5ee71dc9eff941173e922953630e1948',1,'bdm::experimental::neuroscience::SplitNeuriteElementEvent::distal_portion_()']]],
   ['domain_5f',['domain_',['../classbdm_1_1VTuneOpWrapper.html#aeaa400940a292cd53809f0a3bb3decb5',1,'bdm::VTuneOpWrapper::domain_()'],['../classbdm_1_1VTuneTask.html#a8ab660b416600ec61d93b49c8ecd7d0a',1,'bdm::VTuneTask::domain_()']]],
-  ['dt_5f',['dt_',['../classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0',1,'bdm::DiffusionGrid']]]
+  ['dt_5f',['dt_',['../classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0',1,'bdm::DiffusionGrid']]],
+  ['dtor_5fts_5f',['dtor_ts_',['../classbdm_1_1Simulation.html#a324cba7b3a008710b2c0b8cb9560cf87',1,'bdm::Simulation']]]
 ];

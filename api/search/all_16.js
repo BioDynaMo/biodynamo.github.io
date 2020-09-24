@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['x_5faxis_5f',['x_axis_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a414fc73051d91cda7410a447f64ba032',1,'bdm::experimental::neuroscience::NeuriteElement']]],
-  ['xmax_5f',['xmax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#aeba1bc30c7f6fb5cbd2e730edbf3ba9f',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]],
-  ['xmin_5f',['xmin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#a006396b91ee7eb0c3ea8f23497c06ee4',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]]
+  ['warning',['Warning',['../classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7',1,'bdm::Log']]],
+  ['withinsquaredeuclideandistance',['WithinSquaredEuclideanDistance',['../classbdm_1_1UniformGridEnvironment.html#ab100519ea1be015cb6192967e90d2b20',1,'bdm::UniformGridEnvironment']]],
+  ['writepersistentobject',['WritePersistentObject',['../namespacebdm.html#a9b2e011728f3257d5c4c6aae54bb2a4f',1,'bdm']]],
+  ['writetofile',['WriteToFile',['../classbdm_1_1ParaviewAdaptor.html#ac3af586c97274b1297a1806381ae8c02',1,'bdm::ParaviewAdaptor::WriteToFile()'],['../namespacebdm.html#a7bcacd75e549c58e91177289d1edbf2d',1,'bdm::WriteToFile()']]]
 ];

@@ -11,6 +11,7 @@ var searchData=
   ['timing',['Timing',['../classbdm_1_1Timing.html#a1709195406ffd6994b4862b9bb92b968',1,'bdm::Timing::Timing(const std::string &amp;description=&quot;&quot;)'],['../classbdm_1_1Timing.html#ad8945c821b78f82ca6950d49d40fb406',1,'bdm::Timing::Timing(const std::string &amp;description, TimingAggregator *aggregator)']]],
   ['timingaggregator',['TimingAggregator',['../classbdm_1_1TimingAggregator.html#ad700cc0ce0b4560829558c0b1fdd7054',1,'bdm::TimingAggregator']]],
   ['todegree',['ToDegree',['../structbdm_1_1Math.html#a3ee1b385bc17152842e1fdf1c3102726',1,'bdm::Math']]],
+  ['tojsonstring',['ToJsonString',['../structbdm_1_1Param.html#a88785d8979ae616633a636a1b25afb74',1,'bdm::Param']]],
   ['toradian',['ToRadian',['../structbdm_1_1Math.html#a585001fd86aafbbbb593a34687b15986',1,'bdm::Math']]],
   ['transformcoordinatesglobaltolocal',['TransformCoordinatesGlobalToLocal',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#aef07e18237d4e491d4a224ca16078d47',1,'bdm::experimental::neuroscience::NeuriteElement']]],
   ['transformcoordinatesglobaltopolar',['TransformCoordinatesGlobalToPolar',['../classbdm_1_1Cell.html#a9952cc34ae3c223214b0f8dd5ead7acb',1,'bdm::Cell::TransformCoordinatesGlobalToPolar()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#afa59eeb75bb8630c06834dffdad68d1d',1,'bdm::experimental::neuroscience::NeuriteElement::TransformCoordinatesGlobalToPolar()']]],

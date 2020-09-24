@@ -1,6 +1,7 @@
 var searchData=
 [
   ['uint64t',['Uint64T',['../classbdm_1_1ParaviewSoVisitor.html#addb6307e123d9d72d03225260b2af134',1,'bdm::ParaviewSoVisitor']]],
+  ['unflattenmodules',['UnflattenModules',['../namespacebdm.html#ab6781e796fb7bed5cacb440625527b49',1,'bdm']]],
   ['uniform',['Uniform',['../structbdm_1_1Uniform.html#a0462cecae8bee2ee8783a31ddabbedf9',1,'bdm::Uniform::Uniform()'],['../classbdm_1_1Random.html#a10b4590aaafd065f55458878cf4fcd0c',1,'bdm::Random::Uniform(double max=1.0)'],['../classbdm_1_1Random.html#aacec2366adf61f85dafd29f7e2714977',1,'bdm::Random::Uniform(double min, double max)']]],
   ['uniformarray',['UniformArray',['../classbdm_1_1Random.html#a361a07207377ef62e8fd19d7e9aff12c',1,'bdm::Random::UniformArray(double max=1.0)'],['../classbdm_1_1Random.html#ab0ce391655d50cf0fa91e12f7e21c4a8',1,'bdm::Random::UniformArray(double min, double max)']]],
   ['uniformgridenvironment',['UniformGridEnvironment',['../classbdm_1_1UniformGridEnvironment.html#a6edec87aebfd314a0273e32a3895e50b',1,'bdm::UniformGridEnvironment::UniformGridEnvironment(Adjacency adjacency=kHigh)'],['../classbdm_1_1UniformGridEnvironment.html#a3b1bb6465bbf937f9869e3096d19ca2b',1,'bdm::UniformGridEnvironment::UniformGridEnvironment(UniformGridEnvironment const &amp;)=delete']]],

@@ -9,5 +9,6 @@ var searchData=
   ['displacementop',['DisplacementOp',['../structbdm_1_1DisplacementOp.html',1,'bdm']]],
   ['displacementopcuda',['DisplacementOpCuda',['../structbdm_1_1DisplacementOpCuda.html',1,'bdm']]],
   ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html',1,'bdm']]],
+  ['distributerundisplacementinfoop',['DistributeRunDisplacementInfoOp',['../structbdm_1_1DistributeRunDisplacementInfoOp.html',1,'bdm']]],
   ['dividingcellop',['DividingCellOp',['../structbdm_1_1DividingCellOp.html',1,'bdm']]]
 ];

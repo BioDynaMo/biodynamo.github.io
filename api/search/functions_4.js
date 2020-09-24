@@ -16,6 +16,7 @@ var searchData=
   ['displacementop',['DisplacementOp',['../structbdm_1_1DisplacementOp.html#af7611a05f17b66fd6c575588f0818317',1,'bdm::DisplacementOp']]],
   ['displacementopcudakernel',['DisplacementOpCudaKernel',['../classbdm_1_1DisplacementOpCudaKernel.html#a4758aa387477b14cdf02f3013f606fca',1,'bdm::DisplacementOpCudaKernel']]],
   ['distalend',['DistalEnd',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ac2478f196c63cae8addd9d4e86eb13d2',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['distributerundisplacementinfo',['DistributeRunDisplacementInfo',['../classbdm_1_1SimObject.html#acc1c31a7ec6264813b69f30f31c7d5c5',1,'bdm::SimObject']]],
   ['divide',['Divide',['../classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0',1,'bdm::Cell::Divide()'],['../classbdm_1_1Cell.html#aa3e1dce9ec0245af8ba03916a965c6ba',1,'bdm::Cell::Divide(double volume_ratio)'],['../classbdm_1_1Cell.html#ac5536140d9ea4e07211db201002ddc5d',1,'bdm::Cell::Divide(const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a401ae6ea24c9f8e73a9b47d814ce8c69',1,'bdm::Cell::Divide(double volume_ratio, const Double3 &amp;axis)'],['../classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875',1,'bdm::Cell::Divide(double volume_ratio, double phi, double theta)']]],
   ['dolivevisualization',['DoLiveVisualization',['../classbdm_1_1InSituPipeline.html#a21ab5153b2c6f2550d5a428d6d0405eb',1,'bdm::InSituPipeline']]],
   ['double',['Double',['../classbdm_1_1ParaviewSoVisitor.html#a8c9583b910289fd00987e84c583ddf96',1,'bdm::ParaviewSoVisitor']]],

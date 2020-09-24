@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-597-g81df1fb6</span>
+   &#160;<span id="projectnumber">v0.1.0-622-gf9c8295c</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,8 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a77b77f9433bc59c37ed4c66a80d8eb45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operation__registry_8h.html#a77b77f9433bc59c37ed4c66a80d8eb45">BDM_REGISTER_OP</a>(op,  name,  target)</td></tr>
 <tr class="separator:a77b77f9433bc59c37ed4c66a80d8eb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556e1018830371deb58e6c3725116940"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operation__registry_8h.html#a556e1018830371deb58e6c3725116940">BDM_REGISTER_OP_WITH_FREQ</a>(op,  name,  target,  frequency)</td></tr>
+<tr class="separator:a556e1018830371deb58e6c3725116940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acecd461b3468136b3dec7f3b72a3a4c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="operation__registry_8h.html#acecd461b3468136b3dec7f3b72a3a4c4">BDM_OP_HEADER</a>(class_name)</td></tr>
 <tr class="separator:acecd461b3468136b3dec7f3b72a3a4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -130,7 +132,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                         \</div><div class="line">  static <span class="keywordtype">bool</span> registered_;        \</div><div class="line">                                  \</div><div class="line"> public:                          \</div><div class="line">  class_name *Clone()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> class_name(*<span class="keyword">this</span>); }</div></div><!-- fragment --><p>A convenient macro to hide some of the boilerplate code from the user in implementing new operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00060">60</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00067">67</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
 
 </div>
 </div>
@@ -168,6 +170,51 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> op::registered_ = OperationRegistry::GetInstance()-&gt;AddOperationImpl( \</div><div class="line">      name, OpComputeTarget::target, <span class="keyword">new</span> op());</div></div><!-- fragment --><p>A convenient macro to register a new operation implemented. To be used as: BDM_REGISTER_OP(MyOp, "my operation", kCpu) MyOp is required to have member: <code>static bool registered_</code> </p>
 
 <p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00049">49</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
+
+</div>
+</div>
+<a id="a556e1018830371deb58e6c3725116940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556e1018830371deb58e6c3725116940">&#9670;&nbsp;</a></span>BDM_REGISTER_OP_WITH_FREQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_REGISTER_OP_WITH_FREQ</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">op, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">target, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">frequency&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> op::registered_ = OperationRegistry::GetInstance()-&gt;AddOperationImpl( \</div><div class="line">      name, OpComputeTarget::target, <span class="keyword">new</span> op(), frequency);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="operation__registry_8h.html#a77b77f9433bc59c37ed4c66a80d8eb45">BDM_REGISTER_OP</a> Adds parameter to specigy default execution frequency (</dd>
+<dd>
+Operation::frequency_) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00056">56</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
 
 </div>
 </div>

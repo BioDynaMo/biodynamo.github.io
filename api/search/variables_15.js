@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['y_5faxis_5f',['y_axis_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a19889ad1f70215759cdfd94c80e5ad7c',1,'bdm::experimental::neuroscience::NeuriteElement']]],
-  ['ymax_5f',['ymax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#aec2c17739b5bf018d4347f81296f6589',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]],
-  ['ymin_5f',['ymin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#af03b49f889edc705d994f004861a8a93',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]]
+  ['x_5faxis_5f',['x_axis_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a414fc73051d91cda7410a447f64ba032',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['xmax_5f',['xmax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#aeba1bc30c7f6fb5cbd2e730edbf3ba9f',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]],
+  ['xmin_5f',['xmin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#a006396b91ee7eb0c3ea8f23497c06ee4',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]]
 ];

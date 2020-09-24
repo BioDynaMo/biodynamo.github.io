@@ -32,6 +32,7 @@ var searchData=
   ['memory_5fmanager_2ecc',['memory_manager.cc',['../memory__manager_8cc.html',1,'']]],
   ['memory_5fmanager_2eh',['memory_manager.h',['../memory__manager_8h.html',1,'']]],
   ['memorymanager',['MemoryManager',['../classbdm_1_1MemoryManager.html',1,'bdm::MemoryManager'],['../classbdm_1_1MemoryManager.html#a3864028a3a6d48e9fe27bdbd05b1edab',1,'bdm::MemoryManager::MemoryManager()']]],
+  ['mergejsonpatch',['MergeJsonPatch',['../structbdm_1_1Param.html#ade303852c43be6809e528b967c585e48',1,'bdm::Param']]],
   ['min_5f',['min_',['../structbdm_1_1Uniform.html#ab65bfc034aa51ab2b75226be85ff3ade',1,'bdm::Uniform']]],
   ['min_5fbound_5f',['min_bound_',['../structbdm_1_1Param.html#a48592ced2b325839d663fc40c377d98f',1,'bdm::Param']]],
   ['minimize_5fmemory_5fwhile_5frebalancing_5f',['minimize_memory_while_rebalancing_',['../structbdm_1_1Param.html#ae84845859c1c3197923ef4bf2d450655',1,'bdm::Param']]],

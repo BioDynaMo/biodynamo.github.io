@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-597-g81df1fb6</span>
+   &#160;<span id="projectnumber">v0.1.0-622-gf9c8295c</span>
    </div>
   </td>
  </tr>
@@ -66,12 +66,14 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">module_param.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="root_8h_source.html">core/util/root.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="root_8h_source.html">core/util/root.h</a>&quot;</code><br />
 <code>#include &quot;cpptoml/cpptoml.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for module_param.h:</div>
@@ -82,7 +84,7 @@ Include dependency graph for module_param.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="module__param_8h__dep__incl.svg" width="4250" height="648"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="module__param_8h__dep__incl.svg" width="4040" height="648"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -102,11 +104,48 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebdm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html">bdm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aeacc870548e0e2cbc39d5212b2b17224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__param_8h.html#aeacc870548e0e2cbc39d5212b2b17224">BDM_MODULE_PARAM_HEADER</a>(name,  version_id)</td></tr>
+<tr class="separator:aeacc870548e0e2cbc39d5212b2b17224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:abe476bd9b7f889be914257c29fef38e0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#abe476bd9b7f889be914257c29fef38e0">bdm::ModuleParamUid</a> = uint64_t</td></tr>
 <tr class="separator:abe476bd9b7f889be914257c29fef38e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aeacc870548e0e2cbc39d5212b2b17224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacc870548e0e2cbc39d5212b2b17224">&#9670;&nbsp;</a></span>BDM_MODULE_PARAM_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BDM_MODULE_PARAM_HEADER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">version_id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="namespacebdm.html#abe476bd9b7f889be914257c29fef38e0">ModuleParamUid</a> kUid;                                 \</div><div class="line">  name() {}                                                         \</div><div class="line">  virtual ~name() {}                                                \</div><div class="line">  ModuleParam* GetCopy()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> name(*<span class="keyword">this</span>); } \</div><div class="line">  ModuleParamUid GetUid()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> kUid; }           \</div><div class="line">                                                                    \</div><div class="line"> private:                                                           \</div><div class="line">  BDM_CLASS_DEF_OVERRIDE(name, version_id);                         \</div><div class="line">                                                                    \</div><div class="line"> public:</div><div class="ttc" id="namespacebdm_html_abe476bd9b7f889be914257c29fef38e0"><div class="ttname"><a href="namespacebdm.html#abe476bd9b7f889be914257c29fef38e0">bdm::ModuleParamUid</a></div><div class="ttdeci">uint64_t ModuleParamUid</div><div class="ttdef"><b>Definition:</b> <a href="module__param_8h_source.html#l00026">module_param.h:26</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="module__param_8h_source.html#l00061">61</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

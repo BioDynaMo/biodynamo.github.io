@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-597-g81df1fb6</span>
+   &#160;<span id="projectnumber">v0.1.0-622-gf9c8295c</span>
    </div>
   </td>
  </tr>
@@ -96,9 +96,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a89e5173fb0cedf79c94ee1618c12836b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a89e5173fb0cedf79c94ee1618c12836b">AssignFromConfig</a> (const std::shared_ptr&lt; cpptoml::table &gt; &amp;)=0</td></tr>
-<tr class="memdesc:a89e5173fb0cedf79c94ee1618c12836b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign values from config file to variables.  <a href="#a89e5173fb0cedf79c94ee1618c12836b">More...</a><br /></td></tr>
-<tr class="separator:a89e5173fb0cedf79c94ee1618c12836b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783a40b8594da2e88d72db346db93114"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModuleParam.html#a783a40b8594da2e88d72db346db93114">AssignFromConfig</a> (const std::shared_ptr&lt; cpptoml::table &gt; &amp;)</td></tr>
+<tr class="separator:a783a40b8594da2e88d72db346db93114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -113,7 +112,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for module parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="module__param_8h_source.html#l00043">43</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__param_8h_source.html#l00044">44</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8c2994f2e7557916ae747eaa8d7ca0d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c2994f2e7557916ae747eaa8d7ca0d8">&#9670;&nbsp;</a></span>~ModuleParam()</h2>
@@ -138,13 +137,13 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__param_8cc_source.html#l00028">28</a> of file <a class="el" href="module__param_8cc_source.html">module_param.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__param_8cc_source.html#l00029">29</a> of file <a class="el" href="module__param_8cc_source.html">module_param.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a89e5173fb0cedf79c94ee1618c12836b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89e5173fb0cedf79c94ee1618c12836b">&#9670;&nbsp;</a></span>AssignFromConfig()</h2>
+<a id="a783a40b8594da2e88d72db346db93114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783a40b8594da2e88d72db346db93114">&#9670;&nbsp;</a></span>AssignFromConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +152,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void bdm::ModuleParam::AssignFromConfig </td>
+          <td class="memname">void bdm::ModuleParam::AssignFromConfig </td>
           <td>(</td>
           <td class="paramtype">const std::shared_ptr&lt; cpptoml::table &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -162,14 +161,16 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Assign values from a toml config file.<br />
+Can be ommited if toml file support is not required. </p>
 
-<p>Assign values from config file to variables. </p>
+<p>Reimplemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a21c6c14e7a2567d74396c60e64410645">bdm::experimental::neuroscience::Param</a>.</p>
 
-<p>Implemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a21c6c14e7a2567d74396c60e64410645">bdm::experimental::neuroscience::Param</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__param_8cc_source.html#l00031">31</a> of file <a class="el" href="module__param_8cc_source.html">module_param.cc</a>.</p>
 
 </div>
 </div>
@@ -232,8 +233,6 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#ac1028efe1d6d822ec3cbe9e5c9cdcee5">bdm::experimental::neuroscience::Param</a>.</p>
-
 </div>
 </div>
 <a id="a81ed7fc2b16a99c73f62f0ffff01e279"></a>
@@ -259,8 +258,6 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structbdm_1_1experimental_1_1neuroscience_1_1Param.html#a7b1e5c116a791d404ce5951f8e45b6ca">bdm::experimental::neuroscience::Param</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -284,7 +281,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__param_8h_source.html#l00055">55</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__param_8h_source.html#l00057">57</a> of file <a class="el" href="module__param_8h_source.html">module_param.h</a>.</p>
 
 </div>
 </div>
