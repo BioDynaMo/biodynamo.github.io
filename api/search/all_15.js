@@ -17,6 +17,7 @@ var searchData=
   ['visualizationop',['VisualizationOp',['../structbdm_1_1VisualizationOp.html',1,'bdm']]],
   ['visualize',['Visualize',['../classbdm_1_1ParaviewAdaptor.html#a247af512ecebdc6b14ee6ff49cbd209f',1,'bdm::ParaviewAdaptor::Visualize()'],['../classbdm_1_1RootAdaptor.html#aed12d4b2a624b70fff5d9ea60c4b33ca',1,'bdm::RootAdaptor::Visualize()'],['../classbdm_1_1VisualizationAdaptor.html#ac4561ee56727e77b1426381503162db6',1,'bdm::VisualizationAdaptor::Visualize()']]],
   ['visualize_5fdiffusion_5f',['visualize_diffusion_',['../structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc',1,'bdm::Param']]],
+  ['visualize_5fop_5f',['visualize_op_',['../classbdm_1_1Scheduler.html#a2a71c88a7fc66f6afde26df255897d77',1,'bdm::Scheduler']]],
   ['visualize_5fsim_5fobjects_5f',['visualize_sim_objects_',['../structbdm_1_1Param.html#a2039b961fe19d16086b781b89bc9ef9e',1,'bdm::Param']]],
   ['visualizediffusion',['VisualizeDiffusion',['../structbdm_1_1Param_1_1VisualizeDiffusion.html',1,'bdm::Param']]],
   ['visualizeinnotebook',['VisualizeInNotebook',['../namespacebdm.html#a0abef26c7da7e086e6dab7531c6fca3f',1,'bdm']]],
