@@ -11,7 +11,7 @@ var searchData=
   ['visualize_5fdiffusion_5f',['visualize_diffusion_',['../structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc',1,'bdm::Param']]],
   ['visualize_5fop_5f',['visualize_op_',['../classbdm_1_1Scheduler.html#a2a71c88a7fc66f6afde26df255897d77',1,'bdm::Scheduler']]],
   ['visualize_5fsim_5fobjects_5f',['visualize_sim_objects_',['../structbdm_1_1Param.html#a2039b961fe19d16086b781b89bc9ef9e',1,'bdm::Param']]],
-  ['volume_5f',['volume_',['../classbdm_1_1Cell.html#ae704adb3dbe70154f878c35916b7ba22',1,'bdm::Cell::volume_()'],['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a04289af10f3679e6d0eb66d0a688f3bb',1,'bdm::experimental::neuroscience::NeuriteElement::volume_()']]],
+  ['volume_5f',['volume_',['../classbdm_1_1Cell.html#ae704adb3dbe70154f878c35916b7ba22',1,'bdm::Cell::volume_()'],['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a91ed26ed8e5e8910326031698b6b3988',1,'bdm::neuroscience::NeuriteElement::volume_()']]],
   ['volume_5fratio_5f',['volume_ratio_',['../structbdm_1_1CellDivisionEvent.html#a76773fc803eb2f49028a76521a360c24',1,'bdm::CellDivisionEvent']]],
   ['vtk_5fdgrids_5f',['vtk_dgrids_',['../structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#a8eb651c887c3ee628961ee965fb356ae',1,'bdm::ParaviewAdaptor::ParaviewImpl']]],
   ['vtk_5fso_5fgrids_5f',['vtk_so_grids_',['../structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#afe06af3e8a05cd066775ba048af0971e',1,'bdm::ParaviewAdaptor::ParaviewImpl::vtk_so_grids_()'],['../classbdm_1_1InSituPipeline.html#aac4bd30a1ebaf40a0b19d506087b101a',1,'bdm::InSituPipeline::vtk_so_grids_()']]]

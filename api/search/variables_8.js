@@ -12,7 +12,7 @@ var searchData=
   ['initialized_5funtil_5f',['initialized_until_',['../structbdm_1_1memory__manager__detail_1_1AllocatedBlock.html#a2d0757caa34528deca0fd3ee5ddbfe50',1,'bdm::memory_manager_detail::AllocatedBlock']]],
   ['initializers_5f',['initializers_',['../classbdm_1_1DiffusionGrid.html#a7e04a5c02176b97633c2dd118c381e6d',1,'bdm::DiffusionGrid']]],
   ['insitu_5flink_5f',['insitu_link_',['../classbdm_1_1InSituPipeline.html#a9ab8980f91dc335f59500465220df5fc',1,'bdm::InSituPipeline']]],
-  ['is_5faxon_5f',['is_axon_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#a2f1aafbadc5599397bb21155bb2d1b89',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['is_5faxon_5f',['is_axon_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a0b030919ac369f45f9d08e90a942c50f',1,'bdm::neuroscience::NeuriteElement']]],
   ['is_5fend_5f',['is_end_',['../structbdm_1_1UniformGridEnvironment_1_1NeighborIterator.html#a528a55869a89cb20f51ee5481614f4a6',1,'bdm::UniformGridEnvironment::NeighborIterator']]],
   ['is_5fgpu_5fenvironment_5finitialized_5f',['is_gpu_environment_initialized_',['../classbdm_1_1Simulation.html#a731944d2a70436f6dce42df9d19d21fd',1,'bdm::Simulation']]],
   ['is_5fnon_5fspherical_5fobject',['is_non_spherical_object',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#af52fc11da1ce18667a30b7f5c146b1b6',1,'bdm::DisplacementOpCuda::InitializeGPUData']]]

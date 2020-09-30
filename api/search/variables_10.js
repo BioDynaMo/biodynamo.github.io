@@ -8,7 +8,7 @@ var searchData=
   ['remove_5fmask_5f',['remove_mask_',['../structbdm_1_1BaseBiologyModule.html#ab4940e1f97ea5c616c1b053aa0ead3c3',1,'bdm::BaseBiologyModule']]],
   ['remove_5foutput_5fdir_5fcontents_5f',['remove_output_dir_contents_',['../structbdm_1_1Param.html#a04d57652e0322e26217baa660a63ade4',1,'bdm::Param']]],
   ['resolution_5f',['resolution_',['../classbdm_1_1DiffusionGrid.html#a58335cd0453d48f24b3f2464686855ef',1,'bdm::DiffusionGrid']]],
-  ['resting_5flength_5f',['resting_length_',['../classbdm_1_1experimental_1_1neuroscience_1_1NeuriteElement.html#ad055ad5e9617b2ab18b15b2e0f582814',1,'bdm::experimental::neuroscience::NeuriteElement']]],
+  ['resting_5flength_5f',['resting_length_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a0cdce0d678e651e83eb850c4421079dc',1,'bdm::neuroscience::NeuriteElement']]],
   ['restore_5f',['restore_',['../classbdm_1_1SimulationBackup.html#aecf7a6b7752407e2ee37d89c073517bf',1,'bdm::SimulationBackup']]],
   ['restore_5ffile_5f',['restore_file_',['../structbdm_1_1Param.html#a1d0a1349732defbaeecd64de66f158d3',1,'bdm::Param::restore_file_()'],['../classbdm_1_1SimulationBackup.html#ad3148bf7dcc429620f2a096c71444126',1,'bdm::SimulationBackup::restore_file_()']]],
   ['restore_5fpoint_5f',['restore_point_',['../classbdm_1_1Scheduler.html#ae3dfd5ea7fe1369103cfc28ca042b894',1,'bdm::Scheduler']]],
