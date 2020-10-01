@@ -35,6 +35,7 @@ var searchData=
   ['_7eparaviewadaptor',['~ParaviewAdaptor',['../classbdm_1_1ParaviewAdaptor.html#a51f3fc472939c97515cab09d9f578de9',1,'bdm::ParaviewAdaptor']]],
   ['_7eparaviewsovisitor',['~ParaviewSoVisitor',['../classbdm_1_1ParaviewSoVisitor.html#ab2111cf2baea70904b2bdd2813b21f5f',1,'bdm::ParaviewSoVisitor']]],
   ['_7epoolallocator',['~PoolAllocator',['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a678a0a97de3ea9fa5dfb376594999a2c',1,'bdm::memory_manager_detail::PoolAllocator']]],
+  ['_7ereductionop',['~ReductionOp',['../structbdm_1_1ReductionOp.html#a145d6fb4a74905e558a66c2097e7b89d',1,'bdm::ReductionOp']]],
   ['_7eresourcemanager',['~ResourceManager',['../classbdm_1_1ResourceManager.html#ad6cc6887caa2e7dd880d35018a569f45',1,'bdm::ResourceManager']]],
   ['_7escheduler',['~Scheduler',['../classbdm_1_1Scheduler.html#ad12a5370f946d44de22236d6de9e4dce',1,'bdm::Scheduler']]],
   ['_7esecretion',['~Secretion',['../structbdm_1_1Secretion.html#a2f371c6b083b77a496f2e01ad4917011',1,'bdm::Secretion']]],

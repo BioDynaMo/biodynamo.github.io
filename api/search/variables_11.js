@@ -22,6 +22,7 @@ var searchData=
   ['size_5fn_5fpages_5f',['size_n_pages_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a30a588c330c27e3b70ab3d83425e4b1a',1,'bdm::memory_manager_detail::NumaPoolAllocator::size_n_pages_()'],['../classbdm_1_1MemoryManager.html#aaea067e99676409f77fad8f2ccf0b35a',1,'bdm::MemoryManager::size_n_pages_()']]],
   ['skip_5flist_5f',['skip_list_',['../classbdm_1_1memory__manager__detail_1_1List.html#a207ba1e724ecac03c7c8cdb9c76248eb',1,'bdm::memory_manager_detail::List']]],
   ['so_5f',['so_',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#aa1171e3fd61a24e72f177e8cd2b4c566',1,'bdm::Cell::DisplacementFunctor::so_()'],['../structbdm_1_1SetRunDisplacementForEachNeighbor.html#a169fe7c2439d9d8dc6441be05a4fd761',1,'bdm::SetRunDisplacementForEachNeighbor::so_()']]],
+  ['so_5ffunctor_5f',['so_functor_',['../structbdm_1_1ReductionOp.html#a375d8395ddfd30a9d29c48b5ad3c279c',1,'bdm::ReductionOp']]],
   ['so_5fgrid_5f',['so_grid_',['../structbdm_1_1ParaviewSoVisitor_1_1ParaviewImpl.html#afc8c6785d659268295e6fc959db33d91',1,'bdm::ParaviewSoVisitor::ParaviewImpl']]],
   ['so_5fper_5fnuma',['so_per_numa',['../structbdm_1_1RearrangeFunctor.html#a50e9ede555eeedef39f6cd8c66fb38ca',1,'bdm::RearrangeFunctor']]],
   ['so_5fuid_5fgenerator_5f',['so_uid_generator_',['../classbdm_1_1Simulation.html#a5a9e6f269b2c415adb477fc9673255f5',1,'bdm::Simulation']]],

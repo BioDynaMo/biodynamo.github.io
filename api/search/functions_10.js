@@ -37,7 +37,7 @@ var searchData=
   ['setsysteminfo',['SetSystemInfo',['../classbdm_1_1RuntimeVariables.html#a19ce1fa20a93b62fcb7e39ec3f7e89a1',1,'bdm::RuntimeVariables']]],
   ['settension',['SetTension',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a685cdb3f6cbcb10c58e3d41eaffc4490',1,'bdm::neuroscience::NeuriteElement']]],
   ['settractorforce',['SetTractorForce',['../classbdm_1_1Cell.html#a4241bd7988cc499302c4afb5e52376c8',1,'bdm::Cell']]],
-  ['setup',['SetUp',['../structbdm_1_1DisplacementOpCuda.html#a22f32721f9625a7ee6f831d81f6fffb9',1,'bdm::DisplacementOpCuda::SetUp()'],['../structbdm_1_1OperationImpl.html#aa2d45a12b45b195c80cf6742ed624ad8',1,'bdm::OperationImpl::SetUp()'],['../structbdm_1_1Operation.html#af18eaad4f239df7bd561c1ad0c0957c5',1,'bdm::Operation::SetUp()']]],
+  ['setup',['SetUp',['../structbdm_1_1DisplacementOpCuda.html#a22f32721f9625a7ee6f831d81f6fffb9',1,'bdm::DisplacementOpCuda::SetUp()'],['../structbdm_1_1OperationImpl.html#aa2d45a12b45b195c80cf6742ed624ad8',1,'bdm::OperationImpl::SetUp()'],['../structbdm_1_1Operation.html#af18eaad4f239df7bd561c1ad0c0957c5',1,'bdm::Operation::SetUp()'],['../structbdm_1_1ReductionOp.html#a7498de59af249b655e595abc3adc96b8',1,'bdm::ReductionOp::SetUp()']]],
   ['setupiterationall',['SetupIterationAll',['../classbdm_1_1InPlaceExecutionContext.html#ae0776553d2d2c45dd51a09ad6b38ed9d',1,'bdm::InPlaceExecutionContext']]],
   ['setupops',['SetUpOps',['../classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b',1,'bdm::Scheduler']]],
   ['setvolume',['SetVolume',['../classbdm_1_1Cell.html#a0a5e9c9c39fb488bb15337b790486ba2',1,'bdm::Cell']]],

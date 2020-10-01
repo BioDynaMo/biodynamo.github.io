@@ -6,6 +6,8 @@ var searchData=
   ['foreachneighborfunctor',['ForEachNeighborFunctor',['../structbdm_1_1ForEachNeighborFunctor.html',1,'bdm']]],
   ['foreachneighborwithinradiusfunctor',['ForEachNeighborWithinRadiusFunctor',['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html',1,'bdm']]],
   ['functor',['Functor',['../structbdm_1_1Functor.html',1,'bdm']]],
+  ['functor_3c_20t_2c_20const_20threadlocalresults_3c_20t_20_3e_20_26_3e',['Functor&lt; T, const ThreadLocalResults&lt; T &gt; &amp;&gt;',['../structbdm_1_1Functor.html',1,'bdm']]],
+  ['functor_3c_20void_2c_20bdm_3a_3asimobject_20_2a_2c_20t_20_2a_3e',['Functor&lt; void, bdm::SimObject *, T *&gt;',['../structbdm_1_1Functor.html',1,'bdm']]],
   ['functor_3c_20void_2c_20const_20bdm_3a_3asimobject_20_2a_2c_20double_20_3e',['Functor&lt; void, const bdm::SimObject *, double &gt;',['../structbdm_1_1Functor.html',1,'bdm']]],
   ['functor_3c_20void_2c_20const_20simobject_20_2a_2c_20double_20_3e',['Functor&lt; void, const SimObject *, double &gt;',['../structbdm_1_1Functor.html',1,'bdm']]],
   ['functor_3c_20void_2c_20const_20sohandle_20_26_3e',['Functor&lt; void, const SoHandle &amp;&gt;',['../structbdm_1_1Functor.html',1,'bdm']]],

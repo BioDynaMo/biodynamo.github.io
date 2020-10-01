@@ -23,5 +23,6 @@ var searchData=
   ['sovisitor',['SoVisitor',['../structbdm_1_1SoVisitor.html',1,'bdm']]],
   ['spinlock',['Spinlock',['../classbdm_1_1Spinlock.html',1,'bdm']]],
   ['splitneuriteelementevent',['SplitNeuriteElementEvent',['../structbdm_1_1neuroscience_1_1SplitNeuriteElementEvent.html',1,'bdm::neuroscience']]],
-  ['standaloneoperationimpl',['StandaloneOperationImpl',['../structbdm_1_1StandaloneOperationImpl.html',1,'bdm']]]
+  ['standaloneoperationimpl',['StandaloneOperationImpl',['../structbdm_1_1StandaloneOperationImpl.html',1,'bdm']]],
+  ['sumreduction',['SumReduction',['../structbdm_1_1SumReduction.html',1,'bdm']]]
 ];

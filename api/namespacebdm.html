@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-642-g31e77fcc</span>
+   &#160;<span id="projectnumber">v0.1.0-644-g1aea7b7e</span>
    </div>
   </td>
  </tr>
@@ -216,6 +216,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1RearrangeFunctor.html">RearrangeFunctor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ReductionOp.html">ReductionOp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1RegulateGenes.html">RegulateGenes</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a></td></tr>
@@ -264,6 +266,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1StandaloneOperationImpl.html">StandaloneOperationImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for implementing an operation that should run on a GPU.  <a href="structbdm_1_1StandaloneOperationImpl.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1SumReduction.html">SumReduction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1TearDownIterationOp.html">TearDownIterationOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,6 +329,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a482b174c833a56a19b71cc36847a1013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74372a497f510a062e414e207c2f90f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a74372a497f510a062e414e207c2f90f4">EventId</a> = uint64_t</td></tr>
 <tr class="separator:a74372a497f510a062e414e207c2f90f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0c1c79ecc52d38d9fb5d2ded4576e1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8a0c1c79ecc52d38d9fb5d2ded4576e1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a8a0c1c79ecc52d38d9fb5d2ded4576e1">ThreadLocalResults</a> = std::vector&lt; std::array&lt; T, <a class="el" href="reduction__op_8h.html#afab6b371f13bda49f3108c21913c8537">BDM_CACHE_LINE_SIZE</a>/sizeof(T)&gt; &gt;</td></tr>
+<tr class="separator:a8a0c1c79ecc52d38d9fb5d2ded4576e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe476bd9b7f889be914257c29fef38e0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#abe476bd9b7f889be914257c29fef38e0">ModuleParamUid</a> = uint64_t</td></tr>
 <tr class="separator:abe476bd9b7f889be914257c29fef38e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f31904ee2396d7d8d13f81e3bd51182"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -395,6 +402,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ad6284b99121d482636295bc12e29c1fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ad6284b99121d482636295bc12e29c1fd">NewOperation</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:ad6284b99121d482636295bc12e29c1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenient function to get a new operation from the registry by its name.  <a href="#ad6284b99121d482636295bc12e29c1fd">More...</a><br /></td></tr>
 <tr class="separator:ad6284b99121d482636295bc12e29c1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1484b2eec278af002e9df55e86d45e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a1484b2eec278af002e9df55e86d45e62">BDM_REGISTER_TEMPLATE_OP</a> (<a class="el" href="structbdm_1_1ReductionOp.html">ReductionOp</a>, int, &quot;ReductionOpInt&quot;, kCpu)</td></tr>
+<tr class="separator:a1484b2eec278af002e9df55e86d45e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c755f3b80ca704dbbbaa09889bc792"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a04c755f3b80ca704dbbbaa09889bc792">BDM_REGISTER_TEMPLATE_OP</a> (<a class="el" href="structbdm_1_1ReductionOp.html">ReductionOp</a>, double, &quot;ReductionOpDouble&quot;, kCpu)</td></tr>
+<tr class="separator:a04c755f3b80ca704dbbbaa09889bc792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a70d6f6c0f25242e561a40dbf73286b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a9a70d6f6c0f25242e561a40dbf73286b">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classbdm_1_1CommandLineOptions.html">CommandLineOptions</a> &amp;clo)</td></tr>
 <tr class="separator:a9a70d6f6c0f25242e561a40dbf73286b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0442a7a2df00948d1f6cf52ff0712bc0"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a0442a7a2df00948d1f6cf52ff0712bc0">FlattenModules</a> (const json &amp;j_document)</td></tr>
@@ -546,6 +557,24 @@ template&lt;typename T &gt; </div>
 <p>Type trait that converts <code>T*</code>, <code>T&amp;</code>, <code>T&amp;&amp;</code>, <code>T*&amp;</code> to <code>T</code> </p>
 
 <p class="definition">Definition at line <a class="el" href="type_8h_source.html#l00042">42</a> of file <a class="el" href="type_8h_source.html">type.h</a>.</p>
+
+</div>
+</div>
+<a id="a8a0c1c79ecc52d38d9fb5d2ded4576e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0c1c79ecc52d38d9fb5d2ded4576e1">&#9670;&nbsp;</a></span>ThreadLocalResults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacebdm.html#a8a0c1c79ecc52d38d9fb5d2ded4576e1">bdm::ThreadLocalResults</a> = typedef std::vector&lt;std::array&lt;T, <a class="el" href="reduction__op_8h.html#afab6b371f13bda49f3108c21913c8537">BDM_CACHE_LINE_SIZE</a> / sizeof(T)&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reduction__op_8h_source.html#l00034">34</a> of file <a class="el" href="reduction__op_8h_source.html">reduction_op.h</a>.</p>
 
 </div>
 </div>
@@ -1203,6 +1232,86 @@ template&lt;typename TTuple , typename TFunction &gt; </div>
 
 </div>
 </div>
+<a id="a1484b2eec278af002e9df55e86d45e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1484b2eec278af002e9df55e86d45e62">&#9670;&nbsp;</a></span>BDM_REGISTER_TEMPLATE_OP() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bdm::BDM_REGISTER_TEMPLATE_OP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1ReductionOp.html">ReductionOp</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;ReductionOpInt&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04c755f3b80ca704dbbbaa09889bc792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c755f3b80ca704dbbbaa09889bc792">&#9670;&nbsp;</a></span>BDM_REGISTER_TEMPLATE_OP() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bdm::BDM_REGISTER_TEMPLATE_OP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structbdm_1_1ReductionOp.html">ReductionOp</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;ReductionOpDouble&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af2d26ce9677cacc590ac483f86b0aa5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2d26ce9677cacc590ac483f86b0aa5e">&#9670;&nbsp;</a></span>bdm_static_cast()</h2>
 
@@ -1599,7 +1708,7 @@ template&lt;typename T &gt; </div>
 
 <p>A convenient function to get a new operation from the registry by its name. </p>
 
-<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00061">61</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00084">84</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
 
 </div>
 </div>

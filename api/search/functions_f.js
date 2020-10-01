@@ -2,6 +2,7 @@ var searchData=
 [
   ['random',['Random',['../classbdm_1_1Random.html#a2ecd4f3d5e8abd128d874b401e4df592',1,'bdm::Random']]],
   ['rearrangefunctor',['RearrangeFunctor',['../structbdm_1_1RearrangeFunctor.html#a957a3dfc0e79051c37f2338a9b0ad73c',1,'bdm::RearrangeFunctor']]],
+  ['reductionop',['ReductionOp',['../structbdm_1_1ReductionOp.html#a4ddab5644d4a320e2f2782fbdb590e88',1,'bdm::ReductionOp']]],
   ['registermoduleparam',['RegisterModuleParam',['../structbdm_1_1Param.html#a38c1225f10d7309109895419a93102e9',1,'bdm::Param']]],
   ['regulategenes',['RegulateGenes',['../structbdm_1_1RegulateGenes.html#a4677b066869ce51d1adf384c8287e780',1,'bdm::RegulateGenes::RegulateGenes()'],['../structbdm_1_1RegulateGenes.html#a592a24e42eeec32d019a8343a56a3286',1,'bdm::RegulateGenes::RegulateGenes(EventId event)'],['../structbdm_1_1RegulateGenes.html#af1b3f82a4eb9ac5532a19adebcbb475a',1,'bdm::RegulateGenes::RegulateGenes(const Event &amp;event, BaseBiologyModule *other, uint64_t new_oid=0)']]],
   ['remove',['Remove',['../structbdm_1_1BaseBiologyModule.html#a53146f87592580165dcb154ffc7ebee4',1,'bdm::BaseBiologyModule::Remove()'],['../classbdm_1_1SoUidMap.html#ae882341081f174230dbb1b70ae4bcfd2',1,'bdm::SoUidMap::Remove()'],['../classbdm_1_1ResourceManager.html#a1f64b9a70576cecd335e6a2d50ef9260',1,'bdm::ResourceManager::Remove()']]],

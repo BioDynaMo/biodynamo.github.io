@@ -19,6 +19,7 @@ var searchData=
   ['timestamps',['timestamps',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ade119b7eb55941664fc42748ea906440',1,'bdm::DisplacementOpCuda::InitializeGPUData']]],
   ['timings_5f',['timings_',['../classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36',1,'bdm::TimingAggregator']]],
   ['tinfo_5f',['tinfo_',['../classbdm_1_1InPlaceExecutionContext.html#ad0b9aa4edea3401f1be1368de24b9246',1,'bdm::InPlaceExecutionContext::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a7cda3c18122e4b9298bb77bee20c0c10',1,'bdm::memory_manager_detail::NumaPoolAllocator::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#af730835ddd0b774d5d09dc03945a44e1',1,'bdm::memory_manager_detail::PoolAllocator::tinfo_()']]],
+  ['tl_5fresults_5f',['tl_results_',['../structbdm_1_1ReductionOp.html#a39ee7096c18aab90c59cec44c6af3038',1,'bdm::ReductionOp']]],
   ['top_5f',['top_',['../classbdm_1_1RootAdaptor.html#a1245f0dc2619a867d24cb08ece9e4e44',1,'bdm::RootAdaptor']]],
   ['total_5fnum_5fboxes_5f',['total_num_boxes_',['../classbdm_1_1DiffusionGrid.html#ae409055b116d149dae25f87fd945cd44',1,'bdm::DiffusionGrid']]],
   ['total_5fnum_5fobjects_5f',['total_num_objects_',['../structbdm_1_1DisplacementOpCuda.html#ab284100461658abd9e45c3e81a9c7654',1,'bdm::DisplacementOpCuda']]],

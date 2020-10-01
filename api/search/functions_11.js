@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['teardown',['TearDown',['../structbdm_1_1DisplacementOpCuda.html#af89cd654842e5e8914c3618d63720aab',1,'bdm::DisplacementOpCuda::TearDown()'],['../structbdm_1_1OperationImpl.html#a512a4e0aa0d4ef419de947a555c67299',1,'bdm::OperationImpl::TearDown()'],['../structbdm_1_1Operation.html#a9238c049bfa4d46f6e882149c43ad9a9',1,'bdm::Operation::TearDown()']]],
+  ['teardown',['TearDown',['../structbdm_1_1DisplacementOpCuda.html#af89cd654842e5e8914c3618d63720aab',1,'bdm::DisplacementOpCuda::TearDown()'],['../structbdm_1_1OperationImpl.html#a512a4e0aa0d4ef419de947a555c67299',1,'bdm::OperationImpl::TearDown()'],['../structbdm_1_1Operation.html#a9238c049bfa4d46f6e882149c43ad9a9',1,'bdm::Operation::TearDown()'],['../structbdm_1_1ReductionOp.html#a353b3b33ff99efee3508721d018f83f5',1,'bdm::ReductionOp::TearDown()']]],
   ['teardowniterationall',['TearDownIterationAll',['../classbdm_1_1InPlaceExecutionContext.html#afd7742a308f8f5406ed021026747148c',1,'bdm::InPlaceExecutionContext']]],
   ['teardownops',['TearDownOps',['../classbdm_1_1Scheduler.html#af620cd831cab54644a1017a8e881505e',1,'bdm::Scheduler']]],
   ['tfileraii',['TFileRaii',['../classbdm_1_1TFileRaii.html#a78cbc76457bf507b93da8f6848c64352',1,'bdm::TFileRaii::TFileRaii(const std::string &amp;filename, const char *mode)'],['../classbdm_1_1TFileRaii.html#ac7159a60c5d725b33b9f3ab5e7ea95c0',1,'bdm::TFileRaii::TFileRaii(TFile *file)']]],
