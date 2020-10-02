@@ -46,5 +46,6 @@ var searchData=
   ['options_5f',['options_',['../classbdm_1_1CommandLineOptions.html#aa0098cfc6199f9f7c14311049e9764af',1,'bdm::CommandLineOptions']]],
   ['originof',['OriginOf',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#acb74c05b99f0b6e231b445e0c03bebe0',1,'bdm::neuroscience::NeuriteElement::OriginOf()'],['../classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#aa4c843968c4981d6fcd163c02b96abc7',1,'bdm::neuroscience::NeuronOrNeurite::OriginOf()'],['../classbdm_1_1neuroscience_1_1NeuronSoma.html#ac8fc57bff531aade0a0ecd3171d8a6e1',1,'bdm::neuroscience::NeuronSoma::OriginOf()']]],
   ['outfile_5f',['outfile_',['../classbdm_1_1RootAdaptor.html#ae44cdff4c2a5ffbaa9ab265dc5724fe6',1,'bdm::RootAdaptor']]],
-  ['output_5fdir_5f',['output_dir_',['../structbdm_1_1Param.html#af9c75f427be9fa054a7a7f6a15171896',1,'bdm::Param::output_dir_()'],['../classbdm_1_1Simulation.html#a74b0304dd2bf68942f9a3b840d6f8945',1,'bdm::Simulation::output_dir_()']]]
+  ['output_5fdir_5f',['output_dir_',['../structbdm_1_1Param.html#af9c75f427be9fa054a7a7f6a15171896',1,'bdm::Param::output_dir_()'],['../classbdm_1_1Simulation.html#a74b0304dd2bf68942f9a3b840d6f8945',1,'bdm::Simulation::output_dir_()']]],
+  ['outstanding_5foperations_5f',['outstanding_operations_',['../classbdm_1_1Scheduler.html#af5c3a83d3dd4b490b44d7e2452ce6525',1,'bdm::Scheduler']]]
 ];

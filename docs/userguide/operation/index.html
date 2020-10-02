@@ -200,7 +200,15 @@ You could approach this the following way.</p>
 <span class="token comment">// Create an operation implementation with a state</span>
 <span class="token keyword">struct</span> <span class="token class-name">CheckDiameter</span> <span class="token operator">:</span> <span class="token keyword">public</span> SimObjectOperationImpl <span class="token punctuation">{</span>
   <span class="token function">BDM_OP_HEADER</span><span class="token punctuation">(</span>CheckDiameter<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  
+
+  <span class="token function">CheckDiameter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token comment">// Since atomic members don't have a deleted copy constructor, we have to</span>
+  <span class="token comment">// define how to copy its value in this operation's copy constructor</span>
+  <span class="token keyword">explicit</span> <span class="token function">CheckDiameter</span><span class="token punctuation">(</span><span class="token keyword">const</span> CheckDiameter<span class="token operator">&amp;</span> other<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token operator">-></span>counter_ <span class="token operator">=</span> other<span class="token punctuation">.</span>counter_<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
   <span class="token keyword">void</span> <span class="token keyword">operator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span>SimObject<span class="token operator">*</span> sim_object<span class="token punctuation">)</span> override <span class="token punctuation">{</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>sim_object<span class="token operator">-></span><span class="token function">GetDiameter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> max_diameter_<span class="token punctuation">)</span> <span class="token punctuation">{</span>
       counter_<span class="token operator">++</span><span class="token punctuation">;</span>
@@ -209,10 +217,10 @@ You could approach this the following way.</p>
 
   <span class="token comment">// The state consists of these two data members</span>
   <span class="token keyword">double</span> max_diameter_ <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-  <span class="token comment">// Data members that can be changed in `operator()(SimObject* </span>
+  <span class="token comment">// Data members that can be changed in `operator()(SimObject*</span>
   <span class="token comment">// sim_object)` need to be of atomic type to avoid race conditions</span>
-  std<span class="token operator">::</span>atomic<span class="token operator">&lt;</span><span class="token keyword">uint32_t</span><span class="token operator">></span> counter_ <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre></div>
+  std<span class="token operator">::</span>atomic<span class="token operator">&lt;</span><span class="token keyword">uint32_t</span><span class="token operator">></span> counter_<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
 <div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token comment">// File: check_diameter.cc</span>
 
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"core/operation/operation.h"</span></span>

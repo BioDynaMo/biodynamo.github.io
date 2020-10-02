@@ -2,6 +2,7 @@ var searchData=
 [
   ['data',['data',['../classbdm_1_1MathArray.html#af109703b223c2630e843ce61e2398a6d',1,'bdm::MathArray::data()'],['../classbdm_1_1ParallelResizeVector.html#a93bae7c1ee894ffa1db23e846bcb0438',1,'bdm::ParallelResizeVector::data() noexcept'],['../classbdm_1_1ParallelResizeVector.html#a64b0df69c36103850a0752332e762e20',1,'bdm::ParallelResizeVector::data() const noexcept']]],
   ['debug',['Debug',['../classbdm_1_1Log.html#acd2340b1df773c7bef7c7bac907fe98f',1,'bdm::Log']]],
+  ['debug_5fprint',['debug_print',['../debug_8h.html#a2190205af81d35d5b73466f2f841edf4',1,'debug.h']]],
   ['debugnuma',['DebugNuma',['../classbdm_1_1ResourceManager.html#a0416556df304a7c785c580f1ac9fccaa',1,'bdm::ResourceManager']]],
   ['defaultforce',['DefaultForce',['../classbdm_1_1DefaultForce.html#a2055df84fa6c354f566821e322275209',1,'bdm::DefaultForce::DefaultForce()'],['../classbdm_1_1DefaultForce.html#aadcab81e8fa9889c7793b32de656ecde',1,'bdm::DefaultForce::DefaultForce(const DefaultForce &amp;)=delete']]],
   ['definesubstance',['DefineSubstance',['../structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2',1,'bdm::ModelInitializer']]],

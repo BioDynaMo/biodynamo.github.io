@@ -31,6 +31,7 @@ var searchData=
   ['debug',['Debug',['../classbdm_1_1Log.html#acd2340b1df773c7bef7c7bac907fe98f',1,'bdm::Log']]],
   ['debug_2eh',['debug.h',['../debug_8h.html',1,'']]],
   ['debug_5fnuma_5f',['debug_numa_',['../structbdm_1_1Param.html#a189573fb33841f0eaa23d801b510e2c4',1,'bdm::Param']]],
+  ['debug_5fprint',['debug_print',['../debug_8h.html#a2190205af81d35d5b73466f2f841edf4',1,'debug.h']]],
   ['debugnuma',['DebugNuma',['../classbdm_1_1ResourceManager.html#a0416556df304a7c785c580f1ac9fccaa',1,'bdm::ResourceManager']]],
   ['default_5fforce',['default_force',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#ad0b6fcf42f0a5ed9bee19317390b86e1',1,'bdm::Cell::DisplacementFunctor']]],
   ['default_5fforce_2ecc',['default_force.cc',['../default__force_8cc.html',1,'']]],

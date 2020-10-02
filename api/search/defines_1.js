@@ -14,6 +14,7 @@ var searchData=
   ['bdm_5fnull_5fclass_5fdef_5fnv',['BDM_NULL_CLASS_DEF_NV',['../root_8h.html#afc090da0be957a6b9db6f5db37682208',1,'root.h']]],
   ['bdm_5fnull_5fclass_5fdef_5foverride',['BDM_NULL_CLASS_DEF_OVERRIDE',['../root_8h.html#a90bd7ca045b1939b52cab6dabfbc3676',1,'root.h']]],
   ['bdm_5fop_5fheader',['BDM_OP_HEADER',['../operation__registry_8h.html#acecd461b3468136b3dec7f3b72a3a4c4',1,'operation_registry.h']]],
+  ['bdm_5fprint_5fdebug',['BDM_PRINT_DEBUG',['../debug_8h.html#aae1adad39cea7b02dd75685945d999fe',1,'debug.h']]],
   ['bdm_5fregister_5fop',['BDM_REGISTER_OP',['../operation__registry_8h.html#a77b77f9433bc59c37ed4c66a80d8eb45',1,'operation_registry.h']]],
   ['bdm_5fregister_5fop_5fwith_5ffreq',['BDM_REGISTER_OP_WITH_FREQ',['../operation__registry_8h.html#a556e1018830371deb58e6c3725116940',1,'operation_registry.h']]],
   ['bdm_5fregister_5ftemplate_5fop',['BDM_REGISTER_TEMPLATE_OP',['../operation__registry_8h.html#a17cd95ed5125260ac1b5d91830276e10',1,'operation_registry.h']]],
