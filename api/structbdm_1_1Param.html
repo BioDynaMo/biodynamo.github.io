@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-655-g2c777af4</span>
+   &#160;<span id="projectnumber">v0.1.0-656-gcff3f541</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a999d324286b3f4ba0486751a145c650a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a999d324286b3f4ba0486751a145c650a">random_seed_</a> = 0</td></tr>
+<tr class="memitem:a999d324286b3f4ba0486751a145c650a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a999d324286b3f4ba0486751a145c650a">random_seed_</a> = 4357</td></tr>
 <tr class="separator:a999d324286b3f4ba0486751a145c650a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a842fdc06bceb019667764f94b67b99f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471">NumericalODESolver</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a842fdc06bceb019667764f94b67b99f8">numerical_ode_solver_</a> = NumericalODESolver::kEuler</td></tr>
 <tr class="separator:a842fdc06bceb019667764f94b67b99f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1000,15 +1000,15 @@ TOML config file: [development] python_paraview_pipeline_ = false </p>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t bdm::Param::random_seed_ = 0</td>
+          <td class="memname">uint64_t bdm::Param::random_seed_ = 4357</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Set random number seed.<br />
 The pseudo random number generator (prng) of each thread will be initialized as follows: <code>prng[tid].SetSeed(random_seed_ * (tid + 1));</code><br />
-Default value: <code>"output"</code><br />
+Default value: <code>4357</code><br />
 TOML config file: </p><pre class="fragment">[simulation]
-random_seed = 0  </pre> 
+random_seed = 4357  </pre> 
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00080">80</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
