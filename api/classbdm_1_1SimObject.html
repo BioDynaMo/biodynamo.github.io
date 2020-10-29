@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -103,10 +103,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0da0b36bd769adb2c065259981688208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a5bc87e3294eb9ec1b62a1f4fe26c8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a43a5bc87e3294eb9ec1b62a1f4fe26c8">~SimObject</a> ()</td></tr>
 <tr class="separator:a43a5bc87e3294eb9ec1b62a1f4fe26c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8212d34af15c4b7f0e530c71965459"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a2c8212d34af15c4b7f0e530c71965459">ForEachDataMember</a> (<a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const</td></tr>
-<tr class="separator:a2c8212d34af15c4b7f0e530c71965459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c437363cc4b261f9d8b7c68a4a1f6f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a7c437363cc4b261f9d8b7c68a4a1f6f3">ForEachDataMemberIn</a> (const std::set&lt; std::string &gt; &amp;dm_selector, <a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *visitor) const</td></tr>
-<tr class="separator:a7c437363cc4b261f9d8b7c68a4a1f6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68f549d48268b907f198325d8bc17d7f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">GetInstance</a> (const <a class="el" href="structbdm_1_1Event.html">Event</a> &amp;event, <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *other, uint64_t new_oid=0) const =0</td></tr>
 <tr class="memdesc:a68f549d48268b907f198325d8bc17d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of this object using the default constructor.  <a href="#a68f549d48268b907f198325d8bc17d7f">More...</a><br /></td></tr>
 <tr class="separator:a68f549d48268b907f198325d8bc17d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,7 +215,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains code required by all simulation objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00130">130</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00082">82</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acbc9cbf2d777bbcecf3c4b5474996be4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbc9cbf2d777bbcecf3c4b5474996be4">&#9670;&nbsp;</a></span>SimObject() <span class="overload">[1/4]</span></h2>
@@ -583,7 +579,7 @@ Don't forget to add the lock of the current simulation object.<br />
 
 <p>Reimplemented in <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#aa8c6f9893966c0a64273d95a97664183">bdm::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a1b163e77d22e34dd180307cc94b53589">bdm::neuroscience::NeuronSoma</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00191">191</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00126">126</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -649,74 +645,6 @@ Don't forget to add the lock of the current simulation object.<br />
 <p>Reimplemented in <a class="el" href="classbdm_1_1Cell.html#aca13397bf85b0bd08bde4ca7ddaa7da1">bdm::Cell</a>, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ac151fc665b0a43ce1d04f5f09caa815e">bdm::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a3e8dddbb9854cb11fd5486b12d16efd6">bdm::neuroscience::NeuronSoma</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="sim__object_8cc_source.html#l00152">152</a> of file <a class="el" href="sim__object_8cc_source.html">sim_object.cc</a>.</p>
-
-</div>
-</div>
-<a id="a2c8212d34af15c4b7f0e530c71965459"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c8212d34af15c4b7f0e530c71965459">&#9670;&nbsp;</a></span>ForEachDataMember()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::SimObject::ForEachDataMember </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *&#160;</td>
-          <td class="paramname"><em>visitor</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Executes the given function for all data members </p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a></code> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00144">144</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a id="a7c437363cc4b261f9d8b7c68a4a1f6f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c437363cc4b261f9d8b7c68a4a1f6f3">&#9670;&nbsp;</a></span>ForEachDataMemberIn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::SimObject::ForEachDataMemberIn </td>
-          <td>(</td>
-          <td class="paramtype">const std::set&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dm_selector</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a> *&#160;</td>
-          <td class="paramname"><em>visitor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Executes the given visitor for the specified data members </p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1SoVisitor.html">SoVisitor</a></code> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00151">151</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -881,7 +809,7 @@ Don't forget to add the lock of the current simulation object.<br />
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00182">182</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00117">117</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +866,7 @@ Don't forget to add the lock of the current simulation object.<br />
 
 <p>Reimplemented in <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae13b767f4a99a9a9964d14f174c090ef">bdm::neuroscience::NeuriteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00172">172</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00107">107</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -965,7 +893,7 @@ Don't forget to add the lock of the current simulation object.<br />
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00201">201</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00136">136</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +951,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 
 <p>Return simulation object pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00220">220</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00155">155</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +978,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00166">166</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00101">101</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1025,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00265">265</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00202">202</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1053,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00256">256</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00193">193</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1243,7 +1171,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00216">216</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00151">151</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1275,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00205">205</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00140">140</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1303,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00197">197</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00132">132</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1330,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00211">211</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00146">146</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1357,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 
 <p>collection of biology modules which define the internal behavior </p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00280">280</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00217">217</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1383,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 
 <p>Grid box index. </p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00278">278</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00215">215</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1407,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00283">283</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00220">220</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1504,7 +1432,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </div><div class="memdoc">
 <p>Helper variable used to support removal of biology modules while <code>RunBiologyModules</code> iterates over them. </p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00287">287</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00224">224</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1456,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00289">289</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00226">226</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1552,7 +1480,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00290">290</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00227">227</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1576,7 +1504,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00291">291</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00228">228</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1530,7 @@ template&lt;typename TSimObject  = SimObject&gt; </div>
 
 <p>unique id </p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00276">276</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00213">213</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>

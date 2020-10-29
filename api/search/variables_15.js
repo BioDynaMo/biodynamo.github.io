@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['x_5faxis_5f',['x_axis_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a54d948f1402dc7306a968a3f18ad5fb6',1,'bdm::neuroscience::NeuriteElement']]],
-  ['xmax_5f',['xmax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#aeba1bc30c7f6fb5cbd2e730edbf3ba9f',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]],
-  ['xmin_5f',['xmin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#a006396b91ee7eb0c3ea8f23497c06ee4',1,'bdm::Environment::SimDimensionAndLargestSimObjectFunctor']]]
+  ['whole_5fextent_5f',['whole_extent_',['../classbdm_1_1VtiWriter.html#ac64a43f0f56ccdb2fb09f27a72c28888',1,'bdm::VtiWriter::whole_extent_()'],['../classbdm_1_1VtkDiffusionGrid.html#a8f4f1b762ca9613f322cda68fc5d962f',1,'bdm::VtkDiffusionGrid::whole_extent_()']]]
 ];

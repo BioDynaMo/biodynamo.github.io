@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exportertype',['ExporterType',['../namespacebdm.html#af87468412b81ad961b54b939b9e9a811',1,'bdm']]]
+  ['datatype',['DataType',['../structbdm_1_1GetDataMemberForVis.html#ade3a087dda39cbb6a0005d7061cf66d6',1,'bdm::GetDataMemberForVis']]]
 ];

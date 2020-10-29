@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -64,54 +64,32 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">helper.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;set&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &quot;<a class="el" href="core_2param_2param_8h_source.html">core/param/param.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="shape_8h_source.html">core/shape.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sim__object_8h_source.html">core/sim_object/sim_object.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="simulation_8h_source.html">core/simulation.h</a>&quot;</code><br />
-<code>#include &lt;vtkCPDataDescription.h&gt;</code><br />
-<code>#include &lt;vtkCPInputDataDescription.h&gt;</code><br />
-<code>#include &lt;vtkDoubleArray.h&gt;</code><br />
-<code>#include &lt;vtkImageData.h&gt;</code><br />
-<code>#include &lt;vtkIntArray.h&gt;</code><br />
-<code>#include &lt;vtkNew.h&gt;</code><br />
-<code>#include &lt;vtkPointData.h&gt;</code><br />
-<code>#include &lt;vtkPoints.h&gt;</code><br />
-<code>#include &lt;vtkStringArray.h&gt;</code><br />
-<code>#include &lt;vtkUnstructuredGrid.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="vtk__diffusion__grid_8h_source.html">core/visualization/paraview/vtk_diffusion_grid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vtk__sim__objects_8h_source.html">core/visualization/paraview/vtk_sim_objects.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for helper.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="helper_8h__incl.svg" width="2988" height="798"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="helper_8h__incl.svg" width="3528" height="738"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="helper_8h__dep__incl.svg" width="579" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="helper_8h__dep__incl.svg" width="507" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
 <p><a href="helper_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1VtkDataArrayWrapper.html">bdm::VtkDataArrayWrapper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1VtkSoGrid.html">bdm::VtkSoGrid</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1VtkDiffusionGrid.html">bdm::VtkDiffusionGrid</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebdm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html">bdm</a></td></tr>
@@ -119,8 +97,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab0743709fd7857fd832806a4f5742d2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ab0743709fd7857fd832806a4f5742d2c">bdm::GenerateSimulationInfoJson</a> (const std::unordered_map&lt; std::string, VtkSoGrid *&gt; &amp;vtk_so_grids, const std::unordered_map&lt; std::string, VtkDiffusionGrid *&gt; &amp;vtk_dgrids)</td></tr>
-<tr class="separator:ab0743709fd7857fd832806a4f5742d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020f04b484a02b55bdb5af7f34fb519b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a020f04b484a02b55bdb5af7f34fb519b">bdm::GenerateSimulationInfoJson</a> (const std::unordered_map&lt; std::string, VtkSimObjects *&gt; &amp;vtk_sim_objects, const std::unordered_map&lt; std::string, VtkDiffusionGrid *&gt; &amp;vtk_dgrids)</td></tr>
+<tr class="separator:a020f04b484a02b55bdb5af7f34fb519b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

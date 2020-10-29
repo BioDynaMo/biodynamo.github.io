@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -74,18 +74,19 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
+<code>#include &quot;<a class="el" href="math__array_8h_source.html">core/container/math_array.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="shape_8h_source.html">core/shape.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string_8h_source.html">core/util/string.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for type.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="type_8h__incl.svg" width="460" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="type_8h__incl.svg" width="1038" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="type_8h__dep__incl.svg" width="4042" height="648"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="type_8h__dep__incl.svg" width="4522" height="692"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -98,6 +99,13 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1type__ternary__operator_3_01true_00_01T_00_01U_01_4.html">bdm::type_ternary_operator&lt; true, T, U &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1type__ternary__operator_3_01false_00_01T_00_01U_01_4.html">bdm::type_ternary_operator&lt; false, T, U &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1IsArray.html">bdm::IsArray&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether T is std::array or <a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray</a>.  <a href="structbdm_1_1IsArray.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1IsArray_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html">bdm::IsArray&lt; std::array&lt; T, N &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1IsArray_3_01MathArray_3_01T_00_01N_01_4_01_4.html">bdm::IsArray&lt; MathArray&lt; T, N &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

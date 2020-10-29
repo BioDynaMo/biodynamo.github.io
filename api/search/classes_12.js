@@ -1,12 +1,13 @@
 var searchData=
 [
-  ['uniform',['Uniform',['../structbdm_1_1Uniform.html',1,'bdm']]],
-  ['uniformgridenvironment',['UniformGridEnvironment',['../classbdm_1_1UniformGridEnvironment.html',1,'bdm']]],
-  ['uniqueeventidfactory',['UniqueEventIdFactory',['../classbdm_1_1UniqueEventIdFactory.html',1,'bdm']]],
-  ['unorderedflatmap',['UnorderedFlatmap',['../classbdm_1_1UnorderedFlatmap.html',1,'bdm']]],
-  ['unorderedflatmap_3c_20std_3a_3asize_5ft_2c_20bdm_3a_3amemory_5fmanager_5fdetail_3a_3apoolallocator_20_2a_3e',['UnorderedFlatmap&lt; std::size_t, bdm::memory_manager_detail::PoolAllocator *&gt;',['../classbdm_1_1UnorderedFlatmap.html',1,'bdm']]],
-  ['updatecpuresults',['UpdateCPUResults',['../structbdm_1_1DisplacementOpCuda_1_1UpdateCPUResults.html',1,'bdm::DisplacementOpCuda']]],
-  ['updateenvironmentop',['UpdateEnvironmentOp',['../structbdm_1_1UpdateEnvironmentOp.html',1,'bdm']]],
-  ['updaterundisplacementop',['UpdateRunDisplacementOp',['../structbdm_1_1UpdateRunDisplacementOp.html',1,'bdm']]],
-  ['updateuidsohmapfunctor',['UpdateUidSoHMapFunctor',['../structbdm_1_1UpdateUidSoHMapFunctor.html',1,'bdm']]]
+  ['teardowniterationop',['TearDownIterationOp',['../structbdm_1_1TearDownIterationOp.html',1,'bdm']]],
+  ['tfileraii',['TFileRaii',['../classbdm_1_1TFileRaii.html',1,'bdm']]],
+  ['threadinfo',['ThreadInfo',['../classbdm_1_1ThreadInfo.html',1,'bdm']]],
+  ['threadsafesouidmap',['ThreadSafeSoUidMap',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html',1,'bdm::InPlaceExecutionContext']]],
+  ['timing',['Timing',['../classbdm_1_1Timing.html',1,'bdm']]],
+  ['timingaggregator',['TimingAggregator',['../classbdm_1_1TimingAggregator.html',1,'bdm']]],
+  ['type_5fternary_5foperator',['type_ternary_operator',['../structbdm_1_1type__ternary__operator.html',1,'bdm']]],
+  ['type_5fternary_5foperator_3c_20false_2c_20t_2c_20u_20_3e',['type_ternary_operator&lt; false, T, U &gt;',['../structbdm_1_1type__ternary__operator_3_01false_00_01T_00_01U_01_4.html',1,'bdm']]],
+  ['type_5fternary_5foperator_3c_20true_2c_20t_2c_20u_20_3e',['type_ternary_operator&lt; true, T, U &gt;',['../structbdm_1_1type__ternary__operator_3_01true_00_01T_00_01U_01_4.html',1,'bdm']]],
+  ['typeindex',['TypeIndex',['../structbdm_1_1TypeIndex.html',1,'bdm']]]
 ];

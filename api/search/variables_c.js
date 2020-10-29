@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n_5f',['n_',['../classbdm_1_1memory__manager__detail_1_1List.html#a57a74c78009a519724a6f6a384dcd68c',1,'bdm::memory_manager_detail::List']]],
-  ['name_5f',['name_',['../structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264',1,'bdm::Operation::name_()'],['../structbdm_1_1Param_1_1VisualizeDiffusion.html#a5c769190d79d29b3cd0f975ce3b37917',1,'bdm::Param::VisualizeDiffusion::name_()'],['../classbdm_1_1Simulation.html#a2e85b1bb21bc288d491f00d1a60ae236',1,'bdm::Simulation::name_()'],['../structbdm_1_1VtkSoGrid.html#add4d306abde5538d8b10262bc7814cbe',1,'bdm::VtkSoGrid::name_()'],['../structbdm_1_1VtkDiffusionGrid.html#a7da1ce69bccffb010e195a11b4d0c04b',1,'bdm::VtkDiffusionGrid::name_()']]],
+  ['name_5f',['name_',['../structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264',1,'bdm::Operation::name_()'],['../structbdm_1_1Param_1_1VisualizeDiffusion.html#a5c769190d79d29b3cd0f975ce3b37917',1,'bdm::Param::VisualizeDiffusion::name_()'],['../classbdm_1_1Simulation.html#a2e85b1bb21bc288d491f00d1a60ae236',1,'bdm::Simulation::name_()'],['../classbdm_1_1VtkDiffusionGrid.html#a7da1ce69bccffb010e195a11b4d0c04b',1,'bdm::VtkDiffusionGrid::name_()'],['../classbdm_1_1VtkSimObjects.html#aee23950226e1f75c4e25066b78f9e346',1,'bdm::VtkSimObjects::name_()']]],
   ['nb_5fmutex_5fbuilder_5f',['nb_mutex_builder_',['../classbdm_1_1UniformGridEnvironment.html#a42a274a2e82d10a6e7cbb69b79fd0e91',1,'bdm::UniformGridEnvironment']]],
   ['ne',['ne',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a0514e142c47d17e9c1f78646aa51bb51',1,'bdm::neuroscience::NeuriteElement::DisplacementFunctor']]],
   ['neighbor_5fboxes_5f',['neighbor_boxes_',['../structbdm_1_1UniformGridEnvironment_1_1NeighborIterator.html#a9010e4190c7c20ba63613d3194b0c0c8',1,'bdm::UniformGridEnvironment::NeighborIterator']]],
@@ -27,6 +27,7 @@ var searchData=
   ['num_5fboxes_5faxis_5f',['num_boxes_axis_',['../classbdm_1_1DiffusionGrid.html#a16101fea9858034a44bcb7fac30469f3',1,'bdm::DiffusionGrid::num_boxes_axis_()'],['../classbdm_1_1UniformGridEnvironment.html#a82eb17cdd51e0e3c1b1b67efda4a3b0b',1,'bdm::UniformGridEnvironment::num_boxes_axis_()']]],
   ['num_5fboxes_5fxy_5f',['num_boxes_xy_',['../classbdm_1_1UniformGridEnvironment.html#a06479a5d9e008c7434426735827e0135',1,'bdm::UniformGridEnvironment']]],
   ['num_5felements_5fper_5fn_5fpages_5f',['num_elements_per_n_pages_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a3e7571fee284bd4f294fc20fc627b856',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
+  ['num_5fpieces_5f',['num_pieces_',['../classbdm_1_1VtkDiffusionGrid.html#a0bf788490c4a3a02e9462127b76930b6',1,'bdm::VtkDiffusionGrid']]],
   ['num_5fthreads_5f',['num_threads_',['../classbdm_1_1MemoryManager.html#aa0aa7437cdf1b9effd1248ee9f7fb256',1,'bdm::MemoryManager']]],
   ['numa_5fallocators_5f',['numa_allocators_',['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a5363d928e4e454f3bcaac8975e8b45a2',1,'bdm::memory_manager_detail::PoolAllocator']]],
   ['numa_5fnode_5f',['numa_node_',['../classbdm_1_1SoHandle.html#a70c686d6e0c1743a5d81ef14ef30b7de',1,'bdm::SoHandle']]],

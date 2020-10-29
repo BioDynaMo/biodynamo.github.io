@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['pa_5f',['pa_',['../structbdm_1_1ProcessSimObjectFunctor.html#a9c034d0abc328e071a3a4cd2c4587c8f',1,'bdm::ProcessSimObjectFunctor']]],
   ['page_5fshift_5f',['page_shift_',['../classbdm_1_1MemoryManager.html#a4638ccd9f38cadf6d4a4f66719e054b7',1,'bdm::MemoryManager']]],
   ['page_5fsize_5f',['page_size_',['../classbdm_1_1MemoryManager.html#ae2e99940767a97a54ed1851a09816dc0',1,'bdm::MemoryManager']]],
   ['param',['param',['../structbdm_1_1ForEachNeighborFunctor.html#aaf834903a50321d01bcb9e5a9d7cc48f',1,'bdm::ForEachNeighborFunctor::param()'],['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#aee771d2aca33eb7e341b8819cdc6c257',1,'bdm::ForEachNeighborWithinRadiusFunctor::param()']]],
@@ -9,14 +8,15 @@ var searchData=
   ['parity_5f',['parity_',['../classbdm_1_1DiffusionGrid.html#a43eb9c7672545e39ce391b08e6ea24d3',1,'bdm::DiffusionGrid']]],
   ['parser_5f',['parser_',['../classbdm_1_1CommandLineOptions.html#a963b1b6bf68a3c37b921ceb34e25f616',1,'bdm::CommandLineOptions']]],
   ['phi_5f',['phi_',['../structbdm_1_1CellDivisionEvent.html#a0f86fa1e9b7d50a8e07c3c013e2bb890',1,'bdm::CellDivisionEvent::phi_()'],['../structbdm_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#a3566d39c6b6362de14d3581e76f9fd0e',1,'bdm::neuroscience::NewNeuriteExtensionEvent::phi_()']]],
-  ['pipeline_5f',['pipeline_',['../structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#ab20d595bd2fc5e87962e8f9bd789a9ea',1,'bdm::ParaviewAdaptor::ParaviewImpl']]],
-  ['pipeline_5fcreated_5f',['pipeline_created_',['../classbdm_1_1InSituPipeline.html#a47818548e61960fa2cad652d83ea807d',1,'bdm::InSituPipeline']]],
-  ['plugin_5fmanager_5f',['plugin_manager_',['../classbdm_1_1InSituPipeline.html#a24dc1a463de22e92f51e034b90aa2047',1,'bdm::InSituPipeline']]],
+  ['piece_5fboxes_5fz_5f',['piece_boxes_z_',['../classbdm_1_1VtkDiffusionGrid.html#af30fde4ec93b037fa9045bd9765aaeee',1,'bdm::VtkDiffusionGrid']]],
+  ['piece_5fboxes_5fz_5flast_5f',['piece_boxes_z_last_',['../classbdm_1_1VtkDiffusionGrid.html#ab2943fd77e0d47ce737b3db84a36f020',1,'bdm::VtkDiffusionGrid']]],
+  ['piece_5fextents_5f',['piece_extents_',['../classbdm_1_1VtkDiffusionGrid.html#aa1949a51792f737520fb92e780b1bf6b',1,'bdm::VtkDiffusionGrid']]],
   ['position_5f',['position_',['../classbdm_1_1Cell.html#a4162cd38320f2ca2deb7bbd2a8a1e45b',1,'bdm::Cell::position_()'],['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a0ccad664953f485c2326ec002e985d1c',1,'bdm::neuroscience::NeuriteElement::position_()']]],
+  ['post_5fscheduled_5fops_5f',['post_scheduled_ops_',['../classbdm_1_1Scheduler.html#a2138ab8b8d6d725fafa5846405ded200',1,'bdm::Scheduler']]],
+  ['pre_5fscheduled_5fops_5f',['pre_scheduled_ops_',['../classbdm_1_1Scheduler.html#a3fa6c13b51ab3596004c6a46085ea26a',1,'bdm::Scheduler']]],
   ['preferred_5fgpu_5f',['preferred_gpu_',['../structbdm_1_1Param.html#a4b46410b40ad02da690638c7e04be73a',1,'bdm::Param']]],
   ['previous_5fmaps_5f',['previous_maps_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a76cef64b09ea95898f697ad313e97bc6',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
-  ['producer_5fmap_5f',['producer_map_',['../classbdm_1_1InSituPipeline.html#a8ff700c68a2e5778299cab7b50ab506f',1,'bdm::InSituPipeline']]],
-  ['protected_5fops_5f',['protected_ops_',['../classbdm_1_1Scheduler.html#acc33e732a0947d960ae6467b59a17c29',1,'bdm::Scheduler']]],
-  ['proxy_5fmanager_5f',['proxy_manager_',['../classbdm_1_1InSituPipeline.html#a7d09c2ca20c8cb70a78e8ca54d661636',1,'bdm::InSituPipeline']]],
-  ['python_5fparaview_5fpipeline_5f',['python_paraview_pipeline_',['../structbdm_1_1Param.html#aa8794382394ee28b7c0093d0124ae6ec',1,'bdm::Param']]]
+  ['protected_5fop_5fnames_5f',['protected_op_names_',['../classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87',1,'bdm::Scheduler']]],
+  ['pv_5finsitu_5fpipeline_5f',['pv_insitu_pipeline_',['../structbdm_1_1Param.html#a1983049a01cf8a81c97f4257eb667a22',1,'bdm::Param']]],
+  ['pv_5finsitu_5fpipeline_5farguments_5f',['pv_insitu_pipeline_arguments_',['../structbdm_1_1Param.html#abd8c1ce20b95447c635402bee3475bd2',1,'bdm::Param']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['activate',['Activate',['../classbdm_1_1Simulation.html#a5410ed6a61259720b51e047f92215856',1,'bdm::Simulation']]],
+  ['add',['Add',['../structbdm_1_1TypeIndex.html#a9ebef61aa9c5964f3b33fef473495b14',1,'bdm::TypeIndex']]],
   ['addbiologymodule',['AddBiologyModule',['../classbdm_1_1SimObject.html#a9e07e6deb0adebaedb7abb21ba875fd7',1,'bdm::SimObject']]],
   ['addbranch',['AddBranch',['../classbdm_1_1RootAdaptor.html#a0cbd565db861caf34fa802491ccf7dd2',1,'bdm::RootAdaptor']]],
   ['addcoreoptions',['AddCoreOptions',['../classbdm_1_1CommandLineOptions.html#a9f66951bd5306e40fa945dd043f7b600',1,'bdm::CommandLineOptions']]],
@@ -15,6 +16,7 @@ var searchData=
   ['addoperationimpl',['AddOperationImpl',['../structbdm_1_1Operation.html#ae92921d5ddbf10894e306d5b33328688',1,'bdm::Operation::AddOperationImpl()'],['../structbdm_1_1OperationRegistry.html#a8ea3719101b6ab9db27346f020d00db9',1,'bdm::OperationRegistry::AddOperationImpl()']]],
   ['addoption',['AddOption',['../classbdm_1_1CommandLineOptions.html#adb789cac5481816ed0ecdef6fcca2f17',1,'bdm::CommandLineOptions::AddOption(std::string group=&quot;Simulation&quot;)'],['../classbdm_1_1CommandLineOptions.html#aeb88d5d9bb969b3b3f2ad8994d0691ee',1,'bdm::CommandLineOptions::AddOption(std::string opt, std::string def, std::string description=&quot;&quot;, std::string group=&quot;Simulation&quot;)']]],
   ['addsphere',['AddSphere',['../classbdm_1_1RootAdaptor.html#aeb7442dbc1e83198cfe8b44ee6f3fe75',1,'bdm::RootAdaptor']]],
+  ['allocate',['Allocate',['../classbdm_1_1MappedDataArray.html#ae7e0bd77d63cd93862867bcc60deb05c',1,'bdm::MappedDataArray']]],
   ['allocnewmemoryblock',['AllocNewMemoryBlock',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a39a0ba704a895e4b206901299ee98407',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['angleradian',['AngleRadian',['../structbdm_1_1Math.html#a357af2bdea31bf521ee128bbde6b1fef',1,'bdm::Math']]],
   ['apply',['Apply',['../namespacebdm_1_1detail.html#a99bd062e7d4d505f3816656b9f6ee917',1,'bdm::detail::Apply()'],['../namespacebdm.html#a0178a169df1fa84ba03b5251bbe37b11',1,'bdm::Apply()']]],
@@ -26,7 +28,9 @@ var searchData=
   ['applyonallelementsparallel',['ApplyOnAllElementsParallel',['../classbdm_1_1ResourceManager.html#abfe52951df0ed4807566f23281e230ea',1,'bdm::ResourceManager::ApplyOnAllElementsParallel(Functor&lt; void, SimObject *&gt; &amp;function)'],['../classbdm_1_1ResourceManager.html#a969a821ee728aceb75ff6d424d47e231',1,'bdm::ResourceManager::ApplyOnAllElementsParallel(Operation &amp;op)'],['../classbdm_1_1ResourceManager.html#a4034e11438875b135fb4526110cf8493',1,'bdm::ResourceManager::ApplyOnAllElementsParallel(Functor&lt; void, SimObject *, SoHandle &gt; &amp;function)']]],
   ['applyonallelementsparalleldynamic',['ApplyOnAllElementsParallelDynamic',['../classbdm_1_1ResourceManager.html#afa32c1d087beee05ed4ac2a5ed503509',1,'bdm::ResourceManager']]],
   ['applyonallelementsparallelfunctor',['ApplyOnAllElementsParallelFunctor',['../structbdm_1_1ApplyOnAllElementsParallelFunctor.html#acebabc96e9a83e99df14fb18cb98e671',1,'bdm::ApplyOnAllElementsParallelFunctor']]],
+  ['arraytostring',['ArrayToString',['../classbdm_1_1PvtiWriter.html#aaec938976089deaa38f19464f8cc4f60',1,'bdm::PvtiWriter']]],
   ['assignfromconfig',['AssignFromConfig',['../structbdm_1_1ModuleParam.html#a783a40b8594da2e88d72db346db93114',1,'bdm::ModuleParam::AssignFromConfig()'],['../structbdm_1_1Param.html#af29c280b881dbd07e1561e87ad69f00a',1,'bdm::Param::AssignFromConfig()'],['../structbdm_1_1neuroscience_1_1Param.html#a2977d9f0f109c318b7b63795ed3408ab',1,'bdm::neuroscience::Param::AssignFromConfig()']]],
+  ['assignmappeddataarraymode',['AssignMappedDataArrayMode',['../namespacebdm.html#a2a9d27c01c897cb05e8cc7b9a2d6bd0e',1,'bdm']]],
   ['assignnewuid',['AssignNewUid',['../classbdm_1_1SimObject.html#abac69fd05d170d2d9b9f99ffaca94f5a',1,'bdm::SimObject']]],
   ['assignthreadsafetymechanism',['AssignThreadSafetyMechanism',['../namespacebdm.html#a85f69154d0b09bdfcb35b3c3ce112371',1,'bdm']]],
   ['assigntoboxesfunctor',['AssignToBoxesFunctor',['../structbdm_1_1UniformGridEnvironment_1_1AssignToBoxesFunctor.html#adc59991e75f276917fc2a31922100293',1,'bdm::UniformGridEnvironment::AssignToBoxesFunctor']]],

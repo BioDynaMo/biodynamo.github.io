@@ -1,7 +1,6 @@
 var searchData=
 [
   ['file_5f',['file_',['../classbdm_1_1TFileRaii.html#acb307a31c11e8951e94a1402f8990ced',1,'bdm::TFileRaii']]],
-  ['filter_5fmap_5f',['filter_map_',['../classbdm_1_1InSituPipeline.html#a4b43c63434a50b433cc18d9a767edd45',1,'bdm::InSituPipeline']]],
   ['first_5fderivatives_5f',['first_derivatives_',['../structbdm_1_1RegulateGenes.html#a0b4d7b125e296c7d96e84b5694cd269a',1,'bdm::RegulateGenes']]],
   ['first_5fparse_5f',['first_parse_',['../classbdm_1_1CommandLineOptions.html#ac96a2b7dfafa21bd45548f1cf41f7361',1,'bdm::CommandLineOptions']]],
   ['flag_5f',['flag_',['../classbdm_1_1Spinlock.html#a9bb64a6eb8c45c864026c3558ae5fd11',1,'bdm::Spinlock']]],
@@ -12,5 +11,6 @@ var searchData=
   ['free_5flists_5f',['free_lists_',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#ad3f111848f499af53362bbd64b718ea7',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],
   ['frequency_5f',['frequency_',['../structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc',1,'bdm::Operation']]],
   ['function_5f',['function_',['../structbdm_1_1ForEachNeighborFunctor.html#a932c6595511d49510449899bb12b9610',1,'bdm::ForEachNeighborFunctor::function_()'],['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a85052986a9e29e1910750ea0950b5260',1,'bdm::ForEachNeighborWithinRadiusFunctor::function_()']]],
-  ['functor_5f',['functor_',['../structbdm_1_1ApplyOnAllElementsParallelFunctor.html#a7e0e0b2ca3e52bd0fe4eed0749a4a73d',1,'bdm::ApplyOnAllElementsParallelFunctor']]]
+  ['functor_5f',['functor_',['../structbdm_1_1ApplyOnAllElementsParallelFunctor.html#a7e0e0b2ca3e52bd0fe4eed0749a4a73d',1,'bdm::ApplyOnAllElementsParallelFunctor']]],
+  ['functor_5fname_5f',['functor_name_',['../classbdm_1_1JitForEachDataMemberFunctor.html#a82df3c88054b9d4c48ec1f32a75c4adb',1,'bdm::JitForEachDataMemberFunctor']]]
 ];

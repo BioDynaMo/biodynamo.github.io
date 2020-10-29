@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['parallelresizevector',['ParallelResizeVector',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
-  ['parallelresizevector_3c_20bdm_3a_3auniformgridenvironment_3a_3abox_20_3e',['ParallelResizeVector&lt; bdm::UniformGridEnvironment::Box &gt;',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
-  ['parallelresizevector_3c_20double_20_3e',['ParallelResizeVector&lt; double &gt;',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
-  ['parallelresizevector_3c_20std_3a_3apair_3c_20uint32_5ft_2c_20const_20bdm_3a_3auniformgridenvironment_3a_3abox_20_2a_3e_20_3e',['ParallelResizeVector&lt; std::pair&lt; uint32_t, const bdm::UniformGridEnvironment::Box *&gt; &gt;',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
-  ['param',['Param',['../structbdm_1_1Param.html',1,'bdm::Param'],['../structbdm_1_1neuroscience_1_1Param.html',1,'bdm::neuroscience::Param']]],
-  ['paraviewadaptor',['ParaviewAdaptor',['../classbdm_1_1ParaviewAdaptor.html',1,'bdm']]],
-  ['paraviewexporter',['ParaviewExporter',['../classbdm_1_1ParaviewExporter.html',1,'bdm']]],
-  ['paraviewimpl',['ParaviewImpl',['../structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html',1,'bdm::ParaviewAdaptor::ParaviewImpl'],['../structbdm_1_1ParaviewSoVisitor_1_1ParaviewImpl.html',1,'bdm::ParaviewSoVisitor::ParaviewImpl']]],
-  ['paraviewsovisitor',['ParaviewSoVisitor',['../classbdm_1_1ParaviewSoVisitor.html',1,'bdm']]],
-  ['poissonband',['PoissonBand',['../structbdm_1_1PoissonBand.html',1,'bdm']]],
-  ['poolallocator',['PoolAllocator',['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html',1,'bdm::memory_manager_detail']]],
-  ['processsimobjectfunctor',['ProcessSimObjectFunctor',['../structbdm_1_1ProcessSimObjectFunctor.html',1,'bdm']]]
+  ['openclstate',['OpenCLState',['../classbdm_1_1OpenCLState.html',1,'bdm']]],
+  ['operation',['Operation',['../structbdm_1_1Operation.html',1,'bdm']]],
+  ['operationimpl',['OperationImpl',['../structbdm_1_1OperationImpl.html',1,'bdm']]],
+  ['operationregistry',['OperationRegistry',['../structbdm_1_1OperationRegistry.html',1,'bdm']]],
+  ['optimer',['OpTimer',['../structbdm_1_1OpTimer.html',1,'bdm']]]
 ];

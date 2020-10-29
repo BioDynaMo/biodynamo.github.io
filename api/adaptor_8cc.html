@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -70,10 +70,13 @@ $(function() {
 <div class="title">adaptor.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="paraview_2adaptor_8h_source.html">core/visualization/paraview/adaptor.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &quot;<a class="el" href="paraview_2adaptor_8h_source.html">core/visualization/paraview/adaptor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="helper_8h_source.html">core/visualization/paraview/helper.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="insitu__pipeline_8h_source.html">core/visualization/paraview/insitu_pipeline.h</a>&quot;</code><br />
-<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &quot;<a class="el" href="vtk__diffusion__grid_8h_source.html">core/visualization/paraview/vtk_diffusion_grid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vtk__sim__objects_8h_source.html">core/visualization/paraview/vtk_sim_objects.h</a>&quot;</code><br />
 <code>#include &lt;vtkCPDataDescription.h&gt;</code><br />
 <code>#include &lt;vtkCPInputDataDescription.h&gt;</code><br />
 <code>#include &lt;vtkCPProcessor.h&gt;</code><br />
@@ -82,18 +85,21 @@ $(function() {
 <code>#include &lt;vtkFieldData.h&gt;</code><br />
 <code>#include &lt;vtkIdTypeArray.h&gt;</code><br />
 <code>#include &lt;vtkImageData.h&gt;</code><br />
+<code>#include &lt;vtkImageDataStreamer.h&gt;</code><br />
 <code>#include &lt;vtkIntArray.h&gt;</code><br />
 <code>#include &lt;vtkNew.h&gt;</code><br />
 <code>#include &lt;vtkPointData.h&gt;</code><br />
 <code>#include &lt;vtkPoints.h&gt;</code><br />
 <code>#include &lt;vtkStringArray.h&gt;</code><br />
 <code>#include &lt;vtkUnstructuredGrid.h&gt;</code><br />
+<code>#include &lt;vtkXMLImageDataWriter.h&gt;</code><br />
 <code>#include &lt;vtkXMLPImageDataWriter.h&gt;</code><br />
 <code>#include &lt;vtkXMLPUnstructuredGridWriter.h&gt;</code><br />
+<code>#include &lt;vtkXMLUnstructuredGridWriter.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for adaptor.cc:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adaptor_8cc__incl.svg" width="5848" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="adaptor_8cc__incl.svg" width="5368" height="723"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -102,8 +108,6 @@ Include dependency graph for adaptor.cc:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html">bdm::ParaviewAdaptor::ParaviewImpl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ProcessSimObjectFunctor.html">bdm::ProcessSimObjectFunctor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

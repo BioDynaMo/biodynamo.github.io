@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -87,6 +87,9 @@ $(function() {
 , <a class="el" href="classbdm_1_1SoPointer.html#acb99bf136cce952b2eaa2a1243f6835a">bdm::SoPointer&lt; TSimObject &gt;</a>
 , <a class="el" href="classbdm_1_1TFileRaii.html#ac4328103c3774c141fa55a7f3bfa35df">bdm::TFileRaii</a>
 , <a class="el" href="classbdm_1_1UniqueEventIdFactory.html#a24bf443bbaf12aad456de4c8ba52c0cc">bdm::UniqueEventIdFactory</a>
+</li>
+<li>get_dm_
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a2f92626584c0f82799322097d19fe105">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>GetActive()
 : <a class="el" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation</a>
@@ -156,6 +159,15 @@ $(function() {
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#af13d7c88c2a69166c2d7a7c51554d880">bdm::BaseBiologyModule</a>
 , <a class="el" href="structbdm_1_1ModuleParam.html#acd3142d0f865a356bb7a2d582ff829cc">bdm::ModuleParam</a>
 , <a class="el" href="classbdm_1_1SimObject.html#a819a078ee28817c3c7c368664f31c993">bdm::SimObject</a>
+</li>
+<li>GetData()
+: <a class="el" href="classbdm_1_1VtkSimObjects.html#a50c5370c50acda4b67e9be9702238767">bdm::VtkSimObjects</a>
+</li>
+<li>GetDataMemberForVis()
+: <a class="el" href="structbdm_1_1GetDataMemberForVis.html#a0c166b13baa05b64434ba9011b8d514e">bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</a>
+</li>
+<li>GetDataType()
+: <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</a>
 </li>
 <li>GetDaughterLeft()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ad23ece2f0ee17491c38f9751f64efef5">bdm::neuroscience::NeuriteElement</a>
@@ -281,6 +293,9 @@ $(function() {
 <li>GetMaxThreads()
 : <a class="el" href="classbdm_1_1ThreadInfo.html#ad84943bcce4294ccf111882481d3dae0">bdm::ThreadInfo</a>
 </li>
+<li>GetMaxUniversalThreadId()
+: <a class="el" href="classbdm_1_1ThreadInfo.html#a5174a1bb01425ce0972502cf9f7f551f">bdm::ThreadInfo</a>
+</li>
 <li>GetMemoryManager()
 : <a class="el" href="classbdm_1_1Simulation.html#ab97c53c09800313bcb76a7e563b222c8">bdm::Simulation</a>
 </li>
@@ -294,7 +309,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a381537cb45e8e7745bc14a1da02e5bbd">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetMother()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#acc302886f5ad8d4fc0f38a0a993e6a59">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a89f146db7fe3cd88e25e9b6976d2e18e">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetMutex()
 : <a class="el" href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html#a836c2bb645aeba777a96cffb5ac9b1d7">bdm::Environment::NeighborMutexBuilder</a>
@@ -401,6 +416,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ad15f6a070db9203dacb9bcdc526e8ac2">bdm::neuroscience::NeuriteElement</a>
 , <a class="el" href="classbdm_1_1SimObject.html#ab178f73dd35873394b74e2b5ad82f52e">bdm::SimObject</a>
+, <a class="el" href="classbdm_1_1VtkSimObjects.html#a415d8a4c8204f8082c3e6ea684a8b447">bdm::VtkSimObjects</a>
 </li>
 <li>GetSimObject()
 : <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a39183af11504e5807ce654c1dae2343b">bdm::InPlaceExecutionContext</a>
@@ -430,9 +446,6 @@ $(function() {
 <li>GetSoUidGenerator()
 : <a class="el" href="classbdm_1_1Simulation.html#ad663e90892e415662ec876cc7424f7b8">bdm::Simulation</a>
 </li>
-<li>GetSource()
-: <a class="el" href="classbdm_1_1InSituPipeline.html#a303959e881cb464946d52ed1169cfe86">bdm::InSituPipeline</a>
-</li>
 <li>GetSpringAxis()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a165caab157043e19f3db057454b11571">bdm::neuroscience::NeuriteElement</a>
 </li>
@@ -448,6 +461,9 @@ $(function() {
 <li>GetSystemInfo()
 : <a class="el" href="classbdm_1_1RuntimeVariables.html#a9b94fe3d93effc68994679c636ac4c49">bdm::RuntimeVariables</a>
 </li>
+<li>GetTClass()
+: <a class="el" href="classbdm_1_1VtkSimObjects.html#a1e28c6e79b9a58968f43dc5198d3fec8">bdm::VtkSimObjects</a>
+</li>
 <li>GetTension()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae36cfdefc3ab7dbac0441e074495a275">bdm::neuroscience::NeuriteElement</a>
 </li>
@@ -457,11 +473,26 @@ $(function() {
 <li>GetTractorForce()
 : <a class="el" href="classbdm_1_1Cell.html#a2b141df045e6db7a07ab81be5434a259">bdm::Cell</a>
 </li>
+<li>GetTuple()
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a23c5f33735432a440ee810be4ea62897">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+</li>
+<li>GetTuples()
+: <a class="el" href="classbdm_1_1MappedDataArray.html#acc338f8f5587f1e6d093578f5226ff5f">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+</li>
+<li>GetType()
+: <a class="el" href="structbdm_1_1TypeIndex.html#a58c7420bcace073c4b64128d89274944">bdm::TypeIndex</a>
+</li>
+<li>GetTypedTuple()
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a6c5f8fdda64845e5ae58d683632d192c">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+</li>
+<li>GetTypeIndex()
+: <a class="el" href="classbdm_1_1ResourceManager.html#a0bf9cd8e9b6cf45fe81c81cd6517d501">bdm::ResourceManager</a>
+</li>
 <li>GetTypeName()
 : <a class="el" href="classbdm_1_1SimObject.html#a56be44cdbd966ee7b7cf539078d09bde">bdm::SimObject</a>
 </li>
 <li>GetUid()
-: <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#a58bd5adcadb866a332075256441413f2">bdm::detail::ExtractUid</a>
+: <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#afc7ec1a938763983258bfa2597de41c1">bdm::detail::ExtractUid</a>
 , <a class="el" href="structbdm_1_1ModuleParam.html#a81ed7fc2b16a99c73f62f0ffff01e279">bdm::ModuleParam</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#af11de601244332f76b4a6fbd16824a3c">bdm::neuroscience::NeuriteElement</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#a7ac632d2e0f62b992cbc916485805012">bdm::neuroscience::NeuronOrNeurite</a>
@@ -475,9 +506,19 @@ $(function() {
 <li>GetUnitaryAxisDirectionVector()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a8884adc47cd8440721e8edd2cd6ee158">bdm::neuroscience::NeuriteElement</a>
 </li>
+<li>GetUniversalThreadId()
+: <a class="el" href="classbdm_1_1ThreadInfo.html#ac129fd0c1ebb97eb4132be9e82653e19">bdm::ThreadInfo</a>
+</li>
 <li>GetValue()
 : <a class="el" href="structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_01_4.html#a8c04160ee6ab006889ae944475801143">bdm::detail::GetIndexImpl&lt; T, Counter, FirstType &gt;</a>
 , <a class="el" href="structbdm_1_1detail_1_1GetIndexImpl_3_01T_00_01Counter_00_01FirstType_00_01RemainingTypes_8_8_8_01_4.html#ade2f82a674b1b0a61614d5ed41f68d66">bdm::detail::GetIndexImpl&lt; T, Counter, FirstType, RemainingTypes... &gt;</a>
+, <a class="el" href="classbdm_1_1MappedDataArray.html#a0ef6a589e22c783ffd9fd26958a00e81">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+</li>
+<li>GetValueReference()
+: <a class="el" href="classbdm_1_1MappedDataArray.html#acdd90d3a3aab492435a2073502d09f84">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+</li>
+<li>GetVariantValue()
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a7bdcb94d64b4f2d985955f3fd1530734">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>GetVolume()
 : <a class="el" href="classbdm_1_1Cell.html#a915a63936bc06c42675547e694ff2340">bdm::Cell</a>
@@ -494,7 +535,9 @@ $(function() {
 </li>
 <li>gradient_
 : <a class="el" href="structbdm_1_1Param_1_1VisualizeDiffusion.html#af977582e3fe80674720451880dd55e34">bdm::Param::VisualizeDiffusion</a>
-, <a class="el" href="structbdm_1_1VtkDiffusionGrid.html#ad9681e167a40507df553463396dc90d6">bdm::VtkDiffusionGrid</a>
+</li>
+<li>gradient_array_idx_
+: <a class="el" href="classbdm_1_1VtkDiffusionGrid.html#ab4a23536fc8e0b44f9cd7f05f6d516a3">bdm::VtkDiffusionGrid</a>
 </li>
 <li>gradients_
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#afea4b278a082f85ae6b31b8715a6ad16">bdm::DiffusionGrid</a>
@@ -520,7 +563,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1GridNeighborMutex.html#abca8ea0866a496d6b7b4f4c68e6f8d7d">bdm::UniformGridEnvironment::GridNeighborMutexBuilder::GridNeighborMutex</a>
 </li>
 <li>GrowDivide()
-: <a class="el" href="structbdm_1_1GrowDivide.html#a0efd18f12d3a1b969141301c710c64f8">bdm::GrowDivide</a>
+: <a class="el" href="structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407">bdm::GrowDivide</a>
 </li>
 <li>GrowSoContainer()
 : <a class="el" href="classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7">bdm::ResourceManager</a>

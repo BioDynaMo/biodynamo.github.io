@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -82,7 +82,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for bdm::Param:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="175" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="175" height="303"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -102,6 +102,11 @@ Public Types</h2></td></tr>
 <a class="el" href="structbdm_1_1Param.html#a338ac6f09819f7b64f3b2af01b8cb5bca27323fdb54ebca463e7060b4d4fe380c">kAutomatic</a>
  }</td></tr>
 <tr class="separator:a338ac6f09819f7b64f3b2af01b8cb5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75736f24ae2459dbe25691890107797b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797b">MappedDataArrayMode</a> { <a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797ba429ab33c2ae17d84a56372dd11a9c4a6">kZeroCopy</a> = 0, 
+<a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797ba5f55721ed86ae25c0358dcd2ccbd7297">kCopy</a>, 
+<a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797ba6ed79fc53ab687978adcbaed0d544d1b">kCache</a>
+ }</td></tr>
+<tr class="separator:a75736f24ae2459dbe25691890107797b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -168,14 +173,18 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac4ffb8e7eea1587c51e35138605cdd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53e8b71abfe700d6fcde3b1f361193a3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a53e8b71abfe700d6fcde3b1f361193a3">visualization_engine_</a> = &quot;paraview&quot;</td></tr>
 <tr class="separator:a53e8b71abfe700d6fcde3b1f361193a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1287ac6f95eeb59027d51dfa49e861"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a9a1287ac6f95eeb59027d51dfa49e861">live_visualization_</a> = false</td></tr>
-<tr class="separator:a9a1287ac6f95eeb59027d51dfa49e861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8460b254211564b6fe0edca9dfa0ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a8c8460b254211564b6fe0edca9dfa0ee">insitu_visualization_</a> = false</td></tr>
+<tr class="separator:a8c8460b254211564b6fe0edca9dfa0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3597fb59aa304a4003cbec43040644e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#aa3597fb59aa304a4003cbec43040644e">export_visualization_</a> = false</td></tr>
 <tr class="separator:aa3597fb59aa304a4003cbec43040644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb36331f91e926314bfee8283783cb3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#acb36331f91e926314bfee8283783cb3a">root_visualization_</a> = false</td></tr>
 <tr class="separator:acb36331f91e926314bfee8283783cb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e07ec7e600b7462833a6ddd07850f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#ad9e07ec7e600b7462833a6ddd07850f2">visualization_export_interval_</a> = 1</td></tr>
-<tr class="separator:ad9e07ec7e600b7462833a6ddd07850f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1983049a01cf8a81c97f4257eb667a22"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a1983049a01cf8a81c97f4257eb667a22">pv_insitu_pipeline_</a></td></tr>
+<tr class="separator:a1983049a01cf8a81c97f4257eb667a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8c1ce20b95447c635402bee3475bd2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#abd8c1ce20b95447c635402bee3475bd2">pv_insitu_pipeline_arguments_</a> = &quot;&quot;</td></tr>
+<tr class="separator:abd8c1ce20b95447c635402bee3475bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4546319f8f07c8b4efedba137c34adc1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a4546319f8f07c8b4efedba137c34adc1">visualization_interval_</a> = 1</td></tr>
+<tr class="separator:a4546319f8f07c8b4efedba137c34adc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a728fb8329237dc9a52413beb47b84dbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a728fb8329237dc9a52413beb47b84dbb">visualization_export_generate_pvsm_</a> = true</td></tr>
 <tr class="separator:a728fb8329237dc9a52413beb47b84dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2039b961fe19d16086b781b89bc9ef9e"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::set&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a2039b961fe19d16086b781b89bc9ef9e">visualize_sim_objects_</a></td></tr>
@@ -183,6 +192,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2039b961fe19d16086b781b89bc9ef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a727f6c403747c22ac2f09b3e44902bbc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structbdm_1_1Param_1_1VisualizeDiffusion.html">VisualizeDiffusion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a727f6c403747c22ac2f09b3e44902bbc">visualize_diffusion_</a></td></tr>
 <tr class="separator:a727f6c403747c22ac2f09b3e44902bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc4709d55fc6ac032830e7fd25b7e0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a2dc4709d55fc6ac032830e7fd25b7e0e">visualization_compress_pv_files_</a> = true</td></tr>
+<tr class="separator:a2dc4709d55fc6ac032830e7fd25b7e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac07de04521ddd5e025cc00c5664851"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#adac07de04521ddd5e025cc00c5664851">scheduling_batch_size_</a> = 1000</td></tr>
 <tr class="separator:adac07de04521ddd5e025cc00c5664851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb7a4ca69031a443d0381c9064f34a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#adeb7a4ca69031a443d0381c9064f34a4">detect_static_sim_objects_</a> = false</td></tr>
@@ -203,12 +214,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3bf7a0810d2a67b7f354032e2a3693cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae84845859c1c3197923ef4bf2d450655"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#ae84845859c1c3197923ef4bf2d450655">minimize_memory_while_rebalancing_</a> = true</td></tr>
 <tr class="separator:ae84845859c1c3197923ef4bf2d450655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f959125f7890d988e464ac881d8d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797b">Param::MappedDataArrayMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#ab4f959125f7890d988e464ac881d8d7d">mapped_data_array_mode_</a></td></tr>
+<tr class="separator:ab4f959125f7890d988e464ac881d8d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b0678d6ce93d8ed0e626876470dc7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#ae2b0678d6ce93d8ed0e626876470dc7d">statistics_</a> = false</td></tr>
 <tr class="separator:ae2b0678d6ce93d8ed0e626876470dc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189573fb33841f0eaa23d801b510e2c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a189573fb33841f0eaa23d801b510e2c4">debug_numa_</a> = false</td></tr>
 <tr class="separator:a189573fb33841f0eaa23d801b510e2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8794382394ee28b7c0093d0124ae6ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#aa8794382394ee28b7c0093d0124ae6ec">python_paraview_pipeline_</a> = false</td></tr>
-<tr class="separator:aa8794382394ee28b7c0093d0124ae6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10912de24f843fd275c0aad868259b97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97">show_simulation_step_</a> = true</td></tr>
 <tr class="separator:a10912de24f843fd275c0aad868259b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63cbc816311cd6dddc85c35dd908ed68"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a63cbc816311cd6dddc85c35dd908ed68">simulation_step_freq_</a> = 10</td></tr>
@@ -239,6 +250,30 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00034">34</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a75736f24ae2459dbe25691890107797b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75736f24ae2459dbe25691890107797b">&#9670;&nbsp;</a></span>MappedDataArrayMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797b">bdm::Param::MappedDataArrayMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MappedDataArrayMode options: <code>kZeroCopy</code>: access simulation object data directly only if it is requested. <br />
+ <code>kCache</code>: Like <code>kZeroCopy</code> but stores the results in contigous array, to speed up access if it is used again.<br />
+ <code>kCopy</code>: Copy all data elements to a contigous array at initialization time. Serves requests from the cache. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a75736f24ae2459dbe25691890107797ba429ab33c2ae17d84a56372dd11a9c4a6"></a>kZeroCopy&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a75736f24ae2459dbe25691890107797ba5f55721ed86ae25c0358dcd2ccbd7297"></a>kCopy&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a75736f24ae2459dbe25691890107797ba6ed79fc53ab687978adcbaed0d544d1b"></a>kCache&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00485">485</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
 <a id="a25533a4a1e5c4d04006263f443b30471"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25533a4a1e5c4d04006263f443b30471">&#9670;&nbsp;</a></span>NumericalODESolver</h2>
 
@@ -343,7 +378,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Assign values from config file to variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8cc_source.html#l00148">148</a> of file <a class="el" href="core_2param_2param_8cc_source.html">param.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8cc_source.html#l00174">174</a> of file <a class="el" href="core_2param_2param_8cc_source.html">param.cc</a>.</p>
 
 </div>
 </div>
@@ -606,7 +641,7 @@ bound_space = false  </pre>
 Default value: <code>false</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 cache_neighbors = false  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00365">365</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00403">403</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +678,7 @@ calculate_gradients = true  </pre>
 <p>Run the simulation partially on the GPU for improved performance. Possible values: "cpu", "cuda", "opencl" Default value: <code>"cpu"</code><br />
 TOML config file: [experimental] compute_target = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00493">493</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00543">543</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +698,7 @@ TOML config file: [experimental] compute_target = false </p>
 TOML config file: <pre class="fragment">[development]
 debug_numa = false  </pre> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00459">459</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00517">517</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +717,7 @@ debug_numa = false  </pre> </dd></dl>
 Default value: <code>false</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 detect_static_sim_objects = false  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00355">355</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00393">393</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +753,27 @@ TOML config file: </p><pre class="fragment">   [simulation]
 <p>Write data to file for post-simulation visualization Default value: <code>false</code><br />
 TOML config file: </p><pre class="fragment">[visualization]
 export = false  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00251">251</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00255">255</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a id="a8c8460b254211564b6fe0edca9dfa0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8460b254211564b6fe0edca9dfa0ee">&#9670;&nbsp;</a></span>insitu_visualization_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::Param::insitu_visualization_ = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use ParaView Catalyst for insitu visualization.<br />
+Insitu visualization supports live visualization and rendering without writing files to the harddisk.<br />
+ Default value: <code>false</code><br />
+TOML config file: </p><pre class="fragment">[visualization]
+insitu = false  </pre> 
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00247">247</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -741,22 +796,24 @@ leaking_edges = true  </pre>
 
 </div>
 </div>
-<a id="a9a1287ac6f95eeb59027d51dfa49e861"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a1287ac6f95eeb59027d51dfa49e861">&#9670;&nbsp;</a></span>live_visualization_</h2>
+<a id="ab4f959125f7890d988e464ac881d8d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f959125f7890d988e464ac881d8d7d">&#9670;&nbsp;</a></span>mapped_data_array_mode_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::Param::live_visualization_ = false</td>
+          <td class="memname"><a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797b">Param::MappedDataArrayMode</a> bdm::Param::mapped_data_array_mode_</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use ParaView Catalyst for live visualization.<br />
-Default value: <code>false</code><br />
-TOML config file: </p><pre class="fragment">[visualization]
-live = false  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00243">243</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      MappedDataArrayMode::kZeroCopy</div></div><!-- fragment --><p>This parameter sets the operation mode in <code><a class="el" href="classbdm_1_1MappedDataArray.html">bdm::MappedDataArray</a></code>.<br />
+Allowed values are defined in <code>MappedDataArrayMode</code><br />
+Possible values: zero-copy, cache, copy<br />
+Default value: <code>zero-copy</code><br />
+TOML config file: </p><pre class="fragment">[performance]
+mapped_data_array_mode_ = "zero-copy"  </pre> 
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00495">495</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -797,7 +854,7 @@ Therefore, this parameter specifies the shift for N. <code>N = 2 ^ shift</code><
 Default value: <code>8</code> <code>-&gt; N = 256</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 mem_mgr_aligned_pages_shift = 8  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00403">403</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00441">441</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -815,7 +872,7 @@ mem_mgr_aligned_pages_shift = 8  </pre>
 <p>The BioDynaMo memory manager allocates memory in increasing sizes using a geometric series. This parameter specifies the growth rate. Default value: <code>2.0</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 mem_mgr_growth_rate = 1.1  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00412">412</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00450">450</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +893,7 @@ This value must be bigger than <code>PAGE_SIZE * 2 ^ mem_mgr_growth_rate_</code>
 Default value: <code>10485760</code> (10 MB)<br />
 TOML config file: </p><pre class="fragment">[performance]
 mem_mgr_max_mem_per_thread = 10485760  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00424">424</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00462">462</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -875,7 +932,7 @@ min_bound = 0  </pre> </dd></dl>
 If this parameter is set to false, the balancing function will first create new objects and delete the old ones in a second step. In the worst case this will double the required memory for simulation objects for. Default value: <code>true</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 minimize_memory_while_rebalancing = true  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00438">438</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00476">476</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -899,7 +956,7 @@ minimize_memory_while_rebalancing = true  </pre>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00516">516</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00566">566</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -933,7 +990,7 @@ minimize_memory_while_rebalancing = true  </pre>
 <p>Compile OpenCL kernels with debugging symbols, for debugging on CPU targets with GNU gdb. Default value: <code>false</code><br />
 TOML config file: [experimental] opencl_debug_ = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00501">501</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00551">551</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -971,25 +1028,45 @@ ouput_dir = "output"  </pre>
 <p>Set the index of the preferred GPU you wish to use. Default value: <code>0</code><br />
 TOML config file: [experimental] preferred_gpu = 0 </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00508">508</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00558">558</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
-<a id="aa8794382394ee28b7c0093d0124ae6ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8794382394ee28b7c0093d0124ae6ec">&#9670;&nbsp;</a></span>python_paraview_pipeline_</h2>
+<a id="a1983049a01cf8a81c97f4257eb667a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1983049a01cf8a81c97f4257eb667a22">&#9670;&nbsp;</a></span>pv_insitu_pipeline_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::Param::python_paraview_pipeline_ = false</td>
+          <td class="memname">std::string bdm::Param::pv_insitu_pipeline_</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use the python script (simple_pipeline.py) to do Live Visualization with ParaView. If false, we use the C++ pipeline Default value: <code>false</code><br />
-TOML config file: [development] python_paraview_pipeline_ = false </p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      <a class="code" href="namespacebdm.html#a0feb64c43069846f8e6b9ffd524c52a4">Concat</a>(std::getenv(<span class="stringliteral">&quot;BDMSYS&quot;</span>),</div><div class="line">             <span class="stringliteral">&quot;/include/core/visualization/paraview/default_insitu_pipeline.py&quot;</span>)</div></div><!-- fragment --><p>Enable insitu visualization with a custom python pipeline Default value: <code>"&lt;path-to-bdm&gt;/include/core/visualization/paraview/default_insitu_pipeline.py"</code><br />
+TOML config file: [visualization] pv_insitu_pipeline = "" </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00467">467</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00271">271</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a id="abd8c1ce20b95447c635402bee3475bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8c1ce20b95447c635402bee3475bd2">&#9670;&nbsp;</a></span>pv_insitu_pipeline_arguments_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string bdm::Param::pv_insitu_pipeline_arguments_ = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Arguments that will be passed to the python ParaView insitu pipeline specified in <code><a class="el" href="structbdm_1_1Param.html#a1983049a01cf8a81c97f4257eb667a22">Param::pv_insitu_pipeline_</a></code>.<br />
+The arguments will be passed to the ExtendDefaultPipeline function <code>def ExtendDefaultPipeline(renderview, coprocessor, datadescription, script_args):</code> as fourth argument.<br />
+Default value: ""<br />
+TOML config file: </p><pre class="fragment">[visualization]
+pv_insitu_pipeline_arguments = ""  </pre> 
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00286">286</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1110,7 @@ random_seed = 4357  </pre>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00515">515</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00565">565</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1168,7 @@ restore_file = &lt;path&gt;/&lt;filename&gt;.root
 Default value: <code>false</code><br />
 TOML config file: </p><pre class="fragment">[visualization]
 root = false  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00259">259</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00263">263</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +1206,7 @@ run_mechanical_interactions = true  </pre>
 Default value: <code>1000</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 scheduling_batch_size = 1000  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00342">342</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00380">380</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1224,7 @@ scheduling_batch_size = 1000  </pre>
 <p>Display the current simulation step in the terminal output Default value: <code>true</code><br />
 TOML config file: [development] show_simulation_step = true </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00474">474</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00524">524</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1261,7 @@ max_displacement = 3.0  </pre>
 <p>Sets the frequency at which the current simulation step is displayed. Display every <code>simulation_step_freq_</code> steps. Default value: <code>10</code><br />
 TOML config file: [development] simulation_step_freq = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00482">482</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00532">532</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1298,7 @@ time_step = 0.0125  </pre>
 Default value: <code>0.9</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 souid_defragmentation_high_watermark = 0.9  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00383">383</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00421">421</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1317,7 @@ souid_defragmentation_high_watermark = 0.9  </pre>
 Default value: <code>0.5</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 souid_defragmentation_low_watermark = 0.5  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00374">374</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00412">412</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1337,7 @@ If set to true it prints simulation data at the end of the simulation to std::co
 Default Value: <code>false</code><br />
 TOML config file: </p><pre class="fragment">[development]
 statistics = false  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00450">450</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00508">508</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1356,7 @@ statistics = false  </pre>
 Possible values are: none, user-specified, automatic.<br />
 TOML config file: </p><pre class="fragment">[simulation]
 thread_safety_mechanism_ = "none"  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00223">223</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00224">224</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1374,27 @@ thread_safety_mechanism_ = "none"  </pre>
 <p>Use the BioDynaMo memory manager. Default value: <code>true</code><br />
 TOML config file: </p><pre class="fragment">[performance]
 use_bdm_mem_mgr = true  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00391">391</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00429">429</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a id="a2dc4709d55fc6ac032830e7fd25b7e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc4709d55fc6ac032830e7fd25b7e0e">&#9670;&nbsp;</a></span>visualization_compress_pv_files_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::Param::visualization_compress_pv_files_ = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Specifies if the ParView files that are generated in export mode should be compressed.<br />
+Default value: true<br />
+TOML config file: </p><pre class="fragment">[visualization]
+export = true
+compress_pv_files = true</pre> 
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00370">370</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1316,7 +1413,7 @@ use_bdm_mem_mgr = true  </pre>
 Default value: <code>"paraview"</code><br />
 TOML config file: </p><pre class="fragment">[visualization]
 adaptor = &lt;name_of_adaptor&gt;  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00235">235</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00236">236</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1335,26 +1432,26 @@ adaptor = &lt;name_of_adaptor&gt;  </pre>
 Default value: <code>true</code><br />
 TOML config file: </p><pre class="fragment">[visualization]
 export_generate_pvsm = true  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00278">278</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00305">305</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
-<a id="ad9e07ec7e600b7462833a6ddd07850f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9e07ec7e600b7462833a6ddd07850f2">&#9670;&nbsp;</a></span>visualization_export_interval_</h2>
+<a id="a4546319f8f07c8b4efedba137c34adc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4546319f8f07c8b4efedba137c34adc1">&#9670;&nbsp;</a></span>visualization_interval_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t bdm::Param::visualization_export_interval_ = 1</td>
+          <td class="memname">uint32_t bdm::Param::visualization_interval_ = 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>If <code>export_visualization_</code> is set to true, this parameter specifies how often it should be exported. 1 = every timestep, 10: every 10 time steps.<br />
 Default value: <code>1</code><br />
 TOML config file: </p><pre class="fragment">[visualization]
-export_interval = 1  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00269">269</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+interval = 1  </pre> 
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00296">296</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1369,10 +1466,10 @@ export_interval = 1  </pre>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Spceifies for which substances extracellular diffusion should be visualized.<br />
+<p>Specifies for which substances extracellular diffusion should be visualized.<br />
 Default value: empty (no diffusion will be visualized)<br />
 TOML config file: </p><pre class="fragment">[visualization]
-# turn on live or export
+# turn on insitu or export
 export = true
 
   [[visualize_diffusion]]
@@ -1388,7 +1485,7 @@ export = true
   [[visualize_diffusion]]
   name = "K"
   # default values: concentration = true and gradient = false  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00332">332</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00359">359</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1506,7 @@ export = true
 Every simulation object defines the minimum set of data members which are required to visualize it. (e.g. <a class="el" href="classbdm_1_1Cell.html">Cell</a>: <code>position_</code> and <code>diameter_</code>).<br />
 With this parameter it is also possible to extend the number of data members that are sent to the visualization engine. Default value: empty (no simulation object will be visualized)<br />
 NB: This data member is not backed up, due to a ROOT error. TOML config file: </p><pre class="fragment">[visualization]
-# turn on live or export
+# turn on insitu or export
 export = true
 
   [[visualize_sim_object]]
@@ -1420,7 +1517,7 @@ export = true
   # The former block can be repeated for further simulation objects
   [[visualize_sim_object]]
   name = "Neurite"  </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00302">302</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00329">329</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>

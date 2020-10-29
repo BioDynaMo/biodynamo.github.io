@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['parallel_5fresize_5fvector_2eh',['parallel_resize_vector.h',['../parallel__resize__vector_8h.html',1,'']]],
-  ['param_2ecc',['param.cc',['../core_2param_2param_8cc.html',1,'(Global Namespace)'],['../neuroscience_2param_8cc.html',1,'(Global Namespace)']]],
-  ['param_2eh',['param.h',['../core_2param_2param_8h.html',1,'(Global Namespace)'],['../neuroscience_2param_8h.html',1,'(Global Namespace)']]]
+  ['op_5ftimer_2eh',['op_timer.h',['../op__timer_8h.html',1,'']]],
+  ['opencl_5fstate_2eh',['opencl_state.h',['../opencl__state_8h.html',1,'']]],
+  ['operation_2ecc',['operation.cc',['../operation_8cc.html',1,'']]],
+  ['operation_2eh',['operation.h',['../operation_8h.html',1,'']]],
+  ['operation_5fregistry_2ecc',['operation_registry.cc',['../operation__registry_8cc.html',1,'']]],
+  ['operation_5fregistry_2eh',['operation_registry.h',['../operation__registry_8h.html',1,'']]]
 ];

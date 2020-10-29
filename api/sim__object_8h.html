@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -86,20 +86,20 @@ $(function() {
 <code>#include &quot;<a class="el" href="shape_8h_source.html">core/shape.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="so__pointer_8h_source.html">core/sim_object/so_pointer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="so__uid_8h_source.html">core/sim_object/so_uid.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sim__object_2so__visitor_8h_source.html">core/sim_object/so_visitor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="so__visitor_8h_source.html">core/sim_object/so_visitor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="macros_8h_source.html">core/util/macros.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="root_8h_source.html">core/util/root.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spinlock_8h_source.html">core/util/spinlock.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sim_object.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sim__object_8h__incl.svg" width="2794" height="708"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sim__object_8h__incl.svg" width="3238" height="708"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sim__object_8h__dep__incl.svg" width="3699" height="588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sim__object_8h__dep__incl.svg" width="4098" height="603"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -118,100 +118,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ac32c3106cd33d1d92722d3265238cf01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__object_8h.html#ac32c3106cd33d1d92722d3265238cf01">BDM_SIM_OBJECT_FOREACHDM_BODY</a>(...)&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a94d0a7b023e21e4b25f761c84d1120ef">LOOP</a>(<a class="el" href="sim__object_8h.html#a00c1a37c29b669991429b321fb15869d">BDM_SIM_OBJECT_FOREACHDM_BODY_ITERATOR</a>, __VA_ARGS__))</td></tr>
-<tr class="separator:ac32c3106cd33d1d92722d3265238cf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c1a37c29b669991429b321fb15869d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__object_8h.html#a00c1a37c29b669991429b321fb15869d">BDM_SIM_OBJECT_FOREACHDM_BODY_ITERATOR</a>(data_member)</td></tr>
-<tr class="separator:a00c1a37c29b669991429b321fb15869d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2773500b41bcfa96cd1f50ef7fb2e7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__object_8h.html#ac2773500b41bcfa96cd1f50ef7fb2e7f">BDM_SIM_OBJECT_FOREACHDMIN_BODY</a>(...)&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a94d0a7b023e21e4b25f761c84d1120ef">LOOP</a>(<a class="el" href="sim__object_8h.html#af382b0692d3ed5c73c7f4cfc10f11eb8">BDM_SIM_OBJECT_FOREACHDMIN_BODY_ITERATOR</a>, __VA_ARGS__))</td></tr>
-<tr class="separator:ac2773500b41bcfa96cd1f50ef7fb2e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af382b0692d3ed5c73c7f4cfc10f11eb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__object_8h.html#af382b0692d3ed5c73c7f4cfc10f11eb8">BDM_SIM_OBJECT_FOREACHDMIN_BODY_ITERATOR</a>(data_member)</td></tr>
-<tr class="separator:af382b0692d3ed5c73c7f4cfc10f11eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad183c3423c5115a10ee9f5213dd9ac0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__object_8h.html#ad183c3423c5115a10ee9f5213dd9ac0d">BDM_SIM_OBJECT_HEADER</a>(class_name,  base_class,  class_version_id, ...)</td></tr>
-<tr class="separator:ad183c3423c5115a10ee9f5213dd9ac0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df9782240af5794b6df3010b6f55ae0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__object_8h.html#a0df9782240af5794b6df3010b6f55ae0">BDM_SIM_OBJECT_HEADER</a>(class_name,  base_class,  class_version_id)</td></tr>
+<tr class="separator:a0df9782240af5794b6df3010b6f55ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ac32c3106cd33d1d92722d3265238cf01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac32c3106cd33d1d92722d3265238cf01">&#9670;&nbsp;</a></span>BDM_SIM_OBJECT_FOREACHDM_BODY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BDM_SIM_OBJECT_FOREACHDM_BODY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a94d0a7b023e21e4b25f761c84d1120ef">LOOP</a>(<a class="el" href="sim__object_8h.html#a00c1a37c29b669991429b321fb15869d">BDM_SIM_OBJECT_FOREACHDM_BODY_ITERATOR</a>, __VA_ARGS__))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00044">44</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a id="a00c1a37c29b669991429b321fb15869d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00c1a37c29b669991429b321fb15869d">&#9670;&nbsp;</a></span>BDM_SIM_OBJECT_FOREACHDM_BODY_ITERATOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BDM_SIM_OBJECT_FOREACHDM_BODY_ITERATOR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">data_member</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (is_so_ptr&lt;decltype(data_member)&gt;::value) {                            \</div><div class="line">    const uint64_t uid = detail::ExtractUid::GetUid(data_member);           \</div><div class="line">    visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(uint64_t).hash_code(),              \</div><div class="line">                   static_cast&lt;const void*&gt;(&amp;uid));                         \</div><div class="line">  } <span class="keywordflow">else</span> {                                                                  \</div><div class="line">    visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(decltype(data_member)).hash_code(), \</div><div class="line">                   static_cast&lt;const void*&gt;(&amp;data_member));                 \</div><div class="line">  }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00047">47</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a id="ac2773500b41bcfa96cd1f50ef7fb2e7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2773500b41bcfa96cd1f50ef7fb2e7f">&#9670;&nbsp;</a></span>BDM_SIM_OBJECT_FOREACHDMIN_BODY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BDM_SIM_OBJECT_FOREACHDMIN_BODY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em></td><td>)</td>
-          <td>&#160;&#160;&#160;EVAL(<a class="el" href="macros_8h.html#a94d0a7b023e21e4b25f761c84d1120ef">LOOP</a>(<a class="el" href="sim__object_8h.html#af382b0692d3ed5c73c7f4cfc10f11eb8">BDM_SIM_OBJECT_FOREACHDMIN_BODY_ITERATOR</a>, __VA_ARGS__))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00057">57</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a id="af382b0692d3ed5c73c7f4cfc10f11eb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af382b0692d3ed5c73c7f4cfc10f11eb8">&#9670;&nbsp;</a></span>BDM_SIM_OBJECT_FOREACHDMIN_BODY_ITERATOR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BDM_SIM_OBJECT_FOREACHDMIN_BODY_ITERATOR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">data_member</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                   \</div><div class="line">    auto it = dm_selector.find(#data_member);                         \</div><div class="line">    if (it != dm_selector.end()) {                                    \</div><div class="line">      if (is_so_ptr&lt;decltype(data_member)&gt;::value) {                  \</div><div class="line">        const uint64_t uid = detail::ExtractUid::GetUid(data_member); \</div><div class="line">        visitor-&gt;Visit(#data_member, <span class="keyword">typeid</span>(uint64_t).hash_code(),    \</div><div class="line">                       static_cast&lt;const void*&gt;(&amp;uid));               \</div><div class="line">      } <span class="keywordflow">else</span> {                                                        \</div><div class="line">        visitor-&gt;Visit(#data_member,                                  \</div><div class="line">                       <span class="keyword">typeid</span>(decltype(data_member)).hash_code(),     \</div><div class="line">                       static_cast&lt;const void*&gt;(&amp;data_member));       \</div><div class="line">      }                                                               \</div><div class="line">    }                                                                 \</div><div class="line">  }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00060">60</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
-
-</div>
-</div>
-<a id="ad183c3423c5115a10ee9f5213dd9ac0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad183c3423c5115a10ee9f5213dd9ac0d">&#9670;&nbsp;</a></span>BDM_SIM_OBJECT_HEADER</h2>
+<a id="a0df9782240af5794b6df3010b6f55ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df9782240af5794b6df3010b6f55ae0">&#9670;&nbsp;</a></span>BDM_SIM_OBJECT_HEADER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,13 +144,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">class_version_id, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
+          <td class="paramname">class_version_id&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -247,7 +153,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Macro to insert required boilerplate code into simulation object </p><dl class="params"><dt>Parameters</dt><dd>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>:                                                                     \</div><div class="line">  using Base = base_class;                                                   \</div><div class="line">                                                                             \</div><div class="line">  explicit class_name(TRootIOCtor* io_ctor) {}                               \</div><div class="line">                                                                             \ \</div><div class="line">  SimObject* GetInstance(<span class="keyword">const</span> Event&amp; event, SimObject* other,               \</div><div class="line">                         uint64_t new_oid = 0)<span class="keyword"> const override </span>{              \</div><div class="line">    return <span class="keyword">new</span> class_name(event, other, new_oid);                            \</div><div class="line">  }                                                                          \</div><div class="line">                                                                             \                                       \</div><div class="line">  SimObject* GetCopy()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> class_name(*<span class="keyword">this</span>); }      \</div><div class="line">                                                                             \</div><div class="line">  const <span class="keywordtype">char</span>* GetTypeName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> #class_name; }           \</div><div class="line">                                                                             \</div><div class="line"> protected:                                                                  \                \</div><div class="line">  Base* UpCast() { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Base*<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }                        \</div><div class="line">                                                                             \                \</div><div class="line">  const Base* UpCast()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>Base*<span class="keyword">&gt;</span>(<span class="keyword">this</span>); }      <a class="code" href="root_8h.html#a40937bdb30b69e4fbfea995ac82c1c82">\</a></div><div class="line"><a class="code" href="root_8h.html#a40937bdb30b69e4fbfea995ac82c1c82">                                                                             \</a></div><div class="line"><a class="code" href="root_8h.html#a40937bdb30b69e4fbfea995ac82c1c82">  BDM_CLASS_DEF_OVERRIDE</a>(class_name, class_version_id)</div><div class="ttc" id="root_8h_html_a40937bdb30b69e4fbfea995ac82c1c82"><div class="ttname"><a href="root_8h.html#a40937bdb30b69e4fbfea995ac82c1c82">BDM_CLASS_DEF_OVERRIDE</a></div><div class="ttdeci">#define BDM_CLASS_DEF_OVERRIDE(class_name, class_version_id)</div><div class="ttdef"><b>Definition:</b> <a href="root_8h_source.html#l00202">root.h:202</a></div></div>
+</div><!-- fragment --><p>Macro to insert required boilerplate code into simulation object </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">class_name</td><td>scalar class name of the simulation object </td></tr>
     <tr><td class="paramname">base_class</td><td>scalar class name of the base simulation object </td></tr>
@@ -257,7 +164,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00085">85</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object_8h_source.html#l00050">50</a> of file <a class="el" href="sim__object_8h_source.html">sim_object.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aba5aaed905f55ca168900216b9fb310f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59778ac67acdbdfbe2ffb08f0b72d10c"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObjectVector.html#a59778ac67acdbdfbe2ffb08f0b72d10c">operator[]</a> (const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;handle)</td></tr>
 <tr class="separator:a59778ac67acdbdfbe2ffb08f0b72d10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bc7df6a24002c223498b6db29ac10f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObjectVector.html#a20bc7df6a24002c223498b6db29ac10f">operator==</a> (const <a class="el" href="classbdm_1_1SimObjectVector.html">SimObjectVector</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="separator:a20bc7df6a24002c223498b6db29ac10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bb599b45ccc48949356d7deadc35d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SimObjectVector.html#a48bb599b45ccc48949356d7deadc35d1">operator!=</a> (const <a class="el" href="classbdm_1_1SimObjectVector.html">SimObjectVector</a>&lt; T &gt; &amp;other) const</td></tr>
+<tr class="separator:a48bb599b45ccc48949356d7deadc35d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -178,6 +182,66 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00057">57</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+
+</div>
+</div>
+<a id="a48bb599b45ccc48949356d7deadc35d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bb599b45ccc48949356d7deadc35d1">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbdm_1_1SimObjectVector.html">bdm::SimObjectVector</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1SimObjectVector.html">SimObjectVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00093">93</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+
+</div>
+</div>
+<a id="a20bc7df6a24002c223498b6db29ac10f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bc7df6a24002c223498b6db29ac10f">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbdm_1_1SimObjectVector.html">bdm::SimObjectVector</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1SimObjectVector.html">SimObjectVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00077">77</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +417,7 @@ template&lt;typename T&gt; </div>
 
 <p>one std::vector&lt;T&gt; for each numa node </p>
 
-<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00079">79</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00099">99</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +443,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00080">80</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00100">100</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +469,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00081">81</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sim__object__vector_8h_source.html#l00101">101</a> of file <a class="el" href="sim__object__vector_8h_source.html">sim_object_vector.h</a>.</p>
 
 </div>
 </div>

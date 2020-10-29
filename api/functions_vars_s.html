@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -62,6 +62,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>schedule_ops_
+: <a class="el" href="classbdm_1_1Scheduler.html#ab4a313c8b0fa299c4f2faed035d4f46e">bdm::Scheduler</a>
+</li>
 <li>scheduled_ops_
 : <a class="el" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">bdm::RunAllScheduledOps</a>
 </li>
@@ -74,20 +77,17 @@ $(function() {
 <li>scheduler_
 : <a class="el" href="classbdm_1_1Simulation.html#aa08fb1afa3ef057f677d92707fe08f26">bdm::Simulation</a>
 </li>
+<li>SchedulerTest
+: <a class="el" href="classbdm_1_1Scheduler.html#ad7dc608bb03c984b12f5e79036312fe0">bdm::Scheduler</a>
+</li>
 <li>scheduling_batch_size_
 : <a class="el" href="structbdm_1_1Param.html#adac07de04521ddd5e025cc00c5664851">bdm::Param</a>
 </li>
 <li>search_index_
 : <a class="el" href="classbdm_1_1SoUidGenerator.html#a3662af423d0f4b9c2154a7d935fa65d9">bdm::SoUidGenerator</a>
 </li>
-<li>session_manager_
-: <a class="el" href="classbdm_1_1InSituPipeline.html#a45757c4e141604d013a60e0d1e0243d2">bdm::InSituPipeline</a>
-</li>
-<li>setup_iteration_op_
-: <a class="el" href="classbdm_1_1Scheduler.html#a1c6e1a620cb81617593ac00f9b790aac">bdm::Scheduler</a>
-</li>
 <li>shape_
-: <a class="el" href="structbdm_1_1VtkSoGrid.html#af932d1a1ac08274659764f82ea93da9c">bdm::VtkSoGrid</a>
+: <a class="el" href="classbdm_1_1VtkSimObjects.html#ac335dd752234cc8d1c77a3c53eea08e2">bdm::VtkSimObjects</a>
 </li>
 <li>show_simulation_step_
 : <a class="el" href="structbdm_1_1Param.html#a10912de24f843fd275c0aad868259b97">bdm::Param</a>
@@ -102,7 +102,11 @@ $(function() {
 : <a class="el" href="classbdm_1_1CommandLineOptions.html#a5d548ce3bf5431e3ddb328a04f814a4f">bdm::CommandLineOptions</a>
 </li>
 <li>sim_objects_
-: <a class="el" href="classbdm_1_1ResourceManager.html#a35225455554669be879ee829d968b13f">bdm::ResourceManager</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a995035a8dd2187a472f4e424865d724d">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#a35225455554669be879ee829d968b13f">bdm::ResourceManager</a>
+</li>
+<li>simulation_info_json_generated_
+: <a class="el" href="classbdm_1_1ParaviewAdaptor.html#ae321dc2349c22f3811a9e684de5157bf">bdm::ParaviewAdaptor</a>
 </li>
 <li>simulation_max_displacement_
 : <a class="el" href="structbdm_1_1Param.html#af493a386064dc32d43d19b8ebcd5e7cb">bdm::Param</a>
@@ -140,9 +144,6 @@ $(function() {
 <li>so_functor_
 : <a class="el" href="structbdm_1_1ReductionOp.html#a375d8395ddfd30a9d29c48b5ad3c279c">bdm::ReductionOp&lt; T &gt;</a>
 </li>
-<li>so_grid_
-: <a class="el" href="structbdm_1_1ParaviewSoVisitor_1_1ParaviewImpl.html#afc8c6785d659268295e6fc959db33d91">bdm::ParaviewSoVisitor::ParaviewImpl</a>
-</li>
 <li>so_per_numa
 : <a class="el" href="structbdm_1_1RearrangeFunctor.html#a50e9ede555eeedef39f6cd8c66fb38ca">bdm::RearrangeFunctor</a>
 </li>
@@ -151,9 +152,6 @@ $(function() {
 </li>
 <li>so_uid_reused_
 : <a class="el" href="classbdm_1_1SoUidMap.html#a0b3468ab9ef9cde16c337140b5ea24a5">bdm::SoUidMap&lt; TValue &gt;</a>
-</li>
-<li>sort_balance_op_
-: <a class="el" href="classbdm_1_1Scheduler.html#a7a0b193b2df6251fdb0c29876dbd73fe">bdm::Scheduler</a>
 </li>
 <li>sorted_so_handles
 : <a class="el" href="structbdm_1_1RearrangeFunctor.html#a5412e0699b348a2ea6854ef7f3d1f797">bdm::RearrangeFunctor</a>
@@ -177,11 +175,9 @@ $(function() {
 : <a class="el" href="structbdm_1_1DisplacementOp.html#a03cf84d2f6d438d3ce2ec608d41c4b78">bdm::DisplacementOp</a>
 , <a class="el" href="structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a030d83d385d2cfb03cc2a7ef43a05339">bdm::ForEachNeighborWithinRadiusFunctor</a>
 </li>
-<li>standalone_enabled_
-: <a class="el" href="structbdm_1_1Operation.html#ac24625b7fbd6ae258b339eb08d804150">bdm::Operation</a>
-</li>
 <li>start_
-: <a class="el" href="classbdm_1_1Timing.html#afb03795f79dd8290366f29f05bc0ac8e">bdm::Timing</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a95e4f1d3f081b659059162476589cf82">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+, <a class="el" href="classbdm_1_1Timing.html#afb03795f79dd8290366f29f05bc0ac8e">bdm::Timing</a>
 , <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html#a354dd2095fa669e29b4233759e814fc7">bdm::UniformGridEnvironment::Box</a>
 </li>
 <li>start_pointer_

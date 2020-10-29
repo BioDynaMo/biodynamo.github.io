@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -70,6 +70,9 @@ $(function() {
 </li>
 <li>cache_neighbors_
 : <a class="el" href="structbdm_1_1Param.html#a3c1611769f7c143d49de7843d7bcb43a">bdm::Param</a>
+</li>
+<li>CalcPieceExtents()
+: <a class="el" href="classbdm_1_1VtkDiffusionGrid.html#ab863b30e4fcf3882991a374568a87d61">bdm::VtkDiffusionGrid</a>
 </li>
 <li>CalcSimDimensionsAndLargestSimObject()
 : <a class="el" href="classbdm_1_1Environment.html#a37513c82f8c3a2279f2ffc63caa5ad1f">bdm::Environment</a>
@@ -174,10 +177,14 @@ $(function() {
 , <a class="el" href="classbdm_1_1SoUidMap.html#a93db971366e587872650bab2763bb199">bdm::SoUidMap&lt; TValue &gt;</a>
 </li>
 <li>Clear()
-: <a class="el" href="classbdm_1_1UniformGridEnvironment.html#aa311893d3310022270f91a28bafc2a9f">bdm::UniformGridEnvironment</a>
+: <a class="el" href="structbdm_1_1TypeIndex.html#aa85e07d2143bc6f021f65b001348088a">bdm::TypeIndex</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#aa311893d3310022270f91a28bafc2a9f">bdm::UniformGridEnvironment</a>
 </li>
 <li>clear()
 : <a class="el" href="classbdm_1_1UnorderedFlatmap.html#acc4a5072085a51f4a3c61cbe960618e5">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
+</li>
+<li>ClearLookup()
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a99ad4a3c583bd5de8c5ed4d00ea983ab">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>Clock
 : <a class="el" href="classbdm_1_1Scheduler.html#a337a791a56b9163ebe9663e70eac3229">bdm::Scheduler</a>
@@ -190,11 +197,17 @@ $(function() {
 <li>cnt
 : <a class="el" href="structbdm_1_1RearrangeFunctor.html#aeb925e9471e3f3cc82c24565c2326a12">bdm::RearrangeFunctor</a>
 </li>
+<li>code_generator_
+: <a class="el" href="classbdm_1_1JitForEachDataMemberFunctor.html#a6a147425ad35b1605e6a55bc8ee3e0b8">bdm::JitForEachDataMemberFunctor</a>
+</li>
 <li>command_line_parameter_str_
 : <a class="el" href="classbdm_1_1Simulation.html#a2426b63107baaaf0ce6157dd0bd69d4c">bdm::Simulation</a>
 </li>
 <li>CommandLineOptions()
 : <a class="el" href="classbdm_1_1CommandLineOptions.html#afc6b73aa0eb734c42d79987d30ebe404">bdm::CommandLineOptions</a>
+</li>
+<li>Compile()
+: <a class="el" href="classbdm_1_1JitForEachDataMemberFunctor.html#aa1c9beaac4630da2f195183ef70adf9b">bdm::JitForEachDataMemberFunctor</a>
 </li>
 <li>Compute()
 : <a class="el" href="classbdm_1_1VTuneOpWrapper.html#a568c8f384f98d53af11271f3782c862d">bdm::VTuneOpWrapper&lt; Op &gt;</a>
@@ -207,7 +220,9 @@ $(function() {
 </li>
 <li>concentration_
 : <a class="el" href="structbdm_1_1Param_1_1VisualizeDiffusion.html#a5474de1413cec9e65640347ec4704c95">bdm::Param::VisualizeDiffusion</a>
-, <a class="el" href="structbdm_1_1VtkDiffusionGrid.html#a399a12946eadde500a41f3d34b83e1fa">bdm::VtkDiffusionGrid</a>
+</li>
+<li>concentration_array_idx_
+: <a class="el" href="classbdm_1_1VtkDiffusionGrid.html#adbcd011c3f64059dbbc6aef9a5844410">bdm::VtkDiffusionGrid</a>
 </li>
 <li>concentration_threshold_
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094">bdm::DiffusionGrid</a>
@@ -229,12 +244,6 @@ $(function() {
 : <a class="el" href="classbdm_1_1ResourceManager.html#a5494df2f3bd21c04e716b7efd392c1d7">bdm::ResourceManager</a>
 , <a class="el" href="classbdm_1_1SoUidMap.html#a58e1d21b0bce4e319027b95bd4247fe9">bdm::SoUidMap&lt; TValue &gt;</a>
 </li>
-<li>controller_
-: <a class="el" href="classbdm_1_1InSituPipeline.html#a2575645c89e63046e0448af8762b2842">bdm::InSituPipeline</a>
-</li>
-<li>CoProcess()
-: <a class="el" href="classbdm_1_1InSituPipeline.html#aa2767ab6a8b9f37ed069533b84645a3e">bdm::InSituPipeline</a>
-</li>
 <li>Copy()
 : <a class="el" href="structbdm_1_1BaseBiologyModule.html#adedb454ee5833559b4c86a766c6ce012">bdm::BaseBiologyModule</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a3f00c8f89f8cc2a6d40a6b679ca76148">bdm::neuroscience::NeuriteElement</a>
@@ -252,7 +261,8 @@ $(function() {
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box_1_1Iterator.html#adc9ecc2be89d219b09fa2169590f3716">bdm::UniformGridEnvironment::Box::Iterator</a>
 </li>
 <li>counter_
-: <a class="el" href="classbdm_1_1ModuleParamUidGenerator.html#a7c1abb299ffd52184ef13fe47d93e676">bdm::ModuleParamUidGenerator</a>
+: <a class="el" href="classbdm_1_1JitForEachDataMemberFunctor.html#ab617ffd20ca2d0b429f3ebe801bec9e8">bdm::JitForEachDataMemberFunctor</a>
+, <a class="el" href="classbdm_1_1ModuleParamUidGenerator.html#a7c1abb299ffd52184ef13fe47d93e676">bdm::ModuleParamUidGenerator</a>
 , <a class="el" href="classbdm_1_1ParaviewAdaptor.html#a3fbe8f323bb279d20c8982b23ab96f6f">bdm::ParaviewAdaptor</a>
 , <a class="el" href="classbdm_1_1Simulation.html#a33d227db1ee65d57f363c5a789e359ef">bdm::Simulation</a>
 , <a class="el" href="classbdm_1_1SoUidGenerator.html#a8b72728ad373eadc94ab793698df4dc0">bdm::SoUidGenerator</a>
@@ -266,9 +276,6 @@ $(function() {
 </li>
 <li>CreateCellsRandom()
 : <a class="el" href="structbdm_1_1ModelInitializer.html#add68668791308815e954bf4f15bc90d8">bdm::ModelInitializer</a>
-</li>
-<li>CreatePipeline()
-: <a class="el" href="classbdm_1_1InSituPipeline.html#a494270a972753169af88179d1ed9680e">bdm::InSituPipeline</a>
 </li>
 <li>CreateVtkObjects()
 : <a class="el" href="classbdm_1_1ParaviewAdaptor.html#a24c07711957c1fa717c8f2a4d51d96a1">bdm::ParaviewAdaptor</a>

@@ -8,8 +8,5 @@ var searchData=
   ['_5f_5fitt_5fstring_5fhandle',['__itt_string_handle',['../struct____itt__string__handle.html',1,'']]],
   ['_5f_5fitt_5fstring_5fhandle_5fcreate',['__itt_string_handle_create',['../vtune_8h.html#ab6338362dc73ff27d0da77bf49704683',1,'vtune.h']]],
   ['_5f_5fitt_5ftask_5fbegin',['__itt_task_begin',['../vtune_8h.html#a90227961fbca78925e869dce482cdbe0',1,'vtune.h']]],
-  ['_5f_5fitt_5ftask_5fend',['__itt_task_end',['../vtune_8h.html#af49eb1afc5bff5d1f90fb0e25d3964d8',1,'vtune.h']]],
-  ['_5floop_5f2_5f1',['_LOOP_2_1',['../macros_8h.html#ae70bcca0590aa28f5736fa683657e9ea',1,'macros.h']]],
-  ['_5floop_5f3_5f1',['_LOOP_3_1',['../macros_8h.html#a894131dab471f064580e6f76f125e518',1,'macros.h']]],
-  ['_5floop_5fne',['_LOOP_NE',['../macros_8h.html#a3309eafcb5130ae36663d3ca3aec43d5',1,'macros.h']]]
+  ['_5f_5fitt_5ftask_5fend',['__itt_task_end',['../vtune_8h.html#af49eb1afc5bff5d1f90fb0e25d3964d8',1,'vtune.h']]]
 ];

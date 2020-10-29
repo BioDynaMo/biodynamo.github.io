@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.1.0-657-g44ca783f</span>
+   &#160;<span id="projectnumber">v0.9</span>
    </div>
   </td>
  </tr>
@@ -72,20 +72,29 @@ $(function() {
 : <a class="el" href="classbdm_1_1VTuneOpWrapper.html#a0e39614a06b3930d27e0c7781e5769c5">bdm::VTuneOpWrapper&lt; Op &gt;</a>
 , <a class="el" href="classbdm_1_1VTuneTask.html#abde33b6a9961034af53a27d0c1ef8672">bdm::VTuneTask</a>
 </li>
+<li>tclass_
+: <a class="el" href="classbdm_1_1VtkSimObjects.html#af4899ec35477535fb4836f70461af023">bdm::VtkSimObjects</a>
+</li>
 <li>TearDown()
 : <a class="el" href="structbdm_1_1DisplacementOpCuda.html#af89cd654842e5e8914c3618d63720aab">bdm::DisplacementOpCuda</a>
 , <a class="el" href="structbdm_1_1Operation.html#a9238c049bfa4d46f6e882149c43ad9a9">bdm::Operation</a>
 , <a class="el" href="structbdm_1_1OperationImpl.html#a512a4e0aa0d4ef419de947a555c67299">bdm::OperationImpl</a>
 , <a class="el" href="structbdm_1_1ReductionOp.html#a353b3b33ff99efee3508721d018f83f5">bdm::ReductionOp&lt; T &gt;</a>
 </li>
-<li>teardown_iteration_op_
-: <a class="el" href="classbdm_1_1Scheduler.html#afc9b592736841772090a0dc7dc4ace4d">bdm::Scheduler</a>
-</li>
 <li>TearDownIterationAll()
 : <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#afd7742a308f8f5406ed021026747148c">bdm::InPlaceExecutionContext</a>
 </li>
 <li>TearDownOps()
 : <a class="el" href="classbdm_1_1Scheduler.html#af620cd831cab54644a1017a8e881505e">bdm::Scheduler</a>
+</li>
+<li>temp_array_
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a2d525c28549c4626894fed568ee97063">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+</li>
+<li>temp_values_
+: <a class="el" href="structbdm_1_1GetDataMemberForVis.html#a135696a3e68741865c695e4930cc359d">bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</a>
+</li>
+<li>TempValueType
+: <a class="el" href="structbdm_1_1GetDataMemberForVis.html#a66c6e2873319c2e6785e828c2cc19fa8">bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</a>
 </li>
 <li>tension_
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a62bb9cb84491e4e516e77653389ffd4c">bdm::neuroscience::NeuriteElement</a>
@@ -99,6 +108,9 @@ $(function() {
 <li>theta_
 : <a class="el" href="structbdm_1_1CellDivisionEvent.html#aab7e23996075bf387c50a5522bf62c12">bdm::CellDivisionEvent</a>
 , <a class="el" href="structbdm_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#a3104d3f5d21f775b493ccbb751021eb3">bdm::neuroscience::NewNeuriteExtensionEvent</a>
+</li>
+<li>thread_counter_
+: <a class="el" href="classbdm_1_1ThreadInfo.html#ab63b3a2593983cfb6102c4cdbd32cf2b">bdm::ThreadInfo</a>
 </li>
 <li>thread_info_
 : <a class="el" href="classbdm_1_1ResourceManager.html#a90b079c40f9f7e40199c569146ae97ba">bdm::ResourceManager</a>
@@ -131,9 +143,6 @@ $(function() {
 <li>Time()
 : <a class="el" href="classbdm_1_1Timing.html#a46151a3fb416c8be6d15012e15666b8b">bdm::Timing</a>
 </li>
-<li>time_step_
-: <a class="el" href="structbdm_1_1VtkDataArrayWrapper.html#a00dbae57c074cbfcf4f33f6a6ee73409">bdm::VtkDataArrayWrapper</a>
-</li>
 <li>timer_msg_
 : <a class="el" href="structbdm_1_1OpTimer.html#a129a014be5c696b64e59dfcfd327076e">bdm::OpTimer&lt; TOp &gt;</a>
 </li>
@@ -148,7 +157,7 @@ $(function() {
 : <a class="el" href="structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ade119b7eb55941664fc42748ea906440">bdm::DisplacementOpCuda::InitializeGPUData</a>
 </li>
 <li>Timing()
-: <a class="el" href="classbdm_1_1Timing.html#a1709195406ffd6994b4862b9bb92b968">bdm::Timing</a>
+: <a class="el" href="classbdm_1_1Timing.html#ad8945c821b78f82ca6950d49d40fb406">bdm::Timing</a>
 </li>
 <li>TimingAggregator()
 : <a class="el" href="classbdm_1_1TimingAggregator.html#ad700cc0ce0b4560829558c0b1fdd7054">bdm::TimingAggregator</a>
@@ -217,8 +226,17 @@ $(function() {
 : <a class="el" href="structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html#ab7382d8695980f4a32892160fb64d603">bdm::Environment::SimDimensionAndLargestSimObjectFunctor</a>
 </li>
 <li>type
-: <a class="el" href="structbdm_1_1type__ternary__operator_3_01false_00_01T_00_01U_01_4.html#af414487d9d4d6146c619f67a9de2d716">bdm::type_ternary_operator&lt; false, T, U &gt;</a>
+: <a class="el" href="structbdm_1_1GetVtkValueType_3_01double_01_4.html#a7c42231ccf379a89b45df04e81e5084c">bdm::GetVtkValueType&lt; double &gt;</a>
+, <a class="el" href="structbdm_1_1GetVtkValueType_3_01int_01_4.html#a1fbe379e09f4053a24e8447bc0499d51">bdm::GetVtkValueType&lt; int &gt;</a>
+, <a class="el" href="structbdm_1_1GetVtkValueType_3_01MathArray_3_01T_00_01N_01_4_01_4.html#a37864866385799b6bffe9abe5b668af7">bdm::GetVtkValueType&lt; MathArray&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structbdm_1_1GetVtkValueType_3_01SoPointer_3_01T_01_4_01_4.html#a098a023b9618f51d7f46913bb5f232a0">bdm::GetVtkValueType&lt; SoPointer&lt; T &gt; &gt;</a>
+, <a class="el" href="structbdm_1_1GetVtkValueType_3_01SoUid_01_4.html#ace0b9dbf201b3a9dc9ae90abcaef7e29">bdm::GetVtkValueType&lt; SoUid &gt;</a>
+, <a class="el" href="structbdm_1_1GetVtkValueType_3_01uint64__t_01_4.html#aa56490bce423bcbe80ff6c45f15b3257">bdm::GetVtkValueType&lt; uint64_t &gt;</a>
+, <a class="el" href="structbdm_1_1type__ternary__operator_3_01false_00_01T_00_01U_01_4.html#af414487d9d4d6146c619f67a9de2d716">bdm::type_ternary_operator&lt; false, T, U &gt;</a>
 , <a class="el" href="structbdm_1_1type__ternary__operator_3_01true_00_01T_00_01U_01_4.html#a1bcaeb3689605101d21327abfb4815b5">bdm::type_ternary_operator&lt; true, T, U &gt;</a>
+</li>
+<li>type_index_
+: <a class="el" href="classbdm_1_1ResourceManager.html#a847b46a13eeb904cd5bfbd8206d49660">bdm::ResourceManager</a>
 </li>
 </ul>
 </div><!-- contents -->
