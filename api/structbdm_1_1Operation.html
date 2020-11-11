@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af71c268f8ab93714fae49deaa6c1f160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bf351b8b5e383c445ae176b9c0137b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Operation.html">Operation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Operation.html#a3bf351b8b5e383c445ae176b9c0137b5">Clone</a> ()</td></tr>
 <tr class="separator:a3bf351b8b5e383c445ae176b9c0137b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad6710f7e0649712be3ad9ffb8e3f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Operation.html#afad6710f7e0649712be3ad9ffb8e3f49">operator()</a> (<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *so)</td></tr>
-<tr class="separator:afad6710f7e0649712be3ad9ffb8e3f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b64e858fec26e328e4f0bd690167a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Operation.html#a45b64e858fec26e328e4f0bd690167a2">operator()</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent)</td></tr>
+<tr class="separator:a45b64e858fec26e328e4f0bd690167a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70f4540752681cdc64ba697af255664d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Operation.html#a70f4540752681cdc64ba697af255664d">operator()</a> ()</td></tr>
 <tr class="separator:a70f4540752681cdc64ba697af255664d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92921d5ddbf10894e306d5b33328688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Operation.html#ae92921d5ddbf10894e306d5b33328688">AddOperationImpl</a> (<a class="el" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2">OpComputeTarget</a> target, <a class="el" href="structbdm_1_1OperationImpl.html">OperationImpl</a> *impl)</td></tr>
@@ -137,6 +137,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bdm::Operation::Operation </td>
@@ -146,6 +149,11 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Construct an operation</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -360,8 +368,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="afad6710f7e0649712be3ad9ffb8e3f49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afad6710f7e0649712be3ad9ffb8e3f49">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+<a id="a45b64e858fec26e328e4f0bd690167a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b64e858fec26e328e4f0bd690167a2">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,16 +377,16 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void bdm::Operation::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td>
-          <td class="paramname"><em>so</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>agent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Operate on an individual simulation object. Typically this operator is called in a loop over all simulation objects</p>
+<p>Operate on an individual agent. Typically this operator is called in a loop over all agents</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">so</td><td>Handle to the simulation object </td></tr>
+    <tr><td class="paramname">agent</td><td>Handle to the agent </td></tr>
   </table>
   </dd>
 </dl>

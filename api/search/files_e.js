@@ -7,6 +7,8 @@ var searchData=
   ['parallel_5fvtu_5fwriter_2eh',['parallel_vtu_writer.h',['../parallel__vtu__writer_8h.html',1,'']]],
   ['param_2ecc',['param.cc',['../core_2param_2param_8cc.html',1,'(Global Namespace)'],['../neuroscience_2param_8cc.html',1,'(Global Namespace)']]],
   ['param_2eh',['param.h',['../core_2param_2param_8h.html',1,'(Global Namespace)'],['../neuroscience_2param_8h.html',1,'(Global Namespace)']]],
+  ['param_5fgroup_2ecc',['param_group.cc',['../param__group_8cc.html',1,'']]],
+  ['param_5fgroup_2eh',['param_group.h',['../param__group_8h.html',1,'']]],
   ['proc_2ecc',['proc.cc',['../proc_8cc.html',1,'']]],
   ['proc_2eh',['proc.h',['../proc_8h.html',1,'']]]
 ];

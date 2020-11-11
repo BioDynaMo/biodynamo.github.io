@@ -9,6 +9,8 @@ var searchData=
   ['neuromlexporter',['NeuroMLExporter',['../classbdm_1_1NeuroMLExporter.html',1,'bdm']]],
   ['neuronorneurite',['NeuronOrNeurite',['../classbdm_1_1neuroscience_1_1NeuronOrNeurite.html',1,'bdm::neuroscience']]],
   ['neuronsoma',['NeuronSoma',['../classbdm_1_1neuroscience_1_1NeuronSoma.html',1,'bdm::neuroscience']]],
+  ['newagentevent',['NewAgentEvent',['../structbdm_1_1NewAgentEvent.html',1,'bdm']]],
+  ['newagenteventuidgenerator',['NewAgentEventUidGenerator',['../classbdm_1_1NewAgentEventUidGenerator.html',1,'bdm']]],
   ['newneuriteextensionevent',['NewNeuriteExtensionEvent',['../structbdm_1_1neuroscience_1_1NewNeuriteExtensionEvent.html',1,'bdm::neuroscience']]],
   ['node',['Node',['../structbdm_1_1memory__manager__detail_1_1Node.html',1,'bdm::memory_manager_detail']]],
   ['numapoolallocator',['NumaPoolAllocator',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html',1,'bdm::memory_manager_detail']]]

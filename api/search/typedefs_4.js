@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['map',['Map',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a6fd3d7b36e43e4662bd87f512f6c537a',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap::Map()'],['../structbdm_1_1UpdateUidSoHMapFunctor.html#a6448689de4c678b28b4e690943c298bc',1,'bdm::UpdateUidSoHMapFunctor::Map()']]],
-  ['moduleparamuid',['ModuleParamUid',['../namespacebdm.html#abe476bd9b7f889be914257c29fef38e0',1,'bdm']]]
+  ['map',['Map',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#a8073e3a1c29124b40f880411af4c6327',1,'bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap::Map()'],['../structbdm_1_1UpdateUidAgentHandleMapFunctor.html#aa64469c7c452616663924073f13e87c6',1,'bdm::UpdateUidAgentHandleMapFunctor::Map()']]]
 ];

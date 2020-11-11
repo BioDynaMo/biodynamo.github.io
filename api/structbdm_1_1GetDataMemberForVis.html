@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,7 @@ $(function() {
 Public Types</h2></td></tr>
 <tr class="memitem:ade3a087dda39cbb6a0005d7061cf66d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#ade3a087dda39cbb6a0005d7061cf66d6">DataType</a> { <a class="el" href="structbdm_1_1GetDataMemberForVis.html#ade3a087dda39cbb6a0005d7061cf66d6aa6d18370198f5137ce595935d7549c7e">kDefault</a>, 
 <a class="el" href="structbdm_1_1GetDataMemberForVis.html#ade3a087dda39cbb6a0005d7061cf66d6a228eeba18d38fee818a07abd2625c380">kArray</a>, 
-<a class="el" href="structbdm_1_1GetDataMemberForVis.html#ade3a087dda39cbb6a0005d7061cf66d6a17fbe40bfb24ec20d24a5b3166443144">kSoUid</a>, 
+<a class="el" href="structbdm_1_1GetDataMemberForVis.html#ade3a087dda39cbb6a0005d7061cf66d6a01d8ea612d2d74dd1bff82a2168abffe">kAgentUid</a>, 
 <a class="el" href="structbdm_1_1GetDataMemberForVis.html#ade3a087dda39cbb6a0005d7061cf66d6a0724bc7735fa3a26f6c3c068e3a57f86">kSoPointer</a>
  }</td></tr>
 <tr class="separator:ade3a087dda39cbb6a0005d7061cf66d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,18 +93,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c166b13baa05b64434ba9011b8d514e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a075ecf74ac5512e8c5ccec29bb8d4f98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#a075ecf74ac5512e8c5ccec29bb8d4f98">Update</a> ()</td></tr>
 <tr class="separator:a075ecf74ac5512e8c5ccec29bb8d4f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58efc7a19c45cbf5ccaba3f811507cea"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
-<tr class="memitem:a58efc7a19c45cbf5ccaba3f811507cea"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kDefault, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#a58efc7a19c45cbf5ccaba3f811507cea">operator()</a> (<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *so) const</td></tr>
-<tr class="separator:a58efc7a19c45cbf5ccaba3f811507cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80aec81ba109957318a6c4c85901a72b"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
-<tr class="memitem:a80aec81ba109957318a6c4c85901a72b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kArray, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#a80aec81ba109957318a6c4c85901a72b">operator()</a> (<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *so) const</td></tr>
-<tr class="separator:a80aec81ba109957318a6c4c85901a72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f4890160e7dce2e42af19009fb4438"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
-<tr class="memitem:ad7f4890160e7dce2e42af19009fb4438"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kSoUid, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#ad7f4890160e7dce2e42af19009fb4438">operator()</a> (<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *so) const</td></tr>
-<tr class="separator:ad7f4890160e7dce2e42af19009fb4438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd191c12e8ac19a43364d34cd9e56892"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
-<tr class="memitem:acd191c12e8ac19a43364d34cd9e56892"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kSoPointer, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#acd191c12e8ac19a43364d34cd9e56892">operator()</a> (<a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *so) const</td></tr>
-<tr class="separator:acd191c12e8ac19a43364d34cd9e56892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae29c1977988206442745a2bcc74a891"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
+<tr class="memitem:aae29c1977988206442745a2bcc74a891"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kDefault, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#aae29c1977988206442745a2bcc74a891">operator()</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent) const</td></tr>
+<tr class="separator:aae29c1977988206442745a2bcc74a891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f5f6018d05aecce0fe65a4406804bb"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
+<tr class="memitem:a08f5f6018d05aecce0fe65a4406804bb"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kArray, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#a08f5f6018d05aecce0fe65a4406804bb">operator()</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent) const</td></tr>
+<tr class="separator:a08f5f6018d05aecce0fe65a4406804bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa20158c55b28eb7a905aaccaab3aac5"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
+<tr class="memitem:afa20158c55b28eb7a905aaccaab3aac5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kAgentUid, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#afa20158c55b28eb7a905aaccaab3aac5">operator()</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent) const</td></tr>
+<tr class="separator:afa20158c55b28eb7a905aaccaab3aac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad414ebe88d7ca7ec39b7d5f7f78e2083"><td class="memTemplParams" colspan="2">template&lt;typename TTDataMember  = TDataMember&gt; </td></tr>
+<tr class="memitem:ad414ebe88d7ca7ec39b7d5f7f78e2083"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt; TTDataMember &gt;)==DataType::kSoPointer, TReturn &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1GetDataMemberForVis.html#ad414ebe88d7ca7ec39b7d5f7f78e2083">operator()</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent) const</td></tr>
+<tr class="separator:ad414ebe88d7ca7ec39b7d5f7f78e2083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -124,9 +124,9 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TReturn, typename TClass, typename TDataMember&gt;<br />
 struct bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</h3>
 
-<p>Extract the data member value of a <a class="el" href="classbdm_1_1SimObject.html" title="Contains code required by all simulation objects. ">SimObject</a> given its concrete type, type of the data member, and data member offset from its concrete pointer. </p>
+<p>Extract the data member value of an <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents. ">Agent</a> given its concrete type, type of the data member, and data member offset from its concrete pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00036">36</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00039">39</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a66c6e2873319c2e6785e828c2cc19fa8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66c6e2873319c2e6785e828c2cc19fa8">&#9670;&nbsp;</a></span>TempValueType</h2>
@@ -142,7 +142,7 @@ template&lt;typename TReturn, typename TClass, typename TDataMember&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00038">38</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00041">41</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
@@ -163,11 +163,11 @@ template&lt;typename TReturn, typename TClass, typename TDataMember&gt; </div>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ade3a087dda39cbb6a0005d7061cf66d6aa6d18370198f5137ce595935d7549c7e"></a>kDefault&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ade3a087dda39cbb6a0005d7061cf66d6a228eeba18d38fee818a07abd2625c380"></a>kArray&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ade3a087dda39cbb6a0005d7061cf66d6a17fbe40bfb24ec20d24a5b3166443144"></a>kSoUid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ade3a087dda39cbb6a0005d7061cf66d6a01d8ea612d2d74dd1bff82a2168abffe"></a>kAgentUid&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ade3a087dda39cbb6a0005d7061cf66d6a0724bc7735fa3a26f6c3c068e3a57f86"></a>kSoPointer&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00052">52</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00055">55</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
@@ -197,7 +197,7 @@ template&lt;typename TReturn, typename TClass, typename TDataMember&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00043">43</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00046">46</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
@@ -229,12 +229,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00055">55</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00058">58</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
-<a id="a58efc7a19c45cbf5ccaba3f811507cea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58efc7a19c45cbf5ccaba3f811507cea">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/4]</span></h2>
+<a id="aae29c1977988206442745a2bcc74a891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae29c1977988206442745a2bcc74a891">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,8 +249,8 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
         <tr>
           <td class="memname">std::enable_if&lt;<a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt;TTDataMember&gt;) == DataType::kDefault, TReturn&gt;::type <a class="el" href="structbdm_1_1GetDataMemberForVis.html">bdm::GetDataMemberForVis</a>&lt; TReturn, TClass, TDataMember &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td>
-          <td class="paramname"><em>so</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>agent</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -261,12 +261,12 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00069">69</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00072">72</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
-<a id="a80aec81ba109957318a6c4c85901a72b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80aec81ba109957318a6c4c85901a72b">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/4]</span></h2>
+<a id="a08f5f6018d05aecce0fe65a4406804bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f5f6018d05aecce0fe65a4406804bb">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,8 +281,8 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
         <tr>
           <td class="memname">std::enable_if&lt;<a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt;TTDataMember&gt;) == DataType::kArray, TReturn&gt;::type <a class="el" href="structbdm_1_1GetDataMemberForVis.html">bdm::GetDataMemberForVis</a>&lt; TReturn, TClass, TDataMember &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td>
-          <td class="paramname"><em>so</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>agent</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -293,12 +293,12 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00078">78</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00081">81</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
-<a id="ad7f4890160e7dce2e42af19009fb4438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f4890160e7dce2e42af19009fb4438">&#9670;&nbsp;</a></span>operator()() <span class="overload">[3/4]</span></h2>
+<a id="afa20158c55b28eb7a905aaccaab3aac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa20158c55b28eb7a905aaccaab3aac5">&#9670;&nbsp;</a></span>operator()() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,10 +311,10 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;<a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt;TTDataMember&gt;) == DataType::kSoUid, TReturn&gt;::type <a class="el" href="structbdm_1_1GetDataMemberForVis.html">bdm::GetDataMemberForVis</a>&lt; TReturn, TClass, TDataMember &gt;::operator() </td>
+          <td class="memname">std::enable_if&lt;<a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt;TTDataMember&gt;) == DataType::kAgentUid, TReturn&gt;::type <a class="el" href="structbdm_1_1GetDataMemberForVis.html">bdm::GetDataMemberForVis</a>&lt; TReturn, TClass, TDataMember &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td>
-          <td class="paramname"><em>so</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>agent</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -325,12 +325,12 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00089">89</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00092">92</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
-<a id="acd191c12e8ac19a43364d34cd9e56892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd191c12e8ac19a43364d34cd9e56892">&#9670;&nbsp;</a></span>operator()() <span class="overload">[4/4]</span></h2>
+<a id="ad414ebe88d7ca7ec39b7d5f7f78e2083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad414ebe88d7ca7ec39b7d5f7f78e2083">&#9670;&nbsp;</a></span>operator()() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,8 +345,8 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
         <tr>
           <td class="memname">std::enable_if&lt;<a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">GetDataType</a>&lt;TTDataMember&gt;) == DataType::kSoPointer, TReturn&gt;::type <a class="el" href="structbdm_1_1GetDataMemberForVis.html">bdm::GetDataMemberForVis</a>&lt; TReturn, TClass, TDataMember &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *&#160;</td>
-          <td class="paramname"><em>so</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>agent</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -357,7 +357,7 @@ template&lt;typename TTDataMember  = TDataMember&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00103">103</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00106">106</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ template&lt;typename TReturn, typename TClass, typename TDataMember&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00045">45</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00048">48</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +405,7 @@ template&lt;typename TReturn, typename TClass, typename TDataMember&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00037">37</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00040">40</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ template&lt;typename TReturn, typename TClass, typename TDataMember&gt; </div>
 
 <p>Thread local storage for temporary values. </p>
 
-<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00041">41</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapped__data__array_8h_source.html#l00044">44</a> of file <a class="el" href="mapped__data__array_8h_source.html">mapped_data_array.h</a>.</p>
 
 </div>
 </div>

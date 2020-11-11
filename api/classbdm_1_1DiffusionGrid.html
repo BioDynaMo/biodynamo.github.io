@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -115,12 +115,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae682b1d83f5bde88510dab9433f0894a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86d03c3d92b607d4c65a17bc30c165d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a86d03c3d92b607d4c65a17bc30c165d2">CalculateGradient</a> ()</td></tr>
 <tr class="separator:a86d03c3d92b607d4c65a17bc30c165d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b715335688f921011da4ea8d4a892c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac5b715335688f921011da4ea8d4a892c">IncreaseConcentrationBy</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;position, double amount)</td></tr>
-<tr class="memdesc:ac5b715335688f921011da4ea8d4a892c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the concentration at specified position with specified amount.  <a href="#ac5b715335688f921011da4ea8d4a892c">More...</a><br /></td></tr>
-<tr class="separator:ac5b715335688f921011da4ea8d4a892c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a899d8de7216180b98e6d80ab70ecae2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a899d8de7216180b98e6d80ab70ecae2e">IncreaseConcentrationBy</a> (size_t idx, double amount)</td></tr>
-<tr class="memdesc:a899d8de7216180b98e6d80ab70ecae2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the concentration at specified box with specified amount.  <a href="#a899d8de7216180b98e6d80ab70ecae2e">More...</a><br /></td></tr>
-<tr class="separator:a899d8de7216180b98e6d80ab70ecae2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856e3785052d88b0765a44285b59b4a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a856e3785052d88b0765a44285b59b4a5">ChangeConcentrationBy</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;position, double amount)</td></tr>
+<tr class="memdesc:a856e3785052d88b0765a44285b59b4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the concentration at specified position with specified amount.  <a href="#a856e3785052d88b0765a44285b59b4a5">More...</a><br /></td></tr>
+<tr class="separator:a856e3785052d88b0765a44285b59b4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3334251c3769495a6af97bcdedaddd9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a3334251c3769495a6af97bcdedaddd9c">ChangeConcentrationBy</a> (size_t idx, double amount)</td></tr>
+<tr class="memdesc:a3334251c3769495a6af97bcdedaddd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the concentration at specified box with specified amount.  <a href="#a3334251c3769495a6af97bcdedaddd9c">More...</a><br /></td></tr>
+<tr class="separator:a3334251c3769495a6af97bcdedaddd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0798f8f01811761e55c620d5132bc5bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a0798f8f01811761e55c620d5132bc5bb">GetConcentration</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;position) const</td></tr>
 <tr class="memdesc:a0798f8f01811761e55c620d5132bc5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the concentration at specified position.  <a href="#a0798f8f01811761e55c620d5132bc5bb">More...</a><br /></td></tr>
 <tr class="separator:a0798f8f01811761e55c620d5132bc5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,6 +467,86 @@ template&lt;typename F &gt; </div>
 <p>At the edges the gradient is the same as the box next to it </p>
 
 <p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00782">782</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a856e3785052d88b0765a44285b59b4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856e3785052d88b0765a44285b59b4a5">&#9670;&nbsp;</a></span>ChangeConcentrationBy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bdm::DiffusionGrid::ChangeConcentrationBy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increase the concentration at specified position with specified amount. </p>
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00849">849</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a3334251c3769495a6af97bcdedaddd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3334251c3769495a6af97bcdedaddd9c">&#9670;&nbsp;</a></span>ChangeConcentrationBy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::DiffusionGrid::ChangeConcentrationBy </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>amount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increase the concentration at specified box with specified amount. </p>
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00855">855</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1187,86 +1267,6 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00931">931</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
-
-</div>
-</div>
-<a id="ac5b715335688f921011da4ea8d4a892c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5b715335688f921011da4ea8d4a892c">&#9670;&nbsp;</a></span>IncreaseConcentrationBy() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::DiffusionGrid::IncreaseConcentrationBy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>amount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Increase the concentration at specified position with specified amount. </p>
-
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00849">849</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
-
-</div>
-</div>
-<a id="a899d8de7216180b98e6d80ab70ecae2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a899d8de7216180b98e6d80ab70ecae2e">&#9670;&nbsp;</a></span>IncreaseConcentrationBy() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::DiffusionGrid::IncreaseConcentrationBy </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>idx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>amount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Increase the concentration at specified box with specified amount. </p>
-
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00855">855</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>

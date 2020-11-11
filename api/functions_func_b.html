@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -72,24 +72,29 @@ $(function() {
 <li>BackupEnabled()
 : <a class="el" href="classbdm_1_1SimulationBackup.html#a437ea2ec7457d13ad06fdf197cd17af0">bdm::SimulationBackup</a>
 </li>
-<li>BaseBiologyModule()
-: <a class="el" href="structbdm_1_1BaseBiologyModule.html#a456d123a50b259027859282fb5cd0001">bdm::BaseBiologyModule</a>
+<li>BDM_AGENT_HEADER()
+: <a class="el" href="classbdm_1_1Cell.html#a2d72af66372e21cba5e8e2ba1ab93c4a">bdm::Cell</a>
+, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a15f5ac31e7a8c74f4cb99c6233b494b0">bdm::neuroscience::NeuriteElement</a>
+, <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#ac4caa17a00e284a0401b78a4afe28309">bdm::neuroscience::NeuronSoma</a>
 </li>
-<li>BDM_BM_HEADER()
-: <a class="el" href="structbdm_1_1Chemotaxis.html#af0ee03560f4140aca76720ee1e2473b6">bdm::Chemotaxis</a>
-, <a class="el" href="structbdm_1_1GrowDivide.html#a2ef318bffdd8a18b9c9e4b1eaab84af3">bdm::GrowDivide</a>
-, <a class="el" href="structbdm_1_1RegulateGenes.html#a6c643d3457569903a516c748d042a147">bdm::RegulateGenes</a>
-, <a class="el" href="structbdm_1_1Secretion.html#ae378dab3a3c524f50e4cd73f6b1ab81a">bdm::Secretion</a>
+<li>BDM_BEHAVIOR_HEADER()
+: <a class="el" href="classbdm_1_1Chemotaxis.html#a8e5246b388181a4d3e369888ea1f6235">bdm::Chemotaxis</a>
+, <a class="el" href="classbdm_1_1GeneRegulation.html#a26f40a11b9601cabc25fe8935ae9f110">bdm::GeneRegulation</a>
+, <a class="el" href="classbdm_1_1GrowthDivision.html#a77b960ee5c34f3913a4f9319800cc669">bdm::GrowthDivision</a>
+, <a class="el" href="classbdm_1_1Secretion.html#af1fc581c8b64c8f1d5cd9b1436b1fd62">bdm::Secretion</a>
 </li>
 <li>BDM_CLASS_DEF()
-: <a class="el" href="structbdm_1_1BaseBiologyModule.html#a8424e30d0bc6522559f3f16313b11e6f">bdm::BaseBiologyModule</a>
+: <a class="el" href="classbdm_1_1AgentPointer.html#aecb16baf0aac751db78fdb98e311dbaf">bdm::AgentPointer&lt; TAgent &gt;</a>
+, <a class="el" href="classbdm_1_1Behavior.html#add132e980aa1d611d1cd01bb5b14a380">bdm::Behavior</a>
 , <a class="el" href="classbdm_1_1InlineVector.html#a1e0376701a632e4067b59772134958f1">bdm::InlineVector&lt; T, N &gt;</a>
-, <a class="el" href="structbdm_1_1ModuleParam.html#abfa9eb7bec85b09aba8d92a127230df6">bdm::ModuleParam</a>
 , <a class="el" href="classbdm_1_1ParallelResizeVector.html#a9e72b06a1422396f76bd322516c33e2f">bdm::ParallelResizeVector&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a7db688419782a6cc3d4f01a73aa907d6">bdm::SoPointer&lt; TSimObject &gt;</a>
+, <a class="el" href="structbdm_1_1ParamGroup.html#acf1c968d4f0fdf2396fbd3fbcc6f986d">bdm::ParamGroup</a>
 </li>
 <li>BDM_CLASS_DEF_NV()
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#a0b3bbb9647f6ee8b2e568cf0b3216e47">bdm::DiffusionGrid</a>
+: <a class="el" href="classbdm_1_1AgentHandle.html#afe0c335ea1e8f74f5483744a58e068cf">bdm::AgentHandle</a>
+, <a class="el" href="classbdm_1_1AgentUid.html#a9e65522ea5b6c8de7de727974d4091fa">bdm::AgentUid</a>
+, <a class="el" href="classbdm_1_1AgentUidGenerator.html#a2ed525ee7d1fa0087e35c01354bbea91">bdm::AgentUidGenerator</a>
+, <a class="el" href="classbdm_1_1DiffusionGrid.html#a0b3bbb9647f6ee8b2e568cf0b3216e47">bdm::DiffusionGrid</a>
 , <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aacb40b2edac1b40788c7d3f4a838dc5b">bdm::IntegralTypeWrapper&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1MathArray.html#ae70f930a2d8f0b2a41a3f5898eb854e7">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="structbdm_1_1Param.html#abd8968f951a19a6db481f74962b35bbc">bdm::Param</a>
@@ -97,57 +102,49 @@ $(function() {
 , <a class="el" href="classbdm_1_1ResourceManager.html#a576cc697b5c0d5e4b6e9ee2a35c7ef47">bdm::ResourceManager</a>
 , <a class="el" href="classbdm_1_1RuntimeVariables.html#a31452f8a3b72ebe64f7b617ce824daa7">bdm::RuntimeVariables</a>
 , <a class="el" href="classbdm_1_1Simulation.html#ae58e16a3e0ce9d179063da53ecb7c9a0">bdm::Simulation</a>
-, <a class="el" href="classbdm_1_1SoHandle.html#a71e0bfd1ab7e517f0c4a905617f4e987">bdm::SoHandle</a>
-, <a class="el" href="classbdm_1_1SoUid.html#a1f0f18f4c0fc9266b2d3b1151dbdcf92">bdm::SoUid</a>
-, <a class="el" href="classbdm_1_1SoUidGenerator.html#a1b651cc6041a661e720f336fb22b9dfb">bdm::SoUidGenerator</a>
-</li>
-<li>BDM_MODULE_PARAM_HEADER()
-: <a class="el" href="structbdm_1_1neuroscience_1_1Param.html#ae39e46a9e93b27f414f47ed824c89da0">bdm::neuroscience::Param</a>
 </li>
 <li>BDM_OP_HEADER()
-: <a class="el" href="structbdm_1_1BiologyModuleOp.html#a903a4f4f30ef680d364bc2531713f093">bdm::BiologyModuleOp</a>
+: <a class="el" href="structbdm_1_1BehaviorOp.html#a6e31698f5cdf02d883c6e17ff55542c8">bdm::BehaviorOp</a>
 , <a class="el" href="structbdm_1_1BoundSpace.html#aa1ed90ab3b1adf05dcbdb9ed24e50215">bdm::BoundSpace</a>
 , <a class="el" href="structbdm_1_1DiffusionOp.html#a6d96a4a1f68e3cc87ba221594bb92094">bdm::DiffusionOp</a>
 , <a class="el" href="structbdm_1_1DiscretizationOp.html#a99c7828c4e57e866f526ee42e1bff41d">bdm::DiscretizationOp</a>
-, <a class="el" href="structbdm_1_1DisplacementOp.html#aff45c4bcc4a9b6cc8dc0704589f9705c">bdm::DisplacementOp</a>
+, <a class="el" href="classbdm_1_1DisplacementOp.html#aff45c4bcc4a9b6cc8dc0704589f9705c">bdm::DisplacementOp</a>
 , <a class="el" href="structbdm_1_1DisplacementOpCuda.html#a9f3591ac29bd6181bea946d4e8e0f2b7">bdm::DisplacementOpCuda</a>
 , <a class="el" href="structbdm_1_1DistributeRunDisplacementInfoOp.html#a11ea487a53dcc4dfc76c41d917960e5c">bdm::DistributeRunDisplacementInfoOp</a>
 , <a class="el" href="structbdm_1_1DividingCellOp.html#a81921c8bb57a40e6e167ee745366f76a">bdm::DividingCellOp</a>
 , <a class="el" href="structbdm_1_1LoadBalancingOp.html#a707a184a52cb7a3a13f3b17560456ab4">bdm::LoadBalancingOp</a>
-, <a class="el" href="structbdm_1_1ReductionOp.html#a0a934045afc68dd2c09323fe64151cca">bdm::ReductionOp&lt; T &gt;</a>
+, <a class="el" href="classbdm_1_1ReductionOp.html#a0a934045afc68dd2c09323fe64151cca">bdm::ReductionOp&lt; T &gt;</a>
 , <a class="el" href="structbdm_1_1SetUpIterationOp.html#ad3ade748b787b8402f12aa3492c9ee7f">bdm::SetUpIterationOp</a>
 , <a class="el" href="structbdm_1_1TearDownIterationOp.html#a08f9d977410a375be5f6ecf7e958ea53">bdm::TearDownIterationOp</a>
 , <a class="el" href="structbdm_1_1UpdateEnvironmentOp.html#ae749622face12b3984e75511f684f920">bdm::UpdateEnvironmentOp</a>
 , <a class="el" href="structbdm_1_1UpdateRunDisplacementOp.html#a839db3a0ddf24498417884d8f81992fc">bdm::UpdateRunDisplacementOp</a>
-, <a class="el" href="structbdm_1_1VisualizationOp.html#a4657c636a3374165d8c64cb567169530">bdm::VisualizationOp</a>
+, <a class="el" href="classbdm_1_1VisualizationOp.html#a4657c636a3374165d8c64cb567169530">bdm::VisualizationOp</a>
 </li>
-<li>BDM_SIM_OBJECT_HEADER()
-: <a class="el" href="classbdm_1_1Cell.html#a2af2e6b07a1de3e841987657bb5026f2">bdm::Cell</a>
-, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a6897c7e4b843a5084212648fb984b45f">bdm::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a4ddcc8144fd75dedf158076e68a7476d">bdm::neuroscience::NeuronSoma</a>
+<li>BDM_PARAM_GROUP_HEADER()
+: <a class="el" href="structbdm_1_1neuroscience_1_1Param.html#a9d13954c201fe23dff427bed2d085870">bdm::neuroscience::Param</a>
 </li>
 <li>begin()
 : <a class="el" href="classbdm_1_1FixedSizeVector.html#a7e744d0c5df14a89328e8b500e5d1934">bdm::FixedSizeVector&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1InlineVector.html#a2551dcded04af7e956a8e4361a038c9c">bdm::InlineVector&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#ab17f8d0fa513cecf575f59a072dcb67a">bdm::MathArray&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1InlineVector.html#a2da6993f76633f4e77c93f494276df0f">bdm::InlineVector&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1MathArray.html#ad697514a7e000cb2fe90b9f526d72e1f">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1ParallelResizeVector.html#a00f46dbc999b1671e696c3412e85ef1e">bdm::ParallelResizeVector&lt; T &gt;</a>
 , <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html#acac0189a057dbec5f5c391fe6e525bc2">bdm::UniformGridEnvironment::Box</a>
 , <a class="el" href="classbdm_1_1UnorderedFlatmap.html#ad97f248e3fc6663219417118975c6c69">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
 </li>
+<li>Behavior()
+: <a class="el" href="classbdm_1_1Behavior.html#a36e19f85d70a67dc153d4aed57e1b794">bdm::Behavior</a>
+</li>
 <li>Bifurcate()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ac269d1b2594d5f3732fa0f645fc82c3e">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a62df7d52c36db6bfb5355bd187e5d41e">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>BifurcationPermitted()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a53569c6b739888847aaa43022d02ef41">bdm::neuroscience::NeuriteElement</a>
-</li>
-<li>BiologyModuleEventHandler()
-: <a class="el" href="classbdm_1_1SimObject.html#a914d856c2749881cf75b1159cab4eaf9">bdm::SimObject</a>
 </li>
 <li>Box()
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html#ae73c0cc6300b4838da9d73419fe9fc6a">bdm::UniformGridEnvironment::Box</a>
 </li>
 <li>Branch()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a8fe1329efb9c05a8212f132b99597b14">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a722a01c47490b84a48fa7d88292ea3d5">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>BranchPermitted()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a0cf0926346e7c6cfd13738189ce95406">bdm::neuroscience::NeuriteElement</a>
@@ -155,14 +152,14 @@ $(function() {
 <li>Break()
 : <a class="el" href="classbdm_1_1Log.html#ac52e32101136b8fb82110f4721f4de67">bdm::Log</a>
 </li>
+<li>BuildAgentsVTKStructures()
+: <a class="el" href="classbdm_1_1ParaviewAdaptor.html#a0f6b96eefaac72ee93d6dfe1de5c671c">bdm::ParaviewAdaptor</a>
+</li>
 <li>BuildDiffusionGridVTKStructures()
 : <a class="el" href="classbdm_1_1ParaviewAdaptor.html#a41753b43c3dfa90ab3d5fa9768da8789">bdm::ParaviewAdaptor</a>
 </li>
 <li>BuildPythonScriptString()
 : <a class="el" href="classbdm_1_1ParaviewAdaptor.html#a517e68c96dfc65122a2a134558f745d5">bdm::ParaviewAdaptor</a>
-</li>
-<li>BuildSimObjectsVTKStructures()
-: <a class="el" href="classbdm_1_1ParaviewAdaptor.html#a8cb97b32d774ce45bff5dbf53d033fe4">bdm::ParaviewAdaptor</a>
 </li>
 </ul>
 </div><!-- contents -->

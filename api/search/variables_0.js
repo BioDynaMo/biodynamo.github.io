@@ -6,6 +6,15 @@ var searchData=
   ['adherence_5f',['adherence_',['../classbdm_1_1Cell.html#ab8e48d82040233041774f9f6c2485eb3',1,'bdm::Cell::adherence_()'],['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a7445fe91898a23c83559b2b70fa29e09',1,'bdm::neuroscience::NeuriteElement::adherence_()']]],
   ['adjacency_5f',['adjacency_',['../classbdm_1_1UniformGridEnvironment.html#abd01782a444faec2eb4673bf5c908b78',1,'bdm::UniformGridEnvironment']]],
   ['after_5frestore_5fevent_5f',['after_restore_event_',['../classbdm_1_1SimulationBackup.html#a1604e2a1edcc409a971fd55fa5a5e910',1,'bdm::SimulationBackup']]],
+  ['agent',['agent',['../structbdm_1_1Cell_1_1DisplacementFunctor.html#af3ca77b8d414fc2491dea4db72c305e2',1,'bdm::Cell::DisplacementFunctor']]],
+  ['agent_5f',['agent_',['../structbdm_1_1SetRunDisplacementForEachNeighbor.html#a3fb15b676142bccbdedea5b6ceaa39fc',1,'bdm::SetRunDisplacementForEachNeighbor']]],
+  ['agent_5ffunctor_5f',['agent_functor_',['../classbdm_1_1ReductionOp.html#a4dbfacd1aea3b7f53ce7099482be0228',1,'bdm::ReductionOp']]],
+  ['agent_5fper_5fnuma',['agent_per_numa',['../structbdm_1_1RearrangeFunctor.html#a77022b6d2f4581b5f4de0f0a40fdaba9',1,'bdm::RearrangeFunctor']]],
+  ['agent_5fuid_5fdefragmentation_5fhigh_5fwatermark',['agent_uid_defragmentation_high_watermark',['../structbdm_1_1Param.html#a5e22043444477513b7acd3c11f8fa90b',1,'bdm::Param']]],
+  ['agent_5fuid_5fdefragmentation_5flow_5fwatermark',['agent_uid_defragmentation_low_watermark',['../structbdm_1_1Param.html#a46261e1faaa7c782f14c97942245027f',1,'bdm::Param']]],
+  ['agent_5fuid_5fgenerator_5f',['agent_uid_generator_',['../classbdm_1_1Simulation.html#a7c87c3c4a51cce361155f8e2c335aac5',1,'bdm::Simulation']]],
+  ['agent_5fuid_5freused_5f',['agent_uid_reused_',['../classbdm_1_1AgentUidMap.html#a7757a18f92d9a1bbcd1f96852f28cd52',1,'bdm::AgentUidMap']]],
+  ['agents_5f',['agents_',['../classbdm_1_1ResourceManager.html#aeab70e781bf4c145b3a691d66267dde4',1,'bdm::ResourceManager::agents_()'],['../classbdm_1_1MappedDataArray.html#a1ff554c2beedb4a58098f6a73a636d77',1,'bdm::MappedDataArray::agents_()']]],
   ['aggregator_5f',['aggregator_',['../classbdm_1_1Timing.html#a2eb66efb25a8eac943086814407f597c',1,'bdm::Timing']]],
   ['aligned_5fpages_5f',['aligned_pages_',['../classbdm_1_1MemoryManager.html#a786494bb9871053deecc4d9ca8d4ca50',1,'bdm::MemoryManager']]],
   ['aligned_5fpages_5fshift_5f',['aligned_pages_shift_',['../classbdm_1_1MemoryManager.html#a134b18bb7e329360713238fddf21f8b1',1,'bdm::MemoryManager']]],
@@ -13,5 +22,5 @@ var searchData=
   ['allocators_5f',['allocators_',['../classbdm_1_1MemoryManager.html#ac29f2f05a92c1de85abb8f92ce0b86b2',1,'bdm::MemoryManager']]],
   ['argc_5f',['argc_',['../classbdm_1_1CommandLineOptions.html#a5eba174a77bf2468f3b008d714e0f959',1,'bdm::CommandLineOptions']]],
   ['argv_5f',['argv_',['../classbdm_1_1CommandLineOptions.html#a63dda72ad1efa01f7bf11a561380bbce',1,'bdm::CommandLineOptions']]],
-  ['axis_5f',['axis_',['../structbdm_1_1Uniform.html#a3ece56bf1a1596a6764827ebeb7e5a7c',1,'bdm::Uniform::axis_()'],['../structbdm_1_1GaussianBand.html#aee290aa7e9a60587e1491857b9669378',1,'bdm::GaussianBand::axis_()'],['../structbdm_1_1PoissonBand.html#a32b1b437a155d8d771ec460f48bfb393',1,'bdm::PoissonBand::axis_()']]]
+  ['axis_5f',['axis_',['../classbdm_1_1Uniform.html#a3ece56bf1a1596a6764827ebeb7e5a7c',1,'bdm::Uniform::axis_()'],['../classbdm_1_1GaussianBand.html#aee290aa7e9a60587e1491857b9669378',1,'bdm::GaussianBand::axis_()'],['../classbdm_1_1PoissonBand.html#a32b1b437a155d8d771ec460f48bfb393',1,'bdm::PoissonBand::axis_()']]]
 ];

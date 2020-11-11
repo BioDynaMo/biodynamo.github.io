@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -75,8 +75,8 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a72b9624a93519666f2e41727654ff478"><td class="memItemLeft" align="right" valign="top">vtkCPProcessor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#a72b9624a93519666f2e41727654ff478">g_processor_</a> = nullptr</td></tr>
 <tr class="separator:a72b9624a93519666f2e41727654ff478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bbe00f4c99eea78238dcc05ef3d7cb3"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="classbdm_1_1VtkSimObjects.html">VtkSimObjects</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#a3bbe00f4c99eea78238dcc05ef3d7cb3">vtk_sim_objects_</a></td></tr>
-<tr class="separator:a3bbe00f4c99eea78238dcc05ef3d7cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf562534d371e3141217d73e5da426e"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="classbdm_1_1VtkAgents.html">VtkAgents</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#adcf562534d371e3141217d73e5da426e">vtk_agents_</a></td></tr>
+<tr class="separator:adcf562534d371e3141217d73e5da426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eb651c887c3ee628961ee965fb356ae"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="classbdm_1_1VtkDiffusionGrid.html">VtkDiffusionGrid</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#a8eb651c887c3ee628961ee965fb356ae">vtk_dgrids_</a></td></tr>
 <tr class="separator:a8eb651c887c3ee628961ee965fb356ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8cdba9ecb06e53c1ead80307edc28e"><td class="memItemLeft" align="right" valign="top">vtkCPDataDescription *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html#a7a8cdba9ecb06e53c1ead80307edc28e">data_description_</a> = nullptr</td></tr>
@@ -84,7 +84,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00049">49</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00050">50</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a7a8cdba9ecb06e53c1ead80307edc28e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a8cdba9ecb06e53c1ead80307edc28e">&#9670;&nbsp;</a></span>data_description_</h2>
@@ -98,7 +98,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00053">53</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00054">54</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
 
 </div>
 </div>
@@ -114,7 +114,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00050">50</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00051">51</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
+
+</div>
+</div>
+<a id="adcf562534d371e3141217d73e5da426e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf562534d371e3141217d73e5da426e">&#9670;&nbsp;</a></span>vtk_agents_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="classbdm_1_1VtkAgents.html">VtkAgents</a>*&gt; bdm::ParaviewAdaptor::ParaviewImpl::vtk_agents_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00052">52</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
 
 </div>
 </div>
@@ -130,23 +146,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00052">52</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
-
-</div>
-</div>
-<a id="a3bbe00f4c99eea78238dcc05ef3d7cb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bbe00f4c99eea78238dcc05ef3d7cb3">&#9670;&nbsp;</a></span>vtk_sim_objects_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="classbdm_1_1VtkSimObjects.html">VtkSimObjects</a>*&gt; bdm::ParaviewAdaptor::ParaviewImpl::vtk_sim_objects_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00051">51</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="adaptor_8cc_source.html#l00053">53</a> of file <a class="el" href="adaptor_8cc_source.html">adaptor.cc</a>.</p>
 
 </div>
 </div>

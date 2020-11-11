@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -91,7 +91,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1OperationRegistry.html">bdm::OperationRegistry</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OperationRegistry.html">bdm::OperationRegistry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                         \</div><div class="line">  static <span class="keywordtype">bool</span> registered_;        \</div><div class="line">                                  \</div><div class="line"> public:                          \</div><div class="line">  class_name *Clone()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> class_name(*<span class="keyword">this</span>); }</div></div><!-- fragment --><p>A convenient macro to hide some of the boilerplate code from the user in implementing new operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00090">90</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00091">91</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +171,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> op::registered_ = OperationRegistry::GetInstance()-&gt;AddOperationImpl( \</div><div class="line">      name, OpComputeTarget::target, <span class="keyword">new</span> op());</div></div><!-- fragment --><p>A convenient macro to register a new operation implemented. To be used as: BDM_REGISTER_OP(MyOp, "my operation", kCpu) MyOp is required to have member: <code>static bool registered_</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00063">63</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00064">64</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ Functions</h2></td></tr>
 <dd>
 Operation::frequency_) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00070">70</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00071">71</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ Operation::frequency_) </dd></dl>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                             \</div><div class="line">  bool op&lt;T&gt;::registered_ =                               \</div><div class="line">      OperationRegistry::GetInstance()-&gt;AddOperationImpl( \</div><div class="line">          name, OpComputeTarget::target, <span class="keyword">new</span> op&lt;T&gt;());</div></div><!-- fragment --><p>A convenient macro to register a new operation implemented. To be used as: BDM_REGISTER_OP(MyOp, "my operation", kCpu) MyOp is required to have member: <code>static bool registered_</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00077">77</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation__registry_8h_source.html#l00078">78</a> of file <a class="el" href="operation__registry_8h_source.html">operation_registry.h</a>.</p>
 
 </div>
 </div>

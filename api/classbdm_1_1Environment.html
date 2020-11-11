@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -86,7 +86,7 @@ Inheritance diagram for bdm::Environment:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html">NeighborMutexBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Environment_1_1SimDimensionAndLargestSimObjectFunctor.html">SimDimensionAndLargestSimObjectFunctor</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html">SimDimensionAndLargestAgentFunctor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -95,8 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad6ea5b9c942a7a5a03f68419d3c00399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3761733cab7d0f81abfdc9216bb33d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2">Update</a> ()=0</td></tr>
 <tr class="separator:af3761733cab7d0f81abfdc9216bb33d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36914a37ce784e7816355cb4d47d906"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ab36914a37ce784e7816355cb4d47d906">ForEachNeighbor</a> (<a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> &amp;query)=0</td></tr>
-<tr class="separator:ab36914a37ce784e7816355cb4d47d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad381b8cd7ab3f55b107229a8b1831810"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ad381b8cd7ab3f55b107229a8b1831810">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query)=0</td></tr>
+<tr class="separator:ad381b8cd7ab3f55b107229a8b1831810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7636f0d481c28e6b6d500a0394be7290"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a7636f0d481c28e6b6d500a0394be7290">Clear</a> ()=0</td></tr>
 <tr class="separator:a7636f0d481c28e6b6d500a0394be7290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73041b40ed8a97292a383bedcf9f5a0a"><td class="memItemLeft" align="right" valign="top">virtual const std::array&lt; int32_t, 6 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a73041b40ed8a97292a383bedcf9f5a0a">GetDimensions</a> () const =0</td></tr>
@@ -104,10 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad32836b0a20be6d9497882e87c5f1840"><td class="memItemLeft" align="right" valign="top">virtual const std::array&lt; int32_t, 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ad32836b0a20be6d9497882e87c5f1840">GetDimensionThresholds</a> () const =0</td></tr>
 <tr class="separator:ad32836b0a20be6d9497882e87c5f1840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cb6e3c06739d10144c451f041085459"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a6cb6e3c06739d10144c451f041085459">GetLargestObjectSize</a> () const =0</td></tr>
-<tr class="memdesc:a6cb6e3c06739d10144c451f041085459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the largest sim object.  <a href="#a6cb6e3c06739d10144c451f041085459">More...</a><br /></td></tr>
+<tr class="memdesc:a6cb6e3c06739d10144c451f041085459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the largest agent.  <a href="#a6cb6e3c06739d10144c451f041085459">More...</a><br /></td></tr>
 <tr class="separator:a6cb6e3c06739d10144c451f041085459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2d5ce13e82fbd85a68730124968e3ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ae2d5ce13e82fbd85a68730124968e3ae">IterateZOrder</a> (<a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;&gt; &amp;callback)=0</td></tr>
-<tr class="separator:ae2d5ce13e82fbd85a68730124968e3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3eade861b1f997b948f8a865b7abed5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#aa3eade861b1f997b948f8a865b7abed5">IterateZOrder</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> &amp;&gt; &amp;callback)=0</td></tr>
+<tr class="separator:aa3eade861b1f997b948f8a865b7abed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd804d468eef37cf5fae001939d8913"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html">NeighborMutexBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a5bd804d468eef37cf5fae001939d8913">GetNeighborMutexBuilder</a> ()=0</td></tr>
 <tr class="separator:a5bd804d468eef37cf5fae001939d8913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8133aa9f17e7d2a13c84c273df2d045"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ac8133aa9f17e7d2a13c84c273df2d045">HasGrown</a> () const</td></tr>
@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a37513c82f8c3a2279f2ffc63caa5ad1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a37513c82f8c3a2279f2ffc63caa5ad1f">CalcSimDimensionsAndLargestSimObject</a> (std::array&lt; double, 6 &gt; *ret_grid_dimensions, double *largest_so)</td></tr>
-<tr class="separator:a37513c82f8c3a2279f2ffc63caa5ad1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4036cf7b6050b568ca735b466426ad9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a4036cf7b6050b568ca735b466426ad9b">CalcSimDimensionsAndLargestAgent</a> (std::array&lt; double, 6 &gt; *ret_grid_dimensions, double *largest_agent)</td></tr>
+<tr class="separator:a4036cf7b6050b568ca735b466426ad9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -125,7 +125,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00025">25</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00026">26</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad6ea5b9c942a7a5a03f68419d3c00399"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6ea5b9c942a7a5a03f68419d3c00399">&#9670;&nbsp;</a></span>~Environment()</h2>
@@ -150,13 +150,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00027">27</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00028">28</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a37513c82f8c3a2279f2ffc63caa5ad1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37513c82f8c3a2279f2ffc63caa5ad1f">&#9670;&nbsp;</a></span>CalcSimDimensionsAndLargestSimObject()</h2>
+<a id="a4036cf7b6050b568ca735b466426ad9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4036cf7b6050b568ca735b466426ad9b">&#9670;&nbsp;</a></span>CalcSimDimensionsAndLargestAgent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bdm::Environment::CalcSimDimensionsAndLargestSimObject </td>
+          <td class="memname">void bdm::Environment::CalcSimDimensionsAndLargestAgent </td>
           <td>(</td>
           <td class="paramtype">std::array&lt; double, 6 &gt; *&#160;</td>
           <td class="paramname"><em>ret_grid_dimensions</em>, </td>
@@ -174,7 +174,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>largest_so</em>&#160;</td>
+          <td class="paramname"><em>largest_agent</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -188,9 +188,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Calculates what the grid dimensions need to be in order to contain all the simulation objects </p>
+<p>Calculates what the grid dimensions need to be in order to contain all the agents </p>
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00130">130</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00131">131</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -221,8 +221,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab36914a37ce784e7816355cb4d47d906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab36914a37ce784e7816355cb4d47d906">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
+<a id="ad381b8cd7ab3f55b107229a8b1831810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad381b8cd7ab3f55b107229a8b1831810">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,13 +233,13 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void bdm::Environment::ForEachNeighbor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> *, double &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classbdm_1_1SimObject.html">SimObject</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;&#160;</td>
           <td class="paramname"><em>query</em>&#160;</td>
         </tr>
         <tr>
@@ -255,7 +255,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#acb7ebb811ae3210ade19b6c10ea41823">bdm::UniformGridEnvironment</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#ab29ab8fed5e267e470c15725bdd2a351">bdm::UniformGridEnvironment</a>.</p>
 
 </div>
 </div>
@@ -336,7 +336,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the size of the largest sim object. </p>
+<p>Return the size of the largest agent. </p>
 
 <p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a161c560e9a6485f5138b9218da8207f9">bdm::UniformGridEnvironment</a>.</p>
 
@@ -393,12 +393,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00067">67</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00068">68</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
-<a id="ae2d5ce13e82fbd85a68730124968e3ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2d5ce13e82fbd85a68730124968e3ae">&#9670;&nbsp;</a></span>IterateZOrder()</h2>
+<a id="aa3eade861b1f997b948f8a865b7abed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3eade861b1f997b948f8a865b7abed5">&#9670;&nbsp;</a></span>IterateZOrder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -409,7 +409,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void bdm::Environment::IterateZOrder </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1SoHandle.html">SoHandle</a> &amp;&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> &amp;&gt; &amp;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -421,7 +421,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#afe5b80c9170695758b859344d6bd37eb">bdm::UniformGridEnvironment</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a0326f9e204fccd746388dae14b193f92">bdm::UniformGridEnvironment</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00070">70</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00071">71</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>

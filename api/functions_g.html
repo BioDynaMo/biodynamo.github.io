@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1Random.html#a2fbc9b116c2cc0bef008a78a95538a2c">bdm::Random</a>
 </li>
 <li>GaussianBand()
-: <a class="el" href="structbdm_1_1GaussianBand.html#a70321c7c97d30682922703c569cfdb8a">bdm::GaussianBand</a>
+: <a class="el" href="classbdm_1_1GaussianBand.html#a70321c7c97d30682922703c569cfdb8a">bdm::GaussianBand</a>
 </li>
 <li>GenerateExporter()
 : <a class="el" href="classbdm_1_1ExporterFactory.html#a003a3a6ebefee58c1936e7e7fb25072d">bdm::ExporterFactory</a>
@@ -77,16 +77,23 @@ $(function() {
 <li>GenerateParaviewState()
 : <a class="el" href="classbdm_1_1ParaviewAdaptor.html#a4445a748bae7132eff166d1667fbe61d">bdm::ParaviewAdaptor</a>
 </li>
+<li>GenerateUid()
+: <a class="el" href="classbdm_1_1AgentUidGenerator.html#ad6e6dada9933469cb85a95f5815ca483">bdm::AgentUidGenerator</a>
+, <a class="el" href="classbdm_1_1NewAgentEventUidGenerator.html#ab98326738215e149a7056f1a2ecf0eef">bdm::NewAgentEventUidGenerator</a>
+</li>
 <li>generator_
 : <a class="el" href="classbdm_1_1Random.html#a49322cfa9283fdf011e6192dd3622ea3">bdm::Random</a>
 </li>
+<li>GeneRegulation()
+: <a class="el" href="classbdm_1_1GeneRegulation.html#a7c345d3f2c6821ff8658059359352b78">bdm::GeneRegulation</a>
+</li>
 <li>Get()
-: <a class="el" href="classbdm_1_1CommandLineOptions.html#a5312a8aaf565828605e4b7d9475dfcfb">bdm::CommandLineOptions</a>
+: <a class="el" href="classbdm_1_1AgentPointer.html#a9c0b4e14f20b970037a0dbbe83d9297b">bdm::AgentPointer&lt; TAgent &gt;</a>
+, <a class="el" href="classbdm_1_1CommandLineOptions.html#a5312a8aaf565828605e4b7d9475dfcfb">bdm::CommandLineOptions</a>
 , <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#a81680591d656fac3eb4e56072178f2b4">bdm::IntegralTypeWrapper&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1ModuleParamUidGenerator.html#ad1d4157e62f94cd501238964fec0ff49">bdm::ModuleParamUidGenerator</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#acb99bf136cce952b2eaa2a1243f6835a">bdm::SoPointer&lt; TSimObject &gt;</a>
+, <a class="el" href="structbdm_1_1Param.html#a57ef40024ca1ebc58f01e77ab7881d03">bdm::Param</a>
+, <a class="el" href="classbdm_1_1ParamGroupUidGenerator.html#adfca8e5fa8646b5bdeca95056d64c5d3">bdm::ParamGroupUidGenerator</a>
 , <a class="el" href="classbdm_1_1TFileRaii.html#ac4328103c3774c141fa55a7f3bfa35df">bdm::TFileRaii</a>
-, <a class="el" href="classbdm_1_1UniqueEventIdFactory.html#a24bf443bbaf12aad456de4c8ba52c0cc">bdm::UniqueEventIdFactory</a>
 </li>
 <li>get_dm_
 : <a class="el" href="classbdm_1_1MappedDataArray.html#a2f92626584c0f82799322097d19fe105">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
@@ -101,8 +108,21 @@ $(function() {
 : <a class="el" href="classbdm_1_1Cell.html#ad093d767af521a49b32cf24b55fc5976">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae41d28174e2eb24d7de2d17c6f916c81">bdm::neuroscience::NeuriteElement</a>
 </li>
-<li>GetAllBiologyModules()
-: <a class="el" href="classbdm_1_1SimObject.html#a14fe27b5e1949071589058c596c4bbf4">bdm::SimObject</a>
+<li>GetAgent()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a2648bc804571cebe508f96fdb5ca7b45">bdm::InPlaceExecutionContext</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#ab4aa9463256c9d0001de5613597353d0">bdm::ResourceManager</a>
+</li>
+<li>GetAgentHandle()
+: <a class="el" href="classbdm_1_1ResourceManager.html#a4afc6705383f05a5e91384ceeb5b34d2">bdm::ResourceManager</a>
+</li>
+<li>GetAgentPtr()
+: <a class="el" href="classbdm_1_1Agent.html#a4cd9586145c32df5170596a5862a3ea0">bdm::Agent</a>
+</li>
+<li>GetAgentUidGenerator()
+: <a class="el" href="classbdm_1_1Simulation.html#a7de7f45dc18c40554adfc9cca4a84935">bdm::Simulation</a>
+</li>
+<li>GetAllBehaviors()
+: <a class="el" href="classbdm_1_1Agent.html#ac6ff7e2073bd2b3e4794bc8f0a8c26ed">bdm::Agent</a>
 </li>
 <li>GetAllConcentrations()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#aaa72a1dc5ada52134af913a302184801">bdm::DiffusionGrid</a>
@@ -124,7 +144,7 @@ $(function() {
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a8f47d77d6d20ec2273c1c62d0e8f0832">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetBoxIdx()
-: <a class="el" href="classbdm_1_1SimObject.html#a5528e7f6ee7626c9c5fb4f655f567868">bdm::SimObject</a>
+: <a class="el" href="classbdm_1_1Agent.html#ae3e0d8a3c2d9a0b314f645ebd4cb661d">bdm::Agent</a>
 </li>
 <li>GetBoxIndex()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#aec651aa8789e2a68afdea926f84d4966">bdm::DiffusionGrid</a>
@@ -147,21 +167,16 @@ $(function() {
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a0798f8f01811761e55c620d5132bc5bb">bdm::DiffusionGrid</a>
 </li>
 <li>GetConcentrations()
-: <a class="el" href="structbdm_1_1RegulateGenes.html#a389a3fcfd0c5ff68818e0aadd578d95b">bdm::RegulateGenes</a>
+: <a class="el" href="classbdm_1_1GeneRegulation.html#a914703bb3293bd851a93c5c8e170f25f">bdm::GeneRegulation</a>
 </li>
 <li>GetConcentrationThreshold()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a8158d96593ed8a44b6b28f0907d6313e">bdm::DiffusionGrid</a>
 </li>
-<li>GetConstSimObject()
-: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a40cad98751d8e16f9954d221d01f6bd7">bdm::InPlaceExecutionContext</a>
-</li>
-<li>GetCopy()
-: <a class="el" href="structbdm_1_1BaseBiologyModule.html#af13d7c88c2a69166c2d7a7c51554d880">bdm::BaseBiologyModule</a>
-, <a class="el" href="structbdm_1_1ModuleParam.html#acd3142d0f865a356bb7a2d582ff829cc">bdm::ModuleParam</a>
-, <a class="el" href="classbdm_1_1SimObject.html#a819a078ee28817c3c7c368664f31c993">bdm::SimObject</a>
+<li>GetConstAgent()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a81d9f4ada3d0bc1ab82b2b05a5e26538">bdm::InPlaceExecutionContext</a>
 </li>
 <li>GetData()
-: <a class="el" href="classbdm_1_1VtkSimObjects.html#a50c5370c50acda4b67e9be9702238767">bdm::VtkSimObjects</a>
+: <a class="el" href="classbdm_1_1VtkAgents.html#a46cfb562686256f533f3f6439f0ef24a">bdm::VtkAgents</a>
 </li>
 <li>GetDataMemberForVis()
 : <a class="el" href="structbdm_1_1GetDataMemberForVis.html#a0c166b13baa05b64434ba9011b8d514e">bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</a>
@@ -170,13 +185,13 @@ $(function() {
 : <a class="el" href="structbdm_1_1GetDataMemberForVis.html#aa18dede66af2e645698290e13a905fe9">bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</a>
 </li>
 <li>GetDaughterLeft()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ad23ece2f0ee17491c38f9751f64efef5">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a49cdd1883967432ffb73ae40ca7506b9">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetDaughterRight()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a56ffb76be08d21db5735a31e30a4bd2f">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a32b6d7f326941315440ef9bd2555938d">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetDaughters()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a5d44c3ff133a59393de821b5d5d367c1">bdm::neuroscience::NeuronSoma</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#aaea1e9bf6af96acfadc59837c8e8b650">bdm::neuroscience::NeuronSoma</a>
 </li>
 <li>GetDecayConstant()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a37d15baf5b87e4c510443319c2860ecd">bdm::DiffusionGrid</a>
@@ -186,9 +201,9 @@ $(function() {
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a62659e641e4ed9d3abb3ca4e549d56ce">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetDiameter()
-: <a class="el" href="classbdm_1_1Cell.html#a5d245e964e5bc6b4cc42bd7a83a31d65">bdm::Cell</a>
+: <a class="el" href="classbdm_1_1Agent.html#a105948673d397c1ed122b4304cacb446">bdm::Agent</a>
+, <a class="el" href="classbdm_1_1Cell.html#a5d245e964e5bc6b4cc42bd7a83a31d65">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a2d6cc7592f0e1bbf5f521cc9e792c5dc">bdm::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1SimObject.html#a93ab12aa6166d9f07337b799c0056c2a">bdm::SimObject</a>
 </li>
 <li>GetDiffusionCoefficients()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#ad29d0017c6ce0b87ba54bce91dfbbf14">bdm::DiffusionGrid</a>
@@ -209,16 +224,13 @@ $(function() {
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#ac11ecd43bce9c71df06e00fc1e149753">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetElementIdx()
-: <a class="el" href="classbdm_1_1SoHandle.html#a1168366c6bad75532c2d7e5961971eb2">bdm::SoHandle</a>
+: <a class="el" href="classbdm_1_1AgentHandle.html#aa328d74085fcb1ee3c0be71e87ab99fa">bdm::AgentHandle</a>
 </li>
 <li>GetEnvironment()
 : <a class="el" href="classbdm_1_1Simulation.html#ac33fad362799e0633e364cf54bff3d95">bdm::Simulation</a>
 </li>
 <li>GetExecutionContext()
 : <a class="el" href="classbdm_1_1Simulation.html#a0be91b02708fc3ecbc5ac229a09e9ba1">bdm::Simulation</a>
-</li>
-<li>GetForce()
-: <a class="el" href="classbdm_1_1DefaultForce.html#abb1552006fd25a7cecba96d8a8f79a88">bdm::DefaultForce</a>
 </li>
 <li>GetGradient()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a39215ce594ca5d7da6e37d75208f0ad9">bdm::DiffusionGrid</a>
@@ -236,29 +248,19 @@ $(function() {
 : <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a240b35ab66d5b1e68b00445489447a2f">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetHighestIndex()
-: <a class="el" href="classbdm_1_1SoUidGenerator.html#ab30f75246c6d0685298b0b3e9e4fe8e0">bdm::SoUidGenerator</a>
-</li>
-<li>GetId()
-: <a class="el" href="structbdm_1_1CellDivisionEvent.html#ad9bfd32894166dfe9c3c83fdb7b5f2cd">bdm::CellDivisionEvent</a>
-, <a class="el" href="structbdm_1_1Event.html#aae3f862e492baeb005128e65e93ecbd8">bdm::Event</a>
-, <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteBifurcationEvent.html#a09041176b0d0c8d50a2bce9b391bff91">bdm::neuroscience::NeuriteBifurcationEvent</a>
-, <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteBranchingEvent.html#ac479f9ce462b1a784eda7a7566dff13e">bdm::neuroscience::NeuriteBranchingEvent</a>
-, <a class="el" href="structbdm_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#aea44dc54b37f3dfefb7a12b1b40de392">bdm::neuroscience::NewNeuriteExtensionEvent</a>
-, <a class="el" href="structbdm_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#a3bdc9455453564a342775fd48d25b6be">bdm::neuroscience::SideNeuriteExtensionEvent</a>
-, <a class="el" href="structbdm_1_1neuroscience_1_1SplitNeuriteElementEvent.html#acf4715510f060698fedff16ebb738388">bdm::neuroscience::SplitNeuriteElementEvent</a>
+: <a class="el" href="classbdm_1_1AgentUidGenerator.html#a7dfc5c0817172202081ae27ce6db0667">bdm::AgentUidGenerator</a>
 </li>
 <li>GetImplementation()
 : <a class="el" href="structbdm_1_1Operation.html#a220acd9e419290d058605ee2d6b86c7d">bdm::Operation</a>
 </li>
 <li>GetIndex()
-: <a class="el" href="classbdm_1_1SoUid.html#a17546ac00e04ad478e8bc41daa8e54df">bdm::SoUid</a>
+: <a class="el" href="classbdm_1_1AgentUid.html#a774728806420d5ae79d088e15b851046">bdm::AgentUid</a>
 </li>
 <li>GetInstance()
-: <a class="el" href="structbdm_1_1BaseBiologyModule.html#a56454e497e634175b18e22e6a3c89af3">bdm::BaseBiologyModule</a>
-, <a class="el" href="classbdm_1_1GpuHelper.html#a79e5e79b22ae31f2666646f64f1dc96a">bdm::GpuHelper</a>
+: <a class="el" href="classbdm_1_1GpuHelper.html#a79e5e79b22ae31f2666646f64f1dc96a">bdm::GpuHelper</a>
+, <a class="el" href="classbdm_1_1NewAgentEventUidGenerator.html#ae5fb518b3861d92cc8754cfdd17fecd2">bdm::NewAgentEventUidGenerator</a>
 , <a class="el" href="classbdm_1_1OpenCLState.html#ab6e01b1c83d8d84da5c4a2e62aedfd4f">bdm::OpenCLState</a>
-, <a class="el" href="structbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">bdm::OperationRegistry</a>
-, <a class="el" href="classbdm_1_1SimObject.html#a68f549d48268b907f198325d8bc17d7f">bdm::SimObject</a>
+, <a class="el" href="classbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">bdm::OperationRegistry</a>
 , <a class="el" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">bdm::ThreadInfo</a>
 </li>
 <li>GetL2Distance()
@@ -271,17 +273,17 @@ $(function() {
 <li>GetLength()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a03808ea91509089ded7c92f2ffe2581c">bdm::neuroscience::NeuriteElement</a>
 </li>
-<li>GetListOfScheduledSimObjectOps()
-: <a class="el" href="classbdm_1_1Scheduler.html#ae8bc6a11bd1bacacf5bb0c8442ee5824">bdm::Scheduler</a>
+<li>GetListOfScheduledAgentOps()
+: <a class="el" href="classbdm_1_1Scheduler.html#aedcb73e19e6012fbe7b736fab6ef4565">bdm::Scheduler</a>
 </li>
 <li>GetListOfScheduledStandaloneOps()
 : <a class="el" href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">bdm::Scheduler</a>
 </li>
 <li>GetLock()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a916864e50fcefd385a70da916bd70911">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1Agent.html#a36898cb73557fdc316d5ea53f51d92d1">bdm::Agent</a>
+, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a916864e50fcefd385a70da916bd70911">bdm::neuroscience::NeuriteElement</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#ae5335301d390af241824972984a36464">bdm::neuroscience::NeuronOrNeurite</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a9588d041be4a797baa1e9d6b898db23c">bdm::neuroscience::NeuronSoma</a>
-, <a class="el" href="classbdm_1_1SimObject.html#af0a316d097755754cb186a8e91c564e6">bdm::SimObject</a>
 </li>
 <li>GetMass()
 : <a class="el" href="classbdm_1_1Cell.html#af10d4a57a42582519f9732148badd093">bdm::Cell</a>
@@ -299,9 +301,6 @@ $(function() {
 <li>GetMemoryManager()
 : <a class="el" href="classbdm_1_1Simulation.html#ab97c53c09800313bcb76a7e563b222c8">bdm::Simulation</a>
 </li>
-<li>GetModuleParam()
-: <a class="el" href="structbdm_1_1Param.html#a2502df5634fd2eafcce9634d5757459f">bdm::Param</a>
-</li>
 <li>GetMooreBoxes()
 : <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a1fe11145aeb73237741ef402456f9b4f">bdm::UniformGridEnvironment</a>
 </li>
@@ -309,7 +308,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a381537cb45e8e7745bc14a1da02e5bbd">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetMother()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a89f146db7fe3cd88e25e9b6976d2e18e">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a13bda513abe12fd316b7940ed26c8168">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetMutex()
 : <a class="el" href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html#a836c2bb645aeba777a96cffb5ac9b1d7">bdm::Environment::NeighborMutexBuilder</a>
@@ -331,14 +330,17 @@ $(function() {
 : <a class="el" href="classbdm_1_1Environment.html#a5bd804d468eef37cf5fae001939d8913">bdm::Environment</a>
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6d0941a48587c0dbb6f1b20571151c52">bdm::UniformGridEnvironment</a>
 </li>
-<li>GetNeuronOrNeuriteSoPtr()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#ae3e73ba4d3a9c0c8ffc2c34a01ff2dd2">bdm::neuroscience::NeuronOrNeurite</a>
+<li>GetNeuronOrNeuriteAgentPtr()
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#a80def8ace196c612add3a9274f54547a">bdm::neuroscience::NeuronOrNeurite</a>
 </li>
 <li>GetNextPageBatch()
 : <a class="el" href="structbdm_1_1memory__manager__detail_1_1AllocatedBlock.html#a40cf4337573799b595c3a14597269f8e">bdm::memory_manager_detail::AllocatedBlock</a>
 </li>
+<li>GetNumAgents()
+: <a class="el" href="classbdm_1_1ResourceManager.html#ac354ecae1fc6a23fc8afea219fc62c27">bdm::ResourceManager</a>
+</li>
 <li>GetNumaNode()
-: <a class="el" href="classbdm_1_1SoHandle.html#a91bef5896740da2eb5a752512462180b">bdm::SoHandle</a>
+: <a class="el" href="classbdm_1_1AgentHandle.html#aa36c9d730196972026c188359e4bb879">bdm::AgentHandle</a>
 , <a class="el" href="classbdm_1_1ThreadInfo.html#a5bde3113d8c73efb9e4482e96c187094">bdm::ThreadInfo</a>
 </li>
 <li>GetNumaNodes()
@@ -354,14 +356,11 @@ $(function() {
 <li>GetNumBoxesArray()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a3ab434240c3bde4a2eded498ad5d0e2e">bdm::DiffusionGrid</a>
 </li>
-<li>GetNumSimObjects()
-: <a class="el" href="classbdm_1_1ResourceManager.html#acf9384a4f2c6c58f0dbfab59788ca3e4">bdm::ResourceManager</a>
-</li>
 <li>GetOpenCLState()
 : <a class="el" href="classbdm_1_1Simulation.html#a9ef5f8da9bed3ddd417b98a22fce83b7">bdm::Simulation</a>
 </li>
 <li>GetOperation()
-: <a class="el" href="structbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">bdm::OperationRegistry</a>
+: <a class="el" href="classbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">bdm::OperationRegistry</a>
 </li>
 <li>GetOps()
 : <a class="el" href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">bdm::Scheduler</a>
@@ -376,16 +375,16 @@ $(function() {
 : <a class="el" href="classbdm_1_1Simulation.html#ad89da4f94b996ac4b356f76d98f94fbf">bdm::Simulation</a>
 </li>
 <li>GetPosition()
-: <a class="el" href="classbdm_1_1Cell.html#ab46d5806fa59d15ceb66d273274adb77">bdm::Cell</a>
+: <a class="el" href="classbdm_1_1Agent.html#a68941bf6bf239b0bc51ea5183518f543">bdm::Agent</a>
+, <a class="el" href="classbdm_1_1Cell.html#ab46d5806fa59d15ceb66d273274adb77">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a17c9dc09b74e26a599405e575be754a1">bdm::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1SimObject.html#aee76d8d139aff1e56575df09266bcfab">bdm::SimObject</a>
 </li>
 <li>GetRandom()
 : <a class="el" href="classbdm_1_1Simulation.html#a21d53321d1a164024667acac9f35479d">bdm::Simulation</a>
 </li>
 <li>GetRequiredVisDataMembers()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae13b767f4a99a9a9964d14f174c090ef">bdm::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1SimObject.html#aeca7734b3f701a23ad870150e09084df">bdm::SimObject</a>
+: <a class="el" href="classbdm_1_1Agent.html#ae6fb85d3cda14279a4b12e8c6fdc8c3b">bdm::Agent</a>
+, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae13b767f4a99a9a9964d14f174c090ef">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetResolution()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#aaa8b1ca832b4d31aa71867c7d089dc51">bdm::DiffusionGrid</a>
@@ -396,15 +395,18 @@ $(function() {
 <li>GetRestingLength()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a39f39c77046ef1820e0f794331b95014">bdm::neuroscience::NeuriteElement</a>
 </li>
+<li>GetResults()
+: <a class="el" href="classbdm_1_1ReductionOp.html#a52dbc1f42994d8d5603ce4c4cb3936f6">bdm::ReductionOp&lt; T &gt;</a>
+</li>
 <li>GetReused()
-: <a class="el" href="classbdm_1_1SoUid.html#a597b8894a2c152fac3e2a35b633eafc7">bdm::SoUid</a>
-, <a class="el" href="classbdm_1_1SoUidMap.html#a007dfaa9587376d853dce61f19d971ad">bdm::SoUidMap&lt; TValue &gt;</a>
+: <a class="el" href="classbdm_1_1AgentUid.html#ae778b6405ce6461beecf6ac78df4b47e">bdm::AgentUid</a>
+, <a class="el" href="classbdm_1_1AgentUidMap.html#a0a85668c94e7251a2df38ff585320831">bdm::AgentUidMap&lt; TValue &gt;</a>
 </li>
 <li>GetRootVisualization()
 : <a class="el" href="classbdm_1_1Scheduler.html#a3103e62eaf8ba572318dc0a6050f6e95">bdm::Scheduler</a>
 </li>
 <li>GetRunDisplacementForAllNextTs()
-: <a class="el" href="classbdm_1_1SimObject.html#aecf3908a3d44322474ab7119b7e930f7">bdm::SimObject</a>
+: <a class="el" href="classbdm_1_1Agent.html#a68e2a448417c0eca3e3e5e8aa16386cc">bdm::Agent</a>
 </li>
 <li>GetScheduler()
 : <a class="el" href="classbdm_1_1Simulation.html#a831f22ad084c248b0d2698242ebdabb8">bdm::Simulation</a>
@@ -413,17 +415,10 @@ $(function() {
 : <a class="el" href="classbdm_1_1Random.html#a3ddc1b63acd34e3aad3f2efd00d0abc2">bdm::Random</a>
 </li>
 <li>GetShape()
-: <a class="el" href="classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783">bdm::Cell</a>
+: <a class="el" href="classbdm_1_1Agent.html#a6b0daa4cc7d984c2ae0465834dfcd30e">bdm::Agent</a>
+, <a class="el" href="classbdm_1_1Cell.html#a1d580c65c1d63e95eeff78d477e8b783">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ad15f6a070db9203dacb9bcdc526e8ac2">bdm::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1SimObject.html#ab178f73dd35873394b74e2b5ad82f52e">bdm::SimObject</a>
-, <a class="el" href="classbdm_1_1VtkSimObjects.html#a415d8a4c8204f8082c3e6ea684a8b447">bdm::VtkSimObjects</a>
-</li>
-<li>GetSimObject()
-: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a39183af11504e5807ce654c1dae2343b">bdm::InPlaceExecutionContext</a>
-, <a class="el" href="classbdm_1_1ResourceManager.html#a0c615980ce378e3c6db9c8fe37d7848d">bdm::ResourceManager</a>
-</li>
-<li>GetSimObjectWithSoHandle()
-: <a class="el" href="classbdm_1_1ResourceManager.html#a47be9c07710d8826c57416c1bcb116e3">bdm::ResourceManager</a>
+, <a class="el" href="classbdm_1_1VtkAgents.html#a64e885babb37225f206a2130adebffa4">bdm::VtkAgents</a>
 </li>
 <li>GetSimulatedSteps()
 : <a class="el" href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">bdm::Scheduler</a>
@@ -436,15 +431,6 @@ $(function() {
 </li>
 <li>GetSize()
 : <a class="el" href="classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a966c82746b7f14294ac1e1334217031e">bdm::memory_manager_detail::NumaPoolAllocator</a>
-</li>
-<li>GetSoHandle()
-: <a class="el" href="classbdm_1_1ResourceManager.html#a211343840c7833a1ac52cd2016aad322">bdm::ResourceManager</a>
-</li>
-<li>GetSoPtr()
-: <a class="el" href="classbdm_1_1SimObject.html#a4fe14a0230bfd45c4b849d9773a7aacb">bdm::SimObject</a>
-</li>
-<li>GetSoUidGenerator()
-: <a class="el" href="classbdm_1_1Simulation.html#ad663e90892e415662ec876cc7424f7b8">bdm::Simulation</a>
 </li>
 <li>GetSpringAxis()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a165caab157043e19f3db057454b11571">bdm::neuroscience::NeuriteElement</a>
@@ -462,7 +448,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1RuntimeVariables.html#a9b94fe3d93effc68994679c636ac4c49">bdm::RuntimeVariables</a>
 </li>
 <li>GetTClass()
-: <a class="el" href="classbdm_1_1VtkSimObjects.html#a1e28c6e79b9a58968f43dc5198d3fec8">bdm::VtkSimObjects</a>
+: <a class="el" href="classbdm_1_1VtkAgents.html#ae4ea6ccdf6ecfc90028efb166fa5c850">bdm::VtkAgents</a>
 </li>
 <li>GetTension()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae36cfdefc3ab7dbac0441e074495a275">bdm::neuroscience::NeuriteElement</a>
@@ -474,13 +460,13 @@ $(function() {
 : <a class="el" href="classbdm_1_1Cell.html#a2b141df045e6db7a07ab81be5434a259">bdm::Cell</a>
 </li>
 <li>GetTuple()
-: <a class="el" href="classbdm_1_1MappedDataArray.html#a23c5f33735432a440ee810be4ea62897">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#af5be195d48de6068668385b9c20494fe">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>GetTuples()
 : <a class="el" href="classbdm_1_1MappedDataArray.html#acc338f8f5587f1e6d093578f5226ff5f">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>GetType()
-: <a class="el" href="structbdm_1_1TypeIndex.html#a58c7420bcace073c4b64128d89274944">bdm::TypeIndex</a>
+: <a class="el" href="classbdm_1_1TypeIndex.html#a091529f248cd2558096802dbfa878054">bdm::TypeIndex</a>
 </li>
 <li>GetTypedTuple()
 : <a class="el" href="classbdm_1_1MappedDataArray.html#a6c5f8fdda64845e5ae58d683632d192c">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
@@ -489,16 +475,23 @@ $(function() {
 : <a class="el" href="classbdm_1_1ResourceManager.html#a0bf9cd8e9b6cf45fe81c81cd6517d501">bdm::ResourceManager</a>
 </li>
 <li>GetTypeName()
-: <a class="el" href="classbdm_1_1SimObject.html#a56be44cdbd966ee7b7cf539078d09bde">bdm::SimObject</a>
+: <a class="el" href="classbdm_1_1Agent.html#a73435a1dc05833a29749ca6b87a98e92">bdm::Agent</a>
 </li>
 <li>GetUid()
-: <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#afc7ec1a938763983258bfa2597de41c1">bdm::detail::ExtractUid</a>
-, <a class="el" href="structbdm_1_1ModuleParam.html#a81ed7fc2b16a99c73f62f0ffff01e279">bdm::ModuleParam</a>
-, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#af11de601244332f76b4a6fbd16824a3c">bdm::neuroscience::NeuriteElement</a>
-, <a class="el" href="classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#a7ac632d2e0f62b992cbc916485805012">bdm::neuroscience::NeuronOrNeurite</a>
-, <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a144a8caeeedecce0ccca88883184bf9f">bdm::neuroscience::NeuronSoma</a>
-, <a class="el" href="classbdm_1_1SimObject.html#a42dc4ea25bbb2bf087b33232b9f364a6">bdm::SimObject</a>
-, <a class="el" href="classbdm_1_1SoPointer.html#a0a0448ed4d92a53a2aba677e5a686471">bdm::SoPointer&lt; TSimObject &gt;</a>
+: <a class="el" href="classbdm_1_1Agent.html#adcd10db730dc105aef49d7a4295d93fe">bdm::Agent</a>
+, <a class="el" href="classbdm_1_1AgentPointer.html#a9341334b71a3ee2208fa72536fe611df">bdm::AgentPointer&lt; TAgent &gt;</a>
+, <a class="el" href="structbdm_1_1CellDivisionEvent.html#abe3ea201c59503c0755b8a1cc74f36c0">bdm::CellDivisionEvent</a>
+, <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#aed677641042db8f04e6f4b6592d6be94">bdm::detail::ExtractUid</a>
+, <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteBifurcationEvent.html#afc56660ff762f7d96097c85f496d22d0">bdm::neuroscience::NeuriteBifurcationEvent</a>
+, <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteBranchingEvent.html#a7a3043c431f500dc9730a949c2a0f4bb">bdm::neuroscience::NeuriteBranchingEvent</a>
+, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a7f667455822c0b24e22a8b024ca47357">bdm::neuroscience::NeuriteElement</a>
+, <a class="el" href="classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#a83df64a95d9805cb42e3a226e5dd91bc">bdm::neuroscience::NeuronOrNeurite</a>
+, <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#ac1d35cba9355772ebf151143159a8bd9">bdm::neuroscience::NeuronSoma</a>
+, <a class="el" href="structbdm_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#a3d4549741b576342d2f99eedcb46a8f6">bdm::neuroscience::NewNeuriteExtensionEvent</a>
+, <a class="el" href="structbdm_1_1neuroscience_1_1SideNeuriteExtensionEvent.html#af0ebb66e0697d30f25943f98d28b3bad">bdm::neuroscience::SideNeuriteExtensionEvent</a>
+, <a class="el" href="structbdm_1_1neuroscience_1_1SplitNeuriteElementEvent.html#ad26d345f639e7678b6dc1c5cf77b2199">bdm::neuroscience::SplitNeuriteElementEvent</a>
+, <a class="el" href="structbdm_1_1NewAgentEvent.html#afb5d485434d9e0140c73afaccdd8d683">bdm::NewAgentEvent</a>
+, <a class="el" href="structbdm_1_1ParamGroup.html#a1dfc0fa3711da31f99ec3236cc71a1ba">bdm::ParamGroup</a>
 </li>
 <li>GetUniqueName()
 : <a class="el" href="classbdm_1_1Simulation.html#adb375e6e8628519f06b8a9225edcd14f">bdm::Simulation</a>
@@ -533,8 +526,8 @@ $(function() {
 <li>GetZAxis()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a77f3e72cea680bdd01fa512fe99731fc">bdm::neuroscience::NeuriteElement</a>
 </li>
-<li>gradient_
-: <a class="el" href="structbdm_1_1Param_1_1VisualizeDiffusion.html#af977582e3fe80674720451880dd55e34">bdm::Param::VisualizeDiffusion</a>
+<li>gradient
+: <a class="el" href="structbdm_1_1Param_1_1VisualizeDiffusion.html#aa4cccff0c3dcf4526852aa2ff2205749">bdm::Param::VisualizeDiffusion</a>
 </li>
 <li>gradient_array_idx_
 : <a class="el" href="classbdm_1_1VtkDiffusionGrid.html#ab4a23536fc8e0b44f9cd7f05f6d516a3">bdm::VtkDiffusionGrid</a>
@@ -562,16 +555,19 @@ $(function() {
 <li>GridNeighborMutex()
 : <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1GridNeighborMutex.html#abca8ea0866a496d6b7b4f4c68e6f8d7d">bdm::UniformGridEnvironment::GridNeighborMutexBuilder::GridNeighborMutex</a>
 </li>
-<li>GrowDivide()
-: <a class="el" href="structbdm_1_1GrowDivide.html#adf1e1edbbe23c0d539e261885c98d407">bdm::GrowDivide</a>
+<li>groups_
+: <a class="el" href="structbdm_1_1Param.html#ae3e5e7dc45f32c58be8dc4dcf03cde50">bdm::Param</a>
 </li>
-<li>GrowSoContainer()
-: <a class="el" href="classbdm_1_1ResourceManager.html#a8d60a8c4b5979a7d93eee445072b16a7">bdm::ResourceManager</a>
+<li>GrowAgentContainer()
+: <a class="el" href="classbdm_1_1ResourceManager.html#a745e359b03d69ac6f395e703cd55c2f2">bdm::ResourceManager</a>
 </li>
 <li>growth_rate_
-: <a class="el" href="structbdm_1_1GrowDivide.html#af79c81bc5c6ef2aba82f1fa84d8fc432">bdm::GrowDivide</a>
+: <a class="el" href="classbdm_1_1GrowthDivision.html#a901597059b32e828dbf087278b840360">bdm::GrowthDivision</a>
 , <a class="el" href="classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a7ce9cf9f06be59bf3032e352818e4bfa">bdm::memory_manager_detail::NumaPoolAllocator</a>
 , <a class="el" href="classbdm_1_1MemoryManager.html#aa2ae19226454f034f73e35618ad6650b">bdm::MemoryManager</a>
+</li>
+<li>GrowthDivision()
+: <a class="el" href="classbdm_1_1GrowthDivision.html#a497ba294e1ad305c6558bfb8791d7ad7">bdm::GrowthDivision</a>
 </li>
 </ul>
 </div><!-- contents -->

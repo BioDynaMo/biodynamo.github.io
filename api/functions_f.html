@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-3-gaa8e3048</span>
+   &#160;<span id="projectnumber">v0.9-4-g8e1c55c0</span>
    </div>
   </td>
  </tr>
@@ -81,10 +81,10 @@ $(function() {
 : <a class="el" href="classbdm_1_1UnorderedFlatmap.html#a50104f1d523a991bb7de58caebe492d4">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
 </li>
 <li>FindTClass()
-: <a class="el" href="classbdm_1_1VtkSimObjects.html#a78d33ad686ae9c842e8e499b67698a83">bdm::VtkSimObjects</a>
+: <a class="el" href="classbdm_1_1VtkAgents.html#a7772ce616f70d267d06603f67a9cc0af">bdm::VtkAgents</a>
 </li>
 <li>first_derivatives_
-: <a class="el" href="structbdm_1_1RegulateGenes.html#a0b4d7b125e296c7d96e84b5694cd269a">bdm::RegulateGenes</a>
+: <a class="el" href="classbdm_1_1GeneRegulation.html#ab0b2b23cc38b3b1b6b73ade3ab66879c">bdm::GeneRegulation</a>
 </li>
 <li>first_parse_
 : <a class="el" href="classbdm_1_1CommandLineOptions.html#ac96a2b7dfafa21bd45548f1cf41f7361">bdm::CommandLineOptions</a>
@@ -92,17 +92,12 @@ $(function() {
 <li>flag_
 : <a class="el" href="classbdm_1_1Spinlock.html#a9bb64a6eb8c45c864026c3558ae5fd11">bdm::Spinlock</a>
 </li>
-<li>ForAllOperations()
-: <a class="el" href="classbdm_1_1Scheduler.html#a5cab177714c758c4c6a110311d48ad50">bdm::Scheduler</a>
-</li>
-<li>ForAllOperationsInList()
-: <a class="el" href="classbdm_1_1Scheduler.html#a3f93c5835cef9833e25a08e60d4c3d1f">bdm::Scheduler</a>
-</li>
-<li>ForAllScheduledOperations()
-: <a class="el" href="classbdm_1_1Scheduler.html#a18273cc023675d6add45d2f1d1bedd5b">bdm::Scheduler</a>
-</li>
 <li>force
-: <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a54280c0033d9db671b15105869817a63">bdm::neuroscience::NeuriteElement::DisplacementFunctor</a>
+: <a class="el" href="structbdm_1_1Cell_1_1DisplacementFunctor.html#ad701fe841cd8be8742396aafce5940f1">bdm::Cell::DisplacementFunctor</a>
+, <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a6ed50e1b98c817255139978534f3e5cb">bdm::neuroscience::NeuriteElement::DisplacementFunctor</a>
+</li>
+<li>force_
+: <a class="el" href="classbdm_1_1DisplacementOp.html#ab5e62884f5d2ca124a194c31953d854b">bdm::DisplacementOp</a>
 </li>
 <li>force_from_neighbors
 : <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a36f8ab3757e63d65ddaa81004174f904">bdm::neuroscience::NeuriteElement::DisplacementFunctor</a>
@@ -114,34 +109,55 @@ $(function() {
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae802c9adc7c19b11b40146aa1cc3d8c9">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>ForceBetweenCylinders()
-: <a class="el" href="classbdm_1_1DefaultForce.html#a011192a75c8bbd8c506e3b1f3a3a02ae">bdm::DefaultForce</a>
+: <a class="el" href="classbdm_1_1InteractionForce.html#ad237c312f8a675283d0c5d2b958c824e">bdm::InteractionForce</a>
 </li>
 <li>ForceBetweenSpheres()
-: <a class="el" href="classbdm_1_1DefaultForce.html#a0de3e99909fcbe3e2f8eb71f5914b67d">bdm::DefaultForce</a>
+: <a class="el" href="classbdm_1_1InteractionForce.html#acb32eb7f81046f669fb8e75a22e05911">bdm::InteractionForce</a>
 </li>
 <li>ForceOnACylinderFromASphere()
-: <a class="el" href="classbdm_1_1DefaultForce.html#a23efb7199c24b4b5d76360c73d81413c">bdm::DefaultForce</a>
+: <a class="el" href="classbdm_1_1InteractionForce.html#a0238072da13c26b441665a9e8ece607d">bdm::InteractionForce</a>
 </li>
 <li>ForceOnASphereFromACylinder()
-: <a class="el" href="classbdm_1_1DefaultForce.html#aa3be529725a816e4963cc44a514f685e">bdm::DefaultForce</a>
+: <a class="el" href="classbdm_1_1InteractionForce.html#ad1032c5d06434514efc87d00dfba8304">bdm::InteractionForce</a>
 </li>
 <li>ForceTransmittedFromDaugtherToMother()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#aac1dad2a8574fd48ca10446cb882bbab">bdm::neuroscience::NeuriteElement</a>
 </li>
+<li>ForEachAgent()
+: <a class="el" href="classbdm_1_1ResourceManager.html#afcdb1cb8562340e45ccf358ed7c91b20">bdm::ResourceManager</a>
+</li>
+<li>ForEachAgentParallel()
+: <a class="el" href="classbdm_1_1ResourceManager.html#ab5434441567369db35da74bfa81bb689">bdm::ResourceManager</a>
+</li>
+<li>ForEachAgentParallelFunctor()
+: <a class="el" href="structbdm_1_1ForEachAgentParallelFunctor.html#a505c57835d6537fa2b2eb90e092c7241">bdm::ForEachAgentParallelFunctor&lt; TFunctor &gt;</a>
+</li>
+<li>ForEachDiffusionGrid()
+: <a class="el" href="classbdm_1_1ResourceManager.html#a4e6ef81f3a455eee0649b1fd369f7ead">bdm::ResourceManager</a>
+</li>
 <li>ForEachNeighbor()
-: <a class="el" href="classbdm_1_1Environment.html#ab36914a37ce784e7816355cb4d47d906">bdm::Environment</a>
-, <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a02a62250aeb00282c45d1cb540e8ee14">bdm::InPlaceExecutionContext</a>
-, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3b83831afc6b2ed5d3513f0bd394e6e9">bdm::UniformGridEnvironment</a>
+: <a class="el" href="classbdm_1_1Environment.html#ad381b8cd7ab3f55b107229a8b1831810">bdm::Environment</a>
+, <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a24d8e7b5b6c04aca00342be7aceb40f9">bdm::InPlaceExecutionContext</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#ab29ab8fed5e267e470c15725bdd2a351">bdm::UniformGridEnvironment</a>
 </li>
 <li>ForEachNeighborFunctor()
-: <a class="el" href="structbdm_1_1ForEachNeighborFunctor.html#acdb9e372a7f4506e50db7bd82d995dfa">bdm::ForEachNeighborFunctor</a>
+: <a class="el" href="structbdm_1_1ForEachNeighborFunctor.html#a8cbc7f9af20da71d06b8b301254d8909">bdm::ForEachNeighborFunctor</a>
 </li>
 <li>ForEachNeighborWithinRadius()
-: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#abeec01d41e4fab0a92d0bb7bfe090fa1">bdm::InPlaceExecutionContext</a>
-, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a1c411130aa07d2fb04d63050944ace70">bdm::UniformGridEnvironment</a>
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a21232ea2b986f84fbb4307775e88fae7">bdm::InPlaceExecutionContext</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a8f803a494523e90ee28052b9520b4b8f">bdm::UniformGridEnvironment</a>
 </li>
 <li>ForEachNeighborWithinRadiusFunctor()
-: <a class="el" href="structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a8ff9f745f07f9e3913c2a844e57d9071">bdm::ForEachNeighborWithinRadiusFunctor</a>
+: <a class="el" href="structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a76eb8dc3f0506e5be4ff5422657ce51b">bdm::ForEachNeighborWithinRadiusFunctor</a>
+</li>
+<li>ForEachOperation()
+: <a class="el" href="classbdm_1_1Scheduler.html#a80cd1b9d4c7d5113623cf897929bb09e">bdm::Scheduler</a>
+</li>
+<li>ForEachOperationInList()
+: <a class="el" href="classbdm_1_1Scheduler.html#ac4ebe6a62fded7efe59c85b9e12ce27e">bdm::Scheduler</a>
+</li>
+<li>ForEachScheduledOperation()
+: <a class="el" href="classbdm_1_1Scheduler.html#a3a8427b7efea4a7918d6d1dba8ede920">bdm::Scheduler</a>
 </li>
 <li>ForwardToNonEmptyBox()
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1NeighborIterator.html#a1d271b9cd286e26036fabd29c8187d02">bdm::UniformGridEnvironment::NeighborIterator</a>
@@ -156,11 +172,11 @@ $(function() {
 : <a class="el" href="classbdm_1_1MathArray.html#adf28598d3603aa2111bfcb2d74ae8c79">bdm::MathArray&lt; T, N &gt;</a>
 </li>
 <li>function_
-: <a class="el" href="structbdm_1_1ForEachNeighborFunctor.html#a932c6595511d49510449899bb12b9610">bdm::ForEachNeighborFunctor</a>
-, <a class="el" href="structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a85052986a9e29e1910750ea0950b5260">bdm::ForEachNeighborWithinRadiusFunctor</a>
+: <a class="el" href="structbdm_1_1ForEachNeighborFunctor.html#a02a7e0a8072f1ab27c41f58dc97bcb0b">bdm::ForEachNeighborFunctor</a>
+, <a class="el" href="structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#ab579a37f5d65057c43e4e61b8bc967af">bdm::ForEachNeighborWithinRadiusFunctor</a>
 </li>
 <li>functor_
-: <a class="el" href="structbdm_1_1ApplyOnAllElementsParallelFunctor.html#a7e0e0b2ca3e52bd0fe4eed0749a4a73d">bdm::ApplyOnAllElementsParallelFunctor&lt; TFunctor &gt;</a>
+: <a class="el" href="structbdm_1_1ForEachAgentParallelFunctor.html#a698a5fba6c3ae0cafc932aa72570c1b3">bdm::ForEachAgentParallelFunctor&lt; TFunctor &gt;</a>
 </li>
 <li>functor_name_
 : <a class="el" href="classbdm_1_1JitForEachDataMemberFunctor.html#a82df3c88054b9d4c48ec1f32a75c4adb">bdm::JitForEachDataMemberFunctor</a>

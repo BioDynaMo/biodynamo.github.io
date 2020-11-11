@@ -7,16 +7,16 @@ var searchData=
   ['paraviewadaptortest',['ParaviewAdaptorTest',['../classbdm_1_1Simulation.html#a0bad47fe459dbc64e41e90eb07924ec6',1,'bdm::Simulation']]],
   ['parity_5f',['parity_',['../classbdm_1_1DiffusionGrid.html#a43eb9c7672545e39ce391b08e6ea24d3',1,'bdm::DiffusionGrid']]],
   ['parser_5f',['parser_',['../classbdm_1_1CommandLineOptions.html#a963b1b6bf68a3c37b921ceb34e25f616',1,'bdm::CommandLineOptions']]],
-  ['phi_5f',['phi_',['../structbdm_1_1CellDivisionEvent.html#a0f86fa1e9b7d50a8e07c3c013e2bb890',1,'bdm::CellDivisionEvent::phi_()'],['../structbdm_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#a3566d39c6b6362de14d3581e76f9fd0e',1,'bdm::neuroscience::NewNeuriteExtensionEvent::phi_()']]],
+  ['phi',['phi',['../structbdm_1_1CellDivisionEvent.html#a9e21bf266afab570ca4425674c24f722',1,'bdm::CellDivisionEvent::phi()'],['../structbdm_1_1neuroscience_1_1NewNeuriteExtensionEvent.html#ac3206955e8a018b1b534657b581c6b72',1,'bdm::neuroscience::NewNeuriteExtensionEvent::phi()']]],
   ['piece_5fboxes_5fz_5f',['piece_boxes_z_',['../classbdm_1_1VtkDiffusionGrid.html#af30fde4ec93b037fa9045bd9765aaeee',1,'bdm::VtkDiffusionGrid']]],
   ['piece_5fboxes_5fz_5flast_5f',['piece_boxes_z_last_',['../classbdm_1_1VtkDiffusionGrid.html#ab2943fd77e0d47ce737b3db84a36f020',1,'bdm::VtkDiffusionGrid']]],
   ['piece_5fextents_5f',['piece_extents_',['../classbdm_1_1VtkDiffusionGrid.html#aa1949a51792f737520fb92e780b1bf6b',1,'bdm::VtkDiffusionGrid']]],
   ['position_5f',['position_',['../classbdm_1_1Cell.html#a4162cd38320f2ca2deb7bbd2a8a1e45b',1,'bdm::Cell::position_()'],['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a0ccad664953f485c2326ec002e985d1c',1,'bdm::neuroscience::NeuriteElement::position_()']]],
   ['post_5fscheduled_5fops_5f',['post_scheduled_ops_',['../classbdm_1_1Scheduler.html#a2138ab8b8d6d725fafa5846405ded200',1,'bdm::Scheduler']]],
   ['pre_5fscheduled_5fops_5f',['pre_scheduled_ops_',['../classbdm_1_1Scheduler.html#a3fa6c13b51ab3596004c6a46085ea26a',1,'bdm::Scheduler']]],
-  ['preferred_5fgpu_5f',['preferred_gpu_',['../structbdm_1_1Param.html#a4b46410b40ad02da690638c7e04be73a',1,'bdm::Param']]],
-  ['previous_5fmaps_5f',['previous_maps_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeSoUidMap.html#a76cef64b09ea95898f697ad313e97bc6',1,'bdm::InPlaceExecutionContext::ThreadSafeSoUidMap']]],
+  ['preferred_5fgpu',['preferred_gpu',['../structbdm_1_1Param.html#a049f6a13901aa8b7f8c685340d827a73',1,'bdm::Param']]],
+  ['previous_5fmaps_5f',['previous_maps_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#aa41e99d027836d0577a5dd95317a4f96',1,'bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap']]],
   ['protected_5fop_5fnames_5f',['protected_op_names_',['../classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87',1,'bdm::Scheduler']]],
-  ['pv_5finsitu_5fpipeline_5f',['pv_insitu_pipeline_',['../structbdm_1_1Param.html#a1983049a01cf8a81c97f4257eb667a22',1,'bdm::Param']]],
-  ['pv_5finsitu_5fpipeline_5farguments_5f',['pv_insitu_pipeline_arguments_',['../structbdm_1_1Param.html#abd8c1ce20b95447c635402bee3475bd2',1,'bdm::Param']]]
+  ['pv_5finsitu_5fpipeline',['pv_insitu_pipeline',['../structbdm_1_1Param.html#a47a2b8791752bfa210c4e73874ddc6fa',1,'bdm::Param']]],
+  ['pv_5finsitu_5fpipelinearguments',['pv_insitu_pipelinearguments',['../structbdm_1_1Param.html#add1de46facf53ee42edb746d1c5dd8fa',1,'bdm::Param']]]
 ];
