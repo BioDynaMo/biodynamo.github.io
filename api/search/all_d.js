@@ -17,7 +17,7 @@ var searchData=
   ['math',['Math',['../structbdm_1_1Math.html',1,'bdm']]],
   ['math_2eh',['math.h',['../math_8h.html',1,'']]],
   ['math_5farray_2eh',['math_array.h',['../math__array_8h.html',1,'']]],
-  ['matharray',['MathArray',['../classbdm_1_1MathArray.html',1,'bdm::MathArray&lt; T, N &gt;'],['../classbdm_1_1MathArray.html#ae974c83df853e6a7295ca15002a3b26a',1,'bdm::MathArray::MathArray()'],['../classbdm_1_1MathArray.html#a2f0ad0ffce118e55453b6a280e4487fe',1,'bdm::MathArray::MathArray(std::initializer_list&lt; T &gt; l)']]],
+  ['matharray',['MathArray',['../classbdm_1_1MathArray.html',1,'bdm::MathArray&lt; T, N &gt;'],['../classbdm_1_1MathArray.html#ae0ecd005445ae72c8ecc62b79fbb1768',1,'bdm::MathArray::MathArray()'],['../classbdm_1_1MathArray.html#a2f0ad0ffce118e55453b6a280e4487fe',1,'bdm::MathArray::MathArray(std::initializer_list&lt; T &gt; l)']]],
   ['matharray_3c_20double_2c_203_20_3e',['MathArray&lt; double, 3 &gt;',['../classbdm_1_1MathArray.html',1,'bdm']]],
   ['matlabexporter',['MatlabExporter',['../classbdm_1_1MatlabExporter.html',1,'bdm']]],
   ['max_5f',['max_',['../classbdm_1_1Uniform.html#a388fe654bd06372699f13f5d42cc9cf1',1,'bdm::Uniform']]],
