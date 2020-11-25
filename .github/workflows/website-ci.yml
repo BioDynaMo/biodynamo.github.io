@@ -79,11 +79,18 @@ jobs:
         make -j4
         make website
 
+    # Get a copy of the .github folder
+    - name: Checkout biodynamo.github.io
+      uses: actions/checkout@v2
+      with:
+        repository: BioDynaMo/biodynamo.github.io
+        fetch-depth: 0
+
     # Since the deploy step below deletes all website files first, before adding
     # the updated files, it will also delete the .github folder
     # We copy the .github folder to the publish_dir, so that it will be re-added
     # once we deploy
-    - name: Copy Github Actions workflow
+    - name: Copy .github folder
       run: cp -R .github biodynamo/build/website/public
 
     - name: Deploy biodynamo.org
