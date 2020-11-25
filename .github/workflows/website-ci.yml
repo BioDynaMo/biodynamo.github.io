@@ -85,6 +85,9 @@ jobs:
       with:
         repository: BioDynaMo/biodynamo.github.io
         fetch-depth: 0
+    
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v2
 
     # Since the deploy step below deletes all website files first, before adding
     # the updated files, it will also delete the .github folder
