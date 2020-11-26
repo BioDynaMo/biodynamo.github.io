@@ -59,12 +59,12 @@ jobs:
       uses: actions/cache@v2
       with:
         path: biodynamo/build/third_party
-        key: ${{ env.OSVERS }}-third-party-${{ hashFiles('cmake/external/SHA256Digests.cmake') }}
+        key: ${{ env.OSVERS }}-third-party-${{ hashFiles('biodynamo/cmake/external/SHA256Digests.cmake') }}
 
     - name: Install prerequisites
       shell: bash
       run: |
-        biodynamo/util/installation/ubuntu-16.04/prerequisites.sh all
+        biodynamo/util/installation/ubuntu-20.04/prerequisites.sh all
 
     - name: Build biodynamo.org
       working-directory: biodynamo
@@ -83,8 +83,8 @@ jobs:
     - name: Checkout biodynamo.github.io
       uses: actions/checkout@v2
       with:
-        repository: BioDynaMo/biodynamo.github.io
         fetch-depth: 0
+        path: biodynamo.github.io
     
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v2
