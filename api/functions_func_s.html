@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-11-g60627d6a</span>
+   &#160;<span id="projectnumber">v0.9-13-gd1575974</span>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1MemoryManager.html#a75fbaa78f00edb0236c6ef1d1a136443">bdm::MemoryManager</a>
 </li>
 <li>SetInteractionForce()
-: <a class="el" href="classbdm_1_1DisplacementOp.html#ae9758404df22bac698228986acb21238">bdm::DisplacementOp</a>
+: <a class="el" href="classbdm_1_1MechanicalForcesOp.html#aaca7b18a9ec536d36f0486711b475114">bdm::MechanicalForcesOp</a>
 </li>
 <li>SetMass()
 : <a class="el" href="classbdm_1_1Cell.html#ae97032cc7cb94f18a9b41cf0ea50ddd2">bdm::Cell</a>
@@ -146,6 +146,9 @@ $(function() {
 , <a class="el" href="classbdm_1_1Cell.html#a838cf007275cfec6c478a4df83ebbb8c">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a5aee69546f9baa781ab3dbfba524004f">bdm::neuroscience::NeuriteElement</a>
 </li>
+<li>SetPropagateStaticness()
+: <a class="el" href="classbdm_1_1Agent.html#a03854f33b5350748a12546a584723bbe">bdm::Agent</a>
+</li>
 <li>SetResourceManager()
 : <a class="el" href="classbdm_1_1Simulation.html#a26651387b596e60601f4e6979ceaeac4">bdm::Simulation</a>
 </li>
@@ -155,15 +158,6 @@ $(function() {
 <li>SetRestingLengthForDesiredTension()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ac0aaa33fe2798783599c756fdf5f0caa">bdm::neuroscience::NeuriteElement</a>
 </li>
-<li>SetRunDisplacementForAllNextTs()
-: <a class="el" href="classbdm_1_1Agent.html#ae4f0f4816f152be0975f5c7a088e8f09">bdm::Agent</a>
-</li>
-<li>SetRunDisplacementForEachNeighbor()
-: <a class="el" href="structbdm_1_1SetRunDisplacementForEachNeighbor.html#a947925659018b9fa0e2011d4e7dbecab">bdm::SetRunDisplacementForEachNeighbor</a>
-</li>
-<li>SetRunDisplacementNextTimestep()
-: <a class="el" href="classbdm_1_1Agent.html#a5a7d6bd7f6c0b7d50627c95bcad9149f">bdm::Agent</a>
-</li>
 <li>SetSeed()
 : <a class="el" href="classbdm_1_1Random.html#a7460845156ae9503fddc8aa4287efbfd">bdm::Random</a>
 </li>
@@ -172,6 +166,12 @@ $(function() {
 </li>
 <li>SetSpringConstant()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a3524a2dfeb68f995b9e03f30117392c1">bdm::neuroscience::NeuriteElement</a>
+</li>
+<li>SetStaticnessForEachNeighbor()
+: <a class="el" href="structbdm_1_1SetStaticnessForEachNeighbor.html#a9d95590c128a06dcff46d38789a31819">bdm::SetStaticnessForEachNeighbor</a>
+</li>
+<li>SetStaticnessNextTimestep()
+: <a class="el" href="classbdm_1_1Agent.html#a824410731a23318ff1c9ab017ffad664">bdm::Agent</a>
 </li>
 <li>SetSystemInfo()
 : <a class="el" href="classbdm_1_1RuntimeVariables.html#a19ce1fa20a93b62fcb7e39ec3f7e89a1">bdm::RuntimeVariables</a>
@@ -189,7 +189,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1MappedDataArray.html#a19880cd99e9fbe7bd90e6e15f190b02c">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>SetUp()
-: <a class="el" href="structbdm_1_1DisplacementOpCuda.html#a22f32721f9625a7ee6f831d81f6fffb9">bdm::DisplacementOpCuda</a>
+: <a class="el" href="structbdm_1_1MechanicalForcesOpCuda.html#a33a0a8ee218a08cbde7d03a1ff9fce44">bdm::MechanicalForcesOpCuda</a>
 , <a class="el" href="structbdm_1_1Operation.html#af18eaad4f239df7bd561c1ad0c0957c5">bdm::Operation</a>
 , <a class="el" href="structbdm_1_1OperationImpl.html#aa2d45a12b45b195c80cf6742ed624ad8">bdm::OperationImpl</a>
 , <a class="el" href="classbdm_1_1ReductionOp.html#a7498de59af249b655e595abc3adc96b8">bdm::ReductionOp&lt; T &gt;</a>

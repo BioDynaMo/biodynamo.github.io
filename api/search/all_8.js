@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['h_5fover_5fm',['h_over_m',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#af9d2a614c3c9af107dc6266f293ddf03',1,'bdm::neuroscience::NeuriteElement::DisplacementFunctor']]],
+  ['h_5fover_5fm',['h_over_m',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1MechanicalForcesFunctor.html#ae14be29cfe3d6f04cd6d087996a98a60',1,'bdm::neuroscience::NeuriteElement::MechanicalForcesFunctor']]],
   ['handlecoreoptions',['HandleCoreOptions',['../classbdm_1_1CommandLineOptions.html#a96cddffc2f12f3cc4ddec1f46cca7983',1,'bdm::CommandLineOptions']]],
   ['has_5fgrown_5f',['has_grown_',['../classbdm_1_1Environment.html#ac955bbf754885d8ca7226f7e221614a3',1,'bdm::Environment']]],
-  ['has_5fneurite_5fneighbor',['has_neurite_neighbor',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1DisplacementFunctor.html#a8dd62db1ce0a2d7552a226ec59884372',1,'bdm::neuroscience::NeuriteElement::DisplacementFunctor']]],
+  ['has_5fneurite_5fneighbor',['has_neurite_neighbor',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1MechanicalForcesFunctor.html#a269268bbe0cd367f5e190c8015cfd3df',1,'bdm::neuroscience::NeuriteElement::MechanicalForcesFunctor']]],
   ['hasgrown',['HasGrown',['../classbdm_1_1Environment.html#ac8133aa9f17e7d2a13c84c273df2d045',1,'bdm::Environment']]],
   ['hash_3c_20bdm_3a_3aagentuid_20_3e',['hash&lt; bdm::AgentUid &gt;',['../structstd_1_1hash_3_01bdm_1_1AgentUid_01_4.html',1,'std']]],
   ['head_5f',['head_',['../classbdm_1_1memory__manager__detail_1_1List.html#ac7f016b6127d6d39fcbdbc3a4c360052',1,'bdm::memory_manager_detail::List']]],

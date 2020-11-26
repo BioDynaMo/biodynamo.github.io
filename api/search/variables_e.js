@@ -16,6 +16,7 @@ var searchData=
   ['pre_5fscheduled_5fops_5f',['pre_scheduled_ops_',['../classbdm_1_1Scheduler.html#a3fa6c13b51ab3596004c6a46085ea26a',1,'bdm::Scheduler']]],
   ['preferred_5fgpu',['preferred_gpu',['../structbdm_1_1Param.html#a049f6a13901aa8b7f8c685340d827a73',1,'bdm::Param']]],
   ['previous_5fmaps_5f',['previous_maps_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#aa41e99d027836d0577a5dd95317a4f96',1,'bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap']]],
+  ['propagate_5fstaticness_5fneighborhood_5f',['propagate_staticness_neighborhood_',['../classbdm_1_1Agent.html#af360f02bd2a5f171744bb863a99be23e',1,'bdm::Agent']]],
   ['protected_5fop_5fnames_5f',['protected_op_names_',['../classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87',1,'bdm::Scheduler']]],
   ['pv_5finsitu_5fpipeline',['pv_insitu_pipeline',['../structbdm_1_1Param.html#a47a2b8791752bfa210c4e73874ddc6fa',1,'bdm::Param']]],
   ['pv_5finsitu_5fpipelinearguments',['pv_insitu_pipelinearguments',['../structbdm_1_1Param.html#add1de46facf53ee42edb746d1c5dd8fa',1,'bdm::Param']]]

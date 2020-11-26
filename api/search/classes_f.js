@@ -14,5 +14,6 @@ var searchData=
   ['paraviewimpl',['ParaviewImpl',['../structbdm_1_1ParaviewAdaptor_1_1ParaviewImpl.html',1,'bdm::ParaviewAdaptor']]],
   ['poissonband',['PoissonBand',['../classbdm_1_1PoissonBand.html',1,'bdm']]],
   ['poolallocator',['PoolAllocator',['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html',1,'bdm::memory_manager_detail']]],
+  ['propagatestaticnessop',['PropagateStaticnessOp',['../structbdm_1_1PropagateStaticnessOp.html',1,'bdm']]],
   ['pvtiwriter',['PvtiWriter',['../classbdm_1_1PvtiWriter.html',1,'bdm']]]
 ];

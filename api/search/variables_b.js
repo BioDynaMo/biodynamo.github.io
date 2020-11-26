@@ -2,7 +2,7 @@ var searchData=
 [
   ['map_5f',['map_',['../classbdm_1_1AgentUidGenerator.html#a31662262887602eddd3193d301f2b1a7',1,'bdm::AgentUidGenerator::map_()'],['../structbdm_1_1AgentUidMap_1_1Iterator.html#a9590175beb07d6c2a842fdfadc76d5da',1,'bdm::AgentUidMap::Iterator::map_()'],['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#adc2ec967c591f4cc05f34ce7c341091c',1,'bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap::map_()']]],
   ['mapped_5fdata_5farray_5fmode',['mapped_data_array_mode',['../structbdm_1_1Param.html#ab06f685afc8ccd84ae0292fc3adaca73',1,'bdm::Param']]],
-  ['mass',['mass',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ad61ad7d041edd8aa0b8edb5c18f22c94',1,'bdm::DisplacementOpCuda::InitializeGPUData']]],
+  ['mass',['mass',['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a7ae4dc5a876e7d583701639296f95bdb',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData']]],
   ['mass_5flocation_5f',['mass_location_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a7c01b6b4f7da61e07a17295f810ce077',1,'bdm::neuroscience::NeuriteElement']]],
   ['mat_5fempty_5fspace_5f',['mat_empty_space_',['../classbdm_1_1RootAdaptor.html#a84aa3d20e8e2cf5ccaf0b839b7c1bdba',1,'bdm::RootAdaptor']]],
   ['mat_5fsolid_5f',['mat_solid_',['../classbdm_1_1RootAdaptor.html#ac9c2148347034c5e5cfd2db9e693fc4b',1,'bdm::RootAdaptor']]],

@@ -25,14 +25,14 @@ var searchData=
   ['speed_5f',['speed_',['../classbdm_1_1Chemotaxis.html#ae243c32495f2829b33c779c4e43cd1ac',1,'bdm::Chemotaxis']]],
   ['spring_5faxis_5f',['spring_axis_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#ae73ceddfce1001075055148ea0c809b7',1,'bdm::neuroscience::NeuriteElement']]],
   ['spring_5fconstant_5f',['spring_constant_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a151bb363f05e4e9c7a2461c33837d664',1,'bdm::neuroscience::NeuriteElement']]],
-  ['squared_5fradius_5f',['squared_radius_',['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a030d83d385d2cfb03cc2a7ef43a05339',1,'bdm::ForEachNeighborWithinRadiusFunctor::squared_radius_()'],['../classbdm_1_1DisplacementOp.html#a03cf84d2f6d438d3ce2ec608d41c4b78',1,'bdm::DisplacementOp::squared_radius_()']]],
+  ['squared_5fradius_5f',['squared_radius_',['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a030d83d385d2cfb03cc2a7ef43a05339',1,'bdm::ForEachNeighborWithinRadiusFunctor::squared_radius_()'],['../classbdm_1_1MechanicalForcesOp.html#a30f1b2c64f3e992167b502a28b00fe71',1,'bdm::MechanicalForcesOp::squared_radius_()']]],
   ['start_5f',['start_',['../structbdm_1_1UniformGridEnvironment_1_1Box.html#a2e366c7422d1b17f1a8784f7bf341ad8',1,'bdm::UniformGridEnvironment::Box::start_()'],['../classbdm_1_1Timing.html#afb03795f79dd8290366f29f05bc0ac8e',1,'bdm::Timing::start_()'],['../classbdm_1_1MappedDataArray.html#a95e4f1d3f081b659059162476589cf82',1,'bdm::MappedDataArray::start_()']]],
   ['start_5fpointer_5f',['start_pointer_',['../structbdm_1_1memory__manager__detail_1_1AllocatedBlock.html#a90c7642504d8f9d3ebb74af3cf40df3f',1,'bdm::memory_manager_detail::AllocatedBlock']]],
-  ['starts',['starts',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#ac9fa6e8a4114427640b795669d187b30',1,'bdm::DisplacementOpCuda::InitializeGPUData']]],
+  ['starts',['starts',['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a3a3376ca556ad0d2f82dfbc203cdb528',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData']]],
   ['statistics',['statistics',['../structbdm_1_1Param.html#aef30627d7b63487972d22aff3b530857',1,'bdm::Param']]],
   ['substance_5f',['substance_',['../classbdm_1_1DiffusionGrid.html#a68c0f04fa1e76d95bf1a776d2280df7c',1,'bdm::DiffusionGrid']]],
   ['substance_5fname_5f',['substance_name_',['../classbdm_1_1DiffusionGrid.html#aa260ee52df8f892cdbd10d01ce94d69e',1,'bdm::DiffusionGrid']]],
-  ['successors',['successors',['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#aed6a808a868169b55c01611fb82e88a1',1,'bdm::DisplacementOpCuda::InitializeGPUData']]],
+  ['successors',['successors',['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a1f12aa2126f4df4e1e66367cd091cba6',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData']]],
   ['successors_5f',['successors_',['../classbdm_1_1UniformGridEnvironment.html#a90bb6cba766ca7deb9a9ac5bfe5fc509',1,'bdm::UniformGridEnvironment']]],
   ['sysinfo_5f',['sysinfo_',['../classbdm_1_1RuntimeVariables.html#a728f3490435d097f321795b28564af02',1,'bdm::RuntimeVariables']]]
 ];

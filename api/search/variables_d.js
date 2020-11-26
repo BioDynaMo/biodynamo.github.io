@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ocl_5fstate_5f',['ocl_state_',['../classbdm_1_1Simulation.html#ac2e43f4a5bddd36ef41f3cd52eafcd42',1,'bdm::Simulation']]],
-  ['offset',['offset',['../structbdm_1_1DisplacementOpCuda_1_1UpdateCPUResults.html#a61fbe14d1e48b75afb622f7349ea0acd',1,'bdm::DisplacementOpCuda::UpdateCPUResults::offset()'],['../structbdm_1_1DisplacementOpCuda_1_1InitializeGPUData.html#a2bafa8502084f78c6c6bad0a79a31a0c',1,'bdm::DisplacementOpCuda::InitializeGPUData::offset()']]],
+  ['offset',['offset',['../structbdm_1_1MechanicalForcesOpCuda_1_1UpdateCPUResults.html#a34820f391142bb27228fa3adf4deca7e',1,'bdm::MechanicalForcesOpCuda::UpdateCPUResults::offset()'],['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a746edb7f09f48c7da6162a541ec76113',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData::offset()']]],
   ['op_5ftimes_5f',['op_times_',['../classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e',1,'bdm::Scheduler']]],
   ['opencl_5fdebug',['opencl_debug',['../structbdm_1_1Param.html#a1a63f61488fe338b3c981feb02166c6c',1,'bdm::Param']]],
   ['operation_5f',['operation_',['../classbdm_1_1OpTimer.html#abbbcb76c2eb95fcf7e09e8b9afeced47',1,'bdm::OpTimer']]],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['scheduler',['Scheduler',['../classbdm_1_1Scheduler.html',1,'bdm']]],
   ['secretion',['Secretion',['../classbdm_1_1Secretion.html',1,'bdm']]],
-  ['setrundisplacementforeachneighbor',['SetRunDisplacementForEachNeighbor',['../structbdm_1_1SetRunDisplacementForEachNeighbor.html',1,'bdm']]],
+  ['setstaticnessforeachneighbor',['SetStaticnessForEachNeighbor',['../structbdm_1_1SetStaticnessForEachNeighbor.html',1,'bdm']]],
   ['setupiterationop',['SetUpIterationOp',['../structbdm_1_1SetUpIterationOp.html',1,'bdm']]],
   ['sideneuriteextensionevent',['SideNeuriteExtensionEvent',['../structbdm_1_1neuroscience_1_1SideNeuriteExtensionEvent.html',1,'bdm::neuroscience']]],
   ['simdimensionandlargestagentfunctor',['SimDimensionAndLargestAgentFunctor',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html',1,'bdm::Environment']]],

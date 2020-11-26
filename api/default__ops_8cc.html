@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-11-g60627d6a</span>
+   &#160;<span id="projectnumber">v0.9-13-gd1575974</span>
    </div>
   </td>
  </tr>
@@ -73,17 +73,17 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="bound__space__op_8h_source.html">core/operation/bound_space_op.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="diffusion__op_8h_source.html">core/operation/diffusion_op.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="displacement__op_8h_source.html">core/operation/displacement_op.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="displacement__op__cuda_8h_source.html">core/operation/displacement_op_cuda.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="displacement__op__opencl_8h_source.html">core/operation/displacement_op_opencl.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dividing__cell__op_8h_source.html">core/operation/dividing_cell_op.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="load__balancing__op_8h_source.html">core/operation/load_balancing_op.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mechanical__forces__op_8h_source.html">core/operation/mechanical_forces_op.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mechanical__forces__op__cuda_8h_source.html">core/operation/mechanical_forces_op_cuda.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mechanical__forces__op__opencl_8h_source.html">core/operation/mechanical_forces_op_opencl.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="operation_8h_source.html">core/operation/operation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="visualization__op_8h_source.html">core/operation/visualization_op.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for default_ops.cc:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="default__ops_8cc__incl.svg" width="5692" height="842"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="default__ops_8cc__incl.svg" width="5871" height="842"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -91,9 +91,9 @@ Include dependency graph for default_ops.cc:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateRunDisplacementOp.html">bdm::UpdateRunDisplacementOp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateStaticnessOp.html">bdm::UpdateStaticnessOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DistributeRunDisplacementInfoOp.html">bdm::DistributeRunDisplacementInfoOp</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1PropagateStaticnessOp.html">bdm::PropagateStaticnessOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BehaviorOp.html">bdm::BehaviorOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,14 +119,14 @@ Functions</h2></td></tr>
 <tr class="separator:a4a8f34113a085de7ed206900cc1d8b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a071209a4cd3a9afd76a95af1d97007d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a071209a4cd3a9afd76a95af1d97007d0">bdm::BDM_REGISTER_OP_WITH_FREQ</a> (LoadBalancingOp, &quot;load balancing&quot;, kCpu, std::numeric_limits&lt; std::size_t &gt;::max())</td></tr>
 <tr class="separator:a071209a4cd3a9afd76a95af1d97007d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa344e5ec08f00d65ca85bee997105302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aa344e5ec08f00d65ca85bee997105302">bdm::BDM_REGISTER_OP</a> (DisplacementOp, &quot;displacement&quot;, kCpu)</td></tr>
-<tr class="separator:aa344e5ec08f00d65ca85bee997105302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db26c6d9095f731d57882df52d583ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a0db26c6d9095f731d57882df52d583ad">bdm::BDM_REGISTER_OP</a> (MechanicalForcesOp, &quot;mechanical forces&quot;, kCpu)</td></tr>
+<tr class="separator:a0db26c6d9095f731d57882df52d583ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceddf7f58a8585e93496bcf42fc9a82b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aceddf7f58a8585e93496bcf42fc9a82b">bdm::BDM_REGISTER_OP</a> (DividingCellOp, &quot;DividingCellOp&quot;, kCpu)</td></tr>
 <tr class="separator:aceddf7f58a8585e93496bcf42fc9a82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b2bd9cea7e5994511724032473a768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a35b2bd9cea7e5994511724032473a768">bdm::BDM_REGISTER_OP</a> (UpdateRunDisplacementOp, &quot;update run displacement&quot;, kCpu)</td></tr>
-<tr class="separator:a35b2bd9cea7e5994511724032473a768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad25ea98b721b817ecf8db64b7e8045e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ad25ea98b721b817ecf8db64b7e8045e5">bdm::BDM_REGISTER_OP</a> (DistributeRunDisplacementInfoOp, &quot;distribute run displacement info&quot;, kCpu)</td></tr>
-<tr class="separator:ad25ea98b721b817ecf8db64b7e8045e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d301771fcc17bc5e04e073979acde54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a5d301771fcc17bc5e04e073979acde54">bdm::BDM_REGISTER_OP</a> (UpdateStaticnessOp, &quot;update staticness&quot;, kCpu)</td></tr>
+<tr class="separator:a5d301771fcc17bc5e04e073979acde54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccbc42af8e34ea2a40af31a08c4554f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a7ccbc42af8e34ea2a40af31a08c4554f">bdm::BDM_REGISTER_OP</a> (PropagateStaticnessOp, &quot;propagate staticness&quot;, kCpu)</td></tr>
+<tr class="separator:a7ccbc42af8e34ea2a40af31a08c4554f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268a83cefcb41f7a5f0858469fb4ffb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a268a83cefcb41f7a5f0858469fb4ffb1">bdm::BDM_REGISTER_OP</a> (BehaviorOp, &quot;behavior&quot;, kCpu)</td></tr>
 <tr class="separator:a268a83cefcb41f7a5f0858469fb4ffb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3766de5ff74854364f564edd51fb9a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#af3766de5ff74854364f564edd51fb9a5">bdm::BDM_REGISTER_OP</a> (DiscretizationOp, &quot;discretization&quot;, kCpu)</td></tr>
