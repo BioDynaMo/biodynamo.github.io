@@ -86,15 +86,12 @@ jobs:
         fetch-depth: 0
         path: biodynamo.github.io
     
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v2
-
     # Since the deploy step below deletes all website files first, before adding
     # the updated files, it will also delete the .github folder
     # We copy the .github folder to the publish_dir, so that it will be re-added
     # once we deploy
     - name: Copy .github folder
-      run: cp -R .github biodynamo/build/website/public
+      run: cp -R biodynamo.github.io/.github biodynamo/build/website/public
 
     - name: Deploy biodynamo.org
       uses: peaceiris/actions-gh-pages@v3
