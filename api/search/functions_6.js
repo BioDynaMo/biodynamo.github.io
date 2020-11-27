@@ -28,5 +28,7 @@ var searchData=
   ['foreachoperationinlist',['ForEachOperationInList',['../classbdm_1_1Scheduler.html#ac4ebe6a62fded7efe59c85b9e12ce27e',1,'bdm::Scheduler']]],
   ['foreachscheduledoperation',['ForEachScheduledOperation',['../classbdm_1_1Scheduler.html#a3a8427b7efea4a7918d6d1dba8ede920',1,'bdm::Scheduler']]],
   ['forwardtononemptybox',['ForwardToNonEmptyBox',['../structbdm_1_1UniformGridEnvironment_1_1NeighborIterator.html#a1d271b9cd286e26036fabd29c8187d02',1,'bdm::UniformGridEnvironment::NeighborIterator']]],
+  ['freeagentbuffers',['FreeAgentBuffers',['../structbdm_1_1detail_1_1InitializeGPUData.html#aa6de77d7b21a4d95b8dd7ec15f703f70',1,'bdm::detail::InitializeGPUData']]],
+  ['freegridbuffers',['FreeGridBuffers',['../structbdm_1_1detail_1_1InitializeGPUData.html#a01fc479ae3cc7c6f5295b3a902c767f7',1,'bdm::detail::InitializeGPUData']]],
   ['front',['front',['../classbdm_1_1MathArray.html#adf28598d3603aa2111bfcb2d74ae8c79',1,'bdm::MathArray']]]
 ];

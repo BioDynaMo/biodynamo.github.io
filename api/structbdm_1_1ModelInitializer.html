@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-13-gd1575974</span>
+   &#160;<span id="projectnumber">v0.9-20-gf4222fb1</span>
    </div>
   </td>
  </tr>
@@ -84,9 +84,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2d758c880182ee60f701eeee9d0ec3d"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
 <tr class="memitem:ab2d758c880182ee60f701eeee9d0ec3d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ab2d758c880182ee60f701eeee9d0ec3d">CreateAgents</a> (const std::vector&lt; <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &gt; &amp;positions, Function agent_builder)</td></tr>
 <tr class="separator:ab2d758c880182ee60f701eeee9d0ec3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad299e6deca11a78315b0ed2cf0f53ac0"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
-<tr class="memitem:ad299e6deca11a78315b0ed2cf0f53ac0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ad299e6deca11a78315b0ed2cf0f53ac0">CreateAgentsRandom</a> (double min, double max, int num_agents, Function agent_builder)</td></tr>
-<tr class="separator:ad299e6deca11a78315b0ed2cf0f53ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d6d9c605e3e0a3cdc1f490175cd0c4"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
+<tr class="memitem:a92d6d9c605e3e0a3cdc1f490175cd0c4"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a92d6d9c605e3e0a3cdc1f490175cd0c4">CreateAgentsRandom</a> (double min, double max, uint64_t num_agents, Function agent_builder)</td></tr>
+<tr class="separator:a92d6d9c605e3e0a3cdc1f490175cd0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bfdeb90b4cc10c3576dedc422c761f2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2">DefineSubstance</a> (size_t substance_id, std::string substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</td></tr>
 <tr class="separator:a1bfdeb90b4cc10c3576dedc422c761f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ac30001eac5417836f4159efab19fa"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
@@ -132,7 +132,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds agents to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the simulation object is determined by the return type of parameter agent_builder.</p>
+<p>Adds agents to the ExecutionContext. Type of the simulation object is determined by the return type of parameter agent_builder.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">positions</td><td>positions of the agents to be </td></tr>
@@ -141,12 +141,12 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00111">111</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00117">117</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
-<a id="ad299e6deca11a78315b0ed2cf0f53ac0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad299e6deca11a78315b0ed2cf0f53ac0">&#9670;&nbsp;</a></span>CreateAgentsRandom()</h2>
+<a id="a92d6d9c605e3e0a3cdc1f490175cd0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d6d9c605e3e0a3cdc1f490175cd0c4">&#9670;&nbsp;</a></span>CreateAgentsRandom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +171,7 @@ template&lt;typename Function &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>num_agents</em>, </td>
         </tr>
         <tr>
@@ -192,7 +192,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds agents with random positions to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the agent is determined by the return type of parameter agent_builder.</p>
+<p>Adds agents with random positions to the ExecutionContext. Type of the agent is determined by the return type of parameter agent_builder.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>The minimum position value </td></tr>
@@ -203,7 +203,7 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00136">136</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00145">145</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00165">165</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00170">170</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a 3D cubic grid of agents and adds them to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D(8, 10, [](const Double3&amp; pos){
+<p>Creates a 3D cubic grid of agents and adds them to the ExecutionContext. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D(8, 10, [](const Double3&amp; pos){
 return Cell(pos); });
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -371,7 +371,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a 3D grid of agents and adds them to the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D({8,6,4}, 10, [](const Double3&amp;
+<p>Creates a 3D grid of agents and adds them to the ExecutionContext. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D({8,6,4}, 10, [](const Double3&amp;
 pos){ return Cell(pos); });
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -382,7 +382,7 @@ pos){ return Cell(pos); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00084">84</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00087">87</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00178">178</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00183">183</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>

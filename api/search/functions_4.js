@@ -7,6 +7,7 @@ var searchData=
   ['deepcopy',['DeepCopy',['../classbdm_1_1MappedDataArray.html#a1ad9e947572dd0cbcd9d46400e7e7197',1,'bdm::MappedDataArray::DeepCopy(vtkAbstractArray *aa) final'],['../classbdm_1_1MappedDataArray.html#af773a066515c6040743641b9f4ffc891',1,'bdm::MappedDataArray::DeepCopy(vtkDataArray *da) final']]],
   ['definesubstance',['DefineSubstance',['../structbdm_1_1ModelInitializer.html#a1bfdeb90b4cc10c3576dedc422c761f2',1,'bdm::ModelInitializer']]],
   ['delete',['Delete',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a26767b39c3ebca444029092fe35d2c56',1,'bdm::memory_manager_detail::NumaPoolAllocator::Delete()'],['../classbdm_1_1MemoryManager.html#a11f9ab16579eed8ca320e2a2b395d59e',1,'bdm::MemoryManager::Delete()']]],
+  ['deleteoldcopies',['DeleteOldCopies',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#a7f48ddc3671a2af53734e6373cf05fc7',1,'bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap']]],
   ['diffuseeuler',['DiffuseEuler',['../classbdm_1_1DiffusionGrid.html#ab51c423cea72cee71a7af99b0c1ee770',1,'bdm::DiffusionGrid']]],
   ['diffuseeulerleakingedge',['DiffuseEulerLeakingEdge',['../classbdm_1_1DiffusionGrid.html#a02e069de1edb14a404da425037d63f7e',1,'bdm::DiffusionGrid']]],
   ['diffusewithclosededge',['DiffuseWithClosedEdge',['../classbdm_1_1DiffusionGrid.html#a63e2d29b39597dedf86053109cbee6e6',1,'bdm::DiffusionGrid']]],

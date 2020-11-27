@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-13-gd1575974</span>
+   &#160;<span id="projectnumber">v0.9-20-gf4222fb1</span>
    </div>
   </td>
  </tr>
@@ -333,6 +333,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UnorderedFlatmap.html">UnorderedFlatmap</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateCPUResults.html">UpdateCPUResults</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateEnvironmentOp.html">UpdateEnvironmentOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateStaticnessOp.html">UpdateStaticnessOp</a></td></tr>
@@ -409,6 +411,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a36a873db32fbcc419e619f90c3e994bb"><td class="memTemplParams" colspan="2">template&lt;class T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a36a873db32fbcc419e619f90c3e994bb"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a36a873db32fbcc419e619f90c3e994bb">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="classbdm_1_1MathArray.html">MathArray</a>&lt; T, N &gt; &amp;arr)</td></tr>
 <tr class="separator:a36a873db32fbcc419e619f90c3e994bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d493b86b46e98eb75843b76f3f8f36"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab4d493b86b46e98eb75843b76f3f8f36"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ab4d493b86b46e98eb75843b76f3f8f36">CudaAllocPinned</a> (T **d, uint64_t elements)</td></tr>
+<tr class="separator:ab4d493b86b46e98eb75843b76f3f8f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeec2e03cdf04150937c11ff1e4789bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aeeec2e03cdf04150937c11ff1e4789bd">CudaFreePinned</a> (void *p)</td></tr>
+<tr class="separator:aeeec2e03cdf04150937c11ff1e4789bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca428613b2c6ffb051ae4d470e409c34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aca428613b2c6ffb051ae4d470e409c34">ApplyBoundingBox</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent, double lb, double rb)</td></tr>
 <tr class="separator:aca428613b2c6ffb051ae4d470e409c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa99966d67307675d42d21ca48ed5331b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aa99966d67307675d42d21ca48ed5331b">BDM_REGISTER_OP</a> (<a class="el" href="structbdm_1_1BoundSpace.html">BoundSpace</a>, &quot;bound space&quot;, kCpu)</td></tr>
@@ -1558,6 +1565,74 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="ab4d493b86b46e98eb75843b76f3f8f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d493b86b46e98eb75843b76f3f8f36">&#9670;&nbsp;</a></span>CudaAllocPinned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::CudaAllocPinned </td>
+          <td>(</td>
+          <td class="paramtype">T **&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cuda__pinned__memory_8h_source.html#l00033">33</a> of file <a class="el" href="cuda__pinned__memory_8h_source.html">cuda_pinned_memory.h</a>.</p>
+
+</div>
+</div>
+<a id="aeeec2e03cdf04150937c11ff1e4789bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeec2e03cdf04150937c11ff1e4789bd">&#9670;&nbsp;</a></span>CudaFreePinned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::CudaFreePinned </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cuda__pinned__memory_8h_source.html#l00035">35</a> of file <a class="el" href="cuda__pinned__memory_8h_source.html">cuda_pinned_memory.h</a>.</p>
+
+</div>
+</div>
 <a id="a3a378715ced47083d15c8ca45b8d84b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a378715ced47083d15c8ca45b8d84b2">&#9670;&nbsp;</a></span>EndsWith()</h2>
 
@@ -1919,9 +1994,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void bdm::IsNonSphericalObjectPresent </td>
@@ -1941,14 +2013,9 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mechanical__forces__op__cuda_8h_source.html#l00039">39</a> of file <a class="el" href="mechanical__forces__op__cuda_8h_source.html">mechanical_forces_op_cuda.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mechanical__forces__op__cuda_8cc_source.html#l00036">36</a> of file <a class="el" href="mechanical__forces__op__cuda_8cc_source.html">mechanical_forces_op_cuda.cc</a>.</p>
 
 </div>
 </div>

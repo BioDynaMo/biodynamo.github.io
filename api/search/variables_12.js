@@ -18,7 +18,7 @@ var searchData=
   ['threshold_5fdimensions_5f',['threshold_dimensions_',['../classbdm_1_1UniformGridEnvironment.html#a85d51bf67d21063248c102fb87d7f5ac',1,'bdm::UniformGridEnvironment']]],
   ['timer_5fmsg_5f',['timer_msg_',['../classbdm_1_1OpTimer.html#a129a014be5c696b64e59dfcfd327076e',1,'bdm::OpTimer']]],
   ['timestamp_5f',['timestamp_',['../structbdm_1_1UniformGridEnvironment_1_1Box.html#ae164a21c1374043c826165af7a5e8eb2',1,'bdm::UniformGridEnvironment::Box::timestamp_()'],['../classbdm_1_1UniformGridEnvironment.html#a1c8b30d79a0009748c2ccd426441fceb',1,'bdm::UniformGridEnvironment::timestamp_()']]],
-  ['timestamps',['timestamps',['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a905adac8ec28bc40ec319d740facf6c5',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData']]],
+  ['timestamps',['timestamps',['../structbdm_1_1detail_1_1InitializeGPUData.html#a90a3448e1b2562061db15d7615561f08',1,'bdm::detail::InitializeGPUData']]],
   ['timings_5f',['timings_',['../classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36',1,'bdm::TimingAggregator']]],
   ['tinfo_5f',['tinfo_',['../classbdm_1_1InPlaceExecutionContext.html#ad0b9aa4edea3401f1be1368de24b9246',1,'bdm::InPlaceExecutionContext::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a7cda3c18122e4b9298bb77bee20c0c10',1,'bdm::memory_manager_detail::NumaPoolAllocator::tinfo_()'],['../classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#af730835ddd0b774d5d09dc03945a44e1',1,'bdm::memory_manager_detail::PoolAllocator::tinfo_()']]],
   ['tl_5fresults_5f',['tl_results_',['../classbdm_1_1ReductionOp.html#a39ee7096c18aab90c59cec44c6af3038',1,'bdm::ReductionOp']]],

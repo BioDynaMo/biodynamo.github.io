@@ -1,6 +1,7 @@
 var searchData=
 [
   ['k_5f',['k_',['../classbdm_1_1DiffusionGrid.html#abce1d44460bd04c495f07d82bccd239e',1,'bdm::DiffusionGrid']]],
+  ['kbatchsize',['kBatchSize',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#a8343c074f76b7f5c89bbfa073a2d12cc',1,'bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap']]],
   ['kgrowfactor',['kGrowFactor',['../classbdm_1_1InlineVector.html#a266ada31ab4d5ff0db567014951758ea',1,'bdm::InlineVector::kGrowFactor()'],['../classbdm_1_1ParallelResizeVector.html#a3169d134ec922af86710317101e5898c',1,'bdm::ParallelResizeVector::kGrowFactor()']]],
   ['kinfinity',['kInfinity',['../structbdm_1_1Math.html#ad4fdb7491acb43b733ef89625ac9de5d',1,'bdm::Math']]],
   ['kmetadatasize',['kMetadataSize',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a02ede79dfae16ce1218f7cd3f266b895',1,'bdm::memory_manager_detail::NumaPoolAllocator']]],

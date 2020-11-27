@@ -19,6 +19,8 @@ var searchData=
   ['aligned_5fpages_5f',['aligned_pages_',['../classbdm_1_1MemoryManager.html#a786494bb9871053deecc4d9ca8d4ca50',1,'bdm::MemoryManager']]],
   ['aligned_5fpages_5fshift_5f',['aligned_pages_shift_',['../classbdm_1_1MemoryManager.html#a134b18bb7e329360713238fddf21f8b1',1,'bdm::MemoryManager']]],
   ['all_5fops_5f',['all_ops_',['../classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1',1,'bdm::Scheduler']]],
+  ['allocated_5fnum_5fboxes',['allocated_num_boxes',['../structbdm_1_1detail_1_1InitializeGPUData.html#ab28c5602ea25b1b4277f8fe56d03878c',1,'bdm::detail::InitializeGPUData']]],
+  ['allocated_5fnum_5fobjects',['allocated_num_objects',['../structbdm_1_1detail_1_1InitializeGPUData.html#a5d725eaad615f45d46cfc0e904cfc0cf',1,'bdm::detail::InitializeGPUData']]],
   ['allocators_5f',['allocators_',['../classbdm_1_1MemoryManager.html#ac29f2f05a92c1de85abb8f92ce0b86b2',1,'bdm::MemoryManager']]],
   ['argc_5f',['argc_',['../classbdm_1_1CommandLineOptions.html#a5eba174a77bf2468f3b008d714e0f959',1,'bdm::CommandLineOptions']]],
   ['argv_5f',['argv_',['../classbdm_1_1CommandLineOptions.html#a63dda72ad1efa01f7bf11a561380bbce',1,'bdm::CommandLineOptions']]],

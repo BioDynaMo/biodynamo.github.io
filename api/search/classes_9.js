@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['initializegpudata',['InitializeGPUData',['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html',1,'bdm::MechanicalForcesOpCuda']]],
+  ['initializegpudata',['InitializeGPUData',['../structbdm_1_1detail_1_1InitializeGPUData.html',1,'bdm::detail']]],
   ['inlinevector',['InlineVector',['../classbdm_1_1InlineVector.html',1,'bdm']]],
   ['inlinevector_3c_20bdm_3a_3aagent_20_2a_2c_203_20_3e',['InlineVector&lt; bdm::Agent *, 3 &gt;',['../classbdm_1_1InlineVector.html',1,'bdm']]],
   ['inlinevector_3c_20bdm_3a_3abehavior_20_2a_2c_202_20_3e',['InlineVector&lt; bdm::Behavior *, 2 &gt;',['../classbdm_1_1InlineVector.html',1,'bdm']]],

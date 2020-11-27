@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['disabled_5fdiffusiontest_5fmodelinitializer_5ftest',['DISABLED_DiffusionTest_ModelInitializer_Test',['../classbdm_1_1ParaviewAdaptor.html#aaa1dff7072350094a3a0cc149be6fba5',1,'bdm::ParaviewAdaptor']]]
+  ['initializegpudata',['InitializeGPUData',['../classbdm_1_1UniformGridEnvironment.html#a83787db06a0129db92e7c5be382547f4',1,'bdm::UniformGridEnvironment']]]
 ];

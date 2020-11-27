@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['elementidx_5ft',['ElementIdx_t',['../classbdm_1_1AgentHandle.html#af69a47a9f6d19fc6971202b735b7ec3a',1,'bdm::AgentHandle']]]
+  ['double3',['Double3',['../namespacebdm.html#a999db57a7e39895fb42c100d7856836c',1,'bdm']]],
+  ['double4',['Double4',['../namespacebdm.html#a482b174c833a56a19b71cc36847a1013',1,'bdm']]]
 ];

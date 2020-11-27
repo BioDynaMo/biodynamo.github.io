@@ -36,9 +36,11 @@ var searchData=
   ['copytonewif',['CopyToNewIf',['../classbdm_1_1Behavior.html#ae4586531d8454e0f17dba85958dcd542',1,'bdm::Behavior']]],
   ['create',['Create',['../classbdm_1_1VisualizationAdaptor.html#ac96ce07c860ffbb9a37c08d5deded10b',1,'bdm::VisualizationAdaptor']]],
   ['createagents',['CreateAgents',['../structbdm_1_1ModelInitializer.html#ab2d758c880182ee60f701eeee9d0ec3d',1,'bdm::ModelInitializer']]],
-  ['createagentsrandom',['CreateAgentsRandom',['../structbdm_1_1ModelInitializer.html#ad299e6deca11a78315b0ed2cf0f53ac0',1,'bdm::ModelInitializer']]],
+  ['createagentsrandom',['CreateAgentsRandom',['../structbdm_1_1ModelInitializer.html#a92d6d9c605e3e0a3cdc1f490175cd0c4',1,'bdm::ModelInitializer']]],
   ['createnewagents',['CreateNewAgents',['../classbdm_1_1Agent.html#a5fb9fc32deb00ed2a3b8151b8a04d039',1,'bdm::Agent']]],
   ['createvtkobjects',['CreateVtkObjects',['../classbdm_1_1ParaviewAdaptor.html#a24c07711957c1fa717c8f2a4d51d96a1',1,'bdm::ParaviewAdaptor']]],
   ['criticalregion',['CriticalRegion',['../classbdm_1_1Agent.html#aa04e710008bb0e8139ce6fa174a60e43',1,'bdm::Agent::CriticalRegion()'],['../classbdm_1_1neuroscience_1_1NeuriteElement.html#aa8c6f9893966c0a64273d95a97664183',1,'bdm::neuroscience::NeuriteElement::CriticalRegion()'],['../classbdm_1_1neuroscience_1_1NeuronSoma.html#a1b163e77d22e34dd180307cc94b53589',1,'bdm::neuroscience::NeuronSoma::CriticalRegion()']]],
-  ['crossproduct',['CrossProduct',['../structbdm_1_1Math.html#abdcaeb1f47b85657a5cff0714bb5b8ec',1,'bdm::Math']]]
+  ['crossproduct',['CrossProduct',['../structbdm_1_1Math.html#abdcaeb1f47b85657a5cff0714bb5b8ec',1,'bdm::Math']]],
+  ['cudaallocpinned',['CudaAllocPinned',['../namespacebdm.html#ab4d493b86b46e98eb75843b76f3f8f36',1,'bdm']]],
+  ['cudafreepinned',['CudaFreePinned',['../namespacebdm.html#aeeec2e03cdf04150937c11ff1e4789bd',1,'bdm']]]
 ];

@@ -28,11 +28,11 @@ var searchData=
   ['squared_5fradius_5f',['squared_radius_',['../structbdm_1_1ForEachNeighborWithinRadiusFunctor.html#a030d83d385d2cfb03cc2a7ef43a05339',1,'bdm::ForEachNeighborWithinRadiusFunctor::squared_radius_()'],['../classbdm_1_1MechanicalForcesOp.html#a30f1b2c64f3e992167b502a28b00fe71',1,'bdm::MechanicalForcesOp::squared_radius_()']]],
   ['start_5f',['start_',['../structbdm_1_1UniformGridEnvironment_1_1Box.html#a2e366c7422d1b17f1a8784f7bf341ad8',1,'bdm::UniformGridEnvironment::Box::start_()'],['../classbdm_1_1Timing.html#afb03795f79dd8290366f29f05bc0ac8e',1,'bdm::Timing::start_()'],['../classbdm_1_1MappedDataArray.html#a95e4f1d3f081b659059162476589cf82',1,'bdm::MappedDataArray::start_()']]],
   ['start_5fpointer_5f',['start_pointer_',['../structbdm_1_1memory__manager__detail_1_1AllocatedBlock.html#a90c7642504d8f9d3ebb74af3cf40df3f',1,'bdm::memory_manager_detail::AllocatedBlock']]],
-  ['starts',['starts',['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a3a3376ca556ad0d2f82dfbc203cdb528',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData']]],
+  ['starts',['starts',['../structbdm_1_1detail_1_1InitializeGPUData.html#abf1a1601a4ea5b40835b80a4b0585d0f',1,'bdm::detail::InitializeGPUData']]],
   ['statistics',['statistics',['../structbdm_1_1Param.html#aef30627d7b63487972d22aff3b530857',1,'bdm::Param']]],
   ['substance_5f',['substance_',['../classbdm_1_1DiffusionGrid.html#a68c0f04fa1e76d95bf1a776d2280df7c',1,'bdm::DiffusionGrid']]],
   ['substance_5fname_5f',['substance_name_',['../classbdm_1_1DiffusionGrid.html#aa260ee52df8f892cdbd10d01ce94d69e',1,'bdm::DiffusionGrid']]],
-  ['successors',['successors',['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a1f12aa2126f4df4e1e66367cd091cba6',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData']]],
+  ['successors',['successors',['../structbdm_1_1detail_1_1InitializeGPUData.html#a50f18b27f28e4e6586969654e2d544d9',1,'bdm::detail::InitializeGPUData']]],
   ['successors_5f',['successors_',['../classbdm_1_1UniformGridEnvironment.html#a90bb6cba766ca7deb9a9ac5bfe5fc509',1,'bdm::UniformGridEnvironment']]],
   ['sysinfo_5f',['sysinfo_',['../classbdm_1_1RuntimeVariables.html#a728f3490435d097f321795b28564af02',1,'bdm::RuntimeVariables']]]
 ];

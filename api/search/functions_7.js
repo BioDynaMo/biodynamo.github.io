@@ -54,7 +54,7 @@ var searchData=
   ['getexecutioncontext',['GetExecutionContext',['../classbdm_1_1Simulation.html#a0be91b02708fc3ecbc5ac229a09e9ba1',1,'bdm::Simulation']]],
   ['getgradient',['GetGradient',['../classbdm_1_1DiffusionGrid.html#a39215ce594ca5d7da6e37d75208f0ad9',1,'bdm::DiffusionGrid']]],
   ['getgrid',['GetGrid',['../classbdm_1_1Simulation.html#a70fd274f5b1477569e5a13f81f9f314c',1,'bdm::Simulation']]],
-  ['getgridinfo',['GetGridInfo',['../classbdm_1_1UniformGridEnvironment.html#a6e045cd69da06d1ef07cc6a6c2eec9e7',1,'bdm::UniformGridEnvironment']]],
+  ['getgridinfo',['GetGridInfo',['../classbdm_1_1UniformGridEnvironment.html#a5cf9d38e05152b820d765f390cb1f5ef',1,'bdm::UniformGridEnvironment']]],
   ['getgridsize',['GetGridSize',['../classbdm_1_1DiffusionGrid.html#ae20daa8726987e80fc11acfe3e5968c8',1,'bdm::DiffusionGrid']]],
   ['gethalfmooreboxindices',['GetHalfMooreBoxIndices',['../classbdm_1_1UniformGridEnvironment.html#a240b35ab66d5b1e68b00445489447a2f',1,'bdm::UniformGridEnvironment']]],
   ['gethighestindex',['GetHighestIndex',['../classbdm_1_1AgentUidGenerator.html#a7dfc5c0817172202081ae27ce6db0667',1,'bdm::AgentUidGenerator']]],

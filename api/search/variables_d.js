@@ -1,7 +1,8 @@
 var searchData=
 [
   ['ocl_5fstate_5f',['ocl_state_',['../classbdm_1_1Simulation.html#ac2e43f4a5bddd36ef41f3cd52eafcd42',1,'bdm::Simulation']]],
-  ['offset',['offset',['../structbdm_1_1MechanicalForcesOpCuda_1_1UpdateCPUResults.html#a34820f391142bb27228fa3adf4deca7e',1,'bdm::MechanicalForcesOpCuda::UpdateCPUResults::offset()'],['../structbdm_1_1MechanicalForcesOpCuda_1_1InitializeGPUData.html#a746edb7f09f48c7da6162a541ec76113',1,'bdm::MechanicalForcesOpCuda::InitializeGPUData::offset()']]],
+  ['offset',['offset',['../structbdm_1_1detail_1_1InitializeGPUData.html#a20d951f474a115a0516c6587caf1779d',1,'bdm::detail::InitializeGPUData::offset()'],['../structbdm_1_1UpdateCPUResults.html#a7d959ace3710334f58a91ec80a67961d',1,'bdm::UpdateCPUResults::offset()']]],
+  ['old_5fcopies_5f',['old_copies_',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#a9494bb3fff4f088cb852d0511866198f',1,'bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap']]],
   ['op_5ftimes_5f',['op_times_',['../classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e',1,'bdm::Scheduler']]],
   ['opencl_5fdebug',['opencl_debug',['../structbdm_1_1Param.html#a1a63f61488fe338b3c981feb02166c6c',1,'bdm::Param']]],
   ['operation_5f',['operation_',['../classbdm_1_1OpTimer.html#abbbcb76c2eb95fcf7e09e8b9afeced47',1,'bdm::OpTimer']]],
