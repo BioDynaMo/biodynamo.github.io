@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-47-g23733e7a</span>
+   &#160;<span id="projectnumber">v0.9-48-g9b724be6</span>
    </div>
   </td>
  </tr>
@@ -110,8 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f667455822c0b24e22a8b024ca47357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a916864e50fcefd385a70da916bd70911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a916864e50fcefd385a70da916bd70911">GetLock</a> () override</td></tr>
 <tr class="separator:a916864e50fcefd385a70da916bd70911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7729ff82668fc248912670a1dadcf301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a7729ff82668fc248912670a1dadcf301">CriticalRegion</a> (std::vector&lt; <a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> * &gt; *locks) override</td></tr>
-<tr class="separator:a7729ff82668fc248912670a1dadcf301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741368e3d6060886fe5d08b0be5ef059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a741368e3d6060886fe5d08b0be5ef059">CriticalRegion</a> (std::vector&lt; <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &gt; *uids) override</td></tr>
+<tr class="separator:a741368e3d6060886fe5d08b0be5ef059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad15f6a070db9203dacb9bcdc526e8ac2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3ee">Shape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ad15f6a070db9203dacb9bcdc526e8ac2">GetShape</a> () const override</td></tr>
 <tr class="separator:ad15f6a070db9203dacb9bcdc526e8ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae13b767f4a99a9a9964d14f174c090ef"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ae13b767f4a99a9a9964d14f174c090ef">GetRequiredVisDataMembers</a> () const override</td></tr>
@@ -1071,8 +1071,8 @@ All the mass of the neurite element is concentrated at the distal point. Only th
 
 </div>
 </div>
-<a id="a7729ff82668fc248912670a1dadcf301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7729ff82668fc248912670a1dadcf301">&#9670;&nbsp;</a></span>CriticalRegion()</h2>
+<a id="a741368e3d6060886fe5d08b0be5ef059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a741368e3d6060886fe5d08b0be5ef059">&#9670;&nbsp;</a></span>CriticalRegion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1083,8 +1083,8 @@ All the mass of the neurite element is concentrated at the distal point. Only th
         <tr>
           <td class="memname">void bdm::neuroscience::NeuriteElement::CriticalRegion </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> * &gt; *&#160;</td>
-          <td class="paramname"><em>locks</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &gt; *&#160;</td>
+          <td class="paramname"><em>uids</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1094,12 +1094,12 @@ All the mass of the neurite element is concentrated at the distal point. Only th
   </tr>
 </table>
 </div><div class="memdoc">
-<p>If the thread-safety mechanism is set to user-specified this function will be called before the operations are executed for this simulation object.<br  />
-Subclasses define the critical region by adding the locks of all agents that must not be processed in parallel. <br  />
-Don't forget to add the lock of the current agent.<br  />
+<p>If the thread-safety mechanism is set to user-specified this function will be called before the operations are executed for this agent.<br  />
+Subclasses define the critical region by adding the uids of all agents that must not be processed in parallel. <br  />
+Don't forget to add the uid of the current agent.<br  />
 </p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1Param.html#ac41a5339b184712f1a35c87bfa3a3be6">Param::thread_safety_mechanism</a></code> </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classbdm_1_1Agent.html#aa5c9112bbbc0f66bdecb1b3287dc7c47">bdm::Agent</a>.</p>
+<p>Reimplemented from <a class="el" href="classbdm_1_1Agent.html#aa65e945ecfd578716649a80ccd8c39d2">bdm::Agent</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="neurite__element_8h_source.html#l00166">166</a> of file <a class="el" href="neurite__element_8h_source.html">neurite_element.h</a>.</p>
 
