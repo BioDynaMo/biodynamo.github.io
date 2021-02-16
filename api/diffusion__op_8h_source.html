@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-48-g9b724be6</span>
+   &#160;<span id="projectnumber">v0.9-49-gd5c54fe9</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inline__vector_8h.html">core/container/inline_vector.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diffusion__grid_8h.html">core/diffusion_grid.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diffusion__grid_8h.html">core/diffusion/diffusion_grid.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="environment_8h.html">core/environment/environment.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operation_8h.html">core/operation/operation.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operation__registry_8h.html">core/operation/operation_registry.h</a>&quot;</span></div>
@@ -116,43 +116,27 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="comment">// have changed. If the space is bound, we do not need to update the</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="comment">// dimensions, because these should not be changing anyway</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">if</span> (env-&gt;HasGrown() &amp;&amp; !param-&gt;bound_space) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        Log::Info(<span class="stringliteral">&quot;DiffusionOp&quot;</span>,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                  <span class="stringliteral">&quot;Your agents are getting near the edge of the &quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                  <span class="stringliteral">&quot;simulation space. Be aware of boundary conditions that may &quot;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  <span class="stringliteral">&quot;come into play!&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        dg-&gt;Update(env-&gt;GetDimensionThresholds());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        dg-&gt;Update();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      dg-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a06be6e1469c249b0fbecc2c5d7b3b074">Diffuse</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      if (param-&gt;calculate_gradients) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        dg-&gt;CalculateGradient();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      if (param-&gt;diffusion_type == <span class="stringliteral">&quot;RK&quot;</span>) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        if (param-&gt;leaking_edges) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          dg-&gt;RKLeaking();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          dg-&gt;RK();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (param-&gt;leaking_edges) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          dg-&gt;DiffuseEulerLeakingEdge();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          dg-&gt;DiffuseEuler();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span> (param-&gt;calculate_gradients) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        dg-&gt;CalculateGradient();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    });</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif  // CORE_OPERATION_DIFFUSION_OP_H_</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    });</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  // CORE_OPERATION_DIFFUSION_OP_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="ainline__vector_8h_html"><div class="ttname"><a href="inline__vector_8h.html">inline_vector.h</a></div></div>
 <div class="ttc" id="astructbdm_1_1DiffusionOp_html"><div class="ttname"><a href="structbdm_1_1DiffusionOp.html">bdm::DiffusionOp</a></div><div class="ttdoc">A class that sets up diffusion grids of the substances in this simulation.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00034">diffusion_op.h:34</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aoperation_8h_html"><div class="ttname"><a href="operation_8h.html">operation.h</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a06be6e1469c249b0fbecc2c5d7b3b074"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a06be6e1469c249b0fbecc2c5d7b3b074">bdm::DiffusionGrid::Diffuse</a></div><div class="ttdeci">void Diffuse()</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8cc_source.html#l00065">diffusion_grid.cc:65</a></div></div>
 <div class="ttc" id="astructbdm_1_1DiffusionOp_html_ae92297fbcc344e19f0c76665b5625c15"><div class="ttname"><a href="structbdm_1_1DiffusionOp.html#ae92297fbcc344e19f0c76665b5625c15">bdm::DiffusionOp::operator()</a></div><div class="ttdeci">void operator()() override</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00037">diffusion_op.h:37</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00040">diffusion_grid.h:40</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00030">diffusion_grid.h:30</a></div></div>
 <div class="ttc" id="aoperation__registry_8h_html"><div class="ttname"><a href="operation__registry_8h.html">operation_registry.h</a></div></div>
 <div class="ttc" id="adiffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
 <div class="ttc" id="astructbdm_1_1DiffusionOp_html_a6d96a4a1f68e3cc87ba221594bb92094"><div class="ttname"><a href="structbdm_1_1DiffusionOp.html#a6d96a4a1f68e3cc87ba221594bb92094">bdm::DiffusionOp::BDM_OP_HEADER</a></div><div class="ttdeci">BDM_OP_HEADER(DiffusionOp)</div></div>

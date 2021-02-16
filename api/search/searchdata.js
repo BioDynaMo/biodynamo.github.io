@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "bcdeimnprtv",
   7: "ademnost",
   8: "k",
-  9: ":dmoprs",
+  9: ":demoprs",
   10: "bcy"
 };
 

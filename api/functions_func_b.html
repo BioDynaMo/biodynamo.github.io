@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-48-g9b724be6</span>
+   &#160;<span id="projectnumber">v0.9-49-gd5c54fe9</span>
    </div>
   </td>
  </tr>
@@ -84,11 +84,12 @@ $(function() {
 : <a class="el" href="classbdm_1_1Chemotaxis.html#a8e5246b388181a4d3e369888ea1f6235">bdm::Chemotaxis</a>
 , <a class="el" href="classbdm_1_1GeneRegulation.html#a26f40a11b9601cabc25fe8935ae9f110">bdm::GeneRegulation</a>
 , <a class="el" href="classbdm_1_1GrowthDivision.html#a77b960ee5c34f3913a4f9319800cc669">bdm::GrowthDivision</a>
-, <a class="el" href="classbdm_1_1Secretion.html#af1fc581c8b64c8f1d5cd9b1436b1fd62">bdm::Secretion</a>
+, <a class="el" href="classbdm_1_1Secretion.html#a571da236a7a9a9f1bd22672f424a0587">bdm::Secretion</a>
 </li>
 <li>BDM_CLASS_DEF()
 : <a class="el" href="classbdm_1_1AgentPointer.html#aecb16baf0aac751db78fdb98e311dbaf">bdm::AgentPointer&lt; TAgent &gt;</a>
 , <a class="el" href="classbdm_1_1Behavior.html#add132e980aa1d611d1cd01bb5b14a380">bdm::Behavior</a>
+, <a class="el" href="classbdm_1_1DiffusionGrid.html#ae9d57e1f4fe0ad515d908c83e9343936">bdm::DiffusionGrid</a>
 , <a class="el" href="classbdm_1_1InlineVector.html#a1e0376701a632e4067b59772134958f1">bdm::InlineVector&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1ParallelResizeVector.html#a9e72b06a1422396f76bd322516c33e2f">bdm::ParallelResizeVector&lt; T &gt;</a>
 , <a class="el" href="structbdm_1_1ParamGroup.html#acf1c968d4f0fdf2396fbd3fbcc6f986d">bdm::ParamGroup</a>
@@ -97,7 +98,6 @@ $(function() {
 : <a class="el" href="classbdm_1_1AgentHandle.html#afe0c335ea1e8f74f5483744a58e068cf">bdm::AgentHandle</a>
 , <a class="el" href="classbdm_1_1AgentUid.html#a9e65522ea5b6c8de7de727974d4091fa">bdm::AgentUid</a>
 , <a class="el" href="classbdm_1_1AgentUidGenerator.html#a2ed525ee7d1fa0087e35c01354bbea91">bdm::AgentUidGenerator</a>
-, <a class="el" href="classbdm_1_1DiffusionGrid.html#a0b3bbb9647f6ee8b2e568cf0b3216e47">bdm::DiffusionGrid</a>
 , <a class="el" href="classbdm_1_1IntegralTypeWrapper.html#aacb40b2edac1b40788c7d3f4a838dc5b">bdm::IntegralTypeWrapper&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1MathArray.html#ae70f930a2d8f0b2a41a3f5898eb854e7">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="structbdm_1_1Param.html#abd8968f951a19a6db481f74962b35bbc">bdm::Param</a>
@@ -105,6 +105,11 @@ $(function() {
 , <a class="el" href="classbdm_1_1ResourceManager.html#a576cc697b5c0d5e4b6e9ee2a35c7ef47">bdm::ResourceManager</a>
 , <a class="el" href="classbdm_1_1RuntimeVariables.html#a31452f8a3b72ebe64f7b617ce824daa7">bdm::RuntimeVariables</a>
 , <a class="el" href="classbdm_1_1Simulation.html#ae58e16a3e0ce9d179063da53ecb7c9a0">bdm::Simulation</a>
+</li>
+<li>BDM_CLASS_DEF_OVERRIDE()
+: <a class="el" href="classbdm_1_1EulerGrid.html#a552a1dbac82a3a84ad1742c92caf4e70">bdm::EulerGrid</a>
+, <a class="el" href="classbdm_1_1RungaKuttaGrid.html#a0e57ec84efd165d021304f4d6bd3be6e">bdm::RungaKuttaGrid</a>
+, <a class="el" href="classbdm_1_1StencilGrid.html#a97b9c0cc5cf8640f0aafbce425029be1">bdm::StencilGrid</a>
 </li>
 <li>BDM_OP_HEADER()
 : <a class="el" href="structbdm_1_1BehaviorOp.html#a6e31698f5cdf02d883c6e17ff55542c8">bdm::BehaviorOp</a>
@@ -127,9 +132,9 @@ $(function() {
 : <a class="el" href="structbdm_1_1neuroscience_1_1Param.html#a9d13954c201fe23dff427bed2d085870">bdm::neuroscience::Param</a>
 </li>
 <li>begin()
-: <a class="el" href="classbdm_1_1FixedSizeVector.html#a7e744d0c5df14a89328e8b500e5d1934">bdm::FixedSizeVector&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1InlineVector.html#a2da6993f76633f4e77c93f494276df0f">bdm::InlineVector&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#ad697514a7e000cb2fe90b9f526d72e1f">bdm::MathArray&lt; T, N &gt;</a>
+: <a class="el" href="classbdm_1_1FixedSizeVector.html#afc170a65c238f985d69f582036b01316">bdm::FixedSizeVector&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1InlineVector.html#a2551dcded04af7e956a8e4361a038c9c">bdm::InlineVector&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1MathArray.html#ab17f8d0fa513cecf575f59a072dcb67a">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1ParallelResizeVector.html#a00f46dbc999b1671e696c3412e85ef1e">bdm::ParallelResizeVector&lt; T &gt;</a>
 , <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html#acac0189a057dbec5f5c391fe6e525bc2">bdm::UniformGridEnvironment::Box</a>
 , <a class="el" href="classbdm_1_1UnorderedFlatmap.html#ad97f248e3fc6663219417118975c6c69">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
@@ -147,7 +152,7 @@ $(function() {
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html#ae73c0cc6300b4838da9d73419fe9fc6a">bdm::UniformGridEnvironment::Box</a>
 </li>
 <li>Branch()
-: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a722a01c47490b84a48fa7d88292ea3d5">bdm::neuroscience::NeuriteElement</a>
+: <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a8fe1329efb9c05a8212f132b99597b14">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>BranchPermitted()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a0cf0926346e7c6cfd13738189ce95406">bdm::neuroscience::NeuriteElement</a>

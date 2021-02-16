@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-48-g9b724be6</span>
+   &#160;<span id="projectnumber">v0.9-49-gd5c54fe9</span>
    </div>
   </td>
  </tr>
@@ -220,14 +220,15 @@ $(function() {
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
 <div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classbdm_1_1Simulation.html#a5a2a30678340fd7a851b8c3e262a1e06">  197</a></span>&#160;  <span class="keyword">friend</span> <a class="code" href="classbdm_1_1Simulation.html#a5a2a30678340fd7a851b8c3e262a1e06">SimulationTest</a>;</div>
 <div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classbdm_1_1Simulation.html#a0bad47fe459dbc64e41e90eb07924ec6">  198</a></span>&#160;  <span class="keyword">friend</span> <a class="code" href="classbdm_1_1Simulation.html#a0bad47fe459dbc64e41e90eb07924ec6">ParaviewAdaptorTest</a>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classbdm_1_1Simulation.html#ab29e2b8bc48c47b5597374b5a86eeef8">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classbdm_1_1Simulation.html">Simulation</a>&amp; sim);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="classbdm_1_1Simulation.html#ae58e16a3e0ce9d179063da53ecb7c9a0">BDM_CLASS_DEF_NV</a>(<a class="code" href="classbdm_1_1Simulation.html">Simulation</a>, 1);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;};</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif  // CORE_SIMULATION_H_</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classbdm_1_1Simulation.html#a35dacfc93e9e90bc6c01861337b25b3c">  199</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classbdm_1_1Simulation.html#a35dacfc93e9e90bc6c01861337b25b3c">DiffusionTest_CopyOldData_Test</a>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classbdm_1_1Simulation.html#ab29e2b8bc48c47b5597374b5a86eeef8">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classbdm_1_1Simulation.html">Simulation</a>&amp; sim);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <a class="code" href="classbdm_1_1Simulation.html#ae58e16a3e0ce9d179063da53ecb7c9a0">BDM_CLASS_DEF_NV</a>(<a class="code" href="classbdm_1_1Simulation.html">Simulation</a>, 1);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif  // CORE_SIMULATION_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a6cfcdfca4147ce20921e67f962175f97"><div class="ttname"><a href="classbdm_1_1Simulation.html#a6cfcdfca4147ce20921e67f962175f97">bdm::Simulation::InitializeUniqueName</a></div><div class="ttdeci">void InitializeUniqueName(const std::string &amp;simulation_name)</div><div class="ttdoc">This function initialzes unique_name_</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00486">simulation.cc:486</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a14169836c2c068000d7a9a22a3c4ac75"><div class="ttname"><a href="classbdm_1_1Simulation.html#a14169836c2c068000d7a9a22a3c4ac75">bdm::Simulation::InitializeRuntimeParams</a></div><div class="ttdeci">void InitializeRuntimeParams(CommandLineOptions *clo, const std::function&lt; void(Param *)&gt; &amp;set_param, const std::vector&lt; std::string &gt; &amp;ctor_config)</div><div class="ttdoc">This function parses command line parameters and the configuration file.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00344">simulation.cc:344</a></div></div>
@@ -280,6 +281,7 @@ $(function() {
 <div class="ttc" id="amemory__manager_8h_html"><div class="ttname"><a href="memory__manager_8h.html">memory_manager.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_ace31080e5a85b8eecc2cd543de914339"><div class="ttname"><a href="classbdm_1_1Simulation.html#ace31080e5a85b8eecc2cd543de914339">bdm::Simulation::active_</a></div><div class="ttdeci">static Simulation * active_</div><div class="ttdoc">Currently active simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00138">simulation.h:138</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a36fc7549a1d39d166e9f98ece01cb097"><div class="ttname"><a href="classbdm_1_1Simulation.html#a36fc7549a1d39d166e9f98ece01cb097">bdm::Simulation::ctor_ts_</a></div><div class="ttdeci">int64_t ctor_ts_</div><div class="ttdoc">Timestep when constructor was called.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00171">simulation.h:171</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_a35dacfc93e9e90bc6c01861337b25b3c"><div class="ttname"><a href="classbdm_1_1Simulation.html#a35dacfc93e9e90bc6c01861337b25b3c">bdm::Simulation::DiffusionTest_CopyOldData_Test</a></div><div class="ttdeci">friend class DiffusionTest_CopyOldData_Test</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00199">simulation.h:199</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_ac33fad362799e0633e364cf54bff3d95"><div class="ttname"><a href="classbdm_1_1Simulation.html#ac33fad362799e0633e364cf54bff3d95">bdm::Simulation::GetEnvironment</a></div><div class="ttdeci">Environment * GetEnvironment()</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00267">simulation.cc:267</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a586e4605fd004af75e5dfb143b27fb95"><div class="ttname"><a href="classbdm_1_1Simulation.html#a586e4605fd004af75e5dfb143b27fb95">bdm::Simulation::ReplaceScheduler</a></div><div class="ttdeci">void ReplaceScheduler(Scheduler *scheduler)</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00294">simulation.cc:294</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a0bad47fe459dbc64e41e90eb07924ec6"><div class="ttname"><a href="classbdm_1_1Simulation.html#a0bad47fe459dbc64e41e90eb07924ec6">bdm::Simulation::ParaviewAdaptorTest</a></div><div class="ttdeci">friend ParaviewAdaptorTest</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00198">simulation.h:198</a></div></div>
