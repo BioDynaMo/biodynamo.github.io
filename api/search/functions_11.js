@@ -65,6 +65,6 @@ var searchData=
   ['stop_2350',['Stop',['../classbdm_1_1VTuneTask.html#a73a3e8ff2ec3fd72bee5d20dfa7e7e17',1,'bdm::VTuneTask']]],
   ['sum_2351',['Sum',['../classbdm_1_1MathArray.html#a3c4da63ed042ab1476ea3aa5b33acb0d',1,'bdm::MathArray']]],
   ['swap_2352',['swap',['../classbdm_1_1ParallelResizeVector.html#a696aa8b0f42003d412ab539d60f5297d',1,'bdm::ParallelResizeVector']]],
-  ['synch_2353',['Synch',['../classbdm_1_1MechanicalForcesOpCudaKernel.html#a256a9f93095b6222ceb88b3daba2040b',1,'bdm::MechanicalForcesOpCudaKernel']]],
+  ['sync_2353',['Sync',['../classbdm_1_1MechanicalForcesOpCudaKernel.html#a91e496dcf9b1fccb4cf553efa93f9ab4',1,'bdm::MechanicalForcesOpCudaKernel']]],
   ['syserror_2354',['SysError',['../classbdm_1_1Log.html#a2a89bbcbfc7bd7456ecae87977a66210',1,'bdm::Log']]]
 ];
