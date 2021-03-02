@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-52-g3ffadd00</span>
+   &#160;<span id="projectnumber">v0.9-53-gd7b59a6e</span>
    </div>
   </td>
  </tr>
@@ -81,8 +81,11 @@ $(function() {
 <li>opencl_debug
 : <a class="el" href="structbdm_1_1Param.html#a1a63f61488fe338b3c981feb02166c6c">bdm::Param</a>
 </li>
+<li>OpenCLState()
+: <a class="el" href="classbdm_1_1OpenCLState.html#a13733d8f0124bd0ac827af5f2fb9cf4e">bdm::OpenCLState</a>
+</li>
 <li>Operation()
-: <a class="el" href="structbdm_1_1Operation.html#aa77af061d11b3d2d3f06c8d581cc0903">bdm::Operation</a>
+: <a class="el" href="structbdm_1_1Operation.html#ac0c6c73acfad45c5c699ea0b0b6de496">bdm::Operation</a>
 </li>
 <li>operation_
 : <a class="el" href="classbdm_1_1OpTimer.html#abbbcb76c2eb95fcf7e09e8b9afeced47">bdm::OpTimer&lt; TOp &gt;</a>
@@ -136,7 +139,9 @@ $(function() {
 , <a class="el" href="structbdm_1_1LoadBalancingOp.html#ab0577e91af6a299dbdd4d583a3c1fb5a">bdm::LoadBalancingOp</a>
 , <a class="el" href="classbdm_1_1MechanicalForcesOp.html#a14f0ede0e0fb0aa0a1a623a1fb4d24de">bdm::MechanicalForcesOp</a>
 , <a class="el" href="structbdm_1_1MechanicalForcesOpCuda.html#a4027fceb9c9062b8f029d5c0b18a1cec">bdm::MechanicalForcesOpCuda</a>
+, <a class="el" href="structbdm_1_1MechanicalForcesOpOpenCL.html#a0b5ae57869c7d48647d93f2e247fb701">bdm::MechanicalForcesOpOpenCL</a>
 , <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteElement_1_1MechanicalForcesFunctor.html#a46ad5309c893b417a605078e4c0d0a4f">bdm::neuroscience::NeuriteElement::MechanicalForcesFunctor</a>
+, <a class="el" href="structbdm_1_1OpenCLState_1_1OpenCLImplDestructor.html#ac076cd219bea854a0875e16ca909d8ff">bdm::OpenCLState::OpenCLImplDestructor</a>
 , <a class="el" href="structbdm_1_1Operation.html#a45b64e858fec26e328e4f0bd690167a2">bdm::Operation</a>
 , <a class="el" href="structbdm_1_1OperationImpl.html#a792a60ff19c794c457e1185d9e3ae11b">bdm::OperationImpl</a>
 , <a class="el" href="classbdm_1_1OpTimer.html#a68b5859bb921aadc51083e97ff97d121">bdm::OpTimer&lt; TOp &gt;</a>
@@ -185,13 +190,13 @@ $(function() {
 </li>
 <li>operator+=()
 : <a class="el" href="classbdm_1_1AgentUid.html#a91bef478ba94d900dab654afa1ce8fdd">bdm::AgentUid</a>
-, <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a5c88c58c1791768599925b662e9481b1">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
+, <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a3890c88332eb455fad14510394ea2435">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
 , <a class="el" href="classbdm_1_1MathArray.html#a19b70e563d7381d07acb55fef4b3c1c4">bdm::MathArray&lt; T, N &gt;</a>
 </li>
 <li>operator-()
-: <a class="el" href="classbdm_1_1AgentUid.html#a38b7d64349769ea05c3222b61bbea970">bdm::AgentUid</a>
+: <a class="el" href="classbdm_1_1AgentUid.html#a8823e0dd86f1967baf852b68863cb950">bdm::AgentUid</a>
 , <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#aeaf2e19cfe05efe38fbd87d5c689a642">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#a4786fa42c4a21e4c74bb4709871bb2cc">bdm::MathArray&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1MathArray.html#a1fa2e6afd7500a676a090aaafd7e57f6">bdm::MathArray&lt; T, N &gt;</a>
 </li>
 <li>operator--()
 : <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a20859fdf14bcb9b633e50025db6bed2d">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
@@ -199,11 +204,11 @@ $(function() {
 </li>
 <li>operator-=()
 : <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a368d657b3cce539502c4c467f9b3e59b">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
-, <a class="el" href="classbdm_1_1MathArray.html#af02e3a0b0fafaa969c7f34d21781d74b">bdm::MathArray&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1MathArray.html#a212624e8c5afbf4d7f70ec50d98a4d2f">bdm::MathArray&lt; T, N &gt;</a>
 </li>
 <li>operator-&gt;()
-: <a class="el" href="classbdm_1_1AgentPointer.html#a4329be464fcda55f878787e8fe0546b4">bdm::AgentPointer&lt; TAgent &gt;</a>
-, <a class="el" href="classbdm_1_1OpTimer.html#ab07558f085a567d8f789d5513b7b5983">bdm::OpTimer&lt; TOp &gt;</a>
+: <a class="el" href="classbdm_1_1AgentPointer.html#a0f060e394bfc5ca09c33af95ac8458e8">bdm::AgentPointer&lt; TAgent &gt;</a>
+, <a class="el" href="classbdm_1_1OpTimer.html#afbf9ae727d4b89ec287c79edc1338709">bdm::OpTimer&lt; TOp &gt;</a>
 </li>
 <li>operator/()
 : <a class="el" href="classbdm_1_1MathArray.html#a88464f55a25b6c6d5927ddbce58e0973">bdm::MathArray&lt; T, N &gt;</a>
@@ -230,7 +235,7 @@ $(function() {
 <li>operator=()
 : <a class="el" href="classbdm_1_1AgentPointer.html#ada544e9a864f32c12a91e26265ab3868">bdm::AgentPointer&lt; TAgent &gt;</a>
 , <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a71136855e2ada1452bd47444d0eb83b7">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
-, <a class="el" href="classbdm_1_1InlineVector.html#aae97f11117eb57b7cace427e12021528">bdm::InlineVector&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1InlineVector.html#adefbc6814b41d9e4c06b940536d1a395">bdm::InlineVector&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1MappedDataArray.html#aed0d2bc1e3104372bc5bd1dd8505af00">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 , <a class="el" href="classbdm_1_1MathArray.html#a82b501c8e3dca90e3d8f8961bd6327b3">bdm::MathArray&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1ParallelResizeVector.html#ad35efc2443a2bbd01523715de4bcf501">bdm::ParallelResizeVector&lt; T &gt;</a>
@@ -241,7 +246,7 @@ $(function() {
 </li>
 <li>operator==()
 : <a class="el" href="classbdm_1_1AgentHandle.html#a38abc9ca98d541f49c25f272d0a3b0b2">bdm::AgentHandle</a>
-, <a class="el" href="classbdm_1_1AgentPointer.html#a9b6961cc323218d11a9379ea7573ef76">bdm::AgentPointer&lt; TAgent &gt;</a>
+, <a class="el" href="classbdm_1_1AgentPointer.html#a74f988ceb19d1f757241d02c86696097">bdm::AgentPointer&lt; TAgent &gt;</a>
 , <a class="el" href="classbdm_1_1AgentUid.html#a5e9019d83c5f8d2fe77568a356bf729a">bdm::AgentUid</a>
 , <a class="el" href="classbdm_1_1AgentVector.html#a759c2afb1f3bd52730e67bed7a7565d3">bdm::AgentVector&lt; T &gt;</a>
 , <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#abac95a7e1150efb8d76cf6d92832f43c">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
@@ -252,11 +257,11 @@ $(function() {
 <li>operator[]()
 : <a class="el" href="classbdm_1_1AgentUidMap.html#a35301a10565bc047a6e8a78bd35843cd">bdm::AgentUidMap&lt; TValue &gt;</a>
 , <a class="el" href="classbdm_1_1AgentVector.html#aed90a3e8984585e22cd5f47c45ec8f3e">bdm::AgentVector&lt; T &gt;</a>
-, <a class="el" href="classbdm_1_1FixedSizeVector.html#addb98ab9c0b42fc905d9f4beec306059">bdm::FixedSizeVector&lt; T, N &gt;</a>
+, <a class="el" href="classbdm_1_1FixedSizeVector.html#aee838ed9b440a06452d8cc856021a178">bdm::FixedSizeVector&lt; T, N &gt;</a>
 , <a class="el" href="classbdm_1_1InlineVector.html#a4e9e14dd1cb50b17958037e0981f0424">bdm::InlineVector&lt; T, N &gt;</a>
 , <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#ab9867099850002102caf78228aa9cb62">bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap</a>
 , <a class="el" href="classbdm_1_1MathArray.html#a0e28b0fab9f1a8cb4e37147bd422e122">bdm::MathArray&lt; T, N &gt;</a>
-, <a class="el" href="classbdm_1_1ParallelResizeVector.html#ae6a1f3cad0d0354e5d3781179d3a3a78">bdm::ParallelResizeVector&lt; T &gt;</a>
+, <a class="el" href="classbdm_1_1ParallelResizeVector.html#a5055aeb79b6ef86264c426f31164678c">bdm::ParallelResizeVector&lt; T &gt;</a>
 , <a class="el" href="classbdm_1_1UnorderedFlatmap.html#a1ae65f782afd66b36952c856caed11d0">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
 </li>
 <li>OpTimer()

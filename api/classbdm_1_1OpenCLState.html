@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-52-g3ffadd00</span>
+   &#160;<span id="projectnumber">v0.9-53-gd7b59a6e</span>
    </div>
   </td>
  </tr>
@@ -67,7 +67,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1OpenCLState-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::OpenCLState Class Reference</div>  </div>
@@ -76,17 +78,212 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="opencl__state_8h_source.html">opencl_state.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ab6e01b1c83d8d84da5c4a2e62aedfd4f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbdm_1_1OpenCLState.html">OpenCLState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#ab6e01b1c83d8d84da5c4a2e62aedfd4f">GetInstance</a> ()</td></tr>
-<tr class="separator:ab6e01b1c83d8d84da5c4a2e62aedfd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1OpenCLState_1_1OpenCLImpl.html">OpenCLImpl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1OpenCLState_1_1OpenCLImplDestructor.html">OpenCLImplDestructor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a13733d8f0124bd0ac827af5f2fb9cf4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a13733d8f0124bd0ac827af5f2fb9cf4e">OpenCLState</a> ()</td></tr>
+<tr class="separator:a13733d8f0124bd0ac827af5f2fb9cf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7fbded1e7d4fe7bb8ad416f9986335"><td class="memItemLeft" align="right" valign="top">cl::Context *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a2e7fbded1e7d4fe7bb8ad416f9986335">GetOpenCLContext</a> ()</td></tr>
+<tr class="memdesc:a2e7fbded1e7d4fe7bb8ad416f9986335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the OpenCL Context.  <a href="classbdm_1_1OpenCLState.html#a2e7fbded1e7d4fe7bb8ad416f9986335">More...</a><br /></td></tr>
+<tr class="separator:a2e7fbded1e7d4fe7bb8ad416f9986335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea41a730bfecefed047e81dc855e624"><td class="memItemLeft" align="right" valign="top">cl::CommandQueue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a5ea41a730bfecefed047e81dc855e624">GetOpenCLCommandQueue</a> ()</td></tr>
+<tr class="memdesc:a5ea41a730bfecefed047e81dc855e624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the OpenCL command queue.  <a href="classbdm_1_1OpenCLState.html#a5ea41a730bfecefed047e81dc855e624">More...</a><br /></td></tr>
+<tr class="separator:a5ea41a730bfecefed047e81dc855e624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e3c034e472659bd19827e1eda40b62"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cl::Device &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a37e3c034e472659bd19827e1eda40b62">GetOpenCLDeviceList</a> ()</td></tr>
+<tr class="memdesc:a37e3c034e472659bd19827e1eda40b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the OpenCL device (GPU) list.  <a href="classbdm_1_1OpenCLState.html#a37e3c034e472659bd19827e1eda40b62">More...</a><br /></td></tr>
+<tr class="separator:a37e3c034e472659bd19827e1eda40b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5853555d7c199b0c75b5f0d79dcb296f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cl::Program &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a5853555d7c199b0c75b5f0d79dcb296f">GetOpenCLProgramList</a> ()</td></tr>
+<tr class="memdesc:a5853555d7c199b0c75b5f0d79dcb296f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the OpenCL program (kernel) list.  <a href="classbdm_1_1OpenCLState.html#a5853555d7c199b0c75b5f0d79dcb296f">More...</a><br /></td></tr>
+<tr class="separator:a5853555d7c199b0c75b5f0d79dcb296f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b0b7900756b288ccdf55e1bac26ad0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a58b0b7900756b288ccdf55e1bac26ad0">GetErrorString</a> (int error)</td></tr>
+<tr class="separator:a58b0b7900756b288ccdf55e1bac26ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3100b09d8e43f038c8fe486ddc0af056"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a3100b09d8e43f038c8fe486ddc0af056">ClAssert</a> (int const code, char const *const file, int const line, bool const abort)</td></tr>
+<tr class="separator:a3100b09d8e43f038c8fe486ddc0af056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a93505e447c171462cf772a9a24f86752"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structbdm_1_1OpenCLState_1_1OpenCLImpl.html">OpenCLImpl</a>, <a class="el" href="structbdm_1_1OpenCLState_1_1OpenCLImplDestructor.html">OpenCLImplDestructor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a93505e447c171462cf772a9a24f86752">impl_</a></td></tr>
+<tr class="separator:a93505e447c171462cf772a9a24f86752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="opencl__state_8h_source.html#l00208">208</a> of file <a class="el" href="opencl__state_8h_source.html">opencl_state.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6e01b1c83d8d84da5c4a2e62aedfd4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6e01b1c83d8d84da5c4a2e62aedfd4f">&#9670;&nbsp;</a></span>GetInstance()</h2>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8h_source.html#l00033">33</a> of file <a class="el" href="opencl__state_8h_source.html">opencl_state.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a13733d8f0124bd0ac827af5f2fb9cf4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13733d8f0124bd0ac827af5f2fb9cf4e">&#9670;&nbsp;</a></span>OpenCLState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bdm::OpenCLState::OpenCLState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00232">232</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3100b09d8e43f038c8fe486ddc0af056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3100b09d8e43f038c8fe486ddc0af056">&#9670;&nbsp;</a></span>ClAssert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bdm::OpenCLState::ClAssert </td>
+          <td>(</td>
+          <td class="paramtype">int const&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int const&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool const&#160;</td>
+          <td class="paramname"><em>abort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00240">240</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<a id="a58b0b7900756b288ccdf55e1bac26ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b0b7900756b288ccdf55e1bac26ad0">&#9670;&nbsp;</a></span>GetErrorString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * bdm::OpenCLState::GetErrorString </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00239">239</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<a id="a5ea41a730bfecefed047e81dc855e624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea41a730bfecefed047e81dc855e624">&#9670;&nbsp;</a></span>GetOpenCLCommandQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl::CommandQueue * bdm::OpenCLState::GetOpenCLCommandQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the OpenCL command queue. </p>
+
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00234">234</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<a id="a2e7fbded1e7d4fe7bb8ad416f9986335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e7fbded1e7d4fe7bb8ad416f9986335">&#9670;&nbsp;</a></span>GetOpenCLContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cl::Context * bdm::OpenCLState::GetOpenCLContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the OpenCL Context. </p>
+
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00233">233</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<a id="a37e3c034e472659bd19827e1eda40b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e3c034e472659bd19827e1eda40b62">&#9670;&nbsp;</a></span>GetOpenCLDeviceList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; cl::Device &gt; * bdm::OpenCLState::GetOpenCLDeviceList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the OpenCL device (GPU) list. </p>
+
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00235">235</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<a id="a5853555d7c199b0c75b5f0d79dcb296f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5853555d7c199b0c75b5f0d79dcb296f">&#9670;&nbsp;</a></span>GetOpenCLProgramList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; cl::Program &gt; * bdm::OpenCLState::GetOpenCLProgramList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the OpenCL program (kernel) list. </p>
+
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00236">236</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a93505e447c171462cf772a9a24f86752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93505e447c171462cf772a9a24f86752">&#9670;&nbsp;</a></span>impl_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -95,25 +292,23 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classbdm_1_1OpenCLState.html">OpenCLState</a>* bdm::OpenCLState::GetInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structbdm_1_1OpenCLState_1_1OpenCLImpl.html">OpenCLImpl</a>, <a class="el" href="structbdm_1_1OpenCLState_1_1OpenCLImplDestructor.html">OpenCLImplDestructor</a>&gt; bdm::OpenCLState::impl_</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8h_source.html#l00209">209</a> of file <a class="el" href="opencl__state_8h_source.html">opencl_state.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8h_source.html#l00060">60</a> of file <a class="el" href="opencl__state_8h_source.html">opencl_state.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/gpu/<a class="el" href="opencl__state_8h_source.html">opencl_state.h</a></li>
+<li>core/gpu/<a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
