@@ -70,6 +70,7 @@ jobs:
       working-directory: biodynamo
       shell: bash
       run: |
+        pyenv shell 3.9.1
         cmake \
           -Dwebsite=on \
           -Dtest=off \
