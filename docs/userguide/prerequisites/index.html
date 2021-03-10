@@ -127,9 +127,9 @@ your system's Python installation.</p>
 <span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
 <span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"<span class="token variable">$HOME</span>/.pyenv/bin:<span class="token variable">$PATH</span>"</span>
 <span class="token function">eval</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span>pyenv init -<span class="token variable">)</span></span>"</span>
-PYTHON_CONFIGURE_OPTS<span class="token operator">=</span><span class="token string">"--enable-shared"</span> pyenv <span class="token function">install</span> 3.8.0</code></pre></div>
+PYTHON_CONFIGURE_OPTS<span class="token operator">=</span><span class="token string">"--enable-shared"</span> pyenv <span class="token function">install</span> 3.9.1</code></pre></div>
 <h4 id="optional-packages-1"><a href="#optional-packages-1" aria-label="optional packages 1 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional Packages</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pyenv shell 3.8.0
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pyenv shell 3.9.1
 python -m pip <span class="token function">install</span> nbformat jupyter metakernel jupyterlab
 <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y valgrind \
   clang-format clang-tidy \
@@ -145,7 +145,7 @@ python -m pip <span class="token function">install</span> nbformat jupyter metak
 <li><strong>cmake3</strong>: Set of tools for automate building, testing of software</li>
 <li><strong>libXt-devel</strong>: Basic library for developing X11</li>
 <li><strong>libXext-devel</strong>: Library which contains a handful of X11 extensions</li>
-<li><strong>devtoolset-7-gcc</strong>: Compiler suite for C and C++</li>
+<li><strong>devtoolset-8-gcc</strong>: Compiler suite for C and C++</li>
 <li><strong>numactl-devel</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel)</li>
 <li><strong>freeglut-devel</strong>: Development files for GLUT (OpenGL Utility Toolkit)</li>
 <li><strong>openmpi3-devel</strong>: Development files for OpenMP (API for multiprocessor programming)</li>
@@ -168,10 +168,11 @@ python -m pip <span class="token function">install</span> nbformat jupyter metak
 <ul>
 <li><strong>llvm-toolset-7</strong>: software collection that provides software from the LLVM suite</li>
 <li><strong>llvm-toolset-7-clang-tools-extra</strong>: software collection that provides <code class="language-text">clang-format</code> and <code class="language-text">clang-tidy</code></li>
+<li><strong>llvm-toolset-7-llvm-devel</strong>: LLVM developer libraries</li>
+<li><strong>llvm-toolset-7-llvm-static</strong>: LLVM static libraries</li>
 <li><strong>valgrind</strong>: A suite of tools for debugging and profiling</li>
 <li><strong>doxygen</strong>: Tool for generating documentation from annotated C++ sources</li>
 <li><strong>graphviz</strong>: Graph Visualization Software used optionally by Doxygen</li>
-<li><strong>llvm-toolset-6.0-llvm-devel llvm-toolset-6.0-llvm-static</strong>: Modular compiler and toolchain</li>
 <li><strong>libxml2-devel</strong>: Development files for the GNOME XML library</li>
 </ul>
 <h3 id="installation-1"><a href="#installation-1" aria-label="installation 1 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h3>
@@ -180,7 +181,7 @@ python -m pip <span class="token function">install</span> nbformat jupyter metak
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> centos-release-scl epel-release
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> https://centos7.iuscommunity.org/ius-release.rpm
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> <span class="token function">wget</span> cmake3 libXt-devel libXext-devel \
-  devtoolset-7-gcc* numactl-devel \
+  devtoolset-8-gcc* numactl-devel \
   openmpi3-devel freeglut-devel <span class="token function">git</span></code></pre></div>
 <p>We install pyenv as the Python Version Management tool to be able to switch
 to a supported Python environment for BioDynaMo. This will not interfere with
@@ -191,12 +192,10 @@ your system's Python installation.</p>
 <span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
 <span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"<span class="token variable">$HOME</span>/.pyenv/bin:<span class="token variable">$PATH</span>"</span>
 <span class="token function">eval</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span>pyenv init -<span class="token variable">)</span></span>"</span>
-PYTHON_CONFIGURE_OPTS<span class="token operator">=</span><span class="token string">"--enable-shared"</span> pyenv <span class="token function">install</span> 3.8.0</code></pre></div>
+PYTHON_CONFIGURE_OPTS<span class="token operator">=</span><span class="token string">"--enable-shared"</span> pyenv <span class="token function">install</span> 3.9.1</code></pre></div>
 <h4 id="optional-packages-3"><a href="#optional-packages-3" aria-label="optional packages 3 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Optional Packages</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pyenv shell 3.8.0
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">pyenv shell 3.9.1
 python -m pip <span class="token function">install</span> nbformat jupyter metakernel jupyterlab
-<span class="token function">sudo</span> yum -y <span class="token function">install</span> llvm-toolset-7 \
-   llvm-toolset-7-clang-tools-extra doxygen graphviz valgrind freeglut-devel
 <span class="token comment"># SBML integration</span>
 <span class="token function">sudo</span> <span class="token function">bash</span> -c <span class="token string">'cat &lt;&lt; EOF  > /etc/yum.repos.d/springdale-7-SCL.repo
 [SCL-core]
@@ -207,16 +206,17 @@ gpgcheck=1
 gpgkey=http://springdale.math.ias.edu/data/puias/7.6/x86_64/os/RPM-GPG-KEY-puias
 EOF'</span>
 <span class="token function">sudo</span> yum update -y
-<span class="token function">sudo</span> yum <span class="token function">install</span> -y llvm-toolset-6.0-llvm-devel llvm-toolset-6.0-llvm-static
-<span class="token function">sudo</span> yum <span class="token function">install</span> -y libxml2-devel</code></pre></div>
+<span class="token function">sudo</span> yum <span class="token function">install</span> -y doxygen graphviz valgrind freeglut-devel libxml2-devel
+<span class="token function">sudo</span> yum <span class="token function">install</span> -y llvm-toolset-7 llvm-toolset-7-clang-tools-extra \
+   llvm-toolset-7-llvm-devel llvm-toolset-7-llvm-static</code></pre></div>
 <h2 id="macos"><a href="#macos" aria-label="macos permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>macOS</h2>
 <p>Requirements to build on macOS are:</p>
 <ul>
 <li>A 64-bit Intel CPU or Apple Silicon CPU</li>
 <li>macOS Catalina (10.15) or higher</li>
-<li>Command Line Tools (CLT) for Xcode: <code class="language-text">xcode-select --install</code>,<br>
-<a href="https://developer.apple.com/downloads" target="_blank" rel="nofollow noopener noreferrer">developer.apple.com/downloads</a> or <a href="https://itunes.apple.com/us/app/xcode/id497799835" target="_blank" rel="nofollow noopener noreferrer">Xcode</a></li>
-<li>An up to date <a href="https://brew.sh" target="_blank" rel="nofollow noopener noreferrer">Homebrew</a> instalation (MacPorts and Fink are not officially supported)</li>
+<li><a href="https://itunes.apple.com/us/app/xcode/id497799835" target="_blank" rel="nofollow noopener noreferrer">Xcode</a> and the Command Line Tools (CLT) for Xcode: <code class="language-text">xcode-select --install</code><br>
+(or from <a href="https://developer.apple.com/downloads" target="_blank" rel="nofollow noopener noreferrer">developer.apple.com/downloads</a>)</li>
+<li>An up to date <a href="https://brew.sh" target="_blank" rel="nofollow noopener noreferrer">Homebrew</a> instalation (MacPorts and Fink are not supported)</li>
 <li>A Bourne-compatible shell for installation (e.g. <code class="language-text">bash</code> or <code class="language-text">zsh</code>)</li>
 </ul>
 <h3 id="required-packages-4"><a href="#required-packages-4" aria-label="required packages 4 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Required Packages</h3>

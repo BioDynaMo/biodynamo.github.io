@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-53-gd7b59a6e</span>
+   &#160;<span id="projectnumber">v0.9-56-g1a545178</span>
    </div>
   </td>
  </tr>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cb6e3c06739d10144c451f041085459"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a6cb6e3c06739d10144c451f041085459">GetLargestObjectSize</a> () const =0</td></tr>
 <tr class="memdesc:a6cb6e3c06739d10144c451f041085459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the largest agent.  <a href="classbdm_1_1Environment.html#a6cb6e3c06739d10144c451f041085459">More...</a><br /></td></tr>
 <tr class="separator:a6cb6e3c06739d10144c451f041085459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68457a0aab46738506487cfb767a03b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a68457a0aab46738506487cfb767a03b5">IterateZOrder</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> &amp; &gt; &amp;callback)=0</td></tr>
-<tr class="separator:a68457a0aab46738506487cfb767a03b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2065ab04d438c683b733049cc76847ad"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1LoadBalanceInfo.html">LoadBalanceInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a2065ab04d438c683b733049cc76847ad">GetLoadBalanceInfo</a> ()=0</td></tr>
+<tr class="separator:a2065ab04d438c683b733049cc76847ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd804d468eef37cf5fae001939d8913"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html">NeighborMutexBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a5bd804d468eef37cf5fae001939d8913">GetNeighborMutexBuilder</a> ()=0</td></tr>
 <tr class="separator:a5bd804d468eef37cf5fae001939d8913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8133aa9f17e7d2a13c84c273df2d045"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ac8133aa9f17e7d2a13c84c273df2d045">HasGrown</a> () const</td></tr>
@@ -128,7 +128,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00026">26</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00027">27</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad6ea5b9c942a7a5a03f68419d3c00399"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6ea5b9c942a7a5a03f68419d3c00399">&#9670;&nbsp;</a></span>~Environment()</h2>
@@ -153,7 +153,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00028">28</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00029">29</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -193,7 +193,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculates what the grid dimensions need to be in order to contain all the agents </p>
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00131">131</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00132">132</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -345,6 +345,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2065ab04d438c683b733049cc76847ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2065ab04d438c683b733049cc76847ad">&#9670;&nbsp;</a></span>GetLoadBalanceInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classbdm_1_1LoadBalanceInfo.html">LoadBalanceInfo</a>* bdm::Environment::GetLoadBalanceInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6c1f031501c713e66e6f99ed66009b08">bdm::UniformGridEnvironment</a>.</p>
+
+</div>
+</div>
 <a id="a5bd804d468eef37cf5fae001939d8913"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5bd804d468eef37cf5fae001939d8913">&#9670;&nbsp;</a></span>GetNeighborMutexBuilder()</h2>
 
@@ -396,35 +423,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00068">68</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
-
-</div>
-</div>
-<a id="a68457a0aab46738506487cfb767a03b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68457a0aab46738506487cfb767a03b5">&#9670;&nbsp;</a></span>IterateZOrder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void bdm::Environment::IterateZOrder </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, const <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> &amp; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>callback</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a159c7e6a2d38fe680276fe04af4a9d5b">bdm::UniformGridEnvironment</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00069">69</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +475,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00071">71</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00072">72</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>

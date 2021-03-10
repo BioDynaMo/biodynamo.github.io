@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-53-gd7b59a6e</span>
+   &#160;<span id="projectnumber">v0.9-56-g1a545178</span>
    </div>
   </td>
  </tr>
@@ -144,7 +144,7 @@ $(function() {
 </li>
 <li>GetBoxCoordinates()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a89dd56c5b5ab2b0b78d05c95948b6cf7">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a8f47d77d6d20ec2273c1c62d0e8f0832">bdm::UniformGridEnvironment</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a99b6a0186ef6fd0643fac280e2be5789">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetBoxIdx()
 : <a class="el" href="classbdm_1_1Agent.html#ae3e0d8a3c2d9a0b314f645ebd4cb661d">bdm::Agent</a>
@@ -281,6 +281,10 @@ $(function() {
 <li>GetListOfScheduledStandaloneOps()
 : <a class="el" href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">bdm::Scheduler</a>
 </li>
+<li>GetLoadBalanceInfo()
+: <a class="el" href="classbdm_1_1Environment.html#a2065ab04d438c683b733049cc76847ad">bdm::Environment</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6c1f031501c713e66e6f99ed66009b08">bdm::UniformGridEnvironment</a>
+</li>
 <li>GetLock()
 : <a class="el" href="classbdm_1_1Agent.html#a36898cb73557fdc316d5ea53f51d92d1">bdm::Agent</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a916864e50fcefd385a70da916bd70911">bdm::neuroscience::NeuriteElement</a>
@@ -309,12 +313,15 @@ $(function() {
 <li>GetMooreBoxIndices()
 : <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a381537cb45e8e7745bc14a1da02e5bbd">bdm::UniformGridEnvironment</a>
 </li>
+<li>GetMortonCode()
+: <a class="el" href="classbdm_1_1MortonOrder.html#ab0720de743975675677615c22faec0b1">bdm::MortonOrder</a>
+</li>
 <li>GetMother()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a13bda513abe12fd316b7940ed26c8168">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetMutex()
 : <a class="el" href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html#a836c2bb645aeba777a96cffb5ac9b1d7">bdm::Environment::NeighborMutexBuilder</a>
-, <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder.html#aae4eff6ab676814ba71e270c82cc97a7">bdm::UniformGridEnvironment::GridNeighborMutexBuilder</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder.html#add80b8686132a7851a1edf6a2c8f7e06">bdm::UniformGridEnvironment::GridNeighborMutexBuilder</a>
 </li>
 <li>GetMyNumaNode()
 : <a class="el" href="classbdm_1_1ThreadInfo.html#a2d29711493aca81a8d076b1689377477">bdm::ThreadInfo</a>
@@ -480,7 +487,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1MappedDataArray.html#af5be195d48de6068668385b9c20494fe">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>GetTuples()
-: <a class="el" href="classbdm_1_1MappedDataArray.html#acc338f8f5587f1e6d093578f5226ff5f">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a72b563768864784f3fa684af0f63fcaf">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>GetType()
 : <a class="el" href="classbdm_1_1TypeIndex.html#a091529f248cd2558096802dbfa878054">bdm::TypeIndex</a>
@@ -557,13 +564,15 @@ $(function() {
 </li>
 <li>grid
 : <a class="el" href="structbdm_1_1detail_1_1InitializeGPUData.html#a203c4025fc027f7382241eb29c7ab472">bdm::detail::InitializeGPUData</a>
+, <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1LoadBalanceInfoUG_1_1InitializeVectorFunctor.html#a55274a275ba75c1360e224e62dccc8f4">bdm::UniformGridEnvironment::LoadBalanceInfoUG::InitializeVectorFunctor</a>
 </li>
 <li>Grid3D()
-: <a class="el" href="structbdm_1_1ModelInitializer.html#a36aafc37a7c362b0aebcd3918ae17503">bdm::ModelInitializer</a>
+: <a class="el" href="structbdm_1_1ModelInitializer.html#a1b8d6e97aefa9501e77e99ee09851d54">bdm::ModelInitializer</a>
 </li>
 <li>grid_
 : <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1AssignToBoxesFunctor.html#ac817f198a2d1988ccd68f21561f50d43">bdm::UniformGridEnvironment::AssignToBoxesFunctor</a>
 , <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box_1_1Iterator.html#a53fa24b6c9fa856521068568a4877ea1">bdm::UniformGridEnvironment::Box::Iterator</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1LoadBalanceInfoUG.html#a26d2ccd5f17ae584cba0e6a313fe28d0">bdm::UniformGridEnvironment::LoadBalanceInfoUG</a>
 </li>
 <li>grid_dimensions_
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a4a7e44fc08e3844e0d9a995dc7acb2a9">bdm::DiffusionGrid</a>

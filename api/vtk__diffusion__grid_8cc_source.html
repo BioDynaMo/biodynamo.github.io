@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-53-gd7b59a6e</span>
+   &#160;<span id="projectnumber">v0.9-56-g1a545178</span>
    </div>
   </td>
  </tr>
@@ -269,7 +269,7 @@ $(function() {
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (boxes_z &lt;= num_pieces_target) {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="classbdm_1_1VtkDiffusionGrid.html#ab2943fd77e0d47ce737b3db84a36f020">piece_boxes_z_last_</a> = 2;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="classbdm_1_1VtkDiffusionGrid.html#af30fde4ec93b037fa9045bd9765aaeee">piece_boxes_z_</a> = 1;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="classbdm_1_1VtkDiffusionGrid.html#a0bf788490c4a3a02e9462127b76930b6">num_pieces_</a> = std::max(1UL, boxes_z - 1);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="classbdm_1_1VtkDiffusionGrid.html#a0bf788490c4a3a02e9462127b76930b6">num_pieces_</a> = std::max&lt;unsigned long long&gt;(1ULL, boxes_z - 1);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">auto</span> boxes_per_piece = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(boxes_z) / num_pieces_target;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="classbdm_1_1VtkDiffusionGrid.html#af30fde4ec93b037fa9045bd9765aaeee">piece_boxes_z_</a> = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(std::ceil(boxes_per_piece));</div>
