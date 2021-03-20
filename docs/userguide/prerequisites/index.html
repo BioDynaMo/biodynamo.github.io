@@ -77,6 +77,7 @@ BioDynaMo provides also an automated procedure to install all the needed librari
 <h3 id="required-packages"><a href="#required-packages" aria-label="required packages permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Required Packages</h3>
 <ul>
 <li><strong>wget</strong>: Retrieves files from the web</li>
+<li><strong>curl</strong>: Command line tool for transferring data with URL syntax</li>
 <li><strong>cmake</strong>: Set of tools for automate building, testing of software</li>
 <li><strong>make</strong>: Build automation tool</li>
 <li><strong>gcc</strong>: GNU C compiler</li>
@@ -90,7 +91,6 @@ BioDynaMo provides also an automated procedure to install all the needed librari
 </ul>
 <h3 id="required-package-for-custom-python-installation-with-pyenv"><a href="#required-package-for-custom-python-installation-with-pyenv" aria-label="required package for custom python installation with pyenv permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Required package for custom Python installation with pyenv</h3>
 <ul>
-<li><strong>curl</strong>: Command line tool for transferring data with URL syntax</li>
 <li><strong>libssl-dev</strong>: Secure Sockets Layer toolkit - development files</li>
 <li><strong>zlib1g-dev</strong>: Compression library - development</li>
 <li><strong>libbz2-dev</strong>: High-quality block-sorting file compressor library - development</li>
@@ -115,13 +115,17 @@ BioDynaMo provides also an automated procedure to install all the needed librari
 <h3 id="installation"><a href="#installation" aria-label="installation permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h3>
 <h4 id="required-packages-1"><a href="#required-packages-1" aria-label="required packages 1 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Required Packages</h4>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> update
-<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y <span class="token function">wget</span> cmake <span class="token function">make</span> gcc g++ \
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y <span class="token function">wget</span> <span class="token function">curl</span> <span class="token function">make</span> gcc g++ \
 libopenmpi-dev libomp5 libomp-dev libnuma-dev freeglut3-dev \
-libpthread-stubs0-dev</code></pre></div>
+libpthread-stubs0-dev
+
+<span class="token function">curl</span> -L -O https://github.com/Kitware/CMake/releases/download/v3.19.3/cmake-3.19.3-Linux-x86_64.sh
+<span class="token function">chmod</span> +x cmake-3.19.3-Linux-x86_64.sh
+<span class="token function">sudo</span> ./cmake-3.19.3-Linux-x86_64.sh --skip-license --prefix<span class="token operator">=</span>/usr/local</code></pre></div>
 <p>We install pyenv as the Python Version Management tool to be able to switch
 to a supported Python environment for BioDynaMo. This will not interfere with
 your system's Python installation.</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y <span class="token function">curl</span> libssl-dev zlib1g-dev libbz2-dev libreadline-dev \
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev \
   libsqlite3-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 
 <span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
@@ -142,7 +146,7 @@ python -m pip <span class="token function">install</span> nbformat jupyter metak
 <li><strong>epel-release</strong>: Provides a set of additional packages for Enterprise Linux</li>
 <li><strong>ius-release</strong>: Provides RPM packages for newer software versions for for Enterprise Linux distributions</li>
 <li><strong>wget</strong>: Retrieves files from the web</li>
-<li><strong>cmake3</strong>: Set of tools for automate building, testing of software</li>
+<li><strong>cmake</strong>: Set of tools for automate building, testing of software</li>
 <li><strong>libXt-devel</strong>: Basic library for developing X11</li>
 <li><strong>libXext-devel</strong>: Library which contains a handful of X11 extensions</li>
 <li><strong>devtoolset-8-gcc</strong>: Compiler suite for C and C++</li>
@@ -180,14 +184,18 @@ python -m pip <span class="token function">install</span> nbformat jupyter metak
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> yum update -y
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> centos-release-scl epel-release
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> https://centos7.iuscommunity.org/ius-release.rpm
-<span class="token function">sudo</span> yum -y <span class="token function">install</span> <span class="token function">wget</span> cmake3 libXt-devel libXext-devel \
+<span class="token function">sudo</span> yum -y <span class="token function">install</span> <span class="token function">wget</span> libXt-devel libXext-devel \
   devtoolset-8-gcc* numactl-devel \
-  openmpi3-devel freeglut-devel <span class="token function">git</span></code></pre></div>
+  openmpi3-devel freeglut-devel <span class="token function">git</span>
+
+<span class="token function">curl</span> -L -O https://github.com/Kitware/CMake/releases/download/v3.19.3/cmake-3.19.3-Linux-x86_64.sh
+<span class="token function">chmod</span> +x cmake-3.19.3-Linux-x86_64.sh
+./cmake-3.19.3-Linux-x86_64.sh --skip-license --prefix<span class="token operator">=</span>/usr/local</code></pre></div>
 <p>We install pyenv as the Python Version Management tool to be able to switch
 to a supported Python environment for BioDynaMo. This will not interfere with
 your system's Python installation.</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> yum <span class="token function">install</span> -y @development zlib-devel <span class="token function">bzip2</span> bzip2-devel readline-devel sqlite \
-  sqlite-devel openssl-devel xz xz-devel libffi-devel findutils
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> yum <span class="token function">install</span> -y @development zlib-devel <span class="token function">bzip2</span> bzip2-devel readline-devel \
+  sqlite sqlite-devel openssl-devel xz xz-devel libffi-devel findutils
 
 <span class="token function">curl</span> https://pyenv.run <span class="token operator">|</span> <span class="token function">bash</span>
 <span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"<span class="token variable">$HOME</span>/.pyenv/bin:<span class="token variable">$PATH</span>"</span>
