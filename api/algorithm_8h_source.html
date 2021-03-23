@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-63-g758ed7f5</span>
+   &#160;<span id="projectnumber">v0.9-64-g82fc62a1</span>
    </div>
   </td>
  </tr>
@@ -123,12 +123,55 @@ $(function() {
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif  // CORE_ALGORITHM_H_</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="namespacebdm.html#ac29e4fdbab03474694e984da473dfe2c">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacebdm.html#ac29e4fdbab03474694e984da473dfe2c">ExclusivePrefixSum</a>(T* v, uint64_t n) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">auto</span> tmp = (*v)[0];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  (*v)[0] = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">for</span> (uint64_t i = 1; i &lt;= n; ++i) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span> result = (*v)[i - 1] + tmp;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    tmp = (*v)[i];</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    (*v)[i] = result;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// if search_val is found in container, return right-most occurence.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// If not return the index of the right-most element that is smaller.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// If no smaller element exists, return element at index 0</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TSearch, <span class="keyword">typename</span> TContainer&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacebdm.html#a524f6a206fa82f5e9541eec0f8f82c98">   76</a></span>&#160;uint64_t <a class="code" href="namespacebdm.html#a524f6a206fa82f5e9541eec0f8f82c98">BinarySearch</a>(<span class="keyword">const</span> TSearch&amp; search_val, <span class="keyword">const</span> TContainer&amp; container,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                      uint64_t from, uint64_t to) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (to &lt;= from) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (container[from] != search_val &amp;&amp; from &gt; 0) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="comment">// if (from &lt; container.size() &amp;&amp; container[from] != search_val &amp;&amp; from &gt;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="comment">// 0) {</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      from--;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> from;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">auto</span> m = (from + to) / 2;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">if</span> (container[m] == search_val) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (m + 1 &lt;= to &amp;&amp; container[m + 1] == search_val) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespacebdm.html#a524f6a206fa82f5e9541eec0f8f82c98">BinarySearch</a>(search_val, container, m + 1, to);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> m;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (container[m] &gt; search_val) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacebdm.html#a524f6a206fa82f5e9541eec0f8f82c98">BinarySearch</a>(search_val, container, from, m);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacebdm.html#a524f6a206fa82f5e9541eec0f8f82c98">BinarySearch</a>(search_val, container, m + 1, to);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif  // CORE_ALGORITHM_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a9fde58c70821b117f4eba4a3ec718a2d"><div class="ttname"><a href="namespacebdm.html#a9fde58c70821b117f4eba4a3ec718a2d">bdm::InPlaceParallelPrefixSum</a></div><div class="ttdeci">void InPlaceParallelPrefixSum(T &amp;v, uint64_t n)</div><div class="ttdef"><b>Definition:</b> <a href="algorithm_8h_source.html#l00027">algorithm.h:27</a></div></div>
+<div class="ttc" id="anamespacebdm_html_ac29e4fdbab03474694e984da473dfe2c"><div class="ttname"><a href="namespacebdm.html#ac29e4fdbab03474694e984da473dfe2c">bdm::ExclusivePrefixSum</a></div><div class="ttdeci">void ExclusivePrefixSum(T *v, uint64_t n)</div><div class="ttdef"><b>Definition:</b> <a href="algorithm_8h_source.html#l00061">algorithm.h:61</a></div></div>
+<div class="ttc" id="anamespacebdm_html_a524f6a206fa82f5e9541eec0f8f82c98"><div class="ttname"><a href="namespacebdm.html#a524f6a206fa82f5e9541eec0f8f82c98">bdm::BinarySearch</a></div><div class="ttdeci">uint64_t BinarySearch(const TSearch &amp;search_val, const TContainer &amp;container, uint64_t from, uint64_t to)</div><div class="ttdef"><b>Definition:</b> <a href="algorithm_8h_source.html#l00076">algorithm.h:76</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
