@@ -14,7 +14,7 @@ var searchData=
   ['isarray_1592',['IsArray',['../structbdm_1_1IsArray.html',1,'bdm']]],
   ['isarray_3c_20matharray_3c_20t_2c_20n_20_3e_20_3e_1593',['IsArray&lt; MathArray&lt; T, N &gt; &gt;',['../structbdm_1_1IsArray_3_01MathArray_3_01T_00_01N_01_4_01_4.html',1,'bdm']]],
   ['isarray_3c_20std_3a_3aarray_3c_20t_2c_20n_20_3e_20_3e_1594',['IsArray&lt; std::array&lt; T, N &gt; &gt;',['../structbdm_1_1IsArray_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html',1,'bdm']]],
-  ['iterator_1595',['Iterator',['../classbdm_1_1Iterator.html',1,'bdm::Iterator&lt; T &gt;'],['../structbdm_1_1AgentUidMap_1_1Iterator.html',1,'bdm::AgentUidMap&lt; TValue &gt;::Iterator'],['../structbdm_1_1UniformGridEnvironment_1_1Box_1_1Iterator.html',1,'bdm::UniformGridEnvironment::Box::Iterator'],['../structbdm_1_1InlineVector_1_1Iterator.html',1,'bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;'],['../structbdm_1_1SharedData_1_1Iterator.html',1,'bdm::SharedData&lt; T &gt;::Iterator']]],
+  ['iterator_1595',['Iterator',['../classbdm_1_1Iterator.html',1,'bdm::Iterator&lt; T &gt;'],['../structbdm_1_1SharedData_1_1Iterator.html',1,'bdm::SharedData&lt; T &gt;::Iterator'],['../structbdm_1_1AgentUidMap_1_1Iterator.html',1,'bdm::AgentUidMap&lt; TValue &gt;::Iterator'],['../structbdm_1_1UniformGridEnvironment_1_1Box_1_1Iterator.html',1,'bdm::UniformGridEnvironment::Box::Iterator'],['../structbdm_1_1InlineVector_1_1Iterator.html',1,'bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;']]],
   ['iterator_3c_20agenthandle_20_3e_1596',['Iterator&lt; AgentHandle &gt;',['../classbdm_1_1Iterator.html',1,'bdm']]],
   ['iterator_3c_20uint64_5ft_20_3e_1597',['Iterator&lt; uint64_t &gt;',['../classbdm_1_1Iterator.html',1,'bdm']]]
 ];

@@ -6,7 +6,7 @@ var searchData=
   ['adherence_5f_2610',['adherence_',['../classbdm_1_1Cell.html#ab8e48d82040233041774f9f6c2485eb3',1,'bdm::Cell::adherence_()'],['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a7445fe91898a23c83559b2b70fa29e09',1,'bdm::neuroscience::NeuriteElement::adherence_()']]],
   ['adjacency_5f_2611',['adjacency_',['../classbdm_1_1UniformGridEnvironment.html#abd01782a444faec2eb4673bf5c908b78',1,'bdm::UniformGridEnvironment']]],
   ['after_5frestore_5fevent_5f_2612',['after_restore_event_',['../classbdm_1_1SimulationBackup.html#a1604e2a1edcc409a971fd55fa5a5e910',1,'bdm::SimulationBackup']]],
-  ['agent_2613',['agent',['../structbdm_1_1Cell_1_1MechanicalForcesFunctor.html#a46a58acfbb3c1fbbd0404365e1aacc78',1,'bdm::Cell::MechanicalForcesFunctor']]],
+  ['agent_2613',['agent',['../structbdm_1_1RemoveBehaviorHelper.html#a5d7b50c36881685fdcaa91800c1c8ea3',1,'bdm::RemoveBehaviorHelper::agent()'],['../structbdm_1_1Cell_1_1MechanicalForcesFunctor.html#a46a58acfbb3c1fbbd0404365e1aacc78',1,'bdm::Cell::MechanicalForcesFunctor::agent()']]],
   ['agent_5f_2614',['agent_',['../structbdm_1_1SetStaticnessForEachNeighbor.html#ad5757742c3b05e824a97bb0186519f47',1,'bdm::SetStaticnessForEachNeighbor']]],
   ['agent_5ffunctor_5f_2615',['agent_functor_',['../classbdm_1_1ReductionOp.html#a4dbfacd1aea3b7f53ce7099482be0228',1,'bdm::ReductionOp']]],
   ['agent_5fuid_5fdefragmentation_5fhigh_5fwatermark_2616',['agent_uid_defragmentation_high_watermark',['../structbdm_1_1Param.html#a5e22043444477513b7acd3c11f8fa90b',1,'bdm::Param']]],

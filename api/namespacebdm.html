@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-74-g85ea0202</span>
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
   </td>
  </tr>
@@ -297,6 +297,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ReductionOp.html">ReductionOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1RemoveBehaviorHelper.html">RemoveBehaviorHelper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RootAdaptor.html">RootAdaptor</a></td></tr>
@@ -461,8 +463,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa99966d67307675d42d21ca48ed5331b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8f34113a085de7ed206900cc1d8b1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a4a8f34113a085de7ed206900cc1d8b1f">BDM_REGISTER_OP</a> (<a class="el" href="structbdm_1_1DiffusionOp.html">DiffusionOp</a>, &quot;diffusion&quot;, kCpu)</td></tr>
 <tr class="separator:a4a8f34113a085de7ed206900cc1d8b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a071209a4cd3a9afd76a95af1d97007d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a071209a4cd3a9afd76a95af1d97007d0">BDM_REGISTER_OP_WITH_FREQ</a> (<a class="el" href="structbdm_1_1LoadBalancingOp.html">LoadBalancingOp</a>, &quot;load balancing&quot;, kCpu, std::numeric_limits&lt; std::size_t &gt;::max())</td></tr>
-<tr class="separator:a071209a4cd3a9afd76a95af1d97007d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd50c3a579216830ed1594d39132a1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#abcd50c3a579216830ed1594d39132a1a">BDM_REGISTER_OP_WITH_FREQ</a> (<a class="el" href="structbdm_1_1LoadBalancingOp.html">LoadBalancingOp</a>, &quot;load balancing&quot;, kCpu, std::numeric_limits&lt; uint32_t &gt;::max())</td></tr>
+<tr class="separator:abcd50c3a579216830ed1594d39132a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0db26c6d9095f731d57882df52d583ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a0db26c6d9095f731d57882df52d583ad">BDM_REGISTER_OP</a> (<a class="el" href="classbdm_1_1MechanicalForcesOp.html">MechanicalForcesOp</a>, &quot;mechanical forces&quot;, kCpu)</td></tr>
 <tr class="separator:a0db26c6d9095f731d57882df52d583ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceddf7f58a8585e93496bcf42fc9a82b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#aceddf7f58a8585e93496bcf42fc9a82b">BDM_REGISTER_OP</a> (<a class="el" href="structbdm_1_1DividingCellOp.html">DividingCellOp</a>, &quot;DividingCellOp&quot;, kCpu)</td></tr>
@@ -1358,8 +1360,8 @@ template&lt;typename TTuple , typename TFunction &gt; </div>
 
 </div>
 </div>
-<a id="a071209a4cd3a9afd76a95af1d97007d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a071209a4cd3a9afd76a95af1d97007d0">&#9670;&nbsp;</a></span>BDM_REGISTER_OP_WITH_FREQ()</h2>
+<a id="abcd50c3a579216830ed1594d39132a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd50c3a579216830ed1594d39132a1a">&#9670;&nbsp;</a></span>BDM_REGISTER_OP_WITH_FREQ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1385,7 +1387,7 @@ template&lt;typename TTuple , typename TFunction &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::numeric_limits&lt; std::size_t &gt;&#160;</td>
+          <td class="paramtype">std::numeric_limits&lt; uint32_t &gt;&#160;</td>
           <td class="paramname"><em>::max</em>()&#160;</td>
         </tr>
         <tr>
@@ -1665,7 +1667,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="morton__order_8cc_source.html#l00133">133</a> of file <a class="el" href="morton__order_8cc_source.html">morton_order.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="morton__order_8cc_source.html#l00130">130</a> of file <a class="el" href="morton__order_8cc_source.html">morton_order.cc</a>.</p>
 
 </div>
 </div>

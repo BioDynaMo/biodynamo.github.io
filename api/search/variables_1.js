@@ -10,7 +10,7 @@ var searchData=
   ['box_5findex_2640',['box_index',['../structbdm_1_1AgentHandleIterator.html#a20bbe7c352d6e72aaea2eee515ab1a66',1,'bdm::AgentHandleIterator']]],
   ['box_5fit_2641',['box_it',['../structbdm_1_1AgentHandleIterator.html#af7933e4a8b0e4eb8c797e4c54cc4cd53',1,'bdm::AgentHandleIterator']]],
   ['box_5fiterator_5f_2642',['box_iterator_',['../structbdm_1_1UniformGridEnvironment_1_1NeighborIterator.html#a9095beaba6a630c9c27b9f8d2b46af76',1,'bdm::UniformGridEnvironment::NeighborIterator']]],
-  ['box_5flength_5f_2643',['box_length_',['../classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c',1,'bdm::DiffusionGrid::box_length_()'],['../classbdm_1_1UniformGridEnvironment.html#a13ea936a86cdf3183281bdc142a64881',1,'bdm::UniformGridEnvironment::box_length_()']]],
+  ['box_5flength_5f_2643',['box_length_',['../classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c',1,'bdm::DiffusionGrid::box_length_()'],['../classbdm_1_1UniformGridEnvironment.html#a9b5e48748bcd4c58990c9613ca4ebc20',1,'bdm::UniformGridEnvironment::box_length_()']]],
   ['box_5fvolume_5f_2644',['box_volume_',['../classbdm_1_1DiffusionGrid.html#a83f73fcc15f8876c672a23a9189dee0c',1,'bdm::DiffusionGrid']]],
   ['boxes_5f_2645',['boxes_',['../classbdm_1_1UniformGridEnvironment.html#a8b7b5a2f58a1767a641046392f6a7669',1,'bdm::UniformGridEnvironment']]],
   ['branch_5forder_5f_2646',['branch_order_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a7738ba231e5692fabef38779274c25e2',1,'bdm::neuroscience::NeuriteElement']]]

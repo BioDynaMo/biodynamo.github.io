@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v0.9-74-g85ea0202</span>
+   &#160;<span id="projectnumber">v1.0</span>
    </div>
   </td>
  </tr>
@@ -180,13 +180,17 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01bdm_1_1AgentUid_01_4.html">  114</a></span>&#160;<span class="keyword">struct </span>hash&lt;<a class="code" href="namespacebdm.html">bdm</a>::AgentUid&gt; {</div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01bdm_1_1AgentUid_01_4.html#a30233fd7b64a25d781f9c906567c0761">  115</a></span>&#160;  std::size_t <a class="code" href="structstd_1_1hash_3_01bdm_1_1AgentUid_01_4.html#a30233fd7b64a25d781f9c906567c0761">operator()</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">bdm::AgentUid</a>&amp; uid) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> (uid.index_) &lt;&lt; uid.reused_;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace std</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif  // CORE_AGENT_AGENT_UID_H_</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// at any given time in a simulation there exists only one</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// agent with a specific index_ value.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Therefore it is sufficient as a hash.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// This might change for the distributed runtime.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> uid.index_;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}  <span class="comment">// namespace std</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif  // CORE_AGENT_AGENT_UID_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructstd_1_1hash_3_01bdm_1_1AgentUid_01_4_html_a30233fd7b64a25d781f9c906567c0761"><div class="ttname"><a href="structstd_1_1hash_3_01bdm_1_1AgentUid_01_4.html#a30233fd7b64a25d781f9c906567c0761">std::hash&lt; bdm::AgentUid &gt;::operator()</a></div><div class="ttdeci">std::size_t operator()(const bdm::AgentUid &amp;uid) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="agent__uid_8h_source.html#l00115">agent_uid.h:115</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>

@@ -11,9 +11,9 @@ var searchData=
   ['functor_3c_20t_2c_20const_20shareddata_3c_20t_20_3e_20_26_20_3e_1551',['Functor&lt; T, const SharedData&lt; T &gt; &amp; &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
   ['functor_3c_20void_2c_20agent_20_2a_20_3e_1552',['Functor&lt; void, Agent * &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
   ['functor_3c_20void_2c_20agent_20_2a_2c_20agenthandle_20_3e_1553',['Functor&lt; void, Agent *, AgentHandle &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
-  ['functor_3c_20void_2c_20bdm_3a_3aagent_20_2a_2c_20t_20_2a_20_3e_1554',['Functor&lt; void, bdm::Agent *, T * &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
-  ['functor_3c_20void_2c_20const_20agent_20_2a_2c_20double_20_3e_1555',['Functor&lt; void, const Agent *, double &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
-  ['functor_3c_20void_2c_20const_20bdm_3a_3aagent_20_2a_2c_20double_20_3e_1556',['Functor&lt; void, const bdm::Agent *, double &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
+  ['functor_3c_20void_2c_20agent_20_2a_2c_20double_20_3e_1554',['Functor&lt; void, Agent *, double &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
+  ['functor_3c_20void_2c_20bdm_3a_3aagent_20_2a_2c_20double_20_3e_1555',['Functor&lt; void, bdm::Agent *, double &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
+  ['functor_3c_20void_2c_20bdm_3a_3aagent_20_2a_2c_20t_20_2a_20_3e_1556',['Functor&lt; void, bdm::Agent *, T * &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
   ['functor_3c_20void_2c_20iterator_3c_20agenthandle_20_3e_20_2a_20_3e_1557',['Functor&lt; void, Iterator&lt; AgentHandle &gt; * &gt;',['../classbdm_1_1Functor.html',1,'bdm']]],
   ['functor_3c_20void_2c_20iterator_3c_20uint64_5ft_20_3e_20_2a_20_3e_1558',['Functor&lt; void, Iterator&lt; uint64_t &gt; * &gt;',['../classbdm_1_1Functor.html',1,'bdm']]]
 ];

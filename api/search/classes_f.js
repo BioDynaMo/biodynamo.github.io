@@ -9,7 +9,7 @@ var searchData=
   ['parallelresizevector_3c_20uint64_5ft_20_3e_1649',['ParallelResizeVector&lt; uint64_t &gt;',['../classbdm_1_1ParallelResizeVector.html',1,'bdm']]],
   ['parallelvtiwriter_1650',['ParallelVtiWriter',['../structbdm_1_1ParallelVtiWriter.html',1,'bdm']]],
   ['parallelvtuwriter_1651',['ParallelVtuWriter',['../structbdm_1_1ParallelVtuWriter.html',1,'bdm']]],
-  ['param_1652',['Param',['../structbdm_1_1Param.html',1,'bdm::Param'],['../structbdm_1_1neuroscience_1_1Param.html',1,'bdm::neuroscience::Param']]],
+  ['param_1652',['Param',['../structbdm_1_1neuroscience_1_1Param.html',1,'bdm::neuroscience::Param'],['../structbdm_1_1Param.html',1,'bdm::Param']]],
   ['paramgroup_1653',['ParamGroup',['../structbdm_1_1ParamGroup.html',1,'bdm']]],
   ['paramgroupuidgenerator_1654',['ParamGroupUidGenerator',['../classbdm_1_1ParamGroupUidGenerator.html',1,'bdm']]],
   ['paraviewadaptor_1655',['ParaviewAdaptor',['../classbdm_1_1ParaviewAdaptor.html',1,'bdm']]],
