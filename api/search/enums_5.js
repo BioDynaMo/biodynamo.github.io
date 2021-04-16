@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['opcomputetarget_3061',['OpComputeTarget',['../namespacebdm.html#a341896036b949773cdf5caf208c39ae2',1,'bdm']]],
-  ['optype_3062',['OpType',['../namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4e',1,'bdm']]]
+  ['opcomputetarget_3059',['OpComputeTarget',['../namespacebdm.html#a341896036b949773cdf5caf208c39ae2',1,'bdm']]],
+  ['optype_3060',['OpType',['../namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4e',1,'bdm']]]
 ];
