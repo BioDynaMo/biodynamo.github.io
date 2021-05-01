@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01</span>
+   &#160;<span id="projectnumber">v1.01-1-g9f63f7c8</span>
    </div>
   </td>
  </tr>
@@ -94,6 +94,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html">bdm::SharedData&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classbdm_1_1SharedData.html" title="The SharedData class avoids false sharing between threads.">SharedData</a> class avoids false sharing between threads.  <a href="classbdm_1_1SharedData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1SharedData_1_1AlignedT.html">bdm::SharedData&lt; T &gt;::AlignedT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for a chacheline-size aligned T.  <a href="structbdm_1_1SharedData_1_1AlignedT.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1SharedData_1_1Iterator.html">bdm::SharedData&lt; T &gt;::Iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,8 +124,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This is BioDynaMo's default cachline size. If you system has a different cacheline size, consider changing the value accordingly. When BioDynaMo moves to the C++17 standard, this choice will be automated. See : en.cppreference.com/w/cpp/thread/hardware_destructive_interference_size </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00021">21</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00025">25</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>

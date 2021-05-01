@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01</span>
+   &#160;<span id="projectnumber">v1.01-1-g9f63f7c8</span>
    </div>
   </td>
  </tr>
@@ -77,17 +77,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="classbdm_1_1SharedData.html" title="The SharedData class avoids false sharing between threads.">SharedData</a> class avoids false sharing between threads.  
+ <a href="classbdm_1_1SharedData.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="shared__data_8h_source.html">shared_data.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1SharedData_1_1AlignedT.html">AlignedT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for a chacheline-size aligned T.  <a href="structbdm_1_1SharedData_1_1AlignedT.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1SharedData_1_1Iterator.html">Iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a64137bb827e0becee5969f93fefe3c6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#a64137bb827e0becee5969f93fefe3c6e">Data</a> = std::vector&lt; std::array&lt; T, <a class="el" href="shared__data_8h.html#afab6b371f13bda49f3108c21913c8537">BDM_CACHE_LINE_SIZE</a>/sizeof(T)&gt; &gt;</td></tr>
-<tr class="separator:a64137bb827e0becee5969f93fefe3c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a06a61875a9dace825e3a0851dfabea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#a2a06a61875a9dace825e3a0851dfabea">Data</a> = std::vector&lt; <a class="el" href="structbdm_1_1SharedData_1_1AlignedT.html">AlignedT</a> &gt;</td></tr>
+<tr class="separator:a2a06a61875a9dace825e3a0851dfabea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -100,8 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a67fa3a2fc3c17bbf5551c9c981b94c7b"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#a67fa3a2fc3c17bbf5551c9c981b94c7b">operator[]</a> (size_t index) const</td></tr>
 <tr class="separator:a67fa3a2fc3c17bbf5551c9c981b94c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d995ad7bb0d0ea711dc838fe018380"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#a99d995ad7bb0d0ea711dc838fe018380">size</a> () const</td></tr>
+<tr class="memdesc:a99d995ad7bb0d0ea711dc838fe018380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the <a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">SharedData.data_</a> vector.  <a href="classbdm_1_1SharedData.html#a99d995ad7bb0d0ea711dc838fe018380">More...</a><br /></td></tr>
 <tr class="separator:a99d995ad7bb0d0ea711dc838fe018380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a238f1cf33aac2f4b1e9d9a654d400ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#a238f1cf33aac2f4b1e9d9a654d400ae4">resize</a> (size_t new_size)</td></tr>
+<tr class="memdesc:a238f1cf33aac2f4b1e9d9a654d400ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the <a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">SharedData.data_</a> vector.  <a href="classbdm_1_1SharedData.html#a238f1cf33aac2f4b1e9d9a654d400ae4">More...</a><br /></td></tr>
 <tr class="separator:a238f1cf33aac2f4b1e9d9a654d400ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc2718f94996b9dd40d8b0c45ca3d9c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1SharedData_1_1Iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#afc2718f94996b9dd40d8b0c45ca3d9c2">begin</a> ()</td></tr>
 <tr class="separator:afc2718f94996b9dd40d8b0c45ca3d9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,18 +122,19 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7665454db7ae569f3c2fccdd5349aa85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SharedData.html#a64137bb827e0becee5969f93fefe3c6e">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">data_</a></td></tr>
+<tr class="memitem:a7665454db7ae569f3c2fccdd5349aa85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SharedData.html#a2a06a61875a9dace825e3a0851dfabea">Data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">data_</a></td></tr>
 <tr class="separator:a7665454db7ae569f3c2fccdd5349aa85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class bdm::SharedData&lt; T &gt;</h3>
 
+<p>The <a class="el" href="classbdm_1_1SharedData.html" title="The SharedData class avoids false sharing between threads.">SharedData</a> class avoids false sharing between threads. </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00027">27</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00031">31</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a64137bb827e0becee5969f93fefe3c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64137bb827e0becee5969f93fefe3c6e">&#9670;&nbsp;</a></span>Data</h2>
+<a id="a2a06a61875a9dace825e3a0851dfabea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a06a61875a9dace825e3a0851dfabea">&#9670;&nbsp;</a></span>Data</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,12 +142,13 @@ class bdm::SharedData&lt; T &gt;</h3>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classbdm_1_1SharedData.html">bdm::SharedData</a>&lt; T &gt;::<a class="el" href="classbdm_1_1SharedData.html#a64137bb827e0becee5969f93fefe3c6e">Data</a> =  std::vector&lt;std::array&lt;T, <a class="el" href="shared__data_8h.html#afab6b371f13bda49f3108c21913c8537">BDM_CACHE_LINE_SIZE</a> / sizeof(T)&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="classbdm_1_1SharedData.html">bdm::SharedData</a>&lt; T &gt;::<a class="el" href="classbdm_1_1SharedData.html#a2a06a61875a9dace825e3a0851dfabea">Data</a> =  std::vector&lt;<a class="el" href="structbdm_1_1SharedData_1_1AlignedT.html">AlignedT</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data type definition for a vector whose entries fill full cache lines. A vector whose components' sizes are a multiple of the cachline size, e.g sizeof(Data[i]) = N*BDM_CACHE_LINE_SIZE. </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00029">29</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00041">41</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -168,7 +178,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00030">30</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00043">43</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +218,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00031">31</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00044">44</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +248,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00059">59</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00076">76</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +277,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00061">61</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00078">78</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +306,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00060">60</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00077">77</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +335,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00064">64</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00081">81</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +365,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00037">37</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00050">50</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +395,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00038">38</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00051">51</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -415,7 +425,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00040">40</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p>Resize the <a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">SharedData.data_</a> vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00057">57</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +456,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00039">39</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p>Get the size of the <a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">SharedData.data_</a> vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00054">54</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +475,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1SharedData.html#a64137bb827e0becee5969f93fefe3c6e">Data</a> <a class="el" href="classbdm_1_1SharedData.html">bdm::SharedData</a>&lt; T &gt;::data_</td>
+          <td class="memname"><a class="el" href="classbdm_1_1SharedData.html#a2a06a61875a9dace825e3a0851dfabea">Data</a> <a class="el" href="classbdm_1_1SharedData.html">bdm::SharedData</a>&lt; T &gt;::data_</td>
         </tr>
       </table>
   </td>
@@ -471,7 +485,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00069">69</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00086">86</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
