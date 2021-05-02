@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mechanicalforcesopcuda_3100',['MechanicalForcesOpCuda',['../classbdm_1_1AgentVector.html#ad910da0d3a25fa227d5a3d1f28df526f',1,'bdm::AgentVector::MechanicalForcesOpCuda()'],['../classbdm_1_1UniformGridEnvironment.html#ad910da0d3a25fa227d5a3d1f28df526f',1,'bdm::UniformGridEnvironment::MechanicalForcesOpCuda()']]],
-  ['mechanicalforcesopopencl_3101',['MechanicalForcesOpOpenCL',['../classbdm_1_1UniformGridEnvironment.html#a8ed9249dd866ba35a5876b02d3522239',1,'bdm::UniformGridEnvironment']]]
+  ['inplaceexecutioncontext_5fneighborcachevalidity_5ftest_3190',['InPlaceExecutionContext_NeighborCacheValidity_Test',['../classbdm_1_1InPlaceExecutionContext.html#afb97b1d40cda5baaf4981298bd1db5a7',1,'bdm::InPlaceExecutionContext']]]
 ];

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-1-g9f63f7c8</span>
+   &#160;<span id="projectnumber">v1.01-4-g479f9e3a</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,8 @@ $(function() {
 , <a class="el" href="classbdm_1_1ResourceManager.html#ab4aa9463256c9d0001de5613597353d0">bdm::ResourceManager</a>
 </li>
 <li>GetAgentHandle()
-: <a class="el" href="classbdm_1_1ResourceManager.html#a4afc6705383f05a5e91384ceeb5b34d2">bdm::ResourceManager</a>
+: <a class="el" href="classbdm_1_1AgentFlatIdxMap.html#ac4e7d98020cb50a3a17a673b701acfba">bdm::AgentFlatIdxMap</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#a4afc6705383f05a5e91384ceeb5b34d2">bdm::ResourceManager</a>
 </li>
 <li>GetAgentPtr()
 : <a class="el" href="classbdm_1_1Agent.html#a4cd9586145c32df5170596a5862a3ea0">bdm::Agent</a>
@@ -189,6 +190,9 @@ $(function() {
 <li>GetDecayConstant()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a37d15baf5b87e4c510443319c2860ecd">bdm::DiffusionGrid</a>
 </li>
+<li>GetDefaultSquaredRadius()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ab1443d7f68d8259067517bdac3a594d6">bdm::InPlaceExecutionContext</a>
+</li>
 <li>GetDensity()
 : <a class="el" href="classbdm_1_1Cell.html#a12a6e314f97307562c2a74bd55d03068">bdm::Cell</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a62659e641e4ed9d3abb3ca4e549d56ce">bdm::neuroscience::NeuriteElement</a>
@@ -202,11 +206,13 @@ $(function() {
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#ad29d0017c6ce0b87ba54bce91dfbbf14">bdm::DiffusionGrid</a>
 </li>
 <li>GetDiffusionGrid()
-: <a class="el" href="classbdm_1_1ResourceManager.html#a53b3fd9f100ab408a594d519082a71f2">bdm::ResourceManager</a>
+: <a class="el" href="classbdm_1_1ResourceManager.html#af22bbee53e7694056973827255521f0c">bdm::ResourceManager</a>
 </li>
 <li>GetDimensions()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#a36a3cffdde100b8c9f6af81a0a816c4e">bdm::DiffusionGrid</a>
 , <a class="el" href="classbdm_1_1Environment.html#a73041b40ed8a97292a383bedcf9f5a0a">bdm::Environment</a>
+, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#a49134e5d4cbcea9fd1bfcea4c791ac4d">bdm::KDTreeEnvironment</a>
+, <a class="el" href="classbdm_1_1OctreeEnvironment.html#a3ebbdff17b75820b297c871c43f12990">bdm::OctreeEnvironment</a>
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#aeb79eb8b9355c21c9a5dcbc4b15f3745">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetDimensionsPtr()
@@ -214,6 +220,8 @@ $(function() {
 </li>
 <li>GetDimensionThresholds()
 : <a class="el" href="classbdm_1_1Environment.html#ad32836b0a20be6d9497882e87c5f1840">bdm::Environment</a>
+, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#a97bccd97e8b5b6ab3e9d85493eb79630">bdm::KDTreeEnvironment</a>
+, <a class="el" href="classbdm_1_1OctreeEnvironment.html#a021c106f765b2d5f8734570d135664be">bdm::OctreeEnvironment</a>
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#ac11ecd43bce9c71df06e00fc1e149753">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetElementIdx()
@@ -228,6 +236,9 @@ $(function() {
 <li>GetExecutionContext()
 : <a class="el" href="classbdm_1_1Simulation.html#a0be91b02708fc3ecbc5ac229a09e9ba1">bdm::Simulation</a>
 </li>
+<li>GetFlatIdx()
+: <a class="el" href="classbdm_1_1AgentFlatIdxMap.html#a67cd6c1a45be670871eff97d050fe59e">bdm::AgentFlatIdxMap</a>
+</li>
 <li>GetGradient()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#ac59d31422dd266a1d53f6e4080a9e483">bdm::DiffusionGrid</a>
 </li>
@@ -241,7 +252,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a240b35ab66d5b1e68b00445489447a2f">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetHighestIndex()
-: <a class="el" href="classbdm_1_1AgentUidGenerator.html#a7dfc5c0817172202081ae27ce6db0667">bdm::AgentUidGenerator</a>
+: <a class="el" href="classbdm_1_1AgentUidGenerator.html#aa28809f4e44fce619010a2c582bd1361">bdm::AgentUidGenerator</a>
 </li>
 <li>GetImplementation()
 : <a class="el" href="structbdm_1_1Operation.html#a220acd9e419290d058605ee2d6b86c7d">bdm::Operation</a>
@@ -259,8 +270,10 @@ $(function() {
 : <a class="el" href="structbdm_1_1Math.html#af686ccdb5c4a9b25e6c5177bf8d8c4eb">bdm::Math</a>
 </li>
 <li>GetLargestObjectSize()
-: <a class="el" href="classbdm_1_1Environment.html#a6cb6e3c06739d10144c451f041085459">bdm::Environment</a>
-, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a161c560e9a6485f5138b9218da8207f9">bdm::UniformGridEnvironment</a>
+: <a class="el" href="classbdm_1_1Environment.html#ad3189db95ed80a810cf7c72f01ee7ea5">bdm::Environment</a>
+</li>
+<li>GetLargestObjectSizeSquared()
+: <a class="el" href="classbdm_1_1Environment.html#ab2622c77bda6a08a7a9a225e92e948d6">bdm::Environment</a>
 </li>
 <li>GetLength()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a03808ea91509089ded7c92f2ffe2581c">bdm::neuroscience::NeuriteElement</a>
@@ -273,6 +286,8 @@ $(function() {
 </li>
 <li>GetLoadBalanceInfo()
 : <a class="el" href="classbdm_1_1Environment.html#a2065ab04d438c683b733049cc76847ad">bdm::Environment</a>
+, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#adfd074b6b1faa9946fbf94e81b3c4627">bdm::KDTreeEnvironment</a>
+, <a class="el" href="classbdm_1_1OctreeEnvironment.html#a33c1f44d753855006344e6bf4ca08b3c">bdm::OctreeEnvironment</a>
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6c1f031501c713e66e6f99ed66009b08">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetLock()
@@ -327,6 +342,8 @@ $(function() {
 </li>
 <li>GetNeighborMutexBuilder()
 : <a class="el" href="classbdm_1_1Environment.html#a5bd804d468eef37cf5fae001939d8913">bdm::Environment</a>
+, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#ac1f47f6ae2577e1018101ae0ab6ac449">bdm::KDTreeEnvironment</a>
+, <a class="el" href="classbdm_1_1OctreeEnvironment.html#a3a3cb212f49a1e2c798e333121402e25">bdm::OctreeEnvironment</a>
 , <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6d0941a48587c0dbb6f1b20571151c52">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetNeuronOrNeuriteAgentPtr()
@@ -474,7 +491,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1Cell.html#a2b141df045e6db7a07ab81be5434a259">bdm::Cell</a>
 </li>
 <li>GetTuple()
-: <a class="el" href="classbdm_1_1MappedDataArray.html#a23c5f33735432a440ee810be4ea62897">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#af5be195d48de6068668385b9c20494fe">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>GetTuples()
 : <a class="el" href="classbdm_1_1MappedDataArray.html#a72b563768864784f3fa684af0f63fcaf">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>

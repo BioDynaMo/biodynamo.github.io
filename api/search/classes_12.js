@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['teardowniterationop_1685',['TearDownIterationOp',['../structbdm_1_1TearDownIterationOp.html',1,'bdm']]],
-  ['tfileraii_1686',['TFileRaii',['../classbdm_1_1TFileRaii.html',1,'bdm']]],
-  ['threadinfo_1687',['ThreadInfo',['../classbdm_1_1ThreadInfo.html',1,'bdm']]],
-  ['threadsafeagentuidmap_1688',['ThreadSafeAgentUidMap',['../structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html',1,'bdm::InPlaceExecutionContext']]],
-  ['timing_1689',['Timing',['../classbdm_1_1Timing.html',1,'bdm']]],
-  ['timingaggregator_1690',['TimingAggregator',['../classbdm_1_1TimingAggregator.html',1,'bdm']]],
-  ['type_5fternary_5foperator_1691',['type_ternary_operator',['../structbdm_1_1type__ternary__operator.html',1,'bdm']]],
-  ['type_5fternary_5foperator_3c_20false_2c_20t_2c_20u_20_3e_1692',['type_ternary_operator&lt; false, T, U &gt;',['../structbdm_1_1type__ternary__operator_3_01false_00_01T_00_01U_01_4.html',1,'bdm']]],
-  ['type_5fternary_5foperator_3c_20true_2c_20t_2c_20u_20_3e_1693',['type_ternary_operator&lt; true, T, U &gt;',['../structbdm_1_1type__ternary__operator_3_01true_00_01T_00_01U_01_4.html',1,'bdm']]],
-  ['typeindex_1694',['TypeIndex',['../classbdm_1_1TypeIndex.html',1,'bdm']]]
+  ['scheduler_1719',['Scheduler',['../classbdm_1_1Scheduler.html',1,'bdm']]],
+  ['secretion_1720',['Secretion',['../classbdm_1_1Secretion.html',1,'bdm']]],
+  ['setstaticnessforeachneighbor_1721',['SetStaticnessForEachNeighbor',['../structbdm_1_1SetStaticnessForEachNeighbor.html',1,'bdm']]],
+  ['setupiterationop_1722',['SetUpIterationOp',['../structbdm_1_1SetUpIterationOp.html',1,'bdm']]],
+  ['shareddata_1723',['SharedData',['../classbdm_1_1SharedData.html',1,'bdm']]],
+  ['sideneuriteextensionevent_1724',['SideNeuriteExtensionEvent',['../structbdm_1_1neuroscience_1_1SideNeuriteExtensionEvent.html',1,'bdm::neuroscience']]],
+  ['simdimensionandlargestagentfunctor_1725',['SimDimensionAndLargestAgentFunctor',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html',1,'bdm::Environment']]],
+  ['simulation_1726',['Simulation',['../classbdm_1_1Simulation.html',1,'bdm']]],
+  ['simulationbackup_1727',['SimulationBackup',['../classbdm_1_1SimulationBackup.html',1,'bdm']]],
+  ['spinlock_1728',['Spinlock',['../classbdm_1_1Spinlock.html',1,'bdm']]],
+  ['splitneuriteelementevent_1729',['SplitNeuriteElementEvent',['../structbdm_1_1neuroscience_1_1SplitNeuriteElementEvent.html',1,'bdm::neuroscience']]],
+  ['stack_1730',['Stack',['../classbdm_1_1Stack.html',1,'bdm']]],
+  ['standaloneoperationimpl_1731',['StandaloneOperationImpl',['../structbdm_1_1StandaloneOperationImpl.html',1,'bdm']]],
+  ['stencilgrid_1732',['StencilGrid',['../classbdm_1_1StencilGrid.html',1,'bdm']]],
+  ['sumreduction_1733',['SumReduction',['../structbdm_1_1SumReduction.html',1,'bdm']]]
 ];

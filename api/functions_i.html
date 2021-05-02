@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-1-g9f63f7c8</span>
+   &#160;<span id="projectnumber">v1.01-4-g479f9e3a</span>
    </div>
   </td>
  </tr>
@@ -74,15 +74,23 @@ $(function() {
 <li>idx_
 : <a class="el" href="structbdm_1_1AgentUidMap_1_1Iterator.html#a481d8f10bc6de7db0fcf2fa671b690bc">bdm::AgentUidMap&lt; TValue &gt;::Iterator</a>
 </li>
+<li>idx_t
+: <a class="el" href="structbdm_1_1NanoFlannAdapter.html#ad68fa661982ee7ed2ebe6631e663e644">bdm::NanoFlannAdapter</a>
+</li>
 <li>ignore_delete_
 : <a class="el" href="classbdm_1_1MemoryManager.html#a965bb1593dab70a9aa6da34d1ee726b9">bdm::MemoryManager</a>
 </li>
 <li>impl_
-: <a class="el" href="classbdm_1_1OpenCLState.html#a93505e447c171462cf772a9a24f86752">bdm::OpenCLState</a>
+: <a class="el" href="classbdm_1_1KDTreeEnvironment.html#a4cd98a03621011603c1e0890d0b3eb9a">bdm::KDTreeEnvironment</a>
+, <a class="el" href="classbdm_1_1OctreeEnvironment.html#a4778483de78982e53b04d87252827d9e">bdm::OctreeEnvironment</a>
+, <a class="el" href="classbdm_1_1OpenCLState.html#a93505e447c171462cf772a9a24f86752">bdm::OpenCLState</a>
 , <a class="el" href="classbdm_1_1ParaviewAdaptor.html#ae344f0627b0745aaa1007b8810424437">bdm::ParaviewAdaptor</a>
 </li>
 <li>implementations_
 : <a class="el" href="structbdm_1_1Operation.html#a9382c3856b0d4d48955632e05ca4a2b9">bdm::Operation</a>
+</li>
+<li>in_place_exec_ctxt_detail::InPlaceExecutionContext_NeighborCacheValidity_Test
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#afb97b1d40cda5baaf4981298bd1db5a7">bdm::InPlaceExecutionContext</a>
 </li>
 <li>IncludeIntoCling()
 : <a class="el" href="classbdm_1_1JitHeaders.html#ad3fa2a7482888b274d06aca4dca33bf3">bdm::JitHeaders</a>
@@ -94,6 +102,7 @@ $(function() {
 <li>index_
 : <a class="el" href="classbdm_1_1AgentUid.html#ae93e9b3ba78cefc087987f7fedf37ded">bdm::AgentUid</a>
 , <a class="el" href="structbdm_1_1InlineVector_1_1Iterator.html#a31869f513113db401bdf1846da99e087">bdm::InlineVector&lt; T, N &gt;::Iterator&lt; TT, TIV &gt;</a>
+, <a class="el" href="structbdm_1_1KDTreeEnvironment_1_1NanoflannImpl.html#abb206e7dcc6926f1a9d7c6ea65685397">bdm::KDTreeEnvironment::NanoflannImpl</a>
 , <a class="el" href="classbdm_1_1TypeIndex.html#a190d49281450a2e5cc2f4c3e60134d36">bdm::TypeIndex</a>
 </li>
 <li>Index_t
@@ -186,7 +195,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1LoadBalanceInfoUG.html#ad9bcdc372e0c1853698c778b9276c559">bdm::UniformGridEnvironment::LoadBalanceInfoUG</a>
 </li>
 <li>InlineVector()
-: <a class="el" href="classbdm_1_1InlineVector.html#a101629c311f2e143f0d41954be1a9bb7">bdm::InlineVector&lt; T, N &gt;</a>
+: <a class="el" href="classbdm_1_1InlineVector.html#a135924848eb185f3e7e612e7afc517a5">bdm::InlineVector&lt; T, N &gt;</a>
 </li>
 <li>InPlaceExecutionContext()
 : <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#acca9e76b1b60b7e89b4d59451387c19b">bdm::InPlaceExecutionContext</a>
@@ -199,7 +208,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1UnorderedFlatmap.html#aaec0deab26604dc2ec2fa68ed87fd0af">bdm::UnorderedFlatmap&lt; TKey, TValue &gt;</a>
 </li>
 <li>InsertNextTuple()
-: <a class="el" href="classbdm_1_1MappedDataArray.html#aa02cde7aa79663d98ef8fb647a724c11">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#aa400b2d4785b27585d51c5881b56aff0">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>InsertNextTypedTuple()
 : <a class="el" href="classbdm_1_1MappedDataArray.html#a76848df3751ca9cb10a2f7415c83aadd">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
@@ -208,7 +217,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1MappedDataArray.html#a0e0011d9e83bc169785f9bbbac66bcdd">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>InsertTuple()
-: <a class="el" href="classbdm_1_1MappedDataArray.html#ae7b3ba7044cacfbc67a8ed8c3c7b5a77">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a1007bbaf0a118b39045c18e75fcf69d3">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>InsertTuples()
 : <a class="el" href="classbdm_1_1MappedDataArray.html#a406c2f4313101e269da7bb34016ec45d">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
@@ -235,7 +244,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1InteractionForce.html#a55c36e6d4e5f1ac1c3ac9dfa0f082d11">bdm::InteractionForce</a>
 </li>
 <li>InterpolateTuple()
-: <a class="el" href="classbdm_1_1MappedDataArray.html#a527e038b3f03609a5bcef50a74a90d4a">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
+: <a class="el" href="classbdm_1_1MappedDataArray.html#a976edaf19243df8c69ecbaef5f2a3b96">bdm::MappedDataArray&lt; TScalar, TClass, TDataMember &gt;</a>
 </li>
 <li>is_axon_
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a0b030919ac369f45f9d08e90a942c50f">bdm::neuroscience::NeuriteElement</a>
@@ -282,6 +291,9 @@ $(function() {
 </li>
 <li>IsInDefragmentationMode()
 : <a class="el" href="classbdm_1_1AgentUidGenerator.html#aa714435d01af499b2e9c92a4d9f62324">bdm::AgentUidGenerator</a>
+</li>
+<li>IsNeighborCacheValid()
+: <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a775d350380a74decbd3c4a7c775e5fa6">bdm::InPlaceExecutionContext</a>
 </li>
 <li>IsNeuriteElement()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuronOrNeurite.html#ad50190c5c23759a27ab5702f8bab572e">bdm::neuroscience::NeuronOrNeurite</a>

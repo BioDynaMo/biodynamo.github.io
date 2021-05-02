@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['op_5ftimer_2eh_1812',['op_timer.h',['../op__timer_8h.html',1,'']]],
-  ['opencl_5fstate_2ecc_1813',['opencl_state.cc',['../opencl__state_8cc.html',1,'']]],
-  ['opencl_5fstate_2eh_1814',['opencl_state.h',['../opencl__state_8h.html',1,'']]],
-  ['operation_2ecc_1815',['operation.cc',['../operation_8cc.html',1,'']]],
-  ['operation_2eh_1816',['operation.h',['../operation_8h.html',1,'']]],
-  ['operation_5fregistry_2ecc_1817',['operation_registry.cc',['../operation__registry_8cc.html',1,'']]],
-  ['operation_5fregistry_2eh_1818',['operation_registry.h',['../operation__registry_8h.html',1,'']]]
+  ['neurite_5fbifurcation_5fevent_2eh_1853',['neurite_bifurcation_event.h',['../neurite__bifurcation__event_8h.html',1,'']]],
+  ['neurite_5fbranching_5fevent_2eh_1854',['neurite_branching_event.h',['../neurite__branching__event_8h.html',1,'']]],
+  ['neurite_5felement_2eh_1855',['neurite_element.h',['../neurite__element_8h.html',1,'']]],
+  ['neuron_5for_5fneurite_2ecc_1856',['neuron_or_neurite.cc',['../neuron__or__neurite_8cc.html',1,'']]],
+  ['neuron_5for_5fneurite_2eh_1857',['neuron_or_neurite.h',['../neuron__or__neurite_8h.html',1,'']]],
+  ['neuron_5fsoma_2ecc_1858',['neuron_soma.cc',['../neuron__soma_8cc.html',1,'']]],
+  ['neuron_5fsoma_2eh_1859',['neuron_soma.h',['../neuron__soma_8h.html',1,'']]],
+  ['neuroscience_2eh_1860',['neuroscience.h',['../neuroscience_8h.html',1,'']]],
+  ['new_5fagent_5fevent_2ecc_1861',['new_agent_event.cc',['../new__agent__event_8cc.html',1,'']]],
+  ['new_5fagent_5fevent_2eh_1862',['new_agent_event.h',['../new__agent__event_8h.html',1,'']]],
+  ['new_5fneurite_5fextension_5fevent_2eh_1863',['new_neurite_extension_event.h',['../new__neurite__extension__event_8h.html',1,'']]],
+  ['notebook_5futil_2eh_1864',['notebook_util.h',['../notebook__util_8h.html',1,'']]],
+  ['numa_2eh_1865',['numa.h',['../numa_8h.html',1,'']]]
 ];

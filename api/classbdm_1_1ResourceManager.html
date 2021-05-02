@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-1-g9f63f7c8</span>
+   &#160;<span id="projectnumber">v1.01-4-g479f9e3a</span>
    </div>
   </td>
  </tr>
@@ -97,8 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a55eee7e3bbf236417a0d839930b8bd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaaeab80337d37ceea067ce40dbc1d9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#acaaeab80337d37ceea067ce40dbc1d9e">ResourceManager</a> ()</td></tr>
 <tr class="separator:acaaeab80337d37ceea067ce40dbc1d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6cc6887caa2e7dd880d35018a569f45"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#ad6cc6887caa2e7dd880d35018a569f45">~ResourceManager</a> ()</td></tr>
-<tr class="separator:ad6cc6887caa2e7dd880d35018a569f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc60f79a27c6ce84686001414b739dad"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#acc60f79a27c6ce84686001414b739dad">~ResourceManager</a> ()</td></tr>
+<tr class="separator:acc60f79a27c6ce84686001414b739dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44910abacebe89f18779cc6bd4ce263c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a44910abacebe89f18779cc6bd4ce263c">operator=</a> (<a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> &amp;&amp;other)</td></tr>
 <tr class="separator:a44910abacebe89f18779cc6bd4ce263c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d9ecc7f400b1617cd323b7776321761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ResourceManager.html#a4d9ecc7f400b1617cd323b7776321761">RebuildAgentUidMap</a> ()</td></tr>
@@ -249,8 +249,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6cc6887caa2e7dd880d35018a569f45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6cc6887caa2e7dd880d35018a569f45">&#9670;&nbsp;</a></span>~ResourceManager()</h2>
+<a id="acc60f79a27c6ce84686001414b739dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc60f79a27c6ce84686001414b739dad">&#9670;&nbsp;</a></span>~ResourceManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +259,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bdm::ResourceManager::~ResourceManager </td>
+          <td class="memname">bdm::ResourceManager::~ResourceManager </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -267,12 +267,12 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00057">57</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00044">44</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>NB: This method is not thread-safe! This function might invalidate agent references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a> are not affected. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00311">311</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00299">299</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds <code>new_agents</code> to <code>agents_[numa_node]</code>. <code>offset</code> specifies the index at which the first element is inserted. Agents are inserted consecutively. This methos is thread safe only if insertion intervals do not overlap! </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00354">354</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00342">342</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00127">127</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00115">115</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Remove all agents NB: This method is not thread-safe! This function invalidates agent references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a> are not affected. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00289">289</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00277">277</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true if an agent with the given uid is stored in this <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00281">281</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00269">269</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00337">337</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00325">325</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -559,7 +559,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00210">210</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00198">198</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00218">218</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00206">206</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ Friends</h2></td></tr>
 Function invocations are parallelized.<br  />
 Uses static scheduling. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1ResourceManager.html#afcdb1cb8562340e45ccf358ed7c91b20">ForEachAgent</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00073">73</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00087">87</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ Uses static scheduling. </p><dl class="section see"><dt>See also</dt><dd><a clas
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00044">44</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00058">58</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -677,7 +677,7 @@ Uses static scheduling. </p><dl class="section see"><dt>See also</dt><dd><a clas
 Function invocations are parallelized.<br  />
 Uses static scheduling. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1ResourceManager.html#afcdb1cb8562340e45ccf358ed7c91b20">ForEachAgent</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00078">78</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00092">92</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -724,7 +724,7 @@ Uses dynamic scheduling and work stealing. Batch size controlled by <code>chunk<
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classbdm_1_1ResourceManager.html#afcdb1cb8562340e45ccf358ed7c91b20">ForEachAgent</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00083">83</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00097">97</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -755,7 +755,7 @@ template&lt;typename TFunctor &gt; </div>
 </div><div class="memdoc">
 <p>Execute the given functor for all diffusion grids rm-&gt;ForEachDiffusionGrid([](DiffusionGrid* dgrid) { ... }); </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00184">184</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00172">172</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -783,7 +783,7 @@ template&lt;typename TFunctor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00121">121</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00109">109</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -811,7 +811,7 @@ template&lt;typename TFunctor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00113">113</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00101">101</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +839,7 @@ template&lt;typename TFunctor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00125">125</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00113">113</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -869,7 +869,7 @@ template&lt;typename TFunctor &gt; </div>
 
 <p>Return the diffusion grid which holds the substance of specified id. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00151">151</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00139">139</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -898,7 +898,7 @@ template&lt;typename TFunctor &gt; </div>
 </div><div class="memdoc">
 <p>Return the diffusion grid which holds the substance of specified name Caution: using this function in a tight loop will result in a slow simulation. Use <code>GetDiffusionGrid(size_t)</code> in those cases. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00165">165</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00153">153</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -927,7 +927,7 @@ template&lt;typename TFunctor &gt; </div>
 </div><div class="memdoc">
 <p>Returns the total number of agents if numa_node == -1 Otherwise the number of agents in the specific numa node </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00192">192</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00180">180</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +954,7 @@ template&lt;typename TFunctor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00406">406</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00394">394</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -993,7 +993,7 @@ template&lt;typename TFunctor &gt; </div>
 </div><div class="memdoc">
 <p>Resize <code>agents_[numa_node]</code> such that it holds <code>current + additional</code> elements after this call. Returns the size after </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00267">267</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00255">255</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1021,7 @@ template&lt;typename TFunctor &gt; </div>
 </div><div class="memdoc">
 <p>Reorder agents such that, agents are distributed to NUMA nodes. Nearby agents will be moved to the same NUMA node. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00219">219</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00233">233</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1049,7 @@ template&lt;typename TFunctor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00071">71</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00059">59</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1076,7 @@ template&lt;typename TFunctor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00100">100</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00088">88</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1106,7 +1106,7 @@ template&lt;typename TFunctor &gt; </div>
 <p>Removes the agent with the given uid.<br  />
 NB: This method is not thread-safe! This function invalidates agent references pointing into the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>. <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a> are not affected. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00376">376</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00364">364</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1126,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00305">305</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8cc_source.html#l00319">319</a> of file <a class="el" href="resource__manager_8cc_source.html">resource_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -1154,7 +1154,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00139">139</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00127">127</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1183,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 </div><div class="memdoc">
 <p>Reserves enough memory to hold <code>capacity</code> number of agents for each numa domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00255">255</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00243">243</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1210,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00325">325</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00313">313</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1249,7 +1249,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00435">435</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00423">423</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1273,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00430">430</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00418">418</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1300,7 +1300,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 
 <p>Pointer container for all agents. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00412">412</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00400">400</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1326,7 +1326,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 
 <p>Container used during load balancing. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00414">414</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00402">402</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1352,7 +1352,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 
 <p>Maps a diffusion grid ID to the pointer to the diffusion grid. </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00416">416</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00404">404</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1378,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 
 <p>auxiliary data required for parallel agent removal </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00428">428</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00416">416</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1402,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00418">418</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00406">406</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1426,7 +1426,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00420">420</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00408">408</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1453,7 +1453,7 @@ NB: This method is not thread-safe! This function invalidates agent references p
 <p>Maps an <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> to its storage location in <code>agents_</code> <br  />
 . </p>
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00410">410</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00398">398</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>
