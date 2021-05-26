@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-7-ga8894c8e</span>
+   &#160;<span id="projectnumber">v1.01-27-ge647ae98</span>
    </div>
   </td>
  </tr>
@@ -115,20 +115,21 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="comment">// Update the diffusion grid dimension if the environment dimensions</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="comment">// have changed. If the space is bound, we do not need to update the</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="comment">// dimensions, because these should not be changing anyway</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">if</span> (env-&gt;HasGrown() &amp;&amp; !param-&gt;bound_space) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        dg-&gt;Update();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      dg-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a06be6e1469c249b0fbecc2c5d7b3b074">Diffuse</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      if (param-&gt;calculate_gradients) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        dg-&gt;CalculateGradient();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    });</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  // CORE_OPERATION_DIFFUSION_OP_H_</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">if</span> (env-&gt;HasGrown() &amp;&amp;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          param-&gt;bound_space == Param::BoundSpaceMode::kOpen) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        dg-&gt;Update();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      dg-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a06be6e1469c249b0fbecc2c5d7b3b074">Diffuse</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      if (param-&gt;calculate_gradients) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        dg-&gt;CalculateGradient();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    });</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  // CORE_OPERATION_DIFFUSION_OP_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="ainline__vector_8h_html"><div class="ttname"><a href="inline__vector_8h.html">inline_vector.h</a></div></div>
 <div class="ttc" id="astructbdm_1_1DiffusionOp_html"><div class="ttname"><a href="structbdm_1_1DiffusionOp.html">bdm::DiffusionOp</a></div><div class="ttdoc">A class that sets up diffusion grids of the substances in this simulation.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00034">diffusion_op.h:34</a></div></div>
@@ -144,8 +145,8 @@ $(function() {
 <div class="ttc" id="asimulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
 <div class="ttc" id="aresource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>
 <div class="ttc" id="acore_2param_2param_8h_html"><div class="ttname"><a href="core_2param_2param_8h.html">param.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00065">simulation.cc:65</a></div></div>
-<div class="ttc" id="astructbdm_1_1StandaloneOperationImpl_html"><div class="ttname"><a href="structbdm_1_1StandaloneOperationImpl.html">bdm::StandaloneOperationImpl</a></div><div class="ttdoc">Interface for implementing an operation that should run on a GPU.</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00083">operation.h:83</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00066">simulation.cc:66</a></div></div>
+<div class="ttc" id="astructbdm_1_1StandaloneOperationImpl_html"><div class="ttname"><a href="structbdm_1_1StandaloneOperationImpl.html">bdm::StandaloneOperationImpl</a></div><div class="ttdoc">Interface for implementing an operation that should run on a GPU.</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00085">operation.h:85</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

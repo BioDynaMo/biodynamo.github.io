@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-7-ga8894c8e</span>
+   &#160;<span id="projectnumber">v1.01-27-ge647ae98</span>
    </div>
   </td>
  </tr>
@@ -76,10 +76,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#acf14d091224537843dc2d2ffec138642">active_target_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#ae92921d5ddbf10894e306d5b33328688">AddOperationImpl</a>(OpComputeTarget target, OperationImpl *impl)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a3bf351b8b5e383c445ae176b9c0137b5">Clone</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a220acd9e419290d058605ee2d6b86c7d">GetImplementation</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a9382c3856b0d4d48955632e05ca4a2b9">implementations_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a7dcf8d997d5af6c3440f2170150f30f2">IsComputeTargetSupported</a>(OpComputeTarget target)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#abca274731b4e02e7622904570ff5279f">exclude_filters_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a220acd9e419290d058605ee2d6b86c7d">GetImplementation</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a9382c3856b0d4d48955632e05ca4a2b9">implementations_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a7dcf8d997d5af6c3440f2170150f30f2">IsComputeTargetSupported</a>(OpComputeTarget target)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a2a496018db890ac7f172ffb7a3477842">IsExcluded</a>(Functor&lt; bool, Agent * &gt; *filter)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a0742d3bad1a91a9a83bac914ea6044ef">IsStandalone</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a></td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#ac0c6c73acfad45c5c699ea0b0b6de496">Operation</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
@@ -87,9 +89,10 @@ $(function() {
   <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a45b64e858fec26e328e4f0bd690167a2">operator()</a>(Agent *agent)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a70f4540752681cdc64ba697af255664d">operator()</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a68e617bb499e73ffa6b69dccffb99169">SelectComputeTarget</a>(OpComputeTarget target)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#af18eaad4f239df7bd561c1ad0c0957c5">SetUp</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a9238c049bfa4d46f6e882149c43ad9a9">TearDown</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#af71c268f8ab93714fae49deaa6c1f160">~Operation</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#ab4621ba6209d912a24ebc4c0ce8f3f6e">SetExcludeFilters</a>(const std::set&lt; Functor&lt; bool, Agent * &gt; * &gt; &amp;exclude_filters)</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#af18eaad4f239df7bd561c1ad0c0957c5">SetUp</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structbdm_1_1Operation.html#a9238c049bfa4d46f6e882149c43ad9a9">TearDown</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structbdm_1_1Operation.html#af71c268f8ab93714fae49deaa6c1f160">~Operation</a>()</td><td class="entry"><a class="el" href="structbdm_1_1Operation.html">bdm::Operation</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

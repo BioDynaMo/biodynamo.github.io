@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-7-ga8894c8e</span>
+   &#160;<span id="projectnumber">v1.01-27-ge647ae98</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for bdm::Simulation:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation__coll__graph.svg" width="1604" height="747"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1Simulation__coll__graph.svg" width="1604" height="804"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70fd274f5b1477569e5a13f81f9f314c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac33fad362799e0633e364cf54bff3d95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Environment.html">Environment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#ac33fad362799e0633e364cf54bff3d95">GetEnvironment</a> ()</td></tr>
 <tr class="separator:ac33fad362799e0633e364cf54bff3d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff8f90d2c35d4fc4c8fff672e6b99ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a0ff8f90d2c35d4fc4c8fff672e6b99ec">SetEnvironment</a> (<a class="el" href="classbdm_1_1Environment.html">Environment</a> *env)</td></tr>
+<tr class="separator:a0ff8f90d2c35d4fc4c8fff672e6b99ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a831f22ad084c248b0d2698242ebdabb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Scheduler.html">Scheduler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a831f22ad084c248b0d2698242ebdabb8">GetScheduler</a> ()</td></tr>
 <tr class="separator:a831f22ad084c248b0d2698242ebdabb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c08b7efc9977d8f1185bcd016537c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a5c08b7efc9977d8f1185bcd016537c9c">Simulate</a> (uint64_t steps)</td></tr>
@@ -151,6 +153,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96a9f8206b1cda3ff84751fa037e61c0"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a96a9f8206b1cda3ff84751fa037e61c0">GetOutputDir</a> () const</td></tr>
 <tr class="memdesc:a96a9f8206b1cda3ff84751fa037e61c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the output directory for this specific simulation.  <a href="classbdm_1_1Simulation.html#a96a9f8206b1cda3ff84751fa037e61c0">More...</a><br /></td></tr>
 <tr class="separator:a96a9f8206b1cda3ff84751fa037e61c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28068dc567f61a261dce1e514d4adfba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">experimental::TimeSeries</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a28068dc567f61a261dce1e514d4adfba">GetTimeSeries</a> ()</td></tr>
+<tr class="separator:a28068dc567f61a261dce1e514d4adfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a586e4605fd004af75e5dfb143b27fb95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a586e4605fd004af75e5dfb143b27fb95">ReplaceScheduler</a> (<a class="el" href="classbdm_1_1Scheduler.html">Scheduler</a> *scheduler)</td></tr>
 <tr class="separator:a586e4605fd004af75e5dfb143b27fb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -225,6 +229,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a324cba7b3a008710b2c0b8cb9560cf87"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a324cba7b3a008710b2c0b8cb9560cf87">dtor_ts_</a> = 0</td></tr>
 <tr class="memdesc:a324cba7b3a008710b2c0b8cb9560cf87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestep when destructor was called.  <a href="classbdm_1_1Simulation.html#a324cba7b3a008710b2c0b8cb9560cf87">More...</a><br /></td></tr>
 <tr class="separator:a324cba7b3a008710b2c0b8cb9560cf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b30a9813d4d181d352474a003346e5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">experimental::TimeSeries</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a5b30a9813d4d181d352474a003346e5a">time_series_</a> = nullptr</td></tr>
+<tr class="memdesc:a5b30a9813d4d181d352474a003346e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects time series information during the simulation.  <a href="classbdm_1_1Simulation.html#a5b30a9813d4d181d352474a003346e5a">More...</a><br /></td></tr>
+<tr class="separator:a5b30a9813d4d181d352474a003346e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a2a30678340fd7a851b8c3e262a1e06"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a5a2a30678340fd7a851b8c3e262a1e06">SimulationTest</a></td></tr>
 <tr class="separator:a5a2a30678340fd7a851b8c3e262a1e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bad47fe459dbc64e41e90eb07924ec6"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Simulation.html#a0bad47fe459dbc64e41e90eb07924ec6">ParaviewAdaptorTest</a></td></tr>
@@ -250,7 +257,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>This is the central BioDynaMo object. It containes pointers to e.g. the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a>, the scheduler, parameters, ... <br  />
 It is possible to create multiple simulations, but only one can be active at the same time. Creating a new agent automatically activates it. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00046">46</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00050">50</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc27108b9b2e7a944eb3cd657771a442"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc27108b9b2e7a944eb3cd657771a442">&#9670;&nbsp;</a></span>Simulation() <span class="overload">[1/7]</span></h2>
@@ -276,7 +283,7 @@ It is possible to create multiple simulations, but only one can be active at the
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00067">67</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00068">68</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -313,7 +320,7 @@ It is possible to create multiple simulations, but only one can be active at the
 </div><div class="memdoc">
 <p>Constructor that takes the arguments from <code>main</code> to parse command line arguments. The simulation name is extracted from the executable name. Creation of a new simulation automatically activates it. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00069">69</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00070">70</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -351,7 +358,7 @@ It is possible to create multiple simulations, but only one can be active at the
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00079">79</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00080">80</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -397,7 +404,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00074">74</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00075">75</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -439,7 +446,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00091">91</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00092">92</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -475,7 +482,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00085">85</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00086">86</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -511,7 +518,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00098">98</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00099">99</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -530,7 +537,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00209">209</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00212">212</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -552,7 +559,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Activates this simulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00250">250</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00256">256</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -617,7 +624,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>This function returns the currently active <a class="el" href="classbdm_1_1Simulation.html">Simulation</a> simulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00065">65</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00066">66</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -636,7 +643,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00263">263</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00269">269</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -657,7 +664,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Returns all thread local execution contexts. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00284">284</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00290">290</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -678,7 +685,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Returns all thread local random number generator. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00278">278</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00284">284</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -697,7 +704,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00269">269</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00275">275</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -718,7 +725,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Returns a thread local execution context. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00280">280</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00286">286</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -737,7 +744,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00267">267</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00273">273</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -764,7 +771,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00119">119</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00127">127</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -785,7 +792,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Return helper class for OpenCL environment. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00288">288</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00294">294</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -807,7 +814,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 <p>Returns the output directory for this specific simulation. </p>
 <p>Returns the path to the simulation's output directory. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00294">294</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00300">300</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -828,7 +835,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Returns the simulation parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00261">261</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00267">267</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -850,7 +857,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 <p>Returns a thread local random number generator. </p>
 <p>Returns a random number generator (thread-specific) </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00276">276</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00282">282</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -871,7 +878,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Returns the <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00253">253</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00259">259</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -890,7 +897,26 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00271">271</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00277">277</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+
+</div>
+</div>
+<a id="a28068dc567f61a261dce1e514d4adfba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28068dc567f61a261dce1e514d4adfba">&#9670;&nbsp;</a></span>GetTimeSeries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">experimental::TimeSeries</a> * bdm::Simulation::GetTimeSeries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00302">302</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -912,7 +938,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 <p>Returns the name of the simulation. </p>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classbdm_1_1Simulation.html#abae3b6b33c723cf575acd0e2c975293b">unique_name_</a></code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00291">291</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00297">297</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -958,7 +984,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Initialize <a class="el" href="classbdm_1_1Simulation.html">Simulation</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00301">301</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00309">309</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -987,7 +1013,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Initialize data members that have a dependency on <a class="el" href="classbdm_1_1Simulation.html">Simulation</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00317">317</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00325">325</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1042,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Initializes <code>output_dir_</code> and creates dir if it does not exist. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00510">510</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00526">526</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1088,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>This function parses command line parameters and the configuration file. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00358">358</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00374">374</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1118,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>This function initialzes <code>unique_name_</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00500">500</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00516">516</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1156,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00430">430</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00446">446</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1178,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 <p>Replaces the scheduler for this simulation. Existing scheduler will be deleted! Therefore, pointers to the old scheduler (obtained with <code><a class="el" href="classbdm_1_1Simulation.html#a831f22ad084c248b0d2698242ebdabb8">GetScheduler()</a></code>) will be invalidated. <br  />
 <a class="el" href="classbdm_1_1Simulation.html">Simulation</a> will take ownership of the passed pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00296">296</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00304">304</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1199,28 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </div><div class="memdoc">
 <p>Copies / moves values from a restored simulation into this object. Thus, pointers to <code>rm_</code>, <code>param_</code>, ... are not invalidated. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00106">106</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00107">107</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+
+</div>
+</div>
+<a id="a0ff8f90d2c35d4fc4c8fff672e6b99ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff8f90d2c35d4fc4c8fff672e6b99ec">&#9670;&nbsp;</a></span>SetEnvironment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Simulation::SetEnvironment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Environment.html">Environment</a> *&#160;</td>
+          <td class="paramname"><em>env</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a specific environment for the simulation. *env must point to an object instance of a subclass of <a class="el" href="classbdm_1_1Environment.html">Environment</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00367">367</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1240,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00255">255</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00261">261</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1213,7 +1260,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00273">273</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00279">279</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1285,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00199">199</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00211">211</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1323,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00133">133</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cc_source.html#l00136">136</a> of file <a class="el" href="simulation_8cc_source.html">simulation.cc</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1350,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Currently active simulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00138">138</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00148">148</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1374,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00150">150</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00160">160</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1400,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 <p>Stores command line arguments if (argc,argv) or <a class="el" href="classbdm_1_1CommandLineOptions.html" title="Class to contain and parse command line options.">CommandLineOptions</a> are passed to the constructor.<br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00167">167</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00177">177</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1427,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 <p>Number of simulations in this process. </p>
 <p>Implementation for <code><a class="el" href="classbdm_1_1Simulation.html">Simulation</a></code>: It must be separate to avoid circular dependencies. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00140">140</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00150">150</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1453,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Timestep when constructor was called. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00171">171</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00181">181</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1479,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Timestep when destructor was called. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00173">173</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00183">183</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1503,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00152">152</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1482,7 +1529,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>Execution Context for each thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00146">146</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00156">156</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1555,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>This id is unique for each simulation within the same process. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00157">157</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00167">167</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1532,7 +1579,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00155">155</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00165">165</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1605,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>BioDynaMo memory manager. If nullptr, default allocator will be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00169">169</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00179">179</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1582,7 +1629,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00151">151</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00161">161</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1653,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00154">154</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00164">164</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1632,7 +1679,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>cached value where <code>unique_name_</code> is appended to <code><a class="el" href="structbdm_1_1Param.html#a5719fdfada369fbe5727c0b82a6c1a65">Param::output_dir</a></code> </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00164">164</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00174">174</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1656,7 +1703,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00149">149</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00159">159</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1680,7 +1727,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00198">198</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00210">210</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1706,7 +1753,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 
 <p>random number generator for each thread </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00143">143</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00153">153</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1730,7 +1777,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00148">148</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00158">158</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1754,7 +1801,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00153">153</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00163">163</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1778,7 +1825,33 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00197">197</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00209">209</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b30a9813d4d181d352474a003346e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b30a9813d4d181d352474a003346e5a">&#9670;&nbsp;</a></span>time_series_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">experimental::TimeSeries</a>* bdm::Simulation::time_series_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collects time series information during the simulation. </p>
+
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00185">185</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -1805,7 +1878,7 @@ Creation of a new simulation automatically activates it. </p><dl class="params">
 e.g. <code>name_ = "my-sim"</code> and <code>id_ = 0</code> -&gt; "my-sim"<br  />
 e.g. <code>name_ = "my-sim"</code> and <code>id_ = 4</code> -&gt; "my-sim4" </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00162">162</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00172">172</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>

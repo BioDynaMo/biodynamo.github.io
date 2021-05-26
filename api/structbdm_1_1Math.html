@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-7-ga8894c8e</span>
+   &#160;<span id="projectnumber">v1.01-27-ge647ae98</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a357af2bdea31bf521ee128bbde6b1fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b972084b9516287657f6c2db0b61e38"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Math.html#a1b972084b9516287657f6c2db0b61e38">ProjectionOnto</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;a, const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;b)</td></tr>
 <tr class="separator:a1b972084b9516287657f6c2db0b61e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52948fe84bf4f2019e4880fba8e13753"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Math.html#a52948fe84bf4f2019e4880fba8e13753">MSE</a> (const std::vector&lt; double &gt; &amp;v1, const std::vector&lt; double &gt; &amp;v2)</td></tr>
+<tr class="memdesc:a52948fe84bf4f2019e4880fba8e13753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean squared error between two vectors.  <a href="structbdm_1_1Math.html#a52948fe84bf4f2019e4880fba8e13753">More...</a><br /></td></tr>
+<tr class="separator:a52948fe84bf4f2019e4880fba8e13753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -108,7 +111,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00030">30</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00031">31</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a357af2bdea31bf521ee128bbde6b1fef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a357af2bdea31bf521ee128bbde6b1fef">&#9670;&nbsp;</a></span>AngleRadian()</h2>
@@ -152,7 +155,7 @@ Static Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the angle between them. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00107">107</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00108">108</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -200,7 +203,7 @@ template&lt;std::size_t N&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result the cross product of a and b (a x b) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00053">53</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00054">54</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +241,47 @@ template&lt;std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00040">40</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00041">41</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+
+</div>
+</div>
+<a id="a52948fe84bf4f2019e4880fba8e13753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52948fe84bf4f2019e4880fba8e13753">&#9670;&nbsp;</a></span>MSE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double bdm::Math::MSE </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the mean squared error between two vectors. </p>
+
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00122">122</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -284,7 +327,7 @@ template&lt;std::size_t N&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a perpendicular vector </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00067">67</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00068">68</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +373,7 @@ template&lt;std::size_t N&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the projection of a onto b </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00115">115</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00116">116</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +427,7 @@ template&lt;std::size_t N&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the vector after rotation </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00091">91</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00092">92</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +455,7 @@ template&lt;std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00036">36</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00037">37</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +483,7 @@ template&lt;std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00037">37</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00038">38</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +510,7 @@ template&lt;std::size_t N&gt; </div>
 
 <p>Helpful constant to identify 'infinity'. </p>
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00034">34</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00035">35</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +536,7 @@ template&lt;std::size_t N&gt; </div>
 
 <p>value of pi </p>
 
-<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00032">32</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math_8h_source.html#l00033">33</a> of file <a class="el" href="math_8h_source.html">math.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-7-ga8894c8e</span>
+   &#160;<span id="projectnumber">v1.01-27-ge647ae98</span>
    </div>
   </td>
  </tr>
@@ -87,9 +87,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2d758c880182ee60f701eeee9d0ec3d"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
 <tr class="memitem:ab2d758c880182ee60f701eeee9d0ec3d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ab2d758c880182ee60f701eeee9d0ec3d">CreateAgents</a> (const std::vector&lt; <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &gt; &amp;positions, Function agent_builder)</td></tr>
 <tr class="separator:ab2d758c880182ee60f701eeee9d0ec3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d6d9c605e3e0a3cdc1f490175cd0c4"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
-<tr class="memitem:a92d6d9c605e3e0a3cdc1f490175cd0c4"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a92d6d9c605e3e0a3cdc1f490175cd0c4">CreateAgentsRandom</a> (double min, double max, uint64_t num_agents, Function agent_builder)</td></tr>
-<tr class="separator:a92d6d9c605e3e0a3cdc1f490175cd0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad985e78c2ad1e4396da6574c9d3fb493"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
+<tr class="memitem:ad985e78c2ad1e4396da6574c9d3fb493"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ad985e78c2ad1e4396da6574c9d3fb493">CreateAgentsRandom</a> (double min, double max, uint64_t num_agents, Function agent_builder, <a class="el" href="classbdm_1_1DistributionRng.html">DistributionRng</a>&lt; double &gt; *rng=nullptr)</td></tr>
+<tr class="separator:ad985e78c2ad1e4396da6574c9d3fb493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b0d253d6224f1a323118cea8b013b2"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
+<tr class="memitem:aa3b0d253d6224f1a323118cea8b013b2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#aa3b0d253d6224f1a323118cea8b013b2">CreateAgentsOnSurface</a> (double(*f)(const double *, const double *), const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; double, 10 &gt; &amp;fn_params, double xmin, double xmax, double deltax, double ymin, double ymax, double deltay, Function agent_builder)</td></tr>
+<tr class="separator:aa3b0d253d6224f1a323118cea8b013b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d05973e7df67e998efcfe16db6be50"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
+<tr class="memitem:a53d05973e7df67e998efcfe16db6be50"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a53d05973e7df67e998efcfe16db6be50">CreateAgentsOnSurfaceRndm</a> (double(*f)(const double *, const double *), const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; double, 10 &gt; &amp;fn_params, double xmin, double xmax, double ymin, double ymax, uint64_t num_agents, Function agent_builder)</td></tr>
+<tr class="separator:a53d05973e7df67e998efcfe16db6be50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735ffa4866aec4bf638d743d2fee902e"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
+<tr class="memitem:a735ffa4866aec4bf638d743d2fee902e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a735ffa4866aec4bf638d743d2fee902e">CreateAgentsOnSphereRndm</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;center, double radius, uint64_t num_agents, Function agent_builder)</td></tr>
+<tr class="separator:a735ffa4866aec4bf638d743d2fee902e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab46baa2a2e727e19c4ae24738b8efa3b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ab46baa2a2e727e19c4ae24738b8efa3b">DefineSubstance</a> (size_t substance_id, std::string substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</td></tr>
 <tr class="separator:ab46baa2a2e727e19c4ae24738b8efa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ac30001eac5417836f4159efab19fa"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
@@ -135,7 +144,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds agents to the ExecutionContext. Type of the simulation object is determined by the return type of parameter agent_builder.</p>
+<p>Creates agents on the given positions and adds them to the ExecutionContext.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">positions</td><td>positions of the agents to be </td></tr>
@@ -148,8 +157,276 @@ template&lt;typename Function &gt; </div>
 
 </div>
 </div>
-<a id="a92d6d9c605e3e0a3cdc1f490175cd0c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92d6d9c605e3e0a3cdc1f490175cd0c4">&#9670;&nbsp;</a></span>CreateAgentsRandom()</h2>
+<a id="a735ffa4866aec4bf638d743d2fee902e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735ffa4866aec4bf638d743d2fee902e">&#9670;&nbsp;</a></span>CreateAgentsOnSphereRndm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Function &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void bdm::ModelInitializer::CreateAgentsOnSphereRndm </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_agents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Function&#160;</td>
+          <td class="paramname"><em>agent_builder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates agents with random positions on a sphere and adds them to the ExecutionContext. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>Center of the sphere </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>Radius of the sphere </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_agents</td><td>The number of agents </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">agent_builder</td><td>function containing the logic to instantiate a new agent. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00303">303</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+
+</div>
+</div>
+<a id="aa3b0d253d6224f1a323118cea8b013b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b0d253d6224f1a323118cea8b013b2">&#9670;&nbsp;</a></span>CreateAgentsOnSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Function &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void bdm::ModelInitializer::CreateAgentsOnSurface </td>
+          <td>(</td>
+          <td class="paramtype">double(*)(const double *, const double *)&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; double, 10 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fn_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deltax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deltay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Function&#160;</td>
+          <td class="paramname"><em>agent_builder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates agents on surface and adds them to the ExecutionContext. The x and y positions are defined by xmin, xmax, deltax and ymin, ymax, deltay. The z position is calculated using <code>f</code>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. </p><pre class="fragment">auto construct = [](const Double3&amp; position) {
+  Cell* cell = new Cell(position);
+  cell-&gt;SetDiameter(10);
+  return cell;
+};
+auto f = [](const double* x, const double* params) {
+    // 10 * sin(x/20) + 10 * sin(y/20)
+    return 10 * std::sin(x[0] / 20.) + 10 * std::sin(x[1] / 20.0);
+};
+ModelInitializer::CreateAgentsOnSurface(f, {}, -100, 100, 10, -100,
+100, 10, construct);
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>function that defines the surface </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fn_params</td><td>Parameters that will be passed to <code>f</code> as second argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmin</td><td>Minimum x coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmax</td><td>Maximum x coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deltax</td><td>Space between two agents on the x-axis. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ymin</td><td>Minimum y coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ymax</td><td>Maximum y coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deltay</td><td>Space between two agents on the y-axis. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">agent_builder</td><td>function containing the logic to instantiate a new agent. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00213">213</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+
+</div>
+</div>
+<a id="a53d05973e7df67e998efcfe16db6be50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d05973e7df67e998efcfe16db6be50">&#9670;&nbsp;</a></span>CreateAgentsOnSurfaceRndm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Function &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void bdm::ModelInitializer::CreateAgentsOnSurfaceRndm </td>
+          <td>(</td>
+          <td class="paramtype">double(*)(const double *, const double *)&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a>&lt; double, 10 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fn_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ymax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_agents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Function&#160;</td>
+          <td class="paramname"><em>agent_builder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates agents on surface and adds them to the ExecutionContext. The x and y positions are determined by a uniform distribution [xmin, xmax[ and [ymin, ymax[. The z position is calculated using <code>f</code>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. </p><pre class="fragment">auto construct = [](const Double3&amp; position) {
+  Cell* cell = new Cell(position);
+  cell-&gt;SetDiameter(10);
+  return cell;
+};
+auto f = [](const double* x, const double* params) {
+    // 10 * sin(x/20) + 10 * sin(y/20)
+    return 10 * std::sin(x[0] / 20.) + 10 * std::sin(x[1] / 20.0);
+};
+ModelInitializer::CreateAgentsOnSurfaceRndm(f, {}, -100, 100, -100,
+100, construct);
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>function that defines the surface </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fn_params</td><td>Parameters that will be passed to <code>f</code> as second argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmin</td><td>Minimum x coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xmax</td><td>Maximum x coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ymin</td><td>Minimum y coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ymax</td><td>Maximum y coordinate on which a agent will be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">agent_builder</td><td>function containing the logic to instantiate a new agent. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00273">273</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+
+</div>
+</div>
+<a id="ad985e78c2ad1e4396da6574c9d3fb493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad985e78c2ad1e4396da6574c9d3fb493">&#9670;&nbsp;</a></span>CreateAgentsRandom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +458,13 @@ template&lt;typename Function &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Function&#160;</td>
-          <td class="paramname"><em>agent_builder</em>&#160;</td>
+          <td class="paramname"><em>agent_builder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1DistributionRng.html">DistributionRng</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>rng</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -195,18 +478,19 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds agents with random positions to the ExecutionContext. Type of the agent is determined by the return type of parameter agent_builder.</p>
+<p>Creates agents with random positions and adds them to the ExecutionContext. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>The minimum position value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>The maximum position value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_agents</td><td>The number agents </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">agent_builder</td><td>function containing the logic to instantiate a new agent. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rng</td><td>Uses the given <a class="el" href="classbdm_1_1DistributionRng.html" title="Random number generator that generates samples from a distribution.">DistributionRng</a>. if rng is a nullptr, this function uses a uniform distribution between [min, max[ </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00149">149</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00150">150</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +709,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00179">179</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00335">335</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
