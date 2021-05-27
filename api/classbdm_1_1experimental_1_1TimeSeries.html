@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-27-ge647ae98</span>
+   &#160;<span id="projectnumber">v1.01-30-g57fcbb99</span>
    </div>
   </td>
  </tr>
@@ -97,10 +97,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a838e2c412bd455b3e1599e333a3ec1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da40daf5d65a67f3a9d35e637e11676"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#a1da40daf5d65a67f3a9d35e637e11676">operator=</a> (const <a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> &amp;other)</td></tr>
 <tr class="separator:a1da40daf5d65a67f3a9d35e637e11676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b546868a09dc11d3f5392650b10ebe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#a3b546868a09dc11d3f5392650b10ebe1">AddCollector</a> (const std::string &amp;id, double(*collector)(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *))</td></tr>
-<tr class="separator:a3b546868a09dc11d3f5392650b10ebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d23da5e3e4f865caa8585896f173b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#a38d23da5e3e4f865caa8585896f173b6">AddCollector</a> (const std::string &amp;id, double(*ycollector)(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *), double(*xcollector)(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *)=nullptr)</td></tr>
+<tr class="separator:a38d23da5e3e4f865caa8585896f173b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da57c0fe96ee6eeaa437948344c3d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#a9da57c0fe96ee6eeaa437948344c3d4e">Add</a> (const std::string &amp;id, const std::vector&lt; double &gt; &amp;x_values, const std::vector&lt; double &gt; &amp;y_values)</td></tr>
 <tr class="separator:a9da57c0fe96ee6eeaa437948344c3d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af369e1e446ca5040dc41eaf98e77126e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#af369e1e446ca5040dc41eaf98e77126e">Add</a> (const std::string &amp;id, const std::vector&lt; double &gt; &amp;x_values, const std::vector&lt; double &gt; &amp;y_values, const std::vector&lt; double &gt; &amp;y_error)</td></tr>
+<tr class="separator:af369e1e446ca5040dc41eaf98e77126e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde8ce8179b97574482142ed59e797e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#adde8ce8179b97574482142ed59e797e0">Add</a> (const std::string &amp;id, const std::vector&lt; double &gt; &amp;x_values, const std::vector&lt; double &gt; &amp;y_values, const std::vector&lt; double &gt; &amp;y_error_low, const std::vector&lt; double &gt; &amp;y_error_high)</td></tr>
+<tr class="separator:adde8ce8179b97574482142ed59e797e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2489406c350fe205c5fd82ac5bf73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#a8c2489406c350fe205c5fd82ac5bf73b">Add</a> (const <a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> &amp;ts, const std::string &amp;suffix)</td></tr>
 <tr class="separator:a8c2489406c350fe205c5fd82ac5bf73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebdbed3263473deb7834b9352e32226a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#aebdbed3263473deb7834b9352e32226a">Update</a> ()</td></tr>
@@ -212,7 +216,7 @@ Private Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9da57c0fe96ee6eeaa437948344c3d4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9da57c0fe96ee6eeaa437948344c3d4e">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da57c0fe96ee6eeaa437948344c3d4e">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,12 +248,102 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new entry with data that is not collected during a simulation. This function can for example be used to add experimental data which can be later plotted together with the simulation results using a <code><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html">LineGraph</a></code>. </p><div class="fragment"><div class="line">time_series.Add(<span class="stringliteral">&quot;experimental-data&quot;</span>, {0, 1, 2}, {3, 4, 5});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00192">192</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00197">197</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+
+</div>
+</div>
+<a id="af369e1e446ca5040dc41eaf98e77126e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af369e1e446ca5040dc41eaf98e77126e">&#9670;&nbsp;</a></span>Add() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::experimental::TimeSeries::Add </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00225">225</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+
+</div>
+</div>
+<a id="adde8ce8179b97574482142ed59e797e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde8ce8179b97574482142ed59e797e0">&#9670;&nbsp;</a></span>Add() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::experimental::TimeSeries::Add </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y_values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y_error_low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y_error_high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00210">210</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
 <a id="a8c2489406c350fe205c5fd82ac5bf73b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c2489406c350fe205c5fd82ac5bf73b">&#9670;&nbsp;</a></span>Add() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2489406c350fe205c5fd82ac5bf73b">&#9670;&nbsp;</a></span>Add() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,12 +369,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add the entries of another <a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> instance to this one. Let's assume that <code>ts</code> contains the entries: "entry1" and "entry2" and that suffix is set to "-from-ts". In this scenario the following entries will be added to this object: "entry1-from-ts", "entry2-from-ts" </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00170">170</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00175">175</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
-<a id="a3b546868a09dc11d3f5392650b10ebe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b546868a09dc11d3f5392650b10ebe1">&#9670;&nbsp;</a></span>AddCollector()</h2>
+<a id="a38d23da5e3e4f865caa8585896f173b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d23da5e3e4f865caa8585896f173b6">&#9670;&nbsp;</a></span>AddCollector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +389,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double(*)(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *)&#160;</td>
-          <td class="paramname"><em>collector</em>&#160;</td>
+          <td class="paramname"><em>ycollector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double(*)(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *)&#160;</td>
+          <td class="paramname"><em>xcollector</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -309,7 +409,8 @@ Private Attributes</h2></td></tr>
 <div class="line">  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(sim-&gt;GetResourceManager()-&gt;GetNumAgents());</div>
 <div class="line">};</div>
 <div class="line">ts-&gt;AddCollector(<span class="stringliteral">&quot;num-agents&quot;</span>, get_num_agents);</div>
-</div><!-- fragment --> 
+</div><!-- fragment --><p> The optional x-value collector allows to modify the x-values. If no x-value collector is given, x-values will correspond to the simulation time. </p>
+
 <p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00144">144</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
@@ -368,7 +469,7 @@ Private Attributes</h2></td></tr>
 
 <p>Returns whether a times series with given id exists in this object. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00205">205</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00238">238</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +489,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00213">213</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00246">246</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -408,7 +509,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00229">229</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00262">262</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -428,7 +529,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00223">223</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00256">256</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -448,7 +549,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00218">218</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00251">251</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -469,7 +570,7 @@ Private Attributes</h2></td></tr>
 
 <p>Print all time series entry names to stdout. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00235">235</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00268">268</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -634,7 +735,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Saves a root file to disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00242">242</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00275">275</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -656,7 +757,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Saves a json representation to disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00247">247</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00280">280</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -675,7 +776,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00210">210</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00243">243</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -696,7 +797,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Adds a new data point to all time series with a collector. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00155">155</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00156">156</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -721,7 +822,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00143">143</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00157">157</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
 
 </div>
 </div>

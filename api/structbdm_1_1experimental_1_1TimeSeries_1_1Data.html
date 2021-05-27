@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-27-ge647ae98</span>
+   &#160;<span id="projectnumber">v1.01-30-g57fcbb99</span>
    </div>
   </td>
  </tr>
@@ -84,8 +84,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:abe871fde8a1c89fd9ef8ad9eab94a792"><td class="memItemLeft" align="right" valign="top">double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#abe871fde8a1c89fd9ef8ad9eab94a792">collector</a> )(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *) = nullptr</td></tr>
-<tr class="separator:abe871fde8a1c89fd9ef8ad9eab94a792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7fa0b768d6c68d8cfc4cb7e23830dc"><td class="memItemLeft" align="right" valign="top">double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#ada7fa0b768d6c68d8cfc4cb7e23830dc">ycollector</a> )(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *) = nullptr</td></tr>
+<tr class="separator:ada7fa0b768d6c68d8cfc4cb7e23830dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42337929091a7f1fea9234f18914431"><td class="memItemLeft" align="right" valign="top">double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#ae42337929091a7f1fea9234f18914431">xcollector</a> )(<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *) = nullptr</td></tr>
+<tr class="separator:ae42337929091a7f1fea9234f18914431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b401c36a17f39e1b90b249e16a7a008"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#a9b401c36a17f39e1b90b249e16a7a008">x_values</a></td></tr>
 <tr class="separator:a9b401c36a17f39e1b90b249e16a7a008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7ef31b8c2e03b5bb8f09b3518d394e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#a3a7ef31b8c2e03b5bb8f09b3518d394e">y_values</a></td></tr>
@@ -128,22 +130,6 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="abe871fde8a1c89fd9ef8ad9eab94a792"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe871fde8a1c89fd9ef8ad9eab94a792">&#9670;&nbsp;</a></span>collector</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double(* bdm::experimental::TimeSeries::Data::collector) (<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *) = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00034">34</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
-
-</div>
-</div>
 <a id="a9b401c36a17f39e1b90b249e16a7a008"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b401c36a17f39e1b90b249e16a7a008">&#9670;&nbsp;</a></span>x_values</h2>
 
@@ -152,6 +138,22 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;double&gt; bdm::experimental::TimeSeries::Data::x_values</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00036">36</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+
+</div>
+</div>
+<a id="ae42337929091a7f1fea9234f18914431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae42337929091a7f1fea9234f18914431">&#9670;&nbsp;</a></span>xcollector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double(* bdm::experimental::TimeSeries::Data::xcollector) (<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *) = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,7 +174,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00038">38</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00039">39</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
 
 </div>
 </div>
@@ -188,7 +190,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00037">37</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00038">38</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +206,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00036">36</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00037">37</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+
+</div>
+</div>
+<a id="ada7fa0b768d6c68d8cfc4cb7e23830dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7fa0b768d6c68d8cfc4cb7e23830dc">&#9670;&nbsp;</a></span>ycollector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double(* bdm::experimental::TimeSeries::Data::ycollector) (<a class="el" href="classbdm_1_1Simulation.html">Simulation</a> *) = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00034">34</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
 
 </div>
 </div>

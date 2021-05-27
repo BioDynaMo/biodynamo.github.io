@@ -5,9 +5,10 @@ var searchData=
   ['y_5ferror_5flow_1719',['y_error_low',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#afefcfca049bbe9f3a34dbe8db6ddb9bf',1,'bdm::experimental::TimeSeries::Data']]],
   ['y_5fvalues_1720',['y_values',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#a3a7ef31b8c2e03b5bb8f09b3518d394e',1,'bdm::experimental::TimeSeries::Data']]],
   ['ybf_1721',['YBF',['../euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;euler_grid.cc'],['../euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;euler_grid.cc'],['../runga__kutta__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;runga_kutta_grid.cc'],['../runga__kutta__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;runga_kutta_grid.cc'],['../stencil__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;stencil_grid.cc'],['../stencil__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;stencil_grid.cc']]],
-  ['ymax_1722',['ymax',['../structbdm_1_1UserDefinedDist.html#a2662325b58e0efa240fdc2864642cf52',1,'bdm::UserDefinedDist']]],
-  ['ymax_5f_1723',['ymax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#a561377b552a29e85192b08d5f5d84ef7',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
-  ['ymin_1724',['ymin',['../structbdm_1_1UserDefinedDist.html#a7535adef6594122e1a32d6976fd8f221',1,'bdm::UserDefinedDist']]],
-  ['ymin_5f_1725',['ymin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#af6d47886e533b3287d1e3cb6c206a8a1',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
-  ['ypos_1726',['ypos',['../structbdm_1_1Aux.html#a70c041b5a7be05919644a533775f5fe9',1,'bdm::Aux']]]
+  ['ycollector_1722',['ycollector',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#ada7fa0b768d6c68d8cfc4cb7e23830dc',1,'bdm::experimental::TimeSeries::Data']]],
+  ['ymax_1723',['ymax',['../structbdm_1_1UserDefinedDist.html#a2662325b58e0efa240fdc2864642cf52',1,'bdm::UserDefinedDist']]],
+  ['ymax_5f_1724',['ymax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#a561377b552a29e85192b08d5f5d84ef7',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
+  ['ymin_1725',['ymin',['../structbdm_1_1UserDefinedDist.html#a7535adef6594122e1a32d6976fd8f221',1,'bdm::UserDefinedDist']]],
+  ['ymin_5f_1726',['ymin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#af6d47886e533b3287d1e3cb6c206a8a1',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
+  ['ypos_1727',['ypos',['../structbdm_1_1Aux.html#a70c041b5a7be05919644a533775f5fe9',1,'bdm::Aux']]]
 ];
