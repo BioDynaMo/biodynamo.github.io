@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-30-g57fcbb99</span>
+   &#160;<span id="projectnumber">v1.01-36-ge72b8295</span>
    </div>
   </td>
  </tr>
@@ -161,7 +161,7 @@ $(function() {
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a7b7851c8605e985a5ddfcbcb860d9dc3">last_iteration_</a>[tid] = current_iteration;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keyword">auto</span>* grid = sim-&gt;GetEnvironment();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">auto</span> search_radius = grid-&gt;GetLargestObjectSize();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">auto</span> search_radius = grid-&gt;GetLargestAgentSize();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a30f1b2c64f3e992167b502a28b00fe71">squared_radius_</a> = search_radius * search_radius;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keyword">auto</span> current_time = (current_iteration + 1) * param-&gt;simulation_time_step;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a74f828501a61a36924e1e72b0a0e9667">delta_time_</a>[tid] = current_time - <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a7d05ae59fe220022c78fe14a8625a267">last_time_run_</a>[tid];</div>

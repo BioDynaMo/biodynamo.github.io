@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-30-g57fcbb99</span>
+   &#160;<span id="projectnumber">v1.01-36-ge72b8295</span>
    </div>
   </td>
  </tr>
@@ -102,12 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a45d1321aa6c7cd94e46080a497684434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e350979126c1f8445f9ad7a43353ed7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a8e350979126c1f8445f9ad7a43353ed7">Execute</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent, const std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt; &amp;operations)</td></tr>
 <tr class="separator:a8e350979126c1f8445f9ad7a43353ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1443d7f68d8259067517bdac3a594d6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ab1443d7f68d8259067517bdac3a594d6">GetDefaultSquaredRadius</a> () const</td></tr>
-<tr class="separator:ab1443d7f68d8259067517bdac3a594d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2333bbba2ce34d482924c933ddab6f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a2333bbba2ce34d482924c933ddab6f9d">SetDefaultSquaredRadius</a> (double sq_radius)</td></tr>
-<tr class="separator:a2333bbba2ce34d482924c933ddab6f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf3651644686023cdbf5bc56b2b90276"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#adf3651644686023cdbf5bc56b2b90276">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query)</td></tr>
-<tr class="separator:adf3651644686023cdbf5bc56b2b90276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6293c8544d82535c5777ee87041c9f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a6293c8544d82535c5777ee87041c9f6c">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)</td></tr>
+<tr class="separator:a6293c8544d82535c5777ee87041c9f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8963b0cf8ee5e35c485a92ffe085fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#afc8963b0cf8ee5e35c485a92ffe085fb">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius)</td></tr>
 <tr class="separator:afc8963b0cf8ee5e35c485a92ffe085fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775d350380a74decbd3c4a7c775e5fa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a775d350380a74decbd3c4a7c775e5fa6">IsNeighborCacheValid</a> (double query_squared_radius)</td></tr>
@@ -147,8 +143,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7ba6ee8c0bbabae6db134fbf334c9783"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a7ba6ee8c0bbabae6db134fbf334c9783">cached_squared_search_radius_</a> = 0.0</td></tr>
 <tr class="memdesc:a7ba6ee8c0bbabae6db134fbf334c9783"><td class="mdescLeft">&#160;</td><td class="mdescRight">The radius that was used to cache neighbors in <code>neighbor_cache_</code>  <a href="classbdm_1_1InPlaceExecutionContext.html#a7ba6ee8c0bbabae6db134fbf334c9783">More...</a><br /></td></tr>
 <tr class="separator:a7ba6ee8c0bbabae6db134fbf334c9783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a09a27938ed92b18290bcd6e1e7260d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a0a09a27938ed92b18290bcd6e1e7260d">default_squared_search_radius_</a> = 0.0</td></tr>
-<tr class="separator:a0a09a27938ed92b18290bcd6e1e7260d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74030795739e7b2b9bdc280b82c76f4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a74030795739e7b2b9bdc280b82c76f4c">cache_neighbors_</a> = false</td></tr>
 <tr class="memdesc:a74030795739e7b2b9bdc280b82c76f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache the value of <a class="el" href="structbdm_1_1Param.html#a673f1a35be51eb4656c8d0fd5f59e20b">Param::cache_neighbors</a>.  <a href="classbdm_1_1InPlaceExecutionContext.html#a74030795739e7b2b9bdc280b82c76f4c">More...</a><br /></td></tr>
 <tr class="separator:a74030795739e7b2b9bdc280b82c76f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,7 +187,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00112">112</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00113">113</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -220,7 +214,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00119">119</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00120">120</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -241,7 +235,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00259">259</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00260">260</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -272,12 +266,12 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 </div><div class="memdoc">
 <p>Execute a series of operations on an agent in the order given in the argument </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00188">188</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00189">189</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
-<a id="adf3651644686023cdbf5bc56b2b90276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf3651644686023cdbf5bc56b2b90276">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/2]</span></h2>
+<a id="a6293c8544d82535c5777ee87041c9f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6293c8544d82535c5777ee87041c9f6c">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,14 +279,20 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
         <tr>
           <td class="memname">void bdm::InPlaceExecutionContext::ForEachNeighbor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;&#160;</td>
-          <td class="paramname"><em>query</em>&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>criteria</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,9 +301,9 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Applies the lambda <code>lambda</code> for each neighbor of the given <code>query</code> agent within the default search radius <code>default_squared_search_radius_</code> </p>
+<p>Applies the lambda <code>lambda</code> for each neighbor of the given <code>query</code> agent within the given <code>criteria</code>. Does not support caching. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00299">299</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00279">279</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 </div><div class="memdoc">
 <p>Applies the lambda <code>lambda</code> for each neighbor of the given <code>query</code> agent within the given search radius <code>squared_radius</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00344">344</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00289">289</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -360,7 +360,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00366">366</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00321">321</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -380,26 +380,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00377">377</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
-
-</div>
-</div>
-<a id="ab1443d7f68d8259067517bdac3a594d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1443d7f68d8259067517bdac3a594d6">&#9670;&nbsp;</a></span>GetDefaultSquaredRadius()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::InPlaceExecutionContext::GetDefaultSquaredRadius </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00281">281</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00332">332</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -420,7 +401,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 </div><div class="memdoc">
 <p>Check whether or not the neighbors in <code>neighbor_cache_</code> were queried with the same squared radius (<code>cached_squared_search_radius_</code>) as currently being queried with (<code>query_squared_radius_</code>) </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00285">285</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00265">265</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -440,25 +421,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00381">381</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
-
-</div>
-</div>
-<a id="a2333bbba2ce34d482924c933ddab6f9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2333bbba2ce34d482924c933ddab6f9d">&#9670;&nbsp;</a></span>SetDefaultSquaredRadius()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::InPlaceExecutionContext::SetDefaultSquaredRadius </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>sq_radius</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00336">336</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -479,7 +442,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 </div><div class="memdoc">
 <p>This function is called at the beginning of each iteration to setup all execution contexts. This function is not thread-safe. NB: Invalidates references and pointers to agents. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00125">125</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00126">126</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -501,7 +464,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 <p>This function is called at the end of each iteration to tear down all execution contexts. This function is not thread-safe. <br  />
 NB: Invalidates references and pointers to agents. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00131">131</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8cc_source.html#l00132">132</a> of file <a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a>.</p>
 
 </div>
 </div>
@@ -526,7 +489,7 @@ NB: Invalidates references and pointers to agents. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00124">124</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00121">121</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +513,7 @@ NB: Invalidates references and pointers to agents. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00126">126</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00123">123</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -577,7 +540,7 @@ NB: Invalidates references and pointers to agents. </p>
 
 <p>Cache the value of <a class="el" href="structbdm_1_1Param.html#a673f1a35be51eb4656c8d0fd5f59e20b">Param::cache_neighbors</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00152">152</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00146">146</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +566,7 @@ NB: Invalidates references and pointers to agents. </p>
 
 <p>The radius that was used to cache neighbors in <code>neighbor_cache_</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00147">147</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00144">144</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -627,7 +590,7 @@ NB: Invalidates references and pointers to agents. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00135">135</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00132">132</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -651,32 +614,7 @@ NB: Invalidates references and pointers to agents. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00136">136</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
-
-</div>
-</div>
-<a id="a0a09a27938ed92b18290bcd6e1e7260d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a09a27938ed92b18290bcd6e1e7260d">&#9670;&nbsp;</a></span>default_squared_search_radius_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::InPlaceExecutionContext::default_squared_search_radius_ = 0.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The default search radius for radial neighborhood searches Set in <code><a class="el" href="classbdm_1_1Environment.html#a6cac1b2d521214b2505c501706cb23d1">Environment::CalcSimDimensionsAndLargestAgent</a></code> </p>
-
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00150">150</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00133">133</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +638,7 @@ NB: Invalidates references and pointers to agents. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00137">137</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00134">134</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +664,7 @@ NB: Invalidates references and pointers to agents. </p>
 
 <p>prevent race conditions for cached Agents </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00143">143</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00140">140</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -750,7 +688,7 @@ NB: Invalidates references and pointers to agents. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00145">145</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00142">142</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +714,7 @@ NB: Invalidates references and pointers to agents. </p>
 
 <p>Lookup table <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> -&gt; <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a> for new created agents. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00128">128</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00125">125</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +740,7 @@ NB: Invalidates references and pointers to agents. </p>
 
 <p>Pointer to new agents. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00140">140</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00137">137</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +765,7 @@ NB: Invalidates references and pointers to agents. </p>
 </div><div class="memdoc">
 <p>Contains unique ids of agents that will be removed at the end of each iteration. AgentUids are separated by numa node. </p>
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00134">134</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00131">131</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +789,7 @@ NB: Invalidates references and pointers to agents. </p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00130">130</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="in__place__exec__ctxt_8h_source.html#l00127">127</a> of file <a class="el" href="in__place__exec__ctxt_8h_source.html">in_place_exec_ctxt.h</a>.</p>
 
 </div>
 </div>

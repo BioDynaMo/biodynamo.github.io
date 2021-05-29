@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-30-g57fcbb99</span>
+   &#160;<span id="projectnumber">v1.01-36-ge72b8295</span>
    </div>
   </td>
  </tr>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab96574899731db4b8296adee36884662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f52bc5e3804f62c2817cb9984393b2f"><td class="memItemLeft" align="right" valign="top">TLegend *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html#a0f52bc5e3804f62c2817cb9984393b2f">GetTLegend</a> ()</td></tr>
 <tr class="separator:a0f52bc5e3804f62c2817cb9984393b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e1714d8876f7653fecd713ccbe160b"><td class="memItemLeft" align="right" valign="top">TGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html#af2e1714d8876f7653fecd713ccbe160b">GetTGraph</a> (const std::string &amp;ts_name)</td></tr>
-<tr class="separator:af2e1714d8876f7653fecd713ccbe160b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e90e7ff2194cc7db1b38e8ae4b027d"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; TGraph * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html#ac6e90e7ff2194cc7db1b38e8ae4b027d">GetTGraphs</a> (const std::string &amp;ts_name) const</td></tr>
+<tr class="separator:ac6e90e7ff2194cc7db1b38e8ae4b027d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af19d712bae31523804c557fac3b079c0"><td class="memItemLeft" align="right" valign="top">TStyle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html#af19d712bae31523804c557fac3b079c0">GetTStyle</a> ()</td></tr>
 <tr class="separator:af19d712bae31523804c557fac3b079c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,8 +128,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a9e685ff79313d1860c2ab1020977c202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6717e55ee6d2ecdfd7deb3bfbdc7b920"><td class="memItemLeft" align="right" valign="top">TStyle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html#a6717e55ee6d2ecdfd7deb3bfbdc7b920">s_</a> = nullptr</td></tr>
 <tr class="separator:a6717e55ee6d2ecdfd7deb3bfbdc7b920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cdc9ad99d1910b80a8936e4e595f7d5"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, TGraph * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html#a7cdc9ad99d1910b80a8936e4e595f7d5">id_tgraph_map_</a></td></tr>
-<tr class="separator:a7cdc9ad99d1910b80a8936e4e595f7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c2491c573fc3b59ebe963c19b0171e"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::vector&lt; TGraph * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html#ac0c2491c573fc3b59ebe963c19b0171e">id_tgraphs_map_</a></td></tr>
+<tr class="separator:ac0c2491c573fc3b59ebe963c19b0171e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class simplifies the creation of line graphs using data from <code><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a></code>. </p>
@@ -351,7 +351,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00115">115</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00109">109</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -370,27 +370,27 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00167">167</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00161">161</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
-<a id="af2e1714d8876f7653fecd713ccbe160b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e1714d8876f7653fecd713ccbe160b">&#9670;&nbsp;</a></span>GetTGraph()</h2>
+<a id="ac6e90e7ff2194cc7db1b38e8ae4b027d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e90e7ff2194cc7db1b38e8ae4b027d">&#9670;&nbsp;</a></span>GetTGraphs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TGraph * bdm::experimental::LineGraph::GetTGraph </td>
+          <td class="memname">const std::vector&lt; TGraph * &gt; &amp; bdm::experimental::LineGraph::GetTGraphs </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>ts_name</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00176">176</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00170">170</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00173">173</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00167">167</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -428,7 +428,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00170">170</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00164">164</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00185">185</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00181">181</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00151">151</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00145">145</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00121">121</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00115">115</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -562,7 +562,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>NDC coordinates are a % of the canvas size: (0.5,0.5) is the middle of the canvas. (1,1) upper right corner, (0,0) bottom left corner. <a href="https://root-forum.cern.ch/t/how-to-imagine-ndc-normalized-coord/24202">https://root-forum.cern.ch/t/how-to-imagine-ndc-normalized-coord/24202</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00136">136</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00130">130</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00162">162</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00156">156</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -601,7 +601,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00188">188</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="line__graph_8cc_source.html#l00184">184</a> of file <a class="el" href="line__graph_8cc_source.html">line_graph.cc</a>.</p>
 
 </div>
 </div>
@@ -630,8 +630,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7cdc9ad99d1910b80a8936e4e595f7d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cdc9ad99d1910b80a8936e4e595f7d5">&#9670;&nbsp;</a></span>id_tgraph_map_</h2>
+<a id="ac0c2491c573fc3b59ebe963c19b0171e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c2491c573fc3b59ebe963c19b0171e">&#9670;&nbsp;</a></span>id_tgraphs_map_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -640,7 +640,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;std::string, TGraph*&gt; bdm::experimental::LineGraph::id_tgraph_map_</td>
+          <td class="memname">std::unordered_map&lt;std::string, std::vector&lt;TGraph*&gt; &gt; bdm::experimental::LineGraph::id_tgraphs_map_</td>
         </tr>
       </table>
   </td>
