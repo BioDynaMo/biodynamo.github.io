@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-36-ge72b8295</span>
+   &#160;<span id="projectnumber">v1.01-37-g292a396d</span>
    </div>
   </td>
  </tr>
@@ -104,8 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5cd7ced43919f681dee377bf38001467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc54d13f494a685fc0511a46da5b6976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#acc54d13f494a685fc0511a46da5b6976">Update</a> () override</td></tr>
 <tr class="separator:acc54d13f494a685fc0511a46da5b6976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af12f4b566b0a0dad1c24a8cb1b4bcf60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#af12f4b566b0a0dad1c24a8cb1b4bcf60">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria) override</td></tr>
-<tr class="separator:af12f4b566b0a0dad1c24a8cb1b4bcf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407de5625909b7cdd48baf951a9131dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius) override</td></tr>
+<tr class="separator:a407de5625909b7cdd48baf951a9131dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af350b43b825261a39851b5ec378c81c2"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#af350b43b825261a39851b5ec378c81c2">GetDimensions</a> () const override</td></tr>
 <tr class="separator:af350b43b825261a39851b5ec378c81c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3979a1dd69b3fb549a67c74974bcb4f0"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a3979a1dd69b3fb549a67c74974bcb4f0">GetDimensionThresholds</a> () const override</td></tr>
@@ -260,8 +260,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af12f4b566b0a0dad1c24a8cb1b4bcf60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af12f4b566b0a0dad1c24a8cb1b4bcf60">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
+<a id="a407de5625909b7cdd48baf951a9131dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407de5625909b7cdd48baf951a9131dd">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,8 +284,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>criteria</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squared_radius</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
 
-<p>Reimplemented from <a class="el" href="classbdm_1_1Environment.html#a2d06ca65e3684bef389fa4a32538287f">bdm::Environment</a>.</p>
+<p>Reimplemented from <a class="el" href="classbdm_1_1Environment.html#a057e686a4314459dda4a676bc65bf965">bdm::Environment</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00093">93</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 

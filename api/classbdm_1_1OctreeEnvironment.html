@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-36-ge72b8295</span>
+   &#160;<span id="projectnumber">v1.01-37-g292a396d</span>
    </div>
   </td>
  </tr>
@@ -104,8 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a197790c786109e23682c82a9f9896281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72f6d590f0cf79f7ea02d1f3504a6c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OctreeEnvironment.html#a72f6d590f0cf79f7ea02d1f3504a6c88">Update</a> () override</td></tr>
 <tr class="separator:a72f6d590f0cf79f7ea02d1f3504a6c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90e08587e606c9545d47e34253599441"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OctreeEnvironment.html#a90e08587e606c9545d47e34253599441">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria) override</td></tr>
-<tr class="separator:a90e08587e606c9545d47e34253599441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c6fb75ab46de5c8ef82c597cce2f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OctreeEnvironment.html#a76c6fb75ab46de5c8ef82c597cce2f54">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radus) override</td></tr>
+<tr class="separator:a76c6fb75ab46de5c8ef82c597cce2f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace183d609143a46fbe33b75534279441"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OctreeEnvironment.html#ace183d609143a46fbe33b75534279441">GetDimensions</a> () const override</td></tr>
 <tr class="separator:ace183d609143a46fbe33b75534279441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76800353a67b30b0fc8afba486aa59b4"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OctreeEnvironment.html#a76800353a67b30b0fc8afba486aa59b4">GetDimensionThresholds</a> () const override</td></tr>
@@ -260,8 +260,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a90e08587e606c9545d47e34253599441"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90e08587e606c9545d47e34253599441">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
+<a id="a76c6fb75ab46de5c8ef82c597cce2f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c6fb75ab46de5c8ef82c597cce2f54">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,8 +284,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>criteria</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squared_radius</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
 
-<p>Reimplemented from <a class="el" href="classbdm_1_1Environment.html#a2d06ca65e3684bef389fa4a32538287f">bdm::Environment</a>.</p>
+<p>Reimplemented from <a class="el" href="classbdm_1_1Environment.html#a057e686a4314459dda4a676bc65bf965">bdm::Environment</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="octree__environment_8cc_source.html#l00088">88</a> of file <a class="el" href="octree__environment_8cc_source.html">octree_environment.cc</a>.</p>
 

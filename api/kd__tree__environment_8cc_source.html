@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-36-ge72b8295</span>
+   &#160;<span id="projectnumber">v1.01-37-g292a396d</span>
    </div>
   </td>
  </tr>
@@ -162,9 +162,9 @@ $(function() {
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classbdm_1_1KDTreeEnvironment.html#af12f4b566b0a0dad1c24a8cb1b4bcf60">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1KDTreeEnvironment.html#af12f4b566b0a0dad1c24a8cb1b4bcf60">KDTreeEnvironment::ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*, double&gt;</a>&amp; lambda,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>&amp; query, <span class="keywordtype">void</span>* criteria) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">double</span> squared_radius = *<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span>*<span class="keyword">&gt;</span>(criteria);</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">KDTreeEnvironment::ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*, double&gt;</a>&amp; lambda,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>&amp; query,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                        <span class="keywordtype">double</span> squared_radius) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  std::vector&lt;std::pair&lt;uint64_t, double&gt;&gt; neighbors;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  nanoflann::SearchParams params;</div>
@@ -241,7 +241,6 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1AgentFlatIdxMap_html_a4952fbd740e870e6815985d11899d647"><div class="ttname"><a href="classbdm_1_1AgentFlatIdxMap.html#a4952fbd740e870e6815985d11899d647">bdm::AgentFlatIdxMap::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="agent__flat__idx__map_8h_source.html#l00049">agent_flat_idx_map.h:49</a></div></div>
-<div class="ttc" id="aclassbdm_1_1KDTreeEnvironment_html_af12f4b566b0a0dad1c24a8cb1b4bcf60"><div class="ttname"><a href="classbdm_1_1KDTreeEnvironment.html#af12f4b566b0a0dad1c24a8cb1b4bcf60">bdm::KDTreeEnvironment::ForEachNeighbor</a></div><div class="ttdeci">void ForEachNeighbor(Functor&lt; void, Agent *, double &gt; &amp;lambda, const Agent &amp;query, void *criteria) override</div><div class="ttdef"><b>Definition:</b> <a href="kd__tree__environment_8cc_source.html#l00093">kd_tree_environment.cc:93</a></div></div>
 <div class="ttc" id="aclassbdm_1_1KDTreeEnvironment_html_a9e7532fb8ba3f078439316aca8d5cd6d"><div class="ttname"><a href="classbdm_1_1KDTreeEnvironment.html#a9e7532fb8ba3f078439316aca8d5cd6d">bdm::KDTreeEnvironment::grid_dimensions_</a></div><div class="ttdeci">std::array&lt; int32_t, 6 &gt; grid_dimensions_</div><div class="ttdef"><b>Definition:</b> <a href="kd__tree__environment_8h_source.html#l00098">kd_tree_environment.h:98</a></div></div>
 <div class="ttc" id="akd__tree__environment_8h_html"><div class="ttname"><a href="kd__tree__environment_8h.html">kd_tree_environment.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Environment_1_1NeighborMutexBuilder_html"><div class="ttname"><a href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html">bdm::Environment::NeighborMutexBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00059">environment.h:59</a></div></div>
@@ -258,6 +257,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1LoadBalanceInfo_html"><div class="ttname"><a href="classbdm_1_1LoadBalanceInfo.html">bdm::LoadBalanceInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="load__balance__info_8h_source.html#l00024">load_balance_info.h:24</a></div></div>
 <div class="ttc" id="astructbdm_1_1Math_html_ad4fdb7491acb43b733ef89625ac9de5d"><div class="ttname"><a href="structbdm_1_1Math.html#ad4fdb7491acb43b733ef89625ac9de5d">bdm::Math::kInfinity</a></div><div class="ttdeci">static constexpr double kInfinity</div><div class="ttdoc">Helpful constant to identify 'infinity'.</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00035">math.h:35</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Environment_html_ac955bbf754885d8ca7226f7e221614a3"><div class="ttname"><a href="classbdm_1_1Environment.html#ac955bbf754885d8ca7226f7e221614a3">bdm::Environment::has_grown_</a></div><div class="ttdeci">bool has_grown_</div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00082">environment.h:82</a></div></div>
+<div class="ttc" id="aclassbdm_1_1KDTreeEnvironment_html_a407de5625909b7cdd48baf951a9131dd"><div class="ttname"><a href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">bdm::KDTreeEnvironment::ForEachNeighbor</a></div><div class="ttdeci">void ForEachNeighbor(Functor&lt; void, Agent *, double &gt; &amp;lambda, const Agent &amp;query, double squared_radius) override</div><div class="ttdef"><b>Definition:</b> <a href="kd__tree__environment_8cc_source.html#l00093">kd_tree_environment.cc:93</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html"><div class="ttname"><a href="classbdm_1_1Agent.html">bdm::Agent</a></div><div class="ttdoc">Contains code required by all agents.</div><div class="ttdef"><b>Definition:</b> <a href="agent_8h_source.html#l00079">agent.h:79</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Functor_html"><div class="ttname"><a href="classbdm_1_1Functor.html">bdm::Functor&lt; void, Agent *, double &gt;</a></div></div>
 <div class="ttc" id="aclassbdm_1_1KDTreeEnvironment_html_af350b43b825261a39851b5ec378c81c2"><div class="ttname"><a href="classbdm_1_1KDTreeEnvironment.html#af350b43b825261a39851b5ec378c81c2">bdm::KDTreeEnvironment::GetDimensions</a></div><div class="ttdeci">std::array&lt; int32_t, 6 &gt; GetDimensions() const override</div><div class="ttdef"><b>Definition:</b> <a href="kd__tree__environment_8cc_source.html#l00116">kd_tree_environment.cc:116</a></div></div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-36-ge72b8295</span>
+   &#160;<span id="projectnumber">v1.01-37-g292a396d</span>
    </div>
   </td>
  </tr>
@@ -98,8 +98,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad6ea5b9c942a7a5a03f68419d3c00399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3761733cab7d0f81abfdc9216bb33d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2">Update</a> ()=0</td></tr>
 <tr class="separator:af3761733cab7d0f81abfdc9216bb33d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d06ca65e3684bef389fa4a32538287f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a2d06ca65e3684bef389fa4a32538287f">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)</td></tr>
-<tr class="separator:a2d06ca65e3684bef389fa4a32538287f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057e686a4314459dda4a676bc65bf965"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a057e686a4314459dda4a676bc65bf965">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius)</td></tr>
+<tr class="separator:a057e686a4314459dda4a676bc65bf965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eda6508dabcc0ebb1842e5375d8d1f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a7eda6508dabcc0ebb1842e5375d8d1f5">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)</td></tr>
 <tr class="separator:a7eda6508dabcc0ebb1842e5375d8d1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7636f0d481c28e6b6d500a0394be7290"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a7636f0d481c28e6b6d500a0394be7290">Clear</a> ()=0</td></tr>
@@ -267,8 +267,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d06ca65e3684bef389fa4a32538287f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d06ca65e3684bef389fa4a32538287f">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/2]</span></h2>
+<a id="a057e686a4314459dda4a676bc65bf965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057e686a4314459dda4a676bc65bf965">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,8 +291,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>criteria</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squared_radius</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -308,7 +308,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a7a49f909d813d252bc83ed0fecf08771">bdm::UniformGridEnvironment</a>, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#af12f4b566b0a0dad1c24a8cb1b4bcf60">bdm::KDTreeEnvironment</a>, and <a class="el" href="classbdm_1_1OctreeEnvironment.html#a90e08587e606c9545d47e34253599441">bdm::OctreeEnvironment</a>.</p>
+<p>Reimplemented in <a class="el" href="classbdm_1_1OctreeEnvironment.html#a76c6fb75ab46de5c8ef82c597cce2f54">bdm::OctreeEnvironment</a>, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3421364a85bcb8e39c7f0a1b12b7ff63">bdm::UniformGridEnvironment</a>, and <a class="el" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">bdm::KDTreeEnvironment</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00037">37</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
