@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-42-g23e34095</span>
+   &#160;<span id="projectnumber">v1.01-46-g2223a132</span>
    </div>
   </td>
  </tr>
@@ -221,11 +221,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5e22043444477513b7acd3c11f8fa90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c5726426f206d786ddf9a604cc6dfd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a5c5726426f206d786ddf9a604cc6dfd2">use_bdm_mem_mgr</a> = true</td></tr>
 <tr class="separator:a5c5726426f206d786ddf9a604cc6dfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7605d12491f3147a213ab98847021055"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a7605d12491f3147a213ab98847021055">mem_mgr_aligned_pages_shift</a> = 8</td></tr>
+<tr class="memitem:a7605d12491f3147a213ab98847021055"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a7605d12491f3147a213ab98847021055">mem_mgr_aligned_pages_shift</a> = 5</td></tr>
 <tr class="separator:a7605d12491f3147a213ab98847021055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad945d5460eb03267b541038ba1557928"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#ad945d5460eb03267b541038ba1557928">mem_mgr_growth_rate</a> = 1.1</td></tr>
 <tr class="separator:ad945d5460eb03267b541038ba1557928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a905f1ffd55efddfc40432a4c5c116241"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a905f1ffd55efddfc40432a4c5c116241">mem_mgr_max_mem_per_thread</a> = 1024 * 1024 * 10</td></tr>
+<tr class="memitem:a905f1ffd55efddfc40432a4c5c116241"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a905f1ffd55efddfc40432a4c5c116241">mem_mgr_max_mem_per_thread</a> = 131073</td></tr>
 <tr class="separator:a905f1ffd55efddfc40432a4c5c116241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb70b078c2465d3bf40f3ce944d6434d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#aeb70b078c2465d3bf40f3ce944d6434d">minimize_memory_while_rebalancing</a> = true</td></tr>
 <tr class="separator:aeb70b078c2465d3bf40f3ce944d6434d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,6 +245,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1a63f61488fe338b3c981feb02166c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a049f6a13901aa8b7f8c685340d827a73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a049f6a13901aa8b7f8c685340d827a73">preferred_gpu</a> = 0</td></tr>
 <tr class="separator:a049f6a13901aa8b7f8c685340d827a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344b2f0c3605eae97580bb5e9699238a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a344b2f0c3605eae97580bb5e9699238a">plot_memory_layout</a> = false</td></tr>
+<tr class="separator:a344b2f0c3605eae97580bb5e9699238a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -632,7 +634,7 @@ template&lt;typename TParamGroup &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00605">605</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00609">609</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -936,7 +938,7 @@ export = false
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00608">608</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00612">612</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1013,16 +1015,16 @@ max_bound = 100
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t bdm::Param::mem_mgr_aligned_pages_shift = 8</td>
+          <td class="memname">uint64_t bdm::Param::mem_mgr_aligned_pages_shift = 5</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>The BioDynaMo memory manager allocates N page aligned memory blocks. The bigger N, the lower the memory overhead due to metadata storage if a lot of memory is used.<br  />
 N must be a number of two.<br  />
 Therefore, this parameter specifies the shift for N. <code>N = 2 ^ shift</code><br  />
-Default value: <code>8</code> <code>-&gt; N = 256</code><br  />
+Default value: <code>5</code> <code>-&gt; N = 32</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
-mem_mgr_aligned_pages_shift = 8 
+mem_mgr_aligned_pages_shift = 5 
 </pre> 
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00482">482</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
@@ -1054,16 +1056,16 @@ mem_mgr_growth_rate = 1.1
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t bdm::Param::mem_mgr_max_mem_per_thread = 1024 * 1024 * 10</td>
+          <td class="memname">uint64_t bdm::Param::mem_mgr_max_mem_per_thread = 131073</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>The BioDynaMo memory manager can migrate memory between thread pools to avoid memory leaks.<br  />
 This parameter specifies the maximum memory size in bytes before migration happens.<br  />
 This value must be bigger than <code>PAGE_SIZE * 2 ^ mem_mgr_growth_rate</code><br  />
-Default value: <code>10485760</code> (10 MB)<br  />
+Default value: <code>131073</code> (100 kB)<br  />
 TOML config file: </p><pre class="fragment">[performance]
-mem_mgr_max_mem_per_thread = 10485760 
+mem_mgr_max_mem_per_thread = 131073 
 </pre> 
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00503">503</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
@@ -1184,6 +1186,23 @@ output_dir = "output"
 
 </div>
 </div>
+<a id="a344b2f0c3605eae97580bb5e9699238a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344b2f0c3605eae97580bb5e9699238a">&#9670;&nbsp;</a></span>plot_memory_layout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::Param::plot_memory_layout = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determines if agents' memory layout plots should be generated during load balancing. </p>
+
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00603">603</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
 <a id="a049f6a13901aa8b7f8c685340d827a73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a049f6a13901aa8b7f8c685340d827a73">&#9670;&nbsp;</a></span>preferred_gpu</h2>
 
@@ -1285,7 +1304,7 @@ random_seed = 4357
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00607">607</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00611">611</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>

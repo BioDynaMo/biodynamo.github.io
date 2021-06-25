@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-42-g23e34095</span>
+   &#160;<span id="projectnumber">v1.01-46-g2223a132</span>
    </div>
   </td>
  </tr>
@@ -160,6 +160,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExporterFactory.html">ExporterFactory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExpRng.html">ExpRng</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Fea.html">Fea</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Fen.html">Fen</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1FixedSizeVector.html">FixedSizeVector</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -591,6 +595,12 @@ Functions</h2></td></tr>
 <tr class="separator:ad27374099211701ba3b2a1d1ba7cfd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6868447a85818fb669c5e6139c869e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a6868447a85818fb669c5e6139c869e4a">Partition</a> (uint64_t elements, uint64_t batches, uint64_t batch_num, uint64_t *start, uint64_t *end)</td></tr>
 <tr class="separator:a6868447a85818fb669c5e6139c869e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94abe875efcab4bf3af91f69272d6fa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a94abe875efcab4bf3af91f69272d6fa1">PlotMemoryLayout</a> (const std::vector&lt; <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; agents, int numa_node)</td></tr>
+<tr class="separator:a94abe875efcab4bf3af91f69272d6fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f736313f556f410b2a63959c8b319ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a2f736313f556f410b2a63959c8b319ee">PlotMemoryHistogram</a> (const std::vector&lt; <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; agents, int numa_node)</td></tr>
+<tr class="separator:a2f736313f556f410b2a63959c8b319ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4fde2d743e735aaab3c7496162748a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a0a4fde2d743e735aaab3c7496162748a">PlotNeighborMemoryHistogram</a> (bool before)</td></tr>
+<tr class="separator:a0a4fde2d743e735aaab3c7496162748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3d357b144a0e69fd825f4bfa621143"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a6d3d357b144a0e69fd825f4bfa621143">GetExecutablePath</a> ()</td></tr>
 <tr class="memdesc:a6d3d357b144a0e69fd825f4bfa621143"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the path of the currently running executable.  <a href="namespacebdm.html#a6d3d357b144a0e69fd825f4bfa621143">More...</a><br /></td></tr>
 <tr class="separator:a6d3d357b144a0e69fd825f4bfa621143"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2703,6 +2713,86 @@ template&lt;class T , std::size_t N&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="partition_8h_source.html#l00022">22</a> of file <a class="el" href="partition_8h_source.html">partition.h</a>.</p>
+
+</div>
+</div>
+<a id="a2f736313f556f410b2a63959c8b319ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f736313f556f410b2a63959c8b319ee">&#9670;&nbsp;</a></span>PlotMemoryHistogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::PlotMemoryHistogram </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt;&#160;</td>
+          <td class="paramname"><em>agents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numa_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="plot__memory__layout_8cc_source.html#l00074">74</a> of file <a class="el" href="plot__memory__layout_8cc_source.html">plot_memory_layout.cc</a>.</p>
+
+</div>
+</div>
+<a id="a94abe875efcab4bf3af91f69272d6fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94abe875efcab4bf3af91f69272d6fa1">&#9670;&nbsp;</a></span>PlotMemoryLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::PlotMemoryLayout </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt;&#160;</td>
+          <td class="paramname"><em>agents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numa_node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="plot__memory__layout_8cc_source.html#l00042">42</a> of file <a class="el" href="plot__memory__layout_8cc_source.html">plot_memory_layout.cc</a>.</p>
+
+</div>
+</div>
+<a id="a0a4fde2d743e735aaab3c7496162748a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4fde2d743e735aaab3c7496162748a">&#9670;&nbsp;</a></span>PlotNeighborMemoryHistogram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::PlotNeighborMemoryHistogram </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>before</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="plot__memory__layout_8cc_source.html#l00137">137</a> of file <a class="el" href="plot__memory__layout_8cc_source.html">plot_memory_layout.cc</a>.</p>
 
 </div>
 </div>
