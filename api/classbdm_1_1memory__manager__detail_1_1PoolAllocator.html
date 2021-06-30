@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-47-g738da770</span>
+   &#160;<span id="projectnumber">v1.01-48-g18db22f3</span>
    </div>
   </td>
  </tr>
@@ -85,8 +85,8 @@ Collaboration diagram for bdm::memory_manager_detail::PoolAllocator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac1b7130ba912af34c4e2f3d536dd3e6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#ac1b7130ba912af34c4e2f3d536dd3e6a">PoolAllocator</a> (std::size_t size, uint64_t size_n_pages, double growth_rate, uint64_t max_mem_per_thread)</td></tr>
-<tr class="separator:ac1b7130ba912af34c4e2f3d536dd3e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f595b4d70cd365abde3cf0152556fa3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a3f595b4d70cd365abde3cf0152556fa3">PoolAllocator</a> (std::size_t size, uint64_t size_n_pages, double growth_rate, uint64_t max_mem_per_thread_factor)</td></tr>
+<tr class="separator:a3f595b4d70cd365abde3cf0152556fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4659d9a086d9d23f8dceee83c8fa289"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#ad4659d9a086d9d23f8dceee83c8fa289">PoolAllocator</a> (<a class="el" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html">PoolAllocator</a> &amp;&amp;other)</td></tr>
 <tr class="separator:ad4659d9a086d9d23f8dceee83c8fa289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab507bb80f9c9bb888928df708b8d97be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#ab507bb80f9c9bb888928df708b8d97be">PoolAllocator</a> (const <a class="el" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html">PoolAllocator</a> &amp;other)=delete</td></tr>
@@ -109,8 +109,8 @@ Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="memory__manager_8h_source.html#l00128">128</a> of file <a class="el" href="memory__manager_8h_source.html">memory_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac1b7130ba912af34c4e2f3d536dd3e6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1b7130ba912af34c4e2f3d536dd3e6a">&#9670;&nbsp;</a></span>PoolAllocator() <span class="overload">[1/3]</span></h2>
+<a id="a3f595b4d70cd365abde3cf0152556fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f595b4d70cd365abde3cf0152556fa3">&#9670;&nbsp;</a></span>PoolAllocator() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +137,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>max_mem_per_thread</em>&#160;</td>
+          <td class="paramname"><em>max_mem_per_thread_factor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -147,7 +147,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00296">296</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00297">297</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -167,7 +167,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00306">306</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00308">308</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00311">311</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00313">313</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -233,7 +233,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00319">319</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00321">321</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>

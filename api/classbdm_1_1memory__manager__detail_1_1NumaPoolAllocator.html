@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-47-g738da770</span>
+   &#160;<span id="projectnumber">v1.01-48-g18db22f3</span>
    </div>
   </td>
  </tr>
@@ -92,8 +92,8 @@ Collaboration diagram for bdm::memory_manager_detail::NumaPoolAllocator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a294cf3616ae2163896e792cdb5d7c8c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a294cf3616ae2163896e792cdb5d7c8c5">NumaPoolAllocator</a> (uint64_t size, int nid, uint64_t size_n_pages, double growth_rate, uint64_t max_mem_per_thread)</td></tr>
-<tr class="separator:a294cf3616ae2163896e792cdb5d7c8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de114ee1316cd215b8089058658b461"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a4de114ee1316cd215b8089058658b461">NumaPoolAllocator</a> (uint64_t size, int nid, uint64_t size_n_pages, double growth_rate, uint64_t max_mem_per_thread_factor)</td></tr>
+<tr class="separator:a4de114ee1316cd215b8089058658b461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7561a7f7fcffcdd9e2798eeab765d647"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a7561a7f7fcffcdd9e2798eeab765d647">~NumaPoolAllocator</a> ()</td></tr>
 <tr class="separator:a7561a7f7fcffcdd9e2798eeab765d647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab173ca21361dab49320705afdadb76ef"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#ab173ca21361dab49320705afdadb76ef">New</a> (int tid)</td></tr>
@@ -153,8 +153,8 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="memory__manager_8h_source.html#l00093">93</a> of file <a class="el" href="memory__manager_8h_source.html">memory_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a294cf3616ae2163896e792cdb5d7c8c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a294cf3616ae2163896e792cdb5d7c8c5">&#9670;&nbsp;</a></span>NumaPoolAllocator()</h2>
+<a id="a4de114ee1316cd215b8089058658b461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de114ee1316cd215b8089058658b461">&#9670;&nbsp;</a></span>NumaPoolAllocator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +187,7 @@ Static Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>max_mem_per_thread</em>&#160;</td>
+          <td class="paramname"><em>max_mem_per_thread_factor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,7 +216,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00168">168</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00169">169</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00234">234</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00235">235</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -265,7 +265,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00217">217</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00218">218</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00232">232</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00233">233</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00251">251</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00252">252</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00175">175</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00176">176</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00288">288</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memory__manager_8cc_source.html#l00289">289</a> of file <a class="el" href="memory__manager_8cc_source.html">memory_manager.cc</a>.</p>
 
 </div>
 </div>

@@ -89,7 +89,7 @@ var searchData=
   ['numa_5frun_5fon_5fnode_1149',['numa_run_on_node',['../numa_8h.html#afd99c98919326052154ccc388370c747',1,'numa.h']]],
   ['numa_5fthread_5fid_5f_1150',['numa_thread_id_',['../classbdm_1_1ThreadInfo.html#a1b85150dbaf69837590017bda20b5629',1,'bdm::ThreadInfo']]],
   ['numanode_5ft_1151',['NumaNode_t',['../classbdm_1_1AgentHandle.html#a9a7edb3204cf1a3f9d4f5d87efdb3c77',1,'bdm::AgentHandle']]],
-  ['numapoolallocator_1152',['NumaPoolAllocator',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html',1,'bdm::memory_manager_detail::NumaPoolAllocator'],['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a294cf3616ae2163896e792cdb5d7c8c5',1,'bdm::memory_manager_detail::NumaPoolAllocator::NumaPoolAllocator()']]],
+  ['numapoolallocator_1152',['NumaPoolAllocator',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html',1,'bdm::memory_manager_detail::NumaPoolAllocator'],['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a4de114ee1316cd215b8089058658b461',1,'bdm::memory_manager_detail::NumaPoolAllocator::NumaPoolAllocator()']]],
   ['numerical_5fode_5fsolver_1153',['numerical_ode_solver',['../structbdm_1_1Param.html#ae2f82ac74abda1bdec837be62eb057f7',1,'bdm::Param']]],
   ['numericalodesolver_1154',['NumericalODESolver',['../structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471',1,'bdm::Param']]]
 ];

@@ -26,5 +26,5 @@ var searchData=
   ['numa_5fnum_5fconfigured_5fcpus_2754',['numa_num_configured_cpus',['../numa_8h.html#ab14a400ab10eb7b2a1049d9d3257f74a',1,'numa.h']]],
   ['numa_5fnum_5fconfigured_5fnodes_2755',['numa_num_configured_nodes',['../numa_8h.html#a22585176d6e08c221de8377637bd72a7',1,'numa.h']]],
   ['numa_5frun_5fon_5fnode_2756',['numa_run_on_node',['../numa_8h.html#afd99c98919326052154ccc388370c747',1,'numa.h']]],
-  ['numapoolallocator_2757',['NumaPoolAllocator',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a294cf3616ae2163896e792cdb5d7c8c5',1,'bdm::memory_manager_detail::NumaPoolAllocator']]]
+  ['numapoolallocator_2757',['NumaPoolAllocator',['../classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a4de114ee1316cd215b8089058658b461',1,'bdm::memory_manager_detail::NumaPoolAllocator']]]
 ];
