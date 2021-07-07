@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-49-g22836931</span>
+   &#160;<span id="projectnumber">v1.01-50-g6982549a</span>
    </div>
   </td>
  </tr>
@@ -144,7 +144,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates agents on the given positions and adds them to the ExecutionContext.</p>
+<p>Creates agents on the given positions and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">positions</td><td>positions of the agents to be </td></tr>
@@ -204,7 +204,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates agents with random positions on a sphere and adds them to the ExecutionContext. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized.</p>
+<p>Creates agents with random positions on a sphere and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>Center of the sphere </td></tr>
@@ -296,7 +296,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates agents on surface and adds them to the ExecutionContext. The x and y positions are defined by xmin, xmax, deltax and ymin, ymax, deltay. The z position is calculated using <code>f</code>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. </p><pre class="fragment">auto construct = [](const Double3&amp; position) {
+<p>Creates agents on surface and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. The x and y positions are defined by xmin, xmax, deltax and ymin, ymax, deltay. The z position is calculated using <code>f</code>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. </p><pre class="fragment">auto construct = [](const Double3&amp; position) {
   Cell* cell = new Cell(position);
   cell-&gt;SetDiameter(10);
   return cell;
@@ -397,7 +397,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates agents on surface and adds them to the ExecutionContext. The x and y positions are determined by a uniform distribution [xmin, xmax[ and [ymin, ymax[. The z position is calculated using <code>f</code>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. </p><pre class="fragment">auto construct = [](const Double3&amp; position) {
+<p>Creates agents on surface and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. The x and y positions are determined by a uniform distribution [xmin, xmax[ and [ymin, ymax[. The z position is calculated using <code>f</code>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. </p><pre class="fragment">auto construct = [](const Double3&amp; position) {
   Cell* cell = new Cell(position);
   cell-&gt;SetDiameter(10);
   return cell;
@@ -478,7 +478,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates agents with random positions and adds them to the ExecutionContext. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized.</p>
+<p>Creates agents with random positions and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>The minimum position value </td></tr>
@@ -602,7 +602,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a 3D grid of agents and adds them to the ExecutionContext. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D({8,6,4}, 10, [](const Double3&amp;
+<p>Creates a 3D grid of agents and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D({8,6,4}, 10, [](const Double3&amp;
 pos){ return Cell(pos); });
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -658,7 +658,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a 3D cubic grid of agents and adds them to the ExecutionContext. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D(8, 10, [](const Double3&amp; pos){
+<p>Creates a 3D cubic grid of agents and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. Type of the agent is determined by the return type of parameter agent_builder. </p><pre class="fragment">ModelInitializer::Grid3D(8, 10, [](const Double3&amp; pos){
 return Cell(pos); });
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
