@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-52-g52063d4c</span>
+   &#160;<span id="projectnumber">v1.01-53-gdda2736e</span>
    </div>
   </td>
  </tr>
@@ -97,8 +97,6 @@ Include dependency graph for default_ops.cc:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateStaticnessOp.html">bdm::UpdateStaticnessOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1PropagateStaticnessOp.html">bdm::PropagateStaticnessOp</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1BehaviorOp.html">bdm::BehaviorOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1DiscretizationOp.html">bdm::DiscretizationOp</a></td></tr>
@@ -110,6 +108,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateTimeSeriesOp.html">bdm::UpdateTimeSeriesOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1UpdateEnvironmentOp.html">bdm::UpdateEnvironmentOp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1PropagateStaticnessOp.html">bdm::PropagateStaticnessOp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -131,8 +131,6 @@ Functions</h2></td></tr>
 <tr class="separator:aceddf7f58a8585e93496bcf42fc9a82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d301771fcc17bc5e04e073979acde54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a5d301771fcc17bc5e04e073979acde54">bdm::BDM_REGISTER_OP</a> (UpdateStaticnessOp, &quot;update staticness&quot;, kCpu)</td></tr>
 <tr class="separator:a5d301771fcc17bc5e04e073979acde54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ccbc42af8e34ea2a40af31a08c4554f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a7ccbc42af8e34ea2a40af31a08c4554f">bdm::BDM_REGISTER_OP</a> (PropagateStaticnessOp, &quot;propagate staticness&quot;, kCpu)</td></tr>
-<tr class="separator:a7ccbc42af8e34ea2a40af31a08c4554f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a268a83cefcb41f7a5f0858469fb4ffb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a268a83cefcb41f7a5f0858469fb4ffb1">bdm::BDM_REGISTER_OP</a> (BehaviorOp, &quot;behavior&quot;, kCpu)</td></tr>
 <tr class="separator:a268a83cefcb41f7a5f0858469fb4ffb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3766de5ff74854364f564edd51fb9a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#af3766de5ff74854364f564edd51fb9a5">bdm::BDM_REGISTER_OP</a> (DiscretizationOp, &quot;discretization&quot;, kCpu)</td></tr>
@@ -147,6 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab948d9b7ea3194bd745163b0a5d477a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e5a260c15075ad21b47b60c6deab0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#af9e5a260c15075ad21b47b60c6deab0e">bdm::BDM_REGISTER_OP</a> (VisualizationOp, &quot;visualize&quot;, kCpu)</td></tr>
 <tr class="separator:af9e5a260c15075ad21b47b60c6deab0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccbc42af8e34ea2a40af31a08c4554f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a7ccbc42af8e34ea2a40af31a08c4554f">bdm::BDM_REGISTER_OP</a> (PropagateStaticnessOp, &quot;propagate staticness&quot;, kCpu)</td></tr>
+<tr class="separator:a7ccbc42af8e34ea2a40af31a08c4554f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
