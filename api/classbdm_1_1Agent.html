@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-53-gdda2736e</span>
+   &#160;<span id="projectnumber">v1.01-54-gc117fc04</span>
    </div>
   </td>
  </tr>
@@ -142,8 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1153504e2027b7faad32faad5c99236a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03854f33b5350748a12546a584723bbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a03854f33b5350748a12546a584723bbe">SetPropagateStaticness</a> (bool value=true)</td></tr>
 <tr class="separator:a03854f33b5350748a12546a584723bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cbf07283c11cd46332150f90890ece9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a3cbf07283c11cd46332150f90890ece9">PropagateStaticness</a> ()</td></tr>
-<tr class="separator:a3cbf07283c11cd46332150f90890ece9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580b10bf548fbe3f905d908486e47039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a580b10bf548fbe3f905d908486e47039">PropagateStaticness</a> (bool beginning=false)</td></tr>
+<tr class="separator:a580b10bf548fbe3f905d908486e47039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d814674a256fa820d084faf01c870c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a57d814674a256fa820d084faf01c870c">UpdateStaticness</a> ()</td></tr>
 <tr class="separator:a57d814674a256fa820d084faf01c870c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b15ae941f8e7ccbb6b2bcc8c8d5dce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a67b15ae941f8e7ccbb6b2bcc8c8d5dce">IsStatic</a> () const</td></tr>
@@ -212,7 +212,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac12f698b992ef2a6c0ef3a0cdd8c214d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#ac12f698b992ef2a6c0ef3a0cdd8c214d">is_static_</a> = false</td></tr>
 <tr class="memdesc:ac12f698b992ef2a6c0ef3a0cdd8c214d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If an agent is static, we should not compute the mechanical forces.  <a href="classbdm_1_1Agent.html#ac12f698b992ef2a6c0ef3a0cdd8c214d">More...</a><br /></td></tr>
 <tr class="separator:ac12f698b992ef2a6c0ef3a0cdd8c214d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af360f02bd2a5f171744bb863a99be23e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#af360f02bd2a5f171744bb863a99be23e">propagate_staticness_neighborhood_</a> = false</td></tr>
+<tr class="memitem:af360f02bd2a5f171744bb863a99be23e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#af360f02bd2a5f171744bb863a99be23e">propagate_staticness_neighborhood_</a> = true</td></tr>
 <tr class="separator:af360f02bd2a5f171744bb863a99be23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6002899c9e771e11a6f3347e0060fed1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a6002899c9e771e11a6f3347e0060fed1">is_static_next_ts_</a> = false</td></tr>
 <tr class="memdesc:a6002899c9e771e11a6f3347e0060fed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to determine of an agent is static in the next timestep.  <a href="classbdm_1_1Agent.html#a6002899c9e771e11a6f3347e0060fed1">More...</a><br /></td></tr>
@@ -336,7 +336,7 @@ Private Attributes</h2></td></tr>
 
 <p>Add a behavior to this agent. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00121">121</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00132">132</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00108">108</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00119">119</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Return agent pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00184">184</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00196">196</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +554,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Return all behaviors. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00143">143</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00154">154</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00114">114</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00125">125</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -784,7 +784,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00112">112</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00123">123</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -844,7 +844,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </div><div class="memdoc">
 <p>Function to copy behaviors from existing <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> to this one and to initialize them. This function sets the attributes <code><a class="el" href="structbdm_1_1NewAgentEvent.html#a89daa684c4ff8ed279a9bdc26203cbc2">NewAgentEvent::existing_behavior</a></code> and <code><a class="el" href="structbdm_1_1NewAgentEvent.html#aa8174b6391415f53e711e05969ac6637">NewAgentEvent::new_behaviors</a></code> to their correct value. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00152">152</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00163">163</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -871,7 +871,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00180">180</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00192">192</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +953,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00229">229</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00241">241</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -981,12 +981,12 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00220">220</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00232">232</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
-<a id="a3cbf07283c11cd46332150f90890ece9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cbf07283c11cd46332150f90890ece9">&#9670;&nbsp;</a></span>PropagateStaticness()</h2>
+<a id="a580b10bf548fbe3f905d908486e47039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a580b10bf548fbe3f905d908486e47039">&#9670;&nbsp;</a></span>PropagateStaticness()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -994,11 +994,16 @@ template&lt;typename TAgent  = Agent&gt; </div>
         <tr>
           <td class="memname">void bdm::Agent::PropagateStaticness </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>beginning</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>If the agent is not static, a call to this method sets all neighbors to 'not static'. <br  />
+This method will be called twice: 1) At the end of the iteration using an agent op (<code>beginning=false</code>).<br  />
+2) At the beginning of the iteration as pre_scheduled op (<code>beginning=true</code>).<br  />
+ 1 is faster because it can use cached neighbors, but it might miss some conditions. (Neighbors modifying an agent after PropagateStaticness has been called. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> which is larger than the largest agent.) 2 is slower but able to process all conditions. Therefore, we use 1 whenever possible and 2 for the remaining conditions. </p>
 
 <p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00077">77</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
@@ -1022,7 +1027,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Remove a behavior from this agent. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00123">123</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00134">134</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1046,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00148">148</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00159">159</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1067,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Execute all behaviorsq. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00135">135</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00146">146</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1096,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#afab235929d196f9348e525fa0e915918">bdm::neuroscience::NeuriteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00106">106</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00117">117</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1116,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00116">116</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00127">127</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -1284,7 +1289,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Function to invoke the Update method of the behavior or remove it from <code>current</code>. Forwards the call to Update to each behavior of the existing agent and removes behaviors if they are flagged. This function sets the attributes <code><a class="el" href="structbdm_1_1NewAgentEvent.html#a89daa684c4ff8ed279a9bdc26203cbc2">NewAgentEvent::existing_behavior</a></code> and <code><a class="el" href="structbdm_1_1NewAgentEvent.html#aa8174b6391415f53e711e05969ac6637">NewAgentEvent::new_behaviors</a></code> to their correct value. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00172">172</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00183">183</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1308,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00100">100</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00111">111</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1335,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>collection of behaviors which define the internal behavior </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00244">244</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00256">256</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1356,7 +1361,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Grid box index. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00242">242</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00254">254</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1382,7 +1387,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>If an agent is static, we should not compute the mechanical forces. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00254">254</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00266">266</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1408,7 +1413,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Flag to determine of an agent is static in the next timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00259">259</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00271">271</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1437,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00247">247</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00259">259</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1451,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::Agent::propagate_staticness_neighborhood_ = false</td>
+          <td class="memname">bool bdm::Agent::propagate_staticness_neighborhood_ = true</td>
         </tr>
       </table>
   </td>
@@ -1457,7 +1462,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </div><div class="memdoc">
 <p>If an agent becomes non-static (i.e. it moved or grew), we should set this flag to true to also compute mechanical forces on the neighboring agents </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00257">257</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00269">269</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1482,7 +1487,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </div><div class="memdoc">
 <p>Helper variable used to support removal of behaviors while <code>RunBehaviors</code> iterates over them. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00251">251</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00263">263</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1513,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>unique id </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00240">240</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00252">252</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
