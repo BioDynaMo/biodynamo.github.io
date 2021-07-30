@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-57-g0d2459dc</span>
+   &#160;<span id="projectnumber">v1.01-62-g5d90157b</span>
    </div>
   </td>
  </tr>
@@ -117,6 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae9c4f3806788d7f714183b478b3dd26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1908f1adf206de6a4f4cc38f21fc4d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#ad1908f1adf206de6a4f4cc38f21fc4d0">SetAgentFilters</a> (const std::vector&lt; <a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; bool, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; * &gt; &amp;filters)</td></tr>
 <tr class="separator:ad1908f1adf206de6a4f4cc38f21fc4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afced0dd46eb95799cb786f907cb5944e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; bool, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#afced0dd46eb95799cb786f907cb5944e">GetAgentFilters</a> () const</td></tr>
+<tr class="separator:afced0dd46eb95799cb786f907cb5944e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3103e62eaf8ba572318dc0a6050f6e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1RootAdaptor.html">RootAdaptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a3103e62eaf8ba572318dc0a6050f6e95">GetRootVisualization</a> ()</td></tr>
 <tr class="separator:a3103e62eaf8ba572318dc0a6050f6e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b2e05f71d46294184cdbe5202547100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">GetOpTimes</a> ()</td></tr>
@@ -311,7 +313,7 @@ Friends</h2></td></tr>
 
 <p>Backup the simulation. Backup interval based on <code><a class="el" href="structbdm_1_1Param.html#a9b66d843bcee350f9fe8e88768f640dc">Param::backup_interval</a></code> </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00341">341</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00361">361</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -339,7 +341,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Executes one step. This design makes testing more convenient </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00329">329</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00349">349</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -392,7 +394,7 @@ template&lt;typename Lambda &gt; </div>
 
 <p>Runs a lambda for each operation that is executed in the <a class="el" href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">Execute()</a> call. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00175">175</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00177">177</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -434,7 +436,7 @@ template&lt;typename Lambda &gt; </div>
 
 <p>Runs a lambda for each operation in the specified list of operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00159">159</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00161">161</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -466,7 +468,26 @@ template&lt;typename Lambda &gt; </div>
 
 <p>Runs a lambda for each scheduled operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00168">168</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00170">170</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+
+</div>
+</div>
+<a id="afced0dd46eb95799cb786f907cb5944e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afced0dd46eb95799cb786f907cb5944e">&#9670;&nbsp;</a></span>GetAgentFilters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; bool, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; * &gt; &amp; bdm::Scheduler::GetAgentFilters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00240">240</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -591,7 +612,7 @@ template&lt;typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00095">95</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00097">97</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -639,7 +660,7 @@ template&lt;typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00375">375</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00395">395</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -674,7 +695,7 @@ template&lt;typename Lambda &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>if <code>Simulate</code> should return early </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00356">356</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00376">376</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -702,7 +723,7 @@ template&lt;typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00278">278</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00283">283</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -729,7 +750,7 @@ template&lt;typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00321">321</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00341">341</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -756,7 +777,7 @@ template&lt;typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00269">269</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00274">274</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -783,7 +804,7 @@ template&lt;typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00299">299</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00319">319</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -841,7 +862,7 @@ template&lt;typename Lambda &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00402">402</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00422">422</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -890,7 +911,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00253">253</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00258">258</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -966,7 +987,7 @@ e.g. simulate until there are 1000 agents in the simulation </p><pre class="frag
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00261">261</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8cc_source.html#l00266">266</a> of file <a class="el" href="scheduler_8cc_source.html">scheduler.cc</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1083,7 @@ e.g. simulate until there are 1000 agents in the simulation </p><pre class="frag
 <p><a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> operations are executed for each filter in agent_filters_.<br  />
 By default no filter is specified which means that all agent operations will be executed for each agents in the simulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00142">142</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00144">144</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1108,7 @@ By default no filter is specified which means that all agent operations will be 
 </div><div class="memdoc">
 <p>List of all operations that have been add either as default or by a call to <a class="el" href="classbdm_1_1Scheduler.html#af0feb0fac4c76a96bda993bac4f48f48">Scheduler::ScheduleOp</a>. <a class="el" href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">Scheduler::UnscheduleOp</a> doesn't remove the operation from this list. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00119">119</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00121">121</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1132,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00110">110</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00112">112</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1156,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00112">112</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00114">114</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1182,7 @@ By default no filter is specified which means that all agent operations will be 
 
 <p>Tracks operations' execution times. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00137">137</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00139">139</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1206,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00135">135</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00137">137</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1230,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00132">132</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00134">134</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1256,7 @@ By default no filter is specified which means that all agent operations will be 
 
 <p>List of operations that cannot be affected by the user. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00129">129</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00131">131</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1280,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00111">111</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00113">113</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1304,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00113">113</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00115">115</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1330,7 @@ By default no filter is specified which means that all agent operations will be 
 
 <p>List of operations that are to be added in the upcoming timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00121">121</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00123">123</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1335,7 +1356,7 @@ By default no filter is specified which means that all agent operations will be 
 
 <p>List of operations will be executed on all agents. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00127">127</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00129">129</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1361,7 +1382,7 @@ By default no filter is specified which means that all agent operations will be 
 
 <p>List of operations will be executed as a stand-alone operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00125">125</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00127">127</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1406,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00108">108</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00110">110</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1430,7 @@ By default no filter is specified which means that all agent operations will be 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00100">100</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00102">102</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>
@@ -1435,7 +1456,7 @@ By default no filter is specified which means that all agent operations will be 
 
 <p>List of operations that are to be removed in the upcoming timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00123">123</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scheduler_8h_source.html#l00125">125</a> of file <a class="el" href="scheduler_8h_source.html">scheduler.h</a>.</p>
 
 </div>
 </div>

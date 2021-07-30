@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-57-g0d2459dc</span>
+   &#160;<span id="projectnumber">v1.01-62-g5d90157b</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for bdm::ExecutionContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ExecutionContext__inherit__graph.svg" width="231" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ExecutionContext__inherit__graph.svg" width="231" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -86,12 +86,16 @@ Inheritance diagram for bdm::ExecutionContext:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a876a9adbfeafe1082108ac5e92149f69"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a876a9adbfeafe1082108ac5e92149f69">~ExecutionContext</a> ()</td></tr>
 <tr class="separator:a876a9adbfeafe1082108ac5e92149f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45cd54c636413975db66dddf9686986"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#ae45cd54c636413975db66dddf9686986">SetupAgentOpsAll</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts)=0</td></tr>
+<tr class="separator:ae45cd54c636413975db66dddf9686986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8228bd5043d5cd584108350411db27ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a8228bd5043d5cd584108350411db27ff">TearDownAgentOpsAll</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts)=0</td></tr>
+<tr class="separator:a8228bd5043d5cd584108350411db27ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f96f51d4e0f5e14d504495d7f072f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#ad6f96f51d4e0f5e14d504495d7f072f4">SetupIterationAll</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts)=0</td></tr>
 <tr class="separator:ad6f96f51d4e0f5e14d504495d7f072f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f02ea5742cf155c90e0290ce9a053c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a2f02ea5742cf155c90e0290ce9a053c6">TearDownIterationAll</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts)=0</td></tr>
 <tr class="separator:a2f02ea5742cf155c90e0290ce9a053c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb83285f3309c12189aae98d0c8baa97"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#abb83285f3309c12189aae98d0c8baa97">Execute</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent, const std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt; &amp;operations)=0</td></tr>
-<tr class="separator:abb83285f3309c12189aae98d0c8baa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efd0a96f12d8a1fc42c8b40aeb33e24"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24">Execute</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent, <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> ah, const std::vector&lt; <a class="el" href="structbdm_1_1Operation.html">Operation</a> * &gt; &amp;operations)=0</td></tr>
+<tr class="separator:a0efd0a96f12d8a1fc42c8b40aeb33e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bfaacbcec5eea196e08184b47aef4b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)=0</td></tr>
 <tr class="separator:af9bfaacbcec5eea196e08184b47aef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2060e7fc37647d2d5089ed6622f6ddf2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a2060e7fc37647d2d5089ed6622f6ddf2">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius)=0</td></tr>
@@ -165,8 +169,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abb83285f3309c12189aae98d0c8baa97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb83285f3309c12189aae98d0c8baa97">&#9670;&nbsp;</a></span>Execute()</h2>
+<a id="a0efd0a96f12d8a1fc42c8b40aeb33e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efd0a96f12d8a1fc42c8b40aeb33e24">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,6 +183,12 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
           <td class="paramname"><em>agent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a>&#160;</td>
+          <td class="paramname"><em>ah</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -200,7 +210,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Execute a series of operations on an agent in the order given in the argument </p>
 
-<p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a09ad1676fc56425287ff54fc4ef64034">bdm::InPlaceExecutionContext</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#aa8afe767315ad9abb33a58df7fd7c242">bdm::InPlaceExecutionContext</a>, and <a class="el" href="classbdm_1_1experimental_1_1CopyExecutionContext.html#a7c6f27b57e02a00763a02f17bc7f2e0d">bdm::experimental::CopyExecutionContext</a>.</p>
 
 </div>
 </div>
@@ -378,6 +388,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae45cd54c636413975db66dddf9686986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45cd54c636413975db66dddf9686986">&#9670;&nbsp;</a></span>SetupAgentOpsAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bdm::ExecutionContext::SetupAgentOpsAll </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_exec_ctxts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is called before all agent operations are executed.<br  />
+This function is not thread-safe. NB: Invalidates references and pointers to agents. </p>
+
+<p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a06461aead495dd879895e8e6b41a21de">bdm::InPlaceExecutionContext</a>.</p>
+
+</div>
+</div>
 <a id="ad6f96f51d4e0f5e14d504495d7f072f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6f96f51d4e0f5e14d504495d7f072f4">&#9670;&nbsp;</a></span>SetupIterationAll()</h2>
 
@@ -403,7 +443,38 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This function is called at the beginning of each iteration to setup all execution contexts. This function is not thread-safe. NB: Invalidates references and pointers to agents. </p>
 
-<p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ab614810ff22a676ad0cec4f5cd73e824">bdm::InPlaceExecutionContext</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ab614810ff22a676ad0cec4f5cd73e824">bdm::InPlaceExecutionContext</a>, and <a class="el" href="classbdm_1_1experimental_1_1CopyExecutionContext.html#adb9ce95ca8c78459312b3ae89acdd5a3">bdm::experimental::CopyExecutionContext</a>.</p>
+
+</div>
+</div>
+<a id="a8228bd5043d5cd584108350411db27ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8228bd5043d5cd584108350411db27ff">&#9670;&nbsp;</a></span>TearDownAgentOpsAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bdm::ExecutionContext::TearDownAgentOpsAll </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_exec_ctxts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is called after all agent operations were executed.<br  />
+This function is not thread-safe. <br  />
+NB: Invalidates references and pointers to agents. </p>
+
+<p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a83a9e9b0ca08f8c0bf32c320b3389fe8">bdm::InPlaceExecutionContext</a>, and <a class="el" href="classbdm_1_1experimental_1_1CopyExecutionContext.html#a2460ab982378d6c7c9136283ac712b84">bdm::experimental::CopyExecutionContext</a>.</p>
 
 </div>
 </div>

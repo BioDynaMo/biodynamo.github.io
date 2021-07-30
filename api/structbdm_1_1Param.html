@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-57-g0d2459dc</span>
+   &#160;<span id="projectnumber">v1.01-62-g5d90157b</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,10 @@ Public Types</h2></td></tr>
 <a class="el" href="structbdm_1_1Param.html#a338ac6f09819f7b64f3b2af01b8cb5bca27323fdb54ebca463e7060b4d4fe380c">kAutomatic</a>
  }</td></tr>
 <tr class="separator:a338ac6f09819f7b64f3b2af01b8cb5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926759e0e7deab622b8afe44386baae4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a926759e0e7deab622b8afe44386baae4">ExecutionOrder</a> { <a class="el" href="structbdm_1_1Param.html#a926759e0e7deab622b8afe44386baae4a616dfd3aa3e5329b63341d0382aaca3b">kForEachAgentForEachOp</a> = 0, 
+<a class="el" href="structbdm_1_1Param.html#a926759e0e7deab622b8afe44386baae4ac7a7d360d05e345a9379143043939f5a">kForEachOpForEachAgent</a>
+ }</td></tr>
+<tr class="separator:a926759e0e7deab622b8afe44386baae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75736f24ae2459dbe25691890107797b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797b">MappedDataArrayMode</a> { <a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797ba429ab33c2ae17d84a56372dd11a9c4a6">kZeroCopy</a> = 0, 
 <a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797ba5f55721ed86ae25c0358dcd2ccbd7297">kCopy</a>, 
 <a class="el" href="structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797ba6ed79fc53ab687978adcbaed0d544d1b">kCache</a>
@@ -211,6 +215,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae6b562138460afefe18052afcb318ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1358afc8e97c9fa9e0444716402d6b5f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a1358afc8e97c9fa9e0444716402d6b5f">scheduling_batch_size</a> = 1000</td></tr>
 <tr class="separator:a1358afc8e97c9fa9e0444716402d6b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350e99e1c679a2bf65fa1130c9bb01fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbdm_1_1Param.html#a926759e0e7deab622b8afe44386baae4">ExecutionOrder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a350e99e1c679a2bf65fa1130c9bb01fb">execution_order</a> = ExecutionOrder::kForEachAgentForEachOp</td></tr>
+<tr class="separator:a350e99e1c679a2bf65fa1130c9bb01fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96608057d6ccf8e18e4df89144ca22f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a96608057d6ccf8e18e4df89144ca22f5">detect_static_agents</a> = false</td></tr>
 <tr class="separator:a96608057d6ccf8e18e4df89144ca22f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673f1a35be51eb4656c8d0fd5f59e20b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a673f1a35be51eb4656c8d0fd5f59e20b">cache_neighbors</a> = false</td></tr>
@@ -298,6 +304,26 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a926759e0e7deab622b8afe44386baae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926759e0e7deab622b8afe44386baae4">&#9670;&nbsp;</a></span>ExecutionOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structbdm_1_1Param.html#a926759e0e7deab622b8afe44386baae4">bdm::Param::ExecutionOrder</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a926759e0e7deab622b8afe44386baae4a616dfd3aa3e5329b63341d0382aaca3b"></a>kForEachAgentForEachOp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a926759e0e7deab622b8afe44386baae4ac7a7d360d05e345a9379143043939f5a"></a>kForEachOpForEachAgent&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00423">423</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
 <a id="a75736f24ae2459dbe25691890107797b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75736f24ae2459dbe25691890107797b">&#9670;&nbsp;</a></span>MappedDataArrayMode</h2>
 
@@ -318,7 +344,7 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="a75736f24ae2459dbe25691890107797ba6ed79fc53ab687978adcbaed0d544d1b"></a>kCache&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00528">528</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00548">548</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +660,7 @@ template&lt;typename TParamGroup &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00611">611</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00631">631</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -655,7 +681,7 @@ Default value: <code>0.9</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
 agent_uid_defragmentation_high_watermark = 0.9 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00462">462</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00482">482</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +701,7 @@ Default value: <code>0.5</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
 agent_uid_defragmentation_low_watermark = 0.5 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00453">453</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00473">473</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -757,7 +783,7 @@ Default value: <code>false</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
 cache_neighbors = false 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00444">444</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00464">464</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -795,7 +821,7 @@ calculate_gradients = true
 <p>Run the simulation partially on the GPU for improved performance. Possible values: "cpu", "cuda", "opencl" Default value: <code>"cpu"</code><br  />
 TOML config file: [experimental] compute_target = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00586">586</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00606">606</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +842,7 @@ TOML config file: <pre class="fragment">[development]
 debug_numa = false 
 </pre> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00560">560</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00580">580</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +862,7 @@ Default value: <code>false</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
 detect_static_agents = false 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00434">434</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00454">454</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -899,6 +925,32 @@ environment = "uniform_grid"
 
 </div>
 </div>
+<a id="a350e99e1c679a2bf65fa1130c9bb01fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350e99e1c679a2bf65fa1130c9bb01fb">&#9670;&nbsp;</a></span>execution_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbdm_1_1Param.html#a926759e0e7deab622b8afe44386baae4">ExecutionOrder</a> bdm::Param::execution_order = ExecutionOrder::kForEachAgentForEachOp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This parameter determines whether to execute <code>kForEachAgentForEachOp</code> </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span>* agent : agents) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : agent_ops) {</div>
+<div class="line">    (*op)(agent);</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> or <code>kForEachOpForEachAgent</code> </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : agent_ops) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* agent : agents) {</div>
+<div class="line">    (*op)(agent);</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00441">441</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
 <a id="aa4244173a9a3f5ba2b46777fdcfebd2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4244173a9a3f5ba2b46777fdcfebd2f">&#9670;&nbsp;</a></span>export_visualization</h2>
 
@@ -938,7 +990,7 @@ export = false
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00614">614</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00634">634</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1035,7 @@ Default value: <code>zero-copy</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
 mapped_data_array_mode = "zero-copy" 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00538">538</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00558">558</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1078,7 @@ Default value: <code>5</code> <code>-&gt; N = 32</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
 mem_mgr_aligned_pages_shift = 5 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00482">482</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00502">502</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1097,7 @@ mem_mgr_aligned_pages_shift = 5
 TOML config file: </p><pre class="fragment">[performance]
 mem_mgr_growth_rate = 1.1 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00491">491</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00511">511</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1119,7 @@ The size in bytes depends on the system's page size and the parameter <code>mem_
  TOML config file: </p><pre class="fragment">[performance]
 mem_mgr_max_mem_per_thread_factor = 1 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00505">505</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00525">525</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1160,7 @@ If this parameter is set to false, the balancing function will first create new 
 TOML config file: </p><pre class="fragment">[performance]
 minimize_memory_while_rebalancing = true 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00519">519</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00539">539</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1213,7 @@ nanoflann_depth = 10
 <p>Compile OpenCL kernels with debugging symbols, for debugging on CPU targets with GNU gdb. Default value: <code>false</code><br  />
 TOML config file: [experimental] opencl_debug = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00594">594</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00614">614</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1199,7 +1251,7 @@ output_dir = "output"
 </div><div class="memdoc">
 <p>Determines if agents' memory layout plots should be generated during load balancing. </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00605">605</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00625">625</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1269,7 @@ output_dir = "output"
 <p>Set the index of the preferred GPU you wish to use. Default value: <code>0</code><br  />
 TOML config file: [experimental] preferred_gpu = 0 </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00601">601</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00621">621</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1304,7 +1356,7 @@ random_seed = 4357
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00613">613</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00633">633</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1401,7 +1453,7 @@ scheduling_batch_size = 1000
 <p>Display the current simulation step in the terminal output Default value: <code>true</code><br  />
 TOML config file: [development] show_simulation_step = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00567">567</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00587">587</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1439,7 +1491,7 @@ max_displacement = 3.0
 <p>Sets the frequency at which the current simulation step is displayed. Display every <code>simulation_step_freq</code> steps. Default value: <code>10</code><br  />
 TOML config file: [development] simulation_step_freq = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00575">575</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00595">595</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1531,7 @@ Default Value: <code>false</code><br  />
 TOML config file: </p><pre class="fragment">[development]
 statistics = false 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00551">551</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00571">571</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1610,7 @@ balancing"]
 TOML config file: </p><pre class="fragment">[performance]
 use_bdm_mem_mgr = true 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00470">470</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00490">490</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
