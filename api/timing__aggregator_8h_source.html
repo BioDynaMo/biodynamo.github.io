@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-65-ga56fd816</span>
+   &#160;<span id="projectnumber">v1.01-67-gde13f980</span>
    </div>
   </td>
  </tr>
@@ -114,44 +114,46 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classbdm_1_1TimingAggregator.html#a5ec4595643e3d7574029151bc3acab92">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TimingAggregator.html#a5ec4595643e3d7574029151bc3acab92">AddDescription</a>(<span class="keyword">const</span> std::string text) { <a class="code" href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">descriptions_</a>.push_back(text); }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">   48</a></span>&#160;  std::map&lt;std::string, std::vector&lt;int64_t&gt;&gt; <a class="code" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">timings_</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">   49</a></span>&#160;  std::vector&lt;std::string&gt; <a class="code" href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">descriptions_</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classbdm_1_1TimingAggregator.html#a095c5402c60251b53f097a0439b963d2">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a>&amp; p);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacebdm.html#a4fc06c0a9fdcc7851353ca573c3c163a">   54</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="namespacebdm.html#a36a873db32fbcc419e619f90c3e994bb">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a>&amp; ta) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  os &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (ta.<a class="code" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">timings_</a>.size() != 0) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;\033[1mTotal execution time per operation\033[0m&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; timing : ta.<a class="code" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">timings_</a>) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      os &lt;&lt; timing.first &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;         &lt;&lt; std::accumulate(timing.second.begin(), timing.second.end(), 0)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;         &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;No statistics were gathered!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  // CORE_UTIL_TIMING_AGGREGATOR_H_</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classbdm_1_1TimingAggregator.html#ab506efa490e6c28348c2f6ab48d72bce">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TimingAggregator.html#ab506efa490e6c28348c2f6ab48d72bce">AddDescription</a>(<span class="keyword">const</span> std::string&amp; text) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">descriptions_</a>.push_back(text);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">   50</a></span>&#160;  std::map&lt;std::string, std::vector&lt;int64_t&gt;&gt; <a class="code" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">timings_</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">   51</a></span>&#160;  std::vector&lt;std::string&gt; <a class="code" href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">descriptions_</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classbdm_1_1TimingAggregator.html#a095c5402c60251b53f097a0439b963d2">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a>&amp; p);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacebdm.html#a4fc06c0a9fdcc7851353ca573c3c163a">   56</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="namespacebdm.html#a36a873db32fbcc419e619f90c3e994bb">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a>&amp; ta) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  os &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">if</span> (ta.<a class="code" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">timings_</a>.size() != 0) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;\033[1mTotal execution time per operation\033[0m&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; timing : ta.<a class="code" href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">timings_</a>) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      os &lt;&lt; timing.first &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;         &lt;&lt; std::accumulate(timing.second.begin(), timing.second.end(), 0)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;         &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;No statistics were gathered!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif  // CORE_UTIL_TIMING_AGGREGATOR_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_a73ec3caaf2403ee54b65a0f84b5ad31b"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">bdm::TimingAggregator::descriptions_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; descriptions_</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00049">timing_aggregator.h:49</a></div></div>
+<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_a73ec3caaf2403ee54b65a0f84b5ad31b"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#a73ec3caaf2403ee54b65a0f84b5ad31b">bdm::TimingAggregator::descriptions_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; descriptions_</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00051">timing_aggregator.h:51</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
-<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_ab78a6ec43bcebee33cb9bb061f013a36"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">bdm::TimingAggregator::timings_</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; int64_t &gt; &gt; timings_</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00048">timing_aggregator.h:48</a></div></div>
+<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_ab78a6ec43bcebee33cb9bb061f013a36"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#ab78a6ec43bcebee33cb9bb061f013a36">bdm::TimingAggregator::timings_</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; int64_t &gt; &gt; timings_</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00050">timing_aggregator.h:50</a></div></div>
 <div class="ttc" id="amath_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_a5ec4595643e3d7574029151bc3acab92"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#a5ec4595643e3d7574029151bc3acab92">bdm::TimingAggregator::AddDescription</a></div><div class="ttdeci">void AddDescription(const std::string text)</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00045">timing_aggregator.h:45</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TimingAggregator_html_acd28bfd68821a93cf558f8dde895102e"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#acd28bfd68821a93cf558f8dde895102e">bdm::TimingAggregator::~TimingAggregator</a></div><div class="ttdeci">~TimingAggregator()</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00033">timing_aggregator.h:33</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TimingAggregator_html_ac699a9494f65bb899ac03901c5f9a173"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#ac699a9494f65bb899ac03901c5f9a173">bdm::TimingAggregator::AddEntry</a></div><div class="ttdeci">void AddEntry(const std::string &amp;key, int64_t value)</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00035">timing_aggregator.h:35</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TimingAggregator_html_ad700cc0ce0b4560829558c0b1fdd7054"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#ad700cc0ce0b4560829558c0b1fdd7054">bdm::TimingAggregator::TimingAggregator</a></div><div class="ttdeci">TimingAggregator()</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00032">timing_aggregator.h:32</a></div></div>
-<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_a095c5402c60251b53f097a0439b963d2"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#a095c5402c60251b53f097a0439b963d2">bdm::TimingAggregator::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const TimingAggregator &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00054">timing_aggregator.h:54</a></div></div>
+<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_a095c5402c60251b53f097a0439b963d2"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#a095c5402c60251b53f097a0439b963d2">bdm::TimingAggregator::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const TimingAggregator &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00056">timing_aggregator.h:56</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a36a873db32fbcc419e619f90c3e994bb"><div class="ttname"><a href="namespacebdm.html#a36a873db32fbcc419e619f90c3e994bb">bdm::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;o, const MathArray&lt; T, N &gt; &amp;arr)</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00385">math_array.h:385</a></div></div>
+<div class="ttc" id="aclassbdm_1_1TimingAggregator_html_ab506efa490e6c28348c2f6ab48d72bce"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html#ab506efa490e6c28348c2f6ab48d72bce">bdm::TimingAggregator::AddDescription</a></div><div class="ttdeci">void AddDescription(const std::string &amp;text)</div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00045">timing_aggregator.h:45</a></div></div>
 <div class="ttc" id="asimulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TimingAggregator_html"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html">bdm::TimingAggregator</a></div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00030">timing_aggregator.h:30</a></div></div>
 <!-- start footer part -->

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-65-ga56fd816</span>
+   &#160;<span id="projectnumber">v1.01-67-gde13f980</span>
    </div>
   </td>
  </tr>
@@ -377,10 +377,10 @@ $(function() {
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  }</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#ad4659d9a086d9d23f8dceee83c8fa289">  308</a></span>&#160;<a class="code" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a3f595b4d70cd365abde3cf0152556fa3">PoolAllocator::PoolAllocator</a>(<a class="code" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html">PoolAllocator</a>&amp;&amp; other)</div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#ac7b5099888c01f34780bf27b33aa7127">  308</a></span>&#160;<a class="code" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a3f595b4d70cd365abde3cf0152556fa3">PoolAllocator::PoolAllocator</a>(<a class="code" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html">PoolAllocator</a>&amp;&amp; other) noexcept</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    : size_(other.size_),</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      tinfo_(other.tinfo_),</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      numa_allocators_(<a class="code" href="namespacestd.html">std</a>::move(other.numa_allocators_)) {}</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      numa_allocators_(std::move(other.numa_allocators_)) {}</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
 <div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a678a0a97de3ea9fa5dfb376594999a2c">  313</a></span>&#160;<a class="code" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a678a0a97de3ea9fa5dfb376594999a2c">PoolAllocator::~PoolAllocator</a>() {</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* el : <a class="code" href="classbdm_1_1memory__manager__detail_1_1PoolAllocator.html#a5363d928e4e454f3bcaac8975e8b45a2">numa_allocators_</a>) {</div>

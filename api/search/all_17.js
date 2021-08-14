@@ -39,5 +39,5 @@ var searchData=
   ['vtune_5fhelper_2eh_1734',['vtune_helper.h',['../vtune__helper_8h.html',1,'']]],
   ['vtune_5fop_5fwrapper_2eh_1735',['vtune_op_wrapper.h',['../vtune__op__wrapper_8h.html',1,'']]],
   ['vtuneopwrapper_1736',['VTuneOpWrapper',['../classbdm_1_1VTuneOpWrapper.html',1,'bdm::VTuneOpWrapper&lt; Op &gt;'],['../classbdm_1_1VTuneOpWrapper.html#a669ef461c8f85571b731d2b63acd805e',1,'bdm::VTuneOpWrapper::VTuneOpWrapper()']]],
-  ['vtunetask_1737',['VTuneTask',['../classbdm_1_1VTuneTask.html',1,'bdm::VTuneTask'],['../classbdm_1_1VTuneTask.html#a18f42fefcbeb130bbd902c7d9d5eb0d3',1,'bdm::VTuneTask::VTuneTask()']]]
+  ['vtunetask_1737',['VTuneTask',['../classbdm_1_1VTuneTask.html',1,'bdm::VTuneTask'],['../classbdm_1_1VTuneTask.html#a3743cf509a63b1b7d95442a6c13474a1',1,'bdm::VTuneTask::VTuneTask()']]]
 ];

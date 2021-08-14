@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-65-ga56fd816</span>
+   &#160;<span id="projectnumber">v1.01-67-gde13f980</span>
    </div>
   </td>
  </tr>
@@ -264,22 +264,23 @@ $(function() {
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    }</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  }</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#ab46baa2a2e727e19c4ae24738b8efa3b">DefineSubstance</a>(<span class="keywordtype">size_t</span> substance_id, std::string substance_name,</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                              <span class="keywordtype">double</span> diffusion_coeff, <span class="keywordtype">double</span> decay_constant,</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                              <span class="keywordtype">int</span> resolution = 10);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
-<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#ac7ac30001eac5417836f4159efab19fa">  335</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#ac7ac30001eac5417836f4159efab19fa">InitializeSubstance</a>(<span class="keywordtype">size_t</span> substance_id, F <span class="keyword">function</span>) {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keyword">auto</span>* sim = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">auto</span> diffusion_grid = rm-&gt;GetDiffusionGrid(substance_id);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    diffusion_grid-&gt;AddInitializer(<span class="keyword">function</span>);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;};</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#endif  // CORE_MODEL_INITIALIZER_H_</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">DefineSubstance</a>(<span class="keywordtype">size_t</span> substance_id,</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                              <span class="keyword">const</span> std::string&amp; substance_name,</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                              <span class="keywordtype">double</span> diffusion_coeff, <span class="keywordtype">double</span> decay_constant,</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                              <span class="keywordtype">int</span> resolution = 10);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#ac7ac30001eac5417836f4159efab19fa">  336</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#ac7ac30001eac5417836f4159efab19fa">InitializeSubstance</a>(<span class="keywordtype">size_t</span> substance_id, F <span class="keyword">function</span>) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keyword">auto</span>* sim = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keyword">auto</span> diffusion_grid = rm-&gt;GetDiffusionGrid(substance_id);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    diffusion_grid-&gt;AddInitializer(<span class="keyword">function</span>);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;};</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#endif  // CORE_MODEL_INITIALIZER_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1FixedSizeVector_html"><div class="ttname"><a href="classbdm_1_1FixedSizeVector.html">bdm::FixedSizeVector&lt; double, 10 &gt;</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
@@ -288,9 +289,10 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1ModelInitializer_html_ab2d758c880182ee60f701eeee9d0ec3d"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ab2d758c880182ee60f701eeee9d0ec3d">bdm::ModelInitializer::CreateAgents</a></div><div class="ttdeci">static void CreateAgents(const std::vector&lt; Double3 &gt; &amp;positions, Function agent_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00121">model_initializer.h:121</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html_af109703b223c2630e843ce61e2398a6d"><div class="ttname"><a href="classbdm_1_1MathArray.html#af109703b223c2630e843ce61e2398a6d">bdm::MathArray::data</a></div><div class="ttdeci">const T * data() const</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00061">math_array.h:61</a></div></div>
 <div class="ttc" id="arandom_8h_html"><div class="ttname"><a href="random_8h.html">random.h</a></div></div>
+<div class="ttc" id="astructbdm_1_1ModelInitializer_html_a24c333407708ae551ae06e6819d5f4eb"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">bdm::ModelInitializer::DefineSubstance</a></div><div class="ttdeci">static void DefineSubstance(size_t substance_id, const std::string &amp;substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8cc_source.html#l00023">model_initializer.cc:23</a></div></div>
 <div class="ttc" id="astructbdm_1_1ModelInitializer_html"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html">bdm::ModelInitializer</a></div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00034">model_initializer.h:34</a></div></div>
 <div class="ttc" id="adiffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
-<div class="ttc" id="astructbdm_1_1ModelInitializer_html_ac7ac30001eac5417836f4159efab19fa"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ac7ac30001eac5417836f4159efab19fa">bdm::ModelInitializer::InitializeSubstance</a></div><div class="ttdeci">static void InitializeSubstance(size_t substance_id, F function)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00335">model_initializer.h:335</a></div></div>
+<div class="ttc" id="astructbdm_1_1ModelInitializer_html_ac7ac30001eac5417836f4159efab19fa"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ac7ac30001eac5417836f4159efab19fa">bdm::ModelInitializer::InitializeSubstance</a></div><div class="ttdeci">static void InitializeSubstance(size_t substance_id, F function)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00336">model_initializer.h:336</a></div></div>
 <div class="ttc" id="aclassbdm_1_1FixedSizeVector_html_a5854ea98fa30062a22d62076a0c1803c"><div class="ttname"><a href="classbdm_1_1FixedSizeVector.html#a5854ea98fa30062a22d62076a0c1803c">bdm::FixedSizeVector::data</a></div><div class="ttdeci">const T * data() const</div><div class="ttdef"><b>Definition:</b> <a href="fixed__size__vector_8h_source.html#l00079">fixed_size_vector.h:79</a></div></div>
 <div class="ttc" id="amath__array_8h_html"><div class="ttname"><a href="math__array_8h.html">math_array.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DistributionRng_html"><div class="ttname"><a href="classbdm_1_1DistributionRng.html">bdm::DistributionRng&lt; double &gt;</a></div></div>
@@ -299,7 +301,6 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1MathArray_html"><div class="ttname"><a href="classbdm_1_1MathArray.html">bdm::MathArray&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="aresource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00066">simulation.cc:66</a></div></div>
-<div class="ttc" id="astructbdm_1_1ModelInitializer_html_ab46baa2a2e727e19c4ae24738b8efa3b"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ab46baa2a2e727e19c4ae24738b8efa3b">bdm::ModelInitializer::DefineSubstance</a></div><div class="ttdeci">static void DefineSubstance(size_t substance_id, std::string substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8cc_source.html#l00023">model_initializer.cc:23</a></div></div>
 <div class="ttc" id="astructbdm_1_1ModelInitializer_html_ad985e78c2ad1e4396da6574c9d3fb493"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#ad985e78c2ad1e4396da6574c9d3fb493">bdm::ModelInitializer::CreateAgentsRandom</a></div><div class="ttdeci">static void CreateAgentsRandom(double min, double max, uint64_t num_agents, Function agent_builder, DistributionRng&lt; double &gt; *rng=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00150">model_initializer.h:150</a></div></div>
 <div class="ttc" id="astructbdm_1_1ModelInitializer_html_a1b8d6e97aefa9501e77e99ee09851d54"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a1b8d6e97aefa9501e77e99ee09851d54">bdm::ModelInitializer::Grid3D</a></div><div class="ttdeci">static void Grid3D(size_t agents_per_dim, double space, Function agent_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00052">model_initializer.h:52</a></div></div>
 <div class="ttc" id="astructbdm_1_1ModelInitializer_html_a53d05973e7df67e998efcfe16db6be50"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a53d05973e7df67e998efcfe16db6be50">bdm::ModelInitializer::CreateAgentsOnSurfaceRndm</a></div><div class="ttdeci">static void CreateAgentsOnSurfaceRndm(double(*f)(const double *, const double *), const FixedSizeVector&lt; double, 10 &gt; &amp;fn_params, double xmin, double xmax, double ymin, double ymax, uint64_t num_agents, Function agent_builder)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8h_source.html#l00273">model_initializer.h:273</a></div></div>
