@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-68-g3f8ca018</span>
+   &#160;<span id="projectnumber">v1.01-70-g88026d3f</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// Check the number of NUMA domains on the system. Currently only 1 is</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// supported for GPU execution.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>()-&gt;GetNumaNodes() &gt; 1) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>()-&gt;GetNumaNodes() &gt; 1) {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">Log::Fatal</a>(<span class="stringliteral">&quot;MechanicalForcesOpOpenCL&quot;</span>,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;               <span class="stringliteral">&quot;\nThe GPU execution only supports systems with 1 NUMA domain.&quot;</span>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span>;</div>
@@ -312,6 +312,7 @@ $(function() {
 <div class="ttc" id="ashape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div></div>
 <div class="ttc" id="aopencl__state_8h_html"><div class="ttname"><a href="opencl__state_8h.html">opencl_state.h</a></div></div>
 <div class="ttc" id="astructbdm_1_1MechanicalForcesOpOpenCL_html_aeb23c6297920272c3dc38a2e2370aa36"><div class="ttname"><a href="structbdm_1_1MechanicalForcesOpOpenCL.html#aeb23c6297920272c3dc38a2e2370aa36">bdm::MechanicalForcesOpOpenCL::IsNonSphericalObjectPresent</a></div><div class="ttdeci">void IsNonSphericalObjectPresent(const Agent *agent, bool *answer)</div></div>
+<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a18c0b710f13449c8a1634d62eb051ac0"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8cc_source.html#l00021">thread_info.cc:21</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aoperation_8h_html"><div class="ttname"><a href="operation_8h.html">operation.h</a></div></div>
 <div class="ttc" id="athread__info_8h_html"><div class="ttname"><a href="thread__info_8h.html">thread_info.h</a></div></div>
@@ -322,7 +323,6 @@ $(function() {
 <div class="ttc" id="anamespacebdm_html_a999db57a7e39895fb42c100d7856836c"><div class="ttname"><a href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">bdm::Double3</a></div><div class="ttdeci">MathArray&lt; double, 3 &gt; Double3</div><div class="ttdoc">Alias for a size 3 MathArray.</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00396">math_array.h:396</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e"><div class="ttname"><a href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3eeae8011057b49a1102c7004b895749ab4e">bdm::kSphere</a></div><div class="ttdeci">@ kSphere</div><div class="ttdef"><b>Definition:</b> <a href="shape_8h_source.html#l00020">shape.h:20</a></div></div>
 <div class="ttc" id="amechanical__forces__op__opencl_8h_html"><div class="ttname"><a href="mechanical__forces__op__opencl_8h.html">mechanical_forces_op_opencl.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a2053a2f50fe195b5843e19ba4a827c1a"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00033">thread_info.h:33</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Log_html_aa07520e7c190055d9674de7c0fb68e01"><div class="ttname"><a href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;... parts)</div><div class="ttdoc">Prints fatal error message.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00115">log.h:115</a></div></div>
 <div class="ttc" id="abound__space__op_8h_html"><div class="ttname"><a href="bound__space__op_8h.html">bound_space_op.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Log_html_a6967948de8a82fb630d6ff4f93166211"><div class="ttname"><a href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">bdm::Log::Error</a></div><div class="ttdeci">static void Error(const std::string &amp;location, const Args &amp;... parts)</div><div class="ttdoc">Prints error message.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00079">log.h:79</a></div></div>

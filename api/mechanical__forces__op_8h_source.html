@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-68-g3f8ca018</span>
+   &#160;<span id="projectnumber">v1.01-70-g88026d3f</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbdm_1_1MechanicalForcesOp.html#a82849a762a5f1a71049051dd9e63e8ca">   42</a></span>&#160;  <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a82849a762a5f1a71049051dd9e63e8ca">MechanicalForcesOp</a>() : <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a5f0a993581acb4908ff72bbd9a7f72f1">force_</a>(new <a class="code" href="classbdm_1_1InteractionForce.html">InteractionForce</a>()) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">auto</span>* tinfo = <a class="code" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">auto</span>* tinfo = <a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a7b7851c8605e985a5ddfcbcb860d9dc3">last_iteration_</a>.resize(tinfo-&gt;GetMaxThreads(),</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                           std::numeric_limits&lt;uint64_t&gt;::max());</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classbdm_1_1MechanicalForcesOp.html#a7d05ae59fe220022c78fe14a8625a267">last_time_run_</a>.resize(tinfo-&gt;GetMaxThreads(), 0);</div>
@@ -190,6 +190,7 @@ $(function() {
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif  // CORE_OPERATION_MECHANICAL_FORCES_OP_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1MechanicalForcesOp_html"><div class="ttname"><a href="classbdm_1_1MechanicalForcesOp.html">bdm::MechanicalForcesOp</a></div><div class="ttdoc">Defines the 3D physical interactions between physical objects.</div><div class="ttdef"><b>Definition:</b> <a href="mechanical__forces__op_8h_source.html#l00038">mechanical_forces_op.h:38</a></div></div>
+<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a18c0b710f13449c8a1634d62eb051ac0"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8cc_source.html#l00021">thread_info.cc:21</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MechanicalForcesOp_html_a74f828501a61a36924e1e72b0a0e9667"><div class="ttname"><a href="classbdm_1_1MechanicalForcesOp.html#a74f828501a61a36924e1e72b0a0e9667">bdm::MechanicalForcesOp::delta_time_</a></div><div class="ttdeci">std::vector&lt; double &gt; delta_time_</div><div class="ttdef"><b>Definition:</b> <a href="mechanical__forces__op_8h_source.html#l00113">mechanical_forces_op.h:113</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aclassbdm_1_1InteractionForce_html"><div class="ttname"><a href="classbdm_1_1InteractionForce.html">bdm::InteractionForce</a></div><div class="ttdef"><b>Definition:</b> <a href="interaction__force_8h_source.html#l00026">interaction_force.h:26</a></div></div>
@@ -208,7 +209,6 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1AgentOperationImpl_html"><div class="ttname"><a href="structbdm_1_1AgentOperationImpl.html">bdm::AgentOperationImpl</a></div><div class="ttdoc">Interface for implementing an operation.</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00075">operation.h:75</a></div></div>
 <div class="ttc" id="aagent_8h_html"><div class="ttname"><a href="agent_8h.html">agent.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html_a077662861188538e5dafb4d3d1f05e48"><div class="ttname"><a href="classbdm_1_1Agent.html#a077662861188538e5dafb4d3d1f05e48">bdm::Agent::CalculateDisplacement</a></div><div class="ttdeci">virtual Double3 CalculateDisplacement(const InteractionForce *force, double squared_radius, double dt)=0</div></div>
-<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a2053a2f50fe195b5843e19ba4a827c1a"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00033">thread_info.h:33</a></div></div>
 <div class="ttc" id="abound__space__op_8h_html"><div class="ttname"><a href="bound__space__op_8h.html">bound_space_op.h</a></div></div>
 <div class="ttc" id="anamespacebdm_html_ae7d70110e21925db6a1e9b8760866b06"><div class="ttname"><a href="namespacebdm.html#ae7d70110e21925db6a1e9b8760866b06">bdm::ApplyBoundingBox</a></div><div class="ttdeci">void ApplyBoundingBox(Agent *agent, Param::BoundSpaceMode mode, double lb, double rb)</div><div class="ttdef"><b>Definition:</b> <a href="bound__space__op_8h_source.html#l00026">bound_space_op.h:26</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MechanicalForcesOp_html_a5f0a993581acb4908ff72bbd9a7f72f1"><div class="ttname"><a href="classbdm_1_1MechanicalForcesOp.html#a5f0a993581acb4908ff72bbd9a7f72f1">bdm::MechanicalForcesOp::force_</a></div><div class="ttdeci">InteractionForce * force_</div><div class="ttdef"><b>Definition:</b> <a href="mechanical__forces__op_8h_source.html#l00110">mechanical_forces_op.h:110</a></div></div>

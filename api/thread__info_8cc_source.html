@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-68-g3f8ca018</span>
+   &#160;<span id="projectnumber">v1.01-70-g88026d3f</span>
    </div>
   </td>
  </tr>
@@ -90,17 +90,24 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;std::atomic&lt;uint64_t&gt; <a class="code" href="classbdm_1_1ThreadInfo.html#ab63b3a2593983cfb6102c4cdbd32cf2b">ThreadInfo::thread_counter_</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classbdm_1_1ThreadInfo.html#ac129fd0c1ebb97eb4132be9e82653e19">   21</a></span>&#160;uint64_t <a class="code" href="classbdm_1_1ThreadInfo.html#ac129fd0c1ebb97eb4132be9e82653e19">ThreadInfo::GetUniversalThreadId</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  thread_local uint64_t kTid = <a class="code" href="classbdm_1_1ThreadInfo.html#ab63b3a2593983cfb6102c4cdbd32cf2b">thread_counter_</a>++;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> kTid;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">   21</a></span>&#160;<a class="code" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a>* <a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>() {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">static</span> <a class="code" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a> kInstance;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> &amp;kInstance;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classbdm_1_1ThreadInfo.html#ac129fd0c1ebb97eb4132be9e82653e19">   26</a></span>&#160;uint64_t <a class="code" href="classbdm_1_1ThreadInfo.html#ac129fd0c1ebb97eb4132be9e82653e19">ThreadInfo::GetUniversalThreadId</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  thread_local uint64_t kTid = <a class="code" href="classbdm_1_1ThreadInfo.html#ab63b3a2593983cfb6102c4cdbd32cf2b">thread_counter_</a>++;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">return</span> kTid;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a18c0b710f13449c8a1634d62eb051ac0"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8cc_source.html#l00021">thread_info.cc:21</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="athread__info_8h_html"><div class="ttname"><a href="thread__info_8h.html">thread_info.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ThreadInfo_html_ab63b3a2593983cfb6102c4cdbd32cf2b"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#ab63b3a2593983cfb6102c4cdbd32cf2b">bdm::ThreadInfo::thread_counter_</a></div><div class="ttdeci">static std::atomic&lt; uint64_t &gt; thread_counter_</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00135">thread_info.h:135</a></div></div>
-<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_ac129fd0c1ebb97eb4132be9e82653e19"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#ac129fd0c1ebb97eb4132be9e82653e19">bdm::ThreadInfo::GetUniversalThreadId</a></div><div class="ttdeci">uint64_t GetUniversalThreadId() const</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8cc_source.html#l00021">thread_info.cc:21</a></div></div>
+<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_ac129fd0c1ebb97eb4132be9e82653e19"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#ac129fd0c1ebb97eb4132be9e82653e19">bdm::ThreadInfo::GetUniversalThreadId</a></div><div class="ttdeci">uint64_t GetUniversalThreadId() const</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8cc_source.html#l00026">thread_info.cc:26</a></div></div>
+<div class="ttc" id="aclassbdm_1_1ThreadInfo_html"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html">bdm::ThreadInfo</a></div><div class="ttdoc">This class stores information about each thread. (e.g. to which NUMA node it belongs to....</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00031">thread_info.h:31</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

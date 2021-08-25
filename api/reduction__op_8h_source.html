@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-68-g3f8ca018</span>
+   &#160;<span id="projectnumber">v1.01-70-g88026d3f</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classbdm_1_1ReductionOp.html#a4ddab5644d4a320e2f2782fbdb590e88">   38</a></span>&#160;  <a class="code" href="classbdm_1_1ReductionOp.html#a4ddab5644d4a320e2f2782fbdb590e88">ReductionOp</a>() {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classbdm_1_1ReductionOp.html#ac85ee9b0de9684c128b0dc29453f8ad1">tl_results_</a>.resize(<a class="code" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>()-&gt;GetMaxThreads());</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classbdm_1_1ReductionOp.html#ac85ee9b0de9684c128b0dc29453f8ad1">tl_results_</a>.resize(<a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>()-&gt;GetMaxThreads());</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbdm_1_1ReductionOp.html#a145d6fb4a74905e558a66c2097e7b89d">   42</a></span>&#160;  <a class="code" href="classbdm_1_1ReductionOp.html#a145d6fb4a74905e558a66c2097e7b89d">~ReductionOp</a>() {</div>
@@ -127,7 +127,7 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// This operator will be called for each agent in a parallel loop</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classbdm_1_1ReductionOp.html#a5b8dd9bac00dfb3118edba2593c4a9ce">   60</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ReductionOp.html#a5b8dd9bac00dfb3118edba2593c4a9ce">operator()</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">auto</span> tid = <a class="code" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>()-&gt;<a class="code" href="classbdm_1_1ThreadInfo.html#a8c82506e89c8475c6d6dc279e79d6720">GetMyThreadId</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">auto</span> tid = <a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>()-&gt;<a class="code" href="classbdm_1_1ThreadInfo.html#a8c82506e89c8475c6d6dc279e79d6720">GetMyThreadId</a>();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    (*agent_functor_)(agent, &amp;(<a class="code" href="classbdm_1_1ReductionOp.html#ac85ee9b0de9684c128b0dc29453f8ad1">tl_results_</a>[tid]));</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
@@ -170,6 +170,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_a353b3b33ff99efee3508721d018f83f5"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a353b3b33ff99efee3508721d018f83f5">bdm::ReductionOp::TearDown</a></div><div class="ttdeci">void TearDown() override</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00069">reduction_op.h:69</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_a0a934045afc68dd2c09323fe64151cca"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a0a934045afc68dd2c09323fe64151cca">bdm::ReductionOp::BDM_OP_HEADER</a></div><div class="ttdeci">BDM_OP_HEADER(ReductionOp)</div></div>
+<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a18c0b710f13449c8a1634d62eb051ac0"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8cc_source.html#l00021">thread_info.cc:21</a></div></div>
 <div class="ttc" id="astructbdm_1_1SumReduction_html_a6d55f5b607a0b8c07aecf8cf5d328351"><div class="ttname"><a href="structbdm_1_1SumReduction.html#a6d55f5b607a0b8c07aecf8cf5d328351">bdm::SumReduction::operator()</a></div><div class="ttdeci">T operator()(const SharedData&lt; T &gt; &amp;tl_results) override</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00088">reduction_op.h:88</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_af5b626230bdba1b28199f80a8c48baca"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#af5b626230bdba1b28199f80a8c48baca">bdm::ReductionOp::results_</a></div><div class="ttdeci">std::vector&lt; T &gt; results_</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00075">reduction_op.h:75</a></div></div>
 <div class="ttc" id="aclassbdm_1_1SharedData_html"><div class="ttname"><a href="classbdm_1_1SharedData.html">bdm::SharedData</a></div><div class="ttdoc">The SharedData class avoids false sharing between threads.</div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00031">shared_data.h:31</a></div></div>
@@ -189,7 +190,6 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_af6c438cec41e84f1f1736a7fda6b012f"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#af6c438cec41e84f1f1736a7fda6b012f">bdm::ReductionOp::reduce_functor_</a></div><div class="ttdeci">Functor&lt; T, const SharedData&lt; T &gt; &amp; &gt; * reduce_functor_</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00083">reduction_op.h:83</a></div></div>
 <div class="ttc" id="astructbdm_1_1AgentOperationImpl_html"><div class="ttname"><a href="structbdm_1_1AgentOperationImpl.html">bdm::AgentOperationImpl</a></div><div class="ttdoc">Interface for implementing an operation.</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00075">operation.h:75</a></div></div>
 <div class="ttc" id="aagent_8h_html"><div class="ttname"><a href="agent_8h.html">agent.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a2053a2f50fe195b5843e19ba4a827c1a"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00033">thread_info.h:33</a></div></div>
 <div class="ttc" id="ashared__data_8h_html"><div class="ttname"><a href="shared__data_8h.html">shared_data.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html"><div class="ttname"><a href="classbdm_1_1ReductionOp.html">bdm::ReductionOp</a></div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00034">reduction_op.h:34</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a8c82506e89c8475c6d6dc279e79d6720"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a8c82506e89c8475c6d6dc279e79d6720">bdm::ThreadInfo::GetMyThreadId</a></div><div class="ttdeci">int GetMyThreadId() const</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00039">thread_info.h:39</a></div></div>

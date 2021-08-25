@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r1_5f_1327',['r1_',['../classbdm_1_1RungaKuttaGrid.html#ace63edfe923dbd38154f5f68547aa71e',1,'bdm::RungaKuttaGrid']]],
-  ['random_1328',['Random',['../classbdm_1_1Random.html',1,'bdm::Random'],['../classbdm_1_1Random.html#a2ecd4f3d5e8abd128d874b401e4df592',1,'bdm::Random::Random()'],['../classbdm_1_1Random.html#a2dfa6f1f37d7bb0ddefccd8da16ae920',1,'bdm::Random::Random(TRootIOCtor *)'],['../classbdm_1_1Random.html#a00d3263bcc6bbb0f831df6c018d2285b',1,'bdm::Random::Random(const Random &amp;other)'],['../structbdm_1_1Ubrng.html#af09543ffd485af69801e793367046975',1,'bdm::Ubrng::random()']]],
+  ['random_1328',['Random',['../classbdm_1_1Random.html',1,'bdm::Random'],['../structbdm_1_1Ubrng.html#af09543ffd485af69801e793367046975',1,'bdm::Ubrng::random()'],['../classbdm_1_1Random.html#a2ecd4f3d5e8abd128d874b401e4df592',1,'bdm::Random::Random()'],['../classbdm_1_1Random.html#a2dfa6f1f37d7bb0ddefccd8da16ae920',1,'bdm::Random::Random(TRootIOCtor *)'],['../classbdm_1_1Random.html#a00d3263bcc6bbb0f831df6c018d2285b',1,'bdm::Random::Random(const Random &amp;other)']]],
   ['random_2ecc_1329',['random.cc',['../random_8cc.html',1,'']]],
   ['random_2eh_1330',['random.h',['../random_8h.html',1,'']]],
   ['random_5f_1331',['random_',['../classbdm_1_1Simulation.html#a47d53e7e95c4744483ea213cf3407a47',1,'bdm::Simulation']]],

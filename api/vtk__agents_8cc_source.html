@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-68-g3f8ca018</span>
+   &#160;<span id="projectnumber">v1.01-70-g88026d3f</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classbdm_1_1VtkAgents.html#a51175d064642cd4795ff6c9390a63a1c">   44</a></span>&#160;<a class="code" href="classbdm_1_1VtkAgents.html#a51175d064642cd4795ff6c9390a63a1c">VtkAgents::VtkAgents</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* type_name,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                     vtkCPDataDescription* data_description) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">auto</span>* param = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>()-&gt;<a class="code" href="classbdm_1_1Simulation.html#ad89da4f94b996ac4b356f76d98f94fbf">GetParam</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">auto</span>* tinfo = <a class="code" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">auto</span>* tinfo = <a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span> (param-&gt;export_visualization) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classbdm_1_1VtkAgents.html#aada9bce0c955dd2e24ed637f2a00c16e">data_</a>.resize(tinfo-&gt;GetMaxThreads());</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  } <span class="keywordflow">else</span> {</div>
@@ -197,7 +197,7 @@ $(function() {
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordflow">if</span> (param-&gt;export_visualization) {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#pragma omp parallel</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keyword">auto</span>* tinfo = <a class="code" href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">ThreadInfo::GetInstance</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keyword">auto</span>* tinfo = <a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>();</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keyword">auto</span> tid = tinfo-&gt;GetMyThreadId();</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keyword">auto</span> max_threads = tinfo-&gt;GetMaxThreads();</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
@@ -282,6 +282,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_aada9bce0c955dd2e24ed637f2a00c16e"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#aada9bce0c955dd2e24ed637f2a00c16e">bdm::VtkAgents::data_</a></div><div class="ttdeci">std::vector&lt; vtkUnstructuredGrid * &gt; data_</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8h_source.html#l00051">vtk_agents.h:51</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_ae54fcfec6524fb15be457009eaa4862e"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#ae54fcfec6524fb15be457009eaa4862e">bdm::VtkAgents::shape_</a></div><div class="ttdeci">Shape shape_</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8h_source.html#l00052">vtk_agents.h:52</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_a46cfb562686256f533f3f6439f0ef24a"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a46cfb562686256f533f3f6439f0ef24a">bdm::VtkAgents::GetData</a></div><div class="ttdeci">vtkUnstructuredGrid * GetData(uint64_t idx)</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00114">vtk_agents.cc:114</a></div></div>
+<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a18c0b710f13449c8a1634d62eb051ac0"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8cc_source.html#l00021">thread_info.cc:21</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="astructbdm_1_1MappedDataArrayInterface_html"><div class="ttname"><a href="structbdm_1_1MappedDataArrayInterface.html">bdm::MappedDataArrayInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="mapped__data__array_8h_source.html#l00119">mapped_data_array.h:119</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_a64e885babb37225f206a2130adebffa4"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a64e885babb37225f206a2130adebffa4">bdm::VtkAgents::GetShape</a></div><div class="ttdeci">Shape GetShape() const</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00117">vtk_agents.cc:117</a></div></div>
@@ -297,7 +298,6 @@ $(function() {
 <div class="ttc" id="anamespacebdm_html_a0feb64c43069846f8e6b9ffd524c52a4"><div class="ttname"><a href="namespacebdm.html#a0feb64c43069846f8e6b9ffd524c52a4">bdm::Concat</a></div><div class="ttdeci">std::string Concat(const Args &amp;... parts)</div><div class="ttdoc">Concatenates all arguments into a string. Equivalent to streaming all arguments into a stringstream a...</div><div class="ttdef"><b>Definition:</b> <a href="string_8h_source.html#l00070">string.h:70</a></div></div>
 <div class="ttc" id="aagent_8h_html"><div class="ttname"><a href="agent_8h.html">agent.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1JitForEachDataMemberFunctor_html"><div class="ttname"><a href="classbdm_1_1JitForEachDataMemberFunctor.html">bdm::JitForEachDataMemberFunctor</a></div><div class="ttdef"><b>Definition:</b> <a href="jit_8h_source.html#l00049">jit.h:49</a></div></div>
-<div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a2053a2f50fe195b5843e19ba4a827c1a"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a2053a2f50fe195b5843e19ba4a827c1a">bdm::ThreadInfo::GetInstance</a></div><div class="ttdeci">static ThreadInfo * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00033">thread_info.h:33</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Log_html_aa07520e7c190055d9674de7c0fb68e01"><div class="ttname"><a href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;... parts)</div><div class="ttdoc">Prints fatal error message.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00115">log.h:115</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_a3a8ae000f38614a6f9d1b182c9c9dcc3"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a3a8ae000f38614a6f9d1b182c9c9dcc3">bdm::VtkAgents::WriteToFile</a></div><div class="ttdeci">void WriteToFile(uint64_t step) const</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00146">vtk_agents.cc:146</a></div></div>
 <div class="ttc" id="astructbdm_1_1ParallelVtuWriter_html"><div class="ttname"><a href="structbdm_1_1ParallelVtuWriter.html">bdm::ParallelVtuWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="parallel__vtu__writer_8h_source.html#l00026">parallel_vtu_writer.h:26</a></div></div>
