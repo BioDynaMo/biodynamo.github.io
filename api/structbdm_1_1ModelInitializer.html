@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-78-g6537a07c</span>
+   &#160;<span id="projectnumber">v1.01.89-23997d96</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a735ffa4866aec4bf638d743d2fee902e"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
 <tr class="memitem:a735ffa4866aec4bf638d743d2fee902e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a735ffa4866aec4bf638d743d2fee902e">CreateAgentsOnSphereRndm</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;center, double radius, uint64_t num_agents, Function agent_builder)</td></tr>
 <tr class="separator:a735ffa4866aec4bf638d743d2fee902e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d4eb3fd8c928b7adfe3f601bb640fd"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
+<tr class="memitem:a56d4eb3fd8c928b7adfe3f601bb640fd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a56d4eb3fd8c928b7adfe3f601bb640fd">CreateAgentsInSphereRndm</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;center, double radius, uint64_t num_agents, Function agent_builder)</td></tr>
+<tr class="separator:a56d4eb3fd8c928b7adfe3f601bb640fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24c333407708ae551ae06e6819d5f4eb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">DefineSubstance</a> (size_t substance_id, const std::string &amp;substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</td></tr>
 <tr class="separator:a24c333407708ae551ae06e6819d5f4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ac30001eac5417836f4159efab19fa"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
@@ -107,7 +110,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00034">34</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00036">36</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab2d758c880182ee60f701eeee9d0ec3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2d758c880182ee60f701eeee9d0ec3d">&#9670;&nbsp;</a></span>CreateAgents()</h2>
@@ -153,7 +156,69 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00121">121</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00123">123</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+
+</div>
+</div>
+<a id="a56d4eb3fd8c928b7adfe3f601bb640fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d4eb3fd8c928b7adfe3f601bb640fd">&#9670;&nbsp;</a></span>CreateAgentsInSphereRndm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Function &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void bdm::ModelInitializer::CreateAgentsInSphereRndm </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>num_agents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Function&#160;</td>
+          <td class="paramname"><em>agent_builder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates agents with random positions in a sphere and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. Agents are distributed uniformly inside the sphere. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. Algorithm: Knop, 1970, 10.1145/362349.362377 (doi).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>Center of the sphere </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">radius</td><td>Radius of the sphere </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_agents</td><td>The number of agents </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">agent_builder</td><td>function containing the logic to instantiate a new agent. Takes <code>const Double3&amp;</code> as input parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00337">337</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +269,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates agents with random positions on a sphere and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized.</p>
+<p>Creates agents with random positions on a sphere and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. The agents' positions are uniformly distributed accross the surface. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. Algorithm: Knop, 1970, 10.1145/362349.362377 (doi).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>Center of the sphere </td></tr>
@@ -215,7 +280,7 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00303">303</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00307">307</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +387,7 @@ ModelInitializer::CreateAgentsOnSurface(f, {}, -100, 100, 10, -100,
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00213">213</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00215">215</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +486,7 @@ ModelInitializer::CreateAgentsOnSurfaceRndm(f, {}, -100, 100, -100,
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00273">273</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00275">275</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +555,7 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00150">150</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00152">152</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +678,7 @@ pos){ return Cell(pos); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00091">91</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00093">93</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -669,7 +734,7 @@ return Cell(pos); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00052">52</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00054">54</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -709,7 +774,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00336">336</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00390">390</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>

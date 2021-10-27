@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01-78-g6537a07c</span>
+   &#160;<span id="projectnumber">v1.01.89-23997d96</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 <div class="contents">
 <a href="math_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (C) 2021 CERN &amp; Newcastle University for the benefit of the</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (C) 2021 CERN &amp; University of Surrey for the benefit of the</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// BioDynaMo collaboration. All Rights Reserved.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
@@ -137,7 +137,7 @@ $(function() {
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      vect_perp[0] = a[1];</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      vect_perp[1] = -a[0];</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      vect_perp[2] = 0.0;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      vect_perp.<a class="code" href="classbdm_1_1MathArray.html#a4035a0dd466cdbdc2ea0b1f581a0e3af">Normalize</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      vect_perp.<a class="code" href="classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6">Normalize</a>();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      vect_perp = <a class="code" href="structbdm_1_1Math.html#a0bb76d5981eba8f596ac2ab8cbae2bb7">RotAroundAxis</a>(vect_perp, 6.35 * random, a);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> vect_perp;</div>
@@ -146,7 +146,7 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structbdm_1_1Math.html#a0bb76d5981eba8f596ac2ab8cbae2bb7">   92</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a> <a class="code" href="structbdm_1_1Math.html#a0bb76d5981eba8f596ac2ab8cbae2bb7">RotAroundAxis</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a>&amp; vector, <span class="keywordtype">double</span> theta,</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a>&amp; axis) {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">auto</span> naxis = axis;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    naxis.<a class="code" href="classbdm_1_1MathArray.html#a4035a0dd466cdbdc2ea0b1f581a0e3af">Normalize</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    naxis.<a class="code" href="classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6">Normalize</a>();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">auto</span> temp_1 = naxis * (vector * naxis);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">auto</span> temp_2 = (vector - temp_1) * std::cos(-theta);</div>
@@ -182,7 +182,6 @@ $(function() {
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif  // CORE_UTIL_MATH_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassbdm_1_1MathArray_html_a4035a0dd466cdbdc2ea0b1f581a0e3af"><div class="ttname"><a href="classbdm_1_1MathArray.html#a4035a0dd466cdbdc2ea0b1f581a0e3af">bdm::MathArray::Normalize</a></div><div class="ttdeci">MathArray &amp; Normalize()</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00354">math_array.h:354</a></div></div>
 <div class="ttc" id="astructbdm_1_1Math_html_ad9439a4fcc5acbc6b378ed45b26786f8"><div class="ttname"><a href="structbdm_1_1Math.html#ad9439a4fcc5acbc6b378ed45b26786f8">bdm::Math::Perp3</a></div><div class="ttdeci">static Double3 Perp3(const Double3 &amp;a, double random)</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00068">math.h:68</a></div></div>
 <div class="ttc" id="astructbdm_1_1Math_html_a59ce6781aaf6ed4ee0c7648fd33f6b55"><div class="ttname"><a href="structbdm_1_1Math.html#a59ce6781aaf6ed4ee0c7648fd33f6b55">bdm::Math::kPi</a></div><div class="ttdeci">static constexpr double kPi</div><div class="ttdoc">value of pi</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00033">math.h:33</a></div></div>
 <div class="ttc" id="astructbdm_1_1Math_html"><div class="ttname"><a href="structbdm_1_1Math.html">bdm::Math</a></div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00031">math.h:31</a></div></div>
@@ -202,6 +201,7 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1Math_html_af686ccdb5c4a9b25e6c5177bf8d8c4eb"><div class="ttname"><a href="structbdm_1_1Math.html#af686ccdb5c4a9b25e6c5177bf8d8c4eb">bdm::Math::GetL2Distance</a></div><div class="ttdeci">static double GetL2Distance(const Double3 &amp;pos1, const Double3 &amp;pos2)</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00041">math.h:41</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html"><div class="ttname"><a href="classbdm_1_1MathArray.html">bdm::MathArray&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="astructbdm_1_1Math_html_a52948fe84bf4f2019e4880fba8e13753"><div class="ttname"><a href="structbdm_1_1Math.html#a52948fe84bf4f2019e4880fba8e13753">bdm::Math::MSE</a></div><div class="ttdeci">static double MSE(const std::vector&lt; double &gt; &amp;v1, const std::vector&lt; double &gt; &amp;v2)</div><div class="ttdoc">Returns the mean squared error between two vectors.</div><div class="ttdef"><b>Definition:</b> <a href="math_8h_source.html#l00122">math.h:122</a></div></div>
+<div class="ttc" id="aclassbdm_1_1MathArray_html_ab4f4c7633d1d4b42724bc89d63550ed6"><div class="ttname"><a href="classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6">bdm::MathArray::Normalize</a></div><div class="ttdeci">void Normalize()</div><div class="ttdoc">Normalize the array in-place.</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00353">math_array.h:353</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
