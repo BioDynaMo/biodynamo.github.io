@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.91-aeb9ce21</span>
+   &#160;<span id="projectnumber">v1.01.96-a06bafed</span>
    </div>
   </td>
  </tr>
@@ -81,7 +81,7 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for bdm::DiffusionGrid:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DiffusionGrid__inherit__graph.svg" width="471" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1DiffusionGrid__inherit__graph.svg" width="315" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -105,12 +105,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a74e0486a606e83ad410984f540b8e69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0592033865029992e169cfc333dae90d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a0592033865029992e169cfc333dae90d">Update</a> ()</td></tr>
 <tr class="separator:a0592033865029992e169cfc333dae90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06be6e1469c249b0fbecc2c5d7b3b074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a06be6e1469c249b0fbecc2c5d7b3b074">Diffuse</a> ()</td></tr>
-<tr class="separator:a06be6e1469c249b0fbecc2c5d7b3b074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a012349c679b3f4145a54766abd6dd1b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a012349c679b3f4145a54766abd6dd1b3">DiffuseWithClosedEdge</a> ()=0</td></tr>
-<tr class="separator:a012349c679b3f4145a54766abd6dd1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c899b747ad9a5402641106a643ed57e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a1c899b747ad9a5402641106a643ed57e">DiffuseWithOpenEdge</a> ()=0</td></tr>
-<tr class="separator:a1c899b747ad9a5402641106a643ed57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dfb1cc5ec0c3a2d27ec05581dc8529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#af6dfb1cc5ec0c3a2d27ec05581dc8529">Diffuse</a> (double dt)</td></tr>
+<tr class="separator:af6dfb1cc5ec0c3a2d27ec05581dc8529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2df068abb19d2adee5f1ea3e0715b1d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ab2df068abb19d2adee5f1ea3e0715b1d">DiffuseWithClosedEdge</a> (double dt)=0</td></tr>
+<tr class="separator:ab2df068abb19d2adee5f1ea3e0715b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654ff5f7695884267aefddf3c580c7ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a654ff5f7695884267aefddf3c580c7ef">DiffuseWithOpenEdge</a> (double dt)=0</td></tr>
+<tr class="separator:a654ff5f7695884267aefddf3c580c7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86d03c3d92b607d4c65a17bc30c165d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a86d03c3d92b607d4c65a17bc30c165d2">CalculateGradient</a> ()</td></tr>
 <tr class="separator:a86d03c3d92b607d4c65a17bc30c165d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a292156d001789cc5dc8a121316deb3a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7">RunInitializers</a> ()</td></tr>
@@ -137,10 +137,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae39c6f0926ee8f67550c1a61fe4b9109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a199259da821fd2b2efc4616528d2a00e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a199259da821fd2b2efc4616528d2a00e">SetDecayConstant</a> (double mu)</td></tr>
 <tr class="separator:a199259da821fd2b2efc4616528d2a00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a08309bcd8e0354c9812e14423248a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a3a08309bcd8e0354c9812e14423248a6">SetConcentrationThreshold</a> (double t)</td></tr>
-<tr class="separator:a3a08309bcd8e0354c9812e14423248a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8158d96593ed8a44b6b28f0907d6313e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a8158d96593ed8a44b6b28f0907d6313e">GetConcentrationThreshold</a> () const</td></tr>
-<tr class="separator:a8158d96593ed8a44b6b28f0907d6313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f722bcb798ba31e77bf297c9cf367c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a07f722bcb798ba31e77bf297c9cf367c">GetLastTimestep</a> ()</td></tr>
+<tr class="memdesc:a07f722bcb798ba31e77bf297c9cf367c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the last timestep <code>dt</code> that was used to run <code>Diffuse(dt)</code>  <a href="classbdm_1_1DiffusionGrid.html#a07f722bcb798ba31e77bf297c9cf367c">More...</a><br /></td></tr>
+<tr class="separator:a07f722bcb798ba31e77bf297c9cf367c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e77a7c617b71895de58d3567370545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a67e77a7c617b71895de58d3567370545">SetUpperThreshold</a> (double t)</td></tr>
+<tr class="separator:a67e77a7c617b71895de58d3567370545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7196fb2666eefbf932f4d03325923248"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a7196fb2666eefbf932f4d03325923248">GetUpperThreshold</a> () const</td></tr>
+<tr class="separator:a7196fb2666eefbf932f4d03325923248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5182789b0e2c76236060b0fc5e48bb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a5182789b0e2c76236060b0fc5e48bb03">SetLowerThreshold</a> (double t)</td></tr>
+<tr class="separator:a5182789b0e2c76236060b0fc5e48bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecc650015498b0a96c2337105001de7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#aaecc650015498b0a96c2337105001de7">GetLowerThreshold</a> () const</td></tr>
+<tr class="separator:aaecc650015498b0a96c2337105001de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa72a1dc5ada52134af913a302184801"><td class="memItemLeft" align="right" valign="top">const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#aaa72a1dc5ada52134af913a302184801">GetAllConcentrations</a> () const</td></tr>
 <tr class="separator:aaa72a1dc5ada52134af913a302184801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3c1a6b69aa6263593c306a0e89dc4aa"><td class="memItemLeft" align="right" valign="top">const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae3c1a6b69aa6263593c306a0e89dc4aa">GetAllGradients</a> () const</td></tr>
@@ -177,8 +184,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ae629fc95a257bfd8438d5de2224c2540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae629fc95a257bfd8438d5de2224c2540">ParametersCheck</a> ()</td></tr>
-<tr class="separator:ae629fc95a257bfd8438d5de2224c2540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce4c16472c7576788bde6773d39b6de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#afce4c16472c7576788bde6773d39b6de">ParametersCheck</a> (double dt)</td></tr>
+<tr class="separator:afce4c16472c7576788bde6773d39b6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcf39b59dd2c30e4869f1e9be11adb57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#afcf39b59dd2c30e4869f1e9be11adb57">CopyOldData</a> (const <a class="el" href="classbdm_1_1ParallelResizeVector.html">ParallelResizeVector</a>&lt; double &gt; &amp;old_c1, const <a class="el" href="classbdm_1_1ParallelResizeVector.html">ParallelResizeVector</a>&lt; <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &gt; &amp;old_gradients, size_t old_resolution)</td></tr>
 <tr class="separator:afcf39b59dd2c30e4869f1e9be11adb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d57e1f4fe0ad515d908c83e9343936"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae9d57e1f4fe0ad515d908c83e9343936">BDM_CLASS_DEF</a> (<a class="el" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>, 1)</td></tr>
@@ -209,15 +216,15 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a76a9ee56e6bc4649a946083eb272f552"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ParallelResizeVector.html">ParallelResizeVector</a>&lt; <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a76a9ee56e6bc4649a946083eb272f552">gradients_</a> = {}</td></tr>
 <tr class="memdesc:a76a9ee56e6bc4649a946083eb272f552"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array of gradients (x, y, z)  <a href="classbdm_1_1DiffusionGrid.html#a76a9ee56e6bc4649a946083eb272f552">More...</a><br /></td></tr>
 <tr class="separator:a76a9ee56e6bc4649a946083eb272f552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57e1764eef2800d468f7350426c47094"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094">concentration_threshold_</a> = 1e15</td></tr>
-<tr class="memdesc:a57e1764eef2800d468f7350426c47094"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum concentration value that a box can have.  <a href="classbdm_1_1DiffusionGrid.html#a57e1764eef2800d468f7350426c47094">More...</a><br /></td></tr>
-<tr class="separator:a57e1764eef2800d468f7350426c47094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d69f91ea7187ee5f1c3f0f70cc4245"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa4d69f91ea7187ee5f1c3f0f70cc4245">upper_threshold_</a> = 1e15</td></tr>
+<tr class="memdesc:aa4d69f91ea7187ee5f1c3f0f70cc4245"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum concentration value that a box can have.  <a href="classbdm_1_1DiffusionGrid.html#aa4d69f91ea7187ee5f1c3f0f70cc4245">More...</a><br /></td></tr>
+<tr class="separator:aa4d69f91ea7187ee5f1c3f0f70cc4245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0772a8f7476cd7b041cb6f75b978d2c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa0772a8f7476cd7b041cb6f75b978d2c">lower_threshold_</a> = -1e15</td></tr>
+<tr class="memdesc:aa0772a8f7476cd7b041cb6f75b978d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum concentration value that a box can have.  <a href="classbdm_1_1DiffusionGrid.html#aa0772a8f7476cd7b041cb6f75b978d2c">More...</a><br /></td></tr>
+<tr class="separator:aa0772a8f7476cd7b041cb6f75b978d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2257dca5dc35bc2a2f901daa38c16881"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 7 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881">dc_</a> = {{0}}</td></tr>
 <tr class="memdesc:a2257dca5dc35bc2a2f901daa38c16881"><td class="mdescLeft">&#160;</td><td class="mdescRight">The diffusion coefficients [cc, cw, ce, cs, cn, cb, ct].  <a href="classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881">More...</a><br /></td></tr>
 <tr class="separator:a2257dca5dc35bc2a2f901daa38c16881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496fc06a9fc802ccd3d881b4d66795c0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">dt_</a> = 1.0</td></tr>
-<tr class="memdesc:a496fc06a9fc802ccd3d881b4d66795c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timestep resolution fhe diffusion grid.  <a href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">More...</a><br /></td></tr>
-<tr class="separator:a496fc06a9fc802ccd3d881b4d66795c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa960bd597f7fe15c44fc2a6a1776257a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a> = 0</td></tr>
 <tr class="memdesc:aa960bd597f7fe15c44fc2a6a1776257a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The decay constant.  <a href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">More...</a><br /></td></tr>
 <tr class="separator:aa960bd597f7fe15c44fc2a6a1776257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +239,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae409055b116d149dae25f87fd945cd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80583392ca9ff64695ef3bf94f0d3e92"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">resolution_</a> = 0</td></tr>
 <tr class="separator:a80583392ca9ff64695ef3bf94f0d3e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9411ca62e0a56f207e497e80aebc59fa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a9411ca62e0a56f207e497e80aebc59fa">last_dt_</a> = 0.0</td></tr>
+<tr class="memdesc:a9411ca62e0a56f207e497e80aebc59fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last timestep <code>dt</code> used for the diffusion grid update <code>Diffuse(dt)</code>  <a href="classbdm_1_1DiffusionGrid.html#a9411ca62e0a56f207e497e80aebc59fa">More...</a><br /></td></tr>
+<tr class="separator:a9411ca62e0a56f207e497e80aebc59fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43eb9c7672545e39ce391b08e6ea24d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a43eb9c7672545e39ce391b08e6ea24d3">parity_</a> = false</td></tr>
 <tr class="memdesc:a43eb9c7672545e39ce391b08e6ea24d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If false, grid dimensions are even; if true, they are odd.  <a href="classbdm_1_1DiffusionGrid.html#a43eb9c7672545e39ce391b08e6ea24d3">More...</a><br /></td></tr>
 <tr class="separator:a43eb9c7672545e39ce391b08e6ea24d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,12 +252,10 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a6e2f088b9db0f2919f157f9a23eae28b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a6e2f088b9db0f2919f157f9a23eae28b">RungaKuttaGrid</a></td></tr>
-<tr class="separator:a6e2f088b9db0f2919f157f9a23eae28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af885ef3aef0080a763a84057187a5f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a1af885ef3aef0080a763a84057187a5f">RungeKuttaGrid</a></td></tr>
+<tr class="separator:a1af885ef3aef0080a763a84057187a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5b1f36f7a03d430f0602c4377aaadad"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac5b1f36f7a03d430f0602c4377aaadad">EulerGrid</a></td></tr>
 <tr class="separator:ac5b1f36f7a03d430f0602c4377aaadad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f2b5113fee8f9e390d9e1d79906d2c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#a92f2b5113fee8f9e390d9e1d79906d2c">StencilGrid</a></td></tr>
-<tr class="separator:a92f2b5113fee8f9e390d9e1d79906d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2cfb15a02d10acf2c124625070a2de8"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ac2cfb15a02d10acf2c124625070a2de8">TestGrid</a></td></tr>
 <tr class="separator:ac2cfb15a02d10acf2c124625070a2de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -420,7 +428,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00146">146</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00157">157</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +487,7 @@ template&lt;typename F &gt; </div>
 <p>where c(x) implies the concentration at position x</p>
 <p>At the edges the gradient is the same as the box next to it </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00206">206</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00223">223</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -511,7 +519,7 @@ template&lt;typename F &gt; </div>
 
 <p>Increase the concentration at specified box with specified amount. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00272">272</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00289">289</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -543,7 +551,7 @@ template&lt;typename F &gt; </div>
 
 <p>Increase the concentration at specified box with specified amount. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00279">279</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00296">296</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -592,12 +600,12 @@ template&lt;typename F &gt; </div>
                         [0 0  0  0]
 </pre><p>The dimensions are doubled in this case from 2x2 to 4x4 If the dimensions would be increased from 2x2 to 3x3, it will still be increased to 4x4 in order for GetBoxIndex to function correctly </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00143">143</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00148">148</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
-<a id="a06be6e1469c249b0fbecc2c5d7b3b074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06be6e1469c249b0fbecc2c5d7b3b074">&#9670;&nbsp;</a></span>Diffuse()</h2>
+<a id="af6dfb1cc5ec0c3a2d27ec05581dc8529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dfb1cc5ec0c3a2d27ec05581dc8529">&#9670;&nbsp;</a></span>Diffuse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +613,8 @@ template&lt;typename F &gt; </div>
         <tr>
           <td class="memname">void bdm::DiffusionGrid::Diffuse </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -615,8 +624,8 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
-<a id="a012349c679b3f4145a54766abd6dd1b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a012349c679b3f4145a54766abd6dd1b3">&#9670;&nbsp;</a></span>DiffuseWithClosedEdge()</h2>
+<a id="ab2df068abb19d2adee5f1ea3e0715b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2df068abb19d2adee5f1ea3e0715b1d">&#9670;&nbsp;</a></span>DiffuseWithClosedEdge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,7 +636,8 @@ template&lt;typename F &gt; </div>
         <tr>
           <td class="memname">virtual void bdm::DiffusionGrid::DiffuseWithClosedEdge </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -638,12 +648,12 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classbdm_1_1RungaKuttaGrid.html#aaaa2e2b301aee00b7592291fbaec5eb2">bdm::RungaKuttaGrid</a>, <a class="el" href="classbdm_1_1EulerGrid.html#a0905c53dc313a46ea99ff9b6daac53e0">bdm::EulerGrid</a>, and <a class="el" href="classbdm_1_1StencilGrid.html#ac9aa4c44652e8baa192b8224661e1f07">bdm::StencilGrid</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1RungeKuttaGrid.html#ae60dc5726bd3522c10f1a1ed13e88879">bdm::RungeKuttaGrid</a>, and <a class="el" href="classbdm_1_1EulerGrid.html#a2645a720fea066d6a3754450875df123">bdm::EulerGrid</a>.</p>
 
 </div>
 </div>
-<a id="a1c899b747ad9a5402641106a643ed57e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c899b747ad9a5402641106a643ed57e">&#9670;&nbsp;</a></span>DiffuseWithOpenEdge()</h2>
+<a id="a654ff5f7695884267aefddf3c580c7ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654ff5f7695884267aefddf3c580c7ef">&#9670;&nbsp;</a></span>DiffuseWithOpenEdge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -654,7 +664,8 @@ template&lt;typename F &gt; </div>
         <tr>
           <td class="memname">virtual void bdm::DiffusionGrid::DiffuseWithOpenEdge </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -665,7 +676,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classbdm_1_1RungaKuttaGrid.html#afeeedce47fe0bcd07e31b22fb67cb64f">bdm::RungaKuttaGrid</a>, <a class="el" href="classbdm_1_1EulerGrid.html#ac9c0e8a5f75c2a2b9dd59772cb54ebaa">bdm::EulerGrid</a>, and <a class="el" href="classbdm_1_1StencilGrid.html#aa18b3e26fafd570a80db00d8ddefe2ee">bdm::StencilGrid</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1RungeKuttaGrid.html#a562ab7996ad26c93c993851b3cea703b">bdm::RungeKuttaGrid</a>, and <a class="el" href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">bdm::EulerGrid</a>.</p>
 
 </div>
 </div>
@@ -692,7 +703,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00096">96</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00107">107</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -719,7 +730,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00098">98</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00109">109</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -739,7 +750,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00325">325</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00342">342</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -761,7 +772,7 @@ template&lt;typename F &gt; </div>
 
 <p>Calculates the box index of the substance at specified position. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00342">342</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00359">359</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -781,7 +792,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00334">334</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00351">351</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -808,7 +819,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00110">110</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00121">121</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +846,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00143">143</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00154">154</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -857,34 +868,7 @@ template&lt;typename F &gt; </div>
 
 <p>Get the concentration at specified position. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00295">295</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
-
-</div>
-</div>
-<a id="a8158d96593ed8a44b6b28f0907d6313e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8158d96593ed8a44b6b28f0907d6313e">&#9670;&nbsp;</a></span>GetConcentrationThreshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::DiffusionGrid::GetConcentrationThreshold </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00094">94</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00312">312</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -911,7 +895,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00116">116</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00127">127</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +922,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00139">139</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00150">150</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -965,7 +949,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00120">120</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00131">131</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -992,7 +976,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00118">118</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00129">129</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1016,7 @@ template&lt;typename F &gt; </div>
 
 <p>Get the (normalized) gradient at specified position. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00309">309</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00326">326</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1043,63 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00131">131</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00142">142</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a07f722bcb798ba31e77bf297c9cf367c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f722bcb798ba31e77bf297c9cf367c">&#9670;&nbsp;</a></span>GetLastTimestep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::DiffusionGrid::GetLastTimestep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the last timestep <code>dt</code> that was used to run <code>Diffuse(dt)</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00093">93</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="aaecc650015498b0a96c2337105001de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaecc650015498b0a96c2337105001de7">&#9670;&nbsp;</a></span>GetLowerThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::DiffusionGrid::GetLowerThreshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00105">105</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1086,7 +1126,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00108">108</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00119">119</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1153,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00100">100</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00111">111</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1180,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00141">141</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00152">152</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1167,7 +1207,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00112">112</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00123">123</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1234,34 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00114">114</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00125">125</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a7196fb2666eefbf932f4d03325923248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7196fb2666eefbf932f4d03325923248">&#9670;&nbsp;</a></span>GetUpperThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::DiffusionGrid::GetUpperThreshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00099">99</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1221,9 +1288,9 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1RungaKuttaGrid.html#ae2efe3d1776fbbb6feb5db5251cfe0d6">bdm::RungaKuttaGrid</a>.</p>
+<p>Reimplemented in <a class="el" href="classbdm_1_1RungeKuttaGrid.html#ab00472def49e6e85afa620e7c64d5584">bdm::RungeKuttaGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00022">22</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00023">23</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -1250,12 +1317,12 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00151">151</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00162">162</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
-<a id="ae629fc95a257bfd8438d5de2224c2540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae629fc95a257bfd8438d5de2224c2540">&#9670;&nbsp;</a></span>ParametersCheck()</h2>
+<a id="afce4c16472c7576788bde6773d39b6de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce4c16472c7576788bde6773d39b6de">&#9670;&nbsp;</a></span>ParametersCheck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1266,7 +1333,8 @@ template&lt;typename F &gt; </div>
         <tr>
           <td class="memname">void bdm::DiffusionGrid::ParametersCheck </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1277,7 +1345,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00347">347</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00364">364</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -1298,35 +1366,7 @@ template&lt;typename F &gt; </div>
 
 <p>Initialize the diffusion grid according to the initialization functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00173">173</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
-
-</div>
-</div>
-<a id="a3a08309bcd8e0354c9812e14423248a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a08309bcd8e0354c9812e14423248a6">&#9670;&nbsp;</a></span>SetConcentrationThreshold()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::DiffusionGrid::SetConcentrationThreshold </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00092">92</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00190">190</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -1358,6 +1398,62 @@ template&lt;typename F &gt; </div>
 
 </div>
 </div>
+<a id="a5182789b0e2c76236060b0fc5e48bb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5182789b0e2c76236060b0fc5e48bb03">&#9670;&nbsp;</a></span>SetLowerThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::DiffusionGrid::SetLowerThreshold </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00102">102</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a67e77a7c617b71895de58d3567370545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67e77a7c617b71895de58d3567370545">&#9670;&nbsp;</a></span>SetUpperThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::DiffusionGrid::SetUpperThreshold </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00096">96</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
 <a id="a0592033865029992e169cfc333dae90d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0592033865029992e169cfc333dae90d">&#9670;&nbsp;</a></span>Update()</h2>
 
@@ -1382,9 +1478,9 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 <p>Updates the grid dimensions, based on the given threshold values. The diffusion grid dimensions need always be larger than the neighbor grid dimensions, so that each simulation object can obtain its local concentration / gradient </p>
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1RungaKuttaGrid.html#aa2087c5220eb7b5d9e2726e39cc2b5da">bdm::RungaKuttaGrid</a>.</p>
+<p>Reimplemented in <a class="el" href="classbdm_1_1RungeKuttaGrid.html#a93763268ae921652990dbcdb24694a7d">bdm::RungeKuttaGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00088">88</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00093">93</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -1409,12 +1505,12 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00158">158</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00169">169</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
-<a id="a6e2f088b9db0f2919f157f9a23eae28b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e2f088b9db0f2919f157f9a23eae28b">&#9670;&nbsp;</a></span>RungaKuttaGrid</h2>
+<a id="a1af885ef3aef0080a763a84057187a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af885ef3aef0080a763a84057187a5f">&#9670;&nbsp;</a></span>RungeKuttaGrid</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1423,7 +1519,7 @@ template&lt;typename F &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classbdm_1_1RungaKuttaGrid.html">RungaKuttaGrid</a></td>
+          <td class="memname">friend class <a class="el" href="classbdm_1_1RungeKuttaGrid.html">RungeKuttaGrid</a></td>
         </tr>
       </table>
   </td>
@@ -1433,31 +1529,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00157">157</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
-
-</div>
-</div>
-<a id="a92f2b5113fee8f9e390d9e1d79906d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92f2b5113fee8f9e390d9e1d79906d2c">&#9670;&nbsp;</a></span>StencilGrid</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classbdm_1_1StencilGrid.html">StencilGrid</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00159">159</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00168">168</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1481,7 +1553,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00160">160</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00170">170</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1580,7 @@ template&lt;typename F &gt; </div>
 
 <p>The side length of each box. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00185">185</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00195">195</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1606,7 @@ template&lt;typename F &gt; </div>
 
 <p>the volume of each box </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00187">187</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00197">197</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1560,7 +1632,7 @@ template&lt;typename F &gt; </div>
 
 <p>The array of concentration values. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00192">192</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00202">202</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1586,33 +1658,7 @@ template&lt;typename F &gt; </div>
 
 <p>An extra concentration data buffer for faster value updating. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00194">194</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
-
-</div>
-</div>
-<a id="a57e1764eef2800d468f7350426c47094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57e1764eef2800d468f7350426c47094">&#9670;&nbsp;</a></span>concentration_threshold_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::DiffusionGrid::concentration_threshold_ = 1e15</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The maximum concentration value that a box can have. </p>
-
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00198">198</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00204">204</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1638,33 +1684,7 @@ template&lt;typename F &gt; </div>
 
 <p>The diffusion coefficients [cc, cw, ce, cs, cn, cb, ct]. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00200">200</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
-
-</div>
-</div>
-<a id="a496fc06a9fc802ccd3d881b4d66795c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a496fc06a9fc802ccd3d881b4d66795c0">&#9670;&nbsp;</a></span>dt_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double bdm::DiffusionGrid::dt_ = 1.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The timestep resolution fhe diffusion grid. </p>
-
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00203">203</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00212">212</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1710,7 @@ template&lt;typename F &gt; </div>
 
 <p>The array of gradients (x, y, z) </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00196">196</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00206">206</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1716,7 +1736,7 @@ template&lt;typename F &gt; </div>
 
 <p>The grid dimensions of the diffusion grid (cubic shaped) </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00207">207</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00216">216</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1740,7 +1760,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00222">222</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00233">233</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1767,7 +1787,33 @@ template&lt;typename F &gt; </div>
 <div class="line">      {}</div>
 </div><!-- fragment --><p>A list of functions that initialize this diffusion grid ROOT currently doesn't support IO of std::function </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00219">219</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00230">230</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="a9411ca62e0a56f207e497e80aebc59fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9411ca62e0a56f207e497e80aebc59fa">&#9670;&nbsp;</a></span>last_dt_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::DiffusionGrid::last_dt_ = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The last timestep <code>dt</code> used for the diffusion grid update <code>Diffuse(dt)</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00225">225</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1792,7 +1838,33 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 <p>Lock for each voxel used to prevent race conditions between multiple threads </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00190">190</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00200">200</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="aa0772a8f7476cd7b041cb6f75b978d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0772a8f7476cd7b041cb6f75b978d2c">&#9670;&nbsp;</a></span>lower_threshold_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::DiffusionGrid::lower_threshold_ = -1e15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The minimum concentration value that a box can have. </p>
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00210">210</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1818,7 +1890,7 @@ template&lt;typename F &gt; </div>
 
 <p>The decay constant. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00205">205</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00214">214</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1844,7 +1916,7 @@ template&lt;typename F &gt; </div>
 
 <p>The number of boxes at each axis [x, y, z] (same along each axis) </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00209">209</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00218">218</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1942,7 @@ template&lt;typename F &gt; </div>
 
 <p>If false, grid dimensions are even; if true, they are odd. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00216">216</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00227">227</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1895,7 +1967,7 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 <p>The resolution of the diffusion grid (i.e. number of boxes along each axis) </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00214">214</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00223">223</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1921,7 +1993,7 @@ template&lt;typename F &gt; </div>
 
 <p>The id of the substance of this grid. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00181">181</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00191">191</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1947,7 +2019,7 @@ template&lt;typename F &gt; </div>
 
 <p>The name of the substance of this grid. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00183">183</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00193">193</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1973,7 +2045,33 @@ template&lt;typename F &gt; </div>
 
 <p>The total number of boxes in the diffusion grid. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00211">211</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00220">220</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+
+</div>
+</div>
+<a id="aa4d69f91ea7187ee5f1c3f0f70cc4245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d69f91ea7187ee5f1c3f0f70cc4245">&#9670;&nbsp;</a></span>upper_threshold_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bdm::DiffusionGrid::upper_threshold_ = 1e15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum concentration value that a box can have. </p>
+
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00208">208</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>

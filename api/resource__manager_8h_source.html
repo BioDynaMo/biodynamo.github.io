@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.91-aeb9ce21</span>
+   &#160;<span id="projectnumber">v1.01.96-a06bafed</span>
    </div>
   </td>
  </tr>
@@ -208,7 +208,7 @@ $(function() {
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classbdm_1_1ResourceManager.html#a53b3fd9f100ab408a594d519082a71f2">  142</a></span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* <a class="code" href="classbdm_1_1ResourceManager.html#a53b3fd9f100ab408a594d519082a71f2">GetDiffusionGrid</a>(<span class="keywordtype">size_t</span> substance_id)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> (substance_id &gt;= <a class="code" href="classbdm_1_1ResourceManager.html#aee7be8062b0ccdbbbd2626bd5a64e050">diffusion_grids_</a>.size()) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <a class="code" href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">Log::Error</a>(<span class="stringliteral">&quot;DiffusionGrid::GetDiffusionGrid&quot;</span>,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <a class="code" href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">Log::Error</a>(<span class="stringliteral">&quot;ResourceManager::GetDiffusionGrid&quot;</span>,</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                 <span class="stringliteral">&quot;You tried to request diffusion grid &#39;&quot;</span>, substance_id,</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                 <span class="stringliteral">&quot;&#39;, but it does not exist! Make sure that it&#39;s the correct id &quot;</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                 <span class="stringliteral">&quot;correctly and that the diffusion grid is registered.&quot;</span>);</div>
@@ -219,12 +219,12 @@ $(function() {
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classbdm_1_1ResourceManager.html#a292de785df90851ac2b96f61a1fae3f3">  156</a></span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* <a class="code" href="classbdm_1_1ResourceManager.html#a292de785df90851ac2b96f61a1fae3f3">GetDiffusionGrid</a>(<span class="keyword">const</span> std::string&amp; substance_name)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; el : <a class="code" href="classbdm_1_1ResourceManager.html#aee7be8062b0ccdbbbd2626bd5a64e050">diffusion_grids_</a>) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keyword">auto</span>&amp; dg = el.second;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">if</span> (dg-&gt;GetSubstanceName() == substance_name) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> dg;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keyword">auto</span>&amp; dgrid = el.second;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">if</span> (dgrid-&gt;GetSubstanceName() == substance_name) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> dgrid;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">Log::Error</a>(<span class="stringliteral">&quot;DiffusionGrid::GetDiffusionGrid&quot;</span>,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">Log::Error</a>(<span class="stringliteral">&quot;ResourceManager::GetDiffusionGrid&quot;</span>,</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;               <span class="stringliteral">&quot;You tried to request a diffusion grid named &#39;&quot;</span>, substance_name,</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;               <span class="stringliteral">&quot;&#39;, but it does not exist! Make sure that it&#39;s spelled &quot;</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;               <span class="stringliteral">&quot;correctly and that the diffusion grid is registered.&quot;</span>);</div>
@@ -492,7 +492,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1ResourceManager_html_a9096d93f0b99c77b1d48febfb83d5f18"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#a9096d93f0b99c77b1d48febfb83d5f18">bdm::ResourceManager::parallel_remove_</a></div><div class="ttdeci">ParallelRemovalAuxData parallel_remove_</div><div class="ttdoc">auxiliary data required for parallel agent removal</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00437">resource_manager.h:437</a></div></div>
 <div class="ttc" id="astructbdm_1_1ResourceManager_1_1ParallelRemovalAuxData_html"><div class="ttname"><a href="structbdm_1_1ResourceManager_1_1ParallelRemovalAuxData.html">bdm::ResourceManager::ParallelRemovalAuxData</a></div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00431">resource_manager.h:431</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ResourceManager_html_a9d0e4c00f7f8a758e9c9f12cbe1c4475"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#a9d0e4c00f7f8a758e9c9f12cbe1c4475">bdm::ResourceManager::ForEachAgent</a></div><div class="ttdeci">virtual void ForEachAgent(const std::function&lt; void(Agent *)&gt; &amp;function, Functor&lt; bool, Agent * &gt; *filter=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00205">resource_manager.h:205</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a00c719c77701941fb79fd34212d02f1d"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a00c719c77701941fb79fd34212d02f1d">bdm::DiffusionGrid::GetSubstanceId</a></div><div class="ttdeci">int GetSubstanceId() const</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00112">diffusion_grid.h:112</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a00c719c77701941fb79fd34212d02f1d"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a00c719c77701941fb79fd34212d02f1d">bdm::DiffusionGrid::GetSubstanceId</a></div><div class="ttdeci">int GetSubstanceId() const</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00123">diffusion_grid.h:123</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html"><div class="ttname"><a href="classbdm_1_1Agent.html">bdm::Agent</a></div><div class="ttdoc">Contains code required by all agents.</div><div class="ttdef"><b>Definition:</b> <a href="agent_8h_source.html#l00079">agent.h:79</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ResourceManager_html_a4d9ecc7f400b1617cd323b7776321761"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#a4d9ecc7f400b1617cd323b7776321761">bdm::ResourceManager::RebuildAgentUidMap</a></div><div class="ttdeci">void RebuildAgentUidMap()</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00089">resource_manager.h:89</a></div></div>
 <div class="ttc" id="aclassbdm_1_1AgentUidGenerator_html_aa28809f4e44fce619010a2c582bd1361"><div class="ttname"><a href="classbdm_1_1AgentUidGenerator.html#aa28809f4e44fce619010a2c582bd1361">bdm::AgentUidGenerator::GetHighestIndex</a></div><div class="ttdeci">AgentUid::Index_t GetHighestIndex() const</div><div class="ttdef"><b>Definition:</b> <a href="agent__uid__generator_8h_source.html#l00065">agent_uid_generator.h:65</a></div></div>

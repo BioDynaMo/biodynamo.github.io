@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.91-aeb9ce21</span>
+   &#160;<span id="projectnumber">v1.01.96-a06bafed</span>
    </div>
   </td>
  </tr>
@@ -205,16 +205,16 @@ $(function() {
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 <div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="namespacebdm.html#a900589fe0b70988b64e2ed0b57b6894d">  137</a></span>&#160;std::ostream&amp; <a class="code" href="namespacebdm.html#a36a873db32fbcc419e619f90c3e994bb">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classbdm_1_1Simulation.html">Simulation</a>&amp; sim) {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  std::vector&lt;std::string&gt; dg_names;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  std::vector&lt;int&gt; dg_resolutions;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  std::vector&lt;std::array&lt;int32_t, 3&gt;&gt; dg_dimensions;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  std::vector&lt;uint64_t&gt; dg_voxels;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  std::vector&lt;std::string&gt; dgrid_names;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  std::vector&lt;int&gt; dgrid_resolutions;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  std::vector&lt;std::array&lt;int32_t, 3&gt;&gt; dgrid_dimensions;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  std::vector&lt;uint64_t&gt; dgrid_voxels;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  sim.<a class="code" href="classbdm_1_1Simulation.html#ab887c5957799dfc9e1a039cef4920cff">rm_</a>-&gt;<a class="code" href="classbdm_1_1ResourceManager.html#a4e6ef81f3a455eee0649b1fd369f7ead">ForEachDiffusionGrid</a>([&amp;](<span class="keyword">auto</span>* dg) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    dg_names.push_back(dg-&gt;GetSubstanceName());</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    dg_resolutions.push_back(dg-&gt;GetResolution());</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    dg_dimensions.push_back(dg-&gt;GetGridSize());</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    dg_voxels.push_back(dg-&gt;GetNumBoxes());</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  sim.<a class="code" href="classbdm_1_1Simulation.html#ab887c5957799dfc9e1a039cef4920cff">rm_</a>-&gt;<a class="code" href="classbdm_1_1ResourceManager.html#a4e6ef81f3a455eee0649b1fd369f7ead">ForEachDiffusionGrid</a>([&amp;](<span class="keyword">auto</span>* dgrid) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    dgrid_names.push_back(dgrid-&gt;GetSubstanceName());</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    dgrid_resolutions.push_back(dgrid-&gt;GetResolution());</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    dgrid_dimensions.push_back(dgrid-&gt;GetGridSize());</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    dgrid_voxels.push_back(dgrid-&gt;GetNumBoxes());</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  });</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  os &lt;&lt; std::endl;</div>
@@ -237,17 +237,17 @@ $(function() {
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;     &lt;&lt; sim.<a class="code" href="classbdm_1_1Simulation.html#aa08fb1afa3ef057f677d92707fe08f26">scheduler_</a>-&gt;<a class="code" href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">GetSimulatedSteps</a>() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  os &lt;&lt; <span class="stringliteral">&quot;Number of agents\t\t: &quot;</span> &lt;&lt; sim.<a class="code" href="classbdm_1_1Simulation.html#ab887c5957799dfc9e1a039cef4920cff">rm_</a>-&gt;<a class="code" href="classbdm_1_1ResourceManager.html#ac354ecae1fc6a23fc8afea219fc62c27">GetNumAgents</a>() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">if</span> (dg_names.size() != 0) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">if</span> (dgrid_names.size() != 0) {</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    os &lt;&lt; <span class="stringliteral">&quot;Diffusion grids&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; dg_names.size(); ++i) {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      os &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; dg_names[i] &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="keyword">auto</span>&amp; dim = dg_dimensions[i];</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; dgrid_names.size(); ++i) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      os &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; dgrid_names[i] &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="keyword">auto</span>&amp; dim = dgrid_dimensions[i];</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      os &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;Resolution\t\t: &quot;</span> &lt;&lt; dg_resolutions[i] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;Resolution\t\t: &quot;</span> &lt;&lt; dgrid_resolutions[i] &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      os &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;Size\t\t\t: &quot;</span> &lt;&lt; dim[0] &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; dim[1] &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; dim[2]</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;         &lt;&lt; std::endl</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;\tVoxels\t\t\t: &quot;</span> &lt;&lt; dg_voxels[i] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;\tVoxels\t\t\t: &quot;</span> &lt;&lt; dgrid_voxels[i] &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
@@ -678,7 +678,7 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1Param_html_a7605d12491f3147a213ab98847021055"><div class="ttname"><a href="structbdm_1_1Param.html#a7605d12491f3147a213ab98847021055">bdm::Param::mem_mgr_aligned_pages_shift</a></div><div class="ttdeci">uint64_t mem_mgr_aligned_pages_shift</div><div class="ttdef"><b>Definition:</b> <a href="core_2param_2param_8h_source.html#l00506">param.h:506</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a2e85b1bb21bc288d491f00d1a60ae236"><div class="ttname"><a href="classbdm_1_1Simulation.html#a2e85b1bb21bc288d491f00d1a60ae236">bdm::Simulation::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00163">simulation.h:163</a></div></div>
 <div class="ttc" id="aclassbdm_1_1UniformGridEnvironment_html"><div class="ttname"><a href="classbdm_1_1UniformGridEnvironment.html">bdm::UniformGridEnvironment</a></div><div class="ttdoc">A class that represents Cartesian 3D grid.</div><div class="ttdef"><b>Definition:</b> <a href="uniform__grid__environment_8h_source.html#l00058">uniform_grid_environment.h:58</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a8b2e05f71d46294184cdbe5202547100"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">bdm::Scheduler::GetOpTimes</a></div><div class="ttdeci">TimingAggregator * GetOpTimes()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00157">scheduler.cc:157</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a8b2e05f71d46294184cdbe5202547100"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">bdm::Scheduler::GetOpTimes</a></div><div class="ttdeci">TimingAggregator * GetOpTimes()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00161">scheduler.cc:161</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_aa94580a254d23a2e6144bd6658a1d632"><div class="ttname"><a href="classbdm_1_1Simulation.html#aa94580a254d23a2e6144bd6658a1d632">bdm::Simulation::mem_mgr_</a></div><div class="ttdeci">MemoryManager * mem_mgr_</div><div class="ttdoc">BioDynaMo memory manager. If nullptr, default allocator will be used.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00181">simulation.h:181</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_aa08fb1afa3ef057f677d92707fe08f26"><div class="ttname"><a href="classbdm_1_1Simulation.html#aa08fb1afa3ef057f677d92707fe08f26">bdm::Simulation::scheduler_</a></div><div class="ttdeci">Scheduler * scheduler_</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00165">simulation.h:165</a></div></div>
 <div class="ttc" id="astructbdm_1_1Param_html_a5c5726426f206d786ddf9a604cc6dfd2"><div class="ttname"><a href="structbdm_1_1Param.html#a5c5726426f206d786ddf9a604cc6dfd2">bdm::Param::use_bdm_mem_mgr</a></div><div class="ttdeci">bool use_bdm_mem_mgr</div><div class="ttdef"><b>Definition:</b> <a href="core_2param_2param_8h_source.html#l00494">param.h:494</a></div></div>
@@ -774,7 +774,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1Simulation_html"><div class="ttname"><a href="classbdm_1_1Simulation.html">bdm::Simulation</a></div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00050">simulation.h:50</a></div></div>
 <div class="ttc" id="astructbdm_1_1Param_html_aef30627d7b63487972d22aff3b530857"><div class="ttname"><a href="structbdm_1_1Param.html#aef30627d7b63487972d22aff3b530857">bdm::Param::statistics</a></div><div class="ttdeci">bool statistics</div><div class="ttdef"><b>Definition:</b> <a href="core_2param_2param_8h_source.html#l00575">param.h:575</a></div></div>
 <div class="ttc" id="astructbdm_1_1Param_html_a578f1272cb36e9e4a83b5a533b3fa6ca"><div class="ttname"><a href="structbdm_1_1Param.html#a578f1272cb36e9e4a83b5a533b3fa6ca">bdm::Param::Restore</a></div><div class="ttdeci">void Restore(Param &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="core_2param_2param_8cc_source.html#l00050">param.cc:50</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ac9aaee4634b7f7271fb048f08c04bfad"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">bdm::Scheduler::GetSimulatedSteps</a></div><div class="ttdeci">uint64_t GetSimulatedSteps() const</div><div class="ttdoc">This function returns the numer of simulated steps (=iterations).</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00155">scheduler.cc:155</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ac9aaee4634b7f7271fb048f08c04bfad"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">bdm::Scheduler::GetSimulatedSteps</a></div><div class="ttdeci">uint64_t GetSimulatedSteps() const</div><div class="ttdoc">This function returns the numer of simulated steps (=iterations).</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00157">scheduler.cc:157</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a7c87c3c4a51cce361155f8e2c335aac5"><div class="ttname"><a href="classbdm_1_1Simulation.html#a7c87c3c4a51cce361155f8e2c335aac5">bdm::Simulation::agent_uid_generator_</a></div><div class="ttdeci">AgentUidGenerator * agent_uid_generator_</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00162">simulation.h:162</a></div></div>
 <div class="ttc" id="astructbdm_1_1Param_html_ad945d5460eb03267b541038ba1557928"><div class="ttname"><a href="structbdm_1_1Param.html#ad945d5460eb03267b541038ba1557928">bdm::Param::mem_mgr_growth_rate</a></div><div class="ttdeci">double mem_mgr_growth_rate</div><div class="ttdef"><b>Definition:</b> <a href="core_2param_2param_8h_source.html#l00515">param.h:515</a></div></div>
 <!-- start footer part -->

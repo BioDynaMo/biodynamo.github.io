@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.91-aeb9ce21</span>
+   &#160;<span id="projectnumber">v1.01.96-a06bafed</span>
    </div>
   </td>
  </tr>
@@ -143,6 +143,9 @@ $(function() {
 <li>DeleteOldCopies()
 : <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html#a7f48ddc3671a2af53734e6373cf05fc7">bdm::InPlaceExecutionContext::ThreadSafeAgentUidMap</a>
 </li>
+<li>delta_t_
+: <a class="el" href="classbdm_1_1DiffusionOp.html#abbab83a18ff8e71ca477424154b210d2">bdm::DiffusionOp</a>
+</li>
 <li>delta_time_
 : <a class="el" href="classbdm_1_1MechanicalForcesOp.html#a74f828501a61a36924e1e72b0a0e9667">bdm::MechanicalForcesOp</a>
 </li>
@@ -187,19 +190,17 @@ $(function() {
 , <a class="el" href="structbdm_1_1Fen.html#a6be09d2dc76c693007a805e4640e0b73">bdm::Fen</a>
 </li>
 <li>Diffuse()
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#a06be6e1469c249b0fbecc2c5d7b3b074">bdm::DiffusionGrid</a>
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#af6dfb1cc5ec0c3a2d27ec05581dc8529">bdm::DiffusionGrid</a>
 </li>
 <li>DiffuseWithClosedEdge()
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#a012349c679b3f4145a54766abd6dd1b3">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1EulerGrid.html#a0905c53dc313a46ea99ff9b6daac53e0">bdm::EulerGrid</a>
-, <a class="el" href="classbdm_1_1RungaKuttaGrid.html#aaaa2e2b301aee00b7592291fbaec5eb2">bdm::RungaKuttaGrid</a>
-, <a class="el" href="classbdm_1_1StencilGrid.html#ac9aa4c44652e8baa192b8224661e1f07">bdm::StencilGrid</a>
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#ab2df068abb19d2adee5f1ea3e0715b1d">bdm::DiffusionGrid</a>
+, <a class="el" href="classbdm_1_1EulerGrid.html#a2645a720fea066d6a3754450875df123">bdm::EulerGrid</a>
+, <a class="el" href="classbdm_1_1RungeKuttaGrid.html#ae60dc5726bd3522c10f1a1ed13e88879">bdm::RungeKuttaGrid</a>
 </li>
 <li>DiffuseWithOpenEdge()
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#a1c899b747ad9a5402641106a643ed57e">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1EulerGrid.html#ac9c0e8a5f75c2a2b9dd59772cb54ebaa">bdm::EulerGrid</a>
-, <a class="el" href="classbdm_1_1RungaKuttaGrid.html#afeeedce47fe0bcd07e31b22fb67cb64f">bdm::RungaKuttaGrid</a>
-, <a class="el" href="classbdm_1_1StencilGrid.html#aa18b3e26fafd570a80db00d8ddefe2ee">bdm::StencilGrid</a>
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#a654ff5f7695884267aefddf3c580c7ef">bdm::DiffusionGrid</a>
+, <a class="el" href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">bdm::EulerGrid</a>
+, <a class="el" href="classbdm_1_1RungeKuttaGrid.html#a562ab7996ad26c93c993851b3cea703b">bdm::RungeKuttaGrid</a>
 </li>
 <li>diffusion_boundary_condition
 : <a class="el" href="structbdm_1_1Param.html#a6200627df99be6dd91817876a79cd4fc">bdm::Param</a>
@@ -211,10 +212,10 @@ $(function() {
 : <a class="el" href="structbdm_1_1Param.html#a272115db83f37bc0f5e6f82b973c7029">bdm::Param</a>
 </li>
 <li>diffusion_step_
-: <a class="el" href="classbdm_1_1RungaKuttaGrid.html#aba533279819b53969cc958fa24702884">bdm::RungaKuttaGrid</a>
+: <a class="el" href="classbdm_1_1RungeKuttaGrid.html#ab06965e8c997c1b0384ca6b4ddec4494">bdm::RungeKuttaGrid</a>
 </li>
 <li>DiffusionGrid()
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#af48b98695c78dd5271444a06efb7fcac">bdm::DiffusionGrid</a>
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#a79aab2d224eced115cab3c7ee08dd269">bdm::DiffusionGrid</a>
 </li>
 <li>DiffusionTest_CopyOldData_Test
 : <a class="el" href="structbdm_1_1Param.html#a35dacfc93e9e90bc6c01861337b25b3c">bdm::Param</a>
@@ -259,7 +260,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1Random.html#ae64d4f03313fe5eb86cd645ea10060dc">bdm::Random</a>
 </li>
 <li>Divide()
-: <a class="el" href="classbdm_1_1Cell.html#ac8034f95d3da4f3996f85f3e41f74fe0">bdm::Cell</a>
+: <a class="el" href="classbdm_1_1Cell.html#a0c2eaa89f933fe42036a690b9adf3875">bdm::Cell</a>
 </li>
 <li>dm_offset_
 : <a class="el" href="structbdm_1_1GetDataMemberForVis.html#a6930702786cba0c88ba2f9abfa6de4d2">bdm::GetDataMemberForVis&lt; TReturn, TClass, TDataMember &gt;</a>
@@ -276,9 +277,6 @@ $(function() {
 </li>
 <li>DrawInCanvas()
 : <a class="el" href="classbdm_1_1RootAdaptor.html#a835878ac47b53a0fedbb0d4b4aeeaad9">bdm::RootAdaptor</a>
-</li>
-<li>dt_
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#a496fc06a9fc802ccd3d881b4d66795c0">bdm::DiffusionGrid</a>
 </li>
 <li>dtor_ts_
 : <a class="el" href="classbdm_1_1Simulation.html#a324cba7b3a008710b2c0b8cb9560cf87">bdm::Simulation</a>

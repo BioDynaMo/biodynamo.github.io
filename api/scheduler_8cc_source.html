@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.91-aeb9ce21</span>
+   &#160;<span id="projectnumber">v1.01.96-a06bafed</span>
    </div>
   </td>
  </tr>
@@ -206,433 +206,444 @@ $(function() {
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">Execute</a>();</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">total_steps_</a>++;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a7aa37b61bfd3791935d4d515e58b5fc9">Backup</a>();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a6558e563bf74b8d70b82ba4dd3234d30">  141</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a6558e563bf74b8d70b82ba4dd3234d30">Scheduler::SimulateUntil</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">bool</span>()&gt;&amp; exit_condition) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">Initialize</a>();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordflow">while</span> (!exit_condition()) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">Execute</a>();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">total_steps_</a>++;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a61638fcbc987dd7959fcc67c4b56eab9">  150</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a61638fcbc987dd7959fcc67c4b56eab9">Scheduler::FinalizeInitialization</a>() {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keyword">auto</span>* sim = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  sim-&gt;GetExecutionContext()-&gt;SetupIterationAll(sim-&gt;GetAllExecCtxts());</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">  155</a></span>&#160;uint64_t <a class="code" href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">Scheduler::GetSimulatedSteps</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">total_steps_</a>; }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a72aa082eb9e6c9357e3f50e5f2f9e611">UpdateSimulatedTime</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a7aa37b61bfd3791935d4d515e58b5fc9">Backup</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a6558e563bf74b8d70b82ba4dd3234d30">  142</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a6558e563bf74b8d70b82ba4dd3234d30">Scheduler::SimulateUntil</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">bool</span>()&gt;&amp; exit_condition) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">Initialize</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordflow">while</span> (!exit_condition()) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">Execute</a>();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">total_steps_</a>++;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#a72aa082eb9e6c9357e3f50e5f2f9e611">UpdateSimulatedTime</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a61638fcbc987dd7959fcc67c4b56eab9">  152</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a61638fcbc987dd7959fcc67c4b56eab9">Scheduler::FinalizeInitialization</a>() {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keyword">auto</span>* sim = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  sim-&gt;GetExecutionContext()-&gt;SetupIterationAll(sim-&gt;GetAllExecCtxts());</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">  157</a></span>&#160;<a class="code" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a>* <a class="code" href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">Scheduler::GetOpTimes</a>() { <span class="keywordflow">return</span> &amp;<a class="code" href="classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e">op_times_</a>; }</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">  157</a></span>&#160;uint64_t <a class="code" href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">Scheduler::GetSimulatedSteps</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">total_steps_</a>; }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#af0feb0fac4c76a96bda993bac4f48f48">  159</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#af0feb0fac4c76a96bda993bac4f48f48">Scheduler::ScheduleOp</a>(<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op, <a class="code" href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4e">OpType</a> op_type) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="comment">// Check if operation is already in all_ops_ (could be the case when</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">// trying to reschedule a previously unscheduled operation)</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">if</span> (std::find(<a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.begin(), <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.end(), op) == <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.end()) {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.push_back(op);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#ab4a313c8b0fa299c4f2faed035d4f46e">schedule_ops_</a>.push_back(std::make_pair(op_type, op));</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">  169</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">Scheduler::UnscheduleOp</a>(<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// We must not unschedule a protected operation</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordflow">if</span> (std::find(<a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.begin(), <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end(),</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                op-&gt;<a class="code" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a>) != <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end()) {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7">Log::Warning</a>(<span class="stringliteral">&quot;Scheduler::UnscheduleOp&quot;</span>,</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                 <span class="stringliteral">&quot;You tried to unschedule the protected operation &quot;</span>, op-&gt;<a class="code" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a>,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                 <span class="stringliteral">&quot;! This request was ignored.&quot;</span>);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="comment">// Check if the requested operation is even scheduled</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">bool</span> not_in_scheduled_ops = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a80cd1b9d4c7d5113623cf897929bb09e">ForEachOperation</a>([&amp;](<a class="code" href="structbdm_1_1Operation.html">Operation</a>* scheduled_op) {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (op == scheduled_op) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      not_in_scheduled_ops = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  });</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">if</span> (not_in_scheduled_ops) {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7">Log::Warning</a>(<span class="stringliteral">&quot;Scheduler::UnscheduleOp&quot;</span>,</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                 <span class="stringliteral">&quot;You tried to unschedule the non-scheduled operation &quot;</span>,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                 op-&gt;<a class="code" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a>, <span class="stringliteral">&quot;! This request was ignored.&quot;</span>);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#ac21ea567578500e012a1bd838c0ab65b">unschedule_ops_</a>.push_back(op);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#aedcb73e19e6012fbe7b736fab6ef4565">  197</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classbdm_1_1Scheduler.html#aedcb73e19e6012fbe7b736fab6ef4565">Scheduler::GetListOfScheduledAgentOps</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  std::vector&lt;std::string&gt; list;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : <a class="code" href="classbdm_1_1Scheduler.html#a329482a4cb1bb6e65d6dd315b683822d">scheduled_agent_ops_</a>) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    list.push_back(op-&gt;name_);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">return</span> list;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">  205</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">Scheduler::GetListOfScheduledStandaloneOps</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  std::vector&lt;std::string&gt; list;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : <a class="code" href="classbdm_1_1Scheduler.html#a1e3e1ddac79853320514a1eaf29ad859">scheduled_standalone_ops_</a>) {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    list.push_back(op-&gt;name_);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">return</span> list;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">  213</a></span>&#160;std::vector&lt;Operation*&gt; <a class="code" href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">Scheduler::GetOps</a>(<span class="keyword">const</span> std::string&amp; name) {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  std::vector&lt;Operation*&gt; ret;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="comment">// Check if a protected op is trying to be fetched</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordflow">if</span> (std::find(<a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.begin(), <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end(), name) !=</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end()) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7">Log::Warning</a>(<span class="stringliteral">&quot;Scheduler::GetOps&quot;</span>, <span class="stringliteral">&quot;The operation &#39;&quot;</span>, name,</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                 <span class="stringliteral">&quot;&#39; is a protected operation. Request ignored.&quot;</span>);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  }</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.begin(); it != <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.end(); ++it) {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">if</span> ((*it)-&gt;name_ == name) {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      ret.push_back(*it);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ad1908f1adf206de6a4f4cc38f21fc4d0">  234</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#ad1908f1adf206de6a4f4cc38f21fc4d0">Scheduler::SetAgentFilters</a>(</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">const</span> std::vector&lt;<a class="code" href="classbdm_1_1Functor.html">Functor&lt;bool, Agent*&gt;</a>*&gt;&amp; agent_filters) {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a8eca21c36bf32884b1ac26bee109d772">agent_filters_</a> = agent_filters;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#afced0dd46eb95799cb786f907cb5944e">  240</a></span>&#160;<span class="keyword">const</span> std::vector&lt;Functor&lt;bool, Agent*&gt;*&gt;&amp; <a class="code" href="classbdm_1_1Scheduler.html#afced0dd46eb95799cb786f907cb5944e">Scheduler::GetAgentFilters</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1Scheduler.html#a8eca21c36bf32884b1ac26bee109d772">agent_filters_</a>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html">  244</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1RunAllScheduledOps.html">RunAllScheduledOps</a> : <a class="code" href="classbdm_1_1Functor.html">Functor</a>&lt;void, Agent*, AgentHandle&gt; {</div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#a50ebded26d2514ad449eefdfdd71a895">  245</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a50ebded26d2514ad449eefdfdd71a895">RunAllScheduledOps</a>(std::vector&lt;Operation*&gt;&amp; scheduled_ops)</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      : <a class="code" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">scheduled_ops_</a>(scheduled_ops) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">sim_</a> = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#a8df98a215a81c67a66b632acbb7814b8">  250</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a8df98a215a81c67a66b632acbb7814b8">operator()</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent, <a class="code" href="classbdm_1_1AgentHandle.html">AgentHandle</a> ah)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">sim_</a>-&gt;<a class="code" href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">GetExecutionContext</a>()-&gt;<a class="code" href="classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24">Execute</a>(agent, ah, <a class="code" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">scheduled_ops_</a>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ae9adc32ddf8494f3cf5b8fc2d7557e9a">  159</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classbdm_1_1Scheduler.html#ae9adc32ddf8494f3cf5b8fc2d7557e9a">Scheduler::GetSimulatedTime</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1Scheduler.html#ae6919f29e3e909365e6ecff7baa74d14">simulated_time_</a>; }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">  161</a></span>&#160;<a class="code" href="classbdm_1_1TimingAggregator.html">TimingAggregator</a>* <a class="code" href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">Scheduler::GetOpTimes</a>() { <span class="keywordflow">return</span> &amp;<a class="code" href="classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e">op_times_</a>; }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#af0feb0fac4c76a96bda993bac4f48f48">  163</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#af0feb0fac4c76a96bda993bac4f48f48">Scheduler::ScheduleOp</a>(<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op, <a class="code" href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4e">OpType</a> op_type) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="comment">// Check if operation is already in all_ops_ (could be the case when</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// trying to reschedule a previously unscheduled operation)</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordflow">if</span> (std::find(<a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.begin(), <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.end(), op) == <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.end()) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.push_back(op);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#ab4a313c8b0fa299c4f2faed035d4f46e">schedule_ops_</a>.push_back(std::make_pair(op_type, op));</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">  173</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">Scheduler::UnscheduleOp</a>(<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="comment">// We must not unschedule a protected operation</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">if</span> (std::find(<a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.begin(), <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end(),</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                op-&gt;<a class="code" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a>) != <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end()) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7">Log::Warning</a>(<span class="stringliteral">&quot;Scheduler::UnscheduleOp&quot;</span>,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                 <span class="stringliteral">&quot;You tried to unschedule the protected operation &quot;</span>, op-&gt;<a class="code" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a>,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                 <span class="stringliteral">&quot;! This request was ignored.&quot;</span>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// Check if the requested operation is even scheduled</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">bool</span> not_in_scheduled_ops = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a80cd1b9d4c7d5113623cf897929bb09e">ForEachOperation</a>([&amp;](<a class="code" href="structbdm_1_1Operation.html">Operation</a>* scheduled_op) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (op == scheduled_op) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      not_in_scheduled_ops = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  });</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">if</span> (not_in_scheduled_ops) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7">Log::Warning</a>(<span class="stringliteral">&quot;Scheduler::UnscheduleOp&quot;</span>,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                 <span class="stringliteral">&quot;You tried to unschedule the non-scheduled operation &quot;</span>,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                 op-&gt;<a class="code" href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">name_</a>, <span class="stringliteral">&quot;! This request was ignored.&quot;</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#ac21ea567578500e012a1bd838c0ab65b">unschedule_ops_</a>.push_back(op);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#aedcb73e19e6012fbe7b736fab6ef4565">  201</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classbdm_1_1Scheduler.html#aedcb73e19e6012fbe7b736fab6ef4565">Scheduler::GetListOfScheduledAgentOps</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  std::vector&lt;std::string&gt; list;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : <a class="code" href="classbdm_1_1Scheduler.html#a329482a4cb1bb6e65d6dd315b683822d">scheduled_agent_ops_</a>) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    list.push_back(op-&gt;name_);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">return</span> list;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">  209</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">Scheduler::GetListOfScheduledStandaloneOps</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  std::vector&lt;std::string&gt; list;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : <a class="code" href="classbdm_1_1Scheduler.html#a1e3e1ddac79853320514a1eaf29ad859">scheduled_standalone_ops_</a>) {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    list.push_back(op-&gt;name_);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">return</span> list;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">  217</a></span>&#160;std::vector&lt;Operation*&gt; <a class="code" href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">Scheduler::GetOps</a>(<span class="keyword">const</span> std::string&amp; name) {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  std::vector&lt;Operation*&gt; ret;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="comment">// Check if a protected op is trying to be fetched</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">if</span> (std::find(<a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.begin(), <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end(), name) !=</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a>.end()) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7">Log::Warning</a>(<span class="stringliteral">&quot;Scheduler::GetOps&quot;</span>, <span class="stringliteral">&quot;The operation &#39;&quot;</span>, name,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                 <span class="stringliteral">&quot;&#39; is a protected operation. Request ignored.&quot;</span>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.begin(); it != <a class="code" href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">all_ops_</a>.end(); ++it) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> ((*it)-&gt;name_ == name) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      ret.push_back(*it);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ad1908f1adf206de6a4f4cc38f21fc4d0">  238</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#ad1908f1adf206de6a4f4cc38f21fc4d0">Scheduler::SetAgentFilters</a>(</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">const</span> std::vector&lt;<a class="code" href="classbdm_1_1Functor.html">Functor&lt;bool, Agent*&gt;</a>*&gt;&amp; agent_filters) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a8eca21c36bf32884b1ac26bee109d772">agent_filters_</a> = agent_filters;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#afced0dd46eb95799cb786f907cb5944e">  244</a></span>&#160;<span class="keyword">const</span> std::vector&lt;Functor&lt;bool, Agent*&gt;*&gt;&amp; <a class="code" href="classbdm_1_1Scheduler.html#afced0dd46eb95799cb786f907cb5944e">Scheduler::GetAgentFilters</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1Scheduler.html#a8eca21c36bf32884b1ac26bee109d772">agent_filters_</a>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html">  248</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1RunAllScheduledOps.html">RunAllScheduledOps</a> : <a class="code" href="classbdm_1_1Functor.html">Functor</a>&lt;void, Agent*, AgentHandle&gt; {</div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#a50ebded26d2514ad449eefdfdd71a895">  249</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a50ebded26d2514ad449eefdfdd71a895">RunAllScheduledOps</a>(std::vector&lt;Operation*&gt;&amp; scheduled_ops)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      : <a class="code" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">scheduled_ops_</a>(scheduled_ops) {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">sim_</a> = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">  254</a></span>&#160;  <a class="code" href="classbdm_1_1Simulation.html">Simulation</a>* <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">sim_</a>;</div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">  255</a></span>&#160;  std::vector&lt;Operation*&gt;&amp; <a class="code" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">scheduled_ops_</a>;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;};</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#a8df98a215a81c67a66b632acbb7814b8">  254</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a8df98a215a81c67a66b632acbb7814b8">operator()</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent, <a class="code" href="classbdm_1_1AgentHandle.html">AgentHandle</a> ah)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">sim_</a>-&gt;<a class="code" href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">GetExecutionContext</a>()-&gt;<a class="code" href="classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24">Execute</a>(agent, ah, <a class="code" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">scheduled_ops_</a>);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b">  258</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b">Scheduler::SetUpOps</a>() {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a3a8427b7efea4a7918d6d1dba8ede920">ForEachScheduledOperation</a>([&amp;](<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> != 0 &amp;&amp; <a class="code" href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">total_steps_</a> % op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> == 0) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() { op-&gt;SetUp(); });</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  });</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#af620cd831cab54644a1017a8e881505e">  266</a></span>&#160;<span class="keywordtype">void</span> Scheduler::TearDownOps() {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  ForEachScheduledOperation([&amp;](<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op) {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">if</span> (op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> != 0 &amp;&amp; total_steps_ % op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> == 0) {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() { op-&gt;TearDown(); });</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  });</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a765dfaae2f382809837fb9d2de5fa80c">  274</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunPreScheduledOps() {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* pre_op : pre_scheduled_ops_) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (pre_op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % pre_op-&gt;frequency_ == 0) {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      Timing::Time(pre_op-&gt;name_, [&amp;]() { (*pre_op)(); });</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#aed871dbfb24ebc9c767c402b440c1fe6">  283</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunAgentOps(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;bool, Agent*&gt;</a>* filter) {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keyword">auto</span>* sim = Simulation::GetActive();</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keyword">auto</span> batch_size = param-&gt;scheduling_batch_size;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  std::vector&lt;Operation*&gt; agent_ops;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : scheduled_agent_ops_) {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">if</span> (op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % op-&gt;frequency_ == 0 &amp;&amp;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        !op-&gt;IsExcluded(filter)) {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      agent_ops.push_back(op);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; all_exec_ctxts = sim-&gt;GetAllExecCtxts();</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  all_exec_ctxts[0]-&gt;SetupAgentOpsAll(all_exec_ctxts);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordflow">if</span> (param-&gt;execution_order == Param::ExecutionOrder::kForEachAgentForEachOp) {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="structbdm_1_1RunAllScheduledOps.html">RunAllScheduledOps</a> functor(agent_ops);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    Timing::Time(<span class="stringliteral">&quot;agent ops&quot;</span>, [&amp;]() {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      rm-&gt;ForEachAgentParallel(batch_size, functor, filter);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    });</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : agent_ops) {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      decltype(agent_ops) ops = {op};</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <a class="code" href="structbdm_1_1RunAllScheduledOps.html">RunAllScheduledOps</a> functor(ops);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        rm-&gt;ForEachAgentParallel(batch_size, functor, filter);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      });</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  all_exec_ctxts[0]-&gt;TearDownAgentOpsAll(all_exec_ctxts);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ab3f96fc2c63fea7520f5fd4a8ef7aa30">  319</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunScheduledOps() {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  SetUpOps();</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">  258</a></span>&#160;  <a class="code" href="classbdm_1_1Simulation.html">Simulation</a>* <a class="code" href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">sim_</a>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">  259</a></span>&#160;  std::vector&lt;Operation*&gt;&amp; <a class="code" href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">scheduled_ops_</a>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;};</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b">  262</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b">Scheduler::SetUpOps</a>() {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a3a8427b7efea4a7918d6d1dba8ede920">ForEachScheduledOperation</a>([&amp;](<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op) {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">if</span> (op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> != 0 &amp;&amp; <a class="code" href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">total_steps_</a> % op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> == 0) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() { op-&gt;SetUp(); });</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  });</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#af620cd831cab54644a1017a8e881505e">  270</a></span>&#160;<span class="keywordtype">void</span> Scheduler::TearDownOps() {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  ForEachScheduledOperation([&amp;](<a class="code" href="structbdm_1_1Operation.html">Operation</a>* op) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> != 0 &amp;&amp; total_steps_ % op-&gt;<a class="code" href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">frequency_</a> == 0) {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() { op-&gt;TearDown(); });</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  });</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a765dfaae2f382809837fb9d2de5fa80c">  278</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunPreScheduledOps() {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* pre_op : pre_scheduled_ops_) {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">if</span> (pre_op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % pre_op-&gt;frequency_ == 0) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      Timing::Time(pre_op-&gt;name_, [&amp;]() { (*pre_op)(); });</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#aed871dbfb24ebc9c767c402b440c1fe6">  287</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunAgentOps(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;bool, Agent*&gt;</a>* filter) {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keyword">auto</span>* sim = Simulation::GetActive();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keyword">auto</span> batch_size = param-&gt;scheduling_batch_size;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  std::vector&lt;Operation*&gt; agent_ops;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : scheduled_agent_ops_) {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">if</span> (op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % op-&gt;frequency_ == 0 &amp;&amp;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        !op-&gt;IsExcluded(filter)) {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      agent_ops.push_back(op);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; all_exec_ctxts = sim-&gt;GetAllExecCtxts();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  all_exec_ctxts[0]-&gt;SetupAgentOpsAll(all_exec_ctxts);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordflow">if</span> (param-&gt;execution_order == Param::ExecutionOrder::kForEachAgentForEachOp) {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <a class="code" href="structbdm_1_1RunAllScheduledOps.html">RunAllScheduledOps</a> functor(agent_ops);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    Timing::Time(<span class="stringliteral">&quot;agent ops&quot;</span>, [&amp;]() {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      rm-&gt;ForEachAgentParallel(batch_size, functor, filter);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    });</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : agent_ops) {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      decltype(agent_ops) ops = {op};</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <a class="code" href="structbdm_1_1RunAllScheduledOps.html">RunAllScheduledOps</a> functor(ops);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        rm-&gt;ForEachAgentParallel(batch_size, functor, filter);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      });</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  }</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  all_exec_ctxts[0]-&gt;TearDownAgentOpsAll(all_exec_ctxts);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="comment">// Run the agent operations</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordflow">if</span> (agent_filters_.size() == 0) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    RunAgentOps(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>* filter : agent_filters_) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      RunAgentOps(filter);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">// Run the column-wise operations</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : scheduled_standalone_ops_) {</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">if</span> (op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % op-&gt;frequency_ == 0) {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() { (*op)(); });</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  }</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  TearDownOps();</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a8efde6862aff15a9e885e8e479248409">  341</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunPostScheduledOps() {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* post_op : post_scheduled_ops_) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">if</span> (post_op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % post_op-&gt;frequency_ == 0) {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      Timing::Time(post_op-&gt;name_, [&amp;]() { (*post_op)(); });</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">  349</a></span>&#160;<span class="keywordtype">void</span> Scheduler::Execute() {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keyword">auto</span>* param = Simulation::GetActive()-&gt;GetParam();</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordflow">if</span> (param-&gt;show_simulation_step) {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Time step: &quot;</span> &lt;&lt; total_steps_ &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  }</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  ScheduleOps();</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  RunPreScheduledOps();</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  RunScheduledOps();</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  RunPostScheduledOps();</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a7aa37b61bfd3791935d4d515e58b5fc9">  361</a></span>&#160;<span class="keywordtype">void</span> Scheduler::Backup() {</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keyword">using</span> std::chrono::duration_cast;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="keyword">using</span> std::chrono::seconds;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="keyword">auto</span>* param = Simulation::GetActive()-&gt;GetParam();</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordflow">if</span> (backup_-&gt;BackupEnabled() &amp;&amp;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      duration_cast&lt;seconds&gt;(Clock::now() - last_backup_).count() &gt;=</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;          param-&gt;backup_interval) {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    last_backup_ = Clock::now();</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    backup_-&gt;Backup(total_steps_);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a998a74737b1e380ca2a43732a16291b8">  376</a></span>&#160;<span class="keywordtype">bool</span> Scheduler::Restore(uint64_t* steps) {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordflow">if</span> (backup_-&gt;RestoreEnabled() &amp;&amp; restore_point_ &gt; total_steps_ + *steps) {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    total_steps_ += *steps;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">// restore requested, but not last backup was not done during this call to</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">// Simualte. Therefore, we skip it.</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (backup_-&gt;RestoreEnabled() &amp;&amp; restore_point_ &gt; total_steps_ &amp;&amp;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;             restore_point_ &lt; total_steps_ + *steps) {</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">// Restore</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    backup_-&gt;Restore();</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    *steps = total_steps_ + *steps - restore_point_;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    total_steps_ = restore_point_;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;}</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">// TODO(lukas, ahmad) After https://trello.com/c/0D6sHCK4 has been resolved</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">// think about a better solution, because some operations are executed twice</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">// if Simulate is called with one timestep.</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">  395</a></span>&#160;<span class="keywordtype">void</span> Scheduler::Initialize() {</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keyword">auto</span>* sim = Simulation::GetActive();</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keyword">auto</span>* env = sim-&gt;GetEnvironment();</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="comment">// commit all changes</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; all_exec_ctxts = sim-&gt;GetAllExecCtxts();</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  all_exec_ctxts[0]-&gt;SetupIterationAll(all_exec_ctxts);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keywordflow">if</span> (param-&gt;bound_space != Param::BoundSpaceMode::kOpen) {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">auto</span>* bound_space = <a class="code" href="namespacebdm.html#ad6284b99121d482636295bc12e29c1fd">NewOperation</a>(<span class="stringliteral">&quot;bound space&quot;</span>);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    rm-&gt;ForEachAgentParallel(*bound_space);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">delete</span> bound_space;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  }</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  env-&gt;Update();</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  rm-&gt;ForEachDiffusionGrid([&amp;](<a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* dgrid) {</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="comment">// Create data structures, whose size depend on the env dimensions</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    dgrid-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a74e0486a606e83ad410984f540b8e69a">Initialize</a>();</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="comment">// Initialize data structures with user-defined values</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    dgrid-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7">RunInitializers</a>();</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  });</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  ScheduleOps();</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">// Schedule the operations</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a9d60a07f2a8c9122fb09adba3a81f777">  422</a></span>&#160;<span class="keywordtype">void</span> Scheduler::ScheduleOps() {</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="keyword">auto</span>* param = Simulation::GetActive()-&gt;GetParam();</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="comment">// Add requested operations</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = schedule_ops_.begin(); it != schedule_ops_.end();) {</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keyword">auto</span> op_type = it-&gt;first;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keyword">auto</span>* op = it-&gt;second;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#ab3f96fc2c63fea7520f5fd4a8ef7aa30">  323</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunScheduledOps() {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  SetUpOps();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="comment">// Run the agent operations</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordflow">if</span> (agent_filters_.size() == 0) {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    RunAgentOps(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>* filter : agent_filters_) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      RunAgentOps(filter);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  }</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="comment">// Run the column-wise operations</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op : scheduled_standalone_ops_) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">if</span> (op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % op-&gt;frequency_ == 0) {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      Timing::Time(op-&gt;name_, [&amp;]() { (*op)(); });</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  TearDownOps();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a8efde6862aff15a9e885e8e479248409">  345</a></span>&#160;<span class="keywordtype">void</span> Scheduler::RunPostScheduledOps() {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>* post_op : post_scheduled_ops_) {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">if</span> (post_op-&gt;frequency_ != 0 &amp;&amp; total_steps_ % post_op-&gt;frequency_ == 0) {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      Timing::Time(post_op-&gt;name_, [&amp;]() { (*post_op)(); });</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">  353</a></span>&#160;<span class="keywordtype">void</span> Scheduler::Execute() {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keyword">auto</span>* param = Simulation::GetActive()-&gt;GetParam();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keywordflow">if</span> (param-&gt;show_simulation_step) {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Time step: &quot;</span> &lt;&lt; total_steps_ &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  ScheduleOps();</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  RunPreScheduledOps();</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  RunScheduledOps();</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  RunPostScheduledOps();</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a7aa37b61bfd3791935d4d515e58b5fc9">  365</a></span>&#160;<span class="keywordtype">void</span> Scheduler::Backup() {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keyword">using</span> std::chrono::duration_cast;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="keyword">using</span> std::chrono::seconds;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keyword">auto</span>* param = Simulation::GetActive()-&gt;GetParam();</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordflow">if</span> (backup_-&gt;BackupEnabled() &amp;&amp;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      duration_cast&lt;seconds&gt;(Clock::now() - last_backup_).count() &gt;=</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;          param-&gt;backup_interval) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    last_backup_ = Clock::now();</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    backup_-&gt;Backup(total_steps_);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a998a74737b1e380ca2a43732a16291b8">  380</a></span>&#160;<span class="keywordtype">bool</span> Scheduler::Restore(uint64_t* steps) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordflow">if</span> (backup_-&gt;RestoreEnabled() &amp;&amp; restore_point_ &gt; total_steps_ + *steps) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    total_steps_ += *steps;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">// restore requested, but not last backup was not done during this call to</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">// Simualte. Therefore, we skip it.</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (backup_-&gt;RestoreEnabled() &amp;&amp; restore_point_ &gt; total_steps_ &amp;&amp;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;             restore_point_ &lt; total_steps_ + *steps) {</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">// Restore</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    backup_-&gt;Restore();</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    *steps = total_steps_ + *steps - restore_point_;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    total_steps_ = restore_point_;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;}</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a72aa082eb9e6c9357e3f50e5f2f9e611">  396</a></span>&#160;<span class="keywordtype">void</span> Scheduler::UpdateSimulatedTime() {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  simulated_time_ += Simulation::GetActive()-&gt;GetParam()-&gt;simulation_time_step;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;}</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">// TODO(lukas, ahmad) After https://trello.com/c/0D6sHCK4 has been resolved</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">// think about a better solution, because some operations are executed twice</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">// if Simulate is called with one timestep.</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">  403</a></span>&#160;<span class="keywordtype">void</span> Scheduler::Initialize() {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="keyword">auto</span>* sim = Simulation::GetActive();</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keyword">auto</span>* env = sim-&gt;GetEnvironment();</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="comment">// commit all changes</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; all_exec_ctxts = sim-&gt;GetAllExecCtxts();</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  all_exec_ctxts[0]-&gt;SetupIterationAll(all_exec_ctxts);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keywordflow">if</span> (param-&gt;bound_space != Param::BoundSpaceMode::kOpen) {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keyword">auto</span>* bound_space = <a class="code" href="namespacebdm.html#ad6284b99121d482636295bc12e29c1fd">NewOperation</a>(<span class="stringliteral">&quot;bound space&quot;</span>);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    rm-&gt;ForEachAgentParallel(*bound_space);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">delete</span> bound_space;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  }</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  env-&gt;Update();</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  rm-&gt;ForEachDiffusionGrid([&amp;](<a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* dgrid) {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">// Create data structures, whose size depend on the env dimensions</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    dgrid-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a74e0486a606e83ad410984f540b8e69a">Initialize</a>();</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="comment">// Initialize data structures with user-defined values</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    dgrid-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7">RunInitializers</a>();</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  });</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  ScheduleOps();</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="comment">// Enable GPU operation implementations (if available) if CUDA or OpenCL</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="comment">// flags are set</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordflow">if</span> (param-&gt;compute_target == <span class="stringliteral">&quot;cuda&quot;</span> &amp;&amp;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        op-&gt;IsComputeTargetSupported(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2afff2f08fc23b173d3c1dabfb5b32d6e0">kCuda</a>)) {</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      op-&gt;SelectComputeTarget(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2afff2f08fc23b173d3c1dabfb5b32d6e0">kCuda</a>);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (param-&gt;compute_target == <span class="stringliteral">&quot;opencl&quot;</span> &amp;&amp;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;               op-&gt;IsComputeTargetSupported(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2aacf0086804bc543793bccec32a2dce67">kOpenCl</a>)) {</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      op-&gt;SelectComputeTarget(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2aacf0086804bc543793bccec32a2dce67">kOpenCl</a>);</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      op-&gt;SelectComputeTarget(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    }</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="comment">// Check operation type and append to corresponding list</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordflow">switch</span> (op_type) {</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4ea9a7fcf92bb3160f66226efee20d9db01">kPreSchedule</a>:</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        pre_scheduled_ops_.push_back(op);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4eaf2b1e7d9430cbd128906991ab056db07">kPostSchedule</a>:</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        post_scheduled_ops_.push_back(op);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keywordflow">if</span> (op-&gt;IsStandalone()) {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;          scheduled_standalone_ops_.push_back(op);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;          scheduled_agent_ops_.push_back(op);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        }</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    }</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="comment">// Remove operation from schedule_ops_</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    it = schedule_ops_.erase(it);</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  }</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="comment">// Unschedule requested operations</span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = unschedule_ops_.begin(); it != unschedule_ops_.end();) {</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keyword">auto</span>* op = *it;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">// Schedule the operations</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="classbdm_1_1Scheduler.html#a9d60a07f2a8c9122fb09adba3a81f777">  430</a></span>&#160;<span class="keywordtype">void</span> Scheduler::ScheduleOps() {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="keyword">auto</span>* param = Simulation::GetActive()-&gt;GetParam();</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="comment">// Add requested operations</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = schedule_ops_.begin(); it != schedule_ops_.end();) {</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">auto</span> op_type = it-&gt;first;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keyword">auto</span>* op = it-&gt;second;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="comment">// Enable GPU operation implementations (if available) if CUDA or OpenCL</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="comment">// flags are set</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">if</span> (param-&gt;compute_target == <span class="stringliteral">&quot;cuda&quot;</span> &amp;&amp;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        op-&gt;IsComputeTargetSupported(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2afff2f08fc23b173d3c1dabfb5b32d6e0">kCuda</a>)) {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      op-&gt;SelectComputeTarget(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2afff2f08fc23b173d3c1dabfb5b32d6e0">kCuda</a>);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (param-&gt;compute_target == <span class="stringliteral">&quot;opencl&quot;</span> &amp;&amp;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;               op-&gt;IsComputeTargetSupported(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2aacf0086804bc543793bccec32a2dce67">kOpenCl</a>)) {</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      op-&gt;SelectComputeTarget(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2aacf0086804bc543793bccec32a2dce67">kOpenCl</a>);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      op-&gt;SelectComputeTarget(<a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    }</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="comment">// Check operation type and append to corresponding list</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">switch</span> (op_type) {</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4ea9a7fcf92bb3160f66226efee20d9db01">kPreSchedule</a>:</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        pre_scheduled_ops_.push_back(op);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4eaf2b1e7d9430cbd128906991ab056db07">kPostSchedule</a>:</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        post_scheduled_ops_.push_back(op);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordflow">if</span> (op-&gt;IsStandalone()) {</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;          scheduled_standalone_ops_.push_back(op);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;          scheduled_agent_ops_.push_back(op);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        }</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    }</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="comment">// Lists of operations that should be considered for unscheduling</span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    std::vector&lt;std::vector&lt;Operation*&gt;*&gt; op_lists = {</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        &amp;scheduled_agent_ops_, &amp;scheduled_standalone_ops_, &amp;pre_scheduled_ops_,</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        &amp;post_scheduled_ops_};</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160; </div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op_list : op_lists) {</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> it2 = op_list-&gt;begin(); it2 != op_list-&gt;end(); ++it2) {</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keywordflow">if</span> (op == (*it2)) {</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;          it2 = op_list-&gt;erase(it2);</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;          <span class="keywordflow">goto</span> label;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        }</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      }</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    }</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  label:</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    it = unschedule_ops_.erase(it);</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  }</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;}</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="comment">// Remove operation from schedule_ops_</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    it = schedule_ops_.erase(it);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  }</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="comment">// Unschedule requested operations</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = unschedule_ops_.begin(); it != unschedule_ops_.end();) {</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keyword">auto</span>* op = *it;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="comment">// Lists of operations that should be considered for unscheduling</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    std::vector&lt;std::vector&lt;Operation*&gt;*&gt; op_lists = {</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        &amp;scheduled_agent_ops_, &amp;scheduled_standalone_ops_, &amp;pre_scheduled_ops_,</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        &amp;post_scheduled_ops_};</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>* op_list : op_lists) {</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> it2 = op_list-&gt;begin(); it2 != op_list-&gt;end(); ++it2) {</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordflow">if</span> (op == (*it2)) {</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;          it2 = op_list-&gt;erase(it2);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;          <span class="keywordflow">goto</span> label;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        }</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;      }</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    }</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  label:</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    it = unschedule_ops_.erase(it);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  }</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;}</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="ain__place__exec__ctxt_8h_html"><div class="ttname"><a href="in__place__exec__ctxt_8h.html">in_place_exec_ctxt.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a7aa37b61bfd3791935d4d515e58b5fc9"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a7aa37b61bfd3791935d4d515e58b5fc9">bdm::Scheduler::Backup</a></div><div class="ttdeci">void Backup()</div><div class="ttdoc">Backup the simulation. Backup interval based on Param::backup_interval</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00361">scheduler.cc:361</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a7aa37b61bfd3791935d4d515e58b5fc9"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a7aa37b61bfd3791935d4d515e58b5fc9">bdm::Scheduler::Backup</a></div><div class="ttdeci">void Backup()</div><div class="ttdoc">Backup the simulation. Backup interval based on Param::backup_interval</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00365">scheduler.cc:365</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a7130f71511d1f77a6db33b8cc28c9f4ea92dccbd6a6e1cc2e13986121d814d1a8"><div class="ttname"><a href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4ea92dccbd6a6e1cc2e13986121d814d1a8">bdm::kSchedule</a></div><div class="ttdeci">@ kSchedule</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00042">scheduler.h:42</a></div></div>
 <div class="ttc" id="aroot_2adaptor_8h_html"><div class="ttname"><a href="root_2adaptor_8h.html">adaptor.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a53d6d0e166c63ca8d5b2e3f050068ed3"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">bdm::Scheduler::Execute</a></div><div class="ttdeci">virtual void Execute()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00349">scheduler.cc:349</a></div></div>
-<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_a50ebded26d2514ad449eefdfdd71a895"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#a50ebded26d2514ad449eefdfdd71a895">bdm::RunAllScheduledOps::RunAllScheduledOps</a></div><div class="ttdeci">RunAllScheduledOps(std::vector&lt; Operation * &gt; &amp;scheduled_ops)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00245">scheduler.cc:245</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a53d6d0e166c63ca8d5b2e3f050068ed3"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3">bdm::Scheduler::Execute</a></div><div class="ttdeci">virtual void Execute()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00353">scheduler.cc:353</a></div></div>
+<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_a50ebded26d2514ad449eefdfdd71a895"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#a50ebded26d2514ad449eefdfdd71a895">bdm::RunAllScheduledOps::RunAllScheduledOps</a></div><div class="ttdeci">RunAllScheduledOps(std::vector&lt; Operation * &gt; &amp;scheduled_ops)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00249">scheduler.cc:249</a></div></div>
 <div class="ttc" id="aop__timer_8h_html"><div class="ttname"><a href="op__timer_8h.html">op_timer.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a80cd1b9d4c7d5113623cf897929bb09e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a80cd1b9d4c7d5113623cf897929bb09e">bdm::Scheduler::ForEachOperation</a></div><div class="ttdeci">void ForEachOperation(Lambda lambda)</div><div class="ttdoc">Runs a lambda for each operation that is executed in the Execute() call.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00177">scheduler.h:177</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a80cd1b9d4c7d5113623cf897929bb09e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a80cd1b9d4c7d5113623cf897929bb09e">bdm::Scheduler::ForEachOperation</a></div><div class="ttdeci">void ForEachOperation(Lambda lambda)</div><div class="ttdoc">Runs a lambda for each operation that is executed in the Execute() call.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00184">scheduler.h:184</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a998a74737b1e380ca2a43732a16291b8"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a998a74737b1e380ca2a43732a16291b8">bdm::Scheduler::Restore</a></div><div class="ttdeci">bool Restore(uint64_t *steps)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00376">scheduler.cc:376</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a998a74737b1e380ca2a43732a16291b8"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a998a74737b1e380ca2a43732a16291b8">bdm::Scheduler::Restore</a></div><div class="ttdeci">bool Restore(uint64_t *steps)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00380">scheduler.cc:380</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a7130f71511d1f77a6db33b8cc28c9f4eaf2b1e7d9430cbd128906991ab056db07"><div class="ttname"><a href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4eaf2b1e7d9430cbd128906991ab056db07">bdm::kPostSchedule</a></div><div class="ttdeci">@ kPostSchedule</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00042">scheduler.h:42</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a3cd395d6a67fe0fca4cedf3b7538cf7e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e">bdm::Scheduler::op_times_</a></div><div class="ttdeci">TimingAggregator op_times_</div><div class="ttdoc">Tracks operations' execution times.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00139">scheduler.h:139</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a3cd395d6a67fe0fca4cedf3b7538cf7e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a3cd395d6a67fe0fca4cedf3b7538cf7e">bdm::Scheduler::op_times_</a></div><div class="ttdeci">TimingAggregator op_times_</div><div class="ttdoc">Tracks operations' execution times.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00144">scheduler.h:144</a></div></div>
 <div class="ttc" id="adiffusion__op_8h_html"><div class="ttname"><a href="diffusion__op_8h.html">diffusion_op.h</a></div></div>
-<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_aafa6f5e2d846240733a5c60304076426"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">bdm::RunAllScheduledOps::scheduled_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; &amp; scheduled_ops_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00255">scheduler.cc:255</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a36b2e0951fc864249cd671b136506f87"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">bdm::Scheduler::protected_op_names_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; protected_op_names_</div><div class="ttdoc">List of operations that cannot be affected by the user.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00131">scheduler.h:131</a></div></div>
+<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_aafa6f5e2d846240733a5c60304076426"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#aafa6f5e2d846240733a5c60304076426">bdm::RunAllScheduledOps::scheduled_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; &amp; scheduled_ops_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00259">scheduler.cc:259</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae9adc32ddf8494f3cf5b8fc2d7557e9a"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae9adc32ddf8494f3cf5b8fc2d7557e9a">bdm::Scheduler::GetSimulatedTime</a></div><div class="ttdeci">double GetSimulatedTime() const</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00159">scheduler.cc:159</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a36b2e0951fc864249cd671b136506f87"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">bdm::Scheduler::protected_op_names_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; protected_op_names_</div><div class="ttdoc">List of operations that cannot be affected by the user.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00136">scheduler.h:136</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Scheduler_html_ad12a5370f946d44de22236d6de9e4dce"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ad12a5370f946d44de22236d6de9e4dce">bdm::Scheduler::~Scheduler</a></div><div class="ttdeci">virtual ~Scheduler()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00119">scheduler.cc:119</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a74e0486a606e83ad410984f540b8e69a"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a74e0486a606e83ad410984f540b8e69a">bdm::DiffusionGrid::Initialize</a></div><div class="ttdeci">virtual void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8cc_source.html#l00022">diffusion_grid.cc:22</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a8b2e05f71d46294184cdbe5202547100"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">bdm::Scheduler::GetOpTimes</a></div><div class="ttdeci">TimingAggregator * GetOpTimes()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00157">scheduler.cc:157</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae3dfd5ea7fe1369103cfc28ca042b894"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae3dfd5ea7fe1369103cfc28ca042b894">bdm::Scheduler::restore_point_</a></div><div class="ttdeci">uint64_t restore_point_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00113">scheduler.h:113</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a74e0486a606e83ad410984f540b8e69a"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a74e0486a606e83ad410984f540b8e69a">bdm::DiffusionGrid::Initialize</a></div><div class="ttdeci">virtual void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8cc_source.html#l00023">diffusion_grid.cc:23</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a8b2e05f71d46294184cdbe5202547100"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a8b2e05f71d46294184cdbe5202547100">bdm::Scheduler::GetOpTimes</a></div><div class="ttdeci">TimingAggregator * GetOpTimes()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00161">scheduler.cc:161</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae3dfd5ea7fe1369103cfc28ca042b894"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae3dfd5ea7fe1369103cfc28ca042b894">bdm::Scheduler::restore_point_</a></div><div class="ttdeci">uint64_t restore_point_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00118">scheduler.h:118</a></div></div>
 <div class="ttc" id="ascheduler_8h_html"><div class="ttname"><a href="scheduler_8h.html">scheduler.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a329482a4cb1bb6e65d6dd315b683822d"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a329482a4cb1bb6e65d6dd315b683822d">bdm::Scheduler::scheduled_agent_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; scheduled_agent_ops_</div><div class="ttdoc">List of operations will be executed on all agents.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00129">scheduler.h:129</a></div></div>
-<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_a8df98a215a81c67a66b632acbb7814b8"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#a8df98a215a81c67a66b632acbb7814b8">bdm::RunAllScheduledOps::operator()</a></div><div class="ttdeci">void operator()(Agent *agent, AgentHandle ah) override</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00250">scheduler.cc:250</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a329482a4cb1bb6e65d6dd315b683822d"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a329482a4cb1bb6e65d6dd315b683822d">bdm::Scheduler::scheduled_agent_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; scheduled_agent_ops_</div><div class="ttdoc">List of operations will be executed on all agents.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00134">scheduler.h:134</a></div></div>
+<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_a8df98a215a81c67a66b632acbb7814b8"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#a8df98a215a81c67a66b632acbb7814b8">bdm::RunAllScheduledOps::operator()</a></div><div class="ttdeci">void operator()(Agent *agent, AgentHandle ah) override</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00254">scheduler.cc:254</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143"><div class="ttname"><a href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">bdm::kCpu</a></div><div class="ttdeci">@ kCpu</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00030">operation.h:30</a></div></div>
 <div class="ttc" id="aclassbdm_1_1SimulationBackup_html_ae39680ee434349e02016bedb6f165dd8"><div class="ttname"><a href="classbdm_1_1SimulationBackup.html#ae39680ee434349e02016bedb6f165dd8">bdm::SimulationBackup::GetSimulationStepsFromBackup</a></div><div class="ttdeci">size_t GetSimulationStepsFromBackup()</div><div class="ttdef"><b>Definition:</b> <a href="simulation__backup_8cc_source.html#l00042">simulation_backup.cc:42</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a6558e563bf74b8d70b82ba4dd3234d30"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a6558e563bf74b8d70b82ba4dd3234d30">bdm::Scheduler::SimulateUntil</a></div><div class="ttdeci">void SimulateUntil(const std::function&lt; bool()&gt; &amp;exit_condition)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00141">scheduler.cc:141</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a6558e563bf74b8d70b82ba4dd3234d30"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a6558e563bf74b8d70b82ba4dd3234d30">bdm::Scheduler::SimulateUntil</a></div><div class="ttdeci">void SimulateUntil(const std::function&lt; bool()&gt; &amp;exit_condition)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00142">scheduler.cc:142</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00032">diffusion_grid.h:32</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ac21ea567578500e012a1bd838c0ab65b"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ac21ea567578500e012a1bd838c0ab65b">bdm::Scheduler::unschedule_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; unschedule_ops_</div><div class="ttdoc">List of operations that are to be removed in the upcoming timestep.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00125">scheduler.h:125</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a3984d54058a71b95f01420f0a6477486"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a3984d54058a71b95f01420f0a6477486">bdm::Scheduler::backup_</a></div><div class="ttdeci">SimulationBackup * backup_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00112">scheduler.h:112</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ac21ea567578500e012a1bd838c0ab65b"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ac21ea567578500e012a1bd838c0ab65b">bdm::Scheduler::unschedule_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; unschedule_ops_</div><div class="ttdoc">List of operations that are to be removed in the upcoming timestep.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00130">scheduler.h:130</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a3984d54058a71b95f01420f0a6477486"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a3984d54058a71b95f01420f0a6477486">bdm::Scheduler::backup_</a></div><div class="ttdeci">SimulationBackup * backup_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00117">scheduler.h:117</a></div></div>
 <div class="ttc" id="aoperation__registry_8h_html"><div class="ttname"><a href="operation__registry_8h.html">operation_registry.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae048bf23bc0cf33ed3cf9725c9cdc225"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">bdm::Scheduler::GetListOfScheduledStandaloneOps</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetListOfScheduledStandaloneOps() const</div><div class="ttdoc">Return a list of StandAloneOperations that are scheduled.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00205">scheduler.cc:205</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae048bf23bc0cf33ed3cf9725c9cdc225"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">bdm::Scheduler::GetListOfScheduledStandaloneOps</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetListOfScheduledStandaloneOps() const</div><div class="ttdoc">Return a list of StandAloneOperations that are scheduled.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00209">scheduler.cc:209</a></div></div>
 <div class="ttc" id="asimulation__backup_8h_html"><div class="ttname"><a href="simulation__backup_8h.html">simulation_backup.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1SimulationBackup_html_a883be6288cae9cf54f3a92637a862020"><div class="ttname"><a href="classbdm_1_1SimulationBackup.html#a883be6288cae9cf54f3a92637a862020">bdm::SimulationBackup::RestoreEnabled</a></div><div class="ttdeci">bool RestoreEnabled()</div><div class="ttdef"><b>Definition:</b> <a href="simulation__backup_8cc_source.html#l00057">simulation_backup.cc:57</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html"><div class="ttname"><a href="classbdm_1_1Agent.html">bdm::Agent</a></div><div class="ttdoc">Contains code required by all agents.</div><div class="ttdef"><b>Definition:</b> <a href="agent_8h_source.html#l00079">agent.h:79</a></div></div>
-<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html">bdm::RunAllScheduledOps</a></div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00244">scheduler.cc:244</a></div></div>
+<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html">bdm::RunAllScheduledOps</a></div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00248">scheduler.cc:248</a></div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html_a699bdc8d49ebba87da2f95a65587e5bc"><div class="ttname"><a href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">bdm::Operation::frequency_</a></div><div class="ttdeci">size_t frequency_</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00195">operation.h:195</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Functor_html"><div class="ttname"><a href="classbdm_1_1Functor.html">bdm::Functor</a></div><div class="ttdef"><b>Definition:</b> <a href="functor_8h_source.html#l00024">functor.h:24</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Log_html_afc5aca7c0faffea5c9c613fd778570e7"><div class="ttname"><a href="classbdm_1_1Log.html#afc5aca7c0faffea5c9c613fd778570e7">bdm::Log::Warning</a></div><div class="ttdeci">static void Warning(const std::string &amp;location, const Args &amp;... parts)</div><div class="ttdoc">Prints warning message.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00067">log.h:67</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a7130f71511d1f77a6db33b8cc28c9f4e"><div class="ttname"><a href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4e">bdm::OpType</a></div><div class="ttdeci">OpType</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00042">scheduler.h:42</a></div></div>
 <div class="ttc" id="aclassbdm_1_1RootAdaptor_html"><div class="ttname"><a href="classbdm_1_1RootAdaptor.html">bdm::RootAdaptor</a></div><div class="ttdoc">The class that bridges the simulation code with ROOT Visualization.</div><div class="ttdef"><b>Definition:</b> <a href="root_2adaptor_8h_source.html#l00043">adaptor.h:43</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a292156d001789cc5dc8a121316deb3a7"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7">bdm::DiffusionGrid::RunInitializers</a></div><div class="ttdeci">void RunInitializers()</div><div class="ttdoc">Initialize the diffusion grid according to the initialization functions.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8cc_source.html#l00173">diffusion_grid.cc:173</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a292156d001789cc5dc8a121316deb3a7"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a292156d001789cc5dc8a121316deb3a7">bdm::DiffusionGrid::RunInitializers</a></div><div class="ttdeci">void RunInitializers()</div><div class="ttdoc">Initialize the diffusion grid according to the initialization functions.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8cc_source.html#l00190">diffusion_grid.cc:190</a></div></div>
 <div class="ttc" id="astructbdm_1_1Param_html_a5f0c24609a184bd0e9b4f72de3e5524b"><div class="ttname"><a href="structbdm_1_1Param.html#a5f0c24609a184bd0e9b4f72de3e5524b">bdm::Param::unschedule_default_operations</a></div><div class="ttdeci">std::vector&lt; std::string &gt; unschedule_default_operations</div><div class="ttdef"><b>Definition:</b> <a href="core_2param_2param_8h_source.html#l00089">param.h:89</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a1e3e1ddac79853320514a1eaf29ad859"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a1e3e1ddac79853320514a1eaf29ad859">bdm::Scheduler::scheduled_standalone_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; scheduled_standalone_ops_</div><div class="ttdoc">List of operations will be executed as a stand-alone operation.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00127">scheduler.h:127</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a3a8427b7efea4a7918d6d1dba8ede920"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a3a8427b7efea4a7918d6d1dba8ede920">bdm::Scheduler::ForEachScheduledOperation</a></div><div class="ttdeci">void ForEachScheduledOperation(Lambda lambda)</div><div class="ttdoc">Runs a lambda for each scheduled operation.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00170">scheduler.h:170</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a1e3e1ddac79853320514a1eaf29ad859"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a1e3e1ddac79853320514a1eaf29ad859">bdm::Scheduler::scheduled_standalone_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; scheduled_standalone_ops_</div><div class="ttdoc">List of operations will be executed as a stand-alone operation.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00132">scheduler.h:132</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae6919f29e3e909365e6ecff7baa74d14"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae6919f29e3e909365e6ecff7baa74d14">bdm::Scheduler::simulated_time_</a></div><div class="ttdeci">double simulated_time_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00107">scheduler.h:107</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a3a8427b7efea4a7918d6d1dba8ede920"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a3a8427b7efea4a7918d6d1dba8ede920">bdm::Scheduler::ForEachScheduledOperation</a></div><div class="ttdeci">void ForEachScheduledOperation(Lambda lambda)</div><div class="ttdoc">Runs a lambda for each scheduled operation.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00177">scheduler.h:177</a></div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html_a4b220f4b5a624e3bf481f4437c943264"><div class="ttname"><a href="structbdm_1_1Operation.html#a4b220f4b5a624e3bf481f4437c943264">bdm::Operation::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdoc">Operation name / unique identifier.</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00197">operation.h:197</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Scheduler_html_a380c05f2af4a12eb9655acf37b993996"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a380c05f2af4a12eb9655acf37b993996">bdm::Scheduler::Simulate</a></div><div class="ttdeci">void Simulate(uint64_t steps)</div><div class="ttdoc">Simulate steps number of iterations.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00127">scheduler.cc:127</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a755db2f226475df0ca5194610f289359"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">bdm::Scheduler::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00395">scheduler.cc:395</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_afced0dd46eb95799cb786f907cb5944e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#afced0dd46eb95799cb786f907cb5944e">bdm::Scheduler::GetAgentFilters</a></div><div class="ttdeci">const std::vector&lt; Functor&lt; bool, Agent * &gt; * &gt; &amp; GetAgentFilters() const</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00240">scheduler.cc:240</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ad1908f1adf206de6a4f4cc38f21fc4d0"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ad1908f1adf206de6a4f4cc38f21fc4d0">bdm::Scheduler::SetAgentFilters</a></div><div class="ttdeci">void SetAgentFilters(const std::vector&lt; Functor&lt; bool, Agent * &gt; * &gt; &amp;filters)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00234">scheduler.cc:234</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a755db2f226475df0ca5194610f289359"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a755db2f226475df0ca5194610f289359">bdm::Scheduler::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00403">scheduler.cc:403</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_afced0dd46eb95799cb786f907cb5944e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#afced0dd46eb95799cb786f907cb5944e">bdm::Scheduler::GetAgentFilters</a></div><div class="ttdeci">const std::vector&lt; Functor&lt; bool, Agent * &gt; * &gt; &amp; GetAgentFilters() const</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00244">scheduler.cc:244</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ad1908f1adf206de6a4f4cc38f21fc4d0"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ad1908f1adf206de6a4f4cc38f21fc4d0">bdm::Scheduler::SetAgentFilters</a></div><div class="ttdeci">void SetAgentFilters(const std::vector&lt; Functor&lt; bool, Agent * &gt; * &gt; &amp;filters)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00238">scheduler.cc:238</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Scheduler_html_a222b9c94d5c909750d22acc6718dcc48"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a222b9c94d5c909750d22acc6718dcc48">bdm::Scheduler::Scheduler</a></div><div class="ttdeci">Scheduler()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00035">scheduler.cc:35</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_aedc73de3da37d45bd5bf06e8c95fd9f1"><div class="ttname"><a href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">bdm::Scheduler::all_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; all_ops_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00121">scheduler.h:121</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_aedc73de3da37d45bd5bf06e8c95fd9f1"><div class="ttname"><a href="classbdm_1_1Scheduler.html#aedc73de3da37d45bd5bf06e8c95fd9f1">bdm::Scheduler::all_ops_</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; all_ops_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00126">scheduler.h:126</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a341896036b949773cdf5caf208c39ae2aacf0086804bc543793bccec32a2dce67"><div class="ttname"><a href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2aacf0086804bc543793bccec32a2dce67">bdm::kOpenCl</a></div><div class="ttdeci">@ kOpenCl</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00030">operation.h:30</a></div></div>
 <div class="ttc" id="abound__space__op_8h_html"><div class="ttname"><a href="bound__space__op_8h.html">bound_space_op.h</a></div></div>
 <div class="ttc" id="avisualization__op_8h_html"><div class="ttname"><a href="visualization__op_8h.html">visualization_op.h</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a72aa082eb9e6c9357e3f50e5f2f9e611"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a72aa082eb9e6c9357e3f50e5f2f9e611">bdm::Scheduler::UpdateSimulatedTime</a></div><div class="ttdeci">void UpdateSimulatedTime()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00396">scheduler.cc:396</a></div></div>
 <div class="ttc" id="alog_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_aedcb73e19e6012fbe7b736fab6ef4565"><div class="ttname"><a href="classbdm_1_1Scheduler.html#aedcb73e19e6012fbe7b736fab6ef4565">bdm::Scheduler::GetListOfScheduledAgentOps</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetListOfScheduledAgentOps() const</div><div class="ttdoc">Return a list of AgentOperations that are scheduled.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00197">scheduler.cc:197</a></div></div>
-<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_a95ea63e2994460189b3bac7cb8f61552"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">bdm::RunAllScheduledOps::sim_</a></div><div class="ttdeci">Simulation * sim_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00254">scheduler.cc:254</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_aedcb73e19e6012fbe7b736fab6ef4565"><div class="ttname"><a href="classbdm_1_1Scheduler.html#aedcb73e19e6012fbe7b736fab6ef4565">bdm::Scheduler::GetListOfScheduledAgentOps</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetListOfScheduledAgentOps() const</div><div class="ttdoc">Return a list of AgentOperations that are scheduled.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00201">scheduler.cc:201</a></div></div>
+<div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_a95ea63e2994460189b3bac7cb8f61552"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">bdm::RunAllScheduledOps::sim_</a></div><div class="ttdeci">Simulation * sim_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00258">scheduler.cc:258</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a7130f71511d1f77a6db33b8cc28c9f4ea9a7fcf92bb3160f66226efee20d9db01"><div class="ttname"><a href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4ea9a7fcf92bb3160f66226efee20d9db01">bdm::kPreSchedule</a></div><div class="ttdeci">@ kPreSchedule</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00042">scheduler.h:42</a></div></div>
 <div class="ttc" id="aclassbdm_1_1SimulationBackup_html"><div class="ttname"><a href="classbdm_1_1SimulationBackup.html">bdm::SimulationBackup</a></div><div class="ttdef"><b>Definition:</b> <a href="simulation__backup_8h_source.html#l00033">simulation_backup.h:33</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a2ad613deed59648ce27d60e731637c48"><div class="ttname"><a href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">bdm::Simulation::GetExecutionContext</a></div><div class="ttdeci">ExecutionContext * GetExecutionContext()</div><div class="ttdoc">Returns a thread local execution context.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00289">simulation.cc:289</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a8eca21c36bf32884b1ac26bee109d772"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a8eca21c36bf32884b1ac26bee109d772">bdm::Scheduler::agent_filters_</a></div><div class="ttdeci">std::vector&lt; Functor&lt; bool, Agent * &gt; * &gt; agent_filters_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00144">scheduler.h:144</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae9c4f3806788d7f714183b478b3dd26a"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">bdm::Scheduler::GetOps</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; GetOps(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00213">scheduler.cc:213</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a8eca21c36bf32884b1ac26bee109d772"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a8eca21c36bf32884b1ac26bee109d772">bdm::Scheduler::agent_filters_</a></div><div class="ttdeci">std::vector&lt; Functor&lt; bool, Agent * &gt; * &gt; agent_filters_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00149">scheduler.h:149</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ae9c4f3806788d7f714183b478b3dd26a"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">bdm::Scheduler::GetOps</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; GetOps(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00217">scheduler.cc:217</a></div></div>
 <div class="ttc" id="anamespacebdm_html_ad6284b99121d482636295bc12e29c1fd"><div class="ttname"><a href="namespacebdm.html#ad6284b99121d482636295bc12e29c1fd">bdm::NewOperation</a></div><div class="ttdeci">Operation * NewOperation(const std::string &amp;name)</div><div class="ttdoc">A convenient function to get a new operation from the registry by its name.</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8h_source.html#l00085">operation_registry.h:85</a></div></div>
 <div class="ttc" id="amechanical__forces__op_8h_html"><div class="ttname"><a href="mechanical__forces__op_8h.html">mechanical_forces_op.h</a></div></div>
 <div class="ttc" id="asimulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_ad89da4f94b996ac4b356f76d98f94fbf"><div class="ttname"><a href="classbdm_1_1Simulation.html#ad89da4f94b996ac4b356f76d98f94fbf">bdm::Simulation::GetParam</a></div><div class="ttdeci">const Param * GetParam() const</div><div class="ttdoc">Returns the simulation parameters.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00270">simulation.cc:270</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a341896036b949773cdf5caf208c39ae2afff2f08fc23b173d3c1dabfb5b32d6e0"><div class="ttname"><a href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2afff2f08fc23b173d3c1dabfb5b32d6e0">bdm::kCuda</a></div><div class="ttdeci">@ kCuda</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00030">operation.h:30</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a9d60a07f2a8c9122fb09adba3a81f777"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a9d60a07f2a8c9122fb09adba3a81f777">bdm::Scheduler::ScheduleOps</a></div><div class="ttdeci">void ScheduleOps()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00422">scheduler.cc:422</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ab92954a01b8835933d15593f8bf7ab7a"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">bdm::Scheduler::total_steps_</a></div><div class="ttdeci">uint64_t total_steps_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00102">scheduler.h:102</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ab4a313c8b0fa299c4f2faed035d4f46e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ab4a313c8b0fa299c4f2faed035d4f46e">bdm::Scheduler::schedule_ops_</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; OpType, Operation * &gt; &gt; schedule_ops_</div><div class="ttdoc">List of operations that are to be added in the upcoming timestep.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00123">scheduler.h:123</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a9d60a07f2a8c9122fb09adba3a81f777"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a9d60a07f2a8c9122fb09adba3a81f777">bdm::Scheduler::ScheduleOps</a></div><div class="ttdeci">void ScheduleOps()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00430">scheduler.cc:430</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ab92954a01b8835933d15593f8bf7ab7a"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ab92954a01b8835933d15593f8bf7ab7a">bdm::Scheduler::total_steps_</a></div><div class="ttdeci">uint64_t total_steps_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00106">scheduler.h:106</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ab4a313c8b0fa299c4f2faed035d4f46e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ab4a313c8b0fa299c4f2faed035d4f46e">bdm::Scheduler::schedule_ops_</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; OpType, Operation * &gt; &gt; schedule_ops_</div><div class="ttdoc">List of operations that are to be added in the upcoming timestep.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00128">scheduler.h:128</a></div></div>
 <div class="ttc" id="aresource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>
 <div class="ttc" id="acore_2param_2param_8h_html"><div class="ttname"><a href="core_2param_2param_8h.html">param.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00067">simulation.cc:67</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VisualizationOp_html"><div class="ttname"><a href="classbdm_1_1VisualizationOp.html">bdm::VisualizationOp</a></div><div class="ttdef"><b>Definition:</b> <a href="visualization__op_8h_source.html#l00026">visualization_op.h:26</a></div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html"><div class="ttname"><a href="structbdm_1_1Operation.html">bdm::Operation</a></div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00098">operation.h:98</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a16f5bb7b404a3d59930060b62851795b"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b">bdm::Scheduler::SetUpOps</a></div><div class="ttdeci">void SetUpOps()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00258">scheduler.cc:258</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a1be0347fbd4b6efbc962c46284c4334e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a1be0347fbd4b6efbc962c46284c4334e">bdm::Scheduler::root_visualization_</a></div><div class="ttdeci">RootAdaptor * root_visualization_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00115">scheduler.h:115</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a61638fcbc987dd7959fcc67c4b56eab9"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a61638fcbc987dd7959fcc67c4b56eab9">bdm::Scheduler::FinalizeInitialization</a></div><div class="ttdeci">void FinalizeInitialization()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00150">scheduler.cc:150</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a16f5bb7b404a3d59930060b62851795b"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a16f5bb7b404a3d59930060b62851795b">bdm::Scheduler::SetUpOps</a></div><div class="ttdeci">void SetUpOps()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00262">scheduler.cc:262</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a1be0347fbd4b6efbc962c46284c4334e"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a1be0347fbd4b6efbc962c46284c4334e">bdm::Scheduler::root_visualization_</a></div><div class="ttdeci">RootAdaptor * root_visualization_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00120">scheduler.h:120</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a61638fcbc987dd7959fcc67c4b56eab9"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a61638fcbc987dd7959fcc67c4b56eab9">bdm::Scheduler::FinalizeInitialization</a></div><div class="ttdeci">void FinalizeInitialization()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00152">scheduler.cc:152</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html"><div class="ttname"><a href="classbdm_1_1Simulation.html">bdm::Simulation</a></div><div class="ttdef"><b>Definition:</b> <a href="simulation_8h_source.html#l00050">simulation.h:50</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_af0feb0fac4c76a96bda993bac4f48f48"><div class="ttname"><a href="classbdm_1_1Scheduler.html#af0feb0fac4c76a96bda993bac4f48f48">bdm::Scheduler::ScheduleOp</a></div><div class="ttdeci">void ScheduleOp(Operation *op, OpType op_type=OpType::kSchedule)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00159">scheduler.cc:159</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_a28201b43ed845316c21d06216cb487bc"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">bdm::Scheduler::UnscheduleOp</a></div><div class="ttdeci">void UnscheduleOp(Operation *op)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00169">scheduler.cc:169</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_af0feb0fac4c76a96bda993bac4f48f48"><div class="ttname"><a href="classbdm_1_1Scheduler.html#af0feb0fac4c76a96bda993bac4f48f48">bdm::Scheduler::ScheduleOp</a></div><div class="ttdeci">void ScheduleOp(Operation *op, OpType op_type=OpType::kSchedule)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00163">scheduler.cc:163</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_a28201b43ed845316c21d06216cb487bc"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a28201b43ed845316c21d06216cb487bc">bdm::Scheduler::UnscheduleOp</a></div><div class="ttdeci">void UnscheduleOp(Operation *op)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00173">scheduler.cc:173</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TimingAggregator_html"><div class="ttname"><a href="classbdm_1_1TimingAggregator.html">bdm::TimingAggregator</a></div><div class="ttdef"><b>Definition:</b> <a href="timing__aggregator_8h_source.html#l00030">timing_aggregator.h:30</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Scheduler_html_ac9aaee4634b7f7271fb048f08c04bfad"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">bdm::Scheduler::GetSimulatedSteps</a></div><div class="ttdeci">uint64_t GetSimulatedSteps() const</div><div class="ttdoc">This function returns the numer of simulated steps (=iterations).</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00155">scheduler.cc:155</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Scheduler_html_ac9aaee4634b7f7271fb048f08c04bfad"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ac9aaee4634b7f7271fb048f08c04bfad">bdm::Scheduler::GetSimulatedSteps</a></div><div class="ttdeci">uint64_t GetSimulatedSteps() const</div><div class="ttdoc">This function returns the numer of simulated steps (=iterations).</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00157">scheduler.cc:157</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a0efd0a96f12d8a1fc42c8b40aeb33e24"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24">bdm::ExecutionContext::Execute</a></div><div class="ttdeci">virtual void Execute(Agent *agent, AgentHandle ah, const std::vector&lt; Operation * &gt; &amp;operations)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1AgentHandle_html"><div class="ttname"><a href="classbdm_1_1AgentHandle.html">bdm::AgentHandle</a></div><div class="ttdef"><b>Definition:</b> <a href="agent__handle_8h_source.html#l00029">agent_handle.h:29</a></div></div>
 <!-- start footer part -->

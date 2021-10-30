@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.91-aeb9ce21</span>
+   &#160;<span id="projectnumber">v1.01.96-a06bafed</span>
    </div>
   </td>
  </tr>
@@ -87,52 +87,46 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="model__initializer_8h.html">core/model_initializer.h</a>&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diffusion__grid_8h.html">core/diffusion/diffusion_grid.h</a>&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="euler__grid_8h.html">core/diffusion/euler_grid.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="runga__kutta__grid_8h.html">core/diffusion/runga_kutta_grid.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stencil__grid_8h.html">core/diffusion/stencil_grid.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">ModelInitializer::DefineSubstance</a>(<span class="keywordtype">size_t</span> substance_id,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                       <span class="keyword">const</span> std::string&amp; substance_name,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                       <span class="keywordtype">double</span> diffusion_coeff,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                       <span class="keywordtype">double</span> decay_constant, <span class="keywordtype">int</span> resolution) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">auto</span>* sim = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* d_grid = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">if</span> (param-&gt;diffusion_method == <span class="stringliteral">&quot;euler&quot;</span>) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    d_grid = <span class="keyword">new</span> <a class="code" href="classbdm_1_1EulerGrid.html">EulerGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                           decay_constant, resolution);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (param-&gt;diffusion_method == <span class="stringliteral">&quot;stencil&quot;</span>) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    d_grid = <span class="keyword">new</span> <a class="code" href="classbdm_1_1StencilGrid.html">StencilGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                             decay_constant, resolution);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (param-&gt;diffusion_method == <span class="stringliteral">&quot;runga-kutta&quot;</span>) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    d_grid = <span class="keyword">new</span> <a class="code" href="classbdm_1_1RungaKuttaGrid.html">RungaKuttaGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                decay_constant, resolution);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">Log::Error</a>(<span class="stringliteral">&quot;ModelInitializer::DefineSubstance&quot;</span>, <span class="stringliteral">&quot;Diffusion method &#39;&quot;</span>,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;               param-&gt;diffusion_method,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;               <span class="stringliteral">&quot;&#39; does not exist. Defaulting to &#39;euler&#39;&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    d_grid = <span class="keyword">new</span> <a class="code" href="classbdm_1_1EulerGrid.html">EulerGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                           decay_constant, resolution);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  rm-&gt;AddDiffusionGrid(d_grid);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="runge__kutta__grid_8h.html">core/diffusion/runge_kutta_grid.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">ModelInitializer::DefineSubstance</a>(<span class="keywordtype">size_t</span> substance_id,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                       <span class="keyword">const</span> std::string&amp; substance_name,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                       <span class="keywordtype">double</span> diffusion_coeff,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                       <span class="keywordtype">double</span> decay_constant, <span class="keywordtype">int</span> resolution) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">auto</span>* sim = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">auto</span>* rm = sim-&gt;GetResourceManager();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>* dgrid = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">if</span> (param-&gt;diffusion_method == <span class="stringliteral">&quot;euler&quot;</span>) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    dgrid = <span class="keyword">new</span> <a class="code" href="classbdm_1_1EulerGrid.html">EulerGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          decay_constant, resolution);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (param-&gt;diffusion_method == <span class="stringliteral">&quot;runge-kutta&quot;</span>) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    dgrid = <span class="keyword">new</span> <a class="code" href="classbdm_1_1RungeKuttaGrid.html">RungeKuttaGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                               decay_constant, resolution);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">Log::Error</a>(<span class="stringliteral">&quot;ModelInitializer::DefineSubstance&quot;</span>, <span class="stringliteral">&quot;Diffusion method &#39;&quot;</span>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;               param-&gt;diffusion_method,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;               <span class="stringliteral">&quot;&#39; does not exist. Defaulting to &#39;euler&#39;&quot;</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    dgrid = <span class="keyword">new</span> <a class="code" href="classbdm_1_1EulerGrid.html">EulerGrid</a>(substance_id, substance_name, diffusion_coeff,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                          decay_constant, resolution);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  rm-&gt;AddDiffusionGrid(dgrid);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="arunga__kutta__grid_8h_html"><div class="ttname"><a href="runga__kutta__grid_8h.html">runga_kutta_grid.h</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00032">diffusion_grid.h:32</a></div></div>
+<div class="ttc" id="arunge__kutta__grid_8h_html"><div class="ttname"><a href="runge__kutta__grid_8h.html">runge_kutta_grid.h</a></div></div>
 <div class="ttc" id="amodel__initializer_8h_html"><div class="ttname"><a href="model__initializer_8h.html">model_initializer.h</a></div></div>
-<div class="ttc" id="astructbdm_1_1ModelInitializer_html_a24c333407708ae551ae06e6819d5f4eb"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">bdm::ModelInitializer::DefineSubstance</a></div><div class="ttdeci">static void DefineSubstance(size_t substance_id, const std::string &amp;substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8cc_source.html#l00023">model_initializer.cc:23</a></div></div>
-<div class="ttc" id="aclassbdm_1_1StencilGrid_html"><div class="ttname"><a href="classbdm_1_1StencilGrid.html">bdm::StencilGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="stencil__grid_8h_source.html#l00024">stencil_grid.h:24</a></div></div>
+<div class="ttc" id="astructbdm_1_1ModelInitializer_html_a24c333407708ae551ae06e6819d5f4eb"><div class="ttname"><a href="structbdm_1_1ModelInitializer.html#a24c333407708ae551ae06e6819d5f4eb">bdm::ModelInitializer::DefineSubstance</a></div><div class="ttdeci">static void DefineSubstance(size_t substance_id, const std::string &amp;substance_name, double diffusion_coeff, double decay_constant, int resolution=10)</div><div class="ttdef"><b>Definition:</b> <a href="model__initializer_8cc_source.html#l00022">model_initializer.cc:22</a></div></div>
 <div class="ttc" id="adiffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
+<div class="ttc" id="aclassbdm_1_1RungeKuttaGrid_html"><div class="ttname"><a href="classbdm_1_1RungeKuttaGrid.html">bdm::RungeKuttaGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="runge__kutta__grid_8h_source.html#l00025">runge_kutta_grid.h:25</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Log_html_a6967948de8a82fb630d6ff4f93166211"><div class="ttname"><a href="classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211">bdm::Log::Error</a></div><div class="ttdeci">static void Error(const std::string &amp;location, const Args &amp;... parts)</div><div class="ttdoc">Prints error message.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00079">log.h:79</a></div></div>
 <div class="ttc" id="aeuler__grid_8h_html"><div class="ttname"><a href="euler__grid_8h.html">euler_grid.h</a></div></div>
-<div class="ttc" id="astencil__grid_8h_html"><div class="ttname"><a href="stencil__grid_8h.html">stencil_grid.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1RungaKuttaGrid_html"><div class="ttname"><a href="classbdm_1_1RungaKuttaGrid.html">bdm::RungaKuttaGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="runga__kutta__grid_8h_source.html#l00025">runga_kutta_grid.h:25</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00067">simulation.cc:67</a></div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html"><div class="ttname"><a href="classbdm_1_1EulerGrid.html">bdm::EulerGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8h_source.html#l00024">euler_grid.h:24</a></div></div>
 <!-- start footer part -->

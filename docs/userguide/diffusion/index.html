@@ -332,7 +332,7 @@ This is due to the fact that when one breaks down the partial differential equat
 the time dependant variable is lost on the right hand side of the equation.
 This results in the extra steps being taken for the Runge-Kutta method having minimal impact as there is no time dependant variable to estimate the slope from.</p>
 <p>Within BioDynaMo the number of intervals for the Runge-Kutta method to iterate over per time step can be set within the declaration of a diffusion grid itself as follows:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">DiffusionGrid* dgrid = new RungaKuttaGrid(substance_id, &quot;substance_name&quot;, diffusion_coefficient,
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">DiffusionGrid* dgrid = new RungeKuttaGrid(substance_id, &quot;substance_name&quot;, diffusion_coefficient,
                 decay_constant, resolution, diffusion_step)
                 </code></pre></div>
 <p>Note: </p>
@@ -341,12 +341,12 @@ This results in the extra steps being taken for the Runge-Kutta method having mi
 </ul>
 <p>To access the Runge-Kutta method for diffusion, one simply needs to update the bdm.toml file as follows :</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[simulation]
-diffusion_method = &quot;runga-kutta&quot;
+diffusion_method = &quot;runge-kutta&quot;
 
 [visualization]
 export = true
 interval = 10
-diffusion_method = &quot;runga-kutta&quot;
+diffusion_method = &quot;runge-kutta&quot;
 
 	[[visualize_agent]]
 	name = &quot;Cell&quot;
