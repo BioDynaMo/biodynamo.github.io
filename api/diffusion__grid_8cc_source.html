@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.97-d7678e14</span>
+   &#160;<span id="projectnumber">v1.01.100-96328f42</span>
    </div>
   </td>
  </tr>
@@ -374,9 +374,9 @@ $(function() {
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  std::lock_guard&lt;Spinlock&gt; guard(<a class="code" href="classbdm_1_1DiffusionGrid.html#a93039d32edc12eab6158aa57e798d92f">locks_</a>[idx]);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  assert(idx &lt; <a class="code" href="classbdm_1_1DiffusionGrid.html#a93039d32edc12eab6158aa57e798d92f">locks_</a>.size());</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx] += amount;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx] = (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx] &gt; <a class="code" href="classbdm_1_1DiffusionGrid.html#aa4d69f91ea7187ee5f1c3f0f70cc4245">upper_threshold_</a>)   ? <a class="code" href="classbdm_1_1DiffusionGrid.html#aa4d69f91ea7187ee5f1c3f0f70cc4245">upper_threshold_</a></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;             : (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx] &lt; <a class="code" href="classbdm_1_1DiffusionGrid.html#aa0772a8f7476cd7b041cb6f75b978d2c">lower_threshold_</a>) ? <a class="code" href="classbdm_1_1DiffusionGrid.html#aa0772a8f7476cd7b041cb6f75b978d2c">lower_threshold_</a></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                             : <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx];</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx] = (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx] &gt; <a class="code" href="classbdm_1_1DiffusionGrid.html#aa4d69f91ea7187ee5f1c3f0f70cc4245">upper_threshold_</a>)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                 ? <a class="code" href="classbdm_1_1DiffusionGrid.html#aa4d69f91ea7187ee5f1c3f0f70cc4245">upper_threshold_</a></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                 : (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx] &lt; <a class="code" href="classbdm_1_1DiffusionGrid.html#aa0772a8f7476cd7b041cb6f75b978d2c">lower_threshold_</a>) ? <a class="code" href="classbdm_1_1DiffusionGrid.html#aa0772a8f7476cd7b041cb6f75b978d2c">lower_threshold_</a> : <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[idx];</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;}</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
 <div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="classbdm_1_1DiffusionGrid.html#a0798f8f01811761e55c620d5132bc5bb">  312</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classbdm_1_1DiffusionGrid.html#a0798f8f01811761e55c620d5132bc5bb">DiffusionGrid::GetConcentration</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a>&amp; position)<span class="keyword"> const </span>{</div>
