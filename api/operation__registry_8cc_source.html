@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.100-96328f42</span>
+   &#160;<span id="projectnumber">v1.01.102-362aec70</span>
    </div>
   </td>
  </tr>
@@ -70,71 +70,85 @@ $(function() {
 <div class="title">operation_registry.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="operation__registry_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operation__registry_8h.html">core/operation/operation_registry.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a16f42358c1e805f2af546588ee9317a8">    5</a></span>&#160;<a class="code" href="classbdm_1_1OperationRegistry.html#a16f42358c1e805f2af546588ee9317a8">OperationRegistry::~OperationRegistry</a>() {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;pair : <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>) {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">delete</span> pair.second;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  }</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">   11</a></span>&#160;<a class="code" href="classbdm_1_1OperationRegistry.html">OperationRegistry</a> *<a class="code" href="classbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">OperationRegistry::GetInstance</a>() {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">static</span> <a class="code" href="classbdm_1_1OperationRegistry.html">OperationRegistry</a> operation_registry;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordflow">return</span> &amp;operation_registry;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">   16</a></span>&#160;<a class="code" href="structbdm_1_1Operation.html">Operation</a> *<a class="code" href="classbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">OperationRegistry::GetOperation</a>(<span class="keyword">const</span> std::string &amp;op_name) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">auto</span> search = <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.find(op_name);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">if</span> (search == <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.end()) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::string msg = <span class="stringliteral">&quot;Operation not found in registry: &quot;</span> + op_name;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">Log::Fatal</a>(<span class="stringliteral">&quot;OperationRegistry::GetOperation&quot;</span>, msg);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">return</span> search-&gt;second;</div>
+<a href="operation__registry_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (C) The BioDynaMo Project.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All Rights Reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// See the LICENSE file distributed with this work for details.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// See the NOTICE file distributed with this work for additional information</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// regarding copyright ownership.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// -----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operation__registry_8h.html">core/operation/operation_registry.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a16f42358c1e805f2af546588ee9317a8">   19</a></span>&#160;<a class="code" href="classbdm_1_1OperationRegistry.html#a16f42358c1e805f2af546588ee9317a8">OperationRegistry::~OperationRegistry</a>() {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;pair : <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">delete</span> pair.second;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a8a6426c8db424fa36794b7b05235b5f6">   25</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classbdm_1_1OperationRegistry.html#a8a6426c8db424fa36794b7b05235b5f6">OperationRegistry::AddOperationImpl</a>(<span class="keyword">const</span> std::string &amp;op_name,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                         <a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2">OpComputeTarget</a> target,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                         <a class="code" href="structbdm_1_1OperationImpl.html">OperationImpl</a> *impl,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                         uint32_t frequency) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">auto</span> op = <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.find(op_name);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">// If operation doesn&#39;t exist yet, make a new operation under given name</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">if</span> (op == <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.end()) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.insert(</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::make_pair(op_name, <span class="keyword">new</span> <a class="code" href="structbdm_1_1Operation.html">Operation</a>(op_name, frequency)));</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    op = <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.find(op_name);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    op-&gt;second-&gt;AddOperationImpl(target, impl);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op-&gt;second-&gt;implementations_.size() &gt;=</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;             <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(target + 1)) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// If operation exists, check if the implementation already exists too</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (op-&gt;second-&gt;implementations_[target]) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">Log::Fatal</a>(<span class="stringliteral">&quot;OperationRegistry::AddOperationImpl&quot;</span>, <span class="stringliteral">&quot;Operation &#39;&quot;</span>, op_name,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                 <span class="stringliteral">&quot;&#39; with implementation &#39;&quot;</span>, <a class="code" href="namespacebdm.html#a5015982e400a0d1a69ab33a5fdde78c6">OpComputeTargetString</a>(target),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                 <span class="stringliteral">&quot;&#39; already exists in the registry!&quot;</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Add the implementation to the existing operation</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    op-&gt;second-&gt;AddOperationImpl(target, impl);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a92e835f1ea96c1488a99f16f929d820e">   51</a></span>&#160;<a class="code" href="classbdm_1_1OperationRegistry.html#a92e835f1ea96c1488a99f16f929d820e">OperationRegistry::OperationRegistry</a>() {}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">   25</a></span>&#160;<a class="code" href="classbdm_1_1OperationRegistry.html">OperationRegistry</a> *<a class="code" href="classbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">OperationRegistry::GetInstance</a>() {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">static</span> <a class="code" href="classbdm_1_1OperationRegistry.html">OperationRegistry</a> operation_registry;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> &amp;operation_registry;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">   30</a></span>&#160;<a class="code" href="structbdm_1_1Operation.html">Operation</a> *<a class="code" href="classbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">OperationRegistry::GetOperation</a>(<span class="keyword">const</span> std::string &amp;op_name) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">auto</span> search = <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.find(op_name);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">if</span> (search == <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.end()) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string msg = <span class="stringliteral">&quot;Operation not found in registry: &quot;</span> + op_name;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">Log::Fatal</a>(<span class="stringliteral">&quot;OperationRegistry::GetOperation&quot;</span>, msg);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">return</span> search-&gt;second;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a8a6426c8db424fa36794b7b05235b5f6">   39</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classbdm_1_1OperationRegistry.html#a8a6426c8db424fa36794b7b05235b5f6">OperationRegistry::AddOperationImpl</a>(<span class="keyword">const</span> std::string &amp;op_name,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                         <a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2">OpComputeTarget</a> target,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                         <a class="code" href="structbdm_1_1OperationImpl.html">OperationImpl</a> *impl,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                         uint32_t frequency) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">auto</span> op = <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.find(op_name);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// If operation doesn&#39;t exist yet, make a new operation under given name</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">if</span> (op == <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.end()) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.insert(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::make_pair(op_name, <span class="keyword">new</span> <a class="code" href="structbdm_1_1Operation.html">Operation</a>(op_name, frequency)));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    op = <a class="code" href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">operations_</a>.find(op_name);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    op-&gt;second-&gt;AddOperationImpl(target, impl);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op-&gt;second-&gt;implementations_.size() &gt;=</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;             <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(target + 1)) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// If operation exists, check if the implementation already exists too</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (op-&gt;second-&gt;implementations_[target]) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">Log::Fatal</a>(<span class="stringliteral">&quot;OperationRegistry::AddOperationImpl&quot;</span>, <span class="stringliteral">&quot;Operation &#39;&quot;</span>, op_name,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                 <span class="stringliteral">&quot;&#39; with implementation &#39;&quot;</span>, <a class="code" href="namespacebdm.html#a5015982e400a0d1a69ab33a5fdde78c6">OpComputeTargetString</a>(target),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                 <span class="stringliteral">&quot;&#39; already exists in the registry!&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Add the implementation to the existing operation</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    op-&gt;second-&gt;AddOperationImpl(target, impl);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classbdm_1_1OperationRegistry.html#a92e835f1ea96c1488a99f16f929d820e">   65</a></span>&#160;<a class="code" href="classbdm_1_1OperationRegistry.html#a92e835f1ea96c1488a99f16f929d820e">OperationRegistry::OperationRegistry</a>() {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a16f42358c1e805f2af546588ee9317a8"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a16f42358c1e805f2af546588ee9317a8">bdm::OperationRegistry::~OperationRegistry</a></div><div class="ttdeci">~OperationRegistry()</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00005">operation_registry.cc:5</a></div></div>
-<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a061bb4e6d7a0a63cda8472fff49f387a"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">bdm::OperationRegistry::GetOperation</a></div><div class="ttdeci">Operation * GetOperation(const std::string &amp;op_name)</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00016">operation_registry.cc:16</a></div></div>
+<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a16f42358c1e805f2af546588ee9317a8"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a16f42358c1e805f2af546588ee9317a8">bdm::OperationRegistry::~OperationRegistry</a></div><div class="ttdeci">~OperationRegistry()</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00019">operation_registry.cc:19</a></div></div>
+<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a061bb4e6d7a0a63cda8472fff49f387a"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a061bb4e6d7a0a63cda8472fff49f387a">bdm::OperationRegistry::GetOperation</a></div><div class="ttdeci">Operation * GetOperation(const std::string &amp;op_name)</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00030">operation_registry.cc:30</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a5015982e400a0d1a69ab33a5fdde78c6"><div class="ttname"><a href="namespacebdm.html#a5015982e400a0d1a69ab33a5fdde78c6">bdm::OpComputeTargetString</a></div><div class="ttdeci">std::string OpComputeTargetString(OpComputeTarget t)</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00032">operation.h:32</a></div></div>
 <div class="ttc" id="astructbdm_1_1OperationImpl_html"><div class="ttname"><a href="structbdm_1_1OperationImpl.html">bdm::OperationImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00045">operation.h:45</a></div></div>
 <div class="ttc" id="aoperation__registry_8h_html"><div class="ttname"><a href="operation__registry_8h.html">operation_registry.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a8a6426c8db424fa36794b7b05235b5f6"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a8a6426c8db424fa36794b7b05235b5f6">bdm::OperationRegistry::AddOperationImpl</a></div><div class="ttdeci">bool AddOperationImpl(const std::string &amp;op_name, OpComputeTarget target, OperationImpl *impl, uint32_t frequency=1)</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00025">operation_registry.cc:25</a></div></div>
+<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a8a6426c8db424fa36794b7b05235b5f6"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a8a6426c8db424fa36794b7b05235b5f6">bdm::OperationRegistry::AddOperationImpl</a></div><div class="ttdeci">bool AddOperationImpl(const std::string &amp;op_name, OpComputeTarget target, OperationImpl *impl, uint32_t frequency=1)</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00039">operation_registry.cc:39</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a341896036b949773cdf5caf208c39ae2"><div class="ttname"><a href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2">bdm::OpComputeTarget</a></div><div class="ttdeci">OpComputeTarget</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00030">operation.h:30</a></div></div>
-<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a92e835f1ea96c1488a99f16f929d820e"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a92e835f1ea96c1488a99f16f929d820e">bdm::OperationRegistry::OperationRegistry</a></div><div class="ttdeci">OperationRegistry()</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00051">operation_registry.cc:51</a></div></div>
+<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a92e835f1ea96c1488a99f16f929d820e"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a92e835f1ea96c1488a99f16f929d820e">bdm::OperationRegistry::OperationRegistry</a></div><div class="ttdeci">OperationRegistry()</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00065">operation_registry.cc:65</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Log_html_aa07520e7c190055d9674de7c0fb68e01"><div class="ttname"><a href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;... parts)</div><div class="ttdoc">Prints fatal error message.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00115">log.h:115</a></div></div>
-<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a02b41dd3c7b4d8cb123d741a294da6f0"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">bdm::OperationRegistry::GetInstance</a></div><div class="ttdeci">static OperationRegistry * GetInstance()</div><div class="ttdoc">Singleton class - returns the static instance.</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00011">operation_registry.cc:11</a></div></div>
+<div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a02b41dd3c7b4d8cb123d741a294da6f0"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a02b41dd3c7b4d8cb123d741a294da6f0">bdm::OperationRegistry::GetInstance</a></div><div class="ttdeci">static OperationRegistry * GetInstance()</div><div class="ttdoc">Singleton class - returns the static instance.</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8cc_source.html#l00025">operation_registry.cc:25</a></div></div>
 <div class="ttc" id="aclassbdm_1_1OperationRegistry_html_a9a48c278936c18d075ccf9fee632d186"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html#a9a48c278936c18d075ccf9fee632d186">bdm::OperationRegistry::operations_</a></div><div class="ttdeci">std::unordered_map&lt; std::string, Operation * &gt; operations_</div><div class="ttdoc">The map containing the operations; accessible by their name.</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8h_source.html#l00055">operation_registry.h:55</a></div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html"><div class="ttname"><a href="structbdm_1_1Operation.html">bdm::Operation</a></div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00098">operation.h:98</a></div></div>
 <div class="ttc" id="aclassbdm_1_1OperationRegistry_html"><div class="ttname"><a href="classbdm_1_1OperationRegistry.html">bdm::OperationRegistry</a></div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8h_source.html#l00027">operation_registry.h:27</a></div></div>
