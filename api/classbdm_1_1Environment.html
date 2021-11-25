@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.125-1da67ec7</span>
+   &#160;<span id="projectnumber">v1.01.126-2f91af15</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1Environment-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::Environment Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -96,12 +97,19 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6ea5b9c942a7a5a03f68419d3c00399"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ad6ea5b9c942a7a5a03f68419d3c00399">~Environment</a> ()</td></tr>
 <tr class="separator:ad6ea5b9c942a7a5a03f68419d3c00399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3761733cab7d0f81abfdc9216bb33d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2">Update</a> ()=0</td></tr>
-<tr class="separator:af3761733cab7d0f81abfdc9216bb33d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057e686a4314459dda4a676bc65bf965"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a057e686a4314459dda4a676bc65bf965">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius)</td></tr>
-<tr class="separator:a057e686a4314459dda4a676bc65bf965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eda6508dabcc0ebb1842e5375d8d1f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a7eda6508dabcc0ebb1842e5375d8d1f5">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)</td></tr>
-<tr class="separator:a7eda6508dabcc0ebb1842e5375d8d1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26448e9a694c6502e31c947a265baa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ab26448e9a694c6502e31c947a265baa8">MarkAsOutOfSync</a> ()</td></tr>
+<tr class="separator:ab26448e9a694c6502e31c947a265baa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a7ab905784615503dc6bc7b94b241d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update</a> ()</td></tr>
+<tr class="separator:aa5a7ab905784615503dc6bc7b94b241d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329f4c9f27468a284ab4294fca47be0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f">ForcedUpdate</a> ()</td></tr>
+<tr class="memdesc:a329f4c9f27468a284ab4294fca47be0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the environment. Prefer <a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update()</a> for implementations.  <a href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f">More...</a><br /></td></tr>
+<tr class="separator:a329f4c9f27468a284ab4294fca47be0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeada1e248c5abb6d9c89fb1f55b10fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#adeada1e248c5abb6d9c89fb1f55b10fe">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius)=0</td></tr>
+<tr class="separator:adeada1e248c5abb6d9c89fb1f55b10fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ade103f908bee260afb429dc0d9759"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ac8ade103f908bee260afb429dc0d9759">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)=0</td></tr>
+<tr class="separator:ac8ade103f908bee260afb429dc0d9759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90dd35cd07c9458d2b2414c0b102ccff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a90dd35cd07c9458d2b2414c0b102ccff">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;query_position, double squared_radius, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *query_agent=nullptr)=0</td></tr>
+<tr class="separator:a90dd35cd07c9458d2b2414c0b102ccff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7636f0d481c28e6b6d500a0394be7290"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a7636f0d481c28e6b6d500a0394be7290">Clear</a> ()=0</td></tr>
 <tr class="separator:a7636f0d481c28e6b6d500a0394be7290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec9dc566be2c54f02a209f815d1e12f"><td class="memItemLeft" align="right" valign="top">virtual std::array&lt; int32_t, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a5ec9dc566be2c54f02a209f815d1e12f">GetDimensions</a> () const =0</td></tr>
@@ -122,6 +130,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:acf8aa70586bf89f887cc44af3dd6479d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#acf8aa70586bf89f887cc44af3dd6479d">UpdateImplementation</a> ()=0</td></tr>
+<tr class="separator:acf8aa70586bf89f887cc44af3dd6479d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cac1b2d521214b2505c501706cb23d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a6cac1b2d521214b2505c501706cb23d1">CalcSimDimensionsAndLargestAgent</a> (std::array&lt; double, 6 &gt; *ret_grid_dimensions)</td></tr>
 <tr class="separator:a6cac1b2d521214b2505c501706cb23d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,10 +144,15 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a173bf8d784849b2c57e6eaf1fceacd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f3753630a71652e943bd4776e52b750"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a3f3753630a71652e943bd4776e52b750">largest_object_size_squared_</a> = 0.0</td></tr>
 <tr class="separator:a3f3753630a71652e943bd4776e52b750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae04790d5680c611ea72d32633e6f291d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ae04790d5680c611ea72d32633e6f291d">out_of_sync_</a> = true</td></tr>
+<tr class="separator:ae04790d5680c611ea72d32633e6f291d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00027">27</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00030">30</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad6ea5b9c942a7a5a03f68419d3c00399"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6ea5b9c942a7a5a03f68419d3c00399">&#9670;&nbsp;</a></span>~Environment()</h2>
@@ -162,7 +177,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00029">29</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00038">38</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +207,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculates what the grid dimensions need to be in order to contain all the agents </p>
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00145">145</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00193">193</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -223,8 +238,37 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7eda6508dabcc0ebb1842e5375d8d1f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eda6508dabcc0ebb1842e5375d8d1f5">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/2]</span></h2>
+<a id="a329f4c9f27468a284ab4294fca47be0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329f4c9f27468a284ab4294fca47be0f">&#9670;&nbsp;</a></span>ForcedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Environment::ForcedUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the environment. Prefer <a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update()</a> for implementations. </p>
+
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00057">57</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a id="ac8ade103f908bee260afb429dc0d9759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ade103f908bee260afb429dc0d9759">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,17 +302,18 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00040">40</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#ac9c3da5d67e22eedddad771feba4f371">bdm::UniformGridEnvironment</a>, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#a4228f241c312e5be685c5ede97a52fdc">bdm::KDTreeEnvironment</a>, and <a class="el" href="classbdm_1_1OctreeEnvironment.html#a30ebb72a0ddd519b374b721e4b3f9680">bdm::OctreeEnvironment</a>.</p>
 
 </div>
 </div>
-<a id="a057e686a4314459dda4a676bc65bf965"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a057e686a4314459dda4a676bc65bf965">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/2]</span></h2>
+<a id="adeada1e248c5abb6d9c89fb1f55b10fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeada1e248c5abb6d9c89fb1f55b10fe">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,15 +347,64 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
+<p>Iterates over all neighbors of a query agent that appear in a distance of less than sqrt(squared_radius). Typically, the distance is computed as the Euclidean distance in 3D environments. </p>
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1OctreeEnvironment.html#a76c6fb75ab46de5c8ef82c597cce2f54">bdm::OctreeEnvironment</a>, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3421364a85bcb8e39c7f0a1b12b7ff63">bdm::UniformGridEnvironment</a>, and <a class="el" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">bdm::KDTreeEnvironment</a>.</p>
+<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3421364a85bcb8e39c7f0a1b12b7ff63">bdm::UniformGridEnvironment</a>, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">bdm::KDTreeEnvironment</a>, and <a class="el" href="classbdm_1_1OctreeEnvironment.html#a40e837e1cb9a40ee9b469239e8dbe998">bdm::OctreeEnvironment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00037">37</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+</div>
+</div>
+<a id="a90dd35cd07c9458d2b2414c0b102ccff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90dd35cd07c9458d2b2414c0b102ccff">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bdm::Environment::ForEachNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>query_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squared_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>query_agent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Iterates over all neighbors of a query position that appear in a distance of less than sqrt(squared_radius). Typically, the distance is computed as the Euclidean distance in 3D environments. Typically iterating over the neighbors of a certain agent or a certain position are fairly similar tasks. If you implement an environment, the optional argument agent_query can be used to to treat both cases in the same function, keep the implementation lean, and avoid redundant code. </p>
+
+<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a622d9fe701b32f6b2d1ce521de8119f4">bdm::UniformGridEnvironment</a>, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#afb38722c1df2be5ee9db714f792990d1">bdm::KDTreeEnvironment</a>, and <a class="el" href="classbdm_1_1OctreeEnvironment.html#af1f4308542688bad66a7658f063e3d0b">bdm::OctreeEnvironment</a>.</p>
 
 </div>
 </div>
@@ -393,7 +487,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Return the size of the largest agent. </p>
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00050">50</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00094">94</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +514,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00051">51</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00095">95</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -502,12 +596,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00079">79</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00123">123</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
-<a id="af3761733cab7d0f81abfdc9216bb33d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3761733cab7d0f81abfdc9216bb33d2">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="ab26448e9a694c6502e31c947a265baa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26448e9a694c6502e31c947a265baa8">&#9670;&nbsp;</a></span>MarkAsOutOfSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,7 +610,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void bdm::Environment::Update </td>
+          <td class="memname">void bdm::Environment::MarkAsOutOfSync </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -524,12 +618,69 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This function informs the environment that it is no longer up to date and that the state of the simulation might not be reflected correctly in the current environment. For instance, the load balancing operation causes such a synchronization issue and therefore calls this member function. </p>
 
-<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3b8d49bec009fd86067172c3ac66bc11">bdm::UniformGridEnvironment</a>, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#acc54d13f494a685fc0511a46da5b6976">bdm::KDTreeEnvironment</a>, and <a class="el" href="classbdm_1_1OctreeEnvironment.html#a72f6d590f0cf79f7ea02d1f3504a6c88">bdm::OctreeEnvironment</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00044">44</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a id="aa5a7ab905784615503dc6bc7b94b241d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a7ab905784615503dc6bc7b94b241d">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::Environment::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the environment if it is marked as out_of_sync_. This function should not be called in parallel regions for performance reasons. </p>
+
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00048">48</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a id="acf8aa70586bf89f887cc44af3dd6479d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8aa70586bf89f887cc44af3dd6479d">&#9670;&nbsp;</a></span>UpdateImplementation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bdm::Environment::UpdateImplementation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Member function that is called by <a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update()</a> and <a class="el" href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f" title="Updates the environment. Prefer Update() for implementations.">ForcedUpdate()</a>. Pure virtual. </p>
+
+<p>Implemented in <a class="el" href="classbdm_1_1UniformGridEnvironment.html#ae8d51b1ab8bbbb8d9cb89cbee9a59dcc">bdm::UniformGridEnvironment</a>, <a class="el" href="classbdm_1_1KDTreeEnvironment.html#ae030b726433b8bd2753178ce3a4e3085">bdm::KDTreeEnvironment</a>, and <a class="el" href="classbdm_1_1OctreeEnvironment.html#a96b433f6687041961218ca110e409acd">bdm::OctreeEnvironment</a>.</p>
 
 </div>
 </div>
@@ -554,7 +705,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00082">82</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00126">126</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +731,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The size of the largest object in the simulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00084">84</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00128">128</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +755,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00085">85</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00129">129</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a id="ae04790d5680c611ea72d32633e6f291d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04790d5680c611ea72d32633e6f291d">&#9670;&nbsp;</a></span>out_of_sync_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::Environment::out_of_sync_ = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="environment_8h_source.html#l00035">35</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>

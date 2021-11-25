@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.125-1da67ec7</span>
+   &#160;<span id="projectnumber">v1.01.126-2f91af15</span>
    </div>
   </td>
  </tr>
@@ -213,7 +213,7 @@ $(function() {
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  std::vector&lt;int64_t&gt; diffs;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  diffs.reserve(rm-&gt;GetNumAgents() * 3);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordflow">if</span> (!before) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>()-&gt;<a class="code" href="classbdm_1_1Simulation.html#ac33fad362799e0633e364cf54bff3d95">GetEnvironment</a>()-&gt;<a class="code" href="classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2">Update</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>()-&gt;<a class="code" href="classbdm_1_1Simulation.html#ac33fad362799e0633e364cf54bff3d95">GetEnvironment</a>()-&gt;<a class="code" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update</a>();</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="structbdm_1_1Fea.html">Fea</a> fea(diffs);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  rm-&gt;ForEachAgent(fea);</div>
@@ -271,6 +271,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a831f22ad084c248b0d2698242ebdabb8"><div class="ttname"><a href="classbdm_1_1Simulation.html#a831f22ad084c248b0d2698242ebdabb8">bdm::Simulation::GetScheduler</a></div><div class="ttdeci">Scheduler * GetScheduler()</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00280">simulation.cc:280</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Functor_html"><div class="ttname"><a href="classbdm_1_1Functor.html">bdm::Functor</a></div><div class="ttdef"><b>Definition:</b> <a href="functor_8h_source.html#l00024">functor.h:24</a></div></div>
 <div class="ttc" id="astructbdm_1_1Fen_html_a4c0980f383471dc01f5b8c0c396db4ea"><div class="ttname"><a href="structbdm_1_1Fen.html#a4c0980f383471dc01f5b8c0c396db4ea">bdm::Fen::query</a></div><div class="ttdeci">Agent * query</div><div class="ttdef"><b>Definition:</b> <a href="plot__memory__layout_8cc_source.html#l00109">plot_memory_layout.cc:109</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Environment_html_aa5a7ab905784615503dc6bc7b94b241d"><div class="ttname"><a href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">bdm::Environment::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00048">environment.h:48</a></div></div>
 <div class="ttc" id="astructbdm_1_1Fea_html_a6e0747db44c6928aaab6c3a0ff03cd32"><div class="ttname"><a href="structbdm_1_1Fea.html#a6e0747db44c6928aaab6c3a0ff03cd32">bdm::Fea::diffs</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; &amp; diffs</div><div class="ttdef"><b>Definition:</b> <a href="plot__memory__layout_8cc_source.html#l00124">plot_memory_layout.cc:124</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_a12410bfc9dec5d64d0ae3223a5c59385"><div class="ttname"><a href="classbdm_1_1Simulation.html#a12410bfc9dec5d64d0ae3223a5c59385">bdm::Simulation::GetResourceManager</a></div><div class="ttdeci">ResourceManager * GetResourceManager()</div><div class="ttdoc">Returns the ResourceManager instance.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00260">simulation.cc:260</a></div></div>
 <div class="ttc" id="astructbdm_1_1Fea_html"><div class="ttname"><a href="structbdm_1_1Fea.html">bdm::Fea</a></div><div class="ttdef"><b>Definition:</b> <a href="plot__memory__layout_8cc_source.html#l00123">plot_memory_layout.cc:123</a></div></div>
@@ -278,7 +279,6 @@ $(function() {
 <div class="ttc" id="aagent_8h_html"><div class="ttname"><a href="agent_8h.html">agent.h</a></div></div>
 <div class="ttc" id="astructbdm_1_1Fen_html_a6be09d2dc76c693007a805e4640e0b73"><div class="ttname"><a href="structbdm_1_1Fen.html#a6be09d2dc76c693007a805e4640e0b73">bdm::Fen::diffs</a></div><div class="ttdeci">std::vector&lt; int64_t &gt; &amp; diffs</div><div class="ttdef"><b>Definition:</b> <a href="plot__memory__layout_8cc_source.html#l00108">plot_memory_layout.cc:108</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Simulation_html_ac33fad362799e0633e364cf54bff3d95"><div class="ttname"><a href="classbdm_1_1Simulation.html#ac33fad362799e0633e364cf54bff3d95">bdm::Simulation::GetEnvironment</a></div><div class="ttdeci">Environment * GetEnvironment()</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00278">simulation.cc:278</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Environment_html_af3761733cab7d0f81abfdc9216bb33d2"><div class="ttname"><a href="classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2">bdm::Environment::Update</a></div><div class="ttdeci">virtual void Update()=0</div></div>
 <div class="ttc" id="anamespacebdm_html_afb56f9ae44c4ba9f6cdf34fd60048fd8"><div class="ttname"><a href="namespacebdm.html#afb56f9ae44c4ba9f6cdf34fd60048fd8">bdm::PlotMemoryLayout</a></div><div class="ttdeci">void PlotMemoryLayout(const std::vector&lt; Agent * &gt; &amp;agents, int numa_node)</div><div class="ttdef"><b>Definition:</b> <a href="plot__memory__layout_8cc_source.html#l00042">plot_memory_layout.cc:42</a></div></div>
 <div class="ttc" id="aenvironment_8h_html"><div class="ttname"><a href="environment_8h.html">environment.h</a></div></div>
 <div class="ttc" id="asimulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.125-1da67ec7</span>
+   &#160;<span id="projectnumber">v1.01.126-2f91af15</span>
    </div>
   </td>
  </tr>
@@ -70,6 +70,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -137,9 +138,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9cc5bd4c7f77a5630c192de35f7a6d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bda7ea10721eddbc5e146c2942e6bda"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3bda7ea10721eddbc5e146c2942e6bda">GetBoxLength</a> ()</td></tr>
 <tr class="separator:a3bda7ea10721eddbc5e146c2942e6bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8d49bec009fd86067172c3ac66bc11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3b8d49bec009fd86067172c3ac66bc11">Update</a> () override</td></tr>
-<tr class="memdesc:a3b8d49bec009fd86067172c3ac66bc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the grid, as agents may have moved, added or deleted.  <a href="classbdm_1_1UniformGridEnvironment.html#a3b8d49bec009fd86067172c3ac66bc11">More...</a><br /></td></tr>
-<tr class="separator:a3b8d49bec009fd86067172c3ac66bc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae2e312207eb536f12bfba9b4bc5c8b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#aeae2e312207eb536f12bfba9b4bc5c8b">SquaredEuclideanDistance</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;pos1, const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;pos2) const</td></tr>
 <tr class="memdesc:aeae2e312207eb536f12bfba9b4bc5c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the squared euclidian distance between two points in 3D.  <a href="classbdm_1_1UniformGridEnvironment.html#aeae2e312207eb536f12bfba9b4bc5c8b">More...</a><br /></td></tr>
 <tr class="separator:aeae2e312207eb536f12bfba9b4bc5c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,14 +145,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab100519ea1be015cb6192967e90d2b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c1f031501c713e66e6f99ed66009b08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1LoadBalanceInfo.html">LoadBalanceInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6c1f031501c713e66e6f99ed66009b08">GetLoadBalanceInfo</a> () override</td></tr>
 <tr class="separator:a6c1f031501c713e66e6f99ed66009b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3421364a85bcb8e39c7f0a1b12b7ff63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3421364a85bcb8e39c7f0a1b12b7ff63">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius) override</td></tr>
-<tr class="memdesc:a3421364a85bcb8e39c7f0a1b12b7ff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given lambda to each neighbor of the specified agent is within the squared radius (i.e. the criteria)  <a href="classbdm_1_1UniformGridEnvironment.html#a3421364a85bcb8e39c7f0a1b12b7ff63">More...</a><br /></td></tr>
-<tr class="separator:a3421364a85bcb8e39c7f0a1b12b7ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0057fd963f3f450b2867d4481414e0c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#ad0057fd963f3f450b2867d4481414e0c">GetBoxIndex</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;position) const</td></tr>
 <tr class="memdesc:ad0057fd963f3f450b2867d4481414e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the box index in the one dimensional array of the box that contains the position.  <a href="classbdm_1_1UniformGridEnvironment.html#ad0057fd963f3f450b2867d4481414e0c">More...</a><br /></td></tr>
 <tr class="separator:ad0057fd963f3f450b2867d4481414e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1085b58ca09221217b74b8098b57ed0d"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a1085b58ca09221217b74b8098b57ed0d">GetDimensions</a> () const override</td></tr>
 <tr class="separator:a1085b58ca09221217b74b8098b57ed0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b6c7c95bba808995de99b23f4f9aed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#ac5b6c7c95bba808995de99b23f4f9aed">ContainedInGrid</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;point) const</td></tr>
+<tr class="separator:ac5b6c7c95bba808995de99b23f4f9aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7728111fca5fa70190d64718c51f9662"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a7728111fca5fa70190d64718c51f9662">GetDimensionThresholds</a> () const override</td></tr>
 <tr class="separator:a7728111fca5fa70190d64718c51f9662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27932b851ecfa44dd2ee6fc0e90246fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a27932b851ecfa44dd2ee6fc0e90246fd">GetNumBoxesAxis</a> (uint32_t *nba)</td></tr>
@@ -163,13 +160,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa652fa316ae6fb504ac49452d55adc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99b6a0186ef6fd0643fac280e2be5789"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint64_t, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a99b6a0186ef6fd0643fac280e2be5789">GetBoxCoordinates</a> (size_t box_idx) const</td></tr>
 <tr class="separator:a99b6a0186ef6fd0643fac280e2be5789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3421364a85bcb8e39c7f0a1b12b7ff63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3421364a85bcb8e39c7f0a1b12b7ff63">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius) override</td></tr>
+<tr class="memdesc:a3421364a85bcb8e39c7f0a1b12b7ff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given lambda to each neighbor of the specified agent is within the squared radius.  <a href="classbdm_1_1UniformGridEnvironment.html#a3421364a85bcb8e39c7f0a1b12b7ff63">More...</a><br /></td></tr>
+<tr class="separator:a3421364a85bcb8e39c7f0a1b12b7ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622d9fe701b32f6b2d1ce521de8119f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a622d9fe701b32f6b2d1ce521de8119f4">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;query_position, double squared_radius, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *query_agent=nullptr) override</td></tr>
+<tr class="memdesc:a622d9fe701b32f6b2d1ce521de8119f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given lambda to each neighbor of the specified position within the squared radius.  <a href="classbdm_1_1UniformGridEnvironment.html#a622d9fe701b32f6b2d1ce521de8119f4">More...</a><br /></td></tr>
+<tr class="separator:a622d9fe701b32f6b2d1ce521de8119f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c3da5d67e22eedddad771feba4f371"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#ac9c3da5d67e22eedddad771feba4f371">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria) override</td></tr>
+<tr class="separator:ac9c3da5d67e22eedddad771feba4f371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d0941a48587c0dbb6f1b20571151c52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Environment_1_1NeighborMutexBuilder.html">NeighborMutexBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6d0941a48587c0dbb6f1b20571151c52">GetNeighborMutexBuilder</a> () override</td></tr>
 <tr class="separator:a6d0941a48587c0dbb6f1b20571151c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
 <tr class="memitem:ad6ea5b9c942a7a5a03f68419d3c00399 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ad6ea5b9c942a7a5a03f68419d3c00399">~Environment</a> ()</td></tr>
 <tr class="separator:ad6ea5b9c942a7a5a03f68419d3c00399 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eda6508dabcc0ebb1842e5375d8d1f5 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a7eda6508dabcc0ebb1842e5375d8d1f5">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)</td></tr>
-<tr class="separator:a7eda6508dabcc0ebb1842e5375d8d1f5 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26448e9a694c6502e31c947a265baa8 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ab26448e9a694c6502e31c947a265baa8">MarkAsOutOfSync</a> ()</td></tr>
+<tr class="separator:ab26448e9a694c6502e31c947a265baa8 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a7ab905784615503dc6bc7b94b241d inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update</a> ()</td></tr>
+<tr class="separator:aa5a7ab905784615503dc6bc7b94b241d inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329f4c9f27468a284ab4294fca47be0f inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f">ForcedUpdate</a> ()</td></tr>
+<tr class="memdesc:a329f4c9f27468a284ab4294fca47be0f inherit pub_methods_classbdm_1_1Environment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the environment. Prefer <a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update()</a> for implementations.  <a href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f">More...</a><br /></td></tr>
+<tr class="separator:a329f4c9f27468a284ab4294fca47be0f inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0dadcf33c0d1b866633fb6942d8f195 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ab0dadcf33c0d1b866633fb6942d8f195">GetLargestAgentSize</a> () const</td></tr>
 <tr class="memdesc:ab0dadcf33c0d1b866633fb6942d8f195 inherit pub_methods_classbdm_1_1Environment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the largest agent.  <a href="classbdm_1_1Environment.html#ab0dadcf33c0d1b866633fb6942d8f195">More...</a><br /></td></tr>
 <tr class="separator:ab0dadcf33c0d1b866633fb6942d8f195 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +187,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6555badfdd6fc4238b3471bc61424226 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8133aa9f17e7d2a13c84c273df2d045 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ac8133aa9f17e7d2a13c84c273df2d045">HasGrown</a> () const</td></tr>
 <tr class="separator:ac8133aa9f17e7d2a13c84c273df2d045 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae8d51b1ab8bbbb8d9cb89cbee9a59dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#ae8d51b1ab8bbbb8d9cb89cbee9a59dcc">UpdateImplementation</a> () override</td></tr>
+<tr class="memdesc:ae8d51b1ab8bbbb8d9cb89cbee9a59dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the grid, as agents may have moved, added or deleted.  <a href="classbdm_1_1UniformGridEnvironment.html#ae8d51b1ab8bbbb8d9cb89cbee9a59dcc">More...</a><br /></td></tr>
+<tr class="separator:ae8d51b1ab8bbbb8d9cb89cbee9a59dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
+<tr class="memitem:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a6cac1b2d521214b2505c501706cb23d1">CalcSimDimensionsAndLargestAgent</a> (std::array&lt; double, 6 &gt; *ret_grid_dimensions)</td></tr>
+<tr class="separator:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -252,9 +271,6 @@ Friends</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
-<tr class="memitem:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a6cac1b2d521214b2505c501706cb23d1">CalcSimDimensionsAndLargestAgent</a> (std::array&lt; double, 6 &gt; *ret_grid_dimensions)</td></tr>
-<tr class="separator:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
 <tr class="memitem:ac955bbf754885d8ca7226f7e221614a3 inherit pro_attribs_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ac955bbf754885d8ca7226f7e221614a3">has_grown_</a> = false</td></tr>
 <tr class="separator:ac955bbf754885d8ca7226f7e221614a3 inherit pro_attribs_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,7 +417,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00703">703</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00661">661</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -436,8 +452,84 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac5b6c7c95bba808995de99b23f4f9aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b6c7c95bba808995de99b23f4f9aed">&#9670;&nbsp;</a></span>ContainedInGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::UniformGridEnvironment::ContainedInGrid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the provided point is inside the simulation domain. Compares the points coordinates against grid_dimensions_ (without bounding boxes). </p>
+
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00338">338</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+
+</div>
+</div>
+<a id="ac9c3da5d67e22eedddad771feba4f371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c3da5d67e22eedddad771feba4f371">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::UniformGridEnvironment::ForEachNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>criteria</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
+
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#ac8ade103f908bee260afb429dc0d9759">bdm::Environment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00495">495</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+
+</div>
+</div>
 <a id="a3421364a85bcb8e39c7f0a1b12b7ff63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3421364a85bcb8e39c7f0a1b12b7ff63">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3421364a85bcb8e39c7f0a1b12b7ff63">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +568,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Applies the given lambda to each neighbor of the specified agent is within the squared radius (i.e. the criteria) </p>
+<p>Applies the given lambda to each neighbor of the specified agent is within the squared radius. </p>
 <p>In simulation code do not use this function directly. Use the same function from the execution context (e.g. <code><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a></code>)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -487,9 +579,72 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classbdm_1_1Environment.html#a057e686a4314459dda4a676bc65bf965">bdm::Environment</a>.</p>
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#adeada1e248c5abb6d9c89fb1f55b10fe">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00441">441</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00384">384</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+
+</div>
+</div>
+<a id="a622d9fe701b32f6b2d1ce521de8119f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622d9fe701b32f6b2d1ce521de8119f4">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::UniformGridEnvironment::ForEachNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>query_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squared_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>query_agent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies the given lambda to each neighbor of the specified position within the squared radius. </p>
+<p>In simulation code do not use this function directly. Use the same function from the execution context (e.g. <code><a class="el" href="classbdm_1_1InPlaceExecutionContext.html">InPlaceExecutionContext</a></code>)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lambda</td><td>The operation as a lambda </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">query_position</td><td>The query position </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">squared_radius</td><td>The squared search radius (type: double*) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#a90dd35cd07c9458d2b2414c0b102ccff">bdm::Environment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00399">399</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -517,7 +672,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00539">539</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00365">365</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +709,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The box index. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00514">514</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00322">322</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +745,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The box index. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00938">938</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00902">902</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +809,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pointer to the box </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00929">929</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00890">890</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -691,7 +846,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pointer to the box </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00921">921</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00879">879</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -720,7 +875,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a5ec9dc566be2c54f02a209f815d1e12f">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00523">523</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00331">331</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +904,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a8b25d8181e45ae22e6444e7f9f414e00">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00527">527</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00353">353</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -814,7 +969,7 @@ Additional Inherited Members</h2></td></tr>
    | FSW | FS | FSE |
    +-----+----+-----+
 </pre> 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00883">883</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00841">841</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -843,7 +998,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a2065ab04d438c683b733049cc76847ad">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00426">426</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00310">310</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +1045,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00740">740</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00698">698</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -937,7 +1092,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00805">805</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00763">763</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +1122,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a5bd804d468eef37cf5fae001939d8913">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00623">623</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00577">577</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -994,7 +1149,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00537">537</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00363">363</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1177,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00531">531</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00357">357</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1231,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00724">724</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00682">682</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1152,12 +1307,12 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The distance between the two points </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00398">398</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00282">282</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
-<a id="a3b8d49bec009fd86067172c3ac66bc11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b8d49bec009fd86067172c3ac66bc11">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="ae8d51b1ab8bbbb8d9cb89cbee9a59dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d51b1ab8bbbb8d9cb89cbee9a59dcc">&#9670;&nbsp;</a></span>UpdateImplementation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1166,7 +1321,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bdm::UniformGridEnvironment::Update </td>
+          <td class="memname">void bdm::UniformGridEnvironment::UpdateImplementation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1174,16 +1329,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Updates the grid, as agents may have moved, added or deleted. </p>
 
-<p>Implements <a class="el" href="classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2">bdm::Environment</a>.</p>
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#acf8aa70586bf89f887cc44af3dd6479d">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00275">275</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8cc_source.html#l00109">109</a> of file <a class="el" href="uniform__grid__environment_8cc_source.html">uniform_grid_environment.cc</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1382,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00406">406</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00290">290</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1506,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Determines which boxes to search neighbors in (see enum Adjacency) </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00687">687</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00645">645</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1532,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Length of a <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html" title="A single unit cube of the grid.">Box</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00669">669</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00627">627</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1558,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Length of a <a class="el" href="structbdm_1_1UniformGridEnvironment_1_1Box.html" title="A single unit cube of the grid.">Box</a> squared. </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00671">671</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00629">629</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1428,7 +1583,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>The vector containing all the boxes in the grid Using parallel resize vector to enable parallel initialization and thus better scalability. </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00664">664</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00622">622</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1453,7 +1608,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Cube which contains all agents {x_min, x_max, y_min, y_max, z_min, z_max} </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00690">690</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00648">648</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1634,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>True when the box length was set manually. </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00673">673</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00631">631</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1658,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00695">695</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00653">653</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1685,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">      std::make_unique&lt;GridNeighborMutexBuilder&gt;()</div>
 </div><!-- fragment --><p>Holds instance of NeighborMutexBuilder. NeighborMutexBuilder is updated if <code><a class="el" href="structbdm_1_1Param.html#ac41a5339b184712f1a35c87bfa3a3be6">Param::thread_safety_mechanism</a></code> is set to <code>kAutomatic</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00700">700</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00658">658</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1556,7 +1711,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Stores the number of Boxes for each axis. </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00675">675</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00633">633</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1582,7 +1737,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of boxes in the xy plane (=num_boxes_axis_[0] * num_boxes_axis_[1]) </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00677">677</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00635">635</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1609,7 +1764,7 @@ Additional Inherited Members</h2></td></tr>
 AgentHandle current_element = ...;
 AgentHandle next_element = successors_[current_element]; 
 </pre> 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00685">685</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00643">643</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1634,7 +1789,7 @@ AgentHandle next_element = successors_[current_element];
 </div><div class="memdoc">
 <p>Stores the min / max dimension value that need to be surpassed in order to trigger a diffusion grid change </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00693">693</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00651">651</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1659,7 +1814,7 @@ AgentHandle next_element = successors_[current_element];
 </div><div class="memdoc">
 <p>is incremented at each call to Update This is used to decide if boxes should be reinitialized </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00667">667</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00625">625</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
@@ -1685,12 +1840,13 @@ AgentHandle next_element = successors_[current_element];
 
 <p>The total number of boxes in the uniform grid. </p>
 
-<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00679">679</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uniform__grid__environment_8h_source.html#l00637">637</a> of file <a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/environment/<a class="el" href="uniform__grid__environment_8h_source.html">uniform_grid_environment.h</a></li>
+<li>core/environment/<a class="el" href="uniform__grid__environment_8cc_source.html">uniform_grid_environment.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.125-1da67ec7</span>
+   &#160;<span id="projectnumber">v1.01.126-2f91af15</span>
    </div>
   </td>
  </tr>
@@ -188,7 +188,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:afd2c00a991e2f69e2fd303bc9074ccc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#afd2c00a991e2f69e2fd303bc9074ccc6">uid_</a></td></tr>
 <tr class="memdesc:afd2c00a991e2f69e2fd303bc9074ccc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique id  <a href="classbdm_1_1Agent.html#afd2c00a991e2f69e2fd303bc9074ccc6">More...</a><br /></td></tr>
 <tr class="separator:afd2c00a991e2f69e2fd303bc9074ccc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8341997d6852154568bab40bf74e9018"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a8341997d6852154568bab40bf74e9018">box_idx_</a> = 0</td></tr>
+<tr class="memitem:a8341997d6852154568bab40bf74e9018"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a8341997d6852154568bab40bf74e9018">box_idx_</a> = std::numeric_limits&lt;uint32_t&gt;::max()</td></tr>
 <tr class="memdesc:a8341997d6852154568bab40bf74e9018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grid box index.  <a href="classbdm_1_1Agent.html#a8341997d6852154568bab40bf74e9018">More...</a><br /></td></tr>
 <tr class="separator:a8341997d6852154568bab40bf74e9018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e11eb5c839d67c3f166bec103960ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1InlineVector.html">InlineVector</a>&lt; <a class="el" href="classbdm_1_1Behavior.html">Behavior</a> *, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a8e11eb5c839d67c3f166bec103960ce4">behaviors_</a></td></tr>
@@ -1349,7 +1349,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t bdm::Agent::box_idx_ = 0</td>
+          <td class="memname">uint32_t bdm::Agent::box_idx_ = std::numeric_limits&lt;uint32_t&gt;::max()</td>
         </tr>
       </table>
   </td>

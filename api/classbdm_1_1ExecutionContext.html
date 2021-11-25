@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.125-1da67ec7</span>
+   &#160;<span id="projectnumber">v1.01.126-2f91af15</span>
    </div>
   </td>
  </tr>
@@ -100,6 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9bfaacbcec5eea196e08184b47aef4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2060e7fc37647d2d5089ed6622f6ddf2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a2060e7fc37647d2d5089ed6622f6ddf2">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius)=0</td></tr>
 <tr class="separator:a2060e7fc37647d2d5089ed6622f6ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316404364622edd7475c3ac364d40586"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a316404364622edd7475c3ac364d40586">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;query_position, double squared_radius)=0</td></tr>
+<tr class="separator:a316404364622edd7475c3ac364d40586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a822bbddd7d781895b9b1dada4fd88b52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">AddAgent</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *new_agent)=0</td></tr>
 <tr class="separator:a822bbddd7d781895b9b1dada4fd88b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada02af4c109d850a1a1666ed0b6842c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ExecutionContext.html#ada02af4c109d850a1a1666ed0b6842c1">RemoveAgent</a> (const <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &amp;uid)=0</td></tr>
@@ -215,7 +217,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af9bfaacbcec5eea196e08184b47aef4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9bfaacbcec5eea196e08184b47aef4b">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9bfaacbcec5eea196e08184b47aef4b">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +262,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2060e7fc37647d2d5089ed6622f6ddf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2060e7fc37647d2d5089ed6622f6ddf2">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2060e7fc37647d2d5089ed6622f6ddf2">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,9 +300,54 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Applies the lambda <code>lambda</code> for each neighbor of the given <code>query</code> agent within the given search radius <code>squared_radius</code> </p>
+<p>Applies the lambda <code>lambda</code> for each neighbor of the given <code>query</code> agent within the given search radius <code>sqrt(squared_radius)</code> </p>
 
 <p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ad602cb34280a33a61c2cdd75f54e9e46">bdm::InPlaceExecutionContext</a>.</p>
+
+</div>
+</div>
+<a id="a316404364622edd7475c3ac364d40586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316404364622edd7475c3ac364d40586">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void bdm::ExecutionContext::ForEachNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>query_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squared_radius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Applies the lambda <code>lambda</code> for each neighbor of the given <code>query_position</code> within the given search radius <code>sqrt(squared_radius)</code> </p>
+
+<p>Implemented in <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a311419c8b5dc7a6df2a9358b0e114ae1">bdm::InPlaceExecutionContext</a>.</p>
 
 </div>
 </div>

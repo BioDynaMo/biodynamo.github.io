@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.01.125-1da67ec7</span>
+   &#160;<span id="projectnumber">v1.01.126-2f91af15</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbdm_1_1KDTreeEnvironment-members.html">List of all members</a>  </div>
@@ -102,10 +103,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a542186206044b998adaaec9dba39fe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cd7ced43919f681dee377bf38001467"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a5cd7ced43919f681dee377bf38001467">~KDTreeEnvironment</a> ()</td></tr>
 <tr class="separator:a5cd7ced43919f681dee377bf38001467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc54d13f494a685fc0511a46da5b6976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#acc54d13f494a685fc0511a46da5b6976">Update</a> () override</td></tr>
-<tr class="separator:acc54d13f494a685fc0511a46da5b6976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a407de5625909b7cdd48baf951a9131dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius) override</td></tr>
-<tr class="separator:a407de5625909b7cdd48baf951a9131dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af350b43b825261a39851b5ec378c81c2"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#af350b43b825261a39851b5ec378c81c2">GetDimensions</a> () const override</td></tr>
 <tr class="separator:af350b43b825261a39851b5ec378c81c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3979a1dd69b3fb549a67c74974bcb4f0"><td class="memItemLeft" align="right" valign="top">std::array&lt; int32_t, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a3979a1dd69b3fb549a67c74974bcb4f0">GetDimensionThresholds</a> () const override</td></tr>
@@ -116,11 +113,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1f47f6ae2577e1018101ae0ab6ac449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e14e99e992040af54fc4b6b53d2133c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a2e14e99e992040af54fc4b6b53d2133c">Clear</a> () override</td></tr>
 <tr class="separator:a2e14e99e992040af54fc4b6b53d2133c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407de5625909b7cdd48baf951a9131dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a407de5625909b7cdd48baf951a9131dd">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, double squared_radius) override</td></tr>
+<tr class="separator:a407de5625909b7cdd48baf951a9131dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4228f241c312e5be685c5ede97a52fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#a4228f241c312e5be685c5ede97a52fdc">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria) override</td></tr>
+<tr class="separator:a4228f241c312e5be685c5ede97a52fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb38722c1df2be5ee9db714f792990d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#afb38722c1df2be5ee9db714f792990d1">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;lambda, const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;query_position, double squared_radius, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *query_agent=nullptr) override</td></tr>
+<tr class="separator:afb38722c1df2be5ee9db714f792990d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
 <tr class="memitem:ad6ea5b9c942a7a5a03f68419d3c00399 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ad6ea5b9c942a7a5a03f68419d3c00399">~Environment</a> ()</td></tr>
 <tr class="separator:ad6ea5b9c942a7a5a03f68419d3c00399 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eda6508dabcc0ebb1842e5375d8d1f5 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a7eda6508dabcc0ebb1842e5375d8d1f5">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;lambda, const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;query, void *criteria)</td></tr>
-<tr class="separator:a7eda6508dabcc0ebb1842e5375d8d1f5 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26448e9a694c6502e31c947a265baa8 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ab26448e9a694c6502e31c947a265baa8">MarkAsOutOfSync</a> ()</td></tr>
+<tr class="separator:ab26448e9a694c6502e31c947a265baa8 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a7ab905784615503dc6bc7b94b241d inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update</a> ()</td></tr>
+<tr class="separator:aa5a7ab905784615503dc6bc7b94b241d inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329f4c9f27468a284ab4294fca47be0f inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f">ForcedUpdate</a> ()</td></tr>
+<tr class="memdesc:a329f4c9f27468a284ab4294fca47be0f inherit pub_methods_classbdm_1_1Environment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the environment. Prefer <a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update()</a> for implementations.  <a href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f">More...</a><br /></td></tr>
+<tr class="separator:a329f4c9f27468a284ab4294fca47be0f inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0dadcf33c0d1b866633fb6942d8f195 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ab0dadcf33c0d1b866633fb6942d8f195">GetLargestAgentSize</a> () const</td></tr>
 <tr class="memdesc:ab0dadcf33c0d1b866633fb6942d8f195 inherit pub_methods_classbdm_1_1Environment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the largest agent.  <a href="classbdm_1_1Environment.html#ab0dadcf33c0d1b866633fb6942d8f195">More...</a><br /></td></tr>
 <tr class="separator:ab0dadcf33c0d1b866633fb6942d8f195 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +136,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6555badfdd6fc4238b3471bc61424226 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8133aa9f17e7d2a13c84c273df2d045 inherit pub_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ac8133aa9f17e7d2a13c84c273df2d045">HasGrown</a> () const</td></tr>
 <tr class="separator:ac8133aa9f17e7d2a13c84c273df2d045 inherit pub_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae030b726433b8bd2753178ce3a4e3085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1KDTreeEnvironment.html#ae030b726433b8bd2753178ce3a4e3085">UpdateImplementation</a> () override</td></tr>
+<tr class="separator:ae030b726433b8bd2753178ce3a4e3085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
+<tr class="memitem:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a6cac1b2d521214b2505c501706cb23d1">CalcSimDimensionsAndLargestAgent</a> (std::array&lt; double, 6 &gt; *ret_grid_dimensions)</td></tr>
+<tr class="separator:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -149,9 +165,6 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
-<tr class="memitem:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#a6cac1b2d521214b2505c501706cb23d1">CalcSimDimensionsAndLargestAgent</a> (std::array&lt; double, 6 &gt; *ret_grid_dimensions)</td></tr>
-<tr class="separator:a6cac1b2d521214b2505c501706cb23d1 inherit pro_methods_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classbdm_1_1Environment"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbdm_1_1Environment')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbdm_1_1Environment.html">bdm::Environment</a></td></tr>
 <tr class="memitem:ac955bbf754885d8ca7226f7e221614a3 inherit pro_attribs_classbdm_1_1Environment"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Environment.html#ac955bbf754885d8ca7226f7e221614a3">has_grown_</a> = false</td></tr>
 <tr class="separator:ac955bbf754885d8ca7226f7e221614a3 inherit pro_attribs_classbdm_1_1Environment"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +240,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00152">152</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00165">165</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
@@ -256,12 +269,59 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a7636f0d481c28e6b6d500a0394be7290">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00136">136</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00149">149</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+
+</div>
+</div>
+<a id="a4228f241c312e5be685c5ede97a52fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4228f241c312e5be685c5ede97a52fdc">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::KDTreeEnvironment::ForEachNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1Agent.html">Agent</a> &amp;&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>criteria</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
+
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#ac8ade103f908bee260afb429dc0d9759">bdm::Environment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00122">122</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
 <a id="a407de5625909b7cdd48baf951a9131dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a407de5625909b7cdd48baf951a9131dd">&#9670;&nbsp;</a></span>ForEachNeighbor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a407de5625909b7cdd48baf951a9131dd">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,11 +359,64 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Iterates over all neighbors in an environment that suffices the given <code>criteria</code>. The <code>criteria</code> is type-erased to facilitate for different criteria for different environments. Check the documentation of an environment to know the criteria data type </p>
+<p>Iterates over all neighbors of a query agent that appear in a distance of less than sqrt(squared_radius). Typically, the distance is computed as the Euclidean distance in 3D environments. </p>
 
-<p>Reimplemented from <a class="el" href="classbdm_1_1Environment.html#a057e686a4314459dda4a676bc65bf965">bdm::Environment</a>.</p>
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#adeada1e248c5abb6d9c89fb1f55b10fe">bdm::Environment</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00093">93</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+
+</div>
+</div>
+<a id="afb38722c1df2be5ee9db714f792990d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb38722c1df2be5ee9db714f792990d1">&#9670;&nbsp;</a></span>ForEachNeighbor() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::KDTreeEnvironment::ForEachNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;&#160;</td>
+          <td class="paramname"><em>query_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>squared_radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1Agent.html">Agent</a> *&#160;</td>
+          <td class="paramname"><em>query_agent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Iterates over all neighbors of a query position that appear in a distance of less than sqrt(squared_radius). Typically, the distance is computed as the Euclidean distance in 3D environments. Typically iterating over the neighbors of a certain agent or a certain position are fairly similar tasks. If you implement an environment, the optional argument agent_query can be used to to treat both cases in the same function, keep the implementation lean, and avoid redundant code. </p>
+
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#a90dd35cd07c9458d2b2414c0b102ccff">bdm::Environment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00099">99</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
@@ -332,7 +445,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a5ec9dc566be2c54f02a209f815d1e12f">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00116">116</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00129">129</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
@@ -361,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a8b25d8181e45ae22e6444e7f9f414e00">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00120">120</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00133">133</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
@@ -390,7 +503,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a2065ab04d438c683b733049cc76847ad">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00124">124</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00137">137</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
@@ -420,7 +533,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1Environment.html#a5bd804d468eef37cf5fae001939d8913">bdm::Environment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00132">132</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00145">145</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
@@ -448,12 +561,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00142">142</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00155">155</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
 </div>
 </div>
-<a id="acc54d13f494a685fc0511a46da5b6976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc54d13f494a685fc0511a46da5b6976">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="ae030b726433b8bd2753178ce3a4e3085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae030b726433b8bd2753178ce3a4e3085">&#9670;&nbsp;</a></span>UpdateImplementation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +575,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bdm::KDTreeEnvironment::Update </td>
+          <td class="memname">void bdm::KDTreeEnvironment::UpdateImplementation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -470,12 +583,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Member function that is called by <a class="el" href="classbdm_1_1Environment.html#aa5a7ab905784615503dc6bc7b94b241d">Update()</a> and <a class="el" href="classbdm_1_1Environment.html#a329f4c9f27468a284ab4294fca47be0f" title="Updates the environment. Prefer Update() for implementations.">ForcedUpdate()</a>. Pure virtual. </p>
 
-<p>Implements <a class="el" href="classbdm_1_1Environment.html#af3761733cab7d0f81abfdc9216bb33d2">bdm::Environment</a>.</p>
+<p>Implements <a class="el" href="classbdm_1_1Environment.html#acf8aa70586bf89f887cc44af3dd6479d">bdm::Environment</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="kd__tree__environment_8cc_source.html#l00049">49</a> of file <a class="el" href="kd__tree__environment_8cc_source.html">kd_tree_environment.cc</a>.</p>
 
@@ -503,7 +617,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Cube which contains all simulation objects {x_min, x_max, y_min, y_max, z_min, z_max} </p>
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00098">98</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00106">106</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
 
 </div>
 </div>
@@ -527,7 +641,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00095">95</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00103">103</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +665,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00102">102</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00110">110</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +690,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Stores the min / max dimension value that need to be surpassed in order to trigger a diffusion grid change </p>
 
-<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00101">101</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="kd__tree__environment_8h_source.html#l00109">109</a> of file <a class="el" href="kd__tree__environment_8h_source.html">kd_tree_environment.h</a>.</p>
 
 </div>
 </div>
