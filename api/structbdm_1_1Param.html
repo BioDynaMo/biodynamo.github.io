@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.4-2750867f</span>
+   &#160;<span id="projectnumber">v1.03.6-e9439619</span>
    </div>
   </td>
  </tr>
@@ -245,6 +245,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3b3c378f0ed130941f38495cdfa8690e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4212fa7a46db5620df4aa598982acb3f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a4212fa7a46db5620df4aa598982acb3f">show_simulation_step</a> = 0</td></tr>
 <tr class="separator:a4212fa7a46db5620df4aa598982acb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0924267efce453fa148905ee8d7d70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#abe0924267efce453fa148905ee8d7d70">use_progress_bar</a> = false</td></tr>
+<tr class="separator:abe0924267efce453fa148905ee8d7d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168bafe98a373d0a30cbc58d36e99322"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a168bafe98a373d0a30cbc58d36e99322">compute_target</a> = &quot;cpu&quot;</td></tr>
 <tr class="separator:a168bafe98a373d0a30cbc58d36e99322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a63f61488fe338b3c981feb02166c6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a1a63f61488fe338b3c981feb02166c6c">opencl_debug</a> = false</td></tr>
@@ -680,7 +682,7 @@ template&lt;typename TParamGroup &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00638">638</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00650">650</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +843,7 @@ calculate_gradients = true
 <p>Run the simulation partially on the GPU for improved performance. Possible values: "cpu", "cuda", "opencl" Default value: <code>"cpu"</code><br  />
 TOML config file: [experimental] compute_target = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00613">613</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00625">625</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1012,7 @@ export = false
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00641">641</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00653">653</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1235,7 @@ nanoflann_depth = 10
 <p>Compile OpenCL kernels with debugging symbols, for debugging on CPU targets with GNU gdb. Default value: <code>false</code><br  />
 TOML config file: [experimental] opencl_debug = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00621">621</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00633">633</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1273,7 @@ output_dir = "output"
 </div><div class="memdoc">
 <p>Determines if agents' memory layout plots should be generated during load balancing. </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00632">632</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00644">644</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1289,7 +1291,7 @@ output_dir = "output"
 <p>Set the index of the preferred GPU you wish to use. Default value: <code>0</code><br  />
 TOML config file: [experimental] preferred_gpu = 0 </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00628">628</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00640">640</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1378,7 @@ random_seed = 4357
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00640">640</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00652">652</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1614,6 +1616,24 @@ TOML config file: </p><pre class="fragment">[performance]
 use_bdm_mem_mgr = true 
 </pre> 
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00503">503</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a id="abe0924267efce453fa148905ee8d7d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe0924267efce453fa148905ee8d7d70">&#9670;&nbsp;</a></span>use_progress_bar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::Param::use_progress_bar = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use a progress bar to visualize the simulation progress. The progress bar also gives an estimate of the remaining simulation time assuming that the following simulations steps are as computationally expensive as the previous ones. It is not recommended to use the <a class="el" href="classbdm_1_1ProgressBar.html">ProgressBar</a> when you write information to std::cout in Simulate() because the <a class="el" href="classbdm_1_1ProgressBar.html">ProgressBar</a> uses '\r' in its print statements. Default value: <code>false</code><br  />
+TOML config file: [development] use_progress_bar = false </p>
+
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00614">614</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
