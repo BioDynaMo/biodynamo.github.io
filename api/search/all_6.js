@@ -44,7 +44,7 @@ var searchData=
   ['exportvisualization_417',['ExportVisualization',['../classbdm_1_1ParaviewAdaptor.html#aedfd1a7d2f46eb5b44c33bb9e57fce57',1,'bdm::ParaviewAdaptor']]],
   ['exprng_418',['ExpRng',['../classbdm_1_1ExpRng.html',1,'bdm::ExpRng'],['../classbdm_1_1ExpRng.html#aa4c732051f1fd7677c79682df8aec26e',1,'bdm::ExpRng::ExpRng()']]],
   ['extendnewneurite_419',['ExtendNewNeurite',['../classbdm_1_1neuroscience_1_1NeuronSoma.html#ae7373455269a280e0cd434b6b261a266',1,'bdm::neuroscience::NeuronSoma::ExtendNewNeurite(const Double3 &amp;direction, NeuriteElement *prototype=nullptr)'],['../classbdm_1_1neuroscience_1_1NeuronSoma.html#a0718b1500b9a8a00352a1ef302b1cda9',1,'bdm::neuroscience::NeuronSoma::ExtendNewNeurite(double diameter, double phi, double theta, NeuriteElement *prototype=nullptr)']]],
-  ['extendsideneuriteelement_420',['ExtendSideNeuriteElement',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#ac24ab713d45cdd5ccabaa1140b3e8505',1,'bdm::neuroscience::NeuriteElement']]],
+  ['extendsideneuriteelement_420',['ExtendSideNeuriteElement',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a13b95950fc35195213a7c77e898e8f56',1,'bdm::neuroscience::NeuriteElement']]],
   ['extractsimulationname_421',['ExtractSimulationName',['../classbdm_1_1CommandLineOptions.html#aacd40a84a0144d4373f394bdb032f64d',1,'bdm::CommandLineOptions']]],
   ['extractuid_422',['ExtractUid',['../structbdm_1_1detail_1_1ExtractUid.html',1,'bdm::detail']]]
 ];
