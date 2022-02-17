@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.12-8ce5c658</span>
+   &#160;<span id="projectnumber">v1.03.14-b6a135cc</span>
    </div>
   </td>
  </tr>
@@ -74,6 +74,9 @@ $(function() {
 <div class="title">bdm::EulerGrid Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Continuum model for the 3D heat equation with exponential decay <img class="formulaInl" alt="$ \partial_t u = \nabla D \nabla u - \mu u $" src="form_0.png"/>.  
+ <a href="classbdm_1_1EulerGrid.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="euler__grid_8h_source.html">euler_grid.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -191,8 +194,14 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a552a1dbac82a3a84ad1742c92caf4e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="euler__grid_8h_source.html#l00024">24</a> of file <a class="el" href="euler__grid_8h_source.html">euler_grid.h</a>.</p>
+<div class="textblock"><p>Continuum model for the 3D heat equation with exponential decay <img class="formulaInl" alt="$ \partial_t u = \nabla D \nabla u - \mu u $" src="form_0.png"/>. </p>
+<p>We use a forward in time and central in space finite difference method for modelling (FTCS). This method, however, is not iherently stable and thus we must impose a stability condition. <img class="formulaInl" alt="$ \frac{D \Delta t}{\Delta x^2} &lt; \frac{1}{6} $" src="form_1.png"/>. The error of this method scaling linearly with time (forward difference of first-order) and quadratic with the spatial discretization (central difference of second-order). The method derives its name, Euler, from the time step length of the integration.</p>
+<p>Further infomation:</p><ul>
+<li><a href="https://biodynamo.org/docs/userguide/diffusion/">BioDynaMo User Guide </a></li>
+<li><a href="http://dma.dima.uniroma1.it/users/lsa_adn/MATERIALE/FDheat.pdf">Recktenwald, Finite-Difference Approximations to the Heat Equation, 2004</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="euler__grid_8h_source.html#l00043">43</a> of file <a class="el" href="euler__grid_8h_source.html">euler_grid.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab43355717e3da00cbd20f5895a6896b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab43355717e3da00cbd20f5895a6896b9">&#9670;&nbsp;</a></span>EulerGrid() <span class="overload">[1/2]</span></h2>
@@ -217,7 +226,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="euler__grid_8h_source.html#l00026">26</a> of file <a class="el" href="euler__grid_8h_source.html">euler_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__grid_8h_source.html#l00045">45</a> of file <a class="el" href="euler__grid_8h_source.html">euler_grid.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +282,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="euler__grid_8h_source.html#l00027">27</a> of file <a class="el" href="euler__grid_8h_source.html">euler_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__grid_8h_source.html#l00046">46</a> of file <a class="el" href="euler__grid_8h_source.html">euler_grid.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +379,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1DiffusionGrid.html#a654ff5f7695884267aefddf3c580c7ef">bdm::DiffusionGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="euler__grid_8cc_source.html#l00072">72</a> of file <a class="el" href="euler__grid_8cc_source.html">euler_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__grid_8cc_source.html#l00062">62</a> of file <a class="el" href="euler__grid_8cc_source.html">euler_grid.cc</a>.</p>
 
 </div>
 </div>

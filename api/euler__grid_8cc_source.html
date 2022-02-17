@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.12-8ce5c658</span>
+   &#160;<span id="projectnumber">v1.03.14-b6a135cc</span>
    </div>
   </td>
  </tr>
@@ -111,121 +111,110 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#pragma omp simd</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">for</span> (x = 1; x &lt; nx - 1; x++) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          ++c;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          ++n;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          ++s;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          ++b;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          ++t;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          <span class="keywordflow">if</span> (y == 0 || y == (ny - 1) || z == 0 || z == (nz - 1)) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          <span class="keywordflow">if</span> (y == 0 || y == (ny - 1) || z == 0 || z == (nz - 1)) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          n = c - nx;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          s = c + nx;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          b = c - nx * ny;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          t = c + nx * ny;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] =</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;              (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c - 1] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c + 1]) * ibl2 +</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;               d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n]) * ibl2 +</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;               d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]) * ibl2) *</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        ++c;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        ++n;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        ++s;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        ++b;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        ++t;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }  <span class="comment">// tile ny</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }    <span class="comment">// tile nz</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }      <span class="comment">// block ny</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>.<a class="code" href="classbdm_1_1ParallelResizeVector.html#a696aa8b0f42003d412ab539d60f5297d">swap</a>(<a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">EulerGrid::DiffuseWithOpenEdge</a>(<span class="keywordtype">double</span> dt) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> nx = <a class="code" href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">resolution_</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> ny = <a class="code" href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">resolution_</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> nz = <a class="code" href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">resolution_</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> ibl2 = 1 / (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c">box_length_</a> * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c">box_length_</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> d = 1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881">dc_</a>[0];</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::array&lt;int, 4&gt; l;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#define YBF 16</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> yy = 0; yy &lt; ny; yy += <a class="code" href="euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e">YBF</a>) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> z = 0; z &lt; nz; z++) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordtype">size_t</span> ymax = yy + <a class="code" href="euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e">YBF</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">if</span> (ymax &gt;= ny) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        ymax = ny;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> y = yy; y &lt; ymax; y++) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">size_t</span> x = 0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">int</span> c, n, s, b, t;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        c = x + y * nx + z * nx * ny;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        l.fill(1);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (y == 0) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          n = c;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          l[0] = 0;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          n = c - nx;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (y == ny - 1) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          s = c;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          l[1] = 0;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          s = c + nx;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (z == 0) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          b = c;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          l[2] = 0;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          b = c - nx * ny;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">if</span> (z == nz - 1) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          t = c;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          l[3] = 0;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          t = c + nx * ny;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] = (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + d * dt * (0 - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c + 1]) * ibl2 +</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                  d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n]) * ibl2 +</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                  d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]) * ibl2) *</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                 (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#pragma omp simd</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">for</span> (x = 1; x &lt; nx - 1; x++) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          ++c;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;          ++n;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;          ++s;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          ++b;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;          ++t;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] =</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;              (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c - 1] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c + 1]) * ibl2 +</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;               d * dt * (l[0] * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + l[1] * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n]) * ibl2 +</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;               d * dt * (l[2] * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + l[3] * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]) * ibl2) *</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;              (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        ++c;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        ++n;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        ++s;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        ++b;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        ++t;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] = (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c - 1] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + 0) * ibl2 +</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                  d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n]) * ibl2 +</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                  d * dt * (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]) * ibl2) *</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                 (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a>);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      }  <span class="comment">// tile ny</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }    <span class="comment">// tile nz</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  }      <span class="comment">// block ny</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>.<a class="code" href="classbdm_1_1ParallelResizeVector.html#a696aa8b0f42003d412ab539d60f5297d">swap</a>(<a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          n = c - nx;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          s = c + nx;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          b = c - nx * ny;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          t = c + nx * ny;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] = <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] * (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a> * dt) +</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                   (d * dt * ibl2) *</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                       (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c - 1] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c + 1] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] -</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      }  <span class="comment">// tile ny</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }    <span class="comment">// tile nz</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }      <span class="comment">// block ny</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>.<a class="code" href="classbdm_1_1ParallelResizeVector.html#a696aa8b0f42003d412ab539d60f5297d">swap</a>(<a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">EulerGrid::DiffuseWithOpenEdge</a>(<span class="keywordtype">double</span> dt) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> nx = <a class="code" href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">resolution_</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> ny = <a class="code" href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">resolution_</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> nz = <a class="code" href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">resolution_</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> ibl2 = 1 / (<a class="code" href="classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c">box_length_</a> * <a class="code" href="classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c">box_length_</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> d = 1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#a2257dca5dc35bc2a2f901daa38c16881">dc_</a>[0];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  std::array&lt;int, 4&gt; l;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define YBF 16</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> yy = 0; yy &lt; ny; yy += <a class="code" href="euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e">YBF</a>) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> z = 0; z &lt; nz; z++) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordtype">size_t</span> ymax = yy + <a class="code" href="euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e">YBF</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">if</span> (ymax &gt;= ny) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        ymax = ny;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> y = yy; y &lt; ymax; y++) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">size_t</span> x = 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> c, n, s, b, t;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        c = x + y * nx + z * nx * ny;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        l.fill(1);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> (y == 0) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          n = c;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          l[0] = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          n = c - nx;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (y == ny - 1) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          s = c;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          l[1] = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          s = c + nx;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span> (z == 0) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          b = c;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          l[2] = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          b = c - nx * ny;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (z == nz - 1) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          t = c;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          l[3] = 0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          t = c + nx * ny;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] = <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] * (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a> * dt) +</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                 (d * dt * ibl2) *</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                     (0 - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c + 1] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] +</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                      <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#pragma omp simd</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">for</span> (x = 1; x &lt; nx - 1; x++) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          ++c;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          ++n;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;          ++s;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;          ++b;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;          ++t;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] = <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] * (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a> * dt) +</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                   (d * dt * ibl2) *</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                       (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c - 1] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c + 1] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] -</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                        2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        ++c;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        ++n;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        ++s;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        ++b;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        ++t;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>[c] = <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] * (1 - <a class="code" href="classbdm_1_1DiffusionGrid.html#aa960bd597f7fe15c44fc2a6a1776257a">mu_</a> * dt) +</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                 (d * dt * ibl2) *</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                     (<a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c - 1] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + 0 + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[s] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] +</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                      <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[n] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[b] - 2 * <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[c] + <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>[t]);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      }  <span class="comment">// tile ny</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }    <span class="comment">// tile nz</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  }      <span class="comment">// block ny</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="classbdm_1_1DiffusionGrid.html#a2de242d740d2ffc57175c27fb26a932e">c1_</a>.<a class="code" href="classbdm_1_1ParallelResizeVector.html#a696aa8b0f42003d412ab539d60f5297d">swap</a>(<a class="code" href="classbdm_1_1DiffusionGrid.html#ab18bcbeab477a124960467c31b0a0640">c2_</a>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html_a2645a720fea066d6a3754450875df123"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a2645a720fea066d6a3754450875df123">bdm::EulerGrid::DiffuseWithClosedEdge</a></div><div class="ttdeci">void DiffuseWithClosedEdge(double dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00019">euler_grid.cc:19</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
@@ -237,7 +226,7 @@ $(function() {
 <div class="ttc" id="aeuler__grid_8h_html"><div class="ttname"><a href="euler__grid_8h.html">euler_grid.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a80583392ca9ff64695ef3bf94f0d3e92"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a80583392ca9ff64695ef3bf94f0d3e92">bdm::DiffusionGrid::resolution_</a></div><div class="ttdeci">size_t resolution_</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00223">diffusion_grid.h:223</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_ae32616bdfdbec168fa33941bef73de9c"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#ae32616bdfdbec168fa33941bef73de9c">bdm::DiffusionGrid::box_length_</a></div><div class="ttdeci">double box_length_</div><div class="ttdoc">The side length of each box.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00195">diffusion_grid.h:195</a></div></div>
-<div class="ttc" id="aclassbdm_1_1EulerGrid_html_ac6fd3862cc4448bf02c704a61941d5cc"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">bdm::EulerGrid::DiffuseWithOpenEdge</a></div><div class="ttdeci">void DiffuseWithOpenEdge(double dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00072">euler_grid.cc:72</a></div></div>
+<div class="ttc" id="aclassbdm_1_1EulerGrid_html_ac6fd3862cc4448bf02c704a61941d5cc"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">bdm::EulerGrid::DiffuseWithOpenEdge</a></div><div class="ttdeci">void DiffuseWithOpenEdge(double dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00062">euler_grid.cc:62</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ParallelResizeVector_html_a696aa8b0f42003d412ab539d60f5297d"><div class="ttname"><a href="classbdm_1_1ParallelResizeVector.html#a696aa8b0f42003d412ab539d60f5297d">bdm::ParallelResizeVector::swap</a></div><div class="ttdeci">void swap(ParallelResizeVector &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__resize__vector_8h_source.html#l00077">parallel_resize_vector.h:77</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

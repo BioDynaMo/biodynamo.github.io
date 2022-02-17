@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.12-8ce5c658</span>
+   &#160;<span id="projectnumber">v1.03.14-b6a135cc</span>
    </div>
   </td>
  </tr>
@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Continuum model for the 3D heat equation <img class="formulaInl" alt="$ \partial_t u = \nabla D \nabla u $" src="form_2.png"/>.  
+ <a href="classbdm_1_1RungeKuttaGrid.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bdm::RungeKuttaGrid:</div>
@@ -94,8 +97,8 @@ Collaboration diagram for bdm::RungeKuttaGrid:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac778e70122e993c75ef976701dfe3d26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RungeKuttaGrid.html#ac778e70122e993c75ef976701dfe3d26">RungeKuttaGrid</a> ()</td></tr>
 <tr class="separator:ac778e70122e993c75ef976701dfe3d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b393aac0a87583d5c6674a4f1bbadd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RungeKuttaGrid.html#a6b393aac0a87583d5c6674a4f1bbadd2">RungeKuttaGrid</a> (int substance_id, std::string substance_name, double dc, double mu, int resolution=11)</td></tr>
-<tr class="separator:a6b393aac0a87583d5c6674a4f1bbadd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7633ee8f8d2052b2695053ba9a66d2f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RungeKuttaGrid.html#a7633ee8f8d2052b2695053ba9a66d2f1">RungeKuttaGrid</a> (int substance_id, std::string substance_name, double dc, int resolution=11)</td></tr>
+<tr class="separator:a7633ee8f8d2052b2695053ba9a66d2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab00472def49e6e85afa620e7c64d5584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RungeKuttaGrid.html#ab00472def49e6e85afa620e7c64d5584">Initialize</a> () override</td></tr>
 <tr class="separator:ab00472def49e6e85afa620e7c64d5584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93763268ae921652990dbcdb24694a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RungeKuttaGrid.html#a93763268ae921652990dbcdb24694a7d">Update</a> () override</td></tr>
@@ -204,8 +207,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab06965e8c997c1b0384ca6b4ddec4494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00025">25</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<div class="textblock"><p>Continuum model for the 3D heat equation <img class="formulaInl" alt="$ \partial_t u = \nabla D \nabla u $" src="form_2.png"/>. </p>
+<p>This alternative solution to the finite difference method is based on an explicit second order Runge-Kutta scheme. Taking a approach which is forward in time and central in space. Due to the more sophisticated time integration, the solution converges better than the <a class="el" href="classbdm_1_1EulerGrid.html" title="Continuum model for the 3D heat equation with exponential decay .">EulerGrid</a>. However, this causes a tradeoff leading to increased computational effort. </p>
+
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00034">34</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac778e70122e993c75ef976701dfe3d26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac778e70122e993c75ef976701dfe3d26">&#9670;&nbsp;</a></span>RungeKuttaGrid() <span class="overload">[1/2]</span></h2>
@@ -230,12 +235,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00027">27</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00036">36</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 
 </div>
 </div>
-<a id="a6b393aac0a87583d5c6674a4f1bbadd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b393aac0a87583d5c6674a4f1bbadd2">&#9670;&nbsp;</a></span>RungeKuttaGrid() <span class="overload">[2/2]</span></h2>
+<a id="a7633ee8f8d2052b2695053ba9a66d2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7633ee8f8d2052b2695053ba9a66d2f1">&#9670;&nbsp;</a></span>RungeKuttaGrid() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,12 +269,6 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>mu</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>resolution</em> = <code>11</code>&#160;</td>
         </tr>
@@ -286,7 +285,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00028">28</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00037">37</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +352,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1DiffusionGrid.html#ab2df068abb19d2adee5f1ea3e0715b1d">bdm::DiffusionGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8cc_source.html#l00019">19</a> of file <a class="el" href="runge__kutta__grid_8cc_source.html">runge_kutta_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8cc_source.html#l00020">20</a> of file <a class="el" href="runge__kutta__grid_8cc_source.html">runge_kutta_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -383,7 +382,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classbdm_1_1DiffusionGrid.html#a654ff5f7695884267aefddf3c580c7ef">bdm::DiffusionGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8cc_source.html#l00087">87</a> of file <a class="el" href="runge__kutta__grid_8cc_source.html">runge_kutta_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8cc_source.html#l00079">79</a> of file <a class="el" href="runge__kutta__grid_8cc_source.html">runge_kutta_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -412,7 +411,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classbdm_1_1DiffusionGrid.html#a74e0486a606e83ad410984f540b8e69a">bdm::DiffusionGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00033">33</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00042">42</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +441,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classbdm_1_1DiffusionGrid.html#a0592033865029992e169cfc333dae90d">bdm::DiffusionGrid</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00041">41</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00050">50</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +468,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of steps for RK diffusion grid;. </p>
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00055">55</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00064">64</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 
 </div>
 </div>
@@ -495,7 +494,7 @@ Private Attributes</h2></td></tr>
 
 <p>k array for runge-kutta. </p>
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00053">53</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00062">62</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +520,7 @@ Private Attributes</h2></td></tr>
 
 <p>Buffers for Runge Kutta. </p>
 
-<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00051">51</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="runge__kutta__grid_8h_source.html#l00060">60</a> of file <a class="el" href="runge__kutta__grid_8h_source.html">runge_kutta_grid.h</a>.</p>
 
 </div>
 </div>

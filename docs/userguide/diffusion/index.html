@@ -168,38 +168,44 @@ Then click the Play button at the top of the screen to run the simulation visual
   Your browser does not support the video tag.
 </video>
 <h3 id="diffusion-parameter-constraints" style="position:relative;"><a href="#diffusion-parameter-constraints" aria-label="diffusion parameter constraints permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Diffusion parameter constraints</h3>
-<p>The differential equations that describe the diffusion are solved in an
-analytical way using the central difference method as shown in the figure below:</p>
+<p>The partial differential equations that describe diffusion are solved
+numerically. This is done using a forward in time and central in space finite difference method.
+As shown in the figure below. The upper indices label the discretization in
+time, and the lower indices describe the discretization in space. The delta
+parameters <code class="language-text">t</code> and <code class="language-text">h</code> denote length in time and space,
+respectively. </p>
 <p><a href="/docs/userguide/diffusion/#diffusion-parameter-constraints"><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 28.22085889570552%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVQY022P1wqDQBBF/f//ElH0UUFBxErsYu/msCGSkNyH4e7snCnS9dY4jl3XTdNEzLJs27ZlWYZhmOd5XdfzPK8fSbcDg6e0LEvP82gBWVVV3/dN0xzH8Ynt+06l9Jl6ta/r2vd9GoEB0wXDcPh7Pk+Sf2CqkyQBZpe2bcU5PZ5FuOVr7UyI6jAMgyCI4xgTRRGefFEUeMdx8jzHs5HrunzZtg0i6bquaZouRMo0TcMwFEWxLEtVVVmWAdI05ZZc6CHEAOIThvBR6OnLpXMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    style="padding-bottom: 16.56441717791411%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAaElEQVQI13VNRwrAMAzL/7+ZW8jeIQcVGVJKaQ22bKOh8FFjDIQQEGMULKVIO+fQWkOtFX+lKE4pYa0lBiRba6G1Ru9dzGny3OecEsAfb2oZTFQc55lzFpL3HsaY2+QIie8Q9tHuvXEBvMjoz3jvRUsAAAAASUVORK5CYII='); background-size: cover; display: block;"
   ></span>
   <picture>
           <source
-              srcset="/static/d3e26f32f3bdde5985abf0b14ade39dd/94563/diffusion_central_difference_method.webp 163w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/647a8/diffusion_central_difference_method.webp 325w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/c1dc5/diffusion_central_difference_method.webp 650w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/1e975/diffusion_central_difference_method.webp 975w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/afd7b/diffusion_central_difference_method.webp 1192w"
+              srcset="/static/b969515faace15bfa7d008962884d86b/94563/diffusion_central_difference_method.webp 163w,
+/static/b969515faace15bfa7d008962884d86b/647a8/diffusion_central_difference_method.webp 325w,
+/static/b969515faace15bfa7d008962884d86b/c1dc5/diffusion_central_difference_method.webp 650w,
+/static/b969515faace15bfa7d008962884d86b/1e975/diffusion_central_difference_method.webp 975w,
+/static/b969515faace15bfa7d008962884d86b/063bf/diffusion_central_difference_method.webp 1300w,
+/static/b969515faace15bfa7d008962884d86b/c2b18/diffusion_central_difference_method.webp 1324w"
               sizes="(max-width: 650px) 100vw, 650px"
               type="image/webp"
             />
           <source
-            srcset="/static/d3e26f32f3bdde5985abf0b14ade39dd/222b7/diffusion_central_difference_method.png 163w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/ff46a/diffusion_central_difference_method.png 325w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/a6d36/diffusion_central_difference_method.png 650w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/e548f/diffusion_central_difference_method.png 975w,
-/static/d3e26f32f3bdde5985abf0b14ade39dd/f213e/diffusion_central_difference_method.png 1192w"
+            srcset="/static/b969515faace15bfa7d008962884d86b/222b7/diffusion_central_difference_method.png 163w,
+/static/b969515faace15bfa7d008962884d86b/ff46a/diffusion_central_difference_method.png 325w,
+/static/b969515faace15bfa7d008962884d86b/a6d36/diffusion_central_difference_method.png 650w,
+/static/b969515faace15bfa7d008962884d86b/e548f/diffusion_central_difference_method.png 975w,
+/static/b969515faace15bfa7d008962884d86b/3c492/diffusion_central_difference_method.png 1300w,
+/static/b969515faace15bfa7d008962884d86b/eb2ef/diffusion_central_difference_method.png 1324w"
             sizes="(max-width: 650px) 100vw, 650px"
             type="image/png"
           />
           <img
             class="gatsby-resp-image-image"
-            src="/static/d3e26f32f3bdde5985abf0b14ade39dd/a6d36/diffusion_central_difference_method.png"
+            src="/static/b969515faace15bfa7d008962884d86b/a6d36/diffusion_central_difference_method.png"
             alt="Central Difference Method"
             title="Central Difference Method"
             loading="lazy"
@@ -207,33 +213,34 @@ analytical way using the central difference method as shown in the figure below:
           />
         </picture>
     </span></a></p>
-<p>The diffusion coefficient dictates the speed of diffusing a substance through
-space, while with the decay constant one controls the speed at which a substance
-decays. Mathematically, the method would allow for unphysical behavior to occur, such as
-negative concentration values. In order to avoid such behavior from happening,
-we impose the following constraint on the parameters:</p>
+<p>The diffusion coefficient <code class="language-text">D</code> models the speed of the diffusion process through
+space, while constant <code class="language-text">mu</code> controls the speed at which substances
+decay. The method is not unconditionally stable, thus we
+impose the following constraint on parameters:</p>
 <p><a href="/docs/userguide/diffusion/#diffusion-parameter-constraints"><span
       class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 132px; "
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 272px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAABW0lEQVQoz6VSS6uCYBDt/++NHriJFiJEBS4EAxctRHpYlKgIPTQK1DCxIupa99xGPruvxeWehYwz3zlnZr6v9PiM+wse3/AlX3r8Azn57QkEg8HAtu3T6bTf78mKeeJrWZZhGAiyLPsgU9bzvE6nMxqN2u22JEmtVms6nbJD2RMIJpNJt9sls8IZVhzHDYfDZrNZLpd5nj8cDkQjdeYsimLhzLq6XC63222z2YRheDwer9cr4/i+jwyCNE2jKCpmZm3PZrP5fO44DuRd110ul8jHcYxxsAhowc1+goRAzMm73c40TXAWi8V6vVYURdM05JMkkWUZMfrC72q10nUdM+Zk1kO1WoUEVM/ns6qqWB6bLQgCIkBlPB6zcUpUhmGj0QChVqvhBPqkttnCKK5UKvV6fbvd5s5E7vf72LAgCGgYY7/e8Os9w7bX6xUzszKZEEjxz8/zxyf9W/UdZ6jYkmJzb+YAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    style="padding-bottom: 55.21472392638037%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABgUlEQVQoz4VTy+sBURSeP91GVmosKNazmbCTBrFByEgekyKPUISQ53h+OqffnebO73XqNue753G/8xgFX/J+v+EV953X/ptNISAuTNPk83g8YFkW35H+er2cQLf/eDzGer2WbIow2rYNTdOQSCRgGAai0SiazSZSqRSez6cTRMkFzmQyaLVarItHFaEMh0NEIhHk83nouo5AIACfz4dsNst2SuItm3zpUZFQYni73bDb7XC/33G9XjGfzxlfLhepzNlshul0yvr5fObKpJIJjEYjFItF1Go1VKtVlMtlNBoNxpVKhQ85U3+DwSCOxyM2m40TQ1gkdRju93scDgesVitmuVgsmCl9xYCo7H6/j8lkwni73XLibwyXyyUzI6bhcJhLUlUV7XYb6XSaGXqFpu/3+1EqleQeEhgMBtzgXC7Hg4jFYgiFQigUCojH49JqiCFSNeSXTCaltVJE9l6vh06ng3q9zgxPpxO63S433r0W7gHRQzS4H/fwL3En++9P+QBYsTYor8k3+QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
   ></span>
   <picture>
           <source
-              srcset="/static/a7e4bc9aa1e64b83aa75a6b67bb57069/894ed/diffusion_parameters_constraint.webp 132w"
-              sizes="(max-width: 132px) 100vw, 132px"
+              srcset="/static/e42f1d159ef5402597672b207825a5d6/94563/diffusion_parameters_constraint.webp 163w,
+/static/e42f1d159ef5402597672b207825a5d6/542bb/diffusion_parameters_constraint.webp 272w"
+              sizes="(max-width: 272px) 100vw, 272px"
               type="image/webp"
             />
           <source
-            srcset="/static/a7e4bc9aa1e64b83aa75a6b67bb57069/06c4e/diffusion_parameters_constraint.png 132w"
-            sizes="(max-width: 132px) 100vw, 132px"
+            srcset="/static/e42f1d159ef5402597672b207825a5d6/222b7/diffusion_parameters_constraint.png 163w,
+/static/e42f1d159ef5402597672b207825a5d6/2aae8/diffusion_parameters_constraint.png 272w"
+            sizes="(max-width: 272px) 100vw, 272px"
             type="image/png"
           />
           <img
             class="gatsby-resp-image-image"
-            src="/static/a7e4bc9aa1e64b83aa75a6b67bb57069/06c4e/diffusion_parameters_constraint.png"
+            src="/static/e42f1d159ef5402597672b207825a5d6/2aae8/diffusion_parameters_constraint.png"
             alt="Parameter Constraint"
             title="Parameter Constraint"
             loading="lazy"
@@ -332,13 +339,8 @@ This is due to the fact that when one breaks down the partial differential equat
 the time dependant variable is lost on the right hand side of the equation.
 This results in the extra steps being taken for the Runge-Kutta method having minimal impact as there is no time dependant variable to estimate the slope from.</p>
 <p>Within BioDynaMo the number of intervals for the Runge-Kutta method to iterate over per time step can be set within the declaration of a diffusion grid itself as follows:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">DiffusionGrid* dgrid = new RungeKuttaGrid(substance_id, "substance_name", diffusion_coefficient,
-                decay_constant, resolution, diffusion_step)
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">DiffusionGrid* dgrid = new RungeKuttaGrid(substance_id, "substance_name", diffusion_coefficient, resolution)
                 </code></pre></div>
-<p>Note: </p>
-<ul>
-<li>The entered value for the diffusion_step is required to be a positive integer value of greater than 0.</li>
-</ul>
 <p>To access the Runge-Kutta method for diffusion, one simply needs to update the bdm.toml file as follows :</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">[simulation]
 diffusion_method = "runge-kutta"
