@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['make_5fstd_5fvector_2952',['make_std_vector',['../classbdm_1_1InlineVector.html#a4d9a5306e228a5e0bec19fe20b27c623',1,'bdm::InlineVector']]],
-  ['mappeddataarray_2953',['MappedDataArray',['../classbdm_1_1MappedDataArray.html#a174cadf949cf4e98222633a1e773c334',1,'bdm::MappedDataArray::MappedDataArray()'],['../classbdm_1_1MappedDataArray.html#a197928844aa044e673374422f456352a',1,'bdm::MappedDataArray::MappedDataArray(const MappedDataArray &amp;)=delete']]],
+  ['make_5fstd_5fvector_2951',['make_std_vector',['../classbdm_1_1InlineVector.html#a4d9a5306e228a5e0bec19fe20b27c623',1,'bdm::InlineVector']]],
+  ['mappeddataarray_2952',['MappedDataArray',['../classbdm_1_1MappedDataArray.html#a174cadf949cf4e98222633a1e773c334',1,'bdm::MappedDataArray::MappedDataArray()'],['../classbdm_1_1MappedDataArray.html#a197928844aa044e673374422f456352a',1,'bdm::MappedDataArray::MappedDataArray(const MappedDataArray &amp;)=delete']]],
+  ['mappeddataarrayinterface_2953',['MappedDataArrayInterface',['../structbdm_1_1MappedDataArrayInterface.html#ab1b253f3f32923ee2bf22b18f64009d1',1,'bdm::MappedDataArrayInterface']]],
   ['markasoutofsync_2954',['MarkAsOutOfSync',['../classbdm_1_1Environment.html#ab26448e9a694c6502e31c947a265baa8',1,'bdm::Environment']]],
   ['markenvironmentoutofsync_2955',['MarkEnvironmentOutOfSync',['../classbdm_1_1ResourceManager.html#a270af3606d98f0f981a59cf898afeb63',1,'bdm::ResourceManager']]],
   ['matharray_2956',['MathArray',['../classbdm_1_1MathArray.html#ae0ecd005445ae72c8ecc62b79fbb1768',1,'bdm::MathArray::MathArray()'],['../classbdm_1_1MathArray.html#a2f0ad0ffce118e55453b6a280e4487fe',1,'bdm::MathArray::MathArray(std::initializer_list&lt; T &gt; l)']]],
@@ -16,5 +17,5 @@ var searchData=
   ['mortoniterator_2965',['MortonIterator',['../classbdm_1_1MortonIterator.html#a6fbfd81a57e6dd9aa4327411882b82bf',1,'bdm::MortonIterator']]],
   ['movepointmass_2966',['MovePointMass',['../classbdm_1_1Cell.html#a836f7062f56ffaf32d32a300670ad98b',1,'bdm::Cell::MovePointMass()'],['../classbdm_1_1neuroscience_1_1NeuriteElement.html#a2dcc2ea20056acf29f530de06c34171f',1,'bdm::neuroscience::NeuriteElement::MovePointMass()']]],
   ['mse_2967',['MSE',['../structbdm_1_1Math.html#a52948fe84bf4f2019e4880fba8e13753',1,'bdm::Math']]],
-  ['mutexwrapper_2968',['MutexWrapper',['../structbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1MutexWrapper.html#a1b81e47b9c163ec61cc77037877b48ab',1,'bdm::UniformGridEnvironment::GridNeighborMutexBuilder::MutexWrapper::MutexWrapper()'],['../structbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1MutexWrapper.html#a0ebec5f31f9e140dac62ca29fd14d83f',1,'bdm::UniformGridEnvironment::GridNeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]]
+  ['mutexwrapper_2968',['MutexWrapper',['../structbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1MutexWrapper.html#a74fefe1224614b8db250c20acefa1842',1,'bdm::UniformGridEnvironment::GridNeighborMutexBuilder::MutexWrapper::MutexWrapper()=default'],['../structbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1MutexWrapper.html#a0ebec5f31f9e140dac62ca29fd14d83f',1,'bdm::UniformGridEnvironment::GridNeighborMutexBuilder::MutexWrapper::MutexWrapper(const MutexWrapper &amp;)']]]
 ];

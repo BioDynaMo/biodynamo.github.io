@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classbdm_1_1VectorTypeWrapper.html">   78</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1VectorTypeWrapper.html">VectorTypeWrapper</a> {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classbdm_1_1VectorTypeWrapper.html#a8741925dfa06301e01c484ca0fc93cb1">   80</a></span>&#160;  <a class="code" href="classbdm_1_1VectorTypeWrapper.html#a8741925dfa06301e01c484ca0fc93cb1">VectorTypeWrapper</a>() {}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="classbdm_1_1VectorTypeWrapper.html#ae7aba67e0ffd9b55b0f1cb4e6b7be29d">VectorTypeWrapper</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classbdm_1_1VectorTypeWrapper.html#afc6716b0cca8b596f15bc3bc260ab50f">   82</a></span>&#160;  std::vector&lt;T&gt; <a class="code" href="classbdm_1_1VectorTypeWrapper.html#afc6716b0cca8b596f15bc3bc260ab50f">vector_</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classbdm_1_1VectorTypeWrapper.html#abd2e1de170ec771e34730bc84c76dcc6">ClassDefNV</a>(<a class="code" href="classbdm_1_1VectorTypeWrapper.html">VectorTypeWrapper</a>, 1);</div>
@@ -194,6 +194,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1TFileRaii_html_aeaf85c5414a5d3ebb9f0e98d4c047e17"><div class="ttname"><a href="classbdm_1_1TFileRaii.html#aeaf85c5414a5d3ebb9f0e98d4c047e17">bdm::TFileRaii::~TFileRaii</a></div><div class="ttdeci">~TFileRaii()</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00071">io.cc:71</a></div></div>
 <div class="ttc" id="aclassbdm_1_1RuntimeVariables_html_a19ce1fa20a93b62fcb7e39ec3f7e89a1"><div class="ttname"><a href="classbdm_1_1RuntimeVariables.html#a19ce1fa20a93b62fcb7e39ec3f7e89a1">bdm::RuntimeVariables::SetSystemInfo</a></div><div class="ttdeci">void SetSystemInfo(const SysInfo_t &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00029">io.cc:29</a></div></div>
 <div class="ttc" id="aclassbdm_1_1RuntimeVariables_html_a728f3490435d097f321795b28564af02"><div class="ttname"><a href="classbdm_1_1RuntimeVariables.html#a728f3490435d097f321795b28564af02">bdm::RuntimeVariables::sysinfo_</a></div><div class="ttdeci">SysInfo_t sysinfo_</div><div class="ttdef"><b>Definition:</b> <a href="io_8h_source.html#l00045">io.h:45</a></div></div>
+<div class="ttc" id="aclassbdm_1_1VectorTypeWrapper_html_ae7aba67e0ffd9b55b0f1cb4e6b7be29d"><div class="ttname"><a href="classbdm_1_1VectorTypeWrapper.html#ae7aba67e0ffd9b55b0f1cb4e6b7be29d">bdm::VectorTypeWrapper::VectorTypeWrapper</a></div><div class="ttdeci">VectorTypeWrapper()=default</div></div>
 <div class="ttc" id="anamespacebdm_html_a7bcacd75e549c58e91177289d1edbf2d"><div class="ttname"><a href="namespacebdm.html#a7bcacd75e549c58e91177289d1edbf2d">bdm::WriteToFile</a></div><div class="ttdeci">void WriteToFile(const std::string &amp;filename, const std::string &amp;content)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00083">io.cc:83</a></div></div>
 <div class="ttc" id="aroot_8h_html"><div class="ttname"><a href="root_8h.html">root.h</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a52b5f1a0e2dac8df993214aee8678d51"><div class="ttname"><a href="namespacebdm.html#a52b5f1a0e2dac8df993214aee8678d51">bdm::FileExists</a></div><div class="ttdeci">bool FileExists(const std::string &amp;file_name)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00078">io.cc:78</a></div></div>
@@ -204,7 +205,6 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1TFileRaii_html_a78cbc76457bf507b93da8f6848c64352"><div class="ttname"><a href="classbdm_1_1TFileRaii.html#a78cbc76457bf507b93da8f6848c64352">bdm::TFileRaii::TFileRaii</a></div><div class="ttdeci">TFileRaii(const std::string &amp;filename, const char *mode)</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00066">io.cc:66</a></div></div>
 <div class="ttc" id="aclassbdm_1_1RuntimeVariables_html_a9b94fe3d93effc68994679c636ac4c49"><div class="ttname"><a href="classbdm_1_1RuntimeVariables.html#a9b94fe3d93effc68994679c636ac4c49">bdm::RuntimeVariables::GetSystemInfo</a></div><div class="ttdeci">SysInfo_t GetSystemInfo() const</div><div class="ttdef"><b>Definition:</b> <a href="io_8cc_source.html#l00027">io.cc:27</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VectorTypeWrapper_html"><div class="ttname"><a href="classbdm_1_1VectorTypeWrapper.html">bdm::VectorTypeWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="io_8h_source.html#l00078">io.h:78</a></div></div>
-<div class="ttc" id="aclassbdm_1_1VectorTypeWrapper_html_a8741925dfa06301e01c484ca0fc93cb1"><div class="ttname"><a href="classbdm_1_1VectorTypeWrapper.html#a8741925dfa06301e01c484ca0fc93cb1">bdm::VectorTypeWrapper::VectorTypeWrapper</a></div><div class="ttdeci">VectorTypeWrapper()</div><div class="ttdef"><b>Definition:</b> <a href="io_8h_source.html#l00080">io.h:80</a></div></div>
 <div class="ttc" id="aclassbdm_1_1IntegralTypeWrapper_html_aacb40b2edac1b40788c7d3f4a838dc5b"><div class="ttname"><a href="classbdm_1_1IntegralTypeWrapper.html#aacb40b2edac1b40788c7d3f4a838dc5b">bdm::IntegralTypeWrapper::BDM_CLASS_DEF_NV</a></div><div class="ttdeci">BDM_CLASS_DEF_NV(IntegralTypeWrapper, 1)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

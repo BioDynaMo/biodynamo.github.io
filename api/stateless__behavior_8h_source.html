@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classbdm_1_1StatelessBehavior.html#a858ce7eb1f282bf3868cacb220619de3">   52</a></span>&#160;  <a class="code" href="classbdm_1_1StatelessBehavior.html#a858ce7eb1f282bf3868cacb220619de3">StatelessBehavior</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1StatelessBehavior.html#a7a0d08213c9cc26e1d9d5f763fc8aed6">FPtr</a> fptr) : <a class="code" href="classbdm_1_1StatelessBehavior.html#a10ce09aefaa1a9ca533af57805c73340">fptr_</a>(fptr) {}</div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classbdm_1_1StatelessBehavior.html#a5618783fb82bb82c053a8d826f888ed8">   53</a></span>&#160;  <a class="code" href="classbdm_1_1StatelessBehavior.html#a5618783fb82bb82c053a8d826f888ed8">StatelessBehavior</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1StatelessBehavior.html">StatelessBehavior</a>&amp; other)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      : <a class="code" href="classbdm_1_1Behavior.html">Behavior</a>(other), <a class="code" href="classbdm_1_1StatelessBehavior.html#a10ce09aefaa1a9ca533af57805c73340">fptr_</a>(other.<a class="code" href="classbdm_1_1StatelessBehavior.html#a10ce09aefaa1a9ca533af57805c73340">fptr_</a>) {}</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classbdm_1_1StatelessBehavior.html#a377b222c478225ba6341b6607b328cee">   55</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1StatelessBehavior.html#a377b222c478225ba6341b6607b328cee">~StatelessBehavior</a>() {}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1StatelessBehavior.html#ad08dbcc07410c0202ed379b3d67eafb9">~StatelessBehavior</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classbdm_1_1StatelessBehavior.html#aa2ec8e70a60af73352190cd68d4e818c">   57</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1StatelessBehavior.html#aa2ec8e70a60af73352190cd68d4e818c">Initialize</a>(<span class="keyword">const</span> <a class="code" href="structbdm_1_1NewAgentEvent.html">NewAgentEvent</a>&amp; event)<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Base::Initialize(event);</div>
@@ -156,8 +156,8 @@ $(function() {
 <div class="ttc" id="abehavior_8h_html"><div class="ttname"><a href="behavior_8h.html">behavior.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1StatelessBehavior_html_aa2ec8e70a60af73352190cd68d4e818c"><div class="ttname"><a href="classbdm_1_1StatelessBehavior.html#aa2ec8e70a60af73352190cd68d4e818c">bdm::StatelessBehavior::Initialize</a></div><div class="ttdeci">void Initialize(const NewAgentEvent &amp;event) override</div><div class="ttdef"><b>Definition:</b> <a href="stateless__behavior_8h_source.html#l00057">stateless_behavior.h:57</a></div></div>
 <div class="ttc" id="aclassbdm_1_1StatelessBehavior_html_a7a0d08213c9cc26e1d9d5f763fc8aed6"><div class="ttname"><a href="classbdm_1_1StatelessBehavior.html#a7a0d08213c9cc26e1d9d5f763fc8aed6">bdm::StatelessBehavior::FPtr</a></div><div class="ttdeci">void(*)(Agent *) FPtr</div><div class="ttdef"><b>Definition:</b> <a href="stateless__behavior_8h_source.html#l00050">stateless_behavior.h:50</a></div></div>
+<div class="ttc" id="aclassbdm_1_1StatelessBehavior_html_ad08dbcc07410c0202ed379b3d67eafb9"><div class="ttname"><a href="classbdm_1_1StatelessBehavior.html#ad08dbcc07410c0202ed379b3d67eafb9">bdm::StatelessBehavior::~StatelessBehavior</a></div><div class="ttdeci">virtual ~StatelessBehavior()=default</div></div>
 <div class="ttc" id="aclassbdm_1_1StatelessBehavior_html_a5618783fb82bb82c053a8d826f888ed8"><div class="ttname"><a href="classbdm_1_1StatelessBehavior.html#a5618783fb82bb82c053a8d826f888ed8">bdm::StatelessBehavior::StatelessBehavior</a></div><div class="ttdeci">StatelessBehavior(const StatelessBehavior &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="stateless__behavior_8h_source.html#l00053">stateless_behavior.h:53</a></div></div>
-<div class="ttc" id="aclassbdm_1_1StatelessBehavior_html_a377b222c478225ba6341b6607b328cee"><div class="ttname"><a href="classbdm_1_1StatelessBehavior.html#a377b222c478225ba6341b6607b328cee">bdm::StatelessBehavior::~StatelessBehavior</a></div><div class="ttdeci">virtual ~StatelessBehavior()</div><div class="ttdef"><b>Definition:</b> <a href="stateless__behavior_8h_source.html#l00055">stateless_behavior.h:55</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structbdm_1_1OperationImpl.html">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1OperationImpl.html">OperationImpl</a> {</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structbdm_1_1OperationImpl.html#a0eb47b6fdca64a756155d4d532773806">   46</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structbdm_1_1OperationImpl.html#a0eb47b6fdca64a756155d4d532773806">~OperationImpl</a>() {}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structbdm_1_1OperationImpl.html#ab6626bb84b7e380c25005c5a1e584d0e">~OperationImpl</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structbdm_1_1OperationImpl.html#aa2d45a12b45b195c80cf6742ed624ad8">   50</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1OperationImpl.html#aa2d45a12b45b195c80cf6742ed624ad8">SetUp</a>() {}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -215,7 +215,6 @@ $(function() {
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif  // CORE_OPERATION_OPERATION_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructbdm_1_1OperationImpl_html_a0eb47b6fdca64a756155d4d532773806"><div class="ttname"><a href="structbdm_1_1OperationImpl.html#a0eb47b6fdca64a756155d4d532773806">bdm::OperationImpl::~OperationImpl</a></div><div class="ttdeci">virtual ~OperationImpl()</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00046">operation.h:46</a></div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html_a2a496018db890ac7f172ffb7a3477842"><div class="ttname"><a href="structbdm_1_1Operation.html#a2a496018db890ac7f172ffb7a3477842">bdm::Operation::IsExcluded</a></div><div class="ttdeci">bool IsExcluded(Functor&lt; bool, Agent * &gt; *filter)</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00177">operation.h:177</a></div></div>
 <div class="ttc" id="astructbdm_1_1StandaloneOperationImpl_html_a6b00b7b3c33944ad26ae1d23ee4f2b33"><div class="ttname"><a href="structbdm_1_1StandaloneOperationImpl.html#a6b00b7b3c33944ad26ae1d23ee4f2b33">bdm::StandaloneOperationImpl::operator()</a></div><div class="ttdeci">void operator()(Agent *agent) override</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00086">operation.h:86</a></div></div>
 <div class="ttc" id="astructbdm_1_1OperationImpl_html_a39d89e3e390f5a75757c68116764092b"><div class="ttname"><a href="structbdm_1_1OperationImpl.html#a39d89e3e390f5a75757c68116764092b">bdm::OperationImpl::IsStandalone</a></div><div class="ttdeci">virtual bool IsStandalone()=0</div><div class="ttdoc">Returns whether or not this operations is a stand-alone operation.</div></div>
@@ -259,6 +258,7 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1Operation_html_a68e617bb499e73ffa6b69dccffb99169"><div class="ttname"><a href="structbdm_1_1Operation.html#a68e617bb499e73ffa6b69dccffb99169">bdm::Operation::SelectComputeTarget</a></div><div class="ttdeci">void SelectComputeTarget(OpComputeTarget target)</div><div class="ttdef"><b>Definition:</b> <a href="operation_8cc_source.html#l00068">operation.cc:68</a></div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html_acf14d091224537843dc2d2ffec138642"><div class="ttname"><a href="structbdm_1_1Operation.html#acf14d091224537843dc2d2ffec138642">bdm::Operation::active_target_</a></div><div class="ttdeci">OpComputeTarget active_target_</div><div class="ttdoc">The compute target that this operation will be executed on.</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00199">operation.h:199</a></div></div>
 <div class="ttc" id="astructbdm_1_1AgentOperationImpl_html_a862e0630445e8848faf408a7788a428e"><div class="ttname"><a href="structbdm_1_1AgentOperationImpl.html#a862e0630445e8848faf408a7788a428e">bdm::AgentOperationImpl::operator()</a></div><div class="ttdeci">void operator()() override</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00076">operation.h:76</a></div></div>
+<div class="ttc" id="astructbdm_1_1OperationImpl_html_ab6626bb84b7e380c25005c5a1e584d0e"><div class="ttname"><a href="structbdm_1_1OperationImpl.html#ab6626bb84b7e380c25005c5a1e584d0e">bdm::OperationImpl::~OperationImpl</a></div><div class="ttdeci">virtual ~OperationImpl()=default</div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html_ae92921d5ddbf10894e306d5b33328688"><div class="ttname"><a href="structbdm_1_1Operation.html#ae92921d5ddbf10894e306d5b33328688">bdm::Operation::AddOperationImpl</a></div><div class="ttdeci">void AddOperationImpl(OpComputeTarget target, OperationImpl *impl)</div><div class="ttdef"><b>Definition:</b> <a href="operation_8cc_source.html#l00053">operation.cc:53</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -156,7 +156,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af165ab651a4e08c4aacd0f9c8ac640fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a behavior to this agent.  <a href="classbdm_1_1Agent.html#af165ab651a4e08c4aacd0f9c8ac640fb">More...</a><br /></td></tr>
 <tr class="separator:af165ab651a4e08c4aacd0f9c8ac640fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745bf451bac0d23302935d5015dd46bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a745bf451bac0d23302935d5015dd46bb">RemoveBehavior</a> (const <a class="el" href="classbdm_1_1Behavior.html">Behavior</a> *behavior)</td></tr>
-<tr class="memdesc:a745bf451bac0d23302935d5015dd46bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a behavior from this agent.  <a href="classbdm_1_1Agent.html#a745bf451bac0d23302935d5015dd46bb">More...</a><br /></td></tr>
 <tr class="separator:a745bf451bac0d23302935d5015dd46bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34ba6fd30ba1cccef3c148bbf7335a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#ac34ba6fd30ba1cccef3c148bbf7335a9">RunBehaviors</a> ()</td></tr>
 <tr class="memdesc:ac34ba6fd30ba1cccef3c148bbf7335a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute all behaviorsq.  <a href="classbdm_1_1Agent.html#ac34ba6fd30ba1cccef3c148bbf7335a9">More...</a><br /></td></tr>
@@ -953,7 +952,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00241">241</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00243">243</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -981,7 +980,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00232">232</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00234">234</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1024,8 +1023,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Remove a behavior from this agent. </p>
+<p>Remove a behavior from this agent The parameter <code>behavior</code> will be deleted if the instance is stored in this agent and must not be used after the call to <code>RemoveBehavior</code>. </p>
 
 <p class="definition">Definition at line <a class="el" href="agent_8cc_source.html#l00134">134</a> of file <a class="el" href="agent_8cc_source.html">agent.cc</a>.</p>
 
@@ -1335,7 +1333,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>collection of behaviors which define the internal behavior </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00256">256</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00258">258</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1361,7 +1359,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>Grid box index. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00254">254</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00256">256</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1387,7 +1385,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>If an agent is static, we should not compute the mechanical forces. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00266">266</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00268">268</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1413,7 +1411,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>Flag to determine of an agent is static in the next timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00271">271</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00273">273</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +1435,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00259">259</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00261">261</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1460,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </div><div class="memdoc">
 <p>If an agent becomes non-static (i.e. it moved or grew), we should set this flag to true to also compute mechanical forces on the neighboring agents </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00269">269</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00271">271</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1487,7 +1485,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </div><div class="memdoc">
 <p>Helper variable used to support removal of behaviors while <code>RunBehaviors</code> iterates over them. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00263">263</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00265">265</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1513,7 +1511,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>unique id </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00252">252</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00254">254</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> experimental::TimeSeries;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1Algorithm.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1experimental_1_1Algorithm.html">Algorithm</a> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structbdm_1_1experimental_1_1Algorithm.html#a035cef3eed42e297b7559e2cc09a9e79">   31</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structbdm_1_1experimental_1_1Algorithm.html#a035cef3eed42e297b7559e2cc09a9e79">~Algorithm</a>() {}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structbdm_1_1experimental_1_1Algorithm.html#a21435afc89b7e2a2c2f041172ee4483e">~Algorithm</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="structbdm_1_1experimental_1_1Algorithm.html#aaf205a7c02ace4ee3b3ce07d14d32975">operator()</a>(</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Param*, TimeSeries*&gt;</a>&amp; dispatch_experiment,</div>
@@ -111,13 +111,13 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif  // CORE_MULTI_SIMULATION_ALGORITHM_ALGORITHM_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructbdm_1_1experimental_1_1Algorithm_html_a035cef3eed42e297b7559e2cc09a9e79"><div class="ttname"><a href="structbdm_1_1experimental_1_1Algorithm.html#a035cef3eed42e297b7559e2cc09a9e79">bdm::experimental::Algorithm::~Algorithm</a></div><div class="ttdeci">virtual ~Algorithm()</div><div class="ttdef"><b>Definition:</b> <a href="multi__simulation_2algorithm_2algorithm_8h_source.html#l00031">algorithm.h:31</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="astructbdm_1_1experimental_1_1Algorithm_html"><div class="ttname"><a href="structbdm_1_1experimental_1_1Algorithm.html">bdm::experimental::Algorithm</a></div><div class="ttdoc">An interface for creating new optimization algorithms.</div><div class="ttdef"><b>Definition:</b> <a href="multi__simulation_2algorithm_2algorithm_8h_source.html#l00030">algorithm.h:30</a></div></div>
 <div class="ttc" id="astructbdm_1_1experimental_1_1Algorithm_html_aaf205a7c02ace4ee3b3ce07d14d32975"><div class="ttname"><a href="structbdm_1_1experimental_1_1Algorithm.html#aaf205a7c02ace4ee3b3ce07d14d32975">bdm::experimental::Algorithm::operator()</a></div><div class="ttdeci">virtual void operator()(Functor&lt; void, Param *, TimeSeries * &gt; &amp;dispatch_experiment, Param *default_param)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1Functor_html"><div class="ttname"><a href="classbdm_1_1Functor.html">bdm::Functor</a></div><div class="ttdef"><b>Definition:</b> <a href="functor_8h_source.html#l00024">functor.h:24</a></div></div>
 <div class="ttc" id="atime__series_8h_html"><div class="ttname"><a href="time__series_8h.html">time_series.h</a></div></div>
 <div class="ttc" id="acore_2param_2param_8h_html"><div class="ttname"><a href="core_2param_2param_8h.html">param.h</a></div></div>
+<div class="ttc" id="astructbdm_1_1experimental_1_1Algorithm_html_a21435afc89b7e2a2c2f041172ee4483e"><div class="ttname"><a href="structbdm_1_1experimental_1_1Algorithm.html#a21435afc89b7e2a2c2f041172ee4483e">bdm::experimental::Algorithm::~Algorithm</a></div><div class="ttdeci">virtual ~Algorithm()=default</div></div>
 <div class="ttc" id="astructbdm_1_1Param_html"><div class="ttname"><a href="structbdm_1_1Param.html">bdm::Param</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2param_2param_8h_source.html#l00034">param.h:34</a></div></div>
 <div class="ttc" id="afunctor_8h_html"><div class="ttname"><a href="functor_8h.html">functor.h</a></div></div>
 <!-- start footer part -->

@@ -18,7 +18,7 @@ var searchData=
   ['error_391',['Error',['../classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211',1,'bdm::Log']]],
   ['euler_5fgrid_2ecc_392',['euler_grid.cc',['../euler__grid_8cc.html',1,'']]],
   ['euler_5fgrid_2eh_393',['euler_grid.h',['../euler__grid_8h.html',1,'']]],
-  ['eulergrid_394',['EulerGrid',['../classbdm_1_1EulerGrid.html',1,'bdm::EulerGrid'],['../classbdm_1_1DiffusionGrid.html#ac5b1f36f7a03d430f0602c4377aaadad',1,'bdm::DiffusionGrid::EulerGrid()'],['../classbdm_1_1EulerGrid.html#ab43355717e3da00cbd20f5895a6896b9',1,'bdm::EulerGrid::EulerGrid()'],['../classbdm_1_1EulerGrid.html#a94c3f3e62e0c866a55282ce509bc25ce',1,'bdm::EulerGrid::EulerGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)']]],
+  ['eulergrid_394',['EulerGrid',['../classbdm_1_1EulerGrid.html',1,'bdm::EulerGrid'],['../classbdm_1_1DiffusionGrid.html#ac5b1f36f7a03d430f0602c4377aaadad',1,'bdm::DiffusionGrid::EulerGrid()'],['../classbdm_1_1EulerGrid.html#af4fffd95cc7f1e0c1fb1678903c71849',1,'bdm::EulerGrid::EulerGrid()=default'],['../classbdm_1_1EulerGrid.html#a94c3f3e62e0c866a55282ce509bc25ce',1,'bdm::EulerGrid::EulerGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)']]],
   ['exclude_5ffilters_5f_395',['exclude_filters_',['../structbdm_1_1Operation.html#abca274731b4e02e7622904570ff5279f',1,'bdm::Operation']]],
   ['exclusiveprefixsum_396',['ExclusivePrefixSum',['../namespacebdm.html#ac29e4fdbab03474694e984da473dfe2c',1,'bdm']]],
   ['exec_5fctxt_5f_397',['exec_ctxt_',['../classbdm_1_1Simulation.html#ac111ebbd42cfa523a957f4aded374bdc',1,'bdm::Simulation']]],

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classbdm_1_1ExecutionContext.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classbdm_1_1ExecutionContext.html#a876a9adbfeafe1082108ac5e92149f69">   31</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a876a9adbfeafe1082108ac5e92149f69">~ExecutionContext</a>() {}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a3f0f8bdc1b2d43047b8d251581d0e1bb">~ExecutionContext</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ae45cd54c636413975db66dddf9686986">SetupAgentOpsAll</a>(</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
@@ -144,6 +144,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a40ec871f417d93d4eb7a564409000c27"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a40ec871f417d93d4eb7a564409000c27">bdm::ExecutionContext::GetAgent</a></div><div class="ttdeci">virtual Agent * GetAgent(const AgentUid &amp;uid)=0</div></div>
 <div class="ttc" id="aagent__uid_8h_html"><div class="ttname"><a href="agent__uid_8h.html">agent_uid.h</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
+<div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a3f0f8bdc1b2d43047b8d251581d0e1bb"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a3f0f8bdc1b2d43047b8d251581d0e1bb">bdm::ExecutionContext::~ExecutionContext</a></div><div class="ttdeci">virtual ~ExecutionContext()=default</div></div>
 <div class="ttc" id="aoperation_8h_html"><div class="ttname"><a href="operation_8h.html">operation.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_af9bfaacbcec5eea196e08184b47aef4b"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">bdm::ExecutionContext::ForEachNeighbor</a></div><div class="ttdeci">virtual void ForEachNeighbor(Functor&lt; void, Agent * &gt; &amp;lambda, const Agent &amp;query, void *criteria)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html">bdm::ExecutionContext</a></div><div class="ttdef"><b>Definition:</b> <a href="execution__context_8h_source.html#l00029">execution_context.h:29</a></div></div>
@@ -154,9 +155,8 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_ae45cd54c636413975db66dddf9686986"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#ae45cd54c636413975db66dddf9686986">bdm::ExecutionContext::SetupAgentOpsAll</a></div><div class="ttdeci">virtual void SetupAgentOpsAll(const std::vector&lt; ExecutionContext * &gt; &amp;all_exec_ctxts)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a3f1a78829b5297b6c746b9f1d99f633d"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a3f1a78829b5297b6c746b9f1d99f633d">bdm::ExecutionContext::GetConstAgent</a></div><div class="ttdeci">virtual const Agent * GetConstAgent(const AgentUid &amp;uid)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a8228bd5043d5cd584108350411db27ff"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a8228bd5043d5cd584108350411db27ff">bdm::ExecutionContext::TearDownAgentOpsAll</a></div><div class="ttdeci">virtual void TearDownAgentOpsAll(const std::vector&lt; ExecutionContext * &gt; &amp;all_exec_ctxts)=0</div></div>
-<div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a876a9adbfeafe1082108ac5e92149f69"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a876a9adbfeafe1082108ac5e92149f69">bdm::ExecutionContext::~ExecutionContext</a></div><div class="ttdeci">virtual ~ExecutionContext()</div><div class="ttdef"><b>Definition:</b> <a href="execution__context_8h_source.html#l00031">execution_context.h:31</a></div></div>
 <div class="ttc" id="aclassbdm_1_1AgentUid_html"><div class="ttname"><a href="classbdm_1_1AgentUid.html">bdm::AgentUid</a></div><div class="ttdef"><b>Definition:</b> <a href="agent__uid_8h_source.html#l00025">agent_uid.h:25</a></div></div>
-<div class="ttc" id="aclassbdm_1_1MathArray_html"><div class="ttname"><a href="classbdm_1_1MathArray.html">bdm::MathArray</a></div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00035">math_array.h:35</a></div></div>
+<div class="ttc" id="aclassbdm_1_1MathArray_html"><div class="ttname"><a href="classbdm_1_1MathArray.html">bdm::MathArray&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="afunctor_8h_html"><div class="ttname"><a href="functor_8h.html">functor.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a0efd0a96f12d8a1fc42c8b40aeb33e24"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24">bdm::ExecutionContext::Execute</a></div><div class="ttdeci">virtual void Execute(Agent *agent, AgentHandle ah, const std::vector&lt; Operation * &gt; &amp;operations)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1AgentHandle_html"><div class="ttname"><a href="classbdm_1_1AgentHandle.html">bdm::AgentHandle</a></div><div class="ttdef"><b>Definition:</b> <a href="agent__handle_8h_source.html#l00029">agent_handle.h:29</a></div></div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbdm_1_1SharedData.html#a2a06a61875a9dace825e3a0851dfabea">   42</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classbdm_1_1SharedData.html#a2a06a61875a9dace825e3a0851dfabea">Data</a> = std::vector&lt;AlignedT&gt;;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classbdm_1_1SharedData.html#af6829dadd3fc8ed40fd1160ce29b83ba">   44</a></span>&#160;  <a class="code" href="classbdm_1_1SharedData.html#af6829dadd3fc8ed40fd1160ce29b83ba">SharedData</a>() {}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classbdm_1_1SharedData.html#a0da8f37a11abb9b953602bcc447949a7">SharedData</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classbdm_1_1SharedData.html#a3e9a4b98dc909ae4ab3fe130b7ab5ef7">   45</a></span>&#160;  <a class="code" href="classbdm_1_1SharedData.html#a3e9a4b98dc909ae4ab3fe130b7ab5ef7">SharedData</a>(<span class="keywordtype">size_t</span> <a class="code" href="classbdm_1_1SharedData.html#a99d995ad7bb0d0ea711dc838fe018380">size</a>, <span class="keyword">const</span> T&amp; value = T()) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">data_</a>.resize(<a class="code" href="classbdm_1_1SharedData.html#a99d995ad7bb0d0ea711dc838fe018380">size</a>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; info : <a class="code" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">data_</a>) {</div>
@@ -153,6 +153,7 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  // CORE_CONTAINER_SHARED_DATA_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructbdm_1_1SharedData_1_1Iterator_html_a26d28de7801ac8e5bea37409a7265ba7"><div class="ttname"><a href="structbdm_1_1SharedData_1_1Iterator.html#a26d28de7801ac8e5bea37409a7265ba7">bdm::SharedData::Iterator::operator++</a></div><div class="ttdeci">Iterator &amp; operator++()</div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00065">shared_data.h:65</a></div></div>
+<div class="ttc" id="aclassbdm_1_1SharedData_html_a0da8f37a11abb9b953602bcc447949a7"><div class="ttname"><a href="classbdm_1_1SharedData.html#a0da8f37a11abb9b953602bcc447949a7">bdm::SharedData::SharedData</a></div><div class="ttdeci">SharedData()=default</div></div>
 <div class="ttc" id="aclassbdm_1_1SharedData_html"><div class="ttname"><a href="classbdm_1_1SharedData.html">bdm::SharedData</a></div><div class="ttdoc">The SharedData class avoids false sharing between threads.</div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00032">shared_data.h:32</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Iterator_html"><div class="ttname"><a href="classbdm_1_1Iterator.html">bdm::Iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="iterator_8h_source.html#l00021">iterator.h:21</a></div></div>
@@ -175,7 +176,6 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1SharedData_html_a3e9a4b98dc909ae4ab3fe130b7ab5ef7"><div class="ttname"><a href="classbdm_1_1SharedData.html#a3e9a4b98dc909ae4ab3fe130b7ab5ef7">bdm::SharedData::SharedData</a></div><div class="ttdeci">SharedData(size_t size, const T &amp;value=T())</div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00045">shared_data.h:45</a></div></div>
 <div class="ttc" id="astructbdm_1_1SharedData_1_1Iterator_html"><div class="ttname"><a href="structbdm_1_1SharedData_1_1Iterator.html">bdm::SharedData::Iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00062">shared_data.h:62</a></div></div>
 <div class="ttc" id="aclassbdm_1_1SharedData_html_aa3d3bfeff8afabccd917b002f3f9cc31"><div class="ttname"><a href="classbdm_1_1SharedData.html#aa3d3bfeff8afabccd917b002f3f9cc31">bdm::SharedData::end</a></div><div class="ttdeci">const Iterator end() const</div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00082">shared_data.h:82</a></div></div>
-<div class="ttc" id="aclassbdm_1_1SharedData_html_af6829dadd3fc8ed40fd1160ce29b83ba"><div class="ttname"><a href="classbdm_1_1SharedData.html#af6829dadd3fc8ed40fd1160ce29b83ba">bdm::SharedData::SharedData</a></div><div class="ttdeci">SharedData()</div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00044">shared_data.h:44</a></div></div>
 <div class="ttc" id="aclassbdm_1_1SharedData_html_afc2718f94996b9dd40d8b0c45ca3d9c2"><div class="ttname"><a href="classbdm_1_1SharedData.html#afc2718f94996b9dd40d8b0c45ca3d9c2">bdm::SharedData::begin</a></div><div class="ttdeci">Iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="shared__data_8h_source.html#l00077">shared_data.h:77</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

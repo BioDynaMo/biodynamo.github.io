@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -601,11 +601,11 @@ $(function() {
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> it2 = op_list-&gt;begin(); it2 != op_list-&gt;end(); ++it2) {</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        <span class="keywordflow">if</span> (op == (*it2)) {</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;          it2 = op_list-&gt;erase(it2);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;          <span class="keywordflow">goto</span> label;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;          <span class="keywordflow">goto</span> LABEL;</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        }</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      }</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    }</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  label:</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  LABEL:</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    it = unschedule_ops_.erase(it);</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  }</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;}</div>
@@ -646,7 +646,7 @@ $(function() {
 <div class="ttc" id="aoperation__registry_8h_html"><div class="ttname"><a href="operation__registry_8h.html">operation_registry.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Scheduler_html_ae048bf23bc0cf33ed3cf9725c9cdc225"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae048bf23bc0cf33ed3cf9725c9cdc225">bdm::Scheduler::GetListOfScheduledStandaloneOps</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetListOfScheduledStandaloneOps() const</div><div class="ttdoc">Return a list of StandAloneOperations that are scheduled.</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00212">scheduler.cc:212</a></div></div>
 <div class="ttc" id="asimulation__backup_8h_html"><div class="ttname"><a href="simulation__backup_8h.html">simulation_backup.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1SimulationBackup_html_a883be6288cae9cf54f3a92637a862020"><div class="ttname"><a href="classbdm_1_1SimulationBackup.html#a883be6288cae9cf54f3a92637a862020">bdm::SimulationBackup::RestoreEnabled</a></div><div class="ttdeci">bool RestoreEnabled()</div><div class="ttdef"><b>Definition:</b> <a href="simulation__backup_8cc_source.html#l00057">simulation_backup.cc:57</a></div></div>
+<div class="ttc" id="aclassbdm_1_1SimulationBackup_html_a883be6288cae9cf54f3a92637a862020"><div class="ttname"><a href="classbdm_1_1SimulationBackup.html#a883be6288cae9cf54f3a92637a862020">bdm::SimulationBackup::RestoreEnabled</a></div><div class="ttdeci">bool RestoreEnabled()</div><div class="ttdef"><b>Definition:</b> <a href="simulation__backup_8cc_source.html#l00062">simulation_backup.cc:62</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html"><div class="ttname"><a href="classbdm_1_1Agent.html">bdm::Agent</a></div><div class="ttdoc">Contains code required by all agents.</div><div class="ttdef"><b>Definition:</b> <a href="agent_8h_source.html#l00079">agent.h:79</a></div></div>
 <div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html">bdm::RunAllScheduledOps</a></div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00251">scheduler.cc:251</a></div></div>
 <div class="ttc" id="astructbdm_1_1Operation_html_a699bdc8d49ebba87da2f95a65587e5bc"><div class="ttname"><a href="structbdm_1_1Operation.html#a699bdc8d49ebba87da2f95a65587e5bc">bdm::Operation::frequency_</a></div><div class="ttdeci">size_t frequency_</div><div class="ttdef"><b>Definition:</b> <a href="operation_8h_source.html#l00195">operation.h:195</a></div></div>
@@ -674,7 +674,7 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1RunAllScheduledOps_html_a95ea63e2994460189b3bac7cb8f61552"><div class="ttname"><a href="structbdm_1_1RunAllScheduledOps.html#a95ea63e2994460189b3bac7cb8f61552">bdm::RunAllScheduledOps::sim_</a></div><div class="ttdeci">Simulation * sim_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00261">scheduler.cc:261</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a7130f71511d1f77a6db33b8cc28c9f4ea9a7fcf92bb3160f66226efee20d9db01"><div class="ttname"><a href="namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4ea9a7fcf92bb3160f66226efee20d9db01">bdm::kPreSchedule</a></div><div class="ttdeci">@ kPreSchedule</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00043">scheduler.h:43</a></div></div>
 <div class="ttc" id="aclassbdm_1_1SimulationBackup_html"><div class="ttname"><a href="classbdm_1_1SimulationBackup.html">bdm::SimulationBackup</a></div><div class="ttdef"><b>Definition:</b> <a href="simulation__backup_8h_source.html#l00033">simulation_backup.h:33</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Simulation_html_a2ad613deed59648ce27d60e731637c48"><div class="ttname"><a href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">bdm::Simulation::GetExecutionContext</a></div><div class="ttdeci">ExecutionContext * GetExecutionContext()</div><div class="ttdoc">Returns a thread local execution context.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00289">simulation.cc:289</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_a2ad613deed59648ce27d60e731637c48"><div class="ttname"><a href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">bdm::Simulation::GetExecutionContext</a></div><div class="ttdeci">ExecutionContext * GetExecutionContext()</div><div class="ttdoc">Returns a thread local execution context.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00287">simulation.cc:287</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Scheduler_html_a8eca21c36bf32884b1ac26bee109d772"><div class="ttname"><a href="classbdm_1_1Scheduler.html#a8eca21c36bf32884b1ac26bee109d772">bdm::Scheduler::agent_filters_</a></div><div class="ttdeci">std::vector&lt; Functor&lt; bool, Agent * &gt; * &gt; agent_filters_</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8h_source.html#l00159">scheduler.h:159</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Scheduler_html_ae9c4f3806788d7f714183b478b3dd26a"><div class="ttname"><a href="classbdm_1_1Scheduler.html#ae9c4f3806788d7f714183b478b3dd26a">bdm::Scheduler::GetOps</a></div><div class="ttdeci">std::vector&lt; Operation * &gt; GetOps(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8cc_source.html#l00220">scheduler.cc:220</a></div></div>
 <div class="ttc" id="anamespacebdm_html_ad6284b99121d482636295bc12e29c1fd"><div class="ttname"><a href="namespacebdm.html#ad6284b99121d482636295bc12e29c1fd">bdm::NewOperation</a></div><div class="ttdeci">Operation * NewOperation(const std::string &amp;name)</div><div class="ttdoc">A convenient function to get a new operation from the registry by its name.</div><div class="ttdef"><b>Definition:</b> <a href="operation__registry_8h_source.html#l00085">operation_registry.h:85</a></div></div>

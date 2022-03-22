@@ -9,7 +9,7 @@ var searchData=
   ['entrywiseproduct_2618',['EntryWiseProduct',['../classbdm_1_1MathArray.html#a939d7c99dce34e3fc98afc556309504a',1,'bdm::MathArray']]],
   ['erase_2619',['erase',['../classbdm_1_1InlineVector.html#a12723a50f5639f82a3922cbc30472453',1,'bdm::InlineVector']]],
   ['error_2620',['Error',['../classbdm_1_1Log.html#a6967948de8a82fb630d6ff4f93166211',1,'bdm::Log']]],
-  ['eulergrid_2621',['EulerGrid',['../classbdm_1_1EulerGrid.html#ab43355717e3da00cbd20f5895a6896b9',1,'bdm::EulerGrid::EulerGrid()'],['../classbdm_1_1EulerGrid.html#a94c3f3e62e0c866a55282ce509bc25ce',1,'bdm::EulerGrid::EulerGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)']]],
+  ['eulergrid_2621',['EulerGrid',['../classbdm_1_1EulerGrid.html#af4fffd95cc7f1e0c1fb1678903c71849',1,'bdm::EulerGrid::EulerGrid()=default'],['../classbdm_1_1EulerGrid.html#a94c3f3e62e0c866a55282ce509bc25ce',1,'bdm::EulerGrid::EulerGrid(int substance_id, std::string substance_name, double dc, double mu, int resolution=11)']]],
   ['exclusiveprefixsum_2622',['ExclusivePrefixSum',['../namespacebdm.html#ac29e4fdbab03474694e984da473dfe2c',1,'bdm']]],
   ['execute_2623',['Execute',['../classbdm_1_1experimental_1_1CopyExecutionContext.html#a7c6f27b57e02a00763a02f17bc7f2e0d',1,'bdm::experimental::CopyExecutionContext::Execute()'],['../classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24',1,'bdm::ExecutionContext::Execute()'],['../classbdm_1_1InPlaceExecutionContext.html#aa8afe767315ad9abb33a58df7fd7c242',1,'bdm::InPlaceExecutionContext::Execute()'],['../classbdm_1_1Scheduler.html#a53d6d0e166c63ca8d5b2e3f050068ed3',1,'bdm::Scheduler::Execute()']]],
   ['exp_2624',['Exp',['../classbdm_1_1Random.html#a810925a930cd1b34f409c385ac051db7',1,'bdm::Random']]],

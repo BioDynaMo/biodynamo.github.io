@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html#a8e5246b388181a4d3e369888ea1f6235">BDM_BEHAVIOR_HEADER</a>(Chemotaxis, Behavior, 1)</td><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html">bdm::Chemotaxis</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#add132e980aa1d611d1cd01bb5b14a380">BDM_CLASS_DEF</a>(Behavior, 2)</td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#a36e19f85d70a67dc153d4aed57e1b794">Behavior</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html#ac6fed120167748cbd262f139d091883d">Chemotaxis</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html">bdm::Chemotaxis</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html#a8d3da85cec9779edd8920f93a288e0bc">Chemotaxis</a>()=default</td><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html">bdm::Chemotaxis</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html#ad495757a8d0da98005113494409c66be">Chemotaxis</a>(const std::string &amp;substance, double speed)</td><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html">bdm::Chemotaxis</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html#a221564d0d10fd9250b5627658fcf1d21">Chemotaxis</a>(DiffusionGrid *dgrid, double speed)</td><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html">bdm::Chemotaxis</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#a2f1a0df6fe72804b7bf2f21c661e521e">copy_mask_</a></td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -99,8 +99,8 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#a26e35419747cbba0259489b04d920755">Update</a>(const NewAgentEvent &amp;event)</td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#a092087613f82be1b3214ae80b3e85b87">WillBeCopied</a>(NewAgentEventUid event) const</td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#a966bdc93bfb0100c2064bfff082fb6bd">WillBeRemoved</a>(NewAgentEventUid event) const</td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#a34c99443eaa050bb5d3054ff55ff74c2">~Behavior</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html#a5600ca048109721036be5207a0ddad57">~Chemotaxis</a>()</td><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html">bdm::Chemotaxis</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classbdm_1_1Behavior.html#a6eea40cce2c0e47d8014ab75d77f05a9">~Behavior</a>()=default</td><td class="entry"><a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html#af6d3c3e7fe102c715b21c708348657b9">~Chemotaxis</a>()=default</td><td class="entry"><a class="el" href="classbdm_1_1Chemotaxis.html">bdm::Chemotaxis</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

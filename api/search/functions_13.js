@@ -11,7 +11,7 @@ var searchData=
   ['timeseries_3221',['TimeSeries',['../classbdm_1_1experimental_1_1TimeSeries.html#af0e0280fbcc5b532a0dca65492d42694',1,'bdm::experimental::TimeSeries::TimeSeries()'],['../classbdm_1_1experimental_1_1TimeSeries.html#a3137f1bb931c34fce06ece62872c5808',1,'bdm::experimental::TimeSeries::TimeSeries(const TimeSeries &amp;other)'],['../classbdm_1_1experimental_1_1TimeSeries.html#ab06e5a539c8283b97f88abd97ef56aae',1,'bdm::experimental::TimeSeries::TimeSeries(TimeSeries &amp;&amp;other) noexcept']]],
   ['timestamp_3222',['Timestamp',['../classbdm_1_1Timing.html#a60f0361ed4d2c56c8281e4f9518b3de5',1,'bdm::Timing']]],
   ['timing_3223',['Timing',['../classbdm_1_1Timing.html#a1709195406ffd6994b4862b9bb92b968',1,'bdm::Timing::Timing(const std::string &amp;description=&quot;&quot;)'],['../classbdm_1_1Timing.html#ad8945c821b78f82ca6950d49d40fb406',1,'bdm::Timing::Timing(const std::string &amp;description, TimingAggregator *aggregator)']]],
-  ['timingaggregator_3224',['TimingAggregator',['../classbdm_1_1TimingAggregator.html#ad700cc0ce0b4560829558c0b1fdd7054',1,'bdm::TimingAggregator']]],
+  ['timingaggregator_3224',['TimingAggregator',['../classbdm_1_1TimingAggregator.html#a8dc28424669ec6ab566d11e4d7bb3d43',1,'bdm::TimingAggregator']]],
   ['todegree_3225',['ToDegree',['../structbdm_1_1Math.html#a3ee1b385bc17152842e1fdf1c3102726',1,'bdm::Math']]],
   ['tojsonstring_3226',['ToJsonString',['../structbdm_1_1Param.html#a88785d8979ae616633a636a1b25afb74',1,'bdm::Param']]],
   ['top_3227',['Top',['../classbdm_1_1Stack.html#a6e9a9ccf250270f756bb29b09b52ff3e',1,'bdm::Stack']]],

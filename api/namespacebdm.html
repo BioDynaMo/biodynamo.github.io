@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -2473,7 +2473,7 @@ The wrapped lambda is allowed to capture variables. <br  />
 Without <a class="el" href="structbdm_1_1LambdaFunctor.html">bdm::LambdaFunctor</a> and <a class="el" href="namespacebdm.html#a019d03b104d978a9bd5ba4d1f38fa574">bdm::L2F</a> the following code is needed to achieve the same result as above. Notice the extra class <code>MyFunctor</code> that has to be defined outside <code>PrintSmallNeighbors</code>. </p><pre class="fragment">class MyFunctor : public Functor&lt;void, Agent*, double&gt; {
  public:
   MyFunctor(double threshold) : threshold_(threshold) {}
-  virtual ~MyFunctor() {}
+  virtual ~MyFunctor() = default;
   void operator()(Agent* neighbor, double squared_distance) override {
     if (neighbor-&gt;GetDiameter() &lt; threshold_) {
       std::cout &lt;&lt; agent-&gt;GetUid() &lt;&lt; std::endl;
@@ -2647,7 +2647,7 @@ template&lt;class T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00456">456</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resource__manager_8h_source.html#l00459">459</a> of file <a class="el" href="resource__manager_8h_source.html">resource_manager.h</a>.</p>
 
 </div>
 </div>

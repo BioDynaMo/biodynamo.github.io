@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classbdm_1_1EulerGrid.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1EulerGrid.html">EulerGrid</a> : <span class="keyword">public</span> <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a> {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classbdm_1_1EulerGrid.html#ab43355717e3da00cbd20f5895a6896b9">   45</a></span>&#160;  <a class="code" href="classbdm_1_1EulerGrid.html#ab43355717e3da00cbd20f5895a6896b9">EulerGrid</a>() {}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classbdm_1_1EulerGrid.html#af4fffd95cc7f1e0c1fb1678903c71849">EulerGrid</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classbdm_1_1EulerGrid.html#a94c3f3e62e0c866a55282ce509bc25ce">   46</a></span>&#160;  <a class="code" href="classbdm_1_1EulerGrid.html#a94c3f3e62e0c866a55282ce509bc25ce">EulerGrid</a>(<span class="keywordtype">int</span> substance_id, std::string substance_name, <span class="keywordtype">double</span> dc, <span class="keywordtype">double</span> mu,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">int</span> resolution = 11)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      : <a class="code" href="classbdm_1_1DiffusionGrid.html">DiffusionGrid</a>(substance_id, <a class="code" href="namespacestd.html">std</a>::move(substance_name), dc, mu,</div>
@@ -113,6 +113,7 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  // CORE_DIFFUSION_EULER_GRID_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassbdm_1_1EulerGrid_html_af4fffd95cc7f1e0c1fb1678903c71849"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#af4fffd95cc7f1e0c1fb1678903c71849">bdm::EulerGrid::EulerGrid</a></div><div class="ttdeci">EulerGrid()=default</div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html_a2645a720fea066d6a3754450875df123"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a2645a720fea066d6a3754450875df123">bdm::EulerGrid::DiffuseWithClosedEdge</a></div><div class="ttdeci">void DiffuseWithClosedEdge(double dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00019">euler_grid.cc:19</a></div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html_a552a1dbac82a3a84ad1742c92caf4e70"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a552a1dbac82a3a84ad1742c92caf4e70">bdm::EulerGrid::BDM_CLASS_DEF_OVERRIDE</a></div><div class="ttdeci">BDM_CLASS_DEF_OVERRIDE(EulerGrid, 1)</div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
@@ -121,7 +122,6 @@ $(function() {
 <div class="ttc" id="adiffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="agent__uid_8h_source.html#l00117">agent_uid.h:117</a></div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html_ac6fd3862cc4448bf02c704a61941d5cc"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ac6fd3862cc4448bf02c704a61941d5cc">bdm::EulerGrid::DiffuseWithOpenEdge</a></div><div class="ttdeci">void DiffuseWithOpenEdge(double dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00062">euler_grid.cc:62</a></div></div>
-<div class="ttc" id="aclassbdm_1_1EulerGrid_html_ab43355717e3da00cbd20f5895a6896b9"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ab43355717e3da00cbd20f5895a6896b9">bdm::EulerGrid::EulerGrid</a></div><div class="ttdeci">EulerGrid()</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8h_source.html#l00045">euler_grid.h:45</a></div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html"><div class="ttname"><a href="classbdm_1_1EulerGrid.html">bdm::EulerGrid</a></div><div class="ttdoc">Continuum model for the 3D heat equation with exponential decay .</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8h_source.html#l00043">euler_grid.h:43</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

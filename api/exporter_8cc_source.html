@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classbdm_1_1Exporter.html#a90ccfcaeac2b54d17de5939d0fe00360">   31</a></span>&#160;<a class="code" href="classbdm_1_1Exporter.html#a90ccfcaeac2b54d17de5939d0fe00360">Exporter::~Exporter</a>() {}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="classbdm_1_1Exporter.html#a90ccfcaeac2b54d17de5939d0fe00360">Exporter::~Exporter</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classbdm_1_1BasicExporter.html#aafc5261d00d03bf9956a382ef523fc19">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classbdm_1_1BasicExporter.html#aafc5261d00d03bf9956a382ef523fc19">BasicExporter::ExportIteration</a>(std::string filename, uint64_t iteration) {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  std::ofstream outfile;</div>
@@ -406,7 +406,7 @@ $(function() {
 <div class="ttc" id="anamespacebdm_html_af87468412b81ad961b54b939b9e9a811aa93d8d2c6e46f6132934aa8535f5c032"><div class="ttname"><a href="namespacebdm.html#af87468412b81ad961b54b939b9e9a811aa93d8d2c6e46f6132934aa8535f5c032">bdm::kBasic</a></div><div class="ttdeci">@ kBasic</div><div class="ttdef"><b>Definition:</b> <a href="exporter_8h_source.html#l00069">exporter.h:69</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html_a105948673d397c1ed122b4304cacb446"><div class="ttname"><a href="classbdm_1_1Agent.html#a105948673d397c1ed122b4304cacb446">bdm::Agent::GetDiameter</a></div><div class="ttdeci">virtual double GetDiameter() const =0</div></div>
 <div class="ttc" id="anamespacebdm_html_af87468412b81ad961b54b939b9e9a811a3e3ffea12f482d42f9def297c077000f"><div class="ttname"><a href="namespacebdm.html#af87468412b81ad961b54b939b9e9a811a3e3ffea12f482d42f9def297c077000f">bdm::kNeuroML</a></div><div class="ttdeci">@ kNeuroML</div><div class="ttdef"><b>Definition:</b> <a href="exporter_8h_source.html#l00069">exporter.h:69</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Exporter_html_a90ccfcaeac2b54d17de5939d0fe00360"><div class="ttname"><a href="classbdm_1_1Exporter.html#a90ccfcaeac2b54d17de5939d0fe00360">bdm::Exporter::~Exporter</a></div><div class="ttdeci">virtual ~Exporter()</div><div class="ttdef"><b>Definition:</b> <a href="exporter_8cc_source.html#l00031">exporter.cc:31</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Exporter_html_a90ccfcaeac2b54d17de5939d0fe00360"><div class="ttname"><a href="classbdm_1_1Exporter.html#a90ccfcaeac2b54d17de5939d0fe00360">bdm::Exporter::~Exporter</a></div><div class="ttdeci">virtual ~Exporter()</div></div>
 <div class="ttc" id="aclassbdm_1_1NeuroMLExporter_html_a200d54e66268277f448db10b12a991dd"><div class="ttname"><a href="classbdm_1_1NeuroMLExporter.html#a200d54e66268277f448db10b12a991dd">bdm::NeuroMLExporter::ExportIteration</a></div><div class="ttdeci">void ExportIteration(std::string filename, uint64_t iteration) override</div><div class="ttdef"><b>Definition:</b> <a href="exporter_8cc_source.html#l00072">exporter.cc:72</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ExporterFactory_html_a003a3a6ebefee58c1936e7e7fb25072d"><div class="ttname"><a href="classbdm_1_1ExporterFactory.html#a003a3a6ebefee58c1936e7e7fb25072d">bdm::ExporterFactory::GenerateExporter</a></div><div class="ttdeci">static std::unique_ptr&lt; Exporter &gt; GenerateExporter(ExporterType type)</div><div class="ttdef"><b>Definition:</b> <a href="exporter_8cc_source.html#l00318">exporter.cc:318</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MatlabExporter_html_a9e2c31a9005a13049b33b803a2d6c427"><div class="ttname"><a href="classbdm_1_1MatlabExporter.html#a9e2c31a9005a13049b33b803a2d6c427">bdm::MatlabExporter::ExportSummary</a></div><div class="ttdeci">void ExportSummary(std::string filename, uint64_t num_iterations) override</div><div class="ttdef"><b>Definition:</b> <a href="exporter_8cc_source.html#l00068">exporter.cc:68</a></div></div>

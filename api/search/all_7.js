@@ -63,7 +63,7 @@ var searchData=
   ['first_5fiter_5f_483',['first_iter_',['../classbdm_1_1ProgressBar.html#ad43c595ce02d348a4a377f52741cd4c5',1,'bdm::ProgressBar']]],
   ['first_5fparse_5f_484',['first_parse_',['../classbdm_1_1CommandLineOptions.html#ac96a2b7dfafa21bd45548f1cf41f7361',1,'bdm::CommandLineOptions']]],
   ['fixed_5fsize_5fvector_2eh_485',['fixed_size_vector.h',['../fixed__size__vector_8h.html',1,'']]],
-  ['fixedsizevector_486',['FixedSizeVector',['../classbdm_1_1FixedSizeVector.html',1,'bdm::FixedSizeVector&lt; T, N &gt;'],['../classbdm_1_1FixedSizeVector.html#a7b6770bfe5b6aaf790cd03244a91fb83',1,'bdm::FixedSizeVector::FixedSizeVector()'],['../classbdm_1_1FixedSizeVector.html#a7ed72626b801447e87c6c2db105d383e',1,'bdm::FixedSizeVector::FixedSizeVector(const std::initializer_list&lt; T &gt; &amp;l)']]],
+  ['fixedsizevector_486',['FixedSizeVector',['../classbdm_1_1FixedSizeVector.html',1,'bdm::FixedSizeVector&lt; T, N &gt;'],['../classbdm_1_1FixedSizeVector.html#ae585dbb36bfcef184f5b65160e33668d',1,'bdm::FixedSizeVector::FixedSizeVector()=default'],['../classbdm_1_1FixedSizeVector.html#a7ed72626b801447e87c6c2db105d383e',1,'bdm::FixedSizeVector::FixedSizeVector(const std::initializer_list&lt; T &gt; &amp;l)']]],
   ['fixedsizevector_3c_20const_20bdm_3a_3auniformgridenvironment_3a_3abox_20_2a_2c_2027_20_3e_487',['FixedSizeVector&lt; const bdm::UniformGridEnvironment::Box *, 27 &gt;',['../classbdm_1_1FixedSizeVector.html',1,'bdm']]],
   ['fixedsizevector_3c_20double_2c_2010_20_3e_488',['FixedSizeVector&lt; double, 10 &gt;',['../classbdm_1_1FixedSizeVector.html',1,'bdm']]],
   ['fixedsizevector_3c_20uint64_5ft_2c_2027_20_3e_489',['FixedSizeVector&lt; uint64_t, 27 &gt;',['../classbdm_1_1FixedSizeVector.html',1,'bdm']]],

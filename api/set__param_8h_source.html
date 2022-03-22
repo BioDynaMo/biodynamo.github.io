@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -95,12 +95,12 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structbdm_1_1SetParam.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbdm_1_1SetParam.html">SetParam</a> : <span class="keyword">public</span> <a class="code" href="structbdm_1_1OptimizationParamType.html">OptimizationParamType</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structbdm_1_1SetParam.html#ae717662f0895aee775512afce5ca7ee8">   28</a></span>&#160;  <a class="code" href="structbdm_1_1SetParam.html#ae717662f0895aee775512afce5ca7ee8">SetParam</a>() {}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="structbdm_1_1SetParam.html#a8bca58f8d8794ff127bd48faaab7cf63">SetParam</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structbdm_1_1SetParam.html#aa7d1aeacbf9f71c61fd7bfe40cfd9f28">   29</a></span>&#160;  <a class="code" href="structbdm_1_1SetParam.html#aa7d1aeacbf9f71c61fd7bfe40cfd9f28">SetParam</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::vector&lt;double&gt; v)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      : <a class="code" href="structbdm_1_1OptimizationParamType.html">OptimizationParamType</a>(name), <a class="code" href="structbdm_1_1SetParam.html#aefdd4c42e5f417fa9c633efeaaffd6bd">values</a>(v) {}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structbdm_1_1SetParam.html#a0db0694c09101f3d5180303a9f5dc658">   32</a></span>&#160;  <a class="code" href="structbdm_1_1OptimizationParamType.html">OptimizationParamType</a>* <a class="code" href="structbdm_1_1SetParam.html#a0db0694c09101f3d5180303a9f5dc658">GetCopy</a>()<span class="keyword"> const override </span>{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="structbdm_1_1SetParam.html#ae717662f0895aee775512afce5ca7ee8">SetParam</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="structbdm_1_1SetParam.html#a8bca58f8d8794ff127bd48faaab7cf63">SetParam</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structbdm_1_1SetParam.html#ae00959e1ba5016d06283bbaf956bb5fc">   36</a></span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="structbdm_1_1SetParam.html#ae00959e1ba5016d06283bbaf956bb5fc">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="structbdm_1_1SetParam.html#aefdd4c42e5f417fa9c633efeaaffd6bd">values</a>.size(); }</div>
@@ -129,7 +129,7 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1SetParam_html_aefdd4c42e5f417fa9c633efeaaffd6bd"><div class="ttname"><a href="structbdm_1_1SetParam.html#aefdd4c42e5f417fa9c633efeaaffd6bd">bdm::SetParam::values</a></div><div class="ttdeci">std::vector&lt; double &gt; values</div><div class="ttdef"><b>Definition:</b> <a href="set__param_8h_source.html#l00042">set_param.h:42</a></div></div>
 <div class="ttc" id="astructbdm_1_1SetParam_html_a8dbdf490f58e9f1dbd367dc390886737"><div class="ttname"><a href="structbdm_1_1SetParam.html#a8dbdf490f58e9f1dbd367dc390886737">bdm::SetParam::BDM_CLASS_DEF_OVERRIDE</a></div><div class="ttdeci">BDM_CLASS_DEF_OVERRIDE(SetParam, 1)</div></div>
 <div class="ttc" id="astructbdm_1_1SetParam_html_a490f7f5daf3ba1adade0f5ab219516c7"><div class="ttname"><a href="structbdm_1_1SetParam.html#a490f7f5daf3ba1adade0f5ab219516c7">bdm::SetParam::GetValue</a></div><div class="ttdeci">double GetValue(int n) const override</div><div class="ttdef"><b>Definition:</b> <a href="set__param_8h_source.html#l00040">set_param.h:40</a></div></div>
-<div class="ttc" id="astructbdm_1_1SetParam_html_ae717662f0895aee775512afce5ca7ee8"><div class="ttname"><a href="structbdm_1_1SetParam.html#ae717662f0895aee775512afce5ca7ee8">bdm::SetParam::SetParam</a></div><div class="ttdeci">SetParam()</div><div class="ttdef"><b>Definition:</b> <a href="set__param_8h_source.html#l00028">set_param.h:28</a></div></div>
+<div class="ttc" id="astructbdm_1_1SetParam_html_a8bca58f8d8794ff127bd48faaab7cf63"><div class="ttname"><a href="structbdm_1_1SetParam.html#a8bca58f8d8794ff127bd48faaab7cf63">bdm::SetParam::SetParam</a></div><div class="ttdeci">SetParam()=default</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

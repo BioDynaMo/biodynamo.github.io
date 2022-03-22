@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.17-7b10e4cb</span>
+   &#160;<span id="projectnumber">v1.03.27-1272f672</span>
    </div>
   </td>
  </tr>
@@ -149,7 +149,7 @@ $(function() {
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="classbdm_1_1RootAdaptor.html#ac590ef38538563afec533bdd6a362222">canvas_</a>-&gt;GetListOfPrimitives()-&gt;Add(gGeoManager-&gt;GetTopVolume(),</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                          opt.c_str());</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classbdm_1_1RootAdaptor.html#ac590ef38538563afec533bdd6a362222">canvas_</a>-&gt;SetCanvasSize(w, h);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classbdm_1_1RootAdaptor.html#ac590ef38538563afec533bdd6a362222">canvas_</a>-&gt;SetCanvasSize(<span class="keyword">static_cast&lt;</span>UInt_t<span class="keyword">&gt;</span>(w), <span class="keyword">static_cast&lt;</span>UInt_t<span class="keyword">&gt;</span>(h));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classbdm_1_1RootAdaptor.html#ac590ef38538563afec533bdd6a362222">canvas_</a>-&gt;Update();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classbdm_1_1RootAdaptor.html#ac590ef38538563afec533bdd6a362222">canvas_</a>-&gt;Draw();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
@@ -288,7 +288,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1RootAdaptor_html_aad2682aaf7644cd068b606059a8ae4ea"><div class="ttname"><a href="classbdm_1_1RootAdaptor.html#aad2682aaf7644cd068b606059a8ae4ea">bdm::RootAdaptor::med_solid_</a></div><div class="ttdeci">TGeoMedium * med_solid_</div><div class="ttdef"><b>Definition:</b> <a href="root_2adaptor_8h_source.html#l00208">adaptor.h:208</a></div></div>
 <div class="ttc" id="aclassbdm_1_1RootAdaptor_html_ac4aaef0e4706ede0515bab3a8c5a3d88"><div class="ttname"><a href="classbdm_1_1RootAdaptor.html#ac4aaef0e4706ede0515bab3a8c5a3d88">bdm::RootAdaptor::AddSphere</a></div><div class="ttdeci">void AddSphere(const Agent *agent, TGeoVolume *container)</div><div class="ttdoc">Adds a sphere object to the volume.</div><div class="ttdef"><b>Definition:</b> <a href="root_2adaptor_8h_source.html#l00141">adaptor.h:141</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html_a105948673d397c1ed122b4304cacb446"><div class="ttname"><a href="classbdm_1_1Agent.html#a105948673d397c1ed122b4304cacb446">bdm::Agent::GetDiameter</a></div><div class="ttdeci">virtual double GetDiameter() const =0</div></div>
-<div class="ttc" id="aclassbdm_1_1Simulation_html_adb375e6e8628519f06b8a9225edcd14f"><div class="ttname"><a href="classbdm_1_1Simulation.html#adb375e6e8628519f06b8a9225edcd14f">bdm::Simulation::GetUniqueName</a></div><div class="ttdeci">const std::string &amp; GetUniqueName() const</div><div class="ttdoc">Returns the name of the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00300">simulation.cc:300</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_adb375e6e8628519f06b8a9225edcd14f"><div class="ttname"><a href="classbdm_1_1Simulation.html#adb375e6e8628519f06b8a9225edcd14f">bdm::Simulation::GetUniqueName</a></div><div class="ttdeci">const std::string &amp; GetUniqueName() const</div><div class="ttdoc">Returns the name of the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00298">simulation.cc:298</a></div></div>
 <div class="ttc" id="aclassbdm_1_1RootAdaptor_html_aa7c9745b88f7c5386ee401a42a11d549"><div class="ttname"><a href="classbdm_1_1RootAdaptor.html#aa7c9745b88f7c5386ee401a42a11d549">bdm::RootAdaptor::max_viz_nodes_</a></div><div class="ttdeci">int max_viz_nodes_</div><div class="ttdoc">Max visualized shapes per volume.</div><div class="ttdef"><b>Definition:</b> <a href="root_2adaptor_8h_source.html#l00213">adaptor.h:213</a></div></div>
 <div class="ttc" id="ascheduler_8h_html"><div class="ttname"><a href="scheduler_8h.html">scheduler.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html_adcd10db730dc105aef49d7a4295d93fe"><div class="ttname"><a href="classbdm_1_1Agent.html#adcd10db730dc105aef49d7a4295d93fe">bdm::Agent::GetUid</a></div><div class="ttdeci">const AgentUid &amp; GetUid() const</div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00123">agent.cc:123</a></div></div>
