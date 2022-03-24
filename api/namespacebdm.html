@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.28-4e1d0d94</span>
+   &#160;<span id="projectnumber">v1.03.30-248f4c30</span>
    </div>
   </td>
  </tr>
@@ -526,6 +526,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a36a873db32fbcc419e619f90c3e994bb"><td class="memTemplParams" colspan="2">template&lt;class T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a36a873db32fbcc419e619f90c3e994bb"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a36a873db32fbcc419e619f90c3e994bb">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="classbdm_1_1MathArray.html">MathArray</a>&lt; T, N &gt; &amp;arr)</td></tr>
 <tr class="separator:a36a873db32fbcc419e619f90c3e994bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c60e505d3ad465341bf634cb6bdf42b"><td class="memTemplParams" colspan="2">template&lt;class T , std::size_t N&gt; </td></tr>
+<tr class="memitem:a8c60e505d3ad465341bf634cb6bdf42b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1MathArray.html">MathArray</a>&lt; T, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a8c60e505d3ad465341bf634cb6bdf42b">operator*</a> (T const &amp;scalar, <a class="el" href="classbdm_1_1MathArray.html">MathArray</a>&lt; T, N &gt; array)</td></tr>
+<tr class="memdesc:a8c60e505d3ad465341bf634cb6bdf42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template function to multiply array with scalar from the left.  <a href="namespacebdm.html#a8c60e505d3ad465341bf634cb6bdf42b">More...</a><br /></td></tr>
+<tr class="separator:a8c60e505d3ad465341bf634cb6bdf42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12aa1b8952c94c41b0bc57af9f53595"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae12aa1b8952c94c41b0bc57af9f53595"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; uint64_t, uint64_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ae12aa1b8952c94c41b0bc57af9f53595">BinarySearch</a> (uint64_t search_val, const T &amp;container, uint64_t from, uint64_t to)</td></tr>
 <tr class="separator:ae12aa1b8952c94c41b0bc57af9f53595"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -695,7 +699,7 @@ Functions</h2></td></tr>
 
 <p>Alias for a size 3 <a class="el" href="classbdm_1_1MathArray.html">MathArray</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00404">404</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00415">415</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +717,7 @@ Functions</h2></td></tr>
 
 <p>Alias for a size 4 <a class="el" href="classbdm_1_1MathArray.html">MathArray</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00407">407</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00418">418</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>
@@ -2548,6 +2552,40 @@ void PrintSmallNeighbors(Agent* agent, double threshold) {
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="operation_8h_source.html#l00032">32</a> of file <a class="el" href="operation_8h_source.html">operation.h</a>.</p>
+
+</div>
+</div>
+<a id="a8c60e505d3ad465341bf634cb6bdf42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c60e505d3ad465341bf634cb6bdf42b">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , std::size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1MathArray.html">MathArray</a>&lt;T, N&gt; bdm::operator* </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramname"><em>scalar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classbdm_1_1MathArray.html">MathArray</a>&lt; T, N &gt;&#160;</td>
+          <td class="paramname"><em>array</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Template function to multiply array with scalar from the left. </p>
+
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00410">410</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>

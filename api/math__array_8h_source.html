@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.28-4e1d0d94</span>
+   &#160;<span id="projectnumber">v1.03.30-248f4c30</span>
    </div>
   </td>
  </tr>
@@ -424,13 +424,23 @@ $(function() {
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">return</span> o;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">  404</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a> = <a class="code" href="classbdm_1_1MathArray.html">MathArray&lt;double, 3&gt;</a>;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="namespacebdm.html#a482b174c833a56a19b71cc36847a1013">  407</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbdm_1_1MathArray.html">Double4</a> = <a class="code" href="classbdm_1_1MathArray.html">MathArray&lt;double, 4&gt;</a>;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#endif  // CORE_CONTAINER_MATH_ARRAY_H_</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">// Note: 1) We pass by value to allow for copy-elision and move semantics</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">//          optimization.</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">//       2) We do return MathArray&lt;T, N&gt; because a const MathArray&lt;T, N&gt;</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">//          prevents move semantics in C++11.</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">//       see https://tinyurl.com/left-multiply</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="namespacebdm.html#a8c60e505d3ad465341bf634cb6bdf42b">  410</a></span>&#160;<a class="code" href="classbdm_1_1MathArray.html">MathArray&lt;T, N&gt;</a> <a class="code" href="namespacebdm.html#a8c60e505d3ad465341bf634cb6bdf42b">operator*</a>(T <span class="keyword">const</span>&amp; scalar, <a class="code" href="classbdm_1_1MathArray.html">MathArray&lt;T, N&gt;</a> array) {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordflow">return</span> array *= scalar;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">  415</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a> = <a class="code" href="classbdm_1_1MathArray.html">MathArray&lt;double, 3&gt;</a>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="namespacebdm.html#a482b174c833a56a19b71cc36847a1013">  418</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbdm_1_1MathArray.html">Double4</a> = <a class="code" href="classbdm_1_1MathArray.html">MathArray&lt;double, 4&gt;</a>;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#endif  // CORE_CONTAINER_MATH_ARRAY_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1MathArray_html_a73e8a9c93f0380eb2c2a9961f2f17c2d"><div class="ttname"><a href="classbdm_1_1MathArray.html#a73e8a9c93f0380eb2c2a9961f2f17c2d">bdm::MathArray::operator[]</a></div><div class="ttdeci">const T &amp; operator[](size_t idx) const</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00080">math_array.h:80</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html_adf28598d3603aa2111bfcb2d74ae8c79"><div class="ttname"><a href="classbdm_1_1MathArray.html#adf28598d3603aa2111bfcb2d74ae8c79">bdm::MathArray::front</a></div><div class="ttdeci">T &amp; front()</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00104">math_array.h:104</a></div></div>
@@ -446,6 +456,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1MathArray_html_a7bbc2e794c231a34081eb5d292c3ccee"><div class="ttname"><a href="classbdm_1_1MathArray.html#a7bbc2e794c231a34081eb5d292c3ccee">bdm::MathArray::operator--</a></div><div class="ttdeci">MathArray &amp; operator--()</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00156">math_array.h:156</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html_a212624e8c5afbf4d7f70ec50d98a4d2f"><div class="ttname"><a href="classbdm_1_1MathArray.html#a212624e8c5afbf4d7f70ec50d98a4d2f">bdm::MathArray::operator-=</a></div><div class="ttdeci">MathArray &amp; operator-=(const T &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00245">math_array.h:245</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html_a5a32bae3f725a113e9e4eff95057d01f"><div class="ttname"><a href="classbdm_1_1MathArray.html#a5a32bae3f725a113e9e4eff95057d01f">bdm::MathArray::operator*=</a></div><div class="ttdeci">MathArray &amp; operator*=(const T &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00284">math_array.h:284</a></div></div>
+<div class="ttc" id="anamespacebdm_html_a8c60e505d3ad465341bf634cb6bdf42b"><div class="ttname"><a href="namespacebdm.html#a8c60e505d3ad465341bf634cb6bdf42b">bdm::operator*</a></div><div class="ttdeci">MathArray&lt; T, N &gt; operator*(T const &amp;scalar, MathArray&lt; T, N &gt; array)</div><div class="ttdoc">Template function to multiply array with scalar from the left.</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00410">math_array.h:410</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html_ac2ea6b1ff6eba74d8d481ddca8b162f7"><div class="ttname"><a href="classbdm_1_1MathArray.html#ac2ea6b1ff6eba74d8d481ddca8b162f7">bdm::MathArray::operator+</a></div><div class="ttdeci">MathArray operator+(const MathArray &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00179">math_array.h:179</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html_aa3c4de1c89ef3d714b60b391568294a9"><div class="ttname"><a href="classbdm_1_1MathArray.html#aa3c4de1c89ef3d714b60b391568294a9">bdm::MathArray::operator*</a></div><div class="ttdeci">const T operator*(const MathArray &amp;rhs) const</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00274">math_array.h:274</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html_af109703b223c2630e843ce61e2398a6d"><div class="ttname"><a href="classbdm_1_1MathArray.html#af109703b223c2630e843ce61e2398a6d">bdm::MathArray::data</a></div><div class="ttdeci">const T * data() const</div><div class="ttdef"><b>Definition:</b> <a href="math__array_8h_source.html#l00061">math_array.h:61</a></div></div>
