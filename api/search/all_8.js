@@ -74,7 +74,7 @@ var searchData=
   ['getexprng_671',['GetExpRng',['../classbdm_1_1Random.html#a7417627ef6179c8c53ab085f12291594',1,'bdm::Random']]],
   ['getflatidx_672',['GetFlatIdx',['../classbdm_1_1AgentFlatIdxMap.html#a67cd6c1a45be670871eff97d050fe59e',1,'bdm::AgentFlatIdxMap']]],
   ['getgausrng_673',['GetGausRng',['../classbdm_1_1Random.html#a60d9075ed643c91c06e372fc85b74955',1,'bdm::Random']]],
-  ['getgradient_674',['GetGradient',['../classbdm_1_1DiffusionGrid.html#ac59d31422dd266a1d53f6e4080a9e483',1,'bdm::DiffusionGrid']]],
+  ['getgradient_674',['GetGradient',['../classbdm_1_1DiffusionGrid.html#a7d2269d643959f5ddb4e10d1e9a82aba',1,'bdm::DiffusionGrid']]],
   ['getgridsize_675',['GetGridSize',['../classbdm_1_1DiffusionGrid.html#ae20daa8726987e80fc11acfe3e5968c8',1,'bdm::DiffusionGrid']]],
   ['getgroupname_676',['GetGroupName',['../structbdm_1_1OptimizationParamType.html#a1485523241c237bf39bd7adc7e221e2f',1,'bdm::OptimizationParamType']]],
   ['gethalfmooreboxindices_677',['GetHalfMooreBoxIndices',['../classbdm_1_1UniformGridEnvironment.html#a240b35ab66d5b1e68b00445489447a2f',1,'bdm::UniformGridEnvironment']]],

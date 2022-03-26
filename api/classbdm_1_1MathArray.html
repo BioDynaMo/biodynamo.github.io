@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.30-248f4c30</span>
+   &#160;<span id="projectnumber">v1.03.32-5531d9ff</span>
    </div>
   </td>
  </tr>
@@ -163,6 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af271b151a30cad08b4d4618be659c5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c4da63ed042ab1476ea3aa5b33acb0d"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1MathArray.html#a3c4da63ed042ab1476ea3aa5b33acb0d">Sum</a> () const</td></tr>
 <tr class="separator:a3c4da63ed042ab1476ea3aa5b33acb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf7ca02df3c0afd726a4f2bca96606f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1MathArray.html#adaf7ca02df3c0afd726a4f2bca96606f">IsZero</a> () const</td></tr>
+<tr class="memdesc:adaf7ca02df3c0afd726a4f2bca96606f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if vector is a zero vector, e.g. if all entries are zero.  <a href="classbdm_1_1MathArray.html#adaf7ca02df3c0afd726a4f2bca96606f">More...</a><br /></td></tr>
+<tr class="separator:adaf7ca02df3c0afd726a4f2bca96606f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9852671303a8e3dfc9ce040d0406ad93"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1MathArray.html#a9852671303a8e3dfc9ce040d0406ad93">Norm</a> () const</td></tr>
 <tr class="separator:a9852671303a8e3dfc9ce040d0406ad93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4f4c7633d1d4b42724bc89d63550ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6">Normalize</a> ()</td></tr>
@@ -574,7 +577,7 @@ template&lt;class T , std::size_t N&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a new array with the result </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00377">377</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00387">387</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>
@@ -672,7 +675,38 @@ template&lt;class T , std::size_t N&gt; </div>
 
 <p>Get a nomalized copy of the <a class="el" href="classbdm_1_1MathArray.html">MathArray</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00367">367</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00377">377</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+
+</div>
+</div>
+<a id="adaf7ca02df3c0afd726a4f2bca96606f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf7ca02df3c0afd726a4f2bca96606f">&#9670;&nbsp;</a></span>IsZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbdm_1_1MathArray.html">bdm::MathArray</a>&lt; T, N &gt;::IsZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if vector is a zero vector, e.g. if all entries are zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00340">340</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +736,7 @@ template&lt;class T , std::size_t N&gt; </div>
 </div><div class="memdoc">
 <p>Compute the norm of the array's content. </p><dl class="section return"><dt>Returns</dt><dd>array's norm. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00341">341</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00351">351</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +767,7 @@ template&lt;class T , std::size_t N&gt; </div>
 
 <p>Normalize the array in-place. </p>
 
-<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00353">353</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00363">363</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>
@@ -1654,7 +1688,7 @@ template&lt;class T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00388">388</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="math__array_8h_source.html#l00398">398</a> of file <a class="el" href="math__array_8h_source.html">math_array.h</a>.</p>
 
 </div>
 </div>
