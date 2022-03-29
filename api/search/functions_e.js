@@ -17,7 +17,7 @@ var searchData=
   ['newuid_2985',['NewUid',['../classbdm_1_1ParamGroupUidGenerator.html#adaaa30c0bc543b6c2e9f6c7e80ecfa12',1,'bdm::ParamGroupUidGenerator']]],
   ['next_2986',['Next',['../classbdm_1_1MortonIterator.html#a44946f86d9828ba36c20fdd0587e3f0d',1,'bdm::MortonIterator::Next()'],['../structbdm_1_1AgentHandleIterator.html#a775bae3c38983ea35796a33d39d26d12',1,'bdm::AgentHandleIterator::Next()'],['../classbdm_1_1Iterator.html#a783b7fc845df6d7cdb855aba12a73604',1,'bdm::Iterator::Next()']]],
   ['norm_2987',['Norm',['../classbdm_1_1MathArray.html#a9852671303a8e3dfc9ce040d0406ad93',1,'bdm::MathArray']]],
-  ['normalize_2988',['Normalize',['../classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6',1,'bdm::MathArray']]],
+  ['normalize_2988',['Normalize',['../classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6',1,'bdm::MathArray::Normalize()'],['../classbdm_1_1MathArray.html#ae068e1a4c0756cdd4a4ef5ff80e61379',1,'bdm::MathArray::Normalize(T norm)']]],
   ['numa_5falloc_5fonnode_2989',['numa_alloc_onnode',['../numa_8h.html#aa55414cbb38a0dd46176b32bdd8de672',1,'numa.h']]],
   ['numa_5favailable_2990',['numa_available',['../numa_8h.html#a185e19a5b3d5c5c86bb46bfc241fbbed',1,'numa.h']]],
   ['numa_5ffree_2991',['numa_free',['../numa_8h.html#a35ffe691f3ecc8fb5e94065542b2c5c8',1,'numa.h']]],

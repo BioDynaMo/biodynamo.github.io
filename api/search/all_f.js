@@ -66,7 +66,7 @@ var searchData=
   ['nodes_5fbefore_5fskip_5flist_5f_1209',['nodes_before_skip_list_',['../classbdm_1_1memory__manager__detail_1_1List.html#a8d089109b3b2cb23d9a9f621819c1a21',1,'bdm::memory_manager_detail::List']]],
   ['non_5fzero_5fneighbor_5fforce_1210',['non_zero_neighbor_force',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1MechanicalForcesFunctor.html#a187dc6533b7862a651de09876549c4e0',1,'bdm::neuroscience::NeuriteElement::MechanicalForcesFunctor']]],
   ['norm_1211',['Norm',['../classbdm_1_1MathArray.html#a9852671303a8e3dfc9ce040d0406ad93',1,'bdm::MathArray']]],
-  ['normalize_1212',['Normalize',['../classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6',1,'bdm::MathArray']]],
+  ['normalize_1212',['Normalize',['../classbdm_1_1MathArray.html#ab4f4c7633d1d4b42724bc89d63550ed6',1,'bdm::MathArray::Normalize()'],['../classbdm_1_1MathArray.html#ae068e1a4c0756cdd4a4ef5ff80e61379',1,'bdm::MathArray::Normalize(T norm)']]],
   ['not_5fto_5fleft_1213',['not_to_left',['../structbdm_1_1ResourceManager_1_1ParallelRemovalAuxData.html#a5b3a70f5cb13569a1668e5f54964e308',1,'bdm::ResourceManager::ParallelRemovalAuxData']]],
   ['notebook_5futil_2eh_1214',['notebook_util.h',['../notebook__util_8h.html',1,'']]],
   ['ntot_5f_1215',['ntot_',['../classbdm_1_1BinomialRng.html#a16167363e81393975735f9d4a593b716',1,'bdm::BinomialRng']]],
