@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.36-a9b05ef2</span>
+   &#160;<span id="projectnumber">v1.03.38-72ea9343</span>
    </div>
   </td>
  </tr>
@@ -90,64 +90,67 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="agent__uid_8h.html">core/agent/agent_uid.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="functor_8h.html">core/functor.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operation_8h.html">core/operation/operation.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="agent__handle_8h.html">core/agent/agent_handle.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="agent__uid_8h.html">core/agent/agent_uid.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="math__array_8h.html">core/container/math_array.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="functor_8h.html">core/functor.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operation_8h.html">core/operation/operation.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>Agent;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classbdm_1_1ExecutionContext.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a3f0f8bdc1b2d43047b8d251581d0e1bb">~ExecutionContext</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ae45cd54c636413975db66dddf9686986">SetupAgentOpsAll</a>(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a8228bd5043d5cd584108350411db27ff">TearDownAgentOpsAll</a>(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ad6f96f51d4e0f5e14d504495d7f072f4">SetupIterationAll</a>(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a2f02ea5742cf155c90e0290ce9a053c6">TearDownIterationAll</a>(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24">Execute</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent, <a class="code" href="classbdm_1_1AgentHandle.html">AgentHandle</a> ah,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                       <span class="keyword">const</span> std::vector&lt;Operation*&gt;&amp; operations) = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*&gt;</a>&amp; lambda,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>&amp; query, <span class="keywordtype">void</span>* criteria) = 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*, double&gt;</a>&amp; lambda,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>&amp; query, <span class="keywordtype">double</span> squared_radius) = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*, double&gt;</a>&amp; lambda,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a>&amp; query_position,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                               <span class="keywordtype">double</span> squared_radius) = 0;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">AddAgent</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* new_agent) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>Agent;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classbdm_1_1ExecutionContext.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a3f0f8bdc1b2d43047b8d251581d0e1bb">~ExecutionContext</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ae45cd54c636413975db66dddf9686986">SetupAgentOpsAll</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a8228bd5043d5cd584108350411db27ff">TearDownAgentOpsAll</a>(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ad6f96f51d4e0f5e14d504495d7f072f4">SetupIterationAll</a>(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a2f02ea5742cf155c90e0290ce9a053c6">TearDownIterationAll</a>(</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> std::vector&lt;ExecutionContext*&gt;&amp; all_exec_ctxts) = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a0efd0a96f12d8a1fc42c8b40aeb33e24">Execute</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent, <a class="code" href="classbdm_1_1AgentHandle.html">AgentHandle</a> ah,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                       <span class="keyword">const</span> std::vector&lt;Operation*&gt;&amp; operations) = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*&gt;</a>&amp; lambda,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>&amp; query, <span class="keywordtype">void</span>* criteria) = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*, double&gt;</a>&amp; lambda,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>&amp; query, <span class="keywordtype">double</span> squared_radius) = 0;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">ForEachNeighbor</a>(<a class="code" href="classbdm_1_1Functor.html">Functor&lt;void, Agent*, double&gt;</a>&amp; lambda,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1MathArray.html">Double3</a>&amp; query_position,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                               <span class="keywordtype">double</span> squared_radius) = 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ada02af4c109d850a1a1666ed0b6842c1">RemoveAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">AddAgent</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* new_agent) = 0;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a40ec871f417d93d4eb7a564409000c27">GetAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ada02af4c109d850a1a1666ed0b6842c1">RemoveAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a3f1a78829b5297b6c746b9f1d99f633d">GetConstAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a40ec871f417d93d4eb7a564409000c27">GetAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a3f1a78829b5297b6c746b9f1d99f633d">GetConstAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // CORE_EXECUTION_CONTEXT_EXECUTION_CONTEXT_H_</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif  // CORE_EXECUTION_CONTEXT_EXECUTION_CONTEXT_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a822bbddd7d781895b9b1dada4fd88b52"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">bdm::ExecutionContext::AddAgent</a></div><div class="ttdeci">virtual void AddAgent(Agent *new_agent)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a40ec871f417d93d4eb7a564409000c27"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a40ec871f417d93d4eb7a564409000c27">bdm::ExecutionContext::GetAgent</a></div><div class="ttdeci">virtual Agent * GetAgent(const AgentUid &amp;uid)=0</div></div>
 <div class="ttc" id="aagent__uid_8h_html"><div class="ttname"><a href="agent__uid_8h.html">agent_uid.h</a></div></div>
+<div class="ttc" id="aagent__handle_8h_html"><div class="ttname"><a href="agent__handle_8h.html">agent_handle.h</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a3f0f8bdc1b2d43047b8d251581d0e1bb"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a3f0f8bdc1b2d43047b8d251581d0e1bb">bdm::ExecutionContext::~ExecutionContext</a></div><div class="ttdeci">virtual ~ExecutionContext()=default</div></div>
 <div class="ttc" id="aoperation_8h_html"><div class="ttname"><a href="operation_8h.html">operation.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_af9bfaacbcec5eea196e08184b47aef4b"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#af9bfaacbcec5eea196e08184b47aef4b">bdm::ExecutionContext::ForEachNeighbor</a></div><div class="ttdeci">virtual void ForEachNeighbor(Functor&lt; void, Agent * &gt; &amp;lambda, const Agent &amp;query, void *criteria)=0</div></div>
-<div class="ttc" id="aclassbdm_1_1ExecutionContext_html"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html">bdm::ExecutionContext</a></div><div class="ttdef"><b>Definition:</b> <a href="execution__context_8h_source.html#l00029">execution_context.h:29</a></div></div>
+<div class="ttc" id="aclassbdm_1_1ExecutionContext_html"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html">bdm::ExecutionContext</a></div><div class="ttdef"><b>Definition:</b> <a href="execution__context_8h_source.html#l00031">execution_context.h:31</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a2f02ea5742cf155c90e0290ce9a053c6"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a2f02ea5742cf155c90e0290ce9a053c6">bdm::ExecutionContext::TearDownIterationAll</a></div><div class="ttdeci">virtual void TearDownIterationAll(const std::vector&lt; ExecutionContext * &gt; &amp;all_exec_ctxts)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html"><div class="ttname"><a href="classbdm_1_1Agent.html">bdm::Agent</a></div><div class="ttdoc">Contains code required by all agents.</div><div class="ttdef"><b>Definition:</b> <a href="agent_8h_source.html#l00079">agent.h:79</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Functor_html"><div class="ttname"><a href="classbdm_1_1Functor.html">bdm::Functor&lt; void, Agent * &gt;</a></div></div>
@@ -155,6 +158,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_ae45cd54c636413975db66dddf9686986"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#ae45cd54c636413975db66dddf9686986">bdm::ExecutionContext::SetupAgentOpsAll</a></div><div class="ttdeci">virtual void SetupAgentOpsAll(const std::vector&lt; ExecutionContext * &gt; &amp;all_exec_ctxts)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a3f1a78829b5297b6c746b9f1d99f633d"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a3f1a78829b5297b6c746b9f1d99f633d">bdm::ExecutionContext::GetConstAgent</a></div><div class="ttdeci">virtual const Agent * GetConstAgent(const AgentUid &amp;uid)=0</div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a8228bd5043d5cd584108350411db27ff"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a8228bd5043d5cd584108350411db27ff">bdm::ExecutionContext::TearDownAgentOpsAll</a></div><div class="ttdeci">virtual void TearDownAgentOpsAll(const std::vector&lt; ExecutionContext * &gt; &amp;all_exec_ctxts)=0</div></div>
+<div class="ttc" id="amath__array_8h_html"><div class="ttname"><a href="math__array_8h.html">math_array.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1AgentUid_html"><div class="ttname"><a href="classbdm_1_1AgentUid.html">bdm::AgentUid</a></div><div class="ttdef"><b>Definition:</b> <a href="agent__uid_8h_source.html#l00025">agent_uid.h:25</a></div></div>
 <div class="ttc" id="aclassbdm_1_1MathArray_html"><div class="ttname"><a href="classbdm_1_1MathArray.html">bdm::MathArray&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="afunctor_8h_html"><div class="ttname"><a href="functor_8h.html">functor.h</a></div></div>

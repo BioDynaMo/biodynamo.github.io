@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.36-a9b05ef2</span>
+   &#160;<span id="projectnumber">v1.03.38-72ea9343</span>
    </div>
   </td>
  </tr>
@@ -122,8 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6371034f072579c64e5d7e3a2ebc493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca386c09953106c5346db413197ca12"><td class="memItemLeft" align="right" valign="top">const TAgent &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentPointer.html#abca386c09953106c5346db413197ca12">operator*</a> () const</td></tr>
 <tr class="separator:abca386c09953106c5346db413197ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2933b621a960741c3617eec5a462a00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentPointer.html#af2933b621a960741c3617eec5a462a00">operator&lt;</a> (const <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a> &amp;other) const</td></tr>
+<tr class="separator:af2933b621a960741c3617eec5a462a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1892596680014632770fd48aa129614"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentPointer.html#ae1892596680014632770fd48aa129614">operator bool</a> () const</td></tr>
 <tr class="separator:ae1892596680014632770fd48aa129614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af121fbd9fa1df64d065e80677f541c8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentPointer.html#af121fbd9fa1df64d065e80677f541c8d">operator AgentPointer&lt; Agent &gt;</a> () const</td></tr>
+<tr class="separator:af121fbd9fa1df64d065e80677f541c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0b4e14f20b970037a0dbbe83d9297b"><td class="memItemLeft" align="right" valign="top">TAgent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentPointer.html#a9c0b4e14f20b970037a0dbbe83d9297b">Get</a> ()</td></tr>
 <tr class="separator:a9c0b4e14f20b970037a0dbbe83d9297b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad40297f041a495ffeb39727eba88be6c"><td class="memItemLeft" align="right" valign="top">const TAgent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentPointer.html#ad40297f041a495ffeb39727eba88be6c">Get</a> () const</td></tr>
@@ -151,7 +155,7 @@ Friends</h2></td></tr>
 <tr class="separator:aacc6b482dc849877df9ffb9aebea38d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename TAgent&gt;<br />
+<div class="textblock"><h3>template&lt;typename TAgent = Agent&gt;<br />
 class bdm::AgentPointer&lt; TAgent &gt;</h3>
 
 <p><a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> pointer. Required to point to an agent with throughout the whole simulation. Raw pointers cannot be used, because an agent might be copied to a different NUMA domain, or if it resides on a different address space in case of a distributed runtime. Benefit compared to <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> is, that the compiler knows the type returned by <code>Get</code> and can therefore inline the code from the callee and perform optimizations. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -169,7 +173,7 @@ class bdm::AgentPointer&lt; TAgent &gt;</h3>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -199,7 +203,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -228,7 +232,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -256,7 +260,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -294,7 +298,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <div class="memtemplate">
 template&lt;typename TFrom , typename TTo &gt; </div>
 <table class="mlabels">
@@ -316,7 +320,7 @@ template&lt;typename TFrom , typename TTo &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00119">119</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00123">123</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +330,7 @@ template&lt;typename TFrom , typename TTo &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <div class="memtemplate">
 template&lt;typename TFrom , typename TTo &gt; </div>
 <table class="mlabels">
@@ -348,7 +352,7 @@ template&lt;typename TFrom , typename TTo &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00125">125</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00129">129</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +362,7 @@ template&lt;typename TFrom , typename TTo &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -377,7 +381,7 @@ template&lt;typename TAgent &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00115">115</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +391,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -406,7 +410,7 @@ template&lt;typename TAgent &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00113">113</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00117">117</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +420,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -445,7 +449,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -468,13 +472,42 @@ template&lt;typename TAgent &gt; </div>
 
 </div>
 </div>
+<a id="af121fbd9fa1df64d065e80677f541c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af121fbd9fa1df64d065e80677f541c8d">&#9670;&nbsp;</a></span>operator AgentPointer&lt; Agent &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAgent  = Agent&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1AgentPointer.html">bdm::AgentPointer</a>&lt; TAgent &gt;::operator <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a>&lt; <a class="el" href="classbdm_1_1Agent.html">Agent</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00113">113</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+
+</div>
+</div>
 <a id="ae1892596680014632770fd48aa129614"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1892596680014632770fd48aa129614">&#9670;&nbsp;</a></span>operator bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -493,7 +526,7 @@ template&lt;typename TAgent &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00109">109</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00111">111</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +536,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -533,7 +566,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <div class="memtemplate">
 template&lt;typename TOtherAgent &gt; </div>
 <table class="mlabels">
@@ -565,7 +598,7 @@ template&lt;typename TOtherAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -596,7 +629,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -625,7 +658,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -654,7 +687,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -683,7 +716,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -706,13 +739,43 @@ template&lt;typename TAgent &gt; </div>
 
 </div>
 </div>
+<a id="af2933b621a960741c3617eec5a462a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2933b621a960741c3617eec5a462a00">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAgent  = Agent&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbdm_1_1AgentPointer.html">bdm::AgentPointer</a>&lt; TAgent &gt;::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a>&lt; TAgent &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00109">109</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+
+</div>
+</div>
 <a id="ada544e9a864f32c12a91e26265ab3868"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada544e9a864f32c12a91e26265ab3868">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -743,7 +806,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -773,7 +836,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <div class="memtemplate">
 template&lt;typename TOtherAgent &gt; </div>
 <table class="mlabels">
@@ -805,7 +868,7 @@ template&lt;typename TOtherAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -837,7 +900,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -878,7 +941,7 @@ template&lt;typename TAgent &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TAgent &gt; </div>
+template&lt;typename TAgent  = Agent&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -894,7 +957,7 @@ template&lt;typename TAgent &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00116">116</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00120">120</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
 
 </div>
 </div>

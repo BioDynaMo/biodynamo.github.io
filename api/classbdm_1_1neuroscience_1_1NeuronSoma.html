@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.36-a9b05ef2</span>
+   &#160;<span id="projectnumber">v1.03.38-72ea9343</span>
    </div>
   </td>
  </tr>
@@ -110,8 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1d35cba9355772ebf151143159a8bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9588d041be4a797baa1e9d6b898db23c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a9588d041be4a797baa1e9d6b898db23c">GetLock</a> () override</td></tr>
 <tr class="separator:a9588d041be4a797baa1e9d6b898db23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fd1107967021efda4afa117e35fe573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a5fd1107967021efda4afa117e35fe573">CriticalRegion</a> (std::vector&lt; <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &gt; *uids) override</td></tr>
-<tr class="separator:a5fd1107967021efda4afa117e35fe573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543cfedc880e61d9afec9595f271ccd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a543cfedc880e61d9afec9595f271ccd0">CriticalRegion</a> (std::vector&lt; <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a>&lt;&gt;&gt; *aptrs) override</td></tr>
+<tr class="separator:a543cfedc880e61d9afec9595f271ccd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7373455269a280e0cd434b6b261a266"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html">NeuriteElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#ae7373455269a280e0cd434b6b261a266">ExtendNewNeurite</a> (const <a class="el" href="namespacebdm.html#a999db57a7e39895fb42c100d7856836c">Double3</a> &amp;direction, <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html">NeuriteElement</a> *prototype=nullptr)</td></tr>
 <tr class="memdesc:ae7373455269a280e0cd434b6b261a266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend a new neurite from this soma.  <a href="classbdm_1_1neuroscience_1_1NeuronSoma.html#ae7373455269a280e0cd434b6b261a266">More...</a><br /></td></tr>
 <tr class="separator:ae7373455269a280e0cd434b6b261a266"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,8 +469,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fd1107967021efda4afa117e35fe573"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fd1107967021efda4afa117e35fe573">&#9670;&nbsp;</a></span>CriticalRegion()</h2>
+<a id="a543cfedc880e61d9afec9595f271ccd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543cfedc880e61d9afec9595f271ccd0">&#9670;&nbsp;</a></span>CriticalRegion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,8 +481,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void bdm::neuroscience::NeuronSoma::CriticalRegion </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &gt; *&#160;</td>
-          <td class="paramname"><em>uids</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a>&lt;&gt;&gt; *&#160;</td>
+          <td class="paramname"><em>aptrs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -493,11 +493,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>If the thread-safety mechanism is set to user-specified this function will be called before the operations are executed for this agent.<br  />
-Subclasses define the critical region by adding the uids of all agents that must not be processed in parallel. <br  />
-Don't forget to add the uid of the current agent.<br  />
-</p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1Param.html#ac41a5339b184712f1a35c87bfa3a3be6">Param::thread_safety_mechanism</a></code> </dd></dl>
+Subclasses define the critical region by adding the AgentPointers of all agents that must not be processed in parallel. <br  />
+Don't forget to add the current agent.<br  />
+Here an example from <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html">NeuronSoma</a>.<br  />
+</p><pre class="fragment">void NeuronSoma::CriticalRegion(std::vector&lt;AgentPointer&lt;&gt;&gt;* aptrs) {
+  aptrs-&gt;reserve(daughters_.size() + 1);
+  aptrs-&gt;push_back(Agent::GetAgentPtr&lt;&gt;());
+  for (auto&amp; daughter : daughters_) {
+    aptrs-&gt;push_back(daughter);
+  }
+}
+</pre><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1Param.html#ac41a5339b184712f1a35c87bfa3a3be6">Param::thread_safety_mechanism</a></code> </dd>
+<dd>
+<code><a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a></code> </dd>
+<dd>
+<code><a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a543cfedc880e61d9afec9595f271ccd0">NeuronSoma::CriticalRegion</a></code> </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classbdm_1_1Agent.html#aa65e945ecfd578716649a80ccd8c39d2">bdm::Agent</a>.</p>
+<p>Reimplemented from <a class="el" href="classbdm_1_1Agent.html#ac9953a52a09584cad49cd96c5ddc4941">bdm::Agent</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="neuron__soma_8cc_source.html#l00069">69</a> of file <a class="el" href="neuron__soma_8cc_source.html">neuron_soma.cc</a>.</p>
 

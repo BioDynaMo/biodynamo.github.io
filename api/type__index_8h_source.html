@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.36-a9b05ef2</span>
+   &#160;<span id="projectnumber">v1.03.38-72ea9343</span>
    </div>
   </td>
  </tr>
@@ -89,40 +89,42 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="agent_8h.html">core/agent/agent.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="flatmap_8h.html">core/container/flatmap.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>TClass;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classbdm_1_1TypeIndex.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1TypeIndex.html">TypeIndex</a> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#aa8d54448a5139d4db24aba18736a0aca">Add</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#a06224815728cd2bef94ee1156511e5f5">Update</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* new_agent);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#afffe6f8e37ab7fb91a17da0ae47bbdfd">Remove</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#aa85e07d2143bc6f021f65b001348088a">Clear</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#a247217575ce9a2750084ef7fb9ccbde2">Reserve</a>(uint64_t capacity);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">const</span> std::vector&lt;Agent*&gt;&amp; <a class="code" href="classbdm_1_1TypeIndex.html#a091529f248cd2558096802dbfa878054">GetType</a>(TClass* tclass) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classbdm_1_1TypeIndex.html#a284e30b8b8ca881bf7decd0a1caff9bb">   41</a></span>&#160;  <a class="code" href="classbdm_1_1UnorderedFlatmap.html">UnorderedFlatmap&lt;TClass*, std::vector&lt;Agent*&gt;</a>&gt; <a class="code" href="classbdm_1_1TypeIndex.html#a284e30b8b8ca881bf7decd0a1caff9bb">data_</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbdm_1_1TypeIndex.html#a190d49281450a2e5cc2f4c3e60134d36">   42</a></span>&#160;  <a class="code" href="classbdm_1_1AgentUidMap.html">AgentUidMap&lt;uint64_t&gt;</a> <a class="code" href="classbdm_1_1TypeIndex.html#a190d49281450a2e5cc2f4c3e60134d36">index_</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif  // CORE_TYPE_INDEX_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="agent__uid__map_8h.html">core/container/agent_uid_map.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="flatmap_8h.html">core/container/flatmap.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>TClass;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classbdm_1_1TypeIndex.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1TypeIndex.html">TypeIndex</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#aa8d54448a5139d4db24aba18736a0aca">Add</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#a06224815728cd2bef94ee1156511e5f5">Update</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* new_agent);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#afffe6f8e37ab7fb91a17da0ae47bbdfd">Remove</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#aa85e07d2143bc6f021f65b001348088a">Clear</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1TypeIndex.html#a247217575ce9a2750084ef7fb9ccbde2">Reserve</a>(uint64_t capacity);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> std::vector&lt;Agent*&gt;&amp; <a class="code" href="classbdm_1_1TypeIndex.html#a091529f248cd2558096802dbfa878054">GetType</a>(TClass* tclass) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbdm_1_1TypeIndex.html#a284e30b8b8ca881bf7decd0a1caff9bb">   42</a></span>&#160;  <a class="code" href="classbdm_1_1UnorderedFlatmap.html">UnorderedFlatmap&lt;TClass*, std::vector&lt;Agent*&gt;</a>&gt; <a class="code" href="classbdm_1_1TypeIndex.html#a284e30b8b8ca881bf7decd0a1caff9bb">data_</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classbdm_1_1TypeIndex.html#a190d49281450a2e5cc2f4c3e60134d36">   43</a></span>&#160;  <a class="code" href="classbdm_1_1AgentUidMap.html">AgentUidMap&lt;uint64_t&gt;</a> <a class="code" href="classbdm_1_1TypeIndex.html#a190d49281450a2e5cc2f4c3e60134d36">index_</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif  // CORE_TYPE_INDEX_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aagent__uid__map_8h_html"><div class="ttname"><a href="agent__uid__map_8h.html">agent_uid_map.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TypeIndex_html_aa8d54448a5139d4db24aba18736a0aca"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#aa8d54448a5139d4db24aba18736a0aca">bdm::TypeIndex::Add</a></div><div class="ttdeci">void Add(Agent *agent)</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8cc_source.html#l00022">type_index.cc:22</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
-<div class="ttc" id="aclassbdm_1_1TypeIndex_html_a284e30b8b8ca881bf7decd0a1caff9bb"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#a284e30b8b8ca881bf7decd0a1caff9bb">bdm::TypeIndex::data_</a></div><div class="ttdeci">UnorderedFlatmap&lt; TClass *, std::vector&lt; Agent * &gt; &gt; data_</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8h_source.html#l00041">type_index.h:41</a></div></div>
+<div class="ttc" id="aclassbdm_1_1TypeIndex_html_a284e30b8b8ca881bf7decd0a1caff9bb"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#a284e30b8b8ca881bf7decd0a1caff9bb">bdm::TypeIndex::data_</a></div><div class="ttdeci">UnorderedFlatmap&lt; TClass *, std::vector&lt; Agent * &gt; &gt; data_</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8h_source.html#l00042">type_index.h:42</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TypeIndex_html_a091529f248cd2558096802dbfa878054"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#a091529f248cd2558096802dbfa878054">bdm::TypeIndex::GetType</a></div><div class="ttdeci">const std::vector&lt; Agent * &gt; &amp; GetType(TClass *tclass) const</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8cc_source.html#l00070">type_index.cc:70</a></div></div>
-<div class="ttc" id="aclassbdm_1_1TypeIndex_html"><div class="ttname"><a href="classbdm_1_1TypeIndex.html">bdm::TypeIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="type__index_8h_source.html#l00026">type_index.h:26</a></div></div>
+<div class="ttc" id="aclassbdm_1_1TypeIndex_html"><div class="ttname"><a href="classbdm_1_1TypeIndex.html">bdm::TypeIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="type__index_8h_source.html#l00027">type_index.h:27</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html"><div class="ttname"><a href="classbdm_1_1Agent.html">bdm::Agent</a></div><div class="ttdoc">Contains code required by all agents.</div><div class="ttdef"><b>Definition:</b> <a href="agent_8h_source.html#l00079">agent.h:79</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TypeIndex_html_afffe6f8e37ab7fb91a17da0ae47bbdfd"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#afffe6f8e37ab7fb91a17da0ae47bbdfd">bdm::TypeIndex::Remove</a></div><div class="ttdeci">void Remove(Agent *agent)</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8cc_source.html#l00040">type_index.cc:40</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TypeIndex_html_aa85e07d2143bc6f021f65b001348088a"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#aa85e07d2143bc6f021f65b001348088a">bdm::TypeIndex::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8cc_source.html#l00055">type_index.cc:55</a></div></div>
@@ -130,7 +132,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1AgentUidMap_html"><div class="ttname"><a href="classbdm_1_1AgentUidMap.html">bdm::AgentUidMap&lt; uint64_t &gt;</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TypeIndex_html_a06224815728cd2bef94ee1156511e5f5"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#a06224815728cd2bef94ee1156511e5f5">bdm::TypeIndex::Update</a></div><div class="ttdeci">void Update(Agent *new_agent)</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8cc_source.html#l00033">type_index.cc:33</a></div></div>
 <div class="ttc" id="aflatmap_8h_html"><div class="ttname"><a href="flatmap_8h.html">flatmap.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1TypeIndex_html_a190d49281450a2e5cc2f4c3e60134d36"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#a190d49281450a2e5cc2f4c3e60134d36">bdm::TypeIndex::index_</a></div><div class="ttdeci">AgentUidMap&lt; uint64_t &gt; index_</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8h_source.html#l00042">type_index.h:42</a></div></div>
+<div class="ttc" id="aclassbdm_1_1TypeIndex_html_a190d49281450a2e5cc2f4c3e60134d36"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#a190d49281450a2e5cc2f4c3e60134d36">bdm::TypeIndex::index_</a></div><div class="ttdeci">AgentUidMap&lt; uint64_t &gt; index_</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8h_source.html#l00043">type_index.h:43</a></div></div>
 <div class="ttc" id="aclassbdm_1_1TypeIndex_html_a247217575ce9a2750084ef7fb9ccbde2"><div class="ttname"><a href="classbdm_1_1TypeIndex.html#a247217575ce9a2750084ef7fb9ccbde2">bdm::TypeIndex::Reserve</a></div><div class="ttdeci">void Reserve(uint64_t capacity)</div><div class="ttdef"><b>Definition:</b> <a href="type__index_8cc_source.html#l00063">type_index.cc:63</a></div></div>
 <div class="ttc" id="aclassbdm_1_1UnorderedFlatmap_html"><div class="ttname"><a href="classbdm_1_1UnorderedFlatmap.html">bdm::UnorderedFlatmap</a></div><div class="ttdef"><b>Definition:</b> <a href="flatmap_8h_source.html#l00028">flatmap.h:28</a></div></div>
 <!-- start footer part -->

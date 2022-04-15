@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.36-a9b05ef2</span>
+   &#160;<span id="projectnumber">v1.03.38-72ea9343</span>
    </div>
   </td>
  </tr>
@@ -130,8 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adcd10db730dc105aef49d7a4295d93fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36898cb73557fdc316d5ea53f51d92d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a36898cb73557fdc316d5ea53f51d92d1">GetLock</a> ()</td></tr>
 <tr class="separator:a36898cb73557fdc316d5ea53f51d92d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65e945ecfd578716649a80ccd8c39d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#aa65e945ecfd578716649a80ccd8c39d2">CriticalRegion</a> (std::vector&lt; <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &gt; *uids)</td></tr>
-<tr class="separator:aa65e945ecfd578716649a80ccd8c39d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9953a52a09584cad49cd96c5ddc4941"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#ac9953a52a09584cad49cd96c5ddc4941">CriticalRegion</a> (std::vector&lt; <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a>&lt;&gt;&gt; *aptrs)</td></tr>
+<tr class="separator:ac9953a52a09584cad49cd96c5ddc4941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e0d8a3c2d9a0b314f645ebd4cb661d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#ae3e0d8a3c2d9a0b314f645ebd4cb661d">GetBoxIdx</a> () const</td></tr>
 <tr class="separator:ae3e0d8a3c2d9a0b314f645ebd4cb661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4774f17472e135205049eda01d718d74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a4774f17472e135205049eda01d718d74">SetBoxIdx</a> (uint32_t idx)</td></tr>
@@ -471,8 +471,8 @@ The newly created and initialized agents can be found in <code>event.new_agents<
 
 </div>
 </div>
-<a id="aa65e945ecfd578716649a80ccd8c39d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa65e945ecfd578716649a80ccd8c39d2">&#9670;&nbsp;</a></span>CriticalRegion()</h2>
+<a id="ac9953a52a09584cad49cd96c5ddc4941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9953a52a09584cad49cd96c5ddc4941">&#9670;&nbsp;</a></span>CriticalRegion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,8 +483,8 @@ The newly created and initialized agents can be found in <code>event.new_agents<
         <tr>
           <td class="memname">virtual void bdm::Agent::CriticalRegion </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &gt; *&#160;</td>
-          <td class="paramname"><em>uids</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a>&lt;&gt;&gt; *&#160;</td>
+          <td class="paramname"><em>aptrs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -495,13 +495,25 @@ The newly created and initialized agents can be found in <code>event.new_agents<
 </table>
 </div><div class="memdoc">
 <p>If the thread-safety mechanism is set to user-specified this function will be called before the operations are executed for this agent.<br  />
-Subclasses define the critical region by adding the uids of all agents that must not be processed in parallel. <br  />
-Don't forget to add the uid of the current agent.<br  />
-</p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1Param.html#ac41a5339b184712f1a35c87bfa3a3be6">Param::thread_safety_mechanism</a></code> </dd></dl>
+Subclasses define the critical region by adding the AgentPointers of all agents that must not be processed in parallel. <br  />
+Don't forget to add the current agent.<br  />
+Here an example from NeuronSoma.<br  />
+</p><pre class="fragment">void NeuronSoma::CriticalRegion(std::vector&lt;AgentPointer&lt;&gt;&gt;* aptrs) {
+  aptrs-&gt;reserve(daughters_.size() + 1);
+  aptrs-&gt;push_back(Agent::GetAgentPtr&lt;&gt;());
+  for (auto&amp; daughter : daughters_) {
+    aptrs-&gt;push_back(daughter);
+  }
+}
+</pre><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structbdm_1_1Param.html#ac41a5339b184712f1a35c87bfa3a3be6">Param::thread_safety_mechanism</a></code> </dd>
+<dd>
+<code><a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a></code> </dd>
+<dd>
+<code>NeuronSoma::CriticalRegion</code> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a741368e3d6060886fe5d08b0be5ef059">bdm::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a5fd1107967021efda4afa117e35fe573">bdm::neuroscience::NeuronSoma</a>.</p>
+<p>Reimplemented in <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a19f7d319802d130d2238ee6f3b17cc09">bdm::neuroscience::NeuriteElement</a>, and <a class="el" href="classbdm_1_1neuroscience_1_1NeuronSoma.html#a543cfedc880e61d9afec9595f271ccd0">bdm::neuroscience::NeuronSoma</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00158">158</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00170">170</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +544,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 
 <p>Return agent pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00196">196</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00208">208</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +692,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00168">168</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00180">180</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +882,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00192">192</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00204">204</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -952,7 +964,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00243">243</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00255">255</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +992,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00234">234</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00246">246</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1210,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00172">172</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00184">184</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1238,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00164">164</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00176">176</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1333,7 +1345,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>collection of behaviors which define the internal behavior </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00258">258</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00270">270</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1371,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>Grid box index. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00256">256</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00268">268</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1397,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>If an agent is static, we should not compute the mechanical forces. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00268">268</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00280">280</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1423,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>Flag to determine of an agent is static in the next timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00273">273</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00285">285</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1435,7 +1447,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00261">261</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00273">273</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1460,7 +1472,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </div><div class="memdoc">
 <p>If an agent becomes non-static (i.e. it moved or grew), we should set this flag to true to also compute mechanical forces on the neighboring agents </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00271">271</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00283">283</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1485,7 +1497,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </div><div class="memdoc">
 <p>Helper variable used to support removal of behaviors while <code>RunBehaviors</code> iterates over them. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00265">265</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00277">277</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1511,7 +1523,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>unique id </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00254">254</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00266">266</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
