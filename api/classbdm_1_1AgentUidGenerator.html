@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.38-72ea9343</span>
+   &#160;<span id="projectnumber">v1.03.39-6f2a503c</span>
    </div>
   </td>
  </tr>
@@ -76,11 +76,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class generates unique ids for agents.  
+ <a href="classbdm_1_1AgentUidGenerator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for bdm::AgentUidGenerator:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1AgentUidGenerator__coll__graph.svg" width="342" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1AgentUidGenerator__coll__graph.svg" width="379" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -93,13 +96,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6e6dada9933469cb85a95f5815ca483"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#ad6e6dada9933469cb85a95f5815ca483">GenerateUid</a> ()</td></tr>
 <tr class="separator:ad6e6dada9933469cb85a95f5815ca483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28809f4e44fce619010a2c582bd1361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1AgentUid.html#a1dc7a3911cbd4c4eb95b778d134c5185">AgentUid::Index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#aa28809f4e44fce619010a2c582bd1361">GetHighestIndex</a> () const</td></tr>
+<tr class="memdesc:aa28809f4e44fce619010a2c582bd1361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe.  <a href="classbdm_1_1AgentUidGenerator.html#aa28809f4e44fce619010a2c582bd1361">More...</a><br /></td></tr>
 <tr class="separator:aa28809f4e44fce619010a2c582bd1361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6505f292b628b061b73d7489676788fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#a6505f292b628b061b73d7489676788fb">EnableDefragmentation</a> (const <a class="el" href="classbdm_1_1AgentUidMap.html">AgentUidMap</a>&lt; <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> &gt; *map)</td></tr>
-<tr class="separator:a6505f292b628b061b73d7489676788fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2f21cb5aa8468ba39e4181950a1271d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#aa2f21cb5aa8468ba39e4181950a1271d">DisableDefragmentation</a> ()</td></tr>
-<tr class="separator:aa2f21cb5aa8468ba39e4181950a1271d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa714435d01af499b2e9c92a4d9f62324"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#aa714435d01af499b2e9c92a4d9f62324">IsInDefragmentationMode</a> () const</td></tr>
-<tr class="separator:aa714435d01af499b2e9c92a4d9f62324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6851e01e21f3444ee4fca89ecbd6e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#aed6851e01e21f3444ee4fca89ecbd6e1">ReuseAgentUid</a> (const <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &amp;uid)</td></tr>
+<tr class="separator:aed6851e01e21f3444ee4fca89ecbd6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1082685d4f26e10a52d0890513219fb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#a1082685d4f26e10a52d0890513219fb1">Update</a> ()</td></tr>
+<tr class="separator:a1082685d4f26e10a52d0890513219fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -112,17 +114,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:adbfbbdb97d5b90e206426b2384a24db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d2a737b328d92090451d9e98e85506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1AgentUid.html#a1dc7a3911cbd4c4eb95b778d134c5185">AgentUid::Index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#ae1d2a737b328d92090451d9e98e85506">root_counter_</a></td></tr>
 <tr class="separator:ae1d2a737b328d92090451d9e98e85506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31662262887602eddd3193d301f2b1a7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbdm_1_1AgentUidMap.html">AgentUidMap</a>&lt; <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#a31662262887602eddd3193d301f2b1a7">map_</a> = nullptr</td></tr>
-<tr class="separator:a31662262887602eddd3193d301f2b1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a898eaa9eca53e4edfc1b6a6d36a39cbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#a898eaa9eca53e4edfc1b6a6d36a39cbb">lock_</a></td></tr>
-<tr class="memdesc:a898eaa9eca53e4edfc1b6a6d36a39cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock needed for defragmentation mode.  <a href="classbdm_1_1AgentUidGenerator.html#a898eaa9eca53e4edfc1b6a6d36a39cbb">More...</a><br /></td></tr>
-<tr class="separator:a898eaa9eca53e4edfc1b6a6d36a39cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8367107cda059238d8db3602267b8833"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1AgentUid.html#a1dc7a3911cbd4c4eb95b778d134c5185">AgentUid::Index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#a8367107cda059238d8db3602267b8833">search_index_</a> = 0</td></tr>
-<tr class="memdesc:a8367107cda059238d8db3602267b8833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current search position.  <a href="classbdm_1_1AgentUidGenerator.html#a8367107cda059238d8db3602267b8833">More...</a><br /></td></tr>
-<tr class="separator:a8367107cda059238d8db3602267b8833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58c8ed588401651c98def0dd00106b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1SharedData.html">SharedData</a>&lt; std::vector&lt; <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#ad58c8ed588401651c98def0dd00106b3">tl_uids_</a></td></tr>
+<tr class="memdesc:ad58c8ed588401651c98def0dd00106b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread local vector of AgentUids that can be reused.  <a href="classbdm_1_1AgentUidGenerator.html#ad58c8ed588401651c98def0dd00106b3">More...</a><br /></td></tr>
+<tr class="separator:ad58c8ed588401651c98def0dd00106b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf645b2d20f0cea1891b54d8ccc9d04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1AgentUidGenerator.html#a1bf645b2d20f0cea1891b54d8ccc9d04">tinfo_</a> = nullptr</td></tr>
+<tr class="separator:a1bf645b2d20f0cea1891b54d8ccc9d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class generates unique ids for agents. All functions are thread safe. </p>
+<div class="textblock"><p>This class generates unique ids for agents. </p>
 
 <p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00033">33</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -216,61 +215,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa2f21cb5aa8468ba39e4181950a1271d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2f21cb5aa8468ba39e4181950a1271d">&#9670;&nbsp;</a></span>DisableDefragmentation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::AgentUidGenerator::DisableDefragmentation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00076">76</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
-
-</div>
-</div>
-<a id="a6505f292b628b061b73d7489676788fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6505f292b628b061b73d7489676788fb">&#9670;&nbsp;</a></span>EnableDefragmentation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bdm::AgentUidGenerator::EnableDefragmentation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classbdm_1_1AgentUidMap.html">AgentUidMap</a>&lt; <a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a> &gt; *&#160;</td>
-          <td class="paramname"><em>map</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00068">68</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
-
-</div>
-</div>
 <a id="ad6e6dada9933469cb85a95f5815ca483"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6e6dada9933469cb85a95f5815ca483">&#9670;&nbsp;</a></span>GenerateUid()</h2>
 
@@ -293,9 +237,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Generates <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> with increasing index. In defragmentation mode it resuses index values from removed agents and sets the reused field to the current simulation step. </p>
+<p>Generates <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> with increasing index. In defragmentation mode it reuses index values from removed agents and increments the reused field. Thread-safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00041">41</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00044">44</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 
 </div>
 </div>
@@ -322,12 +266,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00066">66</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
+<p>Thread-safe. </p>
+
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00056">56</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 
 </div>
 </div>
-<a id="aa714435d01af499b2e9c92a4d9f62324"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa714435d01af499b2e9c92a4d9f62324">&#9670;&nbsp;</a></span>IsInDefragmentationMode()</h2>
+<a id="aed6851e01e21f3444ee4fca89ecbd6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6851e01e21f3444ee4fca89ecbd6e1">&#9670;&nbsp;</a></span>ReuseAgentUid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,10 +282,11 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::AgentUidGenerator::IsInDefragmentationMode </td>
+          <td class="memname">void bdm::AgentUidGenerator::ReuseAgentUid </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &amp;&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -348,8 +295,37 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Adds <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> that can be reused after <a class="el" href="classbdm_1_1AgentUid.html#a98e5a5ad3d70998c4c61abe7b9b0245e" title="Determines how often index_ has been resused.">AgentUid::reused_</a> is incremented. Thread-safe. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00083">83</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00060">60</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
+
+</div>
+</div>
+<a id="a1082685d4f26e10a52d0890513219fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1082685d4f26e10a52d0890513219fb1">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::AgentUidGenerator::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resizes internal data structures to the number of threads. NB: If Update is called, calls to GenerateUid or ReuseAgentUid are not allowed! </p>
+
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00067">67</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 
 </div>
 </div>
@@ -374,57 +350,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00086">86</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
-
-</div>
-</div>
-<a id="a898eaa9eca53e4edfc1b6a6d36a39cbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a898eaa9eca53e4edfc1b6a6d36a39cbb">&#9670;&nbsp;</a></span>lock_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1Spinlock.html">Spinlock</a> bdm::AgentUidGenerator::lock_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Lock needed for defragmentation mode. </p>
-
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00094">94</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
-
-</div>
-</div>
-<a id="a31662262887602eddd3193d301f2b1a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31662262887602eddd3193d301f2b1a7">&#9670;&nbsp;</a></span>map_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classbdm_1_1AgentUidMap.html">AgentUidMap</a>&lt;<a class="el" href="classbdm_1_1AgentHandle.html">AgentHandle</a>&gt;* bdm::AgentUidGenerator::map_ = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00092">92</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00070">70</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 
 </div>
 </div>
@@ -449,12 +375,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>ROOT can't persist std::atomic. Therefore this additional helper variable is needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00089">89</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00073">73</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 
 </div>
 </div>
-<a id="a8367107cda059238d8db3602267b8833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8367107cda059238d8db3602267b8833">&#9670;&nbsp;</a></span>search_index_</h2>
+<a id="a1bf645b2d20f0cea1891b54d8ccc9d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf645b2d20f0cea1891b54d8ccc9d04">&#9670;&nbsp;</a></span>tinfo_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,7 +389,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbdm_1_1AgentUid.html#a1dc7a3911cbd4c4eb95b778d134c5185">AgentUid::Index_t</a> bdm::AgentUidGenerator::search_index_ = 0</td>
+          <td class="memname"><a class="el" href="classbdm_1_1ThreadInfo.html">ThreadInfo</a>* bdm::AgentUidGenerator::tinfo_ = nullptr</td>
         </tr>
       </table>
   </td>
@@ -473,9 +399,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Current search position. </p>
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00077">77</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00096">96</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
+</div>
+</div>
+<a id="ad58c8ed588401651c98def0dd00106b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58c8ed588401651c98def0dd00106b3">&#9670;&nbsp;</a></span>tl_uids_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbdm_1_1SharedData.html">SharedData</a>&lt;std::vector&lt;<a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a>&gt; &gt; bdm::AgentUidGenerator::tl_uids_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Thread local vector of AgentUids that can be reused. </p>
+
+<p class="definition">Definition at line <a class="el" href="agent__uid__generator_8h_source.html#l00076">76</a> of file <a class="el" href="agent__uid__generator_8h_source.html">agent_uid_generator.h</a>.</p>
 
 </div>
 </div>
