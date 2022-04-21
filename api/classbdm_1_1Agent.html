@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.39-6f2a503c</span>
+   &#160;<span id="projectnumber">v1.03.40-cdc3884f</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -181,6 +182,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac65f0fd59ac8c4eea3d6337b7a8e1fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55f5ca308f7fc23c9826befce657699d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#a55f5ca308f7fc23c9826befce657699d">operator delete</a> (void *p)</td></tr>
 <tr class="separator:a55f5ca308f7fc23c9826befce657699d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac0e89d9aa5a5d138be963eb07af02583"><td class="memTemplParams" colspan="2">template&lt;typename TFrom , typename TTo &gt; </td></tr>
+<tr class="memitem:ac0e89d9aa5a5d138be963eb07af02583"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_base_of&lt; TFrom, TTo &gt;::value, TTo * &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#ac0e89d9aa5a5d138be963eb07af02583">Cast</a> (TFrom *agent) const</td></tr>
+<tr class="separator:ac0e89d9aa5a5d138be963eb07af02583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2701ba266a93d271e773b4467bd42cd"><td class="memTemplParams" colspan="2">template&lt;typename TFrom , typename TTo &gt; </td></tr>
+<tr class="memitem:ae2701ba266a93d271e773b4467bd42cd"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!std::is_base_of&lt; TFrom, TTo &gt;::value, TTo * &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbdm_1_1Agent.html#ae2701ba266a93d271e773b4467bd42cd">Cast</a> (TFrom *agent) const</td></tr>
+<tr class="separator:ae2701ba266a93d271e773b4467bd42cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -427,6 +437,66 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ace0633efd34cae84f7642b4a3c5fb1a4">bdm::neuroscience::NeuriteElement</a>, <a class="el" href="classbdm_1_1Cell.html#ad11252a7344a4242392fa521503eaa85">bdm::Cell</a>, and <a class="el" href="classbdm_1_1SphericalAgent.html#a0a7a0375111df239c6262ee10ae0d060">bdm::SphericalAgent</a>.</p>
+
+</div>
+</div>
+<a id="ac0e89d9aa5a5d138be963eb07af02583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e89d9aa5a5d138be963eb07af02583">&#9670;&nbsp;</a></span>Cast() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFrom , typename TTo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_base_of&lt;TFrom, TTo&gt;::value, TTo*&gt;::type bdm::Agent::Cast </td>
+          <td>(</td>
+          <td class="paramtype">TFrom *&#160;</td>
+          <td class="paramname"><em>agent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00278">278</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+
+</div>
+</div>
+<a id="ae2701ba266a93d271e773b4467bd42cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2701ba266a93d271e773b4467bd42cd">&#9670;&nbsp;</a></span>Cast() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFrom , typename TTo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;!std::is_base_of&lt;TFrom, TTo&gt;::value, TTo*&gt;::type bdm::Agent::Cast </td>
+          <td>(</td>
+          <td class="paramtype">TFrom *&#160;</td>
+          <td class="paramname"><em>agent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00284">284</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -964,7 +1034,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00255">255</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00260">260</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -992,7 +1062,7 @@ template&lt;typename TAgent  = Agent&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00246">246</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00251">251</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1345,7 +1415,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>collection of behaviors which define the internal behavior </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00270">270</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00275">275</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1441,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>Grid box index. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00268">268</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00273">273</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1397,7 +1467,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>If an agent is static, we should not compute the mechanical forces. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00280">280</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00297">297</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1423,7 +1493,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>Flag to determine of an agent is static in the next timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00285">285</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00302">302</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1447,7 +1517,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00273">273</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00290">290</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1472,7 +1542,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </div><div class="memdoc">
 <p>If an agent becomes non-static (i.e. it moved or grew), we should set this flag to true to also compute mechanical forces on the neighboring agents </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00283">283</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00300">300</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1497,7 +1567,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 </div><div class="memdoc">
 <p>Helper variable used to support removal of behaviors while <code>RunBehaviors</code> iterates over them. </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00277">277</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00294">294</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>
@@ -1523,7 +1593,7 @@ This method will be called twice: 1) At the end of the iteration using an agent 
 
 <p>unique id </p>
 
-<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00266">266</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="agent_8h_source.html#l00271">271</a> of file <a class="el" href="agent_8h_source.html">agent.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.39-6f2a503c</span>
+   &#160;<span id="projectnumber">v1.03.40-cdc3884f</span>
    </div>
   </td>
  </tr>
@@ -67,7 +67,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">bdm Namespace Reference</div>  </div>
 </div><!--header-->
@@ -487,6 +488,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a1bb82ab49c898f968c39b66fa13c8b4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4d">AgentPointerMode</a> { <a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4daa8dfbc3de8484c2753ebf07279d832a1">kIndirect</a>, 
+<a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4da845c8162d7cc754e5729c8d5b5f60034">kDirect</a>
+ }</td></tr>
+<tr class="separator:a1bb82ab49c898f968c39b66fa13c8b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87468412b81ad961b54b939b9e9a811"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#af87468412b81ad961b54b939b9e9a811">ExporterType</a> { <a class="el" href="namespacebdm.html#af87468412b81ad961b54b939b9e9a811aa93d8d2c6e46f6132934aa8535f5c032">kBasic</a>, 
 <a class="el" href="namespacebdm.html#af87468412b81ad961b54b939b9e9a811a31b654bbff3f2ca35a790a9ae0375bbb">kMatlab</a>, 
 <a class="el" href="namespacebdm.html#af87468412b81ad961b54b939b9e9a811a3e3ffea12f482d42f9def297c077000f">kNeuroML</a>, 
@@ -668,6 +673,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a0abef26c7da7e086e6dab7531c6fca3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a0abef26c7da7e086e6dab7531c6fca3f">VisualizeInNotebook</a> (size_t w=300, size_t h=300, std::string opt=&quot;&quot;)</td></tr>
 <tr class="memdesc:a0abef26c7da7e086e6dab7531c6fca3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualize the agents in ROOT notebooks.  <a href="namespacebdm.html#a0abef26c7da7e086e6dab7531c6fca3f">More...</a><br /></td></tr>
 <tr class="separator:a0abef26c7da7e086e6dab7531c6fca3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5946a5a8c6697f6c2045bc1fa0eccb41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4d">AgentPointerMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a5946a5a8c6697f6c2045bc1fa0eccb41">gAgentPointerMode</a> = AgentPointerMode::kIndirect</td></tr>
+<tr class="separator:a5946a5a8c6697f6c2045bc1fa0eccb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a42b596f8b394cc19a128b9c0e229a56e"></a>
@@ -809,6 +819,28 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a1bb82ab49c898f968c39b66fa13c8b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb82ab49c898f968c39b66fa13c8b4d">&#9670;&nbsp;</a></span>AgentPointerMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4d">bdm::AgentPointerMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Class <code><a class="el" href="classbdm_1_1AgentPointer.html">AgentPointer</a></code> supports two different modes: First, an indirect mode in which the <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> is used to determine an agent.<br  />
+Second, a direct mode in which the raw <code>Agent*</code> is used. The indirect mode is necessary if the <code>Agent*</code> changes during the simulation. This can happen due to sorting and balancing operation to improve the memory layout, or in a distributed runtime, where an agent might reside in a different address space. If the <code>Agent*</code> of an agent does not change during a simulation, the direct mode can be used to achieve better performance. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1bb82ab49c898f968c39b66fa13c8b4daa8dfbc3de8484c2753ebf07279d832a1"></a>kIndirect&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1bb82ab49c898f968c39b66fa13c8b4da845c8162d7cc754e5729c8d5b5f60034"></a>kDirect&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8h_source.html#l00042">42</a> of file <a class="el" href="agent__pointer_8h_source.html">agent_pointer.h</a>.</p>
+
+</div>
+</div>
 <a id="acca80530a197baaf5fc40acfa4c58848"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acca80530a197baaf5fc40acfa4c58848">&#9670;&nbsp;</a></span>Axis</h2>
 
@@ -3175,6 +3207,25 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="io_8cc_source.html#l00083">83</a> of file <a class="el" href="io_8cc_source.html">io.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5946a5a8c6697f6c2045bc1fa0eccb41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5946a5a8c6697f6c2045bc1fa0eccb41">&#9670;&nbsp;</a></span>gAgentPointerMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4d">AgentPointerMode</a> bdm::gAgentPointerMode = AgentPointerMode::kIndirect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Global variable to select the agent pointer mode. <br  />
+Replacing the global variable with an attribute in <code><a class="el" href="structbdm_1_1Param.html">Param</a></code> is too costly in terms of performance. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4d">AgentPointerMode</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="agent__pointer_8cc_source.html#l00019">19</a> of file <a class="el" href="agent__pointer_8cc_source.html">agent_pointer.cc</a>.</p>
 
 </div>
 </div>
