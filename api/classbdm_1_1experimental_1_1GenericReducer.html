@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.40-cdc3884f</span>
+   &#160;<span id="projectnumber">v1.03.48-feecad92</span>
    </div>
   </td>
  </tr>
@@ -93,8 +93,8 @@ Collaboration diagram for bdm::experimental::GenericReducer&lt; T, TResult &gt;:
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7889f1e63118f0789a62d836f59c6a8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#a7889f1e63118f0789a62d836f59c6a8b">GenericReducer</a> ()</td></tr>
 <tr class="separator:a7889f1e63118f0789a62d836f59c6a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36eb46587c336f34119541c61de4233a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#a36eb46587c336f34119541c61de4233a">GenericReducer</a> (void(agent_function)(<a class="el" href="classbdm_1_1Agent.html">Agent</a> *, T *), T(*reduce_partial_results)(const <a class="el" href="classbdm_1_1SharedData.html">SharedData</a>&lt; T &gt; &amp;), TResult(*post_process)(TResult)=nullptr)</td></tr>
-<tr class="separator:a36eb46587c336f34119541c61de4233a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b50ef8046abf7d650593307e27a8666"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#a1b50ef8046abf7d650593307e27a8666">GenericReducer</a> (void(agent_function)(<a class="el" href="classbdm_1_1Agent.html">Agent</a> *, T *), T(*reduce_partial_results)(const <a class="el" href="classbdm_1_1SharedData.html">SharedData</a>&lt; T &gt; &amp;), bool(*filter)(<a class="el" href="classbdm_1_1Agent.html">Agent</a> *)=nullptr, TResult(*post_process)(TResult)=nullptr)</td></tr>
+<tr class="separator:a1b50ef8046abf7d650593307e27a8666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae077bef7e4d7a4d964cf1545d8489636"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#ae077bef7e4d7a4d964cf1545d8489636">~GenericReducer</a> ()=default</td></tr>
 <tr class="separator:ae077bef7e4d7a4d964cf1545d8489636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefc51fd37e61307ddcb8301407562bd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#aefc51fd37e61307ddcb8301407562bd9">operator()</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent) override</td></tr>
@@ -125,6 +125,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a07ee3307f751af28eb811647b7ce7766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63e6fb446276b2ffe4687ae62b2a04a5"><td class="memItemLeft" align="right" valign="top">T(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#a63e6fb446276b2ffe4687ae62b2a04a5">reduce_partial_results_</a> )(const <a class="el" href="classbdm_1_1SharedData.html">SharedData</a>&lt; T &gt; &amp;) = nullptr</td></tr>
 <tr class="separator:a63e6fb446276b2ffe4687ae62b2a04a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048e0f0e6e963c80d5ebe5599e943d5a"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#a048e0f0e6e963c80d5ebe5599e943d5a">filter_</a> )(<a class="el" href="classbdm_1_1Agent.html">Agent</a> *) = nullptr</td></tr>
+<tr class="separator:a048e0f0e6e963c80d5ebe5599e943d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4942c6ffef92902c8db96c9e8f37e3"><td class="memItemLeft" align="right" valign="top">TResult(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html#acd4942c6ffef92902c8db96c9e8f37e3">post_process_</a> )(TResult) = nullptr</td></tr>
 <tr class="separator:acd4942c6ffef92902c8db96c9e8f37e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -146,9 +148,9 @@ Provides the functions to iterates over all agents executing the <code>agent_fun
 <div class="line">GenericReducer&lt;uint64_t&gt; reducer(sum_data, combine_tl_results);</div>
 <div class="line">rm-&gt;ForEachAgentParallel(reducer);</div>
 <div class="line"><span class="keyword">auto</span> result = reducer.GetResult();</div>
-</div><!-- fragment --><p> The benefit in comparison with <code><a class="el" href="namespacebdm_1_1experimental.html#a5772760d6f86e7d3fa35d188291c3950">bdm::experimental::Reduce</a></code> is that multiple counters can be combined and processed in one sweep over all agents. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1Reducer.html">bdm::experimental::Reducer</a>` </dd></dl>
+</div><!-- fragment --><p> The optional argument <code>filter</code> allows to reduce only a subset of all agents. The benefit in comparison with <code><a class="el" href="namespacebdm_1_1experimental.html#a5772760d6f86e7d3fa35d188291c3950">bdm::experimental::Reduce</a></code> is that multiple counters can be combined and processed in one sweep over all agents. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structbdm_1_1experimental_1_1Reducer.html">bdm::experimental::Reducer</a>` </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00074">74</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00076">76</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7889f1e63118f0789a62d836f59c6a8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7889f1e63118f0789a62d836f59c6a8b">&#9670;&nbsp;</a></span>GenericReducer() <span class="overload">[1/2]</span></h2>
@@ -175,12 +177,12 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00076">76</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00078">78</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
-<a id="a36eb46587c336f34119541c61de4233a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36eb46587c336f34119541c61de4233a">&#9670;&nbsp;</a></span>GenericReducer() <span class="overload">[2/2]</span></h2>
+<a id="a1b50ef8046abf7d650593307e27a8666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b50ef8046abf7d650593307e27a8666">&#9670;&nbsp;</a></span>GenericReducer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,6 +207,12 @@ template&lt;typename T , typename TResult  = T&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool(*)(<a class="el" href="classbdm_1_1Agent.html">Agent</a> *)&#160;</td>
+          <td class="paramname"><em>filter</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">TResult(*)(TResult)&#160;</td>
           <td class="paramname"><em>post_process</em> = <code>nullptr</code>&#160;</td>
         </tr>
@@ -221,7 +229,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00078">78</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00080">80</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +288,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 
 <p>Implements <a class="el" href="structbdm_1_1experimental_1_1Reducer.html#ac8c3fefa9de749f8e006614848777399">bdm::experimental::Reducer&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00105">105</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00111">111</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +317,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00113">113</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00119">119</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +347,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00093">93</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00097">97</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +380,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 
 <p>Implements <a class="el" href="structbdm_1_1experimental_1_1Reducer.html#a841507df6f1b9a9a63031e8566b3ecf8">bdm::experimental::Reducer&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00098">98</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00104">104</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -399,7 +407,33 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00119">119</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00125">125</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+
+</div>
+</div>
+<a id="a048e0f0e6e963c80d5ebe5599e943d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048e0f0e6e963c80d5ebe5599e943d5a">&#9670;&nbsp;</a></span>filter_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TResult  = T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool(* <a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html">bdm::experimental::GenericReducer</a>&lt; T, TResult &gt;::filter_) (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *) = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00127">127</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +459,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00121">121</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00128">128</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +485,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00120">120</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00126">126</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +511,7 @@ template&lt;typename T , typename TResult  = T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00118">118</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00124">124</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>

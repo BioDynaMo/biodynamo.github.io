@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.40-cdc3884f</span>
+   &#160;<span id="projectnumber">v1.03.48-feecad92</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebdm.html">bdm</a> {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, u<span class="keywordtype">int</span>16_t N&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classbdm_1_1InlineVector.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1InlineVector.html">InlineVector</a> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classbdm_1_1InlineVector.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1InlineVector.html">InlineVector</a> final {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TT, <span class="keyword">typename</span> TIV&gt;</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structbdm_1_1InlineVector_1_1Iterator.html">   52</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structbdm_1_1InlineVector_1_1Iterator.html">Iterator</a> {</div>
@@ -240,7 +240,7 @@ $(function() {
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    other.heap_data_ = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classbdm_1_1InlineVector.html#a33875d26cfd822c7ebd71ef56551bdf4">  178</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1InlineVector.html#a33875d26cfd822c7ebd71ef56551bdf4">~InlineVector</a>() {</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classbdm_1_1InlineVector.html#a812716e692c70ac4e59c3a7b2df623ec">  178</a></span>&#160;  <a class="code" href="classbdm_1_1InlineVector.html#a812716e692c70ac4e59c3a7b2df623ec">~InlineVector</a>() {</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbdm_1_1InlineVector.html#a8c2e272245c800dec91cf37598863366">heap_data_</a> != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <a class="code" href="classbdm_1_1InlineVector.html#a832f8c2fef20d9a7a1045b233f8fb5c3">heap_capacity_</a> = 0;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keyword">delete</span>[] <a class="code" href="classbdm_1_1InlineVector.html#a8c2e272245c800dec91cf37598863366">heap_data_</a>;</div>
@@ -411,7 +411,7 @@ $(function() {
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbdm_1_1InlineVector.html#a6eefc4b12a26ba9fb8c3ff6593830068">size_</a> - N;</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  }</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <a class="code" href="classbdm_1_1InlineVector.html#a1e0376701a632e4067b59772134958f1">BDM_CLASS_DEF</a>(<a class="code" href="classbdm_1_1InlineVector.html">InlineVector</a>, 1);  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <a class="code" href="classbdm_1_1InlineVector.html#aafcb874b76ae3df0815259274a29db4e">BDM_CLASS_DEF_NV</a>(<a class="code" href="classbdm_1_1InlineVector.html">InlineVector</a>, 2);  <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;};</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">// The following custom streamer should be visible to rootcling for dictionary</span></div>
@@ -422,7 +422,7 @@ $(function() {
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> InlineVector&lt;T, N&gt;::Streamer(TBuffer&amp; R__b) {</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keywordflow">if</span> (R__b.IsReading()) {</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    VectorTypeWrapper&lt;T&gt; vw;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    R__b.ReadClassBuffer(TClassTable::GetDict(<span class="keyword">typeid</span>(vw))(), &amp;vw);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    R__b.ReadClassBuffer(VectorTypeWrapper&lt;T&gt;::Class(), &amp;vw);</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ve : vw.vector_) {</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      this-&gt;push_back(ve);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
@@ -432,7 +432,7 @@ $(function() {
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">for</span> (uint16_t i = 0; i &lt; size_; i++) {</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      vw.vector_[i] = (*this)[i];</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    R__b.WriteClassBuffer(TClassTable::GetDict(<span class="keyword">typeid</span>(vw))(), &amp;vw);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    R__b.WriteClassBuffer(VectorTypeWrapper&lt;T&gt;::Class(), &amp;vw);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;}</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
@@ -466,7 +466,6 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_abe60709d0fa7bfa7f3643861da8b7deb"><div class="ttname"><a href="classbdm_1_1InlineVector.html#abe60709d0fa7bfa7f3643861da8b7deb">bdm::InlineVector::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00347">inline_vector.h:347</a></div></div>
 <div class="ttc" id="astructbdm_1_1InlineVector_1_1Iterator_html_a144d8b693e50821223aaedf348b43513"><div class="ttname"><a href="structbdm_1_1InlineVector_1_1Iterator.html#a144d8b693e50821223aaedf348b43513">bdm::InlineVector::Iterator::operator*</a></div><div class="ttdeci">TT &amp; operator*() const</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00060">inline_vector.h:60</a></div></div>
 <div class="ttc" id="astructbdm_1_1InlineVector_1_1Iterator_html_a31869f513113db401bdf1846da99e087"><div class="ttname"><a href="structbdm_1_1InlineVector_1_1Iterator.html#a31869f513113db401bdf1846da99e087">bdm::InlineVector::Iterator::index_</a></div><div class="ttdeci">uint16_t index_</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00053">inline_vector.h:53</a></div></div>
-<div class="ttc" id="aclassbdm_1_1InlineVector_html_a1e0376701a632e4067b59772134958f1"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a1e0376701a632e4067b59772134958f1">bdm::InlineVector::BDM_CLASS_DEF</a></div><div class="ttdeci">BDM_CLASS_DEF(InlineVector, 1)</div></div>
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_a15ff7f8e2048673890f77d13c6236aec"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a15ff7f8e2048673890f77d13c6236aec">bdm::InlineVector::data_</a></div><div class="ttdeci">std::array&lt; T, N &gt; data_</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00351">inline_vector.h:351</a></div></div>
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_a832f8c2fef20d9a7a1045b233f8fb5c3"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a832f8c2fef20d9a7a1045b233f8fb5c3">bdm::InlineVector::heap_capacity_</a></div><div class="ttdeci">uint16_t heap_capacity_</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00353">inline_vector.h:353</a></div></div>
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_adefbc6814b41d9e4c06b940536d1a395"><div class="ttname"><a href="classbdm_1_1InlineVector.html#adefbc6814b41d9e4c06b940536d1a395">bdm::InlineVector::operator=</a></div><div class="ttdeci">InlineVector&lt; T, N &gt; &amp; operator=(const InlineVector&lt; T, N &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00269">inline_vector.h:269</a></div></div>
@@ -480,10 +479,11 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1Log_html_aa07520e7c190055d9674de7c0fb68e01"><div class="ttname"><a href="classbdm_1_1Log.html#aa07520e7c190055d9674de7c0fb68e01">bdm::Log::Fatal</a></div><div class="ttdeci">static void Fatal(const std::string &amp;location, const Args &amp;... parts)</div><div class="ttdoc">Prints fatal error message.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00115">log.h:115</a></div></div>
 <div class="ttc" id="alog_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_a12723a50f5639f82a3922cbc30472453"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a12723a50f5639f82a3922cbc30472453">bdm::InlineVector::erase</a></div><div class="ttdeci">iterator erase(const iterator &amp;it)</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00240">inline_vector.h:240</a></div></div>
-<div class="ttc" id="aclassbdm_1_1InlineVector_html_a33875d26cfd822c7ebd71ef56551bdf4"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a33875d26cfd822c7ebd71ef56551bdf4">bdm::InlineVector::~InlineVector</a></div><div class="ttdeci">virtual ~InlineVector()</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00178">inline_vector.h:178</a></div></div>
 <div class="ttc" id="astructbdm_1_1InlineVector_1_1Iterator_html_a368d657b3cce539502c4c467f9b3e59b"><div class="ttname"><a href="structbdm_1_1InlineVector_1_1Iterator.html#a368d657b3cce539502c4c467f9b3e59b">bdm::InlineVector::Iterator::operator-=</a></div><div class="ttdeci">Iterator &amp; operator-=(const Iterator &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00127">inline_vector.h:127</a></div></div>
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_a7e9ea389f9721a018e031a051d45edc9"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a7e9ea389f9721a018e031a051d45edc9">bdm::InlineVector&lt; bdm::Behavior *, 3 &gt;::iterator</a></div><div class="ttdeci">typename InlineVector::template Iterator&lt; bdm::Behavior *, InlineVector &gt; iterator</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00153">inline_vector.h:153</a></div></div>
 <div class="ttc" id="aio_8h_html"><div class="ttname"><a href="io_8h.html">io.h</a></div></div>
+<div class="ttc" id="aclassbdm_1_1InlineVector_html_a812716e692c70ac4e59c3a7b2df623ec"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a812716e692c70ac4e59c3a7b2df623ec">bdm::InlineVector::~InlineVector</a></div><div class="ttdeci">~InlineVector()</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00178">inline_vector.h:178</a></div></div>
+<div class="ttc" id="aclassbdm_1_1InlineVector_html_aafcb874b76ae3df0815259274a29db4e"><div class="ttname"><a href="classbdm_1_1InlineVector.html#aafcb874b76ae3df0815259274a29db4e">bdm::InlineVector::BDM_CLASS_DEF_NV</a></div><div class="ttdeci">BDM_CLASS_DEF_NV(InlineVector, 2)</div></div>
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_a80b6bb9c0edcd0f4d0bc345f96810048"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a80b6bb9c0edcd0f4d0bc345f96810048">bdm::InlineVector::operator==</a></div><div class="ttdeci">bool operator==(const InlineVector&lt; T, N &gt; &amp;other) const</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00315">inline_vector.h:315</a></div></div>
 <div class="ttc" id="astructbdm_1_1InlineVector_1_1Iterator_html_a20859fdf14bcb9b633e50025db6bed2d"><div class="ttname"><a href="structbdm_1_1InlineVector_1_1Iterator.html#a20859fdf14bcb9b633e50025db6bed2d">bdm::InlineVector::Iterator::operator--</a></div><div class="ttdeci">Iterator &amp; operator--()</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00092">inline_vector.h:92</a></div></div>
 <div class="ttc" id="aclassbdm_1_1InlineVector_html_a0fe10157c3eb045295aa48bae5afdcda"><div class="ttname"><a href="classbdm_1_1InlineVector.html#a0fe10157c3eb045295aa48bae5afdcda">bdm::InlineVector::push_back</a></div><div class="ttdeci">void push_back(const T &amp;element)</div><div class="ttdef"><b>Definition:</b> <a href="inline__vector_8h_source.html#l00219">inline_vector.h:219</a></div></div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['helper_2ecc_2310',['helper.cc',['../helper_8cc.html',1,'']]],
-  ['helper_2eh_2311',['helper.h',['../helper_8h.html',1,'']]],
-  ['helper_5fmath_5fdouble_2eh_2312',['helper_math_double.h',['../helper__math__double_8h.html',1,'']]]
+  ['helper_2ecc_2311',['helper.cc',['../helper_8cc.html',1,'']]],
+  ['helper_2eh_2312',['helper.h',['../helper_8h.html',1,'']]],
+  ['helper_5fmath_5fdouble_2eh_2313',['helper_math_double.h',['../helper__math__double_8h.html',1,'']]]
 ];

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.40-cdc3884f</span>
+   &#160;<span id="projectnumber">v1.03.48-feecad92</span>
    </div>
   </td>
  </tr>
@@ -203,9 +203,10 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keywordflow">return</span> bdm_static_cast&lt;Person*&gt;(a)-&gt;state_ == State::kInfected;</div>
 <div class="line">});</div>
 <div class="line"><span class="keyword">auto</span> num_infected = <a class="code" href="namespacebdm_1_1experimental.html#af89f03ec8b8e5c0bc9c00f6c4c86f2d6">Count</a>(sim, is_infected));</div>
-</div><!-- fragment --><p> The optional argument <code>filter</code> allows to count only a subset of all agents. </p>
+</div><!-- fragment --><p> The optional argument <code>filter</code> allows to count only a subset of all agents.<br  />
+NB: For better performance consider using <code><a class="el" href="structbdm_1_1experimental_1_1Counter.html">Counter</a></code> instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00304">304</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00317">317</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
@@ -385,16 +386,17 @@ template&lt;typename T &gt; </div>
 <div class="line">});</div>
 <div class="line">SumReduction&lt;uint64_t&gt; combine_tl_results;</div>
 <div class="line"><span class="keyword">auto</span> result = <a class="code" href="namespacebdm_1_1experimental.html#a5772760d6f86e7d3fa35d188291c3950">Reduce</a>(sim, sum_data, combine_tl_results);</div>
-</div><!-- fragment --><p> The optional argument <code>filter</code> allows to reduce only a subset of all agents. </p>
+</div><!-- fragment --><p> The optional argument <code>filter</code> allows to reduce only a subset of all agents.<br  />
+NB: For better performance consider using <code><a class="el" href="classbdm_1_1experimental_1_1GenericReducer.html">GenericReducer</a></code> instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00171">171</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reduce_8h_source.html#l00183">183</a> of file <a class="el" href="reduce_8h_source.html">reduce.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="anamespacebdm_1_1experimental_html_a5772760d6f86e7d3fa35d188291c3950"><div class="ttname"><a href="namespacebdm_1_1experimental.html#a5772760d6f86e7d3fa35d188291c3950">bdm::experimental::Reduce</a></div><div class="ttdeci">T Reduce(Simulation *sim, Functor&lt; void, Agent *, T * &gt; &amp;agent_functor, Functor&lt; T, const SharedData&lt; T &gt; &amp; &gt; &amp;reduce_partial_results, Functor&lt; bool, Agent * &gt; *filter=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="reduce_8h_source.html#l00171">reduce.h:171</a></div></div>
+<div class="ttc" id="anamespacebdm_1_1experimental_html_a5772760d6f86e7d3fa35d188291c3950"><div class="ttname"><a href="namespacebdm_1_1experimental.html#a5772760d6f86e7d3fa35d188291c3950">bdm::experimental::Reduce</a></div><div class="ttdeci">T Reduce(Simulation *sim, Functor&lt; void, Agent *, T * &gt; &amp;agent_functor, Functor&lt; T, const SharedData&lt; T &gt; &amp; &gt; &amp;reduce_partial_results, Functor&lt; bool, Agent * &gt; *filter=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="reduce_8h_source.html#l00183">reduce.h:183</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a019d03b104d978a9bd5ba4d1f38fa574"><div class="ttname"><a href="namespacebdm.html#a019d03b104d978a9bd5ba4d1f38fa574">bdm::L2F</a></div><div class="ttdeci">LambdaFunctor&lt; decltype(&amp;TLambda::operator())&gt; L2F(const TLambda &amp;l)</div><div class="ttdef"><b>Definition:</b> <a href="functor_8h_source.html#l00110">functor.h:110</a></div></div>
-<div class="ttc" id="anamespacebdm_1_1experimental_html_af89f03ec8b8e5c0bc9c00f6c4c86f2d6"><div class="ttname"><a href="namespacebdm_1_1experimental.html#af89f03ec8b8e5c0bc9c00f6c4c86f2d6">bdm::experimental::Count</a></div><div class="ttdeci">uint64_t Count(Simulation *sim, Functor&lt; bool, Agent * &gt; &amp;condition, Functor&lt; bool, Agent * &gt; *filter=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="reduce_8h_source.html#l00304">reduce.h:304</a></div></div>
+<div class="ttc" id="anamespacebdm_1_1experimental_html_af89f03ec8b8e5c0bc9c00f6c4c86f2d6"><div class="ttname"><a href="namespacebdm_1_1experimental.html#af89f03ec8b8e5c0bc9c00f6c4c86f2d6">bdm::experimental::Count</a></div><div class="ttdeci">uint64_t Count(Simulation *sim, Functor&lt; bool, Agent * &gt; &amp;condition, Functor&lt; bool, Agent * &gt; *filter=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="reduce_8h_source.html#l00317">reduce.h:317</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.40-cdc3884f</span>
+   &#160;<span id="projectnumber">v1.03.48-feecad92</span>
    </div>
   </td>
  </tr>
@@ -267,7 +267,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new entry with data that is not collected during a simulation. This function can for example be used to add experimental data which can be later plotted together with the simulation results using a <code><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html">LineGraph</a></code>. </p><div class="fragment"><div class="line">time_series.Add(<span class="stringliteral">&quot;experimental-data&quot;</span>, {0, 1, 2}, {3, 4, 5});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00330">330</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00346">346</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00366">366</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00382">382</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00346">346</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00362">362</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add the entries of another <a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> instance to this one. Let's assume that <code>ts</code> contains the entries: "entry1" and "entry2" and that suffix is set to "-from-ts". In this scenario the following entries will be added to this object: "entry1-from-ts", "entry2-from-ts" </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00308">308</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00324">324</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -466,17 +466,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds a reducer collector which is executed at each iteration.<br  />
-The benefit (in comparison with <code>AddCollector</code> using a function pointer to collect y-values) is that multiple reducers can be combined. Thus the result can be calculated faster.<br  />
-Let's assume we want to track the fraction of infected agents in an epidemiological simulation. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> is_infected = [](Agent* a) {</div>
+The benefit (in comparison with <code>AddCollector</code> using a function pointer to collect y-values) is that multiple reducers can be combined. This mechanism is more cache-friendly and calculates the result much faster.<br  />
+<code>Update</code> calculates the values for reducers before function pointers. Thus, a function pointer collector can use the result of a reducer collector. This is illustrated in the example below. Let's assume we want to track the fraction of infected agents in an epidemiological simulation. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> is_infected = [](Agent* a) {</div>
 <div class="line">  <span class="keywordflow">return</span> bdm_static_cast&lt;Person*&gt;(a)-&gt;state_ == State::kInfected;</div>
 <div class="line">};</div>
-<div class="line"><span class="keyword">auto</span> post_process = [](<span class="keywordtype">double</span> count) {</div>
-<div class="line">  <span class="keyword">auto</span>* rm = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>()-&gt;<a class="code" href="classbdm_1_1Simulation.html#a12410bfc9dec5d64d0ae3223a5c59385">GetResourceManager</a>();</div>
-<div class="line">  <span class="keyword">auto</span> num_agents = rm-&gt;<a class="code" href="classbdm_1_1ResourceManager.html#ac354ecae1fc6a23fc8afea219fc62c27">GetNumAgents</a>();</div>
+<div class="line">ts-&gt;AddCollector(<span class="stringliteral">&quot;infected&quot;</span>, <span class="keyword">new</span> Counter&lt;double&gt;(is_infected);</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> infected_rate = [](Simulation* sim) {</div>
+<div class="line">  <span class="keyword">auto</span> num_agents = sim-&gt;GetResourceManager()-&gt;GetNumAgents();</div>
+<div class="line">  <span class="keyword">auto</span> count = ts-&gt;GetYValues(<span class="stringliteral">&quot;infected&quot;</span>).back();</div>
 <div class="line">  <span class="keywordflow">return</span> count / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(num_agents);</div>
 <div class="line">};</div>
-<div class="line">ts-&gt;AddCollector(<span class="stringliteral">&quot;infected&quot;</span>, <span class="keyword">new</span> Counter&lt;double&gt;(is_infected,</div>
-<div class="line">                                                 post_process));</div>
+<div class="line">ts-&gt;AddCollector(<span class="stringliteral">&quot;infected_rate&quot;</span>, infected_rate);</div>
 </div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00258">258</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
@@ -576,7 +577,7 @@ Let's assume we want to track the fraction of infected agents in an epidemiologi
 
 <p>Returns whether a times series with given id exists in this object. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00384">384</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00400">400</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -596,7 +597,7 @@ Let's assume we want to track the fraction of infected agents in an epidemiologi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00392">392</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00408">408</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -616,7 +617,7 @@ Let's assume we want to track the fraction of infected agents in an epidemiologi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00408">408</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00424">424</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -636,7 +637,7 @@ Let's assume we want to track the fraction of infected agents in an epidemiologi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00402">402</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00418">418</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -656,7 +657,7 @@ Let's assume we want to track the fraction of infected agents in an epidemiologi
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00397">397</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00413">413</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -677,7 +678,7 @@ Let's assume we want to track the fraction of infected agents in an epidemiologi
 
 <p>Print all time series entry names to stdout. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00414">414</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00430">430</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -850,7 +851,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Saves a root file to disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00421">421</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00437">437</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -872,7 +873,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Saves a json representation to disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00426">426</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00442">442</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -891,7 +892,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00389">389</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00405">405</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -937,7 +938,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00192">192</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00197">197</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
 
 </div>
 </div>
@@ -946,11 +947,8 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 <li>core/analysis/<a class="el" href="time__series_8cc_source.html">time_series.cc</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassbdm_1_1ResourceManager_html_ac354ecae1fc6a23fc8afea219fc62c27"><div class="ttname"><a href="classbdm_1_1ResourceManager.html#ac354ecae1fc6a23fc8afea219fc62c27">bdm::ResourceManager::GetNumAgents</a></div><div class="ttdeci">size_t GetNumAgents(int numa_node=-1) const</div><div class="ttdef"><b>Definition:</b> <a href="resource__manager_8h_source.html#l00184">resource_manager.h:184</a></div></div>
 <div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_af0e0280fbcc5b532a0dca65492d42694"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#af0e0280fbcc5b532a0dca65492d42694">bdm::experimental::TimeSeries::TimeSeries</a></div><div class="ttdeci">TimeSeries()</div></div>
 <div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_a2792aaa453e27a65f9a985ae6c422eaa"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#a2792aaa453e27a65f9a985ae6c422eaa">bdm::experimental::TimeSeries::Merge</a></div><div class="ttdeci">static void Merge(TimeSeries *merged, const std::vector&lt; TimeSeries &gt; &amp;time_series, const std::function&lt; void(const std::vector&lt; double &gt; &amp;, double *, double *, double *)&gt; &amp;merger)</div><div class="ttdef"><b>Definition:</b> <a href="time__series_8cc_source.html#l00133">time_series.cc:133</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Simulation_html_a12410bfc9dec5d64d0ae3223a5c59385"><div class="ttname"><a href="classbdm_1_1Simulation.html#a12410bfc9dec5d64d0ae3223a5c59385">bdm::Simulation::GetResourceManager</a></div><div class="ttdeci">ResourceManager * GetResourceManager()</div><div class="ttdoc">Returns the ResourceManager instance.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00260">simulation.cc:260</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00067">simulation.cc:67</a></div></div>
 <div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_a8cb811674ed5a32bf5ffc97eb8dae868"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#a8cb811674ed5a32bf5ffc97eb8dae868">bdm::experimental::TimeSeries::Load</a></div><div class="ttdeci">static void Load(const std::string &amp;full_filepath, TimeSeries **restored)</div><div class="ttdef"><b>Definition:</b> <a href="time__series_8cc_source.html#l00128">time_series.cc:128</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
