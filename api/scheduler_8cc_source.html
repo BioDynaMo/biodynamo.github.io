@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.50-ebcc857f</span>
+   &#160;<span id="projectnumber">v1.03.56-8762fa70</span>
    </div>
   </td>
  </tr>
@@ -120,8 +120,8 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="stringliteral">&quot;mechanical forces&quot;</span>, <span class="stringliteral">&quot;discretization&quot;</span>, <span class="stringliteral">&quot;propagate staticness agentop&quot;</span>,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="stringliteral">&quot;diffusion&quot;</span>};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::vector&lt;std::string&gt; pre_scheduled_ops_names = {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="stringliteral">&quot;set up iteration&quot;</span>, <span class="stringliteral">&quot;update environment&quot;</span>, <span class="stringliteral">&quot;propagate staticness&quot;</span>};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::vector&lt;std::string&gt; pre_scheduled_ops_names = {<span class="stringliteral">&quot;set up iteration&quot;</span>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                      <span class="stringliteral">&quot;propagate staticness&quot;</span>};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// We cannot put sort and balance in the list of scheduled_standalone_ops_,</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// because numa-aware data structures would be invalidated:</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// ```</span></div>
@@ -133,8 +133,8 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// agents that are not yet in the environment (which load balancing</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// relies on)</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::vector&lt;std::string&gt; post_scheduled_ops_names = {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="stringliteral">&quot;load balancing&quot;</span>, <span class="stringliteral">&quot;tear down iteration&quot;</span>, <span class="stringliteral">&quot;visualize&quot;</span>,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="stringliteral">&quot;update time series&quot;</span>};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="stringliteral">&quot;load balancing&quot;</span>, <span class="stringliteral">&quot;tear down iteration&quot;</span>, <span class="stringliteral">&quot;update environment&quot;</span>,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="stringliteral">&quot;visualize&quot;</span>, <span class="stringliteral">&quot;update time series&quot;</span>};</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classbdm_1_1Scheduler.html#a36b2e0951fc864249cd671b136506f87">protected_op_names_</a> = {<span class="stringliteral">&quot;update staticness&quot;</span>,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                         <span class="stringliteral">&quot;discretization&quot;</span>,</div>
