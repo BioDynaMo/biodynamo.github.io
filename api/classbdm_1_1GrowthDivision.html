@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.57-cebe047f</span>
+   &#160;<span id="projectnumber">v1.03.58-27764645</span>
    </div>
   </td>
  </tr>
@@ -94,8 +94,8 @@ Collaboration diagram for bdm::GrowthDivision:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a497ba294e1ad305c6558bfb8791d7ad7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#a497ba294e1ad305c6558bfb8791d7ad7">GrowthDivision</a> ()</td></tr>
 <tr class="separator:a497ba294e1ad305c6558bfb8791d7ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a98a7b1bab82e46aae0ee2aa57e09dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#a4a98a7b1bab82e46aae0ee2aa57e09dd">GrowthDivision</a> (double threshold, double growth_rate)</td></tr>
-<tr class="separator:a4a98a7b1bab82e46aae0ee2aa57e09dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a2c3ea07a9c6e3156516ddcda284b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#a84a2c3ea07a9c6e3156516ddcda284b1">GrowthDivision</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> threshold, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> growth_rate)</td></tr>
+<tr class="separator:a84a2c3ea07a9c6e3156516ddcda284b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9d838851d5f7a82474d5f38b39a447"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#a7e9d838851d5f7a82474d5f38b39a447">~GrowthDivision</a> ()=default</td></tr>
 <tr class="separator:a7e9d838851d5f7a82474d5f38b39a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c6e701749b164ef75767f3889b74c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#a52c6e701749b164ef75767f3889b74c4">Initialize</a> (const <a class="el" href="structbdm_1_1NewAgentEvent.html">NewAgentEvent</a> &amp;event) override</td></tr>
@@ -145,10 +145,10 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6a30bc2b1f25d1311b3a061ea18d6b51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#a6a30bc2b1f25d1311b3a061ea18d6b51">threshold_</a> = 40</td></tr>
-<tr class="separator:a6a30bc2b1f25d1311b3a061ea18d6b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901597059b32e828dbf087278b840360"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#a901597059b32e828dbf087278b840360">growth_rate_</a> = 300</td></tr>
-<tr class="separator:a901597059b32e828dbf087278b840360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce6697075010358d819b6c81c04e9e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#acce6697075010358d819b6c81c04e9e7">threshold_</a> = 40</td></tr>
+<tr class="separator:acce6697075010358d819b6c81c04e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64a2c3816419785d1ec634c746bdd70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GrowthDivision.html#af64a2c3816419785d1ec634c746bdd70">growth_rate_</a> = 300</td></tr>
+<tr class="separator:af64a2c3816419785d1ec634c746bdd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This behavior grows the agent until the diameter reaches the specified threshold and divides the object afterwards. </p>
@@ -182,8 +182,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a98a7b1bab82e46aae0ee2aa57e09dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a98a7b1bab82e46aae0ee2aa57e09dd">&#9670;&nbsp;</a></span>GrowthDivision() <span class="overload">[2/2]</span></h2>
+<a id="a84a2c3ea07a9c6e3156516ddcda284b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a2c3ea07a9c6e3156516ddcda284b1">&#9670;&nbsp;</a></span>GrowthDivision() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,13 +194,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">bdm::GrowthDivision::GrowthDivision </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td>
           <td class="paramname"><em>threshold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td>
           <td class="paramname"><em>growth_rate</em>&#160;</td>
         </tr>
         <tr>
@@ -351,8 +351,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a901597059b32e828dbf087278b840360"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a901597059b32e828dbf087278b840360">&#9670;&nbsp;</a></span>growth_rate_</h2>
+<a id="af64a2c3816419785d1ec634c746bdd70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64a2c3816419785d1ec634c746bdd70">&#9670;&nbsp;</a></span>growth_rate_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +361,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double bdm::GrowthDivision::growth_rate_ = 300</td>
+          <td class="memname"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> bdm::GrowthDivision::growth_rate_ = 300</td>
         </tr>
       </table>
   </td>
@@ -375,8 +375,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6a30bc2b1f25d1311b3a061ea18d6b51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a30bc2b1f25d1311b3a061ea18d6b51">&#9670;&nbsp;</a></span>threshold_</h2>
+<a id="acce6697075010358d819b6c81c04e9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce6697075010358d819b6c81c04e9e7">&#9670;&nbsp;</a></span>threshold_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +385,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double bdm::GrowthDivision::threshold_ = 40</td>
+          <td class="memname"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> bdm::GrowthDivision::threshold_ = 40</td>
         </tr>
       </table>
   </td>

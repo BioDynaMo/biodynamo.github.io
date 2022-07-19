@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.57-cebe047f</span>
+   &#160;<span id="projectnumber">v1.03.58-27764645</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="cpptoml_8h.html#a1fc1c268acf27f91f9432fe2b0063141">   28</a></span>&#160;<span class="preprocessor">#define BDM_ASSIGN_CONFIG_DOUBLE3_VALUE(variable, config_key)          \</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">  {                                                                    \</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    if (config-&gt;contains_qualified(config_key)) {                      \</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">      auto value = config-&gt;get_array_of&lt;double&gt;(config_key);           \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">      auto value = config-&gt;get_array_of&lt;real_t&gt;(config_key);           \</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">      if (value) {                                                     \</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">        auto vector = *value;                                          \</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">        if (vector.size() == variable.size()) {                        \</span></div>

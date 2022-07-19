@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.57-cebe047f</span>
+   &#160;<span id="projectnumber">v1.03.58-27764645</span>
    </div>
   </td>
  </tr>
@@ -98,10 +98,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca5ed0a0b31e0253265d5ad07bfecb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03731a16dee7b24168fb174ac014b7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#a03731a16dee7b24168fb174ac014b7e7">Initialize</a> (const <a class="el" href="structbdm_1_1NewAgentEvent.html">NewAgentEvent</a> &amp;event) override</td></tr>
 <tr class="separator:a03731a16dee7b24168fb174ac014b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa8e6669d6ba0a7a2efb345e0311edb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#afa8e6669d6ba0a7a2efb345e0311edb5">AddGene</a> (const std::function&lt; double(double, double)&gt; &amp;first_derivative, double initial_concentration)</td></tr>
-<tr class="separator:afa8e6669d6ba0a7a2efb345e0311edb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914703bb3293bd851a93c5c8e170f25f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#a914703bb3293bd851a93c5c8e170f25f">GetConcentrations</a> () const</td></tr>
-<tr class="separator:a914703bb3293bd851a93c5c8e170f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c29c18d049b0bbfe12499b252721a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#ae0c29c18d049b0bbfe12499b252721a5">AddGene</a> (const std::function&lt; <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>(<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>)&gt; &amp;first_derivative, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> initial_concentration)</td></tr>
+<tr class="separator:ae0c29c18d049b0bbfe12499b252721a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae291e01959ca96de7e9354894f87ad8a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#ae291e01959ca96de7e9354894f87ad8a">GetConcentrations</a> () const</td></tr>
+<tr class="separator:ae291e01959ca96de7e9354894f87ad8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a69513828db03fc2d075ddb86dae4c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#a9a69513828db03fc2d075ddb86dae4c5">Run</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *agent) override</td></tr>
 <tr class="separator:a9a69513828db03fc2d075ddb86dae4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbdm_1_1Behavior"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbdm_1_1Behavior')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbdm_1_1Behavior.html">bdm::Behavior</a></td></tr>
@@ -147,11 +147,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a693c6a07e057f4e68ce270369eba990b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#a693c6a07e057f4e68ce270369eba990b">concentrations_</a> = {}</td></tr>
-<tr class="memdesc:a693c6a07e057f4e68ce270369eba990b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the current concentration for each gene.  <a href="classbdm_1_1GeneRegulation.html#a693c6a07e057f4e68ce270369eba990b">More...</a><br /></td></tr>
-<tr class="separator:a693c6a07e057f4e68ce270369eba990b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b2b23cc38b3b1b6b73ade3ab66879c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function&lt; double(double, double)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#ab0b2b23cc38b3b1b6b73ade3ab66879c">first_derivatives_</a> = {}</td></tr>
-<tr class="separator:ab0b2b23cc38b3b1b6b73ade3ab66879c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8637891da56e64479e29326c044f88"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#a5e8637891da56e64479e29326c044f88">concentrations_</a> = {}</td></tr>
+<tr class="memdesc:a5e8637891da56e64479e29326c044f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the current concentration for each gene.  <a href="classbdm_1_1GeneRegulation.html#a5e8637891da56e64479e29326c044f88">More...</a><br /></td></tr>
+<tr class="separator:a5e8637891da56e64479e29326c044f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17a6bae2cc26e333b007da3dcdc8978"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function&lt; <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>(<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1GeneRegulation.html#ab17a6bae2cc26e333b007da3dcdc8978">first_derivatives_</a> = {}</td></tr>
+<tr class="separator:ab17a6bae2cc26e333b007da3dcdc8978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This behavior simulates expression of genes and contains all required additional variables for tracking of the concentration of proteins. Thus, it can work with any type of agent. It has the implementation of Euler and Runge-Kutta numerical methods for solving ODE. Both methods implemented inside the body of method <a class="el" href="classbdm_1_1GeneRegulation.html#a9a69513828db03fc2d075ddb86dae4c5">Run()</a>. The user determines which method is picked in particular simulation through variable <code><a class="el" href="structbdm_1_1Param.html#ae2f82ac74abda1bdec837be62eb057f7">Param::numerical_ode_solver</a></code>. </p>
@@ -211,8 +211,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afa8e6669d6ba0a7a2efb345e0311edb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa8e6669d6ba0a7a2efb345e0311edb5">&#9670;&nbsp;</a></span>AddGene()</h2>
+<a id="ae0c29c18d049b0bbfe12499b252721a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c29c18d049b0bbfe12499b252721a5">&#9670;&nbsp;</a></span>AddGene()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,13 +223,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void bdm::GeneRegulation::AddGene </td>
           <td>(</td>
-          <td class="paramtype">const std::function&lt; double(double, double)&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::function&lt; <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>(<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>)&gt; &amp;&#160;</td>
           <td class="paramname"><em>first_derivative</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td>
           <td class="paramname"><em>initial_concentration</em>&#160;</td>
         </tr>
         <tr>
@@ -246,7 +246,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>AddGene adds a new differential equation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">first_derivative</td><td>differential equation in the form: <code>slope = f(time, last_concentration)</code> &ndash; e.g.: <pre class="fragment">  [](double time, double last_concentration) {
+    <tr><td class="paramname">first_derivative</td><td>differential equation in the form: <code>slope = f(time, last_concentration)</code> &ndash; e.g.: <pre class="fragment">  [](real_t time, real_t last_concentration) {
      return 1 - time * last_concentration;
   }
 </pre></td></tr>
@@ -301,8 +301,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a914703bb3293bd851a93c5c8e170f25f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a914703bb3293bd851a93c5c8e170f25f">&#9670;&nbsp;</a></span>GetConcentrations()</h2>
+<a id="ae291e01959ca96de7e9354894f87ad8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae291e01959ca96de7e9354894f87ad8a">&#9670;&nbsp;</a></span>GetConcentrations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +311,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;double&gt;&amp; bdm::GeneRegulation::GetConcentrations </td>
+          <td class="memname">const std::vector&lt;<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&gt;&amp; bdm::GeneRegulation::GetConcentrations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -391,8 +391,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a693c6a07e057f4e68ce270369eba990b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a693c6a07e057f4e68ce270369eba990b">&#9670;&nbsp;</a></span>concentrations_</h2>
+<a id="a5e8637891da56e64479e29326c044f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8637891da56e64479e29326c044f88">&#9670;&nbsp;</a></span>concentrations_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +401,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; bdm::GeneRegulation::concentrations_ = {}</td>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&gt; bdm::GeneRegulation::concentrations_ = {}</td>
         </tr>
       </table>
   </td>
@@ -417,8 +417,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab0b2b23cc38b3b1b6b73ade3ab66879c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0b2b23cc38b3b1b6b73ade3ab66879c">&#9670;&nbsp;</a></span>first_derivatives_</h2>
+<a id="ab17a6bae2cc26e333b007da3dcdc8978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17a6bae2cc26e333b007da3dcdc8978">&#9670;&nbsp;</a></span>first_derivatives_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +427,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::function&lt;double(double, double)&gt; &gt; bdm::GeneRegulation::first_derivatives_ = {}</td>
+          <td class="memname">std::vector&lt;std::function&lt;<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>(<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>)&gt; &gt; bdm::GeneRegulation::first_derivatives_ = {}</td>
         </tr>
       </table>
   </td>
@@ -436,7 +436,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Store the gene differential equations, which define how the concentration change. New functions can be added through method <a class="el" href="classbdm_1_1GeneRegulation.html#afa8e6669d6ba0a7a2efb345e0311edb5">AddGene()</a> </p>
+<p>Store the gene differential equations, which define how the concentration change. New functions can be added through method <a class="el" href="classbdm_1_1GeneRegulation.html#ae0c29c18d049b0bbfe12499b252721a5">AddGene()</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="gene__regulation_8h_source.html#l00119">119</a> of file <a class="el" href="gene__regulation_8h_source.html">gene_regulation.h</a>.</p>
 

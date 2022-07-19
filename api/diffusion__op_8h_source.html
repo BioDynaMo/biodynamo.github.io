@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.57-cebe047f</span>
+   &#160;<span id="projectnumber">v1.03.58-27764645</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,8 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classbdm_1_1DiffusionOp.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbdm_1_1DiffusionOp.html">DiffusionOp</a> : <span class="keyword">public</span> <a class="code" href="structbdm_1_1StandaloneOperationImpl.html">StandaloneOperationImpl</a> {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classbdm_1_1DiffusionOp.html#a912f34a5308fae0b3b77806b02dbcb70">   38</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classbdm_1_1DiffusionOp.html#a912f34a5308fae0b3b77806b02dbcb70">last_time_run_</a> = 0.0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classbdm_1_1DiffusionOp.html#abbab83a18ff8e71ca477424154b210d2">   41</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classbdm_1_1DiffusionOp.html#abbab83a18ff8e71ca477424154b210d2">delta_t_</a> = 0.0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classbdm_1_1DiffusionOp.html#abfdb1e3fc63f05e46f51b859f799e94c">   38</a></span>&#160;  <a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> <a class="code" href="classbdm_1_1DiffusionOp.html#abfdb1e3fc63f05e46f51b859f799e94c">last_time_run_</a> = 0.0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classbdm_1_1DiffusionOp.html#a8d082bde5c1bc365d5866a4cd53b3368">   41</a></span>&#160;  <a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> <a class="code" href="classbdm_1_1DiffusionOp.html#a8d082bde5c1bc365d5866a4cd53b3368">delta_t_</a> = 0.0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classbdm_1_1DiffusionOp.html#a6d96a4a1f68e3cc87ba221594bb92094">BDM_OP_HEADER</a>(<a class="code" href="classbdm_1_1DiffusionOp.html">DiffusionOp</a>);</div>
@@ -119,12 +119,12 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">auto</span>* param = sim-&gt;GetParam();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Compute the passed time to update the diffusion grid accordingly.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> current_time = sim-&gt;GetScheduler()-&gt;GetSimulatedTime();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classbdm_1_1DiffusionOp.html#abbab83a18ff8e71ca477424154b210d2">delta_t_</a> = current_time - <a class="code" href="classbdm_1_1DiffusionOp.html#a912f34a5308fae0b3b77806b02dbcb70">last_time_run_</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classbdm_1_1DiffusionOp.html#a912f34a5308fae0b3b77806b02dbcb70">last_time_run_</a> = current_time;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> current_time = sim-&gt;GetScheduler()-&gt;GetSimulatedTime();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classbdm_1_1DiffusionOp.html#a8d082bde5c1bc365d5866a4cd53b3368">delta_t_</a> = current_time - <a class="code" href="classbdm_1_1DiffusionOp.html#abfdb1e3fc63f05e46f51b859f799e94c">last_time_run_</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classbdm_1_1DiffusionOp.html#abfdb1e3fc63f05e46f51b859f799e94c">last_time_run_</a> = current_time;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Avoid computation if delta_t_ is zero</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbdm_1_1DiffusionOp.html#abbab83a18ff8e71ca477424154b210d2">delta_t_</a> == 0.0) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classbdm_1_1DiffusionOp.html#a8d082bde5c1bc365d5866a4cd53b3368">delta_t_</a> == 0.0) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
@@ -136,7 +136,7 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          param-&gt;bound_space == Param::BoundSpaceMode::kOpen) {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        dgrid-&gt;Update();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      dgrid-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#af6dfb1cc5ec0c3a2d27ec05581dc8529">Diffuse</a>(<a class="code" href="classbdm_1_1DiffusionOp.html#abbab83a18ff8e71ca477424154b210d2">delta_t_</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      dgrid-&gt;<a class="code" href="classbdm_1_1DiffusionGrid.html#a00aae2eb3945321f60f54e4842a2e1fd">Diffuse</a>(<a class="code" href="classbdm_1_1DiffusionOp.html#a8d082bde5c1bc365d5866a4cd53b3368">delta_t_</a>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      if (param-&gt;calculate_gradients) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        dgrid-&gt;CalculateGradient();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div>
@@ -151,16 +151,17 @@ $(function() {
 <div class="ttc" id="ainline__vector_8h_html"><div class="ttname"><a href="inline__vector_8h.html">inline_vector.h</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aoperation_8h_html"><div class="ttname"><a href="operation_8h.html">operation.h</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_a00aae2eb3945321f60f54e4842a2e1fd"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#a00aae2eb3945321f60f54e4842a2e1fd">bdm::DiffusionGrid::Diffuse</a></div><div class="ttdeci">void Diffuse(real_t dt)</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8cc_source.html#l00068">diffusion_grid.cc:68</a></div></div>
+<div class="ttc" id="anamespacebdm_html_a5d750b9d542e662433fabcd83e85ca8b"><div class="ttname"><a href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">bdm::real_t</a></div><div class="ttdeci">double real_t</div><div class="ttdef"><b>Definition:</b> <a href="real__t_8h_source.html#l00021">real_t.h:21</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionOp_html_abfdb1e3fc63f05e46f51b859f799e94c"><div class="ttname"><a href="classbdm_1_1DiffusionOp.html#abfdb1e3fc63f05e46f51b859f799e94c">bdm::DiffusionOp::last_time_run_</a></div><div class="ttdeci">real_t last_time_run_</div><div class="ttdoc">Last time when the operation was executed.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00038">diffusion_op.h:38</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00032">diffusion_grid.h:32</a></div></div>
 <div class="ttc" id="aoperation__registry_8h_html"><div class="ttname"><a href="operation__registry_8h.html">operation_registry.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionOp_html_ae92297fbcc344e19f0c76665b5625c15"><div class="ttname"><a href="classbdm_1_1DiffusionOp.html#ae92297fbcc344e19f0c76665b5625c15">bdm::DiffusionOp::operator()</a></div><div class="ttdeci">void operator()() override</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00046">diffusion_op.h:46</a></div></div>
 <div class="ttc" id="adiffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html_af6dfb1cc5ec0c3a2d27ec05581dc8529"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html#af6dfb1cc5ec0c3a2d27ec05581dc8529">bdm::DiffusionGrid::Diffuse</a></div><div class="ttdeci">void Diffuse(double dt)</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8cc_source.html#l00068">diffusion_grid.cc:68</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionOp_html_a8d082bde5c1bc365d5866a4cd53b3368"><div class="ttname"><a href="classbdm_1_1DiffusionOp.html#a8d082bde5c1bc365d5866a4cd53b3368">bdm::DiffusionOp::delta_t_</a></div><div class="ttdeci">real_t delta_t_</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00041">diffusion_op.h:41</a></div></div>
 <div class="ttc" id="alog_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionOp_html_abbab83a18ff8e71ca477424154b210d2"><div class="ttname"><a href="classbdm_1_1DiffusionOp.html#abbab83a18ff8e71ca477424154b210d2">bdm::DiffusionOp::delta_t_</a></div><div class="ttdeci">double delta_t_</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00041">diffusion_op.h:41</a></div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionOp_html_a6d96a4a1f68e3cc87ba221594bb92094"><div class="ttname"><a href="classbdm_1_1DiffusionOp.html#a6d96a4a1f68e3cc87ba221594bb92094">bdm::DiffusionOp::BDM_OP_HEADER</a></div><div class="ttdeci">BDM_OP_HEADER(DiffusionOp)</div></div>
 <div class="ttc" id="aclassbdm_1_1DiffusionOp_html"><div class="ttname"><a href="classbdm_1_1DiffusionOp.html">bdm::DiffusionOp</a></div><div class="ttdoc">A class that sets up diffusion grids of the substances in this simulation.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00035">diffusion_op.h:35</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionOp_html_a912f34a5308fae0b3b77806b02dbcb70"><div class="ttname"><a href="classbdm_1_1DiffusionOp.html#a912f34a5308fae0b3b77806b02dbcb70">bdm::DiffusionOp::last_time_run_</a></div><div class="ttdeci">double last_time_run_</div><div class="ttdoc">Last time when the operation was executed.</div><div class="ttdef"><b>Definition:</b> <a href="diffusion__op_8h_source.html#l00038">diffusion_op.h:38</a></div></div>
 <div class="ttc" id="aenvironment_8h_html"><div class="ttname"><a href="environment_8h.html">environment.h</a></div></div>
 <div class="ttc" id="asimulation_8h_html"><div class="ttname"><a href="simulation_8h.html">simulation.h</a></div></div>
 <div class="ttc" id="aresource__manager_8h_html"><div class="ttname"><a href="resource__manager_8h.html">resource_manager.h</a></div></div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.57-cebe047f</span>
+   &#160;<span id="projectnumber">v1.03.58-27764645</span>
    </div>
   </td>
  </tr>
@@ -134,13 +134,13 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// 1. Get current and compute elapsed time</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  int64_t current_time = <a class="code" href="classbdm_1_1Timing.html#a60f0361ed4d2c56c8281e4f9518b3de5">Timing::Timestamp</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">double</span> elapsed_time = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(current_time - <a class="code" href="classbdm_1_1ProgressBar.html#ab6e2c299ee14e729f86fd05c406665b6">start_time_</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> elapsed_time = <span class="keyword">static_cast&lt;</span><a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a><span class="keyword">&gt;</span>(current_time - <a class="code" href="classbdm_1_1ProgressBar.html#ab6e2c299ee14e729f86fd05c406665b6">start_time_</a>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// 2. Compute ETA</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">double</span> fraction_computed =</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code" href="classbdm_1_1ProgressBar.html#aea79c9572e9a09ec773747740999480c">executed_steps_</a>) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code" href="classbdm_1_1ProgressBar.html#ae2af71e47dc972b7aea530c3f77a3709">total_steps_</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> fraction_computed =</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">static_cast&lt;</span><a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a><span class="keyword">&gt;</span>(<a class="code" href="classbdm_1_1ProgressBar.html#aea79c9572e9a09ec773747740999480c">executed_steps_</a>) / <span class="keyword">static_cast&lt;</span><a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a><span class="keyword">&gt;</span>(<a class="code" href="classbdm_1_1ProgressBar.html#ae2af71e47dc972b7aea530c3f77a3709">total_steps_</a>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  assert(fraction_computed &lt;= 1);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">double</span> remaining_time = elapsed_time / fraction_computed - elapsed_time;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> remaining_time = elapsed_time / fraction_computed - elapsed_time;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// 3. Print progress bar</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">size_t</span> n_steps_computed = std::floor(fraction_computed / 0.02);</div>
@@ -175,6 +175,7 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1ProgressBar_html_ab6e2c299ee14e729f86fd05c406665b6"><div class="ttname"><a href="classbdm_1_1ProgressBar.html#ab6e2c299ee14e729f86fd05c406665b6">bdm::ProgressBar::start_time_</a></div><div class="ttdeci">int64_t start_time_</div><div class="ttdoc">Timestamp when to when the progress bar was initialized.</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8h_source.html#l00030">progress_bar.h:30</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ProgressBar_html_ae2af71e47dc972b7aea530c3f77a3709"><div class="ttname"><a href="classbdm_1_1ProgressBar.html#ae2af71e47dc972b7aea530c3f77a3709">bdm::ProgressBar::total_steps_</a></div><div class="ttdeci">uint64_t total_steps_</div><div class="ttdoc">Total number of steps to be executed.</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8h_source.html#l00026">progress_bar.h:26</a></div></div>
+<div class="ttc" id="anamespacebdm_html_a5d750b9d542e662433fabcd83e85ca8b"><div class="ttname"><a href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">bdm::real_t</a></div><div class="ttdeci">double real_t</div><div class="ttdef"><b>Definition:</b> <a href="real__t_8h_source.html#l00021">real_t.h:21</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ProgressBar_html_ab2da22ee3caffe25f67de55c5d211d55"><div class="ttname"><a href="classbdm_1_1ProgressBar.html#ab2da22ee3caffe25f67de55c5d211d55">bdm::ProgressBar::PrintProgressBar</a></div><div class="ttdeci">void PrintProgressBar(std::ostream &amp;out=std::cout)</div><div class="ttdoc">Prints the progress bar.</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8cc_source.html#l00036">progress_bar.cc:36</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ProgressBar_html_a5604d468641bb101fb41933704632a13"><div class="ttname"><a href="classbdm_1_1ProgressBar.html#a5604d468641bb101fb41933704632a13">bdm::ProgressBar::n_digits_time_</a></div><div class="ttdeci">int n_digits_time_</div><div class="ttdef"><b>Definition:</b> <a href="progress__bar_8h_source.html#l00036">progress_bar.h:36</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Timing_html"><div class="ttname"><a href="classbdm_1_1Timing.html">bdm::Timing</a></div><div class="ttdef"><b>Definition:</b> <a href="timing_8h_source.html#l00029">timing.h:29</a></div></div>
