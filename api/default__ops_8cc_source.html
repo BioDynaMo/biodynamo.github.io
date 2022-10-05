@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.61-fe34ced0</span>
+   &#160;<span id="projectnumber">v1.03.73-5fa1bad1</span>
    </div>
   </td>
  </tr>
@@ -86,7 +86,7 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="time__series_8h.html">core/analysis/time_series.h</a>&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bound__space__op_8h.html">core/operation/bound_space_op.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diffusion__op_8h.html">core/operation/diffusion_op.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="continuum__op_8h.html">core/operation/continuum_op.h</a>&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dividing__cell__op_8h.html">core/operation/dividing_cell_op.h</a>&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="load__balancing__op_8h.html">core/operation/load_balancing_op.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mechanical__forces__op_8h.html">core/operation/mechanical_forces_op.h</a>&quot;</span></div>
@@ -99,7 +99,7 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="namespacebdm.html#aa99966d67307675d42d21ca48ed5331b">BDM_REGISTER_OP</a>(BoundSpace, <span class="stringliteral">&quot;bound space&quot;</span>, <a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="namespacebdm.html#aa99966d67307675d42d21ca48ed5331b">BDM_REGISTER_OP</a>(DiffusionOp, <span class="stringliteral">&quot;diffusion&quot;</span>, <a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="namespacebdm.html#aa99966d67307675d42d21ca48ed5331b">BDM_REGISTER_OP</a>(ContinuumOp, <span class="stringliteral">&quot;continuum&quot;</span>, <a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// By default run load balancing only in the first iteration.</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="namespacebdm.html#abcd50c3a579216830ed1594d39132a1a">BDM_REGISTER_OP_WITH_FREQ</a>(LoadBalancingOp, <span class="stringliteral">&quot;load balancing&quot;</span>, <a class="code" href="namespacebdm.html#a341896036b949773cdf5caf208c39ae2af4291d29e18b2c1f61182838eaf5b143">kCpu</a>,</div>
@@ -225,7 +225,6 @@ $(function() {
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="astructbdm_1_1PropagateStaticnessOp_html_a7b4e441ddafdeeec2e19bcafff01eae0"><div class="ttname"><a href="structbdm_1_1PropagateStaticnessOp.html#a7b4e441ddafdeeec2e19bcafff01eae0">bdm::PropagateStaticnessOp::BDM_OP_HEADER</a></div><div class="ttdeci">BDM_OP_HEADER(PropagateStaticnessOp)</div></div>
 <div class="ttc" id="aoperation_8h_html"><div class="ttname"><a href="operation_8h.html">operation.h</a></div></div>
-<div class="ttc" id="adiffusion__op_8h_html"><div class="ttname"><a href="diffusion__op_8h.html">diffusion_op.h</a></div></div>
 <div class="ttc" id="astructbdm_1_1BehaviorOp_html_a57098c1ac8a51338156e7a949c5b1910"><div class="ttname"><a href="structbdm_1_1BehaviorOp.html#a57098c1ac8a51338156e7a949c5b1910">bdm::BehaviorOp::operator()</a></div><div class="ttdeci">void operator()(Agent *agent) override</div><div class="ttdef"><b>Definition:</b> <a href="default__ops_8cc_source.html#l00068">default_ops.cc:68</a></div></div>
 <div class="ttc" id="astructbdm_1_1TearDownIterationOp_html"><div class="ttname"><a href="structbdm_1_1TearDownIterationOp.html">bdm::TearDownIterationOp</a></div><div class="ttdef"><b>Definition:</b> <a href="default__ops_8cc_source.html#l00094">default_ops.cc:94</a></div></div>
 <div class="ttc" id="astructbdm_1_1SetUpIterationOp_html_a30bf448cd4e4f2166fb7ba14c8d26ec1"><div class="ttname"><a href="structbdm_1_1SetUpIterationOp.html#a30bf448cd4e4f2166fb7ba14c8d26ec1">bdm::SetUpIterationOp::operator()</a></div><div class="ttdeci">void operator()() override</div><div class="ttdef"><b>Definition:</b> <a href="default__ops_8cc_source.html#l00084">default_ops.cc:84</a></div></div>
@@ -243,6 +242,7 @@ $(function() {
 <div class="ttc" id="astructbdm_1_1PropagateStaticnessOp_html"><div class="ttname"><a href="structbdm_1_1PropagateStaticnessOp.html">bdm::PropagateStaticnessOp</a></div><div class="ttdef"><b>Definition:</b> <a href="default__ops_8cc_source.html#l00129">default_ops.cc:129</a></div></div>
 <div class="ttc" id="astructbdm_1_1SetUpIterationOp_html"><div class="ttname"><a href="structbdm_1_1SetUpIterationOp.html">bdm::SetUpIterationOp</a></div><div class="ttdef"><b>Definition:</b> <a href="default__ops_8cc_source.html#l00081">default_ops.cc:81</a></div></div>
 <div class="ttc" id="astructbdm_1_1PropagateStaticnessAgentOp_html_afb54d8812ab4435183e0d0b7d20f8c45"><div class="ttname"><a href="structbdm_1_1PropagateStaticnessAgentOp.html#afb54d8812ab4435183e0d0b7d20f8c45">bdm::PropagateStaticnessAgentOp::operator()</a></div><div class="ttdeci">void operator()(Agent *agent) override</div><div class="ttdef"><b>Definition:</b> <a href="default__ops_8cc_source.html#l00059">default_ops.cc:59</a></div></div>
+<div class="ttc" id="acontinuum__op_8h_html"><div class="ttname"><a href="continuum__op_8h.html">continuum_op.h</a></div></div>
 <div class="ttc" id="atime__series_8h_html"><div class="ttname"><a href="time__series_8h.html">time_series.h</a></div></div>
 <div class="ttc" id="astructbdm_1_1TearDownIterationOp_html_a330fcfcfb3c412b5fe79e34453fe7900"><div class="ttname"><a href="structbdm_1_1TearDownIterationOp.html#a330fcfcfb3c412b5fe79e34453fe7900">bdm::TearDownIterationOp::operator()</a></div><div class="ttdeci">void operator()() override</div><div class="ttdef"><b>Definition:</b> <a href="default__ops_8cc_source.html#l00097">default_ops.cc:97</a></div></div>
 <div class="ttc" id="astructbdm_1_1DiscretizationOp_html_a99c7828c4e57e866f526ee42e1bff41d"><div class="ttname"><a href="structbdm_1_1DiscretizationOp.html#a99c7828c4e57e866f526ee42e1bff41d">bdm::DiscretizationOp::BDM_OP_HEADER</a></div><div class="ttdeci">BDM_OP_HEADER(DiscretizationOp)</div></div>
