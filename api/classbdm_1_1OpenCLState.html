@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.03.73-5fa1bad1</span>
+   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5853555d7c199b0c75b5f0d79dcb296f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; cl::Program &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a5853555d7c199b0c75b5f0d79dcb296f">GetOpenCLProgramList</a> ()</td></tr>
 <tr class="memdesc:a5853555d7c199b0c75b5f0d79dcb296f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the OpenCL program (kernel) list.  <a href="classbdm_1_1OpenCLState.html#a5853555d7c199b0c75b5f0d79dcb296f">More...</a><br /></td></tr>
 <tr class="separator:a5853555d7c199b0c75b5f0d79dcb296f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdcbda5e3a28f37566c4907a5fec5f6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#acdcbda5e3a28f37566c4907a5fec5f6a">HasSupportForDouble</a> ()</td></tr>
+<tr class="separator:acdcbda5e3a28f37566c4907a5fec5f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ae26cf10d93b0ce084f4b02f4a8ec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a96ae26cf10d93b0ce084f4b02f4a8ec6">DisableSupportForDouble</a> ()</td></tr>
+<tr class="memdesc:a96ae26cf10d93b0ce084f4b02f4a8ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable support for double-precision floating point operations.  <a href="classbdm_1_1OpenCLState.html#a96ae26cf10d93b0ce084f4b02f4a8ec6">More...</a><br /></td></tr>
+<tr class="separator:a96ae26cf10d93b0ce084f4b02f4a8ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b0b7900756b288ccdf55e1bac26ad0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a58b0b7900756b288ccdf55e1bac26ad0">GetErrorString</a> (int error)</td></tr>
 <tr class="separator:a58b0b7900756b288ccdf55e1bac26ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3100b09d8e43f038c8fe486ddc0af056"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1OpenCLState.html#a3100b09d8e43f038c8fe486ddc0af056">ClAssert</a> (int const code, char const *const file, int const line, bool const abort)</td></tr>
@@ -179,7 +184,26 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00240">240</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00245">245</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<a id="a96ae26cf10d93b0ce084f4b02f4a8ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ae26cf10d93b0ce084f4b02f4a8ec6">&#9670;&nbsp;</a></span>DisableSupportForDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::OpenCLState::DisableSupportForDouble </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable support for double-precision floating point operations. </p>
 
 </div>
 </div>
@@ -199,7 +223,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00239">239</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00244">244</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
 
 </div>
 </div>
@@ -220,7 +244,7 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the OpenCL command queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00234">234</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00239">239</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
 
 </div>
 </div>
@@ -241,7 +265,7 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the OpenCL Context. </p>
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00233">233</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00238">238</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
 
 </div>
 </div>
@@ -262,7 +286,7 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the OpenCL device (GPU) list. </p>
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00235">235</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00240">240</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
 
 </div>
 </div>
@@ -283,7 +307,25 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the OpenCL program (kernel) list. </p>
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00236">236</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8cc_source.html#l00241">241</a> of file <a class="el" href="opencl__state_8cc_source.html">opencl_state.cc</a>.</p>
+
+</div>
+</div>
+<a id="acdcbda5e3a28f37566c4907a5fec5f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdcbda5e3a28f37566c4907a5fec5f6a">&#9670;&nbsp;</a></span>HasSupportForDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bdm::OpenCLState::HasSupportForDouble </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether or not a GPU without support for double-precision was found </p>
 
 </div>
 </div>
@@ -308,7 +350,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="opencl__state_8h_source.html#l00060">60</a> of file <a class="el" href="opencl__state_8h_source.html">opencl_state.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="opencl__state_8h_source.html#l00067">67</a> of file <a class="el" href="opencl__state_8h_source.html">opencl_state.h</a>.</p>
 
 </div>
 </div>
