@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ $(function() {
 </li>
 <li>GetAgentHandle()
 : <a class="el" href="classbdm_1_1AgentFlatIdxMap.html#ac4e7d98020cb50a3a17a673b701acfba">bdm::AgentFlatIdxMap</a>
-, <a class="el" href="classbdm_1_1ResourceManager.html#a4afc6705383f05a5e91384ceeb5b34d2">bdm::ResourceManager</a>
+, <a class="el" href="classbdm_1_1ResourceManager.html#a7236ec1b7dc570f0f6550211f388f56f">bdm::ResourceManager</a>
 </li>
 <li>GetAgentPtr()
 : <a class="el" href="classbdm_1_1Agent.html#a4cd9586145c32df5170596a5862a3ea0">bdm::Agent</a>
@@ -150,8 +150,20 @@ $(function() {
 <li>GetAxis()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#aa2c26250512b9c973ed92ad45c285ec4">bdm::neuroscience::NeuriteElement</a>
 </li>
+<li>GetBindingCoefficients()
+: <a class="el" href="classbdm_1_1EulerDepletionGrid.html#a8ae839abd850af6c0b1f596da2215591">bdm::EulerDepletionGrid</a>
+</li>
+<li>GetBindingSubstances()
+: <a class="el" href="classbdm_1_1EulerDepletionGrid.html#a2ec18b5f5284b454ae262a2f6658e3ad">bdm::EulerDepletionGrid</a>
+</li>
 <li>GetBinomialRng()
-: <a class="el" href="classbdm_1_1Random.html#a664a838d97b6a6ee25b913c459421753">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#a81affe5872434cc20effc8d4fa665cee">bdm::Random</a>
+</li>
+<li>GetBoundaryCondition()
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#ad74cb5683b0f8a2ea90ec8c9cffe8d32">bdm::DiffusionGrid</a>
+</li>
+<li>GetBoundaryConditionType()
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#a656760d91c7e405155c96a6a9bab21f4">bdm::DiffusionGrid</a>
 </li>
 <li>GetBoxCoordinates()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#ac60edc61af1612780060b1744724362f">bdm::DiffusionGrid</a>
@@ -166,7 +178,7 @@ $(function() {
 </li>
 <li>GetBoxLength()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#aa539d0ac0a6dd7042c642d04d63ca284">bdm::DiffusionGrid</a>
-, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3bda7ea10721eddbc5e146c2942e6bda">bdm::UniformGridEnvironment</a>
+, <a class="el" href="classbdm_1_1UniformGridEnvironment.html#a543161cd996c8435f8163f6fc4dc5062">bdm::UniformGridEnvironment</a>
 </li>
 <li>GetBoxPointer()
 : <a class="el" href="classbdm_1_1UniformGridEnvironment.html#ab2483064ebc4b303e45bc67827546631">bdm::UniformGridEnvironment</a>
@@ -178,7 +190,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#ab36e2c7e301d7924c6d26fa5cca96045">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>GetBreitWignerRng()
-: <a class="el" href="classbdm_1_1Random.html#acb8e66d301d1d3f22457005bdbf6cb16">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#a399b7244ea93f1386cfcd26d2e7405f2">bdm::Random</a>
 </li>
 <li>GetCell()
 : <a class="el" href="classbdm_1_1CSVReader.html#a943678fb3b789d49b38172be8cf87472">bdm::CSVReader</a>
@@ -203,7 +215,7 @@ $(function() {
 , <a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a29cc064ff345a436ae78e767df35f2a3">bdm::InPlaceExecutionContext</a>
 </li>
 <li>GetContinuum()
-: <a class="el" href="classbdm_1_1ResourceManager.html#a41c802f2596edc597c80ee124aa7a107">bdm::ResourceManager</a>
+: <a class="el" href="classbdm_1_1ResourceManager.html#a7e1ba63cbcd01e159185c1f449f990cf">bdm::ResourceManager</a>
 </li>
 <li>GetContinuumId()
 : <a class="el" href="classbdm_1_1Continuum.html#abc6b8e97052fe13413970c9a8a10ccad">bdm::Continuum</a>
@@ -290,13 +302,16 @@ $(function() {
 : <a class="el" href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">bdm::Simulation</a>
 </li>
 <li>GetExpRng()
-: <a class="el" href="classbdm_1_1Random.html#a3e9ac699ecc85bec07fcfb62c7311b0b">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#a7b508d04f901f25d95a67550b04acbd0">bdm::Random</a>
 </li>
 <li>GetFlatIdx()
 : <a class="el" href="classbdm_1_1AgentFlatIdxMap.html#a67cd6c1a45be670871eff97d050fe59e">bdm::AgentFlatIdxMap</a>
 </li>
+<li>GetFp64Support()
+: <a class="el" href="classbdm_1_1OpenCLState.html#a4a6443f4d3ea5a3351278292d42c56bb">bdm::OpenCLState</a>
+</li>
 <li>GetGausRng()
-: <a class="el" href="classbdm_1_1Random.html#a8e3e4f3c8542713f75d8c20d00482d64">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#ae69a1f495dd6db1ec62bb31d012e5f1e">bdm::Random</a>
 </li>
 <li>GetGradient()
 : <a class="el" href="classbdm_1_1DiffusionGrid.html#aebaf8d3c0304c12273aeabad14925c27">bdm::DiffusionGrid</a>
@@ -336,7 +351,7 @@ $(function() {
 : <a class="el" href="structbdm_1_1Math.html#a67699c6831d00bb1cb5b44eaaa781d1d">bdm::Math</a>
 </li>
 <li>GetLandauRng()
-: <a class="el" href="classbdm_1_1Random.html#ad10588df64cdd37c50ce96bade091cad">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#ada52061d7921fc0b158608594647ab97">bdm::Random</a>
 </li>
 <li>GetLargestAgentSize()
 : <a class="el" href="classbdm_1_1Environment.html#a2e4b4f30b84260d02ec25f632334621a">bdm::Environment</a>
@@ -345,7 +360,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1Environment.html#a54d5a4d231bf2f93343c3c4a5c781f4e">bdm::Environment</a>
 </li>
 <li>GetLastTimestep()
-: <a class="el" href="classbdm_1_1DiffusionGrid.html#a5865ec00f586320229e99bf5975467e7">bdm::DiffusionGrid</a>
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#ae0eac7e02e61f47b4788e5b25f6ef43f">bdm::DiffusionGrid</a>
 </li>
 <li>GetLength()
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a02ce23616d2f54584a5bd0eb9d097293">bdm::neuroscience::NeuriteElement</a>
@@ -414,6 +429,9 @@ $(function() {
 </li>
 <li>GetN()
 : <a class="el" href="classbdm_1_1memory__manager__detail_1_1List.html#abac245befd9e2451061170736304ea62">bdm::memory_manager_detail::List</a>
+</li>
+<li>GetNeighboringBoxes()
+: <a class="el" href="classbdm_1_1DiffusionGrid.html#a7255da92e5a386de45fbf175f4f56314">bdm::DiffusionGrid</a>
 </li>
 <li>GetNeighborMutexBuilder()
 : <a class="el" href="classbdm_1_1Environment.html#a5bd804d468eef37cf5fae001939d8913">bdm::Environment</a>
@@ -497,10 +515,10 @@ $(function() {
 : <a class="el" href="structbdm_1_1OptimizationParamType.html#af63368e6a0066a283a96cefa97e96451">bdm::OptimizationParamType</a>
 </li>
 <li>GetPoissonDRng()
-: <a class="el" href="classbdm_1_1Random.html#a338917b84fa0fbe47d474681a13930dc">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#aa02d561ddb3150f4ed6eb100c6874844">bdm::Random</a>
 </li>
 <li>GetPoissonRng()
-: <a class="el" href="classbdm_1_1Random.html#a5f02ea2c20de3ee6e4f35f92fdff4986">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#a49761d7270f95a05ebf19073a8f2496f">bdm::Random</a>
 </li>
 <li>GetPosition()
 : <a class="el" href="classbdm_1_1Agent.html#aa1951d683a208fc0c139554ce1a87316">bdm::Agent</a>
@@ -566,10 +584,10 @@ $(function() {
 , <a class="el" href="classbdm_1_1Scheduler.html#a1427cde330a40c7d982fb3636f156b1c">bdm::Scheduler</a>
 </li>
 <li>GetSimulationName()
-: <a class="el" href="classbdm_1_1CommandLineOptions.html#af7a2c6f120da94bbd9a5f07d36af3f6b">bdm::CommandLineOptions</a>
+: <a class="el" href="classbdm_1_1CommandLineOptions.html#a83a93d0f57bdec54a65b96fd17bcbc5e">bdm::CommandLineOptions</a>
 </li>
 <li>GetSimulationStepsFromBackup()
-: <a class="el" href="classbdm_1_1SimulationBackup.html#ae39680ee434349e02016bedb6f165dd8">bdm::SimulationBackup</a>
+: <a class="el" href="classbdm_1_1SimulationBackup.html#af9d96d3967dd37addf13caaffd329e88">bdm::SimulationBackup</a>
 </li>
 <li>GetSize()
 : <a class="el" href="classbdm_1_1memory__manager__detail_1_1NumaPoolAllocator.html#a966c82746b7f14294ac1e1334217031e">bdm::memory_manager_detail::NumaPoolAllocator</a>
@@ -654,7 +672,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1Agent.html#adcd10db730dc105aef49d7a4295d93fe">bdm::Agent</a>
 , <a class="el" href="classbdm_1_1AgentPointer.html#ad657eec8d9e19adf7dfd3255298992bd">bdm::AgentPointer&lt; TAgent &gt;</a>
 , <a class="el" href="structbdm_1_1CellDivisionEvent.html#abe3ea201c59503c0755b8a1cc74f36c0">bdm::CellDivisionEvent</a>
-, <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#aed677641042db8f04e6f4b6592d6be94">bdm::detail::ExtractUid</a>
+, <a class="el" href="structbdm_1_1detail_1_1ExtractUid.html#a519de0746c7c9e9e5943b981ae5ffc9a">bdm::detail::ExtractUid</a>
 , <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteBifurcationEvent.html#afc56660ff762f7d96097c85f496d22d0">bdm::neuroscience::NeuriteBifurcationEvent</a>
 , <a class="el" href="structbdm_1_1neuroscience_1_1NeuriteBranchingEvent.html#a7a3043c431f500dc9730a949c2a0f4bb">bdm::neuroscience::NeuriteBranchingEvent</a>
 , <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a7f667455822c0b24e22a8b024ca47357">bdm::neuroscience::NeuriteElement</a>
@@ -670,7 +688,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1AgentPointer.html#a59ebd64db2b8a4a6bd809caace98f87c">bdm::AgentPointer&lt; TAgent &gt;</a>
 </li>
 <li>GetUniformRng()
-: <a class="el" href="classbdm_1_1Random.html#a8f5604d26c61555326fe7c332db8ef3b">bdm::Random</a>
+: <a class="el" href="classbdm_1_1Random.html#ab793f0ee44ed5d61059f1779c6ed7114">bdm::Random</a>
 </li>
 <li>GetUniqueName()
 : <a class="el" href="classbdm_1_1Simulation.html#adb375e6e8628519f06b8a9225edcd14f">bdm::Simulation</a>
@@ -741,7 +759,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1neuroscience_1_1NeuriteElement.html#a01827488ef5e8ab2b78fa3fa2601d366">bdm::neuroscience::NeuriteElement</a>
 </li>
 <li>Grid3D()
-: <a class="el" href="structbdm_1_1ModelInitializer.html#a0e76a0066c37a246526b0eab6af23041">bdm::ModelInitializer</a>
+: <a class="el" href="structbdm_1_1ModelInitializer.html#a135814d233043076037a78a7df98a146">bdm::ModelInitializer</a>
 </li>
 <li>GridNeighborMutex()
 : <a class="el" href="classbdm_1_1UniformGridEnvironment_1_1GridNeighborMutexBuilder_1_1GridNeighborMutex.html#abca8ea0866a496d6b7b4f4c68e6f8d7d">bdm::UniformGridEnvironment::GridNeighborMutexBuilder::GridNeighborMutex</a>
@@ -750,7 +768,7 @@ $(function() {
 : <a class="el" href="classbdm_1_1ResourceManager.html#a745e359b03d69ac6f395e703cd55c2f2">bdm::ResourceManager</a>
 </li>
 <li>GrowthDivision()
-: <a class="el" href="classbdm_1_1GrowthDivision.html#a84a2c3ea07a9c6e3156516ddcda284b1">bdm::GrowthDivision</a>
+: <a class="el" href="classbdm_1_1GrowthDivision.html#a497ba294e1ad305c6558bfb8791d7ad7">bdm::GrowthDivision</a>
 </li>
 </ul>
 </div><!-- contents -->

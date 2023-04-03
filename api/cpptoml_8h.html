@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -114,22 +114,22 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                    \</div>
-<div class="line">    if (config-&gt;contains_qualified(config_key)) {                      \</div>
-<div class="line">      auto value = config-&gt;get_array_of&lt;<a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&gt;(config_key);           \</div>
-<div class="line">      if (value) {                                                     \</div>
-<div class="line">        auto vector = *value;                                          \</div>
-<div class="line">        if (vector.size() == variable.size()) {                        \</div>
-<div class="line">          for (uint64_t i = 0; i &lt; vector.size(); i++) {               \</div>
-<div class="line">            variable[i] = vector[i];                                   \</div>
-<div class="line">          }                                                            \</div>
-<div class="line">        } <span class="keywordflow">else</span> {                                                       \</div>
-<div class="line">          Log::Fatal(<span class="stringliteral">&quot;cpptoml parameter parsing&quot;</span>,                      \</div>
-<div class="line">                     <span class="stringliteral">&quot;An error occured during parameter parsing of (&quot;</span>, \</div>
-<div class="line">                     config_key, <span class="stringliteral">&quot;. Array dimensions do not match&quot;</span>);   \</div>
-<div class="line">        }                                                              \</div>
-<div class="line">      }                                                                \</div>
-<div class="line">    }                                                                  \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                     \</div>
+<div class="line">    if (config-&gt;contains_qualified(config_key)) {                       \</div>
+<div class="line">      auto value = config-&gt;get_array_of&lt;<a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&gt;(config_key);            \</div>
+<div class="line">      if (value) {                                                      \</div>
+<div class="line">        auto vector = *value;                                           \</div>
+<div class="line">        if (vector.size() == variable.size()) {                         \</div>
+<div class="line">          for (uint64_t i = 0; i &lt; vector.size(); i++) {                \</div>
+<div class="line">            variable[i] = vector[i];                                    \</div>
+<div class="line">          }                                                             \</div>
+<div class="line">        } <span class="keywordflow">else</span> {                                                        \</div>
+<div class="line">          Log::Fatal(<span class="stringliteral">&quot;cpptoml parameter parsing&quot;</span>,                       \</div>
+<div class="line">                     <span class="stringliteral">&quot;An error occurred during parameter parsing of (&quot;</span>, \</div>
+<div class="line">                     config_key, <span class="stringliteral">&quot;. Array dimensions do not match&quot;</span>);    \</div>
+<div class="line">        }                                                               \</div>
+<div class="line">      }                                                                 \</div>
+<div class="line">    }                                                                   \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="cpptoml_8h_source.html#l00028">28</a> of file <a class="el" href="cpptoml_8h_source.html">cpptoml.h</a>.</p>

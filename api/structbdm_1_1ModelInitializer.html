@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -102,16 +102,70 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5dddd0c0b20b67293e2c7e4d73a79565"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
 <tr class="memitem:a5dddd0c0b20b67293e2c7e4d73a79565"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a5dddd0c0b20b67293e2c7e4d73a79565">CreateAgentsInSphereRndm</a> (const <a class="el" href="namespacebdm.html#aa28f3ebc0dd42426ea75f69448b2e8eb">Real3</a> &amp;center, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> radius, uint64_t num_agents, Function agent_builder)</td></tr>
 <tr class="separator:a5dddd0c0b20b67293e2c7e4d73a79565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe4e9b78e6502fbfacaeedba6f6435d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#abe4e9b78e6502fbfacaeedba6f6435d9">DefineSubstance</a> (size_t substance_id, const std::string &amp;substance_name, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> diffusion_coeff, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> decay_constant, int resolution=10)</td></tr>
-<tr class="separator:abe4e9b78e6502fbfacaeedba6f6435d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7ac30001eac5417836f4159efab19fa"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:ac7ac30001eac5417836f4159efab19fa"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#ac7ac30001eac5417836f4159efab19fa">InitializeSubstance</a> (size_t substance_id, F function)</td></tr>
-<tr class="separator:ac7ac30001eac5417836f4159efab19fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348efabb8768916160e275d91bbef51e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a348efabb8768916160e275d91bbef51e">DefineSubstance</a> (int substance_id, const std::string &amp;substance_name, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> diffusion_coeff, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> decay_constant, int resolution=10, const std::vector&lt; <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> &gt; &amp;binding_coefficients={}, const std::vector&lt; int &gt; &amp;binding_substances={})</td></tr>
+<tr class="separator:a348efabb8768916160e275d91bbef51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677d37ce7b3a651ed607be02fd69675a"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a677d37ce7b3a651ed607be02fd69675a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a677d37ce7b3a651ed607be02fd69675a">InitializeSubstance</a> (int substance_id, F function)</td></tr>
+<tr class="separator:a677d37ce7b3a651ed607be02fd69675a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16792dcd99faebd693123422ea0b9f04"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1ModelInitializer.html#a16792dcd99faebd693123422ea0b9f04">AddBoundaryConditions</a> (int substance_id, <a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">BoundaryConditionType</a> bc_type, std::unique_ptr&lt; <a class="el" href="classbdm_1_1BoundaryCondition.html">BoundaryCondition</a> &gt; bc)</td></tr>
+<tr class="separator:a16792dcd99faebd693123422ea0b9f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00035">35</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00036">36</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a16792dcd99faebd693123422ea0b9f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16792dcd99faebd693123422ea0b9f04">&#9670;&nbsp;</a></span>AddBoundaryConditions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void bdm::ModelInitializer::AddBoundaryConditions </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>substance_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">BoundaryConditionType</a>&#160;</td>
+          <td class="paramname"><em>bc_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classbdm_1_1BoundaryCondition.html">BoundaryCondition</a> &gt;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the boundary condition for the specified substance. Transfers the ownership of the boundary condition to the diffusion grid. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">substance_id</td><td>The substance identifier </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bc_type</td><td>The boundary condition type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bc</td><td>The boundary condition </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00412">412</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+
+</div>
+</div>
 <a id="a55b8beb55d0cf47d8d583e4f1c8d2aa4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55b8beb55d0cf47d8d583e4f1c8d2aa4">&#9670;&nbsp;</a></span>CreateAgents()</h2>
 
@@ -156,7 +210,7 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00122">122</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00123">123</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +272,7 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00335">335</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00336">336</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +323,7 @@ template&lt;typename Function &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates agents with random positions on a sphere and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. The agents' positions are uniformly distributed accross the surface. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. Algorithm: Knop, 1970, 10.1145/362349.362377 (doi).</p>
+<p>Creates agents with random positions on a sphere and adds them to the <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a>. The agents' positions are uniformly distributed across the surface. <a class="el" href="classbdm_1_1Agent.html" title="Contains code required by all agents.">Agent</a> creation is parallelized. Algorithm: Knop, 1970, 10.1145/362349.362377 (doi).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>Center of the sphere </td></tr>
@@ -280,7 +334,7 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00305">305</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00306">306</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +441,7 @@ ModelInitializer::CreateAgentsOnSurface(f, {}, -100, 100, 10, -100,
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00214">214</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00215">215</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +540,7 @@ ModelInitializer::CreateAgentsOnSurfaceRndm(f, {}, -100, 100, -100,
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00274">274</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00275">275</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -555,12 +609,12 @@ template&lt;typename Function &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00151">151</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00152">152</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
-<a id="abe4e9b78e6502fbfacaeedba6f6435d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4e9b78e6502fbfacaeedba6f6435d9">&#9670;&nbsp;</a></span>DefineSubstance()</h2>
+<a id="a348efabb8768916160e275d91bbef51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348efabb8768916160e275d91bbef51e">&#9670;&nbsp;</a></span>DefineSubstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +625,7 @@ template&lt;typename Function &gt; </div>
         <tr>
           <td class="memname">void bdm::ModelInitializer::DefineSubstance </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>substance_id</em>, </td>
         </tr>
         <tr>
@@ -596,7 +650,19 @@ template&lt;typename Function &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>resolution</em> = <code>10</code>&#160;</td>
+          <td class="paramname"><em>resolution</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>binding_coefficients</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>binding_substances</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -618,11 +684,13 @@ template&lt;typename Function &gt; </div>
     <tr><td class="paramdir">[in]</td><td class="paramname">diffusion_coeff</td><td>The diffusion coefficient </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">decay_constant</td><td>The decay constant </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>The resolution of the diffusion grid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">binding_coefficients</td><td>The binding coefficients of the depleting substances </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">binding_substances</td><td>The depleting substances </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8cc_source.html#l00023">23</a> of file <a class="el" href="model__initializer_8cc_source.html">model_initializer.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8cc_source.html#l00024">24</a> of file <a class="el" href="model__initializer_8cc_source.html">model_initializer.cc</a>.</p>
 
 </div>
 </div>
@@ -678,7 +746,7 @@ pos){ return Cell(pos); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00092">92</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00093">93</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
@@ -734,12 +802,12 @@ return Cell(pos); });
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00053">53</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00054">54</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>
-<a id="ac7ac30001eac5417836f4159efab19fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7ac30001eac5417836f4159efab19fa">&#9670;&nbsp;</a></span>InitializeSubstance()</h2>
+<a id="a677d37ce7b3a651ed607be02fd69675a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677d37ce7b3a651ed607be02fd69675a">&#9670;&nbsp;</a></span>InitializeSubstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -752,7 +820,7 @@ template&lt;typename F &gt; </div>
         <tr>
           <td class="memname">static void bdm::ModelInitializer::InitializeSubstance </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>substance_id</em>, </td>
         </tr>
         <tr>
@@ -774,7 +842,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00395">395</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__initializer_8h_source.html#l00400">400</a> of file <a class="el" href="model__initializer_8h_source.html">model_initializer.h</a>.</p>
 
 </div>
 </div>

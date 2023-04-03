@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class implements a progress bar that can be used to track the progress of a simulation.  
+ <a href="classbdm_1_1ProgressBar.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for bdm::ProgressBar:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbdm_1_1ProgressBar__coll__graph.svg" width="247" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -89,28 +98,44 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2da22ee3caffe25f67de55c5d211d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ab2da22ee3caffe25f67de55c5d211d55">PrintProgressBar</a> (std::ostream &amp;out=std::cout)</td></tr>
 <tr class="memdesc:ab2da22ee3caffe25f67de55c5d211d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the progress bar.  <a href="classbdm_1_1ProgressBar.html#ab2da22ee3caffe25f67de55c5d211d55">More...</a><br /></td></tr>
 <tr class="separator:ab2da22ee3caffe25f67de55c5d211d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3beea51de3f625ac89e77c74b82e4fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#a3beea51de3f625ac89e77c74b82e4fec">SetTimeUnit</a> (const std::string &amp;time_unit)</td></tr>
+<tr class="separator:a3beea51de3f625ac89e77c74b82e4fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae2af71e47dc972b7aea530c3f77a3709"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ae2af71e47dc972b7aea530c3f77a3709">total_steps_</a></td></tr>
+<tr class="memitem:ab40763eb954a051906861ef13b0a53de"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ab40763eb954a051906861ef13b0a53de">time_unit_</a> = &quot;s&quot;</td></tr>
+<tr class="memdesc:ab40763eb954a051906861ef13b0a53de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time unit string for elapsed and remaining time.  <a href="classbdm_1_1ProgressBar.html#ab40763eb954a051906861ef13b0a53de">More...</a><br /></td></tr>
+<tr class="separator:ab40763eb954a051906861ef13b0a53de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2af71e47dc972b7aea530c3f77a3709"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ae2af71e47dc972b7aea530c3f77a3709">total_steps_</a> = 0</td></tr>
 <tr class="memdesc:ae2af71e47dc972b7aea530c3f77a3709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of steps to be executed.  <a href="classbdm_1_1ProgressBar.html#ae2af71e47dc972b7aea530c3f77a3709">More...</a><br /></td></tr>
 <tr class="separator:ae2af71e47dc972b7aea530c3f77a3709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea79c9572e9a09ec773747740999480c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#aea79c9572e9a09ec773747740999480c">executed_steps_</a></td></tr>
+<tr class="memitem:aea79c9572e9a09ec773747740999480c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#aea79c9572e9a09ec773747740999480c">executed_steps_</a> = 0</td></tr>
 <tr class="memdesc:aea79c9572e9a09ec773747740999480c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of steps that have already been executed.  <a href="classbdm_1_1ProgressBar.html#aea79c9572e9a09ec773747740999480c">More...</a><br /></td></tr>
 <tr class="separator:aea79c9572e9a09ec773747740999480c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e2c299ee14e729f86fd05c406665b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ab6e2c299ee14e729f86fd05c406665b6">start_time_</a></td></tr>
+<tr class="memitem:ab6e2c299ee14e729f86fd05c406665b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ab6e2c299ee14e729f86fd05c406665b6">start_time_</a> = 0</td></tr>
 <tr class="memdesc:ab6e2c299ee14e729f86fd05c406665b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp when to when the progress bar was initialized.  <a href="classbdm_1_1ProgressBar.html#ab6e2c299ee14e729f86fd05c406665b6">More...</a><br /></td></tr>
 <tr class="separator:ab6e2c299ee14e729f86fd05c406665b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43c595ce02d348a4a377f52741cd4c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ad43c595ce02d348a4a377f52741cd4c5">first_iter_</a></td></tr>
+<tr class="memitem:a4f48c8497a9fe9888d27571c769c1539"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#a4f48c8497a9fe9888d27571c769c1539">n_terminal_chars_</a> = 0</td></tr>
+<tr class="separator:a4f48c8497a9fe9888d27571c769c1539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a47edaaf3073e10dcba04b1e33cbae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#a03a47edaaf3073e10dcba04b1e33cbae">time_conversion_factor_</a> = 1000</td></tr>
+<tr class="memdesc:a03a47edaaf3073e10dcba04b1e33cbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable for conversion of time units (e.g. 1000 for ms to s).  <a href="classbdm_1_1ProgressBar.html#a03a47edaaf3073e10dcba04b1e33cbae">More...</a><br /></td></tr>
+<tr class="separator:a03a47edaaf3073e10dcba04b1e33cbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43c595ce02d348a4a377f52741cd4c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#ad43c595ce02d348a4a377f52741cd4c5">first_iter_</a> = true</td></tr>
 <tr class="separator:ad43c595ce02d348a4a377f52741cd4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5604d468641bb101fb41933704632a13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#a5604d468641bb101fb41933704632a13">n_digits_time_</a></td></tr>
-<tr class="separator:a5604d468641bb101fb41933704632a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9c1f9bf85fec924d20b21c070cfdb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#a1d9c1f9bf85fec924d20b21c070cfdb2">write_to_file_</a></td></tr>
+<tr class="memitem:a1d9c1f9bf85fec924d20b21c070cfdb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ProgressBar.html#a1d9c1f9bf85fec924d20b21c070cfdb2">write_to_file_</a> = false</td></tr>
 <tr class="separator:a1d9c1f9bf85fec924d20b21c070cfdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00023">23</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+<div class="textblock"><p>This class implements a progress bar that can be used to track the progress of a simulation. </p>
+<p>The progress bar is printed to the terminal and looks like this: 100% [====================] 1000/1000 0.0s</p>
+<p>The progress bar is updated every time the function <code>Step</code> is called in the scheduler.</p>
+<p>The progress bar is not visible if the simulation output is written to a file.</p>
+<p>Relevant parameters:</p><ul>
+<li><code><a class="el" href="structbdm_1_1Param.html#aac2fca5bc42fc214173d5ec72600e2ee">Param::progress_bar_time_unit</a></code> (default: "s")</li>
+<li><code><a class="el" href="structbdm_1_1Param.html#abe0924267efce453fa148905ee8d7d70">Param::use_progress_bar</a></code> (default: false) </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00040">40</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a971f7da38210f698f553c9a4cb4f3b11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a971f7da38210f698f553c9a4cb4f3b11">&#9670;&nbsp;</a></span>ProgressBar() <span class="overload">[1/2]</span></h2>
@@ -127,7 +152,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00024">24</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00036">36</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
 
 </div>
 </div>
@@ -136,6 +161,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bdm::ProgressBar::ProgressBar </td>
@@ -145,9 +173,14 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00026">26</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00038">38</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
 
 </div>
 </div>
@@ -170,7 +203,28 @@ Private Attributes</h2></td></tr>
 
 <p>Prints the progress bar. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00036">36</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00043">43</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
+
+</div>
+</div>
+<a id="a3beea51de3f625ac89e77c74b82e4fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3beea51de3f625ac89e77c74b82e4fec">&#9670;&nbsp;</a></span>SetTimeUnit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::ProgressBar::SetTimeUnit </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>time_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the time unit (and the conversion factor) for elapsed and remaining time. </p>
+
+<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00123">123</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
 
 </div>
 </div>
@@ -192,7 +246,7 @@ Private Attributes</h2></td></tr>
 
 <p>Inceases the counter <code>executed_steps_</code> by <code>steps</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00034">34</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8cc_source.html#l00041">41</a> of file <a class="el" href="progress__bar_8cc_source.html">progress_bar.cc</a>.</p>
 
 </div>
 </div>
@@ -207,7 +261,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t bdm::ProgressBar::executed_steps_</td>
+          <td class="memname">uint64_t bdm::ProgressBar::executed_steps_ = 0</td>
         </tr>
       </table>
   </td>
@@ -219,7 +273,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of steps that have already been executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00028">28</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00047">47</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
 
 </div>
 </div>
@@ -233,7 +287,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::ProgressBar::first_iter_</td>
+          <td class="memname">bool bdm::ProgressBar::first_iter_ = true</td>
         </tr>
       </table>
   </td>
@@ -242,14 +296,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Boolean variable to print certain informatoin only once in the first iteration. </p>
+<p>Boolean variable to print certain information only once in the first iteration. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00033">33</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00057">57</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
 
 </div>
 </div>
-<a id="a5604d468641bb101fb41933704632a13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5604d468641bb101fb41933704632a13">&#9670;&nbsp;</a></span>n_digits_time_</h2>
+<a id="a4f48c8497a9fe9888d27571c769c1539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f48c8497a9fe9888d27571c769c1539">&#9670;&nbsp;</a></span>n_terminal_chars_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +312,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int bdm::ProgressBar::n_digits_time_</td>
+          <td class="memname">size_t bdm::ProgressBar::n_terminal_chars_ = 0</td>
         </tr>
       </table>
   </td>
@@ -269,7 +323,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Keep track of space that is needed for printing elapsed and remaining time for nicer output. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00036">36</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00052">52</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +337,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t bdm::ProgressBar::start_time_</td>
+          <td class="memname">int64_t bdm::ProgressBar::start_time_ = 0</td>
         </tr>
       </table>
   </td>
@@ -295,7 +349,59 @@ Private Attributes</h2></td></tr>
 
 <p>Timestamp when to when the progress bar was initialized. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00030">30</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00049">49</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+
+</div>
+</div>
+<a id="a03a47edaaf3073e10dcba04b1e33cbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a47edaaf3073e10dcba04b1e33cbae">&#9670;&nbsp;</a></span>time_conversion_factor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> bdm::ProgressBar::time_conversion_factor_ = 1000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable for conversion of time units (e.g. 1000 for ms to s). </p>
+
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00054">54</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+
+</div>
+</div>
+<a id="ab40763eb954a051906861ef13b0a53de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40763eb954a051906861ef13b0a53de">&#9670;&nbsp;</a></span>time_unit_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string bdm::ProgressBar::time_unit_ = &quot;s&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Time unit string for elapsed and remaining time. </p>
+
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00043">43</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +415,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t bdm::ProgressBar::total_steps_</td>
+          <td class="memname">uint64_t bdm::ProgressBar::total_steps_ = 0</td>
         </tr>
       </table>
   </td>
@@ -321,7 +427,7 @@ Private Attributes</h2></td></tr>
 
 <p>Total number of steps to be executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00026">26</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00045">45</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
 
 </div>
 </div>
@@ -335,7 +441,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool bdm::ProgressBar::write_to_file_</td>
+          <td class="memname">bool bdm::ProgressBar::write_to_file_ = false</td>
         </tr>
       </table>
   </td>
@@ -344,9 +450,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Variable to detect if we write to a file or not. <a class="el" href="classbdm_1_1ProgressBar.html">ProgressBar</a> is not visible if we write to file. </p>
+<p>Variable to detect if we write to a file or not. <a class="el" href="classbdm_1_1ProgressBar.html" title="This class implements a progress bar that can be used to track the progress of a simulation.">ProgressBar</a> is not visible if we write to file. </p>
 
-<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00039">39</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="progress__bar_8h_source.html#l00060">60</a> of file <a class="el" href="progress__bar_8h_source.html">progress_bar.h</a>.</p>
 
 </div>
 </div>

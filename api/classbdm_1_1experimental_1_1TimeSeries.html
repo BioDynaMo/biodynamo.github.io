@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -109,6 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7b94fa8fe1ed913138cc9a0597c94d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2489406c350fe205c5fd82ac5bf73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#a8c2489406c350fe205c5fd82ac5bf73b">Add</a> (const <a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> &amp;ts, const std::string &amp;suffix)</td></tr>
 <tr class="separator:a8c2489406c350fe205c5fd82ac5bf73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401c60cdd2f1cfa611964b32d7dd3616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#a401c60cdd2f1cfa611964b32d7dd3616">AddTransformedData</a> (const std::string &amp;old_id, const std::string &amp;transformed_id, const <a class="el" href="classbdm_1_1experimental_1_1DataTransformer.html">DataTransformer</a> &amp;transformer)</td></tr>
+<tr class="separator:a401c60cdd2f1cfa611964b32d7dd3616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebdbed3263473deb7834b9352e32226a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html#aebdbed3263473deb7834b9352e32226a">Update</a> ()</td></tr>
 <tr class="memdesc:aebdbed3263473deb7834b9352e32226a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new data point to all time series with a collector.  <a href="classbdm_1_1experimental_1_1TimeSeries.html#aebdbed3263473deb7834b9352e32226a">More...</a><br /></td></tr>
 <tr class="separator:aebdbed3263473deb7834b9352e32226a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +160,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class simplifies the collection of time series data during a simulation. Every entry has an id and data arrays storing x-values, y-values, y-error-low, and y-error-high. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00033">33</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00123">123</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af0e0280fbcc5b532a0dca65492d42694"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0e0280fbcc5b532a0dca65492d42694">&#9670;&nbsp;</a></span>TimeSeries() <span class="overload">[1/3]</span></h2>
@@ -201,7 +203,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00227">227</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00292">292</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -229,7 +231,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00230">230</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00295">295</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -267,7 +269,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add new entry with data that is not collected during a simulation. This function can for example be used to add experimental data which can be later plotted together with the simulation results using a <code><a class="el" href="classbdm_1_1experimental_1_1LineGraph.html">LineGraph</a></code>. </p><div class="fragment"><div class="line">time_series.Add(<span class="stringliteral">&quot;experimental-data&quot;</span>, {0, 1, 2}, {3, 4, 5});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00346">346</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00444">444</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -309,7 +311,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00382">382</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00480">480</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -357,7 +359,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00362">362</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00460">460</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +390,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Add the entries of another <a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> instance to this one. Let's assume that <code>ts</code> contains the entries: "entry1" and "entry2" and that suffix is set to "-from-ts". In this scenario the following entries will be added to this object: "entry1-from-ts", "entry2-from-ts" </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00324">324</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00422">422</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -430,7 +432,7 @@ Private Attributes</h2></td></tr>
 <div class="line">ts-&gt;AddCollector(<span class="stringliteral">&quot;num-agents&quot;</span>, get_num_agents);</div>
 </div><!-- fragment --><p> The optional x-value collector allows to modify the x-values. If no x-value collector is given, x-values will correspond to the simulation time. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00246">246</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00311">311</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -479,7 +481,44 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
 <div class="line">};</div>
 <div class="line">ts-&gt;AddCollector(<span class="stringliteral">&quot;infected_rate&quot;</span>, infected_rate);</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00258">258</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00323">323</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+
+</div>
+</div>
+<a id="a401c60cdd2f1cfa611964b32d7dd3616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401c60cdd2f1cfa611964b32d7dd3616">&#9670;&nbsp;</a></span>AddTransformedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::experimental::TimeSeries::AddTransformedData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>old_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>transformed_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classbdm_1_1experimental_1_1DataTransformer.html">DataTransformer</a> &amp;&#160;</td>
+          <td class="paramname"><em>transformer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the data of an existing entry and adds it to this object. During the copy process, the data is transformed using the given <code>transformer</code>. This allows to e.g. convert the x-values from simulation time to simulation steps, or vice versa. A common use case are linear or log scaling of the x-axis. </p>
+
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00335">335</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -555,7 +594,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
 
 <p>Computes the mean squared error between <code>ts1</code> and <code>ts2</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00078">78</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00143">143</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -577,7 +616,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
 
 <p>Returns whether a times series with given id exists in this object. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00400">400</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00498">498</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -597,7 +636,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00408">408</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00506">506</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -617,7 +656,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00424">424</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00522">522</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -637,7 +676,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00418">418</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00516">516</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -657,7 +696,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00413">413</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00511">511</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -678,7 +717,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
 
 <p>Print all time series entry names to stdout. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00430">430</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00528">528</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -718,7 +757,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
 <p>Restore a saved <a class="el" href="classbdm_1_1experimental_1_1TimeSeries.html">TimeSeries</a> object. Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classbdm_1_1experimental_1_1TimeSeries.html#af0e0280fbcc5b532a0dca65492d42694">TimeSeries</a>* ts_restored;</div>
 <div class="line"><a class="code" href="classbdm_1_1experimental_1_1TimeSeries.html#a8cb811674ed5a32bf5ffc97eb8dae868">TimeSeries::Load</a>(<span class="stringliteral">&quot;path/ts.root&quot;</span>, &amp;ts_restored);</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00128">128</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00193">193</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -781,7 +820,7 @@ The benefit (in comparison with <code>AddCollector</code> using a function point
 <code>y-error-high: {2, 5}</code> <br  />
 Of course any other merger can be used too: e.g. mean + stddev </p><dl class="section see"><dt>See also</dt><dd><a href="https://root.cern/doc/master/namespaceTMath.html">https://root.cern/doc/master/namespaceTMath.html</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00133">133</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00198">198</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -801,7 +840,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00240">240</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00305">305</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -829,7 +868,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00234">234</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00299">299</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -851,7 +890,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Saves a root file to disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00437">437</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00535">535</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -873,7 +912,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Saves a json representation to disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00442">442</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00540">540</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -892,7 +931,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00405">405</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00503">503</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -913,7 +952,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 
 <p>Adds a new data point to all time series with a collector. </p>
 
-<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00270">270</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8cc_source.html#l00368">368</a> of file <a class="el" href="time__series_8cc_source.html">time_series.cc</a>.</p>
 
 </div>
 </div>
@@ -938,7 +977,7 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00198">198</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time__series_8h_source.html#l00297">297</a> of file <a class="el" href="time__series_8h_source.html">time_series.h</a>.</p>
 
 </div>
 </div>
@@ -949,8 +988,8 @@ Of course any other merger can be used too: e.g. mean + stddev </p><dl class="se
 </div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_af0e0280fbcc5b532a0dca65492d42694"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#af0e0280fbcc5b532a0dca65492d42694">bdm::experimental::TimeSeries::TimeSeries</a></div><div class="ttdeci">TimeSeries()</div></div>
 <div class="ttc" id="anamespacebdm_html_a5d750b9d542e662433fabcd83e85ca8b"><div class="ttname"><a href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">bdm::real_t</a></div><div class="ttdeci">double real_t</div><div class="ttdef"><b>Definition:</b> <a href="real__t_8h_source.html#l00021">real_t.h:21</a></div></div>
-<div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_a3a0863902eb150ba1721ed9b26979e63"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#a3a0863902eb150ba1721ed9b26979e63">bdm::experimental::TimeSeries::Merge</a></div><div class="ttdeci">static void Merge(TimeSeries *merged, const std::vector&lt; TimeSeries &gt; &amp;time_series, const std::function&lt; void(const std::vector&lt; real_t &gt; &amp;, real_t *, real_t *, real_t *)&gt; &amp;merger)</div><div class="ttdef"><b>Definition:</b> <a href="time__series_8cc_source.html#l00133">time_series.cc:133</a></div></div>
-<div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_a8cb811674ed5a32bf5ffc97eb8dae868"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#a8cb811674ed5a32bf5ffc97eb8dae868">bdm::experimental::TimeSeries::Load</a></div><div class="ttdeci">static void Load(const std::string &amp;full_filepath, TimeSeries **restored)</div><div class="ttdef"><b>Definition:</b> <a href="time__series_8cc_source.html#l00128">time_series.cc:128</a></div></div>
+<div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_a3a0863902eb150ba1721ed9b26979e63"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#a3a0863902eb150ba1721ed9b26979e63">bdm::experimental::TimeSeries::Merge</a></div><div class="ttdeci">static void Merge(TimeSeries *merged, const std::vector&lt; TimeSeries &gt; &amp;time_series, const std::function&lt; void(const std::vector&lt; real_t &gt; &amp;, real_t *, real_t *, real_t *)&gt; &amp;merger)</div><div class="ttdef"><b>Definition:</b> <a href="time__series_8cc_source.html#l00198">time_series.cc:198</a></div></div>
+<div class="ttc" id="aclassbdm_1_1experimental_1_1TimeSeries_html_a8cb811674ed5a32bf5ffc97eb8dae868"><div class="ttname"><a href="classbdm_1_1experimental_1_1TimeSeries.html#a8cb811674ed5a32bf5ffc97eb8dae868">bdm::experimental::TimeSeries::Load</a></div><div class="ttdeci">static void Load(const std::string &amp;full_filepath, TimeSeries **restored)</div><div class="ttdef"><b>Definition:</b> <a href="time__series_8cc_source.html#l00193">time_series.cc:193</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

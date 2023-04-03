@@ -161,7 +161,7 @@ Usage:
                                 that point. (default: )
   -b, --backup FILE             Periodically create full simulation backup to
                                 the specified file. NOTA BENE: File will be
-                                overriden if it exists. (default: )
+                                overridden if it exists. (default: )
   -c, --config FILE             The TOML or JSON configuration that should be
                                 used. The JSON file must be in JSON merge
                                 patch format
@@ -189,7 +189,7 @@ Simulation <span class="token function">simulation</span><span class="token punc
 <span class="token keyword">auto</span> parser <span class="token operator">=</span> opts<span class="token punctuation">.</span><span class="token function">Parse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">uint64_t</span> num_cells <span class="token operator">=</span> parser<span class="token punctuation">.</span><span class="token generic-function"><span class="token function">Get</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token keyword">uint64_t</span><span class="token operator">></span></span></span><span class="token punctuation">(</span><span class="token string">"num-cells"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>The <code class="language-text">AddOption</code> function can be broken down as follows: The template parameter
-(<code class="language-text">uint64_t</code>) specifies what value type your option should be. The first fucntion
+(<code class="language-text">uint64_t</code>) specifies what value type your option should be. The first function
 parameter is for the flag abbreviation (in this case -n and --num-cells) The
 second parameter is the name of your command line option The third parameter is
 the description (as shown in the help dialogue) The fourth parameter is the

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e72c235fa58ae68daf827af21bce855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a5e72c235fa58ae68daf827af21bce855">ForEachNeighbor</a> (<a class="el" href="classbdm_1_1Functor.html">Functor</a>&lt; void, <a class="el" href="classbdm_1_1Agent.html">Agent</a> *, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> &gt; &amp;lambda, const <a class="el" href="namespacebdm.html#aa28f3ebc0dd42426ea75f69448b2e8eb">Real3</a> &amp;query_position, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> squared_radius) override</td></tr>
 <tr class="separator:a5e72c235fa58ae68daf827af21bce855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3260feaee5976638118a80531ae8bc69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a3260feaee5976638118a80531ae8bc69">AddAgent</a> (<a class="el" href="classbdm_1_1Agent.html">Agent</a> *new_agent) override</td></tr>
+<tr class="memdesc:a3260feaee5976638118a80531ae8bc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the agent to the simulation (threadsafe, takes ownership). Note that we avoid the use of smart pointers for the agents to avoid unnecessary overhead during construction of the agent (performance argument). <code>usage example</code>:  <a href="classbdm_1_1InPlaceExecutionContext.html#a3260feaee5976638118a80531ae8bc69">More...</a><br /></td></tr>
 <tr class="separator:a3260feaee5976638118a80531ae8bc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5aee1c480e90c60f297d74300b5359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a6a5aee1c480e90c60f297d74300b5359">RemoveAgent</a> (const <a class="el" href="classbdm_1_1AgentUid.html">AgentUid</a> &amp;uid) override</td></tr>
 <tr class="separator:a6a5aee1c480e90c60f297d74300b5359"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,8 +135,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9a3114d11c3913f6049d518b4090f573"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a9a3114d11c3913f6049d518b4090f573">IsNeighborCacheValid</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> query_squared_radius)</td></tr>
-<tr class="separator:a9a3114d11c3913f6049d518b4090f573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30754a6d8db4180eef7e6de3d344d461"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a30754a6d8db4180eef7e6de3d344d461">IsNeighborCacheValid</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> query_squared_radius) const</td></tr>
+<tr class="separator:a30754a6d8db4180eef7e6de3d344d461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a698224e1b13ef457e8b13b9cd66f75e2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a698224e1b13ef457e8b13b9cd66f75e2">AddAgentsToRm</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts)</td></tr>
 <tr class="separator:a698224e1b13ef457e8b13b9cd66f75e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190695d5385933c0885aca63baa74ce2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a190695d5385933c0885aca63baa74ce2">RemoveAgentsFromRm</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts)</td></tr>
@@ -271,6 +272,20 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Adds the agent to the simulation (threadsafe, takes ownership). Note that we avoid the use of smart pointers for the agents to avoid unnecessary overhead during construction of the agent (performance argument). <code>usage example</code>: </p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span>* ctxt = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>()-&gt;<a class="code" href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">GetExecutionContext</a>();</div>
+<div class="line">ctxt-&gt;<a class="code" href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">AddAgent</a>(<span class="keyword">new</span> Agent());</div>
+</div><!-- fragment --><p> or </p><div class="fragment"><div class="line"><span class="keyword">auto</span>* ctxt = <a class="code" href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">Simulation::GetActive</a>()-&gt;<a class="code" href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">GetExecutionContext</a>();</div>
+<div class="line"><span class="keyword">auto</span>* agent = <span class="keyword">new</span> Agent();</div>
+<div class="line"><span class="comment">// modify agent</span></div>
+<div class="line">ctxt-&gt;AddAgent(agent);</div>
+</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_agent</td><td>The agent to be added to the simulation </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">bdm::ExecutionContext</a>.</p>
 
@@ -554,8 +569,8 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 
 </div>
 </div>
-<a id="a9a3114d11c3913f6049d518b4090f573"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a3114d11c3913f6049d518b4090f573">&#9670;&nbsp;</a></span>IsNeighborCacheValid()</h2>
+<a id="a30754a6d8db4180eef7e6de3d344d461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30754a6d8db4180eef7e6de3d344d461">&#9670;&nbsp;</a></span>IsNeighborCacheValid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,7 +583,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td>
           <td class="paramname"><em>query_squared_radius</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1103,6 +1118,9 @@ NB: Invalidates references and pointers to agents. </p>
 <li>core/execution_context/<a class="el" href="in__place__exec__ctxt_8cc_source.html">in_place_exec_ctxt.cc</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a822bbddd7d781895b9b1dada4fd88b52"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">bdm::ExecutionContext::AddAgent</a></div><div class="ttdeci">virtual void AddAgent(Agent *new_agent)=0</div><div class="ttdoc">Adds the agent to the simulation (threadsafe, takes ownership). Note that we avoid the use of smart p...</div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_a2ad613deed59648ce27d60e731637c48"><div class="ttname"><a href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">bdm::Simulation::GetExecutionContext</a></div><div class="ttdeci">ExecutionContext * GetExecutionContext()</div><div class="ttdoc">Returns a thread local execution context.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00273">simulation.cc:273</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00070">simulation.cc:70</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

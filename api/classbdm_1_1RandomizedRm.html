@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classbdm_1_1RandomizedRm-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">bdm::RandomizedRm&lt; TBaseRm &gt; Class Template Reference</div>  </div>
@@ -93,10 +94,12 @@ Collaboration diagram for bdm::RandomizedRm&lt; TBaseRm &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a28e86e01cd5e9cbe89dc99e8842f1344"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#a28e86e01cd5e9cbe89dc99e8842f1344">RandomizedRm</a> (TRootIOCtor *r)</td></tr>
 <tr class="separator:a28e86e01cd5e9cbe89dc99e8842f1344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3dfc81950b54020468dbf8a0737a3b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#aa3dfc81950b54020468dbf8a0737a3b2">RandomizedRm</a> ()</td></tr>
-<tr class="separator:aa3dfc81950b54020468dbf8a0737a3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5512f0f0701a794f649683b724762e05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#a5512f0f0701a794f649683b724762e05">RandomizedRm</a> (bool auto_randomize=true)</td></tr>
+<tr class="separator:a5512f0f0701a794f649683b724762e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb2f22f1f39231fc0bba1ddac529156"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#acfb2f22f1f39231fc0bba1ddac529156">~RandomizedRm</a> ()</td></tr>
 <tr class="separator:acfb2f22f1f39231fc0bba1ddac529156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad772b0a17932766c993af5c24997a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#aad772b0a17932766c993af5c24997a0e">RandomizeAgentsOrder</a> ()</td></tr>
+<tr class="separator:aad772b0a17932766c993af5c24997a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1dd8336a9055343eef859e085a6114c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#ae1dd8336a9055343eef859e085a6114c">EndOfIteration</a> () override</td></tr>
 <tr class="separator:ae1dd8336a9055343eef859e085a6114c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -104,13 +107,19 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aeb6315cca0c9e6913c8dcc6801d8afc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#aeb6315cca0c9e6913c8dcc6801d8afc4">BDM_CLASS_DEF_NV</a> (<a class="el" href="classbdm_1_1RandomizedRm.html">RandomizedRm</a>, 1)</td></tr>
 <tr class="separator:aeb6315cca0c9e6913c8dcc6801d8afc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a91a79fa8e29dbe3bc923edf7652c819e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RandomizedRm.html#a91a79fa8e29dbe3bc923edf7652c819e">auto_randomize_</a> = true</td></tr>
+<tr class="separator:a91a79fa8e29dbe3bc923edf7652c819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TBaseRm&gt;<br />
 class bdm::RandomizedRm&lt; TBaseRm &gt;</h3>
 
+<p>A specialized implementation of <a class="el" href="classbdm_1_1ResourceManager.html">ResourceManager</a> that randomly shuffles the order of agents to enable looping over agents randomly. By default, the random reordering happens at the end of every iterations (during the teardown operation), but this can be turned off by initializing the <code>auto_randomize_</code> variable with <code>false</code>. To manually trigger the random reordering of agents, you can call the <code>RandomizeAgentsOrder</code> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00027">27</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00033">33</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a28e86e01cd5e9cbe89dc99e8842f1344"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28e86e01cd5e9cbe89dc99e8842f1344">&#9670;&nbsp;</a></span>RandomizedRm() <span class="overload">[1/2]</span></h2>
@@ -138,34 +147,29 @@ template&lt;typename TBaseRm &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00029">29</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00035">35</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
 
 </div>
 </div>
-<a id="aa3dfc81950b54020468dbf8a0737a3b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3dfc81950b54020468dbf8a0737a3b2">&#9670;&nbsp;</a></span>RandomizedRm() <span class="overload">[2/2]</span></h2>
+<a id="a5512f0f0701a794f649683b724762e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5512f0f0701a794f649683b724762e05">&#9670;&nbsp;</a></span>RandomizedRm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TBaseRm &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classbdm_1_1RandomizedRm.html">bdm::RandomizedRm</a>&lt; TBaseRm &gt;::<a class="el" href="classbdm_1_1RandomizedRm.html">RandomizedRm</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>auto_randomize</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00051">51</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
 
 </div>
 </div>
@@ -257,7 +261,52 @@ template&lt;typename TBaseRm &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00062">62</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00095">95</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
+
+</div>
+</div>
+<a id="aad772b0a17932766c993af5c24997a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad772b0a17932766c993af5c24997a0e">&#9670;&nbsp;</a></span>RandomizeAgentsOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TBaseRm &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbdm_1_1RandomizedRm.html">bdm::RandomizedRm</a>&lt; TBaseRm &gt;::RandomizeAgentsOrder</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00072">72</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a91a79fa8e29dbe3bc923edf7652c819e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a79fa8e29dbe3bc923edf7652c819e">&#9670;&nbsp;</a></span>auto_randomize_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TBaseRm &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classbdm_1_1RandomizedRm.html">bdm::RandomizedRm</a>&lt; TBaseRm &gt;::auto_randomize_ = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="randomized__rm_8h_source.html#l00045">45</a> of file <a class="el" href="randomized__rm_8h_source.html">randomized_rm.h</a>.</p>
 
 </div>
 </div>

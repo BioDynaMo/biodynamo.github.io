@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ $(function() {
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classbdm_1_1PvtiWriter.html#aaec938976089deaa38f19464f8cc4f60">   57</a></span>&#160;  std::string <a class="code" href="classbdm_1_1PvtiWriter.html#aaec938976089deaa38f19464f8cc4f60">ArrayToString</a>(T* data, <span class="keywordtype">int</span> length) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classbdm_1_1PvtiWriter.html#ae9c535a8fce35c869d30bea67bc68ebf">   57</a></span>&#160;  std::string <a class="code" href="classbdm_1_1PvtiWriter.html#ae9c535a8fce35c869d30bea67bc68ebf">ArrayToString</a>(T* data, <span class="keywordtype">int</span> length)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::stringstream stream;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    stream &lt;&lt; data[0];</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; length; ++i) {</div>
@@ -153,9 +153,9 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1VtiWriter_html_aa8c79dee207005291fe8e2361100753c"><div class="ttname"><a href="classbdm_1_1VtiWriter.html#aa8c79dee207005291fe8e2361100753c">bdm::VtiWriter::SetWholeExtent</a></div><div class="ttdeci">void SetWholeExtent(const int *whole_extent)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__vti__writer_8cc_source.html#l00033">parallel_vti_writer.cc:33</a></div></div>
 <div class="ttc" id="astructbdm_1_1ParallelVtiWriter_html"><div class="ttname"><a href="structbdm_1_1ParallelVtiWriter.html">bdm::ParallelVtiWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="parallel__vti__writer_8h_source.html#l00068">parallel_vti_writer.h:68</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
+<div class="ttc" id="aclassbdm_1_1PvtiWriter_html_ae9c535a8fce35c869d30bea67bc68ebf"><div class="ttname"><a href="classbdm_1_1PvtiWriter.html#ae9c535a8fce35c869d30bea67bc68ebf">bdm::PvtiWriter::ArrayToString</a></div><div class="ttdeci">std::string ArrayToString(T *data, int length) const</div><div class="ttdef"><b>Definition:</b> <a href="parallel__vti__writer_8h_source.html#l00057">parallel_vti_writer.h:57</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtiWriter_html_ad55c0664c5ba1e29a47813a77ea14ca8"><div class="ttname"><a href="classbdm_1_1VtiWriter.html#ad55c0664c5ba1e29a47813a77ea14ca8">bdm::VtiWriter::VtiWriter</a></div><div class="ttdeci">VtiWriter()</div></div>
 <div class="ttc" id="aclassbdm_1_1VtiWriter_html_a34c8bc5435d38641aad46bf87d6374f3"><div class="ttname"><a href="classbdm_1_1VtiWriter.html#a34c8bc5435d38641aad46bf87d6374f3">bdm::VtiWriter::WritePrimaryElementAttributes</a></div><div class="ttdeci">void WritePrimaryElementAttributes(std::ostream &amp;os, vtkIndent indent) override</div><div class="ttdef"><b>Definition:</b> <a href="parallel__vti__writer_8cc_source.html#l00038">parallel_vti_writer.cc:38</a></div></div>
-<div class="ttc" id="aclassbdm_1_1PvtiWriter_html_aaec938976089deaa38f19464f8cc4f60"><div class="ttname"><a href="classbdm_1_1PvtiWriter.html#aaec938976089deaa38f19464f8cc4f60">bdm::PvtiWriter::ArrayToString</a></div><div class="ttdeci">std::string ArrayToString(T *data, int length)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__vti__writer_8h_source.html#l00057">parallel_vti_writer.h:57</a></div></div>
 <div class="ttc" id="aclassbdm_1_1PvtiWriter_html"><div class="ttname"><a href="classbdm_1_1PvtiWriter.html">bdm::PvtiWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="parallel__vti__writer_8h_source.html#l00048">parallel_vti_writer.h:48</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtiWriter_html_a4b1ac2aa5a9b52fdc946e1c5a35d9ade"><div class="ttname"><a href="classbdm_1_1VtiWriter.html#a4b1ac2aa5a9b52fdc946e1c5a35d9ade">bdm::VtiWriter::vtkTypeMacro</a></div><div class="ttdeci">vtkTypeMacro(VtiWriter, vtkXMLImageDataWriter)</div></div>
 <div class="ttc" id="aclassbdm_1_1PvtiWriter_html_af7f6079a3afd7b1586db1cfa7210aeb4"><div class="ttname"><a href="classbdm_1_1PvtiWriter.html#af7f6079a3afd7b1586db1cfa7210aeb4">bdm::PvtiWriter::Write</a></div><div class="ttdeci">void Write(const std::string &amp;folder, const std::string &amp;file_prefix, const std::array&lt; int, 6 &gt; &amp;whole_extent, const std::vector&lt; std::array&lt; int, 6 &gt;&gt; &amp;piece_extents, vtkImageData *img, VtiWriter *vti)</div><div class="ttdef"><b>Definition:</b> <a href="parallel__vti__writer_8cc_source.html#l00050">parallel_vti_writer.cc:50</a></div></div>

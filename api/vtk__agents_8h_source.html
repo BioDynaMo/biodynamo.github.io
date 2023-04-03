@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -122,8 +122,8 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classbdm_1_1VtkAgents.html#ae54fcfec6524fb15be457009eaa4862e">   52</a></span>&#160;  <a class="code" href="namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3ee">Shape</a> <a class="code" href="classbdm_1_1VtkAgents.html#ae54fcfec6524fb15be457009eaa4862e">shape_</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  TClass* <a class="code" href="classbdm_1_1VtkAgents.html#a7772ce616f70d267d06603f67a9cc0af">FindTClass</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1VtkAgents.html#a39d520d9848ea2571d5744b2dea74168">InitializeDataMembers</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                             std::vector&lt;std::string&gt;* data_members);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1VtkAgents.html#abcbbffa1e13c4c2e30d0f39a6cb4e7df">InitializeDataMembers</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* agent,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                             std::vector&lt;std::string&gt;* data_members) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1VtkAgents.html#a49544e642cbeef6c0a3829c85dcc6cfa">UpdateMappedDataArrays</a>(uint64_t tid, <span class="keyword">const</span> std::vector&lt;Agent*&gt;* agents,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                              uint64_t start, uint64_t end);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
@@ -150,10 +150,10 @@ $(function() {
 <div class="ttc" id="aagent_8h_html"><div class="ttname"><a href="agent_8h.html">agent.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_a3a8ae000f38614a6f9d1b182c9c9dcc3"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a3a8ae000f38614a6f9d1b182c9c9dcc3">bdm::VtkAgents::WriteToFile</a></div><div class="ttdeci">void WriteToFile(uint64_t step) const</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00146">vtk_agents.cc:146</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_a3174bebd7cf11f66334df37b5b33352b"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a3174bebd7cf11f66334df37b5b33352b">bdm::VtkAgents::~VtkAgents</a></div><div class="ttdeci">~VtkAgents()</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00105">vtk_agents.cc:105</a></div></div>
-<div class="ttc" id="aclassbdm_1_1VtkAgents_html_a39d520d9848ea2571d5744b2dea74168"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a39d520d9848ea2571d5744b2dea74168">bdm::VtkAgents::InitializeDataMembers</a></div><div class="ttdeci">void InitializeDataMembers(Agent *agent, std::vector&lt; std::string &gt; *data_members)</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00191">vtk_agents.cc:191</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_a7772ce616f70d267d06603f67a9cc0af"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a7772ce616f70d267d06603f67a9cc0af">bdm::VtkAgents::FindTClass</a></div><div class="ttdeci">TClass * FindTClass()</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00170">vtk_agents.cc:170</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_ae4ea6ccdf6ecfc90028efb166fa5c850"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#ae4ea6ccdf6ecfc90028efb166fa5c850">bdm::VtkAgents::GetTClass</a></div><div class="ttdeci">TClass * GetTClass()</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00120">vtk_agents.cc:120</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_afbc3c3bcfbbf592a35baf2ea074a3b6c"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#afbc3c3bcfbbf592a35baf2ea074a3b6c">bdm::VtkAgents::Update</a></div><div class="ttdeci">void Update(const std::vector&lt; Agent * &gt; *agents)</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00123">vtk_agents.cc:123</a></div></div>
+<div class="ttc" id="aclassbdm_1_1VtkAgents_html_abcbbffa1e13c4c2e30d0f39a6cb4e7df"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#abcbbffa1e13c4c2e30d0f39a6cb4e7df">bdm::VtkAgents::InitializeDataMembers</a></div><div class="ttdeci">void InitializeDataMembers(const Agent *agent, std::vector&lt; std::string &gt; *data_members) const</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00191">vtk_agents.cc:191</a></div></div>
 <div class="ttc" id="aclassbdm_1_1VtkAgents_html_a51175d064642cd4795ff6c9390a63a1c"><div class="ttname"><a href="classbdm_1_1VtkAgents.html#a51175d064642cd4795ff6c9390a63a1c">bdm::VtkAgents::VtkAgents</a></div><div class="ttdeci">VtkAgents(const char *type_name, vtkCPDataDescription *data_description)</div><div class="ttdef"><b>Definition:</b> <a href="vtk__agents_8cc_source.html#l00044">vtk_agents.cc:44</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

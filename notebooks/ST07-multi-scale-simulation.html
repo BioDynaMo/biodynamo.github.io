@@ -36,6 +36,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14637,21 +14638,44 @@ Multi-scale simulation means that simulated processes happen in different time-s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="o">%</span><span class="n">jsroot</span> <span class="n">on</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="o">%</span><span class="n">jsroot</span><span class="w"> </span><span class="n">on</span>
 <span class="n">gROOT</span><span class="o">-&gt;</span><span class="n">LoadMacro</span><span class="p">(</span><span class="s">"${BDMSYS}/etc/rootlogon.C"</span><span class="p">);</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>INFO: Created simulation object &#39;simulation&#39; with UniqueName=&#39;simulation&#39;.
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14671,23 +14695,23 @@ Multi-scale simulation means that simulated processes happen in different time-s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="k">struct</span> <span class="nc">TestOp</span> <span class="o">:</span> <span class="k">public</span> <span class="n">StandaloneOperationImpl</span> <span class="p">{</span>
-  <span class="n">BDM_OP_HEADER</span><span class="p">(</span><span class="n">TestOp</span><span class="p">);</span>
-  <span class="kt">void</span> <span class="nf">operator</span><span class="p">()()</span> <span class="k">override</span> <span class="p">{</span>
-    <span class="k">auto</span><span class="o">*</span> <span class="n">scheduler</span> <span class="o">=</span> <span class="n">Simulation</span><span class="o">::</span><span class="n">GetActive</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetScheduler</span><span class="p">();</span>
-    <span class="k">auto</span><span class="o">*</span> <span class="n">param</span> <span class="o">=</span> <span class="n">Simulation</span><span class="o">::</span><span class="n">GetActive</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetParam</span><span class="p">();</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Processing iteration "</span> 
-              <span class="o">&lt;&lt;</span> <span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">GetSimulatedSteps</span><span class="p">()</span> 
-              <span class="o">&lt;&lt;</span> <span class="s">" simulation time "</span>
-              <span class="o">&lt;&lt;</span> <span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">GetSimulatedSteps</span><span class="p">()</span> <span class="o">*</span> <span class="n">param</span><span class="o">-&gt;</span><span class="n">simulation_time_step</span>
-              <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> 
-  <span class="p">}</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">TestOp</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">StandaloneOperationImpl</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">BDM_OP_HEADER</span><span class="p">(</span><span class="n">TestOp</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">operator</span><span class="p">()()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">scheduler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Simulation</span><span class="o">::</span><span class="n">GetActive</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetScheduler</span><span class="p">();</span>
+<span class="w">    </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">param</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Simulation</span><span class="o">::</span><span class="n">GetActive</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetParam</span><span class="p">();</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"Processing iteration "</span><span class="w"> </span>
+<span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">GetSimulatedSteps</span><span class="p">()</span><span class="w"> </span>
+<span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">" simulation time "</span>
+<span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">GetSimulatedSteps</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">param</span><span class="o">-&gt;</span><span class="n">simulation_time_step</span>
+<span class="w">              </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">};</span>
 <span class="n">OperationRegistry</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">AddOperationImpl</span><span class="p">(</span>
-    <span class="s">"test_op"</span><span class="p">,</span> <span class="n">OpComputeTarget</span><span class="o">::</span><span class="n">kCpu</span><span class="p">,</span> <span class="k">new</span> <span class="n">TestOp</span><span class="p">());</span>
+<span class="w">    </span><span class="s">"test_op"</span><span class="p">,</span><span class="w"> </span><span class="n">OpComputeTarget</span><span class="o">::</span><span class="n">kCpu</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TestOp</span><span class="p">());</span>
 </pre></div>
 
      </div>
@@ -14700,13 +14724,13 @@ Multi-scale simulation means that simulated processes happen in different time-s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="k">auto</span> <span class="n">set_param</span> <span class="o">=</span> <span class="p">[](</span><span class="n">Param</span> <span class="o">*</span> <span class="n">param</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">param</span><span class="o">-&gt;</span><span class="n">simulation_time_step</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="k">auto</span><span class="w"> </span><span class="n">set_param</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[](</span><span class="n">Param</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">param</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">param</span><span class="o">-&gt;</span><span class="n">simulation_time_step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
 <span class="p">};</span>
-<span class="n">Simulation</span> <span class="nf">simulation</span><span class="p">(</span><span class="s">"my-simulation"</span><span class="p">,</span> <span class="n">set_param</span><span class="p">);</span>
+<span class="n">Simulation</span><span class="w"> </span><span class="n">simulation</span><span class="p">(</span><span class="s">"my-simulation"</span><span class="p">,</span><span class="w"> </span><span class="n">set_param</span><span class="p">);</span>
 </pre></div>
 
      </div>
@@ -14731,11 +14755,11 @@ Multi-scale simulation means that simulated processes happen in different time-s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="k">auto</span><span class="o">*</span> <span class="n">ctxt</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetExecutionContext</span><span class="p">();</span>
-<span class="n">ctxt</span><span class="o">-&gt;</span><span class="n">AddAgent</span><span class="p">(</span><span class="k">new</span> <span class="n">SphericalAgent</span><span class="p">());</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">ctxt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">simulation</span><span class="p">.</span><span class="n">GetExecutionContext</span><span class="p">();</span>
+<span class="n">ctxt</span><span class="o">-&gt;</span><span class="n">AddAgent</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">SphericalAgent</span><span class="p">());</span>
 </pre></div>
 
      </div>
@@ -14760,11 +14784,11 @@ Multi-scale simulation means that simulated processes happen in different time-s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="k">auto</span><span class="o">*</span> <span class="n">op1</span> <span class="o">=</span> <span class="n">NewOperation</span><span class="p">(</span><span class="s">"test_op"</span><span class="p">);</span>
-<span class="k">auto</span><span class="o">*</span> <span class="n">scheduler</span> <span class="o">=</span> <span class="n">simulation</span><span class="p">.</span><span class="n">GetScheduler</span><span class="p">();</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">op1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NewOperation</span><span class="p">(</span><span class="s">"test_op"</span><span class="p">);</span>
+<span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">scheduler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">simulation</span><span class="p">.</span><span class="n">GetScheduler</span><span class="p">();</span>
 <span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">ScheduleOp</span><span class="p">(</span><span class="n">op1</span><span class="p">);</span>
 </pre></div>
 
@@ -14785,12 +14809,12 @@ Multi-scale simulation means that simulated processes happen in different time-s
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
@@ -14799,6 +14823,37 @@ Multi-scale simulation means that simulated processes happen in different time-s
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Processing iteration 0 simulation time 0
+Processing iteration 1 simulation time 2
+Processing iteration 2 simulation time 4
+Processing iteration 3 simulation time 6
+Processing iteration 4 simulation time 8
+Processing iteration 5 simulation time 10
+Processing iteration 6 simulation time 12
+Processing iteration 7 simulation time 14
+Processing iteration 8 simulation time 16
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14814,21 +14869,46 @@ An operation with frequency one will be executed at every time step; an operatio
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="n">op1</span><span class="o">-&gt;</span><span class="n">frequency_</span><span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="n">op1</span><span class="o">-&gt;</span><span class="n">frequency_</span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
 <span class="n">scheduler</span><span class="o">-&gt;</span><span class="n">Simulate</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Processing iteration 9 simulation time 18
+Processing iteration 12 simulation time 24
+Processing iteration 15 simulation time 30
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>

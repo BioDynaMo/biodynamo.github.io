@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -138,10 +138,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9cc5bd4c7f77a5630c192de35f7a6d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3dde54c495081b92759234bb458d23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#ad3dde54c495081b92759234bb458d23b">SetDetermineSimSize</a> (bool value)</td></tr>
 <tr class="separator:ad3dde54c495081b92759234bb458d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bda7ea10721eddbc5e146c2942e6bda"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a3bda7ea10721eddbc5e146c2942e6bda">GetBoxLength</a> ()</td></tr>
-<tr class="separator:a3bda7ea10721eddbc5e146c2942e6bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543161cd996c8435f8163f6fc4dc5062"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a543161cd996c8435f8163f6fc4dc5062">GetBoxLength</a> () const</td></tr>
+<tr class="separator:a543161cd996c8435f8163f6fc4dc5062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b61c0f432d2941987292f8805b69bc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a6b61c0f432d2941987292f8805b69bc5">SquaredEuclideanDistance</a> (const <a class="el" href="namespacebdm.html#aa28f3ebc0dd42426ea75f69448b2e8eb">Real3</a> &amp;pos1, const <a class="el" href="namespacebdm.html#aa28f3ebc0dd42426ea75f69448b2e8eb">Real3</a> &amp;pos2) const</td></tr>
-<tr class="memdesc:a6b61c0f432d2941987292f8805b69bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the squared euclidian distance between two points in 3D.  <a href="classbdm_1_1UniformGridEnvironment.html#a6b61c0f432d2941987292f8805b69bc5">More...</a><br /></td></tr>
+<tr class="memdesc:a6b61c0f432d2941987292f8805b69bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the squared euclidean distance between two points in 3D.  <a href="classbdm_1_1UniformGridEnvironment.html#a6b61c0f432d2941987292f8805b69bc5">More...</a><br /></td></tr>
 <tr class="separator:a6b61c0f432d2941987292f8805b69bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a732cc08d11f903a0cd95e9d63d689436"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1UniformGridEnvironment.html#a732cc08d11f903a0cd95e9d63d689436">WithinSquaredEuclideanDistance</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> squared_radius, const <a class="el" href="namespacebdm.html#aa28f3ebc0dd42426ea75f69448b2e8eb">Real3</a> &amp;pos1, const <a class="el" href="namespacebdm.html#aa28f3ebc0dd42426ea75f69448b2e8eb">Real3</a> &amp;pos2) const</td></tr>
 <tr class="separator:a732cc08d11f903a0cd95e9d63d689436"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -762,8 +762,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a3bda7ea10721eddbc5e146c2942e6bda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bda7ea10721eddbc5e146c2942e6bda">&#9670;&nbsp;</a></span>GetBoxLength()</h2>
+<a id="a543161cd996c8435f8163f6fc4dc5062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543161cd996c8435f8163f6fc4dc5062">&#9670;&nbsp;</a></span>GetBoxLength()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,7 +775,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">int32_t bdm::UniformGridEnvironment::GetBoxLength </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1338,7 +1338,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Calculates the squared euclidian distance between two points in 3D. </p>
+<p>Calculates the squared euclidean distance between two points in 3D. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pos1</td><td>Position of the first point </td></tr>

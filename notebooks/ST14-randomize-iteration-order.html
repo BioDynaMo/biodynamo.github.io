@@ -36,6 +36,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14636,21 +14637,44 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="o">%</span><span class="n">jsroot</span> <span class="n">on</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="o">%</span><span class="n">jsroot</span><span class="w"> </span><span class="n">on</span>
 <span class="n">gROOT</span><span class="o">-&gt;</span><span class="n">LoadMacro</span><span class="p">(</span><span class="s">"${BDMSYS}/etc/rootlogon.C"</span><span class="p">);</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>INFO: Created simulation object &#39;simulation&#39; with UniqueName=&#39;simulation&#39;.
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14674,16 +14698,16 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="kt">void</span> <span class="nf">AddAgents</span><span class="p">(</span><span class="n">ResourceManager</span><span class="o">*</span> <span class="n">rm</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">rm</span><span class="o">-&gt;</span><span class="n">AddAgent</span><span class="p">(</span><span class="k">new</span> <span class="n">SphericalAgent</span><span class="p">());</span>
-    <span class="p">}</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">AddAgents</span><span class="p">(</span><span class="n">ResourceManager</span><span class="o">*</span><span class="w"> </span><span class="n">rm</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">rm</span><span class="o">-&gt;</span><span class="n">AddAgent</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">SphericalAgent</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-<span class="k">auto</span> <span class="n">print_uid</span> <span class="o">=</span> <span class="p">[](</span><span class="n">Agent</span><span class="o">*</span> <span class="n">a</span><span class="p">)</span> <span class="p">{</span> 
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span><span class="o">-&gt;</span><span class="n">GetUid</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">print_uid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[](</span><span class="n">Agent</span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="o">-&gt;</span><span class="n">GetUid</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></div>
 
@@ -14704,7 +14728,7 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
 <li>takes a simulation object as input</li>
 <li>adds four agents</li>
 <li>calls <code>print_uid</code> for each agent</li>
-<li>print a seperator so we can distinguish the output of the two different time steps</li>
+<li>print a separator so we can distinguish the output of the two different time steps</li>
 <li>advances to the next time step</li>
 <li>calls <code>print_uid</code> for each agent again</li>
 </ol>
@@ -14717,17 +14741,17 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="kt">void</span> <span class="nf">Experiment</span><span class="p">(</span><span class="n">Simulation</span><span class="o">*</span> <span class="n">sim</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">auto</span><span class="o">*</span> <span class="n">rm</span> <span class="o">=</span> <span class="n">sim</span><span class="o">-&gt;</span><span class="n">GetResourceManager</span><span class="p">();</span>
-    <span class="n">AddAgents</span><span class="p">(</span><span class="n">rm</span><span class="p">);</span>
-    
-    <span class="n">rm</span><span class="o">-&gt;</span><span class="n">ForEachAgent</span><span class="p">(</span><span class="n">print_uid</span><span class="p">);</span>
-    <span class="n">rm</span><span class="o">-&gt;</span><span class="n">EndOfIteration</span><span class="p">();</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"-----------------"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="n">rm</span><span class="o">-&gt;</span><span class="n">ForEachAgent</span><span class="p">(</span><span class="n">print_uid</span><span class="p">);</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">Experiment</span><span class="p">(</span><span class="n">Simulation</span><span class="o">*</span><span class="w"> </span><span class="n">sim</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sim</span><span class="o">-&gt;</span><span class="n">GetResourceManager</span><span class="p">();</span>
+<span class="w">    </span><span class="n">AddAgents</span><span class="p">(</span><span class="n">rm</span><span class="p">);</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="n">rm</span><span class="o">-&gt;</span><span class="n">ForEachAgent</span><span class="p">(</span><span class="n">print_uid</span><span class="p">);</span>
+<span class="w">    </span><span class="n">rm</span><span class="o">-&gt;</span><span class="n">EndOfIteration</span><span class="p">();</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"-----------------"</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">rm</span><span class="o">-&gt;</span><span class="n">ForEachAgent</span><span class="p">(</span><span class="n">print_uid</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -14748,12 +14772,12 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">Experiment</span><span class="p">(</span><span class="o">&amp;</span><span class="n">simulation</span><span class="p">)</span>
@@ -14762,6 +14786,37 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>0-0
+1-0
+2-0
+3-0
+-----------------
+0-0
+1-0
+2-0
+3-0
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14781,11 +14836,11 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="n">Simulation</span> <span class="nf">simulation</span><span class="p">(</span><span class="s">"my-sim"</span><span class="p">);</span>
-<span class="k">auto</span><span class="o">*</span> <span class="n">rand_rm</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RandomizedRm</span><span class="o">&lt;</span><span class="n">ResourceManager</span><span class="o">&gt;</span><span class="p">();</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="n">Simulation</span><span class="w"> </span><span class="n">simulation</span><span class="p">(</span><span class="s">"my-sim"</span><span class="p">);</span>
+<span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">rand_rm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">RandomizedRm</span><span class="o">&lt;</span><span class="n">ResourceManager</span><span class="o">&gt;</span><span class="p">();</span>
 <span class="n">simulation</span><span class="p">.</span><span class="n">SetResourceManager</span><span class="p">(</span><span class="n">rand_rm</span><span class="p">);</span>
 </pre></div>
 
@@ -14806,12 +14861,12 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">Experiment</span><span class="p">(</span><span class="o">&amp;</span><span class="n">simulation</span><span class="p">)</span>
@@ -14820,6 +14875,37 @@ In this tutorial we show how to randomize the order that BioDynaMo uses in each 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>0-0
+1-0
+2-0
+3-0
+-----------------
+2-0
+3-0
+0-0
+1-0
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>

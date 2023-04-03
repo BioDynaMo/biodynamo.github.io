@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['opcomputetarget_4118',['OpComputeTarget',['../namespacebdm.html#a341896036b949773cdf5caf208c39ae2',1,'bdm']]],
-  ['optype_4119',['OpType',['../namespacebdm.html#a7130f71511d1f77a6db33b8cc28c9f4e',1,'bdm']]]
+  ['numericalodesolver_4263',['NumericalODESolver',['../structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471',1,'bdm::Param']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numericalodesolver_4117',['NumericalODESolver',['../structbdm_1_1Param.html#a25533a4a1e5c4d04006263f443b30471',1,'bdm::Param']]]
+  ['mappeddataarraymode_4262',['MappedDataArrayMode',['../structbdm_1_1Param.html#a75736f24ae2459dbe25691890107797b',1,'bdm::Param']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['threadsafetymechanism_4122',['ThreadSafetyMechanism',['../structbdm_1_1Param.html#a338ac6f09819f7b64f3b2af01b8cb5bc',1,'bdm::Param']]]
+  ['shape_4266',['Shape',['../namespacebdm.html#a3037f55bcb7f13fc1580dfb578dec3ee',1,'bdm']]],
+  ['structureidentifierswc_4267',['StructureIdentifierSWC',['../namespacebdm_1_1neuroscience.html#ab24ead0292a1633822e549955609c016',1,'bdm::neuroscience']]]
 ];

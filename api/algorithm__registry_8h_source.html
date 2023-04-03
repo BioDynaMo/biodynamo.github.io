@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -128,16 +128,13 @@ $(function() {
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">auto</span> ret =</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="structbdm_1_1experimental_1_1AlgorithmRegistry.html#a751085485caf297dc2bad1d7f6155e26">AlgorithmRegistry::GetInstance</a>()-&gt;<a class="code" href="structbdm_1_1experimental_1_1AlgorithmRegistry.html#a531999314e1b3924400d2b07b5ea3c4a">GetAlgorithm</a>(opt_params-&gt;<a class="code" href="structbdm_1_1OptimizationParam.html#ae9f3d2dc7e8f442e16e8c884524a0a1d">algorithm</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (ret == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace experimental</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace bdm</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}  <span class="comment">// namespace experimental</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif  // CORE_MULTI_SIMULATION_ALGORITHM_ALGORITHM_REGISTRY_H_</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif  // CORE_MULTI_SIMULATION_ALGORITHM_ALGORITHM_REGISTRY_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructbdm_1_1OptimizationParam_html_ae9f3d2dc7e8f442e16e8c884524a0a1d"><div class="ttname"><a href="structbdm_1_1OptimizationParam.html#ae9f3d2dc7e8f442e16e8c884524a0a1d">bdm::OptimizationParam::algorithm</a></div><div class="ttdeci">std::string algorithm</div><div class="ttdef"><b>Definition:</b> <a href="optimization__param_8h_source.html#l00038">optimization_param.h:38</a></div></div>
 <div class="ttc" id="astructbdm_1_1experimental_1_1AlgorithmRegistry_html_aba5524a1c05bbac5872d3cd92c657d18"><div class="ttname"><a href="structbdm_1_1experimental_1_1AlgorithmRegistry.html#aba5524a1c05bbac5872d3cd92c657d18">bdm::experimental::AlgorithmRegistry::algorithms_</a></div><div class="ttdeci">std::unordered_map&lt; std::string, Algorithm * &gt; algorithms_</div><div class="ttdoc">The map containing the algorithms; accessible by their name.</div><div class="ttdef"><b>Definition:</b> <a href="algorithm__registry_8h_source.html#l00054">algorithm_registry.h:54</a></div></div>

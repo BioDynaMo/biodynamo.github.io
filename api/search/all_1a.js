@@ -1,15 +1,21 @@
 var searchData=
 [
-  ['y_5faxis_5f_1903',['y_axis_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#adac2002a41320b8be6f3a43ed65949ef',1,'bdm::neuroscience::NeuriteElement']]],
-  ['y_5ferror_5fhigh_1904',['y_error_high',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#a103430cb9d03860088ca67d21eb07d0d',1,'bdm::experimental::TimeSeries::Data']]],
-  ['y_5ferror_5flow_1905',['y_error_low',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#af1367982cdd424fc0625f6ab5e1a98c0',1,'bdm::experimental::TimeSeries::Data']]],
-  ['y_5freducer_5fcollector_1906',['y_reducer_collector',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#a5f91abad416c04d4b41750fcb657197e',1,'bdm::experimental::TimeSeries::Data']]],
-  ['y_5fvalues_1907',['y_values',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#ae9d6eaa6edd09ab0fb9f886db1e9f4b1',1,'bdm::experimental::TimeSeries::Data']]],
-  ['ybf_1908',['YBF',['../euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;euler_grid.cc'],['../euler__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;euler_grid.cc'],['../runge__kutta__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'YBF():&#160;runge_kutta_grid.cc']]],
-  ['ycollector_1909',['ycollector',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#afad27a567c1f5b24e9eb11275227753e',1,'bdm::experimental::TimeSeries::Data']]],
-  ['ymax_1910',['ymax',['../structbdm_1_1UserDefinedDist.html#ad2754423b046579d12b229df7bb5aac8',1,'bdm::UserDefinedDist']]],
-  ['ymax_5f_1911',['ymax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#a561377b552a29e85192b08d5f5d84ef7',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
-  ['ymin_1912',['ymin',['../structbdm_1_1UserDefinedDist.html#a16e6894bf84c826bd458fe3368bb7250',1,'bdm::UserDefinedDist']]],
-  ['ymin_5f_1913',['ymin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#af6d47886e533b3287d1e3cb6c206a8a1',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
-  ['ypos_1914',['ypos',['../structbdm_1_1Aux.html#a70c041b5a7be05919644a533775f5fe9',1,'bdm::Aux']]]
+  ['y_5faxis_5f_1970',['y_axis_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#adac2002a41320b8be6f3a43ed65949ef',1,'bdm::neuroscience::NeuriteElement']]],
+  ['y_5ferror_5fhigh_1971',['y_error_high',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#a103430cb9d03860088ca67d21eb07d0d',1,'bdm::experimental::TimeSeries::Data']]],
+  ['y_5ferror_5fhigh_5fintercept_5f_1972',['y_error_high_intercept_',['../classbdm_1_1experimental_1_1LinearTransformer.html#a248632ddff21bb5a2bdaffa5f0d529c4',1,'bdm::experimental::LinearTransformer']]],
+  ['y_5ferror_5fhigh_5fslope_5f_1973',['y_error_high_slope_',['../classbdm_1_1experimental_1_1LinearTransformer.html#a6f5e1aa41c99c9bad6aa78794e010545',1,'bdm::experimental::LinearTransformer']]],
+  ['y_5ferror_5flow_1974',['y_error_low',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#af1367982cdd424fc0625f6ab5e1a98c0',1,'bdm::experimental::TimeSeries::Data']]],
+  ['y_5ferror_5flow_5fintercept_5f_1975',['y_error_low_intercept_',['../classbdm_1_1experimental_1_1LinearTransformer.html#a7e89a1f41cc9c57ca3a228b9a668d758',1,'bdm::experimental::LinearTransformer']]],
+  ['y_5ferror_5flow_5fslope_5f_1976',['y_error_low_slope_',['../classbdm_1_1experimental_1_1LinearTransformer.html#ac3c0041d677050ae651d270dd70c146d',1,'bdm::experimental::LinearTransformer']]],
+  ['y_5fintercept_5f_1977',['y_intercept_',['../classbdm_1_1experimental_1_1LinearTransformer.html#ace80b9e5a5067d5baa3fe7c3c5ba94b6',1,'bdm::experimental::LinearTransformer']]],
+  ['y_5freducer_5fcollector_1978',['y_reducer_collector',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#a5f91abad416c04d4b41750fcb657197e',1,'bdm::experimental::TimeSeries::Data']]],
+  ['y_5fslope_5f_1979',['y_slope_',['../classbdm_1_1experimental_1_1LinearTransformer.html#afb48a37a703f23ea758a70189eec5ce9',1,'bdm::experimental::LinearTransformer']]],
+  ['y_5fvalues_1980',['y_values',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#ae9d6eaa6edd09ab0fb9f886db1e9f4b1',1,'bdm::experimental::TimeSeries::Data']]],
+  ['ybf_1981',['YBF',['../runge__kutta__grid_8cc.html#a61399329cc3d9b2b7c5284558a5ad75e',1,'runge_kutta_grid.cc']]],
+  ['ycollector_1982',['ycollector',['../structbdm_1_1experimental_1_1TimeSeries_1_1Data.html#afad27a567c1f5b24e9eb11275227753e',1,'bdm::experimental::TimeSeries::Data']]],
+  ['ymax_1983',['ymax',['../structbdm_1_1UserDefinedDist.html#ad2754423b046579d12b229df7bb5aac8',1,'bdm::UserDefinedDist']]],
+  ['ymax_5f_1984',['ymax_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#a561377b552a29e85192b08d5f5d84ef7',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
+  ['ymin_1985',['ymin',['../structbdm_1_1UserDefinedDist.html#a16e6894bf84c826bd458fe3368bb7250',1,'bdm::UserDefinedDist']]],
+  ['ymin_5f_1986',['ymin_',['../structbdm_1_1Environment_1_1SimDimensionAndLargestAgentFunctor.html#af6d47886e533b3287d1e3cb6c206a8a1',1,'bdm::Environment::SimDimensionAndLargestAgentFunctor']]],
+  ['ypos_1987',['ypos',['../structbdm_1_1Aux.html#a70c041b5a7be05919644a533775f5fe9',1,'bdm::Aux']]]
 ];

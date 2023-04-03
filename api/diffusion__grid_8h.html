@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -68,13 +68,15 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">diffusion_grid.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -87,13 +89,13 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for diffusion_grid.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="diffusion__grid_8h__incl.svg" width="1584" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="diffusion__grid_8h__incl.svg" width="1504" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="diffusion__grid_8h__dep__incl.svg" width="4383" height="439"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="diffusion__grid_8h__dep__incl.svg" width="4438" height="439"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -101,6 +103,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1BoundaryCondition.html">bdm::BoundaryCondition</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements the boundary conditions. It is integrated into the diffusion grid as a smart pointer. The diffusion grid will call the <a class="el" href="classbdm_1_1BoundaryCondition.html#aef7e6708b62e957056da054bb148b464" title="Boundary condition for Neumann and Dirichlet boundary conditions.">Evaluate()</a> method of the boundary condition object for Neumann and Dirichlet boundary conditions.  <a href="classbdm_1_1BoundaryCondition.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ConstantBoundaryCondition.html">bdm::ConstantBoundaryCondition</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements constant boundary conditions (Dirichlet and Neumann). The value of the boundary condition is constant and independent of the position and time, i.e. u = const or du/dn = const on the boundary.  <a href="classbdm_1_1ConstantBoundaryCondition.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -108,6 +116,21 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebdm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html">bdm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac24fff4576502e21fb2410cb81bf85ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">bdm::BoundaryConditionType</a> { <a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baae5ef0e29a29b37b01a0aeff62ae90104">bdm::BoundaryConditionType::kDirichlet</a>, 
+<a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baade791ce2311b31ca59b431d3e4f516d0">bdm::BoundaryConditionType::kNeumann</a>, 
+<a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baa8d37b18cd320f7fbcf5529b8a61db463">bdm::BoundaryConditionType::kOpenBoundaries</a>, 
+<a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baac436ad25291b84b155a10c419c361986">bdm::BoundaryConditionType::kClosedBoundaries</a>
+ }</td></tr>
+<tr class="memdesc:ac24fff4576502e21fb2410cb81bf85ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available boundary conditions.  <a href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">More...</a><br /></td></tr>
+<tr class="separator:ac24fff4576502e21fb2410cb81bf85ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ff0f65ba6a6e7ed463956080102089"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a56ff0f65ba6a6e7ed463956080102089">bdm::InteractionMode</a> { <a class="el" href="namespacebdm.html#a56ff0f65ba6a6e7ed463956080102089a6fd344adbf87c289e8e08b3eb2a0f712">bdm::InteractionMode::kAdditive</a> = 0, 
+<a class="el" href="namespacebdm.html#a56ff0f65ba6a6e7ed463956080102089a601bf5851ffd28f5e6219c0f1945c8d6">bdm::InteractionMode::kExponential</a> = 1, 
+<a class="el" href="namespacebdm.html#a56ff0f65ba6a6e7ed463956080102089ab9cf6caab917a7db802a8752be2e9710">bdm::InteractionMode::kLogistic</a> = 2
+ }</td></tr>
+<tr class="separator:a56ff0f65ba6a6e7ed463956080102089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

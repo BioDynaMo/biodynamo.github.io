@@ -36,6 +36,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14637,21 +14638,44 @@ In this tutorial we want to explore different behavior options to control if a n
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="o">%</span><span class="n">jsroot</span> <span class="n">on</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="o">%</span><span class="n">jsroot</span><span class="w"> </span><span class="n">on</span>
 <span class="n">gROOT</span><span class="o">-&gt;</span><span class="n">LoadMacro</span><span class="p">(</span><span class="s">"${BDMSYS}/etc/rootlogon.C"</span><span class="p">);</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>INFO: Created simulation object &#39;simulation&#39; with UniqueName=&#39;simulation&#39;.
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14671,11 +14695,11 @@ In this tutorial we want to explore different behavior options to control if a n
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="n">StatelessBehavior</span> <span class="nf">print_behavior</span><span class="p">([](</span><span class="n">Agent</span><span class="o">*</span> <span class="n">agent</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"  has print behavior"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="n">StatelessBehavior</span><span class="w"> </span><span class="nf">print_behavior</span><span class="p">([](</span><span class="n">Agent</span><span class="o">*</span><span class="w"> </span><span class="n">agent</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"  has print behavior"</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="p">});</span>
 </pre></div>
 
@@ -14697,8 +14721,8 @@ We expect that the following output is created.</p>
 
 <pre><code>mother: 
   has print behavior</code></pre>
-<p>Afterwards we print a seperator <code>-------</code> to indicate cell division, divide the mother cell and run the behaviors of daughter 1 and daughter 2.
-By definition the original mother cell turns into daugther 1 and the new agent becomes daughter 2.</p>
+<p>Afterwards we print a separator <code>-------</code> to indicate cell division, divide the mother cell and run the behaviors of daughter 1 and daughter 2.
+By definition the original mother cell turns into daughter 1 and the new agent becomes daughter 2.</p>
 
 </div>
 </div>
@@ -14708,21 +14732,21 @@ By definition the original mother cell turns into daugther 1 and the new agent b
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-c++"><pre><span></span><span class="kt">void</span> <span class="nf">Experiment</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Simulation</span> <span class="n">sim</span><span class="p">(</span><span class="s">"my-simulation"</span><span class="p">);</span>
-    <span class="k">auto</span><span class="o">*</span> <span class="n">mother</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cell</span><span class="p">();</span>
-    <span class="n">mother</span><span class="o">-&gt;</span><span class="n">AddBehavior</span><span class="p">(</span><span class="n">print_behavior</span><span class="p">.</span><span class="n">NewCopy</span><span class="p">());</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mother: "</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="n">mother</span><span class="o">-&gt;</span><span class="n">RunBehaviors</span><span class="p">();</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"---------------------"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="k">auto</span><span class="o">*</span> <span class="n">daughter2</span> <span class="o">=</span> <span class="n">mother</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"mother = daughter 1: "</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="n">mother</span><span class="o">-&gt;</span><span class="n">RunBehaviors</span><span class="p">();</span> <span class="c1">// mother = daughter 1</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"daughter 2: "</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="n">daughter2</span><span class="o">-&gt;</span><span class="n">RunBehaviors</span><span class="p">();</span>
+<div class=" highlight hl-c++"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">Experiment</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Simulation</span><span class="w"> </span><span class="n">sim</span><span class="p">(</span><span class="s">"my-simulation"</span><span class="p">);</span>
+<span class="w">    </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">mother</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Cell</span><span class="p">();</span>
+<span class="w">    </span><span class="n">mother</span><span class="o">-&gt;</span><span class="n">AddBehavior</span><span class="p">(</span><span class="n">print_behavior</span><span class="p">.</span><span class="n">NewCopy</span><span class="p">());</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"mother: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">mother</span><span class="o">-&gt;</span><span class="n">RunBehaviors</span><span class="p">();</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"---------------------"</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">daughter2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mother</span><span class="o">-&gt;</span><span class="n">Divide</span><span class="p">();</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"mother = daughter 1: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">mother</span><span class="o">-&gt;</span><span class="n">RunBehaviors</span><span class="p">();</span><span class="w"> </span><span class="c1">// mother = daughter 1</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"daughter 2: "</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">daughter2</span><span class="o">-&gt;</span><span class="n">RunBehaviors</span><span class="p">();</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -14743,12 +14767,12 @@ By definition the original mother cell turns into daugther 1 and the new agent b
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">Experiment</span><span class="p">();</span>
@@ -14757,6 +14781,34 @@ By definition the original mother cell turns into daugther 1 and the new agent b
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>mother: 
+  has print behavior
+---------------------
+mother = daughter 1: 
+  has print behavior
+daughter 2: 
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14773,12 +14825,12 @@ By definition the original mother cell turns into daugther 1 and the new agent b
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">print_behavior</span><span class="p">.</span><span class="n">AlwaysCopyToNew</span><span class="p">();</span>
@@ -14788,6 +14840,35 @@ By definition the original mother cell turns into daugther 1 and the new agent b
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>mother: 
+  has print behavior
+---------------------
+mother = daughter 1: 
+  has print behavior
+daughter 2: 
+  has print behavior
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14804,12 +14885,12 @@ By definition the original mother cell turns into daugther 1 and the new agent b
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">print_behavior</span><span class="p">.</span><span class="n">AlwaysCopyToNew</span><span class="p">();</span>
@@ -14820,6 +14901,34 @@ By definition the original mother cell turns into daugther 1 and the new agent b
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>mother: 
+  has print behavior
+---------------------
+mother = daughter 1: 
+daughter 2: 
+  has print behavior
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14836,12 +14945,12 @@ By definition the original mother cell turns into daugther 1 and the new agent b
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">print_behavior</span><span class="p">.</span><span class="n">NeverCopyToNew</span><span class="p">();</span>
@@ -14852,6 +14961,34 @@ By definition the original mother cell turns into daugther 1 and the new agent b
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>mother: 
+  has print behavior
+---------------------
+mother = daughter 1: 
+  has print behavior
+daughter 2: 
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14867,12 +15004,12 @@ For each event we can specify if the behavior should be copied to the new, or re
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-c++"><pre><span></span><span class="n">print_behavior</span><span class="p">.</span><span class="n">CopyToNewIf</span><span class="p">({</span><span class="n">CellDivisionEvent</span><span class="o">::</span><span class="n">kUid</span><span class="p">});</span>
@@ -14883,6 +15020,34 @@ For each event we can specify if the behavior should be copied to the new, or re
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>mother: 
+  has print behavior
+---------------------
+mother = daughter 1: 
+daughter 2: 
+  has print behavior
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>

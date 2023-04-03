@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -86,7 +86,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for bdm::Param:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="251" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structbdm_1_1Param__coll__graph.svg" width="251" height="303"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -184,7 +184,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a51046246de544691fe6cb782a8a4c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24449e25bcb949da91dc1533469dbc9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a24449e25bcb949da91dc1533469dbc9a">max_bound</a> = 100</td></tr>
 <tr class="separator:a24449e25bcb949da91dc1533469dbc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6200627df99be6dd91817876a79cd4fc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a6200627df99be6dd91817876a79cd4fc">diffusion_boundary_condition</a> = &quot;open&quot;</td></tr>
+<tr class="memitem:a6200627df99be6dd91817876a79cd4fc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a6200627df99be6dd91817876a79cd4fc">diffusion_boundary_condition</a> = &quot;Neumann&quot;</td></tr>
 <tr class="separator:a6200627df99be6dd91817876a79cd4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a272115db83f37bc0f5e6f82b973c7029"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a272115db83f37bc0f5e6f82b973c7029">diffusion_method</a> = &quot;euler&quot;</td></tr>
 <tr class="separator:a272115db83f37bc0f5e6f82b973c7029"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,11 +243,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4212fa7a46db5620df4aa598982acb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe0924267efce453fa148905ee8d7d70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#abe0924267efce453fa148905ee8d7d70">use_progress_bar</a> = false</td></tr>
 <tr class="separator:abe0924267efce453fa148905ee8d7d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2fca5bc42fc214173d5ec72600e2ee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#aac2fca5bc42fc214173d5ec72600e2ee">progress_bar_time_unit</a> = &quot;s&quot;</td></tr>
+<tr class="separator:aac2fca5bc42fc214173d5ec72600e2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168bafe98a373d0a30cbc58d36e99322"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a168bafe98a373d0a30cbc58d36e99322">compute_target</a> = &quot;cpu&quot;</td></tr>
 <tr class="separator:a168bafe98a373d0a30cbc58d36e99322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a63f61488fe338b3c981feb02166c6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a1a63f61488fe338b3c981feb02166c6c">opencl_debug</a> = false</td></tr>
 <tr class="separator:a1a63f61488fe338b3c981feb02166c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a049f6a13901aa8b7f8c685340d827a73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a049f6a13901aa8b7f8c685340d827a73">preferred_gpu</a> = 0</td></tr>
+<tr class="memitem:a049f6a13901aa8b7f8c685340d827a73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a049f6a13901aa8b7f8c685340d827a73">preferred_gpu</a> = -1</td></tr>
 <tr class="separator:a049f6a13901aa8b7f8c685340d827a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a344b2f0c3605eae97580bb5e9699238a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1Param.html#a344b2f0c3605eae97580bb5e9699238a">plot_memory_layout</a> = false</td></tr>
 <tr class="separator:a344b2f0c3605eae97580bb5e9699238a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,8 +336,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>MappedDataArrayMode options: <code>kZeroCopy</code>: access agent data directly only if it is requested. <br  />
- <code>kCache</code>: Like <code>kZeroCopy</code> but stores the results in contigous array, to speed up access if it is used again.<br  />
- <code>kCopy</code>: Copy all data elements to a contigous array at initialization time. Serves requests from the cache. </p>
+ <code>kCache</code>: Like <code>kZeroCopy</code> but stores the results in contiguous array, to speed up access if it is used again.<br  />
+ <code>kCopy</code>: Copy all data elements to a contiguous array at initialization time. Serves requests from the cache. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a75736f24ae2459dbe25691890107797ba429ab33c2ae17d84a56372dd11a9c4a6"></a>kZeroCopy&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a75736f24ae2459dbe25691890107797ba5f55721ed86ae25c0358dcd2ccbd7297"></a>kCopy&#160;</td><td class="fielddoc"></td></tr>
@@ -678,7 +680,7 @@ template&lt;typename TParamGroup &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00632">632</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00649">649</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -799,7 +801,7 @@ calculate_gradients = true
 <p>Run the simulation partially on the GPU for improved performance. Possible values: "cpu", "cuda", "opencl" Default value: <code>"cpu"</code><br  />
 TOML config file: [experimental] compute_target = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00607">607</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00623">623</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -814,13 +816,15 @@ TOML config file: [experimental] compute_target = false </p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Output debugging info related to running on NUMA architecture.<br  />
+<p>Automatically track changes in the simulation and BioDynaMo repository. If set to true, BioDynaMo scans the simulation directory and the BioDynaMo repository for changes and saves the information of the git repositories in the output directory.<br  />
+Default Value: <code>true</code><br  />
+ Output debugging info related to running on NUMA architecture.<br  />
 </p><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classbdm_1_1ThreadInfo.html" title="This class stores information about each thread. (e.g. to which NUMA node it belongs to....">ThreadInfo</a></code>, <code><a class="el" href="classbdm_1_1ResourceManager.html#a0416556df304a7c785c580f1ac9fccaa">ResourceManager::DebugNuma</a></code> Default Value: <code>false</code><br  />
 TOML config file: <pre class="fragment">[development]
 debug_numa = false 
 </pre> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00575">575</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00584">584</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +839,7 @@ debug_numa = false
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculation of the displacement (mechanical interaction) is an expensive operation. If agents do not move or grow, displacement calculation is ommited if detect_static_agents is turned on. However, the detection mechanism introduces an overhead. For dynamic simulations where agents move and grow, the overhead outweighs the benefits.<br  />
+<p>Calculation of the displacement (mechanical interaction) is an expensive operation. If agents do not move or grow, displacement calculation is omitted if detect_static_agents is turned on. However, the detection mechanism introduces an overhead. For dynamic simulations where agents move and grow, the overhead outweighs the benefits.<br  />
 Default value: <code>false</code><br  />
 TOML config file: </p><pre class="fragment">[performance]
 detect_static_agents = false 
@@ -851,14 +855,14 @@ detect_static_agents = false
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string bdm::Param::diffusion_boundary_condition = &quot;open&quot;</td>
+          <td class="memname">std::string bdm::Param::diffusion_boundary_condition = &quot;Neumann&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Define the boundary condition of the diffusion grid [open, closed]<br  />
-Default value: <code>"open"</code><br  />
-TOML config file: </p><pre class="fragment">[simulation]
-diffusion_boundary_condition = "open" 
+<p>Define the boundary condition of the diffusion grid [open, closed, Neumann, Dirichlet]<br  />
+Default value: <code>"Neumann"</code><br  />
+ TOML config file: </p><pre class="fragment">[simulation]
+diffusion_boundary_condition = "Neumann" 
 </pre> 
 <p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00244">244</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
@@ -968,7 +972,7 @@ export = false
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00635">635</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00652">652</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1195,7 @@ nanoflann_depth = 10
 <p>Compile OpenCL kernels with debugging symbols, for debugging on CPU targets with GNU gdb. Default value: <code>false</code><br  />
 TOML config file: [experimental] opencl_debug = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00615">615</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00631">631</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1229,7 +1233,7 @@ output_dir = "output"
 </div><div class="memdoc">
 <p>Determines if agents' memory layout plots should be generated during load balancing. </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00626">626</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00643">643</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1240,14 +1244,32 @@ output_dir = "output"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int bdm::Param::preferred_gpu = 0</td>
+          <td class="memname">int bdm::Param::preferred_gpu = -1</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the index of the preferred GPU you wish to use. Default value: <code>0</code><br  />
-TOML config file: [experimental] preferred_gpu = 0 </p>
+<p>Set the index of the preferred GPU you wish to use. In <a class="el" href="classbdm_1_1GpuHelper.html">GpuHelper</a> we set the default to whichever GPU supports double precision Default value: <code>0</code><br  />
+TOML config file: [experimental] preferred_gpu = &lt;GPU with double precision support&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00622">622</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00639">639</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+
+</div>
+</div>
+<a id="aac2fca5bc42fc214173d5ec72600e2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac2fca5bc42fc214173d5ec72600e2ee">&#9670;&nbsp;</a></span>progress_bar_time_unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string bdm::Param::progress_bar_time_unit = &quot;s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Time unit of the progress bar. Possible values: "ms", "s", "min", "h" Default value: <code>"s"</code><br  />
+TOML config file: [development] progress_bar_time_unit = "s" </p>
+
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00612">612</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1356,7 @@ random_seed = 4357
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00634">634</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00651">651</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1454,7 @@ scheduling_batch_size = 1000
 Default value: <code>0</code><br  />
 TOML config file: [development] show_simulation_step = 0 </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00584">584</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00593">593</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>
@@ -1586,10 +1608,10 @@ use_bdm_mem_mgr = true
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use a progress bar to visualize the simulation progress. The progress bar also gives an estimate of the remaining simulation time assuming that the following simulations steps are as computationally expensive as the previous ones. It is not recommended to use the <a class="el" href="classbdm_1_1ProgressBar.html">ProgressBar</a> when you write information to std::cout in Simulate() because the <a class="el" href="classbdm_1_1ProgressBar.html">ProgressBar</a> uses '\r' in its print statements. Default value: <code>false</code><br  />
+<p>Use a progress bar to visualize the simulation progress. The progress bar also gives an estimate of the remaining simulation time assuming that the following simulations steps are as computationally expensive as the previous ones. It is not recommended to use the <a class="el" href="classbdm_1_1ProgressBar.html" title="This class implements a progress bar that can be used to track the progress of a simulation.">ProgressBar</a> when you write information to std::cout in Simulate() because the <a class="el" href="classbdm_1_1ProgressBar.html" title="This class implements a progress bar that can be used to track the progress of a simulation.">ProgressBar</a> uses '\r' in its print statements. Default value: <code>false</code><br  />
 TOML config file: [development] use_progress_bar = false </p>
 
-<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00596">596</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2param_2param_8h_source.html#l00605">605</a> of file <a class="el" href="core_2param_2param_8h_source.html">param.h</a>.</p>
 
 </div>
 </div>

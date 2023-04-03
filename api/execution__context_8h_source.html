@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.0-137fdb15</span>
+   &#160;<span id="projectnumber">v1.05.46-c3b3c745</span>
    </div>
   </td>
  </tr>
@@ -129,20 +129,20 @@ $(function() {
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classbdm_1_1MathArray.html">Real3</a>&amp; query_position,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                               <a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> squared_radius) = 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">AddAgent</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* new_agent) = 0;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ada02af4c109d850a1a1666ed0b6842c1">RemoveAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a40ec871f417d93d4eb7a564409000c27">GetAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a3f1a78829b5297b6c746b9f1d99f633d">GetConstAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif  // CORE_EXECUTION_CONTEXT_EXECUTION_CONTEXT_H_</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">AddAgent</a>(<a class="code" href="classbdm_1_1Agent.html">Agent</a>* new_agent) = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1ExecutionContext.html#ada02af4c109d850a1a1666ed0b6842c1">RemoveAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a40ec871f417d93d4eb7a564409000c27">GetAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="classbdm_1_1Agent.html">Agent</a>* <a class="code" href="classbdm_1_1ExecutionContext.html#a3f1a78829b5297b6c746b9f1d99f633d">GetConstAgent</a>(<span class="keyword">const</span> <a class="code" href="classbdm_1_1AgentUid.html">AgentUid</a>&amp; uid) = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif  // CORE_EXECUTION_CONTEXT_EXECUTION_CONTEXT_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a822bbddd7d781895b9b1dada4fd88b52"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">bdm::ExecutionContext::AddAgent</a></div><div class="ttdeci">virtual void AddAgent(Agent *new_agent)=0</div></div>
+<div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a822bbddd7d781895b9b1dada4fd88b52"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">bdm::ExecutionContext::AddAgent</a></div><div class="ttdeci">virtual void AddAgent(Agent *new_agent)=0</div><div class="ttdoc">Adds the agent to the simulation (threadsafe, takes ownership). Note that we avoid the use of smart p...</div></div>
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a40ec871f417d93d4eb7a564409000c27"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a40ec871f417d93d4eb7a564409000c27">bdm::ExecutionContext::GetAgent</a></div><div class="ttdeci">virtual Agent * GetAgent(const AgentUid &amp;uid)=0</div></div>
 <div class="ttc" id="aagent__uid_8h_html"><div class="ttname"><a href="agent__uid_8h.html">agent_uid.h</a></div></div>
 <div class="ttc" id="aagent__handle_8h_html"><div class="ttname"><a href="agent__handle_8h.html">agent_handle.h</a></div></div>
