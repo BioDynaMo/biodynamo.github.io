@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.50-e88069a6</span>
+   &#160;<span id="projectnumber">v1.05.59-80f3bb1e</span>
    </div>
   </td>
  </tr>
@@ -102,8 +102,8 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acca9e76b1b60b7e89b4d59451387c19b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#acca9e76b1b60b7e89b4d59451387c19b">InPlaceExecutionContext</a> (const std::shared_ptr&lt; <a class="el" href="structbdm_1_1InPlaceExecutionContext_1_1ThreadSafeAgentUidMap.html">ThreadSafeAgentUidMap</a> &gt; &amp;map)</td></tr>
 <tr class="separator:acca9e76b1b60b7e89b4d59451387c19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac20057bd2ddddfea4cf1422c45bd93b2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ac20057bd2ddddfea4cf1422c45bd93b2">~InPlaceExecutionContext</a> ()</td></tr>
-<tr class="separator:ac20057bd2ddddfea4cf1422c45bd93b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a1917d0e5a1d61f823835a87015014"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#aa4a1917d0e5a1d61f823835a87015014">~InPlaceExecutionContext</a> () override</td></tr>
+<tr class="separator:aa4a1917d0e5a1d61f823835a87015014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab614810ff22a676ad0cec4f5cd73e824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#ab614810ff22a676ad0cec4f5cd73e824">SetupIterationAll</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts) override</td></tr>
 <tr class="separator:ab614810ff22a676ad0cec4f5cd73e824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e795b95a5c04e6014350fc2166f3da2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1InPlaceExecutionContext.html#a0e795b95a5c04e6014350fc2166f3da2">TearDownIterationAll</a> (const std::vector&lt; <a class="el" href="classbdm_1_1ExecutionContext.html">ExecutionContext</a> * &gt; &amp;all_exec_ctxts) override</td></tr>
@@ -221,8 +221,8 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
 
 </div>
 </div>
-<a id="ac20057bd2ddddfea4cf1422c45bd93b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac20057bd2ddddfea4cf1422c45bd93b2">&#9670;&nbsp;</a></span>~InPlaceExecutionContext()</h2>
+<a id="aa4a1917d0e5a1d61f823835a87015014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a1917d0e5a1d61f823835a87015014">&#9670;&nbsp;</a></span>~InPlaceExecutionContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +239,7 @@ Also removal of an agent happens at the end of each iteration. </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1119,8 +1119,8 @@ NB: Invalidates references and pointers to agents. </p>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1ExecutionContext_html_a822bbddd7d781895b9b1dada4fd88b52"><div class="ttname"><a href="classbdm_1_1ExecutionContext.html#a822bbddd7d781895b9b1dada4fd88b52">bdm::ExecutionContext::AddAgent</a></div><div class="ttdeci">virtual void AddAgent(Agent *new_agent)=0</div><div class="ttdoc">Adds the agent to the simulation (threadsafe, takes ownership). Note that we avoid the use of smart p...</div></div>
-<div class="ttc" id="aclassbdm_1_1Simulation_html_a2ad613deed59648ce27d60e731637c48"><div class="ttname"><a href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">bdm::Simulation::GetExecutionContext</a></div><div class="ttdeci">ExecutionContext * GetExecutionContext()</div><div class="ttdoc">Returns a thread local execution context.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00273">simulation.cc:273</a></div></div>
-<div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00070">simulation.cc:70</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_a2ad613deed59648ce27d60e731637c48"><div class="ttname"><a href="classbdm_1_1Simulation.html#a2ad613deed59648ce27d60e731637c48">bdm::Simulation::GetExecutionContext</a></div><div class="ttdeci">ExecutionContext * GetExecutionContext()</div><div class="ttdoc">Returns a thread local execution context.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00271">simulation.cc:271</a></div></div>
+<div class="ttc" id="aclassbdm_1_1Simulation_html_a67bdfef8ac06a741e287d73d2d941c63"><div class="ttname"><a href="classbdm_1_1Simulation.html#a67bdfef8ac06a741e287d73d2d941c63">bdm::Simulation::GetActive</a></div><div class="ttdeci">static Simulation * GetActive()</div><div class="ttdoc">This function returns the currently active Simulation simulation.</div><div class="ttdef"><b>Definition:</b> <a href="simulation_8cc_source.html#l00068">simulation.cc:68</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

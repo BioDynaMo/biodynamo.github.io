@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.50-e88069a6</span>
+   &#160;<span id="projectnumber">v1.05.59-80f3bb1e</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classbdm_1_1ReductionOp.html#ac85ee9b0de9684c128b0dc29453f8ad1">tl_results_</a>.resize(<a class="code" href="classbdm_1_1ThreadInfo.html#a18c0b710f13449c8a1634d62eb051ac0">ThreadInfo::GetInstance</a>()-&gt;GetMaxThreads());</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbdm_1_1ReductionOp.html#a145d6fb4a74905e558a66c2097e7b89d">   42</a></span>&#160;  <a class="code" href="classbdm_1_1ReductionOp.html#a145d6fb4a74905e558a66c2097e7b89d">~ReductionOp</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classbdm_1_1ReductionOp.html#a51098f562aaf5d3f1a99e94f6b17a741">   42</a></span>&#160;  <a class="code" href="classbdm_1_1ReductionOp.html#a51098f562aaf5d3f1a99e94f6b17a741">~ReductionOp</a>()<span class="keyword"> override </span>{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classbdm_1_1ReductionOp.html#a4dbfacd1aea3b7f53ce7099482be0228">agent_functor_</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classbdm_1_1ReductionOp.html#af6c438cec41e84f1f1736a7fda6b012f">reduce_functor_</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
@@ -182,7 +182,6 @@ $(function() {
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_a5b8dd9bac00dfb3118edba2593c4a9ce"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a5b8dd9bac00dfb3118edba2593c4a9ce">bdm::ReductionOp::operator()</a></div><div class="ttdeci">void operator()(Agent *agent) override</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00060">reduction_op.h:60</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_a6f02416c52f276b5057cfd81d0c29e20"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a6f02416c52f276b5057cfd81d0c29e20">bdm::ReductionOp::Initialize</a></div><div class="ttdeci">void Initialize(Functor&lt; void, Agent *, T * &gt; *agent_functor, Functor&lt; T, const SharedData&lt; T &gt; &amp; &gt; *reduce_functor)</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00053">reduction_op.h:53</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_a4dbfacd1aea3b7f53ce7099482be0228"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a4dbfacd1aea3b7f53ce7099482be0228">bdm::ReductionOp::agent_functor_</a></div><div class="ttdeci">Functor&lt; void, Agent *, T * &gt; * agent_functor_</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00080">reduction_op.h:80</a></div></div>
-<div class="ttc" id="aclassbdm_1_1ReductionOp_html_a145d6fb4a74905e558a66c2097e7b89d"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a145d6fb4a74905e558a66c2097e7b89d">bdm::ReductionOp::~ReductionOp</a></div><div class="ttdeci">~ReductionOp()</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00042">reduction_op.h:42</a></div></div>
 <div class="ttc" id="astructbdm_1_1SumReduction_html"><div class="ttname"><a href="structbdm_1_1SumReduction.html">bdm::SumReduction</a></div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00087">reduction_op.h:87</a></div></div>
 <div class="ttc" id="aoperation__registry_8h_html"><div class="ttname"><a href="operation__registry_8h.html">operation_registry.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1Agent_html"><div class="ttname"><a href="classbdm_1_1Agent.html">bdm::Agent</a></div><div class="ttdoc">Contains code required by all agents.</div><div class="ttdef"><b>Definition:</b> <a href="agent_8h_source.html#l00079">agent.h:79</a></div></div>
@@ -192,6 +191,7 @@ $(function() {
 <div class="ttc" id="aagent_8h_html"><div class="ttname"><a href="agent_8h.html">agent.h</a></div></div>
 <div class="ttc" id="ashared__data_8h_html"><div class="ttname"><a href="shared__data_8h.html">shared_data.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html"><div class="ttname"><a href="classbdm_1_1ReductionOp.html">bdm::ReductionOp</a></div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00034">reduction_op.h:34</a></div></div>
+<div class="ttc" id="aclassbdm_1_1ReductionOp_html_a51098f562aaf5d3f1a99e94f6b17a741"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a51098f562aaf5d3f1a99e94f6b17a741">bdm::ReductionOp::~ReductionOp</a></div><div class="ttdeci">~ReductionOp() override</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00042">reduction_op.h:42</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ThreadInfo_html_a8c82506e89c8475c6d6dc279e79d6720"><div class="ttname"><a href="classbdm_1_1ThreadInfo.html#a8c82506e89c8475c6d6dc279e79d6720">bdm::ThreadInfo::GetMyThreadId</a></div><div class="ttdeci">int GetMyThreadId() const</div><div class="ttdef"><b>Definition:</b> <a href="thread__info_8h_source.html#l00039">thread_info.h:39</a></div></div>
 <div class="ttc" id="afunctor_8h_html"><div class="ttname"><a href="functor_8h.html">functor.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1ReductionOp_html_a52dbc1f42994d8d5603ce4c4cb3936f6"><div class="ttname"><a href="classbdm_1_1ReductionOp.html#a52dbc1f42994d8d5603ce4c4cb3936f6">bdm::ReductionOp::GetResults</a></div><div class="ttdeci">const std::vector&lt; T &gt; &amp; GetResults() const</div><div class="ttdef"><b>Definition:</b> <a href="reduction__op_8h_source.html#l00065">reduction_op.h:65</a></div></div>
