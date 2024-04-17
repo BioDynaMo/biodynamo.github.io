@@ -74,6 +74,7 @@ jobs:
         eval "$(pyenv init --path)"
         eval "$(pyenv init -)"
         pyenv shell 3.9.1
+        pip install lxml
         cmake \
           -Dwebsite=on \
           -Dtest=off \
