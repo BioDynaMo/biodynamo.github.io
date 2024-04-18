@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['h_5fover_5fm_878',['h_over_m',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1MechanicalForcesFunctor.html#a78c662157aebef1429ad99ed0568f2ed',1,'bdm::neuroscience::NeuriteElement::MechanicalForcesFunctor']]],
-  ['handlecoreoptions_879',['HandleCoreOptions',['../classbdm_1_1CommandLineOptions.html#a96cddffc2f12f3cc4ddec1f46cca7983',1,'bdm::CommandLineOptions']]],
+  ['h_5fover_5fm_876',['h_over_m',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1MechanicalForcesFunctor.html#a78c662157aebef1429ad99ed0568f2ed',1,'bdm::neuroscience::NeuriteElement::MechanicalForcesFunctor']]],
+  ['handlecoreoptions_877',['HandleCoreOptions',['../classbdm_1_1CommandLineOptions.html#a96cddffc2f12f3cc4ddec1f46cca7983',1,'bdm::CommandLineOptions']]],
+  ['hardware_5fconstructive_5finterference_5fsize_878',['hardware_constructive_interference_size',['../shared__data_8h.html#a04e6ab9de579e642a59c9c71908419f5',1,'shared_data.h']]],
+  ['hardware_5fdestructive_5finterference_5fsize_879',['hardware_destructive_interference_size',['../shared__data_8h.html#afcfcf0ecf646b16dd2b471dc568cf6c6',1,'shared_data.h']]],
   ['has_5fgrown_5f_880',['has_grown_',['../classbdm_1_1Environment.html#ac955bbf754885d8ca7226f7e221614a3',1,'bdm::Environment']]],
   ['has_5fneurite_5fneighbor_881',['has_neurite_neighbor',['../structbdm_1_1neuroscience_1_1NeuriteElement_1_1MechanicalForcesFunctor.html#a269268bbe0cd367f5e190c8015cfd3df',1,'bdm::neuroscience::NeuriteElement::MechanicalForcesFunctor']]],
   ['has_5fneurite_5fneighbor_5f_882',['has_neurite_neighbor_',['../classbdm_1_1neuroscience_1_1NeuriteElement.html#aa0b7394ff1cbb52f036026f3f74b70cd',1,'bdm::neuroscience::NeuriteElement']]],

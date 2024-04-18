@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "abdeimnost",
   8: "k",
   9: ":deimoprst",
-  10: "bcy"
+  10: "bc"
 };
 
 var indexSectionNames =

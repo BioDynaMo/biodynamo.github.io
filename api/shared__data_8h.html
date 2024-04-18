@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.63-e327e53c</span>
+   &#160;<span id="projectnumber">v1.05.107-fadc3b6a</span>
    </div>
   </td>
  </tr>
@@ -69,19 +69,20 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">shared_data.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;new&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="root_8h_source.html">core/util/root.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for shared_data.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="shared__data_8h__incl.svg" width="898" height="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="shared__data_8h__incl.svg" width="972" height="351"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -109,26 +110,60 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebdm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html">bdm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:afab6b371f13bda49f3108c21913c8537"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__data_8h.html#afab6b371f13bda49f3108c21913c8537">BDM_CACHE_LINE_SIZE</a>&#160;&#160;&#160;64u</td></tr>
-<tr class="separator:afab6b371f13bda49f3108c21913c8537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a04e6ab9de579e642a59c9c71908419f5"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__data_8h.html#a04e6ab9de579e642a59c9c71908419f5">hardware_constructive_interference_size</a> = 64u</td></tr>
+<tr class="separator:a04e6ab9de579e642a59c9c71908419f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfcf0ecf646b16dd2b471dc568cf6c6"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shared__data_8h.html#afcfcf0ecf646b16dd2b471dc568cf6c6">hardware_destructive_interference_size</a> = 64u</td></tr>
+<tr class="separator:afcfcf0ecf646b16dd2b471dc568cf6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="afab6b371f13bda49f3108c21913c8537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afab6b371f13bda49f3108c21913c8537">&#9670;&nbsp;</a></span>BDM_CACHE_LINE_SIZE</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a04e6ab9de579e642a59c9c71908419f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e6ab9de579e642a59c9c71908419f5">&#9670;&nbsp;</a></span>hardware_constructive_interference_size</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define BDM_CACHE_LINE_SIZE&#160;&#160;&#160;64u</td>
+          <td class="memname">constexpr std::size_t hardware_constructive_interference_size = 64u</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>This is BioDynaMo's default cacheline size. If you system has a different cacheline size, consider changing the value accordingly. When BioDynaMo moves to the C++17 standard, this choice will be automated. See : en.cppreference.com/w/cpp/thread/hardware_destructive_interference_size </p>
+<p>This is BioDynaMo's cacheline size. If you system has a different cacheline size, consider changing the value accordingly. In particular, this value is used to align the data in the SharedData class to avoid false sharing between threads. From C++17 on, the standard library provides hardware_constructive_interference_size and hardware_destructive_interference_size, which can be used instead of this constant. If the standard library does not provide these constants, the default value for x86-64 is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00028">28</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00040">40</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+
+</div>
+</div>
+<a id="afcfcf0ecf646b16dd2b471dc568cf6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfcf0ecf646b16dd2b471dc568cf6c6">&#9670;&nbsp;</a></span>hardware_destructive_interference_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t hardware_destructive_interference_size = 64u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00041">41</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.63-e327e53c</span>
+   &#160;<span id="projectnumber">v1.05.107-fadc3b6a</span>
    </div>
   </td>
  </tr>
@@ -377,9 +377,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbdm_1_1RunAllScheduledOps.html">RunAllScheduledOps</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RungeKuttaGrid.html">RungeKuttaGrid</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classbdm_1_1Continuum.html" title="Continuum class to interface with BioDynaMo for hybrid simulations.">Continuum</a> model for the 3D heat equation <img class="formulaInl" alt="$ \partial_t u = \nabla D \nabla u $" src="form_3.png"/>.  <a href="classbdm_1_1RungeKuttaGrid.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1RuntimeVariables.html">RuntimeVariables</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1ScalarField.html">ScalarField</a></td></tr>
@@ -523,10 +520,14 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacebdm.html#a1bb82ab49c898f968c39b66fa13c8b4da845c8162d7cc754e5729c8d5b5f60034">kDirect</a>
  }</td></tr>
 <tr class="separator:a1bb82ab49c898f968c39b66fa13c8b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24fff4576502e21fb2410cb81bf85ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">BoundaryConditionType</a> { <a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baae5ef0e29a29b37b01a0aeff62ae90104">BoundaryConditionType::kDirichlet</a>, 
+<tr class="memitem:ac24fff4576502e21fb2410cb81bf85ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">BoundaryConditionType</a> { <br />
+&#160;&#160;<a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baae5ef0e29a29b37b01a0aeff62ae90104">BoundaryConditionType::kDirichlet</a>, 
 <a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baade791ce2311b31ca59b431d3e4f516d0">BoundaryConditionType::kNeumann</a>, 
 <a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baa8d37b18cd320f7fbcf5529b8a61db463">BoundaryConditionType::kOpenBoundaries</a>, 
-<a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baac436ad25291b84b155a10c419c361986">BoundaryConditionType::kClosedBoundaries</a>
+<a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baac436ad25291b84b155a10c419c361986">BoundaryConditionType::kClosedBoundaries</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85baaa4dadcf41a1fb6841557aad7688dc1a4">BoundaryConditionType::kPeriodic</a>
+<br />
  }</td></tr>
 <tr class="memdesc:ac24fff4576502e21fb2410cb81bf85ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available boundary conditions.  <a href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">More...</a><br /></td></tr>
 <tr class="separator:ac24fff4576502e21fb2410cb81bf85ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -585,8 +586,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a91a189bc16d48b3d87f0ed1bf9c0b20d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebdm.html#ac24fff4576502e21fb2410cb81bf85ba">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#a91a189bc16d48b3d87f0ed1bf9c0b20d">StringToBoundaryType</a> (const std::string &amp;type)</td></tr>
 <tr class="memdesc:a91a189bc16d48b3d87f0ed1bf9c0b20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a string to the corresponding BoundaryConditionType.  <a href="namespacebdm.html#a91a189bc16d48b3d87f0ed1bf9c0b20d">More...</a><br /></td></tr>
 <tr class="separator:a91a189bc16d48b3d87f0ed1bf9c0b20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade97e78621066bf0ef0fb2965f834bd9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ade97e78621066bf0ef0fb2965f834bd9">Clamp</a> (size_t val, size_t min, size_t max)</td></tr>
-<tr class="separator:ade97e78621066bf0ef0fb2965f834bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12aa1b8952c94c41b0bc57af9f53595"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae12aa1b8952c94c41b0bc57af9f53595"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; uint64_t, uint64_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacebdm.html#ae12aa1b8952c94c41b0bc57af9f53595">BinarySearch</a> (uint64_t search_val, const T &amp;container, uint64_t from, uint64_t to)</td></tr>
 <tr class="separator:ae12aa1b8952c94c41b0bc57af9f53595"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1042,6 +1041,7 @@ Second, a direct mode in which the raw <code>Agent*</code> is used. The indirect
 <tr><td class="fieldname"><a id="ac24fff4576502e21fb2410cb81bf85baade791ce2311b31ca59b431d3e4f516d0"></a>kNeumann&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac24fff4576502e21fb2410cb81bf85baa8d37b18cd320f7fbcf5529b8a61db463"></a>kOpenBoundaries&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac24fff4576502e21fb2410cb81bf85baac436ad25291b84b155a10c419c361986"></a>kClosedBoundaries&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac24fff4576502e21fb2410cb81bf85baaa4dadcf41a1fb6841557aad7688dc1a4"></a>kPeriodic&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00035">35</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
@@ -1095,7 +1095,7 @@ Second, a direct mode in which the raw <code>Agent*</code> is used. The indirect
 <tr><td class="fieldname"><a id="a56ff0f65ba6a6e7ed463956080102089ab9cf6caab917a7db802a8752be2e9710"></a>kLogistic&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00042">42</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8h_source.html#l00043">43</a> of file <a class="el" href="diffusion__grid_8h_source.html">diffusion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -1116,7 +1116,7 @@ Second, a direct mode in which the raw <code>Agent*</code> is used. The indirect
 <tr><td class="fieldname"><a id="a341896036b949773cdf5caf208c39ae2aacf0086804bc543793bccec32a2dce67"></a>kOpenCl&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="operation_8h_source.html#l00030">30</a> of file <a class="el" href="operation_8h_source.html">operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation_8h_source.html#l00031">31</a> of file <a class="el" href="operation_8h_source.html">operation.h</a>.</p>
 
 </div>
 </div>
@@ -2153,51 +2153,7 @@ template&lt;typename T &gt; </div>
 
 <p>Transforms a BoundaryConditionType to the corresponding string. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00024">24</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
-
-</div>
-</div>
-<a id="ade97e78621066bf0ef0fb2965f834bd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade97e78621066bf0ef0fb2965f834bd9">&#9670;&nbsp;</a></span>Clamp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t bdm::Clamp </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="euler__grid_8cc_source.html#l00023">23</a> of file <a class="el" href="euler__grid_8cc_source.html">euler_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00026">26</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>
@@ -2865,7 +2821,7 @@ void PrintSmallNeighbors(Agent* agent, real_t threshold) {
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="operation_8h_source.html#l00032">32</a> of file <a class="el" href="operation_8h_source.html">operation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="operation_8h_source.html#l00033">33</a> of file <a class="el" href="operation_8h_source.html">operation.h</a>.</p>
 
 </div>
 </div>
@@ -3276,7 +3232,7 @@ template&lt;class T , std::size_t N&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="string_8cc_source.html#l00019">19</a> of file <a class="el" href="string_8cc_source.html">string.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string_8cc_source.html#l00021">21</a> of file <a class="el" href="string_8cc_source.html">string.cc</a>.</p>
 
 </div>
 </div>
@@ -3336,7 +3292,7 @@ template&lt;class T , std::size_t N&gt; </div>
 
 <p>Transforms a string to the corresponding BoundaryConditionType. </p>
 
-<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00040">40</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="diffusion__grid_8cc_source.html#l00044">44</a> of file <a class="el" href="diffusion__grid_8cc_source.html">diffusion_grid.cc</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.63-e327e53c</span>
+   &#160;<span id="projectnumber">v1.05.107-fadc3b6a</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a98ab7cbb2d453846225c9e9ce3819afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183e02a34bb02d1fbd3ba15541966342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1EulerDepletionGrid.html#a183e02a34bb02d1fbd3ba15541966342">DiffuseWithNeumann</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) override</td></tr>
 <tr class="separator:a183e02a34bb02d1fbd3ba15541966342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7692de959833596735784743dd43654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1EulerDepletionGrid.html#ac7692de959833596735784743dd43654">DiffuseWithPeriodic</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) override</td></tr>
+<tr class="separator:ac7692de959833596735784743dd43654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05e0a10bae10e6d065f36b03026b352e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1EulerDepletionGrid.html#a05e0a10bae10e6d065f36b03026b352e">SetBindingSubstance</a> (int bnd_sub, <a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> bnd_coeff)</td></tr>
 <tr class="memdesc:a05e0a10bae10e6d065f36b03026b352e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a binding substance and coefficient for the substance.  <a href="classbdm_1_1EulerDepletionGrid.html#a05e0a10bae10e6d065f36b03026b352e">More...</a><br /></td></tr>
 <tr class="separator:a05e0a10bae10e6d065f36b03026b352e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6bee2af9f42bfb1927def6f0e1f249be inherit pub_methods_classbdm_1_1EulerGrid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3f5016e49201bb682b85448a179db4d inherit pub_methods_classbdm_1_1EulerGrid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1EulerGrid.html#ad3f5016e49201bb682b85448a179db4d">DiffuseWithNeumann</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) override</td></tr>
 <tr class="separator:ad3f5016e49201bb682b85448a179db4d inherit pub_methods_classbdm_1_1EulerGrid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593157994f0ce15802d345eedc55a97c inherit pub_methods_classbdm_1_1EulerGrid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1EulerGrid.html#a593157994f0ce15802d345eedc55a97c">DiffuseWithPeriodic</a> (<a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) override</td></tr>
+<tr class="separator:a593157994f0ce15802d345eedc55a97c inherit pub_methods_classbdm_1_1EulerGrid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbdm_1_1DiffusionGrid"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbdm_1_1DiffusionGrid')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></td></tr>
 <tr class="memitem:ae8af440d4d018c04eff25b6b25e6cf91 inherit pub_methods_classbdm_1_1DiffusionGrid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbdm_1_1DiffusionGrid.html#ae8af440d4d018c04eff25b6b25e6cf91">DiffusionGrid</a> ()=default</td></tr>
 <tr class="separator:ae8af440d4d018c04eff25b6b25e6cf91 inherit pub_methods_classbdm_1_1DiffusionGrid"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -611,6 +615,37 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac7692de959833596735784743dd43654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7692de959833596735784743dd43654">&#9670;&nbsp;</a></span>DiffuseWithPeriodic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bdm::EulerDepletionGrid::DiffuseWithPeriodic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a>&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Simulates the Diffusion with <a class="el" href="classbdm_1_1EulerGrid.html#a593157994f0ce15802d345eedc55a97c">EulerGrid::DiffuseWithPeriodic</a> and subsequently depletes the substance according to binding_substances_ and binding_coefficients_. See ApplyDepletion for details. </p>
+
+<p>Implements <a class="el" href="classbdm_1_1DiffusionGrid.html#a459cabecb646314642c3760e02138a4b">bdm::DiffusionGrid</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8cc_source.html#l00091">91</a> of file <a class="el" href="euler__depletion__grid_8cc_source.html">euler_depletion_grid.cc</a>.</p>
+
+</div>
+</div>
 <a id="a8ae839abd850af6c0b1f596da2215591"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ae839abd850af6c0b1f596da2215591">&#9670;&nbsp;</a></span>GetBindingCoefficients()</h2>
 
@@ -636,7 +671,7 @@ Private Attributes</h2></td></tr>
 
 <p>Get the vector of binding coefficients (vector of coefficients) </p>
 
-<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00077">77</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00081">81</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -665,7 +700,7 @@ Private Attributes</h2></td></tr>
 
 <p>Get the vector of binding substances (vector of IDs) </p>
 
-<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00075">75</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00079">79</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -712,7 +747,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00069">69</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00073">73</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +773,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Vector of binding coefficients for each binding substance. All coefficients should be positive. </p>
 
-<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00090">90</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00094">94</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
 
 </div>
 </div>
@@ -764,7 +799,7 @@ Private Attributes</h2></td></tr>
 
 <p>Vector of binding substances. </p>
 
-<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00092">92</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="euler__depletion__grid_8h_source.html#l00096">96</a> of file <a class="el" href="euler__depletion__grid_8h_source.html">euler_depletion_grid.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.63-e327e53c</span>
+   &#160;<span id="projectnumber">v1.05.107-fadc3b6a</span>
    </div>
   </td>
  </tr>
@@ -105,27 +105,29 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1EulerGrid.html#a1bae4f0b32754fce85ae729ced0a3906">DiffuseWithOpenEdge</a>(<a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1EulerGrid.html#a6bee2af9f42bfb1927def6f0e1f249be">DiffuseWithDirichlet</a>(<a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1EulerGrid.html#ad3f5016e49201bb682b85448a179db4d">DiffuseWithNeumann</a>(<a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classbdm_1_1EulerGrid.html#a552a1dbac82a3a84ad1742c92caf4e70">BDM_CLASS_DEF_OVERRIDE</a>(<a class="code" href="classbdm_1_1EulerGrid.html">EulerGrid</a>, 1);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace bdm</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // CORE_DIFFUSION_EULER_GRID_H_</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classbdm_1_1EulerGrid.html#a593157994f0ce15802d345eedc55a97c">DiffuseWithPeriodic</a>(<a class="code" href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">real_t</a> dt) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classbdm_1_1EulerGrid.html#a552a1dbac82a3a84ad1742c92caf4e70">BDM_CLASS_DEF_OVERRIDE</a>(<a class="code" href="classbdm_1_1EulerGrid.html">EulerGrid</a>, 1);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace bdm</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  // CORE_DIFFUSION_EULER_GRID_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html_af4fffd95cc7f1e0c1fb1678903c71849"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#af4fffd95cc7f1e0c1fb1678903c71849">bdm::EulerGrid::EulerGrid</a></div><div class="ttdeci">EulerGrid()=default</div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html_a552a1dbac82a3a84ad1742c92caf4e70"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a552a1dbac82a3a84ad1742c92caf4e70">bdm::EulerGrid::BDM_CLASS_DEF_OVERRIDE</a></div><div class="ttdeci">BDM_CLASS_DEF_OVERRIDE(EulerGrid, 1)</div></div>
-<div class="ttc" id="aclassbdm_1_1EulerGrid_html_a6bee2af9f42bfb1927def6f0e1f249be"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a6bee2af9f42bfb1927def6f0e1f249be">bdm::EulerGrid::DiffuseWithDirichlet</a></div><div class="ttdeci">void DiffuseWithDirichlet(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00169">euler_grid.cc:169</a></div></div>
+<div class="ttc" id="aclassbdm_1_1EulerGrid_html_a6bee2af9f42bfb1927def6f0e1f249be"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a6bee2af9f42bfb1927def6f0e1f249be">bdm::EulerGrid::DiffuseWithDirichlet</a></div><div class="ttdeci">void DiffuseWithDirichlet(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00157">euler_grid.cc:157</a></div></div>
 <div class="ttc" id="anamespacebdm_html"><div class="ttname"><a href="namespacebdm.html">bdm</a></div><div class="ttdef"><b>Definition:</b> <a href="agent_8cc_source.html#l00039">agent.cc:39</a></div></div>
 <div class="ttc" id="anamespacebdm_html_a5d750b9d542e662433fabcd83e85ca8b"><div class="ttname"><a href="namespacebdm.html#a5d750b9d542e662433fabcd83e85ca8b">bdm::real_t</a></div><div class="ttdeci">double real_t</div><div class="ttdef"><b>Definition:</b> <a href="real__t_8h_source.html#l00021">real_t.h:21</a></div></div>
-<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00089">diffusion_grid.h:89</a></div></div>
-<div class="ttc" id="aclassbdm_1_1EulerGrid_html_a1bae4f0b32754fce85ae729ced0a3906"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a1bae4f0b32754fce85ae729ced0a3906">bdm::EulerGrid::DiffuseWithOpenEdge</a></div><div class="ttdeci">void DiffuseWithOpenEdge(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00081">euler_grid.cc:81</a></div></div>
+<div class="ttc" id="aclassbdm_1_1DiffusionGrid_html"><div class="ttname"><a href="classbdm_1_1DiffusionGrid.html">bdm::DiffusionGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="diffusion__grid_8h_source.html#l00090">diffusion_grid.h:90</a></div></div>
+<div class="ttc" id="aclassbdm_1_1EulerGrid_html_a1bae4f0b32754fce85ae729ced0a3906"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a1bae4f0b32754fce85ae729ced0a3906">bdm::EulerGrid::DiffuseWithOpenEdge</a></div><div class="ttdeci">void DiffuseWithOpenEdge(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00069">euler_grid.cc:69</a></div></div>
 <div class="ttc" id="adiffusion__grid_8h_html"><div class="ttname"><a href="diffusion__grid_8h.html">diffusion_grid.h</a></div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html_a9b6e6a2ea9fd34a97dc04420b478d70e"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a9b6e6a2ea9fd34a97dc04420b478d70e">bdm::EulerGrid::EulerGrid</a></div><div class="ttdeci">EulerGrid(int substance_id, std::string substance_name, real_t dc, real_t mu, int resolution=10)</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8h_source.html#l00046">euler_grid.h:46</a></div></div>
-<div class="ttc" id="aclassbdm_1_1EulerGrid_html_ad3f5016e49201bb682b85448a179db4d"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ad3f5016e49201bb682b85448a179db4d">bdm::EulerGrid::DiffuseWithNeumann</a></div><div class="ttdeci">void DiffuseWithNeumann(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00225">euler_grid.cc:225</a></div></div>
+<div class="ttc" id="aclassbdm_1_1EulerGrid_html_ad3f5016e49201bb682b85448a179db4d"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ad3f5016e49201bb682b85448a179db4d">bdm::EulerGrid::DiffuseWithNeumann</a></div><div class="ttdeci">void DiffuseWithNeumann(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00213">euler_grid.cc:213</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="agent__uid_8h_source.html#l00117">agent_uid.h:117</a></div></div>
-<div class="ttc" id="aclassbdm_1_1EulerGrid_html_ad5eac159659c619e3a875d06cbd6a524"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ad5eac159659c619e3a875d06cbd6a524">bdm::EulerGrid::DiffuseWithClosedEdge</a></div><div class="ttdeci">void DiffuseWithClosedEdge(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00033">euler_grid.cc:33</a></div></div>
+<div class="ttc" id="aclassbdm_1_1EulerGrid_html_a593157994f0ce15802d345eedc55a97c"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#a593157994f0ce15802d345eedc55a97c">bdm::EulerGrid::DiffuseWithPeriodic</a></div><div class="ttdeci">void DiffuseWithPeriodic(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00304">euler_grid.cc:304</a></div></div>
+<div class="ttc" id="aclassbdm_1_1EulerGrid_html_ad5eac159659c619e3a875d06cbd6a524"><div class="ttname"><a href="classbdm_1_1EulerGrid.html#ad5eac159659c619e3a875d06cbd6a524">bdm::EulerGrid::DiffuseWithClosedEdge</a></div><div class="ttdeci">void DiffuseWithClosedEdge(real_t dt) override</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8cc_source.html#l00021">euler_grid.cc:21</a></div></div>
 <div class="ttc" id="aclassbdm_1_1EulerGrid_html"><div class="ttname"><a href="classbdm_1_1EulerGrid.html">bdm::EulerGrid</a></div><div class="ttdoc">Continuum model for the 3D heat equation with exponential decay .</div><div class="ttdef"><b>Definition:</b> <a href="euler__grid_8h_source.html#l00043">euler_grid.h:43</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

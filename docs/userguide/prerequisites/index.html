@@ -176,7 +176,7 @@ python -m pip <span class="token function">install</span> <span class="token ass
 <li><strong>cmake</strong>: Set of tools for automate building, testing of software</li>
 <li><strong>libXt-devel</strong>: Basic library for developing X11</li>
 <li><strong>libXext-devel</strong>: Library which contains a handful of X11 extensions</li>
-<li><strong>devtoolset-8-gcc</strong>: Compiler suite for C and C++</li>
+<li><strong>devtoolset-10-gcc</strong>: Compiler suite for C and C++</li>
 <li><strong>numactl-devel</strong>: Development files for NUMA (simple programming interface to the policy supported by the Linux kernel)</li>
 <li><strong>freeglut-devel</strong>: Development files for GLUT (OpenGL Utility Toolkit)</li>
 <li><strong>openmpi3-devel</strong>: Development files for OpenMP (API for multiprocessor programming)</li>
@@ -216,7 +216,7 @@ python -m pip <span class="token function">install</span> <span class="token ass
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> centos-release-scl epel-release
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> https://centos7.iuscommunity.org/ius-release.rpm
 <span class="token function">sudo</span> yum -y <span class="token function">install</span> <span class="token function">wget</span> libXt-devel libXext-devel <span class="token punctuation">\</span>
-  devtoolset-8-gcc* numactl-devel <span class="token punctuation">\</span>
+  devtoolset-10-gcc* numactl-devel <span class="token punctuation">\</span>
   openmpi3-devel freeglut-devel <span class="token function">git</span>
 
 <span class="token function">curl</span> -L -O https://github.com/Kitware/CMake/releases/download/v3.19.3/cmake-3.19.3-Linux-x86_64.sh
@@ -254,7 +254,7 @@ EOF'</span>
 <p>Requirements to build on macOS are:</p>
 <ul>
 <li>A 64-bit Intel CPU or Apple Silicon CPU</li>
-<li>macOS Catalina (10.15) or higher</li>
+<li>macOS 12.0 or higher</li>
 <li><a href="https://itunes.apple.com/us/app/xcode/id497799835" target="_blank" rel="nofollow noopener noreferrer">Xcode</a> and the Command Line Tools (CLT) for Xcode: <code class="language-text">xcode-select --install</code><br>
 (or from <a href="https://developer.apple.com/downloads" target="_blank" rel="nofollow noopener noreferrer">developer.apple.com/downloads</a>)</li>
 <li>An up to date <a href="https://brew.sh" target="_blank" rel="nofollow noopener noreferrer">Homebrew</a> installation (MacPorts and Fink are not supported)</li>

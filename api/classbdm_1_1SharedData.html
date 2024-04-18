@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioDynaMo
-   &#160;<span id="projectnumber">v1.05.63-e327e53c</span>
+   &#160;<span id="projectnumber">v1.05.107-fadc3b6a</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ class bdm::SharedData&lt; T &gt;</h3>
 
 <p>The <a class="el" href="classbdm_1_1SharedData.html" title="The SharedData class avoids false sharing between threads.">SharedData</a> class avoids false sharing between threads. </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00034">34</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00048">48</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2a06a61875a9dace825e3a0851dfabea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a06a61875a9dace825e3a0851dfabea">&#9670;&nbsp;</a></span>Data</h2>
@@ -146,9 +146,9 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Data type definition for a vector whose entries fill full cache lines. A vector whose components' sizes are a multiple of the cacheline size, e.g sizeof(Data[i]) = N*BDM_CACHE_LINE_SIZE. </p>
+<p>Data type definition for a vector whose entries fill full cache lines. A vector whose components' sizes are a multiple of the cacheline size, e.g sizeof(Data[i]) = N*hardware_destructive_interference_size. </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00044">44</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00058">58</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +216,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00047">47</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00061">61</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +246,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00079">79</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00093">93</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00081">81</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00095">95</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00080">80</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00094">94</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00084">84</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00098">98</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00053">53</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00067">67</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00054">54</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00068">68</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ template&lt;typename T &gt; </div>
 
 <p>Resize the <a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">SharedData.data_</a> vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00060">60</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00074">74</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +456,7 @@ template&lt;typename T &gt; </div>
 
 <p>Get the size of the <a class="el" href="classbdm_1_1SharedData.html#a7665454db7ae569f3c2fccdd5349aa85">SharedData.data_</a> vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00057">57</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00071">71</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
@@ -483,7 +483,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00089">89</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shared__data_8h_source.html#l00103">103</a> of file <a class="el" href="shared__data_8h_source.html">shared_data.h</a>.</p>
 
 </div>
 </div>
