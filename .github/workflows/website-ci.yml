@@ -1,5 +1,5 @@
 # This Github Actions Workflow checks out the latest version of the BioDynaMo
-# master branch and builds the website biodynamo.org with the build target `website`.
+# master branch and builds biodynamo.github.io with the build target `website`.
 # Internally it relies on the Gatsby framework to generate the static files
 name: Website CI
 
@@ -9,72 +9,68 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: 'Log level'     
+      publish:
+        description: 'Publish to GitHub Pages (master only); leave off to test the build'
+        type: boolean
         required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags' 
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-ci-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
 
     steps:
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz make
-        curl -L -O https://github.com/Kitware/CMake/releases/download/v3.19.3/cmake-3.19.3-Linux-x86_64.sh
-        chmod +x cmake-3.19.3-Linux-x86_64.sh
-        sudo ./cmake-3.19.3-Linux-x86_64.sh --skip-license --prefix=/usr/local
-
-    - name: Set OSVERS
-      run: echo "OSVERS=$(lsb_release -si)-$(lsb_release -sr)" >> $GITHUB_ENV
+    - name: Checkout BioDynaMo
+      uses: actions/checkout@v6
+      with:
+        repository: BioDynaMo/biodynamo
+        ref: master
+        fetch-depth: 0
+        path: biodynamo
+        persist-credentials: false
 
     - name: Cache pyenv
-      uses: actions/cache@v2
+      uses: actions/cache@v5
       id: pyenv-cache
       with:
         path: ~/.pyenv
-        key: ${{ env.OSVERS }}-pyenv-3.9
-
-    - name: Install pyenv dependency
-      if: steps.pyenv-cache.outputs.cache-hit != 'true'
-      run: |
-        curl https://pyenv.run | bash
-        export PATH="$HOME/.pyenv/bin:$PATH"
-        eval "$(pyenv init -)"
-        PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.9.1
-        pyenv shell 3.9.1
-
-    - name: Checkout BioDynaMo
-      uses: actions/checkout@v2
-      with:
-        repository: BioDynaMo/biodynamo
-        fetch-depth: 0
-        path: biodynamo
+        key: ubuntu-22.04-${{ runner.arch }}-pyenv-3.9.1-${{ hashFiles('biodynamo/util/installation/ubuntu-22.04/prerequisites.sh', 'biodynamo/util/installation/ubuntu-22.04/pip_packages.txt') }}
 
     - name: Cache Third Party Packages
-      uses: actions/cache@v2
+      uses: actions/cache@v5
       with:
         path: biodynamo/build/third_party
-        key: ${{ env.OSVERS }}-third-party-${{ hashFiles('biodynamo/cmake/external/SHA256Digests.cmake') }}
+        key: ubuntu-22.04-${{ runner.arch }}-third-party-${{ hashFiles('biodynamo/cmake/external/SHA256Digests.cmake') }}
 
     - name: Install prerequisites
       shell: bash
       run: |
-        biodynamo/util/installation/ubuntu-20.04/prerequisites.sh all
+        # The upstream 22.04 script installs system dependencies before building
+        # shared Python 3.9.1, and reuses the restored pyenv installation.
+        prerequisites=biodynamo/util/installation/ubuntu-22.04/prerequisites.sh
+        # CMake 3.19.3 release assets use "Linux", not "linux". Keep this
+        # compatibility fix until the upstream prerequisite script is corrected.
+        sed -i 's/cmake-${CMAKE_VER}-linux-x86_64.sh/cmake-${CMAKE_VER}-Linux-x86_64.sh/' "$prerequisites"
+        bash -e "$prerequisites" all
 
-    - name: Build biodynamo.org
+    - name: Build website
       working-directory: biodynamo
       shell: bash
       run: |
-        export PATH="$HOME/.pyenv/bin:$PATH"
+        export PYENV_ROOT="$HOME/.pyenv"
+        export PATH="$PYENV_ROOT/bin:$PATH"
         eval "$(pyenv init --path)"
         eval "$(pyenv init -)"
         pyenv shell 3.9.1
-        pip install lxml_html_clean
+        python -m pip install lxml_html_clean
         cmake \
           -Dwebsite=on \
           -Dtest=off \
@@ -87,11 +83,12 @@ jobs:
 
     # Get a copy of the .github folder
     - name: Checkout biodynamo.github.io
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
       with:
         fetch-depth: 0
         path: biodynamo.github.io
-    
+        persist-credentials: false
+
     # Since the deploy step below deletes all website files first, before adding
     # the updated files, it will also delete the .github folder
     # We copy the .github folder to the publish_dir, so that it will be re-added
@@ -99,8 +96,9 @@ jobs:
     - name: Copy .github folder
       run: cp -R biodynamo.github.io/.github biodynamo/build/website/public
 
-    - name: Deploy biodynamo.org
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy GitHub Pages
+      if: github.ref == 'refs/heads/master' && (github.event_name == 'schedule' || inputs.publish)
+      uses: peaceiris/actions-gh-pages@v4
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_branch: master
